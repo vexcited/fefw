@@ -3241,6 +3241,7 @@ fff90,116,verified,src/snd/api.cpp,_ZN3snd10startPitchERKNS_3fnd10WeakHandleERKN
 1337a0,308,verified,src/snd/slot.c,Slot_1337a0
 133900,276,verified,src/snd/slot.c,Slot_133900
 133a40,304,verified,src/snd/slot.c,Slot_133a40
+133ba0,1264,verified,src/snd/unplaced_16.c,snd_133ba0
 1340a0,800,verified,src/snd/slot.c,snd_Slot_checkPriority_1340a0
 134880,800,verified,src/snd/slot.c,snd_Slot_checkPriority_134880
 135040,560,verified,src/snd/slot.c,snd_Slot_checkPriority_135040
@@ -6631,6 +6632,7 @@ fff90,116,verified,src/snd/api.cpp,_ZN3snd10startPitchERKNS_3fnd10WeakHandleERKN
 1bb520,492,verified,src/angelscript/angelscript/source/as_callfunc.cpp,_ZN8asCArrayIN26asSSystemFunctionInterface6SCleanEE8PushLastERKS1_
 1bb740,764,verified,src/angelscript/angelscript/source/as_callfunc.cpp,_Z21PrepareSystemFunctionP17asCScriptFunctionP26asSSystemFunctionInterfaceP15asCScriptEngine
 1bbd00,72,verified,src/angelscript/angelscript/source/as_callfunc.cpp,_Z18CallSystemFunctioniP10asCContext
+1bc0e0,1408,disputed,src/angelscript/angelscript/source/unplaced_3.c,angelscript_angelscript_source_1bc0e0
 1bcc50,24,verified,src/angelscript/angelscript/source/as_datatype.cpp,_ZN11asCDataTypeC2Ev
 1bcc70,136,verified,src/angelscript/angelscript/source/as_datatype.cpp,_ZN11asCDataTypeC2ERKS_
 1bcd00,4,verified,src/angelscript/angelscript/source/as_datatype.cpp,_ZN11asCDataTypeD2Ev
@@ -7410,6 +7412,7 @@ fff90,116,verified,src/snd/api.cpp,_ZN3snd10startPitchERKNS_3fnd10WeakHandleERKN
 22fe90,1260,verified,src/angelscript/fork/angelscript/source/as_compiler.cpp,_ZN11asCCompiler15CompileOperatorEP13asCScriptNodeP14asCExprContextS3_S3_10eTokenTypeb
 2303e0,2272,verified,src/angelscript/angelscript/source/as_compiler.cpp,_ZN11asCCompiler16CompileConditionEP13asCScriptNodeP14asCExprContext
 231380,112,verified,src/angelscript/angelscript/source/as_compiler.cpp,_ZN12asCExprValue15SetNullConstantEv
+231400,1520,verified,src/angelscript/angelscript/source/unplaced_3.c,angelscript_angelscript_source_231400
 231b40,1180,verified,src/angelscript/angelscript/source/as_compiler.cpp,_ZN11asCCompiler24CompilePostFixExpressionEP8asCArrayIP13asCScriptNodeEP14asCExprContext
 2324a0,548,verified,src/angelscript/angelscript/source/as_compiler.cpp,_ZN11asCCompiler21CompileExpressionTermEP13asCScriptNodeP14asCExprContext
 2326e0,196,verified,src/angelscript/angelscript/source/as_compiler.cpp,_ZN14asCExprContext5ClearEv
@@ -13356,6 +13359,7 @@ fff90,116,verified,src/snd/api.cpp,_ZN3snd10startPitchERKNS_3fnd10WeakHandleERKN
 40a6b0,64,verified,src/physx/source/geomutils/src/GuSweepTests.cpp,_ZZL23sweepBox_ConvexCoreGeomRKN5physx10PxGeometryERKNS_12PxTransformTIfEERKNS_13PxBoxGeometryES6_RKNS_2Gu3BoxERKNS_7PxVec3TIfEEfRNS_14PxGeomSweepHitENS_7PxFlagsINS_9PxHitFlag4EnumEtEEfPNS_20PxQueryThreadContextEENK10BoxSupport12supportLocalESH_
 40a6f0,8,verified,src/physx/source/geomutils/src/GuSweepTests.cpp,_ZZL26sweepConvex_ConvexCoreGeomRKN5physx10PxGeometryERKNS_12PxTransformTIfEERKNS_20PxConvexMeshGeometryES6_RKNS_7PxVec3TIfEEfRNS_14PxGeomSweepHitENS_7PxFlagsINS_9PxHitFlag4EnumEtEEfPNS_20PxQueryThreadContextEEN17ConvexCoreSupportD0Ev
 40a700,8,verified,src/physx/source/geomutils/src/GuSweepTests.cpp,_ZZL26sweepConvex_ConvexCoreGeomRKN5physx10PxGeometryERKNS_12PxTransformTIfEERKNS_20PxConvexMeshGeometryES6_RKNS_7PxVec3TIfEEfRNS_14PxGeomSweepHitENS_7PxFlagsINS_9PxHitFlag4EnumEtEEfPNS_20PxQueryThreadContextEENK17ConvexCoreSupport9getMarginEv
+40a710,32,disputed,src/physx/source/geomutils/src/unplaced_7.c,physx_source_geomutils_src_40a710
 40a730,8,verified,src/physx/source/geomutils/src/GuSweepTests.cpp,_ZZL26sweepConvex_ConvexCoreGeomRKN5physx10PxGeometryERKNS_12PxTransformTIfEERKNS_20PxConvexMeshGeometryES6_RKNS_7PxVec3TIfEEfRNS_14PxGeomSweepHitENS_7PxFlagsINS_9PxHitFlag4EnumEtEEfPNS_20PxQueryThreadContextEEN13ConvexSupportD0Ev
 40a740,8,verified,src/physx/source/geomutils/src/GuSweepTests.cpp,_ZZL26sweepConvex_ConvexCoreGeomRKN5physx10PxGeometryERKNS_12PxTransformTIfEERKNS_20PxConvexMeshGeometryES6_RKNS_7PxVec3TIfEEfRNS_14PxGeomSweepHitENS_7PxFlagsINS_9PxHitFlag4EnumEtEEfPNS_20PxQueryThreadContextEENK13ConvexSupport9getMarginEv
 40a760,864,verified,src/physx/source/geomutils/src/GuSweepTests.cpp,_ZZL26sweepConvex_ConvexCoreGeomRKN5physx10PxGeometryERKNS_12PxTransformTIfEERKNS_20PxConvexMeshGeometryES6_RKNS_7PxVec3TIfEEfRNS_14PxGeomSweepHitENS_7PxFlagsINS_9PxHitFlag4EnumEtEEfPNS_20PxQueryThreadContextEENK13ConvexSupport12supportLocalESD_
@@ -16592,6 +16596,7 @@ fff90,116,verified,src/snd/api.cpp,_ZN3snd10startPitchERKNS_3fnd10WeakHandleERKN
 5d66c0,600,verified,src/nn/vfx/unplaced_3.c,nn_vfx_5d66c0
 5d6960,324,verified,src/nn/vfx/unplaced_6.c,nn_vfx_5d6960
 5d6ac0,2436,verified,src/nn/vfx/unplaced.c,nn_vfx_5d6ac0
+5d7520,428,verified,src/nn/vfx/unplaced_10.c,nn_vfx_5d7520
 5d76e0,320,verified,src/game/unnamed/r001_0.c,GameHr_5d76e0
 5d7840,296,verified,src/nn/vfx/unplaced_3.c,nn_vfx_5d7840
 5d79a0,936,verified,src/nn/vfx/unplaced_3.c,nn_vfx_5d79a0
@@ -16822,6 +16827,7 @@ fff90,116,verified,src/snd/api.cpp,_ZN3snd10startPitchERKNS_3fnd10WeakHandleERKN
 5eab00,312,verified,src/nn/g3d/shape_anim_obj.c,ShapeAnimObj_Unknown3
 5eac40,628,verified,src/nn/g3d/shape_anim_obj.c,ShapeAnimObj_Unknown7
 5eaee0,8,verified,src/game/game_trivial_forwarders.cpp,_Z15GameStub_5eaee0m
+5eaef0,1736,disputed,src/game/unplaced_53.c,game_5eaef0
 5eb5c0,92,verified,src/nn/g3d/unplaced.c,nn_g3d_5eb5c0
 5eb620,252,verified,src/game/unnamed/b003_3.c,GameHr_5eb620
 5eb740,1168,disputed,src/nn/g3d/unplaced_12.c,nn_g3d_5eb740
@@ -17063,6 +17069,7 @@ fff90,116,verified,src/snd/api.cpp,_ZN3snd10startPitchERKNS_3fnd10WeakHandleERKN
 604000,20,verified,src/game/unnamed/v000_1.c,GameHr_604000
 604020,36,verified,src/game/unnamed/b004_0.c,GameHr_604020
 604050,4,verified,src/game/game_trivial.cpp,_Z15GameStub_604050v
+604060,144,verified,src/game/unplaced_53.c,game_604060
 6040f0,60,verified,src/game/unnamed/b004_0.c,GameHr_6040f0
 604130,24,verified,src/game/unnamed/b004_0.c,GameHr_604130
 604160,1496,verified,src/game/unplaced_35.c,game_604160
@@ -18253,6 +18260,7 @@ fff90,116,verified,src/snd/api.cpp,_ZN3snd10startPitchERKNS_3fnd10WeakHandleERKN
 66be80,312,verified,src/hub/resources.cpp,hub::ColumnAliasSuffix
 66bfc0,276,verified,src/hub/resources_impl.c,Resources_66bfc0
 66c0e0,404,verified,src/hub/resources.cpp,hub::AcquireTableResource
+66c280,512,verified,src/hub/unplaced.c,hub_66c280
 66c4e0,884,verified,src/fs/manager.c,Manager_66c4e0
 66c8c0,468,verified,src/hub/resources.cpp,hub::ResourceVariant
 66caa0,344,verified,src/game/templates/deque.cpp,_ZNSt3__15dequeIPN4game11UnrecoveredILj3EEENS_9allocatorIS4_EEED2B8nn210108Ev
@@ -23425,6 +23433,7 @@ fff90,116,verified,src/snd/api.cpp,_ZN3snd10startPitchERKNS_3fnd10WeakHandleERKN
 831890,264,verified,src/game/anonymous/variable_register.c,game_anonymous_VariableRegister_RegisterRead_closure_Invoke
 8319a0,28,verified,src/llvm-libcxx-21/libcxx/include/__functional/function.h,"std::__1::__function::__func<game::(anonymous namespace)::VariableRegister::RegisterRead()::'lambda'(char const*), void (char const*)>::target(std::type_info const&)"
 8319c0,12,verified,src/llvm-libcxx-21/libcxx/include/__functional/function.h,"std::__1::__function::__func<game::(anonymous namespace)::VariableRegister::RegisterRead()::'lambda'(char const*), void (char const*)>::target_type()"
+8319e0,748,disputed,src/llvm-libcxx-21/libcxx/include//functional/unplaced_26.c,llvm_libcxx_21_libcxx_include___functional_8319e0
 831e20,608,verified,src/game/anonymous/variable_register.c,VariableRegister_831e20
 832080,420,verified,src/game/anonymous/variable_register.c,VariableRegister_832080
 832230,548,verified,src/game/anonymous/variable_register.c,VariableRegister_832230
@@ -24340,8 +24349,10 @@ fff90,116,verified,src/snd/api.cpp,_ZN3snd10startPitchERKNS_3fnd10WeakHandleERKN
 86b760,300,verified,src/game/proc_progress.c,ProcProgress_Destructor
 86b890,344,verified,src/game/proc_progress.c,ProcProgress_DeletingDestructor
 86b9f0,424,verified,src/game/proc_progress.c,ProcProgress_Unknown2
+86bbc0,332,verified,src/game/unplaced_53.c,game_86bbc0
 86bd10,208,verified,src/game/proc_progress_async.c,ProcProgressAsync_Destructor
 86bde0,252,verified,src/game/proc_progress_async.c,ProcProgressAsync_DeletingDestructor
+86bee0,436,disputed,src/game/unplaced_53.c,game_86bee0
 86c0b0,52,verified,src/game/singleton/singletons.cpp,_ZN4game9SingletonINS_12GameScheduleELb0EED2Ev
 86c0f0,88,verified,src/game/singleton/singletons.cpp,_ZN4game9SingletonINS_12GameScheduleELb0EED0Ev
 86c160,1304,verified,src/game/unnamed/r002_0.c,GameHr_86c160
@@ -24745,6 +24756,7 @@ fff90,116,verified,src/snd/api.cpp,_ZN3snd10startPitchERKNS_3fnd10WeakHandleERKN
 87be80,68,verified,src/game/anonymous/proc_game_save_data.c,game_anonymous_ProcGameSaveData_StatusTask_closure_CloneInto
 87bed0,60,verified,src/llvm-libcxx-21/libcxx/include/__functional/function.h,"std::__1::__function::__func<game::(anonymous namespace)::ProcGameSaveData::StatusTask(game::GameSaveConst::Task const&, game::GameUserConst::Status)::'lambda'(save::Fs*), void (save::Fs*)>::destroy()"
 87bf10,12,verified,src/llvm-libcxx-21/libcxx/include/__functional/function.h,"std::__1::__function::__func<game::(anonymous namespace)::ProcGameSaveData::StatusTask(game::GameSaveConst::Task const&, game::GameUserConst::Status)::'lambda'(save::Fs*), void (save::Fs*)>::destroy_deallocate()"
+87bf20,844,disputed,src/llvm-libcxx-21/libcxx/include//functional/unplaced_26.c,llvm_libcxx_21_libcxx_include___functional_87bf20
 87c2c0,28,verified,src/llvm-libcxx-21/libcxx/include/__functional/function.h,"std::__1::__function::__func<game::(anonymous namespace)::ProcGameSaveData::StatusTask(game::GameSaveConst::Task const&, game::GameUserConst::Status)::'lambda'(save::Fs*), void (save::Fs*)>::target(std::type_info const&)"
 87c2e0,12,verified,src/llvm-libcxx-21/libcxx/include/__functional/function.h,"std::__1::__function::__func<game::(anonymous namespace)::ProcGameSaveData::StatusTask(game::GameSaveConst::Task const&, game::GameUserConst::Status)::'lambda'(save::Fs*), void (save::Fs*)>::target_type()"
 87c2f0,4,verified,src/game/game_trivial.cpp,_Z15GameStub_87c2f0v
