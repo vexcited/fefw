@@ -1792,6 +1792,7 @@ __int64 cuda_driver_8a4c0(unsigned int* a1)
   return 0;
 }
 
+__attribute__((no_builtin("memset", "memcpy", "memmove")))
 __int64 cuda_driver_8ade0(__int64 a1, unsigned int a2, unsigned int a3)
 {
   unsigned int v3;

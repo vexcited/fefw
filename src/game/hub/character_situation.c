@@ -342,6 +342,7 @@ bool CharacterSituation_f94550()
   return v12 == 0;
 }
 
+__attribute__((no_builtin("memset", "memcpy", "memmove")))
 void game_hub_CharacterSituation_Rebuild(__int64 a1, _DWORD* a2)
 {
   __int64 v3;

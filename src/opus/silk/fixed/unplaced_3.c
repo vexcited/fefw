@@ -265,6 +265,7 @@ __int64 opus_silk_fixed_64800(__int64 a1, int* a2, int a3)
   }
 }
 
+__attribute__((no_builtin("memset", "memcpy", "memmove")))
 unsigned __int8 opus_silk_fixed_64c40(__int64 a1, unsigned int* a2, int a3)
 {
   unsigned int v3;

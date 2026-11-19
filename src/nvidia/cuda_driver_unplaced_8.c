@@ -4868,6 +4868,7 @@ long double cuda_driver_1a51a0(__int64 a1, __int64 a2, int* a3, __int64 a4)
   return result;
 }
 
+__attribute__((no_builtin("memset", "memcpy", "memmove")))
 _DWORD* cuda_driver_1a5840(__int64 a1, __int64* a2, __int64 a3)
 {
   __int64 v3;

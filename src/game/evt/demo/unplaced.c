@@ -1527,6 +1527,7 @@ LABEL_16:
   return result;
 }
 
+__attribute__((no_builtin("memset", "memcpy", "memmove")))
 unsigned __int8 game_evt_demo_11547e0(__int64 a1)
 {
   __int64 v1;

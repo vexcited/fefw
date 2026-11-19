@@ -39,7 +39,7 @@ __int64 game_cutscene_181ab60(__int64 result)
     }
     goto LABEL_18;
   }
-  v4 = (float)(*(float*)(*(_QWORD*)(result + 48) + 24LL) /
+  v4 = (float)(*(volatile float*)(*(_QWORD*)(result + 48) + 24LL) /
                0x1.e000000000000p+5f) *
        0x1.e000000000000p+5f;
   v5 = 0x0.0p+0f;

@@ -5258,6 +5258,7 @@ __int64 PrimitiveDrawManager_1997bc0(__int64* a1, __int64 a2)
   return v2;
 }
 
+__attribute__((no_builtin("memset", "memcpy", "memmove")))
 __int64 gfxa_PrimitiveDrawManager_Impl_draw2D_closure_Invoke(
     __int64 result, _QWORD* a2, _DWORD* a3, _DWORD* a4, __int64 a5, int** a6)
 {

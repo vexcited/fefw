@@ -11,6 +11,7 @@ int strncmp_plt(const char*, const char*, unsigned __int64);
 unsigned __int64 strlen_plt(const char*);
 __int64 nvidia_cuda_devtools_common_tools_shared_226220(__int64 a1);
 
+__attribute__((no_builtin("memset", "memcpy", "memmove")))
 __int64 nvidia_cuda_devtools_common_tools_shared_226220(__int64 a1)
 {
   int v1;

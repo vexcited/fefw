@@ -155,6 +155,7 @@ __int64 delete_lfnt(__int64 a1, _QWORD* a2);
 __int64 CACHE_ENTRY_calloc(__int64 a1);
 __int64 CACHE_ENTRY_free(__int64 result, unsigned __int64* a2);
 
+__attribute__((no_builtin("memset", "memcpy", "memmove")))
 __int64 make_graymap(__int64 a1, __int64 a2, __int64 a3, int a4)
 {
   __int16 v4;

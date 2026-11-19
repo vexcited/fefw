@@ -8,6 +8,7 @@ __int64 find_best_pitch(__int64 result, __int64, int, int, __int64, char,
 __int64 memset_plt(__int64, int, unsigned __int64);
 __int64 opus_celt_3b720(__int64 a1, __int64 a2, int a3, int a4, _DWORD* a5);
 
+__attribute__((no_builtin("memset", "memcpy", "memmove")))
 __int64 opus_celt_3b720(__int64 a1, __int64 a2, int a3, int a4, _DWORD* a5)
 {
   int v5;

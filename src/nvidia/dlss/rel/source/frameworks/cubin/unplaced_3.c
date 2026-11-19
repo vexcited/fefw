@@ -10,6 +10,7 @@ __int64 nvidia_dlss_rel_source_common_b4c00(__int64 result, __int64, __int64,
 __int64 nvidia_dlss_rel_source_frameworks_cubin_a5720(_QWORD* a1, __int64 a2,
                                                       char a3);
 
+__attribute__((no_builtin("memset", "memcpy", "memmove")))
 __int64 nvidia_dlss_rel_source_frameworks_cubin_a5720(_QWORD* a1, __int64 a2,
                                                       char a3)
 {

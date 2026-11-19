@@ -614,6 +614,7 @@ __int64 game_anonymous_ProcGrowSeq_LevelUp_closure_Invoke(__int64 result)
   return result;
 }
 
+__attribute__((no_builtin("memset", "memcpy", "memmove")))
 __int64 game_anonymous_ProcGrowSeq_UpdateLearn_closure_Invoke(__int64 result,
                                                               __int64* a2)
 {

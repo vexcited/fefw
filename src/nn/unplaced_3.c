@@ -4388,6 +4388,7 @@ long double nn_65fa80(__int64 a1, __int64 a2, __int64 a3, unsigned __int64 a4)
   return result;
 }
 
+__attribute__((no_builtin("memset", "memcpy", "memmove")))
 __int64 nn_65fce0(__int64 a1, int a2, __int64 a3, unsigned __int64 a4)
 {
   __int64 v6;

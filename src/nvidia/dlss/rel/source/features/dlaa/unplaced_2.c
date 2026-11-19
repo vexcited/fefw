@@ -324,6 +324,7 @@ _WORD* nvidia_dlss_rel_source_features_dlaa_7de60(_QWORD* a1, __int64* a2,
       if ((v10 & 7) != 0) {
         v15 = (_QWORD*)v11;
         do {
+          __asm__("" : "+r"(v15));
           *(_BYTE*)v15 = 0;
           v15 = (_QWORD*)((char*)v15 + 1);
           --v13;
@@ -331,6 +332,7 @@ _WORD* nvidia_dlss_rel_source_features_dlaa_7de60(_QWORD* a1, __int64* a2,
       }
       if ((unsigned __int64)(v9 - v8) <= 0xFFFFFFFFFFFFFFF8LL) {
         do {
+          __asm__("" : "+r"(v15));
           *v15++ = 0;
         } while (v15 != v12);
       }
@@ -1395,6 +1397,7 @@ LABEL_159:
   return result;
 }
 
+__attribute__((no_builtin("memset", "memcpy", "memmove")))
 __int64 nvidia_dlss_rel_source_features_dlaa_7f7c0(_QWORD* a1, __int64* a2,
                                                    _QWORD* a3, __int64* a4)
 {
@@ -3827,6 +3830,7 @@ _WORD* nvidia_dlss_rel_source_features_dlaa_85080(_QWORD* a1, __int64* a2,
       if ((v10 & 7) != 0) {
         v15 = (_QWORD*)v11;
         do {
+          __asm__("" : "+r"(v15));
           *(_BYTE*)v15 = 0;
           v15 = (_QWORD*)((char*)v15 + 1);
           --v13;
@@ -3834,6 +3838,7 @@ _WORD* nvidia_dlss_rel_source_features_dlaa_85080(_QWORD* a1, __int64* a2,
       }
       if ((unsigned __int64)(v9 - v8) <= 0xFFFFFFFFFFFFFFF8LL) {
         do {
+          __asm__("" : "+r"(v15));
           *v15++ = 0;
         } while (v15 != v12);
       }
@@ -7415,6 +7420,7 @@ _WORD* nvidia_dlss_rel_source_features_dlaa_8c4a0(_QWORD* a1, __int64* a2,
       if ((v10 & 7) != 0) {
         v15 = (_QWORD*)v11;
         do {
+          __asm__("" : "+r"(v15));
           *(_BYTE*)v15 = 0;
           v15 = (_QWORD*)((char*)v15 + 1);
           --v13;
@@ -7422,6 +7428,7 @@ _WORD* nvidia_dlss_rel_source_features_dlaa_8c4a0(_QWORD* a1, __int64* a2,
       }
       if ((unsigned __int64)(v9 - v8) <= 0xFFFFFFFFFFFFFFF8LL) {
         do {
+          __asm__("" : "+r"(v15));
           *v15++ = 0;
         } while (v15 != v12);
       }

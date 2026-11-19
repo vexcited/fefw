@@ -54,6 +54,7 @@ static void *arg_n(va_list ap, unsigned int n)
 	return p;
 }
 
+__attribute__((no_builtin("memset", "memcpy", "memmove")))
 int vfscanf(FILE *restrict f, const char *restrict fmt, va_list ap)
 {
 	int width;

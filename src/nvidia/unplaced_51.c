@@ -868,6 +868,7 @@ bool nvidia_bbe30(__int64 a1)
          (*(_WORD*)(*(_QWORD*)(a1 + 32) + 36LL) & 1) == 0;
 }
 
+__attribute__((no_builtin("memset", "memcpy", "memmove")))
 __int64 nvidia_cc780(_QWORD* a1)
 {
   __int64 v1;

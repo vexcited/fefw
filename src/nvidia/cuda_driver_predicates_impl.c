@@ -784,6 +784,7 @@ bool cuda_driver_predicates_10ee70(_QWORD* a1, _QWORD* a2)
   return *a1 == *a2 && *(_DWORD*)(*a1 + 21864LL) != 1;
 }
 
+__attribute__((no_builtin("memset", "memcpy", "memmove")))
 __int64 cuda_driver_predicates_10f0d0(_QWORD* a1, __int64 a2)
 {
   _QWORD* v4;

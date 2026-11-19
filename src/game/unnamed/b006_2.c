@@ -10862,6 +10862,7 @@ __int64 GameHr_867800(__int64 a1)
                               a1);
 }
 
+__attribute__((no_builtin("memset", "memcpy", "memmove")))
 void GameHr_8679c0()
 {
   __int64* v0;

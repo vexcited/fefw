@@ -1581,6 +1581,7 @@ LABEL_15:
   return v17;
 }
 
+__attribute__((no_builtin("memset", "memcpy", "memmove")))
 __int64 nvidia_e26e0(_QWORD* a1, __int128* a2, __int64* a3)
 {
   __int64 v6;

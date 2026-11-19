@@ -3641,6 +3641,7 @@ void memory_d3c160(__int64 a1)
   }
 }
 
+__attribute__((no_builtin("memset", "memcpy", "memmove")))
 __int64 memory_e59440(__int64 a1, __int64 a2)
 {
 

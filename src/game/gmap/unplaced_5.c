@@ -8450,6 +8450,7 @@ void game_gmap_165b330(__int64** a1, __int64* a2)
   }
 }
 
+__attribute__((no_builtin("memset", "memcpy", "memmove")))
 void game_gmap_167b240(__int64* a1, __int64* a2)
 {
   __int64 v2;
