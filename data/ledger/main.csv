@@ -21420,6 +21420,7 @@ fff90,116,verified,src/snd/api.cpp,_ZN3snd10startPitchERKNS_3fnd10WeakHandleERKN
 7aeaa0,92,verified,src/game/unnamed/b006_0.c,GameHr_7aeaa0
 7aeb00,1324,verified,src/game/unnamed/b006_0.c,GameHr_7aeb00
 7af0c0,92,verified,src/game/unnamed/b006_0.c,GameHr_7af0c0
+7af120,2352,verified,src/game/map/unplaced_22.c,game_map_7af120
 7afa60,340,verified,src/game/unnamed/b006_0.c,GameHr_7afa60
 7afbe0,128,verified,src/game/unnamed/b006_0.c,GameHr_7afbe0
 7afc60,56,verified,src/game/unnamed/b006_0.c,GameHr_7afc60
@@ -62190,6 +62191,7 @@ fffcb0,1244,verified,src/game/unnamed/b014_1.c,GameHr_fffcb0
 1415dd0,4,verified,src/memory/new_delete.cpp,complete destructor at 0x1415dd0
 1415de0,80,verified,src/memory/new_delete.cpp,deleting destructor at 0x1415de0
 1415e30,116,verified,src/game/facility/scene_character_look_at.c,SceneCharacterLookAt_Unknown2
+1415ec0,1432,verified,src/game/facility/unplaced_27.c,game_facility_1415ec0
 14164a0,868,verified,src/game/facility/scene_character_look_at.c,SceneCharacterLookAt_14164a0
 1416860,404,verified,src/game/facility/scene_character_look_at.c,SceneCharacterLookAt_1416860
 1416a00,232,verified,src/game/facility/scene_character_look_at.c,SceneCharacterLookAt_1416a00
