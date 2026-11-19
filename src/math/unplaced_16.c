@@ -104,7 +104,7 @@ __attribute__((swiftcall)) void math_716e80(PSEUDO_X8 x8_, __int64 result,
   do {
     v11 = v6;
     *((_DWORD*)&v60_.v60 + v6++) = 0;
-    if (v11 <= 1) {
+    if (!(v11 > 1)) {
       v12 = 0x0.0p+0f;
       v13 = v7;
       v14 = v6;
@@ -119,7 +119,7 @@ __attribute__((swiftcall)) void math_716e80(PSEUDO_X8 x8_, __int64 result,
         v17 = *((float*)&v60_.v60 + v6);
         v18 = -v16;
         v19 = v6;
-        if (v17 <= 0x0.0p+0f) {
+        if (!(v17 > 0x0.0p+0f)) {
           v18 = v16;
         }
         *((float*)&v60_.v60 + v6) = v17 - v18;
@@ -129,7 +129,7 @@ __attribute__((swiftcall)) void math_716e80(PSEUDO_X8 x8_, __int64 result,
           v20 = v20 + (float)(PSEUDO_UNFUSED(v21 * v21));
         } while (v19 != 3);
         v22 = sqrtf(0x1.0000000000000p+1f / v20);
-        if (fabs(v22) <= 0x1.fffffe0000000p+127f) {
+        if (!(fabs(v22) > 0x1.fffffe0000000p+127f)) {
           v23 = v11;
           *(float*)&v60_.v60 = v22 * *(float*)&v60_.v60;
           *((float*)&v60_.v60 + 1) = v22 * *((float*)&v60_.v60 + 1);

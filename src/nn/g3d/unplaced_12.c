@@ -516,7 +516,7 @@ float32x4_t nn_g3d_5ecf20(_QWORD* a1, __int64 a2, int a3, float32x4_t result)
         LANES128(result).n128_f32[0] = v49 * LANES128(result).n128_f32[0];
         *(_DWORD*)(v7 + 16) = LANES128(result).n128_u32[0];
         v54 = *(unsigned __int16*)(*a1 + 88LL);
-        if (v54 >= 2) {
+        if (!(v54 < 2)) {
           v55 = 4 * v47;
           v56 = v45 + 1;
           v57 = v54 - 1;
@@ -637,10 +637,9 @@ float32x4_t nn_g3d_5ecf20(_QWORD* a1, __int64 a2, int a3, float32x4_t result)
                 return result;
               }
             }
-            if (LANES128(result).n128_f32[0] <= v77) {
+            if (!(LANES128(result).n128_f32[0] > v77)) {
               v59 = v85;
-            }
-            else {
+            } else {
               v59 = (__int64*)v7;
             }
             v60 = v59[3];
@@ -723,7 +722,7 @@ float32x4_t nn_g3d_5ecf20(_QWORD* a1, __int64 a2, int a3, float32x4_t result)
             *(float*)(v7 + 48) * LANES128(result).n128_f32[0];
         *(_DWORD*)(v7 + 16) = LANES128(result).n128_u32[0];
         v15 = *(unsigned __int16*)(*a1 + 88LL);
-        if (v15 >= 2) {
+        if (!(v15 < 2)) {
           v16 = v15 - 1;
           do {
             while (1) {
@@ -839,10 +838,9 @@ float32x4_t nn_g3d_5ecf20(_QWORD* a1, __int64 a2, int a3, float32x4_t result)
                 return result;
               }
             }
-            if (LANES128(result).n128_f32[0] <= v33) {
+            if (!(LANES128(result).n128_f32[0] > v33)) {
               v17 = v85;
-            }
-            else {
+            } else {
               v17 = (__int64*)v7;
             }
             v18 = v17[3];
@@ -972,7 +970,7 @@ __int64 nn_g3d_5f4c60(__int64 result)
     v5 = vnegq_f64(v2);
     v6 = (float32x4_t*)(*(_QWORD*)result + 48LL);
     do {
-      if (fabsf(LANES128(v6[1]).n128_f32[1]) >= 0x1.0624de0000000p-10f) {
+      if (!(fabsf(LANES128(v6[1]).n128_f32[1]) < 0x1.0624de0000000p-10f)) {
         v24 = *v6;
         v25 = vmulq_f32(v24, v24);
         LANES128(v25).n128_u64[0] =

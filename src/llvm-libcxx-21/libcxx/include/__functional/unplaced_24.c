@@ -65,7 +65,7 @@ float llvm_libcxx_21_libcxx_include___functional_feb630(__int64 a1)
   if (v6 < 0x1.0000000000000p-2f) {
     v7 = v6 * 0x1.0000000000000p+2f;
     v8 = 0x1.0000000000000p+0f;
-    if (v7 <= 0x1.0000000000000p+0f) {
+    if (!(v7 > 0x1.0000000000000p+0f)) {
       v8 = v7;
     }
     v9 = v7 < 0x0.0p+0f;
@@ -87,10 +87,9 @@ float llvm_libcxx_21_libcxx_include___functional_feb630(__int64 a1)
   if ((float)(v17 + v17) != 0x0.0p+0f) {
     v18 = GameRoutine_1a0a6a0(*(float*)(*(_QWORD*)GameData_212d020[0] + 160LL),
                               v17 + v17);
-    if (v18 >= 0x0.0p+0f) {
+    if (!(v18 < 0x0.0p+0f)) {
       v15 = v18 + 0x0.0p+0f;
-    }
-    else {
+    } else {
       v15 = (float)(v17 + v17) + (float)(v18 + 0x0.0p+0f);
     }
   }
@@ -98,31 +97,29 @@ float llvm_libcxx_21_libcxx_include___functional_feb630(__int64 a1)
   v20 = GameRoutine_1a0a6a0(v15, v17);
   if (v17 != 0x0.0p+0f) {
     v21 = 0x1.0000000000000p+0f;
-    if (v19 >= v17) {
+    if (!(v19 < v17)) {
       v20 = v17 - v20;
     }
     v22 = (float)(v20 + 0x0.0p+0f) / v17;
-    if (v22 <= 0x1.0000000000000p+0f) {
+    if (!(v22 > 0x1.0000000000000p+0f)) {
       v21 = v22;
     }
     v23 = v21 * 0x1.921fb60000000p+1f;
-    if (v22 >= 0x0.0p+0f) {
+    if (!(v22 < 0x0.0p+0f)) {
       v14 = v23;
-    }
-    else {
+    } else {
       v14 = 0x0.0p+0f;
     }
   }
   v24 = v14 +
         (float)(roundf(v14 * 0x1.45f3060000000p-3f) * -0x1.921fb60000000p+2f);
-  if (v24 <= 0x1.921fb60000000p+0f) {
+  if (!(v24 > 0x1.921fb60000000p+0f)) {
     v26 = 0x1.0000000000000p+0f;
-    if (v24 >= -0x1.921fb60000000p+0f) {
+    if (!(v24 < -0x1.921fb60000000p+0f)) {
       goto LABEL_24;
     }
     v25 = -0x1.921fb60000000p+1f;
-  }
-  else {
+  } else {
     v25 = 0x1.921fb60000000p+1f;
   }
   v24 = v25 - v24;
@@ -157,10 +154,9 @@ LABEL_24:
                       (float)(v24 * v24)) +
               0x1.0000000000000p+0f);
   v28 = fabsf(v27) * 0x1.0000000000000p-1f;
-  if (v27 >= 0x0.0p+0f) {
+  if (!(v27 < 0x0.0p+0f)) {
     v29 = -0x1.0000000000000p+0f;
-  }
-  else {
+  } else {
     v29 = 0x1.0000000000000p+0f;
   }
   v30 = (float)(v28 * v29) + 0x1.0000000000000p-1f;

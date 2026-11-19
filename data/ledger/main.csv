@@ -16606,7 +16606,7 @@ fff90,116,verified,src/snd/api.cpp,_ZN3snd10startPitchERKNS_3fnd10WeakHandleERKN
 5d8dd0,484,verified,src/nn/vfx/unplaced.c,nn_vfx_5d8dd0
 5d8fc0,432,verified,src/game/unnamed/b003_2.c,GameHr_5d8fc0
 5d91c0,428,verified,src/game/unnamed/b003_2.c,GameHr_5d91c0
-5d93c0,948,disputed,src/nn/vfx/unplaced_9.c,nn_vfx_5d93c0
+5d93c0,948,verified,src/nn/vfx/unplaced_9.c,nn_vfx_5d93c0
 5d98e0,468,verified,src/game/unnamed/r001_0.c,GameHr_5d98e0
 5d9ac0,348,verified,src/game/unnamed/b003_2.c,GameHr_5d9ac0
 5d9c60,2400,verified,src/nn/vfx/unplaced.c,nn_vfx_5d9c60
@@ -16840,7 +16840,7 @@ fff90,116,verified,src/snd/api.cpp,_ZN3snd10startPitchERKNS_3fnd10WeakHandleERKN
 5ec620,664,verified,src/game/unnamed/b004_0.c,GameHr_5ec620
 5ecce0,204,verified,src/game/unnamed/b004_0.c,GameHr_5ecce0
 5ecdc0,320,verified,src/game/unnamed/b004_0.c,GameHr_5ecdc0
-5ecf20,892,disputed,src/nn/g3d/unplaced_12.c,nn_g3d_5ecf20
+5ecf20,1504,verified,src/nn/g3d/unplaced_12.c,nn_g3d_5ecf20
 5ed500,464,verified,src/nn/g3d/unplaced.c,nn_g3d_5ed500
 5ed6f0,228,verified,src/nn/g3d/unplaced_2.c,nn_g3d_5ed6f0
 5eefa0,248,verified,src/nn/g3d/model_anim_obj.c,ModelAnimObj_Unknown9
@@ -16888,7 +16888,7 @@ fff90,116,verified,src/snd/api.cpp,_ZN3snd10startPitchERKNS_3fnd10WeakHandleERKN
 5f4620,492,disputed,src/nn/g3d/unplaced_2.c,nn_g3d_5f4620
 5f48c0,480,verified,src/nn/g3d/unplaced.c,nn_g3d_5f48c0
 5f4aa0,428,verified,src/nn/g3d/unplaced_2.c,nn_g3d_5f4aa0
-5f4c60,700,disputed,src/nn/g3d/unplaced_12.c,nn_g3d_5f4c60
+5f4c60,956,verified,src/nn/g3d/unplaced_12.c,nn_g3d_5f4c60
 5f5020,220,verified,src/nn/g3d/unplaced.c,nn_g3d_5f5020
 5f5100,340,verified,src/nn/g3d/unplaced_2.c,nn_g3d_5f5100
 5f5260,412,verified,src/nn/g3d/unplaced_10.c,nn_g3d_5f5260
@@ -40481,7 +40481,7 @@ d75140,736,verified,src/game/unplaced_3.c,game_d75140
 d75440,24,verified,src/llvm-libcxx-21/libcxx/include/__vector/vector.h,std::vector<T>::__throw_length_error()
 d75460,4372,verified,src/game/unnamed/b028_0.c,GameHr_d75460
 d775b0,1008,verified,src/game/unplaced_21.c,game_d775b0
-d779b0,1000,disputed,src/game/unplaced_51.c,game_d779b0
+d779b0,1312,verified,src/game/unplaced_51.c,game_d779b0
 d783a0,932,verified,src/game/unnamed/b011_1.c,GameHr_d783a0
 d78880,320,verified,src/game/unnamed/b011_1.c,GameHr_d78880
 d78a40,248,verified,src/game/unnamed/b011_1.c,GameHr_d78a40
