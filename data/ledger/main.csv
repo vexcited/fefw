@@ -1498,7 +1498,7 @@ dff40,80,verified,src/snd/env.cpp,_ZN3snd3Env5resetEv
 dffb0,136,verified,src/snd/env.cpp,_ZN3snd3Env4playEPKcPKvS2_S2_hPv
 e0040,1096,verified,src/snd/unplaced_12.c,snd_e0040
 e0580,1392,verified,src/snd/env.c,Env_e0580
-e0b20,648,disputed,src/snd/env.c,Env_e0b20
+e0b20,608,disputed,src/snd/env.c,Env_e0b20
 e18a0,468,verified,src/snd/env_wind.cpp,_ZN3snd3Env11removeGroupEPNS0_5GroupE
 e1ab0,224,verified,src/snd/env.cpp,_ZN3snd3Env13restartFieldsEv
 e1ba0,176,verified,src/snd/game_alloc_impl.c,GameAlloc_e1ba0
@@ -16606,7 +16606,7 @@ fff90,116,verified,src/snd/api.cpp,_ZN3snd10startPitchERKNS_3fnd10WeakHandleERKN
 5d8dd0,484,verified,src/nn/vfx/unplaced.c,nn_vfx_5d8dd0
 5d8fc0,432,verified,src/game/unnamed/b003_2.c,GameHr_5d8fc0
 5d91c0,428,verified,src/game/unnamed/b003_2.c,GameHr_5d91c0
-5d93c0,1044,disputed,src/nn/vfx/unplaced_9.c,nn_vfx_5d93c0
+5d93c0,948,disputed,src/nn/vfx/unplaced_9.c,nn_vfx_5d93c0
 5d98e0,468,verified,src/game/unnamed/r001_0.c,GameHr_5d98e0
 5d9ac0,348,verified,src/game/unnamed/b003_2.c,GameHr_5d9ac0
 5d9c60,2400,verified,src/nn/vfx/unplaced.c,nn_vfx_5d9c60
@@ -16870,7 +16870,7 @@ fff90,116,verified,src/snd/api.cpp,_ZN3snd10startPitchERKNS_3fnd10WeakHandleERKN
 5f2280,172,verified,src/nn/g3d/model_anim_obj.c,ModelAnimObj_Unknown35
 5f2340,468,verified,src/nn/g3d/unplaced_6.c,nn_g3d_5f2340
 5f2520,176,verified,src/nn/g3d/unplaced_11.c,nn_g3d_5f2520
-5f2710,516,disputed,src/nn/g3d/unplaced.c,nn_g3d_5f2710
+5f2710,508,disputed,src/nn/g3d/unplaced.c,nn_g3d_5f2710
 5f2920,484,verified,src/nn/g3d/unplaced.c,nn_g3d_5f2920
 5f2ba0,216,verified,src/nn/g3d/model_anim_obj.c,ModelAnimObj_Unknown45
 5f2ca0,216,verified,src/nn/g3d/model_anim_obj.c,ModelAnimObj_Unknown47
@@ -42728,7 +42728,7 @@ e4bf40,1348,verified,src/game/unnamed/b012_2.c,GameHr_e4bf40
 e4c790,292,verified,src/game/combat/legion_gambit.c,LegionGambit_e4c790
 e4c8c0,752,verified,src/game/combat/legion_gambit.c,LegionGambit_e4c8c0
 e4cbb0,244,verified,src/game/unnamed/e004_0.c,GameHr_e4cbb0
-e4cdb0,1804,disputed,src/game/combat/unplaced_11.c,game_combat_e4cdb0
+e4cdb0,1692,disputed,src/game/combat/unplaced_11.c,game_combat_e4cdb0
 e4d550,1048,verified,src/game/combat/legion_gambit.c,LegionGambit_e4d550
 e4d990,1488,verified,src/game/combat/legion_gambit.c,LegionGambit_e4d990
 e4df90,280,verified,src/game/templates/vector.cpp,_ZNSt3__16vectorIN4game16UnrecoveredValueILj8ELm4ELm4EEENS_9allocatorIS3_EEE9push_backB8nn210108ERKS3_
@@ -47271,7 +47271,7 @@ f942b0,124,verified,src/game/unnamed/b014_0.c,GameHr_f942b0
 f94340,440,verified,src/game/hub/character_situation.c,CharacterSituation_Destructor
 f94500,80,verified,src/memory/new_delete.cpp,deleting destructor at 0xf94500
 f94550,232,verified,src/game/hub/character_situation.c,CharacterSituation_f94550
-f94720,1088,disputed,src/game/hub/character_situation.c,game_hub_CharacterSituation_Rebuild
+f94720,1000,disputed,src/game/hub/character_situation.c,game_hub_CharacterSituation_Rebuild
 f960c0,1644,verified,src/game/hub/unplaced_2.c,game_hub_f960c0
 f96800,500,verified,src/game/hub/unplaced_2.c,game_hub_f96800
 f96ec0,2568,verified,src/game/hub/unplaced_2.c,game_hub_f96ec0
@@ -57499,7 +57499,7 @@ fffcb0,1244,verified,src/game/unnamed/b014_1.c,GameHr_fffcb0
 12a3010,4,verified,src/memory/new_delete.cpp,complete destructor at 0x12a3010
 12a3020,44,verified,src/memory/new_delete.cpp,deleting destructor at 0x12a3020
 12a3050,16,verified,src/game/ai_think.c,AIThink_SpecialEntrustEnhancementCondition_Unknown7
-12a3060,888,disputed,src/game/ai_think.c,AIThink_12a3060
+12a3060,888,verified,src/game/ai_think.c,AIThink_12a3060
 12a3600,112,verified,src/game/ai_think.c,AIThink_12a3600
 12a3680,644,verified,src/game/ai_think.c,game_AIThink_ArtsPosition
 12a3980,112,verified,src/game/ai_think.c,AIThink_12a3980
@@ -77471,7 +77471,7 @@ fffcb0,1244,verified,src/game/unnamed/b014_1.c,GameHr_fffcb0
 17a3f40,1532,verified,src/game/unnamed/b023_2.c,GameHr_17a3f40
 17a4580,1564,verified,src/game/unnamed/b023_2.c,GameHr_17a4580
 17a4be0,220,verified,src/game/unnamed/b023_2.c,GameHr_17a4be0
-17a4cc0,2000,disputed,src/game/menu/anonymous/unplaced_7.c,game_menu_anonymous_17a4cc0
+17a4cc0,1936,disputed,src/game/menu/anonymous/unplaced_7.c,game_menu_anonymous_17a4cc0
 17a5a00,768,verified,src/game/menu/anonymous/unplaced_9.c,game_menu_anonymous_17a5a00
 17a5d10,376,verified,src/game/unnamed/b023_2.c,GameHr_17a5d10
 17a5ea0,420,verified,src/game/unnamed/b023_2.c,GameHr_17a5ea0
@@ -84091,7 +84091,7 @@ fffcb0,1244,verified,src/game/unnamed/b014_1.c,GameHr_fffcb0
 18d7c60,440,verified,src/game/templates/unplaced_4.c,game_templates_18d7c60
 18d8140,300,verified,src/game/unnamed/b025_2.c,GameHr_18d8140
 18d8270,24,verified,src/llvm-libcxx-21/libcxx/include/__vector/vector.h,std::vector<T>::__throw_length_error()
-18d82a0,2812,disputed,src/llvm-libcxx-21/libcxx/include//vector/unplaced_12.c,llvm_libcxx_21_libcxx_include___vector_18d82a0
+18d82a0,2340,disputed,src/llvm-libcxx-21/libcxx/include//vector/unplaced_12.c,llvm_libcxx_21_libcxx_include___vector_18d82a0
 18d94e0,376,verified,src/llvm-libcxx-21/libcxx/include//vector/unplaced.c,llvm_libcxx_21_libcxx_include___vector_18d94e0
 18d9660,828,verified,src/llvm-libcxx-21/libcxx/include//vector/unplaced.c,llvm_libcxx_21_libcxx_include___vector_18d9660
 18d9aa0,396,verified,src/fs/section.c,Section_18d9aa0

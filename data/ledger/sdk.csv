@@ -14497,7 +14497,7 @@ ffee0,324,verified,src/nn/fs/unplaced.c,nn_fs_GetAndClearMemoryReportInfo
 43d540,76,verified,src/nn/fontll/itype/fsglue.c,delete_key
 43d590,116,verified,src/nn/fontll/itype/fsglue.c,get_dropout_control
 43d610,368,verified,src/nn/fontll/itype/unplaced_2.c,fsg_ReduceMatrix
-43d780,3324,disputed,src/nn/fontll/itype/unplaced_3.c,make_graymap
+43d780,2364,disputed,src/nn/fontll/itype/unplaced_3.c,make_graymap
 43e6c0,2612,verified,src/nn/fontll/itype/unplaced_3.c,nn_fontll_itype_43e6c0
 43f120,2404,verified,src/nn/fontll/itype/unplaced_3.c,trim_convert
 43fb70,80,verified,src/nn/fontll/itype/fs_font.c,copy_graymap
@@ -14554,7 +14554,7 @@ ffee0,324,verified,src/nn/fs/unplaced.c,nn_fs_GetAndClearMemoryReportInfo
 44d780,232,verified,src/nn/fontll/itype/unplaced_3.c,nn_fontll_itype_44d780
 44d880,688,verified,src/nn/fontll/itype/unplaced_3.c,nn_fontll_itype_44d880
 44dba0,868,verified,src/nn/fontll/itype/unplaced_7.c,nn_fontll_itype_44dba0
-44e2c0,1064,verified,src/nn/fontll/itype/unplaced_3.c,nn_fontll_itype_44e2c0
+44e2c0,668,disputed,src/nn/fontll/itype/unplaced_3.c,nn_fontll_itype_44e2c0
 44e9e0,292,verified,src/nn/fontll/itype/unplaced_3.c,nn_fontll_itype_44e9e0
 44eb20,300,verified,src/nn/unnamed/h000_0.c,SdkHr_44eb20
 44ec60,52,verified,src/nn/unnamed/h000_0.c,SdkHr_44ec60
@@ -26266,7 +26266,7 @@ ffee0,324,verified,src/nn/fs/unplaced.c,nn_fs_GetAndClearMemoryReportInfo
 660e70,8,verified,src/nn/sdk_trivial.cpp,_Z14SdkStub_660e70m
 660e80,8,verified,src/nn/sdk_trivial.cpp,_Z14SdkStub_660e80m
 660e90,140,verified,src/nn/unnamed/s003_2.c,SdkHr_660e90
-660f20,3416,disputed,src/nn/unplaced_3.c,nn_660f20
+660f20,3416,verified,src/nn/unplaced_3.c,nn_660f20
 661d40,164,verified,src/nn/unnamed/s003_2.c,SdkHr_661d40
 661df0,44,verified,src/nn/unnamed/s003_2.c,SdkHr_661df0
 661e20,48,verified,src/nn/unnamed/s003_2.c,SdkHr_661e20
@@ -30178,7 +30178,7 @@ ffee0,324,verified,src/nn/fs/unplaced.c,nn_fs_GetAndClearMemoryReportInfo
 7264c0,544,verified,src/math/unplaced_14.c,math_7264c0
 726720,1044,verified,src/math/unplaced_4.c,math_726720
 726b80,296,verified,src/math/unplaced_4.c,math_726b80
-727520,588,disputed,src/math/unplaced_4.c,math_727520
+727520,732,disputed,src/math/unplaced_4.c,math_727520
 728260,344,verified,src/math/matrix.cpp,_ZN4nerd14linear_algebraplIffLl21ELl21ENS0_11LMatrixType5DenseILb1EEES4_EEDaRKNS0_7LMatrixIT_XT1_EXT2_ET3_EERKNS5_IT0_XT1_EXT2_ET4_EE
 7283c0,868,verified,src/nn/unnamed/s004_2.c,SdkHr_7283c0
 728730,800,verified,src/math/unplaced_10.c,math_728730
@@ -31430,7 +31430,7 @@ ffee0,324,verified,src/nn/fs/unplaced.c,nn_fs_GetAndClearMemoryReportInfo
 7796a0,4,verified,src/nnmusl/nnmusl_libc_forwarders2.cpp,putchar
 7797b0,288,verified,src/nnmusl/stdio/swprintf.c,swprintf
 7798e0,308,verified,src/nnmusl/stdio/unplaced.c,nnmusl_stdio_7798e0
-779a20,2428,disputed,src/nnmusl/stdio/vfscanf.c,vfscanf
+779a20,908,disputed,src/nnmusl/stdio/vfscanf.c,vfscanf
 77a8c0,200,verified,src/musl/src/temp/__randname.c,__randname
 77a990,4,verified,src/libc/quick_exit.cpp,LockQuickExitState
 77a9a0,4,verified,src/libc/quick_exit.cpp,UnlockQuickExitState
