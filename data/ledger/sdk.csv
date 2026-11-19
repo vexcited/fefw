@@ -9209,6 +9209,7 @@ ffee0,324,verified,src/nn/fs/unplaced.c,nn_fs_GetAndClearMemoryReportInfo
 212060,456,verified,src/ne10/modules/dsp/NE10_fft_generic_int32.neonintrinsic.cpp,_ZL50ne10_mixed_radix_generic_butterfly_int32_neon_implILb0ELb1EEvP11int32x4x2_tPKS0_PKiPK20ne10_fft_cpx_int32_tS1_
 212260,480,verified,src/ne10/modules/dsp/NE10_fft_generic_int32.neonintrinsic.cpp,_ZL50ne10_mixed_radix_generic_butterfly_int32_neon_implILb0ELb0EEvP11int32x4x2_tPKS0_PKiPK20ne10_fft_cpx_int32_tS1_
 212460,804,verified,src/ne10/modules/dsp/NE10_fft_generic_int32.neonintrinsic.cpp,_ZL27ne10_c2c_1d_last_stage_neonILb0ELb1EEvP11int32x4x2_tPKS0_PK20ne10_fft_cpx_int32_tiii
+2127a0,1092,disputed,src/ne10/modules/dsp/unplaced.c,ne10_modules_dsp_2127a0
 212d40,416,verified,src/ne10/modules/dsp/NE10_fft_generic_int32.neonintrinsic_impl.c,NE10_fft_generic_int32_neonintrinsic_212d40
 212f00,232,verified,src/ne10/modules/dsp/NE10_fft_generic_int32.neonintrinsic.cpp,_ZL31ne10_radix_butterfly_int32_neonILi4ELb1ELb0ELb1EEvP11int32x4x2_tPKS0_PK20ne10_fft_cpx_int32_tiii
 213000,532,verified,src/nn/audio/ne10/modules/dsp/NE10_fft_generic_int32.neonintrinsic_impl.c,ne10_radix_butterfly_int32_neon_5_true_false_true
@@ -18826,6 +18827,7 @@ ffee0,324,verified,src/nn/fs/unplaced.c,nn_fs_GetAndClearMemoryReportInfo
 54fb30,20,verified,src/libwebm/mkvparser/mkvparser.cc,_ZN9mkvparser8ChaptersC2EPNS_7SegmentExxxx
 54fb60,240,verified,src/libwebm/mkvparser/mkvparser_impl.c,mkvparser_Chapters_Destroy_Chapters
 54fc60,104,verified,src/libwebm/mkvparser/mkvparser.cc,_ZN9mkvparser8Chapters7Edition5ClearEv
+54fd70,96,verified,src/libwebm/mkvparser/unplaced_6.c,libwebm_mkvparser_54fd70
 54fdd0,8,verified,src/libwebm/mkvparser/mkvparser.cc,_ZNK9mkvparser8Chapters15GetEditionCountEv
 54fde0,28,verified,src/libwebm/mkvparser/mkvparser.cc,_ZNK9mkvparser8Chapters10GetEditionEi
 54fe00,448,verified,src/libwebm/mkvparser/mkvparser_impl.c,mkvparser_Chapters_ExpandEditionsArray
@@ -25120,6 +25122,7 @@ ffee0,324,verified,src/nn/fs/unplaced.c,nn_fs_GetAndClearMemoryReportInfo
 64cef0,132,verified,src/nvidia/unplaced_9.c,nvidia_64cef0
 64cf80,608,verified,src/nvidia/unplaced_23.c,nvidia_64cf80
 64d260,216,verified,src/nvidia/unplaced_9.c,nvidia_64d260
+64d350,1104,verified,src/nvidia/unplaced_49.c,nvidia_64d350
 64d7a0,404,verified,src/nvidia/unplaced_9.c,nvidia_64d7a0
 64d950,176,verified,src/nvidia/unplaced_19.c,nvidia_64d950
 64da00,780,verified,src/nvidia/unplaced_9.c,nvidia_64da00
@@ -30123,11 +30126,13 @@ ffee0,324,verified,src/nn/fs/unplaced.c,nn_fs_GetAndClearMemoryReportInfo
 716760,456,verified,src/math/unplaced_4.c,math_716760
 716930,852,verified,src/math/unplaced_4.c,nerd_linear_algebra_cross
 716c90,492,verified,src/math/unplaced_4.c,linear_algebra_716c90
+716e80,756,disputed,src/math/unplaced_16.c,math_716e80
 717280,1052,verified,src/math/detail.c,nerd_linear_algebra_Detail_LEigenDecompositionSymmetricTridiagonal_float
 717720,256,verified,src/math/kalman_reset.cpp,_ZN2fw4math16MapStateIndices9EPNS0_8IndexMapEPNS0_12StateIndicesILm9EEE
 718680,1868,verified,src/math/dynamic_matrix_product.cpp,_ZN4nerd14linear_algebramlIffLl3ELln30ELl3ENS0_11LMatrixType5DenseILb1EEES4_EEDaRKNS0_7LMatrixIT_XT1_EXT2_ET4_EERKNS5_IT0_XT2_EXT3_ET5_EE
 718e20,1496,verified,src/math/symmetric_inverse.cpp,fw::math::InverseSymmetric30
 7194e0,1836,verified,src/math/cholesky.cpp,_ZN4nerd14linear_algebra34LLowerCholeskyDecompositionInPlaceIfLln30ENS0_11LMatrixType5DenseILb1EEEEEDaRNS0_7LMatrixIT_XT0_EXT0_ET1_EE
+719ca0,1884,disputed,src/math/unplaced_16.c,math_719ca0
 71a690,928,verified,src/math/unplaced_4.c,math_71a690
 71aa40,1960,verified,src/math/dynamic_matrix_product.cpp,_ZN4nerd14linear_algebramlIffLl9ELln24ELl9ENS0_11LMatrixType5DenseILb1EEES4_EEDaRKNS0_7LMatrixIT_XT1_EXT2_ET4_EERKNS5_IT0_XT2_EXT3_ET5_EE
 71b340,2504,verified,src/math/dynamic_matrix_product.cpp,_ZN4nerd14linear_algebramlIffLl9ELln24ELln24ENS0_11LMatrixType5DenseILb1EEES4_EEDaRKNS0_7LMatrixIT_XT1_EXT2_ET4_EERKNS5_IT0_XT2_EXT3_ET5_EE
@@ -30221,6 +30226,7 @@ ffee0,324,verified,src/nn/fs/unplaced.c,nn_fs_GetAndClearMemoryReportInfo
 7349c0,624,verified,src/nn/unnamed/s005_0.c,SdkHr_7349c0
 734c60,472,verified,src/nn/unnamed/s005_0.c,SdkHr_734c60
 734e60,1268,verified,src/math/unplaced_11.c,math_734e60
+735c60,808,disputed,src/math/unplaced_16.c,math_735c60
 735fc0,356,verified,src/nerd/gyro_pointing/gyro_pointing_state_detector.cpp,_ZN4nerd13gyro_pointing25GyroPointingStateDetectorC2ENS_4Unit12BaseQuantityIfNSt3__15ratioILln2ELl1EEEJNS5_ILl1ELl1EEENS5_ILl0ELl1EEES6_S8_EEENS3_IfS8_JS8_S8_NS5_ILln1ELl1EEES8_EEE
 736170,248,verified,src/nerd/gyro_pointing/gyro_pointing_state_detector.cpp,_ZN4nerd13gyro_pointing25GyroPointingStateDetector9AddSampleERKNS0_7ImuDataE
 736270,1032,verified,src/nerd/gyro_pointing/gyro_pointing_state_detector_impl.c,nerd_gyro_pointing_GyroPointingStateDetector_AddCorrectedGlobalAcc
@@ -30578,6 +30584,7 @@ ffee0,324,verified,src/nn/fs/unplaced.c,nn_fs_GetAndClearMemoryReportInfo
 741f00,48,verified,src/nn/irsensor/irsensor_api_extra.cpp,_ZN2nn8irsensor6system30UnregisterAppletResourceUserIdERKNS_6applet20AppletResourceUserIdE
 741f30,48,verified,src/nn/irsensor/irsensor_api_extra.cpp,_ZN2nn8irsensor6system22EnableAppletToGetInputERKNS_6applet20AppletResourceUserIdEb
 741f60,184,verified,src/nerd_gillette_internal/unplaced.c,nerd_gillette_internal_OnAssertionFailed
+742020,252,disputed,src/nerd_gillette_internal/unplaced_3.c,nerd_gillette_internal_742020
 742180,248,verified,src/nerd_gillette_internal/unplaced_2.c,nerd_gillette_internal_742180
 7422e0,424,verified,src/nn/irsensor/detail/unplaced.c,nn_irsensor_GetHandAnalysisImageState
 7424e0,208,verified,src/nn/irsensor/unplaced.c,nn_irsensor_7424e0
