@@ -38089,7 +38089,6 @@ cb8f20,284,verified,src/game/hub/unplaced.c,game_hub_cb8f20
 cb9060,72,verified,src/game/unnamed/b010_2.c,GameHr_cb9060
 cb90b0,392,verified,src/game/unnamed/f000_0.c,GameHr_cb90b0
 cb9240,516,verified,src/game/unnamed/b010_3.c,GameHr_cb9240
-cb9480,716,verified,src/game/hub/unplaced.c,game_hub_cb9480
 cb9a30,1000,verified,src/game/hub/unplaced.c,game_hub_cb9a30
 cb9e40,472,verified,src/game/hub/unplaced.c,game_hub_cb9e40
 cba040,344,verified,src/game/script/hub_character_natives_impl.c,HubCharacterNatives_cba040

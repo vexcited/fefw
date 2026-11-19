@@ -18507,7 +18507,7 @@ ffee0,324,verified,src/nn/fs/unplaced.c,nn_fs_GetAndClearMemoryReportInfo
 537720,140,verified,src/nandroid/libstagefright/mpeg2ts/ATSParser.cpp,_ZN8nandroid9ATSParser6StreamD0Ev
 5377b0,176,verified,src/nandroid/libstagefright/mpeg2ts/ATSParser.cpp,_ZN8nandroid9ATSParser6Stream5flushEPNS0_9SyncEventE
 537860,1216,verified,src/nandroid/libstagefright/mpeg2ts/ATSParser.cpp,_ZN8nandroid9ATSParser6Stream8parsePESEPNS_10ABitReaderEPNS0_9SyncEventE
-537d40,1156,verified,src/nandroid/libstagefright/mpeg2ts/ATSParser.cpp,_ZN8nandroid9ATSParser6Stream13onPayloadDataEjmmjPKhmiPNS0_9SyncEventE
+537d40,1152,verified,src/nandroid/libstagefright/mpeg2ts/ATSParser.cpp,_ZN8nandroid9ATSParser6Stream13onPayloadDataEjmmjPKhmiPNS0_9SyncEventE
 538340,332,verified,src/nandroid/libstagefright/mpeg2ts/ATSParser.cpp,_ZN8nandroid9ATSParser6Stream23getPesScramblingControlEPNS_10ABitReaderEPi
 538860,184,verified,src/nandroid/libstagefright/mpeg2ts/ATSParser.cpp,_ZN8nandroid9ATSParser6Stream13getSourceTypeEv
 538920,344,verified,src/nandroid/libstagefright/mpeg2ts/ATSParser.cpp,_ZN8nandroid9ATSParserC2Ej
@@ -30178,7 +30178,7 @@ ffee0,324,verified,src/nn/fs/unplaced.c,nn_fs_GetAndClearMemoryReportInfo
 7264c0,544,verified,src/math/unplaced_14.c,math_7264c0
 726720,1044,verified,src/math/unplaced_4.c,math_726720
 726b80,296,verified,src/math/unplaced_4.c,math_726b80
-727520,1784,disputed,src/math/unplaced_4.c,math_727520
+727520,588,disputed,src/math/unplaced_4.c,math_727520
 728260,344,verified,src/math/matrix.cpp,_ZN4nerd14linear_algebraplIffLl21ELl21ENS0_11LMatrixType5DenseILb1EEES4_EEDaRKNS0_7LMatrixIT_XT1_EXT2_ET3_EERKNS5_IT0_XT1_EXT2_ET4_EE
 7283c0,868,verified,src/nn/unnamed/s004_2.c,SdkHr_7283c0
 728730,800,verified,src/math/unplaced_10.c,math_728730
