@@ -61,8 +61,7 @@ void Element_1886580(__int64, char);
 void GameHr_157e0f0(__int64*, __int64, _BYTE*);
 void GameHr_18af120(_QWORD*, __int64*);
 void LayoutAccessor_1572ac0(__int64*, __int64, unsigned int, unsigned int);
-void game_menu_LegionPoolMenu_UpdateEquipList(__int64 a1,
-                                                         __int64 (*a2)());
+void game_menu_LegionPoolMenu_UpdateEquipList(__int64 a1, __int64 (*a2)());
 __int64 LegionPoolMenu_Unknown94(__int64 a1);
 bool game_menu_LegionPoolMenu_SortAndFilter_lambda1_Invoke(__int64 a1,
                                                            __int64* a2,
@@ -607,8 +606,7 @@ __int64 LegionPoolMenu_Unknown85(__int64 a1)
   return result;
 }
 
-void game_menu_LegionPoolMenu_UpdateEquipList(__int64 a1,
-                                                         __int64 (*a2)())
+void game_menu_LegionPoolMenu_UpdateEquipList(__int64 a1, __int64 (*a2)())
 {
   bool v4;
   __int64 v5;
@@ -730,8 +728,8 @@ LABEL_23:
     v15 = std___1___shared_weak_count_lock_alt1(v12);
     if (v15 != 0) {
       v16 = v15;
-      (*((void (**)(__int64* __return_ptr, __int64 (**)(void),
-                    __int64 (***)(void)))v14[9] +
+      (*((__attribute__((swiftcall)) void (**)(PSEUDO_X8, __int64 (**)(void),
+                                               __int64 (***)(void)))v14[9] +
          2))(v17, v14 + 9, &f_.v22);
       if (atomic_fetch_add((atomic_ullong* volatile)(v16 + 8),
                            0xFFFFFFFFFFFFFFFFLL) == 0) {

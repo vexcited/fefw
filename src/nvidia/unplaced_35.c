@@ -207,13 +207,13 @@ __int64 tools_shared_readelf_225160(__int64, unsigned int, unsigned int,
 __int64 zstd_decompress_223310(__int64 result, __int64);
 bool CudaDriverRoutine_1a0620(_BOOL8 result);
 bool CudaDriverRoutine_1a0fd0();
-bool CudaDriverRoutine_98110(_BOOL8 result);
-bool CudaDriverRoutine_985b0(int);
+unsigned __int8 CudaDriverRoutine_98110(_BOOL8 result);
+unsigned __int8 CudaDriverRoutine_985b0(int);
 bool CudaDriverRoutine_a2850(__int64);
-bool CudaDriverRoutine_bbe70(__int64);
-bool CudaDriverStub_985a0(__int64);
-bool CudaDriverStub_d4800(__int64);
-bool cuda_driver_predicates_9ae50(__int64);
+unsigned __int8 CudaDriverRoutine_bbe70(__int64);
+unsigned __int8 CudaDriverStub_985a0(__int64);
+unsigned __int8 CudaDriverStub_d4800(__int64);
+unsigned __int8 cuda_driver_predicates_9ae50(__int64);
 const char* CudaDriverRoutine_12ec20(const char* result);
 extern _DWORD CudaDriverData_1432df4;
 extern _QWORD CudaDriverData_1422bb0;
@@ -2912,9 +2912,8 @@ __int64 nvidia_8eea0(__int64 result)
     for (i = (int*)(v8 + 4); *(_DWORD*)(v8 + 4) == 1; i = (int*)(v8 + 4)) {
       __builtin_arm_dmb(0xDu);
       ++CudaDriverData_1432c64;
-      v11 = *(__int64 (**)(
-          __int64, __int64,
-          __int64))&CudaDriverData_1432c60[4 * *(unsigned int*)(v8 + 8) + 4];
+      v11 = *(__int64 (**)(__int64, __int64, __int64))&CudaDriverData_1432c60
+                [4 * (unsigned __int64)*(unsigned int*)(v8 + 8) + 4];
       if (v11 != nullptr) {
         result = v11(v3, *(_QWORD*)(v8 + 16), (__int64)&v23);
         *(_QWORD*)(v8 + 24) = v23;
@@ -2964,9 +2963,8 @@ __int64 nvidia_8eea0(__int64 result)
         }
         __builtin_arm_dmb(0xDu);
         ++CudaDriverData_1432c64;
-        v22 = *(__int64 (**)(
-            __int64, __int64,
-            __int64))&CudaDriverData_1432c60[4 * *(unsigned int*)(v18 + 8) + 4];
+        v22 = *(__int64 (**)(__int64, __int64, __int64))&CudaDriverData_1432c60
+                  [4 * (unsigned __int64)*(unsigned int*)(v18 + 8) + 4];
         if (v22 == nullptr) {
           break;
         }
@@ -6157,7 +6155,9 @@ __int64 nvidia_1cabe0(__int64 a1, __int64 a2, unsigned __int64* a3)
           return 0;
         }
         else if (a3[1] <= v8) {
-          return (*(__int64 (**)(void))(*(_QWORD*)(a3[2] + 8) + 23376000LL))();
+          return (*(__int64 (**)(__int64, unsigned __int64, unsigned __int64,
+                                 __int64))(*(_QWORD*)(a3[2] + 8) + 23376000LL))(
+              a3[2], *a3, a3[1], 0xE360000000000001LL);
         }
         else {
           return 10;

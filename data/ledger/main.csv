@@ -15297,7 +15297,7 @@ fff90,116,verified,src/snd/api.cpp,_ZN3snd10startPitchERKNS_3fnd10WeakHandleERKN
 56b600,16,verified,src/nn/ui2d/alignment.c,Alignment_56b600
 56b610,136,verified,src/nn/ui2d/alignment.c,Alignment_56b610
 56b6a0,8,verified,src/game/game_trivial.cpp,_Z15GameStub_56b6a0m
-56b6b0,172,verified,src/nn/ui2d/alignment.c,Alignment_Unknown26
+56b6b0,180,verified,src/nn/ui2d/alignment.c,Alignment_Unknown26
 56b780,572,verified,src/nn/ui2d/alignment.c,Alignment_56b780
 56ba40,1616,verified,src/nn/ui2d/alignment.c,Alignment_56ba40
 56c0c0,388,verified,src/nn/ui2d/alignment.c,Alignment_56c0c0
@@ -15306,10 +15306,10 @@ fff90,116,verified,src/snd/api.cpp,_ZN3snd10startPitchERKNS_3fnd10WeakHandleERKN
 56cd60,108,verified,src/nn/ui2d/runtime_type_info.cpp,_ZNK2nn4ui2d9Alignment18GetRuntimeTypeInfoEv
 56cdd0,48,verified,src/game/unnamed/b002_2.c,GameHr_56cdd0
 56ce00,4,verified,src/game/game_trivial.cpp,_Z15GameStub_56ce00v
-56ce20,916,verified,src/nn/ui2d/alignment.c,Alignment_56ce20
+56ce20,1100,verified,src/nn/ui2d/alignment.c,Alignment_56ce20
 56d270,352,verified,src/nn/ui2d/unplaced_3.c,nn_ui2d_56d270
-56d3e0,2224,verified,src/nn/ui2d/alignment.c,Alignment_56d3e0
-56dd00,2304,verified,src/nn/ui2d/alignment.c,Alignment_56dd00
+56d3e0,2304,verified,src/nn/ui2d/alignment.c,Alignment_56d3e0
+56dd00,2352,verified,src/nn/ui2d/alignment.c,Alignment_56dd00
 56e670,12,verified,src/game/unnamed/v000_0.c,GameHr_56e670
 56e680,4,verified,src/game/game_trivial.cpp,_Z15GameStub_56e680v
 56e690,8,verified,src/game/game_trivial.cpp,_Z15GameStub_56e690mh

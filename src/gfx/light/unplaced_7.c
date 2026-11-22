@@ -18,7 +18,7 @@ float gfx_light_c53be0(__int64 a1)
   _QWORD* v3;
   float v4;
   __int64 v5;
-  void (*v6)(_QWORD* __return_ptr, __int64, float*);
+  __attribute__((swiftcall)) void (*v6)(PSEUDO_X8, __int64, float*);
   float result;
   int v8;
   float v9;
@@ -31,7 +31,8 @@ float gfx_light_c53be0(__int64 a1)
   if (v3 != nullptr) {
     v4 = *(float*)(a1 + 72);
     v5 = *((_QWORD*)&GameData_2203570 + 6 * v1 + 4);
-    v6 = *(void (**)(_QWORD* __return_ptr, __int64, float*))(*v3 + 48LL),
+    v6 = *(__attribute__((swiftcall)) void (**)(PSEUDO_X8, __int64, float*))(
+        *v3 + 48LL),
     result = COERCE_AS(__typeof__(result), PSEUDO_REGISTER(float, "s0", "=w"));
     v10 = v2 * v4;
     v6(v3, v5, &v10), result = COERCE_AS(__typeof__(result),

@@ -268,8 +268,8 @@ LABEL_12:
       v13 = std___1___shared_weak_count_lock(v10);
       if (v13 != 0) {
         v14 = v13;
-        (*((void (**)(_QWORD* __return_ptr, __int64 (**)(void),
-                      __int64 (***)(void)))v12[9] +
+        (*((__attribute__((swiftcall)) void (**)(PSEUDO_X8, __int64 (**)(void),
+                                                 __int64 (***)(void)))v12[9] +
            2))(v24, v12 + 9, &f_.v29);
         if (atomic_fetch_add((atomic_ullong* volatile)(v14 + 8),
                              0xFFFFFFFFFFFFFFFFLL) == 0) {

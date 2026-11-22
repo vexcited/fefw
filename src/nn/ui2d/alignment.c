@@ -1753,7 +1753,7 @@ void Alignment_56d3e0(float32x4_t* a1, float* a2, float* a3, float32x4_t* a4)
   float v53;
   float v54;
   float v55;
-  void (*v56)(float32x4_t* __return_ptr, float32x4_t*);
+  __attribute__((swiftcall)) void (*v56)(PSEUDO_X8, float32x4_t*);
   unsigned int v57;
   float v58;
   float v59;
@@ -2382,7 +2382,7 @@ void Alignment_56d3e0(float32x4_t* a1, float* a2, float* a3, float32x4_t* a4)
             v67 =
                 COERCE_AS(__typeof__(v67), PSEUDO_REGISTER(__n128, "v2", "=w"));
         v55 = LANES128(v160[0]).n128_f32[2] - LANES128(v160[0]).n128_f32[0];
-        v56 = *(void (**)(float32x4_t* __return_ptr, float32x4_t*))(
+        v56 = *(__attribute__((swiftcall)) void (**)(PSEUDO_X8, float32x4_t*))(
             LANES128(*(a1)).n128_u64[0] + 360),
         v120 = COERCE_AS(__typeof__(v120), PSEUDO_REGISTER(__n128, "v1", "=w")),
         v121 = COERCE_AS(__typeof__(v121), PSEUDO_REGISTER(__n128, "v2", "=w")),
