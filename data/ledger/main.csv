@@ -80517,7 +80517,7 @@ fffcb0,1244,verified,src/game/unnamed/b014_1.c,GameHr_fffcb0
 18352d0,360,verified,src/game/map/battle_info_window.c,BattleInfoWindow_18352d0
 1835440,380,verified,src/game/map/battle_info_window.c,BattleInfoWindow_1835440
 18355c0,96,verified,src/game/map/battle_info_window.cpp,_ZN4game3map16BattleInfoWindow15SetEquipVisibleEb
-1835620,392,disputed,src/game/map/unplaced_21.c,game_map_1835620
+1835620,404,verified,src/game/map/unplaced_21.c,game_map_1835620
 18357c0,652,verified,src/game/map/unplaced_6.c,game_map_18357c0
 1835ac0,3184,verified,src/game/map/battle_info_window_base.c,game_map_BattleInfoWindowBase_SetSkillIcons
 18369c0,312,verified,src/ui/game/control_lookup.cpp,_ZN2ui14LayoutAccessor10GetControlINS_7control7ElementEEENSt3__18weak_ptrIT_EERKNS4_17basic_string_viewIcNS4_11char_traitsIcEEEE
