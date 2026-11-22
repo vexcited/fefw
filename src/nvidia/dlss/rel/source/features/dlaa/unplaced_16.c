@@ -650,9 +650,9 @@ LABEL_11:
   return result;
 }
 
-__int64 nvidia_dlss_rel_source_features_dlaa_96b40(_QWORD* a1, __int64* a2,
-                                                   _QWORD* a3, __int64* a4)
-{
+__attribute__((no_builtin("memset", "memcpy", "memmove"))) __int64
+nvidia_dlss_rel_source_features_dlaa_96b40(_QWORD *a1, __int64 *a2, _QWORD *a3,
+                                           __int64 *a4) {
   __int64 v5;
   unsigned __int64 v8;
   unsigned __int64 v9;

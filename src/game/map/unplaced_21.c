@@ -104,10 +104,9 @@ __int64 game_map_1835620(_QWORD* a1, unsigned __int8 a2)
     return LayoutAccessor_1562cf0(v18, v13);
   }
   v11 = a1[19];
-  if (*(_QWORD*)(v11 + 808) != 0) {
-    v12 = *(unsigned __int8*)(*(_QWORD*)(v11 + 784) + 11277LL) >> 7;
-  }
-  else {
+  // The original reads the flag byte before it tests the pointer.
+  v12 = *(volatile unsigned __int8 *)(*(_QWORD *)(v11 + 784) + 11277LL) >> 7;
+  if (*(_QWORD *)(v11 + 808) == 0) {
     v12 = 1;
   }
   if ((((unsigned int)result | v12) & 1) == 0) {

@@ -306,7 +306,7 @@ __int64 nvidia_dlss_rel_source_features_dlaa_7fa60(_QWORD* a1, __int64* a2,
   }
   else {
     nvidia_dlss_rel_source_features_dlaa_76570(a3 + 1, v5, a1[2],
-                                               (a1[2] - v5) >> 3);
+                                               (__int64)(a1[2] - v5) >> 3);
     a3[4] = a1[4];
     nvidia_dlss_rel_source_features_dlaa_76570(a3 + 5, a1[5], a1[6],
                                                (__int64)(a1[6] - a1[5]) >> 3);
@@ -1016,7 +1016,7 @@ __int64 nvidia_dlss_rel_source_features_dlaa_84360(_QWORD* a1, __int64* a2,
   }
   else {
     nvidia_dlss_rel_source_features_dlaa_76570(a3 + 1, v5, a1[2],
-                                               (a1[2] - v5) >> 3);
+                                               (__int64)(a1[2] - v5) >> 3);
     a3[4] = a1[4];
     nvidia_dlss_rel_source_features_dlaa_76570(a3 + 5, a1[5], a1[6],
                                                (__int64)(a1[6] - a1[5]) >> 3);
@@ -1373,7 +1373,7 @@ __int64 nvidia_dlss_rel_source_features_dlaa_88780(_QWORD* a1, __int64* a2,
   }
   else {
     nvidia_dlss_rel_source_features_dlaa_76570(a3 + 1, v5, a1[2],
-                                               (a1[2] - v5) >> 3);
+                                               (__int64)(a1[2] - v5) >> 3);
     a3[4] = a1[4];
     nvidia_dlss_rel_source_features_dlaa_76570(a3 + 5, a1[5], a1[6],
                                                (__int64)(a1[6] - a1[5]) >> 3);
@@ -1697,7 +1697,7 @@ __int64 nvidia_dlss_rel_source_features_dlaa_8b5c0(_QWORD* a1, __int64* a2,
   }
   else {
     nvidia_dlss_rel_source_features_dlaa_76570(a3 + 1, v5, a1[2],
-                                               (a1[2] - v5) >> 3);
+                                               (__int64)(a1[2] - v5) >> 3);
     a3[4] = a1[4];
     nvidia_dlss_rel_source_features_dlaa_76570(a3 + 5, a1[5], a1[6],
                                                (__int64)(a1[6] - a1[5]) >> 3);
@@ -2042,7 +2042,7 @@ __int64 nvidia_dlss_rel_source_features_dlaa_8f740(_QWORD* a1, __int64* a2,
   }
   else {
     nvidia_dlss_rel_source_features_dlaa_76570(a3 + 1, v5, a1[2],
-                                               (a1[2] - v5) >> 3);
+                                               (__int64)(a1[2] - v5) >> 3);
     a3[4] = a1[4];
     nvidia_dlss_rel_source_features_dlaa_76570(a3 + 5, a1[5], a1[6],
                                                (__int64)(a1[6] - a1[5]) >> 3);

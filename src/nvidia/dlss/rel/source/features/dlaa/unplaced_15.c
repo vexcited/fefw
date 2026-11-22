@@ -1519,10 +1519,10 @@ nvidia_dlss_rel_source_features_dlaa_8bf40(__int64* a1, __int64* a2,
   }
   else {
     nvidia_dlss_rel_source_features_dlaa_76570(a3 + 1, a1[1], a1[2],
-                                               (a1[2] - a1[1]) >> 3);
+                                               (__int64)(a1[2] - a1[1]) >> 3);
     a3[4] = a1[4];
-    result = nvidia_dlss_rel_source_features_dlaa_76570(a3 + 5, a1[5], a1[6],
-                                                        (a1[6] - a1[5]) >> 3);
+    result = nvidia_dlss_rel_source_features_dlaa_76570(
+        a3 + 5, a1[5], a1[6], (__int64)(a1[6] - a1[5]) >> 3);
   }
   v19 = *a2;
   v20 = -2048;
@@ -2221,12 +2221,12 @@ nvidia_dlss_rel_source_features_dlaa_92520(__int64* a1, __int64* a2,
   }
   else {
     nvidia_dlss_rel_source_features_dlaa_76570(a3 + 1, a1[1], a1[2],
-                                               (a1[2] - a1[1]) >> 3),
+                                               (__int64)(a1[2] - a1[1]) >> 3),
         result = COERCE_AS(__typeof__(result),
                            PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
     a3[4] = a1[4];
     nvidia_dlss_rel_source_features_dlaa_76570(a3 + 5, a1[5], a1[6],
-                                               (a1[6] - a1[5]) >> 3),
+                                               (__int64)(a1[6] - a1[5]) >> 3),
         result = COERCE_AS(__typeof__(result),
                            PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
   }
@@ -2426,10 +2426,10 @@ nvidia_dlss_rel_source_features_dlaa_92940(__int64* a1, __int64* a2,
   }
   else {
     nvidia_dlss_rel_source_features_dlaa_76570(a3 + 1, a1[1], a1[2],
-                                               (a1[2] - a1[1]) >> 3);
+                                               (__int64)(a1[2] - a1[1]) >> 3);
     a3[4] = a1[4];
-    result = nvidia_dlss_rel_source_features_dlaa_76570(a3 + 5, a1[5], a1[6],
-                                                        (a1[6] - a1[5]) >> 3);
+    result = nvidia_dlss_rel_source_features_dlaa_76570(
+        a3 + 5, a1[5], a1[6], (__int64)(a1[6] - a1[5]) >> 3);
   }
   v19 = *a2;
   v20 = -1024;
@@ -2960,10 +2960,10 @@ nvidia_dlss_rel_source_features_dlaa_94720(__int64* a1, __int64* a2,
   }
   else {
     nvidia_dlss_rel_source_features_dlaa_76570(a3 + 1, a1[1], a1[2],
-                                               (a1[2] - a1[1]) >> 3);
+                                               (__int64)(a1[2] - a1[1]) >> 3);
     a3[4] = a1[4];
     nvidia_dlss_rel_source_features_dlaa_76570(a3 + 5, a1[5], a1[6],
-                                               (a1[6] - a1[5]) >> 3);
+                                               (__int64)(a1[6] - a1[5]) >> 3);
   }
   v37[0] = 1;
   v37[1] = 0x2000;
@@ -3103,10 +3103,10 @@ nvidia_dlss_rel_source_features_dlaa_949e0(__int64* a1, __int64* a2,
   }
   else {
     nvidia_dlss_rel_source_features_dlaa_76570(a3 + 1, a1[1], a1[2],
-                                               (a1[2] - a1[1]) >> 3);
+                                               (__int64)(a1[2] - a1[1]) >> 3);
     a3[4] = a1[4];
-    result = nvidia_dlss_rel_source_features_dlaa_76570(a3 + 5, a1[5], a1[6],
-                                                        (a1[6] - a1[5]) >> 3);
+    result = nvidia_dlss_rel_source_features_dlaa_76570(
+        a3 + 5, a1[5], a1[6], (__int64)(a1[6] - a1[5]) >> 3);
   }
   v19 = *a2;
   v20 = -512;
