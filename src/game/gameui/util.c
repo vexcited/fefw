@@ -2642,7 +2642,7 @@ __int64 Util_1576480(__int64 a1, __int64 a2, unsigned __int8 a3)
       }
     }
     v368_.v368 = "L_JobIcon00";
-    v368_.v369 = (_BYTE*)(((_UNKNOWN**)0x8LL) + 3);
+    v368_.v369 = (_BYTE*)(((_UNKNOWN**)((char*)0x8LL + 3)));
     result = v6[1];
     if (result != 0) {
       result = std___1___shared_weak_count_lock_alt1(result),
@@ -2722,7 +2722,7 @@ __int64 Util_1576480(__int64 a1, __int64 a2, unsigned __int8 a3)
                 }
                 v22 = v388_.v388;
                 v349_.v349 = (int*)"L_JobIcon00";
-                v349_.v350 = (__int64*)(((_UNKNOWN**)0x8LL) + 3);
+                v349_.v350 = (__int64*)(((_UNKNOWN**)((char*)0x8LL + 3)));
                 v23 = v388_.v388[1];
                 if (v23 == 0) {
                   goto LABEL_69;

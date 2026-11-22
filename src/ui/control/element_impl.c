@@ -494,7 +494,7 @@ void Element_1884d00(__int64 a1)
     }
   }
   v23[0] = "Collision";
-  v23[1] = (_BYTE*)(((_UNKNOWN**)0x8LL) + 1);
+  v23[1] = (_BYTE*)(((_UNKNOWN**)((char*)0x8LL + 1)));
   v10 = Element_1886290_alt1(a1, v23);
   if ((atomic_load_explicit((atomic_uchar* volatile)&GameData_226b450,
                             memory_order_acquire) &
@@ -515,7 +515,7 @@ void Element_1884d00(__int64 a1)
     LABEL_18:
       *(_QWORD*)(a1 + 192) = 0;
       v23[0] = "Collision";
-      v23[1] = (_BYTE*)(((_UNKNOWN**)0x8LL) + 1);
+      v23[1] = (_BYTE*)(((_UNKNOWN**)((char*)0x8LL + 1)));
       v10 = Element_1886290_alt1(a1, v23);
       if ((atomic_load_explicit((atomic_uchar* volatile)GameData_21318f0,
                                 memory_order_acquire) &
@@ -537,7 +537,7 @@ void Element_1884d00(__int64 a1)
         LABEL_27:
           *(_QWORD*)(a1 + 192) = 0;
           v23[0] = "Collision";
-          v23[1] = (_BYTE*)(((_UNKNOWN**)0x8LL) + 1);
+          v23[1] = (_BYTE*)(((_UNKNOWN**)((char*)0x8LL + 1)));
           v10 = Element_1886290_alt1(a1, v23);
           if ((atomic_load_explicit((atomic_uchar* volatile)GameData_2131900,
                                     memory_order_acquire) &
@@ -1080,7 +1080,7 @@ void Element_1886580(__int64 a1, char a2)
     goto LABEL_21;
   }
   v8[0] = "Collision";
-  v8[1] = (_BYTE*)(((_UNKNOWN**)0x8LL) + 1);
+  v8[1] = (_BYTE*)(((_UNKNOWN**)((char*)0x8LL + 1)));
   v3 = Element_1886290(a1, v8);
   if ((atomic_load_explicit((atomic_uchar* volatile)&GameData_226b450,
                             memory_order_acquire) &
@@ -1103,7 +1103,7 @@ void Element_1886580(__int64 a1, char a2)
   }
   *(_QWORD*)(a1 + 192) = 0;
   v8[0] = "Collision";
-  v8[1] = (_BYTE*)(((_UNKNOWN**)0x8LL) + 1);
+  v8[1] = (_BYTE*)(((_UNKNOWN**)((char*)0x8LL + 1)));
   v3 = Element_1886290(a1, v8);
   if ((atomic_load_explicit((atomic_uchar* volatile)GameData_21318f0,
                             memory_order_acquire) &

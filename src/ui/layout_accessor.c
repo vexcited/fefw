@@ -3719,7 +3719,7 @@ void LayoutAccessor_1587220(__int64 a1, __int64 a2, int a3, int a4, int a5,
       }
       LayoutAccessor_1562cf0_alt1((__int64)v19, (unsigned int*)v21);
       v39[0] = "L_Status_00";
-      v39[1] = (_BYTE*)(((_UNKNOWN**)0x8LL) + 3);
+      v39[1] = (_BYTE*)(((_UNKNOWN**)((char*)0x8LL + 3)));
       GameRoutine_15733c0_alt2((void*)(&v30_.v30), v19, v39);
       if (v30_.v31 != 0) {
         v22 = std___1___shared_weak_count_lock_alt1(v30_.v31);
@@ -3766,7 +3766,7 @@ void LayoutAccessor_1587220(__int64 a1, __int64 a2, int a3, int a4, int a5,
       }
     LABEL_19:
       v39[0] = "L_Status_01";
-      v39[1] = (_BYTE*)(((_UNKNOWN**)0x8LL) + 3);
+      v39[1] = (_BYTE*)(((_UNKNOWN**)((char*)0x8LL + 3)));
       GameRoutine_15733c0_alt2((void*)(&v30_.v30), v19, v39);
       if (v30_.v31 != 0) {
         v25 = std___1___shared_weak_count_lock_alt1(v30_.v31);
@@ -3857,7 +3857,7 @@ __int64 LayoutAccessor_1587520(__int64 a1, int a2, int a3, int a4, int a5,
       }
       LayoutAccessor_1562cf0_alt1((__int64)v13, (unsigned int*)v15);
       v20[0] = "L_Status_00";
-      v20[1] = (_BYTE*)(((_UNKNOWN**)0x8LL) + 3);
+      v20[1] = (_BYTE*)(((_UNKNOWN**)((char*)0x8LL + 3)));
       GameRoutine_15870e0((void*)(&v21_.v21), v13, v20);
       if (v21_.v22 != 0) {
         v16 = std___1___shared_weak_count_lock_alt1(v21_.v22);
@@ -3880,7 +3880,7 @@ __int64 LayoutAccessor_1587520(__int64 a1, int a2, int a3, int a4, int a5,
       }
     LABEL_16:
       v20[0] = "L_Status_01";
-      v20[1] = (_BYTE*)(((_UNKNOWN**)0x8LL) + 3);
+      v20[1] = (_BYTE*)(((_UNKNOWN**)((char*)0x8LL + 3)));
       GameRoutine_15870e0((void*)(&v21_.v21), v13, v20);
       result = v21_.v22;
       if (v21_.v22 != 0) {

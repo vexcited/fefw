@@ -1302,7 +1302,7 @@ void InfoTitle_18b8be0(__int64 a1)
   } v15_;
 
   v15_.v15[0] = "NumEndurance";
-  v15_.v15[1] = (_BYTE*)(((_UNKNOWN**)0x8LL) + 4);
+  v15_.v15[1] = (_BYTE*)(((_UNKNOWN**)((char*)0x8LL + 4)));
   Element_18863e0_alt1(a1, v15_.v15, 1);
   v15_.v15[0] = "Count";
   v15_.v15[1] = (_BYTE*)((_UNKNOWN*)0x5LL);
@@ -1422,7 +1422,7 @@ void InfoTitle_18b8e80(__int64 a1, _BYTE* a2)
   } v12_;
 
   v12_.v12[0] = "BodyAnnot";
-  v12_.v12[1] = (_BYTE*)(((_UNKNOWN**)0x8LL) + 1);
+  v12_.v12[1] = (_BYTE*)(((_UNKNOWN**)((char*)0x8LL + 1)));
   v4 = Element_1886290_alt1(a1, v12_.v12);
   if ((atomic_load_explicit((atomic_uchar* volatile)GameData_2130ea8,
                             memory_order_acquire) &
@@ -1465,7 +1465,7 @@ void InfoTitle_18b8e80(__int64 a1, _BYTE* a2)
       v8 = GameRoutine_a4dbe0_alt1(v7, a2, 0);
       GameRoutine_156c5d0_alt1((__int64)v4, (__int64)v8, 0);
       v12_.v12[0] = "AnnotAligne";
-      v12_.v12[1] = (_BYTE*)(((_UNKNOWN**)0x8LL) + 3);
+      v12_.v12[1] = (_BYTE*)(((_UNKNOWN**)((char*)0x8LL + 3)));
       v9 = Element_1886290_alt1(a1, v12_.v12);
       if ((atomic_load_explicit((atomic_uchar* volatile)GameData_21318e0,
                                 memory_order_acquire) &
@@ -1499,7 +1499,7 @@ void InfoTitle_18b90a0(__int64 a1)
   const char* v4[2];
 
   v4[0] = "BodyAnnot";
-  v4[1] = (_BYTE*)(((_UNKNOWN**)0x8LL) + 1);
+  v4[1] = (_BYTE*)(((_UNKNOWN**)((char*)0x8LL + 1)));
   v1 = Element_1886290_alt1(a1, v4);
   if ((atomic_load_explicit((atomic_uchar* volatile)GameData_2130ea8,
                             memory_order_acquire) &

@@ -2126,7 +2126,7 @@ __int64 game_menu_16ed000(_QWORD* a1)
       *(_BYTE*)(v20 + 88) &= ~1u;
     }
     v29[0] = "L_Special";
-    v29[1] = (_BYTE*)(((_UNKNOWN**)0x8LL) + 1);
+    v29[1] = (_BYTE*)(((_UNKNOWN**)((char*)0x8LL + 1)));
     GameRoutine_1114920((void*)(&v30_.v30), v3, v29);
     if (v30_.v31 == 0) {
       goto LABEL_30;
@@ -2262,7 +2262,7 @@ __int64 game_menu_16ed430(_QWORD* a1, char a2, char a3)
   }
 LABEL_6:
   f_.v42[0] = "L_Special";
-  f_.v42[1] = (_BYTE*)(((_UNKNOWN**)0x8LL) + 1);
+  f_.v42[1] = (_BYTE*)(((_UNKNOWN**)((char*)0x8LL + 1)));
   GameRoutine_1114920((void*)(&f_.v43), v10, f_.v42);
   if (f_.v44 == 0) {
     goto LABEL_17;
@@ -2754,7 +2754,7 @@ LABEL_10:
     }
   }
   v12[0] = "L_OverBlaze";
-  v12[1] = (_BYTE*)(((_UNKNOWN**)0x8LL) + 3);
+  v12[1] = (_BYTE*)(((_UNKNOWN**)((char*)0x8LL + 3)));
   GameRoutine_1573280((void*)(&v13_.v13), (__int64*)(a1 + 848), v12);
   if (v13_.v14 == 0) {
     return;

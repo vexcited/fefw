@@ -286,7 +286,7 @@ LABEL_41:
            (unsigned int)*(unsigned __int8*)(*(_QWORD*)(a1 + 832) + 50LL) - 1 >=
                2) {
     v49[0] = "L_JobIconM";
-    v49[1] = (_BYTE*)(((_UNKNOWN**)0x8LL) + 2);
+    v49[1] = (_BYTE*)(((_UNKNOWN**)((char*)0x8LL + 2)));
     GameRoutine_1587740((void*)(&v50_.v50), (__int64*)(a1 + 168), v49);
     if (v50_.v51 != 0) {
       v27 = std___1___shared_weak_count_lock(v50_.v51);
@@ -462,7 +462,7 @@ _QWORD* JobInfo_175e110(_QWORD* result, __int64 a2, char a3)
     v4 = "L_JobIconM";
   }
   v7[0] = v4;
-  v7[1] = (_BYTE*)(((_UNKNOWN**)0x8LL) + 2);
+  v7[1] = (_BYTE*)(((_UNKNOWN**)((char*)0x8LL + 2)));
   GameRoutine_1587740((void*)(&v8_.v8), (__int64*)(a2 + 168), v7);
   result = v8_.v9;
   if (v8_.v9 != nullptr) {

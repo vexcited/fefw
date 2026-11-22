@@ -5023,7 +5023,7 @@ void game_16f03e0(__int64* a1)
   }
   v7 = (__int64*)*a1;
   v57[0] = "L_InfoTitle";
-  v57[1] = (_BYTE*)(((_UNKNOWN**)0x8LL) + 3);
+  v57[1] = (_BYTE*)(((_UNKNOWN**)((char*)0x8LL + 3)));
   GameRoutine_13fa520((void*)(&v58_.v58), v7, v57),
       v56 = COERCE_AS(__typeof__(v56), PSEUDO_REGISTER(float, "s1", "=w"));
   v8 = GameData_212c880[0];

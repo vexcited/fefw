@@ -2460,7 +2460,7 @@ LABEL_212:
   }
   v135 = *(_QWORD*)(a1 + 856);
   v224_.v224 = "L_Temple00";
-  v224_.v225 = (_BYTE*)(((_UNKNOWN**)0x8LL) + 2);
+  v224_.v225 = (_BYTE*)(((_UNKNOWN**)((char*)0x8LL + 2)));
   if (v135 == 0) {
     goto LABEL_255;
   }

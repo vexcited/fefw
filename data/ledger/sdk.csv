@@ -12774,7 +12774,7 @@ ffee0,324,verified,src/nn/fs/unplaced.c,nn_fs_GetAndClearMemoryReportInfo
 35be00,436,verified,src/nn/codec/aac_huffman.cpp,count9_10_11
 35bfe0,360,verified,src/nn/codec/aac_huffman.cpp,count11
 35c160,260,verified,src/nn/codec/aac_huffman.cpp,countEsc
-35c280,160,disputed,src/fdk-aac/libAACdec/src/block.cpp,_ZN2nn5codec16CBlock_GetEscapeEPNS0_13FDK_BITSTREAMEi
+35c280,88,verified,src/fdk-aac/libAACdec/src/block.cpp,_ZN2nn5codec16CBlock_GetEscapeEPNS0_13FDK_BITSTREAMEi
 35c540,768,verified,src/fdk-aac/libAACdec/src/block_impl.c,nn_codec_CBlock_ReadScaleFactorData
 35c880,796,verified,src/fdk-aac/libAACdec/src/block_impl.c,nn_codec_CBlock_ScaleSpectralData
 35cbe0,1100,verified,src/fdk-aac/libAACdec/src/block_impl.c,nn_codec_CBlock_ReadSectionData
@@ -12784,7 +12784,7 @@ ffee0,324,verified,src/nn/fs/unplaced.c,nn_fs_GetAndClearMemoryReportInfo
 35dbc0,592,verified,src/fdk-aac/libAACdec/src/block_impl.c,nn_codec_CBlock_FrequencyToTime
 35de20,32,verified,src/fdk-aac/libAACdec/src/block.cpp,_ZN2nn5codec30CBlock_FrequencyToTimeLowDelayEPNS0_28CAacDecoderStaticChannelInfoEPNS0_22CAacDecoderChannelInfoEPssc
 35de40,104,verified,src/fdk-aac/libAACenc/src/block_switch.cpp,_ZN2nn5codec28FDKaacEnc_InitBlockSwitchingEPNS0_23BLOCK_SWITCHING_CONTROLEi
-35dec0,464,disputed,src/nn/unnamed/a000_0.c,SdkHr_35dec0
+35dec0,936,verified,src/fdk-aac/libAACenc/src/block_switch.cpp,_ZN2nn5codec24FDKaacEnc_BlockSwitchingEPNS0_23BLOCK_SWITCHING_CONTROLEiiPKs
 35e4d0,516,verified,src/fdk-aac/libAACenc/src/block_switch.cpp,_ZN2nn5codec28FDKaacEnc_SyncBlockSwitchingEPNS0_23BLOCK_SWITCHING_CONTROLES2_ii
 35e720,596,verified,src/fdk-aac/libAACdec/src/channel.cpp,_ZN2nn5codec22CChannelElement_DecodeEPPNS0_22CAacDecoderChannelInfoEPPNS0_28CAacDecoderStaticChannelInfoEPNS0_16SamplingRateInfoEji
 35e9a0,892,verified,src/fdk-aac/libAACdec/src/channel.cpp,_ZN2nn5codec26CChannel_CodebookTableInitEPNS0_22CAacDecoderChannelInfoE
@@ -13035,6 +13035,7 @@ ffee0,324,verified,src/nn/fs/unplaced.c,nn_fs_GetAndClearMemoryReportInfo
 37c5f0,64,verified,src/fdk-aac/libPCMutils/src/pcmutils_lib.cpp,_ZN2nn5codec30pcmDmx_SetMatrixMixdownFromPceEPNS0_16PCM_DMX_INSTANCEEiii
 37c640,4272,verified,src/fdk-aac/libPCMutils/src/pcmutils_lib.cpp,_ZN2nn5codec17pcmDmx_ApplyFrameEPNS0_16PCM_DMX_INSTANCEEPsjPiiP18AUDIO_CHANNEL_TYPEPhPA8_KhS4_
 37ef40,912,verified,src/fdk-aac/libPCMutils/src/pcmutils_lib.cpp,_ZN2nn5codecL21getChannelDescriptionENS0_20PCM_DMX_CHANNEL_MODEEPA8_KhP18AUDIO_CHANNEL_TYPEPhS7_
+37f300,3036,verified,src/fdk-aac/libPCMutils/src/pcmutils_lib.cpp,_ZN2nn5codecL13getMixFactorsEhNS0_20PCM_DMX_CHANNEL_MODEES1_PKNS0_19PCM_DMX_USER_PARAMSEPKNS0_16DMX_BS_META_DATAEPA8_sPi
 382a60,64,verified,src/fdk-aac/libPCMutils/src/pcmutils_lib.cpp,_ZN2nn5codec12pcmDmx_CloseEPPNS0_16PCM_DMX_INSTANCEE
 382aa0,664,verified,src/fdk-aac/libPCMutils/src/pcmutils_lib_impl.c,nn_codec_pcmDmx_GetLibInfo
 382d40,340,verified,src/fdk-aac/libPCMutils/src/pcmutils_lib.cpp,_ZN2nn5codecL13dmxSetChannelEPA8_sPA8_ijjsi
@@ -13106,7 +13107,7 @@ ffee0,324,verified,src/nn/fs/unplaced.c,nn_fs_GetAndClearMemoryReportInfo
 39cf40,564,verified,src/fdk-aac/libMpegTPDec/src/tpdec_asc.cpp,_ZN2nn5codec22CProgramConfig_CompareEPKNS0_14CProgramConfigES3_
 39d1a0,1268,verified,src/fdk-aac/libMpegTPDec/src/tpdec_asc.cpp,_ZN2nn5codec25CProgramConfig_GetDefaultEPNS0_14CProgramConfigEj
 39d740,368,verified,src/fdk-aac/libMpegTPDec/src/tpdec_asc.cpp,_ZN2nn5codec28CProgramConfig_LookupElementEPNS0_14CProgramConfigEjjjPhP18AUDIO_CHANNEL_TYPES3_S3_P14MP4_ELEMENT_IDS6_
-39f000,368,disputed,src/fdk-aac/libMpegTPDec/src/tpdec_asc.cpp,_ZN2nn5codec30CProgramConfig_GetElementTableEPKNS0_14CProgramConfigEP14MP4_ELEMENT_IDiPh
+39f000,368,verified,src/fdk-aac/libMpegTPDec/src/tpdec_asc.cpp,_ZN2nn5codec30CProgramConfig_GetElementTableEPKNS0_14CProgramConfigEP14MP4_ELEMENT_IDiPh
 39f280,84,verified,src/fdk-aac/libMpegTPDec/src/tpdec_asc.cpp,_ZN2nn5codec24AudioSpecificConfig_InitEPNS0_21CSAudioSpecificConfigE
 39f2e0,2544,verified,src/fdk-aac/libMpegTPDec/src/tpdec_asc_impl.c,nn_codec_AudioSpecificConfig_Parse
 3a0840,192,verified,src/fdk-aac/libMpegTPDec/src/unplaced_3.c,fdk_aac_libMpegTPDec_src_3a0840
@@ -13142,7 +13143,7 @@ ffee0,324,verified,src/nn/fs/unplaced.c,nn_fs_GetAndClearMemoryReportInfo
 3a2b50,8,verified,src/fdk-aac/libMpegTPDec/src/tpdec_lib.cpp,_ZN2nn5codec22transportDec_GetFormatEPNS0_12TRANSPORTDECE
 3a2b60,100,verified,src/fdk-aac/libMpegTPDec/src/tpdec_lib.cpp,_ZN2nn5codec30transportDec_GetBufferFullnessEPNS0_12TRANSPORTDECE
 3a2bd0,1216,verified,src/fdk-aac/libMpegTPDec/src/tpdec_lib.cpp,_ZN2nn5codec27transportDec_ReadAccessUnitEPNS0_12TRANSPORTDECEj
-3a30b0,648,disputed,src/fdk-aac/libMpegTPDec/src/tpdec_lib.cpp,_ZN2nn5codecL23transportDec_readHeaderEPNS0_12TRANSPORTDECEPNS0_13FDK_BITSTREAMEiiPiS5_S5_S5_S5_
+3a30b0,320,verified,src/fdk-aac/libMpegTPDec/src/tpdec_lib.cpp,_ZN2nn5codecL23transportDec_readHeaderEPNS0_12TRANSPORTDECEPNS0_13FDK_BITSTREAMEiiPiS5_S5_S5_S5_
 3a3540,212,verified,src/fdk-aac/libMpegTPDec/src/tpdec_lib.cpp,_ZN2nn5codec31transportDec_GetAuBitsRemainingEPNS0_12TRANSPORTDECEj
 3a3620,12,verified,src/fdk-aac/libMpegTPDec/src/tpdec_lib.cpp,_ZN2nn5codec27transportDec_GetAuBitsTotalEPNS0_12TRANSPORTDECEj
 3a3630,16,verified,src/fdk-aac/libMpegTPDec/src/tpdec_lib.cpp,_ZN2nn5codec38transportDec_GetMissingAccessUnitCountEPiPNS0_12TRANSPORTDECE
@@ -13344,6 +13345,7 @@ ffee0,324,verified,src/nn/fs/unplaced.c,nn_fs_GetAndClearMemoryReportInfo
 3e76a0,960,verified,src/fdk-aac/libSBRenc/src/resampler.cpp,_ZN2nn5codec20FDKaacEnc_DownsampleEPNS0_11DOWNSAMPLEREPsiiS3_Pii
 3e7ab0,492,verified,src/fdk-aac/libSBRenc/src/sbrenc_freq_sca_impl.c,nn_codec_FDKsbrEnc_getSbrStartFreqRAW
 3e7cb0,80,verified,src/fdk-aac/libSBRenc/src/sbrenc_freq_sca.cpp,_ZN2nn5codec27FDKsbrEnc_getSbrStopFreqRAWEii
+3e7d00,508,verified,src/fdk-aac/libSBRenc/src/sbrenc_freq_sca.cpp,_ZN2nn5codecL11getStopFreqEii
 3e7f50,748,verified,src/fdk-aac/libSBRenc/src/sbrenc_freq_sca_impl.c,nn_codec_FDKsbrEnc_FindStartAndStopBand
 3e8260,872,verified,src/fdk-aac/libSBRenc/src/sbrenc_freq_sca.cpp,_ZN2nn5codec25FDKsbrEnc_UpdateFreqScaleEPhPiiiii
 3e8980,252,verified,src/fdk-aac/libSBRenc/src/sbrenc_freq_sca_impl.c,sbrenc_freq_sca_3e8980

@@ -548,7 +548,7 @@ LABEL_14:
     v20 = ui_LayoutAccessor_empty__ptr[0];
   }
   v66[0] = "L_ClassIcon";
-  v66[1] = (_BYTE*)(((_UNKNOWN**)0x8LL) + 3);
+  v66[1] = (_BYTE*)(((_UNKNOWN**)((char*)0x8LL + 3)));
   GameRoutine_1587740((void*)(&v67_.v67), v20, v66);
   if (v67_.v68 == 0) {
     goto LABEL_44;
@@ -633,7 +633,7 @@ LABEL_52:
     v36 = ui_LayoutAccessor_empty__ptr[0];
   }
   v66[0] = "L_NewClassIcon";
-  v66[1] = (_BYTE*)(((_UNKNOWN**)0x8LL) + 6);
+  v66[1] = (_BYTE*)(((_UNKNOWN**)((char*)0x8LL + 6)));
   GameRoutine_1587740((void*)(&v67_.v67), v36, v66);
   if (v67_.v68 == 0) {
     goto LABEL_73;
@@ -744,7 +744,7 @@ LABEL_52:
           }
         }
         v66[0] = "L_NumStatus";
-        v66[1] = (_BYTE*)(((_UNKNOWN**)0x8LL) + 3);
+        v66[1] = (_BYTE*)(((_UNKNOWN**)((char*)0x8LL + 3)));
         GameRoutine_9d5180((void*)(&v67_.v67), v49, v66);
         if (v67_.v68 != 0) {
           v58 = std___1___shared_weak_count_lock(v67_.v68);

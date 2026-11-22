@@ -544,7 +544,7 @@ LABEL_16:
   }
   v43 = *(_DWORD*)(GameData_21d9968 + 4LL * v41);
   v70[0] = "L_Lv/L_Num";
-  v70[1] = (_BYTE*)(((_UNKNOWN**)0x8LL) + 2);
+  v70[1] = (_BYTE*)(((_UNKNOWN**)((char*)0x8LL + 2)));
   GameRoutine_9d5180_alt1((void*)(v71), v4, v70);
   if (v71[1] != 0) {
     v44 = std___1___shared_weak_count_lock_alt1(v71[1]);

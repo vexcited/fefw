@@ -433,7 +433,7 @@ void game_gameui_1589740(__int64 a1, _QWORD* a2)
           }
         LABEL_15:
           v21[0] = "L_JobIcon";
-          v21[1] = (_BYTE*)(((_UNKNOWN**)0x8LL) + 1);
+          v21[1] = (_BYTE*)(((_UNKNOWN**)((char*)0x8LL + 1)));
           GameRoutine_1587740((void*)(&v22_.v22), v8, v21);
           if (v22_.v23 != 0) {
             v12 = std___1___shared_weak_count_lock(v22_.v23);
@@ -592,7 +592,7 @@ void game_gameui_1589a10(__int64 a1, _QWORD* a2)
           }
         LABEL_15:
           v21[0] = "L_JobIcon";
-          v21[1] = (_BYTE*)(((_UNKNOWN**)0x8LL) + 1);
+          v21[1] = (_BYTE*)(((_UNKNOWN**)((char*)0x8LL + 1)));
           GameRoutine_1587740((void*)(&v22_.v22), v8, v21);
           if (v22_.v23 != 0) {
             v12 = std___1___shared_weak_count_lock(v22_.v23);
@@ -1235,7 +1235,7 @@ void game_gameui_15d9250(__int64* a1, __int64 a2)
       }
     }
     v28[0] = "L_ClassGroup";
-    v28[1] = (_BYTE*)(((_UNKNOWN**)0x8LL) + 4);
+    v28[1] = (_BYTE*)(((_UNKNOWN**)((char*)0x8LL + 4)));
     GameRoutine_fa73c0((void*)(&v29_.v29), a1, v28);
     if (v29_.v30 != 0) {
       v11 = std___1___shared_weak_count_lock(v29_.v30);
@@ -1268,7 +1268,7 @@ void game_gameui_15d9250(__int64* a1, __int64 a2)
     }
   LABEL_26:
     v28[0] = "L_LvGroup";
-    v28[1] = (_BYTE*)(((_UNKNOWN**)0x8LL) + 1);
+    v28[1] = (_BYTE*)(((_UNKNOWN**)((char*)0x8LL + 1)));
     GameRoutine_1572840((void*)(&v29_.v29), a1, v28);
     if (v29_.v30 == 0) {
       goto LABEL_36;
@@ -1296,7 +1296,7 @@ void game_gameui_15d9250(__int64* a1, __int64 a2)
     }
   LABEL_36:
     v28[0] = "L_HPGroup";
-    v28[1] = (_BYTE*)(((_UNKNOWN**)0x8LL) + 1);
+    v28[1] = (_BYTE*)(((_UNKNOWN**)((char*)0x8LL + 1)));
     GameRoutine_1572700((void*)(&v29_.v29), a1, v28);
     if (v29_.v30 != 0) {
       v18 = std___1___shared_weak_count_lock(v29_.v30);

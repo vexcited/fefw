@@ -707,7 +707,7 @@ const char* TelopSequence_1375430(__int64* a1)
                                     memory_order_relaxed);
         }
         v11_.v11 = "In_Judege01";
-        v11_.v12 = (_BYTE*)(((_UNKNOWN**)0x8LL) + 3);
+        v11_.v12 = (_BYTE*)(((_UNKNOWN**)((char*)0x8LL + 3)));
         v9[0] = "Out";
         v9[1] = 3;
         v6 = GameHr_173f310((__int64)a1, v10, 0, (__int64)&v11_.v11,

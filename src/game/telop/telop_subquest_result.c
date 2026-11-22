@@ -184,7 +184,7 @@ void game_telop_TelopSubquestResult_CreateBind(__int64 a1)
     }
   }
   v21[0] = "L_JobIconF";
-  v21[1] = (_BYTE*)(((_UNKNOWN**)0x8LL) + 2);
+  v21[1] = (_BYTE*)(((_UNKNOWN**)((char*)0x8LL + 2)));
   GameRoutine_1587740((void*)(&v22_.v22), v2, v21);
   if (v22_.v23 != 0) {
     v11 = std___1___shared_weak_count_lock(v22_.v23);
@@ -218,7 +218,7 @@ void game_telop_TelopSubquestResult_CreateBind(__int64 a1)
   }
 LABEL_20:
   v21[0] = "L_JobIconM";
-  v21[1] = (_BYTE*)(((_UNKNOWN**)0x8LL) + 2);
+  v21[1] = (_BYTE*)(((_UNKNOWN**)((char*)0x8LL + 2)));
   GameRoutine_1587740((void*)(&v22_.v22), v2, v21);
   if (v22_.v23 == 0) {
     goto LABEL_33;
@@ -253,7 +253,7 @@ LABEL_20:
   }
 LABEL_33:
   v21[0] = "L_InfoTitle";
-  v21[1] = (_BYTE*)(((_UNKNOWN**)0x8LL) + 3);
+  v21[1] = (_BYTE*)(((_UNKNOWN**)((char*)0x8LL + 3)));
   GameRoutine_13fa520((void*)(&v22_.v22), v2, v21);
   if (v22_.v23 == 0) {
     return;

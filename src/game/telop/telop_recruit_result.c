@@ -103,7 +103,7 @@ void TelopRecruitResult_Unknown56(__int64 a1)
   unsigned int* v10[2];
 
   v10[0] = (unsigned int*)"Type_Judge00";
-  v10[1] = (_DWORD*)(((_UNKNOWN**)0x8LL) + 4);
+  v10[1] = (_DWORD*)(((_UNKNOWN**)((char*)0x8LL + 4)));
   v9[0] = "In_Judege00";
   v9[1] = 11;
   v1 = *(unsigned __int8*)(*(_QWORD*)(a1 + 1168) + 50LL);
@@ -114,18 +114,18 @@ void TelopRecruitResult_Unknown56(__int64 a1)
           if (v1 < 3) {
             v5 = "SE_SYS_Join_Legion_E";
             v10[0] = (unsigned int*)"Type_RankE";
-            v10[1] = (_DWORD*)(((_UNKNOWN**)0x8LL) + 2);
+            v10[1] = (_DWORD*)(((_UNKNOWN**)((char*)0x8LL + 2)));
             goto LABEL_8;
           }
           v5 = "SE_SYS_Join_Legion_D";
           v10[0] = (unsigned int*)"Type_Judge01";
-          v10[1] = (_DWORD*)(((_UNKNOWN**)0x8LL) + 4);
+          v10[1] = (_DWORD*)(((_UNKNOWN**)((char*)0x8LL + 4)));
           v4 = "In_Judege01";
         }
         else {
           v5 = "SE_SYS_Join_Legion_C";
           v10[0] = (unsigned int*)"Type_Judge02";
-          v10[1] = (_DWORD*)(((_UNKNOWN**)0x8LL) + 4);
+          v10[1] = (_DWORD*)(((_UNKNOWN**)((char*)0x8LL + 4)));
           v4 = "In_Judege02";
         }
       LABEL_7:
@@ -137,11 +137,11 @@ void TelopRecruitResult_Unknown56(__int64 a1)
         goto LABEL_9;
       }
       v2 = "Type_Judge03";
-      v3 = (_DWORD*)(((_UNKNOWN**)0x8LL) + 4);
+      v3 = (_DWORD*)(((_UNKNOWN**)((char*)0x8LL + 4)));
     }
     else {
       v2 = "Type_RankA";
-      v3 = (_DWORD*)(((_UNKNOWN**)0x8LL) + 2);
+      v3 = (_DWORD*)(((_UNKNOWN**)((char*)0x8LL + 2)));
     }
     v10[0] = (unsigned int*)v2;
     v10[1] = v3;

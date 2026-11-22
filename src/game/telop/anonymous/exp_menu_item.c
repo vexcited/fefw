@@ -693,7 +693,7 @@ LABEL_33:
   }
   v26 = *(_DWORD*)(GameData_21d9968 + 4LL * v24);
   v37[0] = "L_LvGroup";
-  v37[1] = (_BYTE*)(((_UNKNOWN**)0x8LL) + 1);
+  v37[1] = (_BYTE*)(((_UNKNOWN**)((char*)0x8LL + 1)));
   GameRoutine_1572840_alt1((void*)(&v38_.v38), v4, v37);
   if (v38_.v39 == 0) {
     goto LABEL_67;

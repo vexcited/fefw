@@ -556,7 +556,7 @@ LABEL_58:
                                   (__int64)v127[2]);
   }
   v127[0] = "Icon_Base";
-  v127[1] = (_BYTE*)(((_UNKNOWN**)0x8LL) + 1);
+  v127[1] = (_BYTE*)(((_UNKNOWN**)((char*)0x8LL + 1)));
   v41 = Element_1886290_alt1(a1, v127);
   v42 = (atomic_uchar*)GameData_2131900;
   explicit = atomic_load_explicit((atomic_uchar* volatile)GameData_2131900,
@@ -717,7 +717,7 @@ LABEL_58:
       *(_DWORD*)(v66 + 12) = v67;
     LABEL_135:
       v127[0] = "Icon_Color";
-      v127[1] = (_BYTE*)(((_UNKNOWN**)0x8LL) + 2);
+      v127[1] = (_BYTE*)(((_UNKNOWN**)((char*)0x8LL + 2)));
       v68 = Element_1886290_alt1(a1, v127);
       if ((atomic_load_explicit(v42, memory_order_acquire) & 1) == 0 &&
           __cxa_guard_acquire_alt1((__int64)GameData_2131900) != 0) {

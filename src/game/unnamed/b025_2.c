@@ -570,7 +570,7 @@ void GameHr_189e9c0(__int64 a1)
   }
   LayoutAccessor_1562cf0(a1 + 88, "EnduranceOff");
   v15[0] = "Efficacy1";
-  v15[1] = (_BYTE*)(((_UNKNOWN**)0x8LL) + 1);
+  v15[1] = (_BYTE*)(((_UNKNOWN**)((char*)0x8LL + 1)));
   v3 = Element_1886290(a1, v15);
   v4 = (atomic_uchar*)GameData_2131900;
   explicit = atomic_load_explicit((atomic_uchar* volatile)GameData_2131900,
@@ -595,7 +595,7 @@ void GameHr_189e9c0(__int64 a1)
     }
   }
   v15[0] = "Efficacy2";
-  v15[1] = (_BYTE*)(((_UNKNOWN**)0x8LL) + 1);
+  v15[1] = (_BYTE*)(((_UNKNOWN**)((char*)0x8LL + 1)));
   v9 = Element_1886290(a1, v15);
   if ((atomic_load_explicit(v4, memory_order_acquire) & 1) == 0 &&
       __cxa_guard_acquire((__int64)GameData_2131900) != 0) {
@@ -1039,7 +1039,7 @@ void GameHr_18b72e0(__int64 a1)
   v14[1] = (_BYTE*)((_UNKNOWN*)0x7LL);
   Element_18863e0(a1, v14, 1);
   v14[0] = "BodyAnnot";
-  v14[1] = (_BYTE*)(((_UNKNOWN**)0x8LL) + 1);
+  v14[1] = (_BYTE*)(((_UNKNOWN**)((char*)0x8LL + 1)));
   v8 = Element_1886290(a1, v14);
   if ((atomic_load_explicit(v3, memory_order_acquire) & 1) == 0 &&
       __cxa_guard_acquire((__int64)GameData_2130ea8) != 0) {
@@ -1060,7 +1060,7 @@ void GameHr_18b72e0(__int64 a1)
     }
   }
   v14[0] = "TitleAnnot";
-  v14[1] = (_BYTE*)(((_UNKNOWN**)0x8LL) + 2);
+  v14[1] = (_BYTE*)(((_UNKNOWN**)((char*)0x8LL + 2)));
   v11 = Element_1886290(a1, v14);
   if ((atomic_load_explicit(v3, memory_order_acquire) & 1) == 0 &&
       __cxa_guard_acquire((__int64)GameData_2130ea8) != 0) {

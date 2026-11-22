@@ -306,7 +306,7 @@ void AsyncLoadThumbImage_188f320(__int64 a1, unsigned int a2, char a3, char a4,
     }
   }
   v27_.v27[0] = "IconDamage";
-  v27_.v27[1] = (_BYTE*)(((_UNKNOWN**)0x8LL) + 2);
+  v27_.v27[1] = (_BYTE*)(((_UNKNOWN**)((char*)0x8LL + 2)));
   v24 = Element_1886290(a1, v27_.v27);
   if ((atomic_load_explicit(v18, memory_order_acquire) & 1) == 0 &&
       __cxa_guard_acquire_alt1((__int64)GameData_2131900) != 0) {
@@ -430,7 +430,7 @@ void AsyncLoadThumbImage_188f620(__int64 a1)
     }
   }
   v16_.v16[0] = "IconDamage";
-  v16_.v16[1] = (_BYTE*)(((_UNKNOWN**)0x8LL) + 2);
+  v16_.v16[1] = (_BYTE*)(((_UNKNOWN**)((char*)0x8LL + 2)));
   v13 = Element_1886290(a1, v16_.v16);
   if ((atomic_load_explicit(v8, memory_order_acquire) & 1) == 0 &&
       __cxa_guard_acquire_alt1((__int64)GameData_2131900) != 0) {
@@ -1298,7 +1298,7 @@ void AsyncLoadThumbImage_189adc0(__int64 a1, int a2, int a3)
   const char* v17[2];
 
   v17[0] = "NumEndurance";
-  v17[1] = (_BYTE*)(((_UNKNOWN**)0x8LL) + 4);
+  v17[1] = (_BYTE*)(((_UNKNOWN**)((char*)0x8LL + 4)));
   Element_18863e0(a1, v17, 1);
   v17[0] = "Count";
   v17[1] = (_BYTE*)((_UNKNOWN*)0x5LL);
