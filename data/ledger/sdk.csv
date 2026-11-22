@@ -14197,7 +14197,7 @@ ffee0,324,verified,src/nn/fs/unplaced.c,nn_fs_GetAndClearMemoryReportInfo
 415b80,248,verified,src/nn/fontll/itype/fs_api.c,FSS_init
 415c80,324,verified,src/nn/fontll/itype/fs_api.c,FS_init_ex
 415dd0,8,verified,src/nn/fontll/itype/fs_api.c,FS_error
-415de0,836,verified,src/nn/fontll/itype/unplaced_5.c,nn_fontll_itype_415de0
+415de0,852,verified,src/nn/fontll/itype/unplaced_5.c,nn_fontll_itype_415de0
 416160,392,verified,src/nn/fontll/itype/fs_api_impl.c,fs_api_416160
 416300,112,verified,src/nn/fontll/itype/fs_api.c,FSS_get_scale
 416370,112,verified,src/nn/fontll/itype/fs_api.c,FSS_get_design_units
