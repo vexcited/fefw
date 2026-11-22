@@ -3898,7 +3898,7 @@ __int64 llvm_libcxx_21_libcxx_include___functional_16c4ea0(__int64 a1,
     v26_.v29 = (unsigned __int64*)&v26_.v26;
     v18 = *(unsigned int*)(v17 + 80);
     v26_.v26 = GameData_212d7f8[0] + 2;
-    v26_.v27 = ((__int128*)0x10LL) + 4;
+    v26_.v27 = (__int128*)((char*)0x10LL + 4);
     if ((int)v18 < 1) {
       goto LABEL_20;
     }

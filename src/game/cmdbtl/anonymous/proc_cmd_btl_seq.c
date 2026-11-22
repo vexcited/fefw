@@ -274,7 +274,7 @@ const char* ProcCmdBtlSeq_e64090(__int64 a1)
     if (v8 >= v7) {
       CmdBtlSkipInput_1007060_alt1(v5);
       v9_.v9 = "MID_CmdBtl_SkipFailed_Message";
-      v9_.v10 = ((__int128*)0x10LL) + 13;
+      v9_.v10 = (__int128*)((char*)0x10LL + 13);
       return (const char*)Message_16f9b50_alt1(v6);
     }
   }

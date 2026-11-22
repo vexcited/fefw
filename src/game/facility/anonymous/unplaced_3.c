@@ -307,7 +307,7 @@ void game_facility_anonymous_16b7ae0(__int64* a1, __int64* a2)
   }
 LABEL_10:
   v21[0] = "L_Job_After";
-  v21[1] = (_BYTE*)(((_UNKNOWN**)0x8LL) + 3);
+  v21[1] = (_BYTE*)(((_UNKNOWN**)((char*)0x8LL + 3)));
   GameRoutine_1587740((void*)(&v22_.v22), a2, v21);
   if (v22_.v23 == 0) {
     return;
@@ -460,7 +460,7 @@ void game_facility_anonymous_16b8020(__int64* a1, __int64* a2)
   }
 LABEL_10:
   v21[0] = "L_Job_After";
-  v21[1] = (_BYTE*)(((_UNKNOWN**)0x8LL) + 3);
+  v21[1] = (_BYTE*)(((_UNKNOWN**)((char*)0x8LL + 3)));
   GameRoutine_1587740((void*)(&v22_.v22), a2, v21);
   if (v22_.v23 == 0) {
     return;

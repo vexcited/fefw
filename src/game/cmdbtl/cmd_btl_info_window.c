@@ -370,7 +370,7 @@ __int64 CmdBtlInfoWindow_17c5b50(__int64 result)
   if ((*GameData_212f628[0] == 0 || *(int*)(*GameData_212f628[0] + 256) <= 0) &&
       *(_QWORD*)(v1 + 152) != 0) {
     v52[0] = "L_OverBlaze";
-    v52[1] = (_BYTE*)(((_UNKNOWN**)0x8LL) + 3);
+    v52[1] = (_BYTE*)(((_UNKNOWN**)((char*)0x8LL + 3)));
     GameRoutine_1573280((void*)(&v53_.v53), (__int64*)(v1 + 24), v52);
     if (v53_.v54 != 0) {
       v4 = std___1___shared_weak_count_lock(v53_.v54);
@@ -1576,7 +1576,7 @@ LABEL_94:
     }
   }
   v110[0] = "L_Link_Equip00";
-  v110[1] = (_BYTE*)(((_UNKNOWN**)0x8LL) + 6);
+  v110[1] = (_BYTE*)(((_UNKNOWN**)((char*)0x8LL + 6)));
   GameRoutine_17c77c0((void*)(&v111_.v111), a1 + 3, v110),
       v54 = COERCE_AS(__typeof__(v54), PSEUDO_REGISTER(float, "s1", "=w")),
       v55 = COERCE_AS(__typeof__(v55), PSEUDO_REGISTER(float, "s2", "=w"));

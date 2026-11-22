@@ -2459,7 +2459,7 @@ LABEL_20:
 LABEL_24:
   if ((v4 & 1) == 0 && *(_DWORD*)(GameData_21f3d10 + 136) == 1) {
     v12_.v12 = "MID_Dungeon_Enemy_Destroy";
-    v12_.v13 = ((__int128*)0x10LL) + 9;
+    v12_.v13 = (__int128*)((char*)0x10LL + 9);
     Message_16f9b50(a1);
   }
   v12_.v13 = &GameData_1ae979a;

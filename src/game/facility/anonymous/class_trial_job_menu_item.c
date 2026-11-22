@@ -182,7 +182,7 @@ __int64 ClassTrialJobMenuItem_DrawText(_QWORD* a1)
           }
         }
         v26[0] = "L_JobIcon";
-        v26[1] = (_BYTE*)(((_UNKNOWN**)0x8LL) + 1);
+        v26[1] = (_BYTE*)(((_UNKNOWN**)((char*)0x8LL + 1)));
         GameRoutine_1587740((void*)(&v27_.v27), v3, v26);
         result = v27_.v28;
         if (v27_.v28 != 0) {

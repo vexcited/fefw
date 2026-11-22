@@ -1853,7 +1853,7 @@ __int64 game_10212e0(__int64 a1)
     v10 = (char*)fw_memory_HeapManager_Allocate_alt1(
         *(_QWORD*)fw_memory_g_heap_manager_ptr, 32, 16, 0);
     v13_.v13 = (_QWORD*)(((char*)0x20LL) + 1);
-    v13_.v14 = ((__int128*)0x10LL) + 9;
+    v13_.v14 = (__int128*)((char*)0x10LL + 9);
     v13_.v15 = (unsigned __int64)v10;
     strcpy(v10, "MID_LGV_1SEO_LG13_009_m03");
     GameRoutine_efb6f0_alt1(v8, a1 + 16, &v13_.v13);

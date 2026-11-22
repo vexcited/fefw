@@ -1179,7 +1179,7 @@ __int64 game_gmap_16c3940(__int64 a1)
     v21_.v24 = (unsigned __int64*)&v21_.v21;
     v13 = *(unsigned int*)(v12 + 80);
     v21_.v21 = GameData_212d7f8[0] + 2;
-    v21_.v22 = ((__int128*)0x10LL) + 4;
+    v21_.v22 = (__int128*)((char*)0x10LL + 4);
     if ((int)v13 < 1) {
       goto LABEL_17;
     }

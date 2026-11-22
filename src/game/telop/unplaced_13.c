@@ -441,7 +441,7 @@ LABEL_72:
   v54 = (__int64*)(v6 + 824);
   v55 = (char*)fw_memory_HeapManager_Allocate(*v5, 32, 16, 0);
   v67_.v67 = 33;
-  v67_.v68 = ((__int128*)0x10LL) + 8;
+  v67_.v68 = (__int128*)((char*)0x10LL + 8);
   v67_.v69 = v55;
   strcpy(v55, "MID_Sys_FreeAction_Start");
   v70_.v71 = &GameData_1a86f9b;

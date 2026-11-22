@@ -1390,7 +1390,7 @@ __attribute__((swiftcall)) void game_10081e0(PSEUDO_X8 x8_, char* a1)
       v15 = 33;
       a2 = 28;
       v31_.v31 = 33;
-      v31_.v32 = ((__int128*)0x10LL) + 12;
+      v31_.v32 = (__int128*)((char*)0x10LL + 12);
       v31_.v33 = a1;
       *((_DWORD*)a1 + 6) = 1919508806;
       v20 = "MID_GiftReaction_Result_Fair";
@@ -1403,7 +1403,7 @@ __attribute__((swiftcall)) void game_10081e0(PSEUDO_X8 x8_, char* a1)
     v15 = 33;
     a2 = 28;
     v31_.v31 = 33;
-    v31_.v32 = ((__int128*)0x10LL) + 12;
+    v31_.v32 = (__int128*)((char*)0x10LL + 12);
     v31_.v33 = a1;
     *((_DWORD*)a1 + 6) = 1685024583;
     v20 = "MID_GiftReaction_Result_Good";
@@ -1416,7 +1416,7 @@ LABEL_46:
   v15 = 33;
   a2 = 28;
   v31_.v31 = 33;
-  v31_.v32 = ((__int128*)0x10LL) + 12;
+  v31_.v32 = (__int128*)((char*)0x10LL + 12);
   v31_.v33 = a1;
   *((_DWORD*)a1 + 6) = 1919905616;
   v20 = "MID_GiftReaction_Result_Poor";

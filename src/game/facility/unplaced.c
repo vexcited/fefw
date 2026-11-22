@@ -1244,7 +1244,7 @@ __int64 game_facility_94b560(__int64 a1, __int64 a2)
   v26_.v28 = v24_.v24;
   v26_.v29 = (unsigned __int64*)&v26_.v26;
   v26_.v26 = GameData_212d7f8[0] + 2;
-  v26_.v27 = ((__int128*)0x10LL) + 4;
+  v26_.v27 = (__int128*)((char*)0x10LL + 4);
   v9 = *(unsigned int*)(v8 + 80);
   if ((int)v9 < 1) {
     goto LABEL_20;
