@@ -68934,6 +68934,7 @@ fffcb0,1244,verified,src/game/unnamed/b014_1.c,GameHr_fffcb0
 15ecc90,136,verified,src/game/facility/anonymous/proc_perch_only_gaze_unit_menu.c,game_facility_anonymous_ProcPerchOnlyGazeUnitMenu_CreateBind_closure_Invoke
 15ecd20,28,verified,src/llvm-libcxx-21/libcxx/include/__functional/function.h,"std::__1::__function::__func<game::facility::(anonymous namespace)::ProcPerchOnlyGazeUnitMenu::CreateBind(game::ProcInst*)::'lambda'(game::Unit*), void (game::Unit*)>::target(std::type_info const&)"
 15ecd40,12,verified,src/llvm-libcxx-21/libcxx/include/__functional/function.h,"std::__1::__function::__func<game::facility::(anonymous namespace)::ProcPerchOnlyGazeUnitMenu::CreateBind(game::ProcInst*)::'lambda'(game::Unit*), void (game::Unit*)>::target_type()"
+15ecd50,3932,verified,src/game/facility/anonymous/proc_perch_scene.c,ProcPerchScene_15ecd50
 15edd80,12,verified,src/game/facility/anonymous/unplaced_9.c,game_facility_anonymous_15edd80
 15edd90,12,verified,src/game/game_trivial_calls.cpp,_Z16GameStub_15edd90m
 15edda0,364,verified,src/game/facility/anonymous/proc_perch_scene.c,ProcPerchScene_15edda0
