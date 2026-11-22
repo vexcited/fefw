@@ -145,7 +145,7 @@ unsigned __int8 CudaDriverRoutine_e7cb0(__int64, __int64, unsigned int);
 unsigned __int8 CudaDriverRoutine_f1f60(__int64, __int64, char);
 unsigned __int8 CudaDriverStub_b9300(__int64);
 unsigned __int8 cuda_debugger_api_7cff0();
-bool cuda_driver_12ea30(int*);
+unsigned int cuda_driver_12ea30(int*);
 bool cuda_driver_77230();
 unsigned __int8 cuda_driver_predicates_1dc800(__int16);
 unsigned __int8 cuda_driver_predicates_9ac80(__int64);

@@ -6,9 +6,9 @@ __int64 CudaDriverRoutine_86eb0(int*);
 __int64 CudaDriverRoutine_98190(__int64, unsigned int);
 __int64 CudaDriverStub_89350(__int64, __int64, __int64, __int64, __int64);
 __int64 cuda_driver_1da1b0(__int64, __int64*, __int64, _QWORD*);
-bool CudaDriverRoutine_874e0(_DWORD*, int, unsigned int, unsigned int,
-                             unsigned int);
-bool CudaDriverRoutine_8a640(__int64, _DWORD*);
+unsigned int CudaDriverRoutine_874e0(_DWORD*, int, unsigned int,
+                                     unsigned int, unsigned int);
+unsigned int CudaDriverRoutine_8a640(__int64, _DWORD*);
 extern _UNKNOWN* CudaDriverData_1411c10;
 extern __int64 (*CudaDriverData_1432df8)(__int64*);
 __int64 nvidia_1099b0(__int64* a1, __int64 a2, __int64 a3, __int64 a4, char a5);

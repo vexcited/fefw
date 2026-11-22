@@ -4,10 +4,10 @@
 
 __int64 CudaDriverRoutine_633a0();
 __int64 CudaDriverRoutine_98340(__int64 result);
-bool CudaDriverRoutine_99720(__int64);
-bool CudaDriverRoutine_9ad80(__int64);
-bool CudaDriverRoutine_9ad90(__int64);
-bool cuda_driver_predicates_9ae50(__int64);
+unsigned __int8 CudaDriverRoutine_99720(__int64);
+unsigned __int8 CudaDriverRoutine_9ad80(__int64);
+unsigned __int8 CudaDriverRoutine_9ad90(__int64);
+unsigned __int8 cuda_driver_predicates_9ae50(__int64);
 extern _UNKNOWN* CudaDriverData_1422118;
 extern __int128 CudaDriverData_1115db0;
 void CudaDriverRoutine_74d0();

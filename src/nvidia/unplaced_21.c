@@ -225,8 +225,8 @@ __int64 nvidia_5bbb0(__int64);
 __int64 nvidia_eeec0(__int64 result, unsigned int*, int, __int64);
 __int64 vfprintf_plt(_QWORD, _QWORD, _QWORD);
 __int64 vsnprintf_plt(_QWORD, _QWORD, _QWORD, _QWORD);
-bool CudaDriverRoutine_10ac30(__int64, __int64, unsigned int, _DWORD*, __int64,
-                              char);
+unsigned int CudaDriverRoutine_10ac30(__int64, __int64, unsigned int,
+                                      _DWORD*, __int64, char);
 unsigned __int8 CudaDriverRoutine_122140(_BOOL8 result);
 unsigned __int8 CudaDriverRoutine_127eb0(__int64, __int64);
 unsigned __int8 CudaDriverRoutine_1dc9c0(__int64);

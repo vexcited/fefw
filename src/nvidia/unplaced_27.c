@@ -117,7 +117,7 @@ unsigned __int8 CudaDriverRoutine_11f6d0(__int64);
 unsigned __int8 CudaDriverRoutine_92440(_QWORD*);
 unsigned __int8 CudaDriverRoutine_98110(_BOOL8 result);
 unsigned __int8 CudaDriverStub_985a0(__int64);
-bool cuda_driver_12ea30(int*);
+unsigned int cuda_driver_12ea30(int*);
 bool cuda_driver_checks_1031f0(__int64);
 bool cuda_driver_checks_103220(__int64);
 unsigned __int8 cuda_driver_checks_103250(__int64);

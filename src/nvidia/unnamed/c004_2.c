@@ -206,7 +206,7 @@ __int64 CudaDriverRoutine_2080d0(__int64 result, unsigned int, int, _QWORD*);
 
 __int64 CudaDriverRoutine_2083e0(_QWORD, _QWORD, _QWORD, _QWORD);
 
-bool CudaDriverRoutine_208ef0(__int64, unsigned int, _QWORD*);
+unsigned int CudaDriverRoutine_208ef0(__int64, unsigned int, _QWORD*);
 
 __int64 CudaDriverRoutine_209120(_QWORD);
 

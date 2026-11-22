@@ -281,7 +281,7 @@ unsigned __int8 CudaDriverRoutine_e5960(__int64);
 unsigned __int8 CudaDriverRoutine_efe40(__int64);
 unsigned __int8 CudaDriverStub_985a0(__int64);
 unsigned __int8 CudaDriverStub_b9300(__int64);
-unsigned __int8 cuda_driver_12ea30(int*);
+unsigned int cuda_driver_12ea30(int*);
 unsigned __int8 cuda_driver_predicates_10ebb0(__int64);
 unsigned __int8 cuda_driver_predicates_9ae50(__int64);
 double atof_plt(_QWORD);

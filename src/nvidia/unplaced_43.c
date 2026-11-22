@@ -3,10 +3,10 @@
 #pragma GCC visibility push(hidden)
 
 __int64 memset_plt(__int64, int, unsigned __int64);
-bool CudaDriverRoutine_9aa30(__int64);
-bool CudaDriverRoutine_9ad80(__int64);
-bool CudaDriverRoutine_9adc0(__int64);
-bool CudaDriverRoutine_9adf0(__int64);
+unsigned __int8 CudaDriverRoutine_9aa30(__int64);
+unsigned __int8 CudaDriverRoutine_9ad80(__int64);
+unsigned __int8 CudaDriverRoutine_9adc0(__int64);
+unsigned __int8 CudaDriverRoutine_9adf0(__int64);
 __int64 nvidia_53250(__int64* a1);
 
 __int64 nvidia_53250(__int64* a1)

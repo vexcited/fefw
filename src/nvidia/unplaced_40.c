@@ -9,7 +9,7 @@ __int64 cuda_driver_97bc0(__int64, __int64, unsigned int, int);
 __int64 cuda_driver_9bad0(__int64*, __int64*);
 __int64 cuda_driver_9bd90(__int64);
 __int64 cuda_driver_c2ce0(_DWORD*, __int64, unsigned int, int);
-bool CudaDriverStub_985a0(__int64);
+unsigned __int8 CudaDriverStub_985a0(__int64);
 extern _UNKNOWN* CudaDriverData_1422118;
 extern __int64 (*CudaDriverData_1432000[])();
 extern __int64 CudaDriverData_14348c0[];

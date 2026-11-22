@@ -222,7 +222,7 @@ unsigned __int8 CudaDriverRoutine_99f10(__int64);
 unsigned __int8 CudaDriverRoutine_9aa60(__int64, int);
 unsigned __int8 CudaDriverRoutine_f1f60(__int64, __int64, char);
 unsigned __int8 CudaDriverRoutine_fa910(__int64, _DWORD*);
-unsigned __int8 cuda_driver_12ea30(int*);
+unsigned int cuda_driver_12ea30(int*);
 unsigned __int8 cuda_driver_87f00(unsigned int*);
 unsigned __int8 cuda_driver_f7b60(int*, __int64);
 unsigned __int8 cuda_driver_faa80(__int64, int*);
