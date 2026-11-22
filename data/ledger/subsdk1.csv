@@ -5785,6 +5785,7 @@ ff600,3424,verified,src/nvidia/unplaced_21.c,nvidia_ff600
 18c8a0,188,verified,src/nvidia/cuda_driver_entry_points.cpp,cuProfilerStart
 18c960,272,verified,src/nvidia/cuda_driver_tracing.cpp,_Z21cuProfilerStop_tracedv
 18ca70,188,verified,src/nvidia/cuda_driver_entry_points.cpp,cuProfilerStop
+18cb30,29084,verified,src/nvidia/cuda_driver_export_table.c,cuda_driver_DriverTable_SwapEntry
 194120,328,verified,src/nvidia/unnamed/c003_0.c,CudaDriverHr_194120
 194280,888,verified,src/nvidia/unnamed/c003_0.c,CudaDriverHr_194280
 194640,360,verified,src/nvidia/unnamed/c003_1.c,CudaDriverHr_194640
