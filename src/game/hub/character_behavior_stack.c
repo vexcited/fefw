@@ -51,7 +51,7 @@ CharacterBehaviorStack_StackEvasion_Unknown6(PSEUDO_X8 x8_);
 __int64* CharacterBehaviorStack_df6260_alt2(
     __int64* result, __int64* a2) __asm__("CharacterBehaviorStack_df6260");
 void CharacterBehaviorStack_StackEvasion_Destructor(float32x4_t* a1);
-bool CharacterBehaviorStack_StackMoveLoop_Destructor(__int64 a1);
+void CharacterBehaviorStack_StackMoveLoop_Destructor(__int64 a1);
 __attribute__((swiftcall)) void
 CharacterBehaviorStack_StackMoveLoop_Unknown6(PSEUDO_X8 x8_, __int64 result);
 __attribute__((swiftcall)) void
@@ -901,7 +901,7 @@ LABEL_11:
   CharacterRotate_d519c0(v10);
 }
 
-bool CharacterBehaviorStack_StackMoveLoop_Destructor(__int64 a1)
+void CharacterBehaviorStack_StackMoveLoop_Destructor(__int64 a1)
 {
 
 #pragma clang fp contract(off)
@@ -1312,7 +1312,7 @@ LABEL_106:
                                       (int*)&f_.v75);
   *(_BYTE*)(*(_QWORD*)(*(_QWORD*)(*(_QWORD*)(v1 + 16) + 16LL) + 24LL) + 432LL) =
       1;
-  return result;
+  return;
 }
 
 __attribute__((swiftcall)) void

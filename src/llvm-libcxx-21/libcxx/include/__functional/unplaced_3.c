@@ -166,7 +166,7 @@ bool llvm_libcxx_21_libcxx_include___functional_120b2e0(__int64 a1, _DWORD* a2,
                                                         _DWORD* a3);
 bool llvm_libcxx_21_libcxx_include___functional_127a1a0(__int64 a1, _DWORD* a2);
 void llvm_libcxx_21_libcxx_include___functional_129f1d0(__int64 a1, _DWORD* a2);
-__int64* llvm_libcxx_21_libcxx_include___functional_138f6a0(__int64* result);
+void llvm_libcxx_21_libcxx_include___functional_138f6a0(__int64* result);
 __int64 llvm_libcxx_21_libcxx_include___functional_15adbb0(__int64 a1,
                                                            __int64 a2,
                                                            unsigned int* a3);
@@ -6392,7 +6392,7 @@ bool llvm_libcxx_21_libcxx_include___functional_127a1a0(__int64 a1, _DWORD* a2)
   return result;
 }
 
-__int64* llvm_libcxx_21_libcxx_include___functional_138f6a0(__int64* result)
+void llvm_libcxx_21_libcxx_include___functional_138f6a0(__int64* result)
 {
   float32x4_t* v1;
   unsigned __int64 v2;
@@ -6895,9 +6895,10 @@ LABEL_10:
   if (f_.v91 != 0 && atomic_fetch_add((atomic_ullong* volatile)(f_.v91 + 8),
                                       0xFFFFFFFFFFFFFFFFLL) == 0) {
     (*(void (**)(__int64))(*(_QWORD*)v12 + 16LL))(v12);
-    return (__int64*)std___1___shared_weak_count___release_weak(v12);
+    std___1___shared_weak_count___release_weak(v12);
+    return;
   }
-  return result;
+  return;
 }
 
 _QWORD* llvm_libcxx_21_libcxx_include___functional_15eb780(__int64 a1, char a2)

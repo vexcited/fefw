@@ -11,9 +11,9 @@ extern __int64* GameData_212f878;
 extern __int64 GameData_212d020[5];
 float GameRoutine_1a0a550(float, float);
 float GameRoutine_1a0a6a0(float, float);
-float llvm_libcxx_21_libcxx_include___functional_feb630(__int64 a1);
+void llvm_libcxx_21_libcxx_include___functional_feb630(__int64 a1);
 
-float llvm_libcxx_21_libcxx_include___functional_feb630(__int64 a1)
+void llvm_libcxx_21_libcxx_include___functional_feb630(__int64 a1)
 {
   _QWORD* v2;
   __int64 v3;
@@ -175,7 +175,7 @@ LABEL_24:
   LANES64(v35).n64_f32[1] = result;
   *((float32x2_t*)&v34 + 1) = v35;
   *(_OWORD*)(a1 + 80) = v34;
-  return result;
+  return;
 }
 
 #pragma GCC visibility pop
