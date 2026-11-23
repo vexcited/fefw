@@ -2763,11 +2763,11 @@ __attribute__((swiftcall)) void game_109da60(PSEUDO_X8 x8_, float32x4_t* a1,
   if (v5 <= -0x1.fffffc0000000p-1f) {
     v5 = -0x1.fffffc0000000p-1f;
   }
-  if (v5 <= 0x1.0000000000000p+0f) {
-    v6 = v5;
+  if (v5 > 0x1.0000000000000p+0f) {
+    v6 = 0x1.0000000000000p+0f;
   }
   else {
-    v6 = 0x1.0000000000000p+0f;
+    v6 = v5;
   }
   if (v5 < -0x1.0000000000000p+0f) {
     v6 = -0x1.0000000000000p+0f;

@@ -715,11 +715,11 @@ void llvm_libcxx_21_libcxx_include___functional_10b8b50(__int64 a1, __int64 a2,
         LANES64_OF(vpadd_f32(COERCE_AS(float32x2_t, LANES128(v48).n128_u64[0]),
                              COERCE_AS(float32x2_t, LANES128(v48).n128_u64[0])))
             .n64_u64[0];
-    if (LANES128(v48).n128_f32[0] <= 0x1.0000000000000p+0f) {
-      v49 = LANES128(v48).n128_f32[0];
+    if (LANES128(v48).n128_f32[0] > 0x1.0000000000000p+0f) {
+      v49 = 0x1.0000000000000p+0f;
     }
     else {
-      v49 = 0x1.0000000000000p+0f;
+      v49 = LANES128(v48).n128_f32[0];
     }
     if (LANES128(v48).n128_f32[0] >= -0x1.0000000000000p+0f) {
       v50 = v49;
