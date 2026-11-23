@@ -37690,7 +37690,7 @@ c98260,344,verified,src/game/hub_dispos_file_reader.c,HubDisposFileReader_Destru
 c983c0,1116,verified,src/game/hub_dispos_file_reader.c,HubDisposFileReader_c983c0
 c98830,80,verified,src/memory/new_delete.cpp,deleting destructor at 0xc98830
 c98880,480,verified,src/game/hub_dispos_file_reader.c,HubDisposFileReader_c98880
-c98a80,3984,verified,src/game/hub_dispos_file_reader.c,game_HubDisposFileReader_CalcGroupNames
+c98a80,6676,verified,src/game/hub_dispos_file_reader.c,game_HubDisposFileReader_CalcGroupNames
 c9b1a0,872,verified,src/game/unnamed/b010_2.c,GameHr_c9b1a0
 c9be50,264,verified,src/game/unnamed/b010_2.c,GameHr_c9be50
 c9bf60,472,verified,src/game/hub_dispos_file_reader.c,HubDisposFileReader_c9bf60
