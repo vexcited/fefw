@@ -28461,7 +28461,7 @@ fff90,116,verified,src/snd/api.cpp,_ZN3snd10startPitchERKNS_3fnd10WeakHandleERKN
 9a60a0,24,verified,src/llvm-libcxx-21/libcxx/include/__vector/vector.h,std::vector<T>::__throw_length_error()
 9a60c0,80,verified,src/game/proc/plain_procs.cpp,_ZN4game12_GLOBAL__N_112ProcLoadWaitD1Ev
 9a6110,124,verified,src/game/proc/plain_procs.cpp,_ZN4game12_GLOBAL__N_112ProcLoadWaitD0Ev
-9a61a0,352,verified,src/game/proc/unplaced_4.c,game_proc_9a61a0
+9a61a0,348,disputed,src/game/proc/unplaced_4.c,game_proc_9a61a0
 9a6310,124,verified,src/game/proc/plain_procs.cpp,_ZN4game12_GLOBAL__N_115ProcPreloadWaitD0Ev
 9a6390,104,verified,src/game/anonymous/proc_preload_wait.c,ProcPreloadWait_Unknown2
 9a6400,24,verified,src/llvm-libcxx-21/libcxx/include/__vector/vector.h,std::vector<T>::__throw_length_error()
@@ -62098,7 +62098,7 @@ fffcb0,1244,verified,src/game/unnamed/b014_1.c,GameHr_fffcb0
 140cae0,148,verified,src/game/unnamed/b018_2.c,GameHr_140cae0
 140cba0,1008,verified,src/game/facility/unplaced_5.c,game_facility_140cba0
 140d000,312,verified,src/game/facility/unplaced.c,game_facility_140d000
-140d160,1116,verified,src/game/facility/unplaced_13.c,game_facility_140d160
+140d160,1120,verified,src/game/facility/unplaced_13.c,game_facility_140d160
 140d5c0,652,verified,src/game/facility/unplaced.c,game_facility_140d5c0
 140d860,652,verified,src/game/facility/unplaced.c,game_facility_140d860
 140daf0,2444,verified,src/game/facility/unplaced_7.c,game_facility_140daf0
