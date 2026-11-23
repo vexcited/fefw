@@ -712,7 +712,7 @@ __int64* game_386520(_QWORD* a1, _QWORD* a2, __int64* a3);
 float game_4223a0(float* a1, __int64 a2, float* a3, float* a4);
 __int64 game_610880(unsigned __int8* a1, unsigned __int8* a2,
                     unsigned __int8* a3);
-__int64 game_630ca0(__int64 result, __int64 a2);
+void game_630ca0(__int64 result, __int64 a2);
 void game_66e000(__int64 a1, __int64 a2, int32x4_t* a3);
 __attribute__((swiftcall)) void game_66fe60(PSEUDO_X8 x8_, _QWORD* a1);
 __int64 game_801020(__int64 result, __int64 a2, _DWORD* a3, int a4, int a5,
@@ -2087,7 +2087,7 @@ __int64 game_610880(unsigned __int8* a1, unsigned __int8* a2,
   goto LABEL_21;
 }
 
-__int64 game_630ca0(__int64 result, __int64 a2)
+void game_630ca0(__int64 result, __int64 a2)
 {
   __int64 v2;
   __int64 v3;
@@ -2153,7 +2153,7 @@ __int64 game_630ca0(__int64 result, __int64 a2)
     *(_DWORD*)(result + 88) = 0;
     *(_QWORD*)(result + 72) = 0;
     *(_QWORD*)(result + 80) = 0;
-    return result;
+    return;
   }
   v45 = nullptr;
   v44 = nullptr;
@@ -2374,7 +2374,7 @@ LABEL_57:
       } while (v33 < (int)v32);
     }
   }
-  return result;
+  return;
 }
 
 void game_66e000(__int64 a1, __int64 a2, int32x4_t* a3)
