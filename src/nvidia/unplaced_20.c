@@ -1,7 +1,5 @@
 #include "decomp/pseudo_helpers.h"
-
 #pragma GCC visibility push(hidden)
-
 _DWORD* NgxRoutine_36f0(_DWORD* result, unsigned int*, unsigned int);
 __int64 NgxRoutine_dfab0(__int64 result, unsigned __int64);
 __int64 NgxRoutine_e0c40();
@@ -35,172 +33,6 @@ __int64 nvidia_e2030(__int64 a1, unsigned __int64 a2, __int64 a3, char* a4,
                      ...);
 __int64 nvidia_e2100(__int64 a1, __int64 a2, __int64 a3, ...);
 void __attribute__((noreturn)) nvidia_e2370(__int64 a1, ...);
-
-_DWORD* nvidia_60a0(__int64 a1)
-{
-  int v1;
-  _QWORD* v2;
-  int v4;
-  int v5;
-  bool v6;
-  int v7;
-  int v8;
-  int v9;
-  int v10;
-  int v11;
-  int v12;
-  unsigned int v13;
-  int v14;
-  int v15;
-  int v16;
-  int v17;
-  int v18;
-  int v19;
-  unsigned int v20;
-  _DWORD* result;
-  int v22;
-  __int64 v23;
-  int v24;
-  unsigned int v25;
-  __int64 v26;
-  __int64 v27;
-  __int64 v28;
-  __int64* v29;
-  __int64 v30;
-  __int64* v31;
-  int v32;
-  int v33;
-
-  {
-    v1 = *(_DWORD*)(a1 + 312);
-    __asm__ volatile("" ::"r"(v1));
-  }
-  v2 = (_QWORD*)(a1 + 356);
-  *(_DWORD*)(a1 + 16) *= *(_DWORD*)(a1 + 28);
-  {
-    v4 = *(_DWORD*)(a1 + 100);
-    __asm__ volatile("" ::"r"(v4));
-  }
-  {
-    v5 = *(_DWORD*)(a1 + 104);
-    __asm__ volatile("" ::"r"(v5));
-  }
-  v7 = v4 + 3;
-  v6 = v4 < -3;
-  v8 = v4 + 6;
-  if (!v6) {
-    v8 = v7;
-  }
-  v9 = v5 + 15;
-  v6 = v5 < -15;
-  v10 = v5 + 30;
-  if (!v6) {
-    v10 = v9;
-  }
-  {
-    v11 = *(_DWORD*)(a1 + 320);
-    __asm__ volatile("" ::"r"(v11));
-  }
-  v12 = v10 >> 4;
-  v13 = v12 * (v8 >> 2);
-  *(_DWORD*)(a1 + 352) = v12;
-  *(_DWORD*)(a1 + 348) = v13;
-  *(_DWORD*)(a1 + 324) = v1 * v11;
-  NgxRoutine_36f0((_DWORD*)(a1 + 356), (unsigned int*)(a1 + 360), v13);
-  NgxRoutine_36f0((_DWORD*)(a1 + 364), (unsigned int*)(a1 + 368),
-                  *(_DWORD*)(a1 + 352));
-  {
-    v14 = *(_DWORD*)(a1 + 352);
-    __asm__ volatile("" ::"r"(v14));
-  }
-  *(_DWORD*)(a1 + 120) = *(_DWORD*)(a1 + 348);
-  *(_DWORD*)(a1 + 124) = v14;
-  {
-    v15 = *(_DWORD*)(a1 + 368);
-    __asm__ volatile("" ::"r"(v15));
-  }
-  *(_QWORD*)(a1 + 128) = *v2;
-  *(_DWORD*)(a1 + 136) = *(_DWORD*)(a1 + 364);
-  *(_DWORD*)(a1 + 140) = v15;
-  *(_QWORD*)(a1 + 152) = 2LL * *(int*)(a1 + 16);
-  {
-    v16 = *(_DWORD*)(a1 + 100);
-    __asm__ volatile("" ::"r"(v16));
-  }
-  {
-    v17 = *(_DWORD*)(a1 + 104);
-    __asm__ volatile("" ::"r"(v17));
-  }
-  *(_DWORD*)(a1 + 188) = v16 / 2;
-  *(_DWORD*)(a1 + 192) = v17 / 2;
-  v18 = v17 / 2 + 14;
-  if (v17 / 2 >= -7) {
-    v18 = v17 / 2 + 7;
-  }
-  v19 = v18 >> 3;
-  v20 = v19 * ((v16 / 2 + 1) / 2);
-  *(_DWORD*)(a1 + 208) = v20;
-  *(_DWORD*)(a1 + 212) = v19;
-  NgxRoutine_36f0((_DWORD*)(a1 + 216), (unsigned int*)(a1 + 220), v20);
-  result = NgxRoutine_36f0((_DWORD*)(a1 + 224), (unsigned int*)(a1 + 228),
-                           *(_DWORD*)(a1 + 212));
-  *(_QWORD*)(a1 + 232) = 32;
-  {
-    v22 = *(int*)(a1 + 60) * *(int*)(a1 + 56);
-    __asm__ volatile("" ::"r"(v22));
-  }
-  {
-    v23 = *(int*)(a1 + 48);
-    __asm__ volatile("" ::"r"(v23));
-  }
-  v24 = v22 - 1;
-  v25 = v22 - 2;
-  if (v22 >= 2) {
-    v26 = 2 * v23;
-    v27 = v24 & 7;
-    if (v25 < 7) {
-      v28 = 0;
-      if ((v24 & 7) == 0) {
-        goto LABEL_16;
-      }
-      goto LABEL_14;
-    }
-    v29 = (__int64*)(a1 + 296);
-    v30 = 0;
-    do {
-      *(v29 - 7) = v26;
-      *(v29 - 6) = v26;
-      *(v29 - 5) = v26;
-      *(v29 - 4) = v26;
-      v30 -= 8;
-      *(v29 - 3) = v26;
-      *(v29 - 2) = v26;
-      *(v29 - 1) = v26;
-      *v29 = v26;
-      v29 += 8;
-    } while (-(__int64)(v24 & 0x7FFFFFF8) != v30);
-    v28 = -v30;
-    if ((v24 & 7) != 0) {
-    LABEL_14:
-      v31 = (__int64*)(a1 + 8 * v28 + 240);
-      do {
-        *v31++ = v26;
-        --v27;
-      } while (v27 != 0);
-    }
-  }
-LABEL_16:
-  *(_QWORD*)(a1 + 8LL * v24 + 240) = 64 - 2LL * (int)v23 * v24;
-  v32 = v23 + 31;
-  v6 = (int)v23 < -31;
-  v33 = v23 + 62;
-  if (!v6) {
-    v33 = v32;
-  }
-  *(_DWORD*)(a1 + 328) = (v33 >> 5) - 1;
-  return result;
-}
-
 void nvidia_ae900(__int64 a1, __int64 a2, unsigned int a3, __int64 a4,
                   __int64 a5, ...)
 {
@@ -211,7 +43,6 @@ void nvidia_ae900(__int64 a1, __int64 a2, unsigned int a3, __int64 a4,
   __builtin_va_start(va1, a5);
   util_log_b4d10(a2, a3, a4, a5, 1u, (__int64)&va);
 }
-
 char* nvidia_b41e0(char* result, ...)
 {
   __int64 (**v1)(void*);
@@ -228,7 +59,6 @@ char* nvidia_b41e0(char* result, ...)
   }
   return result;
 }
-
 __int64 nvidia_d9890(__int64 a1, __int64 a2)
 {
   void* v4;
@@ -290,7 +120,6 @@ __int64 nvidia_d9890(__int64 a1, __int64 a2)
   *(_QWORD*)(*v7 + 8 * v5) = a2;
   return result;
 }
-
 __int64 nvidia_da0e0(__int64 a1, __int64 a2)
 {
   void* v4;
@@ -352,7 +181,6 @@ __int64 nvidia_da0e0(__int64 a1, __int64 a2)
   *(_QWORD*)(*v7 + 8 * v5) = a2;
   return result;
 }
-
 __int64 nvidia_da6d0(__int64 a1, __int64 a2)
 {
   void* v4;
@@ -414,7 +242,6 @@ __int64 nvidia_da6d0(__int64 a1, __int64 a2)
   *(_QWORD*)(*v7 + 8 * v5) = a2;
   return result;
 }
-
 __int64 nvidia_dadf0(__int64 a1, __int64 a2)
 {
   void* v4;
@@ -476,7 +303,6 @@ __int64 nvidia_dadf0(__int64 a1, __int64 a2)
   *(_QWORD*)(*v7 + 8 * v5) = a2;
   return result;
 }
-
 __int64 nvidia_e1860(__int64 a1, __int64 a2, __int64 a3, ...)
 {
   __int64 v5;
@@ -493,7 +319,6 @@ __int64 nvidia_e1860(__int64 a1, __int64 a2, __int64 a3, ...)
   }
   return v6;
 }
-
 __int64 nvidia_e2030(__int64 a1, unsigned __int64 a2, __int64 a3, char* a4, ...)
 {
   __int64 v7;
@@ -510,7 +335,6 @@ __int64 nvidia_e2030(__int64 a1, unsigned __int64 a2, __int64 a3, char* a4, ...)
   }
   return v8;
 }
-
 __int64 nvidia_e2100(__int64 a1, __int64 a2, __int64 a3, ...)
 {
   __int64 v5;
@@ -529,7 +353,6 @@ __int64 nvidia_e2100(__int64 a1, __int64 a2, __int64 a3, ...)
   }
   return v6;
 }
-
 void __attribute__((noreturn)) nvidia_e2370(__int64 a1, ...)
 {
   __builtin_va_list va;
@@ -540,5 +363,4 @@ void __attribute__((noreturn)) nvidia_e2370(__int64 a1, ...)
   vfprintf_plt(*(_QWORD*)NgxData_9513b0[0], a1, (__int64)&va);
   abort_plt();
 }
-
 #pragma GCC visibility pop

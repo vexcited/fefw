@@ -1,7 +1,5 @@
 #include "decomp/pseudo_helpers.h"
-
 #pragma GCC visibility push(hidden)
-
 _DWORD* NgxRoutine_36f0(_DWORD* result, unsigned int*, unsigned int);
 _QWORD* NgxRoutine_312c0(__int64, _QWORD*);
 _QWORD* NgxRoutine_b1640(__int64, unsigned __int8*, char*);
@@ -201,7 +199,6 @@ __attribute__((swiftcall)) void nvidia_c04d0(PSEUDO_X8 x8_, __int64 unused_int0,
                                              __int64 a1, __int64 a2);
 __attribute__((swiftcall)) void nvidia_c06d0(PSEUDO_X8 x8_, __int64 unused_int0,
                                              __int64 a1, __int64 a2);
-
 __int64 nvidia_1b0(unsigned __int64 a1)
 {
   if (a1 < (unsigned __int64)NgxData_94c000 ||
@@ -211,1515 +208,6 @@ __int64 nvidia_1b0(unsigned __int64 a1)
   return ((__typeof__((*(__int64 (**)(void))a1)()) (*)())(
       *(__int64 (**)(void))a1))(a1);
 }
-
-__int64 nvidia_4d0(__int64 result)
-{
-  int v1;
-  int v2;
-  bool v3;
-  __int64 v4;
-  int v5;
-  char v6;
-
-  v2 = *(_DWORD*)(result + 56);
-  v1 = *(_DWORD*)(result + 60);
-  v3 = v1 * v2 == 1;
-  v4 = v1 * (__int64)v2 * *(int*)(result + 52);
-  if (v3) {
-    v5 = 32;
-  }
-  else {
-    v5 = 8;
-  }
-  v6 = 3;
-  if (v3) {
-    v6 = 5;
-  }
-  *(_QWORD*)(result + 88) =
-      2 * ((*(int*)(result + 36) * (__int64)*(int*)(result + 32)) << v6);
-  *(_QWORD*)(result + 96) = 2 * (v4 << v6);
-  *(_DWORD*)(result + 368) = (v5 + *(int*)(result + 40) - 1) / v5 - 1;
-  return result;
-}
-
-__int64 nvidia_590(__int64 result)
-{
-  int v1;
-  int v2;
-  bool v3;
-  __int64 v4;
-  int v5;
-  char v6;
-
-  v2 = *(_DWORD*)(result + 56);
-  v1 = *(_DWORD*)(result + 60);
-  v3 = v1 * v2 == 1;
-  v4 = v1 * (__int64)v2 * *(int*)(result + 52);
-  if (v3) {
-    v5 = 32;
-  }
-  else {
-    v5 = 8;
-  }
-  v6 = 3;
-  if (v3) {
-    v6 = 5;
-  }
-  *(_QWORD*)(result + 88) =
-      2 * ((*(int*)(result + 36) * (__int64)*(int*)(result + 32)) << v6);
-  *(_QWORD*)(result + 96) = 2 * (v4 << v6);
-  *(_DWORD*)(result + 368) = (v5 + *(_DWORD*)(result + 40) - 1) / v5 - 1;
-  return result;
-}
-
-__int64 nvidia_650(__int64 result)
-{
-  int v1;
-  int v2;
-  bool v3;
-  __int64 v4;
-  int v5;
-  char v6;
-
-  v2 = *(_DWORD*)(result + 56);
-  v1 = *(_DWORD*)(result + 60);
-  v3 = v1 * v2 == 1;
-  v4 = v1 * (__int64)v2 * *(int*)(result + 52);
-  if (v3) {
-    v5 = 32;
-  }
-  else {
-    v5 = 8;
-  }
-  v6 = 3;
-  if (v3) {
-    v6 = 5;
-  }
-  *(_QWORD*)(result + 88) =
-      2 * ((*(int*)(result + 36) * (__int64)*(int*)(result + 32)) << v6);
-  *(_QWORD*)(result + 96) = 2 * (v4 << v6);
-  *(_DWORD*)(result + 368) = (v5 + *(int*)(result + 40) - 1) / v5 - 1;
-  return result;
-}
-
-__int64 nvidia_710(__int64 result)
-{
-  int v1;
-  int v2;
-  bool v3;
-  __int64 v4;
-  int v5;
-  char v6;
-
-  v2 = *(_DWORD*)(result + 56);
-  v1 = *(_DWORD*)(result + 60);
-  v3 = v1 * v2 == 1;
-  v4 = v1 * (__int64)v2 * *(int*)(result + 52);
-  if (v3) {
-    v5 = 32;
-  }
-  else {
-    v5 = 8;
-  }
-  v6 = 3;
-  if (v3) {
-    v6 = 5;
-  }
-  *(_QWORD*)(result + 88) =
-      2 * ((*(int*)(result + 36) * (__int64)*(int*)(result + 32)) << v6);
-  *(_QWORD*)(result + 96) = 2 * (v4 << v6);
-  *(_DWORD*)(result + 368) = (v5 + *(int*)(result + 40) - 1) / v5 - 1;
-  return result;
-}
-
-__int64 nvidia_7d0(__int64 result)
-{
-  int v1;
-  int v2;
-  bool v3;
-  __int64 v4;
-  int v5;
-  char v6;
-
-  v2 = *(_DWORD*)(result + 56);
-  v1 = *(_DWORD*)(result + 60);
-  v3 = v1 * v2 == 1;
-  v4 = v1 * (__int64)v2 * *(int*)(result + 52);
-  if (v3) {
-    v5 = 32;
-  }
-  else {
-    v5 = 8;
-  }
-  v6 = 3;
-  if (v3) {
-    v6 = 5;
-  }
-  *(_QWORD*)(result + 88) =
-      2 * ((*(int*)(result + 36) * (__int64)*(int*)(result + 32)) << v6);
-  *(_QWORD*)(result + 96) = 2 * (v4 << v6);
-  *(_DWORD*)(result + 368) = (v5 + *(_DWORD*)(result + 40) - 1) / v5 - 1;
-  return result;
-}
-
-__int64 nvidia_2880(__int64 result)
-{
-  int v1;
-  int v2;
-  bool v3;
-  __int64 v4;
-  int v5;
-  char v6;
-
-  v2 = *(_DWORD*)(result + 64);
-  v1 = *(_DWORD*)(result + 68);
-  v3 = v1 * v2 == 1;
-  v4 = v1 * (__int64)v2 * *(int*)(result + 60);
-  if (v3) {
-    v5 = 32;
-  }
-  else {
-    v5 = 8;
-  }
-  v6 = 3;
-  if (v3) {
-    v6 = 5;
-  }
-  *(_QWORD*)(result + 104) =
-      2 * ((*(int*)(result + 44) * (__int64)*(int*)(result + 40)) << v6);
-  *(_QWORD*)(result + 112) = 2 * (v4 << v6);
-  *(_DWORD*)(result + 384) = (v5 + *(_DWORD*)(result + 48) - 1) / v5 - 1;
-  return result;
-}
-
-__int64 nvidia_2a00(__int64 result)
-{
-  int v1;
-  int v2;
-  bool v3;
-  __int64 v4;
-  int v5;
-  char v6;
-
-  v2 = *(_DWORD*)(result + 64);
-  v1 = *(_DWORD*)(result + 68);
-  v3 = v1 * v2 == 1;
-  v4 = v1 * (__int64)v2 * *(int*)(result + 60);
-  if (v3) {
-    v5 = 32;
-  }
-  else {
-    v5 = 8;
-  }
-  v6 = 3;
-  if (v3) {
-    v6 = 5;
-  }
-  *(_QWORD*)(result + 104) =
-      2 * ((*(int*)(result + 44) * (__int64)*(int*)(result + 40)) << v6);
-  *(_QWORD*)(result + 112) = 2 * (v4 << v6);
-  *(_DWORD*)(result + 384) = (v5 + *(_DWORD*)(result + 48) - 1) / v5 - 1;
-  return result;
-}
-
-_DWORD* nvidia_3600(__int64 a1, int a2)
-{
-  int v3;
-  int v4;
-  int v5;
-  _DWORD* v6;
-  bool v7;
-  bool v8;
-  int v9;
-  int v10;
-  int v11;
-  int v12;
-  int v13;
-  unsigned int v14;
-  _DWORD* result;
-  __int64 v16;
-  int v17;
-
-  if (*(_DWORD*)(a1 + 116) == 1 && *(_DWORD*)(a1 + 120) == 1) {
-    v3 = 32;
-  }
-  else if (a2 <= 79) {
-    v3 = 8;
-  }
-  else {
-    v3 = 16;
-  }
-  v4 = *(_DWORD*)(a1 + 100);
-  v5 = *(_DWORD*)(a1 + 104);
-  v6 = (_DWORD*)(a1 + 312);
-  v8 = __OFADD__(v4, 7);
-  v9 = v4 + 7;
-  v7 = v4 + 7 < 0;
-  v10 = v4 + 14;
-  if (v7 == v8) {
-    v10 = v9;
-  }
-  v8 = __OFADD__(v5, 7);
-  v11 = v5 + 7;
-  v7 = v5 + 7 < 0;
-  v12 = v5 + 14;
-  if (v7 == v8) {
-    v12 = v11;
-  }
-  v13 = v12 >> 3;
-  v14 = v13 * (v10 >> 3);
-  *(_DWORD*)(a1 + 308) = v13;
-  *(_DWORD*)(a1 + 304) = v14;
-  NgxRoutine_36f0(v6, (unsigned int*)(a1 + 316), v14);
-  result = NgxRoutine_36f0((_DWORD*)(a1 + 320), (unsigned int*)(a1 + 324),
-                           *(_DWORD*)(a1 + 308));
-  v16 = 2 * v3 * (__int64)*(int*)(a1 + 116) * *(int*)(a1 + 120) *
-        *(int*)(a1 + 108);
-  *(_QWORD*)(a1 + 160) = *(int*)(a1 + 80) * (__int64)v3 * *(int*)(a1 + 84);
-  *(_QWORD*)(a1 + 168) = v16;
-  v17 = (v3 + *(_DWORD*)(a1 + 92) - 1) / v3 - 1;
-  *(_DWORD*)(a1 + 352) = v17;
-  *(_DWORD*)(a1 + 356) = v17 * v3;
-  return result;
-}
-
-_DWORD* nvidia_3970(__int64 a1, int a2)
-{
-  int v3;
-  int v4;
-  int v5;
-  _DWORD* v6;
-  bool v7;
-  bool v8;
-  int v9;
-  int v10;
-  int v11;
-  int v12;
-  int v13;
-  unsigned int v14;
-  _DWORD* result;
-  __int64 v16;
-  int v17;
-
-  if (*(_DWORD*)(a1 + 116) == 1 && *(_DWORD*)(a1 + 120) == 1) {
-    v3 = 32;
-  }
-  else if (a2 <= 79) {
-    v3 = 8;
-  }
-  else {
-    v3 = 16;
-  }
-  v4 = *(_DWORD*)(a1 + 100);
-  v5 = *(_DWORD*)(a1 + 104);
-  v6 = (_DWORD*)(a1 + 312);
-  v8 = __OFADD__(v4, 7);
-  v9 = v4 + 7;
-  v7 = v4 + 7 < 0;
-  v10 = v4 + 14;
-  if (v7 == v8) {
-    v10 = v9;
-  }
-  v8 = __OFADD__(v5, 7);
-  v11 = v5 + 7;
-  v7 = v5 + 7 < 0;
-  v12 = v5 + 14;
-  if (v7 == v8) {
-    v12 = v11;
-  }
-  v13 = v12 >> 3;
-  v14 = v13 * (v10 >> 3);
-  *(_DWORD*)(a1 + 308) = v13;
-  *(_DWORD*)(a1 + 304) = v14;
-  NgxRoutine_36f0(v6, (unsigned int*)(a1 + 316), v14);
-  result = NgxRoutine_36f0((_DWORD*)(a1 + 320), (unsigned int*)(a1 + 324),
-                           *(_DWORD*)(a1 + 308));
-  v16 = 2 * v3 * (__int64)*(int*)(a1 + 116) * *(int*)(a1 + 120) *
-        *(int*)(a1 + 108);
-  *(_QWORD*)(a1 + 160) = *(int*)(a1 + 80) * (__int64)v3 * *(int*)(a1 + 84);
-  *(_QWORD*)(a1 + 168) = v16;
-  v17 = (v3 + *(int*)(a1 + 92) - 1) / v3 - 1;
-  *(_DWORD*)(a1 + 352) = v17;
-  *(_DWORD*)(a1 + 356) = v17 * v3;
-  return result;
-}
-
-_DWORD* nvidia_3ab0(__int64 a1, int a2)
-{
-  int v3;
-  int v4;
-  int v5;
-  _DWORD* v6;
-  bool v7;
-  bool v8;
-  int v9;
-  int v10;
-  int v11;
-  int v12;
-  int v13;
-  unsigned int v14;
-  _DWORD* result;
-  __int64 v16;
-  int v17;
-
-  if (*(_DWORD*)(a1 + 116) == 1 && *(_DWORD*)(a1 + 120) == 1) {
-    v3 = 32;
-  }
-  else if (a2 <= 79) {
-    v3 = 8;
-  }
-  else {
-    v3 = 16;
-  }
-  v4 = *(_DWORD*)(a1 + 100);
-  v5 = *(_DWORD*)(a1 + 104);
-  v6 = (_DWORD*)(a1 + 312);
-  v8 = __OFADD__(v4, 3);
-  v9 = v4 + 3;
-  v7 = v4 + 3 < 0;
-  v10 = v4 + 6;
-  if (v7 == v8) {
-    v10 = v9;
-  }
-  v8 = __OFADD__(v5, 3);
-  v11 = v5 + 3;
-  v7 = v5 + 3 < 0;
-  v12 = v5 + 6;
-  if (v7 == v8) {
-    v12 = v11;
-  }
-  v13 = v12 >> 2;
-  v14 = v13 * (v10 >> 2);
-  *(_DWORD*)(a1 + 308) = v13;
-  *(_DWORD*)(a1 + 304) = v14;
-  NgxRoutine_36f0(v6, (unsigned int*)(a1 + 316), v14);
-  result = NgxRoutine_36f0((_DWORD*)(a1 + 320), (unsigned int*)(a1 + 324),
-                           *(_DWORD*)(a1 + 308));
-  v16 = 2 * v3 * (__int64)*(int*)(a1 + 116) * *(int*)(a1 + 120) *
-        *(int*)(a1 + 108);
-  *(_QWORD*)(a1 + 160) = *(int*)(a1 + 80) * (__int64)v3 * *(int*)(a1 + 84);
-  *(_QWORD*)(a1 + 168) = v16;
-  v17 = (v3 + *(_DWORD*)(a1 + 92) - 1) / v3 - 1;
-  *(_DWORD*)(a1 + 352) = v17;
-  *(_DWORD*)(a1 + 356) = v17 * v3;
-  return result;
-}
-
-_DWORD* nvidia_3bf0(__int64 a1, int a2)
-{
-  int v3;
-  int v4;
-  int v5;
-  _DWORD* v6;
-  bool v7;
-  bool v8;
-  int v9;
-  int v10;
-  int v11;
-  int v12;
-  int v13;
-  unsigned int v14;
-  _DWORD* result;
-  __int64 v16;
-  int v17;
-
-  if (*(_DWORD*)(a1 + 116) == 1 && *(_DWORD*)(a1 + 120) == 1) {
-    v3 = 32;
-  }
-  else if (a2 <= 79) {
-    v3 = 8;
-  }
-  else {
-    v3 = 16;
-  }
-  v4 = *(_DWORD*)(a1 + 100);
-  v5 = *(_DWORD*)(a1 + 104);
-  v6 = (_DWORD*)(a1 + 312);
-  v8 = __OFADD__(v4, 3);
-  v9 = v4 + 3;
-  v7 = v4 + 3 < 0;
-  v10 = v4 + 6;
-  if (v7 == v8) {
-    v10 = v9;
-  }
-  v8 = __OFADD__(v5, 3);
-  v11 = v5 + 3;
-  v7 = v5 + 3 < 0;
-  v12 = v5 + 6;
-  if (v7 == v8) {
-    v12 = v11;
-  }
-  v13 = v12 >> 2;
-  v14 = v13 * (v10 >> 2);
-  *(_DWORD*)(a1 + 308) = v13;
-  *(_DWORD*)(a1 + 304) = v14;
-  NgxRoutine_36f0(v6, (unsigned int*)(a1 + 316), v14);
-  result = NgxRoutine_36f0((_DWORD*)(a1 + 320), (unsigned int*)(a1 + 324),
-                           *(_DWORD*)(a1 + 308));
-  v16 = 2 * v3 * (__int64)*(int*)(a1 + 116) * *(int*)(a1 + 120) *
-        *(int*)(a1 + 108);
-  *(_QWORD*)(a1 + 160) = 2 * v3 * (__int64)*(int*)(a1 + 80) * *(int*)(a1 + 84);
-  *(_QWORD*)(a1 + 168) = v16;
-  v17 = (v3 + *(_DWORD*)(a1 + 92) - 1) / v3 - 1;
-  *(_DWORD*)(a1 + 352) = v17;
-  *(_DWORD*)(a1 + 356) = v17 * v3;
-  return result;
-}
-
-_DWORD* nvidia_3d30(__int64 a1, int a2)
-{
-  int v3;
-  int v4;
-  int v5;
-  _DWORD* v6;
-  bool v7;
-  bool v8;
-  int v9;
-  int v10;
-  int v11;
-  int v12;
-  int v13;
-  unsigned int v14;
-  _DWORD* result;
-  __int64 v16;
-  int v17;
-
-  if (*(_DWORD*)(a1 + 116) == 1 && *(_DWORD*)(a1 + 120) == 1) {
-    v3 = 32;
-  }
-  else if (a2 <= 79) {
-    v3 = 8;
-  }
-  else {
-    v3 = 16;
-  }
-  v4 = *(_DWORD*)(a1 + 100);
-  v5 = *(_DWORD*)(a1 + 104);
-  v6 = (_DWORD*)(a1 + 312);
-  v8 = __OFADD__(v4, 3);
-  v9 = v4 + 3;
-  v7 = v4 + 3 < 0;
-  v10 = v4 + 6;
-  if (v7 == v8) {
-    v10 = v9;
-  }
-  v8 = __OFADD__(v5, 7);
-  v11 = v5 + 7;
-  v7 = v5 + 7 < 0;
-  v12 = v5 + 14;
-  if (v7 == v8) {
-    v12 = v11;
-  }
-  v13 = v12 >> 3;
-  v14 = v13 * (v10 >> 2);
-  *(_DWORD*)(a1 + 308) = v13;
-  *(_DWORD*)(a1 + 304) = v14;
-  NgxRoutine_36f0(v6, (unsigned int*)(a1 + 316), v14);
-  result = NgxRoutine_36f0((_DWORD*)(a1 + 320), (unsigned int*)(a1 + 324),
-                           *(_DWORD*)(a1 + 308));
-  v16 = 2 * v3 * (__int64)*(int*)(a1 + 116) * *(int*)(a1 + 120) *
-        *(int*)(a1 + 108);
-  *(_QWORD*)(a1 + 160) = *(int*)(a1 + 80) * (__int64)v3 * *(int*)(a1 + 84);
-  *(_QWORD*)(a1 + 168) = v16;
-  v17 = (v3 + *(_DWORD*)(a1 + 92) - 1) / v3 - 1;
-  *(_DWORD*)(a1 + 352) = v17;
-  *(_DWORD*)(a1 + 356) = v17 * v3;
-  return result;
-}
-
-_DWORD* nvidia_3e70(__int64 a1, int a2)
-{
-  int v3;
-  int v4;
-  int v5;
-  _DWORD* v6;
-  bool v7;
-  bool v8;
-  int v9;
-  int v10;
-  int v11;
-  int v12;
-  int v13;
-  unsigned int v14;
-  _DWORD* result;
-  __int64 v16;
-  int v17;
-
-  if (*(_DWORD*)(a1 + 116) == 1 && *(_DWORD*)(a1 + 120) == 1) {
-    v3 = 32;
-  }
-  else if (a2 <= 79) {
-    v3 = 8;
-  }
-  else {
-    v3 = 16;
-  }
-  v4 = *(_DWORD*)(a1 + 100);
-  v5 = *(_DWORD*)(a1 + 104);
-  v6 = (_DWORD*)(a1 + 312);
-  v8 = __OFADD__(v4, 3);
-  v9 = v4 + 3;
-  v7 = v4 + 3 < 0;
-  v10 = v4 + 6;
-  if (v7 == v8) {
-    v10 = v9;
-  }
-  v8 = __OFADD__(v5, 7);
-  v11 = v5 + 7;
-  v7 = v5 + 7 < 0;
-  v12 = v5 + 14;
-  if (v7 == v8) {
-    v12 = v11;
-  }
-  v13 = v12 >> 3;
-  v14 = v13 * (v10 >> 2);
-  *(_DWORD*)(a1 + 308) = v13;
-  *(_DWORD*)(a1 + 304) = v14;
-  NgxRoutine_36f0(v6, (unsigned int*)(a1 + 316), v14);
-  result = NgxRoutine_36f0((_DWORD*)(a1 + 320), (unsigned int*)(a1 + 324),
-                           *(_DWORD*)(a1 + 308));
-  v16 = 2 * v3 * (__int64)*(int*)(a1 + 116) * *(int*)(a1 + 120) *
-        *(int*)(a1 + 108);
-  *(_QWORD*)(a1 + 160) = 2 * v3 * (__int64)*(int*)(a1 + 80) * *(int*)(a1 + 84);
-  *(_QWORD*)(a1 + 168) = v16;
-  v17 = (v3 + *(int*)(a1 + 92) - 1) / v3 - 1;
-  *(_DWORD*)(a1 + 352) = v17;
-  *(_DWORD*)(a1 + 356) = v17 * v3;
-  return result;
-}
-
-_DWORD* nvidia_3fb0(__int64 a1, int a2)
-{
-  int v3;
-  int v4;
-  int v5;
-  _DWORD* v6;
-  bool v7;
-  bool v8;
-  int v9;
-  int v10;
-  int v11;
-  int v12;
-  int v13;
-  unsigned int v14;
-  _DWORD* result;
-  __int64 v16;
-  int v17;
-
-  if (*(_DWORD*)(a1 + 116) == 1 && *(_DWORD*)(a1 + 120) == 1) {
-    v3 = 32;
-  }
-  else if (a2 <= 79) {
-    v3 = 8;
-  }
-  else {
-    v3 = 16;
-  }
-  v4 = *(_DWORD*)(a1 + 100);
-  v5 = *(_DWORD*)(a1 + 104);
-  v6 = (_DWORD*)(a1 + 312);
-  v8 = __OFADD__(v4, 7);
-  v9 = v4 + 7;
-  v7 = v4 + 7 < 0;
-  v10 = v4 + 14;
-  if (v7 == v8) {
-    v10 = v9;
-  }
-  v8 = __OFADD__(v5, 15);
-  v11 = v5 + 15;
-  v7 = v5 + 15 < 0;
-  v12 = v5 + 30;
-  if (v7 == v8) {
-    v12 = v11;
-  }
-  v13 = v12 >> 4;
-  v14 = v13 * (v10 >> 3);
-  *(_DWORD*)(a1 + 308) = v13;
-  *(_DWORD*)(a1 + 304) = v14;
-  NgxRoutine_36f0(v6, (unsigned int*)(a1 + 316), v14);
-  result = NgxRoutine_36f0((_DWORD*)(a1 + 320), (unsigned int*)(a1 + 324),
-                           *(_DWORD*)(a1 + 308));
-  v16 = 2 * v3 * (__int64)*(int*)(a1 + 116) * *(int*)(a1 + 120) *
-        *(int*)(a1 + 108);
-  *(_QWORD*)(a1 + 160) = 2 * v3 * (__int64)*(int*)(a1 + 80) * *(int*)(a1 + 84);
-  *(_QWORD*)(a1 + 168) = v16;
-  v17 = (v3 + *(int*)(a1 + 92) - 1) / v3 - 1;
-  *(_DWORD*)(a1 + 352) = v17;
-  *(_DWORD*)(a1 + 356) = v17 * v3;
-  return result;
-}
-
-_DWORD* nvidia_40f0(__int64 a1, int a2)
-{
-  int v3;
-  int v4;
-  int v5;
-  _DWORD* v6;
-  bool v7;
-  bool v8;
-  int v9;
-  int v10;
-  int v11;
-  int v12;
-  int v13;
-  unsigned int v14;
-  _DWORD* result;
-  __int64 v16;
-  int v17;
-
-  if (*(_DWORD*)(a1 + 116) == 1 && *(_DWORD*)(a1 + 120) == 1) {
-    v3 = 32;
-  }
-  else if (a2 <= 79) {
-    v3 = 8;
-  }
-  else {
-    v3 = 16;
-  }
-  v4 = *(_DWORD*)(a1 + 100);
-  v5 = *(_DWORD*)(a1 + 104);
-  v6 = (_DWORD*)(a1 + 312);
-  v8 = __OFADD__(v4, 7);
-  v9 = v4 + 7;
-  v7 = v4 + 7 < 0;
-  v10 = v4 + 14;
-  if (v7 == v8) {
-    v10 = v9;
-  }
-  v8 = __OFADD__(v5, 15);
-  v11 = v5 + 15;
-  v7 = v5 + 15 < 0;
-  v12 = v5 + 30;
-  if (v7 == v8) {
-    v12 = v11;
-  }
-  v13 = v12 >> 4;
-  v14 = v13 * (v10 >> 3);
-  *(_DWORD*)(a1 + 308) = v13;
-  *(_DWORD*)(a1 + 304) = v14;
-  NgxRoutine_36f0(v6, (unsigned int*)(a1 + 316), v14);
-  result = NgxRoutine_36f0((_DWORD*)(a1 + 320), (unsigned int*)(a1 + 324),
-                           *(_DWORD*)(a1 + 308));
-  v16 = 2 * v3 * (__int64)*(int*)(a1 + 116) * *(int*)(a1 + 120) *
-        *(int*)(a1 + 108);
-  *(_QWORD*)(a1 + 160) = 2 * v3 * (__int64)*(int*)(a1 + 80) * *(int*)(a1 + 84);
-  *(_QWORD*)(a1 + 168) = v16;
-  v17 = (v3 + *(int*)(a1 + 92) - 1) / v3 - 1;
-  *(_DWORD*)(a1 + 352) = v17;
-  *(_DWORD*)(a1 + 356) = v17 * v3;
-  return result;
-}
-
-_DWORD* nvidia_4230(__int64 a1)
-{
-  int v1;
-  int v2;
-  bool v4;
-  bool v5;
-  int v6;
-  int v7;
-  int v8;
-  int v9;
-  int v10;
-  unsigned int v11;
-  _DWORD* result;
-  int v13;
-  int v14;
-  int v15;
-  __int64 v16;
-
-  v1 = *(_DWORD*)(a1 + 188);
-  v2 = *(_DWORD*)(a1 + 192);
-  v5 = __OFADD__(v1, 3);
-  v6 = v1 + 3;
-  v4 = v1 + 3 < 0;
-  v7 = v1 + 6;
-  if (v4 == v5) {
-    v7 = v6;
-  }
-  v5 = __OFADD__(v2, 7);
-  v8 = v2 + 7;
-  v4 = v2 + 7 < 0;
-  v9 = v2 + 14;
-  if (v4 == v5) {
-    v9 = v8;
-  }
-  v10 = v9 >> 3;
-  v11 = v10 * (v7 >> 2);
-  *(_DWORD*)(a1 + 352) = v10;
-  *(_DWORD*)(a1 + 348) = v11;
-  NgxRoutine_36f0((_DWORD*)(a1 + 356), (unsigned int*)(a1 + 360), v11);
-  result = NgxRoutine_36f0((_DWORD*)(a1 + 364), (unsigned int*)(a1 + 368),
-                           *(_DWORD*)(a1 + 352));
-  v13 = *(_DWORD*)(a1 + 352);
-  v14 = *(_DWORD*)(a1 + 368);
-  *(_DWORD*)(a1 + 124) = v13;
-  *(_DWORD*)(a1 + 212) = v13;
-  v15 = *(_DWORD*)(a1 + 364);
-  *(_DWORD*)(a1 + 136) = v15;
-  *(_DWORD*)(a1 + 140) = v14;
-  *(_DWORD*)(a1 + 224) = v15;
-  *(_DWORD*)(a1 + 228) = v14;
-  v16 = 144LL * *(int*)(a1 + 20);
-  *(_QWORD*)(a1 + 144) = 16 * *(int*)(a1 + 316) * (__int64)*(int*)(a1 + 320);
-  *(_QWORD*)(a1 + 152) = v16;
-  return result;
-}
-
-_DWORD* nvidia_45c0(__int64 a1)
-{
-  int v1;
-  int v2;
-  bool v4;
-  int v5;
-  int v6;
-  int v7;
-  int v8;
-  int v9;
-  unsigned int v10;
-  _DWORD* result;
-  int v12;
-  __int64 v13;
-  int v14;
-  unsigned int v15;
-  __int64 v16;
-  __int64 v17;
-  __int64 v18;
-  __int64* v19;
-  __int64 v20;
-  __int64* v21;
-  int v22;
-  int v23;
-  int v24;
-
-  v1 = *(_DWORD*)(a1 + 100);
-  v2 = *(_DWORD*)(a1 + 104);
-  v5 = v1 + 7;
-  v4 = v1 < -7;
-  v6 = v1 + 14;
-  if (!v4) {
-    v6 = v5;
-  }
-  v7 = v2 + 7;
-  v4 = v2 < -7;
-  v8 = v2 + 14;
-  if (!v4) {
-    v8 = v7;
-  }
-  v9 = v8 >> 3;
-  v10 = v9 * (v6 >> 3);
-  *(_DWORD*)(a1 + 308) = v9;
-  *(_DWORD*)(a1 + 304) = v10;
-  NgxRoutine_36f0((_DWORD*)(a1 + 312), (unsigned int*)(a1 + 316), v10);
-  result = NgxRoutine_36f0((_DWORD*)(a1 + 320), (unsigned int*)(a1 + 324),
-                           *(_DWORD*)(a1 + 308));
-  *(_QWORD*)(a1 + 160) = 64;
-  v12 = *(_DWORD*)(a1 + 120) * *(_DWORD*)(a1 + 116);
-  v13 = *(int*)(a1 + 92);
-  v14 = v12 - 1;
-  v15 = v12 - 2;
-  if (v12 >= 2) {
-    v16 = 2 * v13;
-    v17 = v14 & 7;
-    if (v15 < 7) {
-      v18 = 0;
-      if ((v14 & 7) == 0) {
-        goto LABEL_14;
-      }
-      goto LABEL_12;
-    }
-    v19 = (__int64*)(a1 + 224);
-    v20 = 0;
-    do {
-      *(v19 - 7) = v16;
-      *(v19 - 6) = v16;
-      *(v19 - 5) = v16;
-      *(v19 - 4) = v16;
-      v20 -= 8;
-      *(v19 - 3) = v16;
-      *(v19 - 2) = v16;
-      *(v19 - 1) = v16;
-      *v19 = v16;
-      v19 += 8;
-    } while (-(__int64)(v14 & 0x7FFFFFF8) != v20);
-    v18 = -v20;
-    if ((v14 & 7) != 0) {
-    LABEL_12:
-      v21 = (__int64*)(a1 + 8 * v18 + 168);
-      do {
-        *v21++ = v16;
-        --v17;
-      } while (v17 != 0);
-    }
-  }
-LABEL_14:
-  *(_QWORD*)(a1 + 8LL * v14 + 168) = 64 - 2LL * (int)v13 * v14;
-  v22 = v13 + 31;
-  v4 = (int)v13 < -31;
-  v23 = v13 + 62;
-  if (!v4) {
-    v23 = v22;
-  }
-  v24 = (v23 >> 5) - 1;
-  *(_DWORD*)(a1 + 352) = v24;
-  *(_DWORD*)(a1 + 356) = 32 * v24;
-  return result;
-}
-
-_DWORD* nvidia_5500(__int64 a1)
-{
-  int v1;
-  int v2;
-  bool v4;
-  int v5;
-  int v6;
-  int v7;
-  int v8;
-  int v9;
-  unsigned int v10;
-  _DWORD* result;
-  int v12;
-  __int64 v13;
-  int v14;
-  unsigned int v15;
-  __int64 v16;
-  __int64 v17;
-  __int64 v18;
-  __int64* v19;
-  __int64 v20;
-  __int64* v21;
-  int v22;
-  int v23;
-  int v24;
-
-  v1 = *(_DWORD*)(a1 + 100);
-  v2 = *(_DWORD*)(a1 + 104);
-  v5 = v1 + 7;
-  v4 = v1 < -7;
-  v6 = v1 + 14;
-  if (!v4) {
-    v6 = v5;
-  }
-  v7 = v2 + 7;
-  v4 = v2 < -7;
-  v8 = v2 + 14;
-  if (!v4) {
-    v8 = v7;
-  }
-  v9 = v8 >> 3;
-  v10 = v9 * (v6 >> 3);
-  *(_DWORD*)(a1 + 308) = v9;
-  *(_DWORD*)(a1 + 304) = v10;
-  NgxRoutine_36f0((_DWORD*)(a1 + 312), (unsigned int*)(a1 + 316), v10);
-  result = NgxRoutine_36f0((_DWORD*)(a1 + 320), (unsigned int*)(a1 + 324),
-                           *(_DWORD*)(a1 + 308));
-  *(_QWORD*)(a1 + 160) = 64;
-  v12 = *(_DWORD*)(a1 + 120) * *(_DWORD*)(a1 + 116);
-  v13 = *(int*)(a1 + 92);
-  v14 = v12 - 1;
-  v15 = v12 - 2;
-  if (v12 >= 2) {
-    v16 = 2 * v13;
-    v17 = v14 & 7;
-    if (v15 < 7) {
-      v18 = 0;
-      if ((v14 & 7) == 0) {
-        goto LABEL_14;
-      }
-      goto LABEL_12;
-    }
-    v19 = (__int64*)(a1 + 224);
-    v20 = 0;
-    do {
-      *(v19 - 7) = v16;
-      *(v19 - 6) = v16;
-      *(v19 - 5) = v16;
-      *(v19 - 4) = v16;
-      v20 -= 8;
-      *(v19 - 3) = v16;
-      *(v19 - 2) = v16;
-      *(v19 - 1) = v16;
-      *v19 = v16;
-      v19 += 8;
-    } while (-(__int64)(v14 & 0x7FFFFFF8) != v20);
-    v18 = -v20;
-    if ((v14 & 7) != 0) {
-    LABEL_12:
-      v21 = (__int64*)(a1 + 8 * v18 + 168);
-      do {
-        *v21++ = v16;
-        --v17;
-      } while (v17 != 0);
-    }
-  }
-LABEL_14:
-  *(_QWORD*)(a1 + 8LL * v14 + 168) = 64 - 2LL * (int)v13 * v14;
-  v22 = v13 + 31;
-  v4 = (int)v13 < -31;
-  v23 = v13 + 62;
-  if (!v4) {
-    v23 = v22;
-  }
-  v24 = (v23 >> 5) - 1;
-  *(_DWORD*)(a1 + 352) = v24;
-  *(_DWORD*)(a1 + 356) = 32 * v24;
-  return result;
-}
-
-_DWORD* nvidia_5980(__int64 a1)
-{
-  int v1;
-  int v2;
-  bool v4;
-  int v5;
-  int v6;
-  int v7;
-  int v8;
-  int v9;
-  unsigned int v10;
-  _DWORD* result;
-  int v12;
-  __int64 v13;
-  int v14;
-  unsigned int v15;
-  __int64 v16;
-  __int64 v17;
-  __int64 v18;
-  __int64* v19;
-  __int64 v20;
-  __int64* v21;
-  int v22;
-
-  v1 = *(_DWORD*)(a1 + 100);
-  v2 = *(_DWORD*)(a1 + 104);
-  v5 = v1 + 3;
-  v4 = v1 < -3;
-  v6 = v1 + 6;
-  if (!v4) {
-    v6 = v5;
-  }
-  v7 = v2 + 7;
-  v4 = v2 < -7;
-  v8 = v2 + 14;
-  if (!v4) {
-    v8 = v7;
-  }
-  v9 = v8 >> 3;
-  v10 = v9 * (v6 >> 2);
-  *(_DWORD*)(a1 + 308) = v9;
-  *(_DWORD*)(a1 + 304) = v10;
-  NgxRoutine_36f0((_DWORD*)(a1 + 312), (unsigned int*)(a1 + 316), v10);
-  result = NgxRoutine_36f0((_DWORD*)(a1 + 320), (unsigned int*)(a1 + 324),
-                           *(_DWORD*)(a1 + 308));
-  *(_QWORD*)(a1 + 160) = 80;
-  v12 = *(_DWORD*)(a1 + 120) * *(_DWORD*)(a1 + 116);
-  v13 = *(int*)(a1 + 92);
-  v14 = v12 - 1;
-  v15 = v12 - 2;
-  if (v12 >= 2) {
-    v16 = 2 * v13;
-    v17 = v14 & 7;
-    if (v15 < 7) {
-      v18 = 0;
-      if ((v14 & 7) == 0) {
-        goto LABEL_14;
-      }
-      goto LABEL_12;
-    }
-    v19 = (__int64*)(a1 + 224);
-    v20 = 0;
-    do {
-      *(v19 - 7) = v16;
-      *(v19 - 6) = v16;
-      *(v19 - 5) = v16;
-      *(v19 - 4) = v16;
-      v20 -= 8;
-      *(v19 - 3) = v16;
-      *(v19 - 2) = v16;
-      *(v19 - 1) = v16;
-      *v19 = v16;
-      v19 += 8;
-    } while (-(__int64)(v14 & 0x7FFFFFF8) != v20);
-    v18 = -v20;
-    if ((v14 & 7) != 0) {
-    LABEL_12:
-      v21 = (__int64*)(a1 + 8 * v18 + 168);
-      do {
-        *v21++ = v16;
-        --v17;
-      } while (v17 != 0);
-    }
-  }
-LABEL_14:
-  *(_QWORD*)(a1 + 8LL * v14 + 168) = 80 - 2LL * (int)v13 * v14;
-  v22 = ((int)v13 + 39) / 40 - 1;
-  *(_DWORD*)(a1 + 352) = v22;
-  *(_DWORD*)(a1 + 356) = 40 * v22;
-  return result;
-}
-
-_DWORD* nvidia_5cb0(__int64 a1, int a2)
-{
-  int v2;
-  int v3;
-  int v4;
-  _DWORD* v6;
-  int v7;
-  int v8;
-  bool v9;
-  bool v10;
-  int v11;
-  int v12;
-  int v13;
-  int v14;
-  int v15;
-  unsigned int v16;
-  _DWORD* result;
-
-  v2 = *(_DWORD*)(a1 + 92);
-  v3 = *(_DWORD*)(a1 + 120);
-  v4 = 1;
-  if (a2 >= 80) {
-    v4 = *(_DWORD*)(a1 + 116);
-  }
-  *(_DWORD*)(a1 + 76) = 1;
-  *(_DWORD*)(a1 + 96) = 1;
-  v6 = (_DWORD*)(a1 + 312);
-  *(_DWORD*)(a1 + 276) = v3 * v2 * v4;
-  v7 = *(_DWORD*)(a1 + 100);
-  v8 = *(_DWORD*)(a1 + 104);
-  v10 = __OFADD__(v7, 3);
-  v11 = v7 + 3;
-  v9 = v7 + 3 < 0;
-  v12 = v7 + 6;
-  if (v9 == v10) {
-    v12 = v11;
-  }
-  v10 = __OFADD__(v8, 15);
-  v13 = v8 + 15;
-  v9 = v8 + 15 < 0;
-  v14 = v8 + 30;
-  if (v9 == v10) {
-    v14 = v13;
-  }
-  v15 = v14 >> 4;
-  v16 = v15 * (v12 >> 2);
-  *(_DWORD*)(a1 + 308) = v15;
-  *(_DWORD*)(a1 + 304) = v16;
-  NgxRoutine_36f0(v6, (unsigned int*)(a1 + 316), v16);
-  result = NgxRoutine_36f0((_DWORD*)(a1 + 320), (unsigned int*)(a1 + 324),
-                           *(_DWORD*)(a1 + 308));
-  *(_QWORD*)(a1 + 168) = 2LL * *(int*)(a1 + 276);
-  return result;
-}
-
-_DWORD* nvidia_5db0(__int64 a1, int a2)
-{
-  int v2;
-  int v3;
-  int v4;
-  _DWORD* v6;
-  int v7;
-  int v8;
-  bool v9;
-  bool v10;
-  int v11;
-  int v12;
-  int v13;
-  int v14;
-  int v15;
-  unsigned int v16;
-  _DWORD* result;
-
-  v2 = *(_DWORD*)(a1 + 92);
-  v3 = *(_DWORD*)(a1 + 120);
-  v4 = 1;
-  if (a2 >= 80) {
-    v4 = *(_DWORD*)(a1 + 116);
-  }
-  *(_DWORD*)(a1 + 76) = 1;
-  *(_DWORD*)(a1 + 96) = 1;
-  v6 = (_DWORD*)(a1 + 312);
-  *(_DWORD*)(a1 + 276) = v3 * v2 * v4;
-  v7 = *(_DWORD*)(a1 + 100);
-  v8 = *(_DWORD*)(a1 + 104);
-  v10 = __OFADD__(v7, 3);
-  v11 = v7 + 3;
-  v9 = v7 + 3 < 0;
-  v12 = v7 + 6;
-  if (v9 == v10) {
-    v12 = v11;
-  }
-  v10 = __OFADD__(v8, 15);
-  v13 = v8 + 15;
-  v9 = v8 + 15 < 0;
-  v14 = v8 + 30;
-  if (v9 == v10) {
-    v14 = v13;
-  }
-  v15 = v14 >> 4;
-  v16 = v15 * (v12 >> 2);
-  *(_DWORD*)(a1 + 308) = v15;
-  *(_DWORD*)(a1 + 304) = v16;
-  NgxRoutine_36f0(v6, (unsigned int*)(a1 + 316), v16);
-  result = NgxRoutine_36f0((_DWORD*)(a1 + 320), (unsigned int*)(a1 + 324),
-                           *(_DWORD*)(a1 + 308));
-  *(_QWORD*)(a1 + 168) = 2LL * *(int*)(a1 + 276);
-  return result;
-}
-
-_DWORD* nvidia_5eb0(__int64 a1)
-{
-  int v2;
-  int v3;
-  bool v4;
-  bool v5;
-  int v6;
-  int v7;
-  int v8;
-  int v9;
-  int v10;
-  unsigned int v11;
-  _DWORD* result;
-
-  *(_DWORD*)(a1 + 276) = *(_DWORD*)(a1 + 120) * *(_DWORD*)(a1 + 92);
-  *(_DWORD*)(a1 + 76) = 1;
-  *(_DWORD*)(a1 + 96) = 1;
-  v2 = *(_DWORD*)(a1 + 100);
-  v3 = *(_DWORD*)(a1 + 104);
-  v5 = __OFADD__(v2, 3);
-  v6 = v2 + 3;
-  v4 = v2 + 3 < 0;
-  v7 = v2 + 6;
-  if (v4 == v5) {
-    v7 = v6;
-  }
-  v5 = __OFADD__(v3, 15);
-  v8 = v3 + 15;
-  v4 = v3 + 15 < 0;
-  v9 = v3 + 30;
-  if (v4 == v5) {
-    v9 = v8;
-  }
-  v10 = v9 >> 4;
-  v11 = v10 * (v7 >> 2);
-  *(_DWORD*)(a1 + 308) = v10;
-  *(_DWORD*)(a1 + 304) = v11;
-  NgxRoutine_36f0((_DWORD*)(a1 + 312), (unsigned int*)(a1 + 316), v11);
-  result = NgxRoutine_36f0((_DWORD*)(a1 + 320), (unsigned int*)(a1 + 324),
-                           *(_DWORD*)(a1 + 308));
-  *(_QWORD*)(a1 + 168) = 2LL * *(int*)(a1 + 276);
-  return result;
-}
-
-_DWORD* nvidia_5fa0(__int64 a1)
-{
-  int v2;
-  int v3;
-  bool v4;
-  bool v5;
-  int v6;
-  int v7;
-  int v8;
-  int v9;
-  int v10;
-  unsigned int v11;
-  _DWORD* result;
-
-  *(_DWORD*)(a1 + 276) = *(_DWORD*)(a1 + 120) * *(_DWORD*)(a1 + 92);
-  *(_DWORD*)(a1 + 76) = 1;
-  *(_DWORD*)(a1 + 96) = 1;
-  v2 = *(_DWORD*)(a1 + 100);
-  v3 = *(_DWORD*)(a1 + 104);
-  v5 = __OFADD__(v2, 3);
-  v6 = v2 + 3;
-  v4 = v2 + 3 < 0;
-  v7 = v2 + 6;
-  if (v4 == v5) {
-    v7 = v6;
-  }
-  v5 = __OFADD__(v3, 15);
-  v8 = v3 + 15;
-  v4 = v3 + 15 < 0;
-  v9 = v3 + 30;
-  if (v4 == v5) {
-    v9 = v8;
-  }
-  v10 = v9 >> 4;
-  v11 = v10 * (v7 >> 2);
-  *(_DWORD*)(a1 + 308) = v10;
-  *(_DWORD*)(a1 + 304) = v11;
-  NgxRoutine_36f0((_DWORD*)(a1 + 312), (unsigned int*)(a1 + 316), v11);
-  result = NgxRoutine_36f0((_DWORD*)(a1 + 320), (unsigned int*)(a1 + 324),
-                           *(_DWORD*)(a1 + 308));
-  *(_QWORD*)(a1 + 168) = 2LL * *(int*)(a1 + 276);
-  return result;
-}
-
-_DWORD* nvidia_6520(__int64 a1, int a2)
-{
-  int v3;
-  int v4;
-  int v5;
-  unsigned int* v6;
-  _DWORD* v7;
-  int v8;
-  int v9;
-  bool v10;
-  int v11;
-  int v12;
-  int v13;
-  int v14;
-  int v15;
-  int v16;
-  unsigned int v17;
-  int v18;
-  int v19;
-  int v20;
-  int v21;
-  int v22;
-  int v23;
-  unsigned int v24;
-  _DWORD* result;
-  int v26;
-  __int64 v27;
-  int v28;
-  unsigned int v29;
-  __int64 v30;
-  __int64 v31;
-  __int64 v32;
-  __int64* v33;
-  __int64 v34;
-  __int64* v35;
-  int v36;
-  int v37;
-
-  v3 = *(_DWORD*)(a1 + 28) * *(_DWORD*)(a1 + 16);
-  if (a2 < 80) {
-    v4 = 1;
-  }
-  else {
-    v4 = *(_DWORD*)(a1 + 24);
-  }
-  v5 = *(_DWORD*)(a1 + 312);
-  v6 = (unsigned int*)(a1 + 360);
-  v7 = (_DWORD*)(a1 + 356);
-  *(_DWORD*)(a1 + 16) = v3 * v4;
-  v8 = *(_DWORD*)(a1 + 100);
-  v9 = *(_DWORD*)(a1 + 104);
-  v11 = v8 + 3;
-  v10 = v8 < -3;
-  v12 = v8 + 6;
-  if (!v10) {
-    v12 = v11;
-  }
-  v13 = v9 + 15;
-  v10 = v9 < -15;
-  v14 = v9 + 30;
-  if (!v10) {
-    v14 = v13;
-  }
-  v15 = *(_DWORD*)(a1 + 320);
-  v16 = v14 >> 4;
-  v17 = v16 * (v12 >> 2);
-  *(_DWORD*)(a1 + 352) = v16;
-  *(_DWORD*)(a1 + 348) = v17;
-  *(_DWORD*)(a1 + 324) = v5 * v15;
-  NgxRoutine_36f0(v7, v6, v17);
-  NgxRoutine_36f0((_DWORD*)(a1 + 364), (unsigned int*)(a1 + 368),
-                  *(_DWORD*)(a1 + 352));
-  v18 = *(_DWORD*)(a1 + 352);
-  *(_DWORD*)(a1 + 120) = *(_DWORD*)(a1 + 348);
-  *(_DWORD*)(a1 + 124) = v18;
-  v19 = *(_DWORD*)(a1 + 368);
-  *(_QWORD*)(a1 + 128) = *(_QWORD*)(a1 + 356);
-  *(_DWORD*)(a1 + 136) = *(_DWORD*)(a1 + 364);
-  *(_DWORD*)(a1 + 140) = v19;
-  *(_QWORD*)(a1 + 152) = 2LL * *(int*)(a1 + 16);
-  v20 = *(_DWORD*)(a1 + 100);
-  v21 = *(_DWORD*)(a1 + 104);
-  *(_DWORD*)(a1 + 188) = v20 / 2;
-  *(_DWORD*)(a1 + 192) = v21 / 2;
-  v22 = v21 / 2 + 14;
-  if (v21 / 2 >= -7) {
-    v22 = v21 / 2 + 7;
-  }
-  v23 = v22 >> 3;
-  v24 = v23 * ((v20 / 2 + 1) / 2);
-  *(_DWORD*)(a1 + 208) = v24;
-  *(_DWORD*)(a1 + 212) = v23;
-  NgxRoutine_36f0((_DWORD*)(a1 + 216), (unsigned int*)(a1 + 220), v24);
-  result = NgxRoutine_36f0((_DWORD*)(a1 + 224), (unsigned int*)(a1 + 228),
-                           *(_DWORD*)(a1 + 212));
-  *(_QWORD*)(a1 + 232) = 32;
-  v26 = *(_DWORD*)(a1 + 60) * *(_DWORD*)(a1 + 56);
-  v27 = *(int*)(a1 + 48);
-  v28 = v26 - 1;
-  v29 = v26 - 2;
-  if (v26 >= 2) {
-    v30 = 2 * v27;
-    v31 = v28 & 7;
-    if (v29 < 7) {
-      v32 = 0;
-      if ((v28 & 7) == 0) {
-        goto LABEL_19;
-      }
-      goto LABEL_17;
-    }
-    v33 = (__int64*)(a1 + 296);
-    v34 = 0;
-    do {
-      *(v33 - 7) = v30;
-      *(v33 - 6) = v30;
-      *(v33 - 5) = v30;
-      *(v33 - 4) = v30;
-      v34 -= 8;
-      *(v33 - 3) = v30;
-      *(v33 - 2) = v30;
-      *(v33 - 1) = v30;
-      *v33 = v30;
-      v33 += 8;
-    } while (-(__int64)(v28 & 0x7FFFFFF8) != v34);
-    v32 = -v34;
-    if ((v28 & 7) != 0) {
-    LABEL_17:
-      v35 = (__int64*)(a1 + 8 * v32 + 240);
-      do {
-        *v35++ = v30;
-        --v31;
-      } while (v31 != 0);
-    }
-  }
-LABEL_19:
-  *(_QWORD*)(a1 + 8LL * v28 + 240) = 64 - 2LL * (int)v27 * v28;
-  v36 = v27 + 31;
-  v10 = (int)v27 < -31;
-  v37 = v27 + 62;
-  if (!v10) {
-    v37 = v36;
-  }
-  *(_DWORD*)(a1 + 328) = (v37 >> 5) - 1;
-  return result;
-}
-
-__int64 nvidia_85f0(__int64 a1)
-{
-  __int64 result;
-  int v3;
-  int v4;
-  bool v5;
-  bool v6;
-  int v7;
-  unsigned int v8;
-
-  result = memcpy_plt(a1 + 544, a1, 136);
-  v3 = *(_DWORD*)(a1 + 592);
-  *(_QWORD*)(a1 + 608) = 0x100000001LL;
-  *(_DWORD*)(a1 + 652) = 1;
-  v3 *= 9;
-  *(_DWORD*)(a1 + 592) = v3;
-  *(_DWORD*)(a1 + 656) = v3;
-  v4 = *(_DWORD*)(a1 + 68) * *(_DWORD*)(a1 + 64);
-  v6 = __OFADD__(v4, 15);
-  v7 = v4 + 15;
-  v5 = v4 + 15 < 0;
-  v8 = v4 + 30;
-  if (v5 == v6) {
-    v8 = v7;
-  }
-  *(_DWORD*)(a1 + 664) = 16 * *(_DWORD*)(a1 + 48) * (v8 >> 4);
-  return result;
-}
-
-__int64 nvidia_86b0(__int64 a1)
-{
-  __int64 result;
-  int v3;
-  int v4;
-  bool v5;
-  bool v6;
-  int v7;
-  unsigned int v8;
-
-  result = memcpy_plt(a1 + 544, a1, 136);
-  v3 = *(_DWORD*)(a1 + 592);
-  *(_QWORD*)(a1 + 608) = 0x100000001LL;
-  *(_DWORD*)(a1 + 652) = 1;
-  v3 *= 9;
-  *(_DWORD*)(a1 + 592) = v3;
-  *(_DWORD*)(a1 + 656) = v3;
-  v4 = *(_DWORD*)(a1 + 68) * *(_DWORD*)(a1 + 64);
-  v6 = __OFADD__(v4, 15);
-  v7 = v4 + 15;
-  v5 = v4 + 15 < 0;
-  v8 = v4 + 30;
-  if (v5 == v6) {
-    v8 = v7;
-  }
-  *(_DWORD*)(a1 + 664) = 16 * *(_DWORD*)(a1 + 48) * (v8 >> 4);
-  return result;
-}
-
-__int64 nvidia_8770(__int64 a1)
-{
-  __int64 result;
-  int v3;
-  int v4;
-  int v5;
-  bool v6;
-  bool v7;
-  int v8;
-  unsigned int v9;
-
-  result = memcpy_plt(a1 + 544, a1, 136);
-  v3 = *(_DWORD*)(a1 + 592);
-  *(_QWORD*)(a1 + 608) = 0x100000001LL;
-  *(_DWORD*)(a1 + 652) = 1;
-  v4 = 9 * v3 / 2;
-  *(_DWORD*)(a1 + 592) = v4;
-  *(_DWORD*)(a1 + 656) = v4;
-  v5 = *(_DWORD*)(a1 + 68) * *(_DWORD*)(a1 + 64);
-  v7 = __OFADD__(v5, 15);
-  v8 = v5 + 15;
-  v6 = v5 + 15 < 0;
-  v9 = v5 + 30;
-  if (v6 == v7) {
-    v9 = v8;
-  }
-  *(_DWORD*)(a1 + 664) = 16 * *(_DWORD*)(a1 + 48) * (v9 >> 4);
-  return result;
-}
-
-__int64 nvidia_8830(__int64 a1)
-{
-  __int64 result;
-  int v3;
-  int v4;
-  int v5;
-  bool v6;
-  bool v7;
-  int v8;
-  unsigned int v9;
-
-  result = memcpy_plt(a1 + 544, a1, 136);
-  v3 = *(_DWORD*)(a1 + 592);
-  *(_QWORD*)(a1 + 608) = 0x100000001LL;
-  *(_DWORD*)(a1 + 652) = 1;
-  v4 = 9 * v3 / 2;
-  *(_DWORD*)(a1 + 592) = v4;
-  *(_DWORD*)(a1 + 656) = v4;
-  v5 = *(_DWORD*)(a1 + 68) * *(_DWORD*)(a1 + 64);
-  v7 = __OFADD__(v5, 15);
-  v8 = v5 + 15;
-  v6 = v5 + 15 < 0;
-  v9 = v5 + 30;
-  if (v6 == v7) {
-    v9 = v8;
-  }
-  *(_DWORD*)(a1 + 664) = 16 * *(_DWORD*)(a1 + 48) * (v9 >> 4);
-  return result;
-}
-
 _QWORD* nvidia_88b0(__int64 a1, int a2)
 {
   __int64 v3;
@@ -1835,7 +323,6 @@ _QWORD* nvidia_88b0(__int64 a1, int a2)
   }
   return result;
 }
-
 __attribute__((swiftcall)) void nvidia_27630(PSEUDO_X8 x8_, _QWORD* result)
 {
   _QWORD* a2 = (_QWORD*)PSEUDO_X8_VALUE(x8_);
@@ -1882,7 +369,6 @@ __attribute__((swiftcall)) void nvidia_27630(PSEUDO_X8 x8_, _QWORD* result)
     return;
   }
 }
-
 __attribute__((swiftcall)) void nvidia_27750(PSEUDO_X8 x8_, _QWORD* result,
                                              _QWORD* a2)
 {
@@ -1943,7 +429,6 @@ __attribute__((swiftcall)) void nvidia_27750(PSEUDO_X8 x8_, _QWORD* result,
     return;
   }
 }
-
 __attribute__((swiftcall)) void nvidia_278e0(PSEUDO_X8 x8_, _QWORD* result,
                                              _QWORD* a2)
 {
@@ -1991,7 +476,6 @@ __attribute__((swiftcall)) void nvidia_278e0(PSEUDO_X8 x8_, _QWORD* result,
     return;
   }
 }
-
 __attribute__((swiftcall)) void nvidia_27a00(PSEUDO_X8 x8_, _QWORD* result,
                                              _QWORD* a2)
 {
@@ -2039,7 +523,6 @@ __attribute__((swiftcall)) void nvidia_27a00(PSEUDO_X8 x8_, _QWORD* result,
     return;
   }
 }
-
 __int64 nvidia_27b30(_DWORD* a1)
 {
   __int64 v1;
@@ -2067,7 +550,6 @@ __int64 nvidia_27b30(_DWORD* a1)
   NgxRoutine_bcd70(v4);
   return 1;
 }
-
 __int64 nvidia_27bf0(_DWORD* a1, __int64 a2)
 {
   __int64 v2;
@@ -2099,7 +581,6 @@ __int64 nvidia_27bf0(_DWORD* a1, __int64 a2)
     return 1;
   }
 }
-
 void nvidia_27e80(_QWORD* a1)
 {
   void (*v2)(__int64);
@@ -2124,7 +605,6 @@ void nvidia_27e80(_QWORD* a1)
     NgxRoutine_430(a1[6], a1[4] & 0xFFFFFFFFFFFFFFFELL);
   }
 }
-
 __int64 nvidia_27f20(__int64 a1)
 {
   void (*v2)(__int64);
@@ -2158,7 +638,6 @@ __int64 nvidia_27f20(__int64 a1)
   }
   return NgxRoutine_430(a1, 2160);
 }
-
 void nvidia_28160(_QWORD* a1)
 {
   void (*v2)(__int64);
@@ -2183,7 +662,6 @@ void nvidia_28160(_QWORD* a1)
     NgxRoutine_430(a1[6], a1[4] & 0xFFFFFFFFFFFFFFFELL);
   }
 }
-
 __int64 nvidia_28200(__int64 a1)
 {
   void (*v2)(__int64);
@@ -2217,7 +695,6 @@ __int64 nvidia_28200(__int64 a1)
   }
   return NgxRoutine_430(a1, 3280);
 }
-
 void nvidia_284f0(_QWORD* a1)
 {
   void (*v2)(__int64);
@@ -2242,7 +719,6 @@ void nvidia_284f0(_QWORD* a1)
     NgxRoutine_430(a1[6], a1[4] & 0xFFFFFFFFFFFFFFFELL);
   }
 }
-
 __int64 nvidia_28590(__int64 a1)
 {
   void (*v2)(__int64);
@@ -2276,7 +752,6 @@ __int64 nvidia_28590(__int64 a1)
   }
   return NgxRoutine_430(a1, 1872);
 }
-
 void nvidia_287a0(_QWORD* a1)
 {
   void (*v2)(__int64);
@@ -2301,7 +776,6 @@ void nvidia_287a0(_QWORD* a1)
     NgxRoutine_430(a1[6], a1[4] & 0xFFFFFFFFFFFFFFFELL);
   }
 }
-
 __int64 nvidia_28840(__int64 a1)
 {
   void (*v2)(__int64);
@@ -2335,7 +809,6 @@ __int64 nvidia_28840(__int64 a1)
   }
   return NgxRoutine_430(a1, 1968);
 }
-
 __int64* nvidia_28900(__int64* a1, __int64 a2, __int64 a3)
 {
   __int64 v6;
@@ -2376,7 +849,6 @@ __int64* nvidia_28900(__int64* a1, __int64 a2, __int64 a3)
   NgxRoutine_bcf80((__int64)v14);
   return a1;
 }
-
 __int64 nvidia_29cf0(_DWORD* a1, int a2, int a3, int a4, int a5, int a6)
 {
   bool v6;
@@ -2419,7 +891,6 @@ __int64 nvidia_29cf0(_DWORD* a1, int a2, int a3, int a4, int a5, int a6)
     return 2;
   }
 }
-
 _QWORD* nvidia_29e50(_QWORD* a1)
 {
   __int64 v2;
@@ -2434,7 +905,6 @@ _QWORD* nvidia_29e50(_QWORD* a1)
   NgxRoutine_bcd70(a1);
   return a1;
 }
-
 __int64 nvidia_aea40(__int64 a1, int* a2, int* a3)
 {
 
@@ -2665,7 +1135,6 @@ LABEL_31:
   ++*(_QWORD*)(a1 + 24);
   return v10;
 }
-
 unsigned __int64 nvidia_b1500(unsigned __int64 result, __int64 a2)
 {
 
@@ -2744,7 +1213,6 @@ LABEL_21:
   }
   return result;
 }
-
 __int64 nvidia_b1a80(__int64 a1, __int64* a2, __int64 a3, _QWORD** a4)
 {
 
@@ -2967,9 +1435,7 @@ LABEL_28:
   ++*(_QWORD*)(a1 + 24);
   return result;
 }
-
 void __attribute__((noreturn)) nvidia_b3380() { NgxData_954740(); }
-
 __attribute__((swiftcall)) void nvidia_b37a0(PSEUDO_X8 x8_, __int64 a1,
                                              __int64 a2)
 {
@@ -3152,7 +1618,6 @@ LABEL_33:
     return;
   }
 }
-
 bool nvidia_b42a0(__int64 a1, __int64 a2, char a3, int a4, void* a5, char a6,
                   int a7)
 {
@@ -4158,7 +2623,6 @@ LABEL_16:
   }
   return true;
 }
-
 __int64 nvidia_ba050(__int64 result, __int64 a2)
 {
   int v2;
@@ -4198,7 +2662,6 @@ __int64 nvidia_ba050(__int64 result, __int64 a2)
   }
   return result;
 }
-
 __int64 nvidia_ba2d0(__int64 a1, unsigned __int64* a2, __int64 a3, __int64 a4,
                      void (***a5)(_QWORD, __int64, _QWORD, unsigned __int64))
 {
@@ -4226,7 +2689,6 @@ __int64 nvidia_ba2d0(__int64 a1, unsigned __int64* a2, __int64 a3, __int64 a4,
   }
   return 0xFFFFFFFFLL;
 }
-
 __int64 nvidia_bbb20(__int64 a1, unsigned int a2)
 {
   unsigned int v3;
@@ -4302,7 +2764,6 @@ LABEL_18:
   *(_BYTE*)(a1 + 96) = v11;
   return v3;
 }
-
 void __attribute__((noreturn)) nvidia_bbecc(__int64 a1, __int64 a2, __int64 a3,
                                             __int64 a4, __int64 a5, __int64 a6,
                                             __int64 a7, __int64 a8, __int64 a9,
@@ -4317,7 +2778,6 @@ void __attribute__((noreturn)) nvidia_bbecc(__int64 a1, __int64 a2, __int64 a3,
   _Unwind_Resume_plt(a1);
   __udf(0);
 }
-
 __int64 nvidia_bc340(__int64 a1, unsigned int a2)
 {
   unsigned int v3;
@@ -4392,7 +2852,6 @@ LABEL_18:
   *(_BYTE*)(a1 + 96) = v11;
   return v3;
 }
-
 void __attribute__((noreturn)) nvidia_bc6dc(__int64 a1, __int64 a2, __int64 a3,
                                             __int64 a4, __int64 a5, __int64 a6,
                                             __int64 a7, __int64 a8, __int64 a9,
@@ -4407,7 +2866,6 @@ void __attribute__((noreturn)) nvidia_bc6dc(__int64 a1, __int64 a2, __int64 a3,
   _Unwind_Resume_plt(a1);
   __udf(0);
 }
-
 __int64* nvidia_bd030(__int64* a1)
 {
   __int64 v1;
@@ -4450,7 +2908,6 @@ __int64* nvidia_bd030(__int64* a1)
   NgxRoutine_bcf80((__int64)v11);
   return a1;
 }
-
 __attribute__((swiftcall)) void nvidia_be4b0(PSEUDO_X8 x8_, __int64 a1,
                                              signed int a2)
 {
@@ -4471,7 +2928,6 @@ __attribute__((swiftcall)) void nvidia_be4b0(PSEUDO_X8 x8_, __int64 a1,
     return;
   }
 }
-
 __attribute__((swiftcall)) void nvidia_be5c0(PSEUDO_X8 x8_, _QWORD* a1,
                                              void** a2)
 {
@@ -4496,7 +2952,6 @@ __attribute__((swiftcall)) void nvidia_be5c0(PSEUDO_X8 x8_, _QWORD* a1,
     return;
   }
 }
-
 __attribute__((swiftcall)) void nvidia_be650(PSEUDO_X8 x8_, __int64 a1)
 {
   __int64* a2 = (__int64*)PSEUDO_X8_VALUE(x8_);
@@ -4505,7 +2960,6 @@ __attribute__((swiftcall)) void nvidia_be650(PSEUDO_X8 x8_, __int64 a1)
     return;
   }
 }
-
 __int64 nvidia_be740(__int64 result, int a2)
 {
   int v2;
@@ -4519,7 +2973,6 @@ __int64 nvidia_be740(__int64 result, int a2)
   }
   return result;
 }
-
 __attribute__((swiftcall)) void nvidia_be8c0(PSEUDO_X8 x8_, __int64 a1,
                                              unsigned int a2)
 {
@@ -4588,7 +3041,6 @@ LABEL_17:
     return;
   }
 }
-
 __attribute__((swiftcall)) void nvidia_be9f0(PSEUDO_X8 x8_, __int64 a1,
                                              signed int a2)
 {
@@ -4609,7 +3061,6 @@ __attribute__((swiftcall)) void nvidia_be9f0(PSEUDO_X8 x8_, __int64 a1,
     return;
   }
 }
-
 __attribute__((swiftcall)) void nvidia_bea70(PSEUDO_X8 x8_, __int64 a1,
                                              signed int a2)
 {
@@ -4630,7 +3081,6 @@ __attribute__((swiftcall)) void nvidia_bea70(PSEUDO_X8 x8_, __int64 a1,
     return;
   }
 }
-
 void __attribute__((noreturn)) nvidia_bef60(__int64 a1)
 {
 
@@ -4638,7 +3088,6 @@ void __attribute__((noreturn)) nvidia_bef60(__int64 a1)
   _Unwind_Resume_plt(a1);
   __udf(0);
 }
-
 __int64 nvidia_beffc(__int64 a1)
 {
   __int64 v3;
@@ -4647,7 +3096,6 @@ __int64 nvidia_beffc(__int64 a1)
   v3 = _Unwind_Resume_plt(a1);
   return NgxRoutine_bf010(v3);
 }
-
 void __attribute__((noreturn)) nvidia_bf080(__int64 a1)
 {
 
@@ -4655,12 +3103,10 @@ void __attribute__((noreturn)) nvidia_bf080(__int64 a1)
   _Unwind_Resume_plt(a1);
   __udf(0);
 }
-
 void __attribute__((noreturn)) nvidia_bf100()
 {
   NgxRoutine_bfba0((__int64)"basic_string");
 }
-
 __int64 nvidia_bfc00(char* a1, _QWORD* a2, unsigned int a3)
 {
   char* v3;
@@ -4712,7 +3158,6 @@ __int64 nvidia_bfc00(char* a1, _QWORD* a2, unsigned int a3)
   NgxRoutine_bf120(v15);
   return v13;
 }
-
 __attribute__((swiftcall)) void nvidia_c04d0(PSEUDO_X8 x8_, __int64 unused_int0,
                                              __int64 a1, __int64 a2)
 {
@@ -4755,7 +3200,6 @@ __attribute__((swiftcall)) void nvidia_c04d0(PSEUDO_X8 x8_, __int64 unused_int0,
 LABEL_10:
   *(_BYTE*)(v6 + v3) = 0;
 }
-
 __attribute__((swiftcall)) void nvidia_c06d0(PSEUDO_X8 x8_, __int64 unused_int0,
                                              __int64 a1, __int64 a2)
 {
@@ -4800,5 +3244,4 @@ __attribute__((swiftcall)) void nvidia_c06d0(PSEUDO_X8 x8_, __int64 unused_int0,
 LABEL_10:
   *(_DWORD*)(v7 + v4) = 0;
 }
-
 #pragma GCC visibility pop
