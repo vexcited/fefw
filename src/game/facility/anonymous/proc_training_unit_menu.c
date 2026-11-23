@@ -71,14 +71,14 @@ void ProcTrainingUnitMenu_15f9440_alt1(__int64*, _QWORD*) __asm__(
 void __attribute__((noreturn)) GameRoutine_60a310();
 void nn_mem_StandardAllocator_Free_alt1(__int64, __int64) __asm__(
     "nn_mem_StandardAllocator_Free");
-__int64 (***ProcTrainingUnitMenu_Unknown84(__int64* a1))();
+void ProcTrainingUnitMenu_Unknown84(__int64* a1);
 __int64 std___1___shared_weak_count___release_weak_alt2(__int64);
 __int64 std___1___shared_weak_count_lock_alt2(__int64);
 char* game_util_Format_alt2(const char*, ...);
 void ProcTrainingUnitMenu_15f9440_alt2(__int64*, _QWORD*);
 void nn_mem_StandardAllocator_Free_alt2(__int64, __int64);
 
-__int64 (***ProcTrainingUnitMenu_Unknown84(__int64* a1))()
+void ProcTrainingUnitMenu_Unknown84(__int64* a1)
 {
 
 #pragma clang fp contract(on)
@@ -473,16 +473,17 @@ LABEL_46:
                 (__int64 (*)(__int64))(*result)[v48])((__int64)result);
           }
           if (v47 != nullptr) {
-            return (__int64 (***)(void))FacilityUnitMenu_15e8f40(a1, v47);
+            FacilityUnitMenu_15e8f40(a1, v47);
+            return;
           }
-          return result;
+          return;
         }
       }
       v48 = 4;
       goto LABEL_130;
     }
   }
-  return result;
+  return;
 }
 
 char* ProcTrainingUnitMenu_Unknown160()
