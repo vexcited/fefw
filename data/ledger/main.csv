@@ -16126,7 +16126,7 @@ fff90,116,verified,src/snd/api.cpp,_ZN3snd10startPitchERKNS_3fnd10WeakHandleERKN
 5a3c00,12,verified,src/game/unnamed/v000_1.c,GameHr_5a3c00
 5a3c10,4,verified,src/game/game_trivial.cpp,_Z15GameStub_5a3c10v
 5a3c20,100,verified,src/game/unnamed/b003_1.c,GameHr_5a3c20
-5a3ca0,828,disputed,src/nn/ui2d/detail/vector_graphics_shape_path_data.c,VectorGraphicsShapePathData_5a3ca0
+5a3ca0,484,disputed,src/nn/ui2d/detail/vector_graphics_shape_path_data.c,VectorGraphicsShapePathData_5a3ca0
 5a4000,164,verified,src/game/unnamed/b003_1.c,GameHr_5a4000
 5a40b0,20,verified,src/game/game_trivial_forwarders.cpp,_Z15GameStub_5a40b0m
 5a40d0,48,verified,src/memory/new_delete.cpp,deleting destructor at 0x5a40d0
@@ -16422,7 +16422,7 @@ fff90,116,verified,src/snd/api.cpp,_ZN3snd10startPitchERKNS_3fnd10WeakHandleERKN
 5c19f0,596,verified,src/game/unplaced_9.c,game_5c19f0
 5c1c50,140,disputed,src/game/unplaced_9.c,game_5c1c50
 5c2180,1328,verified,src/game/unplaced_23.c,game_5c2180
-5c26c0,1524,disputed,src/game/unplaced_9.c,game_5c26c0
+5c26c0,1504,disputed,src/game/unplaced_9.c,game_5c26c0
 5c2d00,1364,verified,src/game/unplaced_9.c,game_5c2d00
 5c32a0,1536,verified,src/game/unplaced_9.c,game_5c32a0
 5c38e0,1364,verified,src/game/unplaced_26.c,game_5c38e0
@@ -20819,7 +20819,7 @@ fff90,116,verified,src/snd/api.cpp,_ZN3snd10startPitchERKNS_3fnd10WeakHandleERKN
 77e280,76,verified,src/game/map/anonymous/target_enumerator.c,game_map_anonymous_TargetEnumerator_Skill_closure_Invoke_77e280
 77e2d0,28,verified,src/llvm-libcxx-21/libcxx/include/__functional/function.h,"std::__1::__function::__func<game::map::(anonymous namespace)::TargetEnumerator::Skill(game::UnitSkill const&, int, int, game::map::(anonymous namespace)::TargetEnumerator::ItemList const&, std::__1::function<void (game::map::TargetData const&)> const&) const::'lambda'(game::UnitItem const&), bool (game::UnitItem const&)>::target(std::type_info const&)"
 77e2f0,12,verified,src/llvm-libcxx-21/libcxx/include/__functional/function.h,"std::__1::__function::__func<game::map::(anonymous namespace)::TargetEnumerator::Skill(game::UnitSkill const&, int, int, game::map::(anonymous namespace)::TargetEnumerator::ItemList const&, std::__1::function<void (game::map::TargetData const&)> const&) const::'lambda'(game::UnitItem const&), bool (game::UnitItem const&)>::target_type()"
-77e300,680,disputed,src/game/map/anonymous/target_enumerator.c,TargetEnumerator_77e300
+77e300,508,disputed,src/game/map/anonymous/target_enumerator.c,TargetEnumerator_77e300
 77e820,44,verified,src/llvm-libcxx-21/libcxx/include/__functional/function.h,"std::__1::__function::__func<game::map::(anonymous namespace)::TargetEnumerator::Skill(game::UnitSkill const&, int, int, game::map::(anonymous namespace)::TargetEnumerator::ItemList const&, std::__1::function<void (game::map::TargetData const&)> const&) const::'lambda'(unsigned int), void (unsigned int)>::deleting destructor"
 77e850,76,verified,src/llvm-libcxx-21/libcxx/include/__functional/function.h,"std::__1::__function::__func<game::map::(anonymous namespace)::TargetEnumerator::Skill(game::UnitSkill const&, int, int, game::map::(anonymous namespace)::TargetEnumerator::ItemList const&, std::__1::function<void (game::map::TargetData const&)> const&) const::'lambda'(unsigned int), void (unsigned int)>::__clone()"
 77e8a0,24,verified,src/llvm-libcxx-21/libcxx/include/__functional/function.h,"std::__1::__function::__func<game::map::(anonymous namespace)::TargetEnumerator::Skill(game::UnitSkill const&, int, int, game::map::(anonymous namespace)::TargetEnumerator::ItemList const&, std::__1::function<void (game::map::TargetData const&)> const&) const::'lambda'(unsigned int), void (unsigned int)>::__clone(__base*)"
@@ -30792,7 +30792,7 @@ a4b3c0,220,verified,src/fs/manager.c,Manager_a4b3c0
 a4b4a0,504,verified,src/game/unnamed/b008_2.c,GameHr_a4b4a0
 a4b6c0,1248,verified,src/fs/manager.c,Manager_a4b6c0
 a4c1e0,1488,verified,src/fs/unplaced_13.c,fs_a4c1e0
-a4c820,1556,disputed,src/fs/unplaced_4.c,fs_a4c820
+a4c820,1532,disputed,src/fs/unplaced_4.c,fs_a4c820
 a4cfa0,1020,verified,src/fs/manager.c,Manager_a4cfa0
 a4d420,216,verified,src/game/unnamed/r003_0.c,GameHr_a4d420
 a4d510,508,verified,src/task/registration_impl.c,Registration_a4d510
@@ -33762,7 +33762,7 @@ b78630,28,verified,src/llvm-libcxx-21/libcxx/include/__functional/function.h,"st
 b78650,12,verified,src/llvm-libcxx-21/libcxx/include/__functional/function.h,"std::__1::__function::__func<gfxa::TaskSkyComp::Impl::Impl(gfx::Manager&)::$_0, void (nn::gfx::SamplerInfo&)>::target_type()"
 b78660,872,verified,src/gfxa/task_sky_hdri.c,gfxa_TaskSkyHDRI_Updater_Updater
 b78b40,632,verified,src/gfx/flow/resource_builder_impl.c,ResourceBuilder_b78b40
-b78dc0,784,disputed,src/gfx/flow/resource_builder_impl.c,ResourceBuilder_b78dc0
+b78dc0,696,disputed,src/gfx/flow/resource_builder_impl.c,ResourceBuilder_b78dc0
 b790d0,24,verified,src/llvm-libcxx-21/libcxx/include/__vector/vector.h,std::vector<T>::__throw_out_of_range()
 b790f0,44,verified,src/llvm-libcxx-21/libcxx/include/__functional/function.h,"std::__1::__function::__func<gfxa::TaskSkyHDRI::Updater::Updater(gfx::Manager&)::$_0, void (nn::gfx::SamplerInfo&)>::deleting destructor"
 b79120,60,verified,src/llvm-libcxx-21/libcxx/include/__functional/function.h,"std::__1::__function::__func<gfxa::TaskSkyHDRI::Updater::Updater(gfx::Manager&)::$_0, void (nn::gfx::SamplerInfo&)>::__clone()"
@@ -39883,7 +39883,7 @@ d3e000,28,verified,src/game/game_trivial_misc.cpp,_Z15GameStub_d3e000v
 d3e020,72,verified,src/game/zview/character_controller/state_action_root.c,StateActionRoot_Unknown3
 d3e070,140,verified,src/game/zview/character_controller/state_action_root.c,StateActionRoot_Unknown5
 d3e100,160,verified,src/game/zview/character_controller/state_action_root.c,StateActionRoot_d3e100
-d3e1e0,2400,disputed,src/game/zview/character_controller.c,CharacterController_StateActionRoot_Unknown4
+d3e1e0,2220,disputed,src/game/zview/character_controller.c,CharacterController_StateActionRoot_Unknown4
 d3eec0,44,verified,src/memory/new_delete.cpp,deleting destructor at 0xd3eec0
 d3eef0,36,verified,src/game/zview/character_controller/state_action_root.c,StateActionRoot_Unknown2
 d3ef20,1124,verified,src/game/zview/character_controller.c,CharacterController_StateJump_Unknown3
@@ -39980,7 +39980,7 @@ d48200,280,verified,src/game/zview/character_controller/state_action_base.c,Stat
 d48320,520,verified,src/game/zview/character_controller/state_action_base.c,StateActionBase_Unknown5
 d48660,784,verified,src/game/zview/character_controller.c,CharacterController_d48660
 d48970,408,verified,src/game/zview/character_controller/state_action_base.c,StateActionBase_d48970
-d48b40,1208,disputed,src/game/zview/character_controller.c,CharacterController_d48b40
+d48b40,1224,disputed,src/game/zview/character_controller.c,CharacterController_d48b40
 d49020,156,verified,src/game/zview/character_controller/state_action_base.c,StateActionBase_Destructor
 d490c0,188,verified,src/game/zview/character_controller/state_action_base.c,StateActionBase_DeletingDestructor
 d49180,112,verified,src/game/zview/character_controller/state_action_base.c,StateActionBase_Unknown2
@@ -41697,7 +41697,7 @@ df4fc0,508,verified,src/game/script/hub_character_natives_impl.c,HubCharacterNat
 df5280,648,verified,src/game/script/unplaced_8.c,game_script_df5280
 df5530,264,verified,src/game/script/hub_character_natives_impl.c,HubCharacterNatives_df5530
 df5660,600,verified,src/game/hub/character_behavior_stack.c,CharacterBehaviorStack_df5660
-df5940,604,disputed,src/game/hub/character_behavior_stack.c,CharacterBehaviorStack_df5940
+df5940,604,verified,src/game/hub/character_behavior_stack.c,CharacterBehaviorStack_df5940
 df5c00,156,verified,src/game/script/hub_character_natives_impl.c,HubCharacterNatives_df5c00
 df5ca0,24,verified,src/llvm-libcxx-21/libcxx/include/__vector/vector.h,std::vector<T>::__throw_length_error()
 df5cc0,16,verified,src/llvm-libcxx-21/libcxx/include/__memory/shared_ptr.h,"std::__1::__shared_ptr_emplace<game::hub::CharacterBehaviorStack::StackMove, std::__1::allocator<game::hub::CharacterBehaviorStack::StackMove>>::destructor"
@@ -44456,7 +44456,7 @@ ea94f0,88,verified,src/llvm-libcxx-21/libcxx/include/__functional/function.h,"st
 ea9550,32,verified,src/llvm-libcxx-21/libcxx/include/__functional/function.h,"std::__1::__function::__func<game::cmdbtl::CmdBtlMindEnumeration::CalcWholeMind_SkillMind(game::cmdbtl::Mind::Type, std::__1::shared_ptr<game::cmdbtl::CmdBtlUnit>, game::SkillConst::Kind)::$_0, void (game::UnitSkill const&)>::__clone(__base*)"
 ea9570,4,verified,src/llvm-libcxx-21/libcxx/include/__functional/function.h,"std::__1::__function::__func<game::cmdbtl::CmdBtlMindEnumeration::CalcWholeMind_SkillMind(game::cmdbtl::Mind::Type, std::__1::shared_ptr<game::cmdbtl::CmdBtlUnit>, game::SkillConst::Kind)::$_0, void (game::UnitSkill const&)>::destroy()"
 ea9580,12,verified,src/llvm-libcxx-21/libcxx/include/__functional/function.h,"std::__1::__function::__func<game::cmdbtl::CmdBtlMindEnumeration::CalcWholeMind_SkillMind(game::cmdbtl::Mind::Type, std::__1::shared_ptr<game::cmdbtl::CmdBtlUnit>, game::SkillConst::Kind)::$_0, void (game::UnitSkill const&)>::destroy_deallocate()"
-ea95a0,2348,disputed,src/game/cmdbtl/cmd_btl_mind_enumeration.c,game_cmdbtl_CmdBtlMindEnumeration_CalcWholeMind_SkillMind_lambda0_Invoke
+ea95a0,2308,disputed,src/game/cmdbtl/cmd_btl_mind_enumeration.c,game_cmdbtl_CmdBtlMindEnumeration_CalcWholeMind_SkillMind_lambda0_Invoke
 eaa080,28,verified,src/llvm-libcxx-21/libcxx/include/__functional/function.h,"std::__1::__function::__func<game::cmdbtl::CmdBtlMindEnumeration::CalcWholeMind_SkillMind(game::cmdbtl::Mind::Type, std::__1::shared_ptr<game::cmdbtl::CmdBtlUnit>, game::SkillConst::Kind)::$_0, void (game::UnitSkill const&)>::target(std::type_info const&)"
 eaa0a0,12,verified,src/llvm-libcxx-21/libcxx/include/__functional/function.h,"std::__1::__function::__func<game::cmdbtl::CmdBtlMindEnumeration::CalcWholeMind_SkillMind(game::cmdbtl::Mind::Type, std::__1::shared_ptr<game::cmdbtl::CmdBtlUnit>, game::SkillConst::Kind)::$_0, void (game::UnitSkill const&)>::target_type()"
 eaa0b0,44,verified,src/llvm-libcxx-21/libcxx/include/__functional/function.h,"std::__1::__function::__func<game::cmdbtl::CmdBtlMindEnumeration::CalcWholeMind_Link(game::cmdbtl::LinkType, std::__1::shared_ptr<game::cmdbtl::CmdBtlUnit>)::$_0, void (std::__1::shared_ptr<game::cmdbtl::CmdBtlUnit>)>::deleting destructor"
@@ -49224,7 +49224,7 @@ fffcb0,1244,verified,src/game/unnamed/b014_1.c,GameHr_fffcb0
 1023940,24,verified,src/llvm-libcxx-21/libcxx/include/__vector/vector.h,std::vector<T>::__throw_length_error()
 1023960,284,verified,src/game/hub/character_load_controller.c,CharacterLoadController_Destructor
 1023a80,80,verified,src/memory/new_delete.cpp,deleting destructor at 0x1023a80
-1023ae0,6416,disputed,src/game/unplaced_5.c,game_1023ae0
+1023ae0,6416,verified,src/game/unplaced_5.c,game_1023ae0
 1025a10,460,verified,src/game/unnamed/b014_1.c,GameHr_1025a10
 1025be0,516,verified,src/game/unnamed/b014_1.c,GameHr_1025be0
 1025e00,24,verified,src/llvm-libcxx-21/libcxx/include/__vector/vector.h,std::vector<T>::__throw_length_error()
@@ -57690,7 +57690,7 @@ fffcb0,1244,verified,src/game/unnamed/b014_1.c,GameHr_fffcb0
 12b3420,1364,verified,src/game/unnamed/b017_3.c,GameHr_12b3420
 12b3a80,280,verified,src/game/gameui/help_quest_info_impl.c,HelpQuestInfo_12b3a80
 12b3ba0,444,verified,src/game/game_side_story_data.c,GameSideStoryData_12b3ba0
-12b3d60,308,disputed,src/game/unnamed/b017_2.c,GameHr_12b3d60
+12b3d60,244,disputed,src/game/unnamed/b017_2.c,GameHr_12b3d60
 12b41a0,120,verified,src/game/unnamed/b017_2.c,GameHr_12b41a0
 12b4220,164,verified,src/game/unnamed/b017_2.c,GameHr_12b4220
 12b42e0,1692,verified,src/game/game_side_story_data.c,GameSideStoryData_12b42e0
