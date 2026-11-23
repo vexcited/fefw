@@ -5959,7 +5959,7 @@ ffee0,324,verified,src/nn/fs/unplaced.c,nn_fs_GetAndClearMemoryReportInfo
 17ed00,268,verified,src/nn/sf/unplaced.c,nn_sf_17ed00
 17ee10,1420,verified,src/nn/sf/unplaced.c,nn_sf_17ee10
 17f530,220,verified,src/nn/sf/unplaced_2.c,nn_sf_17f530
-17f6d0,212,verified,src/nn/sf/unplaced.c,nn_sf_17f6d0
+17f6d0,248,verified,src/nn/sf/unplaced.c,nn_sf_17f6d0
 17f7d0,16,verified,src/nn/sdk_trivial_more.cpp,_Z14SdkStub_17f7d0mm
 17f7e0,16,verified,src/nn/sdk_trivial_more.cpp,_Z14SdkStub_17f7e0mm
 17f8c0,116,verified,src/nn/sf/unplaced.c,nn_sf_17f8c0
@@ -6004,7 +6004,7 @@ ffee0,324,verified,src/nn/fs/unplaced.c,nn_fs_GetAndClearMemoryReportInfo
 180640,308,verified,src/nn/sf/unplaced.c,nn_sf_180640
 180780,156,verified,src/nn/sf/unplaced.c,nn_sf_180780
 180840,372,verified,src/nn/sf/unplaced.c,nn_sf_180840
-1809c0,128,verified,src/nn/sf/unplaced.c,nn_sf_1809c0
+1809c0,368,verified,src/nn/sf/unplaced.c,nn_sf_1809c0
 180b60,312,verified,src/nn/sf/unplaced.c,nn_sf_180b60
 180ce0,8,verified,src/nn/sf/unit_heap_memory_resource.cpp,_ZN2nn2sf22UnitHeapMemoryResource8AllocateEmm
 180cf0,8,verified,src/nn/sf/unit_heap_memory_resource.cpp,_ZN2nn2sf22UnitHeapMemoryResource10DeallocateEPvmm
@@ -14458,10 +14458,10 @@ ffee0,324,verified,src/nn/fs/unplaced.c,nn_fs_GetAndClearMemoryReportInfo
 4337a0,88,verified,src/nn/fontll/itype/unplaced_2.c,nn_fontll_itype_4337a0
 433800,88,verified,src/nn/fontll/itype/unplaced_2.c,nn_fontll_itype_433800
 433860,256,verified,src/nn/fontll/itype/unplaced_2.c,nn_fontll_itype_433860
-433960,12972,verified,src/nn/fontll/itype/unplaced_2.c,nn_fontll_itype_433960
+433960,13132,verified,src/nn/fontll/itype/unplaced_2.c,nn_fontll_itype_433960
 437950,128,verified,src/nn/fontll/itype/unplaced_2.c,nn_fontll_itype_437950
 4379e0,352,verified,src/nn/fontll/itype/unplaced_2.c,nn_fontll_itype_4379e0
-437b60,536,verified,src/nn/fontll/itype/unplaced_2.c,nn_fontll_itype_437b60
+437b60,520,disputed,src/nn/fontll/itype/unplaced_2.c,nn_fontll_itype_437b60
 437da0,724,verified,src/nn/fontll/itype/unplaced_2.c,nn_fontll_itype_437da0
 4380a0,488,verified,src/nn/fontll/itype/unplaced_2.c,nn_fontll_itype_4380a0
 438290,112,verified,src/nn/fontll/itype/fsglue.c,ScaleFuncCall

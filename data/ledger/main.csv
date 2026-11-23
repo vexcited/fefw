@@ -36953,7 +36953,7 @@ c4e8c0,372,verified,src/game/unnamed/b010_1.c,GameHr_c4e8c0
 c4ea40,1100,verified,src/game/unnamed/b010_1.c,GameHr_c4ea40
 c4eea0,1584,verified,src/llvm-libcxx-21/libcxx/include//functional/unplaced.c,llvm_libcxx_21_libcxx_include___functional_c4eea0
 c501a0,660,verified,src/game/unnamed/b010_1.c,GameHr_c501a0
-c50450,1584,disputed,src/wld/world_ao_module.c,WorldAOModule_c50450
+c50450,1780,verified,src/wld/world_ao_module.c,WorldAOModule_c50450
 c50cc0,252,verified,src/wld/world_ao_module.c,WorldAOModule_Destructor
 c50dc0,80,verified,src/memory/new_delete.cpp,deleting destructor at 0xc50dc0
 c50e20,440,verified,src/wld/world_ao_module.c,WorldAOModule_Unknown7
@@ -48609,9 +48609,9 @@ ff1d50,92,verified,src/game/zview/extrusion_entry_shape.c,ExtrusionEntryShape_Re
 ff1db0,132,verified,src/game/zview/extrusion_entry_shape/result.c,Result_DeletingDestructor
 ff1e40,24,verified,src/llvm-libcxx-21/libcxx/include/__vector/vector.h,std::vector<T>::__throw_length_error()
 ff1e60,28,verified,src/game/game_trivial_misc.cpp,_Z15GameStub_ff1e60v
-ff1e80,572,verified,src/game/hub/global_hash_util.c,game_hub_GlobalHashUtil_FindFacilityList
-ff21e0,548,verified,src/game/hub/global_hash_util.c,GlobalHashUtil_ff21e0
-ff24c0,1168,verified,src/game/hub/global_hash_util.c,GlobalHashUtil_ff24c0
+ff1e80,616,verified,src/game/hub/global_hash_util.c,game_hub_GlobalHashUtil_FindFacilityList
+ff21e0,588,verified,src/game/hub/global_hash_util.c,GlobalHashUtil_ff21e0
+ff24c0,1196,verified,src/game/hub/global_hash_util.c,GlobalHashUtil_ff24c0
 ff2a00,1280,verified,src/game/hub/global_hash_util.c,GlobalHashUtil_ff2a00
 ff2fc0,44,verified,src/llvm-libcxx-21/libcxx/include/__functional/function.h,"std::__1::__function::__func<game::hub::GlobalHashUtil::FindFacilityList()::$_0, void (std::__1::shared_ptr<game::hub::AreaEvent> const&)>::deleting destructor"
 ff2ff0,76,verified,src/llvm-libcxx-21/libcxx/include/__functional/function.h,"std::__1::__function::__func<game::hub::GlobalHashUtil::FindFacilityList()::$_0, void (std::__1::shared_ptr<game::hub::AreaEvent> const&)>::__clone()"
@@ -49399,7 +49399,7 @@ fffcb0,1244,verified,src/game/unnamed/b014_1.c,GameHr_fffcb0
 1035c60,700,verified,src/game/hub/cond_talk_icon_list.c,CondTalkIconList_Unknown2
 1035fc0,132,verified,src/game/hub/cond_talk_icon_list.c,CondTalkIconList_Unknown3
 1036060,320,verified,src/game/hub/cond_talk_icon_list.c,CondTalkIconList_Unknown4
-10361c0,1336,verified,src/game/hub/area_change_icon_list.c,AreaChangeIconList_Unknown2
+10361c0,1388,verified,src/game/hub/area_change_icon_list.c,AreaChangeIconList_Unknown2
 1036780,264,verified,src/game/hub/area_change_icon_list.c,AreaChangeIconList_Unknown3
 10368c0,472,verified,src/game/hub/area_change_icon_list.c,AreaChangeIconList_Unknown4
 1036aa0,76,verified,src/game/hub/area_change_icon_list.c,AreaChangeIconList_Unknown5
@@ -51599,7 +51599,7 @@ fffcb0,1244,verified,src/game/unnamed/b014_1.c,GameHr_fffcb0
 10d8370,84,verified,src/game/combat/action_arts.c,ActionArts_Unknown6
 10d83e0,792,verified,src/game/combat/action_arts.c,ActionArts_Unknown7
 10d8720,260,verified,src/game/unnamed/e006_2.c,GameHr_10d8720
-10d8910,396,verified,src/game/combat/action_raze_blaze.c,ActionRazeBlaze_Unknown5
+10d8910,396,disputed,src/game/combat/action_raze_blaze.c,ActionRazeBlaze_Unknown5
 10d8b10,116,verified,src/game/combat/action_raze_blaze.c,ActionRazeBlaze_Unknown6
 10d8ba0,244,verified,src/game/combat/action_passive_skill.c,ActionPassiveSkill_Unknown5
 10d8ca0,264,verified,src/game/combat/action_passive_skill.c,ActionPassiveSkill_Unknown6
@@ -68073,7 +68073,7 @@ fffcb0,1244,verified,src/game/unnamed/b014_1.c,GameHr_fffcb0
 15c8630,152,verified,src/game/menu/menu_item_leaf_dtors.cpp,_ZN4game4menu12_GLOBAL__N_126EquipMenuItem_ItemExchangeD0Ev
 15c86d0,348,verified,src/game/menu/anonymous/equip_menu_item_item_exchange.c,EquipMenuItem_ItemExchange_Unknown5
 15c8830,76,verified,src/game/menu/anonymous/equip_menu_item_item_exchange.c,EquipMenuItem_ItemExchange_Unknown7
-15c8880,1956,verified,src/game/menu/anonymous/equip_menu_item_item_exchange.c,game_menu_anonymous_EquipMenuItem_ItemExchange_ACall
+15c8880,2004,verified,src/game/menu/anonymous/equip_menu_item_item_exchange.c,game_menu_anonymous_EquipMenuItem_ItemExchange_ACall
 15c9170,544,verified,src/game/menu/anonymous/equip_menu_item_item_exchange.c,EquipMenuItem_ItemExchange_Unknown55
 15c9390,108,verified,src/game/menu/anonymous/equip_menu_item_item_exchange.c,EquipMenuItem_ItemExchange_Unknown58
 15c9400,184,verified,src/game/menu/anonymous/equip_menu_item_item_exchange.c,EquipMenuItem_ItemExchange_15c9400
@@ -69931,7 +69931,7 @@ fffcb0,1244,verified,src/game/unnamed/b014_1.c,GameHr_fffcb0
 1627ea0,236,verified,src/game/unnamed/b021_1.c,GameHr_1627ea0
 1627f90,496,verified,src/game/cmdbtl/anonymous/proc_cmd_btl_ui.c,ProcCmdBtlUI_Destructor
 16281b0,80,verified,src/memory/new_delete.cpp,deleting destructor at 0x16281b0
-1628200,416,verified,src/game/cmdbtl/anonymous/proc_cmd_btl_ui.c,ProcCmdBtlUI_Unknown2
+1628200,440,verified,src/game/cmdbtl/anonymous/proc_cmd_btl_ui.c,ProcCmdBtlUI_Unknown2
 16283d0,444,verified,src/game/cmdbtl/anonymous/proc_cmd_btl_ui.c,ProcCmdBtlUI_Unknown3
 1628590,984,verified,src/game/cmdbtl/anonymous/unplaced_3.c,game_cmdbtl_anonymous_1628590
 1628980,1188,verified,src/game/cmdbtl/anonymous/unplaced_3.c,game_cmdbtl_anonymous_1628980
@@ -76785,7 +76785,7 @@ fffcb0,1244,verified,src/game/unnamed/b014_1.c,GameHr_fffcb0
 17847c0,28,verified,src/llvm-libcxx-21/libcxx/include/__functional/function.h,"std::__1::__function::__func<game::map::(anonymous namespace)::_ACall(game::ProcInst*, game::menu::GameMenuItem*, game::Unit*)::$_0, void ()>::target(std::type_info const&)"
 17847e0,12,verified,src/llvm-libcxx-21/libcxx/include/__functional/function.h,"std::__1::__function::__func<game::map::(anonymous namespace)::_ACall(game::ProcInst*, game::menu::GameMenuItem*, game::Unit*)::$_0, void ()>::target_type()"
 17847f0,152,verified,src/game/map/sortie_unit_menu_item.cpp,_ZN4game3map12_GLOBAL__N_118SortieUnitMenuItemD0Ev
-17848a0,140,verified,src/game/map/anonymous/sortie_unit_menu_item.c,SortieUnitMenuItem_Unknown25
+17848a0,220,verified,src/game/map/anonymous/sortie_unit_menu_item.c,SortieUnitMenuItem_Unknown25
 1784980,148,verified,src/game/map/anonymous/sortie_unit_menu_item.c,SortieUnitMenuItem_Unknown58
 1784a20,196,verified,src/game/map/anonymous/sortie_unit_menu_item.c,SortieUnitMenuItem_Unknown83
 1784b00,92,verified,src/game/map/anonymous/sortie_unit_menu_item.c,SortieUnitMenuItem_Unknown89
