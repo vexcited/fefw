@@ -2595,14 +2595,14 @@ LABEL_48:
   v72_.v75 = 0;
   v72_.v72 = 0;
   v72_.v73 = 0;
-  v43 = 2LL * (v42 + v41 * (int)v5);
+  v43 = 2LL * (int)(v42 + v41 * (int)v5);
   v44 = (char*)&v72_.v72 - ((v43 + 15) & 0xFFFFFFFFFFFFFFF0LL);
   memset_plt(v44, 0, v43);
   if (*(_BYTE*)(a1 + 4781) == 2) {
-    v45 = 20LL * (_DWORD)v5;
+    v45 = 4LL * (5 * (int)v5);
     v46 = (int*)((char*)&v72_.v72 - ((v45 + 15) & 0xFFFFFFFFFFFFFFF0LL));
     memset_plt(v46, 0, v45);
-    v47 = 100LL * (_DWORD)v5;
+    v47 = 4LL * (25 * (int)v5);
     v48 = (_DWORD*)((char*)&v72_.v72 - ((v47 + 15) & 0xFFFFFFFFFFFFFFF0LL));
     memset_plt(v48, 0, v47);
     silk_find_LTP_FIX((__int64)v48, v46, a3, (int*)(a2 + 124),

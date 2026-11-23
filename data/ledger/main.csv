@@ -19998,7 +19998,7 @@ fff90,116,verified,src/snd/api.cpp,_ZN3snd10startPitchERKNS_3fnd10WeakHandleERKN
 73c7c0,672,verified,src/game/map/unplaced.c,game_map_73c7c0
 73ca80,1580,verified,src/game/unnamed/e001_1.c,GameHr_73ca80
 73d420,836,verified,src/game/unnamed/b005_1.c,GameHr_73d420
-73d860,976,verified,src/game/unnamed/b005_2.c,GameHr_73d860
+73d860,972,verified,src/game/unnamed/b005_2.c,GameHr_73d860
 73dc80,1276,verified,src/game/unnamed/b005_1.c,GameHr_73dc80
 73e2a0,4608,verified,src/game/map/anonymous/unplaced.c,game_map_anonymous_73e2a0
 73f640,140,verified,src/game/unnamed/b005_1.c,GameHr_73f640
@@ -20156,7 +20156,7 @@ fff90,116,verified,src/snd/api.cpp,_ZN3snd10startPitchERKNS_3fnd10WeakHandleERKN
 74aa60,848,verified,src/game/unnamed/b005_1.c,GameHr_74aa60
 74ae00,1044,verified,src/game/unnamed/r001_1.c,GameHr_74ae00
 74b220,392,verified,src/game/unnamed/b005_2.c,GameHr_74b220
-74b3c0,1440,verified,src/game/unnamed/b005_2.c,GameHr_74b3c0
+74b3c0,1960,verified,src/game/unnamed/b005_2.c,GameHr_74b3c0
 74bd40,620,verified,src/game/unnamed/b005_2.c,GameHr_74bd40
 74bfc0,452,verified,src/game/unnamed/b005_2.c,GameHr_74bfc0
 74c200,52,verified,src/game/map/deploy.c,Deploy_Destructor
@@ -20291,7 +20291,7 @@ fff90,116,verified,src/snd/api.cpp,_ZN3snd10startPitchERKNS_3fnd10WeakHandleERKN
 755a10,388,verified,src/game/map/map_util.c,MapUtil_755a10
 755bb0,424,verified,src/game/map/map_util.c,MapUtil_755bb0
 755d60,452,verified,src/game/map/map_util.c,MapUtil_755d60
-755f40,232,disputed,src/game/unnamed/b005_2.c,GameHr_755f40
+755f40,232,verified,src/game/unnamed/b005_2.c,GameHr_755f40
 756080,888,verified,src/game/map/map_util.c,MapUtil_756080
 756480,1656,verified,src/game/map/map_util.c,MapUtil_756480
 756c20,300,verified,src/game/map/map_util.c,MapUtil_756c20
@@ -21043,7 +21043,7 @@ fff90,116,verified,src/snd/api.cpp,_ZN3snd10startPitchERKNS_3fnd10WeakHandleERKN
 787c50,12,verified,src/llvm-libcxx-21/libcxx/include/__functional/function.h,"std::__1::__function::__func<game::map::VTarget::EnumerateSubTarget(game::map::TargetData const&)::$_0, void (game::map::TargetData const&)>::target_type()"
 787c60,52,verified,src/game/singleton/singletons.cpp,_ZN4game9SingletonINS_3map6TargetELb0EED2Ev
 787ca0,88,verified,src/game/singleton/singletons.cpp,_ZN4game9SingletonINS_3map6TargetELb0EED0Ev
-787d00,3036,verified,src/game/unnamed/b005_2.c,GameHr_787d00
+787d00,3012,verified,src/game/unnamed/b005_2.c,GameHr_787d00
 788a40,516,verified,src/game/unnamed/b005_2.c,GameHr_788a40
 788c60,844,verified,src/game/unnamed/e001_1.c,GameHr_788c60
 788fb0,104,verified,src/game/unnamed/b005_2.c,GameHr_788fb0
@@ -21188,7 +21188,7 @@ fff90,116,verified,src/snd/api.cpp,_ZN3snd10startPitchERKNS_3fnd10WeakHandleERKN
 79c940,264,verified,src/game/unnamed/b005_2.c,GameHr_79c940
 79ca50,344,verified,src/game/map/unplaced_8.c,game_map_79ca50
 79cbb0,1140,verified,src/game/map/unplaced.c,game_map_79cbb0
-79d030,340,verified,src/game/unnamed/b005_2.c,GameHr_79d030
+79d030,336,verified,src/game/unnamed/b005_2.c,GameHr_79d030
 79d190,396,verified,src/game/map/unplaced.c,game_map_79d190
 79d360,196,verified,src/game/unnamed/b005_2.c,GameHr_79d360
 79d430,304,verified,src/game/map/unplaced.c,game_map_79d430

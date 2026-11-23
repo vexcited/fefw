@@ -734,7 +734,8 @@ void GameRoutine_845d60_alt1(_QWORD*, __int64*,
                              __int64*) __asm__("GameRoutine_845d60");
 void Image_72a260(__int64);
 void nn_mem_StandardAllocator_Free(__int64, __int64);
-__int64 GameHr_755f40(__int64 a1, __int64 a2, char a3, char a4, char* a5);
+__int64 GameHr_755f40(__int64 a1, __int64 a2, unsigned int a3,
+                      unsigned int a4, char* a5);
 __int64 GameHr_75e8e0();
 char* GameHr_7626c0(unsigned __int8* a1);
 void GameHr_76ebe0(__int64 a1);
@@ -2193,7 +2194,8 @@ __int64 GameHr_752850(int a1, int a2, unsigned __int8 a3)
   return 0;
 }
 
-__int64 GameHr_755f40(__int64 a1, __int64 a2, char a3, char a4, char* a5)
+__int64 GameHr_755f40(__int64 a1, __int64 a2, unsigned int a3,
+                      unsigned int a4, char* a5)
 {
   char v7;
   unsigned int v8;

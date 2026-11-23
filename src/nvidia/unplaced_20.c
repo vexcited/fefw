@@ -92,7 +92,7 @@ __int64 nvidia_d9890(__int64 a1, __int64 a2)
   }
   v7 = (__int64*)(a1 + 16);
   {
-    v8 = (*(_QWORD*)(a1 + 24) - v6) >> 3;
+    v8 = (__int64)(*(_QWORD*)(a1 + 24) - v6) >> 3;
     __asm__ volatile("" ::"r"(v8));
   }
   if (v8 <= v5) {

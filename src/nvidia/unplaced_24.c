@@ -1729,7 +1729,8 @@ __int64 nvidia_edcc0(unsigned int* a1, __int64 a2, unsigned __int64* a3)
   v33 = CudaDriverData_1432de0 + 1;
   v30 = CudaDriverData_1432de0 << 8;
   while (1) {
-    v14 = strlen_plt((const char*)(v8 + v12 - 25600 * (v13 / 0x64)));
+    v14 = strlen_plt(
+        (const char*)(v8 + (unsigned int)(v12 - 25600 * (v13 / 0x64))));
     if (v14 + v11 > v9) {
       break;
     }
@@ -1808,7 +1809,8 @@ LABEL_13:
     if (v9 - v11 < v21) {
       v24 = v30 - (v15 << 8);
       do {
-        v11 -= strlen_plt((const char*)(v8 + v24 - 25600 * (v4 / 0x64)));
+        v11 -= strlen_plt(
+            (const char*)(v8 + (unsigned int)(v24 - 25600 * (v4 / 0x64))));
         ++v4;
         v24 += 256;
         v23 = v9 - v11;
@@ -1830,11 +1832,11 @@ LABEL_13:
   if (v4 < v7) {
     v29 = v4 << 8;
     do {
-      v26 +=
-          snprintf_plt(v25 + v26, 0x100u, "%s",
-                       (const char*)(*(_QWORD*)((char*)&CudaDriverRoutine_7500 +
-                                                (_QWORD)v27) +
-                                     v29 - 25600 * (v4 / 0x64)));
+      v26 += snprintf_plt(
+          v25 + v26, 0x100u, "%s",
+          (const char*)(*(_QWORD*)((char*)&CudaDriverRoutine_7500 +
+                                   (_QWORD)v27) +
+                        (unsigned int)(v29 - 25600 * (v4 / 0x64))));
       ++v4;
       v29 += 256;
     } while (v4 < CudaDriverData_1432de0);
