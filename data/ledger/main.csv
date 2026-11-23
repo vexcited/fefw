@@ -1496,7 +1496,7 @@ dfc30,196,verified,src/snd/env_wind.cpp,_ZN3snd3fnd9FastAllocINS_3Env5GroupELj0E
 dfd00,516,verified,src/snd/unplaced_10.c,snd_dfd00
 dff40,80,verified,src/snd/env.cpp,_ZN3snd3Env5resetEv
 dffb0,136,verified,src/snd/env.cpp,_ZN3snd3Env4playEPKcPKvS2_S2_hPv
-e0040,1096,verified,src/snd/unplaced_12.c,snd_e0040
+e0040,1144,verified,src/snd/unplaced_12.c,snd_e0040
 e0580,1412,verified,src/snd/env.c,Env_e0580
 e0b20,648,disputed,src/snd/env.c,Env_e0b20
 e18a0,468,verified,src/snd/env_wind.cpp,_ZN3snd3Env11removeGroupEPNS0_5GroupE
@@ -41906,7 +41906,7 @@ e032d0,152,verified,src/game/hub/object_controller_drop_item.c,ObjectControllerD
 e03370,172,verified,src/game/hub/object_controller_drop_item.c,ObjectControllerDropItem_DeletingDestructor
 e03420,1088,verified,src/game/hub/object_controller_drop_item.c,ObjectControllerDropItem_Unknown6
 e038c0,20,verified,src/game/hub/object_controller_drop_item.c,ObjectControllerDropItem_Unknown3
-e038e0,3388,verified,src/game/hub/object_controller_drop_item.c,game_hub_ObjectControllerDropItem_PlayGetItem
+e038e0,2052,disputed,src/game/hub/object_controller_drop_item.c,game_hub_ObjectControllerDropItem_PlayGetItem
 e047c0,248,verified,src/game/unnamed/b012_0.c,GameHr_e047c0
 e048c0,80,verified,src/memory/new_delete.cpp,deleting destructor at 0xe048c0
 e04910,404,verified,src/game/hub/object_controller_destroy_base.c,game_hub_ObjectControllerDestroyBase_InitializeImpl
@@ -43578,7 +43578,7 @@ e72de0,116,verified,src/game/cmdbtl/anonymous/proc_cmd_btl_seq_target.c,ProcCmdB
 e72e60,24,verified,src/llvm-libcxx-21/libcxx/include/__vector/vector.h,std::vector<T>::__throw_length_error()
 e72e80,316,verified,src/game/cmdbtl/cmd_btl_party.c,CmdBtlParty_Destructor
 e73020,80,verified,src/memory/new_delete.cpp,deleting destructor at 0xe73020
-e73070,728,verified,src/game/script/cmdbtl_party_natives_impl.c,CmdbtlPartyNatives_e73070
+e73070,752,verified,src/game/script/cmdbtl_party_natives_impl.c,CmdbtlPartyNatives_e73070
 e73380,328,verified,src/game/cmdbtl/cmd_btl_party.c,CmdBtlParty_e73380
 e734e0,952,verified,src/game/cmdbtl/cmd_btl_party.c,CmdBtlParty_e734e0
 e738c0,712,verified,src/game/script/cmdbtl_party_natives_impl.c,CmdbtlPartyNatives_e738c0
@@ -44193,7 +44193,7 @@ e9a300,240,verified,src/game/cmdbtl/manager.c,Manager_e9a300
 e9a420,292,verified,src/game/cmdbtl/manager.c,Manager_e9a420
 e9a690,80,verified,src/memory/new_delete.cpp,deleting destructor at 0xe9a690
 e9a6e0,264,verified,src/game/cmdbtl/manager.c,Manager_e9a6e0
-e9a800,800,verified,src/game/script/cmdbtl_party_natives_impl.c,CmdbtlPartyNatives_e9a800
+e9a800,828,verified,src/game/script/cmdbtl_party_natives_impl.c,CmdbtlPartyNatives_e9a800
 e9aba0,828,verified,src/game/script/cmdbtl_party_natives_impl.c,CmdbtlPartyNatives_e9aba0
 e9af40,592,verified,src/game/cmdbtl/manager.c,Manager_e9af40
 e9b1b0,536,verified,src/game/cmdbtl/manager.c,Manager_e9b1b0
@@ -44827,7 +44827,7 @@ ece2b0,248,verified,src/game/script/cmdbtl_event_natives.cpp,_ZN4game6script6cmd
 ece3c0,604,verified,src/game/script/cmdbtl_event_natives.cpp,_ZN4game6script6cmdbtl5event12EntryTurnEndERKNSt3__112basic_stringIcNS3_11char_traitsIcEENS3_9allocatorIcEEEEiiiSB_SB_
 ece640,452,verified,src/game/script/cmdbtl_event_natives.cpp,_ZN4game6script6cmdbtl5event12EntryTurnEndERKNSt3__112basic_stringIcNS3_11char_traitsIcEENS3_9allocatorIcEEEEiiiSB_RKi
 ece820,456,verified,src/game/script/cmdbtl_event_natives.cpp,_ZN4game6script6cmdbtl5event12EntryTurnEndERKNSt3__112basic_stringIcNS3_11char_traitsIcEENS3_9allocatorIcEEEEiiiSB_RKf
-ecea00,2376,disputed,src/game/script/unplaced_11.c,game_script_ecea00
+ecea00,3204,disputed,src/game/script/unplaced_11.c,game_script_ecea00
 ecf7e0,224,verified,src/game/script/cmdbtl_event_natives.cpp,_ZN4game6script6cmdbtl5event17EntryBattleBeforeERKNSt3__112basic_stringIcNS3_11char_traitsIcEENS3_9allocatorIcEEEEiSB_
 ecf8c0,536,verified,src/game/script/cmdbtl_event_natives.cpp,_ZN4game6script6cmdbtl5event17EntryBattleBeforeERKNSt3__112basic_stringIcNS3_11char_traitsIcEENS3_9allocatorIcEEEEiSB_SB_
 ecfb20,428,verified,src/game/script/cmdbtl_event_natives.cpp,_ZN4game6script6cmdbtl5event17EntryBattleBeforeERKNSt3__112basic_stringIcNS3_11char_traitsIcEENS3_9allocatorIcEEEEiSB_RKi
@@ -46018,7 +46018,7 @@ f2caf0,4,verified,src/game/game_trivial.cpp,_Z15GameStub_f2caf0v
 f2cb00,4,verified,src/game/game_trivial.cpp,_Z15GameStub_f2cb00v
 f2cb20,556,verified,src/game/hub/object_build_create.c,ObjectBuildCreate_Destructor
 f2cd50,80,verified,src/memory/new_delete.cpp,deleting destructor at 0xf2cd50
-f2cda0,324,verified,src/game/hub/object_build_create.c,game_hub_ObjectBuildCreate_CreateObject
+f2cda0,340,verified,src/game/hub/object_build_create.c,game_hub_ObjectBuildCreate_CreateObject
 f2d5d0,16,verified,src/game/hub/object_build_create.c,ObjectBuildCreate_Unknown2
 f2d5e0,16,verified,src/game/game_trivial.cpp,_Z15GameStub_f2d5e0m
 f2d5f0,4,verified,src/game/game_trivial.cpp,_Z15GameStub_f2d5f0v
@@ -48044,7 +48044,7 @@ fbdc00,20,verified,src/game/unnamed/v000_2.c,GameHr_fbdc00
 fbdc20,256,verified,src/game/unplaced_4.c,game_fbdc20
 fbdd20,824,verified,src/game/unplaced_27.c,game_fbdd20
 fbe060,672,verified,src/game/unplaced_4.c,game_fbe060
-fbe300,472,verified,src/game/unnamed/e005_4.c,GameHr_fbe300
+fbe300,496,verified,src/game/unnamed/e005_4.c,GameHr_fbe300
 fbe5d0,124,verified,src/game/unnamed/b014_2.c,GameHr_fbe5d0
 fbe660,644,verified,src/game/unplaced_4.c,game_fbe660
 fbe900,260,verified,src/game/hub/proc_temple_audience_seq.c,ProcTempleAudienceSeq_Destructor
@@ -55010,7 +55010,7 @@ fffcb0,1244,verified,src/game/unnamed/b014_1.c,GameHr_fffcb0
 11f8740,920,verified,src/game/unnamed/r007_1.c,GameHr_11f8740
 11f8fe0,392,verified,src/game/ai_think.c,AIThink_11f8fe0
 11f9440,1532,verified,src/game/ai_think.c,game_AIThink_ActiveCauseHealRange
-11f9ae0,956,verified,src/game/ai_think.c,AIThink_11f9ae0
+11f9ae0,880,verified,src/game/ai_think.c,AIThink_11f9ae0
 11f9ec0,352,verified,src/game/ai_think.c,AIThink_11f9ec0
 11fa030,52,verified,src/game/ai_think.c,AIThink_11fa030
 11fa070,156,verified,src/game/ai_think.c,AIThink_11fa070
@@ -55149,7 +55149,7 @@ fffcb0,1244,verified,src/game/unnamed/b014_1.c,GameHr_fffcb0
 1205560,700,verified,src/game/ai_think.c,AIThink_1205560
 1205840,1664,disputed,src/game/ai_think.c,AIThink_1205840
 1205fc0,384,verified,src/game/ai_think.c,game_AIThink_ActionMoveRetreat
-1206440,700,verified,src/game/ai_think.c,game_AIThink_ActionMoveItemHolder
+1206440,1396,verified,src/game/ai_think.c,game_AIThink_ActionMoveItemHolder
 1206b80,1344,verified,src/game/ai_think.c,game_AIThink_MoveAgitation
 12070f0,176,verified,src/game/ai_think.c,AIThink_12070f0
 12071a0,176,verified,src/game/ai_think.c,AIThink_12071a0
@@ -55571,7 +55571,7 @@ fffcb0,1244,verified,src/game/unnamed/b014_1.c,GameHr_fffcb0
 12207c0,472,verified,src/game/ai_think.c,AIThink_12207c0
 12209c0,1964,verified,src/game/ai_think.c,game_AIThink_EntrustGetAttackResult
 12211a0,244,verified,src/game/ai_think.c,AIThink_12211a0
-12212c0,2108,verified,src/game/ai_think.c,game_AIThink_EntrustMoveTo
+12212c0,2136,verified,src/game/ai_think.c,game_AIThink_EntrustMoveTo
 1221be0,272,verified,src/game/ai_think.c,game_AIThink_EntrustMoveRetreat
 12220a0,680,verified,src/game/ai_think.c,AIThink_12220a0
 12224a0,636,verified,src/game/ai_think.c,game_AIThink_EntrustMoveGimmick
@@ -55633,7 +55633,7 @@ fffcb0,1244,verified,src/game/unnamed/b014_1.c,GameHr_fffcb0
 1224620,64,verified,src/llvm-libcxx-21/libcxx/include/__functional/function.h,"std::__1::__function::__func<game::AIThink::EntrustMoveEnemy(unsigned int)::$_0, void (int, int)>::__clone(__base*)"
 1224660,4,verified,src/llvm-libcxx-21/libcxx/include/__functional/function.h,"std::__1::__function::__func<game::AIThink::EntrustMoveEnemy(unsigned int)::$_0, void (int, int)>::destroy()"
 1224670,12,verified,src/llvm-libcxx-21/libcxx/include/__functional/function.h,"std::__1::__function::__func<game::AIThink::EntrustMoveEnemy(unsigned int)::$_0, void (int, int)>::destroy_deallocate()"
-1224680,344,verified,src/game/ai_think.c,game_AIThink_EntrustMoveEnemy_lambda0_Invoke
+1224680,268,verified,src/game/ai_think.c,game_AIThink_EntrustMoveEnemy_lambda0_Invoke
 12247e0,28,verified,src/llvm-libcxx-21/libcxx/include/__functional/function.h,"std::__1::__function::__func<game::AIThink::EntrustMoveEnemy(unsigned int)::$_0, void (int, int)>::target(std::type_info const&)"
 1224800,12,verified,src/llvm-libcxx-21/libcxx/include/__functional/function.h,"std::__1::__function::__func<game::AIThink::EntrustMoveEnemy(unsigned int)::$_0, void (int, int)>::target_type()"
 1224810,44,verified,src/llvm-libcxx-21/libcxx/include/__functional/function.h,"std::__1::__function::__func<game::AIThink::EntrustMoveNearestFriend(unsigned int)::$_0, bool (game::Unit const*)>::deleting destructor"
@@ -56970,7 +56970,7 @@ fffcb0,1244,verified,src/game/unnamed/b014_1.c,GameHr_fffcb0
 12770f0,84,verified,src/game/ai_target.c,game_AITarget_EnumerateSub_lambda0_Invoke
 1277150,28,verified,src/llvm-libcxx-21/libcxx/include/__functional/function.h,"std::__1::__function::__func<game::AITarget::EnumerateSub(int)::$_0, void (game::map::TargetData const&)>::target(std::type_info const&)"
 1277170,12,verified,src/llvm-libcxx-21/libcxx/include/__functional/function.h,"std::__1::__function::__func<game::AITarget::EnumerateSub(int)::$_0, void (game::map::TargetData const&)>::target_type()"
-1277200,752,verified,src/game/ai_think.c,game_AIThink_RageCore
+1277200,676,verified,src/game/ai_think.c,game_AIThink_RageCore
 1277560,2428,verified,src/game/ai_think.c,AIThink_1277560
 1277f40,696,verified,src/game/ai_think.c,AIThink_1277f40
 12786e0,1468,verified,src/game/ai_think.c,AIThink_12786e0
@@ -57304,7 +57304,7 @@ fffcb0,1244,verified,src/game/unnamed/b014_1.c,GameHr_fffcb0
 12982e0,220,verified,src/game/unplaced_7.c,game_12982e0
 1298700,1236,verified,src/game/unnamed/b017_3.c,GameHr_1298700
 1298cc0,536,verified,src/game/ai_think.c,game_AIThink_ActionSpecialAttack
-1299040,1732,verified,src/game/ai_think.c,AIThink_1299040
+1299040,1788,verified,src/game/ai_think.c,AIThink_1299040
 12998a0,928,verified,src/game/ai_think.c,AIThink_12998a0
 1299cc0,788,verified,src/game/ai_think.c,AIThink_1299cc0
 129a570,368,verified,src/game/ai_think.c,AIThink_129a570
@@ -57332,7 +57332,7 @@ fffcb0,1244,verified,src/game/unnamed/b014_1.c,GameHr_fffcb0
 129d650,92,verified,src/game/ai_think/special_interference_calculator_for_enemy.c,SpecialInterferenceCalculatorForEnemy_DeletingDestructor
 129d6b0,48,verified,src/game/ai_think/special_interference_calculator_for_entrust.c,SpecialInterferenceCalculatorForEntrust_Destructor
 129d6e0,140,verified,src/game/ai_think/special_interference_calculator_for_entrust.c,SpecialInterferenceCalculatorForEntrust_DeletingDestructor
-129d780,2444,verified,src/game/ai_think.c,AIThink_129d780
+129d780,2484,verified,src/game/ai_think.c,AIThink_129d780
 129e880,1860,verified,src/game/ai_think.c,AIThink_129e880
 129efd0,44,verified,src/llvm-libcxx-21/libcxx/include/__functional/function.h,"std::__1::__function::__func<game::AIThink::BlazeOnTo()::$_0, void (game::Unit const*, int, int, game::AIThink::AttackScoreResult const&)>::deleting destructor"
 129f000,80,verified,src/llvm-libcxx-21/libcxx/include/__functional/function.h,"std::__1::__function::__func<game::AIThink::BlazeOnTo()::$_0, void (game::Unit const*, int, int, game::AIThink::AttackScoreResult const&)>::__clone()"
@@ -57503,9 +57503,9 @@ fffcb0,1244,verified,src/game/unnamed/b014_1.c,GameHr_fffcb0
 12a3010,4,verified,src/memory/new_delete.cpp,complete destructor at 0x12a3010
 12a3020,44,verified,src/memory/new_delete.cpp,deleting destructor at 0x12a3020
 12a3050,16,verified,src/game/ai_think.c,AIThink_SpecialEntrustEnhancementCondition_Unknown7
-12a3060,888,disputed,src/game/ai_think.c,AIThink_12a3060
+12a3060,888,verified,src/game/ai_think.c,AIThink_12a3060
 12a3600,112,verified,src/game/ai_think.c,AIThink_12a3600
-12a3680,628,verified,src/game/ai_think.c,game_AIThink_ArtsPosition
+12a3680,644,verified,src/game/ai_think.c,game_AIThink_ArtsPosition
 12a3980,112,verified,src/game/ai_think.c,AIThink_12a3980
 12a3a00,4,verified,src/game/game_trivial.cpp,_Z16GameStub_12a3a00v
 12a3a10,44,verified,src/llvm-libcxx-21/libcxx/include/__functional/function.h,"std::__1::__function::__func<game::AIThink::ActionArtsAttack(int, game::AIValue const&, game::AIValue const&)::$_0, bool (game::Unit const*, int, int)>::deleting destructor"
@@ -66713,7 +66713,7 @@ fffcb0,1244,verified,src/game/unnamed/b014_1.c,GameHr_fffcb0
 1565080,292,verified,src/game/unnamed/b020_1.c,GameHr_1565080
 15651c0,1556,verified,src/game/unnamed/b020_2.c,GameHr_15651c0
 1565800,2744,verified,src/ui/unplaced_4.c,ui_1565800
-1566440,1956,verified,src/ui/unplaced_7.c,ui_1566440
+1566440,1984,verified,src/ui/unplaced_7.c,ui_1566440
 1566d90,604,verified,src/game/unnamed/b020_1.c,GameHr_1566d90
 1567000,604,verified,src/game/unnamed/b020_1.c,GameHr_1567000
 1567280,752,verified,src/ui/unplaced_3.c,ui_1567280
@@ -68636,7 +68636,7 @@ fffcb0,1244,verified,src/game/unnamed/b014_1.c,GameHr_fffcb0
 15e12c0,28,verified,src/llvm-libcxx-21/libcxx/include/__functional/function.h,"std::__1::__function::__func<game::gameui::UnitUtil::GetPrevDefault(game::Unit*, std::__1::function<bool (game::Unit*)>, bool)::$_0, bool (game::Unit*)>::target(std::type_info const&)"
 15e12e0,12,verified,src/llvm-libcxx-21/libcxx/include/__functional/function.h,"std::__1::__function::__func<game::gameui::UnitUtil::GetPrevDefault(game::Unit*, std::__1::function<bool (game::Unit*)>, bool)::$_0, bool (game::Unit*)>::target_type()"
 15e1350,552,verified,src/game/unnamed/b021_0.c,GameHr_15e1350
-15e1580,1416,verified,src/game/gameui/anonymous/proc_game_ui_fade.c,game_gameui_anonymous_ProcGameUIFade_In
+15e1580,1480,verified,src/game/gameui/anonymous/proc_game_ui_fade.c,game_gameui_anonymous_ProcGameUIFade_In
 15e1b80,692,verified,src/game/gameui/anonymous/proc_game_ui_fade.c,ProcGameUIFade_15e1b80
 15e1e60,1416,verified,src/game/gameui/anonymous/proc_game_ui_fade.c,ProcGameUIFade_15e1e60
 15e2a60,596,verified,src/game/gameui/anonymous/unplaced_4.c,game_gameui_anonymous_15e2a60
@@ -84773,7 +84773,7 @@ fffcb0,1244,verified,src/game/unnamed/b014_1.c,GameHr_fffcb0
 1912e70,260,verified,src/cspine/spine_model.c,SpineModel_1912e70
 1912fc0,532,verified,src/cspine/spine_model.c,SpineModel_1912fc0
 19131f0,204,verified,src/game/unnamed/b026_0.c,GameHr_19131f0
-19132c0,1668,verified,src/game/unplaced_17.c,game_19132c0
+19132c0,6956,verified,src/game/unplaced_17.c,game_19132c0
 19160e0,596,verified,src/cspine/spine_model.c,SpineModel_19160e0
 1916360,336,verified,src/game/unnamed/b026_0.c,GameHr_1916360
 19164c0,336,verified,src/game/unnamed/b026_0.c,GameHr_19164c0
