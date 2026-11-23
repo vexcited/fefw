@@ -14476,11 +14476,11 @@ ffee0,324,verified,src/nn/fs/unplaced.c,nn_fs_GetAndClearMemoryReportInfo
 438e60,460,verified,src/nn/fontll/itype/fsglue_impl.c,compose_trans
 439030,256,verified,src/nn/fontll/itype/fsglue_impl.c,init_phantom_points
 4396d0,60,verified,src/nn/fontll/itype/unplaced_8.c,nn_fontll_itype_4396d0
-439720,1336,verified,src/nn/fontll/itype/fsglue_impl.c,apply_transformation
+439720,1736,verified,src/nn/fontll/itype/fsglue_impl.c,apply_transformation
 439ee0,972,verified,src/nn/fontll/itype/unplaced_7.c,nn_fontll_itype_439ee0
 43a340,1140,verified,src/nn/fontll/itype/fsglue_impl.c,do_hints
 43a7c0,112,verified,src/nn/fontll/itype/fsglue_impl.c,fsglue_43a7c0
-43a840,396,verified,src/nn/fontll/itype/fsglue_impl.c,fsglue_43a840
+43a840,428,disputed,src/nn/fontll/itype/fsglue_impl.c,fsglue_43a840
 43aa00,112,verified,src/nn/fontll/itype/fsglue_impl.c,fsglue_43aa00
 43aa70,356,verified,src/nn/fontll/itype/fsglue_impl.c,read_comp_parms_ttf
 43abe0,40,verified,src/nn/fontll/itype/fsglue.c,read_comp_parms
@@ -14493,7 +14493,7 @@ ffee0,324,verified,src/nn/fs/unplaced.c,nn_fs_GetAndClearMemoryReportInfo
 43b210,164,verified,src/nn/fontll/itype/fsglue_impl.c,get_charData
 43b2c0,956,verified,src/nn/fontll/itype/fsglue_impl.c,apply_transMatrix
 43b6b0,1080,verified,src/nn/fontll/itype/fsglue_impl.c,which_script
-43bb40,2256,verified,src/nn/fontll/itype/fsglue_impl.c,get_comp
+43bb40,2436,verified,src/nn/fontll/itype/fsglue_impl.c,get_comp
 43c760,968,verified,src/nn/fontll/itype/fsglue_impl.c,sfnt_UnfoldCurve
 43cb50,136,verified,src/nn/fontll/itype/fsglue.c,fsg_CopyElementBackwards
 43cbe0,276,verified,src/nn/fontll/itype/fsglue.c,fsg_SetUpElement

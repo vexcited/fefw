@@ -890,10 +890,10 @@ fff0,88,verified,src/movie/detail/movie_video_decoder_event_manager.cpp,_ZN5movi
 6c7d0,192,verified,src/opus/src/opus_encoder.c,hp_cutoff
 6c8a0,576,verified,src/opus/src/opus_encoder_impl2.c,opus_encoder_6c8a0
 6caf0,232,verified,src/opus/src/unplaced_7.c,opus_src_6caf0
-6cc20,724,verified,src/opus/src/opus_encoder_impl2.c,opus_encoder_6cc20
-6d020,1124,verified,src/opus/src/opus_encoder_impl2.c,opus_encoder_6d020
+6cc20,964,verified,src/opus/src/opus_encoder_impl2.c,opus_encoder_6cc20
+6d020,1140,verified,src/opus/src/opus_encoder_impl2.c,opus_encoder_6d020
 6d6a0,692,verified,src/opus/src/opus_encoder.c,decide_dtx_mode
-6d9a0,172,verified,src/opus/src/opus_encoder_impl2.c,opus_encode_float
+6d9a0,440,verified,src/opus/src/opus_encoder_impl2.c,opus_encode_float
 6dbf0,248,verified,src/opus/src/opus_encoder_impl2.c,opus_encode
 6dd30,200,verified,src/opus/src/opus_encoder.c,opus_encoder_ctl
 6ece0,4,verified,src/opus/src/opus_encoder.c,opus_encoder_destroy
@@ -910,7 +910,7 @@ fff0,88,verified,src/movie/detail/movie_video_decoder_event_manager.cpp,_ZN5movi
 6fad0,16,verified,src/opus/src/unplaced_2.c,opus_6fad0
 70140,548,verified,src/opus/src/unplaced_2.c,opus_70140
 73380,464,verified,src/opus/src/unplaced_2.c,opus_73380
-738c0,1616,verified,src/opus/src/unplaced_2.c,opus_738c0
+738c0,1624,verified,src/opus/src/unplaced_2.c,opus_738c0
 73f80,4224,disputed,src/opus/src/unplaced_6.c,opus_src_73f80
 750e0,72,verified,src/opus/src/opus_multistream.c,validate_layout
 75140,76,verified,src/opus/src/opus_multistream_impl.c,opus_multistream_75140
