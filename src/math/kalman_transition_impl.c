@@ -2933,24 +2933,25 @@ bool nerd_kalman_ExtendedKalmanFilter_ObservationUpdate_7104e0(
   v45 = (float)((float)(v38 * v15) + 0x0.0p+0f) + (float)(v42 * v16);
   v46 = (float)((float)((float)(v39 * v15) + 0x0.0p+0f) + (float)(v40 * v16)) +
         (float)(v41 * v32);
-  if (v44 >= 0x0.0p+0f) {
-    v47 = v44;
+  if (v44 < 0x0.0p+0f) {
+    v47 = 0x0.0p+0f;
   }
   else {
-    v47 = 0x0.0p+0f;
+    v47 = v44;
   }
   v48 = (float)((float)((float)(v38 * v17) + 0x0.0p+0f) + (float)(v42 * v18)) +
         (float)(v43 * v19);
-  v49 = sqrtf(v47);
+  // A clamped value is never negative, so the original has no errno call.
+  v49 = __builtin_elementwise_sqrt(v47);
   if ((float)((float)((float)((float)(v39 * v33) + 0x0.0p+0f) +
                       (float)(v40 * v35)) +
-              (float)(v41 * v36)) >= 0x0.0p+0f) {
+              (float)(v41 * v36)) < 0x0.0p+0f) {
+    v50 = 0x0.0p+0f;
+  }
+  else {
     v50 =
         (float)((float)((float)(v39 * v33) + 0x0.0p+0f) + (float)(v40 * v35)) +
         (float)(v41 * v36);
-  }
-  else {
-    v50 = 0x0.0p+0f;
   }
   if (v48 < 0x0.0p+0f) {
     v48 = 0x0.0p+0f;
@@ -2974,7 +2975,7 @@ bool nerd_kalman_ExtendedKalmanFilter_ObservationUpdate_7104e0(
     }
   }
   else {
-    v55 = sqrtf(v50);
+    v55 = __builtin_elementwise_sqrt(v50);
     v56 = 0x0.0p+0f;
     if (v53 <= 0x0.0p+0f) {
       v53 = -v55;
@@ -2989,7 +2990,7 @@ bool nerd_kalman_ExtendedKalmanFilter_ObservationUpdate_7104e0(
       goto LABEL_16;
     }
   }
-  v61 = sqrtf(v48);
+  v61 = __builtin_elementwise_sqrt(v48);
   v60 = 0x0.0p+0f;
   if (v57 <= 0x0.0p+0f) {
     v57 = -v61;
@@ -3032,31 +3033,31 @@ LABEL_28:
   v71 = a4[4];
   v72 = (float)((float)((float)(v57 * v57) + 0x0.0p+0f) + (float)(v64 * v64)) +
         (float)(v68 * v68);
-  if ((float)((float)((float)(v49 * v49) + 0x0.0p+0f) + *a4) >= 0x0.0p+0f) {
-    v73 = (float)((float)(v49 * v49) + 0x0.0p+0f) + *a4;
-  }
-  else {
+  if ((float)((float)((float)(v49 * v49) + 0x0.0p+0f) + *a4) < 0x0.0p+0f) {
     v73 = 0x0.0p+0f;
   }
+  else {
+    v73 = (float)((float)(v49 * v49) + 0x0.0p+0f) + *a4;
+  }
   v74 = v69 + a4[3];
-  v75 = sqrtf(v73);
+  v75 = __builtin_elementwise_sqrt(v73);
   v76 = v70 + a4[6];
   v77 = v72 + a4[8];
   if ((float)((float)((float)((float)(v53 * v53) + 0x0.0p+0f) +
                       (float)(v62 * v62)) +
-              v71) >= 0x0.0p+0f) {
+              v71) < 0x0.0p+0f) {
+    v78 = 0x0.0p+0f;
+  }
+  else {
     v78 =
         (float)((float)((float)(v53 * v53) + 0x0.0p+0f) + (float)(v62 * v62)) +
         v71;
   }
-  else {
-    v78 = 0x0.0p+0f;
-  }
-  if (v77 >= 0x0.0p+0f) {
-    v79 = v77;
-  }
-  else {
+  if (v77 < 0x0.0p+0f) {
     v79 = 0x0.0p+0f;
+  }
+  else {
+    v79 = v77;
   }
   v80 = 0x1.0000000000000p+0f / v75;
   if (v73 == 0x0.0p+0f) {
@@ -3079,7 +3080,7 @@ LABEL_28:
   }
   else {
     v83 = v82 <= 0x0.0p+0f;
-    v82 = sqrtf(v78);
+    v82 = __builtin_elementwise_sqrt(v78);
     if (v83) {
       v82 = -v82;
     }
@@ -3092,7 +3093,7 @@ LABEL_28:
     }
   }
   v83 = v86 <= 0x0.0p+0f;
-  v86 = sqrtf(v79);
+  v86 = __builtin_elementwise_sqrt(v79);
   v88 = 0x0.0p+0f;
   if (v83) {
     v86 = -v86;
