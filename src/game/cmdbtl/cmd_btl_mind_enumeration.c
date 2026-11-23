@@ -135,7 +135,7 @@ __int64 fw_memory_HeapManager_Allocate_alt2(__int64, __int64, __int64,
                                             unsigned int);
 __int64 std___1___shared_weak_count___release_weak_alt3(__int64);
 void __attribute__((noreturn)) GameRoutine_ea6540_alt2();
-__int64
+void
 game_cmdbtl_CmdBtlMindEnumeration_CalcWholeMind_SkillMind_lambda0_Invoke(
     __int64 a1, _DWORD* a2);
 
@@ -2239,8 +2239,7 @@ __int64 game_cmdbtl_CmdBtlMindEnumeration_CalcWholeMind_Link(__int64 a1,
   return result;
 }
 
-__int64
-
+void
 game_cmdbtl_CmdBtlMindEnumeration_CalcWholeMind_SkillMind_lambda0_Invoke(
     __int64 a1, _DWORD* a2)
 {
@@ -2423,11 +2422,11 @@ game_cmdbtl_CmdBtlMindEnumeration_CalcWholeMind_SkillMind_lambda0_Invoke(
                         PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
     result = v79;
     if ((v79 & 1) == 0) {
-      return result;
+      return;
     }
   }
   else if ((result & 1) == 0) {
-    return result;
+    return;
   }
   v14 = *(_QWORD*)(*(_QWORD*)(*GameData_212c880[0] + 64) + 8LL * (*a2 & 0xFFF));
   v15 = GameData_212f7d0[0];
@@ -2746,7 +2745,7 @@ game_cmdbtl_CmdBtlMindEnumeration_CalcWholeMind_SkillMind_lambda0_Invoke(
                       PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
     LABEL_15:
       if (++v17 == 30) {
-        return result;
+        return;
       }
     }
   }
@@ -2979,7 +2978,7 @@ game_cmdbtl_CmdBtlMindEnumeration_CalcWholeMind_SkillMind_lambda0_Invoke(
     *(_QWORD*)(v87 + 112) = v99;
   }
   *(_QWORD*)(v5 + 56) = v97;
-  return MindBtlInfo_Destructor_alt2(&f_.v110);
+  MindBtlInfo_Destructor_alt2(&f_.v110);
 }
 
 __int64 CmdBtlMindEnumeration_eab1e0(__int64 a1)

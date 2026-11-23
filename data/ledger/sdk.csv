@@ -14404,7 +14404,7 @@ ffee0,324,verified,src/nn/fs/unplaced.c,nn_fs_GetAndClearMemoryReportInfo
 430c10,44,verified,src/nn/fontll/itype/unplaced_2.c,nn_fontll_itype_430c10
 430c40,48,verified,src/nn/fontll/itype/unplaced_2.c,nn_fontll_itype_430c40
 430c70,28,verified,src/nn/fontll/itype/unplaced_2.c,nn_fontll_itype_430c70
-430ca0,1904,disputed,src/nn/unnamed/a000_0.c,SdkHr_430ca0
+430ca0,2612,disputed,src/nn/unnamed/a000_0.c,SdkHr_430ca0
 4318c0,236,verified,src/nn/fontll/itype/unplaced_2.c,nn_fontll_itype_4318c0
 4319c0,220,verified,src/nn/fontll/itype/unplaced_2.c,nn_fontll_itype_4319c0
 431ac0,232,verified,src/nn/fontll/itype/unplaced_2.c,nn_fontll_itype_431ac0

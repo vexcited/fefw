@@ -31,7 +31,7 @@ extern _UNKNOWN SdkData_c2ca2c;
 extern _UNKNOWN SdkData_c2ca8c;
 void longjmp_plt(__int64, int);
 __int64 SdkHr_35dec0(int* a1, int a2, int a3, __int16* a4);
-__int64 SdkHr_430ca0(__int64 result);
+void SdkHr_430ca0(__int64 result);
 
 int16x8_t* SdkHr_5f0cc(int16x8_t* a1)
 {
@@ -1602,7 +1602,7 @@ LABEL_62:
   return 0;
 }
 
-__int64 SdkHr_430ca0(__int64 result)
+void SdkHr_430ca0(__int64 result)
 {
 
 #pragma clang fp contract(on)
@@ -1728,12 +1728,13 @@ __int64 SdkHr_430ca0(__int64 result)
   *(_QWORD*)(result + 40) = v7 - 4;
   v11 = *(_DWORD*)(v7 - 4);
   if (v11 == 11) {
-    return rtgah_plt(result);
+    rtgah_plt(result);
+  return;
   }
   if ((v10 & 2) == 0) {
     if (v11 > 252) {
       if (v11 != 253) {
-        return result;
+        return;
       }
       *(_QWORD*)(result + 40) = v7 - 8;
       v115 = *(_DWORD*)(v7 - 8);
@@ -2208,7 +2209,7 @@ __int64 SdkHr_430ca0(__int64 result)
                     LABEL_202:
                       *(_QWORD*)(v9 + 40) =
                           *(_QWORD*)(*(_QWORD*)(v9 + 64) + 8LL);
-                      return result;
+                      return;
                     }
                   }
                   v81 = *(v67 - 1);
@@ -2406,14 +2407,15 @@ __int64 SdkHr_430ca0(__int64 result)
       goto LABEL_14;
     }
     if (v11 == 252) {
-      return nn_fontll_itype_433960(result);
+      nn_fontll_itype_433960(result);
+  return;
     }
     if ((unsigned int)(v11 - 5) < 5 || (unsigned int)(v11 - 250) < 2) {
       longjmp_plt(result + 136, 439);
       goto LABEL_18;
     }
   }
-  return result;
+  return;
 }
 
 #pragma GCC visibility pop
