@@ -692,7 +692,7 @@ fff0,88,verified,src/movie/detail/movie_video_decoder_event_manager.cpp,_ZN5movi
 2b1e0,820,verified,src/opus/celt/celt_encoder_impl2.c,celt_encoder_2b1e0
 2b560,296,disputed,src/opus/celt/celt_encoder_impl2.c,celt_encode_with_ec
 2f940,1124,verified,src/opus/celt/celt_encoder_impl2.c,run_prefilter
-2ffe0,1136,verified,src/opus/celt/unplaced_4.c,opus_celt_2ffe0
+2ffe0,1136,disputed,src/opus/celt/unplaced_4.c,opus_celt_2ffe0
 30a20,944,verified,src/opus/celt/celt_encoder.c,compute_mdcts
 30f00,1448,verified,src/opus/celt/unplaced_9.c,opus_celt_30f00
 333a0,2116,disputed,src/opus/celt/celt_encoder_impl2.c,tf_analysis
@@ -771,7 +771,7 @@ fff0,88,verified,src/movie/detail/movie_video_decoder_event_manager.cpp,_ZN5movi
 4a340,3156,verified,src/movie/unnamed/p000_0.c,MovieHr_4a340
 4bb60,40,verified,src/opus/silk/PLC.c,silk_PLC_Reset
 4bba0,596,verified,src/opus/silk/PLC_impl.c,silk_PLC
-4be00,1744,verified,src/opus/silk/unplaced_10.c,opus_silk_4be00
+4be00,1744,disputed,src/opus/silk/unplaced_10.c,opus_silk_4be00
 4c9e0,348,verified,src/opus/silk/PLC.c,silk_PLC_glue_frames
 4cbc0,796,verified,src/opus/silk/unplaced_2.c,opus_silk_4cbc0
 4cf00,112,verified,src/opus/silk/unplaced_2.c,opus_silk_4cf00

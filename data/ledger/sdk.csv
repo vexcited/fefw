@@ -4212,12 +4212,12 @@ ffee0,324,verified,src/nn/fs/unplaced.c,nn_fs_GetAndClearMemoryReportInfo
 12c024,56,verified,src/nn/fs/fs_file_data_cache_system_impl.c,fs_file_data_cache_system_12c024
 12c05c,60,verified,src/nn/fs/fs_file_data_cache_system_impl.c,fs_file_data_cache_system_12c05c
 12c0c0,240,verified,src/nn/fs/fs_file_data_cache_system.cpp,_ZN2nn2fs6detail19FileDataCacheSystem15ReplacementList8FinalizeEv
-12c1e0,552,verified,src/nn/fs/fs_file_data_cache_system_impl.c,nn_fs_detail_FileDataCacheSystem_Read
+12c1e0,476,disputed,src/nn/fs/fs_file_data_cache_system_impl.c,nn_fs_detail_FileDataCacheSystem_Read
 12c5a0,348,verified,src/nn/fs/fs_file_data_cache_system.cpp,_ZN2nn2fs6detail19FileDataCacheSystem6DoCopyEPNS0_8IStorageEPvRKNS1_10FileRegionES8_PNS2_31FileDataCacheSystemAccessResultE
 12c700,168,verified,src/nn/fs/fs_file_data_cache_system.cpp,_ZN2nn2fs6detail19FileDataCacheSystem26ShouldPerformCoalescedReadERKNS1_10FileRegionES5_
 12c7c0,424,verified,src/nn/fs/fs_file_data_cache_system_impl.c,nn_fs_detail_FileDataCacheSystem_DoCache
 12cb60,280,verified,src/nn/fs/fs_file_data_cache_system.cpp,_ZN2nn2fs6detail19FileDataCacheSystem5PurgeEPNS0_8IStorageE
-12cc80,2564,verified,src/nn/fs/fs_file_data_cache_system_impl.c,nn_fs_detail_FileDataCacheSystem_DoCacheForce
+12cc80,2572,verified,src/nn/fs/fs_file_data_cache_system_impl.c,nn_fs_detail_FileDataCacheSystem_DoCacheForce
 12d730,68,verified,src/nn/fs/fs_file_data_cache_system.cpp,_ZN2nn2fs6detail19FileDataCacheSystem16ReserveFreePagesEPNS0_8IStorageElm
 12d780,208,verified,src/nn/fs/fs_file_data_cache_system.cpp,_ZN2nn2fs6detail19FileDataCacheSystem23ReturnBackReservedPagesEPvm
 12d860,400,verified,src/nn/fs/fs_file_data_cache_system.cpp,_ZN2nn2fs6detail19FileDataCacheSystem16CommitCachePagesEPNS0_8IStorageEPvlm
@@ -5774,7 +5774,7 @@ ffee0,324,verified,src/nn/fs/unplaced.c,nn_fs_GetAndClearMemoryReportInfo
 176920,8,verified,src/nn/sdk_trivial_forwarders.cpp,_Z14SdkStub_176920m
 176940,72,verified,src/nn/ro/unplaced.c,nn_ro_detail_FindModuleHeader
 176b20,876,verified,src/nn/ro/unplaced.c,unplaced_176b20
-176ee0,712,verified,src/nn/ro/unplaced.c,unplaced_176ee0
+176ee0,760,verified,src/nn/ro/unplaced.c,unplaced_176ee0
 177220,112,verified,src/nn/ro/unplaced.c,unplaced_177220
 177290,16,verified,src/nn/ro/unplaced.c,unplaced_177290
 1774c0,92,verified,src/nn/ro/unplaced.c,unplaced_1774c0
@@ -9260,7 +9260,7 @@ ffee0,324,verified,src/nn/fs/unplaced.c,nn_fs_GetAndClearMemoryReportInfo
 220420,852,verified,src/ne10/modules/dsp/NE10_fft_int32.neonintrinsic.c,ne10_fft_r2c_1d_int32_neon
 2207a0,844,verified,src/ne10/modules/dsp/NE10_fft_int32.neonintrinsic.c,ne10_fft_c2r_1d_int32_neon
 220b00,3588,verified,src/nn/audio/ne10/modules/dsp/NE10_rfft_float32.neonintrinsic.c,nnaudiodetail_ne10_fft_r2c_1d_float32_neon
-221aa0,2676,verified,src/nn/audio/ne10/modules/dsp/NE10_rfft_float32.neonintrinsic.c,nnaudiodetail_ne10_fft_c2r_1d_float32_neon
+221aa0,3044,verified,src/nn/audio/ne10/modules/dsp/NE10_rfft_float32.neonintrinsic.c,nnaudiodetail_ne10_fft_c2r_1d_float32_neon
 222880,36,verified,src/nn/audio/output_recorder.cpp,_ZN2nn5audio43IsVirtualCaptureDeviceStreamFormatSupportedERKNS0_15AudioDeviceNameERKNS0_12StreamFormatE
 2228b0,124,verified,src/nn/audio/output_recorder.cpp,_ZN2nn5audio18OpenOutputRecorderEPNS0_18OutputRecorderTypeEPvmRKNS0_15AudioDeviceNameERKNS0_12StreamFormatEi
 222930,148,verified,src/nn/audio/output_recorder.cpp,_ZN2nn5audio18OpenOutputRecorderEPNS0_18OutputRecorderTypeEPNS_2os11SystemEventEPvmRKNS0_15AudioDeviceNameERKNS0_12StreamFormatEii
@@ -12011,7 +12011,7 @@ ffee0,324,verified,src/nn/fs/unplaced.c,nn_fs_GetAndClearMemoryReportInfo
 30ebd0,136,verified,src/opus/src/opus_decoder.c,opus_decoder_init
 30ed80,336,verified,src/opus/src/opus_decoder.c,opus_decoder_create
 30eee0,868,verified,src/opus/src/opus_decoder.c,opus_decode_native
-30f260,1956,verified,src/opus/src/unplaced_5.c,opus_src_30f260
+30f260,1956,disputed,src/opus/src/unplaced_5.c,opus_src_30f260
 30ffb0,72,verified,src/opus/src/opus_decoder.c,opus_packet_get_bandwidth
 310000,20,verified,src/opus/src/opus_decoder.c,opus_packet_get_nb_channels
 310020,60,verified,src/opus/src/opus_decoder.c,opus_decode
@@ -13051,7 +13051,7 @@ ffee0,324,verified,src/nn/fs/unplaced.c,nn_fs_GetAndClearMemoryReportInfo
 384ce0,80,verified,src/fdk-aac/libAACenc/src/psy_main.cpp,_ZN2nn5codec23FDKaacEnc_psyInitStatesEPNS0_12PSY_INTERNALEPNS0_10PSY_STATICE17AUDIO_OBJECT_TYPE
 384d40,780,verified,src/fdk-aac/libAACenc/src/psy_main.cpp,_ZN2nn5codec17FDKaacEnc_psyInitEPNS0_12PSY_INTERNALEPPNS0_7PSY_OUTEii17AUDIO_OBJECT_TYPEPNS0_15CHANNEL_MAPPINGE
 3850e0,900,verified,src/fdk-aac/libAACenc/src/psy_main.cpp,_ZN2nn5codec21FDKaacEnc_psyMainInitEPNS0_12PSY_INTERNALE17AUDIO_OBJECT_TYPEPNS0_15CHANNEL_MAPPINGEiiiiiiijj
-388420,860,verified,src/fdk-aac/libAACenc/src/unplaced.c,fdk_aac_libAACenc_src_388420
+388420,900,verified,src/fdk-aac/libAACenc/src/unplaced.c,fdk_aac_libAACenc_src_388420
 3887c0,76,verified,src/fdk-aac/libAACdec/src/pulsedata.cpp,_ZN2nn5codec16CPulseData_ApplyEPNS0_10CPulseDataEPKsPi
 388820,508,verified,src/fdk-aac/libAACenc/src/qc_main.cpp,_ZN2nn5codec18FDKaacEnc_QCOutNewEPPNS0_6QC_OUTEiiiPh
 388a60,452,verified,src/fdk-aac/libAACenc/src/qc_main.cpp,_ZN2nn5codec19FDKaacEnc_QCOutInitEPPNS0_6QC_OUTEiPKNS0_15CHANNEL_MAPPINGE
@@ -14455,7 +14455,7 @@ ffee0,324,verified,src/nn/fs/unplaced.c,nn_fs_GetAndClearMemoryReportInfo
 4337a0,88,verified,src/nn/fontll/itype/unplaced_2.c,nn_fontll_itype_4337a0
 433800,88,verified,src/nn/fontll/itype/unplaced_2.c,nn_fontll_itype_433800
 433860,256,verified,src/nn/fontll/itype/unplaced_2.c,nn_fontll_itype_433860
-433960,12532,verified,src/nn/fontll/itype/unplaced_2.c,nn_fontll_itype_433960
+433960,12972,verified,src/nn/fontll/itype/unplaced_2.c,nn_fontll_itype_433960
 437950,128,verified,src/nn/fontll/itype/unplaced_2.c,nn_fontll_itype_437950
 4379e0,352,verified,src/nn/fontll/itype/unplaced_2.c,nn_fontll_itype_4379e0
 437b60,536,verified,src/nn/fontll/itype/unplaced_2.c,nn_fontll_itype_437b60
@@ -27054,7 +27054,7 @@ ffee0,324,verified,src/nn/fs/unplaced.c,nn_fs_GetAndClearMemoryReportInfo
 691660,136,verified,src/nn/unnamed/s004_1.c,SdkHr_691660
 691760,372,verified,src/nn/unnamed/s004_1.c,SdkHr_691760
 691990,168,verified,src/nn/unnamed/s004_1.c,SdkHr_691990
-691a40,5036,verified,src/nn/unplaced_13.c,nn_691a40
+691a40,5236,verified,src/nn/unplaced_13.c,nn_691a40
 693340,1096,verified,src/nn/unnamed/s004_1.c,SdkHr_693340
 693790,200,verified,src/nn/unnamed/s004_1.c,SdkHr_693790
 694c60,496,verified,src/nn/unnamed/s004_1.c,SdkHr_694c60
@@ -33232,7 +33232,7 @@ ffee0,324,verified,src/nn/fs/unplaced.c,nn_fs_GetAndClearMemoryReportInfo
 7f58c0,116,verified,src/llvm-libcxx/libcxx/src/locale_impl.c,std___1_basic_filebuf_close
 7f5950,48,verified,src/nn/sdk_trivial_thunks.cpp,_Z14SdkStub_7f5950m
 7f5980,792,verified,src/llvm-libcxx/libcxx/src/locale_impl.c,std___1_basic_filebuf_swap
-7f5ca0,212,verified,src/llvm-libcxx/libcxx/src/locale_impl.c,locale_7f5ca0
+7f5ca0,236,verified,src/llvm-libcxx/libcxx/src/locale_impl.c,locale_7f5ca0
 7f5d90,632,verified,src/llvm-libcxx/libcxx/src/unplaced_17.c,llvm_libcxx_libcxx_src_7f5d90
 7f6030,84,verified,src/llvm-libcxx/libcxx/src/locale_impl.c,std___1_basic_filebuf___read_mode
 7f6090,56,verified,src/llvm-libcxx/libcxx/src/locale_impl.c,locale_7f6090
@@ -33491,7 +33491,7 @@ ffee0,324,verified,src/nn/fs/unplaced.c,nn_fs_GetAndClearMemoryReportInfo
 80b9f0,8,verified,src/llvm-libcxx/libcxx/src/locale.cpp,_ZNKSt3__117moneypunct_bynameIwLb1EE13do_pos_formatEv
 80ba00,8,verified,src/llvm-libcxx/libcxx/src/locale.cpp,_ZNKSt3__117moneypunct_bynameIwLb1EE13do_neg_formatEv
 80bd80,4,verified,src/llvm-libcxx/libcxx/src/locale.cpp,_ZNSt3__112__do_nothingEPv
-80bda0,1256,verified,src/llvm-libcxx/libcxx/src/locale_impl.c,std___1_money_get___do_get_80bda0
+80bda0,1284,verified,src/llvm-libcxx/libcxx/src/locale_impl.c,std___1_money_get___do_get_80bda0
 80d334,4,verified,src/llvm-libcxx/libcxx/src/locale_impl.c,locale_80d334
 80d338,204,verified,src/llvm-libcxx/libcxx/src/locale_impl.c,locale_80d338
 80d460,176,verified,src/llvm-libcxx/libcxx/src/unplaced_4.c,llvm_libcxx_libcxx_src_80d460
@@ -33503,7 +33503,7 @@ ffee0,324,verified,src/nn/fs/unplaced.c,nn_fs_GetAndClearMemoryReportInfo
 80f6c8,4,verified,src/llvm-libcxx/libcxx/src/locale_impl.c,locale_80f6c8
 80f6cc,4,verified,src/llvm-libcxx/libcxx/src/locale_impl.c,locale_80f6cc
 80f820,176,verified,src/llvm-libcxx/libcxx/src/unplaced_4.c,llvm_libcxx_libcxx_src_80f820
-80fb50,604,verified,src/llvm-libcxx/libcxx/src/locale_impl.c,locale_80fb50
+80fb50,616,verified,src/llvm-libcxx/libcxx/src/locale_impl.c,locale_80fb50
 80fdbc,44,verified,src/llvm-libcxx/libcxx/src/locale_impl.c,locale_80fdbc
 80fdf0,232,verified,src/llvm-libcxx/libcxx/src/locale.cpp,_ZNSt3__111__money_getIwE13__gather_infoEbRKNS_6localeERNS_10money_base7patternERwS8_RNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEERNS9_IwNSA_IwEENSC_IwEEEESJ_SJ_Ri
 810530,296,verified,src/llvm-libcxx/libcxx/src/locale.cpp,_ZNSt3__111__money_putIcE13__gather_infoEbbRKNS_6localeERNS_10money_base7patternERcS8_RNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEESF_SF_Ri
