@@ -42198,7 +42198,7 @@ e18460,632,verified,src/game/script/hub_init_natives.cpp,_ZN4game6script3hub4ini
 e186e0,436,verified,src/game/script/hub_init_natives.cpp,_ZN4game6script3hub4init29PushGroupIdDisposCharacterAllERKNSt3__112basic_stringIcNS3_11char_traitsIcEENS3_9allocatorIcEEEE
 e188a0,188,verified,src/game/script/hub_init_natives.cpp,_ZN4game6script3hub4init25SetCheckEnableBuildPersonEb
 e18960,184,verified,src/game/script/hub_init_natives.cpp,_ZN4game6script3hub4init31DisableSituationDisposCharacterEv
-e18a20,120,verified,src/game/script/hub_init_natives_impl.c,hub_init_OverrideInitLocator
+e18a20,948,verified,src/game/script/hub_init_natives_impl.c,hub_init_OverrideInitLocator
 e18f40,876,verified,src/game/script/hub_init_natives.cpp,_ZN4game6script3hub4init25RegisterTimelineEventFuncER12CScriptArray
 e192d0,216,verified,src/game/script/hub_init_natives.cpp,_ZN4game6script3hub4init22SetDestinationShowTypeERKNSt3__112basic_stringIcNS3_11char_traitsIcEENS3_9allocatorIcEEEE
 e193e0,504,verified,src/game/script/hub_init_natives.cpp,_ZN4game6script3hub4init26SetOverrideLoadVariationIdERKNSt3__112basic_stringIcNS3_11char_traitsIcEENS3_9allocatorIcEEEE
@@ -53027,7 +53027,7 @@ fffcb0,1244,verified,src/game/unnamed/b014_1.c,GameHr_fffcb0
 113ba00,320,verified,src/game/unnamed/b016_0.c,GameHr_113ba00
 113be80,84,verified,src/game/unplaced_6.c,game_113be80
 113bfb0,172,verified,src/game/unnamed/e006_0.c,GameHr_113bfb0
-113c060,492,disputed,src/game/unplaced_6.c,game_113c060
+113c060,492,verified,src/game/unplaced_6.c,game_113c060
 113c310,356,verified,src/game/unnamed/b016_0.c,GameHr_113c310
 113c480,1436,verified,src/game/templates/hash_table_command.cpp,_ZNSt3__112__hash_tableINS_17__hash_value_typeINS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEENS_8functionIFbRN12_GLOBAL__N_15OwnerILj1EEEEEEEENS_22__unordered_map_hasherIS7_NS_4pairIKS7_SE_EENS_4hashIS7_EENS_8equal_toIS7_EELb1EEENS_21__unordered_map_equalIS7_SJ_SN_SL_Lb1EEENS5_ISJ_EEE25__emplace_unique_key_argsIS7_JRKNS_21piecewise_construct_tENS_5tupleIJOS7_EEENSX_IJEEEEEENSH_INS_15__hash_iteratorIPNS_11__hash_nodeISF_PvEEEEbEERKT_DpOT0_
 113ca50,4,verified,src/game/templates/function_pointer.cpp,_ZNSt3__110__function6__baseIFbRN4game4talk5SoundERNS_6vectorINS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEENSA_ISC_EEEEEED2Ev
@@ -54752,7 +54752,7 @@ fffcb0,1244,verified,src/game/unnamed/b014_1.c,GameHr_fffcb0
 11e6ec0,532,verified,src/game/data/data_file.cpp,_ZNSt3__113__stable_sortINS_17_ClassicAlgPolicyERN4game12_GLOBAL__N_19CompareIdENS3_13LocalIteratorINS_11__wrap_iterIPPNS2_14AISequenceDataEEEEEEEvT1_SD_T0_NS_15iterator_traitsISD_E15difference_typeEPNSG_10value_typeEl
 11e70e0,508,verified,src/game/data/data_file.cpp,_ZNSt3__118__stable_sort_moveINS_17_ClassicAlgPolicyERN4game12_GLOBAL__N_19CompareIdENS3_13LocalIteratorINS_11__wrap_iterIPPNS2_14AISequenceDataEEEEEEEvT1_SD_T0_NS_15iterator_traitsISD_E15difference_typeEPNSG_10value_typeE
 11e7320,1240,verified,src/game/data/data_file.cpp,_ZNSt3__115__inplace_mergeINS_17_ClassicAlgPolicyERN4game12_GLOBAL__N_19CompareIdENS3_13LocalIteratorINS_11__wrap_iterIPPNS2_14AISequenceDataEEEEEEEvT1_SD_SD_OT0_NS_15iterator_traitsISD_E15difference_typeESI_PNSH_10value_typeEl
-11e7860,72,verified,src/game/unnamed/b016_2.c,GameHr_11e7860
+11e7860,72,disputed,src/game/unnamed/b016_2.c,GameHr_11e7860
 11e83a0,624,verified,src/game/stream.c,Stream_11e83a0
 11e86b0,296,verified,src/game/unnamed/b016_2.c,GameHr_11e86b0
 11e87e0,328,verified,src/game/unnamed/b016_2.c,GameHr_11e87e0
@@ -55385,7 +55385,7 @@ fffcb0,1244,verified,src/game/unnamed/b014_1.c,GameHr_fffcb0
 1212e40,752,verified,src/game/unit_util.c,game_UnitUtil_UniqueMap_Commit_1212e40
 1213180,384,verified,src/game/unit_util.c,UnitUtil_1213180
 1213320,712,verified,src/game/unit_util.c,game_UnitUtil_EachFlagUnit
-1213640,1116,disputed,src/game/unplaced_6.c,game_1213640
+1213640,1116,verified,src/game/unplaced_6.c,game_1213640
 1214620,676,verified,src/game/unplaced_23.c,game_1214620
 12148e0,1040,verified,src/game/unnamed/b017_0.c,GameHr_12148e0
 1214d40,1048,verified,src/game/unnamed/b017_0.c,GameHr_1214d40
@@ -59657,7 +59657,7 @@ fffcb0,1244,verified,src/game/unnamed/b014_1.c,GameHr_fffcb0
 134b820,324,verified,src/game/gmap/troop_mgr.c,TroopMgr_134b820
 134b980,312,verified,src/game/gmap/troop_mgr.c,game_gmap_TroopMgr_GetEncountEnemyList
 134bbe0,524,verified,src/game/gmap/troop_mgr.c,TroopMgr_134bbe0
-134be40,88,verified,src/game/gmap/troop_mgr.c,TroopMgr_134be40
+134be40,88,disputed,src/game/gmap/troop_mgr.c,TroopMgr_134be40
 134c680,696,verified,src/game/gmap/troop_mgr.c,TroopMgr_134c680
 134ca00,904,verified,src/game/gmap/troop_mgr.c,TroopMgr_134ca00
 134cdc0,672,verified,src/game/gmap/troop_mgr.c,game_gmap_TroopMgr_EachEncountTroop
@@ -67630,7 +67630,7 @@ fffcb0,1244,verified,src/game/unnamed/b014_1.c,GameHr_fffcb0
 15b9710,16,verified,src/game/menu/multi_menu.cpp,_ZN4game4menu12_GLOBAL__N_113SkillUnitMenu9Unknown50Ev
 15b9720,16,verified,src/game/menu/multi_menu.cpp,_ZN4game4menu12_GLOBAL__N_113SkillUnitMenu9Unknown51Ev
 15b9740,612,verified,src/game/menu/anonymous/skill_unit_menu.c,SkillUnitMenu_Unknown85
-15b99c0,120,verified,src/game/menu/anonymous/skill_unit_menu.c,SkillUnitMenu_Unknown88
+15b99c0,120,disputed,src/game/menu/anonymous/skill_unit_menu.c,SkillUnitMenu_Unknown88
 15b9a20,156,verified,src/game/menu/anonymous/skill_unit_menu.c,SkillUnitMenu_Unknown90
 15b9ad0,12,verified,src/game/menu/multi_menu.cpp,_ZN4game4menu9MultiMenu10Unknown107Ev
 15b9ae0,2076,verified,src/game/menu/anonymous/skill_unit_menu.c,SkillUnitMenu_Unknown128
@@ -74096,7 +74096,7 @@ fffcb0,1244,verified,src/game/unnamed/b014_1.c,GameHr_fffcb0
 16f45c0,12,verified,src/game/game_trivial.cpp,_Z16GameStub_16f45c0v
 16f45d0,8,verified,src/game/game_trivial.cpp,_Z16GameStub_16f45d0v
 16f45e0,4,verified,src/game/game_trivial.cpp,_Z16GameStub_16f45e0v
-16f4600,76,verified,src/game/menu/anonymous/proc_scount_info.c,game_menu_anonymous_ProcScountInfo_OnInit
+16f4600,76,disputed,src/game/menu/anonymous/proc_scount_info.c,game_menu_anonymous_ProcScountInfo_OnInit
 16f58b0,4,verified,src/game/game_trivial.cpp,_Z16GameStub_16f58b0v
 16f58c0,268,verified,src/game/menu/anonymous/proc_scount_info.c,ProcScountInfo_Unknown92
 16f59d0,8,verified,src/game/game_trivial.cpp,_Z16GameStub_16f59d0v
@@ -80251,7 +80251,7 @@ fffcb0,1244,verified,src/game/unnamed/b014_1.c,GameHr_fffcb0
 1822fe0,276,verified,src/game/unnamed/b024_2.c,GameHr_1822fe0
 1823120,436,verified,src/game/facility/class_job_recycle_menu.c,game_facility_ClassJobRecycleMenu_AddItemList
 1823320,120,verified,src/game/facility/class_job_recycle_menu.c,game_facility_ClassJobRecycleMenu_SortAndFilter
-18233c0,84,verified,src/game/facility/class_job_recycle_menu.c,ClassJobRecycleMenu_Unknown88
+18233c0,516,verified,src/game/facility/class_job_recycle_menu.c,ClassJobRecycleMenu_Unknown88
 18235f0,680,verified,src/game/facility/unplaced_21.c,game_facility_18235f0
 18238c0,1156,verified,src/game/facility/unplaced_16.c,game_facility_18238c0
 1823da0,152,verified,src/game/facility/class_job_recycle_menu_item.cpp,_ZN4game8facility23ClassJobRecycleMenuItemD0Ev
