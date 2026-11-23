@@ -1464,7 +1464,7 @@ __int64 cuda_driver_misc_helpers_5390(__int64 a1)
 __int64 cuda_driver_misc_helpers_53d0(int* a1)
 {
   return CudaDriverRoutine_194b20(a1,
-                                  *((unsigned __int8*)((_UNKNOWN*)0x1504LL) +
+                                  *((unsigned __int8*)((_UNKNOWN*)0x1505LL) +
                                     (_QWORD)CudaDriverData_1422118));
 }
 
@@ -3073,7 +3073,7 @@ __int64 cuda_driver_misc_helpers_187e0(__int64 a1)
 bool cuda_driver_misc_helpers_18830(int* a1)
 {
   return (unsigned __int8)CudaDriverRoutine_194b20(
-             a1, *((unsigned __int8*)((_UNKNOWN*)0x1504LL) +
+             a1, *((unsigned __int8*)((_UNKNOWN*)0x1505LL) +
                    (_QWORD)CudaDriverData_1422118)) != 0 ||
          (unsigned __int8)cuda_driver_misc_helpers_18890((__int64)a1) != 0;
 }

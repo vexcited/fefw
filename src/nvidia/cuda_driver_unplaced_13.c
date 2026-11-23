@@ -1579,7 +1579,7 @@ LABEL_24:
 __int64 cuda_driver_240040(int* a1)
 {
   return cuda_driver_194b20(
-      a1, *((_BYTE*)((_UNKNOWN*)0x1504LL) + (_QWORD)CudaDriverData_1422118));
+      a1, *((_BYTE*)((_UNKNOWN*)0x1505LL) + (_QWORD)CudaDriverData_1422118));
 }
 
 double cuda_driver_2400f0(__int64 a1, __int64 a2, char a3)

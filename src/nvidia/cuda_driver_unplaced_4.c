@@ -4748,7 +4748,7 @@ __int64 cuda_driver_995c0(__int64 a1, __int64 a2)
 
 bool cuda_driver_99790(__int64 a1)
 {
-  return *((_BYTE*)((_UNKNOWN*)0x1504LL) + (_QWORD)CudaDriverData_1422118) !=
+  return *((_BYTE*)((_UNKNOWN*)0x1505LL) + (_QWORD)CudaDriverData_1422118) !=
              0 ||
          (unsigned __int8)CudaDriverStub_8e230(*(_QWORD*)(a1 + 64)) == 0;
 }

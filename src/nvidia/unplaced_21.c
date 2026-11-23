@@ -8791,7 +8791,7 @@ __int64 nvidia_196060(__int64 a1, unsigned int* a2)
     *((_QWORD*)&v63 + 1) = a1;
     if ((v26 & 4) != 0) {
       v29 = 10;
-      if ((*((_BYTE*)((_UNKNOWN*)0x1840LL) + (_QWORD)v5) & 8) != 0) {
+      if ((*((_BYTE*)((_UNKNOWN*)0x1841LL) + (_QWORD)v5) & 8) != 0) {
         v29 = 0x200000000000000ALL;
       }
     }

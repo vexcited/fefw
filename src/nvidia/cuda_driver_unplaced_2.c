@@ -7233,7 +7233,7 @@ __int64 cuda_driver_5c430(_QWORD* a1, __int64 a2)
   v9 = CudaDriverData_1422118;
   CudaDriverRoutine_107f40(
       v5 + 4, 61,
-      (*(unsigned __int16*)((char*)((_UNKNOWN*)0x1858LL) +
+      (*(unsigned __int16*)((char*)((_UNKNOWN*)0x1859LL) +
                             (_QWORD)CudaDriverData_1422118) >>
        7) &
           2);

@@ -1744,7 +1744,7 @@ __int64 nvidia_ebb40(__int64 a1, _DWORD* a2, __int64 (*a3)(int*, __int64),
     return 0;
   }
   if (a2 == (_DWORD*)a1) {
-    if ((*(_WORD*)((_BYTE*)((_UNKNOWN*)0x1858LL) +
+    if ((*(_WORD*)((_BYTE*)((_UNKNOWN*)0x1859LL) +
                    (_QWORD)CudaDriverData_1422118) &
          0x200) != 0 &&
         ((unsigned __int8)cuda_driver_predicates_9af30(a1, a1) == 0 ||

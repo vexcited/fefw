@@ -3633,7 +3633,7 @@ __int64 cuda_driver_20c0c0(__int64 a1)
   if (a1 == 0) {
     return 201;
   }
-  if (*((_BYTE*)((_UNKNOWN*)0x1120LL) + (_QWORD)CudaDriverData_1422118) != 0) {
+  if (*((_BYTE*)((_UNKNOWN*)0x1121LL) + (_QWORD)CudaDriverData_1422118) != 0) {
     return CudaDriverRoutine_98490(a1, 1);
   }
   return CudaDriverRoutine_980c0(a1);

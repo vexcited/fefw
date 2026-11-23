@@ -1503,7 +1503,7 @@ __int64 (*nvidia_1247f0())()
 
   v0 = CudaDriverData_1422118;
   v1 = (_QWORD*)CudaDriverData_143bd88;
-  if ((*(_WORD*)((_BYTE*)((_UNKNOWN*)0x1858LL) +
+  if ((*(_WORD*)((_BYTE*)((_UNKNOWN*)0x1859LL) +
                  (_QWORD)CudaDriverData_1422118) &
        0x400) != 0) {
     *(_QWORD*)(CudaDriverData_143bd88 + 56) = CudaDriverStub_128970;

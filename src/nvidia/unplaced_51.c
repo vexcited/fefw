@@ -706,7 +706,7 @@ __int64 nvidia_91c20(__int64 a1, __int64 a2, _QWORD* a3, int a4, char a5,
   }
 LABEL_7:
   if ((v14 & 4) != 0 &&
-      (*(_WORD*)((_BYTE*)((_UNKNOWN*)0x1858LL) +
+      (*(_WORD*)((_BYTE*)((_UNKNOWN*)0x1859LL) +
                  (_QWORD)CudaDriverData_1422118) &
        0x200) != 0 &&
       cuda_driver_predicates_9ac80_alt1(*(_QWORD*)(a1 + 64)) &&
@@ -5663,7 +5663,7 @@ __int64 nvidia_124250(__int64 a1)
 
   v1 = a1 + 0x4000;
   v3 = CudaDriverData_1422118;
-  if ((*(_WORD*)((_BYTE*)((_UNKNOWN*)0x1858LL) +
+  if ((*(_WORD*)((_BYTE*)((_UNKNOWN*)0x1859LL) +
                  (_QWORD)CudaDriverData_1422118) &
        0x400) != 0) {
     cuda_driver_predicates_9ac80(a1);
@@ -6044,7 +6044,7 @@ __int64 nvidia_1cd340(_DWORD** a1, __int64 a2)
   v7[125] = ((unsigned __int16)v10 << 8) | 1;
   if ((*(unsigned __int8 (**)(__int64))(*(_QWORD*)(v6 + 64) + 21096LL))(
           *(_QWORD*)(v6 + 64)) != 0 &&
-      (*((_BYTE*)((_UNKNOWN*)0x1840LL) + (_QWORD)v9) & 0x40) != 0) {
+      (*((_BYTE*)((_UNKNOWN*)0x1841LL) + (_QWORD)v9) & 0x40) != 0) {
     v8 = v7 + 134;
     *((_OWORD*)v7 + 32) = CudaDriverData_1115df0;
     *((_QWORD*)v7 + 66) = 536944966;

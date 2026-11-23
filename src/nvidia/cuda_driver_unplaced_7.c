@@ -6009,7 +6009,7 @@ LABEL_37:
   *(_DWORD*)(v10 + 916) = *(_DWORD*)(*(_QWORD*)(v9 + 64) + 17020LL);
   v13 = CudaDriverData_1422118;
   if ((v8 & 0x20) != 0 ||
-      *((_BYTE*)((_UNKNOWN*)0x1164LL) + (_QWORD)CudaDriverData_1422118) != 0 ||
+      *((_BYTE*)((_UNKNOWN*)0x1165LL) + (_QWORD)CudaDriverData_1422118) != 0 ||
       *(_DWORD*)(*(_QWORD*)(v9 + 64) + 21864LL) == 1) {
     *(_DWORD*)(v10 + 916) = 1;
   }
