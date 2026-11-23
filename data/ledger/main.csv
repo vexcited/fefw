@@ -36178,7 +36178,7 @@ bda1f0,24,verified,src/llvm-libcxx-21/libcxx/include/__vector/vector.h,std::vect
 bda220,1004,verified,src/game/unnamed/b010_1.c,GameHr_bda220
 bda620,4,verified,src/game/game_trivial.cpp,_Z15GameStub_bda620v
 bda630,584,verified,src/game/unnamed/b010_1.c,GameHr_bda630
-bda880,13496,verified,src/game/unplaced_16.c,game_bda880
+bda880,12764,verified,src/game/unplaced_16.c,game_bda880
 bdfce0,468,verified,src/game/unnamed/b010_0.c,GameHr_bdfce0
 bdfec0,24,verified,src/llvm-libcxx-21/libcxx/include/__vector/vector.h,std::vector<T>::__throw_length_error()
 bdfee0,24,verified,src/llvm-libcxx-21/libcxx/include/__vector/vector.h,std::vector<T>::__throw_length_error()
@@ -57300,7 +57300,7 @@ fffcb0,1244,verified,src/game/unnamed/b014_1.c,GameHr_fffcb0
 1294f20,1932,verified,src/game/unplaced_7.c,game_1294f20
 12962a0,1444,verified,src/game/unnamed/b017_1.c,GameHr_12962a0
 12968e0,1544,verified,src/game/unplaced_7.c,game_12968e0
-12975e0,2428,verified,src/game/unplaced_16.c,game_12975e0
+12975e0,2340,verified,src/game/unplaced_16.c,game_12975e0
 12982e0,220,verified,src/game/unplaced_7.c,game_12982e0
 1298700,1236,verified,src/game/unnamed/b017_3.c,GameHr_1298700
 1298cc0,536,verified,src/game/ai_think.c,game_AIThink_ActionSpecialAttack
