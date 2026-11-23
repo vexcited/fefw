@@ -1571,7 +1571,7 @@ __int64 GameHr_19be220(__int64 a1)
                                                 34.0f) +
                                         1230.0f) /
                                 *(float*)(v2 + 184)) *
-                        16.667f) +
+                        0x1.0aaaaap+4f) +
                 (float)v64) /
         (float)*(unsigned __int64*)(v2 + 224);
     do {

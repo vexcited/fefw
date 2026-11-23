@@ -26798,7 +26798,7 @@ fff90,116,verified,src/snd/api.cpp,_ZN3snd10startPitchERKNS_3fnd10WeakHandleERKN
 914b80,116,verified,src/game/unplaced_2.c,game_914b80
 914cc0,184,verified,src/game/unnamed/r002_1.c,GameHr_914cc0
 914d80,168,verified,src/game/hub/anonymous/proc_hub_seq_enter.c,game_hub_anonymous_ProcHubSeqEnter_RunNextTimeline
-914e40,884,verified,src/game/unnamed/f000_0.c,GameHr_914e40
+914e40,884,disputed,src/game/unnamed/f000_0.c,GameHr_914e40
 915370,160,verified,src/game/hub/anonymous/proc_hub_seq_enter.c,game_hub_anonymous_ProcHubSeqEnter_RunReloadAll
 915440,1040,verified,src/game/hub/anonymous/proc_hub_seq_enter.c,ProcHubSeqEnter_915440
 915c00,320,verified,src/game/hub/anonymous/proc_hub_seq_enter.c,ProcHubSeqEnter_915c00
@@ -33203,7 +33203,7 @@ b575f0,56,verified,src/gfx/flow/resource_builder_impl.c,ResourceBuilder_b575f0
 b57630,28,verified,src/llvm-libcxx-21/libcxx/include/__functional/function.h,"std::__1::__function::__func<gfxa::TaskDecal::Impl::draw(gfxa::TaskDecal::ResInput const&, gfxa::TaskDecal::ResOutput const&, gxc::RenderContext&, gfxa::TaskDecal::ExecConfig const&)::$_1, bool (gfx::render::ElementRendererArgs const&)>::target(std::type_info const&)"
 b57650,12,verified,src/llvm-libcxx-21/libcxx/include/__functional/function.h,"std::__1::__function::__func<gfxa::TaskDecal::Impl::draw(gfxa::TaskDecal::ResInput const&, gfxa::TaskDecal::ResOutput const&, gxc::RenderContext&, gfxa::TaskDecal::ExecConfig const&)::$_1, bool (gfx::render::ElementRendererArgs const&)>::target_type()"
 b57660,1476,verified,src/gfxa/task_deferred_lit.c,gfxa_TaskDeferredLit_Impl_Impl
-b57de0,352,verified,src/gfx/flow/resource_builder_impl.c,ResourceBuilder_b57de0
+b57de0,312,verified,src/gfx/flow/resource_builder_impl.c,ResourceBuilder_b57de0
 b57f50,2712,verified,src/gfxa/task_deferred_lit.c,TaskDeferredLit_b57f50
 b58ad0,876,verified,src/gfxa/task_deferred_lit.c,TaskDeferredLit_b58ad0
 b58e40,948,verified,src/gfxa/task_deferred_lit.c,TaskDeferredLit_b58e40
@@ -33762,7 +33762,7 @@ b78630,28,verified,src/llvm-libcxx-21/libcxx/include/__functional/function.h,"st
 b78650,12,verified,src/llvm-libcxx-21/libcxx/include/__functional/function.h,"std::__1::__function::__func<gfxa::TaskSkyComp::Impl::Impl(gfx::Manager&)::$_0, void (nn::gfx::SamplerInfo&)>::target_type()"
 b78660,872,verified,src/gfxa/task_sky_hdri.c,gfxa_TaskSkyHDRI_Updater_Updater
 b78b40,632,verified,src/gfx/flow/resource_builder_impl.c,ResourceBuilder_b78b40
-b78dc0,696,disputed,src/gfx/flow/resource_builder_impl.c,ResourceBuilder_b78dc0
+b78dc0,784,disputed,src/gfx/flow/resource_builder_impl.c,ResourceBuilder_b78dc0
 b790d0,24,verified,src/llvm-libcxx-21/libcxx/include/__vector/vector.h,std::vector<T>::__throw_out_of_range()
 b790f0,44,verified,src/llvm-libcxx-21/libcxx/include/__functional/function.h,"std::__1::__function::__func<gfxa::TaskSkyHDRI::Updater::Updater(gfx::Manager&)::$_0, void (nn::gfx::SamplerInfo&)>::deleting destructor"
 b79120,60,verified,src/llvm-libcxx-21/libcxx/include/__functional/function.h,"std::__1::__function::__func<gfxa::TaskSkyHDRI::Updater::Updater(gfx::Manager&)::$_0, void (nn::gfx::SamplerInfo&)>::__clone()"
@@ -39857,7 +39857,7 @@ d3b6a0,1832,verified,src/game/character/character_trail_module.c,CharacterTrailM
 d3bee0,544,verified,src/game/character/character_trail_module.c,CharacterTrailModule_Destructor
 d3c110,80,verified,src/memory/new_delete.cpp,deleting destructor at 0xd3c110
 d3c160,424,verified,src/memory/unplaced_5.c,memory_d3c160
-d3c310,544,disputed,src/game/character/character_trail_module.c,CharacterTrailModule_d3c310
+d3c310,544,verified,src/game/character/character_trail_module.c,CharacterTrailModule_d3c310
 d3c540,2888,verified,src/game/character/unplaced_9.c,game_character_d3c540
 d3d110,160,verified,src/game/character/character_trail_module.c,CharacterTrailModule_Unknown9
 d3d1c0,1064,verified,src/game/character/character_trail_module.c,CharacterTrailModule_d3d1c0
@@ -44853,7 +44853,7 @@ ed2780,224,verified,src/game/script/cmdbtl_event_natives.cpp,_ZN4game6script6cmd
 ed2860,580,verified,src/game/script/cmdbtl_event_natives.cpp,_ZN4game6script6cmdbtl5event12EntryDieTalkERKNSt3__112basic_stringIcNS3_11char_traitsIcEENS3_9allocatorIcEEEEiSB_SB_
 ed2ac0,372,verified,src/game/script/cmdbtl_event_natives.cpp,_ZN4game6script6cmdbtl5event12EntryDieTalkERKNSt3__112basic_stringIcNS3_11char_traitsIcEENS3_9allocatorIcEEEEiSB_RKi
 ed2c80,432,verified,src/game/script/cmdbtl_event_natives.cpp,_ZN4game6script6cmdbtl5event12EntryDieTalkERKNSt3__112basic_stringIcNS3_11char_traitsIcEENS3_9allocatorIcEEEEiSB_RKf
-ed2e40,880,verified,src/game/unnamed/e005_0.c,GameHr_ed2e40
+ed2e40,880,disputed,src/game/unnamed/e005_0.c,GameHr_ed2e40
 ed3830,240,verified,src/game/script/cmdbtl_event_natives.cpp,_ZN4game6script6cmdbtl5event16EntryStockBeforeERKNSt3__112basic_stringIcNS3_11char_traitsIcEENS3_9allocatorIcEEEEiiSB_
 ed3920,588,verified,src/game/script/cmdbtl_event_natives.cpp,_ZN4game6script6cmdbtl5event16EntryStockBeforeERKNSt3__112basic_stringIcNS3_11char_traitsIcEENS3_9allocatorIcEEEEiiSB_SB_
 ed3b80,436,verified,src/game/script/cmdbtl_event_natives.cpp,_ZN4game6script6cmdbtl5event16EntryStockBeforeERKNSt3__112basic_stringIcNS3_11char_traitsIcEENS3_9allocatorIcEEEEiiSB_RKi
@@ -50159,7 +50159,7 @@ fffcb0,1244,verified,src/game/unnamed/b014_1.c,GameHr_fffcb0
 106fdc0,116,verified,src/game/unnamed/b015_0.c,GameHr_106fdc0
 106fe40,344,verified,src/game/unnamed/e006_2.c,GameHr_106fe40
 106ffe0,784,verified,src/game/unplaced_5.c,game_106ffe0
-1070320,944,verified,src/game/unnamed/f001_0.c,GameHr_1070320
+1070320,920,verified,src/game/unnamed/f001_0.c,GameHr_1070320
 1070860,868,verified,src/game/unplaced_5.c,game_1070860
 1070c00,324,verified,src/game/unnamed/b015_0.c,GameHr_1070c00
 1070d60,1132,verified,src/game/unnamed/r006_0.c,GameHr_1070d60
@@ -50247,10 +50247,10 @@ fffcb0,1244,verified,src/game/unnamed/b014_1.c,GameHr_fffcb0
 107a200,240,verified,src/game/character/character_animator.c,CharacterAnimator_107a200
 107a320,784,verified,src/game/character/character_animator.c,CharacterAnimator_Unknown5
 107a6f0,208,verified,src/game/character/character_animator.c,CharacterAnimator_107a6f0
-107a7e0,132,verified,src/game/character/character_animator.c,CharacterAnimator_107a7e0
+107a7e0,132,disputed,src/game/character/character_animator.c,CharacterAnimator_107a7e0
 107a870,152,verified,src/game/character/character_animator.c,CharacterAnimator_107a870
 107a920,344,verified,src/game/character/character_animator.c,CharacterAnimator_107a920
-107aaa0,304,verified,src/game/character/character_animator.c,CharacterAnimator_107aaa0
+107aaa0,160,verified,src/game/character/character_animator.c,CharacterAnimator_107aaa0
 107ac20,288,verified,src/game/character/character_animator.c,CharacterAnimator_Destructor
 107ad40,80,verified,src/memory/new_delete.cpp,deleting destructor at 0x107ad40
 107ad90,12,verified,src/game/game_trivial.cpp,_Z16GameStub_107ad90v
@@ -71358,7 +71358,7 @@ fffcb0,1244,verified,src/game/unnamed/b014_1.c,GameHr_fffcb0
 1679140,728,verified,src/game/unnamed/b021_3.c,GameHr_1679140
 1679430,216,verified,src/game/unplaced_14.c,game_1679430
 1679510,1024,verified,src/game/unplaced_14.c,game_1679510
-1679f70,116,disputed,src/game/unplaced_8.c,game_1679f70
+1679f70,672,verified,src/game/unplaced_8.c,game_1679f70
 167a220,1832,verified,src/game/unplaced_8.c,game_167a220
 167a9b0,164,verified,src/game/unplaced_8.c,game_167a9b0
 167aa60,288,verified,src/game/unplaced_8.c,game_167aa60
@@ -74914,7 +74914,7 @@ fffcb0,1244,verified,src/game/unnamed/b014_1.c,GameHr_fffcb0
 170ec20,152,verified,src/game/facility/talk_menu_item.cpp,_ZN4game8facility12_GLOBAL__N_114CancelMenuItemD0Ev
 170ecc0,12,verified,src/game/facility/talk_menu_item.cpp,_ZN4game8facility12_GLOBAL__N_114CancelMenuItem6GetMidEv
 170ecd0,28,verified,src/game/facility/anonymous/cancel_menu_item.c,CancelMenuItem_ACall
-170ecf0,528,verified,src/game/unplaced_8.c,game_170ecf0
+170ecf0,580,verified,src/game/unplaced_8.c,game_170ecf0
 170ef40,1272,verified,src/game/zview/character_load_cost_calculator.c,game_zview_CharacterLoadCostCalculator_collectCharaPolygon
 170f460,376,verified,src/game/zview/character_load_cost_calculator.c,CharacterLoadCostCalculator_170f460
 170f5e0,44,verified,src/llvm-libcxx-21/libcxx/include/__functional/function.h,"std::__1::__function::__func<void game::character::CharacterBuilder::EachModule<wld::ModelModule, game::zview::CharacterLoadCostCalculator::collectCharaPolygon(game::character::CharacterBuilder const*, int, int)::$_0>(game::zview::CharacterLoadCostCalculator::collectCharaPolygon(game::character::CharacterBuilder const*, int, int)::$_0&&) const::'lambda'(wld::Object&), void (wld::Object&)>::deleting destructor"

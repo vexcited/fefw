@@ -1163,7 +1163,7 @@ __int64 GameHr_10b3cb0(__int64 a1, __int64 a2, float a3)
         v9 = a3;
       }
       else {
-        v9 = 0.16667f;
+        v9 = 0x1.555556p-3f;
       }
       GameRoutine_ce3880(v4, v7, 1, v9);
       GameRoutine_ce3880(*(_QWORD*)(a1 + 16), a2 + 40, 3, v9);

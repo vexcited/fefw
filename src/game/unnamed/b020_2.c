@@ -3542,7 +3542,7 @@ void GameHr_1596fe0(__int64 a1, int a2)
         v8 = GameRoutine_15638b0(v7, (__int64)"Change", 1);
         v9 = GameRoutine_1a09bb0(*(_QWORD*)(GameData_2265ae0 + 128));
         GameData_2259360[a2] =
-            v8 - GameRoutine_1a0a6a0((float)(v9 / 1000) / 16683.0, v8);
+            v8 - GameRoutine_1a0a6a0((float)(v9 / 1000) / 0x1.04ad66p+14f, v8);
       }
       if (atomic_fetch_add((atomic_ullong* volatile)(v6 + 8),
                            0xFFFFFFFFFFFFFFFFLL) == 0) {

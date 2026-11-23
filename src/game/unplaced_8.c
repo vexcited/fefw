@@ -936,13 +936,13 @@ __int64 game_1679f70(__int64 result)
       result =
           nn_os_ConvertToTimeSpan(*(_QWORD*)(as_g_base_frame_counter + 128));
       v15 = (float)(result / 1000);
-      v16 = v15 / 16683.0;
+      v16 = v15 / 0x1.04ad66p+14f;
       if (v14 <= 0.0) {
         v19 = 0;
       }
       else {
         v17 = floorf(v16 / v14);
-        result = fmodf(v15 / 16683.0, v14);
+        result = fmodf(v15 / 0x1.04ad66p+14f, v14);
         v19 = (unsigned int)(float)(v17 + v17);
         if (v18 > 72.0) {
           ++v19;

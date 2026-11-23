@@ -10590,8 +10590,8 @@ __int64 ResourceBuilder_b78dc0(__int64 a1, _QWORD* a2, _QWORD* a3)
   *(_DWORD*)(v10 + 16) = *((_DWORD*)a3 + 27);
   *(_DWORD*)(v10 + 20) = *((_DWORD*)a3 + 28);
   if (*((_BYTE*)a3 + 120) == 1) {
-    v11 = sinf((float)(90.0f - *((float*)a3 + 33)) * 0.017453f);
-    v12 = sinf(*((float*)a3 + 34) * 0.017453f);
+    v11 = sinf((float)(90.0f - *((float*)a3 + 33)) * 0x1.1df46ap-6f);
+    v12 = sinf(*((float*)a3 + 34) * 0x1.1df46ap-6f);
     v13 = v11 - v12;
     v14 = *((_DWORD*)a3 + 31);
     v15 = *((_DWORD*)a3 + 32);

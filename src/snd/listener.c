@@ -142,7 +142,7 @@ __int64 Listener_1129c0(__int64 a1)
           *(_QWORD*)(a1 + 5624), *(float*)(*(_QWORD*)(a1 + 5632) + 12LL));
       (*(void (**)(_QWORD, float))(**(_QWORD**)(a1 + 5624) + 56LL))(
           *(_QWORD*)(a1 + 5624),
-          *(float*)(*(_QWORD*)(a1 + 5632) + 16LL) / 59.999f);
+          *(float*)(*(_QWORD*)(a1 + 5632) + 16LL) / 0x1.dffd8cp+5f);
       (*(void (**)(_QWORD, float))(**(_QWORD**)(a1 + 5624) + 24LL))(
           *(_QWORD*)(a1 + 5624), *(float*)(*(_QWORD*)(a1 + 5632) + 32LL));
       (*(void (**)(_QWORD, float))(**(_QWORD**)(a1 + 5624) + 16LL))(

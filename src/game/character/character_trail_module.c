@@ -699,7 +699,7 @@ __int64 CharacterTrailModule_d3c310(__int64 a1)
 
   if (*(_BYTE*)(a1 + 128) == 1) {
     v1 = *(float*)(a1 + 124);
-    if (v1 >= (float)(*(float*)(*(_QWORD*)(a1 + 24) + 8LL) / 60.0) ||
+    if (v1 >= (float)(*(float*)(*(_QWORD*)(a1 + 24) + 8LL) / 60.0f) ||
         (*(_BYTE*)(a1 + 88) & 1) != 0) {
       goto LABEL_11;
     }
@@ -729,8 +729,9 @@ __int64 CharacterTrailModule_d3c310(__int64 a1)
     *(_BYTE*)(a1 + 88) = 1;
     if ((v6 & 1) != 0) {
     LABEL_11:
-      if (v1 >= (float)(*(float*)(a1 + 132) +
-                        (float)(*(float*)(*(_QWORD*)(a1 + 32) + 8LL) / 60.0)) &&
+      if (v1 >=
+              (float)(*(float*)(a1 + 132) +
+                      (float)(*(float*)(*(_QWORD*)(a1 + 32) + 8LL) / 60.0f)) &&
           (*(_BYTE*)(a1 + 88) & 1) == 0) {
         v7 = *(_QWORD**)(a1 + 80);
         if (v7 != nullptr && *((_BYTE*)v7 + 16) != 0) {

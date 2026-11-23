@@ -4067,7 +4067,7 @@ __int64 MapUtil_75f320(__int64 a1, long double a2)
                   .n128_f32[1] < 0.0) {
             *(float*)&v14 = -*(float*)&v14;
           }
-          *(float*)&v14 = *(float*)&v14 * 57.296;
+          *(float*)&v14 = *(float*)&v14 * 0x1.ca5dcp+5f;
         }
       }
       LANES128(v15).n128_f32[0] = -1.0;

@@ -746,7 +746,7 @@ LABEL_5:
       if (v13 != 0) {
         v14 = *(float**)(v13 + 16);
         if (v14 != nullptr) {
-          v8 = (float)(*v14 * 0.016667f) * 60.0f;
+          v8 = (float)(*v14 * 0x1.111112p-6f) * 60.0f;
         }
       }
       goto LABEL_23;

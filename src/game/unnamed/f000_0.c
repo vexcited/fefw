@@ -536,14 +536,14 @@ __int64 GameHr_2a4fe0(float a1)
   if (!v1) {
     v3 = v2;
   }
-  if (v3 < 0.13561f) {
+  if (v3 < 0x1.15bcfep-3f) {
     return 80;
   }
   if (v3 >= 0.9f) {
     return 16000;
   }
   return *(unsigned __int16*)&GameData_2135468
-      [2 * (int)(float)((float)(v3 + -0.13561f) / 0.033333f)];
+      [2 * (int)(float)((float)(v3 + -0x1.15bcfep-3f) / 0x1.111112p-5f)];
 }
 
 float GameHr_2a5490(float a1)
@@ -1749,9 +1749,9 @@ __int64 GameHr_4a1f80(__int64 a1, float* a2, float* a3, float* a4, float* a5,
   v54 = v22;
   v57[4] = v23;
   v57[5] = v11;
-  v25 = (float)((float)(v20 + v23) + v18) * 0.33333f;
-  v26 = (float)((float)(v57[0] + v22) + v17) * 0.33333f;
-  v27 = (float)((float)(v21 + v11) + v19) * 0.33333f;
+  v25 = (float)((float)(v20 + v23) + v18) * 0x1.555556p-2f;
+  v26 = (float)((float)(v57[0] + v22) + v17) * 0x1.555556p-2f;
+  v27 = (float)((float)(v21 + v11) + v19) * 0x1.555556p-2f;
   v29 = (float)(GameRoutine_1a0a010(a1) - a9) + -0.0001f;
   v30 = v29 < 0.0f;
   v31 = v29 * v29;
@@ -2030,9 +2030,9 @@ __int64 GameHr_4a5700(__int64 a1, float* a2, float* a3, float* a4, float* a5,
   v54 = v22;
   v57[4] = v23;
   v57[5] = v11;
-  v25 = (float)((float)(v20 + v23) + v18) * 0.33333f;
-  v26 = (float)((float)(v57[0] + v22) + v17) * 0.33333f;
-  v27 = (float)((float)(v21 + v11) + v19) * 0.33333f;
+  v25 = (float)((float)(v20 + v23) + v18) * 0x1.555556p-2f;
+  v26 = (float)((float)(v57[0] + v22) + v17) * 0x1.555556p-2f;
+  v27 = (float)((float)(v21 + v11) + v19) * 0x1.555556p-2f;
   v29 = (float)(GameRoutine_1a0a010(a1) - a9) + -0.0001f;
   v30 = v29 < 0.0f;
   v31 = v29 * v29;
@@ -2725,22 +2725,22 @@ void GameHr_743460()
   v6 = *(_OWORD*)(v2 + 960);
   GameData_21cfa58 =
       v3 & 0xF | (16 * ((v3 >> 12) & 3)) | (v3 >> 4) & 0xC0 | (v3 >> 7) & 0xF00;
-  v7 = (float)(*(float*)&v6 + 0.25f) * 1.3333f;
+  v7 = (float)(*(float*)&v6 + 0.25f) * 0x1.555556p+0f;
   if (!(*(float*)&v6 < -0.25f)) {
     v7 = 0.0f;
   }
   if (*(float*)&v6 > 0.25f) {
-    v8 = (float)(*(float*)&v6 + -0.25f) * 1.3333f;
+    v8 = (float)(*(float*)&v6 + -0.25f) * 0x1.555556p+0f;
   }
   else {
     v8 = v7;
   }
-  v9 = (float)(*((float*)&v6 + 1) + 0.25f) * 1.3333f;
+  v9 = (float)(*((float*)&v6 + 1) + 0.25f) * 0x1.555556p+0f;
   if (!(*((float*)&v6 + 1) < -0.25f)) {
     v9 = 0.0f;
   }
   if (*((float*)&v6 + 1) > 0.25f) {
-    v10 = (float)(*((float*)&v6 + 1) + -0.25f) * 1.3333f;
+    v10 = (float)(*((float*)&v6 + 1) + -0.25f) * 0x1.555556p+0f;
   }
   else {
     v10 = v9;
