@@ -81,11 +81,10 @@ unsigned __int64 unplaced_4_730ec0_alt1(unsigned __int64*, unsigned __int64,
                                         unsigned __int64);
 float gyro_pointing_kalman_filter_729580(unsigned __int64* a1,
                                          unsigned __int64* a2, __int64 a3);
+__attribute__((no_builtin("memset", "memcpy", "memmove"))) float
 
-__attribute__((no_builtin("memset", "memcpy", "memmove")))
-float gyro_pointing_kalman_filter_728fe0(unsigned __int64* a1,
-                                         unsigned __int64* a2, __int64 a3,
-                                         unsigned __int64 a4)
+gyro_pointing_kalman_filter_728fe0(unsigned __int64* a1, unsigned __int64* a2,
+                                   __int64 a3, unsigned __int64 a4)
 {
 
 #pragma clang fp contract(off)

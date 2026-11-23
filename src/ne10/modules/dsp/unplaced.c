@@ -20,12 +20,12 @@ float* ne10_modules_dsp_2127a0(float* result, __int64 a2, __int64 a3, int a4,
   int v12;
   bool v13;
   int v14;
-  float* v15;
+  const float* v15;
   float* v16;
   int32x4_t v17;
   int32x4_t v18;
   int32x4_t v19;
-  float* v20;
+  const float* v20;
   float* v21;
   float* v22;
   int32x4_t v23;
@@ -34,21 +34,21 @@ float* ne10_modules_dsp_2127a0(float* result, __int64 a2, __int64 a3, int a4,
   int32x4_t v26;
   int v27;
   unsigned __int64 v28;
-  float* v29;
-  float* v30;
+  const float* v29;
+  const float* v30;
   float* v31;
   float* v32;
   float* v33;
   int32x4_t v34;
   int32x4_t v35;
   int32x4_t v36;
-  float* v37;
+  const float* v37;
   float* v38;
   int32x4_t v39;
   int32x4_t v40;
   int32x4_t v41;
   int32x4_t v42;
-  float* v43;
+  const float* v43;
   int32x4_t v44;
   int32x4_t v45;
   int32x4_t v46;
@@ -374,7 +374,7 @@ float* ne10_modules_dsp_2127a0(float* result, __int64 a2, __int64 a3, int a4,
       v60 = (int)v55 * (__int64)v54;
       v61 = *(_QWORD*)(a2 + 24);
       LODWORD(v60) = (v57 >> 31) - (v60 >> 31);
-      LODWORD(v57) = *(_DWORD*)v51;
+      LODWORD(v57) = *v51;
       LODWORD(v51) = v51[1];
       LODWORD(v59) = (v58 >> 31) + (v59 >> 31);
       v62 = (int)v56 * (__int64)(int)v57;
@@ -382,7 +382,7 @@ float* ne10_modules_dsp_2127a0(float* result, __int64 a2, __int64 a3, int a4,
       v56 >>= 32;
       v64 = (int)v56 * (__int64)(int)v57;
       v65 = (int)v56 * (__int64)(int)v51;
-      LODWORD(v56) = *(_DWORD*)v52;
+      LODWORD(v56) = *v52;
       LODWORD(v52) = v52[1];
       LODWORD(v65) = (v62 >> 31) - (v65 >> 31);
       LODWORD(v64) = (v63 >> 31) + (v64 >> 31);
@@ -400,20 +400,20 @@ float* ne10_modules_dsp_2127a0(float* result, __int64 a2, __int64 a3, int a4,
       LODWORD(v63) = v64 + v61;
       LODWORD(v65) = v66 - v65;
       LODWORD(v61) = v61 - v64;
-      LODWORD(v64) = v60 + (int)v52;
-      LODWORD(v52) = v60 - (int)v52;
+      LODWORD(v64) = v60 + (_DWORD)v52;
+      LODWORD(v52) = v60 - (_DWORD)v52;
       *(_QWORD*)result =
           (unsigned int)(v64 + v67) |
           ((unsigned __int64)(unsigned int)(v59 + v68 + v63) << 32);
       *(_QWORD*)&result[v49] =
           (unsigned int)(v59 - v68 + v65) |
-          ((unsigned __int64)(unsigned int)(v61 - (int)v52) << 32);
+          ((unsigned __int64)(unsigned int)(v61 - (_DWORD)v52) << 32);
       *(_QWORD*)&result[2 * v69] =
           (unsigned int)(v67 - v64) |
           ((unsigned __int64)(unsigned int)(v63 - (v59 + v68)) << 32);
       *(_QWORD*)&result[2 * v48] =
           (unsigned int)(v65 - (v59 - v68)) |
-          ((unsigned __int64)(unsigned int)((int)v52 + v61) << 32);
+          ((unsigned __int64)(unsigned int)((_DWORD)v52 + v61) << 32);
       result += 2;
     } while (v50 > 1);
   }

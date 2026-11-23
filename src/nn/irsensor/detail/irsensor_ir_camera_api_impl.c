@@ -71,6 +71,11 @@ __int64 nn_irsensor_detail_GetTeraPluginProcessorStates(__int64 a1, int* a2,
                                                         __int64 a7);
 __int64 irsensor_ir_camera_api_73e140(__int64 a1, __int64 a2, int a3,
                                       __int64 a4, unsigned int a5);
+__int64 nn_irsensor_detail_CheckInternalStatus_plt_alt1(__int64);
+__int64 nn_irsensor_detail_GetSessionManager_plt_alt2(void);
+__int64 nn_irsensor_detail_IrSensorSession_IsAppletForeground_plt_alt1(__int64);
+__int64 nn_irsensor_detail_SessionManager_GetSession_plt_alt1(__int64, __int64);
+extern __int64 (*nn_os_detail_RemoveNativeWaitHolder_ptr_e7c7c0[])();
 
 __int64 nn_irsensor_detail_GetMomentProcessorState(__int64 a1, __int64 a2)
 {
@@ -951,22 +956,26 @@ __int64 nn_irsensor_detail_GetTeraPluginProcessorStates(__int64 a1, int* a2,
   __int64 v13;
   unsigned int v14;
   __int64 v15;
-  __int64 v16;
+  int v16;
   int v17;
   __int64 v18;
-  _QWORD v20[4];
-  _QWORD* v21;
-  __int64 v22;
-  int v23;
-  int v24;
+  struct {
+    _QWORD v20[4];
+    _QWORD* v21;
+    char gap40_[8];
+    __int64 v22;
+    int v23;
+    int v24;
+  } f_;
   __int64 v25;
 
   v25 = a4;
-  v23 = a6;
-  v24 = a5;
-  v11 = nn_irsensor_detail_GetSessionManager_plt_alt1();
-  v22 = nn_irsensor_detail_GetAppletResourceUserId_plt();
-  v12 = nn_irsensor_detail_SessionManager_GetSession_plt(v11, &v22);
+  f_.v23 = a6;
+  f_.v24 = a5;
+  v11 = nn_irsensor_detail_GetSessionManager_plt_alt2();
+  f_.v22 = nn_irsensor_detail_GetAppletResourceUserId_plt();
+  v12 = nn_irsensor_detail_SessionManager_GetSession_plt_alt1(v11,
+                                                              (__int64)&f_.v22);
   if (v12 == 0) {
     return 104653;
   }
@@ -975,11 +984,11 @@ __int64 nn_irsensor_detail_GetTeraPluginProcessorStates(__int64 a1, int* a2,
   *a2 = 0;
   nn_irsensor_detail_IrSensorSession_GetTeraPluginProcessorStateDefault_plt(
       v13, a1, a7);
-  if ((nn_irsensor_detail_IrSensorSession_IsAppletForeground_plt(v13) & 1) ==
-      0) {
+  if ((nn_irsensor_detail_IrSensorSession_IsAppletForeground_plt_alt1(v13) &
+       1) == 0) {
     return 82125;
   }
-  v14 = nn_irsensor_detail_CheckInternalStatus_plt(a7);
+  v14 = nn_irsensor_detail_CheckInternalStatus_plt_alt1(a7);
   if (v14 == 0) {
     v15 = nn_irsensor_detail_IrSensorSession_GetTeraPluginLifo_plt(v13, a7);
     v14 = 82125;
@@ -988,25 +997,25 @@ __int64 nn_irsensor_detail_GetTeraPluginProcessorStates(__int64 a1, int* a2,
         v16 = 5;
       }
       else {
-        v16 = (unsigned int)a3;
+        v16 = a3;
       }
-      v20[0] = nn_os_detail_RemoveNativeWaitHolder_ptr;
-      v20[1] = &v25;
-      v21 = v20;
-      v20[2] = &v24;
-      v20[3] = &v23;
-      v17 = irsensor_ir_camera_api_73e140_alt1(v15, a1, v16, v20);
+      f_.v20[0] = nn_os_detail_RemoveNativeWaitHolder_ptr_e7c7c0;
+      f_.v20[1] = &v25;
+      f_.v21 = f_.v20;
+      f_.v20[2] = &f_.v24;
+      f_.v20[3] = &f_.v23;
+      v17 = irsensor_ir_camera_api_73e140(v15, a1, v16, (__int64)f_.v20, 0);
       *a2 = v17;
-      if (v21 == v20) {
+      if (f_.v21 == f_.v20) {
         v18 = 32;
       }
       else {
-        if (v21 == nullptr) {
+        if (f_.v21 == nullptr) {
           goto LABEL_13;
         }
         v18 = 40;
       }
-      (*(void (**)(__int64))(*v21 + v18))((__int64)v21);
+      (*(void (**)(__int64))(*f_.v21 + v18))((__int64)f_.v21);
       v17 = *a2;
     LABEL_13:
       if (v17 != 0) {

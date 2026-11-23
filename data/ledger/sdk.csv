@@ -499,7 +499,7 @@ ffe0,36,verified,src/nn/crypto/detail/sha3_impl.cpp,_ZNK2nn6crypto6detail8Sha3Im
 335a0,480,verified,src/libjpeg-turbo-nx/jcphuff_impl.c,jcphuff_335a0
 337a0,952,verified,src/libjpeg-turbo-nx/jcphuff_impl.c,jcphuff_337a0
 33be0,240,verified,src/libjpeg-turbo-nx/jcphuff_impl.c,jcphuff_33be0
-33ce0,1008,disputed,src/libjpeg-turbo-nx/jcphuff_impl.c,jcphuff_33ce0
+33ce0,1008,verified,src/libjpeg-turbo-nx/jcphuff_impl.c,jcphuff_33ce0
 34ae0,332,verified,src/libjpeg-turbo-nx/jcphuff.c,_ZL24finish_pass_gather_phuffP20jpeg_compress_struct
 34c40,116,verified,src/libjpeg-turbo-nx/jcphuff.c,_ZL17finish_pass_phuffP20jpeg_compress_struct
 34cc0,376,verified,src/libjpeg-turbo-nx/jcphuff.c,_ZL12emit_restartP21phuff_entropy_encoderi
@@ -2235,7 +2235,7 @@ ba200,188,verified,src/nn/diag/diag_module_misc.cpp,_ZN2nn4diag6detail9Translate
 ba2c0,4,verified,src/nn/diag/abort_observer.cpp,_ZN2nn4diag6detail20DefaultAbortObserverERKNS0_9AbortInfoE
 ba2d0,56,verified,src/nn/diag/hashed_log_helper.c,HashedLogHelper_Caller_ba2d0
 ba310,4,verified,src/nn/diag/diag_hashed_log.cpp,_ZN2nn4diag6detail34HashedLogPostSerializeProcess_hlogEPKvj
-ba320,1596,disputed,src/nn/diag/unplaced_2.c,nn_diag_ba320
+ba320,1680,verified,src/nn/diag/unplaced_2.c,nn_diag_ba320
 bab50,8,verified,src/nn/sdk_trivial_forwarders.cpp,_Z13SdkStub_bab50m
 bab60,48,verified,src/nn/diag/unplaced.c,threadName
 baba0,240,verified,src/nn/diag/unplaced.c,nn_diag_baba0
@@ -9195,8 +9195,8 @@ ffee0,324,verified,src/nn/fs/unplaced.c,nn_fs_GetAndClearMemoryReportInfo
 20a020,184,verified,src/nn/audio/audio_fft.cpp,_ZN2nn5audio6detail26FftInPlaceProcessRealFloatEPfPKfRNS1_13FftWorkBufferENS1_12FftDirectionE
 20a0e0,172,verified,src/nn/audio/audio_fft.cpp,_ZN2nn5audio6detail34FftInPlaceProcessRealFixedPointIntEPiPKiRNS1_13FftWorkBufferENS1_12FftDirectionE
 20a190,172,verified,src/nn/audio/audio_fft.cpp,_ZN2nn5audio6detail36FftInPlaceProcessRealFixedPointShortEPsPKsRNS1_13FftWorkBufferENS1_12FftDirectionE
-20a240,2460,disputed,src/nn/audio/ne10/modules/dsp/NE10_fft_float32.neonintrinsic.c,nnaudiodetail_ne10_mixed_radix_fft_forward_float32_neon
-20af20,2116,disputed,src/nn/audio/ne10/modules/dsp/NE10_fft_float32.neonintrinsic.c,nnaudiodetail_ne10_mixed_radix_fft_backward_float32_neon
+20a240,2728,disputed,src/nn/audio/ne10/modules/dsp/NE10_fft_float32.neonintrinsic.c,nnaudiodetail_ne10_mixed_radix_fft_forward_float32_neon
+20af20,2968,disputed,src/nn/audio/ne10/modules/dsp/NE10_fft_float32.neonintrinsic.c,nnaudiodetail_ne10_mixed_radix_fft_backward_float32_neon
 20bc50,780,verified,src/nn/audio/ne10/modules/dsp/NE10_fft_float32.neonintrinsic.c,nnaudiodetail_ne10_fft_c2c_1d_float32_neon
 20bf60,708,verified,src/ne10/modules/dsp/NE10_fft_generic_float32.neonintrinsic.cpp,ne10_mixed_radix_generic_butterfly_float32_neon
 20c240,1772,verified,src/ne10/modules/dsp/NE10_fft_generic_float32.neonintrinsic.cpp,_ZL52ne10_mixed_radix_generic_butterfly_float32_neon_implILi0ELb1EEvP13float32x4x2_tPKS0_PKiPK22ne10_fft_cpx_float32_tS1_
@@ -9209,7 +9209,7 @@ ffee0,324,verified,src/nn/fs/unplaced.c,nn_fs_GetAndClearMemoryReportInfo
 212060,456,verified,src/ne10/modules/dsp/NE10_fft_generic_int32.neonintrinsic.cpp,_ZL50ne10_mixed_radix_generic_butterfly_int32_neon_implILb0ELb1EEvP11int32x4x2_tPKS0_PKiPK20ne10_fft_cpx_int32_tS1_
 212260,480,verified,src/ne10/modules/dsp/NE10_fft_generic_int32.neonintrinsic.cpp,_ZL50ne10_mixed_radix_generic_butterfly_int32_neon_implILb0ELb0EEvP11int32x4x2_tPKS0_PKiPK20ne10_fft_cpx_int32_tS1_
 212460,804,verified,src/ne10/modules/dsp/NE10_fft_generic_int32.neonintrinsic.cpp,_ZL27ne10_c2c_1d_last_stage_neonILb0ELb1EEvP11int32x4x2_tPKS0_PK20ne10_fft_cpx_int32_tiii
-2127a0,1092,disputed,src/ne10/modules/dsp/unplaced.c,ne10_modules_dsp_2127a0
+2127a0,1092,verified,src/ne10/modules/dsp/unplaced.c,ne10_modules_dsp_2127a0
 212d40,416,verified,src/ne10/modules/dsp/NE10_fft_generic_int32.neonintrinsic_impl.c,NE10_fft_generic_int32_neonintrinsic_212d40
 212f00,232,verified,src/ne10/modules/dsp/NE10_fft_generic_int32.neonintrinsic.cpp,_ZL31ne10_radix_butterfly_int32_neonILi4ELb1ELb0ELb1EEvP11int32x4x2_tPKS0_PK20ne10_fft_cpx_int32_tiii
 213000,532,verified,src/nn/audio/ne10/modules/dsp/NE10_fft_generic_int32.neonintrinsic_impl.c,ne10_radix_butterfly_int32_neon_5_true_false_true
@@ -9252,10 +9252,10 @@ ffee0,324,verified,src/nn/fs/unplaced.c,nn_fs_GetAndClearMemoryReportInfo
 21b660,2736,verified,src/nn/audio/ne10/modules/dsp/NE10_fft_int16.neonintrinsic.c,nnaudiodetail_ne10_fft_c2c_1d_int16_neon
 21c120,884,verified,src/ne10/modules/dsp/NE10_fft_int16.neonintrinsic.c,ne10_fft_r2c_1d_int16_neon
 21c4a0,900,verified,src/ne10/modules/dsp/NE10_fft_int16.neonintrinsic.c,ne10_fft_c2r_1d_int16_neon
-21c940,3196,verified,src/nn/audio/ne10/modules/dsp/NE10_fft_int32.neonintrinsic.c,nnaudiodetail_ne10_mixed_radix_fft_forward_int32_unscaled_neon
-21d680,2948,verified,src/nn/audio/ne10/modules/dsp/NE10_fft_int32.neonintrinsic.c,nnaudiodetail_ne10_mixed_radix_fft_forward_int32_scaled_neon
-21e3c0,2784,verified,src/nn/audio/ne10/modules/dsp/NE10_fft_int32.neonintrinsic.c,nnaudiodetail_ne10_mixed_radix_fft_backward_int32_unscaled_neon
-21f100,2968,disputed,src/nn/audio/ne10/modules/dsp/NE10_fft_int32.neonintrinsic.c,nnaudiodetail_ne10_mixed_radix_fft_backward_int32_scaled_neon
+21c940,3284,disputed,src/nn/audio/ne10/modules/dsp/NE10_fft_int32.neonintrinsic.c,nnaudiodetail_ne10_mixed_radix_fft_forward_int32_unscaled_neon
+21d680,3200,disputed,src/nn/audio/ne10/modules/dsp/NE10_fft_int32.neonintrinsic.c,nnaudiodetail_ne10_mixed_radix_fft_forward_int32_scaled_neon
+21e3c0,2784,disputed,src/nn/audio/ne10/modules/dsp/NE10_fft_int32.neonintrinsic.c,nnaudiodetail_ne10_mixed_radix_fft_backward_int32_unscaled_neon
+21f100,3000,disputed,src/nn/audio/ne10/modules/dsp/NE10_fft_int32.neonintrinsic.c,nnaudiodetail_ne10_mixed_radix_fft_backward_int32_scaled_neon
 21fe30,488,verified,src/nn/audio/ne10/modules/dsp/NE10_fft_int32.neonintrinsic.c,nnaudiodetail_ne10_fft_c2c_1d_int32_neon
 220420,852,verified,src/ne10/modules/dsp/NE10_fft_int32.neonintrinsic.c,ne10_fft_r2c_1d_int32_neon
 2207a0,844,verified,src/ne10/modules/dsp/NE10_fft_int32.neonintrinsic.c,ne10_fft_c2r_1d_int32_neon
@@ -11275,7 +11275,7 @@ ffee0,324,verified,src/nn/fs/unplaced.c,nn_fs_GetAndClearMemoryReportInfo
 2b36d0,196,verified,src/nn/sf/cmif/client/unplaced.c,nn_sf_cmif_client_2b36d0
 2b37a0,852,verified,src/nn/sf/cmif/client/unplaced.c,nn_sf_cmif_client_2b37a0
 2b3cc0,440,verified,src/nn/sf/cmif/client/unplaced.c,nn_sf_cmif_client_2b3cc0
-2b3f00,360,disputed,src/nn/sf/cmif/client/unplaced_8.c,nn_sf_cmif_client_2b3f00
+2b3f00,360,verified,src/nn/sf/cmif/client/unplaced_8.c,nn_sf_cmif_client_2b3f00
 2b4120,760,verified,src/nn/sf/cmif/client/unplaced.c,nn_sf_cmif_client_2b4120
 2b4450,400,verified,src/nn/sf/cmif/client/unplaced.c,nn_sf_cmif_client_2b4450
 2b45f0,132,verified,src/nn/sf/cmif/client/unplaced_5.c,nn_sf_cmif_client_2b45f0
@@ -11870,7 +11870,7 @@ ffee0,324,verified,src/nn/fs/unplaced.c,nn_fs_GetAndClearMemoryReportInfo
 2e2830,104,verified,src/opus/celt/mathops.c,celt_rsqrt_norm
 2e28a0,176,verified,src/opus/celt/mathops.c,celt_sqrt
 2e2950,244,verified,src/opus/celt/mathops.c,celt_cos_norm
-2e2a60,1772,disputed,src/opus/celt/unplaced.c,opus_celt_2e2a60
+2e2a60,1880,disputed,src/opus/celt/unplaced.c,opus_celt_2e2a60
 2e32e0,1092,verified,src/opus/celt/mdct.c,clt_mdct_backward_c
 2e3750,96,verified,src/opus/celt/modes.c,opus_custom_mode_create
 2e37c0,1800,verified,src/opus/celt/unplaced_5.c,opus_celt_2e37c0
@@ -14401,7 +14401,7 @@ ffee0,324,verified,src/nn/fs/unplaced.c,nn_fs_GetAndClearMemoryReportInfo
 430c10,44,verified,src/nn/fontll/itype/unplaced_2.c,nn_fontll_itype_430c10
 430c40,48,verified,src/nn/fontll/itype/unplaced_2.c,nn_fontll_itype_430c40
 430c70,28,verified,src/nn/fontll/itype/unplaced_2.c,nn_fontll_itype_430c70
-430ca0,2464,disputed,src/nn/unnamed/a000_0.c,SdkHr_430ca0
+430ca0,2400,disputed,src/nn/unnamed/a000_0.c,SdkHr_430ca0
 4318c0,236,verified,src/nn/fontll/itype/unplaced_2.c,nn_fontll_itype_4318c0
 4319c0,220,verified,src/nn/fontll/itype/unplaced_2.c,nn_fontll_itype_4319c0
 431ac0,232,verified,src/nn/fontll/itype/unplaced_2.c,nn_fontll_itype_431ac0
@@ -14499,7 +14499,7 @@ ffee0,324,verified,src/nn/fs/unplaced.c,nn_fs_GetAndClearMemoryReportInfo
 43d540,76,verified,src/nn/fontll/itype/fsglue.c,delete_key
 43d590,116,verified,src/nn/fontll/itype/fsglue.c,get_dropout_control
 43d610,368,verified,src/nn/fontll/itype/unplaced_2.c,fsg_ReduceMatrix
-43d780,2364,disputed,src/nn/fontll/itype/unplaced_3.c,make_graymap
+43d780,3324,disputed,src/nn/fontll/itype/unplaced_3.c,make_graymap
 43e6c0,2612,verified,src/nn/fontll/itype/unplaced_3.c,nn_fontll_itype_43e6c0
 43f120,2404,verified,src/nn/fontll/itype/unplaced_3.c,trim_convert
 43fb70,80,verified,src/nn/fontll/itype/fs_font.c,copy_graymap
@@ -14556,7 +14556,7 @@ ffee0,324,verified,src/nn/fs/unplaced.c,nn_fs_GetAndClearMemoryReportInfo
 44d780,232,verified,src/nn/fontll/itype/unplaced_3.c,nn_fontll_itype_44d780
 44d880,688,verified,src/nn/fontll/itype/unplaced_3.c,nn_fontll_itype_44d880
 44dba0,868,verified,src/nn/fontll/itype/unplaced_7.c,nn_fontll_itype_44dba0
-44e2c0,668,disputed,src/nn/fontll/itype/unplaced_3.c,nn_fontll_itype_44e2c0
+44e2c0,1064,verified,src/nn/fontll/itype/unplaced_3.c,nn_fontll_itype_44e2c0
 44e9e0,292,verified,src/nn/fontll/itype/unplaced_3.c,nn_fontll_itype_44e9e0
 44eb20,300,verified,src/nn/unnamed/h000_0.c,SdkHr_44eb20
 44ec60,52,verified,src/nn/unnamed/h000_0.c,SdkHr_44ec60
@@ -25132,7 +25132,7 @@ ffee0,324,verified,src/nn/fs/unplaced.c,nn_fs_GetAndClearMemoryReportInfo
 64d7a0,404,verified,src/nvidia/unplaced_9.c,nvidia_64d7a0
 64d950,176,verified,src/nvidia/unplaced_19.c,nvidia_64d950
 64da00,780,verified,src/nvidia/unplaced_9.c,nvidia_64da00
-64de60,1688,verified,src/nvidia/unplaced_9.c,nvidia_64de60
+64de60,1688,disputed,src/nvidia/unplaced_9.c,nvidia_64de60
 64e500,828,disputed,src/nvidia/unplaced_9.c,nvidia_64e500
 64e860,420,verified,src/nvidia/unplaced_9.c,nvidia_64e860
 64ea10,104,verified,src/nvidia/unplaced_9.c,nvidia_64ea10
@@ -30133,7 +30133,7 @@ ffee0,324,verified,src/nn/fs/unplaced.c,nn_fs_GetAndClearMemoryReportInfo
 716760,456,verified,src/math/unplaced_4.c,math_716760
 716930,852,verified,src/math/unplaced_4.c,nerd_linear_algebra_cross
 716c90,492,verified,src/math/unplaced_4.c,linear_algebra_716c90
-716e80,756,disputed,src/math/unplaced_16.c,math_716e80
+716e80,956,disputed,src/math/unplaced_16.c,math_716e80
 717280,1052,verified,src/math/detail.c,nerd_linear_algebra_Detail_LEigenDecompositionSymmetricTridiagonal_float
 717720,256,verified,src/math/kalman_reset.cpp,_ZN2fw4math16MapStateIndices9EPNS0_8IndexMapEPNS0_12StateIndicesILm9EEE
 718680,1868,verified,src/math/dynamic_matrix_product.cpp,_ZN4nerd14linear_algebramlIffLl3ELln30ELl3ENS0_11LMatrixType5DenseILb1EEES4_EEDaRKNS0_7LMatrixIT_XT1_EXT2_ET4_EERKNS5_IT0_XT2_EXT3_ET5_EE
@@ -30180,7 +30180,7 @@ ffee0,324,verified,src/nn/fs/unplaced.c,nn_fs_GetAndClearMemoryReportInfo
 7264c0,544,verified,src/math/unplaced_14.c,math_7264c0
 726720,1044,verified,src/math/unplaced_4.c,math_726720
 726b80,296,verified,src/math/unplaced_4.c,math_726b80
-727520,732,disputed,src/math/unplaced_4.c,math_727520
+727520,588,disputed,src/math/unplaced_4.c,math_727520
 728260,344,verified,src/math/matrix.cpp,_ZN4nerd14linear_algebraplIffLl21ELl21ENS0_11LMatrixType5DenseILb1EEES4_EEDaRKNS0_7LMatrixIT_XT1_EXT2_ET3_EERKNS5_IT0_XT1_EXT2_ET4_EE
 7283c0,868,verified,src/nn/unnamed/s004_2.c,SdkHr_7283c0
 728730,800,verified,src/math/unplaced_10.c,math_728730
@@ -30233,7 +30233,7 @@ ffee0,324,verified,src/nn/fs/unplaced.c,nn_fs_GetAndClearMemoryReportInfo
 7349c0,624,verified,src/nn/unnamed/s005_0.c,SdkHr_7349c0
 734c60,472,verified,src/nn/unnamed/s005_0.c,SdkHr_734c60
 734e60,1268,verified,src/math/unplaced_11.c,math_734e60
-735c60,808,disputed,src/math/unplaced_16.c,math_735c60
+735c60,856,disputed,src/math/unplaced_16.c,math_735c60
 735fc0,356,verified,src/nerd/gyro_pointing/gyro_pointing_state_detector.cpp,_ZN4nerd13gyro_pointing25GyroPointingStateDetectorC2ENS_4Unit12BaseQuantityIfNSt3__15ratioILln2ELl1EEEJNS5_ILl1ELl1EEENS5_ILl0ELl1EEES6_S8_EEENS3_IfS8_JS8_S8_NS5_ILln1ELl1EEES8_EEE
 736170,248,verified,src/nerd/gyro_pointing/gyro_pointing_state_detector.cpp,_ZN4nerd13gyro_pointing25GyroPointingStateDetector9AddSampleERKNS0_7ImuDataE
 736270,1032,verified,src/nerd/gyro_pointing/gyro_pointing_state_detector_impl.c,nerd_gyro_pointing_GyroPointingStateDetector_AddCorrectedGlobalAcc
@@ -30440,7 +30440,7 @@ ffee0,324,verified,src/nn/fs/unplaced.c,nn_fs_GetAndClearMemoryReportInfo
 73da20,288,verified,src/nn/irsensor/detail/irsensor_ir_camera_api_impl.c,nn_irsensor_detail_GetPointingProcessorStates
 73db40,888,verified,src/nn/irsensor/detail/irsensor_ir_camera_api_impl.c,irsensor_ir_camera_api_73db40
 73df20,152,verified,src/nn/irsensor/detail/irsensor_ir_camera_api.cpp,_ZN2nn8irsensor6detail22RunTeraPluginProcessorERKNS0_14IrCameraHandleERKNS0_25TeraPluginProcessorConfigE
-73dfc0,352,disputed,src/nn/irsensor/detail/irsensor_ir_camera_api_impl.c,nn_irsensor_detail_GetTeraPluginProcessorStates
+73dfc0,352,verified,src/nn/irsensor/detail/irsensor_ir_camera_api_impl.c,nn_irsensor_detail_GetTeraPluginProcessorStates
 73e140,544,verified,src/nn/irsensor/detail/irsensor_ir_camera_api_impl.c,irsensor_ir_camera_api_73e140
 73e380,128,verified,src/nn/irsensor/detail/irsensor_ir_camera_api.cpp,_ZN2nn8irsensor6detail17RunIrLedProcessorERKNS0_14IrCameraHandleERKNS0_20IrLedProcessorConfigE
 73e400,260,verified,src/nn/irsensor/detail/unplaced.c,nn_irsensor_detail_GetIrLedProcessorState
@@ -30591,7 +30591,7 @@ ffee0,324,verified,src/nn/fs/unplaced.c,nn_fs_GetAndClearMemoryReportInfo
 741f00,48,verified,src/nn/irsensor/irsensor_api_extra.cpp,_ZN2nn8irsensor6system30UnregisterAppletResourceUserIdERKNS_6applet20AppletResourceUserIdE
 741f30,48,verified,src/nn/irsensor/irsensor_api_extra.cpp,_ZN2nn8irsensor6system22EnableAppletToGetInputERKNS_6applet20AppletResourceUserIdEb
 741f60,184,verified,src/nerd_gillette_internal/unplaced.c,nerd_gillette_internal_OnAssertionFailed
-742020,252,disputed,src/nerd_gillette_internal/unplaced_3.c,nerd_gillette_internal_742020
+742020,252,verified,src/nerd_gillette_internal/unplaced_3.c,nerd_gillette_internal_742020
 742180,248,verified,src/nerd_gillette_internal/unplaced_2.c,nerd_gillette_internal_742180
 7422e0,424,verified,src/nn/irsensor/detail/unplaced.c,nn_irsensor_GetHandAnalysisImageState
 7424e0,208,verified,src/nn/irsensor/unplaced.c,nn_irsensor_7424e0
@@ -31432,7 +31432,7 @@ ffee0,324,verified,src/nn/fs/unplaced.c,nn_fs_GetAndClearMemoryReportInfo
 7796a0,4,verified,src/nnmusl/nnmusl_libc_forwarders2.cpp,putchar
 7797b0,288,verified,src/nnmusl/stdio/swprintf.c,swprintf
 7798e0,308,verified,src/nnmusl/stdio/unplaced.c,nnmusl_stdio_7798e0
-779a20,908,disputed,src/nnmusl/stdio/vfscanf.c,vfscanf
+779a20,2320,disputed,src/nnmusl/stdio/vfscanf.c,vfscanf
 77a8c0,200,verified,src/musl/src/temp/__randname.c,__randname
 77a990,4,verified,src/libc/quick_exit.cpp,LockQuickExitState
 77a9a0,4,verified,src/libc/quick_exit.cpp,UnlockQuickExitState
@@ -31512,7 +31512,7 @@ ffee0,324,verified,src/nn/fs/unplaced.c,nn_fs_GetAndClearMemoryReportInfo
 789110,648,verified,src/nnmusl/stdio/vfprintf.c,pop_arg
 7893a0,164,verified,src/musl/src/stdio/vfprintf.c,pad
 78bf20,244,verified,src/nnmusl/stdio/vfwprintf.c,vfwprintf
-78c020,1888,disputed,src/nnmusl/stdio/vfwprintf.c,wprintf_core
+78c020,1904,disputed,src/nnmusl/stdio/vfwprintf.c,wprintf_core
 78ca90,676,verified,src/musl/src/stdio/vfprintf.c,pop_arg
 78cd40,800,verified,src/nnmusl/stdio/vfwprintf.c,pad
 78d070,180,verified,src/nnmusl/nnmusl_strtof.cpp,strtof

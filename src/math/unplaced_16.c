@@ -714,31 +714,60 @@ __int64 math_735c60(__int64 this_)
   __int64 v58;
   char v59;
 
-  v1 = *(_QWORD*)(this_ + 3616);
+  {
+    v1 = *(_QWORD*)(this_ + 3616);
+    __asm__ volatile("" ::"r"(v1));
+  }
   if (v1 != 0) {
-    v2 = *(_QWORD*)(this_ + 3632);
-    v3 = *(_QWORD*)(this_ + 3624);
+    {
+      v2 = *(_QWORD*)(this_ + 3632);
+      __asm__ volatile("" ::"r"(v2));
+    }
+    {
+      v3 = *(_QWORD*)(this_ + 3624);
+      __asm__ volatile("" ::"r"(v3));
+    }
     v4 = this_ + 32;
     if (v1 <= v2) {
       v5 = 0;
     }
     else {
       v5 = *(_QWORD*)(this_ + 3624);
+      __asm__ volatile("" ::"r"(v5));
     }
     v6 = v5 + v2;
     if (v6 - 1 >= v3) {
       v7 = *(_QWORD*)(this_ + 3624);
+      __asm__ volatile("" ::"r"(v7));
     }
     else {
       v7 = 0;
     }
     v8 = (float*)(v4 + 56 * (v6 - 1 - v7));
-    v9 = v8[2];
-    v10 = v8[3];
-    v12 = v8[4];
-    v11 = v8[5];
-    v14 = v8[6];
-    v13 = v8[7];
+    {
+      v9 = v8[2];
+      __asm__ volatile("" ::"w"(v9));
+    }
+    {
+      v10 = v8[3];
+      __asm__ volatile("" ::"w"(v10));
+    }
+    {
+      v12 = v8[4];
+      __asm__ volatile("" ::"w"(v12));
+    }
+    {
+      v11 = v8[5];
+      __asm__ volatile("" ::"w"(v11));
+    }
+    {
+      v14 = v8[6];
+      __asm__ volatile("" ::"w"(v14));
+    }
+    {
+      v13 = v8[7];
+      __asm__ volatile("" ::"w"(v13));
+    }
     v15 = v13;
     v16 = v14;
     v17 = v11;
@@ -750,24 +779,57 @@ __int64 math_735c60(__int64 this_)
         v3 = 0;
       }
       v21 = (float*)(v4 + 56 * (v6 - 2 - v3));
-      v20 = v9 - v21[2];
-      v19 = v10 - v21[3];
-      v18 = v12 - v21[4];
-      v17 = v11 - v21[5];
-      v16 = v14 - v21[6];
-      v15 = v13 - v21[7];
+      {
+        v20 = v9 - v21[2];
+        __asm__ volatile("" ::"w"(v20));
+      }
+      {
+        v19 = v10 - v21[3];
+        __asm__ volatile("" ::"w"(v19));
+      }
+      {
+        v18 = v12 - v21[4];
+        __asm__ volatile("" ::"w"(v18));
+      }
+      {
+        v17 = v11 - v21[5];
+        __asm__ volatile("" ::"w"(v17));
+      }
+      {
+        v16 = v14 - v21[6];
+        __asm__ volatile("" ::"w"(v16));
+      }
+      {
+        v15 = v13 - v21[7];
+        __asm__ volatile("" ::"w"(v15));
+      }
     }
-    v22 = *(float*)(this_ + 8);
-    v23 = *(_QWORD*)(this_ + 4464);
-    v24 = *(float*)(this_ + 4) * *(float*)(this_ + 4);
-    v25 = *(float*)(this_ + 12);
+    {
+      v22 = *(float*)(this_ + 8);
+      __asm__ volatile("" ::"w"(v22));
+    }
+    {
+      v23 = *(_QWORD*)(this_ + 4464);
+      __asm__ volatile("" ::"r"(v23));
+    }
+    {
+      v24 = *(float*)(this_ + 4) * *(float*)(this_ + 4);
+      __asm__ volatile("" ::"w"(v24));
+    }
+    {
+      v25 = *(float*)(this_ + 12);
+      __asm__ volatile("" ::"w"(v25));
+    }
     v26 = v18 * v22;
     v27 = (float)(v19 * v22) * (float)(v19 * v22);
     v28 = (float)(v12 * v25) * (float)(v12 * v25);
     v29 = v24 + (float)((float)(v10 * v25) * (float)(v10 * v25));
     v30 = (float)(v24 + (float)((float)(v9 * v25) * (float)(v9 * v25))) +
           (float)((float)(v20 * v22) * (float)(v20 * v22));
-    v31 = *(float*)(this_ + 4596);
+    {
+      v31 = *(float*)(this_ + 4596);
+      __asm__ volatile("" ::"w"(v31));
+    }
     v32 = v31 * 0x1.0000000000000p-1f;
     v33 = (float)(v31 * v31) * (float)((2 * v23) | 1uLL);
     if (fabsf(v9 + v20) > v32 ||
@@ -793,20 +855,35 @@ __int64 math_735c60(__int64 this_)
         *(_QWORD*)(this_ + 4464) = 0;
       }
     LABEL_25:
-      v37 = *(float*)(this_ + 24);
-      v38 = *(float*)(this_ + 20);
+      {
+        v37 = *(float*)(this_ + 24);
+        __asm__ volatile("" ::"w"(v37));
+      }
+      {
+        v38 = *(float*)(this_ + 20);
+        __asm__ volatile("" ::"w"(v38));
+      }
       v39 = v37 * v11;
       v40 = v37 * v14;
-      v41 = *(float*)(this_ + 16) * *(float*)(this_ + 16);
+      {
+        v41 = *(float*)(this_ + 16) * *(float*)(this_ + 16);
+        __asm__ volatile("" ::"w"(v41));
+      }
       v42 = v16 * v38;
       v43 = v17 * v38;
       v44 = v15 * v38;
-      v45 = *(float*)(this_ + 4600);
+      {
+        v45 = *(float*)(this_ + 4600);
+        __asm__ volatile("" ::"w"(v45));
+      }
       v46 = (float)(v37 * v13) * (float)(v37 * v13);
       v47 = v41 + (float)(v39 * v39);
       v48 = v41 + (float)(v40 * v40);
       v49 = v42 * v42;
-      v50 = *(_QWORD*)(this_ + 4480);
+      {
+        v50 = *(_QWORD*)(this_ + 4480);
+        __asm__ volatile("" ::"r"(v50));
+      }
       v51 = v47 + (float)(v43 * v43);
       v52 = v45 * 0x1.cccccc0000000p-1f;
       v53 = (float)(v45 * v45) * (float)((2 * v50) | 1uLL);
@@ -835,13 +912,19 @@ __int64 math_735c60(__int64 this_)
         }
         goto LABEL_38;
       }
-      v58 = *(_QWORD*)v8;
+      {
+        v58 = *(_QWORD*)v8;
+        __asm__ volatile("" ::"r"(v58));
+      }
       *(_QWORD*)(this_ + 4480) = v50 + 1;
       *(_QWORD*)(this_ + 4488) = v58;
     LABEL_38:
       *(float*)(this_ + 4432) = v30;
       *(float*)(this_ + 4436) = v35;
-      v59 = *(_BYTE*)(this_ + 4456);
+      {
+        v59 = *(_BYTE*)(this_ + 4456);
+        __asm__ volatile("" ::"r"(v59));
+      }
       *(float*)(this_ + 4440) = v36;
       *(float*)(this_ + 4444) = v51;
       *(float*)(this_ + 4448) = v56;
@@ -853,7 +936,10 @@ __int64 math_735c60(__int64 this_)
     }
     *(_QWORD*)(this_ + 4464) = v23 + 1;
     *(_QWORD*)(this_ + 4472) = *(_QWORD*)v8;
-    v11 = v8[5];
+    {
+      v11 = v8[5];
+      __asm__ volatile("" ::"w"(v11));
+    }
     goto LABEL_25;
   }
   return this_;
