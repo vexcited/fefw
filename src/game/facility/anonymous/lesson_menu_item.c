@@ -56,6 +56,7 @@ __int64 game_156c910(__int64 result, const char*, int, ...);
 __int64 GameSubquestData_125b8e0_alt2(_QWORD*, const char*, unsigned __int8);
 void Manager_a51e10(__int64, unsigned int, int, int);
 void game_156c5d0(__int64, __int64, char);
+char* task_a4dbe0(__int64, const char*, char);
 
 __int64 LessonMenuItem_ACall(_QWORD* a1)
 {
@@ -407,7 +408,7 @@ __int64 LessonMenuItem_DrawText(_QWORD* a1)
     v51_.v71 = 8;
     v51_.v57 = -65529;
     v51_.v58 = -65528;
-    v23 = GameRoutine_a4dbe0(v22, v20, 0);
+    v23 = task_a4dbe0(v22, v20, 0);
     if (v23 != nullptr) {
       v24 = (__int64)v23;
       v25 = ui_LayoutAccessor_FindTextBox((__int64*)v4, (__int64)"T_Type");

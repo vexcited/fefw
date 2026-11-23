@@ -100,6 +100,7 @@ void gfx_render_b83060(__int64 a1);
 void gfx_render_b853e0(__int64 a1, _QWORD* a2);
 int8x16_t* GameRoutine_b7ea80_alt1(__int64, __int64*);
 __int64 llvm_libcxx_21_libcxx_include___functional_bf3cc0(__int64, __int64);
+int8x16_t* gfx_render_b7ea80(__int64, __int64*);
 
 float32x4_t gfx_render_b3bca0(float* a1, float32x4_t* a2)
 {
@@ -2849,8 +2850,8 @@ void gfx_render_b853e0(__int64 a1, _QWORD* a2)
   else {
     v25 = 0;
   }
-  if (!(LANES128_OF(vbslq_s8(vdupq_n_s32(v25), v22[3], v24)).n128_f32[1] <=
-        0x0.0p+0f)) {
+  if (LANES128_OF(vbslq_s8(vdupq_n_s32(v25), v22[3], v24)).n128_f32[1] >
+      0x0.0p+0f) {
     v26 = GameRoutine_b3f800((_QWORD*)(*(_QWORD*)(v18 + 288) + 592LL), "Moon"),
     v105 = COERCE_AS(__typeof__(v105), PSEUDO_REGISTER(__n128, "v0", "=w")),
     v106 = COERCE_AS(__typeof__(v106), PSEUDO_REGISTER(__n128, "v1", "=w")),
@@ -3107,7 +3108,7 @@ void gfx_render_b853e0(__int64 a1, _QWORD* a2)
       v85 = COERCE_AS(__typeof__(v85), PSEUDO_REGISTER(float, "s0", "=w")),
       v87 = COERCE_AS(__typeof__(v87), PSEUDO_REGISTER(float, "s0", "=w")),
       v89 = COERCE_AS(__typeof__(v89), PSEUDO_REGISTER(float, "s0", "=w"));
-  if (!(v79 >= v80)) {
+  if (v79 < v80) {
     v82 = f_.v225;
   }
   else {
@@ -3263,7 +3264,7 @@ void gfx_render_b853e0(__int64 a1, _QWORD* a2)
       v100 = (int)(float)(v98 * (float)v97);
       f_.v232 = v100;
       f_.v229 = f_.v226;
-      GameRoutine_b7ea80_alt1((__int64)v99, (__int64*)&f_.v228),
+      gfx_render_b7ea80((__int64)v99, (__int64*)&f_.v228),
           v105 =
               COERCE_AS(__typeof__(v105), PSEUDO_REGISTER(__n128, "v0", "=w")),
           v106 =
@@ -4017,7 +4018,7 @@ LABEL_191:
     v170 = 164;
   }
   v171 = *(float*)&v169[v170];
-  if (!(v171 > 0x1.0000000000000p+0f)) {
+  if (v171 <= 0x1.0000000000000p+0f) {
     v168 = *(float*)&v169[v170];
   }
   v172 = v171 < 0x0.0p+0f;

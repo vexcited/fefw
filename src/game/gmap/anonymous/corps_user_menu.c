@@ -124,6 +124,7 @@ void nn_mem_StandardAllocator_Free_alt1(__int64, __int64) __asm__(
 void CorpsUserMenu_172bca0(__int64 a1);
 _QWORD* MapSortieMenu_871860_alt1(__int64, __int64, __int64, __int64,
                                   __int64) __asm__("MapSortieMenu_871860");
+_QWORD* MapSortieMenu_871860_alt2(__int64, __int64, __int64, __int64, __int64);
 
 __int64 CorpsUserMenu_Unknown161(__int64 a1)
 {
@@ -386,6 +387,9 @@ __int64 CorpsUserMenu_172c0c0(_QWORD* a1)
 
 __int64 CorpsUserMenu_172c1a0(__int64 a1)
 {
+
+#pragma clang fp contract(on)
+
   _QWORD* v1;
   __int64 v2;
   __int64 v3;
@@ -433,7 +437,7 @@ __int64 CorpsUserMenu_172c1a0(__int64 a1)
   v12_.v13 = v12_.v12;
   v12_.v12[0] = (__int64 (*)())GameData_20b61e8;
   v10_.v10[0] = GameData_20b61e8;
-  v1 = MapSortieMenu_871860_alt1(v8, (__int64)&v14, (__int64)&v15_.v15,
+  v1 = MapSortieMenu_871860_alt2(v8, (__int64)&v14, (__int64)&v15_.v15,
                                  (__int64)v12_.v12, (__int64)v10_.v10);
   if (v10_.v11 == v10_.v10) {
     v2 = 32;

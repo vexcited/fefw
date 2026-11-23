@@ -269,10 +269,10 @@ __int64 Manager_11f260(__int64, __int64);
 __int64 SoundArchivePlayer_27a360(__int64 result, __int64);
 extern __int64 (*GameData_1f666d0[])();
 extern __int64 (*GameData_1f667d0[])();
-__int64 BaseNX_unloadAddonArchive(__int64 result, const char* a2,
-                                  const char* a3);
-__int64 BaseNX_unloadMemoryAddonArchive(__int64 result, const char* a2,
-                                        const char* a3);
+__int64 BaseNX_unloadAddonArchive_alt1(__int64 result, const char* a2,
+                                       const char* a3);
+__int64 BaseNX_unloadMemoryAddonArchive_alt1(__int64 result, const char* a2,
+                                             const char* a3);
 __int64 Crc32List_117a00_alt1(_QWORD*) __asm__("Crc32List_117a00");
 __int64 GameHr_27d9e0(__int64 result);
 __int64 GameHr_28aca0(__int64 result, int, unsigned int);
@@ -326,6 +326,15 @@ __int64 BaseNX_prepareSound_15d980(__int64 a1, unsigned int a2, int a3,
 bool BaseNX_isSequenceSound(__int64 a1, __int64 a2, __int64 a3, char* a4);
 float BaseNX_calcSound3DVolume(__int64 a1, int* a2);
 float BaseNX_calcSound3DPan(__int64 a1, int* a2, float a3, float a4, float a5);
+__int64 GameRoutine_1a09c70(_QWORD);
+__int64 GameRoutine_1a09cf0(_QWORD, _QWORD, _QWORD);
+__int64 GameRoutine_2767b0_alt2(__int64);
+__int64 SoundDataManager_27b820_alt2(__int64);
+__n128 BaseNX_15b4c0_alt2(__int64, __int64);
+__n128 snd_11f260(__int64, __int64);
+__int64 BaseNX_unloadAddonArchive(__int64 result, const char* a2, __int64 a3);
+__int64 BaseNX_unloadMemoryAddonArchive(__int64 result, const char* a2,
+                                        __int64 a3);
 
 __int64 BaseNX_1572a0(__int64 a1)
 {
@@ -1778,13 +1787,16 @@ LABEL_31:
   return nn_os_UnlockMutex_alt2((__int64)v28 + 840);
 }
 
-__int64 BaseNX_unloadAddonArchive(__int64 result, const char* a2,
-                                  const char* a3)
+__int64 BaseNX_unloadAddonArchive(__int64 result, const char* a2, __int64 a3)
 {
+
+#pragma clang fp contract(on)
+
+#pragma clang fp contract(off)
   const char* v3;
   __int64 v5;
   __int64 v6;
-  unsigned __int64 v7;
+  __int64 v7;
   __int64 v8;
   __int64* v9;
   __int64 v10;
@@ -1792,16 +1804,17 @@ __int64 BaseNX_unloadAddonArchive(__int64 result, const char* a2,
   __int64 v12;
   __int64 v13;
   __int64 v14;
-  unsigned __int64 v15;
+  __int64 v15;
   __int64 v16;
   __int64 v17;
-  __int64 v18;
+  long double v18;
   __int64 v19;
   __int64 v20;
+  __int64 v21;
   struct {
-    _QWORD v21[4];
-    _QWORD* v22;
-  } v21_;
+    _QWORD v22[4];
+    _QWORD* v23;
+  } v22_;
 
   if (a2 != nullptr) {
     v3 = a2;
@@ -1811,7 +1824,7 @@ __int64 BaseNX_unloadAddonArchive(__int64 result, const char* a2,
   }
   if (*(_BYTE*)(result + 4137) == 1) {
     v5 = result;
-    result = strlen_alt1(v3);
+    result = GameRoutine_1a09c70(v3);
     v6 = *(_BYTE*)(v5 + 56) >> 1;
     if ((*(_BYTE*)(v5 + 56) & 1) != 0) {
       v6 = *(_QWORD*)(v5 + 64);
@@ -1823,7 +1836,7 @@ __int64 BaseNX_unloadAddonArchive(__int64 result, const char* a2,
         snd_a36650();
       }
       v8 = (*(_BYTE*)(v5 + 56) & 1) != 0 ? *(_QWORD*)(v5 + 72) : v5 + 57;
-      result = memcmp_alt1(v8, (__int64)v3, v7);
+      result = GameRoutine_1a09cf0(v8, v3, v7);
       if ((_DWORD)result == 0) {
         v9 = *(__int64**)(v5 + 4048);
         v10 = *(_QWORD*)(v5 + 4056) - (_QWORD)v9;
@@ -1833,7 +1846,7 @@ __int64 BaseNX_unloadAddonArchive(__int64 result, const char* a2,
             v13 = *v9++;
             v12 = v13;
             if (*(_BYTE*)(v13 + 1440) == 1) {
-              result = strlen_alt1(a3);
+              result = GameRoutine_1a09c70(a3);
               v14 = *(_BYTE*)v12 >> 1;
               if ((*(_BYTE*)v12 & 1) != 0) {
                 v14 = *(_QWORD*)(v12 + 8);
@@ -1844,7 +1857,7 @@ __int64 BaseNX_unloadAddonArchive(__int64 result, const char* a2,
                   goto LABEL_34;
                 }
                 v16 = (*(_BYTE*)v12 & 1) != 0 ? *(_QWORD*)(v12 + 16) : v12 + 1;
-                result = memcmp_alt1(v16, (__int64)a3, v15);
+                result = GameRoutine_1a09cf0(v16, a3, v15);
                 if ((_DWORD)result == 0) {
                   break;
                 }
@@ -1854,36 +1867,36 @@ __int64 BaseNX_unloadAddonArchive(__int64 result, const char* a2,
               return result;
             }
           }
-          BaseNX_15b4c0(v5, v12 + 1376);
+          BaseNX_15b4c0_alt2(v5, v12 + 1376);
           *(_BYTE*)(v12 + 1440) = 0;
           v17 = *(_QWORD*)(v5 + 8);
-          v21_.v21[0] = GameData_1f666d0;
-          v21_.v21[1] = v12;
-          v21_.v22 = v21_.v21;
-          Manager_11f260(v17, (__int64)v21_.v21);
-          if (v21_.v22 == v21_.v21) {
-            v18 = 32;
+          v22_.v22[0] = GameData_1f666d0;
+          v22_.v22[1] = v12;
+          v22_.v23 = v22_.v22;
+          *(__n128*)&v18 = snd_11f260(v17, (__int64)v22_.v22);
+          if (v22_.v23 == v22_.v22) {
+            v19 = 32;
           }
           else {
-            if (v21_.v22 == nullptr) {
+            if (v22_.v23 == nullptr) {
             LABEL_31:
               SoundArchivePlayer_27a360(v5 + 2392, v12 + 32);
-              SoundDataManager_27b820_alt1(v12 + 784);
-              GameRoutine_2767b0_alt1(v12 + 32);
-              v19 = *(_QWORD*)(v12 + 1368);
+              SoundDataManager_27b820_alt2(v12 + 784);
+              GameRoutine_2767b0_alt2(v12 + 32);
+              v20 = *(_QWORD*)(v12 + 1368);
               *(_QWORD*)(v12 + 1368) = 0;
-              if (v19 != 0) {
+              if (v20 != 0) {
                 (*(void (**)(__int64))(*(_QWORD*)snd_g_memory + 24LL))(
                     snd_g_memory);
               }
-              v20 = *(_QWORD*)(v12 + 1360);
+              v21 = *(_QWORD*)(v12 + 1360);
               *(_QWORD*)(v12 + 1360) = 0;
               return (*(__int64 (**)(__int64, __int64))(*(_QWORD*)v5 + 400LL))(
-                  v5, v20);
+                  v5, v21);
             }
-            v18 = 40;
+            v19 = 40;
           }
-          (*(void (**)(__int64))(*v21_.v22 + v18))((__int64)v21_.v22);
+          (*(void (**)(void*))(*v22_.v23 + v19))(v22_.v23);
           goto LABEL_31;
         }
       }
@@ -2059,12 +2072,16 @@ __int64 BaseNX_loadMemoryAddonArchive(__int64 result, char* a2, __int64 a3,
 }
 
 __int64 BaseNX_unloadMemoryAddonArchive(__int64 result, const char* a2,
-                                        const char* a3)
+                                        __int64 a3)
 {
+
+#pragma clang fp contract(on)
+
+#pragma clang fp contract(off)
   const char* v3;
   __int64 v5;
   __int64 v6;
-  unsigned __int64 v7;
+  __int64 v7;
   __int64 v8;
   __int64* v9;
   __int64 v10;
@@ -2072,15 +2089,16 @@ __int64 BaseNX_unloadMemoryAddonArchive(__int64 result, const char* a2,
   __int64 v12;
   __int64 v13;
   __int64 v14;
-  unsigned __int64 v15;
+  __int64 v15;
   __int64 v16;
   __int64 v17;
-  __int64 v18;
+  long double v18;
   __int64 v19;
+  __int64 v20;
   struct {
-    _QWORD v20[4];
-    _QWORD* v21;
-  } v20_;
+    _QWORD v21[4];
+    _QWORD* v22;
+  } v21_;
 
   if (a2 != nullptr) {
     v3 = a2;
@@ -2090,7 +2108,7 @@ __int64 BaseNX_unloadMemoryAddonArchive(__int64 result, const char* a2,
   }
   if (*(_BYTE*)(result + 4137) == 1) {
     v5 = result;
-    result = strlen_alt1(v3);
+    result = GameRoutine_1a09c70(v3);
     v6 = *(_BYTE*)(v5 + 56) >> 1;
     if ((*(_BYTE*)(v5 + 56) & 1) != 0) {
       v6 = *(_QWORD*)(v5 + 64);
@@ -2102,7 +2120,7 @@ __int64 BaseNX_unloadMemoryAddonArchive(__int64 result, const char* a2,
         snd_a36650();
       }
       v8 = (*(_BYTE*)(v5 + 56) & 1) != 0 ? *(_QWORD*)(v5 + 72) : v5 + 57;
-      result = memcmp_alt1(v8, (__int64)v3, v7);
+      result = GameRoutine_1a09cf0(v8, v3, v7);
       if ((_DWORD)result == 0) {
         v9 = *(__int64**)(v5 + 4048);
         v10 = *(_QWORD*)(v5 + 4056) - (_QWORD)v9;
@@ -2112,7 +2130,7 @@ __int64 BaseNX_unloadMemoryAddonArchive(__int64 result, const char* a2,
             v13 = *v9++;
             v12 = v13;
             if (*(_BYTE*)(v13 + 1440) == 1) {
-              result = strlen_alt1(a3);
+              result = GameRoutine_1a09c70(a3);
               v14 = *(_BYTE*)v12 >> 1;
               if ((*(_BYTE*)v12 & 1) != 0) {
                 v14 = *(_QWORD*)(v12 + 8);
@@ -2123,7 +2141,7 @@ __int64 BaseNX_unloadMemoryAddonArchive(__int64 result, const char* a2,
                   goto LABEL_34;
                 }
                 v16 = (*(_BYTE*)v12 & 1) != 0 ? *(_QWORD*)(v12 + 16) : v12 + 1;
-                result = memcmp_alt1(v16, (__int64)a3, v15);
+                result = GameRoutine_1a09cf0(v16, a3, v15);
                 if ((_DWORD)result == 0) {
                   break;
                 }
@@ -2133,34 +2151,34 @@ __int64 BaseNX_unloadMemoryAddonArchive(__int64 result, const char* a2,
               return result;
             }
           }
-          BaseNX_15b4c0(v5, v12 + 1376);
+          BaseNX_15b4c0_alt2(v5, v12 + 1376);
           *(_BYTE*)(v12 + 1440) = 0;
           v17 = *(_QWORD*)(v5 + 8);
-          v20_.v20[0] = GameData_1f667d0;
-          v20_.v20[1] = v12;
-          v20_.v21 = v20_.v20;
-          Manager_11f260(v17, (__int64)v20_.v20);
-          if (v20_.v21 == v20_.v20) {
-            v18 = 32;
+          v21_.v21[0] = GameData_1f667d0;
+          v21_.v21[1] = v12;
+          v21_.v22 = v21_.v21;
+          *(__n128*)&v18 = snd_11f260(v17, (__int64)v21_.v21);
+          if (v21_.v22 == v21_.v21) {
+            v19 = 32;
           }
           else {
-            if (v20_.v21 == nullptr) {
+            if (v21_.v22 == nullptr) {
             LABEL_31:
               SoundArchivePlayer_27a360(v5 + 2392, v12 + 32);
-              SoundDataManager_27b820_alt1(v12 + 784);
-              result = GameRoutine_2767b0_alt1(v12 + 32);
-              v19 = *(_QWORD*)(v12 + 1368);
+              SoundDataManager_27b820_alt2(v12 + 784);
+              result = GameRoutine_2767b0_alt2(v12 + 32);
+              v20 = *(_QWORD*)(v12 + 1368);
               *(_QWORD*)(v12 + 1368) = 0;
-              if (v19 != 0) {
+              if (v20 != 0) {
                 result = (*(__int64 (**)(__int64))(*(_QWORD*)snd_g_memory +
                                                    24LL))(snd_g_memory);
               }
               *(_QWORD*)(v12 + 1360) = 0;
               return result;
             }
-            v18 = 40;
+            v19 = 40;
           }
-          (*(void (**)(__int64))(*v20_.v21 + v18))((__int64)v20_.v21);
+          (*(void (**)(void*))(*v21_.v22 + v19))(v21_.v22);
           goto LABEL_31;
         }
       }

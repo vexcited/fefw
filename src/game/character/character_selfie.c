@@ -830,7 +830,7 @@ void game_character_CharacterSelfie_Start_lambda0_Invoke(__int64 a1)
     return;
   }
   v8 = *(float*)(v1 + 144);
-  if (!(v8 > 0x0.0p+0f)) {
+  if (v8 <= 0x0.0p+0f) {
     v12 = true;
     v13 = true;
   }

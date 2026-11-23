@@ -76,6 +76,13 @@ __int64 CharacterController_d42d20(__int64 result, char*, char*,
 extern __int64 (*GameData_1fe19b8[])();
 extern __int64 (*game_hub_CharacterBehaviorStack_StackMoveLoop_vtable[])();
 void CharacterBehaviorStack_df5940(_QWORD* a1, char** a2, char a3, double a4);
+__int64 GameRoutine_1a0b950(__int64, __int64, unsigned __int64);
+__int64 fw_memory_HeapManager_Allocate_alt2(__int64, __int64, __int64,
+                                            unsigned int);
+__int64 std___1___shared_weak_count___release_weak_alt3(__int64);
+void __attribute__((noreturn)) GameRoutine_60a210_alt2();
+void __attribute__((noreturn)) GameRoutine_df5ca0_alt2();
+void nn_mem_StandardAllocator_Free_alt3(__int64, __int64);
 
 void CharacterBehaviorStack_Destructor(_QWORD* a1)
 {
@@ -364,10 +371,10 @@ void CharacterBehaviorStack_df5940(_QWORD* a1, char** a2, char a3, double a4)
       v15 = vdupq_n_s32(v14);
       v4 = a1[3];
       v39 = vbslq_s8(v15, v13, v39);
-    } while (v12 < (__int64)(a1[4] - v4) >> 4);
+    } while (v12 < (a1[4] - v4) >> 4);
   }
   v16 = (__int64*)fw_memory_g_heap_manager_ptr;
-  v17 = fw_memory_HeapManager_Allocate_alt1(
+  v17 = fw_memory_HeapManager_Allocate_alt2(
       *(_QWORD*)fw_memory_g_heap_manager_ptr, 144, 16, 0);
   *(_QWORD*)(v17 + 8) = 0;
   v18 = (atomic_ullong*)(v17 + 8);
@@ -400,7 +407,7 @@ void CharacterBehaviorStack_df5940(_QWORD* a1, char** a2, char a3, double a4)
     if (*(_QWORD*)(v23 + 200) == 0) {
       v24 = 56;
     }
-    nn_mem_StandardAllocator_Free_alt2(v23 + v24, v22);
+    nn_mem_StandardAllocator_Free_alt3(v23 + v24, v22);
   }
   *(int8x16_t*)(v20 + 104) = v40_.v40;
   *(_QWORD*)(v20 + 120) = v40_.v41;
@@ -412,7 +419,7 @@ void CharacterBehaviorStack_df5940(_QWORD* a1, char** a2, char a3, double a4)
     v30 = ((__int64)v25 - v28) >> 4;
     v31 = v30 + 1;
     if ((unsigned __int64)(v30 + 1) >> 60 != 0) {
-      GameRoutine_df5ca0_alt1();
+      GameRoutine_df5ca0_alt2();
     }
     v32 = v26 - v28;
     if (v32 >> 3 > v31) {
@@ -425,9 +432,9 @@ void CharacterBehaviorStack_df5940(_QWORD* a1, char** a2, char a3, double a4)
       v33 = v31;
     }
     if (v33 >> 60 != 0) {
-      GameRoutine_60a210_alt1();
+      GameRoutine_60a210_alt2();
     }
-    v34 = fw_memory_HeapManager_Allocate_alt1(*v16, 16 * v33, 16, 0);
+    v34 = fw_memory_HeapManager_Allocate_alt2(*v16, 16 * v33, 16, 0);
     v35 = (__int64*)(v34 + v29);
     v36 = v34 + 16 * v33;
     *v35 = v21;
@@ -436,7 +443,7 @@ void CharacterBehaviorStack_df5940(_QWORD* a1, char** a2, char a3, double a4)
     v27 = v34 + v29 + 16;
     atomic_fetch_add_explicit((atomic_ullong* volatile)(v20 + 8), 1u,
                               memory_order_relaxed);
-    memcpy_alt1(v37, v28, v29);
+    GameRoutine_1a0b950(v37, v28, v29);
     a1[3] = v37;
     a1[4] = v27;
     a1[5] = v36;
@@ -445,7 +452,7 @@ void CharacterBehaviorStack_df5940(_QWORD* a1, char** a2, char a3, double a4)
       if (*(_QWORD*)(*v16 + 200) == 0) {
         v38 = 56;
       }
-      nn_mem_StandardAllocator_Free_alt2(*v16 + v38, v28);
+      nn_mem_StandardAllocator_Free_alt3(*v16 + v38, v28);
     }
   }
   else {
@@ -458,7 +465,7 @@ void CharacterBehaviorStack_df5940(_QWORD* a1, char** a2, char a3, double a4)
   a1[4] = v27;
   if (atomic_fetch_add(v18, 0xFFFFFFFFFFFFFFFFLL) == 0) {
     (*(void (**)(__int64))(*(_QWORD*)v20 + 16LL))(v20);
-    std___1___shared_weak_count___release_weak_alt2(v20);
+    std___1___shared_weak_count___release_weak_alt3(v20);
   }
 }
 

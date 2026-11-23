@@ -280,6 +280,9 @@ __int64 memory_10a2280(__int64 result);
 void memory_1712bf0(_QWORD* a1);
 void memory_1712cd0(_QWORD* a1);
 float GameRoutine_5eaef0_alt1();
+_QWORD* GameRoutine_654050_alt2(_QWORD* result, _QWORD*);
+__int64 GameRoutine_1a0b950(__int64, __int64, unsigned __int64);
+float game_10be1a0_alt1(__int64, __int64);
 
 __int64 memory_177800(__int64 a1, __int64 a2, int* a3)
 {
@@ -3641,8 +3644,9 @@ void memory_d3c160(__int64 a1)
   }
 }
 
-__attribute__((no_builtin("memset", "memcpy", "memmove")))
-__int64 memory_e59440(__int64 a1, __int64 a2)
+__attribute__((no_builtin("memset", "memcpy", "memmove"))) __int64
+
+memory_e59440(__int64 a1, __int64 a2)
 {
 
 #pragma clang fp contract(off)

@@ -45,6 +45,9 @@ __int64 GameHr_ad5280(_QWORD*);
 __int64 game_615760(__int64, __int64);
 __int64 std___1___shared_weak_count___release_weak_alt1(__int64) __asm__(
     "std___1___shared_weak_count___release_weak");
+float GameRoutine_1a09fb0(float);
+float GameRoutine_1a09fc0(float);
+float GameRoutine_1a0a8c0(float);
 
 __int64 gfxa_TaskSSAO_Impl_Impl(_QWORD* a1, __int64 a2)
 {
@@ -380,6 +383,9 @@ __int64 TaskSSAO_b79df0(_QWORD* a1)
 
 __int64 TaskSSAO_b79fc0(_DWORD* a1, __int64 a2, __int64 a3, __int64 a4)
 {
+
+#pragma clang fp contract(on)
+
   __int64 v5;
   int32x4_t v8;
   int32x4_t v9;
@@ -767,44 +773,44 @@ __int64 TaskSSAO_b79fc0(_DWORD* a1, __int64 a2, __int64 a3, __int64 a4)
       v92 = v69 + 620;
       v90 = 0;
       do {
-        v93 = cosf(v89 * (float)(unsigned int)v90),
+        v93 = GameRoutine_1a09fc0(v89 * (float)(unsigned int)v90),
         v11 = COERCE_AS(__typeof__(v11), PSEUDO_REGISTER(__n128, "v1", "=w")),
         v12 = COERCE_AS(__typeof__(v12), PSEUDO_REGISTER(__n128, "v3", "=w")),
         v9 = COERCE_AS(__typeof__(v9), PSEUDO_REGISTER(__n128, "v2", "=w"));
-        v94 = sinf(v89 * (float)(unsigned int)v90),
+        v94 = GameRoutine_1a09fb0(v89 * (float)(unsigned int)v90),
         v11 = COERCE_AS(__typeof__(v11), PSEUDO_REGISTER(__n128, "v1", "=w")),
         v12 = COERCE_AS(__typeof__(v12), PSEUDO_REGISTER(__n128, "v3", "=w")),
         v9 = COERCE_AS(__typeof__(v9), PSEUDO_REGISTER(__n128, "v2", "=w"));
         *(float*)(v92 - 60) = v93;
         *(float*)(v92 - 56) = v94;
         *(_QWORD*)(v92 - 52) = 0;
-        v95 = cosf(v89 * (float)(unsigned int)(v90 + 1)),
+        v95 = GameRoutine_1a09fc0(v89 * (float)(unsigned int)(v90 + 1)),
         v11 = COERCE_AS(__typeof__(v11), PSEUDO_REGISTER(__n128, "v1", "=w")),
         v12 = COERCE_AS(__typeof__(v12), PSEUDO_REGISTER(__n128, "v3", "=w")),
         v9 = COERCE_AS(__typeof__(v9), PSEUDO_REGISTER(__n128, "v2", "=w"));
-        v96 = sinf(v89 * (float)(unsigned int)(v90 + 1)),
+        v96 = GameRoutine_1a09fb0(v89 * (float)(unsigned int)(v90 + 1)),
         v11 = COERCE_AS(__typeof__(v11), PSEUDO_REGISTER(__n128, "v1", "=w")),
         v12 = COERCE_AS(__typeof__(v12), PSEUDO_REGISTER(__n128, "v3", "=w")),
         v9 = COERCE_AS(__typeof__(v9), PSEUDO_REGISTER(__n128, "v2", "=w"));
         *(float*)(v92 - 44) = v95;
         *(float*)(v92 - 40) = v96;
         *(_QWORD*)(v92 - 36) = 0;
-        v97 = cosf(v89 * (float)(unsigned int)(v90 + 2)),
+        v97 = GameRoutine_1a09fc0(v89 * (float)(unsigned int)(v90 + 2)),
         v11 = COERCE_AS(__typeof__(v11), PSEUDO_REGISTER(__n128, "v1", "=w")),
         v12 = COERCE_AS(__typeof__(v12), PSEUDO_REGISTER(__n128, "v3", "=w")),
         v9 = COERCE_AS(__typeof__(v9), PSEUDO_REGISTER(__n128, "v2", "=w"));
-        v98 = sinf(v89 * (float)(unsigned int)(v90 + 2)),
+        v98 = GameRoutine_1a09fb0(v89 * (float)(unsigned int)(v90 + 2)),
         v11 = COERCE_AS(__typeof__(v11), PSEUDO_REGISTER(__n128, "v1", "=w")),
         v12 = COERCE_AS(__typeof__(v12), PSEUDO_REGISTER(__n128, "v3", "=w")),
         v9 = COERCE_AS(__typeof__(v9), PSEUDO_REGISTER(__n128, "v2", "=w"));
         *(float*)(v92 - 28) = v97;
         *(float*)(v92 - 24) = v98;
         *(_QWORD*)(v92 - 20) = 0;
-        v99 = cosf(v89 * (float)(unsigned int)(v90 + 3)),
+        v99 = GameRoutine_1a09fc0(v89 * (float)(unsigned int)(v90 + 3)),
         v11 = COERCE_AS(__typeof__(v11), PSEUDO_REGISTER(__n128, "v1", "=w")),
         v12 = COERCE_AS(__typeof__(v12), PSEUDO_REGISTER(__n128, "v3", "=w")),
         v9 = COERCE_AS(__typeof__(v9), PSEUDO_REGISTER(__n128, "v2", "=w"));
-        v100 = sinf(v89 * (float)(unsigned int)(v90 + 3)),
+        v100 = GameRoutine_1a09fb0(v89 * (float)(unsigned int)(v90 + 3)),
         v11 = COERCE_AS(__typeof__(v11), PSEUDO_REGISTER(__n128, "v1", "=w")),
         v12 = COERCE_AS(__typeof__(v12), PSEUDO_REGISTER(__n128, "v3", "=w")),
         v9 = COERCE_AS(__typeof__(v9), PSEUDO_REGISTER(__n128, "v2", "=w"));
@@ -821,11 +827,11 @@ __int64 TaskSSAO_b79fc0(_DWORD* a1, __int64 a2, __int64 a3, __int64 a4)
     if (v88 != 0) {
       v101 = v69 + 16 * v90 + 572;
       do {
-        v102 = cosf(v89 * (float)(unsigned int)v90),
+        v102 = GameRoutine_1a09fc0(v89 * (float)(unsigned int)v90),
         v11 = COERCE_AS(__typeof__(v11), PSEUDO_REGISTER(__n128, "v1", "=w")),
         v12 = COERCE_AS(__typeof__(v12), PSEUDO_REGISTER(__n128, "v3", "=w")),
         v9 = COERCE_AS(__typeof__(v9), PSEUDO_REGISTER(__n128, "v2", "=w"));
-        v103 = sinf(v89 * (float)(unsigned int)v90),
+        v103 = GameRoutine_1a09fb0(v89 * (float)(unsigned int)v90),
         v11 = COERCE_AS(__typeof__(v11), PSEUDO_REGISTER(__n128, "v1", "=w")),
         v12 = COERCE_AS(__typeof__(v12), PSEUDO_REGISTER(__n128, "v3", "=w")),
         v9 = COERCE_AS(__typeof__(v9), PSEUDO_REGISTER(__n128, "v2", "=w"));
@@ -891,11 +897,11 @@ __int64 TaskSSAO_b79fc0(_DWORD* a1, __int64 a2, __int64 a3, __int64 a4)
                                (((v125 << 15) & 0xEFC60000 ^ v125) >> 18),
                            0x20u) +
            0x0.0p+0f;
-    *(float*)v104 = cosf(v119 / v87),
+    *(float*)v104 = GameRoutine_1a09fc0(v119 / v87),
     v11 = COERCE_AS(__typeof__(v11), PSEUDO_REGISTER(__n128, "v1", "=w")),
     v12 = COERCE_AS(__typeof__(v12), PSEUDO_REGISTER(__n128, "v3", "=w")),
     v9 = COERCE_AS(__typeof__(v9), PSEUDO_REGISTER(__n128, "v2", "=w"));
-    *(float*)(v104 + 4) = sinf(v123),
+    *(float*)(v104 + 4) = GameRoutine_1a09fb0(v123),
                      v11 = COERCE_AS(__typeof__(v11),
                                      PSEUDO_REGISTER(__n128, "v1", "=w")),
                      v12 = COERCE_AS(__typeof__(v12),
@@ -923,7 +929,7 @@ __int64 TaskSSAO_b79fc0(_DWORD* a1, __int64 a2, __int64 a3, __int64 a4)
   v11 = COERCE_AS(__typeof__(v11), PSEUDO_REGISTER(__n128, "v1", "=w")),
   v12 = COERCE_AS(__typeof__(v12), PSEUDO_REGISTER(__n128, "v3", "=w")),
   v9 = COERCE_AS(__typeof__(v9), PSEUDO_REGISTER(__n128, "v2", "=w"));
-  v132 = tanf(v131 * 0x1.0000000000000p-1f),
+  v132 = GameRoutine_1a0a8c0(v131 * 0x1.0000000000000p-1f),
   v11 = COERCE_AS(__typeof__(v11), PSEUDO_REGISTER(__n128, "v1", "=w")),
   v12 = COERCE_AS(__typeof__(v12), PSEUDO_REGISTER(__n128, "v3", "=w")),
   v9 = COERCE_AS(__typeof__(v9), PSEUDO_REGISTER(__n128, "v2", "=w"));

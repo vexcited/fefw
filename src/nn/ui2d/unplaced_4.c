@@ -13,10 +13,11 @@ float sinf(float);
 int strcmp(const char*, const char*);
 void nn_detail_UnexpectedDefaultImpl();
 void nn_ui2d_58b740(__int64 a1, __int64 a2, __int64 a3, unsigned __int16 a4);
-float nn_ui2d_59dbe0(__int64 a1, float* a2, __int64 a3);
+float nn_ui2d_59dbe0_alt1(__int64 a1, float* a2, __int64 a3);
 float nn_ui2d_59f2e0(_WORD* a1, float a2, float a3);
 __int64 nn_util_ConvertCharacterUtf8ToUtf32_alt1(__int64, const char*);
 __int64 nn_util_PickOutCharacterFromUtf8String_alt1(__int64, __int64);
+unsigned __int64 nn_ui2d_59dbe0(unsigned __int64 result, float* a2, __int64 a3);
 
 void nn_ui2d_58b740(__int64 a1, __int64 a2, __int64 a3, unsigned __int16 a4)
 {
@@ -259,127 +260,118 @@ void nn_ui2d_58b740(__int64 a1, __int64 a2, __int64 a3, unsigned __int16 a4)
   }
 }
 
-float nn_ui2d_59dbe0(__int64 a1, float* a2, __int64 a3)
+unsigned __int64 nn_ui2d_59dbe0(unsigned __int64 result, float* a2, __int64 a3)
 {
-#pragma clang fp contract(fast)
-  int count;
-  unsigned __int16 flags;
-  __int64 font;
-  float width;
-  float scale;
-  unsigned __int64 at;
-  unsigned __int64 next;
+  unsigned __int64 v5;
+  int v6;
+  int v7;
+  float v8;
+  unsigned __int64 v9;
+  int v10;
+  float v11;
+  bool v12;
+  unsigned __int64 v13;
+  unsigned __int64 v14;
   int i;
-  float total;
+  unsigned __int64 v17;
   struct {
-    _BYTE end;
-    unsigned __int64 cursor;
-    unsigned int code;
-    unsigned int utf8;
+    char gap0_[12];
+    _BYTE v18[4];
+    unsigned __int64 v19;
+    unsigned int v20;
   } f_;
+  int v21;
 
-  count = *(_DWORD*)(*(_QWORD*)(a1 + 328) + 156LL);
+  v5 = result;
+  v6 = *(_DWORD*)(*(_QWORD*)(result + 328) + 156LL);
   *a2 = 0x0.0p+0f;
-  flags = *(unsigned __int16*)(a1 + 276);
-  if ((~flags & 0x9000) == 0) {
-    font = *(_QWORD*)(a1 + 240);
-    width = *(float*)(a1 + 248);
-    at = *(_QWORD*)(a1 + 216);
-    scale = width / (float)(int)(*(__int64 (**)(__int64))(
-        *(_QWORD*)font + 32LL))(font);
-    for (i = 0; i != count; ++i) {
-      f_.end = 0;
-      while (1) {
-        next = (*(unsigned __int64 (**)(__int64, _BYTE*, unsigned __int64))(
-            *(_QWORD*)a3 + 112LL))(a3, &f_.end, at);
-        if ((f_.end & 1) != 0) {
+  v7 = *(unsigned __int16*)(result + 276);
+  if ((~v7 & 0x9000) != 0) {
+    if ((~v7 & 0x3000) != 0 && (v7 & 0x200) != 0 && v6 != 0) {
+      v14 = *(_QWORD*)(result + 216);
+      for (i = 0; i != v6; ++i) {
+        f_.v18[0] = 0;
+        while (1) {
+          result = (*(__int64 (**)(__int64, _BYTE*, unsigned __int64))(
+              *(_QWORD*)a3 + 112LL))(a3, f_.v18, v14);
+          if ((f_.v18[0] & 1) != 0) {
+            break;
+          }
+          v12 = result > v14;
+          v14 = result;
+          if (!v12 ||
+              result > *(_QWORD*)(v5 + 216) +
+                           (unsigned __int64)*(unsigned __int16*)(v5 + 274)) {
+            return result;
+          }
+        }
+        v17 = result;
+        f_.v19 = v14;
+        v21 = 0;
+        nn_util_PickOutCharacterFromUtf8String_alt1((__int64)&v21,
+                                                    (__int64)&f_.v19);
+        f_.v20 = 0;
+        result = nn_util_ConvertCharacterUtf8ToUtf32_alt1((__int64)&f_.v20,
+                                                          (const char*)&v21);
+        if (v17 == 0) {
           break;
         }
-        if (!(next > at) ||
-            next > *(_QWORD*)(a1 + 216) +
-                       (unsigned __int64)*(unsigned __int16*)(a1 + 274)) {
-          goto LABEL_WIDTH;
+        v14 = v17;
+        if ((*(_WORD*)(v5 + 276) & 0x1000 | i) != 0) {
+          result = (*(__int64 (**)(_QWORD, _QWORD))(
+              **(_QWORD**)(v5 + 240) + 128LL))(*(_QWORD*)(v5 + 240), f_.v20);
+          v14 = v17;
+          *a2 = *a2 + (float)(*(float*)(v5 + 260) + (float)(int)result);
         }
-        at = next;
       }
-      f_.cursor = at;
-      f_.utf8 = 0;
-      nn_util_PickOutCharacterFromUtf8String_alt1((__int64)&f_.utf8,
-                                                  (__int64)&f_.cursor);
-      f_.code = 0;
-      nn_util_ConvertCharacterUtf8ToUtf32_alt1((__int64)&f_.code,
-                                               (const char*)&f_.utf8);
-      if (next == 0) {
-        break;
-      }
-      at = next;
-      font = *(_QWORD*)(a1 + 240);
-      *a2 = (*(float*)(a1 + 260) +
-             (float)(int)(*(__int64 (**)(__int64, unsigned int))(
-                 *(_QWORD*)font + 128LL))(font, f_.code)) *
-                scale +
-            *a2;
     }
-  LABEL_WIDTH:
-    total = *(float*)(a1 + 80);
-    if (total == 0x0.0p+0f) {
-      return 0x0.0p+0f;
-    }
-    return *(float*)(*(_QWORD*)(a1 + 336) + 4LL) / total;
   }
-  if ((~flags & 0x3000) == 0) {
-    return *(float*)(*(_QWORD*)(a1 + 336) + 24LL);
-  }
-  if ((flags & 0x200) == 0) {
-    if (count == 1) {
-      return 0x0.0p+0f;
-    }
-    return *(float*)(*(_QWORD*)(a1 + 336) + 4LL) /
-           (float)(unsigned int)(count - 1);
-  }
-  if (count != 0) {
-    at = *(_QWORD*)(a1 + 216);
-    for (i = 0; i != count; ++i) {
-      f_.end = 0;
-      while (1) {
-        next = (*(unsigned __int64 (**)(__int64, _BYTE*, unsigned __int64))(
-            *(_QWORD*)a3 + 112LL))(a3, &f_.end, at);
-        if ((f_.end & 1) != 0) {
+  else {
+    v8 = *(float*)(result + 248);
+    v9 = *(_QWORD*)(result + 216);
+    result = (*(__int64 (**)(_QWORD))(**(_QWORD**)(result + 240) + 32LL))(
+        *(_QWORD*)(result + 240));
+    if (v6 != 0) {
+      v10 = 0;
+      v11 = v8 / (float)(int)result;
+      do {
+        f_.v18[0] = 0;
+        while (1) {
+          result = (*(__int64 (**)(__int64, _BYTE*, unsigned __int64))(
+              *(_QWORD*)a3 + 112LL))(a3, f_.v18, v9);
+          if ((f_.v18[0] & 1) != 0) {
+            break;
+          }
+          v12 = result > v9;
+          v9 = result;
+          v12 = !v12 ||
+                result > *(_QWORD*)(v5 + 216) +
+                             (unsigned __int64)*(unsigned __int16*)(v5 + 274);
+          if (v12) {
+            return result;
+          }
+        }
+        v13 = result;
+        f_.v19 = v9;
+        v21 = 0;
+        nn_util_PickOutCharacterFromUtf8String_alt1((__int64)&v21,
+                                                    (__int64)&f_.v19);
+        f_.v20 = 0;
+        result = nn_util_ConvertCharacterUtf8ToUtf32_alt1((__int64)&f_.v20,
+                                                          (const char*)&v21);
+        if (v13 == 0) {
           break;
         }
-        if (!(next > at) ||
-            next > *(_QWORD*)(a1 + 216) +
-                       (unsigned __int64)*(unsigned __int16*)(a1 + 274)) {
-          goto LABEL_TOTAL;
-        }
-        at = next;
-      }
-      f_.cursor = at;
-      f_.utf8 = 0;
-      nn_util_PickOutCharacterFromUtf8String_alt1((__int64)&f_.utf8,
-                                                  (__int64)&f_.cursor);
-      f_.code = 0;
-      nn_util_ConvertCharacterUtf8ToUtf32_alt1((__int64)&f_.code,
-                                               (const char*)&f_.utf8);
-      if (next == 0) {
-        break;
-      }
-      at = next;
-      if ((*(_WORD*)(a1 + 276) & 0x1000 | i) != 0) {
-        font = *(_QWORD*)(a1 + 240);
+        v9 = v13;
+        result = (*(__int64 (**)(_QWORD, _QWORD))(
+            **(_QWORD**)(v5 + 240) + 128LL))(*(_QWORD*)(v5 + 240), f_.v20);
+        ++v10;
         *a2 = *a2 +
-              (*(float*)(a1 + 260) +
-               (float)(int)(*(__int64 (**)(__int64, unsigned int))(
-                   *(_QWORD*)font + 128LL))(font, f_.code));
-      }
+              (float)((float)(*(float*)(v5 + 260) + (float)(int)result) * v11);
+      } while (v10 != v6);
     }
   }
-LABEL_TOTAL:
-  total = *a2;
-  if (total == 0x0.0p+0f) {
-    return 0x0.0p+0f;
-  }
-  return *(float*)(*(_QWORD*)(a1 + 336) + 4LL) / total;
+  return result;
 }
 
 float nn_ui2d_59f2e0(_WORD* a1, float a2, float a3)
