@@ -22,6 +22,8 @@ extern _UNKNOWN* CudaDriverData_14225e0;
 extern _UNKNOWN** CudaDriverData_1423090;
 void CudaDriverRoutine_743c();
 void CudaDriverStub_10fdf0();
+__int64 CudaDriverStub_10fdf0_6(_QWORD, _QWORD, _QWORD, _QWORD, _QWORD,
+                               _QWORD) __asm__("CudaDriverStub_10fdf0");
 __int64 nvidia_213260(unsigned int* a1);
 __int64 nvidia_213530(unsigned int* a1);
 __int64 nvidia_21c480(unsigned int* a1, __int64 a2);
@@ -285,15 +287,13 @@ void nvidia_233a60(__int64 a1, _QWORD* a2)
   int32x4_t v23;
   int32x4_t v24;
   struct {
-    char v25;
-    char gap1_[6143];
+    _QWORD v25[768];
     _DWORD v26[768];
   } f_;
   float32x4x3_t v27;
   float32x4x3_t v28;
 
-  v13 = COERCE_AS(__typeof__(v13),
-                  PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
+  v9 = 0;
   v2 = *(_QWORD*)(a1 + 64);
   v4 = *(unsigned int*)(v2 + 3732);
   if ((_DWORD)v4 != 0) {
@@ -348,22 +348,19 @@ void nvidia_233a60(__int64 a1, _QWORD* a2)
     }
   }
 LABEL_12:
-  CudaDriverRoutine_98340(a1),
-      v13 = COERCE_AS(__typeof__(v13),
-                      PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
-  CudaDriverStub_10fdf0(),
-      v13 = COERCE_AS(__typeof__(v13),
-                      PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
+  v13 = CudaDriverStub_10fdf0_6(CudaDriverRoutine_98340(a1), 2,
+                                (unsigned int)v9, (_QWORD)f_.v26,
+                                (_QWORD)f_.v25, 0);
   if (v13 == 0 && *(_DWORD*)(v2 + 3732) != 0) {
     v14 = 0;
     v15 = 0;
     do {
       ++v14;
-      *a2 = *((_QWORD*)&f_.v25 + v15);
-      a2[2] = *((_QWORD*)&f_.v25 + v15 + 1);
+      *a2 = f_.v25[v15];
+      a2[2] = f_.v25[v15 + 1];
       v16 = v15 + 2;
       v15 += 3;
-      a2[6] = *((_QWORD*)&f_.v25 + v16);
+      a2[6] = f_.v25[v16];
       a2 += 40;
     } while (v14 < *(unsigned int*)(v2 + 3732));
   }
@@ -674,15 +671,13 @@ void nvidia_245e20(__int64 a1, _QWORD* a2)
   int32x4_t v23;
   int32x4_t v24;
   struct {
-    char v25;
-    char gap1_[6143];
+    _QWORD v25[768];
     _DWORD v26[768];
   } f_;
   float32x4x3_t v27;
   float32x4x3_t v28;
 
-  v13 = COERCE_AS(__typeof__(v13),
-                  PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
+  v9 = 0;
   v2 = *(_QWORD*)(a1 + 64);
   v4 = *(unsigned int*)(v2 + 3732);
   if ((_DWORD)v4 != 0) {
@@ -737,22 +732,19 @@ void nvidia_245e20(__int64 a1, _QWORD* a2)
     }
   }
 LABEL_12:
-  CudaDriverRoutine_98340(a1),
-      v13 = COERCE_AS(__typeof__(v13),
-                      PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
-  CudaDriverStub_10fdf0(),
-      v13 = COERCE_AS(__typeof__(v13),
-                      PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
+  v13 = CudaDriverStub_10fdf0_6(CudaDriverRoutine_98340(a1), 2,
+                                (unsigned int)v9, (_QWORD)f_.v26,
+                                (_QWORD)f_.v25, 0);
   if (v13 == 0 && *(_DWORD*)(v2 + 3732) != 0) {
     v14 = 0;
     v15 = 0;
     do {
       ++v14;
-      *a2 = *((_QWORD*)&f_.v25 + v15);
-      a2[2] = *((_QWORD*)&f_.v25 + v15 + 1);
+      *a2 = f_.v25[v15];
+      a2[2] = f_.v25[v15 + 1];
       v16 = v15 + 2;
       v15 += 3;
-      a2[6] = *((_QWORD*)&f_.v25 + v16);
+      a2[6] = f_.v25[v16];
       a2 += 40;
     } while (v14 < *(unsigned int*)(v2 + 3732));
   }
