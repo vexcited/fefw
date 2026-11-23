@@ -304,8 +304,8 @@ extern __int64* GameData_21349b0;
 extern char GameData_1a9f09e;
 unsigned __int64 GameRoutine_279360(__int64, const char*);
 void __attribute__((noreturn)) GameRoutine_164e10();
-__int64 BaseNX_loadMemoryAddonArchive(__int64 result, char* a2, __int64 a3,
-                                      __int64 a4, char* a5);
+void BaseNX_loadMemoryAddonArchive(__int64 result, char* a2, __int64 a3,
+                                   __int64 a4, char* a5);
 _QWORD* GameRoutine_164e30(__int64, __int64);
 __int64* GameRoutine_1674e0(__int64**, unsigned __int8*, __int64*);
 __int64 Archive_106680(__int64, unsigned __int8*);
@@ -1905,8 +1905,8 @@ __int64 BaseNX_unloadAddonArchive(__int64 result, const char* a2, __int64 a3)
   return result;
 }
 
-__int64 BaseNX_loadMemoryAddonArchive(__int64 result, char* a2, __int64 a3,
-                                      __int64 a4, char* a5)
+void BaseNX_loadMemoryAddonArchive(__int64 result, char* a2, __int64 a3,
+                                   __int64 a4, char* a5)
 {
   char* v5;
   __int64 v9;
@@ -2064,11 +2064,12 @@ __int64 BaseNX_loadMemoryAddonArchive(__int64 result, char* a2, __int64 a3,
         SoundArchivePlayer_27a2c0(v9 + 2392, (__int64)a5, v16 + 32);
         *(_DWORD*)(v16 + 1388) = *(_DWORD*)(v9 + 80);
         *(_QWORD*)(v16 + 1392) = GameRoutine_190240_alt1(v16);
-        return BaseNX_15ad00(v9, v16 + 1376);
+        BaseNX_15ad00(v9, v16 + 1376);
+        return;
       }
     }
   }
-  return result;
+  return;
 }
 
 __int64 BaseNX_unloadMemoryAddonArchive(__int64 result, const char* a2,

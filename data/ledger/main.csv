@@ -4700,7 +4700,7 @@ fff90,116,verified,src/snd/api.cpp,_ZN3snd10startPitchERKNS_3fnd10WeakHandleERKN
 15b4c0,396,verified,src/snd/target/base_nx.c,BaseNX_15b4c0
 15b660,800,verified,src/snd/target/unplaced_3.c,snd_target_15b660
 15b9c0,456,verified,src/snd/target/base_nx.c,BaseNX_unloadAddonArchive
-15bba0,764,disputed,src/snd/target/base_nx.c,BaseNX_loadMemoryAddonArchive
+15bba0,788,verified,src/snd/target/base_nx.c,BaseNX_loadMemoryAddonArchive
 15bee0,436,verified,src/snd/target/base_nx.c,BaseNX_unloadMemoryAddonArchive
 15c0b0,124,verified,src/snd/target/base_nx.cpp,_ZN3snd6target6BaseNX9getItemIdEPKc
 15c130,132,verified,src/snd/target/base_nx.cpp,_ZN3snd6target6BaseNX10getSoundIdEPKc
@@ -16930,7 +16930,7 @@ fff90,116,verified,src/snd/api.cpp,_ZN3snd10startPitchERKNS_3fnd10WeakHandleERKN
 5f9420,656,verified,src/nn/g3d/unplaced_4.c,nn_g3d_5f9420
 5f96c0,1088,verified,src/nn/g3d/unplaced_4.c,nn_g3d_5f96c0
 5f9b20,1176,verified,src/nn/g3d/unplaced_5.c,nn_g3d_5f9b20
-5f9fe0,1168,disputed,src/nn/g3d/unplaced_4.c,nn_g3d_5f9fe0
+5f9fe0,1172,verified,src/nn/g3d/unplaced_4.c,nn_g3d_5f9fe0
 5fa4a0,232,verified,src/game/unnamed/b004_0.c,GameHr_5fa4a0
 5fa590,268,verified,src/game/unnamed/b004_0.c,GameHr_5fa590
 5fa6a0,1044,verified,src/nn/g3d/unplaced_4.c,nn_g3d_5fa6a0

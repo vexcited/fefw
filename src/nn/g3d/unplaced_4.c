@@ -29,7 +29,7 @@ _WORD* nn_g3d_5fa6a0(_WORD* result, double a2, double a3, double a4, double a5,
 __int64 nn_g3d_5fb140(__int64 a1, __int64 a2);
 __int64 nn_g3d_5fb980(__int64 a1, __int64 a2);
 __int64 nn_g3d_5fbf30(__int64* a1, _QWORD* a2, int a3);
-float32x4_t nn_g3d_5f9fe0(__int64 a1, float32x4_t* a2, float32x4_t result);
+void nn_g3d_5f9fe0(__int64 a1, float32x4_t* a2, float32x4_t result);
 
 __int64 nn_g3d_5f8720(__int64 result, float32x4_t* a2)
 {
@@ -1052,7 +1052,7 @@ LABEL_32:
   return result;
 }
 
-float32x4_t nn_g3d_5f9fe0(__int64 a1, float32x4_t* a2, float32x4_t result)
+void nn_g3d_5f9fe0(__int64 a1, float32x4_t* a2, float32x4_t result)
 {
 
 #pragma clang fp contract(on)
@@ -1347,7 +1347,7 @@ LABEL_6:
   }
 LABEL_22:
   if (v5 == 0) {
-    return result;
+    return;
   }
   if (v5 != 1) {
     v58 = v3 + 4;
@@ -1392,7 +1392,7 @@ LABEL_22:
         if ((v5 & 1) != 0) {
           goto LABEL_33;
         }
-        return result;
+        return;
       }
     }
   }
@@ -1409,7 +1409,7 @@ LABEL_33:
     v69[1] = v71;
     v69[2] = v72;
   }
-  return result;
+  return;
 }
 
 _WORD* nn_g3d_5fa6a0(_WORD* result, double a2, double a3, double a4, double a5,
