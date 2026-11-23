@@ -157,11 +157,15 @@ Result MemoryHeapManager::SetHeapSize(size_t size) {
   if (size < m_HeapSize) {
     const size_t difference = m_HeapSize - size;
 
-    if (m_FreeMemoryList.empty()) {
+    // The shipped build tests emptiness through the last node, not the first.
+    auto lastNode = m_FreeMemoryList.end();
+    --lastNode;
+
+    if (lastNode == m_FreeMemoryList.end()) {
       return ResultBusy;
     }
 
-    FreeMemoryNode& last = m_FreeMemoryList.back();
+    FreeMemoryNode& last = *lastNode;
 
     if (m_HeapAddress + size < last.GetAddress()) {
       return ResultBusy;
