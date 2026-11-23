@@ -833,14 +833,15 @@ LABEL_24:
   if (*(float*)&v28 != 0x0.0p+0f ||
       (v48 = *((float*)&v28 + 1), v47 = *(float*)&v28,
        *((float*)&v28 + 1) != 0x0.0p+0f)) {
-    v49 = sqrtf(v46);
+    v49 = __builtin_elementwise_sqrt((float)(v46));
     v47 = *(float*)&v28 / v49;
     v48 = *((float*)&v28 + 1) / v49;
   }
   v50 = *(float*)(a1 + 668);
   v51 = *(float*)(a1 + 672);
   if (v50 != 0x0.0p+0f || v51 != 0x0.0p+0f) {
-    v52 = sqrtf((float)(PSEUDO_UNFUSED(v51 * v51)) + (float)(v50 * v50));
+    v52 = __builtin_elementwise_sqrt((float)(PSEUDO_UNFUSED(v51 * v51)) +
+                                     (float)(v50 * v50));
     v50 = v50 / v52;
     v51 = v51 / v52;
   }
@@ -908,7 +909,7 @@ LABEL_24:
           (float)(*(float*)&v28 * *(float*)&v28);
     if (v62 > 0x0.0p+0f) {
       if (*(float*)&v28 != 0x0.0p+0f || *((float*)&v28 + 1) != 0x0.0p+0f) {
-        v63 = sqrtf(v62);
+        v63 = __builtin_elementwise_sqrt((float)(v62));
         v28 = __PAIR64__(*((float*)&v28 + 1) / v63, *(float*)&v28 / v63);
       }
       v61 = GameRoutine_1a0ab40(*(float*)&v28, *((float*)&v28 + 1)),
@@ -919,7 +920,7 @@ LABEL_24:
     v66 = (float)(PSEUDO_UNFUSED(v64 * v64)) + (float)(v65 * v65);
     if (v66 > 0x0.0p+0f) {
       if (v65 != 0x0.0p+0f || v64 != 0x0.0p+0f) {
-        v67 = sqrtf(v66);
+        v67 = __builtin_elementwise_sqrt((float)(v66));
         v65 = v65 / v67;
         v64 = v64 / v67;
       }
@@ -929,7 +930,7 @@ LABEL_24:
     *(float*)&v21 = GameRoutine_1a0a6a0(v61 - v60, 0x1.921fb60000000p+2f),
     v321 = COERCE_AS(__typeof__(v321), PSEUDO_REGISTER(float, "s1", "=w"));
     v68 = v53 ^ 1;
-    if (sqrtf(
+    if (__builtin_elementwise_sqrt(
             (float)(PSEUDO_UNFUSED(*(float*)(a1 + 588) * *(float*)(a1 + 588))) +
             (float)(*(float*)(a1 + 584) * *(float*)(a1 + 584))) <=
         0x1.cccccc0000000p-1f) {
@@ -1148,7 +1149,8 @@ LABEL_24:
         v88 = *(float*)(a1 + 584);
         v89 = *(float*)(a1 + 588);
         if (v88 != 0x0.0p+0f || v89 != 0x0.0p+0f) {
-          v90 = sqrtf((float)(PSEUDO_UNFUSED(v89 * v89)) + (float)(v88 * v88));
+          v90 = __builtin_elementwise_sqrt((float)(PSEUDO_UNFUSED(v89 * v89)) +
+                                           (float)(v88 * v88));
           v88 = v88 / v90;
           v89 = v89 / v90;
         }
@@ -1251,7 +1253,7 @@ LABEL_24:
       (*(_QWORD*)(v92 + 384) & 0x40000180LL) == 0x80 &&
       *(_BYTE*)(a1 + 28) == 1 && (*(_DWORD*)(a1 + 24) & 0xFFFFFFFB) == 1) {
     if (v108 != 0x0.0p+0f || v107 != 0x0.0p+0f) {
-      v112 = sqrtf(v111);
+      v112 = __builtin_elementwise_sqrt((float)(v111));
       v108 = v108 / v112;
       v107 = v107 / v112;
     }
@@ -1269,7 +1271,7 @@ LABEL_24:
                  0x1.0000000000000p+0f);
     v118 = (float)(v117 * -0x1.99999a0000000p-3f) + 0x1.99999a0000000p-2f;
     if (v115 == 1) {
-      v119 = sqrtf(v111);
+      v119 = __builtin_elementwise_sqrt((float)(v111));
       v114 =
           (float)((float)(v119 * *(float*)(a1 + 600)) * 0x1.0000000000000p-2f) +
           0x1.0000000000000p+2f;
@@ -1484,8 +1486,8 @@ LABEL_203:
   v149 = *(float*)(a1 + 624);
   v150 = fabsf(v109 * v110);
   v151 = (float)(PSEUDO_UNFUSED(v148 * v148)) + (float)(v149 * v149);
-  *(float*)&v25 = sqrtf(v140);
-  v152 = sqrtf(v151);
+  *(float*)&v25 = __builtin_elementwise_sqrt((float)(v140));
+  v152 = __builtin_elementwise_sqrt((float)(v151));
   if (v152 > *(float*)&v25) {
     v153 = v152 - v150;
     if ((float)(v152 - v150) >= *(float*)&v25) {
@@ -1573,7 +1575,8 @@ LABEL_209:
   PSEUDO_LOW_LANE128(v24, n128_f32,
                      (float)(PSEUDO_UNFUSED(v137 * v137)) +
                          (float)(*(float*)&v21 * *(float*)&v21));
-  *(float*)&v25 = sqrtf(LANES128(v24).n128_f32[0]);
+  *(float*)&v25 =
+      __builtin_elementwise_sqrt((float)(LANES128(v24).n128_f32[0]));
   if (LANES128(v24).n128_f32[0] > 0x0.0p+0f) {
     goto LABEL_216;
   }
@@ -1743,10 +1746,10 @@ LABEL_240:
   if ((float)(v182 - v177) != 0x0.0p+0f ||
       (v185 = v182 - v177, v186 = v178 - v179,
        LANES128(v24).n128_f32[0] != 0x0.0p+0f)) {
-    v187 =
-        sqrtf((float)(PSEUDO_UNFUSED(LANES128(v24).n128_f32[0] *
-                                     LANES128(v24).n128_f32[0])) +
-              (float)(LANES128(v23).n128_f32[0] * LANES128(v23).n128_f32[0]));
+    v187 = __builtin_elementwise_sqrt(
+        (float)(PSEUDO_UNFUSED(LANES128(v24).n128_f32[0] *
+                               LANES128(v24).n128_f32[0])) +
+        (float)(LANES128(v23).n128_f32[0] * LANES128(v23).n128_f32[0]));
     v185 = LANES128(v23).n128_f32[0] / v187;
     v186 = LANES128(v24).n128_f32[0] / v187;
   }
@@ -1768,9 +1771,10 @@ LABEL_240:
   v195 = *(float*)(a1 + 364);
   v196 = (float)(PSEUDO_UNFUSED(v95 * v95)) + (float)(v94 * v94);
   v197 = *(float*)(a1 + 672);
-  v198 = sqrtf(v196);
+  v198 = __builtin_elementwise_sqrt((float)(v196));
   v194 = *(float*)(a1 + 668);
-  v199 = sqrtf((float)(PSEUDO_UNFUSED(v197 * v197)) + (float)(v194 * v194));
+  v199 = __builtin_elementwise_sqrt((float)(PSEUDO_UNFUSED(v197 * v197)) +
+                                    (float)(v194 * v194));
   if (v199 <= v195) {
     v204 = *(float*)(a1 + 368);
     v205 = v195 - v204;
@@ -1815,8 +1819,8 @@ LABEL_240:
   }
   v211 = *(float*)(a1 + 388) +
          (float)(v210 * (float)(*(float*)(a1 + 392) - *(float*)(a1 + 388)));
-  if (v199 <=
-      sqrtf((float)(PSEUDO_UNFUSED(v193 * v193)) + (float)(v192 * v192))) {
+  if (v199 <= __builtin_elementwise_sqrt((float)(PSEUDO_UNFUSED(v193 * v193)) +
+                                         (float)(v192 * v192))) {
     v212 = v211;
   }
   else {
@@ -1827,7 +1831,8 @@ LABEL_240:
          (float)(v170 * v212);
   v215 = v193 - v197;
   if ((float)(v192 - v194) != 0x0.0p+0f || v215 != 0x0.0p+0f) {
-    v216 = sqrtf((float)(PSEUDO_UNFUSED(v215 * v215)) + (float)(v213 * v213));
+    v216 = __builtin_elementwise_sqrt((float)(PSEUDO_UNFUSED(v215 * v215)) +
+                                      (float)(v213 * v213));
     v213 = v213 / v216;
     v215 = v215 / v216;
   }
@@ -1874,11 +1879,12 @@ LABEL_302:
     if (*(float*)&v25 <= 0x0.0p+0f ||
         (LANES128(v24).n128_f32[0] =
              LANES128(v24).n128_f32[0] * LANES128(v24).n128_f32[0],
-         *(float*)& v25 =
-             sqrtf((float)(PSEUDO_UNFUSED(v225 * v225)) + (float)(v224 * v224)),
-         LANES128(v23).n128_f32[0] = sqrtf(
-             LANES128(v24).n128_f32[0] +
-             (float)(LANES128(v23).n128_f32[0] * LANES128(v23).n128_f32[0])),
+         *(float*)& v25 = __builtin_elementwise_sqrt(
+             (float)(PSEUDO_UNFUSED(v225 * v225)) + (float)(v224 * v224)),
+         LANES128(v23).n128_f32[0] = __builtin_elementwise_sqrt(
+             (float)(LANES128(v24).n128_f32[0] +
+                     (float)(LANES128(v23).n128_f32[0] *
+                             LANES128(v23).n128_f32[0]))),
          *(float*)&v25 <= LANES128(v23).n128_f32[0])) {
       v182 = v177 + v224;
       v178 = v179 + v225;
@@ -1959,7 +1965,7 @@ LABEL_302:
            (float)(LANES128(v226).n128_f32[0] * LANES128(v226).n128_f32[0]);
     if (v247 > 0x1.0000000000000p-23f) {
       if (LANES128(v226).n128_f32[0] != 0x0.0p+0f || v246 != 0x0.0p+0f) {
-        v248 = sqrtf(v247);
+        v248 = __builtin_elementwise_sqrt((float)(v247));
         LANES128(v226).n128_f32[0] = LANES128(v226).n128_f32[0] / v248;
         v246 = v246 / v248;
       }
@@ -2114,8 +2120,9 @@ LABEL_358:
   LANES128(v22).n128_u64[0] = 0;
   PSEUDO_LOW_LANE128(
       v24, n128_f32,
-      sqrtf((float)(PSEUDO_UNFUSED(*(float*)(a1 + 672) * *(float*)(a1 + 672))) +
-            (float)(*(float*)(a1 + 668) * *(float*)(a1 + 668))));
+      __builtin_elementwise_sqrt(
+          (float)(PSEUDO_UNFUSED(*(float*)(a1 + 672) * *(float*)(a1 + 672))) +
+          (float)(*(float*)(a1 + 668) * *(float*)(a1 + 668))));
   v285 = 0x0.0p+0f;
   if (v284 != 0x0.0p+0f) {
     v286 = (float)(LANES128(v24).n128_f32[0] - v283) / v284;
@@ -2259,9 +2266,10 @@ LABEL_468:
       PSEUDO_LOW_LANE128(v24, n128_u32, LANES128(v23).n128_u32[2]);
       v498 = v498 + LANES128(v23).n128_f32[0];
       v497 = v497 + LANES128(v23).n128_f32[2];
-      *(float*)&v25 =
-          sqrtf(vmuls_lane_f32(LANES128(v23).n128_f32[2], v23, 2) +
-                (float)(LANES128(v23).n128_f32[0] * LANES128(v23).n128_f32[0]));
+      *(float*)&v25 = __builtin_elementwise_sqrt(
+          (float)(vmuls_lane_f32(LANES128(v23).n128_f32[2], v23, 2) +
+                  (float)(LANES128(v23).n128_f32[0] *
+                          LANES128(v23).n128_f32[0])));
       if (LANES128(v22).n128_f32[0] < *(float*)&v25) {
         LANES128(v22).n128_f32[0] = *(float*)&v25;
       }
@@ -2272,7 +2280,8 @@ LABEL_468:
     v502 = v497 / v500;
     f_.v542 = __PAIR64__(LODWORD(v502), LODWORD(v501));
     if (v501 != 0x0.0p+0f || v502 != 0x0.0p+0f) {
-      v503 = sqrtf((float)(PSEUDO_UNFUSED(v502 * v502)) + (float)(v501 * v501));
+      v503 = __builtin_elementwise_sqrt((float)(PSEUDO_UNFUSED(v502 * v502)) +
+                                        (float)(v501 * v501));
       v501 = v501 / v503;
       v502 = v502 / v503;
       f_.v542 = __PAIR64__(LODWORD(v502), LODWORD(v501));
@@ -2310,7 +2319,8 @@ LABEL_468:
       }
       else {
         if (v501 != 0x0.0p+0f || v502 != 0x0.0p+0f) {
-          v504 = sqrtf(LANES128(v226).n128_f32[0]);
+          v504 =
+              __builtin_elementwise_sqrt((float)(LANES128(v226).n128_f32[0]));
           v501 = v501 / v504;
           v502 = v502 / v504;
         }
@@ -2457,16 +2467,16 @@ LABEL_468:
                                       v517)) +
                (float)(*(float*)&GameData_22110c0 * LANES128(v226).n128_f32[0]),
            v521 = v519, v519 != 0x0.0p+0f)) {
-        v522 =
-            sqrtf((float)(PSEUDO_UNFUSED(v519 * v519)) + (float)(v518 * v518));
+        v522 = __builtin_elementwise_sqrt((float)(PSEUDO_UNFUSED(v519 * v519)) +
+                                          (float)(v518 * v518));
         v520 = v518 / v522;
         v521 = v519 / v522;
       }
       v486 = *(float*)(a1 + 668);
       v487 = *(float*)(a1 + 672);
       if (v486 != 0x0.0p+0f || v487 != 0x0.0p+0f) {
-        v485 =
-            sqrtf((float)(PSEUDO_UNFUSED(v487 * v487)) + (float)(v486 * v486));
+        v485 = __builtin_elementwise_sqrt((float)(PSEUDO_UNFUSED(v487 * v487)) +
+                                          (float)(v486 * v486));
         v486 = v486 / v485;
         v487 = v487 / v485;
       }
@@ -2744,9 +2754,10 @@ LABEL_440:
         v321 = COERCE_AS(__typeof__(v321), PSEUDO_REGISTER(float, "s1", "=w"));
         *(float*)(a1 + 296) = v321;
         *(float*)(a1 + 292) = v320;
-        if (sqrtf((float)(PSEUDO_UNFUSED((float)(v321 - v319) *
-                                         (float)(v321 - v319))) +
-                  (float)((float)(v320 - v318) * (float)(v320 - v318))) >
+        if (__builtin_elementwise_sqrt(
+                (float)(PSEUDO_UNFUSED((float)(v321 - v319) *
+                                       (float)(v321 - v319))) +
+                (float)((float)(v320 - v318) * (float)(v320 - v318))) >
             0x1.0000000000000p-1f) {
           v322 = *(_QWORD*)(*(_QWORD*)(a1 + 8) + 8LL);
           *(_QWORD*)(*(_QWORD*)(v322 + 328) + 184LL) = 0x3EB333333EB33333LL;
@@ -2945,7 +2956,8 @@ LABEL_440:
       v381 = ((v373 > 0x1.0000000000000p+0f) & ((unsigned int)v369 >> 10)) != 0
                  ? 0x1.0000000000000p+0f
                  : v373;
-      v382 = sqrtf((float)(PSEUDO_UNFUSED(v366 * v366)) + (float)(v365 * v365));
+      v382 = __builtin_elementwise_sqrt((float)(PSEUDO_UNFUSED(v366 * v366)) +
+                                        (float)(v365 * v365));
       v383 = v533 * v381;
       v384 = (float)((float)(PSEUDO_UNFUSED(v382 * v383)) - v367) /
              (float)(v368 - v367);
@@ -2998,7 +3010,7 @@ LABEL_440:
     }
     else {
       if (v389 != 0x0.0p+0f || v388 != 0x0.0p+0f) {
-        v392 = sqrtf(v391);
+        v392 = __builtin_elementwise_sqrt((float)(v391));
         v389 = v389 / v392;
         v388 = v388 / v392;
       }
@@ -3025,7 +3037,7 @@ LABEL_440:
                         (float)(*(float*)(a1 + 624) * *(float*)(a1 + 624))) <
                     0x1.47ae160000000p-1f) {
       if (v402 != 0x0.0p+0f || v401 != 0x0.0p+0f) {
-        v405 = sqrtf(v403);
+        v405 = __builtin_elementwise_sqrt((float)(v403));
         v402 = v402 / v405;
         v401 = v401 / v405;
       }
@@ -3055,7 +3067,7 @@ LABEL_440:
   }
   if ((v341 & 0x40000000) != 0) {
     if (v407 != 0x0.0p+0f || v406 != 0x0.0p+0f) {
-      v447 = sqrtf(v408);
+      v447 = __builtin_elementwise_sqrt((float)(v408));
       v407 = v407 / v447;
       v406 = v406 / v447;
     }
@@ -3238,8 +3250,8 @@ LABEL_440:
       v420 = v410[1];
       if (*v410 != 0x0.0p+0f ||
           (v417 = *v410, v418 = v410[1], v420 != 0x0.0p+0f)) {
-        v416 =
-            sqrtf((float)(PSEUDO_UNFUSED(v420 * v420)) + (float)(v419 * v419));
+        v416 = __builtin_elementwise_sqrt((float)(PSEUDO_UNFUSED(v420 * v420)) +
+                                          (float)(v419 * v419));
         v417 = v419 / v416;
         v418 = v420 / v416;
       }
@@ -3258,7 +3270,8 @@ LABEL_440:
   v466 = (float)(PSEUDO_UNFUSED(*(float*)(a1 + 364) * 0x1.cccccc0000000p-1f)) -
          v465;
   if (v466 != 0x0.0p+0f) {
-    v467 = sqrtf((float)(PSEUDO_UNFUSED(v462 * v462)) + (float)(v461 * v461));
+    v467 = __builtin_elementwise_sqrt((float)(PSEUDO_UNFUSED(v462 * v462)) +
+                                      (float)(v461 * v461));
     v468 = (float)(v467 - v465) / v466;
     v469 = v468 <= 0x1.0000000000000p+0f ? (float)(v467 - v465) / v466
                                          : 0x1.0000000000000p+0f;
@@ -3267,7 +3280,7 @@ LABEL_440:
       v470 = (float)(PSEUDO_UNFUSED(v464 * v464)) + (float)(v463 * v463);
       if (v470 > 0x0.0p+0f) {
         if (v463 != 0x0.0p+0f || v464 != 0x0.0p+0f) {
-          v471 = sqrtf(v470);
+          v471 = __builtin_elementwise_sqrt((float)(v470));
           v463 = v463 / v471;
           v464 = v464 / v471;
         }
@@ -3317,7 +3330,9 @@ LABEL_440:
       else {
         v395 = 0;
         v396 = 0;
-        v480 = (float)((float)(fminf(fmaxf(fabsf(sqrtf(v479)), 0x0.0p+0f),
+        v480 = (float)((float)(fminf(fmaxf(fabsf(__builtin_elementwise_sqrt(
+                                               (float)(v479))),
+                                           0x0.0p+0f),
                                      0x1.0000000000000p+0f) *
                                0x1.8000000000000p+0f) +
                        0x1.0000000000000p-1f) *
