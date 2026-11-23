@@ -177,8 +177,9 @@ extern "C" void NvWsiSetCallbacks(NvWsiContext* context, void* callback0,
   context->userData = userData;
 }
 
-extern "C" NvError NvWsiContextCreate(NvWsiContext** pOutContext,
-  void* nativeContext) {
+// The SDK build keeps the memset call.
+extern "C" __attribute__((no_builtin("memset"))) NvError
+NvWsiContextCreate(NvWsiContext** pOutContext, void* nativeContext) {
   auto* context = static_cast<NvWsiContext*>(
     NvOsAlloc(sizeof(NvWsiContext)));
   if (context == nullptr) {

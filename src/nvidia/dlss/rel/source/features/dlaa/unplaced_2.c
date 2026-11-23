@@ -6094,6 +6094,7 @@ __int64 nvidia_dlss_rel_source_features_dlaa_89680(_QWORD* a1, __int64* a2,
   return result;
 }
 
+__attribute__((no_builtin("memset", "memcpy", "memmove")))
 _WORD* nvidia_dlss_rel_source_features_dlaa_89f60(_QWORD* a1, __int64* a2,
                                                   _QWORD* a3, __int64* a4)
 {

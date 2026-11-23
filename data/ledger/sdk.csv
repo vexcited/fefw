@@ -24920,7 +24920,7 @@ ffee0,324,verified,src/nn/fs/unplaced.c,nn_fs_GetAndClearMemoryReportInfo
 644df0,204,verified,src/nvidia/unplaced_8.c,nvidia_644df0
 644ec0,692,verified,src/nvidia/unplaced_8.c,nvidia_644ec0
 645180,4,verified,src/nvidia/nvwsi_context.cpp,NvWsiContextDestroy
-645190,68,disputed,src/nvidia/nvwsi_context.cpp,NvWsiContextCreate
+645190,308,verified,src/nvidia/nvwsi_context.cpp,NvWsiContextCreate
 6452e0,320,verified,src/nvidia/nvwsi_context.cpp,NvWsiNativeDisplayRef
 645420,36,verified,src/nvidia/nvwsi_context.cpp,NvWsiGetGpuMapping
 645450,36,verified,src/nvidia/nvwsi_context.cpp,NvWsiSetGpuMapping
