@@ -463,6 +463,8 @@ __int64 CudaDriverRoutine_f6360(_QWORD, _QWORD, _QWORD, _QWORD, _QWORD, _QWORD,
 __int64 CudaDriverRoutine_fe6b0(_QWORD, _QWORD, _QWORD, _QWORD);
 __int64 CudaDriverHr_1f4420(__int64 a1, unsigned int a2, _QWORD* a3,
                             unsigned int a4, __int64 a5);
+__int64 CudaDriverHr_1fc5a0(unsigned int* a1, __int64 a2, unsigned int a3,
+                            bool* a4);
 
 __int64 CudaDriverHr_1e5130(__int64 a1, _BYTE* a2)
 {
@@ -3503,6 +3505,9 @@ __int64 CudaDriverHr_1f4230(__int64 a1, __int64 a2, __int64 a3, _QWORD* a4,
 __int64 CudaDriverHr_1f4420(__int64 a1, unsigned int a2, _QWORD* a3,
                             unsigned int a4, __int64 a5)
 {
+
+#pragma clang fp contract(on)
+
   __int64 v5;
   __int64 result;
   unsigned int* v10;
@@ -7020,8 +7025,12 @@ __int64 CudaDriverHr_1fc4a0(__int64 a1, __int64 a2, unsigned int a3, bool* a4)
   return result;
 }
 
-__int64 CudaDriverHr_1fc5a0(unsigned int* a1, __int64 a2, int a3, bool* a4)
+__int64 CudaDriverHr_1fc5a0(unsigned int* a1, __int64 a2, unsigned int a3,
+                            bool* a4)
 {
+
+#pragma clang fp contract(on)
+
   __int64 v4;
   __int64 v5;
   _DWORD* i;

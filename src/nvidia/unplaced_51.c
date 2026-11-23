@@ -183,7 +183,8 @@ __int64 nvidia_71ec0(unsigned int a1, unsigned int a2, unsigned int a3,
                      __int64 a4, __int64 a5);
 __int64 nvidia_737a0(unsigned int a1, unsigned int a2, unsigned int a3,
                      __int64 a4, __int64 a5);
-__int64 nvidia_806c0(__int64 a1, __int64 a2, char* a3, _BYTE* a4, __int64* a5);
+__int64 nvidia_806c0_alt1(__int64 a1, __int64 a2, char* a3, _BYTE* a4,
+                          __int64* a5);
 __int64 nvidia_8aae0(__int64 a1);
 __int64 nvidia_8ee20(__int64 a1, unsigned __int64 a2, unsigned __int64* a3);
 __int64 nvidia_91c20(__int64 a1, __int64 a2, _QWORD* a3, int a4, char a5,
@@ -210,6 +211,8 @@ __int64 nvidia_240830(__int64 a1, __int64 a2, __int64 a3, __int64 a4,
                       _QWORD* a5, __int64 a6);
 bool CudaDriverStub_b9300_alt1(__int64);
 bool cuda_driver_predicates_9ac80_alt1(__int64);
+__int64 nvidia_806c0(__int64 a1, __int64 a2, const char* a3, _BYTE* a4,
+                     __int64* a5);
 
 __int64 nvidia_4e0c0(unsigned __int64* a1, unsigned __int64 a2,
                      unsigned __int64 a3, _QWORD* a4)
@@ -422,7 +425,8 @@ __int64 nvidia_737a0(unsigned int a1, unsigned int a2, unsigned int a3,
   return result;
 }
 
-__int64 nvidia_806c0(__int64 a1, __int64 a2, char* a3, _BYTE* a4, __int64* a5)
+__int64 nvidia_806c0(__int64 a1, __int64 a2, const char* a3, _BYTE* a4,
+                     __int64* a5)
 {
   __int64 result;
   int v12;
@@ -466,7 +470,7 @@ __int64 nvidia_806c0(__int64 a1, __int64 a2, char* a3, _BYTE* a4, __int64* a5)
   int v53;
   int v54;
   int v55;
-  char* v56;
+  const char* v56;
   __int64 v57;
   bool v58;
   bool v59;
@@ -6038,8 +6042,8 @@ __int64 nvidia_1cd340(_DWORD** a1, __int64 a2)
   v7[121] = ((unsigned __int16)v10 << 8) | 3;
   v7[123] = ((unsigned __int16)v10 << 8) | 2;
   v7[125] = ((unsigned __int16)v10 << 8) | 1;
-  if ((*(unsigned __int8 (**)(void*))(*(_QWORD*)(v6 + 64) + 21096LL))(
-          *(void**)(v6 + 64)) != 0 &&
+  if ((*(unsigned __int8 (**)(__int64))(*(_QWORD*)(v6 + 64) + 21096LL))(
+          *(_QWORD*)(v6 + 64)) != 0 &&
       (*((_BYTE*)((_UNKNOWN*)0x1840LL) + (_QWORD)v9) & 0x40) != 0) {
     v8 = v7 + 134;
     *((_OWORD*)v7 + 32) = CudaDriverData_1115df0;

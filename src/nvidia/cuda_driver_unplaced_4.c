@@ -551,6 +551,7 @@ __int64 CudaDriverStub_107f90_alt4(__int64);
 __int64 CudaDriverStub_108070_alt4(__int64);
 __int64 nvidia_92980(_QWORD*);
 __int64 nvidia_98d00(_QWORD*, int);
+__int64 CudaDriverHr_b02c0();
 
 __int64 cuda_driver_86100(__int64 a1, unsigned int a2, unsigned __int64* a3,
                           unsigned int a4, char a5, _BYTE* a6, _BYTE* a7,
@@ -11310,7 +11311,7 @@ __int64 cuda_driver_ac5e0(__int64 a1, __int64 a2)
   }
   *(_QWORD*)&v82_.v83 = v84;
   v34 = CudaDriverRoutine_a86e0(
-      v76_.v78, v11, (__int64 (*)(__int64*, __int64))CudaDriverRoutine_b02c0,
+      v76_.v78, v11, (__int64 (*)(__int64*, __int64))CudaDriverHr_b02c0,
       (__int64)&v76_.v76);
   if (v34 != 0) {
     v35 = v34;
