@@ -12601,7 +12601,7 @@ ffee0,324,verified,src/nn/fs/unplaced.c,nn_fs_GetAndClearMemoryReportInfo
 33c3e0,36,verified,src/fdk-aac/libAACdec/src/aacdec_drc.cpp,_ZN2nn5codec29aacDecoder_drcInitChannelDataEPNS0_15CDrcChannelDataE
 33c410,404,verified,src/fdk-aac/libAACdec/src/aacdec_drc.cpp,_ZN2nn5codec22aacDecoder_drcSetParamEPNS0_8CDrcInfoENS0_16AACDEC_DRC_PARAMEi
 33c5c0,2080,verified,src/fdk-aac/libAACdec/src/aacdec_drc_impl.c,nn_codec_aacDecoder_drcMarkPayload
-33d340,1472,disputed,src/fdk-aac/libAACdec/src/aacdec_drc_impl.c,nn_codec_aacDecoder_drcApply
+33d340,2072,verified,src/fdk-aac/libAACdec/src/aacdec_drc_impl.c,nn_codec_aacDecoder_drcApply
 33fe40,32,verified,src/fdk-aac/libAACdec/src/aacdec_drc.cpp,_ZN2nn5codec20aacDecoder_drcEpilogEPNS0_8CDrcInfoEPNS0_13FDK_BITSTREAMEPPNS0_28CAacDecoderStaticChannelInfoEhPhi
 33fe60,48,verified,src/fdk-aac/libAACdec/src/aacdec_drc.cpp,_ZN2nn5codec21aacDecoder_drcGetInfoEPNS0_8CDrcInfoEPaS3_
 33fe90,152,verified,src/fdk-aac/libAACdec/src/aacdec_drc.cpp,_ZN2nn5codec10FDKpushForEPNS0_13FDK_BITSTREAMEj

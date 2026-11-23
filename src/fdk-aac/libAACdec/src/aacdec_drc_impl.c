@@ -1714,8 +1714,9 @@ LABEL_23:
         v40 = *(_DWORD*)(v14 + 8);
       }
       result = nn_codec_f2Pow_plt(
-          (((unsigned __int64)(11184811LL * v40) >> 31) & 0xFFFFFFFE) *
-              (v37 & 0x7F),
+          (unsigned int)((((unsigned __int64)(11184811LL * v40) >> 31) &
+                          0xFFFFFFFE) *
+                         (v37 & 0x7F)),
           4, v32);
       v34 = *v32;
     }
