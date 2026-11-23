@@ -1508,7 +1508,7 @@ fcc0,1900,verified,src/nvidia/unnamed/c000_0.c,CudaDriverHr_fcc0
 5ef60,240,verified,src/nvidia/unnamed/c000_2.c,CudaDriverHr_5ef60
 5f050,120,verified,src/nvidia/unnamed/c000_3.c,CudaDriverHr_5f050
 5f0d0,32,verified,src/nvidia/unnamed/c000_2.c,CudaDriverHr_5f0d0
-5f100,732,verified,src/nvidia/unnamed/c000_3.c,CudaDriverHr_5f100
+5f100,808,verified,src/nvidia/unnamed/c000_3.c,CudaDriverHr_5f100
 5f7d0,48,verified,src/nvidia/cuda_driver_helpers2.cpp,_Z23CudaDriverRoutine_5f7d0mj
 5f800,12,verified,src/nvidia/cuda_driver_helpers2.cpp,_Z23CudaDriverRoutine_5f800mj
 5f820,472,verified,src/nvidia/unnamed/c000_2.c,CudaDriverHr_5f820

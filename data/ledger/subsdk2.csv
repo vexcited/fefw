@@ -665,12 +665,12 @@ fff0,88,verified,src/movie/detail/movie_video_decoder_event_manager.cpp,_ZN5movi
 1f0b0,24,verified,src/opus/celt/bands.c,celt_lcg_rand
 1f0e0,732,verified,src/opus/celt/bands.c,compute_band_energies
 1f400,372,verified,src/opus/celt/bands.c,normalise_bands
-1f5a0,472,verified,src/opus/celt/bands_impl2.c,denormalise_bands
+1f5a0,504,verified,src/opus/celt/bands_impl2.c,denormalise_bands
 1f7c0,1532,verified,src/opus/celt/bands.c,anti_collapse
 1fe20,932,verified,src/opus/celt/bands.c,spreading_decision
 20220,600,verified,src/opus/celt/bands_impl2.c,bands_20220
-20480,1768,disputed,src/opus/celt/bands_impl2.c,quant_all_bands
-21840,4256,verified,src/opus/celt/bands_impl2.c,bands_21840
+20480,3536,disputed,src/opus/celt/bands_impl2.c,quant_all_bands
+21840,4264,disputed,src/opus/celt/bands_impl2.c,bands_21840
 22960,1616,verified,src/opus/celt/bands.c,quant_band_stereo
 23220,156,verified,src/opus/celt/unplaced_9.c,opus_celt_23220
 23500,1732,verified,src/opus/celt/bands.c,quant_partition
@@ -682,7 +682,7 @@ fff0,88,verified,src/movie/detail/movie_video_decoder_event_manager.cpp,_ZN5movi
 25340,12,verified,src/opus/celt/celt.c,opus_get_version_string
 25350,72,verified,src/opus/celt/celt_decoder.c,celt_decoder_get_size
 253a0,236,verified,src/opus/celt/celt_decoder.c,celt_decoder_init
-254a0,3088,disputed,src/opus/celt/unplaced_3.c,opus_celt_254a0
+254a0,3088,verified,src/opus/celt/unplaced_3.c,opus_celt_254a0
 270a0,1640,disputed,src/opus/celt/celt_decoder_impl2.c,celt_decode_lost
 29540,2752,disputed,src/opus/celt/unplaced_2.c,opus_celt_29540
 2a420,1380,disputed,src/opus/celt/celt_decoder_impl2.c,celt_synthesis
