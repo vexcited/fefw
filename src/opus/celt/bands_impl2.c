@@ -4,7 +4,7 @@
 
 __int64 MovieRoutine_23220(_QWORD, _QWORD, _QWORD, _QWORD);
 __int64 celt_sqrt(_QWORD);
-__int64 ec_dec_bits(_QWORD, _QWORD);
+unsigned int ec_dec_bits(_QWORD, _QWORD);
 __int64 ec_enc_bits(_QWORD, _QWORD, _QWORD);
 __int64 ec_tell_frac(__int64);
 __int64 interleave_hadamard(_QWORD, _QWORD, _QWORD, _QWORD);

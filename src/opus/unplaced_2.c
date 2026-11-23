@@ -4,7 +4,7 @@
 
 __int64 celt_rcp(_QWORD);
 __int64 celt_sqrt(_QWORD);
-__int64 ec_dec_bit_logp(_QWORD, _QWORD);
+unsigned int ec_dec_bit_logp(_QWORD, _QWORD);
 __int64 ec_dec_uint(_QWORD, _QWORD);
 __int64 ec_enc_bit_logp(_QWORD, _QWORD, _QWORD);
 __int64 ec_enc_uint(_QWORD, _QWORD, _QWORD);

@@ -2183,7 +2183,7 @@ __int64 GameRoutine_1a09c60(_QWORD, _QWORD);
 __int64 GameRoutine_1a09c70(_QWORD);
 __int64 GameRoutine_1a09ca0(_QWORD, _QWORD);
 __int64 GameRoutine_1a09cf0(_QWORD, _QWORD, _QWORD);
-__int64 GameRoutine_1a09fd0(_QWORD);
+unsigned int GameRoutine_1a09fd0(_QWORD);
 __int64 GameRoutine_1a09fe0(_QWORD);
 __int64 GameRoutine_1a0a0c0(_QWORD);
 __int64 GameRoutine_1a0a4e0(_QWORD, _QWORD);

@@ -620,7 +620,7 @@ f80,252,verified,src/nvidia/dlss/rel/source/features/dlaa/dltss_fast_kernels.c,d
 61540,3228,verified,src/nvidia/dlss/rel/source/features/dlaa/unplaced_4.c,nvidia_dlss_rel_source_features_dlaa_61540
 624d0,668,verified,src/nvidia/dlss/rel/source/features/dlaa/unplaced.c,nvidia_dlss_rel_source_features_dlaa_624d0
 62770,644,verified,src/nvidia/dlss/rel/source/features/dlaa/unplaced.c,nvidia_dlss_rel_source_features_dlaa_62770
-62a00,3280,disputed,src/nvidia/dlss/rel/source/features/dlaa/dltss.c,dltss_62a00
+62a00,3280,verified,src/nvidia/dlss/rel/source/features/dlaa/dltss.c,dltss_62a00
 63eb0,1904,verified,src/nvidia/dlss/rel/source/features/dlaa/dltss.c,dltss_63eb0
 64650,336,verified,src/nvidia/dlss/rel/source/features/dlaa/dltss.c,dltss_64650
 647a0,680,verified,src/nvidia/dlss/rel/source/features/dlaa/dltss.c,dltss_647a0

@@ -27,9 +27,9 @@ __int64 silk_autocorr(signed int*, _DWORD*, __int16*, int, int);
 __int64 silk_find_LTP_FIX(__int64 result, int*, __int64, int*, unsigned int,
                           int, unsigned int);
 __int64 silk_log2lin(unsigned int);
-__int64 silk_pitch_analysis_core(__int64, __int64, _WORD*, _BYTE*, __int16*,
-                                 int, int, int, int, int, unsigned int,
-                                 unsigned int);
+unsigned int silk_pitch_analysis_core(__int64, __int64, _WORD*, _BYTE*,
+                                      __int16*, int, int, int, int, int,
+                                      unsigned int, unsigned int);
 extern __int16 MovieData_a780e[27];
 unsigned __int64 MovieRoutine_45380(__int64, __int64, int);
 unsigned __int64 silk_process_NLSFs(__int64, __int64, __int16*, __int64);

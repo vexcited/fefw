@@ -705,7 +705,7 @@ __int64 CudaDriverRoutine_25cf30(_QWORD, _QWORD, _QWORD);
 
 __int64 CudaDriverRoutine_25cf50(_QWORD);
 
-__int64 CudaDriverRoutine_25d690(_QWORD, _QWORD);
+unsigned int CudaDriverRoutine_25d690(_QWORD, _QWORD);
 
 __int64 CudaDriverRoutine_25da70(_QWORD);
 

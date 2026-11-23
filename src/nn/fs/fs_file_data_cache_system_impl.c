@@ -11,8 +11,9 @@ __int64 nn_fs_detail_FileDataCacheSystem_CommitCachePages_plt(_QWORD, _QWORD,
 __int64 nn_fs_detail_FileDataCacheSystem_DoCacheForce_plt(_QWORD, _QWORD,
                                                           _QWORD, _QWORD,
                                                           _QWORD, _QWORD);
-__int64 nn_fs_detail_FileDataCacheSystem_DoCache_plt(_QWORD, _QWORD, _QWORD,
-                                                     _QWORD, _QWORD, _QWORD);
+unsigned int nn_fs_detail_FileDataCacheSystem_DoCache_plt(_QWORD, _QWORD,
+                                                          _QWORD, _QWORD,
+                                                          _QWORD, _QWORD);
 __int64 nn_fs_detail_FileDataCacheSystem_DoCompaction_plt(_QWORD);
 __int64 nn_fs_detail_FileDataCacheSystem_DoCopy_plt(_QWORD, _QWORD, _QWORD,
                                                     _QWORD, _QWORD);

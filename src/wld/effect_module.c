@@ -14,7 +14,7 @@ _QWORD* EffectModule_bd3360(_QWORD* result, __int64* a2);
 __int64 EffectModule_bd37c0(__int64 result);
 __int64 wld_Crc32(int, unsigned __int8*, unsigned __int64);
 __int64 GameRoutine_bd2320(_QWORD, _QWORD, long double, long double);
-__int64 __cxa_guard_acquire(_QWORD);
+unsigned int __cxa_guard_acquire(_QWORD);
 __int64 __cxa_guard_release(_QWORD);
 extern _UNKNOWN* GameData_212df10;
 extern _UNKNOWN* GameData_212ea18;

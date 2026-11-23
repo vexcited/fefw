@@ -7,7 +7,7 @@ __attribute__((swiftcall)) void Manager_a4fd20(PSEUDO_X8, __int64, __int64,
 __attribute__((swiftcall)) void Section_18d9aa0(PSEUDO_X8, __int64);
 __attribute__((swiftcall)) void timeline_6530(PSEUDO_X8, _DWORD*, _BYTE*);
 __int64 GameHr_11de730(unsigned __int8*, int);
-__int64 GameHr_7aa0(int**, _QWORD*);
+unsigned int GameHr_7aa0(int**, _QWORD*);
 __int64 GameRoutine_634d80(__int64, __int64);
 __int64 GameRoutine_6544c0(__int64, __int64);
 __int64 GameRoutine_dbf0(unsigned __int8);
@@ -18,7 +18,7 @@ __int64 game_GameVariableTable_Find(_QWORD*, unsigned __int64*);
 __int64 game_HashString(__int64 result);
 __int64 memcpy(__int64, __int64, unsigned __int64);
 __int64 memmove(__int64, __int64, unsigned __int64);
-__int64 timeline_7910(__int64, __int64);
+unsigned int timeline_7910(__int64, __int64);
 extern _UNKNOWN GameData_21ed530;
 extern __int64 (*fs_Memory_vtable_ptr)();
 extern __int64 (*fs_Section_MasterConfig_vtable[])();

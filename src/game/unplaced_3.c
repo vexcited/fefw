@@ -56,7 +56,7 @@ __int64 Registration_a4f6c0(_QWORD, _QWORD);
 __int64 Registration_a4f800(_QWORD, _QWORD, _QWORD);
 __int64 Registration_a4fa80(_QWORD, _QWORD, _QWORD);
 __int64 TimelineFile_890160(__int64);
-__int64 __cxa_guard_acquire(_QWORD);
+unsigned int __cxa_guard_acquire(_QWORD);
 __int64 __cxa_guard_release(_QWORD);
 __int64 fw_memory_HeapManager_Allocate(_QWORD, _QWORD, _QWORD, _QWORD);
 __int64 fw_memory_HeapManager_Allocate_alt1(

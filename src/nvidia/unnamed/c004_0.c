@@ -392,7 +392,7 @@ __int64 CudaDriverRoutine_1f9c50(void);
 __int64 CudaDriverRoutine_1faec0(__int64, __int64, __int64, bool*);
 __int64 CudaDriverRoutine_1fb7e0(_QWORD, _QWORD);
 __int64 CudaDriverRoutine_1ff190(void);
-__int64 CudaDriverRoutine_1ff9c0(__int64, int, __int64*);
+unsigned int CudaDriverRoutine_1ff9c0(__int64, int, __int64*);
 __int64 CudaDriverRoutine_202960(_QWORD, _QWORD, _QWORD, _QWORD, _QWORD,
                                  _QWORD);
 __int64 CudaDriverRoutine_202e80(_QWORD);

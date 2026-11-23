@@ -11,7 +11,7 @@ __int64 GameRoutine_14a1520(_QWORD, _QWORD);
 __int64 GameRoutine_db1bc0(_QWORD, _QWORD, _QWORD);
 __int64 GameRoutine_dfca40(__int64, __int64, __int64, __int64, __int64, __int64,
                            long double, long double);
-__int64 __cxa_guard_acquire(_QWORD, long double, long double);
+unsigned int __cxa_guard_acquire(_QWORD, long double, long double);
 __int64 __cxa_guard_release(_QWORD);
 __int64 fw_text_String_CopyTerminated(_QWORD, _QWORD, _QWORD);
 __int64 game_HashString(_QWORD);

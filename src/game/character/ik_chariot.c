@@ -24,7 +24,7 @@ long double game_character_IKChariot_IKChariot_lambda5_Invoke(__int64 a1,
                                                               __int64 a2,
                                                               _DWORD** a3);
 __int64 GameRoutine_1085a10(_QWORD, _QWORD, _QWORD, _QWORD);
-__int64 __cxa_guard_acquire(_QWORD);
+unsigned int __cxa_guard_acquire(_QWORD);
 __int64 __cxa_guard_release(_QWORD);
 extern _UNKNOWN* GameData_212c2f0;
 extern _UNKNOWN* GameData_212c558;

@@ -7,12 +7,12 @@ __int64* silk_encode_indices(__int64, __int64*, int, int, int);
 __int64* silk_stereo_encode_mid_only(__int64*, char);
 __int64* silk_stereo_encode_pred(__int64*, char*);
 __int64 MovieRoutine_54420(__int64*, __int64, unsigned int, __int64, int);
-__int64 check_control_input(_DWORD*);
+unsigned int check_control_input(_DWORD*);
 __int64 ec_enc_patch_initial_bits(__int64 result, int, char);
 __int64 memcpy_plt(__int64, __int64, unsigned __int64);
 __int64 memset_plt(__int64, int, unsigned __int64);
 __int64 opus_silk_4ee30(_DWORD*, int);
-__int64 opus_silk_4f080(__int64, _DWORD*, int, int, int);
+unsigned int opus_silk_4f080(__int64, _DWORD*, int, int, int);
 __int64 opus_silk_592e0(unsigned __int16*, __int16*, __int64, __int64, _BYTE*,
                         unsigned int*, int, int, int, int, int);
 __int64 silk_HP_variable_cutoff(__int64 result);

@@ -103,7 +103,7 @@ void CudaDriverRoutine_46fc();
 void CudaDriverRoutine_743c();
 void CudaDriverRoutine_747c();
 void CudaDriverStub_10fdf0();
-__int64 CudaDriverStub_10fdf0_6(_QWORD, _QWORD, _QWORD, _QWORD, _QWORD,
+unsigned int CudaDriverStub_10fdf0_6(_QWORD, _QWORD, _QWORD, _QWORD, _QWORD,
                                _QWORD) __asm__("CudaDriverStub_10fdf0");
 long double cuda_driver_580(__int64 a1, __int64 a2, __int64 a3, __int64 a4);
 _DWORD* cuda_driver_bc0(__int64 a1, _DWORD** a2, __int64 a3);

@@ -12,9 +12,9 @@ __int64* ec_enc_bit_logp(__int64* result, int, char);
 __int64 MovieRoutine_6caf0(int, int, int, int, int, int);
 __int64 celt_encode_with_ec(__int64, _BYTE*, int, __int64, int, __int64);
 __int64 celt_exp2(__int16);
-__int64 compute_redundancy_bytes(int, int, int, int);
+unsigned int compute_redundancy_bytes(int, int, int, int);
 __int64 compute_stereo_width(__int64, int, int, __int64);
-__int64 decide_dtx_mode(_DWORD*, int, __int64, int, int, _BOOL4, float);
+unsigned int decide_dtx_mode(_DWORD*, int, __int64, int, int, _BOOL4, float);
 __int64 ec_enc_done(__int64 result);
 __int64 ec_enc_init(__int64 result, __int64, int);
 __int64 ec_enc_shrink(__int64, unsigned int);
@@ -30,8 +30,8 @@ __int64 opus_encoder_6c8a0(__int64 result, __int64, __int64, unsigned int,
                            unsigned int, int);
 __int64 opus_encoder_6cc20(__int64 result, __int64, __int16, __int16, int, int,
                            int, __int16*, int);
-__int64 opus_packet_pad_plt(_QWORD);
-__int64 opus_silk_528e0(_DWORD*, _DWORD*, __int64, int, __int64, int*, int,
+unsigned int opus_packet_pad_plt(_QWORD);
+unsigned int opus_silk_528e0(_DWORD*, _DWORD*, __int64, int, __int64, int*, int,
                         int);
 __int64 opus_src_6c400(_DWORD*, __int64, int, unsigned int, __int64, int, int,
                        unsigned int, int);

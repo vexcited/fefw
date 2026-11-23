@@ -23,7 +23,7 @@ __int64 NgxRoutine_b4c00(__int64 result, __int64, __int64, __int64, __int64,
                          __int64, __int64, __int64, char);
 __int64 NgxRoutine_b4c00_alt1(_QWORD, _QWORD, _QWORD, const char*,
                               ...) __asm__("NgxRoutine_b4c00");
-__int64 __cxa_guard_acquire_plt(_QWORD);
+unsigned int __cxa_guard_acquire_plt(_QWORD);
 __int64 __cxa_guard_release_plt(_QWORD);
 __int64 cornflower_rook_00389_6d240(_QWORD, _QWORD, _QWORD, _QWORD, _QWORD);
 __int64 dltss_647a0_alt1(_QWORD, _QWORD, _QWORD, _QWORD, _QWORD, _QWORD,

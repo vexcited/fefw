@@ -36,7 +36,7 @@ bool game_map_MapDrawConst_AddCellPlaneMask_lambda0_Invoke(__int64 a1,
                                                            unsigned __int8* a3);
 __int64 MapDrawConst_fcbcc0_alt1(__int64, int, char, char, __int64,
                                  char) __asm__("MapDrawConst_fcbcc0");
-__int64 __cxa_guard_acquire(_QWORD);
+unsigned int __cxa_guard_acquire(_QWORD);
 __int64 __cxa_guard_release(_QWORD);
 __int64 fw_memory_HeapManager_Allocate_alt1(
     __int64, __int64, __int64,

@@ -175,7 +175,7 @@ __int64 snd_fnd_WeakHandle_isValid(_QWORD);
 __int64 std___1___hash_memory(_QWORD, _QWORD);
 __int64 std___1___next_prime(_QWORD);
 __int64 std___1___shared_weak_count_lock(_QWORD);
-__int64 strcmp(_QWORD, _QWORD);
+unsigned int strcmp(_QWORD, _QWORD);
 __int64 strlen(_QWORD);
 __int64 wld_Crc32(_QWORD, _QWORD, _QWORD);
 __n128 GameRoutine_a32b10(__int64);

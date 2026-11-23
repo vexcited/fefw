@@ -36,7 +36,7 @@ __int64 nn_os_LockMutex_alt1(__int64);
 __int64 nn_os_UnlockMutex_alt1(__int64);
 __int64 nn_atk_2b8e00(__int64 a1, __int64* a2);
 __int64 GameRoutine_1a09c70(_QWORD);
-__int64 GameRoutine_1a09d30(_QWORD, _QWORD, _QWORD, _QWORD, _QWORD, _QWORD,
+unsigned int GameRoutine_1a09d30(_QWORD, _QWORD, _QWORD, _QWORD, _QWORD, _QWORD,
                             _QWORD, _QWORD);
 
 float32x4_t nn_atk_277c50(float32x4_t* a1, float32x4_t* a2)

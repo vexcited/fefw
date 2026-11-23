@@ -408,7 +408,7 @@ __int64 GameRoutine_1211bc0(_QWORD);
 __int64 GameRoutine_1257620(_QWORD, _QWORD);
 __int64 GameRoutine_125b8e0(_QWORD, _QWORD, _QWORD);
 __int64 GameRoutine_127be60(_QWORD);
-__int64 GameRoutine_12daf00(void);
+unsigned int GameRoutine_12daf00(void);
 unsigned __int8 GameRoutine_13261c0(_QWORD);
 __int64 GameRoutine_132ffa0(_QWORD);
 __int64 GameRoutine_13300a0(_QWORD);

@@ -522,13 +522,13 @@ __int64 CudaDriverRoutine_2244b0(_QWORD*);
 __int64 CudaDriverRoutine_2245c0(__int64, __int64, _BYTE*, unsigned __int64,
                                  _QWORD*);
 
-__int64 CudaDriverRoutine_224fd0(__int64, __int64, unsigned int, int);
+unsigned int CudaDriverRoutine_224fd0(__int64, __int64, unsigned int, int);
 
 unsigned int* CudaDriverRoutine_2250c0(__int64, unsigned int);
 
 __int64 CudaDriverRoutine_225b60(_QWORD, _QWORD, _QWORD, _QWORD);
 
-__int64 CudaDriverRoutine_226160(_QWORD);
+unsigned int CudaDriverRoutine_226160(_QWORD);
 
 __int64 CudaDriverRoutine_226960(_QWORD, _QWORD);
 
