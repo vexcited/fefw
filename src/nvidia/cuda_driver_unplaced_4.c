@@ -546,7 +546,7 @@ __int64 nvidia_ed630(__int64, __int64, __int64, ...);
 bool CudaDriverRoutine_985b0_alt1(int);
 bool CudaDriverRoutine_b9310_alt1(__int64);
 bool CudaDriverRoutine_e5960_alt1(__int64);
-bool cuda_driver_predicates_9ae50_alt1(__int64);
+unsigned __int8 cuda_driver_predicates_9ae50_alt1(__int64);
 __int64 CudaDriverStub_107f90_alt4(__int64);
 __int64 CudaDriverStub_108070_alt4(__int64);
 __int64 nvidia_92980(_QWORD*);

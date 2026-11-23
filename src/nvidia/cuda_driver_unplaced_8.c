@@ -46,7 +46,7 @@ __int64 CudaDriverRoutine_12e340(__int64 result);
 __int64 CudaDriverRoutine_12e510(__int64, __int64);
 __int64 CudaDriverRoutine_12f300(__int64*);
 __int64 CudaDriverRoutine_1383e0(__int64 result, int);
-__int64 CudaDriverRoutine_1398c0(_DWORD*, __int64, __int64, int, __int64,
+unsigned int CudaDriverRoutine_1398c0(_DWORD*, __int64, __int64, int, __int64,
                                  unsigned int, int, __int64, char, __int64,
                                  char);
 __int64 CudaDriverRoutine_15fd0(__int64);

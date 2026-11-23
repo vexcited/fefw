@@ -337,12 +337,12 @@ unsigned __int8
 CudaDriverRoutine_5adc0_alt1(__int64) __asm__("CudaDriverRoutine_5adc0");
 unsigned __int64
 CudaDriverRoutine_5adc0_alt1_w(__int64) __asm__("CudaDriverRoutine_5adc0");
-bool cuda_driver_12ea30_alt1(int*) __asm__("cuda_driver_12ea30");
+unsigned int cuda_driver_12ea30_alt1(int*) __asm__("cuda_driver_12ea30");
 __int64 CudaDriverStub_107f90_alt3(__int64);
 __int64 CudaDriverStub_108070_alt3(__int64);
 bool CudaDriverRoutine_5a420_alt2(__int64, unsigned __int64, unsigned int);
-bool cuda_driver_12ea30_alt2(int*);
-bool CudaDriverRoutine_98110_alt1(_BOOL8 result);
+unsigned int cuda_driver_12ea30_alt2(int*);
+unsigned __int8 CudaDriverRoutine_98110_alt1(_BOOL8 result);
 
 void cuda_driver_1febc0()
 {

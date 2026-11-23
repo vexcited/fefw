@@ -87,7 +87,7 @@ __int64 CudaDriverStub_12db80(_QWORD);
 __int64 CudaDriverStub_12dc90(_QWORD);
 __int64 CudaDriverStub_12dca0(_QWORD);
 __int64 CudaDriverStub_12dd30(_QWORD);
-__int64 CudaDriverStub_12dd40(__int64, unsigned int, unsigned int);
+unsigned int CudaDriverStub_12dd40(__int64, unsigned int, unsigned int);
 __int64 CudaDriverStub_137960();
 __int64 CudaDriverStub_137980();
 __int64 CudaDriverStub_1379a0();
@@ -104,7 +104,8 @@ __int64 CudaDriverStub_57450_alt1(_QWORD, _QWORD,
 __int64 CudaDriverStub_98590(_QWORD);
 __int64 NvRmGpuLibGetVersionInfo_plt(void);
 __int64 NvRmGpuLibOpen_plt(_QWORD);
-__int64 NvRmGpuProfilerV2RegOpsExec_plt(_QWORD, _QWORD, _QWORD, _QWORD, _QWORD);
+unsigned int NvRmGpuProfilerV2RegOpsExec_plt(_QWORD, _QWORD, _QWORD, _QWORD,
+                                             _QWORD);
 __int64 cuda_debugger_api_7d040();
 __int64 cuda_driver_1084c0(__int64 result);
 __int64 cuda_driver_108520(__int64);

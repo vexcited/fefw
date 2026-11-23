@@ -216,7 +216,7 @@ __int64 cuda_driver_helpers_1b7ba0();
 __int64 cuda_driver_helpers_1b7c80();
 __int64 cuda_driver_helpers_b8480(__int64);
 __int64 cuda_driver_predicates_1dc7a0(unsigned int);
-__int64 cuda_driver_predicates_9af30(__int64);
+unsigned __int8 cuda_driver_predicates_9af30(__int64);
 __int64 memcpy_plt(__int64, __int64, unsigned __int64);
 __int64 memset_plt(__int64, int, unsigned __int64);
 __int64 nvidia_11bef0(__int64);

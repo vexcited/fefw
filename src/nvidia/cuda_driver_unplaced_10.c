@@ -209,7 +209,7 @@ void CudaDriverRoutine_743c();
 void CudaDriverRoutine_7458();
 void CudaDriverRoutine_7460();
 void CudaDriverStub_10fdf0();
-__int64 CudaDriverStub_10fdf0_6(_QWORD, _QWORD, _QWORD, _QWORD, _QWORD,
+unsigned int CudaDriverStub_10fdf0_6(_QWORD, _QWORD, _QWORD, _QWORD, _QWORD,
                                _QWORD) __asm__("CudaDriverStub_10fdf0");
 __int64 cuda_driver_1e1e60(__int64 a1);
 __int64 cuda_driver_1e2000(__int64 a1, unsigned int a2);
