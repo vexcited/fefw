@@ -28,9 +28,15 @@ void game_hub_e2a980()
     __int64 v10;
   } v8_;
 
-  v0 = GameData_212c6a0[0];
+  {
+    v0 = GameData_212c6a0[0];
+    __asm__ volatile("" ::"r"(v0));
+  }
   LOWORD(v8_.v8) = 0;
-  v1 = (__int64*)(*(_QWORD*)GameData_212c6a0[0] + 256LL);
+  {
+    v1 = (__int64*)(*(_QWORD*)GameData_212c6a0[0] + 256LL);
+    __asm__ volatile("" ::"r"(v1));
+  }
   if (v1 != &v8_.v8) {
     if ((*(_BYTE*)v1 & 1) != 0) {
       SpineModel_64dde0(v1, (__int64)&v8_.v8 + 1, 0);
@@ -50,7 +56,10 @@ void game_hub_e2a980()
       v1[2] = v8_.v10;
     }
   }
-  v4 = *(_QWORD**)v0;
+  {
+    v4 = *(_QWORD**)v0;
+    __asm__ volatile("" ::"r"(v4));
+  }
   LOWORD(v8_.v8) = 0;
   v5 = v4 + 35;
   if (v4 + 35 != &v8_.v8) {

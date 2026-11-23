@@ -198,7 +198,7 @@ __attribute__((swiftcall)) void physx_source_lowleveldynamics_src_323800(
   v28 = *(float*)(v24 + 20);
   v30 = *(float*)(v24 + 24);
   v31 = *(unsigned __int8*)(v24 + 351);
-  if (!(v31 > 1)) {
+  if (v31 <= 1) {
     if (*(_BYTE*)(v24 + 351) != 0) {
       v51 = *(unsigned __int8*)(v24 + 332);
       v52 = *(float*)(a11 + 4 * v19) + (float)(*(float*)(a8 + 4 * v19) * a10);
@@ -277,7 +277,8 @@ __attribute__((swiftcall)) void physx_source_lowleveldynamics_src_323800(
             v27;
     }
     v22 = v23;
-  } else {
+  }
+  else {
     if (v31 - 2 < 2) {
       v165 = *(float*)(v24 + 52);
       v32 = v23;
@@ -399,12 +400,13 @@ __attribute__((swiftcall)) void physx_source_lowleveldynamics_src_323800(
       }
       v77 = v76 * a10;
       v164 = v25;
-      if (!(v77 > 0x1.0c6f7a0000000p-20f)) {
+      if (v77 <= 0x1.0c6f7a0000000p-20f) {
         v88 = v151;
         v86 = v152;
         v87 = v150;
         v81 = a1;
-      } else {
+      }
+      else {
         v78 = v77 * 0x1.0000000000000p-1f;
         v79 = GameRoutine_1a09fb0(v77 * 0x1.0000000000000p-1f);
         v80 = GameRoutine_1a09fc0(v78);
@@ -465,7 +467,7 @@ __attribute__((swiftcall)) void physx_source_lowleveldynamics_src_323800(
       v100 = (int*)a4;
       v101 = (float)((float)(PSEUDO_UNFUSED(v97 * v97)) + (float)(v96 * v96)) +
              (float)(v98 * v98);
-      if (!(v101 < 0x1.cd2b2a0000000p-54f)) {
+      if (v101 >= 0x1.cd2b2a0000000p-54f) {
         v154 = v97;
         v157 = v96;
         v111 = 0x1.0000000000000p+0f /
@@ -475,10 +477,11 @@ __attribute__((swiftcall)) void physx_source_lowleveldynamics_src_323800(
         v105 = v98 * v111;
         v155 = v154 * v111;
         v158 = v157 * v111;
-        if (!(GameRoutine_1a0ccb0(v99) < 0x1.5798ee0000000p-27f)) {
+        if (GameRoutine_1a0ccb0(v99) >= 0x1.5798ee0000000p-27f) {
           v112 = GameRoutine_1a0ab40(v101 * v111, v99);
           v103 = v112 + v112;
-        } else {
+        }
+        else {
           v103 = 0x1.921fb60000000p+1f;
         }
         v104 = v155;
@@ -492,7 +495,8 @@ __attribute__((swiftcall)) void physx_source_lowleveldynamics_src_323800(
         if (*((_BYTE*)a4 + 4) == 0) {
           goto LABEL_46;
         }
-      } else {
+      }
+      else {
         v102 = 0x1.0000000000000p+0f;
         v103 = 0x0.0p+0f;
         v104 = 0x0.0p+0f;
@@ -548,7 +552,7 @@ __attribute__((swiftcall)) void physx_source_lowleveldynamics_src_323800(
       v116 = v103 * v104;
       v117 = v107 & 3;
       v118 = v103 * v105;
-      if (!(v107 < 4)) {
+      if (v107 >= 4) {
         v120 = (unsigned __int8)v107 & 0xFC;
         v119 = 0;
         v121 = (float*)(a11 + 4 * v19 + 8);
@@ -583,7 +587,8 @@ __attribute__((swiftcall)) void physx_source_lowleveldynamics_src_323800(
                        (float)(*(float*)(v114 + 24LL * (v122 + 3) + 8) * v118));
           v121 += 4;
         } while (v120 != v119);
-      } else {
+      }
+      else {
         v119 = 0;
       }
       if (v117 != 0) {

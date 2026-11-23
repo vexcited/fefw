@@ -67,37 +67,36 @@ __int64 nn_ui2d_detail_5a7540(__int64 result, __int64 a2, float32x4_t* a3,
   unsigned __int64 add;
   unsigned __int64 v42;
   float32x4_t v43;
-  unsigned __int64 v44;
+  float32x4_t* v44;
   float32x4_t v45;
   float32x4_t v46;
   float32x4_t v47;
   float32x4_t v48;
   float32x4_t v49;
-  long double v50;
-  float v51;
-  int* v52;
-  int v53;
+  float v50;
+  int* v51;
+  int v52;
+  unsigned __int64 v53;
   unsigned __int64 v54;
   unsigned __int64 v55;
-  unsigned __int64 v56;
-  unsigned __int64* v57;
+  unsigned __int64* v56;
+  unsigned __int64 v57;
   unsigned __int64 v58;
-  unsigned __int64 v59;
-  unsigned __int64* v60;
+  unsigned __int64* v59;
+  unsigned __int64 v60;
   unsigned __int64 v61;
-  unsigned __int64 v62;
-  unsigned __int64 v63[2];
-  _QWORD v64[11];
+  unsigned __int64 v62[2];
+  _QWORD v63[11];
 
   if (*(int*)(result + 16) >= 1) {
-    v64[7] = v7;
-    v64[9] = v5;
-    v64[10] = v6;
+    v63[7] = v7;
+    v63[9] = v5;
+    v63[10] = v6;
     v9 = 8;
     v13 = result;
     v14 = 0;
     do {
-      result = (*(__int64 (**)(__int64, __int64, float))(
+      result = (*(__int64 (**)(_QWORD, __int64, float))(
           **(_QWORD**)(*(_QWORD*)(v13 + 24) + v9) + 40LL))(
           *(_QWORD*)(*(_QWORD*)(v13 + 24) + v9), a2, a5);
       v15 = *(int*)(v13 + 16);
@@ -121,10 +120,10 @@ __int64 nn_ui2d_detail_5a7540(__int64 result, __int64 a2, float32x4_t* a3,
         ++v16;
       } while (v16 < *(int*)(v13 + 16));
       if (v17 != 0) {
-        v64[6] = 0;
-        result = (__int64)GameRoutine_5a3a90(v63, a2, v17, v18, 0, 0, 0);
-        v21 = v63[1];
-        v22 = v64[1];
+        v63[6] = 0;
+        result = (__int64)GameRoutine_5a3a90(v62, a2, v17, v18, 0, 0, 0);
+        v21 = v62[1];
+        v22 = v63[1];
         *(_QWORD*)(v13 + 40) = 0;
         *(_QWORD*)(v13 + 48) = v21;
         LODWORD(v21) = *(_DWORD*)(v13 + 16);
@@ -158,10 +157,10 @@ __int64 nn_ui2d_detail_5a7540(__int64 result, __int64 a2, float32x4_t* a3,
                 add = 0;
                 goto LABEL_22;
               }
-              v57 = *((unsigned __int64**)v30 + 9);
-              v58 = atomic_load(*((unsigned __int64**)v30 + 8));
-              v59 = atomic_load(v57);
-              if (v59 + v58 > *((_QWORD*)v30 + 3)) {
+              v56 = *((unsigned __int64**)v30 + 9);
+              v57 = atomic_load(*((unsigned __int64**)v30 + 8));
+              v58 = atomic_load(v56);
+              if (v58 + v57 > *((_QWORD*)v30 + 3)) {
                 goto LABEL_21;
               }
             }
@@ -177,7 +176,7 @@ __int64 nn_ui2d_detail_5a7540(__int64 result, __int64 a2, float32x4_t* a3,
             LANES128(v43).n128_u64[0] = 0;
             LANES128(v43).n128_u32[2] = 0;
             LANES128(v43).n128_u32[3] = LANES128(v36).n128_u32[3];
-            v44 = *(_QWORD*)(*(_QWORD*)(a2 + 200) + 56LL) + add;
+            v44 = (float32x4_t*)(*(_QWORD*)(*(_QWORD*)(a2 + 200) + 56LL) + add);
             v45 = vaddq_f32(
                 v43,
                 vmlaq_laneq_f32(
@@ -198,8 +197,8 @@ __int64 nn_ui2d_detail_5a7540(__int64 result, __int64 a2, float32x4_t* a3,
             LANES128(v43).n128_u64[0] = 0;
             LANES128(v43).n128_u32[2] = 0;
             LANES128(v43).n128_u32[3] = LANES128(v38).n128_u32[3];
-            *(float32x4_t*)v44 = v45;
-            *(float32x4_t*)(v44 + 16) = v46;
+            *v44 = v45;
+            v44[1] = v46;
             v47 = vmlaq_laneq_f32(
                 vmlaq_lane_f32(
                     vmulq_n_f32(v32, LANES128(v38).n128_f32[0]), v31,
@@ -213,58 +212,56 @@ __int64 nn_ui2d_detail_5a7540(__int64 result, __int64 a2, float32x4_t* a3,
             LANES128(v49).n128_u64[0] = 0;
             LANES128(v49).n128_u32[2] = 0;
             LANES128(v49).n128_u32[3] = LANES128(v37).n128_u32[3];
-            v50 = COERCE_LONG_DOUBLE(vaddq_f32(v49, v48));
-            *(float32x4_t*)(v44 + 32) = vaddq_f32(v43, v47);
-            *(long double*)(v44 + 48) = v50;
-            *(float*)&v50 = a5;
+            v44[2] = vaddq_f32(v43, v47);
+            v44[3] = vaddq_f32(v49, v48);
             *(_QWORD*)(*(_QWORD*)(v13 + 24) + v24) = add;
-            v51 = nn_ui2d_5a3700_alt1((unsigned __int16*)(v34 + v23), v50);
-            v52 = *(int**)(a2 + 200);
-            v53 = *v52;
-            v54 = (*(_QWORD*)(*(_QWORD*)(a2 + 184) + 104LL) + 15LL) &
+            v50 = nn_ui2d_5a3700((unsigned __int16*)(v34 + v23), a5);
+            v51 = *(int**)(a2 + 200);
+            v52 = *v51;
+            v53 = (*(_QWORD*)(*(_QWORD*)(a2 + 184) + 104LL) + 15LL) &
                   -*(_QWORD*)(*(_QWORD*)(a2 + 184) + 104LL);
-            if ((*v52 & 1) == 0) {
-              v55 = *((_QWORD*)v52 + 8);
-              v56 = v55 + v54;
-              *((_QWORD*)v52 + 8) = v56;
-              if ((v53 & 2) != 0) {
+            if ((*v51 & 1) == 0) {
+              v54 = *((_QWORD*)v51 + 8);
+              v55 = v54 + v53;
+              *((_QWORD*)v51 + 8) = v55;
+              if ((v52 & 2) != 0) {
                 goto LABEL_14;
               }
               goto LABEL_27;
             }
-            v55 = atomic_fetch_add(*((atomic_ullong* volatile*)v52 + 8), v54);
-            if ((*(_BYTE*)v52 & 1) == 0) {
-              v56 = *((_QWORD*)v52 + 8);
+            v54 = atomic_fetch_add(*((atomic_ullong* volatile*)v51 + 8), v53);
+            if ((*(_BYTE*)v51 & 1) == 0) {
+              v55 = *((_QWORD*)v51 + 8);
             LABEL_27:
-              if (*((_QWORD*)v52 + 9) + v56 > *((_QWORD*)v52 + 3)) {
+              if (*((_QWORD*)v51 + 9) + v55 > *((_QWORD*)v51 + 3)) {
                 goto LABEL_32;
               }
               goto LABEL_14;
             }
-            v60 = *((unsigned __int64**)v52 + 9);
-            v61 = atomic_load(*((unsigned __int64**)v52 + 8));
-            v62 = atomic_load(v60);
-            if (v62 + v61 > *((_QWORD*)v52 + 3)) {
+            v59 = *((unsigned __int64**)v51 + 9);
+            v60 = atomic_load(*((unsigned __int64**)v51 + 8));
+            v61 = atomic_load(v59);
+            if (v61 + v60 > *((_QWORD*)v51 + 3)) {
             LABEL_32:
-              v55 = 0;
+              v54 = 0;
             }
           LABEL_14:
-            v26 = *(_QWORD*)(*(_QWORD*)(a2 + 200) + 56LL) + v55;
+            v26 = *(_QWORD*)(*(_QWORD*)(a2 + 200) + 56LL) + v54;
             *(_QWORD*)v26 = 0x3F8000003F800000LL;
             *(_DWORD*)(v26 + 8) = 1065353216;
-            *(float*)(v26 + 12) = v51;
-            *(_QWORD*)(*(_QWORD*)(v13 + 24) + v24 + 32) = v55;
+            *(float*)(v26 + 12) = v50;
+            *(_QWORD*)(*(_QWORD*)(v13 + 24) + v24 + 32) = v54;
             v27 = *(_DWORD*)(v13 + 44);
             v28 = *(_QWORD*)(*(_QWORD*)(v13 + 24) + v24 + 8);
-            result = (*(__int64 (**)(__int64, __int64, __int64, __int64,
-                                     __int64, __int64))(*(_QWORD*)v28 + 104LL))(
-                v28, (__int64)v63, v13 + 40, (__int64)v64, v13 + 44, 0);
+            result = (*(__int64 (**)(__int64, unsigned __int64*, __int64,
+                                     _QWORD*, __int64, _QWORD))(
+                *(_QWORD*)v28 + 104LL))(v28, v62, v13 + 40, v63, v13 + 44, 0);
             ++v25;
             v23 += 56;
             *(_DWORD*)(*(_QWORD*)(v13 + 24) + v24 + 20) = v27;
             v29 = *(_QWORD*)(v13 + 24) + v24;
             v24 += 40;
-            *(_DWORD*)(v29 + 24) = *(int*)(v13 + 44) - v27;
+            *(_DWORD*)(v29 + 24) = *(_DWORD*)(v13 + 44) - v27;
           } while (v25 < *(int*)(v13 + 16));
         }
       }

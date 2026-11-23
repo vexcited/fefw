@@ -2193,9 +2193,9 @@ void game_combat_e44050(float32x4_t* a1)
   if (v1 > 2) {
     if (v1 != 3) {
       if (v1 == 4) {
-        (void)*(volatile __int64*)(*(_QWORD*)(LANES128(*(a1)).n128_u64[1] +
-                                              64) +
-                                   8);
+        (void)*(
+            volatile __int64*)(*(_QWORD*)(LANES128(*(a1)).n128_u64[1] + 64) +
+                               8);
         CombatLegionManager_e2dfe0((void*)(&v39), LANES128(a1[2]).n128_f32[0]);
         v3 = LANES128(*(a1)).n128_u64[1];
         v4 = v39;

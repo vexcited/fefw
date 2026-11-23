@@ -6632,7 +6632,7 @@ fff90,116,verified,src/snd/api.cpp,_ZN3snd10startPitchERKNS_3fnd10WeakHandleERKN
 1bb520,492,verified,src/angelscript/angelscript/source/as_callfunc.cpp,_ZN8asCArrayIN26asSSystemFunctionInterface6SCleanEE8PushLastERKS1_
 1bb740,764,verified,src/angelscript/angelscript/source/as_callfunc.cpp,_Z21PrepareSystemFunctionP17asCScriptFunctionP26asSSystemFunctionInterfaceP15asCScriptEngine
 1bbd00,72,verified,src/angelscript/angelscript/source/as_callfunc.cpp,_Z18CallSystemFunctioniP10asCContext
-1bc0e0,1408,disputed,src/angelscript/angelscript/source/unplaced_3.c,angelscript_angelscript_source_1bc0e0
+1bc0e0,1408,verified,src/angelscript/angelscript/source/unplaced_3.c,angelscript_angelscript_source_1bc0e0
 1bcc50,24,verified,src/angelscript/angelscript/source/as_datatype.cpp,_ZN11asCDataTypeC2Ev
 1bcc70,136,verified,src/angelscript/angelscript/source/as_datatype.cpp,_ZN11asCDataTypeC2ERKS_
 1bcd00,4,verified,src/angelscript/angelscript/source/as_datatype.cpp,_ZN11asCDataTypeD2Ev
@@ -8787,7 +8787,7 @@ fff90,116,verified,src/snd/api.cpp,_ZN3snd10startPitchERKNS_3fnd10WeakHandleERKN
 2993c0,184,verified,src/nn/atk/detail/driver/stream_sound_player.c,StreamSoundPlayer_Unknown5
 299480,196,verified,src/nn/atk/detail/driver/stream_sound_player.c,StreamSoundPlayer_Unknown6
 299550,156,verified,src/nn/atk/detail/driver/stream_sound_player.c,StreamSoundPlayer_299550
-299620,164,disputed,src/nn/atk/detail/driver/stream_sound_player.c,StreamSoundPlayer_299620
+299620,876,disputed,src/nn/atk/detail/driver/stream_sound_player.c,StreamSoundPlayer_299620
 299a40,16,verified,src/game/game_trivial_thunks.cpp,_Z15GameStub_299a40mmmm
 299a60,820,verified,src/nn/atk/detail/driver/stream_sound_player.c,StreamSoundPlayer_299a60
 299e30,60,verified,src/nn/atk/detail/driver/stream_sound_player.c,StreamSoundPlayer_299e30
@@ -11316,7 +11316,7 @@ fff90,116,verified,src/snd/api.cpp,_ZN3snd10startPitchERKNS_3fnd10WeakHandleERKN
 322780,1752,verified,src/physx/source/lowleveldynamics/src/DyFeatherstoneArticulation.cpp,_ZN5physx2Dy18PxcFsFlushVelocityERNS0_24FeatherstoneArticulationEPNS_2Cm14SpatialVectorFE
 322ea0,1140,verified,src/physx/source/lowleveldynamics/src/DyFeatherstoneArticulation.cpp,_ZN5physx2Dy24FeatherstoneArticulation21applyTgsSubstepForcesERKNS0_22ArticulationSolverDescEfPNS_2Cm14SpatialVectorFE
 323320,1212,verified,src/physx/source/lowleveldynamics/src/DyFeatherstoneArticulation.cpp,_ZN5physx2Dy24FeatherstoneArticulation17recordDeltaMotionERKNS0_22ArticulationSolverDescEfPNS_2Cm14SpatialVectorFEf
-323800,1160,disputed,src/physx/source/lowleveldynamics/src/unplaced_6.c,physx_source_lowleveldynamics_src_323800
+323800,1160,verified,src/physx/source/lowleveldynamics/src/unplaced_6.c,physx_source_lowleveldynamics_src_323800
 324080,2340,disputed,src/physx/source/lowleveldynamics/src/DyFeatherstoneArticulation_impl.c,physx_Dy_FeatherstoneArticulation_pxcFsGetVelocity
 324b20,3436,verified,src/physx/source/lowleveldynamics/src/DyFeatherstoneArticulation.cpp,_ZNK5physx2Dy24FeatherstoneArticulation18pxcFsGetVelocitiesEjjRNS_2Cm14SpatialVectorVES4_
 325960,1160,verified,src/physx/source/lowleveldynamics/src/DyFeatherstoneArticulation.cpp,_ZN5physx2Dy24FeatherstoneArticulation17pxcFsApplyImpulseEj13__Float32x4_tS2_PKf
@@ -13359,7 +13359,7 @@ fff90,116,verified,src/snd/api.cpp,_ZN3snd10startPitchERKNS_3fnd10WeakHandleERKN
 40a6b0,64,verified,src/physx/source/geomutils/src/GuSweepTests.cpp,_ZZL23sweepBox_ConvexCoreGeomRKN5physx10PxGeometryERKNS_12PxTransformTIfEERKNS_13PxBoxGeometryES6_RKNS_2Gu3BoxERKNS_7PxVec3TIfEEfRNS_14PxGeomSweepHitENS_7PxFlagsINS_9PxHitFlag4EnumEtEEfPNS_20PxQueryThreadContextEENK10BoxSupport12supportLocalESH_
 40a6f0,8,verified,src/physx/source/geomutils/src/GuSweepTests.cpp,_ZZL26sweepConvex_ConvexCoreGeomRKN5physx10PxGeometryERKNS_12PxTransformTIfEERKNS_20PxConvexMeshGeometryES6_RKNS_7PxVec3TIfEEfRNS_14PxGeomSweepHitENS_7PxFlagsINS_9PxHitFlag4EnumEtEEfPNS_20PxQueryThreadContextEEN17ConvexCoreSupportD0Ev
 40a700,8,verified,src/physx/source/geomutils/src/GuSweepTests.cpp,_ZZL26sweepConvex_ConvexCoreGeomRKN5physx10PxGeometryERKNS_12PxTransformTIfEERKNS_20PxConvexMeshGeometryES6_RKNS_7PxVec3TIfEEfRNS_14PxGeomSweepHitENS_7PxFlagsINS_9PxHitFlag4EnumEtEEfPNS_20PxQueryThreadContextEENK17ConvexCoreSupport9getMarginEv
-40a710,32,disputed,src/physx/source/geomutils/src/unplaced_7.c,physx_source_geomutils_src_40a710
+40a710,32,verified,src/physx/source/geomutils/src/unplaced_7.c,physx_source_geomutils_src_40a710
 40a730,8,verified,src/physx/source/geomutils/src/GuSweepTests.cpp,_ZZL26sweepConvex_ConvexCoreGeomRKN5physx10PxGeometryERKNS_12PxTransformTIfEERKNS_20PxConvexMeshGeometryES6_RKNS_7PxVec3TIfEEfRNS_14PxGeomSweepHitENS_7PxFlagsINS_9PxHitFlag4EnumEtEEfPNS_20PxQueryThreadContextEEN13ConvexSupportD0Ev
 40a740,8,verified,src/physx/source/geomutils/src/GuSweepTests.cpp,_ZZL26sweepConvex_ConvexCoreGeomRKN5physx10PxGeometryERKNS_12PxTransformTIfEERKNS_20PxConvexMeshGeometryES6_RKNS_7PxVec3TIfEEfRNS_14PxGeomSweepHitENS_7PxFlagsINS_9PxHitFlag4EnumEtEEfPNS_20PxQueryThreadContextEENK13ConvexSupport9getMarginEv
 40a760,864,verified,src/physx/source/geomutils/src/GuSweepTests.cpp,_ZZL26sweepConvex_ConvexCoreGeomRKN5physx10PxGeometryERKNS_12PxTransformTIfEERKNS_20PxConvexMeshGeometryES6_RKNS_7PxVec3TIfEEfRNS_14PxGeomSweepHitENS_7PxFlagsINS_9PxHitFlag4EnumEtEEfPNS_20PxQueryThreadContextEENK13ConvexSupport12supportLocalESD_
@@ -16420,7 +16420,7 @@ fff90,116,verified,src/snd/api.cpp,_ZN3snd10startPitchERKNS_3fnd10WeakHandleERKN
 5c19f0,596,verified,src/game/unplaced_9.c,game_5c19f0
 5c1c50,140,disputed,src/game/unplaced_9.c,game_5c1c50
 5c2180,1328,verified,src/game/unplaced_23.c,game_5c2180
-5c26c0,1536,disputed,src/game/unplaced_9.c,game_5c26c0
+5c26c0,1524,disputed,src/game/unplaced_9.c,game_5c26c0
 5c2d00,1364,verified,src/game/unplaced_9.c,game_5c2d00
 5c32a0,1536,verified,src/game/unplaced_9.c,game_5c32a0
 5c38e0,1364,verified,src/game/unplaced_26.c,game_5c38e0
@@ -16882,7 +16882,7 @@ fff90,116,verified,src/snd/api.cpp,_ZN3snd10startPitchERKNS_3fnd10WeakHandleERKN
 5f3800,700,verified,src/nn/g3d/unplaced.c,nn_g3d_5f3800
 5f3ac0,356,verified,src/nn/g3d/unplaced_3.c,nn_g3d_5f3ac0
 5f3c30,348,verified,src/nn/g3d/unplaced_3.c,nn_g3d_5f3c30
-5f3f20,892,disputed,src/nn/g3d/unplaced_2.c,nn_g3d_5f3f20
+5f3f20,892,verified,src/nn/g3d/unplaced_2.c,nn_g3d_5f3f20
 5f42a0,156,verified,src/nn/g3d/unplaced_2.c,nn_g3d_5f42a0
 5f4340,532,verified,src/nn/g3d/unplaced_6.c,nn_g3d_5f4340
 5f4620,492,disputed,src/nn/g3d/unplaced_2.c,nn_g3d_5f4620
@@ -21737,7 +21737,7 @@ fff90,116,verified,src/snd/api.cpp,_ZN3snd10startPitchERKNS_3fnd10WeakHandleERKN
 7c0d80,248,verified,src/game/map/camera.c,Camera_7c0d80
 7c0e80,596,verified,src/game/map/camera.c,Camera_7c0e80
 7c10e0,704,verified,src/game/map/camera.c,Camera_7c10e0
-7c13a0,784,disputed,src/game/map/camera.c,Camera_7c13a0
+7c13a0,784,verified,src/game/map/camera.c,Camera_7c13a0
 7c16d0,252,verified,src/game/map/camera.c,Camera_7c16d0
 7c1800,8,verified,src/game/game_trivial.cpp,_Z15GameStub_7c1800m
 7c1810,8,verified,src/game/game_trivial.cpp,_Z15GameStub_7c1810m
@@ -23804,7 +23804,7 @@ fff90,116,verified,src/snd/api.cpp,_ZN3snd10startPitchERKNS_3fnd10WeakHandleERKN
 848900,280,verified,src/game/map/anonymous/proc_map_seq_phase.c,game_map_anonymous_ProcMapSeqPhase_TargetData_TryBurstHeal
 848a40,320,verified,src/game/map/anonymous/proc_map_seq_phase.c,game_map_anonymous_ProcMapSeqPhase_TargetData_TryWaste
 848bc0,280,verified,src/game/map/anonymous/proc_map_seq_phase.c,game_map_anonymous_ProcMapSeqPhase_TargetData_TryHeal
-848d00,88,disputed,src/game/map/anonymous/proc_map_seq_phase.c,game_map_anonymous_ProcMapSeqPhase_TargetData_TryGive
+848d00,88,verified,src/game/map/anonymous/proc_map_seq_phase.c,game_map_anonymous_ProcMapSeqPhase_TargetData_TryGive
 848de0,196,disputed,src/game/map/anonymous/proc_map_seq_phase.c,game_map_anonymous_ProcMapSeqPhase_TargetData_TrySkill
 848ec0,324,verified,src/game/map/anonymous/proc_map_seq_phase.c,ProcMapSeqPhase_848ec0
 849030,452,verified,src/game/map/anonymous/proc_map_seq_phase.c,ProcMapSeqPhase_849030
@@ -26112,7 +26112,7 @@ fff90,116,verified,src/snd/api.cpp,_ZN3snd10startPitchERKNS_3fnd10WeakHandleERKN
 8e2280,516,verified,src/game/game_reliance.c,GameReliance_8e2280
 8e24a0,720,verified,src/game/game_reliance.c,GameReliance_8e24a0
 8e27f0,44,verified,src/memory/new_delete.cpp,deleting destructor at 0x8e27f0
-8e2820,624,disputed,src/memory/unplaced_18.c,memory_8e2820
+8e2820,760,disputed,src/memory/unplaced_18.c,memory_8e2820
 8e2b20,100,verified,src/game/game_reliance/impl/data.c,Data_Unknown3
 8e2b90,52,verified,src/game/game_reliance/impl/data.c,Data_Unknown4
 8e2bd0,92,verified,src/game/game_reliance/impl/data.c,Data_Unknown5
@@ -27574,7 +27574,7 @@ fff90,116,verified,src/snd/api.cpp,_ZN3snd10startPitchERKNS_3fnd10WeakHandleERKN
 950e80,4,verified,src/game/game_trivial.cpp,_Z15GameStub_950e80v
 950e90,4,verified,src/game/game_trivial.cpp,_Z15GameStub_950e90v
 950ea0,4,verified,src/game/game_trivial.cpp,_Z15GameStub_950ea0v
-950ec0,824,verified,src/game/unplaced_27.c,game_950ec0
+950ec0,820,verified,src/game/unplaced_27.c,game_950ec0
 951220,148,verified,src/game/singleton/singleton_data_file.cpp,_ZN4game11ThermaeFileD0Ev
 9512c0,4,verified,src/game/singleton/singleton_data_file.cpp,_ZN4game9SingletonINS_11ThermaeFileELb0EE10InitializeEv
 9512d0,4,verified,src/game/singleton/singleton_data_file.cpp,_ZN4game9SingletonINS_11ThermaeFileELb0EE8FinalizeEv
@@ -30317,7 +30317,7 @@ a36850,60,verified,src/llvm-libcxx-21/libcxx/include/__functional/function.h,"st
 a36890,16,verified,src/llvm-libcxx-21/libcxx/include/__functional/function.h,"std::__1::__function::__func<snd::GameManager::main()::$_0::operator()(snd::Slot*) const::'lambda'(snd::Voice*), void (snd::Voice*)>::__clone(__base*)"
 a368a0,4,verified,src/llvm-libcxx-21/libcxx/include/__functional/function.h,"std::__1::__function::__func<snd::GameManager::main()::$_0::operator()(snd::Slot*) const::'lambda'(snd::Voice*), void (snd::Voice*)>::destroy()"
 a368b0,12,verified,src/llvm-libcxx-21/libcxx/include/__functional/function.h,"std::__1::__function::__func<snd::GameManager::main()::$_0::operator()(snd::Slot*) const::'lambda'(snd::Voice*), void (snd::Voice*)>::destroy_deallocate()"
-a368c0,984,disputed,src/snd/game_manager.c,snd_GameManager_main_lambda0_Invoke_a368c0
+a368c0,984,verified,src/snd/game_manager.c,snd_GameManager_main_lambda0_Invoke_a368c0
 a36e20,28,verified,src/llvm-libcxx-21/libcxx/include/__functional/function.h,"std::__1::__function::__func<snd::GameManager::main()::$_0::operator()(snd::Slot*) const::'lambda'(snd::Voice*), void (snd::Voice*)>::target(std::type_info const&)"
 a36e40,12,verified,src/llvm-libcxx-21/libcxx/include/__functional/function.h,"std::__1::__function::__func<snd::GameManager::main()::$_0::operator()(snd::Slot*) const::'lambda'(snd::Voice*), void (snd::Voice*)>::target_type()"
 a36e50,16,verified,src/llvm-libcxx-21/libcxx/include/__functional/function.h,"std::__1::__function::__func<snd::GameManager::stopWithoutBGM(snd::Fade const&)::$_0, void (snd::Slot*)>::destructor"
@@ -30797,7 +30797,7 @@ a4d510,508,verified,src/task/registration_impl.c,Registration_a4d510
 a4d720,764,verified,src/task/registration_impl.c,Registration_a4d720
 a4da40,220,verified,src/task/registration_impl.c,Registration_a4da40
 a4db40,132,verified,src/task/registration_impl.c,Registration_a4db40
-a4dbe0,384,disputed,src/task/unplaced_8.c,task_a4dbe0
+a4dbe0,384,verified,src/task/unplaced_8.c,task_a4dbe0
 a4f6c0,264,verified,src/task/registration_impl.c,Registration_a4f6c0
 a4f800,560,verified,src/task/registration_impl.c,Registration_a4f800
 a4fa80,248,verified,src/task/registration_impl.c,Registration_a4fa80
@@ -36718,7 +36718,7 @@ c26560,212,verified,src/wld/map/object_group.c,wld_map_ObjectGroup_FadeMapEffect
 c26640,28,verified,src/llvm-libcxx-21/libcxx/include/__functional/function.h,"std::__1::__function::__func<wld::map::ObjectGroup::FadeMapEffects(wld::map::EffectTags const*, unsigned int, unsigned int, float)::$_0, wld::EffectFadeResult (wld::EffectHandle&)>::target(std::type_info const&)"
 c26660,12,verified,src/llvm-libcxx-21/libcxx/include/__functional/function.h,"std::__1::__function::__func<wld::map::ObjectGroup::FadeMapEffects(wld::map::EffectTags const*, unsigned int, unsigned int, float)::$_0, wld::EffectFadeResult (wld::EffectHandle&)>::target_type()"
 c26680,276,verified,src/game/unnamed/b010_0.c,GameHr_c26680
-c267a0,4652,disputed,src/wld/unplaced.c,wld_c267a0
+c267a0,4996,verified,src/wld/unplaced.c,wld_c267a0
 c27c00,1608,verified,src/game/unnamed/b010_0.c,GameHr_c27c00
 c284a0,2108,verified,src/game/unnamed/b010_1.c,GameHr_c284a0
 c29c40,884,verified,src/game/unnamed/b010_1.c,GameHr_c29c40
@@ -40881,7 +40881,7 @@ d9b420,964,verified,src/as/manager.c,Manager_d9b420
 d9b810,184,verified,src/as/manager.c,Manager_d9b810
 d9b900,260,verified,src/as/unplaced_4.c,as_d9b900
 d9ba20,580,verified,src/as/manager.c,Manager_d9ba20
-d9bc80,608,disputed,src/as/unplaced_11.c,as_d9bc80
+d9bc80,608,verified,src/as/unplaced_11.c,as_d9bc80
 d9bf20,1888,verified,src/as/unplaced_8.c,as_d9bf20
 d9c8c0,1668,verified,src/as/manager.c,Manager_d9c8c0
 d9cfa0,52,verified,src/game/unnamed/b011_2.c,GameHr_d9cfa0
@@ -42719,7 +42719,7 @@ e44670,44,verified,src/memory/new_delete.cpp,deleting destructor at 0xe44670
 e446a0,296,verified,src/game/combat/unplaced.c,game_combat_e446a0
 e447d0,472,verified,src/game/combat/unplaced.c,game_combat_e447d0
 e449b0,788,verified,src/game/combat/unplaced.c,game_combat_e449b0
-e44cd0,1228,verified,src/game/combat/unplaced.c,game_combat_e44cd0
+e44cd0,1224,verified,src/game/combat/unplaced.c,game_combat_e44cd0
 e45210,800,verified,src/game/combat/unplaced.c,game_combat_e45210
 e45540,316,verified,src/game/combat/unplaced_4.c,game_combat_e45540
 e4b940,656,verified,src/game/unnamed/b012_1.c,GameHr_e4b940
@@ -49217,12 +49217,12 @@ fffcb0,1244,verified,src/game/unnamed/b014_1.c,GameHr_fffcb0
 1021d90,68,verified,src/game/map/map_draw.cpp,_ZN4game3map20MapEmulateBattleInfoD2Ev
 1021de0,132,verified,src/game/map/map_draw.cpp,_ZN4game3map20MapEmulateBattleInfoD0Ev
 1021e80,208,verified,src/game/unnamed/b014_1.c,GameHr_1021e80
-10221c0,4044,verified,src/game/unplaced_5.c,game_10221c0
+10221c0,4060,verified,src/game/unplaced_5.c,game_10221c0
 1023920,24,verified,src/llvm-libcxx-21/libcxx/include/__vector/vector.h,std::vector<T>::__throw_length_error()
 1023940,24,verified,src/llvm-libcxx-21/libcxx/include/__vector/vector.h,std::vector<T>::__throw_length_error()
 1023960,284,verified,src/game/hub/character_load_controller.c,CharacterLoadController_Destructor
 1023a80,80,verified,src/memory/new_delete.cpp,deleting destructor at 0x1023a80
-1023ae0,6172,disputed,src/game/unplaced_5.c,game_1023ae0
+1023ae0,6416,disputed,src/game/unplaced_5.c,game_1023ae0
 1025a10,460,verified,src/game/unnamed/b014_1.c,GameHr_1025a10
 1025be0,516,verified,src/game/unnamed/b014_1.c,GameHr_1025be0
 1025e00,24,verified,src/llvm-libcxx-21/libcxx/include/__vector/vector.h,std::vector<T>::__throw_length_error()
@@ -49466,7 +49466,7 @@ fffcb0,1244,verified,src/game/unnamed/b014_1.c,GameHr_fffcb0
 103ee50,452,verified,src/game/zview/unplaced.c,game_zview_103ee50
 103f020,4,verified,src/memory/new_delete.cpp,complete destructor at 0x103f020
 103f030,44,verified,src/memory/new_delete.cpp,deleting destructor at 0x103f030
-103f060,2564,disputed,src/memory/unplaced_18.c,memory_103f060
+103f060,2584,disputed,src/memory/unplaced_18.c,memory_103f060
 103fb80,2372,verified,src/game/zview/unplaced.c,game_zview_103fb80
 10404f0,4,verified,src/memory/new_delete.cpp,complete destructor at 0x10404f0
 1040500,44,verified,src/memory/new_delete.cpp,deleting destructor at 0x1040500
@@ -50156,7 +50156,7 @@ fffcb0,1244,verified,src/game/unnamed/b014_1.c,GameHr_fffcb0
 106fae0,632,verified,src/game/unnamed/e006_0.c,GameHr_106fae0
 106fdc0,116,verified,src/game/unnamed/b015_0.c,GameHr_106fdc0
 106fe40,344,verified,src/game/unnamed/e006_2.c,GameHr_106fe40
-106ffe0,784,disputed,src/game/unplaced_5.c,game_106ffe0
+106ffe0,784,verified,src/game/unplaced_5.c,game_106ffe0
 1070320,944,verified,src/game/unnamed/f001_0.c,GameHr_1070320
 1070860,868,verified,src/game/unplaced_5.c,game_1070860
 1070c00,324,verified,src/game/unnamed/b015_0.c,GameHr_1070c00
@@ -52098,7 +52098,7 @@ fffcb0,1244,verified,src/game/unnamed/b014_1.c,GameHr_fffcb0
 10f8420,280,verified,src/game/character/character_animator_sound.c,game_character_CharacterAnimatorSound_CharacterAnimatorSound_lambda2_Invoke
 10f8540,28,verified,src/llvm-libcxx-21/libcxx/include/__functional/function.h,"std::__1::__function::__func<game::character::CharacterAnimatorSound::CharacterAnimatorSound(game::character::CharacterBuilder*, game::character::CharacterObservable*)::$_2, void (std::__1::pair<float, float>)>::target(std::type_info const&)"
 10f8560,12,verified,src/llvm-libcxx-21/libcxx/include/__functional/function.h,"std::__1::__function::__func<game::character::CharacterAnimatorSound::CharacterAnimatorSound(game::character::CharacterBuilder*, game::character::CharacterObservable*)::$_2, void (std::__1::pair<float, float>)>::target_type()"
-10f8580,920,verified,src/game/unplaced_5.c,game_10f8580
+10f8580,916,verified,src/game/unplaced_5.c,game_10f8580
 10f8960,564,verified,src/game/unnamed/b015_2.c,GameHr_10f8960
 10f8ba0,452,verified,src/game/unnamed/b015_1.c,GameHr_10f8ba0
 10f8d80,344,verified,src/game/unnamed/b015_2.c,GameHr_10f8d80
@@ -52853,7 +52853,7 @@ fffcb0,1244,verified,src/game/unnamed/b014_1.c,GameHr_fffcb0
 112cfc0,340,verified,src/game/unplaced_5.c,game_112cfc0
 112d480,240,verified,src/game/unplaced_5.c,game_112d480
 112d580,456,verified,src/game/unplaced_5.c,game_112d580
-112d860,488,verified,src/game/unplaced_5.c,game_112d860
+112d860,484,verified,src/game/unplaced_5.c,game_112d860
 112daa0,1316,verified,src/game/unplaced_5.c,game_112daa0
 112dfe0,332,verified,src/game/unplaced_5.c,game_112dfe0
 112e140,108,verified,src/game/unnamed/b016_0.c,GameHr_112e140
@@ -56503,7 +56503,7 @@ fffcb0,1244,verified,src/game/unnamed/b014_1.c,GameHr_fffcb0
 1254b40,100,verified,src/game/unnamed/b017_0.c,GameHr_1254b40
 1254bc0,116,verified,src/game/unnamed/b017_0.c,GameHr_1254bc0
 1254c50,24,verified,src/game/game_trivial_misc.cpp,_Z16GameStub_1254c50m
-1254c80,1576,verified,src/game/unplaced_27.c,game_1254c80
+1254c80,1572,verified,src/game/unplaced_27.c,game_1254c80
 1255300,1260,verified,src/game/unplaced_6.c,game_1255300
 1255900,24,verified,src/game/unnamed/b017_0.c,GameHr_1255900
 1255920,360,verified,src/game/unnamed/b017_1.c,GameHr_1255920
@@ -56524,7 +56524,7 @@ fffcb0,1244,verified,src/game/unnamed/b014_1.c,GameHr_fffcb0
 1257e40,1272,verified,src/game/game_subquest_data.c,GameSubquestData_1257e40
 1258420,540,verified,src/game/game_subquest_data.c,GameSubquestData_1258420
 1258640,460,verified,src/game/game_subquest_data.c,GameSubquestData_1258640
-1258820,1512,disputed,src/game/unplaced_39.c,game_1258820
+1258820,1512,verified,src/game/unplaced_39.c,game_1258820
 1259360,592,verified,src/game/game_subquest_data.c,GameSubquestData_Destructor
 12595b0,8,verified,src/game/game_trivial.cpp,_Z16GameStub_12595b0m
 12595c0,80,verified,src/memory/new_delete.cpp,deleting destructor at 0x12595c0
@@ -77122,7 +77122,7 @@ fffcb0,1244,verified,src/game/unnamed/b014_1.c,GameHr_fffcb0
 1793260,28,verified,src/game/game_trivial_calls.cpp,_Z16GameStub_1793260mm
 1793280,12,verified,src/game/game_trivial.cpp,_Z16GameStub_1793280v
 1793290,24,verified,src/llvm-libcxx-21/libcxx/include/__vector/vector.h,std::vector<T>::__throw_length_error()
-17932c0,3028,disputed,src/game/menu/unit_troop_list_menu.c,UnitTroopListMenu_17932c0
+17932c0,3032,disputed,src/game/menu/unit_troop_list_menu.c,UnitTroopListMenu_17932c0
 1793f10,372,verified,src/game/menu/unit_troop_list_menu.c,UnitTroopListMenu_1793f10
 17940a0,532,verified,src/game/menu/unit_troop_list_menu.c,UnitTroopListMenu_17940a0
 1794400,44,verified,src/memory/new_delete.cpp,deleting destructor at 0x1794400
@@ -78346,8 +78346,8 @@ fffcb0,1244,verified,src/game/unnamed/b014_1.c,GameHr_fffcb0
 17d7080,28,verified,src/task/callback.cpp,fw::task::FunctionCallback::Target
 17d70a0,12,verified,src/task/callback.cpp,fw::task::FunctionCallback::Type
 17d70b0,616,verified,src/game/unnamed/b024_0.c,GameHr_17d70b0
-17d73a0,332,disputed,src/task/unplaced_8.c,task_17d73a0
-17d7840,792,disputed,src/task/unplaced_8.c,task_17d7840
+17d73a0,332,verified,src/task/unplaced_8.c,task_17d73a0
+17d7840,792,verified,src/task/unplaced_8.c,task_17d7840
 17d7bc0,476,verified,src/task/unplaced_7.c,task_17d7bc0
 17d8560,496,verified,src/task/unplaced_2.c,task_17d8560
 17d87e0,124,verified,src/game/unnamed/b024_1.c,GameHr_17d87e0
@@ -86626,7 +86626,7 @@ fffcb0,1244,verified,src/game/unnamed/b014_1.c,GameHr_fffcb0
 199c0d0,336,verified,src/game/facility/anonymous/obelisk_depository_legion_menu_item.c,ObeliskDepositoryLegionMenuItem_Unknown72
 199c220,452,verified,src/game/facility/anonymous/obelisk_depository_legion_menu_item.c,ObeliskDepositoryLegionMenuItem_Unknown73
 199c400,280,verified,src/game/facility/anonymous/obelisk_depository_legion_menu_item.c,ObeliskDepositoryLegionMenuItem_Unknown74
-199c530,424,disputed,src/game/facility/anonymous/obelisk_depository_legion_menu_item.c,game_facility_anonymous_ObeliskDepositoryLegionMenuItem_CreateDialog
+199c530,424,verified,src/game/facility/anonymous/obelisk_depository_legion_menu_item.c,game_facility_anonymous_ObeliskDepositoryLegionMenuItem_CreateDialog
 199c6f0,568,verified,src/game/facility/anonymous/obelisk_depository_legion_menu_item.c,ObeliskDepositoryLegionMenuItem_Unknown76
 199c9b0,12,verified,src/game/game_trivial.cpp,_Z16GameStub_199c9b0v
 199c9c0,12,verified,src/game/game_trivial.cpp,_Z16GameStub_199c9c0v

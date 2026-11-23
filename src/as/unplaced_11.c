@@ -25,11 +25,11 @@ void as_d9bc80(__int64 a1, __int64* a2, __int64* a3)
   int v12;
   unsigned __int64 v13;
   unsigned __int64 v14;
-  const char* v15;
-  const char* v16;
+  char* v15;
+  char* v16;
   __int64 v17;
   float v19;
-  const char* v20;
+  char* v20;
   int v21;
   unsigned __int64 v22;
   unsigned __int64 v23;
@@ -76,7 +76,7 @@ void as_d9bc80(__int64 a1, __int64* a2, __int64* a3)
           v16 = (const char*)(v10 + 1);
         }
         v17 = GameRoutine_1a09c60((__int64)v16, 46, v14);
-        if (v17 != 0 && v17 - (_QWORD)v16 != -1) {
+        if (v17 != 0 & v17 - (_QWORD)v16 != -1) {
           v19 = GameRoutine_1a0ac90(v16, (__int64)&v35_.v35);
           if (*v35_.v35 == 0) {
             v26 = 3;
@@ -108,7 +108,7 @@ void as_d9bc80(__int64 a1, __int64* a2, __int64* a3)
           if (v23 == 5) {
             v27 = *(_DWORD*)v24;
             v28 = v24[4];
-            if (v27 != 1936482662 || v28 != 101) {
+            if (v27 != 1936482662 | v28 != 101) {
             LABEL_37:
               if ((v22 & 1) != 0) {
                 fw_text_String_CopyTerminated((__int64*)&v35_.v35,

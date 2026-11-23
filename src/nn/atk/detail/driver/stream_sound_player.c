@@ -1854,24 +1854,23 @@ __int64 StreamSoundPlayer_299620(int* a1, char a2, __int64 a3,
   __int64* v17;
   __int64 i;
   __int64* v19;
-  int v20;
-  signed int v21;
-  unsigned __int64 v22;
-  int v23;
-  __int64 v24;
+  int v21;
+  signed int v22;
+  unsigned __int64 v23;
+  int v24;
   __int64 v25;
-  int v26;
-  unsigned int v27;
-  int v28;
-  unsigned int v29;
-  int v30;
-  unsigned __int64 v31;
-  __int64 v32;
+  __int64 v26;
+  int v27;
+  unsigned int v28;
+  int v29;
+  unsigned int v30;
+  int v31;
+  unsigned __int64 v32;
   __int64 v33;
   __int64 v34;
-  _QWORD* v35;
-  int* v36;
-  __int64 v37;
+  __int64 v35;
+  _QWORD* v36;
+  int* v37;
   __int64 v38;
   __int64 v39;
   __int64 v40;
@@ -1879,12 +1878,13 @@ __int64 StreamSoundPlayer_299620(int* a1, char a2, __int64 a3,
   __int64 v42;
   __int64 v43;
   __int64 v44;
-  _QWORD* v45;
-  int* v46;
-  __int64 v47;
-  int v48;
-  _QWORD v49[4];
-  _QWORD v50[12];
+  __int64 v45;
+  _QWORD* v46;
+  int* v47;
+  __int64 v48;
+  int v49;
+  _QWORD v50[4];
+  _QWORD v51[12];
 
   v5 = *((unsigned __int8*)a1 + 224);
   result = 0;
@@ -1893,7 +1893,7 @@ __int64 StreamSoundPlayer_299620(int* a1, char a2, __int64 a3,
   }
   if ((a2 & 1) == 0) {
     *((_BYTE*)a1 + 67) = 1;
-    (*(void (**)(__int64))(*(_QWORD*)a1 + 40LL))((__int64)a1);
+    (*(void (**)(int*))(*(_QWORD*)a1 + 40LL))(a1);
     return 0;
   }
   v7 = a1[104];
@@ -1949,100 +1949,100 @@ __int64 StreamSoundPlayer_299620(int* a1, char a2, __int64 a3,
       }
       if ((StreamSoundPlayer_298d20((__int64)a1) & 1) != 0) {
         if ((StreamSoundPlayer_298d80((__int64)a1) & 1) != 0) {
-          v20 = a1[68];
+          v21 = a1[68];
           a1[61] = 0;
-          if (v20 >= 1) {
-            v21 = 0;
+          if (v21 >= 1) {
+            v22 = 0;
             do {
-              v31 = (unsigned int)a1[284];
+              v32 = (unsigned int)a1[284];
+              memset(v51, 0, sizeof(v51));
               memset(v50, 0, sizeof(v50));
-              memset(v49, 0, sizeof(v49));
-              if ((int)v31 >= 1) {
-                v32 = (*((_QWORD*)a1 + 48) + 2304LL) * (unsigned int)a1[69];
-                if ((unsigned int)v31 >= 8) {
+              if ((int)v32 >= 1) {
+                v33 = (*((_QWORD*)a1 + 48) + 2304LL) * (unsigned int)a1[69];
+                if ((unsigned int)v32 >= 8) {
+                  v35 = 0;
                   v34 = 0;
-                  v33 = 0;
-                  v35 = v50;
+                  v36 = v51;
                   do {
-                    v36 = &a1[v34];
-                    v33 += 8;
-                    v34 += 8448;
-                    v37 = *((_QWORD*)v36 + 1200);
-                    v38 = *((_QWORD*)v36 + 1728);
-                    v39 = *((_QWORD*)v36 + 672) + v32;
-                    *(v35 - 4) = *((_QWORD*)v36 + 144) + v32;
-                    *(v35 - 3) = v39;
-                    v40 = *((_QWORD*)v36 + 2256);
-                    *(v35 - 2) = v37 + v32;
-                    *(v35 - 1) = v38 + v32;
-                    v41 = *((_QWORD*)v36 + 2784) + v32;
-                    *v35 = v40 + v32;
-                    v35[1] = v41;
-                    v42 = *((_QWORD*)v36 + 3312) + v32;
-                    v43 = *((_QWORD*)v36 + 3840) + v32;
-                    v35[2] = v42;
-                    v35[3] = v43;
-                    v35 += 8;
-                  } while (8448 * ((v31 >> 3) & 0xFFFFFFF) != v34);
+                    v37 = &a1[v35];
+                    v34 += 8;
+                    v35 += 8448;
+                    v38 = *((_QWORD*)v37 + 1200);
+                    v39 = *((_QWORD*)v37 + 1728);
+                    v40 = *((_QWORD*)v37 + 672) + v33;
+                    *(v36 - 4) = *((_QWORD*)v37 + 144) + v33;
+                    *(v36 - 3) = v40;
+                    v41 = *((_QWORD*)v37 + 2256);
+                    *(v36 - 2) = v38 + v33;
+                    *(v36 - 1) = v39 + v33;
+                    v42 = *((_QWORD*)v37 + 2784) + v33;
+                    *v36 = v41 + v33;
+                    v36[1] = v42;
+                    v43 = *((_QWORD*)v37 + 3312) + v33;
+                    v44 = *((_QWORD*)v37 + 3840) + v33;
+                    v36[2] = v43;
+                    v36[3] = v44;
+                    v36 += 8;
+                  } while (8448 * ((v32 >> 3) & 0xFFFFFFF) != v35);
                 }
                 else {
-                  v33 = 0;
+                  v34 = 0;
                 }
-                v44 = v31 & 7;
-                if (v44 != 0) {
-                  v45 = &v49[v33];
-                  v46 = &a1[1056 * v33 + 288];
+                v45 = v32 & 7;
+                if (v45 != 0) {
+                  v46 = &v50[v34];
+                  v47 = &a1[1056 * v34 + 288];
                   do {
-                    v47 = *(_QWORD*)v46;
-                    v46 += 1056;
-                    --v44;
-                    *v45++ = v47 + v32;
-                  } while (v44 != 0);
+                    v48 = *(_QWORD*)v47;
+                    v47 += 1056;
+                    --v45;
+                    *v46++ = v48 + v33;
+                  } while (v45 != 0);
                 }
               }
-              v48 = a1[72];
-              if (v48 != 0) {
-                if (v48 == 1) {
+              v49 = a1[72];
+              if (v49 != 0) {
+                if (v49 == 1) {
                   if (*((_QWORD*)a1 + 37) * a1[81] / 0x3E8uLL >= 0xFFFFFFFF) {
-                    v22 = 0xFFFFFFFFLL;
+                    v23 = 0xFFFFFFFFLL;
                   }
                   else {
-                    v22 = *((_QWORD*)a1 + 37) * a1[81] / 0x3E8uLL;
+                    v23 = *((_QWORD*)a1 + 37) * a1[81] / 0x3E8uLL;
                   }
                 }
                 else {
-                  v22 = 0;
+                  v23 = 0;
                 }
               }
               else {
-                v22 = *((_QWORD*)a1 + 37);
+                v23 = *((_QWORD*)a1 + 37);
               }
-              v23 = *((unsigned __int8*)a1 + 65);
-              v24 = *((_QWORD*)a1 + 140);
-              v25 = *((_QWORD*)a1 + 32);
-              v26 = a1[69];
+              v24 = *((unsigned __int8*)a1 + 65);
+              v25 = *((_QWORD*)a1 + 140);
+              v26 = *((_QWORD*)a1 + 32);
+              v27 = a1[69];
               *((_QWORD*)a1 + 37) = 0;
               *((_QWORD*)a1 + 140) = 0;
-              if (v23 != 0) {
-                v27 = 2;
+              if (v24 != 0) {
+                v28 = 2;
               }
               else {
-                v27 = 1;
+                v28 = 1;
               }
-              StreamSoundPlayer_29bb80_alt2(v25, (__int64)v49, v26, v22, v24,
-                                            v27);
-              v28 = a1[69];
-              v29 = a1[68];
-              ++v21;
-              if (v28 + 1 < v29) {
-                v30 = v28 + 1;
+              StreamSoundPlayer_29bb80_alt2(v26, (__int64)v50, v27, v23, v25,
+                                            v28);
+              v29 = a1[69];
+              v30 = a1[68];
+              ++v22;
+              if (v29 + 1 < v30) {
+                v31 = v29 + 1;
               }
               else {
-                v30 = 0;
+                v31 = 0;
               }
-              a1[69] = v30;
+              a1[69] = v31;
               ++a1[61];
-            } while (v21 < (int)v29);
+            } while (v22 < (int)v30);
           }
           goto LABEL_24;
         }
@@ -2072,7 +2072,7 @@ __int64 StreamSoundPlayer_299620(int* a1, char a2, __int64 a3,
     *v12 = 0;
     --v13;
   }
-  (*(void (**)(__int64))(*(_QWORD*)a1 + 24LL))((__int64)a1);
+  (*(void (**)(int*))(*(_QWORD*)a1 + 24LL))(a1);
   *((_BYTE*)a1 + 68) = 1;
   return 0;
 }

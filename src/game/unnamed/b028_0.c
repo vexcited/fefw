@@ -29421,8 +29421,9 @@ LABEL_2:
                       v362 = v362 / v367;
                     }
                     if (!((float)((float)(PSEUDO_UNFUSED(v354 * v364)) +
-                                (float)(v356 * v363)) > (float)((float)(PSEUDO_UNFUSED(v355 * v362)) +
-                                (float)(v357 * v361)))) {
+                                  (float)(v356 * v363)) >
+                          (float)((float)(PSEUDO_UNFUSED(v355 * v362)) +
+                                  (float)(v357 * v361)))) {
                       goto LABEL_316;
                     }
                   }
@@ -29616,7 +29617,7 @@ LABEL_2:
             v77 = v77 / v80;
           }
         } while (!((float)((float)(PSEUDO_UNFUSED(v47 * v77)) +
-                         (float)(v78 * v46)) > v59));
+                           (float)(v78 * v46)) > v59));
       }
       else {
         v67 = (unsigned __int64)a2;
@@ -29746,7 +29747,7 @@ LABEL_2:
               v110 = v110 / v113;
             }
           } while (!((float)((float)(PSEUDO_UNFUSED(v90 * v110)) +
-                           (float)(v111 * v89)) > v101));
+                             (float)(v111 * v89)) > v101));
         LABEL_65:;
         } while (v10 < v81);
       }
@@ -29888,8 +29889,9 @@ LABEL_2:
           v136 = v129 / v137;
         }
         if (!((float)((float)(PSEUDO_UNFUSED(v126 * v131)) +
-                    (float)(v125 * v130)) > (float)((float)(PSEUDO_UNFUSED(v122 * v136)) +
-                    (float)(v123 * v135)))) {
+                      (float)(v125 * v130)) >
+              (float)((float)(PSEUDO_UNFUSED(v122 * v136)) +
+                      (float)(v123 * v135)))) {
         LABEL_125:
           v10 = v9 + 40;
           if (v9 + 40 < (unsigned __int64)a2) {
@@ -30010,7 +30012,7 @@ LABEL_2:
           v149 = v149 / v152;
         }
       } while (!(v146 > (float)((float)(PSEUDO_UNFUSED(v129 * v149)) +
-                               (float)(v150 * v128))));
+                                (float)(v150 * v128))));
     LABEL_145:
       v173 = (unsigned __int64)a2;
       if (v10 < (unsigned __int64)a2) {
@@ -30056,7 +30058,7 @@ LABEL_2:
               v187 = v187 / v190;
             }
             if (!(v186 > (float)((float)(PSEUDO_UNFUSED(v184 * v187)) +
-                                (float)(v188 * v185)))) {
+                                 (float)(v188 * v185)))) {
               break;
             }
           }
@@ -30154,7 +30156,7 @@ LABEL_2:
               v217 = v217 / v220;
             }
           } while (!(v215 > (float)((float)(PSEUDO_UNFUSED(v213 * v217)) +
-                                   (float)(v218 * v214))));
+                                    (float)(v218 * v214))));
         LABEL_183:
           v221 = (float*)(v173 - 40);
           do {
@@ -30263,8 +30265,9 @@ LABEL_2:
         v268 = v268 / v274;
       }
       if (!((float)((float)(PSEUDO_UNFUSED(v260 * v270)) +
-                  (float)(v262 * v269)) > (float)((float)(PSEUDO_UNFUSED(v261 * v268)) +
-                  (float)(v263 * v267)))) {
+                    (float)(v262 * v269)) >
+            (float)((float)(PSEUDO_UNFUSED(v261 * v268)) +
+                    (float)(v263 * v267)))) {
         goto LABEL_220;
       }
     }
@@ -30337,8 +30340,9 @@ LABEL_2:
           v296 = v296 / v302;
         }
         if (!((float)((float)(PSEUDO_UNFUSED(v288 * v298)) +
-                    (float)(v290 * v297)) > (float)((float)(PSEUDO_UNFUSED(v289 * v296)) +
-                    (float)(v291 * v295)))) {
+                      (float)(v290 * v297)) >
+              (float)((float)(PSEUDO_UNFUSED(v289 * v296)) +
+                      (float)(v291 * v295)))) {
         LABEL_255:
           v253 = v10 + v279;
         LABEL_219:
@@ -30483,8 +30487,9 @@ LABEL_2:
                   v507 = v507 / v513;
                 }
                 if (!((float)((float)(PSEUDO_UNFUSED(v499 * v509)) +
-                            (float)(v501 * v508)) > (float)((float)(PSEUDO_UNFUSED(v500 * v507)) +
-                            (float)(v502 * v506)))) {
+                              (float)(v501 * v508)) >
+                      (float)((float)(PSEUDO_UNFUSED(v500 * v507)) +
+                              (float)(v502 * v506)))) {
                 LABEL_397:
                   *(float*)(i - 12) = v467;
                   *(float*)(i - 8) = v468;
@@ -46977,8 +46982,7 @@ LABEL_2:
         return result;
       }
       if (v11 == 2) {
-        result = v446(a3, *((_DWORD*)a2 - 5),
-                      *(_DWORD*)(v8 + 20));
+        result = v446(a3, *((_DWORD*)a2 - 5), *(_DWORD*)(v8 + 20));
         if ((result & 1) != 0) {
           v290 = *(_QWORD*)v8;
           v404 = *(_QWORD*)(v8 + 24);
@@ -47007,14 +47011,13 @@ LABEL_2:
       break;
     }
     if (v11 == 4) {
-      return v448((__int64*)v8, (__int64*)(v8 + 40),
-                  (__int64*)(v8 + 80), v236, a3);
+      return v448((__int64*)v8, (__int64*)(v8 + 40), (__int64*)(v8 + 80), v236,
+                  a3);
     }
     if (v11 == 5) {
       GameRoutine_156fb70_alt2((__int64*)v8, (__int64*)(v8 + 40),
                                (__int64*)(v8 + 80), (__int64*)(v8 + 120), a3);
-      result = v446(a3, *((_DWORD*)a2 - 5),
-                    *(_DWORD*)(v8 + 140));
+      result = v446(a3, *((_DWORD*)a2 - 5), *(_DWORD*)(v8 + 140));
       if ((result & 1) == 0) {
         return result;
       }
@@ -47036,8 +47039,7 @@ LABEL_2:
       *(a2 - 1) = v436;
       *(a2 - 4) = v325;
       *(a2 - 3) = v363;
-      result = v446(a3, *(_DWORD*)(v8 + 140),
-                    *(_DWORD*)(v8 + 100));
+      result = v446(a3, *(_DWORD*)(v8 + 140), *(_DWORD*)(v8 + 100));
       if ((result & 1) == 0) {
         return result;
       }
@@ -47097,8 +47099,7 @@ LABEL_2:
           v162 = v8;
           do {
             v164 = v158;
-            result = v446(a3, *(_DWORD*)(v162 + 60),
-                          *(_DWORD*)(v162 + 20));
+            result = v446(a3, *(_DWORD*)(v162 + 60), *(_DWORD*)(v162 + 20));
             if ((result & 1) != 0) {
               v165 = *(_DWORD*)(v162 + 60);
               v292 = *v164;
@@ -47144,8 +47145,7 @@ LABEL_2:
       else if (!v160) {
         do {
           v218 = v158;
-          result = v446(a3, *(_DWORD*)(v8 + 60),
-                        *(_DWORD*)(v8 + 20));
+          result = v446(a3, *(_DWORD*)(v8 + 60), *(_DWORD*)(v8 + 20));
           if ((result & 1) != 0) {
             v219 = *(_DWORD*)(v8 + 60);
             v297 = *v218;
@@ -47209,8 +47209,7 @@ LABEL_2:
               v175 += v177;
             }
             v178 = v8 + 40 * v173;
-            result = v446(a3, *(_DWORD*)(v175 + 20),
-                          *(_DWORD*)(v178 + 20));
+            result = v446(a3, *(_DWORD*)(v175 + 20), *(_DWORD*)(v178 + 20));
             if ((result & 1) == 0) {
               v369 = *(_DWORD*)(v178 + 16);
               v293 = *(_QWORD*)v178;
@@ -47281,8 +47280,7 @@ LABEL_2:
             v194 = v198 + 5;
             if (v200 < v189) {
               v193 = v198 + 10;
-              result = v446(a3, *((_DWORD*)v198 + 15),
-                            *((_DWORD*)v198 + 25));
+              result = v446(a3, *((_DWORD*)v198 + 15), *((_DWORD*)v198 + 25));
               if ((result & 1) != 0) {
                 v194 = v193;
                 v191 = v200;
@@ -47334,8 +47332,7 @@ LABEL_2:
                       0x3333333333333333LL * ((unsigned __int64)v205 >> 3)) >>
                      1;
               v207 = v8 + 40 * v206;
-              result = v446(a3, *(_DWORD*)(v207 + 20),
-                            *((_DWORD*)v194 + 5));
+              result = v446(a3, *(_DWORD*)(v207 + 20), *((_DWORD*)v194 + 5));
               if ((result & 1) != 0) {
                 v208 = *((_DWORD*)v194 + 5);
                 v251 = *v194;
@@ -51313,7 +51310,8 @@ __int64 GameHr_18e1120(__int64 result, unsigned __int64 a2, __int64 a3, char a4)
                   v168 = *(_QWORD*)(v161 + 48);
                   *(_BYTE*)(v170 + 64) = v166;
                   *(_QWORD*)(v170 + 48) = v168;
-                } while (!(v160 > (__int64)((unsigned __int64)(v156 - 2) >> 1)));
+                } while (
+                    !(v160 > (__int64)((unsigned __int64)(v156 - 2) >> 1)));
                 v175 = (_QWORD*)(a2 - 80);
                 a2 -= 80LL;
                 if (v161 == v162 - 80) {

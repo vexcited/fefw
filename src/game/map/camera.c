@@ -145,7 +145,9 @@ float GameRoutine_1a0a6a0(float, float);
 float Camera_7c13a0_alt2();
 __attribute__((swiftcall)) void Camera_7c13a0_alt3(PSEUDO_X8 x8_, __int64 a1,
                                                    int8x16_t* a2);
-float Camera_7c13a0();
+float Camera_7c13a0_alt4();
+__attribute__((swiftcall)) void Camera_7c13a0(PSEUDO_X8 x8_, __int64 a1,
+                                              int8x16_t* a2);
 
 __int64 Camera_7be4c0(__int64 a1, __int64 a2)
 {
@@ -2319,17 +2321,14 @@ LABEL_8:
   }
 }
 
-float Camera_7c13a0()
+__attribute__((swiftcall)) void Camera_7c13a0(PSEUDO_X8 x8_, __int64 a1,
+                                              int8x16_t* a2)
 {
 
 #pragma clang fp contract(on)
 
-  __int64 v0;
-  int8x16_t* v1;
-  float32x4_t* v2;
+  float32x4_t* a3 = (float32x4_t*)PSEUDO_X8_VALUE(x8_);
   _QWORD* v3;
-  float32x4_t* v4;
-  int8x16_t* v5;
   __int64 v6;
   float v7;
   float v8;
@@ -2360,56 +2359,30 @@ float Camera_7c13a0()
   float32x4_t v33;
   float32x4_t v34;
   float32x4_t v35;
-  float32x4_t v36;
+  __n128 result;
   float32x4_t v37;
 
-  v0 = COERCE_AS(__typeof__(v0),
-                 PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
-  v1 = COERCE_AS(__typeof__(v1),
-                 PSEUDO_REGISTER(unsigned long long, "x1", "=r")),
-  v2 = COERCE_AS(__typeof__(v2),
-                 PSEUDO_REGISTER(unsigned long long, "x8", "=r")),
   v7 = COERCE_AS(__typeof__(v7), PSEUDO_REGISTER(float, "s0", "=w")),
   v9 = COERCE_AS(__typeof__(v9), PSEUDO_REGISTER(float, "s0", "=w"));
-  v3 = *(_QWORD**)(v0 + 432);
-  v4 = v2;
-  v5 = v1;
+  v3 = *(_QWORD**)(a1 + 432);
   v6 = v3[2];
   v3 += 2;
   (*(void (**)(__int64))(v6 + 16))((__int64)v3),
-      v0 = COERCE_AS(__typeof__(v0),
-                     PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
-      v1 = COERCE_AS(__typeof__(v1),
-                     PSEUDO_REGISTER(unsigned long long, "x1", "=r")),
-      v2 = COERCE_AS(__typeof__(v2),
-                     PSEUDO_REGISTER(unsigned long long, "x8", "=r")),
       v7 = COERCE_AS(__typeof__(v7), PSEUDO_REGISTER(float, "s0", "=w")),
       v9 = COERCE_AS(__typeof__(v9), PSEUDO_REGISTER(float, "s0", "=w"));
   v8 = v7;
   (*(void (**)(__int64))(*v3 + 16LL))((__int64)v3),
-      v0 = COERCE_AS(__typeof__(v0),
-                     PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
-      v1 = COERCE_AS(__typeof__(v1),
-                     PSEUDO_REGISTER(unsigned long long, "x1", "=r")),
-      v2 = COERCE_AS(__typeof__(v2),
-                     PSEUDO_REGISTER(unsigned long long, "x8", "=r")),
       v7 = COERCE_AS(__typeof__(v7), PSEUDO_REGISTER(float, "s0", "=w")),
       v9 = COERCE_AS(__typeof__(v9), PSEUDO_REGISTER(float, "s0", "=w"));
   v10 = GameRoutine_1a0a6a0(v9, 0x1.6800000000000p+8f),
-  v0 = COERCE_AS(__typeof__(v0),
-                 PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
-  v1 = COERCE_AS(__typeof__(v1),
-                 PSEUDO_REGISTER(unsigned long long, "x1", "=r")),
-  v2 = COERCE_AS(__typeof__(v2),
-                 PSEUDO_REGISTER(unsigned long long, "x8", "=r")),
   v7 = COERCE_AS(__typeof__(v7), PSEUDO_REGISTER(float, "s0", "=w")),
   v9 = COERCE_AS(__typeof__(v9), PSEUDO_REGISTER(float, "s0", "=w"));
   if (v8 < 0x0.0p+0f) {
     v10 = v10 + 0x1.6800000000000p+8f;
   }
-  if (!(v10 < 0x1.6800000000000p+5f)) {
-    if (!(v10 < 0x1.0e00000000000p+7f)) {
-      if (!(v10 < 0x1.c200000000000p+7f)) {
+  if (v10 >= 0x1.6800000000000p+5f) {
+    if (v10 >= 0x1.0e00000000000p+7f) {
+      if (v10 >= 0x1.c200000000000p+7f) {
         v12 = v10 < 0x1.3b00000000000p+8f;
         v11 = 0x1.921fb60000000p+0f;
         if (v12) {
@@ -2436,7 +2409,7 @@ float Camera_7c13a0()
     v14 = 0x1.0000000000000p+0f;
   }
   v15 = -0x1.921fb60000000p+1f - v13;
-  if (!(v13 < -0x1.921fb60000000p+0f)) {
+  if (v13 >= -0x1.921fb60000000p+0f) {
     v15 = v13;
   }
   if (v13 > 0x1.921fb60000000p+0f) {
@@ -2526,15 +2499,15 @@ float Camera_7c13a0()
                                              (float)(v16 * v16))) *
                           (float)(v16 * v16)) +
                   0x1.0000000000000p+0f));
-  LANES128(v24).n128_u64[0] = LANES128(*(v5)).n128_u64[0];
+  LANES128(v24).n128_u64[0] = LANES128(*(a2)).n128_u64[0];
   v25 = v23;
   LANES128(v25).n128_f32[3] = v22;
   v26 = vmulq_f32(v25, COERCE_AS(float32x4_t, GameData_1a829d0));
   LANES128(v27).n128_u64[0] =
-      LANES64_OF(vqtbl1_s8(*v5, COERCE_AS(int8x8_t, 0x30201000B0A0908LL)))
+      LANES64_OF(vqtbl1_s8(*a2, COERCE_AS(int8x8_t, 0x30201000B0A0908LL)))
           .n64_u64[0];
   LANES128(v28).n128_u64[0] =
-      LANES64_OF(vqtbl1_s8(*v5, COERCE_AS(int8x8_t, 0xF0E0D0C0F0E0D0CLL)))
+      LANES64_OF(vqtbl1_s8(*a2, COERCE_AS(int8x8_t, 0xF0E0D0C0F0E0D0CLL)))
           .n64_u64[0];
   LANES128(v21).n128_u64[0] =
       LANES64_OF(vqtbl1_s8(v26, COERCE_AS(int8x8_t, 0xF0E0D0C0F0E0D0CLL)))
@@ -2551,10 +2524,10 @@ float Camera_7c13a0()
   v30 = vmlaq_f32(vmulq_f32(v26, v28), COERCE_AS(float32x4_t, GameData_1a83800),
                   vmulq_f32(v24, v21));
   LANES128(v24).n128_u64[0] =
-      LANES64_OF(vqtbl1_s8(*v5, COERCE_AS(int8x8_t, 0xB0A090807060504LL)))
+      LANES64_OF(vqtbl1_s8(*a2, COERCE_AS(int8x8_t, 0xB0A090807060504LL)))
           .n64_u64[0];
   LANES128(v27).n128_u64[1] = LANES128(v24).n128_u64[0];
-  LANES128(v24).n128_u64[1] = LANES128(*(v5)).n128_u64[0];
+  LANES128(v24).n128_u64[1] = LANES128(*(a2)).n128_u64[0];
   LANES128(v31).n128_u64[0] =
       LANES64_OF(vqtbl1_s8(v26, COERCE_AS(int8x8_t, 0xB0A090807060504LL)))
           .n64_u64[0];
@@ -2596,20 +2569,23 @@ float Camera_7c13a0()
   LANES128(v31).n128_u64[1] = LANES128(v23).n128_u64[0];
   *(int32x2_t*)&LANES128(v35).n128_i8[8] =
       vdup_lane_s32(COERCE_AS(int32x2_t, LANES128(v32).n128_u64[0]), 1);
-  LANES128(v36).n128_u64[0] =
+  LANES128(result).n128_u64[0] =
       LANES64_OF(vqtbl1_s8(v32, COERCE_AS(int8x8_t, 0xB0A090807060504LL)))
           .n64_u64[0];
-  *(int8x8_t*)&LANES128(v36).n128_i8[8] =
+  *(int8x8_t*)&LANES128(result).n128_i8[8] =
       vqtbl1_s8(v32, COERCE_AS(int8x8_t, 0xB0A090803020100LL));
   v37 = vmlsq_f32(vmlaq_f32(vmlaq_f32(vmulq_f32(v25, v32),
                                       COERCE_AS(float32x4_t, GameData_1a83800),
                                       vmulq_f32(v33, v34)),
                             COERCE_AS(float32x4_t, GameData_1a83800),
                             vmulq_f32(v31, v35)),
-                  v36, v26);
+                  result, v26);
   LANES128(v37).n128_u32[3] = 0;
-  *v4 = v37;
-  return LANES128(v36).n128_f32[0];
+  *a3 = v37;
+  {
+    result;
+    return;
+  }
 }
 
 __int64 Camera_7c16d0(__int64 a1, unsigned int a2)

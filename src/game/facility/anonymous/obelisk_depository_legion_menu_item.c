@@ -414,7 +414,9 @@ __int64 ObeliskDepositoryLegionMenuItem_Unknown73(__int64 a1)
           }
           if (game_GameModeData_instance_ != 0) {
             v16 = (*(_DWORD*)(game_GameModeData_instance_ + 80) - v15) &
-                  ~((int)((*(_DWORD*)(game_GameModeData_instance_ + 80) - (int)v15)) >> 31);
+                  ~((int)((*(_DWORD*)(game_GameModeData_instance_ + 80) -
+                           (int)v15)) >>
+                    31);
             if (v16 >= 99999) {
               v16 = 99999;
             }
@@ -509,6 +511,9 @@ __int64 ObeliskDepositoryLegionMenuItem_Unknown74(__int64 a1)
 _QWORD* game_facility_anonymous_ObeliskDepositoryLegionMenuItem_CreateDialog(
     __int64 a1, __int64 a2, __int64 a3)
 {
+
+#pragma clang fp contract(on)
+
   __int64 v3;
   __int64* v4;
   __int64 v5;
