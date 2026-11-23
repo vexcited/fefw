@@ -4651,7 +4651,7 @@ ffee0,324,verified,src/nn/fs/unplaced.c,nn_fs_GetAndClearMemoryReportInfo
 142bc0,52,verified,src/nn/nlibsdk/nlib_printf.cpp,_ZN2nn7nlibsdk17VsnPrintfFallbackEPcmPKcSt9__va_list
 142c00,52,verified,src/nn/nlibsdk/nlib_printf.cpp,_ZN2nn7nlibsdk17VsnPrintfFallbackEPwmPKwSt9__va_list
 142c40,564,verified,src/nn/nlibsdk/nlib_printf_engine.cpp,_ZN2nn7nlibsdk17VsnPrintfFallbackEPDsmPKDsSt9__va_list
-143d10,688,verified,src/nn/nlibsdk/nlib_printf_engine.cpp,_ZN2nn7nlibsdk17VsnPrintfFallbackEPDimPKDiSt9__va_list
+143d10,716,verified,src/nn/nlibsdk/nlib_printf_engine.cpp,_ZN2nn7nlibsdk17VsnPrintfFallbackEPDimPKDiSt9__va_list
 144dd0,216,verified,src/nn/nlibsdk/nlib_printf.cpp,nnmem_nlib_snwprintf_fallback
 144eb0,276,verified,src/nn/nlibsdk/nlib_strto_fallback.cpp,nnmem_nlib_strto_int32_fallback
 144fe0,632,verified,src/nn/nlibsdk/nlib_strto_fallback.cpp,_ZN12_GLOBAL__N_112ParseIntegerEPmPbPKcPS3_i
@@ -14308,7 +14308,7 @@ ffee0,324,verified,src/nn/fs/unplaced.c,nn_fs_GetAndClearMemoryReportInfo
 423c00,1396,verified,src/nn/fontll/itype/unplaced_12.c,nn_fontll_itype_423c00
 4241c0,112,verified,src/nn/fontll/itype/unplaced.c,engrave_graymap
 424820,200,verified,src/nn/fontll/itype/unplaced.c,emboss_graymap
-424e80,5868,verified,src/nn/fontll/itype/unplaced.c,outline_graymap
+424e80,6616,verified,src/nn/fontll/itype/unplaced.c,outline_graymap
 427000,1120,verified,src/nn/fontll/itype/unplaced.c,soft_outline_graymap
 427480,5880,verified,src/nn/fontll/itype/unplaced.c,Soften
 429280,3652,verified,src/nn/fontll/itype/unplaced.c,pixelbold_graymap2
@@ -33324,7 +33324,7 @@ ffee0,324,verified,src/nn/fs/unplaced.c,nn_fs_GetAndClearMemoryReportInfo
 801970,368,verified,src/llvm-libcxx/libcxx/src/locale.cpp,_ZNSt3__19__num_getIwE17__stage2_int_loopEwiPcRS2_RjwRKNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEPjRSD_Pw
 801b80,144,verified,src/llvm-libcxx/libcxx/src/unplaced_3.c,llvm_libcxx_libcxx_src_801b80
 801cfc,44,verified,src/llvm-libcxx/libcxx/src/locale_impl.c,locale_801cfc
-801d30,508,verified,src/llvm-libcxx/libcxx/src/locale_impl.c,std___1___num_get___stage2_float_loop_801d30
+801d30,576,verified,src/llvm-libcxx/libcxx/src/locale_impl.c,std___1___num_get___stage2_float_loop_801d30
 801f90,140,verified,src/llvm-libcxx/libcxx/src/unplaced_3.c,llvm_libcxx_libcxx_src_801f90
 8020f4,44,verified,src/llvm-libcxx/libcxx/src/locale_impl.c,locale_8020f4
 802120,144,verified,src/llvm-libcxx/libcxx/src/unplaced_3.c,llvm_libcxx_libcxx_src_802120
