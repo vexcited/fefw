@@ -7699,10 +7699,11 @@ LABEL_27:
   v13 = a2[1];
   *(float*)(a1 + 36) = v13;
   if (v11 == 1) {
-    v12 = sqrtf((float)(PSEUDO_UNFUSED((float)(*(float*)(a1 + 116) - v13) *
-                                       (float)(*(float*)(a1 + 116) - v13))) +
-                (float)((float)(*(float*)(a1 + 112) - v10) *
-                        (float)(*(float*)(a1 + 112) - v10))) +
+    v12 = __builtin_elementwise_sqrt(
+              (float)(PSEUDO_UNFUSED((float)(*(float*)(a1 + 116) - v13) *
+                                     (float)(*(float*)(a1 + 116) - v13))) +
+              (float)((float)(*(float*)(a1 + 112) - v10) *
+                      (float)(*(float*)(a1 + 112) - v10))) +
           0x1.0000000000000p+0f;
   }
   v14 = *(_QWORD*)(a1 + 16);
@@ -8257,8 +8258,9 @@ LABEL_168:
       v103 = v101[92];
       v104 = v101[91] - v103;
       if (v104 > 0x0.0p+0f) {
-        v102 = (float)(sqrtf((float)(PSEUDO_UNFUSED(v101[168] * v101[168])) +
-                             (float)(v101[167] * v101[167])) -
+        v102 = (float)(__builtin_elementwise_sqrt(
+                           (float)(PSEUDO_UNFUSED(v101[168] * v101[168])) +
+                           (float)(v101[167] * v101[167])) -
                        v103) /
                v104;
       }
@@ -8938,7 +8940,8 @@ float game_d26b60(__int64 a1)
             v8 = *(float*)(game_g_game_setting + 972);
             v12 = 0x1.99999a0000000p-3f;
           }
-          v13 = sqrtf((float)(PSEUDO_UNFUSED(v8 * v8)) + (float)(v9 * v9));
+          v13 = __builtin_elementwise_sqrt((float)(PSEUDO_UNFUSED(v8 * v8)) +
+                                           (float)(v9 * v9));
           v14 = 0x0.0p+0f;
           if ((float)(0x1.0000000000000p+0f - v12) != 0x0.0p+0f) {
             v15 = (float)(v13 - v12) / (float)(0x1.0000000000000p+0f - v12);

@@ -2709,7 +2709,7 @@ void CharacterController_StateActionRoot_Unknown4(__int64 a1)
           v29 = *(float*)&v7;
         }
         else {
-          v83 = sqrtf(v27);
+          v83 = __builtin_elementwise_sqrt((float)(v27));
           v29 = *(float*)&v7 / v83;
           v30 = *((float*)&v7 + 1) / v83;
         }
@@ -2871,9 +2871,10 @@ LABEL_44:
     if ((v22 & 8) != 0 && (v23 & 0x80) != 0) {
       v26 = *(float*)(v13 + 368);
     }
-    if (!(sqrtf((float)(PSEUDO_UNFUSED(*(float*)(v13 + 672) *
-                                       *(float*)(v13 + 672))) +
-                (float)(*(float*)(v13 + 668) * *(float*)(v13 + 668))) < v26)) {
+    if (!(__builtin_elementwise_sqrt(
+              (float)(PSEUDO_UNFUSED(*(float*)(v13 + 672) *
+                                     *(float*)(v13 + 672))) +
+              (float)(*(float*)(v13 + 668) * *(float*)(v13 + 668))) < v26)) {
       if ((v23 & 0x80) != 0) {
         if (v20 < 0x1.99999a0000000p-5f) {
           v20 = 0x1.99999a0000000p-5f;
@@ -3085,7 +3086,8 @@ LABEL_100:
       v58 = -0x1.0000000000000p+0f;
       goto LABEL_120;
     }
-    v57 = sqrtf((float)(PSEUDO_UNFUSED(v53 * v53)) + (float)(v52 * v52));
+    v57 = __builtin_elementwise_sqrt((float)(PSEUDO_UNFUSED(v53 * v53)) +
+                                     (float)(v52 * v52));
     *(float*)(v51 + 584) = v52 / v57;
     *(float*)(v51 + 588) = v53 / v57;
   }
@@ -3125,7 +3127,7 @@ LABEL_121:
     v65 = *(_QWORD*)(a1 + 8);
   }
   if (*(_BYTE*)(a1 + 16) == 1) {
-    v70 = sqrtf(
+    v70 = __builtin_elementwise_sqrt(
         (float)(PSEUDO_UNFUSED(*(float*)(v65 + 588) * *(float*)(v65 + 588))) +
         (float)(*(float*)(v65 + 584) * *(float*)(v65 + 584)));
     v71 = 0x1.0000000000000p+0f;
@@ -3148,9 +3150,10 @@ LABEL_121:
   v74 = 0x0.0p+0f;
   v75 = 0x0.0p+0f;
   if (v73 != 0x0.0p+0f) {
-    v76 = sqrtf((float)(PSEUDO_UNFUSED(*(float*)(v65 + 672) *
-                                       *(float*)(v65 + 672))) +
-                (float)(*(float*)(v65 + 668) * *(float*)(v65 + 668))) /
+    v76 = __builtin_elementwise_sqrt(
+              (float)(PSEUDO_UNFUSED(*(float*)(v65 + 672) *
+                                     *(float*)(v65 + 672))) +
+              (float)(*(float*)(v65 + 668) * *(float*)(v65 + 668))) /
           v73;
     v77 = 0x1.0000000000000p+0f;
     if (!(v76 > 0x1.0000000000000p+0f)) {
@@ -7462,9 +7465,9 @@ _QWORD* CharacterController_d48b40(_QWORD* a1, __int64 a2, long double a3,
                        *(float*)&v11 / (float)(unsigned int)v17);
     }
   }
-  v21 =
-      sqrtf((float)(PSEUDO_UNFUSED(*((float*)&v11 + 1) * *((float*)&v11 + 1))) +
-            (float)(*(float*)&v11 * *(float*)&v11));
+  v21 = __builtin_elementwise_sqrt(
+      (float)(PSEUDO_UNFUSED(*((float*)&v11 + 1) * *((float*)&v11 + 1))) +
+      (float)(*(float*)&v11 * *(float*)&v11));
   if (*(float*)&v11 != 0x0.0p+0f || *((float*)&v11 + 1) != 0x0.0p+0f) {
     v11 = __PAIR64__(*((float*)&v11 + 1) / v21, *(float*)&v11 / v21);
   }
@@ -7474,7 +7477,7 @@ _QWORD* CharacterController_d48b40(_QWORD* a1, __int64 a2, long double a3,
   if (a4 != 0x0.0p+0f) {
     v23 = false;
   }
-  v25 = sqrtf(v24);
+  v25 = __builtin_elementwise_sqrt((float)(v24));
   v26 = *(float*)&a3 / v25;
   v27 = a4 / v25;
   if (v23) {

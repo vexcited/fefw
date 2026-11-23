@@ -8309,8 +8309,9 @@ __int64 GameHr_d25920(__int64 result)
                       (v6[900] & 1) == 0 &&
                           (v6[940] != 1 || v6[901] != 1 || v6[902] != 1)) {
                   LABEL_80:
-                    if (sqrtf((float)(v21 * v21) +
-                              (float)(*(float*)&v19 * *(float*)&v19)) >= 50.0 ||
+                    if (__builtin_elementwise_sqrt(
+                            (float)(v21 * v21) +
+                            (float)(*(float*)&v19 * *(float*)&v19)) >= 50.0 ||
                         v11) {
                       *v10 = 0;
                       *(_BYTE*)(result + 260) = 1;

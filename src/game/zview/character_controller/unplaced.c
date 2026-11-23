@@ -368,7 +368,8 @@ float game_zview_character_controller_d40ea0()
         v57 = v49 - v55;
         v58 = v22 - v53;
         v59 = (float)(PSEUDO_UNFUSED(v57 * v57)) + (float)(v58 * v58);
-        v60 = sqrtf((float)(PSEUDO_UNFUSED(v56 * v56)) + (float)(v54 * v54));
+        v60 = __builtin_elementwise_sqrt((float)(PSEUDO_UNFUSED(v56 * v56)) +
+                                         (float)(v54 * v54));
         if (v46 <= 0x20) {
           v61 = (float)(v216 + 0x1.0000000000000p+1f) - v216;
           if (v61 == 0x0.0p+0f) {
@@ -388,7 +389,7 @@ float game_zview_character_controller_d40ea0()
             }
           }
         }
-        v64 = sqrtf(v59);
+        v64 = __builtin_elementwise_sqrt((float)(v59));
         v65 = (float)(PSEUDO_UNFUSED(v57 * v57)) + (float)(v58 * v58);
         v66 = v58;
         v67 = v57;
@@ -457,7 +458,7 @@ float game_zview_character_controller_d40ea0()
           v75 = 0x0.0p+0f;
           if (v74 > 0x0.0p+0f) {
             if (v72 != 0x0.0p+0f || v73 != 0x0.0p+0f) {
-              v76 = sqrtf(v74);
+              v76 = __builtin_elementwise_sqrt((float)(v74));
               v72 = v72 / v76;
               v73 = v73 / v76;
             }
@@ -654,15 +655,15 @@ float game_zview_character_controller_d40ea0()
             v104 = *(float*)(v13 + 168);
             v105 = *(float*)(v13 + 172);
             if (v104 != 0x0.0p+0f || v105 != 0x0.0p+0f) {
-              v106 = sqrtf((float)(PSEUDO_UNFUSED(v105 * v105)) +
-                           (float)(v104 * v104));
+              v106 = __builtin_elementwise_sqrt(
+                  (float)(PSEUDO_UNFUSED(v105 * v105)) + (float)(v104 * v104));
               v104 = v104 / v106;
               v105 = v105 / v106;
             }
             v107 = v102 - (float)(*(float*)&GameData_22110c0 * v100);
             if (v103 != 0x0.0p+0f || v107 != 0x0.0p+0f) {
-              v108 = sqrtf((float)(PSEUDO_UNFUSED(v107 * v107)) +
-                           (float)(v103 * v103));
+              v108 = __builtin_elementwise_sqrt(
+                  (float)(PSEUDO_UNFUSED(v107 * v107)) + (float)(v103 * v103));
               v103 = v103 / v108;
               v107 = v107 / v108;
             }
@@ -935,7 +936,7 @@ float game_zview_character_controller_d40ea0()
                                    (float)(v172 * v172);
                             v176 =
                                 *(float*)(v13 + 204) + -0x1.a36e2e0000000p-14f;
-                            v177 = sqrtf(v175);
+                            v177 = __builtin_elementwise_sqrt((float)(v175));
                             *(float*)(v13 + 204) = v177;
                             if (v174 != 0x0.0p+0f &&
                                     ((float)(0x0.0p+0f - v174) == 0x0.0p+0f ||

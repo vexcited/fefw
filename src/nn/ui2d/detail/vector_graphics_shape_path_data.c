@@ -95,27 +95,31 @@ __int64 VectorGraphicsShapePathData_5a3ca0(float* a1, float32x2_t* a2,
       v20 -= 4;
       v21 = *(v19 - 4) - *(v19 - 2);
       v22 = *(v19 - 5) - *(v19 - 3);
-      v23 =
-          v14 + sqrtf((float)(PSEUDO_UNFUSED(v21 * v21)) + (float)(v22 * v22));
+      v23 = v14 + __builtin_elementwise_sqrt(
+                      (float)(PSEUDO_UNFUSED(v21 * v21)) + (float)(v22 * v22));
       a1[4] = v23;
       v24 = *(v19 - 3) - *(v19 - 1);
-      v25 = v23 + sqrtf((float)(PSEUDO_UNFUSED((float)(*(v19 - 2) - *v19) *
-                                               (float)(*(v19 - 2) - *v19))) +
-                        (float)(v24 * v24));
+      v25 = v23 + __builtin_elementwise_sqrt(
+                      (float)(PSEUDO_UNFUSED((float)(*(v19 - 2) - *v19) *
+                                             (float)(*(v19 - 2) - *v19))) +
+                      (float)(v24 * v24));
       a1[4] = v25;
       v26 = *(v19 - 1) - v19[1];
-      v27 = v25 + sqrtf((float)(PSEUDO_UNFUSED((float)(*v19 - v19[2]) *
-                                               (float)(*v19 - v19[2]))) +
-                        (float)(v26 * v26));
+      v27 = v25 + __builtin_elementwise_sqrt(
+                      (float)(PSEUDO_UNFUSED((float)(*v19 - v19[2]) *
+                                             (float)(*v19 - v19[2]))) +
+                      (float)(v26 * v26));
       a1[4] = v27;
       v28 = v19[1];
       v29 = v19[2];
       v30 = v19[3];
       v31 = v19[4];
       v19 += 8;
-      v14 = v27 + sqrtf((float)(PSEUDO_UNFUSED((float)(v29 - v31) *
-                                               (float)(v29 - v31))) +
-                        (float)((float)(v28 - v30) * (float)(v28 - v30)));
+      v14 =
+          v27 +
+          __builtin_elementwise_sqrt(
+              (float)(PSEUDO_UNFUSED((float)(v29 - v31) * (float)(v29 - v31))) +
+              (float)((float)(v28 - v30) * (float)(v28 - v30)));
       a1[4] = v14;
     } while (-(__int64)(v15 & 0x7FFFFFFC) != v20);
     v18 = -v20;
@@ -135,9 +139,11 @@ __int64 VectorGraphicsShapePathData_5a3ca0(float* a1, float32x2_t* a2,
       v36 = v32[1];
       v32 += 2;
       --v17;
-      v14 = v14 + sqrtf((float)(PSEUDO_UNFUSED((float)(v34 - v36) *
-                                               (float)(v34 - v36))) +
-                        (float)((float)(v33 - v35) * (float)(v33 - v35)));
+      v14 =
+          v14 +
+          __builtin_elementwise_sqrt(
+              (float)(PSEUDO_UNFUSED((float)(v34 - v36) * (float)(v34 - v36))) +
+              (float)((float)(v33 - v35) * (float)(v33 - v35)));
       a1[4] = v14;
     } while (v17 != 0);
   }
@@ -155,7 +161,7 @@ LABEL_13:
       return result;
     }
     v45 = v43;
-    v46 = sqrtf(
+    v46 = __builtin_elementwise_sqrt(
         (float)(PSEUDO_UNFUSED(
             (float)(LANES64(*(v40)).n64_f32[1] - LANES64(v40[1]).n64_f32[1]) *
             (float)(LANES64(*(v40)).n64_f32[1] - LANES64(v40[1]).n64_f32[1]))) +

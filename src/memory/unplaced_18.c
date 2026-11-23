@@ -867,15 +867,15 @@ float memory_103f060(int32x4_t* a1)
       }
       if (v9 != v10) {
         v11 = fminf(
-            fmaxf(
-                (float)(sqrtf((float)(PSEUDO_UNFUSED(
+            fmaxf((float)(__builtin_elementwise_sqrt(
+                              (float)(PSEUDO_UNFUSED(
                                   *(float*)(*(_QWORD*)(v6 + 16) + 672LL) *
                                   *(float*)(*(_QWORD*)(v6 + 16) + 672LL))) +
                               (float)(*(float*)(*(_QWORD*)(v6 + 16) + 668LL) *
                                       *(float*)(*(_QWORD*)(v6 + 16) + 668LL))) +
-                        -0x1.8000000000000p+2f) /
-                    0x1.8000000000000p+1f,
-                0x0.0p+0f),
+                          -0x1.8000000000000p+2f) /
+                      0x1.8000000000000p+1f,
+                  0x0.0p+0f),
             0x1.0000000000000p+0f);
         v12 = (float)(fminf(fmaxf(v11, 0x0.0p+0f), 0x1.0000000000000p+0f) *
                       0x1.99999a0000000p-1f) +
@@ -991,8 +991,9 @@ LABEL_25:
       v28 = *(float*)(v2 + 744) * 0x1.cccccc0000000p-1f;
       __asm__ volatile("" ::"w"(v28));
     }
-    v29 = sqrtf(vmuls_lane_f32(LANES128(v26).n128_f32[2], v26, 2) +
-                (float)(LANES128(v26).n128_f32[0] * LANES128(v26).n128_f32[0]));
+    v29 = __builtin_elementwise_sqrt((
+        float)(vmuls_lane_f32(LANES128(v26).n128_f32[2], v26, 2) +
+               (float)(LANES128(v26).n128_f32[0] * LANES128(v26).n128_f32[0])));
     v30 = 0x0.0p+0f;
     if (v28 != 0x0.0p+0f) {
       v31 = v29 / v28;
@@ -1207,7 +1208,7 @@ LABEL_66:
       if (v51 != v52) {
         v48 = fminf(
             fmaxf(
-                (float)(sqrtf(
+                (float)(__builtin_elementwise_sqrt(
                             (float)(PSEUDO_UNFUSED(
                                 *(float*)(*(_QWORD*)(v49 + 16) + 672LL) *
                                 *(float*)(*(_QWORD*)(v49 + 16) + 672LL))) +
