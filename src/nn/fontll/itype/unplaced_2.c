@@ -7545,7 +7545,9 @@ __int64 nn_fontll_itype_437b60(__int64 result, __int16 a2, char a3)
         v17 = -7;
       }
       if ((int)v6 >= 1) {
-        v18 = (v17 + (*(_DWORD*)(*(_QWORD*)(v4 + 40) + v14) & 0xF)) << 6 >> a3;
+        v18 =
+            (int)((v17 + (*(_DWORD*)(*(_QWORD*)(v4 + 40) + v14) & 0xF)) << 6) >>
+            a3;
         v19 = (int)v8 + (int)v6;
         v20 = v3[8];
         do {

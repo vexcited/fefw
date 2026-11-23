@@ -14449,7 +14449,7 @@ ffee0,324,verified,src/nn/fs/unplaced.c,nn_fs_GetAndClearMemoryReportInfo
 432e10,64,verified,src/nn/fontll/itype/unplaced_2.c,nn_fontll_itype_432e10
 432e50,56,verified,src/nn/fontll/itype/unplaced_2.c,nn_fontll_itype_432e50
 432e90,400,verified,src/nn/fontll/itype/unplaced_2.c,RoundFuncCall
-433020,1032,verified,src/nn/fontll/itype/unplaced_2.c,BAZOutlineSmooth
+433020,1004,verified,src/nn/fontll/itype/unplaced_2.c,BAZOutlineSmooth
 433470,252,verified,src/nn/fontll/itype/unplaced_2.c,nn_fontll_itype_433470
 433570,36,verified,src/nn/fontll/itype/unplaced_2.c,nn_fontll_itype_433570
 4335a0,8,verified,src/nn/fontll/itype/unplaced_2.c,nn_fontll_itype_4335a0
@@ -14458,10 +14458,10 @@ ffee0,324,verified,src/nn/fs/unplaced.c,nn_fs_GetAndClearMemoryReportInfo
 4337a0,88,verified,src/nn/fontll/itype/unplaced_2.c,nn_fontll_itype_4337a0
 433800,88,verified,src/nn/fontll/itype/unplaced_2.c,nn_fontll_itype_433800
 433860,256,verified,src/nn/fontll/itype/unplaced_2.c,nn_fontll_itype_433860
-433960,13132,verified,src/nn/fontll/itype/unplaced_2.c,nn_fontll_itype_433960
+433960,13300,verified,src/nn/fontll/itype/unplaced_2.c,nn_fontll_itype_433960
 437950,128,verified,src/nn/fontll/itype/unplaced_2.c,nn_fontll_itype_437950
 4379e0,352,verified,src/nn/fontll/itype/unplaced_2.c,nn_fontll_itype_4379e0
-437b60,520,disputed,src/nn/fontll/itype/unplaced_2.c,nn_fontll_itype_437b60
+437b60,540,verified,src/nn/fontll/itype/unplaced_2.c,nn_fontll_itype_437b60
 437da0,724,verified,src/nn/fontll/itype/unplaced_2.c,nn_fontll_itype_437da0
 4380a0,488,verified,src/nn/fontll/itype/unplaced_2.c,nn_fontll_itype_4380a0
 438290,112,verified,src/nn/fontll/itype/fsglue.c,ScaleFuncCall
