@@ -175,10 +175,10 @@ f80,156,verified,src/nvidia/unnamed/n000_0.c,NgxHr_f80
 4a70,16,verified,src/nvidia/unnamed/x000_0.c,NgxHr_4a70
 4bb0,64,verified,src/nvidia/unnamed/n000_0.c,NgxHr_4bb0
 4bf0,16,verified,src/nvidia/unnamed/x000_0.c,NgxHr_4bf0
-4c00,284,disputed,src/nvidia/unplaced_50.c,nvidia_4c00
+4c00,284,verified,src/nvidia/unplaced_50.c,nvidia_4c00
 4d30,64,verified,src/nvidia/unnamed/n000_0.c,NgxHr_4d30
 4d70,16,verified,src/nvidia/unnamed/x000_0.c,NgxHr_4d70
-4d80,284,disputed,src/nvidia/unplaced_50.c,nvidia_4d80
+4d80,284,verified,src/nvidia/unplaced_50.c,nvidia_4d80
 4eb0,64,verified,src/nvidia/unnamed/n000_0.c,NgxHr_4eb0
 4ef0,16,verified,src/nvidia/unnamed/x000_0.c,NgxHr_4ef0
 4f00,284,verified,src/nvidia/unplaced_47.c,nvidia_4f00
@@ -195,7 +195,7 @@ f80,156,verified,src/nvidia/unnamed/n000_0.c,NgxHr_f80
 5500,284,verified,src/nvidia/unplaced_17.c,nvidia_5500
 5630,64,verified,src/nvidia/unnamed/n000_0.c,NgxHr_5630
 5670,16,verified,src/nvidia/unnamed/x000_0.c,NgxHr_5670
-5680,284,disputed,src/nvidia/unplaced_50.c,nvidia_5680
+5680,284,verified,src/nvidia/unplaced_50.c,nvidia_5680
 57b0,64,verified,src/nvidia/unnamed/n000_0.c,NgxHr_57b0
 57f0,16,verified,src/nvidia/unnamed/x000_0.c,NgxHr_57f0
 5800,284,disputed,src/nvidia/unplaced_55.c,nvidia_5800
@@ -1164,7 +1164,7 @@ b3fe0,12,verified,src/nvidia/ngx_api.cpp,NVSDK_NGX_Parameter_GetULL
 b3ff0,12,verified,src/nvidia/ngx_api.cpp,NVSDK_NGX_Parameter_GetF
 b4000,12,verified,src/nvidia/ngx_api.cpp,NVSDK_NGX_Parameter_GetUI
 b4010,12,verified,src/nvidia/ngx_api.cpp,NVSDK_NGX_Parameter_GetVoidPointer
-b4020,44,disputed,src/nvidia/unplaced_50.c,nvidia_b4020
+b4020,44,verified,src/nvidia/unplaced_50.c,nvidia_b4020
 b41e0,188,verified,src/nvidia/unplaced_20.c,nvidia_b41e0
 b42a0,1812,verified,src/nvidia/unplaced_17.c,nvidia_b42a0
 b49c0,460,verified,src/nvidia/dlss/rel/source/common/util-log.c,util_log_b49c0
@@ -1356,7 +1356,7 @@ be9f0,104,verified,src/nvidia/unplaced_17.c,nvidia_be9f0
 bea60,12,verified,src/nvidia/ngx_trivial.cpp,_Z13NgxStub_bea60v
 bea70,100,verified,src/nvidia/unplaced_17.c,nvidia_bea70
 beae0,28,verified,src/nvidia/unnamed/n000_3.c,NgxHr_beae0
-beb00,200,disputed,src/nvidia/unnamed/n000_3.c,NgxHr_beb00
+beb00,200,verified,src/nvidia/unnamed/n000_3.c,NgxHr_beb00
 bebd8,40,verified,src/nvidia/unnamed/n000_3.c,NgxHr_bebd8
 bec00,280,verified,src/nvidia/unnamed/n000_3.c,NgxHr_bec00
 bed80,4,verified,src/nvidia/ngx_trivial.cpp,_Z13NgxStub_bed80v
@@ -1419,7 +1419,7 @@ c5e00,1324,verified,src/nvidia/unplaced_34.c,nvidia_c5e00
 c64c0,1352,verified,src/nvidia/unplaced_34.c,nvidia_c64c0
 c6b80,1352,verified,src/nvidia/unplaced_34.c,nvidia_c6b80
 c7240,1444,verified,src/nvidia/unplaced_55.c,nvidia_c7240
-c7900,1336,disputed,src/nvidia/unplaced_55.c,nvidia_c7900
+c7900,1424,verified,src/nvidia/unplaced_55.c,nvidia_c7900
 c97d0,144,verified,src/nvidia/unplaced_14.c,nvidia_c97d0
 c994c,44,verified,src/nvidia/unnamed/n001_0.c,NgxHr_c994c
 c9980,488,verified,src/nvidia/unnamed/n001_0.c,NgxHr_c9980

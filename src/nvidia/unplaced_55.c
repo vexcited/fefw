@@ -1831,19 +1831,20 @@ _QWORD* nvidia_c7900(__int64 a1, _QWORD* a2, _QWORD* a3, __int64 a4, _DWORD* a5,
   _BOOL4 v54;
   int* v55;
   int v56;
-  __int64 v60;
-  _BYTE v61[4];
-  int v62;
   struct {
-    char gap0_[184];
+    char gap0_[16];
+    __int64 v60;
+    _BYTE v61[4];
+    int v62;
+    char gap32_[152];
     __int64 v63;
     __int64 v64;
     unsigned __int8* v65;
-    char gap208_[132];
+    _QWORD v66[3];
+    char gap232_[108];
     int v68[3];
     __int64 v69;
   } f_;
-  _QWORD v66[3];
   int v67;
 
   f_.v69 = v6;
@@ -1868,9 +1869,9 @@ _QWORD* nvidia_c7900(__int64 a1, _QWORD* a2, _QWORD* a3, __int64 a4, _DWORD* a5,
   f_.v65 = nullptr;
   f_.v63 = 0;
   NgxRoutine_bf140_alt1(&f_.v63, 0x16u, 0);
-  v14 = v61;
+  v14 = f_.v61;
   v15 = 0;
-  v60 = v12;
+  f_.v60 = v12;
   if ((f_.v63 & 1) != 0) {
     v16 = f_.v65;
   }
@@ -1986,11 +1987,11 @@ _QWORD* nvidia_c7900(__int64 a1, _QWORD* a2, _QWORD* a3, __int64 a4, _DWORD* a5,
         goto LABEL_86;
       }
     }
-    if ((v66[0] & 1) != 0) {
-      v29 = v66[1];
+    if ((f_.v66[0] & 1) != 0) {
+      v29 = f_.v66[1];
     }
     else {
-      v29 = (unsigned __int64)LOBYTE(v66[0]) >> 1;
+      v29 = (unsigned __int64)LOBYTE(f_.v66[0]) >> 1;
     }
     if (v25 != f_.v68[0] || v29 == 0) {
       v31 = wmemchr_plt_alt1(v13);
@@ -2005,7 +2006,7 @@ _QWORD* nvidia_c7900(__int64 a1, _QWORD* a2, _QWORD* a3, __int64 a4, _DWORD* a5,
       switch (v12) {
       case 8u:
       LABEL_64:
-        if (v33 >= v60) {
+        if (v33 >= f_.v60) {
           goto LABEL_88;
         }
         break;
@@ -2041,7 +2042,7 @@ _QWORD* nvidia_c7900(__int64 a1, _QWORD* a2, _QWORD* a3, __int64 a4, _DWORD* a5,
       (*(void (**)(_QWORD*))(*a2 + 80LL))(a2);
     }
     else {
-      if (v14 - v61 > 159) {
+      if (v14 - f_.v61 > 159) {
         goto LABEL_80;
       }
       *(_DWORD*)v14 = v15;
@@ -2069,42 +2070,42 @@ _QWORD* nvidia_c7900(__int64 a1, _QWORD* a2, _QWORD* a3, __int64 a4, _DWORD* a5,
     goto LABEL_29;
   }
 LABEL_88:
-  if ((v66[0] & 1) != 0) {
-    v36 = v66[1];
+  if ((f_.v66[0] & 1) != 0) {
+    v36 = f_.v66[1];
   }
   else {
-    v36 = (unsigned __int64)LOBYTE(v66[0]) >> 1;
+    v36 = (unsigned __int64)LOBYTE(f_.v66[0]) >> 1;
   }
-  if (v36 != 0 && v14 - v61 <= 159) {
+  if (v36 != 0 && v14 - f_.v61 <= 159) {
     *(_DWORD*)v14 = v15;
     v14 += 4;
   }
   v37 = NgxRoutine_e1380(v17, v16, a5, v12);
-  v38 = LOBYTE(v66[0]);
+  v38 = LOBYTE(f_.v66[0]);
   *a6 = v37;
-  v39 = v66[1];
+  v39 = f_.v66[1];
   v40 = v38 & 1;
   if ((v38 & 1) == 0) {
     v39 = v38 >> 1;
   }
-  if (v14 - v61 >= 5 && v39 != 0) {
+  if (v14 - f_.v61 >= 5 && v39 != 0) {
     v41 = v14 - 4;
-    if (v61 != v14 && v61 < v14 - 4) {
+    if (f_.v61 != v14 && f_.v61 < v14 - 4) {
       v42 = (int*)(v14 - 4);
-      v43 = &v62;
+      v43 = &f_.v62;
       do {
         v44 = *(v43 - 1);
         *(v43 - 1) = *v42;
         *v42-- = v44;
       } while (v43++ < v42);
-      LODWORD(v38) = LOBYTE(v66[0]);
-      v40 = v66[0] & 1;
+      LODWORD(v38) = LOBYTE(f_.v66[0]);
+      v40 = f_.v66[0] & 1;
     }
-    v46 = (_BYTE*)v66[2];
+    v46 = (_BYTE*)f_.v66[2];
     if (v40 == 0) {
-      v46 = (char*)v66 + 1;
+      v46 = (char*)f_.v66 + 1;
     }
-    if (v61 >= (_BYTE*)v41) {
+    if (f_.v61 >= (_BYTE*)v41) {
     LABEL_117:
       v51 = (unsigned __int8)*v46;
       if (*v46 != 0 && v51 != 255 && *v41 - 1 >= v51) {
@@ -2114,9 +2115,9 @@ LABEL_88:
     else {
       v47 = (unsigned int)v38 >> 1;
       if (v40 != 0) {
-        v47 = v66[1];
+        v47 = f_.v66[1];
       }
-      v48 = v61;
+      v48 = f_.v61;
       v49 = &v46[v47];
       while (1) {
         v50 = (unsigned __int8)*v46;
@@ -2176,8 +2177,8 @@ LABEL_136:
   if ((f_.v63 & 1) != 0) {
     NgxRoutine_430(f_.v65, f_.v63 & 0xFFFFFFFFFFFFFFFELL);
   }
-  if ((v66[0] & 1) != 0) {
-    NgxRoutine_430(v66[2], v66[0] & 0xFFFFFFFFFFFFFFFELL);
+  if ((f_.v66[0] & 1) != 0) {
+    NgxRoutine_430(f_.v66[2], f_.v66[0] & 0xFFFFFFFFFFFFFFFELL);
   }
   return a2;
 }
