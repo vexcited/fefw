@@ -2172,6 +2172,7 @@ b7630,52,verified,src/nnmusl/unplaced_5.c,nnmusl_b7630
 b7760,520,disputed,src/nn/unnamed/s000_0.c,SdkHr_b7760
 b7b80,820,verified,src/nnmusl/unplaced_2.c,nnmusl_b7b80
 b7f20,284,verified,src/nnmusl/unplaced_5.c,nnmusl_b7f20
+b8060,156,verified,src/nnmusl/unplaced_6.c,nnmusl_b8060
 b8170,348,verified,src/nnmusl/unplaced_3.c,nnmusl_b8170
 b82d0,8,verified,src/nn/aoc/initialization.cpp,_ZN2nn3aoc6detail17AddProxyReferenceEPNS1_5ProxyE
 b82e0,144,verified,src/nn/unnamed/s000_0.c,SdkHr_b82e0
@@ -5408,6 +5409,7 @@ ffee0,324,verified,src/nn/fs/unplaced.c,nn_fs_GetAndClearMemoryReportInfo
 169170,32,verified,src/nn/os/os_misc.cpp,_ZN2nn2os14IsMemoryLockedEPvm
 169190,72,verified,src/nn/os/thread_info.cpp,_ZN2nn2os18GetFreeThreadCountEv
 1691e0,92,verified,src/nn/os/thread_info.cpp,_ZN2nn2os21SetDyingMessageRegionEmm
+169240,76,verified,src/nn/os/unplaced_7.c,nn_os_169240
 169290,84,verified,src/nn/os/unplaced_6.c,nn_os_169290
 1692f0,12,verified,src/nn/sdk_trivial_thunks2.cpp,_Z14SdkStub_1692f0mm
 169300,108,verified,src/nn/os/fiber.cpp,_ZN2nn2os15InitializeFiberEPNS0_9FiberTypeEPFS2_PvES3_S3_mi
@@ -5515,6 +5517,7 @@ ffee0,324,verified,src/nn/fs/unplaced.c,nn_fs_GetAndClearMemoryReportInfo
 16cb60,8,verified,src/nn/os/unplaced.c,nn_os_16cb60
 16cb80,64,verified,src/nn/os/unplaced_6.c,nn_os_16cb80
 16cc50,28,verified,src/nn/os/unplaced_6.c,nn_os_16cc50
+16cce0,36,verified,src/nn/os/unplaced_7.c,nn_os_16cce0
 16cd20,76,verified,src/nn/os/address_arbiter.cpp,_ZN2nn2os14WaitForAddressEPKll
 16cd70,60,verified,src/nn/os/address_arbiter.cpp,_ZN2nn2os15SignalToAddressEPKl
 16cdb0,60,verified,src/nn/os/address_arbiter.cpp,_ZN2nn2os18BroadcastToAddressEPKl
@@ -22554,11 +22557,13 @@ ffee0,324,verified,src/nn/fs/unplaced.c,nn_fs_GetAndClearMemoryReportInfo
 5d2050,112,verified,src/nn/syncpt/unplaced_5.c,nn_syncpt_5d2050
 5d2150,436,verified,src/nn/syncpt/syncpt_api_impl.c,syncpt_api_5d2150
 5d2380,180,verified,src/nn/syncpt/unplaced_5.c,nn_syncpt_5d2380
+5d2520,96,verified,src/nn/syncpt/unplaced_6.c,nn_syncpt_5d2520
 5d26a0,20,verified,src/nn/syncpt/syncpt_api_impl.c,syncpt_api_5d26a0
 5d26c0,20,verified,src/nn/syncpt/syncpt_api_impl.c,syncpt_api_5d26c0
 5d26e0,28,verified,src/nn/syncpt/syncpt_api_impl.c,syncpt_api_5d26e0
 5d2700,28,verified,src/nn/syncpt/syncpt_api_impl.c,syncpt_api_5d2700
 5d2720,120,verified,src/nn/syncpt/syncpt_api_impl.c,syncpt_api_5d2720
+5d27a0,276,verified,src/nn/syncpt/unplaced_6.c,nn_syncpt_5d27a0
 5d2920,132,verified,src/nn/syncpt/syncpt_api_impl.c,syncpt_api_5d2920
 5d2a30,484,verified,src/nn/syncpt/syncpt_api_impl.c,syncpt_api_5d2a30
 5d2c20,388,verified,src/nn/syncpt/syncpt_api_impl.c,syncpt_api_5d2c20
@@ -22606,6 +22611,7 @@ ffee0,324,verified,src/nn/fs/unplaced.c,nn_fs_GetAndClearMemoryReportInfo
 5d4a80,140,verified,src/nn/syncpt/unplaced_5.c,nn_syncpt_5d4a80
 5d4b70,108,verified,src/nn/syncpt/unplaced_5.c,nn_syncpt_5d4b70
 5d4c10,12,verified,src/nn/syncpt/unplaced.c,nn_syncpt_sdk_MakeDebugSyncCounterSyncPointHandle
+5d4c20,120,verified,src/nn/syncpt/unplaced_6.c,nn_syncpt_5d4c20
 5d4d10,120,verified,src/nn/time/time_adjustable_system_clock.cpp,_ZN2nn4time28AdjustableNetworkSystemClock14GetCurrentTimeEPNS0_9PosixTimeE
 5d4d90,76,verified,src/nn/time/time_adjustable_system_clock.cpp,_ZN2nn4time28AdjustableNetworkSystemClock6AdjustEv
 5d4de0,136,verified,src/nn/time/time_adjustable_system_clock.cpp,_ZN2nn4time28AdjustableNetworkSystemClock21GetSystemClockContextEPNS0_18SystemClockContextE

@@ -85249,6 +85249,7 @@ fffcb0,1244,verified,src/game/unnamed/b014_1.c,GameHr_fffcb0
 192e730,452,verified,src/game/facility/anonymous/obelisk_causation_menu_item.c,ObeliskCausationMenuItem_OnSelect
 192e900,452,verified,src/game/facility/anonymous/obelisk_causation_menu_item.c,ObeliskCausationMenuItem_OnDeselect
 192eae0,2364,verified,src/game/facility/anonymous/obelisk_causation_menu_item.c,ObeliskCausationMenuItem_ACall
+192f500,504,verified,src/game/facility/anonymous/unplaced_14.c,game_facility_anonymous_192f500
 192f700,180,verified,src/game/facility/anonymous/obelisk_causation_menu_item.c,ObeliskCausationMenuItem_PlayChangeSe
 192f7c0,3244,verified,src/game/facility/anonymous/unplaced_11.c,game_facility_anonymous_192f7c0
 1930480,776,verified,src/game/facility/anonymous/obelisk_causation_menu_item.c,ObeliskCausationMenuItem_IsActive
