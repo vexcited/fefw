@@ -434,8 +434,10 @@ __int64 UnitVariables_931520(__int64 result, __int64* a2, int a3)
   bool v82;
   __int64 v83;
   char v84;
-  char* v85;
-  char* v86;
+  struct {
+    char* v85;
+    char* v86;
+  } v85_;
 
   if (*(_BYTE*)result == 0) {
     return result;
@@ -518,23 +520,23 @@ __int64 UnitVariables_931520(__int64 result, __int64* a2, int a3)
       goto LABEL_76;
     }
     v22 = a3;
-    GameRoutine_932880((void*)(&v85), v4);
-    v23 = v85;
-    v24 = v86;
-    if (v86 == v85) {
+    GameRoutine_932880((void*)(&v85_.v85), v4);
+    v23 = v85_.v85;
+    v24 = v85_.v86;
+    if (v85_.v86 == v85_.v85) {
       v25 = 0;
     }
     else {
-      v25 = *(unsigned __int8*)(*((_QWORD*)v86 - 1) + 48LL);
+      v25 = *(unsigned __int8*)(*((_QWORD*)v85_.v86 - 1) + 48LL);
     }
-    if (v85 != nullptr) {
+    if (v85_.v85 != nullptr) {
       v26 = *v21;
-      v86 = v85;
+      v85_.v86 = v85_.v85;
       v27 = 128;
       if (*(_QWORD*)(v26 + 200) == 0) {
         v27 = 56;
       }
-      nn_mem_StandardAllocator_Free(v26 + v27, v85);
+      nn_mem_StandardAllocator_Free(v26 + v27, v85_.v85);
     }
     v6 = (__int64*)*v7;
     if (v24 != v23) {
@@ -713,11 +715,11 @@ LABEL_87:
   LABEL_89:
     v48 = v60;
   } while (v60 != v7);
-  v85 = &v84;
-  v86 = (char*)v4;
+  v85_.v85 = &v84;
+  v85_.v86 = (char*)v4;
   if ((_BYTE*)v49 != v50) {
     v61 = (unsigned __int64)&v50[-v49];
-    GameRoutine_933800(v49, v50, &v85,
+    GameRoutine_933800(v49, v50, &v85_.v85,
                        (2 * __clz((unsigned __int64)&v50[-v49])) ^ 0x7E, 1);
     if (v50 - 1 == (_BYTE*)v49) {
       v62 = 0;

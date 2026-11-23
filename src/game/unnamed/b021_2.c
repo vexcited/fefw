@@ -6151,19 +6151,21 @@ __int64 GameHr_165ef40(__int64 a1)
   __int64 result;
   __int64 v3;
   __int64 v4;
-  __int64 v5;
-  __int64 v6;
+  struct {
+    __int64 v5;
+    __int64 v6;
+  } v5_;
 
   result = *(_QWORD*)a1;
   if (result != 0) {
-    GameRoutine_1560070((void*)&v5, result, "L_SpotDispatch");
-    result = v6;
-    if (v6 != 0) {
-      v3 = GameRoutine_1a0a0c0(v6);
-      v4 = v5;
-      result = v6;
-      if (v6 != 0) {
-        result = GameRoutine_1a09c50(v6);
+    GameRoutine_1560070((void*)&v5_.v5, result, "L_SpotDispatch");
+    result = v5_.v6;
+    if (v5_.v6 != 0) {
+      v3 = GameRoutine_1a0a0c0(v5_.v6);
+      v4 = v5_.v5;
+      result = v5_.v6;
+      if (v5_.v6 != 0) {
+        result = GameRoutine_1a09c50(v5_.v6);
       }
       if (v3 != 0 && v4 != 0) {
         result = GameRoutine_155ea30(v4);

@@ -112,22 +112,24 @@ __int64 ProcStableBreedingFoodMenu_Unknown88(__int64 a1)
   __int64 v4;
   __int64 v5;
   __int64 v6;
-  __int64 v7;
-  __int64 v8;
+  struct {
+    __int64 v7;
+    __int64 v8;
+  } v7_;
 
   result = *(_QWORD*)(a1 + 336);
   if (result != 0) {
     result = __dynamic_cast(result, GameData_212e008[0], &GameData_208fa50, 0);
     if (result != 0) {
       v3 = result;
-      GameRoutine_1560070((void*)&v7, a1 + 848, "L_InfoDetail");
-      result = v8;
-      if (v8 != 0) {
-        v4 = std___1___shared_weak_count_lock(v8);
-        v5 = v7;
-        result = v8;
-        if (v8 != 0) {
-          result = std___1___shared_weak_count___release_weak(v8);
+      GameRoutine_1560070((void*)&v7_.v7, a1 + 848, "L_InfoDetail");
+      result = v7_.v8;
+      if (v7_.v8 != 0) {
+        v4 = std___1___shared_weak_count_lock(v7_.v8);
+        v5 = v7_.v7;
+        result = v7_.v8;
+        if (v7_.v8 != 0) {
+          result = std___1___shared_weak_count___release_weak(v7_.v8);
         }
         if (v4 != 0 && v5 != 0) {
           v6 = (*(__int64 (**)(__int64))(*(_QWORD*)v3 + 560LL))(v3);

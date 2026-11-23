@@ -1662,17 +1662,19 @@ __int64 BattlePopupBlaze_18c2620(__int64 a1, long double a2)
   __int64* v12;
   __int64 v13;
   int v14;
-  __int64 v15;
-  __int64 v16;
+  struct {
+    __int64 v15;
+    __int64 v16;
+  } v15_;
 
   v12 = (__int64*)"L_Gauge";
   v13 = 7;
-  GameRoutine_1573280((void*)(&v15), a1 + 80, &v12, a2);
-  if (v16 != 0) {
-    v3 = std___1___shared_weak_count_lock(v16);
-    v4 = v15;
-    if (v16 != 0) {
-      std___1___shared_weak_count___release_weak(v16);
+  GameRoutine_1573280((void*)(&v15_.v15), a1 + 80, &v12, a2);
+  if (v15_.v16 != 0) {
+    v3 = std___1___shared_weak_count_lock(v15_.v16);
+    v4 = v15_.v15;
+    if (v15_.v16 != 0) {
+      std___1___shared_weak_count___release_weak(v15_.v16);
     }
     if (v3 == 0 || v4 == 0) {
       if (v3 == 0) {
@@ -1691,12 +1693,12 @@ __int64 BattlePopupBlaze_18c2620(__int64 a1, long double a2)
     }
   }
 LABEL_12:
-  LayoutAccessor_1560070((void*)(&v15), a1 + 80, "L_Gauge");
-  if (v16 != 0) {
-    v7 = std___1___shared_weak_count_lock(v16);
-    v8 = v15;
-    if (v16 != 0) {
-      std___1___shared_weak_count___release_weak(v16);
+  LayoutAccessor_1560070((void*)(&v15_.v15), a1 + 80, "L_Gauge");
+  if (v15_.v16 != 0) {
+    v7 = std___1___shared_weak_count_lock(v15_.v16);
+    v8 = v15_.v15;
+    if (v15_.v16 != 0) {
+      std___1___shared_weak_count___release_weak(v15_.v16);
     }
     if (v7 != 0 && v8 != 0) {
       LayoutAccessor_1562cf0(v8, "Out_Unbreak");
@@ -1719,11 +1721,11 @@ LABEL_21:
     v13 = *(_QWORD*)(a1 + 192);
     v14 = DWORD2(v9);
     v12 = GameData_212d1e0[0] + 2;
-    snd_Fade_Fade_10c830(&v15, 0.0);
+    snd_Fade_Fade_10c830(&v15_.v15, 0.0);
     snd_playAt_ff5f0((void*)(&v11), "SE_SYS_BrazeGauge_Resist",
-                     "SE_SYS_BrazeGauge_Resist", &v12, &v15, 0, 65537, 0, 0.0,
-                     1.0);
-    snd_Fade_Destroy_Fade(&v15);
+                     "SE_SYS_BrazeGauge_Resist", &v12, &v15_.v15, 0, 65537, 0,
+                     0.0, 1.0);
+    snd_Fade_Destroy_Fade(&v15_.v15);
   }
   return (*(__int64 (**)(__int64, __int64))(*(_QWORD*)a1 + 40LL))(a1, 1);
 }

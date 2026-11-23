@@ -4261,8 +4261,10 @@ _QWORD* HubNatives_cc8df0(__int64 a1)
   __int64 v15;
   _QWORD v16[2];
   char* v17;
-  __int64 v18;
-  __int64 v19;
+  struct {
+    __int64 v18;
+    __int64 v19;
+  } v18_;
 
   v2 = *as_g_script_manager_ptr;
   v3 = *(
@@ -4323,9 +4325,9 @@ LABEL_9:
 
 LABEL_18:
   v11[v10] = 0;
-  result = X8CALL_X0(_QWORD*, GameRoutine_e1be60((void*)&v18, v7, v16));
-  v14 = v19;
-  if (v19 != 0 && atomic_fetch_add((atomic_ullong* volatile)(v19 + 8),
+  result = X8CALL_X0(_QWORD*, GameRoutine_e1be60((void*)&v18_.v18, v7, v16));
+  v14 = v18_.v19;
+  if (v18_.v19 != 0 && atomic_fetch_add((atomic_ullong* volatile)(v18_.v19 + 8),
                                    0xFFFFFFFFFFFFFFFFLL) == 0) {
     (*(void (**)(__int64))(*(_QWORD*)v14 + 16LL))(v14);
     result = (_QWORD*)std___1___shared_weak_count___release_weak(v14);

@@ -102,8 +102,10 @@ __int64 ExchangeUnitMenu_Unknown88(__int64 a1)
   __int64* v5;
   __int64 v6;
   __int64 v7;
-  __int64 v8;
-  __int64 v9;
+  struct {
+    __int64 v8;
+    __int64 v9;
+  } v8_;
 
   result = *(_QWORD*)(a1 + 1056);
   if (result != 0) {
@@ -111,18 +113,18 @@ __int64 ExchangeUnitMenu_Unknown88(__int64 a1)
   }
   v3 = *(_QWORD*)(a1 + 336);
   if (v3 != 0) {
-    LayoutAccessor_1560070((void*)(&v8), (__int64*)(result + 200),
+    LayoutAccessor_1560070((void*)(&v8_.v8), (__int64*)(result + 200),
                            (__int64)"L_ItemDetail");
     v4 = *(int*)(v3 + 40);
-    result = v9;
+    result = v8_.v9;
     v5 = (_DWORD)v4 == -1 ? game_g_empty_item_ptr
                           : (__int64*)(*(_QWORD*)(v3 + 88) + 8 * v4 + 828);
-    if (v9 != 0) {
-      v6 = std___1___shared_weak_count_lock(v9);
+    if (v8_.v9 != 0) {
+      v6 = std___1___shared_weak_count_lock(v8_.v9);
       if (v6 != 0) {
         v7 = v6;
-        if (v8 != 0) {
-          game_gameui_anonymous_15d23a0(v8, v5);
+        if (v8_.v8 != 0) {
+          game_gameui_anonymous_15d23a0(v8_.v8, v5);
         }
         if (atomic_fetch_add((atomic_ullong* volatile)(v7 + 8),
                              0xFFFFFFFFFFFFFFFFLL) == 0) {
@@ -130,9 +132,9 @@ __int64 ExchangeUnitMenu_Unknown88(__int64 a1)
           std___1___shared_weak_count___release_weak(v7);
         }
       }
-      result = v9;
-      if (v9 != 0) {
-        return std___1___shared_weak_count___release_weak(v9);
+      result = v8_.v9;
+      if (v8_.v9 != 0) {
+        return std___1___shared_weak_count___release_weak(v8_.v9);
       }
     }
   }

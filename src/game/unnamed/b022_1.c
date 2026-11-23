@@ -3424,16 +3424,18 @@ __int64 GameHr_16b9be0(__int64* a1)
   __int64 result;
   _QWORD v6[4];
   _QWORD* v7;
-  __int64 v8;
-  __int64 v9;
+  struct {
+    __int64 v8;
+    __int64 v9;
+  } v8_;
 
-  GameRoutine_1560070((void*)&v8, a1 + 106, "L_PageTab");
+  GameRoutine_1560070((void*)&v8_.v8, a1 + 106, "L_PageTab");
   v6[0] = GameData_208d0f8;
   v6[1] = a1;
   v2 = *a1;
   v7 = v6;
   v3 = (*(__int64 (**)(__int64*))(v2 + 192))(a1);
-  GameRoutine_16e6ca0(a1 + 82, &v8, v6, v3, 14, 15);
+  GameRoutine_16e6ca0(a1 + 82, &v8_.v8, v6, v3, 14, 15);
   if (v7 == v6) {
     v4 = 32;
   }
@@ -3445,9 +3447,9 @@ __int64 GameHr_16b9be0(__int64* a1)
   }
   (*(void (**)(void*))(*v7 + v4))(v7);
 LABEL_6:
-  result = v9;
-  if (v9 != 0) {
-    return GameRoutine_1a09c50(v9);
+  result = v8_.v9;
+  if (v8_.v9 != 0) {
+    return GameRoutine_1a09c50(v8_.v9);
   }
   return result;
 }

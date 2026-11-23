@@ -304,8 +304,10 @@ __int64 ProcReinforceSkillMenu_Unknown88(__int64 a1)
     __int64 v13;
     __int64 v14;
   } v13_;
-  __int64 v15;
-  __int64 v16;
+  struct {
+    __int64 v15;
+    __int64 v16;
+  } v15_;
 
   result = *(_QWORD*)(a1 + 336);
   if (result != 0) {
@@ -314,10 +316,10 @@ __int64 ProcReinforceSkillMenu_Unknown88(__int64 a1)
       v3 = result;
       if ((*(_BYTE*)(result + 102) & 0x10) != 0) {
         ui_LayoutAccessor_SetPaneVisible(a1 + 848, "N_After", 0);
-        GameRoutine_1560070((void*)&v15, a1 + 848, "L_InfoDetail_Before");
-        GameRoutine_15d2f60(&v15, v3 + 96, *(_QWORD*)(v3 + 88), 0);
-        result = v16;
-        if (v16 != 0) {
+        GameRoutine_1560070((void*)&v15_.v15, a1 + 848, "L_InfoDetail_Before");
+        GameRoutine_15d2f60(&v15_.v15, v3 + 96, *(_QWORD*)(v3 + 88), 0);
+        result = v15_.v16;
+        if (v15_.v16 != 0) {
           return std___1___shared_weak_count___release_weak(result);
         }
       }

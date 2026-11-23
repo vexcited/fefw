@@ -1219,8 +1219,10 @@ __int64 GameHr_1829280(__int64 result, char a2)
   char* v7;
   __int64 v8;
   __int64 v9;
-  __int64 v10;
-  __int64 v11;
+  struct {
+    __int64 v10;
+    __int64 v11;
+  } v10_;
 
   if (*(_QWORD*)(result + 160) != 0) {
     if ((v2 = result, v4 = GameData_212cfd0[0],
@@ -1237,14 +1239,14 @@ __int64 GameHr_1829280(__int64 result, char a2)
         GameRoutine_1828ef0(v5, v6);
       }
       v7 = (a2 & 1) != 0 ? "L_Equip00_ArrowL" : "L_Equip00_ArrowR";
-      GameRoutine_1560070((void*)&v10, v2 + 48, v7);
-      result = v11;
-      if (v11 != 0) {
-        v8 = GameRoutine_1a0a0c0(v11);
-        v9 = v10;
-        result = v11;
-        if (v11 != 0) {
-          result = GameRoutine_1a09c50(v11);
+      GameRoutine_1560070((void*)&v10_.v10, v2 + 48, v7);
+      result = v10_.v11;
+      if (v10_.v11 != 0) {
+        v8 = GameRoutine_1a0a0c0(v10_.v11);
+        v9 = v10_.v10;
+        result = v10_.v11;
+        if (v10_.v11 != 0) {
+          result = GameRoutine_1a09c50(v10_.v11);
         }
         if (v8 != 0 && v9 != 0) {
           result = GameRoutine_1562680(v9, "Decide", 1.0);
@@ -1619,27 +1621,29 @@ __int64 GameHr_1836b00(__int64* a1, unsigned __int8 a2)
   unsigned int v15;
   int v16;
   _QWORD v17[2];
-  __int64 v18;
-  __int64 v19;
+  struct {
+    __int64 v18;
+    __int64 v19;
+  } v18_;
 
   v2 = *a1;
   v3 = a1[19];
-  LOBYTE(v18) = a2;
-  result = (*(__int64 (**)(__int64*, __int64*))(v2 + 40))(a1, &v18);
+  LOBYTE(v18_.v18) = a2;
+  result = (*(__int64 (**)(__int64*, __int64*))(v2 + 40))(a1, &v18_.v18);
   if ((result & 1) != 0) {
     v7 = v3 + 760LL * a2;
     v8 = *(_QWORD*)(v7 + 40);
     if (v8 != 0) {
       v17[0] = "L_OverBlaze";
       v17[1] = 11;
-      GameRoutine_1573280((void*)&v18, a1 + 3, v17);
-      result = v19;
-      if (v19 != 0) {
-        v9 = GameRoutine_1a0a0c0(v19);
-        v10 = v18;
-        result = v19;
-        if (v19 != 0) {
-          result = GameRoutine_1a09c50(v19);
+      GameRoutine_1573280((void*)&v18_.v18, a1 + 3, v17);
+      result = v18_.v19;
+      if (v18_.v19 != 0) {
+        v9 = GameRoutine_1a0a0c0(v18_.v19);
+        v10 = v18_.v18;
+        result = v18_.v19;
+        if (v18_.v19 != 0) {
+          result = GameRoutine_1a09c50(v18_.v19);
         }
         if (v9 != 0 && v10 != 0) {
           v11 = *(_QWORD*)(v8 + 440);

@@ -128,8 +128,10 @@ __int64 ProcRouteMenu_Unknown88(_QWORD* a1)
   _BYTE* v8;
   __int64 v9;
   _QWORD v10[2];
-  __int64 v11;
-  __int64 v12;
+  struct {
+    __int64 v11;
+    __int64 v12;
+  } v11_;
 
   GameRoutine_16cdee0(a1);
   result = a1[42];
@@ -148,12 +150,12 @@ __int64 ProcRouteMenu_Unknown88(_QWORD* a1)
   v4 = (*(__int64 (**)(_QWORD*))(*a1 + 1152LL))(a1);
   v10[0] = "L_Clan";
   v10[1] = 6;
-  GameRoutine_1572980((void*)&v11, v4, v10);
-  if (v12 != 0) {
-    v5 = std___1___shared_weak_count_lock(v12);
-    v6 = v11;
-    if (v12 != 0) {
-      std___1___shared_weak_count___release_weak(v12);
+  GameRoutine_1572980((void*)&v11_.v11, v4, v10);
+  if (v11_.v12 != 0) {
+    v5 = std___1___shared_weak_count_lock(v11_.v12);
+    v6 = v11_.v11;
+    if (v11_.v12 != 0) {
+      std___1___shared_weak_count___release_weak(v11_.v12);
     }
     if (v5 != 0 && v6 != 0) {
       AsyncLoadThumbImage_18ba690(v6, v3);

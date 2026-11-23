@@ -6495,8 +6495,10 @@ __int64 GameHr_d1b3e0(__int64 result, unsigned int a2, unsigned int a3)
   __int64* v27;
   __int64 v28;
   __int64 v29;
-  unsigned __int64 v30;
-  __int64* v31;
+  struct {
+    unsigned __int64 v30;
+    __int64* v31;
+  } v30_;
 
   v3 = *(_QWORD*)result + 88LL * a2;
   v4 = *(_QWORD*)(v3 + 168);
@@ -6574,11 +6576,11 @@ __int64 GameHr_d1b3e0(__int64 result, unsigned int a2, unsigned int a3)
         LABEL_24:
           if (*(_QWORD*)(*(_QWORD*)(*(_QWORD*)(v4 + 24) + 72LL) +
                          104LL * (int)v24 + 16) != 0) {
-            GameRoutine_d1b660((void*)&v30);
-            v25 = v30;
-            v26 = v31;
-            if ((__int64*)v30 != v31) {
-              v27 = (__int64*)v30;
+            GameRoutine_d1b660((void*)&v30_.v30);
+            v25 = v30_.v30;
+            v26 = v30_.v31;
+            if ((__int64*)v30_.v30 != v30_.v31) {
+              v27 = (__int64*)v30_.v30;
               do {
                 v28 = *v27++;
                 GameRoutine_ce4ec0(v4, 1, *(float*)(v28 + 8));
@@ -6594,9 +6596,9 @@ __int64 GameHr_d1b3e0(__int64 result, unsigned int a2, unsigned int a3)
           }
         }
       LABEL_32:
-        v30 = __PAIR64__(a3, v17);
-        LODWORD(v31) = 1065353216;
-        return GameRoutine_d1d300(v3 + 112, &v30);
+        v30_.v30 = __PAIR64__(a3, v17);
+        LODWORD(v30_.v31) = 1065353216;
+        return GameRoutine_d1d300(v3 + 112, &v30_.v30);
       }
     }
     if (atomic_fetch_add((atomic_ullong* volatile)(v22 + 8),

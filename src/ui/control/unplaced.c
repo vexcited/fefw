@@ -1180,9 +1180,11 @@ __int64 ui_control_1887780(__int64 result, __int64 a2, __int64 a3, __int64 a4)
   unsigned __int64 v14;
   unsigned __int64 v15;
   __int64 v16;
-  _QWORD* v17;
-  __int64 v18;
-  long double v19;
+  struct {
+    _QWORD* v17;
+    __int64 v18;
+    long double v19;
+  } v17_;
   __int64 v20;
   int v21;
   __int64 v22;
@@ -1331,16 +1333,16 @@ LABEL_12:
       }
       continue;
     }
-    v17 = (_QWORD*)v87_.v87;
-    v18 = v16;
+    v17_.v17 = (_QWORD*)v87_.v87;
+    v17_.v18 = v16;
     *v4 = v87_.v87;
     std___1___shared_weak_count___release_weak(v15);
-    if (v17 == nullptr || **(_QWORD***)(a2 + 8) == v17) {
+    if (v17_.v17 == nullptr || **(_QWORD***)(a2 + 8) == v17_.v17) {
       goto LABEL_27;
     }
-    result = (*(__int64 (**)(_QWORD*))(*v17 + 32LL))(v17);
+    result = (*(__int64 (**)(_QWORD*))(*v17_.v17 + 32LL))(v17_.v17);
     if ((result & 1) != 0) {
-      v20 = *(_QWORD*)(v17[1] + 24LL);
+      v20 = *(_QWORD*)(v17_.v17[1] + 24LL);
       while (1) {
         v20 = *(_QWORD*)(v20 + 24);
         if (v20 == 0) {
@@ -1354,9 +1356,9 @@ LABEL_12:
       if (*(_QWORD*)(v23 + 32) == 0) {
         goto LABEL_125;
       }
-      v77 = v17;
-      v78 = v18;
-      atomic_fetch_add_explicit((atomic_ullong* volatile)(v18 + 8), 1u,
+      v77 = v17_.v17;
+      v78 = v17_.v18;
+      atomic_fetch_add_explicit((atomic_ullong* volatile)(v17_.v18 + 8), 1u,
                                 memory_order_relaxed);
       result = *(_QWORD*)(v23 + 32);
       if (result == 0) {
@@ -1376,11 +1378,11 @@ LABEL_12:
       if ((result & 1) != 0) {
         goto LABEL_125;
       }
-      v17 = (_QWORD*)*v4;
+      v17_.v17 = (_QWORD*)*v4;
     }
   LABEL_37:
     v26 = **(_DWORD**)(a2 + 24);
-    v27 = &v17[3 * v26];
+    v27 = &v17_.v17[3 * v26];
     v28 = *((unsigned __int8*)v27 + 832);
     if ((v28 & 1) != 0) {
       v29 = v27[105];
@@ -1399,7 +1401,7 @@ LABEL_12:
       }
     }
     else {
-      v33 = &v17[15 * v26];
+      v33 = &v17_.v17[15 * v26];
       v34 = *((unsigned __int8*)v33 + 352);
       v35 = (char*)v33 + 353;
       v38 = v33 + 45;
@@ -1420,7 +1422,7 @@ LABEL_12:
         v29 = v36;
       }
     }
-    GameRoutine_60a060(&v79, v32, v29, v19);
+    GameRoutine_60a060(&v79, v32, v29, v17_.v19);
     v21 = 0;
     v22 = v4[1];
     if (v22 != 0) {

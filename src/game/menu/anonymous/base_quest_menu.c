@@ -21,19 +21,21 @@ void BaseQuestMenu_Unknown85(__int64 a1)
   long double v3;
   __int64 v4;
   __int64 v5;
-  __int64 v6;
-  __int64 v7;
+  struct {
+    __int64 v6;
+    __int64 v7;
+  } v6_;
 
-  snd_Fade_Fade_10c830(&v6, 0.0);
+  snd_Fade_Fade_10c830(&v6_.v6, 0.0);
   snd_play_ff2d0((void*)(&v5), "SE_SYS_QuestWindow_Open",
-                 "SE_SYS_QuestWindow_Open", &v6, 0, 65537, 0, 0.0, 1.0);
-  snd_Fade_Destroy_Fade(&v6);
-  LayoutAccessor_1560070((void*)(&v6), a1 + 848, "L_Img");
-  if (v7 != 0) {
-    v2 = std___1___shared_weak_count_lock(v7);
-    v4 = v6;
-    if (v7 != 0) {
-      std___1___shared_weak_count___release_weak(v7);
+                 "SE_SYS_QuestWindow_Open", &v6_.v6, 0, 65537, 0, 0.0, 1.0);
+  snd_Fade_Destroy_Fade(&v6_.v6);
+  LayoutAccessor_1560070((void*)(&v6_.v6), a1 + 848, "L_Img");
+  if (v6_.v7 != 0) {
+    v2 = std___1___shared_weak_count_lock(v6_.v7);
+    v4 = v6_.v6;
+    if (v6_.v7 != 0) {
+      std___1___shared_weak_count___release_weak(v6_.v7);
     }
     if (v2 != 0 && v4 != 0) {
       LayoutAccessor_1562cf0(v4, "Img01");

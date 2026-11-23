@@ -517,14 +517,16 @@ __n128 game_combat_ActionArts_OnEnter_lambda0_Invoke(__int64 a1)
 {
   __n128 result;
   __int64 v2;
-  __int64 v3;
-  __int64 v4;
+  struct {
+    __int64 v3;
+    __int64 v4;
+  } v3_;
 
-  GameRoutine_108d740((void*)(&v3),
+  GameRoutine_108d740((void*)(&v3_.v3),
                       *(_QWORD*)(*(_QWORD*)(*(_QWORD*)(a1 + 8) + 8LL) + 376LL),
                       "Btl_Charge_Smoke");
-  v2 = v4;
-  if (v4 != 0 && atomic_fetch_add((atomic_ullong* volatile)(v4 + 8),
+  v2 = v3_.v4;
+  if (v3_.v4 != 0 && atomic_fetch_add((atomic_ullong* volatile)(v3_.v4 + 8),
                                   0xFFFFFFFFFFFFFFFFLL) == 0) {
     (*(void (**)(__int64))(*(_QWORD*)v2 + 16LL))(v2);
     return std___1___shared_weak_count___release_weak(v2);

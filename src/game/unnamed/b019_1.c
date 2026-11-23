@@ -810,15 +810,17 @@ _QWORD* GameHr_144e680(__int64 a1)
   _QWORD* result;
   __int64 v20;
   _BYTE* v21;
-  __int64 v22;
-  __int64 v23;
+  struct {
+    __int64 v22;
+    __int64 v23;
+  } v22_;
 
   v2 = *(_QWORD*)(a1 + 304);
   if (v2 != 0) {
     (*(__attribute__((swiftcall)) void (**)(PSEUDO_X8, void*))(
-        *(_QWORD*)v2 + 48LL))((void*)&v22, (void*)v2);
-    v3 = v22;
-    v4 = *(_OWORD*)(v22 + 32);
+        *(_QWORD*)v2 + 48LL))((void*)&v22_.v22, (void*)v2);
+    v3 = v22_.v22;
+    v4 = *(_OWORD*)(v22_.v22 + 32);
     *(_QWORD*)(a1 + 40) = 0;
     *(_QWORD*)(a1 + 80) = v4;
     v5 = *(_OWORD*)(a1 + 80);
@@ -867,7 +869,7 @@ _QWORD* GameHr_144e680(__int64 a1)
     *(_DWORD*)(a1 + 252) = v11;
     *(_DWORD*)(a1 + 256) = v11;
     *(_DWORD*)(a1 + 248) = v11;
-    v12 = v23;
+    v12 = v22_.v23;
     *(_BYTE*)(*(_QWORD*)(*(_QWORD*)(*(_QWORD*)(*(_QWORD*)GameData_212c638 +
                                                32LL) -
                                     8LL) +
@@ -890,11 +892,12 @@ _QWORD* GameHr_144e680(__int64 a1)
     v15 = *(_QWORD*)(a1 + 352);
     if (v15 != 0) {
       (*(__attribute__((swiftcall)) void (**)(PSEUDO_X8, void*))(
-          *(_QWORD*)v15 + 48LL))((void*)&v22, (void*)v15);
-      GameRoutine_144f500(a1, v22, a1 + 368);
-      v16 = v23;
-      if (v23 != 0 && atomic_fetch_add((atomic_ullong* volatile)(v23 + 8),
-                                       0xFFFFFFFFFFFFFFFFLL) == 0) {
+          *(_QWORD*)v15 + 48LL))((void*)&v22_.v22, (void*)v15);
+      GameRoutine_144f500(a1, v22_.v22, a1 + 368);
+      v16 = v22_.v23;
+      if (v22_.v23 != 0 &&
+          atomic_fetch_add((atomic_ullong* volatile)(v22_.v23 + 8),
+                           0xFFFFFFFFFFFFFFFFLL) == 0) {
         (*(void (**)(__int64))(*(_QWORD*)v16 + 16LL))(v16);
         GameRoutine_1a09c50();
       }

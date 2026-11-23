@@ -643,8 +643,10 @@ __int64 ProcDiningRecipeMenu_13fa3e0(__int64 a1, unsigned int a2)
     __int64 v11;
     __int64 v12;
   } v11_;
-  __int64 v13;
-  __int64 v14;
+  struct {
+    __int64 v13;
+    __int64 v14;
+  } v13_;
 
   v4 = *(_QWORD*)(*GameData_212dcd0 + 48);
   if (a2 >=
@@ -655,10 +657,10 @@ __int64 ProcDiningRecipeMenu_13fa3e0(__int64 a1, unsigned int a2)
     v5 = *(_QWORD*)(v4 + 8LL * a2);
   }
   v6 = game_util_Format("L_UnitInfo%02d", a2);
-  GameRoutine_1560070((void*)&v13, a1 + 848, v6);
-  GameRoutine_15758f0(&v13, v5, 0xFFFFFFFFLL, 0, 6, 0, 1);
-  if (v14 != 0) {
-    std___1___shared_weak_count___release_weak(v14);
+  GameRoutine_1560070((void*)&v13_.v13, a1 + 848, v6);
+  GameRoutine_15758f0(&v13_.v13, v5, 0xFFFFFFFFLL, 0, 6, 0, 1);
+  if (v13_.v14 != 0) {
+    std___1___shared_weak_count___release_weak(v13_.v14);
   }
   v7 = game_util_Format("L_UnitInfo%02d/L_UnitInfo", a2);
   GameRoutine_1560070((void*)&v11_.v11, a1 + 848, v7);

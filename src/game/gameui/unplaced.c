@@ -9115,8 +9115,10 @@ __int64 game_gameui_15b05c0(__int64 a1, unsigned __int8* a2)
   } v52_;
   _QWORD v54[2];
   char* v55;
-  __int64* v56;
-  __int64 v57;
+  struct {
+    __int64* v56;
+    __int64 v57;
+  } v56_;
 
   v2 = *a2;
   v4 = *(unsigned __int16*)(**(_QWORD**)(a1 + 8) + 2 * v2 + 514);
@@ -9187,22 +9189,22 @@ __int64 game_gameui_15b05c0(__int64 a1, unsigned __int8* a2)
       v23 = "Default";
     }
     LayoutAccessor_1562cf0(v52_.v52, v23);
-    LayoutAccessor_1560070((void*)(&v56), v21, (__int64)"L_Status_00");
-    if (v57 == 0) {
+    LayoutAccessor_1560070((void*)(&v56_.v56), v21, (__int64)"L_Status_00");
+    if (v56_.v57 == 0) {
     LABEL_55:
-      LayoutAccessor_1560070((void*)(&v56), v21, (__int64)"L_Status_01");
-      if (v57 != 0) {
-        v40 = std___1___shared_weak_count_lock(v57);
-        v41 = v56;
-        if (v57 != 0) {
-          std___1___shared_weak_count___release_weak_alt1(v57);
+      LayoutAccessor_1560070((void*)(&v56_.v56), v21, (__int64)"L_Status_01");
+      if (v56_.v57 != 0) {
+        v40 = std___1___shared_weak_count_lock(v56_.v57);
+        v41 = v56_.v56;
+        if (v56_.v57 != 0) {
+          std___1___shared_weak_count___release_weak_alt1(v56_.v57);
         }
         if (v40 != 0 && v41 != nullptr) {
           v42 = game_Unit_GetJob(v18);
           v48 = (_DWORD)v2 == 10 &&
                     (v43 = *(_QWORD*)(v18 + 1744),
                      v44 = *(_QWORD*)(v18 + 1752) - v43,
-                     LODWORD(v56) = GameData_21d992c & 0xFFF,
+                     LODWORD(v56_.v56) = GameData_21d992c & 0xFFF,
                      (v45 = ((unsigned __int64)(unsigned int)GameData_21d992c >>
                              5) &
                             0x7F) +
@@ -9212,7 +9214,7 @@ __int64 game_gameui_15b05c0(__int64 a1, unsigned __int8* a2)
                       GameData_21d992c) &
                      1) != 0 &&
                     (v46 = v42,
-                     v47 = game_HasActiveSkill_843420(&v56, v18 + 1744),
+                     v47 = game_HasActiveSkill_843420(&v56_.v56, v18 + 1744),
                      v42 = v46, (v47 & 1) != 0) ||
                 *(char*)(v42 + v2 + 398) > -1;
           Util_1580bf0(
@@ -9220,12 +9222,12 @@ __int64 game_gameui_15b05c0(__int64 a1, unsigned __int8* a2)
               *(unsigned __int16*)(v17 + 2 * v2 + 514) <
                   (unsigned int)*(unsigned __int16*)(v18 + 2 * v2 + 514),
               0, 0, 0);
-          LayoutAccessor_1560070((void*)(&v56), v41, (__int64)"L_Gauge");
-          if (v57 != 0) {
-            v49 = std___1___shared_weak_count_lock(v57);
-            v50 = v56;
-            if (v57 != 0) {
-              std___1___shared_weak_count___release_weak_alt1(v57);
+          LayoutAccessor_1560070((void*)(&v56_.v56), v41, (__int64)"L_Gauge");
+          if (v56_.v57 != 0) {
+            v49 = std___1___shared_weak_count_lock(v56_.v57);
+            v50 = v56_.v56;
+            if (v56_.v57 != 0) {
+              std___1___shared_weak_count___release_weak_alt1(v56_.v57);
             }
             if (v49 != 0 && v50 != nullptr) {
               LayoutAccessor_155e830_alt1(v50, 0);
@@ -9260,10 +9262,10 @@ __int64 game_gameui_15b05c0(__int64 a1, unsigned __int8* a2)
       }
       goto LABEL_81;
     }
-    v24 = std___1___shared_weak_count_lock(v57);
-    v25 = v56;
-    if (v57 != 0) {
-      std___1___shared_weak_count___release_weak_alt1(v57);
+    v24 = std___1___shared_weak_count_lock(v56_.v57);
+    v25 = v56_.v56;
+    if (v56_.v57 != 0) {
+      std___1___shared_weak_count___release_weak_alt1(v56_.v57);
     }
     if (v24 == 0 || v25 == nullptr) {
       if (v24 == 0) {
@@ -9278,33 +9280,34 @@ __int64 game_gameui_15b05c0(__int64 a1, unsigned __int8* a2)
                              game_g_shared_system_skills_ptr);
       v28 = *(_QWORD*)(v17 + 1744);
       v29 = *(_QWORD*)(v17 + 1752) - v28;
-      LODWORD(v56) = *(_DWORD*)((_BYTE*)((_UNKNOWN*)0x1B4LL) +
-                                game_g_shared_system_skills_ptr) &
-                     0xFFF;
+      LODWORD(v56_.v56) = *(_DWORD*)((_BYTE*)((_UNKNOWN*)0x1B4LL) +
+                                     game_g_shared_system_skills_ptr) &
+                          0xFFF;
       if (((v27 >> 5) & 0x7F) + 1 <= v29 >> 2 &&
           ((*(_DWORD*)(v28 + 4 * ((v27 >> 5) & 0x7F)) >> v27) & 1) != 0 &&
-          (game_HasActiveSkill_843420(&v56, v17 + 1744) & 1) != 0) {
+          (game_HasActiveSkill_843420(&v56_.v56, v17 + 1744) & 1) != 0) {
         v30 = true;
       }
     }
     v31 = game_Unit_GetJob(v17);
-    v37 = (_DWORD)v2 == 10 &&
-              (v32 = *(unsigned int*)((char*)((_UNKNOWN*)0x228LL) + v26 + 4),
-               v33 = *(_QWORD*)(v17 + 1744), v34 = *(_QWORD*)(v17 + 1752) - v33,
-               LODWORD(v56) =
-                   *(_DWORD*)((_BYTE*)((_UNKNOWN*)0x228LL) + v26 + 4) & 0xFFF,
-               ((v32 >> 5) & 0x7F) + 1 <= v34 >> 2) &&
-              ((*(_DWORD*)(v33 + 4 * ((v32 >> 5) & 0x7F)) >> v32) & 1) != 0 &&
-              (v35 = v31, v36 = game_HasActiveSkill_843420(&v56, v17 + 1744),
-               v31 = v35, (v36 & 1) != 0) ||
-          *(char*)(v31 + v2 + 398) > -1;
+    v37 =
+        (_DWORD)v2 == 10 &&
+            (v32 = *(unsigned int*)((char*)((_UNKNOWN*)0x228LL) + v26 + 4),
+             v33 = *(_QWORD*)(v17 + 1744), v34 = *(_QWORD*)(v17 + 1752) - v33,
+             LODWORD(v56_.v56) =
+                 *(_DWORD*)((_BYTE*)((_UNKNOWN*)0x228LL) + v26 + 4) & 0xFFF,
+             ((v32 >> 5) & 0x7F) + 1 <= v34 >> 2) &&
+            ((*(_DWORD*)(v33 + 4 * ((v32 >> 5) & 0x7F)) >> v32) & 1) != 0 &&
+            (v35 = v31, v36 = game_HasActiveSkill_843420(&v56_.v56, v17 + 1744),
+             v31 = v35, (v36 & 1) != 0) ||
+        *(char*)(v31 + v2 + 398) > -1;
     Util_1580bf0(v25, v17, v2, v37, 0, 0, v30, 0);
-    LayoutAccessor_1560070((void*)(&v56), v25, (__int64)"L_Gauge");
-    if (v57 != 0) {
-      v38 = std___1___shared_weak_count_lock(v57);
-      v39 = v56;
-      if (v57 != 0) {
-        std___1___shared_weak_count___release_weak_alt1(v57);
+    LayoutAccessor_1560070((void*)(&v56_.v56), v25, (__int64)"L_Gauge");
+    if (v56_.v57 != 0) {
+      v38 = std___1___shared_weak_count_lock(v56_.v57);
+      v39 = v56_.v56;
+      if (v56_.v57 != 0) {
+        std___1___shared_weak_count___release_weak_alt1(v56_.v57);
       }
       if (v38 != 0 && v39 != nullptr) {
         LayoutAccessor_155e830_alt1(v39, 0);

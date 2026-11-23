@@ -103,8 +103,10 @@ __int64 ProcGmapCarriageList_168b1e0(__int64 a1)
   __int64 v51;
   char* v52;
   __int64* v53;
-  char* v54;
-  char* v55;
+  struct {
+    char* v54;
+    char* v55;
+  } v54_;
 
   v2 = (_QWORD*)fw_memory_g_heap_manager_ptr;
   v3 = (_QWORD*)fw_memory_HeapManager_Allocate(
@@ -159,17 +161,17 @@ LABEL_8:
       v11 = v18;
     }
   }
-  GmapUIDef_1654700((void*)((__int64*)&v54), *(_QWORD*)v11);
-  v19 = (__int64)v54;
-  v20 = v55;
-  v21 = (v55 - v54) >> 4;
+  GmapUIDef_1654700((void*)((__int64*)&v54_.v54), *(_QWORD*)v11);
+  v19 = (__int64)v54_.v54;
+  v20 = v54_.v55;
+  v21 = (v54_.v55 - v54_.v54) >> 4;
   if (v21 < 1) {
     v25 = 0;
   LABEL_21:
     result = GameRoutine_168c0a0(v19, v20, v21, 0, v25);
   }
   else {
-    v22 = (v55 - v54) >> 4;
+    v22 = (v54_.v55 - v54_.v54) >> 4;
     v23 = GameData_212c060;
     while (1) {
       v24 = GameRoutine_1a09d20(16 * v22, v23);
@@ -190,8 +192,8 @@ LABEL_8:
     }
     result = nn_mem_StandardAllocator_Free(*v2 + v28, (_QWORD)(v24));
   }
-  v29 = v54;
-  v30 = v55;
+  v29 = v54_.v54;
+  v30 = v54_.v55;
   v3[151] = v3[150];
   if (v29 != v30) {
     v52 = v30;
@@ -267,11 +269,11 @@ LABEL_8:
       }
       v29 += 16;
     } while (v29 != v30);
-    v29 = v54;
+    v29 = v54_.v54;
   }
   if (v29 != nullptr) {
     v50 = *v2;
-    v55 = v29;
+    v54_.v55 = v29;
     v51 = 128;
     if (*(_QWORD*)(v50 + 200) == 0) {
       v51 = 56;

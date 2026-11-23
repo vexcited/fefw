@@ -2659,13 +2659,15 @@ void Manager_d9a760(__int64 a1)
     unsigned __int64 v27;
     char* v28;
   } v26_;
-  unsigned __int8* v29;
-  unsigned __int8* v30;
+  struct {
+    unsigned __int8* v29;
+    unsigned __int8* v30;
+  } v29_;
 
-  v2 = X8CALL_X0(__int64, GameRoutine_d99f80((void*)(&v29), a1));
-  v3 = v29;
-  v4 = v30;
-  if (v29 != v30) {
+  v2 = X8CALL_X0(__int64, GameRoutine_d99f80((void*)(&v29_.v29), a1));
+  v3 = v29_.v29;
+  v4 = v29_.v30;
+  if (v29_.v29 != v29_.v30) {
     do {
       v5 = *v3;
       v6 = (v5 & 1) == 0;
@@ -2749,14 +2751,14 @@ void Manager_d9a760(__int64 a1)
       }
       v3 += 24;
     } while (v3 != v4);
-    v3 = v29;
+    v3 = v29_.v29;
   }
   if (v3 != nullptr) {
-    v20 = v30;
-    if (v3 == v30) {
+    v20 = v29_.v30;
+    if (v3 == v29_.v30) {
       goto LABEL_48;
     }
-    v21 = v30;
+    v21 = v29_.v30;
     do {
       v22 = *(v21 - 24);
       v21 -= 24;
@@ -2774,9 +2776,9 @@ void Manager_d9a760(__int64 a1)
       }
       v20 = v21;
     } while (v21 != v3);
-    v30 = v3;
-    v3 = v29;
-    if (v29 != nullptr) {
+    v29_.v30 = v3;
+    v3 = v29_.v29;
+    if (v29_.v29 != nullptr) {
     LABEL_48:
       v25 = 128;
       if (*(_QWORD*)(*(_QWORD*)fw_memory_g_heap_manager_ptr + 200LL) == 0) {
@@ -2819,13 +2821,15 @@ void Manager_d9a9c0(__int64 a1)
     unsigned __int64 v27;
     char* v28;
   } v26_;
-  unsigned __int8* v29;
-  unsigned __int8* v30;
+  struct {
+    unsigned __int8* v29;
+    unsigned __int8* v30;
+  } v29_;
 
-  v2 = X8CALL_X0(__int64, GameRoutine_d99f80((void*)(&v29), a1));
-  v3 = v29;
-  v4 = v30;
-  if (v29 != v30) {
+  v2 = X8CALL_X0(__int64, GameRoutine_d99f80((void*)(&v29_.v29), a1));
+  v3 = v29_.v29;
+  v4 = v29_.v30;
+  if (v29_.v29 != v29_.v30) {
     do {
       v5 = *v3;
       v6 = (v5 & 1) == 0;
@@ -2909,14 +2913,14 @@ void Manager_d9a9c0(__int64 a1)
       }
       v3 += 24;
     } while (v3 != v4);
-    v3 = v29;
+    v3 = v29_.v29;
   }
   if (v3 != nullptr) {
-    v20 = v30;
-    if (v3 == v30) {
+    v20 = v29_.v30;
+    if (v3 == v29_.v30) {
       goto LABEL_48;
     }
-    v21 = v30;
+    v21 = v29_.v30;
     do {
       v22 = *(v21 - 24);
       v21 -= 24;
@@ -2934,9 +2938,9 @@ void Manager_d9a9c0(__int64 a1)
       }
       v20 = v21;
     } while (v21 != v3);
-    v30 = v3;
-    v3 = v29;
-    if (v29 != nullptr) {
+    v29_.v30 = v3;
+    v3 = v29_.v29;
+    if (v29_.v29 != nullptr) {
     LABEL_48:
       v25 = 128;
       if (*(_QWORD*)(*(_QWORD*)fw_memory_g_heap_manager_ptr + 200LL) == 0) {
@@ -2979,13 +2983,15 @@ void Manager_d9ac20(__int64 a1)
     unsigned __int64 v27;
     char* v28;
   } v26_;
-  unsigned __int8* v29;
-  unsigned __int8* v30;
+  struct {
+    unsigned __int8* v29;
+    unsigned __int8* v30;
+  } v29_;
 
-  v2 = X8CALL_X0(__int64, GameRoutine_d99f80((void*)(&v29), a1));
-  v3 = v29;
-  v4 = v30;
-  if (v29 != v30) {
+  v2 = X8CALL_X0(__int64, GameRoutine_d99f80((void*)(&v29_.v29), a1));
+  v3 = v29_.v29;
+  v4 = v29_.v30;
+  if (v29_.v29 != v29_.v30) {
     do {
       v5 = *v3;
       v6 = (v5 & 1) == 0;
@@ -3069,14 +3075,14 @@ void Manager_d9ac20(__int64 a1)
       }
       v3 += 24;
     } while (v3 != v4);
-    v3 = v29;
+    v3 = v29_.v29;
   }
   if (v3 != nullptr) {
-    v20 = v30;
-    if (v3 == v30) {
+    v20 = v29_.v30;
+    if (v3 == v29_.v30) {
       goto LABEL_48;
     }
-    v21 = v30;
+    v21 = v29_.v30;
     do {
       v22 = *(v21 - 24);
       v21 -= 24;
@@ -3094,9 +3100,9 @@ void Manager_d9ac20(__int64 a1)
       }
       v20 = v21;
     } while (v21 != v3);
-    v30 = v3;
-    v3 = v29;
-    if (v29 != nullptr) {
+    v29_.v30 = v3;
+    v3 = v29_.v29;
+    if (v29_.v29 != nullptr) {
     LABEL_48:
       v25 = 128;
       if (*(_QWORD*)(*(_QWORD*)fw_memory_g_heap_manager_ptr + 200LL) == 0) {

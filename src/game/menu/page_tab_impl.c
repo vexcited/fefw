@@ -42,8 +42,10 @@ __int64 PageTab_16e6880(__int64 a1, int a2, unsigned int a3, unsigned int a4)
   __int64 v25;
   unsigned int v26;
   _QWORD v27[2];
-  __int64 v28;
-  __int64 v29;
+  struct {
+    __int64 v28;
+    __int64 v29;
+  } v28_;
 
   result = *(_QWORD*)(a1 + 104);
   if (result == 0) {
@@ -71,14 +73,14 @@ __int64 PageTab_16e6880(__int64 a1, int a2, unsigned int a3, unsigned int a4)
   v26 = a3;
   for (i = 0; i != 13; ++i) {
     v12 = game_util_Format("L_Tab%02d", i);
-    GameRoutine_1560070((void*)&v28, v9, v12);
-    if (v29 == 0) {
+    GameRoutine_1560070((void*)&v28_.v28, v9, v12);
+    if (v28_.v29 == 0) {
       continue;
     }
-    v13 = std___1___shared_weak_count_lock(v29);
-    v14 = v28;
-    if (v29 != 0) {
-      std___1___shared_weak_count___release_weak(v29);
+    v13 = std___1___shared_weak_count_lock(v28_.v29);
+    v14 = v28_.v28;
+    if (v28_.v29 != 0) {
+      std___1___shared_weak_count___release_weak(v28_.v29);
     }
     if (v13 != 0 && v14 != 0) {
       v15 = *(_DWORD*)a1;
@@ -104,12 +106,12 @@ __int64 PageTab_16e6880(__int64 a1, int a2, unsigned int a3, unsigned int a4)
   *(_BYTE*)(a1 + 112) = GameRoutine_156d490(v9);
   v27[0] = "L_ArrowL";
   v27[1] = 8;
-  GameRoutine_159e180((void*)&v28, v9, v27);
-  if (v29 != 0) {
-    v16 = std___1___shared_weak_count_lock(v29);
-    v17 = v28;
-    if (v29 != 0) {
-      std___1___shared_weak_count___release_weak(v29);
+  GameRoutine_159e180((void*)&v28_.v28, v9, v27);
+  if (v28_.v29 != 0) {
+    v16 = std___1___shared_weak_count_lock(v28_.v29);
+    v17 = v28_.v28;
+    if (v28_.v29 != 0) {
+      std___1___shared_weak_count___release_weak(v28_.v29);
     }
     if (v16 != 0 && v17 != 0) {
       v18 = *(unsigned __int8*)(a1 + 112);
@@ -131,12 +133,12 @@ __int64 PageTab_16e6880(__int64 a1, int a2, unsigned int a3, unsigned int a4)
   }
   v27[0] = "L_ArrowR";
   v27[1] = 8;
-  GameRoutine_159e180((void*)&v28, v9, v27);
-  if (v29 != 0) {
-    v20 = std___1___shared_weak_count_lock(v29);
-    v21 = v28;
-    if (v29 != 0) {
-      std___1___shared_weak_count___release_weak(v29);
+  GameRoutine_159e180((void*)&v28_.v28, v9, v27);
+  if (v28_.v29 != 0) {
+    v20 = std___1___shared_weak_count_lock(v28_.v29);
+    v21 = v28_.v28;
+    if (v28_.v29 != 0) {
+      std___1___shared_weak_count___release_weak(v28_.v29);
     }
     if (v20 != 0 && v21 != 0) {
       v22 = *(unsigned __int8*)(a1 + 112);

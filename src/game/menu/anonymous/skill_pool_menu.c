@@ -60,25 +60,27 @@ __int64 SkillPoolMenu_Unknown84(__int64 a1)
   __int64 v4;
   __int64 v5;
   const char* v6;
-  __int64 v7;
-  __int64 v8;
+  struct {
+    __int64 v7;
+    __int64 v8;
+  } v7_;
 
-  LayoutAccessor_1560070((void*)(&v7), (__int64*)(a1 + 952),
+  LayoutAccessor_1560070((void*)(&v7_.v7), (__int64*)(a1 + 952),
                          (__int64)"L_MenuItem_Info");
-  result = v8;
-  if (v8 != 0) {
+  result = v7_.v8;
+  if (v7_.v8 != 0) {
     v3 = *(unsigned __int8*)(a1 + 1080);
-    v4 = std___1___shared_weak_count_lock(v8);
+    v4 = std___1___shared_weak_count_lock(v7_.v8);
     if (v4 != 0) {
       v5 = v4;
-      if (v7 != 0) {
+      if (v7_.v7 != 0) {
         if (v3 == 2) {
           v6 = "MID_BtlMenu_WeaponCost";
         }
         else {
           v6 = nullptr;
         }
-        GameRoutine_157e0f0(v7, "MID_Sys_Acquired", v6);
+        GameRoutine_157e0f0(v7_.v7, "MID_Sys_Acquired", v6);
       }
       if (atomic_fetch_add((atomic_ullong* volatile)(v5 + 8),
                            0xFFFFFFFFFFFFFFFFLL) == 0) {
@@ -86,9 +88,9 @@ __int64 SkillPoolMenu_Unknown84(__int64 a1)
         std___1___shared_weak_count___release_weak(v5);
       }
     }
-    result = v8;
-    if (v8 != 0) {
-      return std___1___shared_weak_count___release_weak(v8);
+    result = v7_.v8;
+    if (v7_.v8 != 0) {
+      return std___1___shared_weak_count___release_weak(v7_.v8);
     }
   }
   return result;
