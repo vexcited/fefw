@@ -225,8 +225,8 @@ __int64 nvidia_5bbb0(__int64);
 __int64 nvidia_eeec0(__int64 result, unsigned int*, int, __int64);
 __int64 vfprintf_plt(_QWORD, _QWORD, _QWORD);
 __int64 vsnprintf_plt(_QWORD, _QWORD, _QWORD, _QWORD);
-unsigned int CudaDriverRoutine_10ac30(__int64, __int64, unsigned int,
-                                      _DWORD*, __int64, char);
+unsigned int CudaDriverRoutine_10ac30(__int64, __int64, unsigned int, _DWORD*,
+                                      __int64, char);
 unsigned __int8 CudaDriverRoutine_122140(_BOOL8 result);
 unsigned __int8 CudaDriverRoutine_127eb0(__int64, __int64);
 unsigned __int8 CudaDriverRoutine_1dc9c0(__int64);
@@ -1545,9 +1545,11 @@ __int64 nvidia_2bb60(__int64 a1, _QWORD** a2, __int64 a3, char a4, __int64 a5,
   __int64 v23;
   __int64 v24;
   struct {
-    char gap0_[16];
     _QWORD v25[18];
     _QWORD* v26;
+  } v25_;
+  struct {
+    char gap160_[8];
     _BYTE v27[56];
     __int128 v28;
     __int128 v29;
@@ -1567,7 +1569,7 @@ __int64 nvidia_2bb60(__int64 a1, _QWORD** a2, __int64 a3, char a4, __int64 a5,
     __int128 v43;
     __int128 v44;
     __int64 v45;
-  } f_;
+  } v27_;
   __int64 v46;
 
   v46 = 0;
@@ -1664,48 +1666,48 @@ __int64 nvidia_2bb60(__int64 a1, _QWORD** a2, __int64 a3, char a4, __int64 a5,
                 v19 = *((_DWORD*)a2 + 5);
                 __asm__ volatile("" ::"r"(v19));
               }
-              f_.v45 = 0;
+              v27_.v45 = 0;
               {
                 v21 = *(_DWORD*)(a5 + 68);
                 __asm__ volatile("" ::"r"(v21));
               }
-              memset(f_.v25, 0, sizeof(f_.v25));
-              *(_QWORD*)f_.v27 = v20;
-              f_.v26 = v17;
+              memset(v25_.v25, 0, sizeof(v25_.v25));
+              *(_QWORD*)v27_.v27 = v20;
+              v25_.v26 = v17;
               *(_QWORD*)&v22 = a2[3];
               *((_QWORD*)&v22 + 1) = v18;
-              memset(&f_.v27[8], 0, 48);
-              *(_DWORD*)&f_.v27[12] = v20;
-              *(_DWORD*)&f_.v27[16] = v19;
-              f_.v28 = (__typeof__(f_.v28)){0};
-              DWORDn(f_.v28, sizeof(f_.v28) / 4 - 1) = v21;
-              f_.v29 = (__typeof__(f_.v29)){0};
-              f_.v30 = (__typeof__(f_.v30)){0};
-              f_.v31 = (__typeof__(f_.v31)){0};
-              f_.v32 = (__typeof__(f_.v32)){0};
-              f_.v33 = (__typeof__(f_.v33)){0};
-              f_.v34 = (__typeof__(f_.v34)){0};
-              f_.v35 = (__typeof__(f_.v35)){0};
-              f_.v36 = (__typeof__(f_.v36)){0};
-              f_.v37 = (__typeof__(f_.v37)){0};
-              f_.v38 = (__typeof__(f_.v38)){0};
-              f_.v39 = (__typeof__(f_.v39)){0};
-              f_.v40 = (__typeof__(f_.v40)){0};
-              f_.v41 = (__typeof__(f_.v41)){0};
-              f_.v42 = (__typeof__(f_.v42)){0};
-              f_.v43 = (__typeof__(f_.v43)){0};
-              f_.v44 = (__typeof__(f_.v44)){0};
+              memset(&v27_.v27[8], 0, 48);
+              *(_DWORD*)&v27_.v27[12] = v20;
+              *(_DWORD*)&v27_.v27[16] = v19;
+              v27_.v28 = (__typeof__(v27_.v28)){0};
+              DWORDn(v27_.v28, sizeof(v27_.v28) / 4 - 1) = v21;
+              v27_.v29 = (__typeof__(v27_.v29)){0};
+              v27_.v30 = (__typeof__(v27_.v30)){0};
+              v27_.v31 = (__typeof__(v27_.v31)){0};
+              v27_.v32 = (__typeof__(v27_.v32)){0};
+              v27_.v33 = (__typeof__(v27_.v33)){0};
+              v27_.v34 = (__typeof__(v27_.v34)){0};
+              v27_.v35 = (__typeof__(v27_.v35)){0};
+              v27_.v36 = (__typeof__(v27_.v36)){0};
+              v27_.v37 = (__typeof__(v27_.v37)){0};
+              v27_.v38 = (__typeof__(v27_.v38)){0};
+              v27_.v39 = (__typeof__(v27_.v39)){0};
+              v27_.v40 = (__typeof__(v27_.v40)){0};
+              v27_.v41 = (__typeof__(v27_.v41)){0};
+              v27_.v42 = (__typeof__(v27_.v42)){0};
+              v27_.v43 = (__typeof__(v27_.v43)){0};
+              v27_.v44 = (__typeof__(v27_.v44)){0};
               {
                 v23 = *(_QWORD*)(a5 + 52);
                 __asm__ volatile("" ::"r"(v23));
               }
-              *(_QWORD*)&f_.v27[4] = f_.v26;
-              *(_QWORD*)&f_.v27[36] = v23;
-              *(_OWORD*)&f_.v27[20] = v22;
-              *(_QWORD*)((char*)&f_.v28 + 4) = *(_QWORD*)(a5 + 60);
+              *(_QWORD*)&v27_.v27[4] = v25_.v26;
+              *(_QWORD*)&v27_.v27[36] = v23;
+              *(_OWORD*)&v27_.v27[20] = v22;
+              *(_QWORD*)((char*)&v27_.v28 + 4) = *(_QWORD*)(a5 + 60);
               v24 = CudaDriverRoutine_98340(v46);
               result =
-                  nvidia_e7820(v24, (__int64)*a2, f_.v25, *((_DWORD*)a2 + 8));
+                  nvidia_e7820(v24, (__int64)*a2, v25_.v25, *((_DWORD*)a2 + 8));
               if ((_DWORD)result != 0) {
                 return result;
               }
@@ -5860,14 +5862,15 @@ __int64 nvidia_e96c0(__int64 a1, __int64 a2, _QWORD* a3)
   struct {
     _QWORD v20[6];
     __int64 v21;
-    char gap56_[8];
+  } v20_;
+  struct {
     _QWORD v22[8];
     __int128 v23;
     __int128 v24;
     __int128 v25;
     __int128 v26;
     __int64 v27;
-  } f_;
+  } v22_;
   _QWORD* v28;
 
   cuda_driver_108520(a2 + 24);
@@ -5876,13 +5879,13 @@ __int64 nvidia_e96c0(__int64 a1, __int64 a2, _QWORD* a3)
     __asm__ volatile("" ::"r"(v6));
   }
   v28 = nullptr;
-  f_.v27 = 0;
-  memset(f_.v22, 0, sizeof(f_.v22));
-  memset(f_.v20, 0, sizeof(f_.v20));
-  f_.v23 = (__typeof__(f_.v23)){0};
-  f_.v24 = (__typeof__(f_.v24)){0};
-  f_.v25 = (__typeof__(f_.v25)){0};
-  f_.v26 = (__typeof__(f_.v26)){0};
+  v22_.v27 = 0;
+  memset(v22_.v22, 0, sizeof(v22_.v22));
+  memset(v20_.v20, 0, sizeof(v20_.v20));
+  v22_.v23 = (__typeof__(v22_.v23)){0};
+  v22_.v24 = (__typeof__(v22_.v24)){0};
+  v22_.v25 = (__typeof__(v22_.v25)){0};
+  v22_.v26 = (__typeof__(v22_.v26)){0};
   v7 = (_QWORD*)(a1 + ((unsigned __int64)*v6 << 6));
   {
     v8 = v7[2];
@@ -5939,21 +5942,21 @@ __int64 nvidia_e96c0(__int64 a1, __int64 a2, _QWORD* a3)
       v14 = v7[1];
       __asm__ volatile("" ::"r"(v14));
     }
-    f_.v21 = a1;
-    *((_QWORD*)&f_.v23 + 1) = v8;
-    LODWORD(f_.v24) = 2;
-    f_.v20[2] = v12;
-    *((_QWORD*)&f_.v25 + 1) = v14;
-    *(_QWORD*)&f_.v26 = v13;
+    v20_.v21 = a1;
+    *((_QWORD*)&v22_.v23 + 1) = v8;
+    LODWORD(v22_.v24) = 2;
+    v20_.v20[2] = v12;
+    *((_QWORD*)&v22_.v25 + 1) = v14;
+    *(_QWORD*)&v22_.v26 = v13;
     v15 = *(_OWORD*)(a1 + 4440);
-    LODWORD(f_.v20[5]) = *(_DWORD*)(a1 + 4456);
+    LODWORD(v20_.v20[5]) = *(_DWORD*)(a1 + 4456);
     {
       v16 = v7[3];
       __asm__ volatile("" ::"r"(v16));
     }
-    *(_OWORD*)&f_.v20[3] = v15;
-    *((_QWORD*)&f_.v24 + 1) = v16;
-    v17 = cuda_driver_105e80(&v28, a2, f_.v22, (__int64)f_.v20, 1);
+    *(_OWORD*)&v20_.v20[3] = v15;
+    *((_QWORD*)&v22_.v24 + 1) = v16;
+    v17 = cuda_driver_105e80(&v28, a2, v22_.v22, (__int64)v20_.v20, 1);
     if (v17 != 0) {
       v10 = v17;
       CudaDriverRoutine_12e340((__int64)v11);

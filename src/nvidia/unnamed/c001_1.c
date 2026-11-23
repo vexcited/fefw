@@ -336,6 +336,13 @@ __int64 CudaDriverRoutine_ef110(_QWORD, _QWORD);
 __int64 CudaDriverRoutine_f6230(_QWORD, _QWORD, _QWORD, _QWORD, _QWORD, _QWORD,
                                 _QWORD, _QWORD);
 __int64 CudaDriverHr_998a0(__int64 a1);
+__int64 CudaDriverRoutine_6cac0_alt1(unsigned int, unsigned int, unsigned int,
+                                     unsigned int, unsigned int);
+__int64 memset_plt(__int64, int, unsigned __int64);
+__int64 zstd_decompress_223310(__int64 result, __int64);
+__int64 CudaDriverHr_76290(unsigned int a1, unsigned int a2, unsigned int a3,
+                           unsigned int a4, __int64* a5, unsigned int a6,
+                           _DWORD* a7, __int64 a8);
 
 __int64 CudaDriverHr_73110(unsigned int a1, unsigned int a2, unsigned int a3,
                            unsigned int a4, unsigned int a5, __int64 a6,
@@ -640,10 +647,13 @@ __int64 CudaDriverHr_743f0(unsigned int a1, __int64 a2, __int64 a3)
 }
 
 __int64 CudaDriverHr_76290(unsigned int a1, unsigned int a2, unsigned int a3,
-                           unsigned int a4, _QWORD* a5, unsigned int a6,
+                           unsigned int a4, __int64* a5, unsigned int a6,
                            _DWORD* a7, __int64 a8)
 {
-  _QWORD* v10;
+
+#pragma clang fp contract(on)
+
+  __int64* v10;
   bool v16;
   __int64 result;
   _QWORD* v18;
@@ -669,14 +679,14 @@ __int64 CudaDriverHr_76290(unsigned int a1, unsigned int a2, unsigned int a3,
       return result;
     }
   }
-  result = CudaDriverRoutine_6cac0(2047, a1, a2, a3, a4);
+  result = CudaDriverRoutine_6cac0_alt1(0x7FFu, a1, a2, a3, a4);
   if ((_DWORD)result == 0) {
     if (v10 != nullptr) {
-      CudaDriverRoutine_25cf10(v10, 0, 8LL * a6);
+      memset_plt((__int64)v10, 0, 8LL * a6);
     }
     result = CudaDriverRoutine_72cf0(a1, a2, a3, a4, a7);
     if ((_DWORD)result == 0) {
-      result = CudaDriverRoutine_6cac0(1023, a1, a2, a3, a4);
+      result = CudaDriverRoutine_6cac0_alt1(0x3FFu, a1, a2, a3, a4);
       if ((_DWORD)result == 0) {
         v18 = (_QWORD*)CudaDriverData_1423000;
         result = (*(__int64 (**)(void))(
@@ -690,7 +700,7 @@ __int64 CudaDriverHr_76290(unsigned int a1, unsigned int a2, unsigned int a3,
             if ((_DWORD)result != 0) {
               break;
             }
-            v20 = CudaDriverRoutine_223310(
+            v20 = zstd_decompress_223310(
                 *(_QWORD*)(*(_QWORD*)(*(_QWORD*)(*v18 + 8LL * a1) + 24LL) +
                            128LL),
                 *v10);

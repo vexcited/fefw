@@ -11810,7 +11810,7 @@ ffee0,324,verified,src/nn/fs/unplaced.c,nn_fs_GetAndClearMemoryReportInfo
 2ca0c0,1892,verified,src/opus/celt/bands.c,quant_all_bands
 2cb1e0,3876,verified,src/opus/celt/bands_impl.c,bands_2cb1e0
 2cc360,1356,verified,src/opus/celt/bands.c,quant_band_stereo
-2ccb40,440,verified,src/opus/celt/bands.c,deinterleave_hadamard
+2ccb40,696,verified,src/opus/celt/bands.c,deinterleave_hadamard
 2cce20,1724,verified,src/opus/celt/bands.c,quant_partition
 2cd600,696,verified,src/opus/celt/bands.c,interleave_hadamard
 2cd8e0,1840,verified,src/opus/celt/bands.c,compute_theta
@@ -11852,7 +11852,7 @@ ffee0,324,verified,src/nn/fs/unplaced.c,nn_fs_GetAndClearMemoryReportInfo
 2e05a0,696,verified,src/opus/celt/entdec.c,ec_dec_uint
 2e0880,124,verified,src/opus/celt/entdec.c,ec_dec_bits
 2e0910,44,verified,src/opus/celt/entenc.c,ec_enc_init
-2e0940,412,disputed,src/opus/celt/entenc.c,ec_encode
+2e0940,368,verified,src/opus/celt/entenc.c,ec_encode
 2e0c80,320,verified,src/opus/celt/entenc.c,ec_enc_bit_logp
 2e0de0,368,verified,src/opus/celt/entenc.c,ec_enc_icdf
 2e0f60,252,verified,src/opus/celt/entenc.c,ec_enc_uint
@@ -11888,7 +11888,7 @@ ffee0,324,verified,src/nn/fs/unplaced.c,nn_fs_GetAndClearMemoryReportInfo
 2e6880,1216,verified,src/opus/celt/vq_impl.c,op_pvq_search_c
 2e6d80,3840,verified,src/opus/celt/vq_impl.c,vq_2e6d80
 2e8b40,716,verified,src/opus/celt/vq.c,alg_quant
-2e8e80,640,verified,src/opus/celt/vq.c,alg_unquant
+2e8e80,724,verified,src/opus/celt/vq.c,alg_unquant
 2e9180,348,verified,src/opus/celt/vq.c,renormalise_vector
 2e9300,732,verified,src/opus/celt/vq_impl.c,stereo_itheta
 2e9600,3752,verified,src/opus/celt/rate.c,clt_compute_allocation
@@ -11908,14 +11908,14 @@ ffee0,324,verified,src/nn/fs/unplaced.c,nn_fs_GetAndClearMemoryReportInfo
 2efd20,160,verified,src/opus/silk/NLSF_unpack.c,silk_NLSF_unpack
 2efdc0,804,verified,src/opus/silk/unplaced_8.c,opus_silk_2efdc0
 2f0ec0,2224,verified,src/opus/silk/unplaced_4.c,opus_silk_2f0ec0
-2f2920,2056,verified,src/opus/silk/NSQ_del_dec.c,silk_noise_shape_quantizer_del_dec
+2f2920,2056,disputed,src/opus/silk/NSQ_del_dec.c,silk_noise_shape_quantizer_del_dec
 2f4190,40,verified,src/opus/silk/PLC.c,silk_PLC_Reset
 2f41c0,596,verified,src/opus/silk/PLC.c,silk_PLC
 2f4420,2260,verified,src/opus/silk/unplaced_12.c,opus_silk_2f4420
 2f4fe0,348,verified,src/opus/silk/PLC.c,silk_PLC_glue_frames
 2f51c0,796,verified,src/opus/silk/PLC.c,silk_PLC_energy
 2f5500,112,verified,src/opus/silk/VAD.c,silk_VAD_Init
-2f5580,3448,verified,src/opus/silk/VAD.c,silk_VAD_GetSA_Q8_c
+2f5580,3520,verified,src/opus/silk/VAD.c,silk_VAD_GetSA_Q8_c
 2f63c0,544,verified,src/opus/silk/VQ_WMat_EC.c,silk_VQ_WMat_EC_c
 2f6600,192,verified,src/opus/silk/ana_filt_bank_1.c,silk_ana_filt_bank_1
 2f66c0,232,verified,src/opus/silk/biquad_alt.c,silk_biquad_alt_stride1
@@ -11925,7 +11925,7 @@ ffee0,324,verified,src/nn/fs/unplaced.c,nn_fs_GetAndClearMemoryReportInfo
 2f6c00,680,verified,src/opus/silk/code_signs.c,silk_encode_signs
 2f6ec0,936,verified,src/opus/silk/code_signs.c,silk_decode_signs
 2f7270,180,verified,src/opus/silk/control_SNR.c,silk_control_SNR
-2f7330,372,verified,src/opus/silk/control_audio_bandwidth.c,silk_control_audio_bandwidth
+2f7330,380,verified,src/opus/silk/control_audio_bandwidth.c,silk_control_audio_bandwidth
 2f74c0,1424,verified,src/opus/silk/control_codec.c,silk_control_encoder
 2f7ad0,372,verified,src/opus/silk/control_codec.c,silk_setup_resamplers
 2f7c50,16,verified,src/opus/silk/dec_API.c,silk_Get_Decoder_Size
@@ -12015,7 +12015,7 @@ ffee0,324,verified,src/nn/fs/unplaced.c,nn_fs_GetAndClearMemoryReportInfo
 30ffb0,72,verified,src/opus/src/opus_decoder.c,opus_packet_get_bandwidth
 310000,20,verified,src/opus/src/opus_decoder.c,opus_packet_get_nb_channels
 310020,60,verified,src/opus/src/opus_decoder.c,opus_decode
-310060,392,verified,src/opus/src/opus_decoder.c,opus_decode_float
+310060,428,verified,src/opus/src/opus_decoder.c,opus_decode_float
 310220,156,verified,src/opus/src/opus_decoder.c,opus_decoder_get_nb_samples
 3102c0,124,verified,src/opus/src/opus_decoder.c,opus_decoder_ctl
 310680,4,verified,src/opus/src/opus_decoder.c,opus_decoder_destroy
@@ -12100,7 +12100,7 @@ ffee0,324,verified,src/nn/fs/unplaced.c,nn_fs_GetAndClearMemoryReportInfo
 325720,1496,verified,src/opus/silk/arm/NSQ_del_dec_neon_intr.c,copy_winner_state
 325d30,76,verified,src/opus/silk/arm/NSQ_neon.c,silk_noise_shape_quantizer_short_prediction_neon
 325d80,228,verified,src/opus/silk/arm/NSQ_neon.c,silk_NSQ_noise_shape_feedback_loop_neon
-325e80,104,disputed,src/opus/unplaced.c,opus_325e80
+325e80,104,verified,src/opus/silk/fixed/arm/warped_autocorrelation_FIX_neon_intr.c,silk_warped_autocorrelation_FIX_neon
 326600,184,verified,src/opus/unplaced.c,opus_326600
 326780,212,verified,src/opus/celt/arm/pitch_neon_intr.c,celt_inner_prod_neon
 3268e0,272,verified,src/opus/celt/arm/pitch_neon_intr.c,dual_inner_prod_neon
@@ -32810,7 +32810,7 @@ ffee0,324,verified,src/nn/fs/unplaced.c,nn_fs_GetAndClearMemoryReportInfo
 7e6500,68,verified,src/llvm-libcxx/libcxx/src/future_impl.c,std___1___assoc_sub_state___make_ready
 7e6560,152,verified,src/llvm-libcxx/libcxx/src/future_impl.c,std___1___assoc_sub_state_copy
 7e6660,36,verified,src/llvm-libcxx/libcxx/src/future.cpp,_ZNSt3__117__assoc_sub_state10__sub_waitERNS_11unique_lockINS_5mutexEEE
-7e6700,80,verified,src/llvm-libcxx/libcxx/src/future.cpp,_ZNSt3__117__assoc_sub_state4waitEv
+7e6700,80,disputed,src/llvm-libcxx/libcxx/src/future.cpp,_ZNSt3__117__assoc_sub_state4waitEv
 7e67b0,20,verified,src/llvm-libcxx/libcxx/src/unplaced_3.c,llvm_libcxx_libcxx_src_7e67b0
 7e67d0,80,verified,src/llvm-libcxx/libcxx/src/future_impl.c,std___1_future_future
 7e6840,40,verified,src/llvm-libcxx/libcxx/src/future.cpp,_ZNSt3__16futureIvED2Ev
@@ -32874,8 +32874,8 @@ ffee0,324,verified,src/nn/fs/unplaced.c,nn_fs_GetAndClearMemoryReportInfo
 7e7cd4,28,verified,src/llvm-libcxx/libcxx/src/thread_impl.c,thread_7e7cd4
 7e7e00,56,verified,src/llvm-libcxx/libcxx/src/thread.cpp,_ZNSt3__115__thread_structC2Ev
 7e7e40,68,verified,src/llvm-libcxx/libcxx/src/thread.cpp,_ZNSt3__115__thread_structD2Ev
-7e7e90,188,disputed,src/llvm-libcxx/libcxx/src/thread.cpp,_ZNSt3__115__thread_struct25notify_all_at_thread_exitEPNS_18condition_variableEPNS_5mutexE
-7e7f70,88,disputed,src/llvm-libcxx/libcxx/src/thread.cpp,_ZNSt3__115__thread_struct27__make_ready_at_thread_exitEPNS_17__assoc_sub_stateE
+7e7e90,188,verified,src/llvm-libcxx/libcxx/src/thread.cpp,_ZNSt3__115__thread_struct25notify_all_at_thread_exitEPNS_18condition_variableEPNS_5mutexE
+7e7f70,88,verified,src/llvm-libcxx/libcxx/src/thread.cpp,_ZNSt3__115__thread_struct27__make_ready_at_thread_exitEPNS_17__assoc_sub_stateE
 7e8050,56,verified,src/llvm-libcxx/libcxx/src/thread.cpp,_ZNSt3__121__thread_specific_ptrINS_15__thread_structEE16__at_thread_exitEPv
 7e8160,4,verified,src/nn/sdk_trivial.cpp,_Z14SdkStub_7e8160v
 7e8170,48,verified,src/nn/unnamed/s005_1.c,SdkHr_7e8170
@@ -33285,7 +33285,7 @@ ffee0,324,verified,src/nn/fs/unplaced.c,nn_fs_GetAndClearMemoryReportInfo
 7f8580,4,verified,src/llvm-libcxx/libcxx/src/locale.cpp,_ZNSt3__17collateIwED2Ev
 7f8590,48,verified,src/llvm-libcxx/libcxx/src/locale.cpp,_ZNSt3__17collateIwED0Ev
 7f85c0,76,verified,src/llvm-libcxx/libcxx/src/locale.cpp,_ZNKSt3__17collateIwE10do_compareEPKwS3_S3_S3_
-7f8610,112,verified,src/llvm-libcxx/libcxx/src/locale.cpp,_ZNKSt3__17collateIwE12do_transformEPKwS3_
+7f8610,112,disputed,src/llvm-libcxx/libcxx/src/locale.cpp,_ZNKSt3__17collateIwE12do_transformEPKwS3_
 7f86e0,52,verified,src/llvm-libcxx/libcxx/src/locale.cpp,_ZNKSt3__17collateIwE7do_hashEPKwS3_
 7f8720,132,verified,src/llvm-libcxx/libcxx/src/locale.cpp,_ZNKSt3__17num_getIcNS_19istreambuf_iteratorIcNS_11char_traitsIcEEEEE6do_getES4_S4_RNS_8ios_baseERjRb
 7f8a00,288,verified,src/llvm-libcxx/libcxx/src/locale.cpp,_ZNSt3__114__scan_keywordB8ne180100INS_19istreambuf_iteratorIcNS_11char_traitsIcEEEEPKNS_12basic_stringIcS3_NS_9allocatorIcEEEENS_5ctypeIcEEEET0_RT_SE_SD_SD_RKT1_Rjb
@@ -33996,7 +33996,7 @@ ffee0,324,verified,src/nn/fs/unplaced.c,nn_fs_GetAndClearMemoryReportInfo
 82bb20,720,verified,src/llvm-libcxx/libcxx/src/locale.cpp,_ZNSt3__1L10__init_patIcEEvRNS_10money_base7patternERNS_12basic_stringIT_NS_11char_traitsIS5_EENS_9allocatorIS5_EEEEbcccS5_
 82c1c0,508,verified,src/llvm-libcxx/libcxx/src/locale.cpp,_ZNSt3__117moneypunct_bynameIcLb1EE4initEPKc
 82c4d0,744,verified,src/llvm-libcxx/libcxx/src/locale.cpp,_ZNSt3__117moneypunct_bynameIwLb0EE4initEPKc
-82c930,796,verified,src/llvm-libcxx/libcxx/src/locale.cpp,_ZNSt3__1L10__init_patIwEEvRNS_10money_base7patternERNS_12basic_stringIT_NS_11char_traitsIS5_EENS_9allocatorIS5_EEEEbcccS5_
+82c930,860,verified,src/llvm-libcxx/libcxx/src/locale.cpp,_ZNSt3__1L10__init_patIwEEvRNS_10money_base7patternERNS_12basic_stringIT_NS_11char_traitsIS5_EENS_9allocatorIS5_EEEEbcccS5_
 82cd90,744,verified,src/llvm-libcxx/libcxx/src/locale.cpp,_ZNSt3__117moneypunct_bynameIwLb1EE4initEPKc
 82d1f0,48,verified,src/llvm-libcxx/libcxx/src/locale.cpp,_ZNSt3__114__codecvt_utf8IwED0Ev
 82d220,48,verified,src/llvm-libcxx/libcxx/src/locale.cpp,_ZNSt3__114__codecvt_utf8IDsED0Ev
