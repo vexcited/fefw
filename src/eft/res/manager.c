@@ -31,7 +31,7 @@ __int64 eft_res_Manager_Manager_lambda0_Invoke(__int64 a1, __int64 a2,
                                                __int64* a3);
 __int64 GameRoutine_18e5d80(_QWORD);
 __int64 GameRoutine_bc7ac0(__int64, __int64);
-__int64 nn_mem_StandardAllocator_Free_alt1(_QWORD, long double) __asm__(
+__int64 nn_mem_StandardAllocator_Free_alt1(_QWORD, void*) __asm__(
     "nn_mem_StandardAllocator_Free");
 extern __int64 eft_g_effectSystem;
 extern char GameData_1af96e6;
@@ -293,7 +293,7 @@ __int64 Manager_bcc860(__int64 result)
         v11 = 56;
       }
       result = nn_mem_StandardAllocator_Free_alt1(
-          *(_QWORD*)fw_memory_g_heap_manager_ptr + v11, v10);
+          *(_QWORD*)fw_memory_g_heap_manager_ptr + v11, v40);
     }
     *(_BYTE*)(v1 + 200) = 1;
   }

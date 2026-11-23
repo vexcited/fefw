@@ -10,7 +10,7 @@ __int64 ResFile_5e5f00(_QWORD);
 __int64 Scene_a70a20(_QWORD, _QWORD);
 __int64 fw_memory_HeapManager_Allocate(_QWORD, _QWORD, _QWORD, _QWORD);
 __int64 memcmp(_QWORD, _QWORD);
-__int64 nn_mem_StandardAllocator_Free(_QWORD, long double);
+__int64 nn_mem_StandardAllocator_Free(_QWORD, void*);
 __int64 std___1___shared_weak_count___release_weak(_QWORD);
 __int64 std___1___shared_weak_count_lock(_QWORD);
 __int64 strlen(_QWORD);
@@ -277,7 +277,6 @@ unsigned __int64 VATModelEmitter_Unknown2(__int64 a1, __int64* a2)
   unsigned __int64 v46;
   int v47;
   __int64 v48;
-  long double v49;
   __int64 v50;
   __int64 v51;
   int v52;
@@ -455,7 +454,7 @@ LABEL_19:
     if (*(_QWORD*)(*v5 + 200) == 0) {
       v50 = 56;
     }
-    result = nn_mem_StandardAllocator_Free(*v5 + v50, v49);
+    result = nn_mem_StandardAllocator_Free(*v5 + v50, v48);
   }
   *(_BYTE*)(a1 + 466) = 0;
   return result;

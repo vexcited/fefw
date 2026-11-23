@@ -31,6 +31,9 @@ __int64 GameRoutine_17fe060(_QWORD, _QWORD);
 __int64 GameRoutine_17fe700(_QWORD, _QWORD);
 __int64 game_cutscene_17fe320(__int64, _QWORD*);
 __n128 game_cutscene_17ffe50(__int64*);
+// The pair comes back in q0 and q1.
+float32x4x2_t game_cutscene_17ffe50_pair(__int64*) __asm__(
+    "game_cutscene_17ffe50");
 extern _UNKNOWN* GameData_212c540;
 extern unsigned int GameData_1c0b528[3];
 float GameRoutine_618640(_QWORD, double, double);
@@ -1236,8 +1239,7 @@ __int64 LightActor_Unknown4(float32x4_t* a1, double a2, float a3)
   __int64 v28;
   __int64 v29;
   __int64 v30;
-  __n128 v31;
-  float32x4_t v32;
+  float32x4x2_t v32_;
   __int64 v33;
   __int128 v34;
   float v35;
@@ -1441,9 +1443,9 @@ LABEL_11:
               v29 = *v16;
               v30 = v28;
               if (v29 != 0) {
-                v31 = game_cutscene_17ffe50((__int64*)(v29 + 88));
-                v158 = v32;
-                v160 = v31;
+                v32_ = game_cutscene_17ffe50_pair((__int64*)(v29 + 88));
+                v158 = v32_.val[1];
+                v160 = v32_.val[0];
                 GameRoutine_17fb660((__int64)&v163, (_OWORD*)(v29 + 64),
                                     *(float*)(v29 + 8), a3);
                 a1[2] = vaddq_f32(

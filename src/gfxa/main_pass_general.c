@@ -10,7 +10,7 @@ __int64 ResourceBuilder_b53170(_QWORD, _QWORD, _QWORD, _QWORD);
 __int64 TaskPassNodes_b978e0(_QWORD, _QWORD, _QWORD);
 __int64 fw_memory_HeapManager_Allocate(_QWORD, _QWORD, _QWORD, _QWORD);
 __int64 memcpy(_QWORD, _QWORD, _QWORD);
-__int64 nn_mem_StandardAllocator_Free(_QWORD, long double);
+__int64 nn_mem_StandardAllocator_Free(_QWORD, void*);
 extern __int64 fw_memory_g_heap_manager;
 extern __int64 fw_memory_g_heap_manager_ptr;
 void __attribute__((noreturn)) GameRoutine_60a210(_QWORD);
@@ -1949,7 +1949,6 @@ __int64 gfxa_MainPassGeneral_SetupPrePass_lambda0_Invoke(__int64 a1, __int64 a2,
   __int64* v39;
   __int64 v40;
   __int64 v41;
-  long double v42;
   __int64 v43;
   __int64 v44;
   __int64 result;
@@ -1962,7 +1961,6 @@ __int64 gfxa_MainPassGeneral_SetupPrePass_lambda0_Invoke(__int64 a1, __int64 a2,
   __int64* v52;
   __int64 v53;
   __int64 v54;
-  long double v55;
   __int64 v56;
   __int64 v57;
   int* v58;
@@ -2135,7 +2133,7 @@ __int64 gfxa_MainPassGeneral_SetupPrePass_lambda0_Invoke(__int64 a1, __int64 a2,
         if (*(_QWORD*)(fw_memory_g_heap_manager + 200) == 0) {
           v44 = 56;
         }
-        nn_mem_StandardAllocator_Free(fw_memory_g_heap_manager + v44, v42);
+        nn_mem_StandardAllocator_Free(fw_memory_g_heap_manager + v44, v60);
       }
       ++v32;
       ++v37;
@@ -2193,7 +2191,7 @@ __int64 gfxa_MainPassGeneral_SetupPrePass_lambda0_Invoke(__int64 a1, __int64 a2,
           v57 = 56;
         }
         result =
-            nn_mem_StandardAllocator_Free(fw_memory_g_heap_manager + v57, v55);
+            nn_mem_StandardAllocator_Free(fw_memory_g_heap_manager + v57, v60);
       }
       ++v46;
       ++v51;

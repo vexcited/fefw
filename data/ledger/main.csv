@@ -36953,7 +36953,7 @@ c4e8c0,372,verified,src/game/unnamed/b010_1.c,GameHr_c4e8c0
 c4ea40,1100,verified,src/game/unnamed/b010_1.c,GameHr_c4ea40
 c4eea0,1584,verified,src/llvm-libcxx-21/libcxx/include//functional/unplaced.c,llvm_libcxx_21_libcxx_include___functional_c4eea0
 c501a0,660,verified,src/game/unnamed/b010_1.c,GameHr_c501a0
-c50450,2032,disputed,src/wld/world_ao_module.c,WorldAOModule_c50450
+c50450,1584,disputed,src/wld/world_ao_module.c,WorldAOModule_c50450
 c50cc0,252,verified,src/wld/world_ao_module.c,WorldAOModule_Destructor
 c50dc0,80,verified,src/memory/new_delete.cpp,deleting destructor at 0xc50dc0
 c50e20,440,verified,src/wld/world_ao_module.c,WorldAOModule_Unknown7
@@ -38096,7 +38096,7 @@ cb9a30,1000,verified,src/game/hub/unplaced.c,game_hub_cb9a30
 cb9e40,472,verified,src/game/hub/unplaced.c,game_hub_cb9e40
 cba040,344,verified,src/game/script/hub_character_natives_impl.c,HubCharacterNatives_cba040
 cba1a0,484,verified,src/game/script/hub_character_natives_impl.c,HubCharacterNatives_cba1a0
-cba3a0,472,verified,src/game/unnamed/e003_1.c,GameHr_cba3a0
+cba3a0,444,verified,src/game/unnamed/e003_1.c,GameHr_cba3a0
 cba580,180,verified,src/game/unnamed/b010_3.c,GameHr_cba580
 cba640,4,verified,src/game/singleton/singletons.cpp,_ZN4game9SingletonINS_3hub16CharacterManagerELb0EE10InitializeEv
 cba650,4,verified,src/game/singleton/singletons.cpp,_ZN4game9SingletonINS_3hub16CharacterManagerELb0EE8FinalizeEv
@@ -38259,7 +38259,7 @@ cc49b0,184,verified,src/game/script/hub_natives.cpp,_ZN4game6script3hub14ExitPla
 cc4a70,552,verified,src/game/unnamed/e003_1.c,GameHr_cc4a70
 cc4ce0,684,verified,src/game/script/hub_natives_impl.c,HubNatives_cc4ce0
 cc4ec0,508,verified,src/game/unnamed/b010_2.c,GameHr_cc4ec0
-cc50c0,108,disputed,src/game/unnamed/e003_1.c,GameHr_cc50c0
+cc50c0,232,disputed,src/game/unnamed/e003_1.c,GameHr_cc50c0
 cc51f0,508,verified,src/game/unnamed/e003_2.c,GameHr_cc51f0
 cc53f0,252,verified,src/game/script/hub_natives_impl.c,HubNatives_cc53f0
 cc5520,192,verified,src/game/script/hub_natives.cpp,_ZN4game6script3hub21SetContinueEncountBgmEb
@@ -42172,7 +42172,7 @@ e16b00,4,verified,src/game/game_trivial.cpp,_Z15GameStub_e16b00v
 e16b10,44,verified,src/memory/new_delete.cpp,deleting destructor at 0xe16b10
 e16b40,12,verified,src/game/hub/character_controller_autonomy.c,CharacterControllerAutonomy_StateFollow_Unknown2
 e16b60,204,verified,src/game/hub/character_controller_autonomy.c,CharacterControllerAutonomy_StateFollow_Unknown3
-e16dc0,2924,verified,src/game/hub/unplaced_13.c,game_hub_e16dc0
+e16dc0,2816,verified,src/game/hub/unplaced_13.c,game_hub_e16dc0
 e17940,376,verified,src/game/hub/character_controller_autonomy/state_follow.c,StateFollow_Unknown5
 e17ac0,44,verified,src/memory/new_delete.cpp,deleting destructor at 0xe17ac0
 e17af0,4,verified,src/game/game_trivial.cpp,_Z15GameStub_e17af0v
@@ -79368,7 +79368,7 @@ fffcb0,1244,verified,src/game/unnamed/b014_1.c,GameHr_fffcb0
 180c220,1272,verified,src/game/cutscene/light_actor.c,LightActor_180c220
 180c730,516,verified,src/game/cutscene/light_actor.c,LightActor_Unknown7
 180c940,220,verified,src/game/cutscene/light_actor.c,LightActor_Unknown8
-180ca40,2580,disputed,src/game/cutscene/light_actor.c,LightActor_Unknown4
+180ca40,2580,verified,src/game/cutscene/light_actor.c,LightActor_Unknown4
 180d660,584,verified,src/game/cutscene/light_actor.c,LightActor_Unknown5
 180d8b0,152,verified,src/game/cutscene/movie_actor.c,MovieActor_Destructor
 180d950,176,verified,src/game/cutscene/movie_actor.c,MovieActor_DeletingDestructor

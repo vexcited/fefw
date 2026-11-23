@@ -33,7 +33,7 @@ __int64 game_zview_d0e440(__int64 result, char);
 __int64 game_zview_d17160(float, __int64, __int64, float32x4_t*, float32x4_t*);
 __int64 memchr(__int64, int, unsigned __int64);
 __int64 memmove(__int64, __int64, unsigned __int64);
-__int64 nn_mem_StandardAllocator_Free(_QWORD, long double);
+__int64 nn_mem_StandardAllocator_Free(_QWORD, void*);
 __int64 std___1___shared_weak_count___release_weak(__int64);
 __int64 std___1___shared_weak_count_lock(__int64);
 __int64 strtol(const char*, __int64, int);
@@ -84,7 +84,6 @@ __attribute__((swiftcall)) void game_hub_cbbcc0(PSEUDO_X8 x8_, __int64 a1,
   __int64 v10;
   __int64 v11;
   char v12;
-  long double v13;
   __int64 v14;
   __int64* v15;
   __int64 v16;
@@ -111,7 +110,7 @@ __attribute__((swiftcall)) void game_hub_cbbcc0(PSEUDO_X8 x8_, __int64 a1,
         v14 = 56;
       }
       nn_mem_StandardAllocator_Free(
-          *(_QWORD*)fw_memory_g_heap_manager_ptr + v14, v13);
+          *(_QWORD*)fw_memory_g_heap_manager_ptr + v14, v18[0]);
     }
     result = GameRoutine_d59dc0(v11);
     *(_BYTE*)(v11 + 1272) = 1;
