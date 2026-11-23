@@ -2688,6 +2688,7 @@ __int64 game_zview_d198c0(float32x2_t*, float32x2_t*, char, char);
 float GameRoutine_1a0a550(float, float);
 __attribute__((swiftcall)) void GameRoutine_1085a10_alt1(PSEUDO_X8, _QWORD,
                                                          _QWORD, _QWORD);
+extern __int64 GameData_22110ac_alt1;
 
 __int64 game_80ef70()
 {
@@ -8848,10 +8849,10 @@ float game_d26b60(__int64 a1)
                             memory_order_acquire) &
        1) == 0 &&
       (unsigned int)__cxa_guard_acquire(&GameData_22110b8) != 0) {
-    GameData_22110ac = 0;
+    GameData_22110ac_alt1 = 0;
     __cxa_guard_release(&GameData_22110b8);
   }
-  v2 = GameData_22110ac;
+  v2 = GameData_22110ac_alt1;
   if (GameData_21d96b8 == 0 || *(_BYTE*)(GameData_21d96b8 + 14) == 1) {
     if (game_ProcFadeView_instance_ == 0) {
       goto LABEL_14;
@@ -8883,7 +8884,7 @@ float game_d26b60(__int64 a1)
           (*(_BYTE*)(GameData_21f3cb0 + 936) & 1) == 0) {
         if (GameData_21d96b8 != 0) {
           if (*(_BYTE*)(GameData_21d96b8 + 12) != 1 ||
-              !(*(_DWORD*)(a1 + 232) < 1)) {
+              *(_DWORD*)(a1 + 232) >= 1) {
             goto LABEL_49;
           }
         }
@@ -8891,14 +8892,14 @@ float game_d26b60(__int64 a1)
           goto LABEL_49;
         }
         if ((*(_BYTE*)(GameData_21f3cb0 + 1144) & 1) == 0) {
-          v7 = !((float)(vmuls_lane_f32(
+          v7 = (float)(vmuls_lane_f32(
                            COERCE_FLOAT(
                                HIDWORD(*(_QWORD*)(game_g_game_setting + 960))),
                            *(float32x2_t*)(game_g_game_setting + 960), 1) +
                        (float)(COERCE_FLOAT(
                                    *(_OWORD*)(game_g_game_setting + 960)) *
                                COERCE_FLOAT(*(_OWORD*)(game_g_game_setting +
-                                                       960)))) > 0x0.0p+0f);
+                                                       960)))) <= 0x0.0p+0f;
           if (v7) {
             v8 = 0x0.0p+0f;
           }
@@ -8923,13 +8924,13 @@ float game_d26b60(__int64 a1)
                                    1) &
                                   0x3FF)) == 5 ||
               (GameRoutine_1551d30() & 1) == 0 ||
-              !((v11 = (float)(PSEUDO_UNFUSED(v8 * v8)) + (float)(v9 * v9)) <
-                0x1.0000000000000p-2f) ||
-              !(v11 < (float)((float)(PSEUDO_UNFUSED(
-                                  *(float*)(game_g_game_setting + 972) *
-                                  *(float*)(game_g_game_setting + 972))) +
-                              (float)(*(float*)(game_g_game_setting + 968) *
-                                      *(float*)(game_g_game_setting + 968))))) {
+              (v11 = (float)(PSEUDO_UNFUSED(v8 * v8)) + (float)(v9 * v9)) >=
+                  0x1.0000000000000p-2f ||
+              v11 >= (float)((float)(PSEUDO_UNFUSED(
+                                 *(float*)(game_g_game_setting + 972) *
+                                 *(float*)(game_g_game_setting + 972))) +
+                             (float)(*(float*)(game_g_game_setting + 968) *
+                                     *(float*)(game_g_game_setting + 968)))) {
             v12 = 0x1.99999a0000000p-5f;
           }
           else {
@@ -8942,15 +8943,15 @@ float game_d26b60(__int64 a1)
           if ((float)(0x1.0000000000000p+0f - v12) != 0x0.0p+0f) {
             v15 = (float)(v13 - v12) / (float)(0x1.0000000000000p+0f - v12);
             v16 =
-                !(v15 > 0x1.0000000000000p+0f)
+                v15 <= 0x1.0000000000000p+0f
                     ? (float)(v13 - v12) / (float)(0x1.0000000000000p+0f - v12)
                     : 0x1.0000000000000p+0f;
-            if (!(v15 < 0x0.0p+0f)) {
-              if (!(v16 > 0x0.0p+0f)) {
+            if (v15 >= 0x0.0p+0f) {
+              if (v16 <= 0x0.0p+0f) {
                 v14 = v16;
               }
               else {
-                v14 = fmaxf(powf(v16, 0x1.8000000000000p+0f),
+                v14 = fmaxf(GameRoutine_1a0a550(v16, 0x1.8000000000000p+0f),
                             0x1.99999a0000000p-3f);
               }
             }

@@ -9,6 +9,8 @@ void __attribute__((noreturn)) GameRoutine_60a210();
 void __attribute__((noreturn)) GameRoutine_77fcf0();
 void nn_mem_StandardAllocator_Free(__int64, __int64);
 void game_evt_11dd290(_QWORD* a1, __int64 a2);
+__int64 GameRoutine_1a0b950_alt1(_QWORD, _QWORD, _QWORD);
+__n128 nn_mem_StandardAllocator_Free_alt1(_QWORD);
 
 void game_evt_11dd290(_QWORD* a1, __int64 a2)
 {
@@ -24,7 +26,7 @@ void game_evt_11dd290(_QWORD* a1, __int64 a2)
   unsigned __int64 v13;
   __int64 v14;
   unsigned __int64 v15;
-  unsigned __int64 v16;
+  char* v16;
   __int64 v17;
   __int64 v18;
   _QWORD* v19;
@@ -39,7 +41,7 @@ void game_evt_11dd290(_QWORD* a1, __int64 a2)
   unsigned __int64 v28;
   __int64 v29;
   unsigned __int64 v30;
-  unsigned __int64 v31;
+  char* v31;
   __int64 v32;
   __int64 v33;
 
@@ -76,11 +78,11 @@ void game_evt_11dd290(_QWORD* a1, __int64 a2)
         v14 = 0;
       }
       v15 = v14 + 8 * v13;
-      v16 = (unsigned __int64)v3 - v7;
+      v16 = (char*)v3 - v7;
       v17 = (__int64)&v8[v14 + -8 * v9];
       *(_QWORD*)&v8[v14] = a2;
       v6 = (__int64)&v8[v14 + 8];
-      GameRoutine_1a0b950(v17, v7, v16);
+      GameRoutine_1a0b950_alt1(v17, v7, v16);
       a1[1] = v17;
       a1[2] = v6;
       a1[3] = v15;
@@ -89,7 +91,7 @@ void game_evt_11dd290(_QWORD* a1, __int64 a2)
         if (*(_QWORD*)(*(_QWORD*)v12 + 200LL) == 0) {
           v18 = 56;
         }
-        nn_mem_StandardAllocator_Free(*(_QWORD*)v12 + v18, v7);
+        nn_mem_StandardAllocator_Free_alt1(*(_QWORD*)v12 + v18);
       }
     }
     else {
@@ -126,11 +128,11 @@ void game_evt_11dd290(_QWORD* a1, __int64 a2)
         v29 = 0;
       LABEL_30:
         v30 = v29 + 8 * v28;
-        v31 = (unsigned __int64)v21 - v23;
+        v31 = (char*)v21 - v23;
         v32 = (__int64)&v24[v29 + -8 * v25];
         *(_QWORD*)&v24[v29] = a2;
         v22 = (__int64)&v24[v29 + 8];
-        GameRoutine_1a0b950(v32, v23, v31);
+        GameRoutine_1a0b950_alt1(v32, v23, v31);
         v19[4] = v32;
         v19[5] = v22;
         v19[6] = v30;
@@ -139,8 +141,8 @@ void game_evt_11dd290(_QWORD* a1, __int64 a2)
           if (*(_QWORD*)(*(_QWORD*)fw_memory_g_heap_manager_ptr + 200LL) == 0) {
             v33 = 56;
           }
-          nn_mem_StandardAllocator_Free(
-              *(_QWORD*)fw_memory_g_heap_manager_ptr + v33, v23);
+          nn_mem_StandardAllocator_Free_alt1(
+              *(_QWORD*)fw_memory_g_heap_manager_ptr + v33);
         }
         goto LABEL_34;
       }

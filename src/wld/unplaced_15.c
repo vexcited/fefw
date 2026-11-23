@@ -28,7 +28,10 @@ _BYTE* wld_a8be20(_BYTE* result)
     }
     v8 = result;
     do {
-      v8 = *((_BYTE**)v8 + 92);
+      {
+        v8 = *((_BYTE**)v8 + 92);
+        __asm__ volatile("" ::"r"(v8));
+      }
       if (v8 == nullptr) {
         break;
       }
@@ -41,7 +44,10 @@ _BYTE* wld_a8be20(_BYTE* result)
   if (result[289] == 1 && (result[288] & 1) != 0) {
     v3 = result;
     do {
-      v3 = *((_BYTE**)v3 + 92);
+      {
+        v3 = *((_BYTE**)v3 + 92);
+        __asm__ volatile("" ::"r"(v3));
+      }
       v2 = v3 == nullptr;
     } while (v3 != nullptr && v3[289] == 1 && v3[288] == 1 &&
              (v3[300] & 0xFD) != 1);
@@ -52,11 +58,23 @@ _BYTE* wld_a8be20(_BYTE* result)
     if (result[728] != 0) {
       v4 = 704;
     }
-    v5 = (__int64*)&result[v4];
-    v6 = *v5;
-    v7 = v5[1];
+    {
+      v5 = (__int64*)&result[v4];
+      __asm__ volatile("" ::"r"(v5));
+    }
+    {
+      v6 = *v5;
+      __asm__ volatile("" ::"r"(v6));
+    }
+    {
+      v7 = v5[1];
+      __asm__ volatile("" ::"r"(v7));
+    }
     while (v6 != v7) {
-      result = *(_BYTE**)v6;
+      {
+        result = *(_BYTE**)v6;
+        __asm__ volatile("" ::"r"(result));
+      }
       if (*(_BYTE*)(*(_QWORD*)v6 + 20LL) == 0) {
         result =
             (_BYTE*)(*(__int64 (**)(_BYTE*))(*(_QWORD*)result + 56LL))(result);
@@ -69,12 +87,16 @@ LABEL_23:
     v9 = v1;
     do {
       v9 = *((_BYTE**)v9 + 92);
+      __asm__ volatile("" ::"r"(v9));
     } while (v9 != nullptr && (v9[288] & 1) != 0);
     v1[291] = v9 == nullptr;
     if (v1[289] == 1 && (v1[300] & 0xFD) != 1) {
       v11 = v1;
       do {
-        v11 = *((_BYTE**)v11 + 92);
+        {
+          v11 = *((_BYTE**)v11 + 92);
+          __asm__ volatile("" ::"r"(v11));
+        }
         v10 = v11 == nullptr;
       } while (v11 != nullptr && v11[289] == 1 && v11[288] == 1 &&
                (v11[300] & 0xFD) != 1);

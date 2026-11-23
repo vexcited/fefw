@@ -1564,7 +1564,7 @@ __int64 game_facility_9c0c20(_DWORD* a1)
         v7 = game_GameModeData_instance_;
         if ((v10_.v11 & 0x80000000) == 0 && game_GameModeData_instance_ != 0) {
           v9 = (*(_DWORD*)(game_GameModeData_instance_ + 80) - v3) &
-               ~((int)((*(_DWORD*)(game_GameModeData_instance_ + 80) - v3)) >> 31);
+               ~((*(_DWORD*)(game_GameModeData_instance_ + 80) - v3) >> 31);
           if (v9 >= 99999) {
             v9 = 99999;
           }

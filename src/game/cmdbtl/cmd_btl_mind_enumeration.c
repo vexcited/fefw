@@ -2604,7 +2604,7 @@ game_cmdbtl_CmdBtlMindEnumeration_CalcWholeMind_SkillMind_lambda0_Invoke(
         v38 = v37[218];
         v39 = *(unsigned int*)((char*)((_UNKNOWN*)0x164LL) +
                                game_g_shared_system_skills_ptr);
-        if (((v39 >> 5) & 0x7F) + 1 <= (__int64)(v37[219] - v38) >> 2 &&
+        if (((v39 >> 5) & 0x7F) + 1 <= (v37[219] - v38) >> 2 &&
                 ((*(_DWORD*)(v38 + 4 * ((v39 >> 5) & 0x7F)) >> v39) & 1) != 0 ||
             ((v40 = v37[55]) == 0 ? (v41 = 9) : (v41 = *(_BYTE*)(v40 + 16)),
              ((1 << v41) & 6) != 0 ||
@@ -2632,7 +2632,7 @@ game_cmdbtl_CmdBtlMindEnumeration_CalcWholeMind_SkillMind_lambda0_Invoke(
                                          game_g_shared_system_skills_ptr)) >>
                  5) &
                 0x7F) + 1 <=
-                   (__int64)(v43[219] - v45) >> 2) &&
+                   (v43[219] - v45) >> 2) &&
               ((*(_DWORD*)(v45 + 4 * ((v46 >> 5) & 0x7F)) >> v46) & 1) != 0) {
             v42 = 0;
           }
@@ -2844,7 +2844,7 @@ game_cmdbtl_CmdBtlMindEnumeration_CalcWholeMind_SkillMind_lambda0_Invoke(
     v75 = v74[218];
     v76 = *(unsigned int*)((char*)((_UNKNOWN*)0x164LL) +
                            game_g_shared_system_skills_ptr);
-    if (((v76 >> 5) & 0x7F) + 1 <= (__int64)(v74[219] - v75) >> 2 &&
+    if (((v76 >> 5) & 0x7F) + 1 <= (v74[219] - v75) >> 2 &&
             ((*(_DWORD*)(v75 + 4 * ((v76 >> 5) & 0x7F)) >> v76) & 1) != 0 ||
         ((v77 = v74[55]) == 0 ? (v78 = 9) : (v78 = *(_BYTE*)(v77 + 16)),
          ((1 << v78) & 6) != 0 ||
@@ -2871,7 +2871,7 @@ game_cmdbtl_CmdBtlMindEnumeration_CalcWholeMind_SkillMind_lambda0_Invoke(
                                      game_g_shared_system_skills_ptr)) >>
              5) &
             0x7F) + 1 <=
-               (__int64)(v81[219] - v83) >> 2) &&
+               (v81[219] - v83) >> 2) &&
           ((*(_DWORD*)(v83 + 4 * ((v84 >> 5) & 0x7F)) >> v84) & 1) != 0) {
         v80 = 0;
       }

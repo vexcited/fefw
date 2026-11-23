@@ -639,7 +639,8 @@ float32x4_t nn_g3d_5ecf20(_QWORD* a1, __int64 a2, int a3, float32x4_t result)
             }
             if (!(LANES128(result).n128_f32[0] > v77)) {
               v59 = v85;
-            } else {
+            }
+            else {
               v59 = (__int64*)v7;
             }
             v60 = v59[3];
@@ -840,7 +841,8 @@ float32x4_t nn_g3d_5ecf20(_QWORD* a1, __int64 a2, int a3, float32x4_t result)
             }
             if (!(LANES128(result).n128_f32[0] > v33)) {
               v17 = v85;
-            } else {
+            }
+            else {
               v17 = (__int64*)v7;
             }
             v18 = v17[3];

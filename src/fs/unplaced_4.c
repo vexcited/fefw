@@ -62,6 +62,10 @@ void fs_a4c820(_QWORD* a1);
 __int64 fs_a50960(__int64 a1, __int64 a2);
 __int64 fs_a50b20(__int64 a1, __int64 a2);
 __int64 fs_a50ce0(__int64 a1, __int64 a2);
+__int64 GameRoutine_1a0b950(__int64, __int64, unsigned __int64);
+int GameRoutine_1a09cf0(__int64, __int64, unsigned __int64);
+int GameRoutine_1a09d30(const char*, const char*);
+unsigned __int64 GameRoutine_1a09c70(const char*);
 
 unsigned __int64 fs_636f60(unsigned __int64 result, __int64 a2, __int64 a3)
 {
@@ -1252,7 +1256,7 @@ void fs_a4c820(_QWORD* a1)
     v13 = v12 + v9 - 8 * (v9 >> 3);
     *(_QWORD*)(v12 + v9) = v7;
     v14 = v12 + v9 + 8;
-    memcpy(v13, v2, v9);
+    GameRoutine_1a0b950(v13, v2, v9);
     if (v2 != 0) {
       v8 = (__int64*)fw_memory_g_heap_manager_ptr;
       if (*(_QWORD*)(*(_QWORD*)fw_memory_g_heap_manager_ptr + 200LL) != 0) {
@@ -1331,7 +1335,7 @@ void fs_a4c820(_QWORD* a1)
         else {
           v30 = v29;
         }
-        v31 = strcmp(v30, v23);
+        v31 = GameRoutine_1a09d30(v30, v23);
         if ((v89_.v89 & 1) != 0 && v89_.v91 != 0) {
           v32 = v31;
           if (*(_QWORD*)(*v8 + 200) != 0) {
@@ -1420,10 +1424,10 @@ void fs_a4c820(_QWORD* a1)
       }
     }
     if (*v45 != 0) {
-      memcpy((__int64)&v89_.v89, (__int64)v42 + v44 + 1, v46);
+      GameRoutine_1a0b950((__int64)&v89_.v89, (__int64)v42 + v44 + 1, v46);
     }
     *((_BYTE*)&v89_.v89 + v46) = 0;
-    v47 = strlen((const char*)&v89_.v89);
+    v47 = GameRoutine_1a09c70((const char*)&v89_.v89);
     if (v47 >= 0xFFFFFFFFFFFFFFF7LL) {
       String_60a1d0();
     }
@@ -1494,7 +1498,7 @@ void fs_a4c820(_QWORD* a1)
               }
               if (v66 == v53) {
                 v67 = (v65 & 1) != 0 ? v59[4] : (__int64)v59 + 17;
-                if (memcmp(v67, v83, v53) == 0) {
+                if (GameRoutine_1a09cf0(v67, v83, v53) == 0) {
                   v8 = &fw_memory_g_heap_manager;
                 LABEL_122:
                   GameRoutine_a54160((void*)((__int64)v93_.v93), a1 + 6, v59);
@@ -1552,7 +1556,7 @@ void fs_a4c820(_QWORD* a1)
             }
             if (v62 == v53) {
               v63 = (v61 & 1) != 0 ? v59[4] : (__int64)v59 + 17;
-              if (memcmp(v63, v83, v53) == 0) {
+              if (GameRoutine_1a09cf0(v63, v83, v53) == 0) {
                 goto LABEL_122;
               }
             }
@@ -1591,7 +1595,7 @@ void fs_a4c820(_QWORD* a1)
         }
       }
     }
-    memcpy((__int64)v49, (__int64)&v89_.v89, v48);
+    GameRoutine_1a0b950((__int64)v49, (__int64)&v89_.v89, v48);
     goto LABEL_82;
   }
 LABEL_151:

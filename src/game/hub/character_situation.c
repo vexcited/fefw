@@ -138,6 +138,15 @@ GameRoutine_f9a220_alt1() __asm__("GameRoutine_f9a220");
 void __cxa_guard_release_alt1(__int64) __asm__("__cxa_guard_release");
 void game_hub_CharacterSituation_Rebuild_lambda0_Invoke(__int64 a1,
                                                         __int64* a2);
+__int64 CharacterSituation_f94550_alt2(long double);
+__int64 CharacterSituation_f98540_alt2(_QWORD, _QWORD);
+__int64 CharacterSituation_f99780_alt3(_QWORD);
+__int64 GameRoutine_1a09c70(_QWORD);
+__int64 GameRoutine_1a09cf0(_QWORD, _QWORD, _QWORD);
+__int64 GameRoutine_1a0b940(_QWORD, _QWORD, _QWORD);
+__int64 GameRoutine_1a0b950(_QWORD, _QWORD, _QWORD);
+__n128 nn_mem_StandardAllocator_Free_alt3(_QWORD);
+float GameRoutine_1a0a6a0(float, float);
 
 void CharacterSituation_Destructor(_QWORD* a1)
 {
@@ -342,8 +351,9 @@ bool CharacterSituation_f94550()
   return v12 == 0;
 }
 
-__attribute__((no_builtin("memset", "memcpy", "memmove")))
-void game_hub_CharacterSituation_Rebuild(__int64 a1, _DWORD* a2)
+__attribute__((no_builtin("memset", "memcpy", "memmove"))) void
+
+game_hub_CharacterSituation_Rebuild(__int64 a1, _DWORD* a2)
 {
   __int64 v3;
   __int64 v4;
@@ -903,8 +913,8 @@ void game_hub_CharacterSituation_Rebuild(__int64 a1, _DWORD* a2)
           }
           LocatorDispos_db43e0((void*)(&f_.v258), *(_QWORD*)GameData_212ec00,
                                v63, v61, v66, v67);
-          v28 = (game_hub_f96800((void*)(&v272), v41, &f_.v258),
-                 (void*)(&v272));
+          v28 =
+              (game_hub_f96800((void*)(&v272), v41, &f_.v258), (void*)(&v272));
           v69 = v272;
           v70 = v273;
           if (v273 == v272) {
@@ -1254,8 +1264,8 @@ void game_hub_CharacterSituation_Rebuild(__int64 a1, _DWORD* a2)
           v124 = (char*)v28 + v112;
           v255 = v28;
           if ((f_.v262 & 1) != 0) {
-            v28 = (_QWORD*)fw_text_String_CopyTerminated(
-                (char*)v28 + v112, f_.v264, f_.v263);
+            v28 = (_QWORD*)fw_text_String_CopyTerminated((char*)v28 + v112,
+                                                         f_.v264, f_.v263);
             if ((v265 & 1) == 0) {
             LABEL_215:
               v126 = v266;
@@ -1484,8 +1494,7 @@ void game_hub_CharacterSituation_Rebuild(__int64 a1, _DWORD* a2)
               if (*(_QWORD*)(*k + 200LL) == 0) {
                 v57 = 56;
               }
-              nn_mem_StandardAllocator_Free_alt1(*k + v57,
-                                                 (_QWORD)(f_.v258));
+              nn_mem_StandardAllocator_Free_alt1(*k + v57, (_QWORD)(f_.v258));
             }
           }
           v30 = v56 == v257;
