@@ -64538,8 +64538,8 @@ fffcb0,1244,verified,src/game/unnamed/b014_1.c,GameHr_fffcb0
 14ae940,12,verified,src/game/unnamed/v000_2.c,GameHr_14ae940
 14ae960,364,verified,src/game/proc/unread_proc_singletons.cpp,_ZN4game21ProcJumpableSingletonINS_4gmap12_GLOBAL__N_118ProcGmapCommandSeqENS1_14GmapCommandSeq4KindEE9ApplyJumpEv
 14aeae0,632,verified,src/game/gmap/anonymous/unplaced.c,game_gmap_anonymous_14aeae0
-14aeda0,568,disputed,src/game/unnamed/b019_1.c,GameHr_14aeda0
-14af000,492,verified,src/game/unnamed/b019_1.c,GameHr_14af000
+14aeda0,348,disputed,src/game/unnamed/b019_1.c,GameHr_14aeda0
+14af000,468,disputed,src/game/unnamed/b019_1.c,GameHr_14af000
 14af220,348,verified,src/game/unnamed/b019_1.c,GameHr_14af220
 14af3a0,372,verified,src/game/gmap/anonymous/unplaced.c,game_gmap_anonymous_14af3a0
 14af600,196,verified,src/game/unnamed/b019_1.c,GameHr_14af600

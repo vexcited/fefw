@@ -690,12 +690,12 @@ fff0,88,verified,src/movie/detail/movie_video_decoder_event_manager.cpp,_ZN5movi
 2b090,72,verified,src/opus/celt/celt_encoder.c,celt_encoder_get_size
 2b0e0,248,verified,src/opus/celt/celt_encoder.c,celt_encoder_init
 2b1e0,820,verified,src/opus/celt/celt_encoder_impl2.c,celt_encoder_2b1e0
-2b560,1092,disputed,src/opus/celt/celt_encoder_impl2.c,celt_encode_with_ec
+2b560,296,disputed,src/opus/celt/celt_encoder_impl2.c,celt_encode_with_ec
 2f940,1128,disputed,src/opus/celt/celt_encoder_impl2.c,run_prefilter
 2ffe0,1136,disputed,src/opus/celt/unplaced_4.c,opus_celt_2ffe0
 30a20,944,verified,src/opus/celt/celt_encoder.c,compute_mdcts
 30f00,1448,verified,src/opus/celt/unplaced_9.c,opus_celt_30f00
-333a0,2116,disputed,src/opus/celt/celt_encoder_impl2.c,tf_analysis
+333a0,2752,disputed,src/opus/celt/celt_encoder_impl2.c,tf_analysis
 34060,1376,verified,src/opus/celt/celt_encoder.c,alloc_trim_analysis
 34f60,144,verified,src/opus/celt/celt_encoder.c,opus_custom_encoder_ctl
 35700,732,verified,src/opus/celt/unplaced_8.c,opus_celt_35700

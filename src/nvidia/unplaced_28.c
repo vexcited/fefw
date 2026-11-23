@@ -25,9 +25,9 @@ __int64 CudaDriverRoutine_f60f0(__int64, __int64, __int64, __int64, __int64,
                                 __int64, unsigned int, __int64, unsigned int);
 __int64 CudaDriverRoutine_f6230(__int64, __int64, __int64, __int64, __int64,
                                 __int64, unsigned int, __int64);
-__int64 CudaDriverRoutine_f6cd0(int*);
-__int64 CudaDriverRoutine_f6d50(int*);
-__int64 CudaDriverRoutine_f7c20(int*);
+unsigned __int8 CudaDriverRoutine_f6cd0(int*);
+unsigned __int8 CudaDriverRoutine_f6d50(int*);
+unsigned __int8 CudaDriverRoutine_f7c20(int*);
 __int64 CudaDriverRoutine_f7f50(__int64);
 __int64 CudaDriverRoutine_f8ed0(_DWORD*);
 __int64 CudaDriverRoutine_f8f00(_DWORD*);

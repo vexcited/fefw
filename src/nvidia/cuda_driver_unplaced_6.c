@@ -274,7 +274,7 @@ unsigned __int8 CudaDriverStub_1dbf40(__int64);
 unsigned __int8 CudaDriverStub_1dbff0(__int64);
 unsigned __int8 CudaDriverStub_b9300(__int64);
 unsigned __int8 cuda_debugger_api_7cff0();
-unsigned __int8 cuda_driver_7e7d0(__int64);
+bool cuda_driver_7e7d0(__int64);
 unsigned __int8 cuda_driver_predicates_10e830(__int64);
 unsigned __int8 cuda_driver_predicates_10ebb0(__int64);
 unsigned __int8 cuda_driver_predicates_1dc880(__int64);
@@ -381,7 +381,8 @@ __int64 cuda_driver_e76d0(__int64 result, __int64 a2, __int64 a3, __int64 a4,
                           __int64 a5, __int64 a6);
 __int64 cuda_driver_e7750(__int64 result, __int64 a2, __int64 a3, __int64 a4,
                           __int64 a5, __int64 a6);
-__int64 cuda_driver_e77c0(__int64 result, __int64 a2, __int64 a3, __int64 a4);
+unsigned __int8 cuda_driver_e77c0(__int64 result, __int64 a2, __int64 a3,
+                                  __int64 a4);
 __int64 cuda_driver_e7e60(__int64 a1, __int64 a2, __int64 a3, char a4);
 __int64 cuda_driver_e83e0(unsigned int* a1, __int64 a2, __int64 a3, __int64 a4);
 __int64 cuda_driver_e86e0(__int64 a1, unsigned int a2, signed int a3,
@@ -5271,7 +5272,8 @@ __int64 cuda_driver_e7750(__int64 result, __int64 a2, __int64 a3, __int64 a4,
   return result;
 }
 
-__int64 cuda_driver_e77c0(__int64 result, __int64 a2, __int64 a3, __int64 a4)
+unsigned __int8 cuda_driver_e77c0(__int64 result, __int64 a2, __int64 a3,
+                                  __int64 a4)
 {
   struct {
     int v4;

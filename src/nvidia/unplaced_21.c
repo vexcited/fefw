@@ -102,7 +102,8 @@ __int64 CudaDriverRoutine_87a10(unsigned __int8, int);
 __int64 CudaDriverRoutine_87c60(char);
 __int64 CudaDriverRoutine_8aae0(__int64);
 __int64 CudaDriverRoutine_8ab20(__int64, __int64, int, int);
-__int64 CudaDriverRoutine_8b1c0(__int64, int, int, __int64*, unsigned __int64);
+unsigned __int8 CudaDriverRoutine_8b1c0(__int64, int, int, __int64*,
+                                        unsigned __int64);
 __int64 CudaDriverRoutine_96f20(__int64, __int64, __int64, unsigned int,
                                 __int64, __int64);
 __int64 CudaDriverRoutine_980c0(__int64);
@@ -136,7 +137,7 @@ __int64 CudaDriverRoutine_df0b0(__int64, unsigned __int64, unsigned __int64,
 __int64 CudaDriverRoutine_e8250(_QWORD*, _DWORD*, __int64, __int64, __int64);
 __int64 CudaDriverRoutine_ed6a0(__int64, unsigned int, __int64, _OWORD*);
 __int64 CudaDriverRoutine_ee330(__int64);
-__int64 CudaDriverRoutine_eec70(__int64, __int64);
+unsigned __int8 CudaDriverRoutine_eec70(__int64, __int64);
 __int64 CudaDriverRoutine_f0380(_DWORD*, __int64, __int64, unsigned __int8,
                                 unsigned __int8, __int64*);
 __int64 CudaDriverRoutine_f2a00(_DWORD*, __int64, __int64, unsigned __int64*);
@@ -165,9 +166,9 @@ __int64 CudaDriverStub_1db380(_QWORD);
 __int64 CudaDriverStub_1db800(_QWORD);
 __int64 CudaDriverStub_1dbab0(_QWORD);
 __int64 CudaDriverStub_1dbf90(_QWORD);
-__int64 CudaDriverStub_1dc6e0(void);
+unsigned __int8 CudaDriverStub_1dc6e0(void);
 __int64 CudaDriverStub_251c0(_QWORD);
-__int64 CudaDriverStub_4f840(_QWORD);
+unsigned __int8 CudaDriverStub_4f840(_QWORD);
 __int64 CudaDriverStub_5ab60(_QWORD, _QWORD);
 __int64 CudaDriverStub_5bb90(_QWORD);
 __int64 CudaDriverStub_8e230(_QWORD);
@@ -220,7 +221,7 @@ __int64 memcpy_plt(__int64, __int64, unsigned __int64);
 __int64 memset_plt(__int64, int, unsigned __int64);
 __int64 nvidia_105e80(_QWORD*, __int64, _QWORD*, __int64, int);
 __int64 nvidia_121c60(__int64*);
-__int64 nvidia_1d9f90(_QWORD);
+unsigned __int8 nvidia_1d9f90(_QWORD);
 __int64 nvidia_5bbb0(__int64);
 __int64 nvidia_eeec0(__int64 result, unsigned int*, int, __int64);
 __int64 vfprintf_plt(_QWORD, _QWORD, _QWORD);
@@ -438,15 +439,15 @@ __int64 cuda_driver_105e80(_QWORD*, __int64, _QWORD*, __int64, int);
 bool CudaDriverRoutine_86fe0_alt1(__int64);
 bool CudaDriverRoutine_9ac20_alt1(__int64);
 bool CudaDriverRoutine_9ac50_alt1(__int64);
-bool CudaDriverRoutine_ba980_alt1(_QWORD*);
+unsigned __int8 CudaDriverRoutine_ba980_alt1(_QWORD*);
 __int64 cuda_driver_89100_alt1(__int64, __int64, __int64*, __int128*, int,
                                __int64, __int64, __int64, char);
-bool cuda_driver_predicates_10ebb0_alt1(__int64);
+unsigned __int8 cuda_driver_predicates_10ebb0_alt1(__int64);
 bool CudaDriverRoutine_efe40_alt1(__int64);
-bool cuda_driver_predicates_9ac80_alt1(__int64);
+unsigned __int8 cuda_driver_predicates_9ac80_alt1(__int64);
 bool CudaDriverRoutine_bbe70_alt1(__int64);
-bool cuda_driver_predicates_9ae50_alt1(__int64);
-bool CudaDriverRoutine_99720_alt1(__int64);
+unsigned __int8 cuda_driver_predicates_9ae50_alt1(__int64);
+unsigned __int8 CudaDriverRoutine_99720_alt1(__int64);
 
 __int64 nvidia_5bd0(__int64 a1, __int64 a2, __int64 a3, __int64 a4, _QWORD* a5,
                     __int64 a6)

@@ -33,8 +33,8 @@ __int64 nvidia_239be0(__int64 a1, __int64 a2, unsigned int a3, int a4,
 __int64 nvidia_241a00(__int64* a1, __int64 a2, __int64 a3, __int64 a4,
                       __int64 a5);
 void nvidia_245e20(__int64 a1, _QWORD* a2);
-bool CudaDriverRoutine_bbdf0_alt1(__int64);
-bool CudaDriverStub_b9300_alt1(__int64);
+unsigned __int8 CudaDriverRoutine_bbdf0_alt1(__int64);
+unsigned __int8 CudaDriverStub_b9300_alt1(__int64);
 
 __int64 nvidia_213260(unsigned int* a1)
 {

@@ -5,7 +5,7 @@
 #pragma GCC visibility push(hidden)
 
 __attribute__((swiftcall)) void GameRoutine_906320(PSEUDO_X8, _QWORD, _QWORD);
-__int64 GameRoutine_13261c0(__int64);
+unsigned __int8 GameRoutine_13261c0(__int64);
 __int64 GameRoutine_133cc40(__int64);
 __int64 GameRoutine_133d560(_QWORD, _QWORD);
 __int64 GameRoutine_1340cb0(__int64 result, long double, long double);
@@ -292,7 +292,7 @@ __int64 CorpsManager_972290_alt1(__int64 result) __asm__("CorpsManager_972290");
 __int64 GameHr_1351170(__int64*);
 __int64 GameRoutine_1342210_alt1(__int64) __asm__("GameRoutine_1342210");
 __int64 GameRoutine_ae4560_alt1(__int64 result) __asm__("GameRoutine_ae4560");
-__int64 Impl_13261c0_alt1(__int64) __asm__("Impl_13261c0");
+unsigned __int8 Impl_13261c0_alt1(__int64) __asm__("Impl_13261c0");
 __int64
 ProcTroopAction_14b4920_alt1(__int64) __asm__("ProcTroopAction_14b4920");
 __int64 Troop_1342e60_alt1(__int64) __asm__("Troop_1342e60");

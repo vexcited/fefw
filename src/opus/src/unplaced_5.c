@@ -14,7 +14,7 @@ __int64 opus_decoder_310780(__int64 result, __int64, __int64, int, unsigned int,
 __int64 silk_Decode(unsigned int*, int*, unsigned int, int, __int64, __int64,
                     int*, unsigned int);
 __int64 silk_InitDecoder(__int64);
-bool ec_dec_bit_logp(__int64*, char);
+unsigned int ec_dec_bit_logp(__int64*, char);
 __int64 opus_src_30f260(int* a1, unsigned __int8* a2, signed int a3,
                         __int16* a4, int a5, int a6);
 

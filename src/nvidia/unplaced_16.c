@@ -358,8 +358,8 @@ __int64 nvidia_21fad0(__int64 a1);
 __int64 nvidia_21faf0(__int64 a1);
 __int64 nvidia_240470(__int64* a1, __int64 a2, __int64 a3, __int64 a4,
                       __int64 a5, __int64 a6, __int64 a7, __int64 a8, char a9);
-bool CudaDriverRoutine_bbdf0_alt1(__int64);
-bool CudaDriverStub_b9300_alt1(__int64);
+unsigned __int8 CudaDriverRoutine_bbdf0_alt1(__int64);
+unsigned __int8 CudaDriverStub_b9300_alt1(__int64);
 __int64 CudaDriverStub_107f90_alt3(_QWORD, _QWORD, _QWORD);
 __int64 CudaDriverStub_108070_alt3(_QWORD);
 __int64 nvidia_1fd7a0(__int64 a1, __int64* a2, int a3);

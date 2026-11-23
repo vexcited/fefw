@@ -78,8 +78,8 @@ __int64 tf_analysis(__int64 a1, int a2, int a3, __int64 a4, int a5, __int64 a6,
 __int64 opus_celt_3aa60(__int64, _WORD*, int, int);
 __int64 opus_celt_3c380(__int64, int, unsigned int, int, _DWORD*, unsigned int,
                         int);
-bool MovieRoutine_30f00_alt1(__int64, _WORD*, int, int,
-                             int) __asm__("MovieRoutine_30f00");
+unsigned int MovieRoutine_30f00_alt1(__int64, _WORD*, int, int,
+                                     int) __asm__("MovieRoutine_30f00");
 bool opus_celt_2ffe0(__int64, unsigned int, int, _WORD*, _DWORD*, int, _DWORD*);
 
 __int16* celt_encoder_2b1e0(__int16* result, _DWORD* a2, int a3, int a4, int a5,
