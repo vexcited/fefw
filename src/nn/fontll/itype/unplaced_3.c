@@ -511,7 +511,7 @@ make_graymap(__int64 a1, __int64 a2, __int64 a3, int a4)
       v18 = *(__int16*)(a2 + 22);
       v19 = *(_DWORD*)(a2 + 24) + 0xFFFF;
       v20 = *(_DWORD*)(a1 + 76);
-      v21 = (*(_DWORD*)(a2 + 16) + 0xFFFF) >> 16;
+      v21 = (int)(*(_DWORD*)(a2 + 16) + 0xFFFF) >> 16;
       if ((v20 & 0x200) != 0 ||
           (*(_BYTE*)(*(_QWORD*)(a1 + 48) + 36LL) & 0x40) != 0 &&
               (v20 & 0xC00) == 0 && *(unsigned __int16*)(a1 + 112) <= 0x1Au) {
