@@ -2079,7 +2079,7 @@ LABEL_277:
     LODWORD(v802_.v850) = 0;
     v802_.v812 = 1;
   }
-  v232 = 4LL * v225 * v226;
+  v232 = 4LL * (v225 * v226);
   v866_.v868 = &v802_.v802[-((v232 + 15) & 0xFFFFFFFFFFFFFFF0LL)];
   memset_plt(v866_.v868, 0, v232);
   v233 = v802_.v835;
@@ -2853,7 +2853,7 @@ LABEL_502:
   }
   LODWORD(v802_.v850) = v408;
   v802_.v819 = v230;
-  v420 = 2LL * v284 * v210;
+  v420 = 2LL * (v284 * v210);
   v421 = &v802_.v802[-((v420 + 15) & 0xFFFFFFFFFFFFFFF0LL)];
   v802_.v832 = v421;
   memset_plt(v421, 0, v420);

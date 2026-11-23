@@ -144,7 +144,7 @@ LABEL_16:
     v8 = 100;
   }
   v11 = v8 * a2;
-  v12 = (1374389535LL * v8 * a2) >> 37;
+  v12 = (1374389535LL * (v8 * a2)) >> 37;
   if (*(_BYTE*)(a1 + 10) != 0) {
     v13 = (unsigned __int64)(GameData_21d99d0 - GameData_21d99c8) >> 2;
     if ((int)v13 <= 1) {

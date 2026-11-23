@@ -26114,7 +26114,7 @@ fff90,116,verified,src/snd/api.cpp,_ZN3snd10startPitchERKNS_3fnd10WeakHandleERKN
 8e2280,516,verified,src/game/game_reliance.c,GameReliance_8e2280
 8e24a0,720,verified,src/game/game_reliance.c,GameReliance_8e24a0
 8e27f0,44,verified,src/memory/new_delete.cpp,deleting destructor at 0x8e27f0
-8e2820,760,disputed,src/memory/unplaced_18.c,memory_8e2820
+8e2820,760,verified,src/memory/unplaced_18.c,memory_8e2820
 8e2b20,100,verified,src/game/game_reliance/impl/data.c,Data_Unknown3
 8e2b90,52,verified,src/game/game_reliance/impl/data.c,Data_Unknown4
 8e2bd0,92,verified,src/game/game_reliance/impl/data.c,Data_Unknown5

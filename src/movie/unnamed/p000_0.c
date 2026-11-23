@@ -374,7 +374,7 @@ unsigned __int8 MovieHr_23ce0(__int64 a1, int a2, int a3, int a4)
   _QWORD vars0[2];
   char* v8a;
 
-  v8 = 2LL * a3 * a2;
+  v8 = 2LL * (a3 * a2);
   v8a = (char*)__builtin_alloca((v8 + 15) & 0xFFFFFFFFFFFFFFF0LL);
   MovieRoutine_82ce0(v8a, 0, v8);
   if (a4 == 0) {

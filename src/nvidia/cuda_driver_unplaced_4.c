@@ -1838,13 +1838,13 @@ cuda_driver_8ade0(__int64 a1, unsigned int a2, unsigned int a3)
     return 0;
   }
   v7 = a3 * a2;
-  v10 = CudaDriverStub_12e550(*(_QWORD*)(a1 + 16), 8LL * a3 * a2);
+  v10 = CudaDriverStub_12e550(*(_QWORD*)(a1 + 16), 8LL * (a3 * a2));
   if (v10 == 0) {
     return 2;
   }
   v11 = v10;
   v22 = a1;
-  memset_plt(v10 + 8LL * (unsigned int)v4 * v3, 0,
+  memset_plt(v10 + 8LL * ((unsigned int)v4 * v3), 0,
              8LL * (v7 - (unsigned int)v4 * v3));
   v12 = a3;
   if (v3 != 0 && a3 > (unsigned int)v4) {
