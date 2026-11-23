@@ -27576,7 +27576,7 @@ fff90,116,verified,src/snd/api.cpp,_ZN3snd10startPitchERKNS_3fnd10WeakHandleERKN
 950e80,4,verified,src/game/game_trivial.cpp,_Z15GameStub_950e80v
 950e90,4,verified,src/game/game_trivial.cpp,_Z15GameStub_950e90v
 950ea0,4,verified,src/game/game_trivial.cpp,_Z15GameStub_950ea0v
-950ec0,820,verified,src/game/unplaced_27.c,game_950ec0
+950ec0,824,verified,src/game/unplaced_27.c,game_950ec0
 951220,148,verified,src/game/singleton/singleton_data_file.cpp,_ZN4game11ThermaeFileD0Ev
 9512c0,4,verified,src/game/singleton/singleton_data_file.cpp,_ZN4game9SingletonINS_11ThermaeFileELb0EE10InitializeEv
 9512d0,4,verified,src/game/singleton/singleton_data_file.cpp,_ZN4game9SingletonINS_11ThermaeFileELb0EE8FinalizeEv
@@ -31231,7 +31231,7 @@ a79370,100,verified,src/wld/anim_ctrl_module.c,wld_AnimCtrlModule_AddModel_lambd
 a793e0,56,verified,src/wld/anim_ctrl_module.c,wld_AnimCtrlModule_AddModel_lambda0_CloneInto
 a79420,88,verified,src/game/game_trivial_shared_pointers.cpp,_Z15GameStub_a79420m
 a79480,12,verified,src/game/game_trivial_forwarders.cpp,_Z15GameStub_a79480m
-a794a0,1852,disputed,src/game/unplaced_27.c,game_a794a0
+a794a0,1920,verified,src/game/unplaced_27.c,game_a794a0
 a79c30,28,verified,src/game/game_trivial_calls.cpp,_Z15GameStub_a79c30mm
 a79c50,12,verified,src/game/game_trivial.cpp,_Z15GameStub_a79c50v
 a79c60,320,verified,src/game/templates/function.cpp,_ZNSt3__110__function12__value_funcIFvPN4game11UnrecoveredILj11EEEEE4swapB8nn210108ERS7_
@@ -56505,7 +56505,7 @@ fffcb0,1244,verified,src/game/unnamed/b014_1.c,GameHr_fffcb0
 1254b40,100,verified,src/game/unnamed/b017_0.c,GameHr_1254b40
 1254bc0,116,verified,src/game/unnamed/b017_0.c,GameHr_1254bc0
 1254c50,24,verified,src/game/game_trivial_misc.cpp,_Z16GameStub_1254c50m
-1254c80,1572,verified,src/game/unplaced_27.c,game_1254c80
+1254c80,1576,verified,src/game/unplaced_27.c,game_1254c80
 1255300,1260,verified,src/game/unplaced_6.c,game_1255300
 1255900,24,verified,src/game/unnamed/b017_0.c,GameHr_1255900
 1255920,360,verified,src/game/unnamed/b017_1.c,GameHr_1255920
