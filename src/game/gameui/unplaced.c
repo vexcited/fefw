@@ -3162,8 +3162,8 @@ __int64 game_gameui_158d440(__int64 result, __int64* a2, __int64 a3, char a4)
       v24 = *(unsigned int*)((char*)((_UNKNOWN*)0x70LL) +
                              game_g_shared_system_skills_ptr);
       LODWORD(v76_.v76) = *(_DWORD*)((_BYTE*)((_UNKNOWN*)0x70LL) +
-                                game_g_shared_system_skills_ptr) &
-                     0xFFF;
+                                     game_g_shared_system_skills_ptr) &
+                          0xFFF;
       if (((v24 >> 5) & 0x7F) + 1 <= (v23 - v22) >> 2 &&
           ((*(_DWORD*)(v22 + 4 * ((v24 >> 5) & 0x7F)) >> v24) & 1) != 0) {
         if ((game_HasActiveSkill_843420(&v76_.v76, v21) & 1) != 0) {
@@ -3215,8 +3215,8 @@ __int64 game_gameui_158d440(__int64 result, __int64* a2, __int64 a3, char a4)
       v50 = *(unsigned int*)((char*)((_UNKNOWN*)0x70LL) +
                              game_g_shared_system_skills_ptr);
       LODWORD(v76_.v76) = *(_DWORD*)((_BYTE*)((_UNKNOWN*)0x70LL) +
-                                game_g_shared_system_skills_ptr) &
-                     0xFFF;
+                                     game_g_shared_system_skills_ptr) &
+                          0xFFF;
       if (((v50 >> 5) & 0x7F) + 1 <= (v49 - v48) >> 2 &&
           ((*(_DWORD*)(v48 + 4 * ((v50 >> 5) & 0x7F)) >> v50) & 1) != 0) {
         v51 = v10;
@@ -9164,7 +9164,8 @@ __int64 game_gameui_15b05c0(__int64 a1, unsigned __int8* a2)
   else {
     v15 = (char*)v54 + 1;
   }
-  LayoutAccessor_1560070((void*)(&v52_.v52), **(__int64***)(a1 + 40), (__int64)v15);
+  LayoutAccessor_1560070((void*)(&v52_.v52), **(__int64***)(a1 + 40),
+                         (__int64)v15);
   result = v52_.v53;
   if (v52_.v53 == 0) {
     goto LABEL_83;

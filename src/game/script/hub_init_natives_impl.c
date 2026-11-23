@@ -184,11 +184,12 @@ LABEL_9:
   v36 = 0;
   v34 = nullptr;
   game_hub_LocatorDispos_CreateExternalDataImpl(
-      (void*)(&v59_.v59), *(_QWORD*)GameData_212ec00, (__int64)v11, v9, &v34, v14,
-      v15);
+      (void*)(&v59_.v59), *(_QWORD*)GameData_212ec00, (__int64)v11, v9, &v34,
+      v14, v15);
   v16 = v59_.v59;
   if (v59_.v60 != v59_.v59) {
-    LocatorDispos_db2180((void*)(&v56_.v56), (unsigned __int8*)&v61_.v61, v59_.v59);
+    LocatorDispos_db2180((void*)(&v56_.v56), (unsigned __int8*)&v61_.v61,
+                         v59_.v59);
     if (*(_BYTE*)(GameData_21f3d10 + 9) == 1) {
       LOBYTE(v34) = 0;
       v46 = 0;

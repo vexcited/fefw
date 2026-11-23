@@ -336,7 +336,8 @@ __int64 ProcReinforceSkillMenu_Unknown88(__int64 a1)
           std___1___shared_weak_count___release_weak(v13_.v14);
         }
         GameRoutine_1560070((void*)&v9_.v9, a1 + 848, "L_InfoDetail_After");
-        if (v9_.v10 != 0 && (v5 = std___1___shared_weak_count_lock(v9_.v10)) != 0) {
+        if (v9_.v10 != 0 &&
+            (v5 = std___1___shared_weak_count_lock(v9_.v10)) != 0) {
           v6 = v5;
           v7 = 0;
           v11 = v9_.v9;

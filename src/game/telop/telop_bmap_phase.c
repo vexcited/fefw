@@ -260,8 +260,9 @@ __int64 TelopBmapPhase_137b260(__int64 a1)
           }
         }
         v32 = v79_.v80;
-        if (v79_.v80 != 0 && atomic_fetch_add((atomic_ullong* volatile)(v79_.v80 + 8),
-                                         0xFFFFFFFFFFFFFFFFLL) == 0) {
+        if (v79_.v80 != 0 &&
+            atomic_fetch_add((atomic_ullong* volatile)(v79_.v80 + 8),
+                             0xFFFFFFFFFFFFFFFFLL) == 0) {
           v76 = v31;
           (*(void (**)(__int64))(*(_QWORD*)v32 + 16LL))(v32);
           std___1___shared_weak_count___release_weak(v32);
@@ -391,8 +392,9 @@ __int64 TelopBmapPhase_137b260(__int64 a1)
           }
         }
         v61 = v79_.v80;
-        if (v79_.v80 != 0 && atomic_fetch_add((atomic_ullong* volatile)(v79_.v80 + 8),
-                                         0xFFFFFFFFFFFFFFFFLL) == 0) {
+        if (v79_.v80 != 0 &&
+            atomic_fetch_add((atomic_ullong* volatile)(v79_.v80 + 8),
+                             0xFFFFFFFFFFFFFFFFLL) == 0) {
           (*(void (**)(__int64))(*(_QWORD*)v61 + 16LL))(v61);
           result = std___1___shared_weak_count___release_weak(v61);
         }

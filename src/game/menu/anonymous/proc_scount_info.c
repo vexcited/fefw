@@ -345,7 +345,8 @@ LABEL_20:
       ((v17 = *(_QWORD*)(a1[133] + 440)) == 0 ? (v18 = 9)
                                               : (v18 = *(_BYTE*)(v17 + 16)),
        ((1 << v18) & 0xF1) != 0)) {
-    LayoutAccessor_1560070((void*)(&v147_.v147), v1, "L_UnitInfo/L_BasicStatus");
+    LayoutAccessor_1560070((void*)(&v147_.v147), v1,
+                           "L_UnitInfo/L_BasicStatus");
     if (v147_.v148 != 0) {
       v19 = a1[133];
       v20 = std___1___shared_weak_count_lock(v147_.v148);
@@ -395,7 +396,8 @@ LABEL_51:
   v27 = *(_QWORD*)(a1[133] + 392);
   v158_.v158 = nullptr;
   v158_.v159 = v27;
-  if ((GameSituation_906560(game_GameModeData_instance_ + 136, &v158_.v158, v28) &
+  if ((GameSituation_906560(game_GameModeData_instance_ + 136, &v158_.v158,
+                            v28) &
        1) != 0) {
     v29 = *(_QWORD*)(a1[133] + 440);
     if (v29 != 0) {

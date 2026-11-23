@@ -4477,8 +4477,8 @@ unsigned __int64 GameHr_11e7860(unsigned __int64 result, __int64 a2)
   if (*(_QWORD*)(a2 + 8) == 0) {
     goto LABEL_134;
   }
-  result = (unsigned __int64)X8CALL_X0(_QWORD*,
-                                       GameRoutine_1225280((void*)&v100_.v100, a2));
+  result = (unsigned __int64)X8CALL_X0(
+      _QWORD*, GameRoutine_1225280((void*)&v100_.v100, a2));
   v3 = v100_.v101;
   if (v100_.v101 == 0) {
     goto LABEL_134;

@@ -416,8 +416,8 @@ __int64 TutorialInfoImpl_17e5b40(__int64 result, __int64 a2)
           *(_DWORD*)(v4 + 168) = 1;
           v18 = v20_.v21;
           if (v20_.v21 != 0) {
-            atomic_fetch_add_explicit((atomic_ullong* volatile)(v20_.v21 + 16), 1u,
-                                      memory_order_relaxed);
+            atomic_fetch_add_explicit((atomic_ullong* volatile)(v20_.v21 + 16),
+                                      1u, memory_order_relaxed);
           }
           v19 = *(_QWORD*)(v4 + 232);
           *(_QWORD*)(v4 + 224) = v16;
