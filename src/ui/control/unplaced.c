@@ -1216,8 +1216,10 @@ __int64 ui_control_1887780(__int64 result, __int64 a2, __int64 a3, __int64 a4)
   __int64 v50;
   unsigned __int64 v51;
   __int64 v52;
-  _QWORD* v53;
-  long double v54;
+  struct {
+    _QWORD* v53;
+    long double v54;
+  } v53_;
   __int64 v55;
   int v56;
   __int64 v57;
@@ -1250,8 +1252,10 @@ __int64 ui_control_1887780(__int64 result, __int64 a2, __int64 a3, __int64 a4)
   _QWORD v84[2];
   _QWORD* v85;
   unsigned __int64 v86;
-  __int64 v87;
-  unsigned __int64 v88;
+  struct {
+    __int64 v87;
+    unsigned __int64 v88;
+  } v87_;
   char* v89;
 
   v4 = (_QWORD*)result;
@@ -1302,8 +1306,8 @@ LABEL_12:
     }
     v85 = v12;
     v86 = v14;
-    Element_1885dc0((void*)(&v87), v13, &v85);
-    v15 = v88;
+    Element_1885dc0((void*)(&v87_.v87), v13, &v85);
+    v15 = v87_.v88;
     *v4 = 0;
     v4[1] = 0;
     if (v15 == 0) {
@@ -1327,9 +1331,9 @@ LABEL_12:
       }
       continue;
     }
-    v17 = (_QWORD*)v87;
+    v17 = (_QWORD*)v87_.v87;
     v18 = v16;
-    *v4 = v87;
+    *v4 = v87_.v87;
     std___1___shared_weak_count___release_weak(v15);
     if (v17 == nullptr || **(_QWORD***)(a2 + 8) == v17) {
       goto LABEL_27;
@@ -1456,13 +1460,13 @@ LABEL_12:
     }
     v47 = (char*)fw_memory_HeapManager_Allocate(fw_memory_g_heap_manager, v48,
                                                 16, 0);
-    v88 = v46;
+    v87_.v88 = v46;
     v89 = v47;
-    v87 = v48 | 1;
+    v87_.v87 = v48 | 1;
     goto LABEL_69;
   }
-  LOBYTE(v87) = 2 * v8;
-  v47 = (char*)&v87 + 1;
+  LOBYTE(v87_.v87) = 2 * v8;
+  v47 = (char*)&v87_.v87 + 1;
   if (v8 != 0) {
   LABEL_69:
     memmove(v47, v42, v46);
@@ -1471,12 +1475,12 @@ LABEL_12:
   do {
     v49 = v89;
     v50 = *(_QWORD*)(v5 + 80);
-    v51 = (unsigned __int64)(unsigned __int8)v87 >> 1;
-    if ((v87 & 1) != 0) {
-      v51 = v88;
+    v51 = (unsigned __int64)(unsigned __int8)v87_.v87 >> 1;
+    if ((v87_.v87 & 1) != 0) {
+      v51 = v87_.v88;
     }
     else {
-      v49 = (char*)&v87 + 1;
+      v49 = (char*)&v87_.v87 + 1;
     }
     v84[0] = v49;
     v84[1] = v51;
@@ -1502,7 +1506,7 @@ LABEL_12:
     v52 = std___1___shared_weak_count_lock(result);
     v4[1] = v52;
     if (v52 == 0) {
-      v53 = nullptr;
+      v53_.v53 = nullptr;
       result = v86;
       if (v86 == 0) {
         goto LABEL_79;
@@ -1511,18 +1515,18 @@ LABEL_12:
       result = std___1___shared_weak_count___release_weak(result);
       goto LABEL_79;
     }
-    v53 = v85;
+    v53_.v53 = v85;
     *v4 = v85;
     result = v86;
     if (v86 != 0) {
       goto LABEL_78;
     }
   LABEL_79:
-    if (v53 == nullptr || (_QWORD*)*v43 == v53) {
+    if (v53_.v53 == nullptr || (_QWORD*)*v43 == v53_.v53) {
       goto LABEL_86;
     }
-    if (((*(__int64 (**)(_QWORD*))(*v53 + 32LL))(v53) & 1) != 0) {
-      v55 = *(_QWORD*)(v53[1] + 24LL);
+    if (((*(__int64 (**)(_QWORD*))(*v53_.v53 + 32LL))(v53_.v53) & 1) != 0) {
+      v55 = *(_QWORD*)(v53_.v53[1] + 24LL);
       while (1) {
         v55 = *(_QWORD*)(v55 + 24);
         if (v55 == 0) {
@@ -1536,7 +1540,7 @@ LABEL_12:
       if (result == 0) {
         goto LABEL_115;
       }
-      v82 = v53;
+      v82 = v53_.v53;
       v83 = v52;
       if (v52 != 0) {
         atomic_fetch_add_explicit((atomic_ullong* volatile)(v52 + 8), 1u,
@@ -1559,10 +1563,10 @@ LABEL_12:
       if ((result & 1) != 0) {
         goto LABEL_115;
       }
-      v53 = (_QWORD*)*v4;
+      v53_.v53 = (_QWORD*)*v4;
     }
   LABEL_98:
-    v60 = &v53[3 * *v45];
+    v60 = &v53_.v53[3 * *v45];
     v61 = *((unsigned __int8*)v60 + 832);
     if ((v61 & 1) != 0) {
       v62 = v60[105];
@@ -1581,7 +1585,7 @@ LABEL_12:
       }
     }
     else {
-      v66 = &v53[15 * *v45];
+      v66 = &v53_.v53[15 * *v45];
       v67 = *((unsigned __int8*)v66 + 352);
       v68 = (char*)v66 + 353;
       v71 = v66 + 45;
@@ -1602,7 +1606,7 @@ LABEL_12:
         v62 = v69;
       }
     }
-    result = GameRoutine_60a060(&v87, v65, v62, v54);
+    result = GameRoutine_60a060(&v87_.v87, v65, v62, v53_.v54);
     v56 = 0;
     v57 = v4[1];
     if (v57 != 0) {
@@ -1612,7 +1616,7 @@ LABEL_12:
   *v4 = 0;
   v4[1] = 0;
 LABEL_115:
-  if ((v87 & 1) != 0 && v89 != nullptr) {
+  if ((v87_.v87 & 1) != 0 && v89 != nullptr) {
     v74 = 128;
     if (*(_QWORD*)(*(_QWORD*)fw_memory_g_heap_manager_ptr + 200LL) == 0) {
       v74 = 56;

@@ -240,8 +240,10 @@ __int64 ClassJobRecycleMenu_Unknown88(__int64 a1)
   __int64 v15;
   __int64 v16;
   _QWORD v17[2];
-  __int64* v18;
-  __int64* v19;
+  struct {
+    __int64* v18;
+    __int64* v19;
+  } v18_;
   _QWORD* v20;
   char* v21;
   int v22;
@@ -270,14 +272,14 @@ __int64 ClassJobRecycleMenu_Unknown88(__int64 a1)
       v4 = (_QWORD*)result;
       v17[0] = "L_Info/L_InfoTitle";
       v17[1] = 18;
-      GameRoutine_13fa520((void*)&v18, a1 + 848, v17);
-      result = (__int64)v19;
-      if (v19 != nullptr) {
-        v5 = std___1___shared_weak_count_lock(v19);
-        v6 = v18;
-        result = (__int64)v19;
-        if (v19 != nullptr) {
-          result = std___1___shared_weak_count___release_weak(v19);
+      GameRoutine_13fa520((void*)&v18_.v18, a1 + 848, v17);
+      result = (__int64)v18_.v19;
+      if (v18_.v19 != nullptr) {
+        v5 = std___1___shared_weak_count_lock(v18_.v19);
+        v6 = v18_.v18;
+        result = (__int64)v18_.v19;
+        if (v18_.v19 != nullptr) {
+          result = std___1___shared_weak_count___release_weak(v18_.v19);
         }
         if (v5 == 0 || v6 == nullptr) {
           if (v5 == 0) {
@@ -322,14 +324,14 @@ __int64 ClassJobRecycleMenu_Unknown88(__int64 a1)
         v33 = -1;
         v34 = -1;
         v35 = -1;
-        v18 = GameData_212e348 + 2;
-        v19 = (__int64*)0xFFFF0001FFFF0000LL;
+        v18_.v18 = GameData_212e348 + 2;
+        v18_.v19 = (__int64*)0xFFFF0001FFFF0000LL;
         v20 = (_QWORD*)0xFFFF0004FFFF0002LL;
         v21 = (char*)0xFFFF0006FFFF0005LL;
         v36 = 8;
         v22 = -65529;
         v23 = -65528;
-        v12 = (char*)GameRoutine_a4dbe0(v13, v12, 0, &v18);
+        v12 = (char*)GameRoutine_a4dbe0(v13, v12, 0, &v18_.v18);
       LABEL_22:
         GameRoutine_18b8160(v6, v12, 0);
         v15 = v4[11];
@@ -337,12 +339,12 @@ __int64 ClassJobRecycleMenu_Unknown88(__int64 a1)
         v37 = 0;
         v17[0] = v14;
         v38 = v15;
-        v18 = v3;
-        v19 = &v38;
+        v18_.v18 = v3;
+        v18_.v19 = &v38;
         v20 = v17;
         v21 = &v37;
-        GameRoutine_15760a0(&v18, 1);
-        GameRoutine_15760a0(&v18, 2);
+        GameRoutine_15760a0(&v18_.v18, 1);
+        GameRoutine_15760a0(&v18_.v18, 2);
         v16 = (*(__int64 (**)(_QWORD*))(*v4 + 24LL))(v4);
         GameRoutine_1562060(v3, "T_Job", v16);
         result = ui_LayoutAccessor_FindAlignment(v3, "A_JobIcon");

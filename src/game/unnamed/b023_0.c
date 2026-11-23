@@ -2851,8 +2851,10 @@ __int64 GameHr_17372e0(_QWORD* a1, __int64 a2, int a3, __int64* a4, __int64 a5)
   __int64 v42;
   __int64 v43;
   _QWORD v44[2];
-  __int64 v45;
-  __int64 v46;
+  struct {
+    __int64 v45;
+    __int64 v46;
+  } v45_;
   struct {
     __int64 v47;
     unsigned __int64 v48;
@@ -2893,12 +2895,12 @@ __int64 GameHr_17372e0(_QWORD* a1, __int64 a2, int a3, __int64* a4, __int64 a5)
   else {
     v15 = (char*)&v47_.v47 + 1;
   }
-  GameRoutine_1560070((void*)&v45, a2 + 168, v15);
-  if (v46 != 0) {
-    v16 = GameRoutine_1a0a0c0(v46);
-    v17 = v45;
-    if (v46 != 0) {
-      GameRoutine_1a09c50(v46);
+  GameRoutine_1560070((void*)&v45_.v45, a2 + 168, v15);
+  if (v45_.v46 != 0) {
+    v16 = GameRoutine_1a0a0c0(v45_.v46);
+    v17 = v45_.v45;
+    if (v45_.v46 != 0) {
+      GameRoutine_1a09c50(v45_.v46);
     }
     if (v16 != 0 && v17 != 0) {
       v18 = GameRoutine_1a0a0c0(*(_QWORD*)(v17 + 8));
@@ -2970,12 +2972,12 @@ LABEL_32:
   else {
     v26 = (char*)&v47_.v47 + 1;
   }
-  GameRoutine_1560070((void*)&v45, a2 + 168, v26);
-  if (v46 != 0) {
-    v16 = GameRoutine_1a0a0c0(v46);
-    v27 = v45;
-    if (v46 != 0) {
-      GameRoutine_1a09c50(v46);
+  GameRoutine_1560070((void*)&v45_.v45, a2 + 168, v26);
+  if (v45_.v46 != 0) {
+    v16 = GameRoutine_1a0a0c0(v45_.v46);
+    v27 = v45_.v45;
+    if (v45_.v46 != 0) {
+      GameRoutine_1a09c50(v45_.v46);
     }
     if (v16 != 0 && v27 != 0) {
       v28 = GameRoutine_1a0a0c0(*(_QWORD*)(v27 + 8));
@@ -3047,16 +3049,16 @@ LABEL_63:
   else {
     v36 = (char*)&v47_.v47 + 1;
   }
-  GameRoutine_1560070((void*)&v45, a2 + 168, v36);
-  result = v46;
-  if (v46 == 0) {
+  GameRoutine_1560070((void*)&v45_.v45, a2 + 168, v36);
+  result = v45_.v46;
+  if (v45_.v46 == 0) {
     goto LABEL_89;
   }
-  v16 = GameRoutine_1a0a0c0(v46);
-  v38 = v45;
-  result = v46;
-  if (v46 != 0) {
-    result = GameRoutine_1a09c50(v46);
+  v16 = GameRoutine_1a0a0c0(v45_.v46);
+  v38 = v45_.v45;
+  result = v45_.v46;
+  if (v45_.v46 != 0) {
+    result = GameRoutine_1a09c50(v45_.v46);
   }
   if (v16 == 0 || v38 == 0) {
     if (v16 != 0) {

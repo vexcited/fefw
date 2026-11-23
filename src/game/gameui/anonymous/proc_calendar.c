@@ -315,8 +315,10 @@ __int64 ProcCalendar_Unknown3(__int64 result)
   __int64 v13;
   __int64 v14;
   char v15;
-  __int64 v16;
-  __int64 v17;
+  struct {
+    __int64 v16;
+    __int64 v17;
+  } v16_;
   __int64 v18;
   __int64 v19;
   __int64 v20;
@@ -328,23 +330,23 @@ __int64 ProcCalendar_Unknown3(__int64 result)
   v19 = v1;
   v20 = v2;
   v4 = result;
-  GameRoutine_1560070((void*)&v16, result + 848, "L_SelectDaily");
-  result = v17;
-  if (v17 == 0) {
+  GameRoutine_1560070((void*)&v16_.v16, result + 848, "L_SelectDaily");
+  result = v16_.v17;
+  if (v16_.v17 == 0) {
     return result;
   }
-  v5 = std___1___shared_weak_count_lock(v17);
-  v6 = v16;
-  result = v17;
-  if (v17 != 0) {
-    result = std___1___shared_weak_count___release_weak(v17);
+  v5 = std___1___shared_weak_count_lock(v16_.v17);
+  v6 = v16_.v16;
+  result = v16_.v17;
+  if (v16_.v17 != 0) {
+    result = std___1___shared_weak_count___release_weak(v16_.v17);
   }
   if (v5 == 0 || v6 == 0) {
     goto LABEL_41;
   }
-  GameRoutine_1560070((void*)&v16, v6, "L_ReminderIcon");
-  result = v17;
-  if (v17 == 0) {
+  GameRoutine_1560070((void*)&v16_.v16, v6, "L_ReminderIcon");
+  result = v16_.v17;
+  if (v16_.v17 == 0) {
   LABEL_42:
     if (atomic_fetch_add((atomic_ullong* volatile)(v5 + 8),
                          0xFFFFFFFFFFFFFFFFLL) == 0) {
@@ -353,11 +355,11 @@ __int64 ProcCalendar_Unknown3(__int64 result)
     }
     return result;
   }
-  v7 = std___1___shared_weak_count_lock(v17);
-  v8 = v16;
-  result = v17;
-  if (v17 != 0) {
-    result = std___1___shared_weak_count___release_weak(v17);
+  v7 = std___1___shared_weak_count_lock(v16_.v17);
+  v8 = v16_.v16;
+  result = v16_.v17;
+  if (v16_.v17 != 0) {
+    result = std___1___shared_weak_count___release_weak(v16_.v17);
   }
   if (v7 == 0 || v8 == 0) {
     goto LABEL_38;
@@ -375,14 +377,14 @@ __int64 ProcCalendar_Unknown3(__int64 result)
   }
   for (i = 0; i != 6; ++i) {
     v10 = game_util_Format("L_Daily%02d", i);
-    GameRoutine_1560070((void*)&v16, v4 + 848, v10);
-    if (v17 == 0) {
+    GameRoutine_1560070((void*)&v16_.v16, v4 + 848, v10);
+    if (v16_.v17 == 0) {
       continue;
     }
-    v11 = std___1___shared_weak_count_lock(v17);
-    v12 = v16;
-    if (v17 != 0) {
-      std___1___shared_weak_count___release_weak(v17);
+    v11 = std___1___shared_weak_count_lock(v16_.v17);
+    v12 = v16_.v16;
+    if (v16_.v17 != 0) {
+      std___1___shared_weak_count___release_weak(v16_.v17);
     }
     if (v11 == 0 || v12 == 0) {
       if (v11 == 0) {
@@ -392,14 +394,14 @@ __int64 ProcCalendar_Unknown3(__int64 result)
       v15 = 4;
       goto LABEL_34;
     }
-    GameRoutine_1560070((void*)&v16, v12, "L_ReminderIcon");
-    if (v17 == 0) {
+    GameRoutine_1560070((void*)&v16_.v16, v12, "L_ReminderIcon");
+    if (v16_.v17 == 0) {
       goto LABEL_30;
     }
-    v13 = std___1___shared_weak_count_lock(v17);
-    v14 = v16;
-    if (v17 != 0) {
-      std___1___shared_weak_count___release_weak(v17);
+    v13 = std___1___shared_weak_count_lock(v16_.v17);
+    v14 = v16_.v16;
+    if (v16_.v17 != 0) {
+      std___1___shared_weak_count___release_weak(v16_.v17);
     }
     if (v13 != 0 && v14 != 0) {
       v15 = 0;

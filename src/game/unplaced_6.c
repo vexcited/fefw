@@ -10589,10 +10589,14 @@ __int64 game_1225500(_QWORD* a1, _DWORD* a2, _DWORD* a3)
   char v26;
   int v27;
   int v28;
-  unsigned __int8* v29;
-  unsigned __int64 v30;
-  unsigned __int8* v31;
-  unsigned __int64 v32;
+  struct {
+    unsigned __int8* v29;
+    unsigned __int64 v30;
+  } v29_;
+  struct {
+    unsigned __int8* v31;
+    unsigned __int64 v32;
+  } v31_;
   _QWORD v33[2];
   _BYTE* v34;
   _BYTE v35[32];
@@ -10628,11 +10632,11 @@ __int64 game_1225500(_QWORD* a1, _DWORD* a2, _DWORD* a3)
         }
         v33[0] = v15;
         v33[1] = v14;
-        GameRoutine_1225280((void*)(&v31), v33);
-        v17 = v32;
-        if (v32 != 0) {
-          if (v32 <= 0x1F) {
-            v18 = v31;
+        GameRoutine_1225280((void*)(&v31_.v31), v33);
+        v17 = v31_.v32;
+        if (v31_.v32 != 0) {
+          if (v31_.v32 <= 0x1F) {
+            v18 = v31_.v31;
             v19 = v35;
             do {
               v21 = *v18++;
@@ -10645,14 +10649,14 @@ __int64 game_1225500(_QWORD* a1, _DWORD* a2, _DWORD* a3)
             } while (v17 != 0);
             *v19 = 0;
           }
-          v22 = strtol(v35, &v29, 10);
-          if (v35 != v29 && v29 - v35 == v32) {
+          v22 = strtol(v35, &v29_.v29, 10);
+          if (v35 != v29_.v29 && v29_.v29 - v35 == v31_.v32) {
             *a2 = v22;
-            GameRoutine_1225280((void*)(&v29), v33);
-            v23 = v30;
-            if (v30 != 0) {
-              if (v30 <= 0x1F) {
-                v24 = v29;
+            GameRoutine_1225280((void*)(&v29_.v29), v33);
+            v23 = v29_.v30;
+            if (v29_.v30 != 0) {
+              if (v29_.v30 <= 0x1F) {
+                v24 = v29_.v29;
                 v25 = v35;
                 do {
                   v27 = *v24++;
@@ -10666,7 +10670,7 @@ __int64 game_1225500(_QWORD* a1, _DWORD* a2, _DWORD* a3)
                 *v25 = 0;
               }
               v28 = strtol(v35, &v34, 10);
-              if (v35 != v34 && v34 - v35 == v30) {
+              if (v35 != v34 && v34 - v35 == v29_.v30) {
                 *a3 = v28;
                 return 1;
               }

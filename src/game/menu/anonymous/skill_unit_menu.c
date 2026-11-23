@@ -260,10 +260,14 @@ __int64 SkillUnitMenu_Unknown88(__int64 a1)
   __int64 v10;
   __int64 result;
   __int64 v13;
-  __int64 v14;
-  __int64 v15;
-  __int64 v16;
-  __int64 v17;
+  struct {
+    __int64 v14;
+    __int64 v15;
+  } v14_;
+  struct {
+    __int64 v16;
+    __int64 v17;
+  } v16_;
   __int64 v18;
   __int64 v19;
   __int64 v20;
@@ -284,18 +288,18 @@ __int64 SkillUnitMenu_Unknown88(__int64 a1)
   v2 = result;
   if (*(_QWORD*)(v13 + 88) != 0) {
     v3 = *(_DWORD*)(v13 + 112);
-    GameRoutine_1560070((void*)(&v16), result + 200, "L_InfoDetail");
-    result = v17;
-    if (v17 == 0) {
+    GameRoutine_1560070((void*)(&v16_.v16), result + 200, "L_InfoDetail");
+    result = v16_.v17;
+    if (v16_.v17 == 0) {
       return result;
     }
     v4 = *(unsigned __int8*)(v2 + 376);
     v5 = *(_QWORD*)(v2 + 360);
-    v6 = std___1___shared_weak_count_lock(v17);
+    v6 = std___1___shared_weak_count_lock(v16_.v17);
     if (v6 != 0) {
       v7 = v6;
-      if (v16 != 0) {
-        GameRoutine_15d2c40(v16, v1 + 108, v4, v5, v3, 0);
+      if (v16_.v16 != 0) {
+        GameRoutine_15d2c40(v16_.v16, v1 + 108, v4, v5, v3, 0);
       }
       if (atomic_fetch_add((atomic_ullong* volatile)(v7 + 8),
                            0xFFFFFFFFFFFFFFFFLL) == 0) {
@@ -303,21 +307,21 @@ __int64 SkillUnitMenu_Unknown88(__int64 a1)
         std___1___shared_weak_count___release_weak(v7);
       }
     }
-    result = v17;
-    if (v17 == 0) {
+    result = v16_.v17;
+    if (v16_.v17 == 0) {
       return result;
     }
     return std___1___shared_weak_count___release_weak(result);
   }
-  GameRoutine_1560070((void*)(&v14), result + 200, "L_InfoDetail");
-  result = v15;
-  if (v15 != 0) {
+  GameRoutine_1560070((void*)(&v14_.v14), result + 200, "L_InfoDetail");
+  result = v14_.v15;
+  if (v14_.v15 != 0) {
     v8 = *(unsigned __int8*)(v2 + 376);
-    v9 = std___1___shared_weak_count_lock(v15);
+    v9 = std___1___shared_weak_count_lock(v14_.v15);
     if (v9 != 0) {
       v10 = v9;
-      if (v14 != 0) {
-        GameRoutine_15d2c40(v14, GameData_212c8a8, v8, 0, 0, 0);
+      if (v14_.v14 != 0) {
+        GameRoutine_15d2c40(v14_.v14, GameData_212c8a8, v8, 0, 0, 0);
       }
       if (atomic_fetch_add((atomic_ullong* volatile)(v10 + 8),
                            0xFFFFFFFFFFFFFFFFLL) == 0) {
@@ -325,8 +329,8 @@ __int64 SkillUnitMenu_Unknown88(__int64 a1)
         std___1___shared_weak_count___release_weak(v10);
       }
     }
-    result = v15;
-    if (v15 != 0) {
+    result = v14_.v15;
+    if (v14_.v15 != 0) {
       return std___1___shared_weak_count___release_weak(result);
     }
   }

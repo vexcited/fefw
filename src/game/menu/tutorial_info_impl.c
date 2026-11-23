@@ -328,8 +328,10 @@ __int64 TutorialInfoImpl_17e5b40(__int64 result, __int64 a2)
   __int64 v17;
   __int64 v18;
   __int64 v19;
-  __int64 v20;
-  __int64 v21;
+  struct {
+    __int64 v20;
+    __int64 v21;
+  } v20_;
   _QWORD v22[4];
   int v23;
   int v24;
@@ -404,17 +406,17 @@ __int64 TutorialInfoImpl_17e5b40(__int64 result, __int64 a2)
     }
     *(_DWORD*)(v4 + 128) = v14;
     *(_QWORD*)(v4 + 132) = 0;
-    GameRoutine_1560070((void*)&v20, v4 + 24, "L_PageTab");
-    if (v21 != 0) {
-      v15 = std___1___shared_weak_count_lock(v21);
+    GameRoutine_1560070((void*)&v20_.v20, v4 + 24, "L_PageTab");
+    if (v20_.v21 != 0) {
+      v15 = std___1___shared_weak_count_lock(v20_.v21);
       if (v15 != 0) {
-        v16 = v20;
+        v16 = v20_.v20;
         v17 = v15;
-        if (v20 != 0) {
+        if (v20_.v20 != 0) {
           *(_DWORD*)(v4 + 168) = 1;
-          v18 = v21;
-          if (v21 != 0) {
-            atomic_fetch_add_explicit((atomic_ullong* volatile)(v21 + 16), 1u,
+          v18 = v20_.v21;
+          if (v20_.v21 != 0) {
+            atomic_fetch_add_explicit((atomic_ullong* volatile)(v20_.v21 + 16), 1u,
                                       memory_order_relaxed);
           }
           v19 = *(_QWORD*)(v4 + 232);
@@ -431,8 +433,8 @@ __int64 TutorialInfoImpl_17e5b40(__int64 result, __int64 a2)
           std___1___shared_weak_count___release_weak(v17);
         }
       }
-      if (v21 != 0) {
-        std___1___shared_weak_count___release_weak(v21);
+      if (v20_.v21 != 0) {
+        std___1___shared_weak_count___release_weak(v20_.v21);
       }
     }
     return GameRoutine_17e5d20(v4, 0);

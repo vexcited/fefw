@@ -139,8 +139,10 @@ __int64 QuestIconList_Unknown2(__int64 a1, __int64* a2)
   __int64 v26;
   __int64 v27;
   __int64 v28;
-  __int64 v29;
-  __int64 v30;
+  struct {
+    __int64 v29;
+    __int64 v30;
+  } v29_;
   __int64 v31;
   __int64 v32;
   __int64 v33;
@@ -185,21 +187,21 @@ __int64 QuestIconList_Unknown2(__int64 a1, __int64* a2)
         return result;
       }
       sprintf(v36, "L_Quest%d", 0);
-      GameRoutine_1560070((void*)&v29, v11, v36);
-      result = v30;
-      if (v30 != 0) {
-        v13 = std___1___shared_weak_count_lock(v30);
-        v14 = v29;
-        result = v30;
-        if (v30 != 0) {
-          result = std___1___shared_weak_count___release_weak(v30);
+      GameRoutine_1560070((void*)&v29_.v29, v11, v36);
+      result = v29_.v30;
+      if (v29_.v30 != 0) {
+        v13 = std___1___shared_weak_count_lock(v29_.v30);
+        v14 = v29_.v29;
+        result = v29_.v30;
+        if (v29_.v30 != 0) {
+          result = std___1___shared_weak_count___release_weak(v29_.v30);
         }
         if (v13 != 0 && v14 != 0) {
           v15 = ui_LayoutAccessor_FindPane(v11, v36);
           atomic_fetch_add_explicit((atomic_ullong* volatile)(v13 + 16), 1u,
                                     memory_order_relaxed);
-          v29 = v15;
-          v30 = 0;
+          v29_.v29 = v15;
+          v29_.v30 = 0;
           v31 = v14;
           v32 = v13;
           atomic_fetch_add_explicit((atomic_ullong* volatile)(v13 + 16), 1u,
@@ -209,7 +211,7 @@ __int64 QuestIconList_Unknown2(__int64 a1, __int64* a2)
           v35 = 0;
           v16 = *(__int64**)(a1 + 32);
           if ((unsigned __int64)v16 >= *(_QWORD*)(a1 + 40)) {
-            v19 = GameRoutine_1038880(i, &v29);
+            v19 = GameRoutine_1038880(i, &v29_.v29);
             v20 = v32;
             *(_QWORD*)(a1 + 32) = v19;
             if (v20 != 0) {
@@ -217,11 +219,11 @@ __int64 QuestIconList_Unknown2(__int64 a1, __int64* a2)
             }
           }
           else {
-            v17 = v29;
+            v17 = v29_.v29;
             v16[3] = v13;
             v16[4] = 0;
             *v16 = v17;
-            v16[1] = v30;
+            v16[1] = v29_.v30;
             v16[2] = v14;
             v31 = 0;
             v32 = 0;
@@ -246,21 +248,21 @@ __int64 QuestIconList_Unknown2(__int64 a1, __int64* a2)
         while (1) {
           sprintf(v36, "L_Quest%d", v21);
           GameRoutine_1560520(v11, "L_Quest0", "N_Quest", v36);
-          GameRoutine_1560070((void*)&v29, v11, v36);
-          result = v30;
-          if (v30 != 0) {
-            v22 = std___1___shared_weak_count_lock(v30);
-            v23 = v29;
-            result = v30;
-            if (v30 != 0) {
-              result = std___1___shared_weak_count___release_weak(v30);
+          GameRoutine_1560070((void*)&v29_.v29, v11, v36);
+          result = v29_.v30;
+          if (v29_.v30 != 0) {
+            v22 = std___1___shared_weak_count_lock(v29_.v30);
+            v23 = v29_.v29;
+            result = v29_.v30;
+            if (v29_.v30 != 0) {
+              result = std___1___shared_weak_count___release_weak(v29_.v30);
             }
             if (v22 != 0 && v23 != 0) {
               v24 = ui_LayoutAccessor_FindPane(v11, v36);
               atomic_fetch_add_explicit((atomic_ullong* volatile)(v22 + 16), 1u,
                                         memory_order_relaxed);
-              v29 = v24;
-              v30 = 0;
+              v29_.v29 = v24;
+              v29_.v30 = 0;
               v31 = v23;
               v32 = v22;
               atomic_fetch_add_explicit((atomic_ullong* volatile)(v22 + 16), 1u,
@@ -270,7 +272,7 @@ __int64 QuestIconList_Unknown2(__int64 a1, __int64* a2)
               v35 = 0;
               v25 = *(__int64**)(a1 + 32);
               if ((unsigned __int64)v25 >= *(_QWORD*)(a1 + 40)) {
-                v27 = GameRoutine_1038880(i, &v29);
+                v27 = GameRoutine_1038880(i, &v29_.v29);
                 v28 = v32;
                 *(_QWORD*)(a1 + 32) = v27;
                 if (v28 != 0) {
@@ -278,11 +280,11 @@ __int64 QuestIconList_Unknown2(__int64 a1, __int64* a2)
                 }
               }
               else {
-                v26 = v29;
+                v26 = v29_.v29;
                 v25[3] = v22;
                 v25[4] = 0;
                 *v25 = v26;
-                v25[1] = v30;
+                v25[1] = v29_.v30;
                 v25[2] = v23;
                 v31 = 0;
                 v32 = 0;

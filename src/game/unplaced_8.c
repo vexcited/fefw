@@ -891,8 +891,10 @@ __int64 game_1679f70(__int64 result)
   atomic_ullong* v33;
   __int64* v34;
   __int64* v35;
-  __int64 v36;
-  __int64 v37;
+  struct {
+    __int64 v36;
+    __int64 v37;
+  } v36_;
   __int64 v38;
   __int64 v39;
   __int64 v40;
@@ -974,10 +976,10 @@ __int64 game_1679f70(__int64 result)
         LABEL_25:
           v28 = &ui_LayoutAccessor_empty_;
         }
-        LayoutAccessor_1560070((void*)(&v36), v28, v23);
-        GameRoutine_1653f50((_DWORD*)(v6 + 176 + 16LL * v21), &v36);
-        if (v37 != 0) {
-          std___1___shared_weak_count___release_weak(v37);
+        LayoutAccessor_1560070((void*)(&v36_.v36), v28, v23);
+        GameRoutine_1653f50((_DWORD*)(v6 + 176 + 16LL * v21), &v36_.v36);
+        if (v36_.v37 != 0) {
+          std___1___shared_weak_count___release_weak(v36_.v37);
         }
         *(_DWORD*)(v6 + 280) = v21;
         *(_DWORD*)(v6 + 284) = v20;

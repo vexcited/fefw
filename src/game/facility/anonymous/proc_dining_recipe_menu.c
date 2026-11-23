@@ -639,8 +639,10 @@ __int64 ProcDiningRecipeMenu_13fa3e0(__int64 a1, unsigned int a2)
   __int64 result;
   __int64 v9;
   __int64 v10;
-  __int64 v11;
-  __int64 v12;
+  struct {
+    __int64 v11;
+    __int64 v12;
+  } v11_;
   __int64 v13;
   __int64 v14;
 
@@ -659,14 +661,14 @@ __int64 ProcDiningRecipeMenu_13fa3e0(__int64 a1, unsigned int a2)
     std___1___shared_weak_count___release_weak(v14);
   }
   v7 = game_util_Format("L_UnitInfo%02d/L_UnitInfo", a2);
-  GameRoutine_1560070((void*)&v11, a1 + 848, v7);
-  result = v12;
-  if (v12 != 0) {
-    v9 = std___1___shared_weak_count_lock(v12);
+  GameRoutine_1560070((void*)&v11_.v11, a1 + 848, v7);
+  result = v11_.v12;
+  if (v11_.v12 != 0) {
+    v9 = std___1___shared_weak_count_lock(v11_.v12);
     if (v9 != 0) {
       v10 = v9;
-      if (v11 != 0) {
-        LayoutAccessor_1562cf0(v11, "Simple01");
+      if (v11_.v11 != 0) {
+        LayoutAccessor_1562cf0(v11_.v11, "Simple01");
       }
       if (atomic_fetch_add((atomic_ullong* volatile)(v10 + 8),
                            0xFFFFFFFFFFFFFFFFLL) == 0) {
@@ -674,9 +676,9 @@ __int64 ProcDiningRecipeMenu_13fa3e0(__int64 a1, unsigned int a2)
         std___1___shared_weak_count___release_weak(v10);
       }
     }
-    result = v12;
-    if (v12 != 0) {
-      return std___1___shared_weak_count___release_weak(v12);
+    result = v11_.v12;
+    if (v11_.v12 != 0) {
+      return std___1___shared_weak_count___release_weak(v11_.v12);
     }
   }
   return result;

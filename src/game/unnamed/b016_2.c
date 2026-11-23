@@ -4465,8 +4465,10 @@ unsigned __int64 GameHr_11e7860(unsigned __int64 result, __int64 a2)
   __int64 v97;
   __int64 v98;
   __int64 v99;
-  unsigned __int8* v100;
-  unsigned __int64 v101;
+  struct {
+    unsigned __int8* v100;
+    unsigned __int64 v101;
+  } v100_;
   int v102;
   _QWORD v103[16];
   char* v104;
@@ -4476,15 +4478,15 @@ unsigned __int64 GameHr_11e7860(unsigned __int64 result, __int64 a2)
     goto LABEL_134;
   }
   result = (unsigned __int64)X8CALL_X0(_QWORD*,
-                                       GameRoutine_1225280((void*)&v100, a2));
-  v3 = v101;
-  if (v101 == 0) {
+                                       GameRoutine_1225280((void*)&v100_.v100, a2));
+  v3 = v100_.v101;
+  if (v100_.v101 == 0) {
     goto LABEL_134;
   }
-  v4 = v100;
-  switch (*v100) {
+  v4 = v100_.v100;
+  switch (*v100_.v100) {
   case 'A':
-    if (v101 <= 0x7F) {
+    if (v100_.v101 <= 0x7F) {
       v5 = v103;
       do {
         v7 = *v4++;
@@ -4570,36 +4572,36 @@ unsigned __int64 GameHr_11e7860(unsigned __int64 result, __int64 a2)
       }
     }
   case 'D':
-    if (v101 != 7) {
+    if (v100_.v101 != 7) {
       goto LABEL_151;
     }
-    if (*((unsigned __int16*)v100 + 2) == 47332 && v100[6] == 138) {
+    if (*((unsigned __int16*)v100_.v100 + 2) == 47332 && v100_.v100[6] == 138) {
       v28 = 1;
       v29 = 10;
       goto LABEL_152;
     }
-    if (*((unsigned __int16*)v100 + 2) == 47332 && v100[6] == 139) {
+    if (*((unsigned __int16*)v100_.v100 + 2) == 47332 && v100_.v100[6] == 139) {
       v28 = 4;
       v29 = 10;
       goto LABEL_152;
     }
-    if (*((unsigned __int16*)v100 + 2) == 47077 && v100[6] == 166) {
+    if (*((unsigned __int16*)v100_.v100 + 2) == 47077 && v100_.v100[6] == 166) {
       v28 = 2;
       v29 = 10;
       goto LABEL_152;
     }
-    if (*((unsigned __int16*)v100 + 2) == 36837 && v100[6] == 179) {
+    if (*((unsigned __int16*)v100_.v100 + 2) == 36837 && v100_.v100[6] == 179) {
       v28 = 8;
       v29 = 10;
       goto LABEL_152;
     }
     goto LABEL_151;
   case 'F':
-    if (v100[1] != 76) {
-      v64 = v101 - 6;
-      switch (v101) {
+    if (v100_.v100[1] != 76) {
+      v64 = v100_.v101 - 6;
+      switch (v100_.v101) {
       case 0xAuLL:
-        result = GameRoutine_1a09cf0(v100 + 6, "ALLY", v64);
+        result = GameRoutine_1a09cf0(v100_.v100 + 6, "ALLY", v64);
         if ((_DWORD)result == 0) {
           v28 = 3;
           v29 = 7;
@@ -4607,7 +4609,7 @@ unsigned __int64 GameHr_11e7860(unsigned __int64 result, __int64 a2)
         }
         break;
       case 0xBuLL:
-        result = GameRoutine_1a09cf0(v100 + 6, "ENEMY", v64);
+        result = GameRoutine_1a09cf0(v100_.v100 + 6, "ENEMY", v64);
         if ((_DWORD)result == 0) {
           v28 = 1;
           v29 = 7;
@@ -4621,7 +4623,7 @@ unsigned __int64 GameHr_11e7860(unsigned __int64 result, __int64 a2)
         }
         break;
       case 0xCuLL:
-        result = GameRoutine_1a09cf0(v100 + 6, "PLAYER", v64);
+        result = GameRoutine_1a09cf0(v100_.v100 + 6, "PLAYER", v64);
         if ((_DWORD)result == 0) {
           v28 = 0;
           v29 = 7;
@@ -4639,13 +4641,13 @@ unsigned __int64 GameHr_11e7860(unsigned __int64 result, __int64 a2)
       v29 = 0;
       goto LABEL_152;
     }
-    v12 = v101 - 5;
-    if (v101 - 5 <= 0x7F) {
-      if (v101 == 5) {
+    v12 = v100_.v101 - 5;
+    if (v100_.v101 - 5 <= 0x7F) {
+      if (v100_.v101 == 5) {
         v14 = v103;
       }
       else {
-        v13 = v100 + 5;
+        v13 = v100_.v100 + 5;
         v14 = v103;
         do {
           v16 = *v13++;
@@ -4673,7 +4675,7 @@ unsigned __int64 GameHr_11e7860(unsigned __int64 result, __int64 a2)
     }
     return result;
   case 'I':
-    if (v101 <= 0x7F) {
+    if (v100_.v101 <= 0x7F) {
       v47 = v103;
       do {
         v49 = *v4++;
@@ -4760,7 +4762,7 @@ unsigned __int64 GameHr_11e7860(unsigned __int64 result, __int64 a2)
       continue;
     }
   case 'J':
-    if (v101 <= 0x7F) {
+    if (v100_.v101 <= 0x7F) {
       v54 = v103;
       do {
         v56 = *v4++;
@@ -4847,7 +4849,7 @@ unsigned __int64 GameHr_11e7860(unsigned __int64 result, __int64 a2)
       continue;
     }
   case 'P':
-    if (v101 <= 0x7F) {
+    if (v100_.v101 <= 0x7F) {
       v17 = v103;
       do {
         v19 = *v4++;
@@ -4934,7 +4936,7 @@ unsigned __int64 GameHr_11e7860(unsigned __int64 result, __int64 a2)
       continue;
     }
   case 'S':
-    if (v101 <= 0x7F) {
+    if (v100_.v101 <= 0x7F) {
       v30 = v103;
       do {
         v32 = *v4++;
@@ -5021,7 +5023,7 @@ unsigned __int64 GameHr_11e7860(unsigned __int64 result, __int64 a2)
       continue;
     }
   case 'T':
-    if (v101 <= 0x7F) {
+    if (v100_.v101 <= 0x7F) {
       v37 = v103;
       do {
         v39 = *v4++;
@@ -5114,11 +5116,11 @@ unsigned __int64 GameHr_11e7860(unsigned __int64 result, __int64 a2)
       continue;
     }
   case 'V':
-    v62 = v101 - 2;
-    if ((__int64)v101 <= 5) {
-      if (v101 != 3) {
-        if (v101 == 5) {
-          result = GameRoutine_1a09cf0(v100 + 2, "Max", v62);
+    v62 = v100_.v101 - 2;
+    if ((__int64)v100_.v101 <= 5) {
+      if (v100_.v101 != 3) {
+        if (v100_.v101 == 5) {
+          result = GameRoutine_1a09cf0(v100_.v100 + 2, "Max", v62);
           if ((_DWORD)result == 0) {
             v63 = -2;
             goto LABEL_135;
@@ -5126,7 +5128,7 @@ unsigned __int64 GameHr_11e7860(unsigned __int64 result, __int64 a2)
         }
         goto LABEL_142;
       }
-      result = GameRoutine_1a09cf0(v100 + 2, "0", v62);
+      result = GameRoutine_1a09cf0(v100_.v100 + 2, "0", v62);
       if ((_DWORD)result != 0) {
         v65 = v4[2];
         if (v65 != 50) {
@@ -5154,15 +5156,15 @@ unsigned __int64 GameHr_11e7860(unsigned __int64 result, __int64 a2)
       *(_WORD*)(v2 + 2) = v63;
       return result;
     }
-    if (v101 == 6) {
-      result = GameRoutine_1a09cf0(v100 + 2, "Skip", v62);
+    if (v100_.v101 == 6) {
+      result = GameRoutine_1a09cf0(v100_.v100 + 2, "Skip", v62);
       if ((_DWORD)result == 0) {
         v63 = -3;
         goto LABEL_135;
       }
     }
-    else if (v101 == 9) {
-      result = GameRoutine_1a09cf0(v100 + 2, "Default", v62);
+    else if (v100_.v101 == 9) {
+      result = GameRoutine_1a09cf0(v100_.v100 + 2, "Default", v62);
       if ((_DWORD)result == 0) {
       LABEL_134:
         v63 = -1;
@@ -5174,11 +5176,11 @@ unsigned __int64 GameHr_11e7860(unsigned __int64 result, __int64 a2)
     v66 = (_WORD*)(v2 + 2);
     goto LABEL_143;
   case 'p':
-    if (v100[3] != 40) {
-      return GameRoutine_11e83a0(v2, &v100);
+    if (v100_.v100[3] != 40) {
+      return GameRoutine_11e83a0(v2, &v100_.v100);
     }
-    v103[0] = v100 + 3;
-    v103[1] = v101 - 3;
+    v103[0] = v100_.v100 + 3;
+    v103[1] = v100_.v101 - 3;
     result = GameRoutine_1225500(v103, &v104, &v102);
     if ((result & 1) == 0) {
       goto LABEL_134;
@@ -5189,7 +5191,7 @@ unsigned __int64 GameHr_11e7860(unsigned __int64 result, __int64 a2)
     *(_BYTE*)v2 = 1;
     return result;
   default:
-    if (v101 <= 0x1F) {
+    if (v100_.v101 <= 0x1F) {
       v44 = v103;
       do {
         v46 = *v4++;
@@ -5203,7 +5205,7 @@ unsigned __int64 GameHr_11e7860(unsigned __int64 result, __int64 a2)
       *v44 = 0;
     }
     result = GameRoutine_1a0a890(v103, &v104, 10);
-    if (v103 == (_QWORD*)v104 || v104 - (char*)v103 != v101) {
+    if (v103 == (_QWORD*)v104 || v104 - (char*)v103 != v100_.v101) {
       result = 0xFFFF;
     }
     *(_BYTE*)v2 = 0;

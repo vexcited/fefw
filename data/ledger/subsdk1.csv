@@ -7301,7 +7301,7 @@ ff600,3424,verified,src/nvidia/unplaced_21.c,nvidia_ff600
 1ee8f0,48,verified,src/nvidia/unnamed/c004_0.c,CudaDriverHr_1ee8f0
 1ee920,128,verified,src/nvidia/unnamed/c004_0.c,CudaDriverHr_1ee920
 1ee9a0,132,verified,src/nvidia/unnamed/c004_0.c,CudaDriverHr_1ee9a0
-1eea40,820,disputed,src/nvidia/cuda_driver_unplaced_10.c,cuda_driver_1eea40
+1eea40,820,verified,src/nvidia/cuda_driver_unplaced_10.c,cuda_driver_1eea40
 1eee00,180,verified,src/nvidia/unnamed/c004_0.c,CudaDriverHr_1eee00
 1eeec0,52,verified,src/nvidia/unnamed/c004_0.c,CudaDriverHr_1eeec0
 1eef00,756,verified,src/nvidia/cuda_driver_unplaced_10.c,cuda_driver_1eef00
@@ -7500,7 +7500,7 @@ ff600,3424,verified,src/nvidia/unplaced_21.c,nvidia_ff600
 1fb000,200,verified,src/nvidia/cuda_driver_unplaced_10.c,cuda_driver_1fb000
 1fb0e0,1216,verified,src/nvidia/unnamed/c004_0.c,CudaDriverHr_1fb0e0
 1fb680,316,verified,src/nvidia/unnamed/c004_0.c,CudaDriverHr_1fb680
-1fb7e0,1280,disputed,src/nvidia/cuda_driver_unplaced_10.c,cuda_driver_1fb7e0
+1fb7e0,1280,verified,src/nvidia/cuda_driver_unplaced_10.c,cuda_driver_1fb7e0
 1fbd80,280,verified,src/nvidia/unnamed/c004_0.c,CudaDriverHr_1fbd80
 1fbea0,128,verified,src/nvidia/unnamed/c004_0.c,CudaDriverHr_1fbea0
 1fbf20,396,verified,src/nvidia/cuda_driver_unplaced_10.c,cuda_driver_1fbf20

@@ -4244,18 +4244,22 @@ void TroopMgr_134be40()
   char* v85;
   unsigned __int64 v86;
   char* v87;
-  __int64 (*v88)();
-  __int64 (*v89)();
-  __int64 v90;
-  __int64 v91;
+  struct {
+    __int64 (*v88)();
+    __int64 (*v89)();
+  } v88_;
+  struct {
+    __int64 v90;
+    __int64 v91;
+  } v90_;
   int v92;
 
   if (game_GameModeData_instance_ != 0 &&
       (*(_BYTE*)(game_GameModeData_instance_ + 92) & 2) != 0) {
     v0 = (__int64 (*)())TroopMgr_134c680_alt1();
-    TroopMgr_134b820_alt1((void*)(&v90), (__int64)v0);
-    v1 = X8CALL_X0(__int64, GameRoutine_134b980((void*)(&v88), v0));
-    v2 = *(_DWORD*)(*(_QWORD*)v90 + 84LL);
+    TroopMgr_134b820_alt1((void*)(&v90_.v90), (__int64)v0);
+    v1 = X8CALL_X0(__int64, GameRoutine_134b980((void*)(&v88_.v88), v0));
+    v2 = *(_DWORD*)(*(_QWORD*)v90_.v90 + 84LL);
     v3 = GameData_212c790;
     v4 = *GameData_212c790;
     v92 = v2;
@@ -4282,9 +4286,9 @@ void TroopMgr_134be40()
       }
       v1 = TroopMgr_1353fb0_alt1(v5 + 32, v8, &v92);
     }
-    v11 = v88;
-    v12 = v89;
-    if (v88 == v89) {
+    v11 = v88_.v88;
+    v12 = v88_.v89;
+    if (v88_.v88 == v88_.v89) {
       v13 = nullptr;
       v87 = nullptr;
       v27 = nullptr;
@@ -4366,8 +4370,8 @@ void TroopMgr_134be40()
         memcpy(v26, v13, v14 - v13);
       }
     }
-    v28 = v90;
-    v29 = v91;
+    v28 = v90_.v90;
+    v29 = v90_.v91;
     while (v28 != v29) {
       v38 = *(_QWORD**)v28;
       if ((*(_QWORD*)(*(_QWORD*)v28 + 96LL) |
@@ -4649,23 +4653,23 @@ void TroopMgr_134be40()
       nn_mem_StandardAllocator_Free(
           *(_QWORD*)fw_memory_g_heap_manager_ptr + v81, (_QWORD)(v13));
     }
-    if (v88 != nullptr) {
-      v89 = v88;
+    if (v88_.v88 != nullptr) {
+      v88_.v89 = v88_.v88;
       v82 = 128;
       if (*(_QWORD*)(*(_QWORD*)fw_memory_g_heap_manager_ptr + 200LL) == 0) {
         v82 = 56;
       }
       nn_mem_StandardAllocator_Free(
-          *(_QWORD*)fw_memory_g_heap_manager_ptr + v82, (_QWORD)(v88));
+          *(_QWORD*)fw_memory_g_heap_manager_ptr + v82, (_QWORD)(v88_.v88));
     }
-    if (v90 != 0) {
-      v91 = v90;
+    if (v90_.v90 != 0) {
+      v90_.v91 = v90_.v90;
       v83 = 128;
       if (*(_QWORD*)(*(_QWORD*)fw_memory_g_heap_manager_ptr + 200LL) == 0) {
         v83 = 56;
       }
       nn_mem_StandardAllocator_Free(
-          *(_QWORD*)fw_memory_g_heap_manager_ptr + v83, (_QWORD)(v90));
+          *(_QWORD*)fw_memory_g_heap_manager_ptr + v83, (_QWORD)(v90_.v90));
     }
   }
 }

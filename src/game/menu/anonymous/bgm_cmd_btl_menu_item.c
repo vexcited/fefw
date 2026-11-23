@@ -945,8 +945,10 @@ __int64 BgmCmdBtlMenuItem_1677660(__int64 a1)
   __int64 v6;
   __int64 v7;
   __int64 v8;
-  long double v9;
-  int v10;
+  struct {
+    long double v9;
+    int v10;
+  } v9_;
   int v11;
   int v12;
   int v13;
@@ -1005,9 +1007,9 @@ LABEL_6:
     else {
       v8 = v7 + 1;
     }
-    *(__n128*)&v9 = snd_fnd_calcCrc32(v8, 0);
-    v11 = v10;
-    v12 = snd_data_getMuseumDataCount(v9);
+    *(__n128*)&v9_.v9 = snd_fnd_calcCrc32(v8, 0);
+    v11 = v9_.v10;
+    v12 = snd_data_getMuseumDataCount(v9_.v9);
     if (v12 < 1) {
       v20 = (const char*)&GameData_1aa49c1;
     }

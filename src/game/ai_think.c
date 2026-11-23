@@ -29549,8 +29549,10 @@ __int64 game_AIThink_ActionSpecialAttack(__int64 a1, __int64 a2, __int64 a3)
   __int64 v41;
   int v42;
   __int64 v43;
-  __int64 v44;
-  __int64 v45;
+  struct {
+    __int64 v44;
+    __int64 v45;
+  } v44_;
   _QWORD* v46;
   int v47;
   _QWORD v48[4];
@@ -29579,7 +29581,7 @@ __int64 game_AIThink_ActionSpecialAttack(__int64 a1, __int64 a2, __int64 a3)
                         0xFFFFFFFF, &v47);
   v42 = 0;
   v43 = 0;
-  GameRoutine_12a1580(&v44);
+  GameRoutine_12a1580(&v44_.v44);
   v39 = 0;
   v38 = 0;
   v37[1] = 0;
@@ -29705,8 +29707,8 @@ LABEL_32:
       v27 = v28;
     } while (v28 != nullptr);
   }
-  v30 = v45;
-  v45 = 0;
+  v30 = v44_.v45;
+  v44_.v45 = 0;
   if (v30 != 0) {
     v31 = 128;
     if (*(_QWORD*)(*(_QWORD*)v9 + 200LL) == 0) {

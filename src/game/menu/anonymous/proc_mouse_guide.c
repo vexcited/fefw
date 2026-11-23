@@ -988,8 +988,10 @@ __n128 ProcMouseGuide_17a8800(__int64 a1, const char* a2, int a3, __int64 a4)
   __int64 v13;
   __int64 v14;
   __int64 v15;
-  __int64 v16;
-  __int64 v17;
+  struct {
+    __int64 v16;
+    __int64 v17;
+  } v16_;
   _QWORD v18[2];
   char* v19;
 
@@ -1026,11 +1028,11 @@ __n128 ProcMouseGuide_17a8800(__int64 a1, const char* a2, int a3, __int64 a4)
   else {
     v11 = (char*)v18 + 1;
   }
-  LayoutAccessor_1560070((void*)(&v16), a1 + 848, v11);
-  if (v17 != 0) {
-    v13 = std___1___shared_weak_count_lock(v17);
-    v14 = v16;
-    if (v17 != 0) {
+  LayoutAccessor_1560070((void*)(&v16_.v16), a1 + 848, v11);
+  if (v16_.v17 != 0) {
+    v13 = std___1___shared_weak_count_lock(v16_.v17);
+    v14 = v16_.v16;
+    if (v16_.v17 != 0) {
       result = std___1___shared_weak_count___release_weak_alt1();
     }
     if (v13 != 0 && v14 != 0) {

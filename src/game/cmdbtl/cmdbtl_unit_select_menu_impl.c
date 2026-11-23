@@ -93,8 +93,10 @@ __int64 CmdbtlUnitSelectMenu_1637cf0(__int64 a1)
   const char* v6;
   __int64 v7;
   unsigned int v8;
-  __int64 v10;
-  __int64 v11;
+  struct {
+    __int64 v10;
+    __int64 v11;
+  } v10_;
   _QWORD v12[2];
   char v13;
   int v14;
@@ -121,11 +123,11 @@ __int64 CmdbtlUnitSelectMenu_1637cf0(__int64 a1)
   v15 = v5;
   v16 = 3;
   GameRoutine_1593d90(v4, v12);
-  GameRoutine_1560070((void*)&v10, a1 + 952, "L_Num");
+  GameRoutine_1560070((void*)&v10_.v10, a1 + 952, "L_Num");
   v8 = CmdbtlUnitSelectMenu_1637be0(a1, v7);
-  GameRoutine_15940f0(&v10, v8, *(unsigned int*)(a1 + 1424));
-  if (v11 != 0) {
-    std___1___shared_weak_count___release_weak(v11);
+  GameRoutine_15940f0(&v10_.v10, v8, *(unsigned int*)(a1 + 1424));
+  if (v10_.v11 != 0) {
+    std___1___shared_weak_count___release_weak(v10_.v11);
   }
   return GameRoutine_1637e20(a1);
 }

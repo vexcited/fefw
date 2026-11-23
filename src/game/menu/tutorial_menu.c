@@ -172,8 +172,10 @@ __int64 TutorialMenu_Unknown84(__int64 a1)
   _QWORD* v43;
   _QWORD* v44;
   __int64 v45;
-  __int64 v46;
-  __int64 v47;
+  struct {
+    __int64 v46;
+    __int64 v47;
+  } v46_;
   _QWORD v48[4];
   _QWORD* v49;
   __int64 v50;
@@ -399,11 +401,11 @@ LABEL_42:
   game_menu_BasicMenu_Unknown16de4d0(a1);
 
 LABEL_43:
-  GameRoutine_1560070((void*)&v46, v12, "L_PageTab");
+  GameRoutine_1560070((void*)&v46_.v46, v12, "L_PageTab");
   v48[0] = GameData_206ffc8;
   v48[1] = a1;
   v49 = v48;
-  game_menu_PageTab_SetupLabel(a1 + 656, &v46, v48, 3, 4, 5);
+  game_menu_PageTab_SetupLabel(a1 + 656, &v46_.v46, v48, 3, 4, 5);
   if (v49 == v48) {
     v33 = 32;
   LABEL_47:
@@ -413,9 +415,9 @@ LABEL_43:
     v33 = 40;
     goto LABEL_47;
   }
-  result = v47;
-  if (v47 != 0) {
-    return std___1___shared_weak_count___release_weak(v47);
+  result = v46_.v47;
+  if (v46_.v47 != 0) {
+    return std___1___shared_weak_count___release_weak(v46_.v47);
   }
   return result;
 }

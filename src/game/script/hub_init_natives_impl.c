@@ -105,8 +105,10 @@ void hub_init_OverrideInitLocator(unsigned __int8* a1)
     unsigned __int64 v57;
     char* v58;
   } v56_;
-  unsigned __int8* v59;
-  unsigned __int8* v60;
+  struct {
+    unsigned __int8* v59;
+    unsigned __int8* v60;
+  } v59_;
   struct {
     __int64 v61;
     unsigned __int64 v62;
@@ -182,11 +184,11 @@ LABEL_9:
   v36 = 0;
   v34 = nullptr;
   game_hub_LocatorDispos_CreateExternalDataImpl(
-      (void*)(&v59), *(_QWORD*)GameData_212ec00, (__int64)v11, v9, &v34, v14,
+      (void*)(&v59_.v59), *(_QWORD*)GameData_212ec00, (__int64)v11, v9, &v34, v14,
       v15);
-  v16 = v59;
-  if (v60 != v59) {
-    LocatorDispos_db2180((void*)(&v56_.v56), (unsigned __int8*)&v61_.v61, v59);
+  v16 = v59_.v59;
+  if (v59_.v60 != v59_.v59) {
+    LocatorDispos_db2180((void*)(&v56_.v56), (unsigned __int8*)&v61_.v61, v59_.v59);
     if (*(_BYTE*)(GameData_21f3d10 + 9) == 1) {
       LOBYTE(v34) = 0;
       v46 = 0;
@@ -198,7 +200,7 @@ LABEL_9:
       v51 = nullptr;
       v52 = 0;
       LOBYTE(v53) = 0;
-      HubNatives_ccba40(&v34, v59 + 24);
+      HubNatives_ccba40(&v34, v59_.v59 + 24);
       LODWORD(v52) = 0;
       v46 = 1;
       if ((v49 & 1) != 0) {
@@ -249,7 +251,7 @@ LABEL_9:
       }
     }
     else {
-      v17 = v59;
+      v17 = v59_.v59;
       v34 = nullptr;
       v35 = 0;
       v36 = 0;
@@ -263,7 +265,7 @@ LABEL_9:
       v43 = 0;
       memset(v44, 0, 21);
       v45 = 0;
-      GameRoutine_dbced0((__int64*)&v34, v59 + 376);
+      GameRoutine_dbced0((__int64*)&v34, v59_.v59 + 376);
       *(_QWORD*)&v19 = *((_QWORD*)v17 + 20);
       v40 = 2;
       *(_QWORD*)v44 = v19;
@@ -305,13 +307,13 @@ LABEL_9:
       nn_mem_StandardAllocator_Free(
           *(_QWORD*)fw_memory_g_heap_manager_ptr + v27, v56_.v58);
     }
-    v16 = v59;
+    v16 = v59_.v59;
   }
   if (v16 != nullptr) {
-    if (v16 == v60) {
+    if (v16 == v59_.v60) {
       goto LABEL_83;
     }
-    v28 = v60 - 616;
+    v28 = v59_.v60 - 616;
     v29 = fw_memory_g_heap_manager_ptr;
     do {
       HubNatives_ccbf80(v28 + 24);
@@ -330,9 +332,9 @@ LABEL_9:
       v12 = v28 == v16;
       v28 -= 616;
     } while (!v12);
-    v60 = v16;
-    v16 = v59;
-    if (v59 != nullptr) {
+    v59_.v60 = v16;
+    v16 = v59_.v59;
+    if (v59_.v59 != nullptr) {
     LABEL_83:
       v32 = 128;
       if (*(_QWORD*)(*(_QWORD*)fw_memory_g_heap_manager_ptr + 200LL) == 0) {

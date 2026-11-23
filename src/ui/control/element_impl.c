@@ -1205,8 +1205,10 @@ __int64 Element_1887de0(__int64 result, __int64* a2, __int64 a3, __int64 a4)
   _QWORD* v39;
   __int64 v40;
   _QWORD v41[2];
-  _QWORD* v42;
-  __int64 v43;
+  struct {
+    _QWORD* v42;
+    __int64 v43;
+  } v42_;
   struct {
     __int64 v44;
     unsigned __int64 v45;
@@ -1261,8 +1263,8 @@ LABEL_12:
     }
     v41[0] = v12;
     v41[1] = v14;
-    GameRoutine_15b71b0((void*)&v42, v13, v41);
-    result = v43;
+    GameRoutine_15b71b0((void*)&v42_.v42, v13, v41);
+    result = v42_.v43;
     *v4 = 0;
     v4[1] = 0;
     if (result == 0) {
@@ -1284,18 +1286,18 @@ LABEL_12:
     v4[1] = v15;
     if (v15 == 0) {
       v16 = nullptr;
-      result = v43;
-      if (v43 == 0) {
+      result = v42_.v43;
+      if (v42_.v43 == 0) {
         goto LABEL_21;
       }
     LABEL_20:
       result = std___1___shared_weak_count___release_weak(result);
       goto LABEL_21;
     }
-    v16 = v42;
-    *v4 = v42;
-    result = v43;
-    if (v43 != 0) {
+    v16 = v42_.v42;
+    *v4 = v42_.v42;
+    result = v42_.v43;
+    if (v42_.v43 != 0) {
       goto LABEL_20;
     }
   LABEL_21:

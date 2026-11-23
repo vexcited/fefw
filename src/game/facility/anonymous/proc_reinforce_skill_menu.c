@@ -294,12 +294,16 @@ __int64 ProcReinforceSkillMenu_Unknown88(__int64 a1)
   __int64 v6;
   char v7;
   __int64 v8;
-  __int64 v9;
-  __int64 v10;
+  struct {
+    __int64 v9;
+    __int64 v10;
+  } v9_;
   __int64 v11;
   __int64 v12;
-  __int64 v13;
-  __int64 v14;
+  struct {
+    __int64 v13;
+    __int64 v14;
+  } v13_;
   __int64 v15;
   __int64 v16;
 
@@ -319,23 +323,23 @@ __int64 ProcReinforceSkillMenu_Unknown88(__int64 a1)
       }
       else {
         ui_LayoutAccessor_SetPaneVisible(a1 + 848, "N_After", 1);
-        GameRoutine_1560070((void*)&v13, a1 + 848, "L_InfoDetail_Before");
+        GameRoutine_1560070((void*)&v13_.v13, a1 + 848, "L_InfoDetail_Before");
         v4 = GameData_212c880[0];
         GameRoutine_15d2f60(
-            &v13,
+            &v13_.v13,
             *(_QWORD*)(*(_QWORD*)(*(_QWORD*)(*GameData_212c880[0] + 64) +
                                   8LL * (*(_DWORD*)(v3 + 96) & 0xFFF)) +
                        24LL) +
                 8LL,
             *(_QWORD*)(v3 + 88), 0);
-        if (v14 != 0) {
-          std___1___shared_weak_count___release_weak(v14);
+        if (v13_.v14 != 0) {
+          std___1___shared_weak_count___release_weak(v13_.v14);
         }
-        GameRoutine_1560070((void*)&v9, a1 + 848, "L_InfoDetail_After");
-        if (v10 != 0 && (v5 = std___1___shared_weak_count_lock(v10)) != 0) {
+        GameRoutine_1560070((void*)&v9_.v9, a1 + 848, "L_InfoDetail_After");
+        if (v9_.v10 != 0 && (v5 = std___1___shared_weak_count_lock(v9_.v10)) != 0) {
           v6 = v5;
           v7 = 0;
-          v11 = v9;
+          v11 = v9_.v9;
           v12 = v5;
           atomic_fetch_add_explicit((atomic_ullong* volatile)(v5 + 16), 1u,
                                     memory_order_relaxed);
@@ -358,8 +362,8 @@ __int64 ProcReinforceSkillMenu_Unknown88(__int64 a1)
           (*(void (**)(__int64))(*(_QWORD*)v6 + 16LL))(v6);
           std___1___shared_weak_count___release_weak(v6);
         }
-        result = v10;
-        if (v10 != 0) {
+        result = v9_.v10;
+        if (v9_.v10 != 0) {
           return std___1___shared_weak_count___release_weak(result);
         }
       }

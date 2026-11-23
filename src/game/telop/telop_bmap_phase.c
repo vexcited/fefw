@@ -114,8 +114,10 @@ __int64 TelopBmapPhase_137b260(__int64 a1)
   __int64 v76;
   __int64 v77;
   __int128 v78;
-  __int64 v79;
-  __int64 v80;
+  struct {
+    __int64 v79;
+    __int64 v80;
+  } v79_;
   _QWORD v81[2];
   __int64 v82;
   int v83;
@@ -226,11 +228,11 @@ __int64 TelopBmapPhase_137b260(__int64 a1)
         v83 = 9;
         v25 = eft_g_effectSystem_ptr[0];
         v26 = Manager_bc6460(*eft_g_effectSystem_ptr[0], v81, 0);
-        GameRoutine_14a10d0(&v79, v26, v27, &GameData_1a9f09e);
-        v28 = v79;
-        v29 = v80;
-        if (v80 != 0) {
-          atomic_fetch_add_explicit((atomic_ullong* volatile)(v80 + 8), 1u,
+        GameRoutine_14a10d0(&v79_.v79, v26, v27, &GameData_1a9f09e);
+        v28 = v79_.v79;
+        v29 = v79_.v80;
+        if (v79_.v80 != 0) {
+          atomic_fetch_add_explicit((atomic_ullong* volatile)(v79_.v80 + 8), 1u,
                                     memory_order_relaxed);
         }
         v30 = *(_QWORD*)(a1 + 888);
@@ -257,8 +259,8 @@ __int64 TelopBmapPhase_137b260(__int64 a1)
             v31 = v75;
           }
         }
-        v32 = v80;
-        if (v80 != 0 && atomic_fetch_add((atomic_ullong* volatile)(v80 + 8),
+        v32 = v79_.v80;
+        if (v79_.v80 != 0 && atomic_fetch_add((atomic_ullong* volatile)(v79_.v80 + 8),
                                          0xFFFFFFFFFFFFFFFFLL) == 0) {
           v76 = v31;
           (*(void (**)(__int64))(*(_QWORD*)v32 + 16LL))(v32);
@@ -361,11 +363,11 @@ __int64 TelopBmapPhase_137b260(__int64 a1)
         v87 = v53;
         v83 = 9;
         v55 = Manager_bc6460(v54, v81, 0);
-        result = GameRoutine_14a10d0(&v79, v55, v56, &GameData_1a9f09e);
-        v58 = v79;
-        v59 = v80;
-        if (v80 != 0) {
-          atomic_fetch_add_explicit((atomic_ullong* volatile)(v80 + 8), 1u,
+        result = GameRoutine_14a10d0(&v79_.v79, v55, v56, &GameData_1a9f09e);
+        v58 = v79_.v79;
+        v59 = v79_.v80;
+        if (v79_.v80 != 0) {
+          atomic_fetch_add_explicit((atomic_ullong* volatile)(v79_.v80 + 8), 1u,
                                     memory_order_relaxed);
         }
         v60 = *(_QWORD*)(a1 + 904);
@@ -388,8 +390,8 @@ __int64 TelopBmapPhase_137b260(__int64 a1)
             result = std___1___shared_weak_count___release_weak(v59);
           }
         }
-        v61 = v80;
-        if (v80 != 0 && atomic_fetch_add((atomic_ullong* volatile)(v80 + 8),
+        v61 = v79_.v80;
+        if (v79_.v80 != 0 && atomic_fetch_add((atomic_ullong* volatile)(v79_.v80 + 8),
                                          0xFFFFFFFFFFFFFFFFLL) == 0) {
           (*(void (**)(__int64))(*(_QWORD*)v61 + 16LL))(v61);
           result = std___1___shared_weak_count___release_weak(v61);

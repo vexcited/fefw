@@ -8039,8 +8039,10 @@ __int64 Util_157d6f0(__int64* a1, __int64* a2)
   int v28;
   int v29;
   _BOOL8 v30;
-  __int64 v32;
-  __int64 v33;
+  struct {
+    __int64 v32;
+    __int64 v33;
+  } v32_;
   _QWORD v34[2];
   __int64 v35;
   _QWORD v36[2];
@@ -8082,7 +8084,7 @@ LABEL_14:
     v14 = __dynamic_cast(v14, GameData_212d670[0], GameData_212d678[0], 0);
   }
   GameRoutine_1841fc0(v14, v13);
-  LayoutAccessor_1560070((void*)(&v32), a1, (__int64)"L_Gauge");
+  LayoutAccessor_1560070((void*)(&v32_.v32), a1, (__int64)"L_Gauge");
   v15 = *a2;
   v16 = 0;
   if (*a2 != 0) {
@@ -8127,9 +8129,9 @@ LABEL_14:
       *(float*)&v26 = (float)v29 / (float)v27;
     }
   }
-  GameRoutine_174d580(&v32, "GaugeUp", 7, v26);
-  if (v33 != 0) {
-    std___1___shared_weak_count___release_weak(v33);
+  GameRoutine_174d580(&v32_.v32, "GaugeUp", 7, v26);
+  if (v32_.v33 != 0) {
+    std___1___shared_weak_count___release_weak(v32_.v33);
   }
   v30 = (unsigned int)GameRoutine_8ca500(a2) != 0;
   return ui_LayoutAccessor_SetPaneVisible(a1, "L_Gauge", v30);
@@ -14004,8 +14006,10 @@ __int64 Util_1586840(__int64* a1, char a2)
   __int64 v5;
   __int64 v6;
   __int64 result;
-  __int64 v8;
-  __int64 v9;
+  struct {
+    __int64 v8;
+    __int64 v9;
+  } v8_;
   _BYTE v10[32];
   _QWORD v11[4];
   int v12;
@@ -14025,20 +14029,20 @@ __int64 Util_1586840(__int64* a1, char a2)
   if (v12 <= 24) {
     do {
       sprintf(v10, "L_Unit%02d", v3);
-      LayoutAccessor_1560070((void*)(&v8), a1, (__int64)v10);
-      if (v9 != 0) {
-        v4 = std___1___shared_weak_count_lock(v9);
+      LayoutAccessor_1560070((void*)(&v8_.v8), a1, (__int64)v10);
+      if (v8_.v9 != 0) {
+        v4 = std___1___shared_weak_count_lock(v8_.v9);
         if (v4 != 0) {
           v5 = v4;
-          if (v8 != 0) {
-            LayoutAccessor_155e830_alt2(v8, 0);
+          if (v8_.v8 != 0) {
+            LayoutAccessor_155e830_alt2(v8_.v8, 0);
           }
           if (atomic_fetch_add((atomic_ullong* volatile)(v5 + 8),
                                0xFFFFFFFFFFFFFFFFLL) == 0) {
             (*(void (**)(__int64))(*(_QWORD*)v5 + 16LL))(v5);
             std___1___shared_weak_count___release_weak(v5);
-            v6 = v9;
-            if (v9 == 0) {
+            v6 = v8_.v9;
+            if (v8_.v9 == 0) {
               goto LABEL_3;
             }
           LABEL_10:
@@ -14046,8 +14050,8 @@ __int64 Util_1586840(__int64* a1, char a2)
             goto LABEL_3;
           }
         }
-        v6 = v9;
-        if (v9 != 0) {
+        v6 = v8_.v9;
+        if (v8_.v9 != 0) {
           goto LABEL_10;
         }
       }
