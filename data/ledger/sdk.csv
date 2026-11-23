@@ -3357,7 +3357,7 @@ f7af0,312,verified,src/nn/fs/fs_event_notifier_api.cpp,_ZN2nn2fs36OpenGameCardAw
 f7c30,352,verified,src/nn/fs/fs_game_card_api.cpp,_ZN2nn2fs21OpenGameCardPartitionEPNSt3__110unique_ptrINS0_8IStorageENS1_14default_deleteIS3_EEEEjNS0_20GameCardPartitionRawE
 f7da0,252,verified,src/nn/fs/fs_game_card_api.cpp,_ZN2nn2fs13EraseGameCardENS0_12GameCardSizeEm
 f7ea0,284,verified,src/nn/fs/fs_game_card_api.cpp,_ZN2nn2fs12_GLOBAL__N_119GetGameCardOperatorEPNS_2sf13SharedPointerINS_5fssrv2sf22IStorageDeviceOperatorEEE
-f7fc0,1184,verified,src/nn/fs/fs_game_card_api.cpp,_ZN2nn2fs30GetGameCardUpdatePartitionInfoEPbPNS0_27GameCardUpdatePartitionInfoEj
+f7fc0,1192,verified,src/nn/fs/fs_game_card_api.cpp,_ZN2nn2fs30GetGameCardUpdatePartitionInfoEPbPNS0_27GameCardUpdatePartitionInfoEj
 f8470,80,verified,src/nn/fs/fs_game_card_api.cpp,_ZN2nn2fs12_GLOBAL__N_134IsGameCardUpdatePartitionAvailableEPbPKcb
 f84c0,332,verified,src/nn/fs/fs_game_card_api.cpp,_ZN2nn2fs22FinalizeGameCardDriverEv
 f8610,584,verified,src/nn/fs/fs_game_card_api.cpp,_ZN2nn2fs20GetGameCardAttributeEPNS0_17GameCardAttributeEj
@@ -3902,7 +3902,7 @@ ffee0,324,verified,src/nn/fs/unplaced.c,nn_fs_GetAndClearMemoryReportInfo
 11bc20,24,verified,src/nn/fs/fs_romfs_file.cpp,_ZN2nn2fs6detail9RomFsFileC2EPNS0_15RomFsFileSystemEll
 11bc40,4,verified,src/nn/fs/fs_romfs_file.cpp,_ZN2nn2fs6detail9RomFsFileD2Ev
 11bc50,48,verified,src/nn/fs/fs_romfs_file.cpp,_ZN2nn2fs6detail9RomFsFileD0Ev
-11bc80,228,verified,src/nn/fs/fs_romfs_file.cpp,_ZN2nn2fs6detail9RomFsFile6DoReadEPmlPvmRKNS0_10ReadOptionE
+11bc80,168,disputed,src/nn/fs/fs_romfs_file.cpp,_ZN2nn2fs6detail9RomFsFile6DoReadEPmlPvmRKNS0_10ReadOptionE
 11bd70,8,verified,src/nn/fs/fs_romfs_file.cpp,_ZN2nn2fs15RomFsFileSystem14GetBaseStorageEv
 11bd80,20,verified,src/nn/fs/fs_romfs_file.cpp,_ZN2nn2fs6detail9RomFsFile9DoGetSizeEPl
 11bda0,12,verified,src/nn/fs/fs_romfs_file.cpp,_ZNK2nn2fs6detail9RomFsFile7GetSizeEv
@@ -9008,10 +9008,10 @@ ffee0,324,verified,src/nn/fs/unplaced.c,nn_fs_GetAndClearMemoryReportInfo
 1f2580,100,verified,src/nn/audio/audio_fft_api.cpp,_ZN2nn5audio6detail31FftProcessInternalImplInt16RealEPsiPKsiRKNS1_13FftWorkBufferENS1_12FftDirectionEj
 1f25f0,72,verified,src/nn/audio/audio_fft_work_buffer.cpp,_ZN2nn5audio6detail26GetFftWorkBufferSizeCommonEmNS0_14FftProcessTypeEi
 1f2640,8,verified,src/nn/audio/audio_fft_api.cpp,_ZN2nn5audio6detail31GetFftWorkBufferAlignmentCommonEv
-1f2660,1064,verified,src/nn/audio/unplaced.c,nn_audio_detail_InitializeFftWorkBufferCommon
-1f31e0,640,verified,src/nn/audio/unplaced.c,nn_audio_detail_FftInPlaceProcessComplexDoubleCommon
-1f36e0,772,verified,src/nn/audio/unplaced.c,nn_audio_1f36e0
-1f3a00,596,verified,src/nn/audio/unplaced.c,nn_audio_detail_FftInPlaceProcessRealDoubleCommon
+1f2660,2648,verified,src/nn/audio/unplaced.c,nn_audio_detail_InitializeFftWorkBufferCommon
+1f31e0,888,verified,src/nn/audio/unplaced.c,nn_audio_detail_FftInPlaceProcessComplexDoubleCommon
+1f36e0,772,disputed,src/nn/audio/unplaced.c,nn_audio_1f36e0
+1f3a00,596,disputed,src/nn/audio/unplaced.c,nn_audio_detail_FftInPlaceProcessRealDoubleCommon
 1f3c60,16,verified,src/nn/audio/vector_fill.cpp,_ZN2nn5audio4util10RoundInt32El
 1f3c70,16,verified,src/nn/audio/vector_fill.cpp,_ZN2nn5audio4util13MulInt32Int32Eii
 1f3c80,12,verified,src/nn/audio/vector_fill.cpp,_ZN2nn5audio4util10RoundInt16Ei
@@ -9713,7 +9713,7 @@ ffee0,324,verified,src/nn/fs/unplaced.c,nn_fs_GetAndClearMemoryReportInfo
 22f660,16,verified,src/nn/audio/renderer_voice.cpp,_ZN2nn5audio21ClearVoiceDestinationEPNS0_19AudioRendererConfigEPNS0_9VoiceTypeE
 22f670,4,verified,src/nn/sdk_trivial.cpp,_Z14SdkStub_22f670v
 22f680,276,verified,src/nn/unplaced_8.c,nn_22f680
-22f880,376,verified,src/nn/audio/unplaced.c,nn_audio_OpenAudioRenderer_22f880
+22f880,376,disputed,src/nn/audio/unplaced.c,nn_audio_OpenAudioRenderer_22f880
 22fbf0,204,verified,src/nn/audio/unplaced.c,nn_audio_OpenAudioRenderer_22fbf0
 22fcf0,92,verified,src/nn/audio/audio_renderer.cpp,_ZN2nn5audio18CloseAudioRendererENS0_19AudioRendererHandleE
 22fd50,64,verified,src/nn/audio/audio_renderer.cpp,_ZN2nn5audio18StartAudioRendererENS0_19AudioRendererHandleE
@@ -10758,12 +10758,12 @@ ffee0,324,verified,src/nn/fs/unplaced.c,nn_fs_GetAndClearMemoryReportInfo
 27b900,104,verified,src/nn/audio/adspshell/adspshell.cpp,_ZN2nn5audio9adspshell6detail21SendStressTestCommandERKNS2_19StressTestParameterE
 27b970,88,verified,src/nn/audio/common/unplaced.c,nn_audio_common_GetExecutionTimeoutMonitor
 27b9d0,92,verified,src/nn/audio/unplaced.c,nn_audio_27b9d0
-27ba40,836,verified,src/nn/audio/unplaced.c,nn_audio_27ba40
-27bf20,668,verified,src/nn/audio/unplaced.c,nn_audio_27bf20
-27c340,664,verified,src/nn/audio/unplaced.c,nn_audio_27c340
+27ba40,908,verified,src/nn/audio/unplaced.c,nn_audio_27ba40
+27bf20,712,verified,src/nn/audio/unplaced.c,nn_audio_27bf20
+27c340,688,verified,src/nn/audio/unplaced.c,nn_audio_27c340
 27c760,84,verified,src/nn/audio/unplaced.c,nn_audio_27c760
 27c7c0,652,verified,src/nn/audio/unplaced.c,nn_audio_27c7c0
-27ca60,612,verified,src/nn/audio/unplaced.c,nn_audio_27ca60
+27ca60,636,verified,src/nn/audio/unplaced.c,nn_audio_27ca60
 27ce60,96,verified,src/nn/audio/unplaced.c,nn_audio_27ce60
 27ced0,20,verified,src/nn/audio/unplaced.c,nn_audio_27ced0
 27cef0,20,verified,src/nn/audio/unplaced.c,nn_audio_27cef0
@@ -11167,7 +11167,7 @@ ffee0,324,verified,src/nn/fs/unplaced.c,nn_fs_GetAndClearMemoryReportInfo
 2ae880,12,verified,src/nn/audio/audio_misc_state.cpp,_ZN2nn5audio7karaoke32IsKaraokeInputDevicesInitializedEv
 2ae890,132,verified,src/nn/audio/unplaced.c,nn_audio_karaoke_InitializeKaraokeInputDevicesImpl
 2ae9a0,120,verified,src/nn/audio/unplaced.c,nn_audio_karaoke_FinalizeKaraokeInputDevicesImpl
-2aea20,268,verified,src/nn/audio/unplaced.c,nn_audio_karaoke_ListActiveVirtualKaraokeInputDevicesImpl
+2aea20,268,disputed,src/nn/audio/unplaced.c,nn_audio_karaoke_ListActiveVirtualKaraokeInputDevicesImpl
 2aebe0,140,verified,src/nn/audio/unplaced.c,nn_audio_karaoke_GetKaraokeInputDeviceStatusImpl
 2aec70,128,verified,src/nn/audio/unplaced.c,nn_audio_karaoke_SetKaraokeInputDeviceGainImpl
 2aecf0,136,verified,src/nn/audio/unplaced.c,nn_audio_karaoke_GetKaraokeInputDeviceGainImpl
@@ -11839,7 +11839,7 @@ ffee0,324,verified,src/nn/fs/unplaced.c,nn_fs_GetAndClearMemoryReportInfo
 2dcae0,3152,verified,src/opus/celt/celt_encoder.c,tf_analysis
 2dd7a0,1404,verified,src/opus/celt/celt_encoder.c,alloc_trim_analysis
 2ddda0,144,verified,src/opus/celt/celt_encoder.c,opus_custom_encoder_ctl
-2de540,612,verified,src/opus/celt/unplaced.c,opus_celt_2de540
+2de540,612,disputed,src/opus/celt/unplaced.c,opus_celt_2de540
 2deb00,852,verified,src/opus/celt/celt_lpc.c,celt_fir_c
 2def00,1704,verified,src/opus/celt/celt_lpc.c,celt_iir
 2df6c0,1620,verified,src/opus/celt/celt_lpc.c,_celt_autocorr
@@ -11873,7 +11873,7 @@ ffee0,324,verified,src/nn/fs/unplaced.c,nn_fs_GetAndClearMemoryReportInfo
 2e2830,104,verified,src/opus/celt/mathops.c,celt_rsqrt_norm
 2e28a0,176,verified,src/opus/celt/mathops.c,celt_sqrt
 2e2950,244,verified,src/opus/celt/mathops.c,celt_cos_norm
-2e2a60,1880,disputed,src/opus/celt/unplaced.c,opus_celt_2e2a60
+2e2a60,2092,disputed,src/opus/celt/unplaced.c,opus_celt_2e2a60
 2e32e0,1092,verified,src/opus/celt/mdct.c,clt_mdct_backward_c
 2e3750,96,verified,src/opus/celt/modes.c,opus_custom_mode_create
 2e37c0,1800,verified,src/opus/celt/unplaced_5.c,opus_celt_2e37c0
@@ -18505,7 +18505,7 @@ ffee0,324,verified,src/nn/fs/unplaced.c,nn_fs_GetAndClearMemoryReportInfo
 5369d0,52,verified,src/nandroid/libstagefright/mpeg2ts/ATSParser.cpp,_ZNK8nandroid9ATSParser6Stream7isVideoEv
 536a10,16,verified,src/nandroid/libstagefright/mpeg2ts/ATSParser.cpp,_ZNK8nandroid9ATSParser6Stream6isMetaEv
 536a20,156,verified,src/nandroid/libstagefright/mpeg2ts/ATSParser.cpp,_ZN8nandroid9ATSParser7Program21convertPTSToTimestampEm
-536ac0,1696,verified,src/nandroid/libstagefright/mpeg2ts/ATSParser_impl.c,nandroid_ATSParser_Stream_Stream
+536ac0,1712,verified,src/nandroid/libstagefright/mpeg2ts/ATSParser_impl.c,nandroid_ATSParser_Stream_Stream
 5371c0,400,verified,src/nandroid/libstagefright/mpeg2ts/ATSParser.cpp,_ZN8nandroid9ATSParser6Stream20ensureBufferCapacityEm
 5374e0,280,verified,src/nandroid/libstagefright/mpeg2ts/ATSParser_impl.c,ATSParser_5374e0
 537600,268,verified,src/nandroid/libstagefright/mpeg2ts/ATSParser_impl.c,ATSParser_537600
@@ -18573,9 +18573,9 @@ ffee0,324,verified,src/nn/fs/unplaced.c,nn_fs_GetAndClearMemoryReportInfo
 53b3c0,84,verified,src/nandroid/libstagefright/mpeg2ts/ATSParser.cpp,_ZNK8nandroid6VectorIiE8do_splatEPvPKvm
 53b430,20,verified,src/nandroid/libstagefright/mpeg2ts/ATSParser.cpp,_ZNK8nandroid6VectorIiE15do_move_forwardEPvPKvm
 53b450,20,verified,src/nandroid/libstagefright/mpeg2ts/ATSParser.cpp,_ZNK8nandroid6VectorIiE16do_move_backwardEPvPKvm
-53b480,344,verified,src/nandroid/libstagefright/mpeg2ts/ATSParser_impl.c,ATSParser_53b480
-53b5e0,584,verified,src/nandroid/libstagefright/mpeg2ts/ATSParser_impl.c,ATSParser_53b5e0
-53b960,1032,verified,src/nandroid/libstagefright/mpeg2ts/ATSParser_impl.c,ATSParser_53b960
+53b480,348,verified,src/nandroid/libstagefright/mpeg2ts/ATSParser_impl.c,ATSParser_53b480
+53b5e0,580,disputed,src/nandroid/libstagefright/mpeg2ts/ATSParser_impl.c,ATSParser_53b5e0
+53b960,1100,verified,src/nandroid/libstagefright/mpeg2ts/ATSParser_impl.c,ATSParser_53b960
 53bec0,576,verified,src/nandroid/libstagefright/mpeg2ts/ATSParser_impl.c,std___1___tree___assign_multi
 53c140,252,verified,src/nandroid/libstagefright/mpeg2ts/ATSParser_impl.c,ATSParser_53c140
 53c240,260,verified,src/nandroid/libstagefright/mpeg2ts/ATSParser_impl.c,ATSParser_53c240
@@ -23685,7 +23685,7 @@ ffee0,324,verified,src/nn/fs/unplaced.c,nn_fs_GetAndClearMemoryReportInfo
 5f8fc0,8,verified,src/nvidia/nvos_misc.cpp,NvOsHosIsUsingCoreCallbacks
 5f8fd0,60,verified,src/nn/unnamed/s003_0.c,SdkHr_5f8fd0
 5f9010,12,verified,src/nn/unnamed/u000_0.c,SdkHr_5f9010
-5f9020,156,verified,src/nvidia/unplaced_25.c,nvidia_5f9020
+5f9020,156,disputed,src/nvidia/unplaced_25.c,nvidia_5f9020
 5f90c0,260,verified,src/nvidia/unplaced_25.c,nvidia_5f90c0
 5f91d0,144,verified,src/nn/unnamed/s003_0.c,SdkHr_5f91d0
 5f9260,28,verified,src/nn/unnamed/s003_0.c,SdkHr_5f9260
@@ -24216,7 +24216,7 @@ ffee0,324,verified,src/nn/fs/unplaced.c,nn_fs_GetAndClearMemoryReportInfo
 621720,696,verified,src/nvidia/unplaced_3.c,nvidia_621720
 621a20,2348,verified,src/nvidia/unplaced_3.c,nvidia_621a20
 622350,604,verified,src/nvidia/unplaced_3.c,nvidia_622350
-6225f0,3672,verified,src/nvidia/unplaced_25.c,nvidia_6225f0
+6225f0,3672,disputed,src/nvidia/unplaced_25.c,nvidia_6225f0
 623710,824,verified,src/nvidia/unplaced_3.c,nvidia_623710
 623a50,56,verified,src/nvidia/unplaced_3.c,nvidia_623a50
 623a90,20,verified,src/nvidia/unplaced_3.c,nvidia_623a90
@@ -24499,7 +24499,7 @@ ffee0,324,verified,src/nn/fs/unplaced.c,nn_fs_GetAndClearMemoryReportInfo
 62e0d0,112,verified,src/nvidia/unplaced_5.c,nvidia_62e0d0
 62e140,504,verified,src/nvidia/unplaced_5.c,nvidia_62e140
 62e9b0,88,verified,src/nvidia/unplaced_5.c,nvidia_62e9b0
-62ea10,300,verified,src/nvidia/unplaced_25.c,nvidia_62ea10
+62ea10,320,verified,src/nvidia/unplaced_25.c,nvidia_62ea10
 62eb50,264,verified,src/nvidia/unplaced_5.c,nvidia_62eb50
 62ec60,172,verified,src/nvidia/unplaced_5.c,nvidia_62ec60
 62ed10,28,verified,src/nvidia/unplaced_5.c,nvidia_62ed10
@@ -24622,7 +24622,7 @@ ffee0,324,verified,src/nn/fs/unplaced.c,nn_fs_GetAndClearMemoryReportInfo
 637b20,116,verified,src/nvidia/unplaced_6.c,nvidia_637b20
 637ba0,380,verified,src/nvidia/unplaced_6.c,nvidia_637ba0
 637d30,296,verified,src/nvidia/unplaced_6.c,nvidia_637d30
-637e60,556,verified,src/nvidia/unplaced_25.c,nvidia_637e60
+637e60,728,verified,src/nvidia/unplaced_25.c,nvidia_637e60
 638160,344,verified,src/nvidia/unplaced_6.c,nvidia_638160
 6382d0,252,verified,src/nvidia/nvstl/impl/nvstl_mutex_impl_nvos_inline.c,nvstl_mutex_impl_nvos_6382d0
 6383e0,44,verified,src/nn/sdk_trivial_more.cpp,_Z14SdkStub_6383e0m
@@ -24731,7 +24731,7 @@ ffee0,324,verified,src/nn/fs/unplaced.c,nn_fs_GetAndClearMemoryReportInfo
 63d4a0,184,verified,src/nvidia/unplaced_7.c,nvidia_63d4a0
 63d560,336,verified,src/nvidia/nvstl/impl/nvstl_mutex_impl_nvos_inline.c,nvstl_mutex_impl_nvos_63d560
 63d6e0,280,verified,src/nvidia/nvstl/impl/nvstl_mutex_impl_nvos_inline.c,nvstl_mutex_impl_nvos_63d6e0
-63d810,140,verified,src/nvidia/unplaced_7.c,nvidia_63d810
+63d810,220,verified,src/nvidia/unplaced_7.c,nvidia_63d810
 63d8f0,12,verified,src/nvidia/unplaced_7.c,nvidia_63d8f0
 63d900,160,verified,src/nvidia/unplaced_7.c,nvidia_63d900
 63d9a0,224,verified,src/nvidia/unplaced_7.c,nvidia_63d9a0
@@ -26637,7 +26637,7 @@ ffee0,324,verified,src/nn/fs/unplaced.c,nn_fs_GetAndClearMemoryReportInfo
 669880,8,verified,src/nn/sdk_trivial.cpp,_Z14SdkStub_669880m
 669890,8,verified,src/nn/sdk_trivial.cpp,_Z14SdkStub_669890m
 6698a0,384,verified,src/nn/unnamed/s004_0.c,SdkHr_6698a0
-669a20,208,verified,src/nn/unplaced_11.c,nn_669a20
+669a20,320,verified,src/nn/unplaced_11.c,nn_669a20
 669c40,28,verified,src/nn/unnamed/s004_0.c,SdkHr_669c40
 669c60,136,verified,src/nn/unnamed/s004_0.c,SdkHr_669c60
 669cf0,276,verified,src/nn/unnamed/a001_0.c,SdkHr_669cf0
