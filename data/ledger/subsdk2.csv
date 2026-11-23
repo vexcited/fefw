@@ -319,7 +319,7 @@ de00,340,verified,src/movie/detail/movie_media_decoder_impl.cpp,_ZN2nn2os6detail
 df60,684,verified,src/movie/detail/movie_media_decoder_state_impl.c,movie_detail_MediaDecoderState_MediaDecoderState
 e210,268,verified,src/movie/detail/movie_media_decoder_state.cpp,_ZNK5movie6detail17MediaDecoderState20ValidateCurrentStateENS1_21MediaDecoderFunctionsE
 e320,648,verified,src/movie/detail/movie_utils.cpp,_ZN5movie6detail27ConvertNnMovieToMovieResultEN2nn6ResultE
-e5e0,244,verified,src/movie/detail/movie_utils.cpp,_ZN5movie6detail27ConvertMovieResultToNnMovieENS_11MovieResultE
+e5e0,256,verified,src/movie/detail/movie_utils.cpp,_ZN5movie6detail27ConvertMovieResultToNnMovieENS_11MovieResultE
 e740,40,verified,src/movie/detail/movie_utils.cpp,_ZN5movie6detail30ConvertHttpStatusToMovieResultEj
 e770,264,verified,src/movie/detail/movie_utils.cpp,_ZN5movie6detail27GetVideoMinCompressionRatioEN2nn5movie13MediaMimeTypeEi
 e880,40,verified,src/movie/detail/movie_utils.cpp,_ZN5movie6detail22GetAudioSampleByteSizeENS_24AudioDecoderOutputFormatE
@@ -771,7 +771,7 @@ fff0,88,verified,src/movie/detail/movie_video_decoder_event_manager.cpp,_ZN5movi
 4a340,2548,disputed,src/movie/unnamed/p000_0.c,MovieHr_4a340
 4bb60,40,verified,src/opus/silk/PLC.c,silk_PLC_Reset
 4bba0,596,verified,src/opus/silk/PLC_impl.c,silk_PLC
-4be00,1744,disputed,src/opus/silk/unplaced_10.c,opus_silk_4be00
+4be00,2240,disputed,src/opus/silk/unplaced_10.c,opus_silk_4be00
 4c9e0,348,verified,src/opus/silk/PLC.c,silk_PLC_glue_frames
 4cbc0,796,verified,src/opus/silk/unplaced_2.c,opus_silk_4cbc0
 4cf00,112,verified,src/opus/silk/unplaced_2.c,opus_silk_4cf00
