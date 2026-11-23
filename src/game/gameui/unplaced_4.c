@@ -4225,7 +4225,7 @@ void game_gameui_15d4ba0(__int64 a1, __int64 a2, char a3, unsigned __int8 a4,
   unsigned int v365;
   int v366;
   __int64* v367;
-  _BYTE v368[24];
+  _BYTE v368[416];
   struct {
     unsigned __int64 v369;
     _BYTE* v370;
@@ -4241,7 +4241,6 @@ void game_gameui_15d4ba0(__int64 a1, __int64 a2, char a3, unsigned __int8 a4,
   __int64 v379;
   __int64 v380;
   __int64 v381;
-  __int64 v382;
   __int64 v383;
   struct {
     __int64 v384;
@@ -5353,8 +5352,8 @@ LABEL_306:
     for (i = *(__int64**)v224; (unsigned __int64)i < *(_QWORD*)(v224 + 8);
          ++i) {
       v228 = *i;
-      if (v382 != *i) {
-        v382 = *i;
+      if (*(__int64*)&v368[400] != *i) {
+        *(__int64*)&v368[400] = *i;
         game_Unit_Unknown6c8630((__int64)v368);
         v228 = *i;
       }
@@ -5377,8 +5376,8 @@ LABEL_306:
       v393 = 241;
       v232 = game_UnitPool_Find_6ead60(v394, &v393);
       GameRoutine_6c3980((__int64)v368, (__int64)v232);
-      if (v382 != v230) {
-        v382 = v230;
+      if (*(__int64*)&v368[400] != v230) {
+        *(__int64*)&v368[400] = v230;
         game_Unit_Unknown6c8630((__int64)v368);
       }
       GameHr_15d9080((__int64)&v384_.v384, v230, v368);

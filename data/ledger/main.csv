@@ -66867,7 +66867,7 @@ fffcb0,1244,verified,src/game/unnamed/b014_1.c,GameHr_fffcb0
 157e060,144,verified,src/game/unnamed/b020_1.c,GameHr_157e060
 157e0f0,536,verified,src/game/unnamed/b020_2.c,GameHr_157e0f0
 157e310,124,verified,src/game/gameui/unplaced_12.c,game_gameui_157e310
-157e3a0,2288,verified,src/game/gameui/unplaced_4.c,game_gameui_157e3a0
+157e3a0,2316,verified,src/game/gameui/unplaced_4.c,game_gameui_157e3a0
 157ecd0,328,verified,src/game/unnamed/b020_1.c,GameHr_157ecd0
 157ee20,288,verified,src/game/gameui/util.c,Util_157ee20
 157ef40,1140,verified,src/game/gameui/util.c,game_gameui_Util_SetSkillInfo
@@ -66902,11 +66902,11 @@ fffcb0,1244,verified,src/game/unnamed/b014_1.c,GameHr_fffcb0
 15853b0,216,verified,src/game/unnamed/b020_1.c,GameHr_15853b0
 1585490,512,verified,src/game/unnamed/b020_2.c,GameHr_1585490
 1585690,180,verified,src/game/gameui/util.c,Util_1585690
-15858a0,2088,verified,src/game/gameui/unplaced_4.c,game_gameui_15858a0
+15858a0,2064,verified,src/game/gameui/unplaced_4.c,game_gameui_15858a0
 1586140,1372,verified,src/game/gameui/util.c,Util_1586140
 15866c0,364,verified,src/game/unnamed/b020_2.c,GameHr_15866c0
 1586840,400,verified,src/game/gameui/unplaced_4.c,game_gameui_1586840
-15869e0,864,verified,src/game/gameui/unplaced_4.c,game_gameui_15869e0
+15869e0,896,verified,src/game/gameui/unplaced_4.c,game_gameui_15869e0
 1586d80,508,verified,src/game/unnamed/b020_1.c,GameHr_1586d80
 1586f90,316,verified,src/game/gameui/util.c,game_gameui_Util_SetBasicStatusForUnitInfo
 15870e0,312,verified,src/ui/game/control_lookup.cpp,_ZN2ui14LayoutAccessor10GetControlIN4game6gameui7control11StatusTotalEEENSt3__18weak_ptrIT_EERKNS6_17basic_string_viewIcNS6_11char_traitsIcEEEE
@@ -67010,7 +67010,7 @@ fffcb0,1244,verified,src/game/unnamed/b014_1.c,GameHr_fffcb0
 159aff0,1008,verified,src/game/gameui/unplaced.c,game_gameui_159aff0
 159b400,348,verified,src/game/unnamed/b020_2.c,GameHr_159b400
 159b580,920,verified,src/game/gameui/unplaced_2.c,game_gameui_159b580
-159b930,392,verified,src/game/gameui/unplaced_4.c,game_gameui_159b930
+159b930,416,verified,src/game/gameui/unplaced_4.c,game_gameui_159b930
 159bae0,452,verified,src/game/gameui/util.c,game_gameui_Util_CollectArtsInfoList
 159c780,392,verified,src/game/gameui/util.c,game_gameui_Util_CollectBlazeArtsInfo_159c780
 159cce0,612,verified,src/game/gameui/util.c,game_gameui_Util_CollectBlazeArtsInfo_159cce0
@@ -68427,7 +68427,7 @@ fffcb0,1244,verified,src/game/unnamed/b014_1.c,GameHr_fffcb0
 15d4750,216,verified,src/game/gameui/help_quest_info.cpp,_ZN4game6gameui4Help13SideStoryInfo16GetFirstItemNameEv
 15d4830,520,verified,src/game/gameui/help_quest_info_impl.c,HelpQuestInfo_15d4830
 15d4a40,348,verified,src/game/gameui/help_quest_info_impl.c,HelpQuestInfo_15d4a40
-15d4ba0,10632,verified,src/game/gameui/unplaced_4.c,game_gameui_15d4ba0
+15d4ba0,10748,verified,src/game/gameui/unplaced_4.c,game_gameui_15d4ba0
 15d7960,924,verified,src/game/gameui/unplaced_2.c,game_gameui_15d7960
 15d7d00,4804,verified,src/game/gameui/unplaced_7.c,game_gameui_15d7d00
 15d9080,464,verified,src/game/unnamed/b021_1.c,GameHr_15d9080
@@ -78031,7 +78031,7 @@ fffcb0,1244,verified,src/game/unnamed/b014_1.c,GameHr_fffcb0
 17baee0,552,verified,src/game/unnamed/b024_0.c,GameHr_17baee0
 17bb120,216,verified,src/game/gameui/unplaced_14.c,game_gameui_17bb120
 17bb200,532,verified,src/game/unnamed/b024_0.c,GameHr_17bb200
-17bb420,216,verified,src/game/gameui/unplaced_4.c,game_gameui_17bb420
+17bb420,216,disputed,src/game/gameui/unplaced_4.c,game_gameui_17bb420
 17bb500,568,verified,src/game/unnamed/b024_0.c,GameHr_17bb500
 17bb750,240,verified,src/game/unnamed/b024_0.c,GameHr_17bb750
 17bb840,12,verified,src/game/unnamed/v000_3.c,GameHr_17bb840
