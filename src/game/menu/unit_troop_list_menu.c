@@ -106,8 +106,8 @@ bool UnitTroopListMenu_17940a0_alt1(__int64, __int64) __asm__(
     "UnitTroopListMenu_17940a0");
 extern __int64 (*GameData_20c92b8[])();
 __int64 UnitTroopListMenu_1792f90(__int64 a1);
-__int64* UnitTroopListMenu_17932c0(__int64* result, __int64* a2, __int64 a3,
-                                   char a4);
+void UnitTroopListMenu_17932c0(__int64* result, __int64* a2, __int64 a3,
+                               char a4);
 __int64* UnitTroopListMenu_1793f10(__int64* result, __int64* a2, __int64* a3,
                                    __int64* a4);
 bool UnitTroopListMenu_17940a0(__int64 a1, __int64* a2);
@@ -1551,8 +1551,8 @@ __int64 UnitTroopListMenu_17930e0(__int64 result, __int64* a2)
   return result;
 }
 
-__int64* UnitTroopListMenu_17932c0(__int64* result, __int64* a2, __int64 a3,
-                                   char a4)
+void UnitTroopListMenu_17932c0(__int64* result, __int64* a2, __int64 a3,
+                               char a4)
 {
   __int64* v7;
   unsigned __int64 v8;
@@ -1719,12 +1719,12 @@ LABEL_2:
       break;
     }
     if ((unsigned __int64)v9 < 2) {
-      return result;
+      return;
     }
     if (v9 == 2) {
       if ((signed __int32)*((_DWORD*)a2 - 2) <=
           (signed __int32)*(_DWORD*)(v8 + 8)) {
-        return result;
+        return;
       }
       v99 = *(_QWORD*)v8;
     LABEL_115:
@@ -1734,7 +1734,7 @@ LABEL_2:
       *(_DWORD*)(v8 + 8) = *((_DWORD*)a2 - 2);
     LABEL_116:
       *((_DWORD*)a2 - 2) = v103;
-      return result;
+      return;
     }
   LABEL_10:
     if (v9 <= 23) {
@@ -1794,7 +1794,7 @@ LABEL_2:
           v154 += 4;
         } while (v7 + 2 != a2);
       }
-      return result;
+      return;
     }
     if (a3 == 0) {
       if ((__int64*)v8 != a2) {
@@ -1923,7 +1923,7 @@ LABEL_2:
           v121 = v9-- <= 2;
         } while (!v121);
       }
-      return result;
+      return;
     }
     v10 = *((_DWORD*)a2 - 2);
     v11 = v8 + 16 * ((unsigned __int64)v9 >> 1);
@@ -2055,11 +2055,11 @@ LABEL_2:
         if (!v79) {
           goto LABEL_2;
         }
-        return result;
+        return;
       }
       if (!v79) {
       LABEL_85:
-        result = UnitTroopListMenu_17932c0(v7, v8 - 16, a3, a4 & 1);
+        UnitTroopListMenu_17932c0(v7, v8 - 16, a3, a4 & 1);
         a4 = 0;
       }
     }
@@ -2333,8 +2333,9 @@ LABEL_2:
   }
   if (v9 != 3) {
     if (v9 == 4) {
-      return UnitTroopListMenu_1793f10((__int64*)v8, (__int64*)(v8 + 16),
-                                       (__int64*)(v8 + 32), a2 - 2);
+      UnitTroopListMenu_1793f10((__int64*)v8, (__int64*)(v8 + 16),
+                                (__int64*)(v8 + 32), a2 - 2);
+      return;
     }
     if (v9 == 5) {
       result =
@@ -2375,7 +2376,7 @@ LABEL_2:
           }
         }
       }
-      return result;
+      return;
     }
     goto LABEL_10;
   }
@@ -2420,7 +2421,7 @@ LABEL_2:
       goto LABEL_116;
     }
   }
-  return result;
+  return;
 }
 
 __int64* UnitTroopListMenu_1793f10(__int64* result, __int64* a2, __int64* a3,

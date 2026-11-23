@@ -1015,7 +1015,8 @@ void ne10_mixed_radix_fft_forward_int16_##scaled##_neon (ne10_fft_cpx_int16_t * 
     ne10_fft_cpx_int16_t   *Fin1, *Fout1; \
     ne10_fft_cpx_int16_t   *Fout_ls = Fout; \
     ne10_fft_cpx_int16_t   *Ftmp; \
-    ne10_fft_cpx_int16_t   *tw, *tw1; \
+    /* The shipped build leaves tw null when N is neither 4 nor 8. */ \
+    ne10_fft_cpx_int16_t   *tw = NULL, *tw1; \
  \
     /* init fstride, mstride, N */ \
     stage_count = factors[0]; \
@@ -1099,7 +1100,8 @@ void ne10_mixed_radix_fft_backward_int16_##scaled##_neon (ne10_fft_cpx_int16_t *
     ne10_fft_cpx_int16_t   *Fin1, *Fout1; \
     ne10_fft_cpx_int16_t   *Fout_ls = Fout; \
     ne10_fft_cpx_int16_t   *Ftmp; \
-    ne10_fft_cpx_int16_t   *tw, *tw1; \
+    /* The shipped build leaves tw null when N is neither 4 nor 8. */ \
+    ne10_fft_cpx_int16_t   *tw = NULL, *tw1; \
  \
     /* init fstride, mstride, N */ \
     stage_count = factors[0]; \

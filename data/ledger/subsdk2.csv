@@ -682,7 +682,7 @@ fff0,88,verified,src/movie/detail/movie_video_decoder_event_manager.cpp,_ZN5movi
 25340,12,verified,src/opus/celt/celt.c,opus_get_version_string
 25350,72,verified,src/opus/celt/celt_decoder.c,celt_decoder_get_size
 253a0,236,verified,src/opus/celt/celt_decoder.c,celt_decoder_init
-254a0,3088,verified,src/opus/celt/unplaced_3.c,opus_celt_254a0
+254a0,3088,disputed,src/opus/celt/unplaced_3.c,opus_celt_254a0
 270a0,1640,disputed,src/opus/celt/celt_decoder_impl2.c,celt_decode_lost
 29540,2752,disputed,src/opus/celt/unplaced_2.c,opus_celt_29540
 2a420,1380,disputed,src/opus/celt/celt_decoder_impl2.c,celt_synthesis
@@ -962,8 +962,8 @@ fff0,88,verified,src/movie/detail/movie_video_decoder_event_manager.cpp,_ZN5movi
 7de20,176,verified,src/movie/unnamed/p000_0.c,MovieHr_7de20
 7dee0,716,verified,src/movie/unnamed/p000_0.c,MovieHr_7dee0
 7e1c0,76,verified,src/movie/unnamed/p000_0.c,MovieHr_7e1c0
-7e220,1144,verified,src/opus/src/unplaced_3.c,opus_src_7e220
-7e740,740,verified,src/opus/src/unplaced_3.c,opus_src_7e740
+7e220,1204,verified,src/opus/src/unplaced_3.c,opus_src_7e220
+7e740,916,verified,src/opus/src/unplaced_3.c,opus_src_7e740
 7f430,64,verified,src/movie/unnamed/p000_0.c,MovieHr_7f430
 7f480,388,verified,src/movie/unnamed/p000_0.c,MovieHr_7f480
 7f620,316,verified,src/movie/unnamed/p000_0.c,MovieHr_7f620
@@ -977,12 +977,12 @@ fff0,88,verified,src/movie/detail/movie_video_decoder_event_manager.cpp,_ZN5movi
 80920,44,verified,src/movie/unnamed/p000_0.c,MovieHr_80920
 80960,844,verified,src/movie/unnamed/p000_0.c,MovieHr_80960
 80ce0,244,verified,src/movie/unnamed/p000_0.c,MovieHr_80ce0
-80de0,500,verified,src/opus/src/unplaced_3.c,opus_src_80de0
+80de0,112,verified,src/opus/src/unplaced_3.c,opus_src_80de0
 81060,244,verified,src/movie/unnamed/p000_1.c,MovieHr_81060
 81160,320,verified,src/movie/unnamed/p000_1.c,MovieHr_81160
 812c0,260,verified,src/movie/unnamed/p000_1.c,MovieHr_812c0
 813e0,1792,verified,src/opus/src/unplaced_3.c,opus_src_813e0
-81b40,1720,verified,src/opus/src/unplaced_3.c,opus_src_81b40
+81b40,1544,disputed,src/opus/src/unplaced_3.c,opus_src_81b40
 82440,12,verified,src/movie/unnamed/y000_0.c,MovieHr_82440
 82460,292,verified,src/opus/src/unplaced_3.c,opus_src_82460
 82590,12,verified,src/movie/unnamed/y000_0.c,MovieHr_82590

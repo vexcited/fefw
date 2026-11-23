@@ -4375,7 +4375,7 @@ __int64 GameHr_11e2580(__int64 result, _QWORD* a2)
   return result;
 }
 
-unsigned __int64 GameHr_11e7860(unsigned __int64 result, __int64 a2)
+void GameHr_11e7860(unsigned __int64 result, __int64 a2)
 {
   unsigned __int64 v2;
   int v3;
@@ -4630,7 +4630,7 @@ unsigned __int64 GameHr_11e7860(unsigned __int64 result, __int64 a2)
         LABEL_152:
           *(_BYTE*)v2 = v29;
           *(_WORD*)(v2 + 2) = v28;
-          return result;
+          return;
         }
         break;
       default:
@@ -4673,7 +4673,7 @@ unsigned __int64 GameHr_11e7860(unsigned __int64 result, __int64 a2)
       *(_WORD*)(v2 + 2) = v93;
       *(_BYTE*)v2 = ~((int)result >> 31) & 6;
     }
-    return result;
+    return;
   case 'I':
     if (v100_.v101 <= 0x7F) {
       v47 = v103;
@@ -5102,7 +5102,7 @@ unsigned __int64 GameHr_11e7860(unsigned __int64 result, __int64 a2)
         LABEL_282:
           *(_BYTE*)v2 = v71;
           *(_WORD*)(v2 + 2) = v69;
-          return result;
+          return;
         }
       }
       else if ((v84 & v42) != v43) {
@@ -5140,11 +5140,11 @@ unsigned __int64 GameHr_11e7860(unsigned __int64 result, __int64 a2)
           v66 = (_WORD*)(v2 + 2);
           if (v65 == 51) {
             *v66 = -7;
-            return result;
+            return;
           }
         LABEL_143:
           *v66 = -1;
-          return result;
+          return;
         }
         v63 = -6;
       }
@@ -5154,7 +5154,7 @@ unsigned __int64 GameHr_11e7860(unsigned __int64 result, __int64 a2)
     LABEL_135:
       *(_BYTE*)v2 = 0;
       *(_WORD*)(v2 + 2) = v63;
-      return result;
+      return;
     }
     if (v100_.v101 == 6) {
       result = GameRoutine_1a09cf0(v100_.v100 + 2, "Skip", v62);
@@ -5177,7 +5177,8 @@ unsigned __int64 GameHr_11e7860(unsigned __int64 result, __int64 a2)
     goto LABEL_143;
   case 'p':
     if (v100_.v100[3] != 40) {
-      return GameRoutine_11e83a0(v2, &v100_.v100);
+      GameRoutine_11e83a0(v2, &v100_.v100);
+      return;
     }
     v103[0] = v100_.v100 + 3;
     v103[1] = v100_.v101 - 3;
@@ -5189,7 +5190,7 @@ unsigned __int64 GameHr_11e7860(unsigned __int64 result, __int64 a2)
     *(_BYTE*)(v2 + 2) = (_BYTE)v104;
     *(_BYTE*)(v2 + 3) = v61;
     *(_BYTE*)v2 = 1;
-    return result;
+    return;
   default:
     if (v100_.v101 <= 0x1F) {
       v44 = v103;
@@ -5210,7 +5211,7 @@ unsigned __int64 GameHr_11e7860(unsigned __int64 result, __int64 a2)
     }
     *(_BYTE*)v2 = 0;
     *(_WORD*)(v2 + 2) = result;
-    return result;
+    return;
   }
 }
 

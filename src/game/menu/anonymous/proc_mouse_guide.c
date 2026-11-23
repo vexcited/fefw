@@ -77,7 +77,7 @@ __attribute__((swiftcall)) void
 game_menu_anonymous_ProcMouseGuide_OnInit_closure_Invoke(PSEUDO_X8 x8_,
                                                          __int64 unused_int0,
                                                          int* a1);
-__n128 ProcMouseGuide_17a8800(__int64 a1, const char* a2, int a3, __int64 a4);
+void ProcMouseGuide_17a8800(__int64 a1, const char* a2, int a3, __int64 a4);
 _QWORD* GameRoutine_6680e0_alt1(_QWORD* result,
                                 _QWORD*) __asm__("GameRoutine_6680e0");
 __attribute__((swiftcall)) void
@@ -976,7 +976,7 @@ LABEL_13:
   }
 }
 
-__n128 ProcMouseGuide_17a8800(__int64 a1, const char* a2, int a3, __int64 a4)
+void ProcMouseGuide_17a8800(__int64 a1, const char* a2, int a3, __int64 a4)
 {
   __int64 v6;
   unsigned __int64 v7;
@@ -1046,14 +1046,14 @@ __n128 ProcMouseGuide_17a8800(__int64 a1, const char* a2, int a3, __int64 a4)
       (*(void (**)(__int64))(*(_QWORD*)v13 + 16LL))(v13);
       result = std___1___shared_weak_count___release_weak_alt1();
       if ((v18[0] & 1) == 0) {
-        return result;
+        return;
       }
       goto LABEL_22;
     }
   }
 LABEL_21:
   if ((v18[0] & 1) == 0) {
-    return result;
+    return;
   }
 LABEL_22:
   if (v19 != nullptr) {
@@ -1064,7 +1064,7 @@ LABEL_22:
     nn_mem_StandardAllocator_Free_alt1(*(_QWORD*)fw_memory_g_heap_manager_ptr +
                                        v15, (_QWORD)(v19));
   }
-  return result;
+  return;
 }
 
 __int64 game_menu_anonymous_ProcMouseGuide_StickRCall_closure_Invoke()

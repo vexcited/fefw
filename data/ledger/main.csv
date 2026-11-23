@@ -77102,7 +77102,7 @@ fffcb0,1244,verified,src/game/unnamed/b014_1.c,GameHr_fffcb0
 1791c90,24,verified,src/llvm-libcxx-21/libcxx/include/__functional/function.h,"std::__1::__function::__func<game::menu::UnitTroopListMenu::SortAndFilter()::$_0, bool (game::menu::BasicMenuItem*, game::menu::BasicMenuItem*)>::__clone(__base*)"
 1791cb0,4,verified,src/llvm-libcxx-21/libcxx/include/__functional/function.h,"std::__1::__function::__func<game::menu::UnitTroopListMenu::SortAndFilter()::$_0, bool (game::menu::BasicMenuItem*, game::menu::BasicMenuItem*)>::destroy()"
 1791cc0,12,verified,src/llvm-libcxx-21/libcxx/include/__functional/function.h,"std::__1::__function::__func<game::menu::UnitTroopListMenu::SortAndFilter()::$_0, bool (game::menu::BasicMenuItem*, game::menu::BasicMenuItem*)>::destroy_deallocate()"
-1791cd0,1688,verified,src/game/menu/unit_troop_list_menu.c,game_menu_UnitTroopListMenu_SortAndFilter_lambda0_Invoke
+1791cd0,1740,verified,src/game/menu/unit_troop_list_menu.c,game_menu_UnitTroopListMenu_SortAndFilter_lambda0_Invoke
 17923c0,28,verified,src/llvm-libcxx-21/libcxx/include/__functional/function.h,"std::__1::__function::__func<game::menu::UnitTroopListMenu::SortAndFilter()::$_0, bool (game::menu::BasicMenuItem*, game::menu::BasicMenuItem*)>::target(std::type_info const&)"
 17923e0,12,verified,src/llvm-libcxx-21/libcxx/include/__functional/function.h,"std::__1::__function::__func<game::menu::UnitTroopListMenu::SortAndFilter()::$_0, bool (game::menu::BasicMenuItem*, game::menu::BasicMenuItem*)>::target_type()"
 17923f0,200,verified,src/game/menu/unit_troop_list_menu.c,UnitTroopListMenu_17923f0
@@ -77112,7 +77112,7 @@ fffcb0,1244,verified,src/game/unnamed/b014_1.c,GameHr_fffcb0
 1792760,228,verified,src/game/menu/unit_troop_list_menu.c,UnitTroopListMenu_1792760
 1792860,200,verified,src/game/menu/unit_troop_list_menu.c,UnitTroopListMenu_1792860
 1792940,772,verified,src/game/menu/unit_troop_list_menu.c,UnitTroopListMenu_1792940
-1792da0,148,verified,src/game/menu/unit_troop_list_menu.c,UnitTroopListMenu_1792da0
+1792da0,276,verified,src/game/menu/unit_troop_list_menu.c,UnitTroopListMenu_1792da0
 1792ee0,176,verified,src/game/menu/unit_troop_list_menu.c,UnitTroopListMenu_1792ee0
 1792f90,116,verified,src/game/menu/unit_troop_list_menu.c,UnitTroopListMenu_1792f90
 1793010,44,verified,src/memory/new_delete.cpp,deleting destructor at 0x1793010
@@ -77124,7 +77124,7 @@ fffcb0,1244,verified,src/game/unnamed/b014_1.c,GameHr_fffcb0
 1793260,28,verified,src/game/game_trivial_calls.cpp,_Z16GameStub_1793260mm
 1793280,12,verified,src/game/game_trivial.cpp,_Z16GameStub_1793280v
 1793290,24,verified,src/llvm-libcxx-21/libcxx/include/__vector/vector.h,std::vector<T>::__throw_length_error()
-17932c0,3032,disputed,src/game/menu/unit_troop_list_menu.c,UnitTroopListMenu_17932c0
+17932c0,3032,verified,src/game/menu/unit_troop_list_menu.c,UnitTroopListMenu_17932c0
 1793f10,372,verified,src/game/menu/unit_troop_list_menu.c,UnitTroopListMenu_1793f10
 17940a0,532,verified,src/game/menu/unit_troop_list_menu.c,UnitTroopListMenu_17940a0
 1794400,44,verified,src/memory/new_delete.cpp,deleting destructor at 0x1794400

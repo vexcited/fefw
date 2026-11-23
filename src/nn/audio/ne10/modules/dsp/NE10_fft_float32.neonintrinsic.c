@@ -1282,7 +1282,8 @@ void ne10_mixed_radix_fft_forward_float32_neon (ne10_fft_cpx_float32_t *out,
     ne10_int32_t fstride = factors[1];
     ne10_int32_t mstride = factors[(stage_count << 1) - 1];
     ne10_int32_t first_radix = factors[stage_count << 1];
-    ne10_int32_t step, f_count;
+    // The shipped build leaves step zero for a first radix other than 4 or 8.
+    ne10_int32_t step = 0, f_count;
     ne10_fft_cpx_float32_t *src = in;
     ne10_fft_cpx_float32_t *dst = out;
     ne10_fft_cpx_float32_t *out_final = out;
@@ -1369,7 +1370,8 @@ void ne10_mixed_radix_fft_backward_float32_neon (ne10_fft_cpx_float32_t *out,
     ne10_int32_t mstride = factors[(stage_count << 1) - 1];
     ne10_int32_t first_radix = factors[stage_count << 1];
     ne10_float32_t nfft = fstride * first_radix;
-    ne10_int32_t step, f_count;
+    // The shipped build leaves step zero for a first radix other than 4 or 8.
+    ne10_int32_t step = 0, f_count;
     ne10_fft_cpx_float32_t *src = in;
     ne10_fft_cpx_float32_t *dst = out;
     ne10_fft_cpx_float32_t *out_final = out;

@@ -51,10 +51,10 @@ unsigned __int64 MovieRoutine_39d00(__int64, __int64, _DWORD*, __int16*,
                                     __int64, int, int);
 __int64 opus_src_6c400(int* a1, __int64 a2, int a3, int a4, _BYTE* a5, int a6,
                        int a7, int a8, int a9);
-__int64 opus_src_76400(__int64 a1, __int64 a2, __int64 a3, __int64 a4,
-                       __int64 a5, unsigned int a6, __int64 a7, int a8, int a9,
-                       void (*a10)(__int16*, __int64, __int64, _QWORD, _QWORD,
-                                   __int64, _QWORD));
+void opus_src_76400(__int64 a1, __int64 a2, __int64 a3, __int64 a4,
+                    __int64 a5, unsigned int a6, __int64 a7, int a8, int a9,
+                    void (*a10)(__int16*, __int64, __int64, _QWORD, _QWORD,
+                                __int64, _QWORD));
 __int64 opus_src_7ad00(__int64 a1, __int64 a2);
 _DWORD* opus_src_7b9e0(__int64 a1, __int64 a2, _DWORD* a3);
 __int64 opus_src_7bce0(_QWORD* a1, __int64 a2, _DWORD* a3, __int64 a4);
@@ -233,10 +233,10 @@ LABEL_25:
   return 4294967293LL;
 }
 
-__int64 opus_src_76400(__int64 a1, __int64 a2, __int64 a3, __int64 a4,
-                       __int64 a5, unsigned int a6, __int64 a7, int a8, int a9,
-                       void (*a10)(__int16*, __int64, __int64, _QWORD, _QWORD,
-                                   __int64, _QWORD))
+void opus_src_76400(__int64 a1, __int64 a2, __int64 a3, __int64 a4,
+                    __int64 a5, unsigned int a6, __int64 a7, int a8, int a9,
+                    void (*a10)(__int16*, __int64, __int64, _QWORD, _QWORD,
+                                __int64, _QWORD))
 {
   __int64 v12;
   __int64* v13;
@@ -1813,7 +1813,7 @@ __int64 opus_src_76400(__int64 a1, __int64 a2, __int64 a3, __int64 a4,
           v262[20] = v308 - (_WORD)v261;
           v259 += 42;
           if (v260 == v259) {
-            return result;
+            return;
           }
         }
         v311 = v312_.v335 + (v259 & 0x1FFFFFFFELL);
@@ -1826,7 +1826,7 @@ __int64 opus_src_76400(__int64 a1, __int64 a2, __int64 a3, __int64 a4,
         v259 += 42;
       } while (v260 != v259);
     }
-    return result;
+    return;
   }
   v24 = 0;
   v27 = 1;
