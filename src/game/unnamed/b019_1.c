@@ -489,7 +489,7 @@ __int64 GameRoutine_14ac580();
 __int64 GameRoutine_14ac600();
 __int64 GameRoutine_14ac670();
 __int64 GameRoutine_14c33c0(_QWORD);
-__int64 GameRoutine_14c3670(void);
+bool GameRoutine_14c3670(void);
 __int64 GameRoutine_14c46a0(_QWORD, _QWORD);
 __int64 GameRoutine_1535820(_QWORD, _QWORD, _QWORD);
 __int64 GameRoutine_1551f00(void);

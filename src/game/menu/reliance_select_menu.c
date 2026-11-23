@@ -20,7 +20,7 @@ __int64 GameRoutine_821090(_QWORD);
 __int64 GameRoutine_8c77c0(_QWORD);
 __int64 GameRoutine_8c9820(_QWORD, _QWORD, _QWORD);
 __int64 GameRoutine_8ca200(_QWORD);
-__int64 GameRoutine_9e60d0(_QWORD);
+bool GameRoutine_9e60d0(_QWORD);
 __int64 _ZN4game4menu8GameMenu12Unknown16e9cd0Ev(_QWORD);
 __int64 __dynamic_cast(_QWORD, _QWORD, _QWORD, _QWORD);
 __int64 fw_memory_HeapManager_Allocate(_QWORD, _QWORD, _QWORD, _QWORD);
@@ -124,7 +124,7 @@ __int64 GameRoutine_15b75f0_alt1(__int64,
 __int64 GameRoutine_8ca200_alt1(_QWORD*) __asm__("GameRoutine_8ca200");
 __int64 GameRoutine_9d5920_alt1(__int64,
                                 __int64**) __asm__("GameRoutine_9d5920");
-__int64 GameRoutine_9e60d0_alt1(unsigned int*) __asm__("GameRoutine_9e60d0");
+bool GameRoutine_9e60d0_alt1(unsigned int*) __asm__("GameRoutine_9e60d0");
 __int64 GameVariable_828700_alt1(__int64, unsigned __int64*,
                                  int) __asm__("GameVariable_828700");
 __int64 LayoutAccessor_1562cf0(__int64 result, const char*);
@@ -215,7 +215,7 @@ __int64* GameRoutine_8c9820_alt2(__int64, __int64, unsigned __int8);
 __int64 GameRoutine_16e8d70_alt1(__int64*);
 __int64 GameRoutine_8ca200_alt2(_QWORD*);
 __int64 GameRoutine_9d5920_alt2(__int64, __int64**);
-__int64 GameRoutine_9e60d0_alt2(unsigned int*);
+bool GameRoutine_9e60d0_alt2(unsigned int*);
 __int64 GameVariable_828700_alt2(__int64, unsigned __int64*, int);
 __int64 game_HashString_alt2(__int64 result);
 __int64 game_VariableManager_SetFlag_alt2(__int64 result, int);

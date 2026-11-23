@@ -156,7 +156,7 @@ void game_map_MapOnMapInfo_Info_SetBattleFactor_lambda0_Invoke_1602350(
     __int64 a1, unsigned int* a2);
 __int64* game_UnitPool_Get(_BYTE*);
 __int64 GameHr_1562680(__int64 result, unsigned int*, float);
-__int64 LayoutAccessor_1563280(__int64*, __int64, char);
+bool LayoutAccessor_1563280(__int64*, __int64, char);
 __int64 LayoutAccessor_15636c0(__int64 result, __int64, char, float);
 __int64 Pane_58f8a0(__int64);
 __int64 ProcTransitionAnim_156af20(__int64, int, int, __int64*, const char*,

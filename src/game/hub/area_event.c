@@ -30,7 +30,7 @@ __attribute__((swiftcall)) void Manager_d9b810(PSEUDO_X8, __int64, __int64,
 __int64 GameRoutine_d6b220(_QWORD, _QWORD);
 __int64 HubCharacterNatives_cb3e60(__int64*, __int64);
 __int64 fw_memory_HeapManager_Allocate(__int64, __int64, __int64, unsigned int);
-__int64 game_hub_d5ae40(void);
+bool game_hub_d5ae40(void);
 __int64 nn_mem_StandardAllocator_Free_alt1(_QWORD) __asm__(
     "nn_mem_StandardAllocator_Free");
 __int64 snd_Fade_Destroy_Fade(_QWORD*);
@@ -71,10 +71,10 @@ __int64 GameHr_cb3e60(__int64*, __int64);
 __int64 GameHr_cb3e60_alt1(_QWORD, _QWORD) __asm__("GameHr_cb3e60");
 __int64 GameRoutine_d9bc80_alt2(_QWORD, _QWORD,
                                 _QWORD) __asm__("GameRoutine_d9bc80");
-__int64 as_d9af70(_QWORD, _QWORD, _QWORD, _QWORD, _QWORD);
+bool as_d9af70(_QWORD, _QWORD, _QWORD, _QWORD, _QWORD);
 __int64 fw_memory_HeapManager_Allocate_alt1(
     _QWORD, _QWORD, _QWORD, _QWORD) __asm__("fw_memory_HeapManager_Allocate");
-__int64 game_hub_d6b220(_QWORD, _QWORD);
+bool game_hub_d6b220(_QWORD, _QWORD);
 __int64 snd_Fade_Destroy_Fade_alt1(_QWORD) __asm__("snd_Fade_Destroy_Fade");
 __n128 snd_Fade_Fade_10c830_alt1(_QWORD,
                                  double) __asm__("snd_Fade_Fade_10c830");

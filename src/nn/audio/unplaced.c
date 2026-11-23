@@ -83,7 +83,7 @@ __int64 nn_os_SdkConditionVariableType_TimedWait_plt(_QWORD, _QWORD, _QWORD);
 __int64 nn_os_SdkConditionVariableType_Wait_plt(_QWORD, _QWORD);
 __int64 nn_os_SdkMutexType_Lock_plt(_QWORD);
 __int64 nn_os_SdkMutexType_Unlock_plt(_QWORD);
-__int64 nn_os_TryAcquireSemaphore_plt(_QWORD);
+bool nn_os_TryAcquireSemaphore_plt(_QWORD);
 __int64 nn_os_UnlockMutex_plt(_QWORD);
 __int64 nn_result_detail_ConvertInvalidImpl_plt(_QWORD);
 __int64 nn_sf_cmif_GetInlineContext_plt(_QWORD);

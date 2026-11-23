@@ -205,7 +205,7 @@ __int64 GameRoutine_120c280(_QWORD, _QWORD);
 __int64 GameRoutine_1211600(_QWORD, _QWORD);
 __int64 GameRoutine_12169e0(_QWORD, _QWORD);
 __attribute__((swiftcall)) void GameRoutine_1225280(PSEUDO_X8, _QWORD);
-__int64 GameRoutine_1225500(_QWORD, _QWORD, _QWORD);
+bool GameRoutine_1225500(_QWORD, _QWORD, _QWORD);
 __int64 GameRoutine_12258e0(_QWORD, _QWORD);
 __int64 GameRoutine_1286f60(_QWORD);
 __int64 GameRoutine_12a7f80(_QWORD, _QWORD);
@@ -277,7 +277,7 @@ __int64 GameRoutine_eabe20(_QWORD, _QWORD, _QWORD, _QWORD);
 __attribute__((swiftcall)) void
 GameRoutine_1225280_alt1(PSEUDO_X8,
                          _QWORD* result) __asm__("GameRoutine_1225280");
-__int64 game_1225500(_QWORD*, _DWORD*, _DWORD*);
+bool game_1225500(_QWORD*, _DWORD*, _DWORD*);
 __int64 strlen(_QWORD);
 __int64 strtol(_QWORD, _QWORD, _QWORD);
 unsigned __int64

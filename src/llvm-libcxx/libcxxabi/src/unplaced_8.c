@@ -3,7 +3,7 @@
 #pragma GCC visibility push(hidden)
 
 __int64* SdkRoutine_836230(__int64* result, _QWORD*);
-__int64 SdkRoutine_833240(__int64*, __int64, unsigned __int64);
+bool SdkRoutine_833240(__int64*, __int64, unsigned __int64);
 __int64 SdkRoutine_835ee0(__int64);
 __int64 SdkRoutine_8382a0(__int64);
 __int64 SdkRoutine_83c2a0(__int64);

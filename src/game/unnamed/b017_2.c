@@ -240,9 +240,9 @@ __int64 GameRoutine_12aaf80(__int64);
 
 __int64 GameRoutine_12ac240(__int64*, __int64);
 
-__int64 GameRoutine_12b41a0(void);
+bool GameRoutine_12b41a0(void);
 
-__int64 GameRoutine_12b4220(void);
+bool GameRoutine_12b4220(void);
 
 __int64 GameRoutine_12c1f80(unsigned __int8*);
 

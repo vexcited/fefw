@@ -90,7 +90,7 @@ __int64 game_map_anonymous_TargetEnumerator_CanEnter_closure_Invoke(
     __int64 result, unsigned int* a2, unsigned int* a3);
 bool TargetEnumerator_780410(_BYTE* a1, __int64 a2, __int16 a3, unsigned int a4,
                              unsigned int a5);
-__int64 GameRoutine_77e300(_QWORD, _QWORD, _QWORD);
+bool GameRoutine_77e300(_QWORD, _QWORD, _QWORD);
 __int64 GameRoutine_844d10(_QWORD, _QWORD, _QWORD);
 __int64
 game_map_anonymous_TargetEnumerator_Attack_closure_Invoke_77c810(__int64 result,
@@ -116,11 +116,11 @@ game_map_anonymous_TargetEnumerator_SummonTarget_closure_Invoke(__int64 a1,
 __attribute__((swiftcall)) void
 game_90e4c0(PSEUDO_X8, _DWORD*, __int64, __int64, int, unsigned int, int, int);
 __int64* game_UnitPool_Get_alt1(_BYTE*) __asm__("game_UnitPool_Get");
-__int64 GameRoutine_6fc510(__int64);
+bool GameRoutine_6fc510(__int64);
 __int64 GameRoutine_757ed0(__int64 result, _DWORD*, unsigned int, unsigned int);
 __int64 ITarget_775580(_BYTE*, char*, __int64);
 __int64 MapUtil_753920(_QWORD, _QWORD, _QWORD);
-__int64 UnitSkillList_843de0(_DWORD*, __int64, __int64);
+bool UnitSkillList_843de0(_DWORD*, __int64, __int64);
 __int64 Unit_6c9cf0_alt1(__int64, __int64) __asm__("Unit_6c9cf0");
 __int64 game_UnitPool_Get_alt2(_QWORD,
                                long double) __asm__("game_UnitPool_Get");

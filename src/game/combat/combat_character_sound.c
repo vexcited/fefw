@@ -11,8 +11,8 @@ __int64 GameRoutine_a19f00(_QWORD, _QWORD);
 __int64 __cxa_guard_acquire(_QWORD);
 __int64 __cxa_guard_release(_QWORD);
 __int64 nn_mem_StandardAllocator_Free(_QWORD);
-__int64 snd_fnd_WeakHandle_isValid(_QWORD);
-__int64 snd_isActive_100100(_QWORD);
+bool snd_fnd_WeakHandle_isValid(_QWORD);
+bool snd_isActive_100100(_QWORD);
 __int64 wld_Crc32(_QWORD, _QWORD, _QWORD);
 __n128 std___1___shared_weak_count___release_weak(_QWORD);
 extern _UNKNOWN* GameData_212d4e8;
@@ -40,7 +40,7 @@ __int64 fw_memory_HeapManager_Allocate(__int64, __int64, __int64, unsigned int);
 __int64 memmove(_QWORD, _QWORD, _QWORD);
 __int64
 snd_fnd_WeakHandle_isValid_alt1(__int64*) __asm__("snd_fnd_WeakHandle_isValid");
-__int64 snd_isActive_100100_alt1(__int64*) __asm__("snd_isActive_100100");
+bool snd_isActive_100100_alt1(__int64*) __asm__("snd_isActive_100100");
 __n128 nn_mem_StandardAllocator_Free_alt1(_QWORD) __asm__(
     "nn_mem_StandardAllocator_Free");
 extern __int64* GameData_212d448[9];
@@ -64,7 +64,7 @@ __int64 std___1___shared_weak_count___release_weak_alt1(__int64) __asm__(
     "std___1___shared_weak_count___release_weak");
 __int64 CombatCharacterSound_1091c00(__int64 result, int* a2);
 __int64 memmove_alt1(__int64, __int64, unsigned __int64) __asm__("memmove");
-__int64 snd_isActive_100100_alt2(__int64) __asm__("snd_isActive_100100");
+bool snd_isActive_100100_alt2(__int64) __asm__("snd_isActive_100100");
 void nn_mem_StandardAllocator_Free_alt2(__int64, __int64) __asm__(
     "nn_mem_StandardAllocator_Free");
 void CombatCharacterSound_DeletingDestructor(_QWORD* a1);

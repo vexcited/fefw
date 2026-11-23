@@ -141,7 +141,7 @@ __int64 GameRoutine_1349320(__int64*);
 __int64 GameRoutine_1355e40(_QWORD, _QWORD, _QWORD);
 __int64 GameRoutine_1356160(_QWORD, _QWORD);
 __int64 GameRoutine_888970(_QWORD, _QWORD, _QWORD, _QWORD);
-__int64 Impl_1328670(_QWORD);
+bool Impl_1328670(_QWORD);
 __int64 ProcTroopAction_14b4920(_QWORD);
 __int64 RuntimeBuffer_8924a0(_QWORD, _QWORD, _QWORD, _QWORD);
 __int64 SpotMgr_1332940(__int64, __int64, __int64, int);

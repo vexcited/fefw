@@ -9,7 +9,7 @@ __int64 GameRoutine_a07d60(_QWORD, _QWORD, long double);
 __int64 GmapSituation_14db2f0(_QWORD, long double);
 __int64 GmapSpotInfoSetterForGmap_1657240(_QWORD, long double);
 __int64 LayoutAccessor_155e830(_QWORD, _QWORD);
-__int64 LayoutAccessor_155ea30(_QWORD);
+bool LayoutAccessor_155ea30(_QWORD);
 __int64 LayoutAccessor_155fbe0(_QWORD, _QWORD);
 __int64 LayoutAccessor_1562680(_QWORD, _QWORD, long double);
 __int64 LayoutAccessor_1562cf0(_QWORD, _QWORD);

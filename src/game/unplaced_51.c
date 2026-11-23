@@ -7,9 +7,9 @@
 __int64* GameRoutine_194cb90(__int64* result, __int64*, __int64*, __int64*,
                              __int64*, __int64);
 __int64 GameRoutine_1a0ba50(__int64, int, unsigned __int64);
-__int64 GameRoutine_6fc510(__int64);
+bool GameRoutine_6fc510(__int64);
 __int64 GameRoutine_975940(__int64);
-__int64 Trick_7d2180(__int64, int, int, __int64);
+bool Trick_7d2180(__int64, int, int, __int64);
 __int64 fw_memory_HeapManager_Allocate(__int64, __int64, __int64, unsigned int);
 __int64 fw_text_String_CopyTerminated(__int64*, __int64, unsigned __int64);
 __int64 game_HashString(__int64 result);

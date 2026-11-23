@@ -9009,7 +9009,7 @@ ffee0,324,verified,src/nn/fs/unplaced.c,nn_fs_GetAndClearMemoryReportInfo
 1f25f0,72,verified,src/nn/audio/audio_fft_work_buffer.cpp,_ZN2nn5audio6detail26GetFftWorkBufferSizeCommonEmNS0_14FftProcessTypeEi
 1f2640,8,verified,src/nn/audio/audio_fft_api.cpp,_ZN2nn5audio6detail31GetFftWorkBufferAlignmentCommonEv
 1f2660,2648,verified,src/nn/audio/unplaced.c,nn_audio_detail_InitializeFftWorkBufferCommon
-1f31e0,888,verified,src/nn/audio/unplaced.c,nn_audio_detail_FftInPlaceProcessComplexDoubleCommon
+1f31e0,1200,verified,src/nn/audio/unplaced.c,nn_audio_detail_FftInPlaceProcessComplexDoubleCommon
 1f36e0,772,disputed,src/nn/audio/unplaced.c,nn_audio_1f36e0
 1f3a00,596,disputed,src/nn/audio/unplaced.c,nn_audio_detail_FftInPlaceProcessRealDoubleCommon
 1f3c60,16,verified,src/nn/audio/vector_fill.cpp,_ZN2nn5audio4util10RoundInt32El
@@ -10758,9 +10758,9 @@ ffee0,324,verified,src/nn/fs/unplaced.c,nn_fs_GetAndClearMemoryReportInfo
 27b900,104,verified,src/nn/audio/adspshell/adspshell.cpp,_ZN2nn5audio9adspshell6detail21SendStressTestCommandERKNS2_19StressTestParameterE
 27b970,88,verified,src/nn/audio/common/unplaced.c,nn_audio_common_GetExecutionTimeoutMonitor
 27b9d0,92,verified,src/nn/audio/unplaced.c,nn_audio_27b9d0
-27ba40,908,verified,src/nn/audio/unplaced.c,nn_audio_27ba40
+27ba40,860,verified,src/nn/audio/unplaced.c,nn_audio_27ba40
 27bf20,712,verified,src/nn/audio/unplaced.c,nn_audio_27bf20
-27c340,688,verified,src/nn/audio/unplaced.c,nn_audio_27c340
+27c340,664,verified,src/nn/audio/unplaced.c,nn_audio_27c340
 27c760,84,verified,src/nn/audio/unplaced.c,nn_audio_27c760
 27c7c0,652,verified,src/nn/audio/unplaced.c,nn_audio_27c7c0
 27ca60,636,verified,src/nn/audio/unplaced.c,nn_audio_27ca60
@@ -25050,7 +25050,7 @@ ffee0,324,verified,src/nn/fs/unplaced.c,nn_fs_GetAndClearMemoryReportInfo
 649b10,40,verified,src/nvidia/unplaced_9.c,nvidia_649b10
 649b40,176,verified,src/nvidia/unplaced_9.c,nvidia_649b40
 649bf0,380,verified,src/nvidia/unplaced_9.c,nvidia_649bf0
-649d70,864,disputed,src/nvidia/unplaced_9.c,nvidia_649d70
+649d70,864,verified,src/nvidia/unplaced_9.c,nvidia_649d70
 64a0d0,12,verified,src/nn/sdk_trivial.cpp,_Z14SdkStub_64a0d0v
 64a0e0,172,verified,src/nvidia/unplaced_9.c,nvidia_64a0e0
 64a190,12,verified,src/nvidia/unplaced_9.c,nvidia_64a190
@@ -25137,7 +25137,7 @@ ffee0,324,verified,src/nn/fs/unplaced.c,nn_fs_GetAndClearMemoryReportInfo
 64d350,1104,verified,src/nvidia/unplaced_49.c,nvidia_64d350
 64d7a0,404,verified,src/nvidia/unplaced_9.c,nvidia_64d7a0
 64d950,176,verified,src/nvidia/unplaced_19.c,nvidia_64d950
-64da00,780,verified,src/nvidia/unplaced_9.c,nvidia_64da00
+64da00,1000,verified,src/nvidia/unplaced_9.c,nvidia_64da00
 64de60,1668,disputed,src/nvidia/unplaced_9.c,nvidia_64de60
 64e500,828,disputed,src/nvidia/unplaced_9.c,nvidia_64e500
 64e860,420,verified,src/nvidia/unplaced_9.c,nvidia_64e860

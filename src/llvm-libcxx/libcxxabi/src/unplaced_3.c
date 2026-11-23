@@ -12,7 +12,7 @@ __int64 SdkRoutine_8355a0(_QWORD*, _QWORD*);
 
 __int64 SdkRoutine_8365b0(char*);
 
-__int64 SdkRoutine_837160(__int64, char**);
+bool SdkRoutine_837160(__int64, char**);
 
 __int64 SdkRoutine_837c80(unsigned __int8**, char);
 

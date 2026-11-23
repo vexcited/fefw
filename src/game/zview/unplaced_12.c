@@ -19,12 +19,12 @@ __int64 CharacterModel_d198c0(_QWORD*, float32x2_t*, char, char);
 __int64 GameRoutine_d2cec0(int);
 __int64 GameRoutine_d78880(__int64 result, _QWORD*);
 __int64 fw_memory_HeapManager_Allocate(__int64, __int64, __int64, unsigned int);
-__int64 game_zview_d13480(__int64, float);
+bool game_zview_d13480(__int64, float);
 __int64 game_zview_d148e0(float32x4_t*, char);
-__int64 game_zview_d16b40(float, double, double, double, double, double,
+bool game_zview_d16b40(float, double, double, double, double, double,
                           long double, __int64, __int64, __int128*,
                           unsigned __int64*, __int64);
-__int64 game_zview_d17160(float, __int64, __int64, float32x4_t*, float32x4_t*);
+bool game_zview_d17160(float, __int64, __int64, float32x4_t*, float32x4_t*);
 __int64 std___1___shared_weak_count___release_weak(__int64);
 bool CharacterController_d42740(_QWORD*, float32x4_t**, int*);
 bool llvm_libcxx_21_libcxx_include___memory_d2d4e0();

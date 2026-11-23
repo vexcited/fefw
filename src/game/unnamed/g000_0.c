@@ -86,7 +86,7 @@ extern __int64 GameData_2258178;
 extern __int64 GameData_2265ed8;
 __int64 GameRoutine_100b50(_QWORD, _QWORD, float);
 __int64 GameRoutine_100b530(_QWORD);
-__int64 GameRoutine_1011550(_QWORD, _QWORD, _QWORD);
+bool GameRoutine_1011550(_QWORD, _QWORD, _QWORD);
 float GameRoutine_101470(_QWORD);
 __int64 GameRoutine_106cdd0(void);
 __int64 GameRoutine_108e940(_QWORD);
@@ -180,7 +180,7 @@ __int64 GameRoutine_a944e0(_QWORD, _QWORD);
 __int64 GameRoutine_ad57c0(_QWORD);
 __int64 GameRoutine_c086a0(void);
 __int64 GameRoutine_c08940(_QWORD, _QWORD, _QWORD, float);
-__int64 GameRoutine_ec1530(_QWORD);
+bool GameRoutine_ec1530(_QWORD);
 __attribute__((swiftcall)) void
 GameRoutine_111d920_alt1(PSEUDO_X8, __int64,
                          __int64) __asm__("GameRoutine_111d920");

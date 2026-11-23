@@ -24,7 +24,7 @@ __int64 GameRoutine_aa1690(_QWORD, _QWORD, _QWORD);
 __attribute__((swiftcall)) void GameRoutine_aa1a00(PSEUDO_X8, _QWORD, _QWORD,
                                                    _QWORD, _QWORD, _QWORD,
                                                    _QWORD);
-__int64 GameRoutine_aa1b50(_QWORD, _QWORD);
+bool GameRoutine_aa1b50(_QWORD, _QWORD);
 __int64 GameRoutine_aa1dd0(_QWORD, _QWORD, _QWORD);
 __int64 GameRoutine_c702b0(_QWORD, _QWORD, _QWORD, _QWORD);
 __int64 GameRoutine_c70850(_QWORD, _QWORD, _QWORD, _QWORD, _QWORD);
@@ -39,7 +39,7 @@ GameRoutine_1a09ce0_alt1(__int64, const char*,
 __int64
 GameRoutine_1a0a680_alt1(__int64, unsigned __int64, const char*,
                          unsigned __int64) __asm__("GameRoutine_1a0a680");
-__int64 GameRoutine_aa1b50_alt1(__int64,
+bool GameRoutine_aa1b50_alt1(__int64,
                                 unsigned __int64) __asm__("GameRoutine_aa1b50");
 __int64 fw_memory_HeapManager_Allocate(__int64, __int64, __int64, unsigned int);
 __int64 fw_text_String_CopyTerminated(__int64*, __int64, unsigned __int64);

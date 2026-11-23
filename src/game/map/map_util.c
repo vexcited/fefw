@@ -13,7 +13,7 @@ __int64 GameRoutine_74cd60(_QWORD);
 __int64 GameRoutine_755860(__int64 result);
 __int64 GameRoutine_755a10(__int64 result);
 __int64 GameRoutine_7fb7c0(_QWORD);
-__int64 MapUtil_753390_alt1(_QWORD, _QWORD, _QWORD,
+bool MapUtil_753390_alt1(_QWORD, _QWORD, _QWORD,
                             _QWORD) __asm__("MapUtil_753390");
 __int64 MapUtil_754760_alt1(_QWORD, _QWORD, _QWORD, _QWORD, _QWORD, _QWORD,
                             _QWORD, _QWORD) __asm__("MapUtil_754760");
@@ -185,7 +185,7 @@ __int64 game_map_MapUtil_IsAttackRange_lambda0_Invoke_75cb00(__int64 result,
                                                              _DWORD* a3);
 __int64* GameRoutine_7fb7c0_alt1(__int64* result, __int64, __int64,
                                  unsigned __int64);
-__int64 GameRoutine_747a00_alt1(__int64, unsigned int, unsigned int, __int64,
+bool GameRoutine_747a00_alt1(__int64, unsigned int, unsigned int, __int64,
                                 char);
 __int64 GameRoutine_74d660_alt1(__int64, int, char, char);
 __int64 IDeploy_7480e0(__int64, int, int, int*);
