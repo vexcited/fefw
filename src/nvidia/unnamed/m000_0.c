@@ -3,333 +3,197 @@
 #pragma GCC visibility push(hidden)
 
 extern __int64 NgxData_2b8a118;
+
 extern __int64 NgxData_2b8a128;
+
 extern __int64 NgxData_2b8a130;
+
 extern __int64 NgxData_2b8a140;
+
 extern __int64 NgxData_2b8a328;
+
 extern __int64 NgxData_2b8a338;
+
 extern __int64 NgxData_2b8a340;
+
 extern __int64 NgxData_2b8a350;
+
 extern __int64 NgxData_2b8a358;
+
 extern __int64 NgxData_2b8a368;
+
 extern __int64 NgxData_2b8a370;
+
 extern __int64 NgxData_2b8a380;
+
 extern __int64 NgxData_2b8a388;
+
 extern __int64 NgxData_2b8a398;
+
 extern __int64 NgxData_2b8a3a0;
+
 extern __int64 NgxData_2b8a3b0;
+
 extern __int64 NgxData_2b8a3b8;
+
 extern __int64 NgxData_2b8a3c8;
+
 extern __int64 NgxData_2b8a3d0;
+
 extern __int64 NgxData_2b8a3e0;
+
 extern __int64 NgxData_2b8a3e8;
+
 extern __int64 NgxData_2b8a3f8;
+
 extern __int64 NgxData_2b8a400;
+
 extern __int64 NgxData_2b8a410;
+
 extern __int64 NgxData_2b8a418;
+
 extern __int64 NgxData_2b8a428;
+
 extern __int64 NgxData_2b8a430;
+
 extern __int64 NgxData_2b8a440;
+
 extern __int64 NgxData_2b8a448;
+
 extern __int64 NgxData_2b8a458;
+
 extern __int64 NgxData_2b8a460;
+
 extern __int64 NgxData_2b8a470;
+
 extern __int64 NgxData_2b8a6b8;
+
 extern __int64 NgxData_2b8a6c8;
+
 extern __int64 NgxData_2b8a6d0;
+
 extern __int64 NgxData_2b8a6e0;
+
 extern __int64 NgxData_2b8a6e8;
+
 extern __int64 NgxData_2b8a6f8;
+
 extern __int64 NgxData_2b8a700;
+
 extern __int64 NgxData_2b8a710;
+
 extern __int64 NgxData_2b8a718;
+
 extern __int64 NgxData_2b8a728;
+
 extern __int64 NgxData_2b8a730;
+
 extern __int64 NgxData_2b8a740;
+
 extern __int64 NgxData_2b8a748;
+
 extern __int64 NgxData_2b8a758;
+
 extern __int64 NgxData_2b8a760;
+
 extern __int64 NgxData_2b8a770;
+
 extern __int64 NgxData_2b8a778;
+
 extern __int64 NgxData_2b8a788;
+
 extern __int64 NgxData_2b8a790;
+
 extern __int64 NgxData_2b8a7a0;
+
 extern __int64 NgxData_2b8a7a8;
+
 extern __int64 NgxData_2b8a7b8;
+
 extern __int64 NgxData_2b8a7c0;
+
 extern __int64 NgxData_2b8a7d0;
+
 extern __int64 NgxData_2b8a7d8;
+
 extern __int64 NgxData_2b8a7e8;
+
 extern __int64 NgxData_2b8a7f0;
+
 extern __int64 NgxData_2b8a800;
+
 extern __int64 NgxData_2b8a808;
+
 extern __int64 NgxData_2b8a818;
+
 extern __int64 NgxData_2b8a820;
+
 extern __int64 NgxData_2b8a830;
+
 extern __int64 NgxData_2b8a838;
+
 extern __int64 NgxData_2b8a848;
+
 extern __int64 NgxData_2b8a850;
+
 extern __int64 NgxData_2b8a860;
+
 extern __int64 NgxData_2b8a868;
+
 extern __int64 NgxData_2b8a878;
+
 extern __int64 NgxData_2b8a880;
+
 extern __int64 NgxData_2b8a890;
+
 extern __int64 NgxData_2b8a898;
+
 extern __int64 NgxData_2b8a8a8;
+
 extern __int64 NgxData_2b8a8b0;
+
 extern __int64 NgxData_2b8a8c0;
+
 extern __int64 NgxData_2b8a8c8;
+
 extern __int64 NgxData_2b8a8d8;
+
 extern __int64 NgxData_2b8a8e0;
+
 extern __int64 NgxData_2b8a8f0;
+
 extern __int64 NgxData_9513e8;
-__int64 NgxRoutine_36f0(_QWORD, _QWORD);
+
 __int64 NgxRoutine_420(_QWORD);
+
 __int64 NgxRoutine_430(_QWORD, _QWORD);
+
 __int64 NgxRoutine_bfa50(_QWORD, _QWORD, _QWORD, _QWORD, _QWORD, _QWORD,
                          _QWORD);
+
 __int64 NgxRoutine_d1ce0();
+
 __int64 NgxRoutine_d3a70(_QWORD, _QWORD, _QWORD, _QWORD, _QWORD, _QWORD, _QWORD,
                          _QWORD, _QWORD, _QWORD);
+
 __int64 NgxRoutine_d5c30(_QWORD, _QWORD, _QWORD, _QWORD, _QWORD, _QWORD, _QWORD,
                          _QWORD, _QWORD, _QWORD);
+
 void __attribute__((noreturn)) NgxRoutine_e2320(void);
+
 __int64 NgxRoutine_e3100(_QWORD, _QWORD, _QWORD);
+
 __int64 NgxRoutine_e3110(_QWORD, _QWORD);
+
 __int64 NgxRoutine_e3120(_QWORD, _QWORD, _QWORD);
+
 __int64 NgxRoutine_e37f0(_QWORD, _QWORD);
+
 __int64 NgxRoutine_e3810(_QWORD);
+
 __int64 NgxHr_7c60(__int64 result);
+
 __int64 NgxHr_7b00(__int64 result);
-
-__int64 NgxHr_4760(__int64 a1)
-{
-  int v1;
-  int v2;
-  bool v4;
-  int v5;
-  int v6;
-  int v7;
-  int v8;
-  int v9;
-  __int64 result;
-  int v11;
-  __int64 v12;
-  int v13;
-  unsigned int v14;
-  __int64 v15;
-  __int64 v16;
-  __int64 v17;
-  __int64* v18;
-  __int64 v19;
-  __int64* v20;
-  int v21;
-  int v22;
-  int v23;
-
-  v1 = *(_DWORD*)(a1 + 100);
-  v2 = *(_DWORD*)(a1 + 104);
-  v5 = v1 + 3;
-  v4 = v1 < -3;
-  v6 = v1 + 6;
-  if (!v4) {
-    v6 = v5;
-  }
-  v7 = v2 + 7;
-  v4 = v2 < -7;
-  v8 = v2 + 14;
-  if (!v4) {
-    v8 = v7;
-  }
-  v9 = v8 >> 3;
-  *(_DWORD*)(a1 + 308) = v9;
-  *(_DWORD*)(a1 + 304) = v9 * (v6 >> 2);
-  NgxRoutine_36f0(a1 + 312, a1 + 316);
-  result = NgxRoutine_36f0(a1 + 320, a1 + 324);
-  *(_QWORD*)(a1 + 160) = 32;
-  v11 = *(_DWORD*)(a1 + 120) * *(_DWORD*)(a1 + 116);
-  v12 = *(int*)(a1 + 92);
-  v13 = v11 - 1;
-  v14 = v11 - 2;
-  if (v11 >= 2) {
-    v15 = 2 * v12;
-    v16 = v13 & 7;
-    if (v14 < 7) {
-      v17 = 0;
-      if ((v13 & 7) == 0) {
-        goto LABEL_14;
-      }
-      goto LABEL_12;
-    }
-    v18 = (__int64*)(a1 + 224);
-    v19 = 0;
-    do {
-      *(v18 - 7) = v15;
-      *(v18 - 6) = v15;
-      *(v18 - 5) = v15;
-      *(v18 - 4) = v15;
-      v19 -= 8;
-      *(v18 - 3) = v15;
-      *(v18 - 2) = v15;
-      *(v18 - 1) = v15;
-      *v18 = v15;
-      v18 += 8;
-    } while (-(__int64)(v13 & 0x7FFFFFF8) != v19);
-    v17 = -v19;
-    if ((v13 & 7) != 0) {
-    LABEL_12:
-      v20 = (__int64*)(a1 + 8 * v17 + 168);
-      do {
-        *v20++ = v15;
-        --v16;
-      } while (v16 != 0);
-    }
-  }
-LABEL_14:
-  *(_QWORD*)(a1 + 8LL * v13 + 168) = 64 - 2LL * (int)(v12 * v13);
-  v21 = v12 + 31;
-  v4 = (int)v12 < -31;
-  v22 = v12 + 62;
-  if (!v4) {
-    v22 = v21;
-  }
-  v23 = (v22 >> 5) - 1;
-  *(_DWORD*)(a1 + 352) = v23;
-  *(_DWORD*)(a1 + 356) = 32 * v23;
-  return result;
-}
-
-__int64 NgxHr_7b00(__int64 result)
-{
-
-#pragma clang fp contract(on)
-
-  int v1;
-  __int64 v2;
-  __int64 v3;
-  __int64 v4;
-  unsigned __int64* v5;
-  __int64 v6;
-  int v7;
-
-  *(_QWORD*)(result + 112) = 32;
-  v1 = *(_DWORD*)(result + 76);
-  v2 = v1 * (__int64)*(int*)(result + 72);
-  if ((_DWORD)v2 == 1) {
-    *(_QWORD*)(result + 120) = 64;
-    goto LABEL_11;
-  }
-  *(_QWORD*)(result + 120) = 2LL * *(int*)(result + 52);
-  if ((int)v2 < 2) {
-    goto LABEL_11;
-  }
-  v3 = ((_BYTE)v2 - 1) & 3;
-  if ((unsigned int)(v2 - 2) < 3) {
-    v4 = 1;
-    if ((((_BYTE)v2 - 1) & 3) == 0) {
-      goto LABEL_11;
-    }
-    goto LABEL_10;
-  }
-  v5 = (unsigned __int64*)(result + 160);
-  v6 = 0;
-  do {
-    *(v5 - 3) = (unsigned int)(((int)v6 + 1) / v1) |
-                ((unsigned __int64)(unsigned int)(((int)v6 + 1) % v1) << 32);
-    *(v5 - 2) = (unsigned int)(((int)v6 + 2) / v1) |
-                ((unsigned __int64)(unsigned int)(((int)v6 + 2) % v1) << 32);
-    v7 = v6 + 3;
-    v6 += 4;
-    *(v5 - 1) = (unsigned int)(v7 / v1) |
-                ((unsigned __int64)(unsigned int)(v7 % v1) << 32);
-    *v5 = (unsigned int)((int)v6 / v1) |
-          ((unsigned __int64)(unsigned int)((int)v6 % v1) << 32);
-    v5 += 4;
-  } while (v6 != (((unsigned int)v2 - 1LL) & 0xFFFFFFFFFFFFFFFCLL));
-  v4 = v6 + 1;
-  if ((((_BYTE)v2 - 1) & 3) != 0) {
-    do {
-    LABEL_10:
-      --v3;
-      *(_QWORD*)(result + 128 + 8 * v4) =
-          (unsigned int)((int)v4 / v1) |
-          ((unsigned __int64)(unsigned int)((int)v4 % v1) << 32);
-      ++v4;
-    } while (v3 != 0);
-  }
-LABEL_11:
-  *(_QWORD*)(result + 8 * v2 + 128) = 0;
-  *(_QWORD*)(result + 128) =
-      64 - 2 * *(int*)(result + 52) *
-               (*(int*)(result + 76) * (__int64)*(int*)(result + 72) - 1);
-  return result;
-}
-
-__int64 NgxHr_7c60(__int64 result)
-{
-
-#pragma clang fp contract(on)
-
-  int v1;
-  __int64 v2;
-  __int64 v3;
-  __int64 v4;
-  unsigned __int64* v5;
-  __int64 v6;
-  int v7;
-
-  *(_QWORD*)(result + 112) = 64;
-  v1 = *(_DWORD*)(result + 76);
-  v2 = v1 * (__int64)*(int*)(result + 72);
-  if ((_DWORD)v2 == 1) {
-    *(_QWORD*)(result + 120) = 64;
-    goto LABEL_11;
-  }
-  *(_QWORD*)(result + 120) = 2LL * *(int*)(result + 52);
-  if ((int)v2 < 2) {
-    goto LABEL_11;
-  }
-  v3 = ((_BYTE)v2 - 1) & 3;
-  if ((unsigned int)(v2 - 2) < 3) {
-    v4 = 1;
-    if ((((_BYTE)v2 - 1) & 3) == 0) {
-      goto LABEL_11;
-    }
-    goto LABEL_10;
-  }
-  v5 = (unsigned __int64*)(result + 160);
-  v6 = 0;
-  do {
-    *(v5 - 3) = (unsigned int)(((int)v6 + 1) / v1) |
-                ((unsigned __int64)(unsigned int)(((int)v6 + 1) % v1) << 32);
-    *(v5 - 2) = (unsigned int)(((int)v6 + 2) / v1) |
-                ((unsigned __int64)(unsigned int)(((int)v6 + 2) % v1) << 32);
-    v7 = v6 + 3;
-    v6 += 4;
-    *(v5 - 1) = (unsigned int)(v7 / v1) |
-                ((unsigned __int64)(unsigned int)(v7 % v1) << 32);
-    *v5 = (unsigned int)((int)v6 / v1) |
-          ((unsigned __int64)(unsigned int)((int)v6 % v1) << 32);
-    v5 += 4;
-  } while (v6 != (((unsigned int)v2 - 1LL) & 0xFFFFFFFFFFFFFFFCLL));
-  v4 = v6 + 1;
-  if ((((_BYTE)v2 - 1) & 3) != 0) {
-    do {
-    LABEL_10:
-      --v3;
-      *(_QWORD*)(result + 128 + 8 * v4) =
-          (unsigned int)((int)v4 / v1) |
-          ((unsigned __int64)(unsigned int)((int)v4 % v1) << 32);
-      ++v4;
-    } while (v3 != 0);
-  }
-LABEL_11:
-  *(_QWORD*)(result + 8 * v2 + 128) = 0;
-  *(_QWORD*)(result + 128) =
-      64 - 2 * *(int*)(result + 52) *
-               (*(int*)(result + 76) * (__int64)*(int*)(result + 72) - 1);
-  return result;
-}
 
 __int64 NgxHr_d1d00(_QWORD* a1, _QWORD* a2, char a3, __int64 a4, __int16 a5,
                     _DWORD* a6, bool* a7, __int64 a8, __int64* a9, __int64* a10,
