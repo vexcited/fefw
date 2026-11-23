@@ -1938,12 +1938,12 @@ b0080,376,verified,src/nnmusl/unistd/sysconf.c,sysconf
 b0210,36,verified,src/nnmusl/nnmusl_unsupported.c,futimens
 b0240,36,verified,src/nnmusl/nnmusl_unsupported.c,utimensat
 b0270,36,verified,src/nnmusl/nnmusl_unsupported.c,utimes
-b02a0,1424,verified,src/nnmusl/unplaced.c,nnmusl_b02a0
+b02a0,1504,verified,src/nnmusl/unplaced.c,nnmusl_b02a0
 b08b0,216,verified,src/nnmusl/unistd/cwd_state.c,__nnmusl_utf8_sequence_length
 b0990,328,verified,src/nnmusl/fcntl/fs_errno.c,__nnmusl_fs_result_errno
 b0b00,496,verified,src/nnmusl/fcntl/fs_validate.c,__nnmusl_validate_path
 b0cf0,192,verified,src/nnmusl/fcntl/fs_device.c,__nnmusl_check_device_path
-b0dc0,848,verified,src/nnmusl/unplaced.c,nnmusl_b0dc0
+b0dc0,976,verified,src/nnmusl/unplaced.c,nnmusl_b0dc0
 b1220,112,verified,src/nnmusl/unplaced.c,nnmusl_b1220
 b15f0,248,verified,src/nnmusl/unistd/cwd_state.c,__nnmusl_set_cwd
 b16f0,140,verified,src/nnmusl/unistd/cwd_state.c,__nnmusl_copy_cwd
