@@ -5542,26 +5542,29 @@ __int64 llvm_libcxx_21_libcxx_include___functional_11f1320(__int64 result,
     __int64 v77;
     int v78;
   } v67_;
-  _QWORD v79[2];
-  _BYTE v80[2224];
-  _BYTE v81[2232];
-  _QWORD v82[2];
-  _QWORD v83[95];
-  _QWORD v84[95];
-  _QWORD v85[95];
+  // One simulator object the callees fill through its first field.
   struct {
-    _QWORD v86[1126];
-    __int64 v87;
-    unsigned int v88;
-    char gap16012_[484];
-    int v89;
-    char gap16500_[4];
-    float v90;
-    char gap16508_[68];
-    int v91;
-    char gap16580_[164];
-    int v92;
-  } v86_;
+    _QWORD v79[2];
+    _BYTE v80[2224];
+    _BYTE v81[2232];
+    _QWORD v82[2];
+    _QWORD v83[95];
+    _QWORD v84[95];
+    _QWORD v85[95];
+    struct {
+      _QWORD v86[1126];
+      __int64 v87;
+      unsigned int v88;
+      char gap16012_[484];
+      int v89;
+      char gap16500_[4];
+      float v90;
+      char gap16508_[68];
+      int v91;
+      char gap16580_[164];
+      int v92;
+    } v86_;
+  } v79_;
   __int64 v93;
   int v94[4];
   struct {
@@ -5638,17 +5641,17 @@ __int64 llvm_libcxx_21_libcxx_include___functional_11f1320(__int64 result,
     v48 = v9;
     v50 = v3;
     v94[3] = 0;
-    GameRoutine_6c2b50((__int64)v80),
+    GameRoutine_6c2b50((__int64)v79_.v80),
         v25 = COERCE_AS(__typeof__(v25), PSEUDO_REGISTER(__n128, "v0", "=w"));
-    GameRoutine_6c2b50((__int64)v81),
+    GameRoutine_6c2b50((__int64)v79_.v81),
         v25 = COERCE_AS(__typeof__(v25), PSEUDO_REGISTER(__n128, "v0", "=w"));
-    GameRoutine_790080((__int64)v82),
+    GameRoutine_790080((__int64)v79_.v82),
         v25 = COERCE_AS(__typeof__(v25), PSEUDO_REGISTER(__n128, "v0", "=w"));
     v51 = 0;
     v26 = 828;
     v27 = 0;
-    v86_.v91 = 0;
-    v79[0] = GameData_21308b8 + 16;
+    v79_.v86_.v91 = 0;
+    v79_.v79[0] = GameData_21308b8 + 16;
     v28 = GameData_212c878[0];
     v49 = -1;
     v52 = -1;
@@ -5684,48 +5687,49 @@ __int64 llvm_libcxx_21_libcxx_include___functional_11f1320(__int64 result,
         v67_.v73 = **(_QWORD**)(v6 + 24);
         v67_.v75 = v50;
         v67_.v76 = v4;
-        game_128df90((__int64)v79, &v67_.v67),
+        game_128df90((__int64)v79_.v79, &v67_.v67),
             v25 =
                 COERCE_AS(__typeof__(v25), PSEUDO_REGISTER(__n128, "v0", "=w"));
-        AiInterferenceSimulator_128e230((__int64)v79, (__int64)&v67_.v67),
+        AiInterferenceSimulator_128e230((__int64)v79_.v79, (__int64)&v67_.v67),
             v25 =
                 COERCE_AS(__typeof__(v25), PSEUDO_REGISTER(__n128, "v0", "=w"));
-        GameRoutine_11fbb20((__int64)v79),
+        GameRoutine_11fbb20((__int64)v79_.v79),
             v25 =
                 COERCE_AS(__typeof__(v25), PSEUDO_REGISTER(__n128, "v0", "=w"));
-        AIBattleSimulator_11fbe50((__int64)v79, 0),
+        AIBattleSimulator_11fbe50((__int64)v79_.v79, 0),
             v25 =
                 COERCE_AS(__typeof__(v25), PSEUDO_REGISTER(__n128, "v0", "=w"));
-        AIBattleSimulator_11fbe50((__int64)v79, 1),
+        AIBattleSimulator_11fbe50((__int64)v79_.v79, 1),
             v25 =
                 COERCE_AS(__typeof__(v25), PSEUDO_REGISTER(__n128, "v0", "=w"));
-        AiBattleSimulator_11fc090((__int64)v79, 0),
+        AiBattleSimulator_11fc090((__int64)v79_.v79, 0),
             v25 =
                 COERCE_AS(__typeof__(v25), PSEUDO_REGISTER(__n128, "v0", "=w"));
-        *(float*)&v38 = AiBattleSimulator_11fc090((__int64)v79, 1u),
+        *(float*)&v38 = AiBattleSimulator_11fc090((__int64)v79_.v79, 1u),
         v25 = COERCE_AS(__typeof__(v25), PSEUDO_REGISTER(__n128, "v0", "=w"));
-        AIBattleSimulator_11fc220((__int64)v79, v38),
+        AIBattleSimulator_11fc220((__int64)v79_.v79, v38),
             v25 =
                 COERCE_AS(__typeof__(v25), PSEUDO_REGISTER(__n128, "v0", "=w"));
         if (**(_BYTE**)(v6 + 32) != 1 ||
-            v86_.v89 >= 1 &&
-                (*(float*)& v25 = v86_.v90, v86_.v90 > 0x0.0p+0f)) {
-          if (v52 < 0 || v51 < v86_.v88 || v51 <= v86_.v88 && v27 < v49) {
-            v95_.v95 = __PAIR64__(v27, v86_.v88);
+            v79_.v86_.v89 >= 1 &&
+                (*(float*)& v25 = v79_.v86_.v90, v79_.v86_.v90 > 0x0.0p+0f)) {
+          if (v52 < 0 || v51 < v79_.v86_.v88 ||
+              v51 <= v79_.v86_.v88 && v27 < v49) {
+            v95_.v95 = __PAIR64__(v27, v79_.v86_.v88);
             LODWORD(v95_.v97) = 0;
             DWORDn(v95_.v97, sizeof(v95_.v97) / 4 - 1) = v10;
             {
               __typeof__(v25) z_ = (__typeof__(v25)){0};
-              LODWORD(z_) = v86_.v92;
+              LODWORD(z_) = v79_.v86_.v92;
               v25 = z_;
             }
             WORD2(v95_.v98) = 0;
             BYTE6(v95_.v98) = 0;
-            v51 = v86_.v88;
+            v51 = v79_.v86_.v88;
             v52 = v10;
             LODWORD(v95_.v98) = v48;
             v49 = v27;
-            LODWORD(v95_.v96) = v86_.v92;
+            LODWORD(v95_.v96) = v79_.v86_.v92;
           }
         }
       }
@@ -5770,27 +5774,27 @@ __int64 llvm_libcxx_21_libcxx_include___functional_11f1320(__int64 result,
         *(_QWORD*)(v44 + 44) = v45;
       }
     }
-    v79[0] = &GameData_2017d28;
-    v82[0] = GameData_212d238[0] + 16;
-    v86_.v86[1125] = GameData_212da50[0] + 2;
-    if (v86_.v87 != 0) {
-      (*(void (**)(__int64, long double))(*(_QWORD*)v86_.v87 + 8LL))(v86_.v87,
-                                                                     v25),
+    v79_.v79[0] = &GameData_2017d28;
+    v79_.v82[0] = GameData_212d238[0] + 16;
+    v79_.v86_.v86[1125] = GameData_212da50[0] + 2;
+    if (v79_.v86_.v87 != 0) {
+      (*(void (**)(__int64, long double))(*(_QWORD*)v79_.v86_.v87 + 8LL))(
+          v79_.v86_.v87, v25),
           v25 = COERCE_AS(__typeof__(v25), PSEUDO_REGISTER(__n128, "v0", "=w"));
-      v86_.v87 = 0;
+      v79_.v86_.v87 = 0;
     }
-    v82[1] = GameData_212d258[0] + 2;
-    BattleSide_Destructor(v86_.v86),
+    v79_.v82[1] = GameData_212d258[0] + 2;
+    BattleSide_Destructor(v79_.v86_.v86),
         v25 = COERCE_AS(__typeof__(v25), PSEUDO_REGISTER(__n128, "v0", "=w"));
-    BattleSide_Destructor(v85),
+    BattleSide_Destructor(v79_.v85),
         v25 = COERCE_AS(__typeof__(v25), PSEUDO_REGISTER(__n128, "v0", "=w"));
-    BattleSide_Destructor(v84),
+    BattleSide_Destructor(v79_.v84),
         v25 = COERCE_AS(__typeof__(v25), PSEUDO_REGISTER(__n128, "v0", "=w"));
-    BattleSide_Destructor(v83),
+    BattleSide_Destructor(v79_.v83),
         v25 = COERCE_AS(__typeof__(v25), PSEUDO_REGISTER(__n128, "v0", "=w"));
-    game_Unit_Destroy_Unit((__int64)v81),
+    game_Unit_Destroy_Unit((__int64)v79_.v81),
         v25 = COERCE_AS(__typeof__(v25), PSEUDO_REGISTER(__n128, "v0", "=w"));
-    return game_Unit_Destroy_Unit((__int64)v80);
+    return game_Unit_Destroy_Unit((__int64)v79_.v80);
   }
   else {
     v23 = v22 + v11;
