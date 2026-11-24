@@ -713,8 +713,8 @@ __int64 nn_font_5665e0(__int64 a1, float* a2, unsigned __int64* a3, int a4)
           }
           v44 = 0x0.0p+0f;
           v45 = v38 + 0x0.0p+0f;
-          if ((float)((float)(v38 + 0x0.0p+0f) + *(float*)(a1 + 72)) <=
-              *(float*)(a1 + 60)) {
+          if (!((float)((float)(v38 + 0x0.0p+0f) + *(float*)(a1 + 72)) >
+                *(float*)(a1 + 60))) {
             goto LABEL_104;
           }
           v24 = 1;
@@ -828,9 +828,9 @@ __int64 nn_font_5665e0(__int64 a1, float* a2, unsigned __int64* a3, int a4)
             *(_QWORD*)v48 + 32LL))(v48, (__int64)&v70_.v70, (__int64)v84, v32),
             v66 =
                 COERCE_AS(__typeof__(v66), PSEUDO_REGISTER(float, "s0", "=w"));
-        if (!(*(float*)&v70_.v71 > *(float*)&v70_.v70)||
-            (float)(*((float*)&v72_.v73 + 1) - *(float*)&v88_.v91[3]) <=
-                *(float*)(a1 + 60)) {
+        if (!(*(float*)&v70_.v71 > *(float*)&v70_.v70) ||
+            !((float)(*((float*)&v72_.v73 + 1) - *(float*)&v88_.v91[3]) >
+              *(float*)(a1 + 60))) {
           break;
         }
         v88_.v88 = v26;

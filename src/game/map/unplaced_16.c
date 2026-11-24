@@ -511,8 +511,8 @@ LABEL_66:
     v76 = fabsf(v68 * fabsf(LANES128(v75).n128_f32[0]));
     if ((LANES64_OF(vmovn_s32(vcgtq_f32(v67, v66))).n64_u8[0] & 1) != 0) {
       v77 = LANES128(v67).n128_f32[0] - v76;
-      if ((float)(LANES128(v67).n128_f32[0] - v76) >=
-          LANES128(v66).n128_f32[0]) {
+      if (!((float)(LANES128(v67).n128_f32[0] - v76) <
+            LANES128(v66).n128_f32[0])) {
       LABEL_76:
         v78 = LANES128(v67).n128_f32[2];
         v79 = LANES128(v67).n128_f32[1];
@@ -600,8 +600,8 @@ LABEL_66:
         }
         else {
           v78 = LANES128(v67).n128_f32[2] - v80;
-          if ((float)(LANES128(v67).n128_f32[2] - v80) >=
-              LANES128(v66).n128_f32[2]) {
+          if (!((float)(LANES128(v67).n128_f32[2] - v80) <
+                LANES128(v66).n128_f32[2])) {
             goto LABEL_82;
           }
         }
@@ -696,8 +696,8 @@ LABEL_99:
   v109 = fabsf(v97 * fabsf(LANES128(v104).n128_f32[2]));
   if (LANES128(v96).n128_f32[2] > LANES128(v95).n128_f32[2]) {
     LANES128(v96).n128_f32[0] = LANES128(v96).n128_f32[2] - v109;
-    if ((float)(LANES128(v96).n128_f32[2] - v109) >=
-        LANES128(v95).n128_f32[2]) {
+    if (!((float)(LANES128(v96).n128_f32[2] - v109) <
+          LANES128(v95).n128_f32[2])) {
       goto LABEL_105;
     }
   LABEL_104:

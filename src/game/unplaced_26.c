@@ -12135,8 +12135,8 @@ LABEL_63:
       v77 = 0;
       do {
         v78 = LANES128(v74[11]).n128_u64[0] + v77;
-        if ((float)(LANES128(v74[4]).n128_f32[1] - *(float*)(v78 + 8)) >=
-            *(float*)(v78 + 12)) {
+        if (!((float)(LANES128(v74[4]).n128_f32[1] - *(float*)(v78 + 8)) <
+              *(float*)(v78 + 12))) {
           *(_QWORD*)(v78 + 16) = 0;
         }
         else if (*(_QWORD*)(v78 + 16) == 0) {
