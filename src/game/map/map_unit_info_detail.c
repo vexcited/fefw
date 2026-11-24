@@ -3951,7 +3951,7 @@ _QWORD* MapUnitInfoDetail_1831300(_QWORD* result, int* a2, _QWORD* a3,
     else if ((__int64)a5 > 8) {
       v15 = a5 >> 1;
       v18 = a4;
-      v19 = (a5 >> 1) + (((__int64)a2 - *result) >> 3);
+      v19 = (a5 >> 1) + ((__int64)((__int64)a2 - *result) >> 3);
       if (v19 < 1) {
         v22 = 511 - v19;
         v20 = &result[-(v22 >> 9)];

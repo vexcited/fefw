@@ -955,7 +955,8 @@ LABEL_26:
           v18 = *((_DWORD*)a1 + 269);
           v19 = *((_QWORD*)a1 + 136);
           v20 = v17;
-          if (v18 < (unsigned __int64)((*((_QWORD*)a1 + 137) - v19) >> 2)) {
+          if (v18 <
+              (unsigned __int64)((__int64)(*((_QWORD*)a1 + 137) - v19) >> 2)) {
             v18 = *(_DWORD*)(v19 + 4LL * v18);
           }
           v21 = ~*((_DWORD*)a1 + 332) + *((_DWORD*)a1 + 334);
@@ -975,7 +976,8 @@ LABEL_26:
           }
           v24 = *((_DWORD*)a1 + 269);
           v25 = *((_QWORD*)a1 + 136);
-          if (v24 < (unsigned __int64)((*((_QWORD*)a1 + 137) - v25) >> 2)) {
+          if (v24 <
+              (unsigned __int64)((__int64)(*((_QWORD*)a1 + 137) - v25) >> 2)) {
             v24 = *(_DWORD*)(v25 + 4LL * v24);
           }
           v26 = ~*((_DWORD*)a1 + 332) + *((_DWORD*)a1 + 334);

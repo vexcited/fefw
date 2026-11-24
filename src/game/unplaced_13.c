@@ -15222,7 +15222,7 @@ __int64 game_12a2520(__int64 a1, __int64 a2, _DWORD* a3)
     if (a2 != 0 && *(_BYTE*)(v7 + 275) != 0) {
       v11 = *(_QWORD*)(a2 + 1744);
       v12 = ((unsigned __int64)(unsigned int)GameData_21d9864 >> 5) & 0x7F;
-      if (v12 + 1 <= (*(_QWORD*)(a2 + 1752) - v11) >> 2 &&
+      if (v12 + 1 <= ((__int64)(*(_QWORD*)(a2 + 1752) - v11) >> 2) &&
               ((*(_DWORD*)(v11 + 4LL * (unsigned int)v12) >> GameData_21d9864) &
                1) != 0 ||
           ((v13 = *(_QWORD*)(a2 + 440)) == 0 ? (v14 = 9)

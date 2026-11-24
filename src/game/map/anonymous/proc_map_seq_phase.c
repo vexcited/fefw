@@ -1816,9 +1816,8 @@ __int64 game_map_anonymous_ProcMapSeqPhase_TargetData_TryGive(__int64 result)
     result = ProcList_9bd480_alt2(result);
     if (result != 0 && *(_QWORD*)(v1 + 136) != *(_QWORD*)(v1 + 128)) {
       v2 = result;
-      for (i = 0;
-           i < (__int64)(*(_QWORD*)(v1 + 136) - *(_QWORD*)(v1 + 128)) >> 2;
-           ++i) {
+      i = 0;
+      do {
         v5_.v5[0] = GameData_1fa0d90;
         v5_.v5[1] = v1;
         v5_.v5[2] = i;
@@ -1835,7 +1834,10 @@ __int64 game_map_anonymous_ProcMapSeqPhase_TargetData_TryGive(__int64 result)
           v4 = 40;
         }
         result = (*(__int64 (**)(__int64))(*v5_.v6 + v4))((__int64)v5_.v6);
-      }
+      } while (++i <
+               (unsigned __int64)((__int64)(*(_QWORD*)(v1 + 136) -
+                                            *(_QWORD*)(v1 + 128)) >>
+                                  2));
     }
   }
   return result;
@@ -1860,9 +1862,8 @@ __int64 game_map_anonymous_ProcMapSeqPhase_TargetData_TrySkill(__int64 result)
     result = ProcList_9bd480_alt2(result);
     if (result != 0 && *(_QWORD*)(v1 + 160) != *(_QWORD*)(v1 + 152)) {
       v2 = result;
-      for (i = 0;
-           i < (__int64)(*(_QWORD*)(v1 + 160) - *(_QWORD*)(v1 + 152)) >> 2;
-           ++i) {
+      i = 0;
+      do {
         v5_.v5[0] = GameData_1fa0e10;
         v5_.v5[1] = v1;
         v5_.v5[2] = i;
@@ -1879,7 +1880,9 @@ __int64 game_map_anonymous_ProcMapSeqPhase_TargetData_TrySkill(__int64 result)
           v4 = 40;
         }
         result = (*(__int64 (**)(__int64))(*v5_.v6 + v4))((__int64)v5_.v6);
-      }
+      } while (++i < (unsigned __int64)((__int64)(*(_QWORD*)(v1 + 160) -
+                                                  *(_QWORD*)(v1 + 152)) >>
+                                        2));
     }
   }
   return result;

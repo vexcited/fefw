@@ -364,7 +364,7 @@ __int64 game_gmap_anonymous_ProcDispatchMenu_SortAndFilter(__int64 a1)
 
   v1 = *(_DWORD*)(a1 + 660);
   v2 = *(_QWORD*)(a1 + 672);
-  if (v1 < (unsigned __int64)((*(_QWORD*)(a1 + 680) - v2) >> 2)) {
+  if (v1 < (unsigned __int64)((__int64)(*(_QWORD*)(a1 + 680) - v2) >> 2)) {
     v1 = *(_DWORD*)(v2 + 4LL * v1);
   }
   v4 = *(_QWORD**)(a1 + 256);

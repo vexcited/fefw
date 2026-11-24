@@ -391,7 +391,8 @@ __int64 CmdBtlSystemTroopMenu_Unknown112(__int64 a1, __int64 a2)
   if (v4 == v5) {
     goto LABEL_12;
   }
-  for (i = 0; i < (v4 - v5) >> 3; ++i) {
+  i = 0;
+  do {
     v7 = *(__int64 (****)())(v5 + 8 * i);
     if (v7 == nullptr ||
         *v7 !=
@@ -409,7 +410,7 @@ __int64 CmdBtlSystemTroopMenu_Unknown112(__int64 a1, __int64 a2)
     }
     v5 = *(_QWORD*)(a1 + 232);
     v4 = *(_QWORD*)(a1 + 240);
-  }
+  } while (++i < (unsigned __int64)((v4 - v5) >> 3));
   v3 = v15_.v16;
   if (v15_.v16 != v15_.v15) {
     if (v15_.v16 != nullptr) {

@@ -62,7 +62,7 @@ __int64 nn_mem_StandardAllocator_Free_alt1(_QWORD, _QWORD) __asm__(
     "nn_mem_StandardAllocator_Free");
 __int64 strlen(_QWORD);
 __int64 ui_LayoutAccessor_FindPane(_QWORD, _QWORD);
-__n128 std___1___shared_weak_count___release_weak_alt1() __asm__(
+__n128 std___1___shared_weak_count___release_weak_alt1(_QWORD) __asm__(
     "std___1___shared_weak_count___release_weak");
 __n128 ui_LayoutAccessor_SetPaneVisible(_QWORD, _QWORD, _QWORD);
 extern __int64 (*msg_TagSelector_vtable[])();
@@ -1033,7 +1033,7 @@ void ProcMouseGuide_17a8800(__int64 a1, const char* a2, int a3, __int64 a4)
     v13 = std___1___shared_weak_count_lock(v16_.v17);
     v14 = v16_.v16;
     if (v16_.v17 != 0) {
-      result = std___1___shared_weak_count___release_weak_alt1();
+      result = std___1___shared_weak_count___release_weak_alt1(v16_.v17);
     }
     if (v13 != 0 && v14 != 0) {
       LayoutAccessor_1562cf0(v14, a4);
@@ -1044,7 +1044,7 @@ void ProcMouseGuide_17a8800(__int64 a1, const char* a2, int a3, __int64 a4)
     if (atomic_fetch_add((atomic_ullong* volatile)(v13 + 8),
                          0xFFFFFFFFFFFFFFFFLL) == 0) {
       (*(void (**)(__int64))(*(_QWORD*)v13 + 16LL))(v13);
-      result = std___1___shared_weak_count___release_weak_alt1();
+      result = std___1___shared_weak_count___release_weak_alt1(v13);
       if ((v18[0] & 1) == 0) {
         return;
       }

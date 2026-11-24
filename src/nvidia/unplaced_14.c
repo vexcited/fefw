@@ -4164,7 +4164,7 @@ __int64 nvidia_cd0e0(unsigned __int8* a1, unsigned __int8* a2,
   }
   v16 = *(_QWORD*)(v7 + 16);
   v17 = *(int*)((char*)((_UNKNOWN**)0x8LL) + (_QWORD)v15) - 1LL;
-  if (v17 < (*(_QWORD*)(v7 + 24) - v16) >> 3) {
+  if (v17 < ((__int64)(*(_QWORD*)(v7 + 24) - v16) >> 3)) {
     v18 = *(_QWORD*)(v16 + 8 * v17);
     if (v18 != 0) {
       v19 = *a7;
@@ -4179,7 +4179,7 @@ __int64 nvidia_cd0e0(unsigned __int8* a1, unsigned __int8* a2,
       }
       v21 = *(_QWORD*)(v19 + 16);
       v22 = *(int*)((char*)((_UNKNOWN**)0x8LL) + (_QWORD)v20) - 1LL;
-      if (v22 < (*(_QWORD*)(v19 + 24) - v21) >> 3) {
+      if (v22 < ((__int64)(*(_QWORD*)(v19 + 24) - v21) >> 3)) {
         v23 = *(_QWORD*)(v21 + 8 * v22);
         if (v23 != 0) {
           (*(__attribute__((swiftcall)) void (**)(PSEUDO_X8, _QWORD))(
