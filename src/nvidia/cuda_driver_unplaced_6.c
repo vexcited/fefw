@@ -4412,6 +4412,8 @@ __int64 cuda_driver_e6730(__int64 a1, __int64 a2, __int64 a3, __int64 a4,
   __int64 v94;
   __int64 v95;
   unsigned int v96;
+  // 0x4f840 receives the whole x0 of 0x116ff0, not only its bool byte.
+  unsigned long long v48Raw;
   __int16 v97;
   __int64 v98;
   int v99;
@@ -4639,11 +4641,11 @@ __int64 cuda_driver_e6730(__int64 a1, __int64 a2, __int64 a3, __int64 a4,
           v96 = COERCE_AS(__typeof__(v96),
                           PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
       v48 = CudaDriverRoutine_116ff0(a3),
-      v96 = COERCE_AS(__typeof__(v96),
-                      PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
+      v48Raw = PSEUDO_REGISTER(unsigned long long, "x0", "=r");
+      v96 = (unsigned int)v48Raw;
       v49 = v107;
       if (v48) {
-        v50 = CudaDriverStub_4f840(v48),
+        v50 = CudaDriverStub_4f840(v48Raw),
         v96 = COERCE_AS(__typeof__(v96),
                         PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
         if (v107 != 0 || v50 != 0) {
