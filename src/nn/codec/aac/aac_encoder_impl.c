@@ -8,9 +8,29 @@ __int64 aac_encoder_362b40(__int64 result);
 __int64 aac_encoder_362ba0(int a1);
 void __attribute__((noreturn)) aac_encoder_36269c();
 void __attribute__((noreturn)) aac_encoder_3626e8();
-void __attribute__((noreturn)) aac_encoder_36269c() { GameRoutine_857150(); }
+extern _QWORD SdkData_c2d1c0[8];
+void nn_detail_UnexpectedDefaultImpl_plt_857150_alt1();
+__int64 aac_encoder_36267c();
+__int64 aac_encoder_362688(__int64 a1, int a2);
+__int64 aac_encoder_3626d8(int a1);
+__int64 aac_encoder_36267c() { return 253624; }
 
-void __attribute__((noreturn)) aac_encoder_3626e8() { GameRoutine_857150(); }
+__int64 aac_encoder_362688(__int64 a1, int a2)
+{
+  return SdkData_c2d1c0[a2 - 1];
+}
+
+void __attribute__((noreturn)) aac_encoder_36269c()
+{
+  nn_detail_UnexpectedDefaultImpl_plt_857150_alt1();
+}
+
+__int64 aac_encoder_3626d8(int a1) { return 2LL * (a1 << 10); }
+
+void __attribute__((noreturn)) aac_encoder_3626e8()
+{
+  nn_detail_UnexpectedDefaultImpl_plt_857150_alt1();
+}
 
 __int64 aac_encoder_362b40(__int64 result)
 {

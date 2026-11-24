@@ -67,6 +67,12 @@ __int64 std___1_promise_set_value(__int64* a1);
 __int64 future_7e6dd0(_QWORD* a1);
 __int64
 std___1___future_error_category_Destroy___future_error_category(_QWORD* a1);
+__int64 SdkRoutine_7e6b70(void);
+__int64 SdkRoutine_857220_alt1(__int64, unsigned __int64);
+__int64 std___1___assoc_sub_state_set_value_at_thread_exit_alt1(void);
+void _Unwind_Resume_plt_alt2(__int64);
+void __cxa_free_exception_plt();
+__int64 future_7e631c(__int64 a1);
 
 void __attribute__((noreturn)) std_nested_exception_rethrow_nested(void* this_)
 {
@@ -209,6 +215,14 @@ void __attribute__((noreturn)) future_7e62a0(unsigned int a1)
       __cxa_guard_release_plt(&SdkData_105ff80);
     }
   }
+}
+
+__int64 future_7e631c(__int64 a1)
+{
+
+  __cxa_free_exception_plt();
+  _Unwind_Resume_plt_alt2(a1);
+  return std___1___assoc_sub_state_set_value_at_thread_exit_alt1();
 }
 
 __int64 std___1___assoc_sub_state_set_value_at_thread_exit(__int64 a1)
@@ -433,18 +447,11 @@ __int64 std___1_promise_get_future(__int64 a1, __int64 a2, __int64 a3,
                                    __int64 a7, __int64 a8, __int64 a9,
                                    __int64 a10, __int64 a11, __int64 a12)
 {
-  __int64 v13;
-  double v14;
-  _QWORD* v15;
-
   if ((a10 & 1) != 0) {
-    SdkRoutine_857220(a12, a10 & 0xFFFFFFFFFFFFFFFELL);
+    SdkRoutine_857220_alt1(a12, a10 & 0xFFFFFFFFFFFFFFFELL);
   }
-  v14 = _Unwind_Resume_plt(a1);
-  if (*v15 == 0) {
-    future_7e62a0(3u);
-  }
-  return SdkRoutine_87cd10(v13, v14);
+  _Unwind_Resume_plt_alt2(a1);
+  return SdkRoutine_7e6b70();
 }
 
 __int64 std___1_promise_set_value(__int64* a1)

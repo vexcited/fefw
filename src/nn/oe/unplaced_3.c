@@ -5,6 +5,12 @@
 __int64 nn_applet_SetWirelessPriorityMode_plt(_QWORD);
 __int64 nn_oe_596ee4();
 void __attribute__((noreturn)) nn_oe_596eec();
-void __attribute__((noreturn)) nn_oe_596eec() { GameRoutine_856170(); }
+void nn_diag_detail_AbortImpl_plt_856170();
+__int64 nn_oe_596ee4() { return nn_applet_SetWirelessPriorityMode_plt(1); }
+
+void __attribute__((noreturn)) nn_oe_596eec()
+{
+  nn_diag_detail_AbortImpl_plt_856170();
+}
 
 #pragma GCC visibility pop

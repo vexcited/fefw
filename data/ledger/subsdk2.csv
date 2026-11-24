@@ -1,9 +1,11 @@
 address,size,status,source,name
 20,4,verified,src/movie/unnamed/y000_0.c,MovieHr_20
+40,236,verified,src/movie/unplaced.c,movie_40
 1b0,32,verified,src/movie/unnamed/p000_0.c,MovieHr_1b0
 200,64,verified,src/movie/unnamed/p000_0.c,MovieHr_200
 270,32,verified,src/movie/unnamed/p000_0.c,MovieHr_270
 2b0,56,verified,src/movie/unnamed/p000_0.c,MovieHr_2b0
+320,4,verified,src/movie/unplaced.c,movie_320
 340,88,verified,src/movie/unnamed/p000_0.c,MovieHr_340
 400,8,verified,src/movie/unnamed/y000_0.c,MovieHr_400
 410,8,verified,src/movie/unnamed/y000_0.c,MovieHr_410
@@ -680,7 +682,7 @@ fff0,88,verified,src/movie/detail/movie_video_decoder_event_manager.cpp,_ZN5movi
 23ce0,564,disputed,src/movie/unnamed/p000_0.c,MovieHr_23ce0
 23fc0,2388,verified,src/opus/celt/bands.c,compute_theta
 24d60,104,verified,src/opus/celt/celt.c,resampling_factor
-24de0,1128,disputed,src/opus/celt/celt_impl2.c,comb_filter
+24de0,1192,verified,src/opus/celt/celt_impl2.c,comb_filter
 252a0,104,verified,src/opus/celt/celt.c,init_caps
 25310,40,verified,src/opus/celt/celt_impl2.c,celt_25310
 25340,12,verified,src/opus/celt/celt.c,opus_get_version_string

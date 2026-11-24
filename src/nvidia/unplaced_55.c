@@ -1,5 +1,7 @@
 #include "decomp/pseudo_helpers.h"
+
 #pragma GCC visibility push(hidden)
+
 _DWORD* NgxRoutine_36f0(_DWORD* result, unsigned int*, unsigned int);
 __int64* NgxRoutine_bf140(__int64*, unsigned __int64, int);
 __int64* NgxRoutine_bf140_alt1(__int64*, unsigned __int64, unsigned int);
@@ -49,6 +51,153 @@ _QWORD* nvidia_c7900(__int64 a1, _QWORD* a2, _QWORD* a3, __int64 a4, _DWORD* a5,
                      __int64* a6);
 __int64 nvidia_dbd00(__int64 a1, __int64* a2, _DWORD* a3, _DWORD* a4,
                      _QWORD* a5, _BYTE* a6, _BYTE* a7, _QWORD* a8);
+void _Unwind_Resume_plt(__int64);
+void __attribute__((noreturn)) unplaced_55_c789c(__int64 a1);
+_QWORD* NgxRoutine_bf700(_QWORD* result);
+__attribute__((swiftcall)) void nvidia_be650(PSEUDO_X8, __int64);
+__int64 NgxRoutine_baf00(_QWORD);
+__int64 NgxRoutine_bc9e0();
+__int64 NgxRoutine_be820(void);
+__int64 NgxRoutine_bf010(void);
+__int64 NgxRoutine_d6d40(__int64, __int64, __int64, __int64, __int64, int);
+__int64 NgxRoutine_d7f40(__int64, __int64, __int64, __int64, __int64, int);
+__int64 NgxRoutine_daf20();
+__int64 NgxRoutine_db240(__int64*);
+__int64 NgxRoutine_dfc20(__int64*);
+__int64 NgxRoutine_e0e80(void);
+__int64 NgxRoutine_e0fa0(void);
+__int64 nvidia_c97d0();
+__int64 nvidia_cd0e0(unsigned __int8*, unsigned __int8*, unsigned __int8*,
+                     __int64, _QWORD*, _QWORD*, __int64*);
+__int64 nvidia_cdb60(unsigned __int8*, unsigned __int8*, unsigned __int8*,
+                     __int64, _QWORD*, _QWORD*, __int64*);
+__int64 std_exception_Destroy_exception_plt();
+char* nvidia_e1af0(_WORD*, char*, unsigned __int64, unsigned int);
+char* nvidia_e1af0_alt1();
+extern _UNKNOWN NgxData_2b89de8;
+extern void (*NgxData_954740)();
+void __attribute__((noreturn)) NgxRoutine_baf40();
+void __attribute__((noreturn)) NgxRoutine_baf40_alt1(__int64);
+void __cxa_free_exception_plt();
+void __cxa_guard_abort_plt(__int64);
+void free_plt(__int64);
+void free_plt_alt1();
+void __attribute__((noreturn)) nvidia_b3380();
+void __attribute__((noreturn)) nvidia_bb7f4(__int64 a1);
+void __attribute__((noreturn)) nvidia_bb914(__int64 a1);
+void __attribute__((noreturn)) nvidia_bbecc(__int64 a1, __int64 a2, __int64 a3,
+                                            __int64 a4, __int64 a5, __int64 a6,
+                                            __int64 a7, __int64 a8, __int64 a9,
+                                            __int64 a10);
+void __attribute__((noreturn)) nvidia_bc6dc(__int64 a1, __int64 a2, __int64 a3,
+                                            __int64 a4, __int64 a5, __int64 a6,
+                                            __int64 a7, __int64 a8, __int64 a9,
+                                            __int64 a10);
+__int64 nvidia_be80c(__int64 a1);
+__int64 nvidia_beffc(__int64 a1);
+void __attribute__((noreturn))
+nvidia_c0a20(__int64 a1, __int64 a2, __int64 a3, __int64 a4, __int64 a5,
+             __int64 a6, __int64 a7, __int64 a8, __int64 a9, __int64 a10,
+             __int64 a11, __int64 a12, __int64 a13, __int64 a14);
+void __attribute__((noreturn)) nvidia_c15c0(__int64 a1);
+void __attribute__((noreturn)) nvidia_c1c80(__int64 a1);
+void __attribute__((noreturn)) nvidia_c2340(__int64 a1);
+void __attribute__((noreturn)) nvidia_c2a00(__int64 a1);
+void __attribute__((noreturn)) nvidia_c30c0(__int64 a1);
+void __attribute__((noreturn)) nvidia_c3780(__int64 a1);
+void __attribute__((noreturn)) nvidia_c3da4(__int64 a1);
+void __attribute__((noreturn)) nvidia_c43c4(__int64 a1);
+void __attribute__((noreturn)) nvidia_c49e4(__int64 a1);
+void __attribute__((noreturn)) nvidia_c5238(__int64 a1, __int64 a2, __int64 a3,
+                                            __int64 a4, __int64 a5, __int64 a6,
+                                            __int64 a7, __int64 a8, __int64 a9);
+void __attribute__((noreturn)) nvidia_c5d9c(__int64 a1);
+void __attribute__((noreturn)) nvidia_c645c(__int64 a1);
+void __attribute__((noreturn)) nvidia_c6b1c(__int64 a1);
+void __attribute__((noreturn)) nvidia_c71dc(__int64 a1);
+void __attribute__((noreturn)) nvidia_c789c(__int64 a1);
+void __attribute__((noreturn)) nvidia_c7f5c(__int64 a1);
+void __attribute__((noreturn)) nvidia_c8580(__int64 a1);
+void __attribute__((noreturn)) nvidia_c8ba0(__int64 a1);
+void __attribute__((noreturn)) nvidia_c91c0(__int64 a1);
+__int64 nvidia_c9770(__int64 a1, __int64 a2, __int64 a3, __int64 a4, __int64 a5,
+                     __int64 a6, __int64 a7, __int64 a8, __int64 a9,
+                     __int64 a10, __int64 a11, __int64 a12);
+__int64 nvidia_ca54c(__int64 a1, __int64 a2, __int64 a3, __int64 a4, __int64 a5,
+                     __int64 a6, __int64 a7, __int64 a8, __int64 a9);
+__int64 nvidia_ca88c(__int64 a1, __int64 a2, __int64 a3, __int64 a4, __int64 a5,
+                     __int64 a6, __int64 a7, __int64 a8, __int64 a9);
+void __attribute__((noreturn)) nvidia_cb280(__int64 a1);
+void __attribute__((noreturn)) nvidia_cb75c(__int64 a1);
+__int64 nvidia_cba24(__int64 a1, __int64 a2, __int64 a3, __int64 a4, __int64 a5,
+                     __int64 a6, __int64 a7, __int64 a8, __int64 a9,
+                     __int64 a10, __int64 a11, __int64 a12);
+__int64 nvidia_cbd9c(__int64 a1, __int64 a2, __int64 a3, __int64 a4, __int64 a5,
+                     __int64 a6, __int64 a7, __int64 a8, __int64 a9);
+__int64 nvidia_cc0dc(__int64 a1, __int64 a2, __int64 a3, __int64 a4, __int64 a5,
+                     __int64 a6, __int64 a7, __int64 a8, __int64 a9);
+void __attribute__((noreturn)) nvidia_ccb00(__int64 a1);
+void __attribute__((noreturn)) nvidia_ccfdc(__int64 a1);
+void __attribute__((noreturn)) nvidia_d0e64(__int64 a1);
+void __attribute__((noreturn)) nvidia_d18f8(__int64 a1);
+void __attribute__((noreturn)) nvidia_d1c74(__int64 a1);
+void __attribute__((noreturn))
+nvidia_d37b0(__int64 a1, __int64 a2, __int64 a3, __int64 a4, __int64 a5,
+             __int64 a6, __int64 a7, __int64 a8, __int64 a9, __int64 a10,
+             __int64 a11, __int64 a12, __int64 a13, __int64 a14, __int64 a15,
+             void (*a16)(void));
+void __attribute__((noreturn))
+nvidia_d3fc8(__int64 a1, __int64 a2, __int64 a3, __int64 a4, __int64 a5,
+             __int64 a6, __int64 a7, __int64 a8, __int64 a9, __int64 a10,
+             __int64 a11, __int64 a12, __int64 a13, __int64 a14, __int64 a15,
+             __int64 a16, __int64 a17, __int64 a18, __int64 a19, __int64 a20,
+             __int64 a21, __int64 a22, __int64 a23, __int64 a24, __int64 a25,
+             __int64 a26, __int64 a27, __int64 a28, __int64 a29, __int64 a30,
+             __int64 a31, __int64 a32, __int64 a33, __int64 a34, __int64 a35,
+             void (*a36)(void));
+void __attribute__((noreturn))
+nvidia_d5510(__int64 a1, __int64 a2, __int64 a3, __int64 a4, __int64 a5,
+             __int64 a6, __int64 a7, __int64 a8, __int64 a9, __int64 a10,
+             __int64 a11, __int64 a12, __int64 a13, __int64 a14, __int64 a15,
+             __int64 a16, __int64 a17, __int64 a18, void (*a19)(__int64),
+             __int64 a20, __int64 a21, __int64 a22, __int64 a23, __int64 a24,
+             __int64 a25, __int64 a26, __int64 a27, __int64 a28, __int64 a29,
+             __int64 a30, __int64 a31, __int64 a32, __int64 a33, __int64 a34,
+             __int64 a35, __int64 a36, __int64 a37, __int64 a38, __int64 a39,
+             __int64 a40, __int64 a41);
+void __attribute__((noreturn)) nvidia_d5944(__int64 a1, __int64 a2, __int64 a3,
+                                            __int64 a4, __int64 a5, __int64 a6,
+                                            __int64 a7, __int64 a8, __int64 a9,
+                                            __int64 a10, __int64 a11,
+                                            __int64 a12, __int64 a13,
+                                            __int64 a14, void (*a15)(void));
+void __attribute__((noreturn))
+nvidia_d6260(__int64 a1, __int64 a2, __int64 a3, __int64 a4, __int64 a5,
+             __int64 a6, __int64 a7, __int64 a8, __int64 a9, __int64 a10,
+             __int64 a11, __int64 a12, __int64 a13, __int64 a14, __int64 a15,
+             __int64 a16, __int64 a17, __int64 a18, __int64 a19, __int64 a20,
+             __int64 a21, __int64 a22, __int64 a23, __int64 a24, __int64 a25,
+             __int64 a26, __int64 a27, __int64 a28, __int64 a29, __int64 a30,
+             __int64 a31, __int64 a32, __int64 a33, __int64 a34, __int64 a35,
+             __int64 a36, __int64 a37, __int64 a38, __int64 a39, __int64 a40,
+             __int64 a41, __int64 a42, __int64 a43);
+void __attribute__((noreturn)) nvidia_d71f4(__int64 a1);
+void __attribute__((noreturn)) nvidia_d8484(__int64 a1);
+void __attribute__((noreturn)) nvidia_d8b18(__int64 a1);
+void __attribute__((noreturn)) nvidia_dc098(__int64 a1);
+void __attribute__((noreturn)) nvidia_dc0b0(__int64 a1);
+void __attribute__((noreturn)) nvidia_dc0c8(__int64 a1);
+void __attribute__((noreturn)) nvidia_dc44c(__int64 a1);
+void __attribute__((noreturn)) nvidia_dc464(__int64 a1);
+void __attribute__((noreturn)) nvidia_dc47c(__int64 a1);
+void __attribute__((noreturn)) nvidia_dc738(__int64 a1);
+void __attribute__((noreturn)) nvidia_dc750(__int64 a1);
+void __attribute__((noreturn)) nvidia_dc868(__int64 a1);
+__int64 nvidia_e0e68(__int64 a1);
+__int64 nvidia_e0f88(__int64 a1);
+char* nvidia_e1adc(__int64 a1, __int64 a2, __int64 a3, __int64 a4, __int64 a5,
+                   __int64 a6, __int64 a7, __int64 a8, __int64 a9, __int64 a10);
+void __attribute__((noreturn)) nvidia_e21bc(__int64 a1);
 __attribute__((no_builtin("memset", "memcpy", "memmove")))
 __attribute__((swiftcall)) void
 
@@ -648,6 +797,7 @@ LABEL_14:
     return;
   }
 }
+
 __int64 nvidia_afb40(int a1, __int64 a2, __int64 a3)
 {
   __int64 (*v4)(void);
@@ -688,6 +838,7 @@ __int64 nvidia_afb40(int a1, __int64 a2, __int64 a3)
     return 3134193676LL;
   }
 }
+
 _QWORD* nvidia_b10c0(__int64 a1, unsigned __int8* a2, __int64 a3, __int64** a4)
 {
 
@@ -983,6 +1134,570 @@ LABEL_58:
   ++*(_QWORD*)(a1 + 24);
   return v18;
 }
+
+void __attribute__((noreturn)) nvidia_b3380() { NgxData_954740(); }
+
+void __attribute__((noreturn)) nvidia_bb7f4(__int64 a1)
+{
+  _QWORD* v1;
+  __int64 v3;
+  __int64 v4;
+  __int64 v6;
+  __int64 v7;
+
+  v6 = COERCE_AS(__typeof__(v6),
+                 PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
+  NgxRoutine_bc9e0(),
+      v6 = COERCE_AS(__typeof__(v6),
+                     PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
+  _Unwind_Resume_plt(a1),
+      v6 = COERCE_AS(__typeof__(v6),
+                     PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
+  v7 = v6;
+  NgxRoutine_db240((__int64*)(v4 + 24)),
+      v6 = COERCE_AS(__typeof__(v6),
+                     PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
+  *v1 = v3;
+  NgxRoutine_db240(v1 + 1),
+      v6 = COERCE_AS(__typeof__(v6),
+                     PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
+  _Unwind_Resume_plt(v7),
+      v6 = COERCE_AS(__typeof__(v6),
+                     PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
+  __udf(0);
+}
+
+void __attribute__((noreturn)) nvidia_bb914(__int64 a1)
+{
+  _QWORD* v1;
+  __int64 v3;
+  __int64 v4;
+  __int64 v6;
+  __int64 v7;
+
+  v6 = COERCE_AS(__typeof__(v6),
+                 PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
+  NgxRoutine_bc9e0(),
+      v6 = COERCE_AS(__typeof__(v6),
+                     PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
+  _Unwind_Resume_plt(a1),
+      v6 = COERCE_AS(__typeof__(v6),
+                     PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
+  v7 = v6;
+  NgxRoutine_db240((__int64*)(v4 + 24)),
+      v6 = COERCE_AS(__typeof__(v6),
+                     PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
+  *v1 = v3;
+  NgxRoutine_db240(v1 + 1),
+      v6 = COERCE_AS(__typeof__(v6),
+                     PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
+  _Unwind_Resume_plt(v7),
+      v6 = COERCE_AS(__typeof__(v6),
+                     PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
+  __udf(0);
+}
+
+void __attribute__((noreturn)) nvidia_bbecc(__int64 a1, __int64 a2, __int64 a3,
+                                            __int64 a4, __int64 a5, __int64 a6,
+                                            __int64 a7, __int64 a8, __int64 a9,
+                                            __int64 a10)
+{
+  _QWORD* v10;
+  __int64 v11;
+
+  NgxRoutine_db240(&a10);
+  *v10 = v11;
+  NgxRoutine_db240(v10 + 1);
+  _Unwind_Resume_plt(a1);
+  __udf(0);
+}
+
+void __attribute__((noreturn)) nvidia_bc6dc(__int64 a1, __int64 a2, __int64 a3,
+                                            __int64 a4, __int64 a5, __int64 a6,
+                                            __int64 a7, __int64 a8, __int64 a9,
+                                            __int64 a10)
+{
+  _QWORD* v10;
+  __int64 v11;
+
+  NgxRoutine_db240(&a10);
+  *v10 = v11;
+  NgxRoutine_db240(v10 + 1);
+  _Unwind_Resume_plt(a1);
+  __udf(0);
+}
+
+__int64 nvidia_be80c(__int64 a1)
+{
+
+  __cxa_free_exception_plt();
+  _Unwind_Resume_plt(a1);
+  return NgxRoutine_be820();
+}
+
+__int64 nvidia_beffc(__int64 a1)
+{
+
+  std_exception_Destroy_exception_plt();
+  _Unwind_Resume_plt(a1);
+  return NgxRoutine_bf010();
+}
+
+void __attribute__((noreturn))
+
+nvidia_c0a20(__int64 a1, __int64 a2, __int64 a3, __int64 a4, __int64 a5,
+             __int64 a6, __int64 a7, __int64 a8, __int64 a9, __int64 a10,
+             __int64 a11, __int64 a12, __int64 a13, __int64 a14)
+{
+  __int64 v14;
+  __int64 v16;
+  __int64 v17;
+  __int64 v18;
+  __int64 v19;
+  __int64 v20;
+
+  v16 = COERCE_AS(__typeof__(v16),
+                  PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+  v17 = COERCE_AS(__typeof__(v17),
+                  PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+  v19 = COERCE_AS(__typeof__(v19),
+                  PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
+  if ((a12 & 1) != 0) {
+    goto LABEL_4;
+  }
+  while ((a9 & 1) == 0) {
+    _Unwind_Resume_plt(a1),
+        v16 = COERCE_AS(__typeof__(v16),
+                        PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+        v17 = COERCE_AS(__typeof__(v17),
+                        PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+        v19 = COERCE_AS(__typeof__(v19),
+                        PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
+  LABEL_4:
+    NgxRoutine_430(a14, a12 & 0xFFFFFFFFFFFFFFFELL),
+        v16 = COERCE_AS(__typeof__(v16),
+                        PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+        v17 = COERCE_AS(__typeof__(v17),
+                        PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+        v19 = COERCE_AS(__typeof__(v19),
+                        PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
+  }
+  NgxRoutine_430(a11, a9 & 0xFFFFFFFFFFFFFFFELL),
+      v16 = COERCE_AS(__typeof__(v16),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v17 = COERCE_AS(__typeof__(v17),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v19 = COERCE_AS(__typeof__(v19),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
+  _Unwind_Resume_plt(a1),
+      v16 = COERCE_AS(__typeof__(v16),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v17 = COERCE_AS(__typeof__(v17),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v19 = COERCE_AS(__typeof__(v19),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
+  _Unwind_Resume_plt(v16),
+      v16 = COERCE_AS(__typeof__(v16),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v17 = COERCE_AS(__typeof__(v17),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v19 = COERCE_AS(__typeof__(v19),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
+  v18 = v17;
+  NgxRoutine_db240((__int64*)(v14 - 32)),
+      v16 = COERCE_AS(__typeof__(v16),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v17 = COERCE_AS(__typeof__(v17),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v19 = COERCE_AS(__typeof__(v19),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
+  _Unwind_Resume_plt(v18),
+      v16 = COERCE_AS(__typeof__(v16),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v17 = COERCE_AS(__typeof__(v17),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v19 = COERCE_AS(__typeof__(v19),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
+  v20 = v19;
+  NgxRoutine_db240((__int64*)(v14 - 32)),
+      v16 = COERCE_AS(__typeof__(v16),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v17 = COERCE_AS(__typeof__(v17),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v19 = COERCE_AS(__typeof__(v19),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
+  _Unwind_Resume_plt(v20),
+      v16 = COERCE_AS(__typeof__(v16),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v17 = COERCE_AS(__typeof__(v17),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v19 = COERCE_AS(__typeof__(v19),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
+  __udf(0);
+}
+
+void __attribute__((noreturn)) nvidia_c15c0(__int64 a1)
+{
+  __int64 v1;
+
+  if ((*(_BYTE*)(v1 - 64) & 1) != 0) {
+    goto LABEL_4;
+  }
+  while ((*(_BYTE*)(v1 - 40) & 1) == 0) {
+    _Unwind_Resume_plt(a1);
+  LABEL_4:
+    NgxRoutine_430(*(_QWORD*)(v1 - 48),
+                   *(_QWORD*)(v1 - 64) & 0xFFFFFFFFFFFFFFFELL);
+  }
+  NgxRoutine_430(*(_QWORD*)(v1 - 24),
+                 *(_QWORD*)(v1 - 40) & 0xFFFFFFFFFFFFFFFELL);
+  _Unwind_Resume_plt(a1);
+  __udf(0);
+}
+
+void __attribute__((noreturn)) nvidia_c1c80(__int64 a1)
+{
+  __int64 v1;
+
+  if ((*(_BYTE*)(v1 - 64) & 1) != 0) {
+    goto LABEL_4;
+  }
+  while ((*(_BYTE*)(v1 - 40) & 1) == 0) {
+    _Unwind_Resume_plt(a1);
+  LABEL_4:
+    NgxRoutine_430(*(_QWORD*)(v1 - 48),
+                   *(_QWORD*)(v1 - 64) & 0xFFFFFFFFFFFFFFFELL);
+  }
+  NgxRoutine_430(*(_QWORD*)(v1 - 24),
+                 *(_QWORD*)(v1 - 40) & 0xFFFFFFFFFFFFFFFELL);
+  _Unwind_Resume_plt(a1);
+  __udf(0);
+}
+
+void __attribute__((noreturn)) nvidia_c2340(__int64 a1)
+{
+  __int64 v1;
+
+  if ((*(_BYTE*)(v1 - 64) & 1) != 0) {
+    goto LABEL_4;
+  }
+  while ((*(_BYTE*)(v1 - 40) & 1) == 0) {
+    _Unwind_Resume_plt(a1);
+  LABEL_4:
+    NgxRoutine_430(*(_QWORD*)(v1 - 48),
+                   *(_QWORD*)(v1 - 64) & 0xFFFFFFFFFFFFFFFELL);
+  }
+  NgxRoutine_430(*(_QWORD*)(v1 - 24),
+                 *(_QWORD*)(v1 - 40) & 0xFFFFFFFFFFFFFFFELL);
+  _Unwind_Resume_plt(a1);
+  __udf(0);
+}
+
+void __attribute__((noreturn)) nvidia_c2a00(__int64 a1)
+{
+  __int64 v1;
+
+  if ((*(_BYTE*)(v1 - 64) & 1) != 0) {
+    goto LABEL_4;
+  }
+  while ((*(_BYTE*)(v1 - 40) & 1) == 0) {
+    _Unwind_Resume_plt(a1);
+  LABEL_4:
+    NgxRoutine_430(*(_QWORD*)(v1 - 48),
+                   *(_QWORD*)(v1 - 64) & 0xFFFFFFFFFFFFFFFELL);
+  }
+  NgxRoutine_430(*(_QWORD*)(v1 - 24),
+                 *(_QWORD*)(v1 - 40) & 0xFFFFFFFFFFFFFFFELL);
+  _Unwind_Resume_plt(a1);
+  __udf(0);
+}
+
+void __attribute__((noreturn)) nvidia_c30c0(__int64 a1)
+{
+  __int64 v1;
+
+  if ((*(_BYTE*)(v1 - 64) & 1) != 0) {
+    goto LABEL_4;
+  }
+  while ((*(_BYTE*)(v1 - 40) & 1) == 0) {
+    _Unwind_Resume_plt(a1);
+  LABEL_4:
+    NgxRoutine_430(*(_QWORD*)(v1 - 48),
+                   *(_QWORD*)(v1 - 64) & 0xFFFFFFFFFFFFFFFELL);
+  }
+  NgxRoutine_430(*(_QWORD*)(v1 - 24),
+                 *(_QWORD*)(v1 - 40) & 0xFFFFFFFFFFFFFFFELL);
+  _Unwind_Resume_plt(a1);
+  __udf(0);
+}
+
+void __attribute__((noreturn)) nvidia_c3780(__int64 a1)
+{
+  __int64 v1;
+
+  if ((*(_BYTE*)(v1 - 64) & 1) != 0) {
+    goto LABEL_4;
+  }
+  while ((*(_BYTE*)(v1 - 40) & 1) == 0) {
+    _Unwind_Resume_plt(a1);
+  LABEL_4:
+    NgxRoutine_430(*(_QWORD*)(v1 - 48),
+                   *(_QWORD*)(v1 - 64) & 0xFFFFFFFFFFFFFFFELL);
+  }
+  NgxRoutine_430(*(_QWORD*)(v1 - 24),
+                 *(_QWORD*)(v1 - 40) & 0xFFFFFFFFFFFFFFFELL);
+  _Unwind_Resume_plt(a1);
+  __udf(0);
+}
+
+void __attribute__((noreturn)) nvidia_c3da4(__int64 a1)
+{
+  _QWORD* v1;
+  __int64 v2;
+
+  if ((*(_BYTE*)(v2 - 96) & 1) != 0) {
+    goto LABEL_4;
+  }
+  while ((*(_BYTE*)(v2 - 72) & 1) == 0) {
+    _Unwind_Resume_plt(a1);
+  LABEL_4:
+    NgxRoutine_430(v1[3], v1[1] & 0xFFFFFFFFFFFFFFFELL);
+  }
+  NgxRoutine_430(v1[6], v1[4] & 0xFFFFFFFFFFFFFFFELL);
+  _Unwind_Resume_plt(a1);
+  __udf(0);
+}
+
+void __attribute__((noreturn)) nvidia_c43c4(__int64 a1)
+{
+  _QWORD* v1;
+  __int64 v2;
+
+  if ((*(_BYTE*)(v2 - 96) & 1) != 0) {
+    goto LABEL_4;
+  }
+  while ((*(_BYTE*)(v2 - 72) & 1) == 0) {
+    _Unwind_Resume_plt(a1);
+  LABEL_4:
+    NgxRoutine_430(v1[3], v1[1] & 0xFFFFFFFFFFFFFFFELL);
+  }
+  NgxRoutine_430(v1[6], v1[4] & 0xFFFFFFFFFFFFFFFELL);
+  _Unwind_Resume_plt(a1);
+  __udf(0);
+}
+
+void __attribute__((noreturn)) nvidia_c49e4(__int64 a1)
+{
+  _QWORD* v1;
+  __int64 v2;
+
+  if ((*(_BYTE*)(v2 - 96) & 1) != 0) {
+    goto LABEL_4;
+  }
+  while ((*(_BYTE*)(v2 - 72) & 1) == 0) {
+    _Unwind_Resume_plt(a1);
+  LABEL_4:
+    NgxRoutine_430(v1[3], v1[1] & 0xFFFFFFFFFFFFFFFELL);
+  }
+  NgxRoutine_430(v1[6], v1[4] & 0xFFFFFFFFFFFFFFFELL);
+  _Unwind_Resume_plt(a1);
+  __udf(0);
+}
+
+void __attribute__((noreturn)) nvidia_c5238(__int64 a1, __int64 a2, __int64 a3,
+                                            __int64 a4, __int64 a5, __int64 a6,
+                                            __int64 a7, __int64 a8, __int64 a9)
+{
+  __int64 v9;
+  __int64 v10;
+  __int64 v12;
+  __int64 v13;
+  __int64 v14;
+  __int64 v15;
+  __int64 v16;
+  __int64 v17;
+  __int64 v18;
+
+  v12 = COERCE_AS(__typeof__(v12),
+                  PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+  v14 = COERCE_AS(__typeof__(v14),
+                  PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+  v15 = COERCE_AS(__typeof__(v15),
+                  PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+  v17 = COERCE_AS(__typeof__(v17),
+                  PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
+  NgxRoutine_bf700((_QWORD*)(v9 + 24)),
+      v12 = COERCE_AS(__typeof__(v12),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v14 = COERCE_AS(__typeof__(v14),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v15 = COERCE_AS(__typeof__(v15),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v17 = COERCE_AS(__typeof__(v17),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
+  NgxRoutine_bf700(&a9),
+      v12 = COERCE_AS(__typeof__(v12),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v14 = COERCE_AS(__typeof__(v14),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v15 = COERCE_AS(__typeof__(v15),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v17 = COERCE_AS(__typeof__(v17),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
+  _Unwind_Resume_plt(a1),
+      v12 = COERCE_AS(__typeof__(v12),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v14 = COERCE_AS(__typeof__(v14),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v15 = COERCE_AS(__typeof__(v15),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v17 = COERCE_AS(__typeof__(v17),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
+  v13 = v12;
+  NgxRoutine_bf700(&a9),
+      v12 = COERCE_AS(__typeof__(v12),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v14 = COERCE_AS(__typeof__(v14),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v15 = COERCE_AS(__typeof__(v15),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v17 = COERCE_AS(__typeof__(v17),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
+  _Unwind_Resume_plt(v13),
+      v12 = COERCE_AS(__typeof__(v12),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v14 = COERCE_AS(__typeof__(v14),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v15 = COERCE_AS(__typeof__(v15),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v17 = COERCE_AS(__typeof__(v17),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
+  _Unwind_Resume_plt(v14),
+      v12 = COERCE_AS(__typeof__(v12),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v14 = COERCE_AS(__typeof__(v14),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v15 = COERCE_AS(__typeof__(v15),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v17 = COERCE_AS(__typeof__(v17),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
+  v16 = v15;
+  NgxRoutine_db240((__int64*)(v10 - 32)),
+      v12 = COERCE_AS(__typeof__(v12),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v14 = COERCE_AS(__typeof__(v14),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v15 = COERCE_AS(__typeof__(v15),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v17 = COERCE_AS(__typeof__(v17),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
+  _Unwind_Resume_plt(v16),
+      v12 = COERCE_AS(__typeof__(v12),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v14 = COERCE_AS(__typeof__(v14),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v15 = COERCE_AS(__typeof__(v15),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v17 = COERCE_AS(__typeof__(v17),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
+  v18 = v17;
+  NgxRoutine_db240((__int64*)(v10 - 32)),
+      v12 = COERCE_AS(__typeof__(v12),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v14 = COERCE_AS(__typeof__(v14),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v15 = COERCE_AS(__typeof__(v15),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v17 = COERCE_AS(__typeof__(v17),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
+  _Unwind_Resume_plt(v18),
+      v12 = COERCE_AS(__typeof__(v12),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v14 = COERCE_AS(__typeof__(v14),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v15 = COERCE_AS(__typeof__(v15),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v17 = COERCE_AS(__typeof__(v17),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
+  __udf(0);
+}
+
+void __attribute__((noreturn)) nvidia_c5d9c(__int64 a1)
+{
+  __int64 v1;
+
+  if ((*(_BYTE*)(v1 - 168) & 1) != 0) {
+    goto LABEL_4;
+  }
+  while ((*(_BYTE*)(v1 - 144) & 1) == 0) {
+    _Unwind_Resume_plt(a1);
+  LABEL_4:
+    NgxRoutine_430(*(_QWORD*)(v1 - 152),
+                   *(_QWORD*)(v1 - 168) & 0xFFFFFFFFFFFFFFFELL);
+  }
+  NgxRoutine_430(*(_QWORD*)(v1 - 128),
+                 *(_QWORD*)(v1 - 144) & 0xFFFFFFFFFFFFFFFELL);
+  _Unwind_Resume_plt(a1);
+  __udf(0);
+}
+
+void __attribute__((noreturn)) nvidia_c645c(__int64 a1)
+{
+  __int64 v1;
+
+  if ((*(_BYTE*)(v1 - 168) & 1) != 0) {
+    goto LABEL_4;
+  }
+  while ((*(_BYTE*)(v1 - 144) & 1) == 0) {
+    _Unwind_Resume_plt(a1);
+  LABEL_4:
+    NgxRoutine_430(*(_QWORD*)(v1 - 152),
+                   *(_QWORD*)(v1 - 168) & 0xFFFFFFFFFFFFFFFELL);
+  }
+  NgxRoutine_430(*(_QWORD*)(v1 - 128),
+                 *(_QWORD*)(v1 - 144) & 0xFFFFFFFFFFFFFFFELL);
+  _Unwind_Resume_plt(a1);
+  __udf(0);
+}
+
+void __attribute__((noreturn)) nvidia_c6b1c(__int64 a1)
+{
+  __int64 v1;
+
+  if ((*(_BYTE*)(v1 - 168) & 1) != 0) {
+    goto LABEL_4;
+  }
+  while ((*(_BYTE*)(v1 - 144) & 1) == 0) {
+    _Unwind_Resume_plt(a1);
+  LABEL_4:
+    NgxRoutine_430(*(_QWORD*)(v1 - 152),
+                   *(_QWORD*)(v1 - 168) & 0xFFFFFFFFFFFFFFFELL);
+  }
+  NgxRoutine_430(*(_QWORD*)(v1 - 128),
+                 *(_QWORD*)(v1 - 144) & 0xFFFFFFFFFFFFFFFELL);
+  _Unwind_Resume_plt(a1);
+  __udf(0);
+}
+
+void __attribute__((noreturn)) nvidia_c71dc(__int64 a1)
+{
+  __int64 v1;
+
+  if ((*(_BYTE*)(v1 - 168) & 1) != 0) {
+    goto LABEL_4;
+  }
+  while ((*(_BYTE*)(v1 - 144) & 1) == 0) {
+    _Unwind_Resume_plt(a1);
+  LABEL_4:
+    NgxRoutine_430(*(_QWORD*)(v1 - 152),
+                   *(_QWORD*)(v1 - 168) & 0xFFFFFFFFFFFFFFFELL);
+  }
+  NgxRoutine_430(*(_QWORD*)(v1 - 128),
+                 *(_QWORD*)(v1 - 144) & 0xFFFFFFFFFFFFFFFELL);
+  _Unwind_Resume_plt(a1);
+  __udf(0);
+}
+
 _QWORD* nvidia_c7240(__int64 a1, _QWORD* a2, _QWORD* a3, __int64 a4, _DWORD* a5,
                      unsigned __int64* a6)
 {
@@ -1384,6 +2099,45 @@ LABEL_136:
   }
   return a2;
 }
+
+void __attribute__((noreturn)) unplaced_55_c789c(__int64 a1)
+{
+  __int64 v1;
+
+  if ((*(_BYTE*)(v1 - 168) & 1) != 0) {
+    goto LABEL_4;
+  }
+  while ((*(_BYTE*)(v1 - 144) & 1) == 0) {
+    _Unwind_Resume_plt(a1);
+  LABEL_4:
+    NgxRoutine_430(*(_QWORD*)(v1 - 152),
+                   *(_QWORD*)(v1 - 168) & 0xFFFFFFFFFFFFFFFELL);
+  }
+  NgxRoutine_430(*(_QWORD*)(v1 - 128),
+                 *(_QWORD*)(v1 - 144) & 0xFFFFFFFFFFFFFFFELL);
+  _Unwind_Resume_plt(a1);
+  __udf(0);
+}
+
+void __attribute__((noreturn)) nvidia_c789c(__int64 a1)
+{
+  __int64 v1;
+
+  if ((*(_BYTE*)(v1 - 168) & 1) != 0) {
+    goto LABEL_4;
+  }
+  while ((*(_BYTE*)(v1 - 144) & 1) == 0) {
+    _Unwind_Resume_plt(a1);
+  LABEL_4:
+    NgxRoutine_430(*(_QWORD*)(v1 - 152),
+                   *(_QWORD*)(v1 - 168) & 0xFFFFFFFFFFFFFFFELL);
+  }
+  NgxRoutine_430(*(_QWORD*)(v1 - 128),
+                 *(_QWORD*)(v1 - 144) & 0xFFFFFFFFFFFFFFFELL);
+  _Unwind_Resume_plt(a1);
+  __udf(0);
+}
+
 _QWORD* nvidia_c7900(__int64 a1, _QWORD* a2, _QWORD* a3, __int64 a4, _DWORD* a5,
                      __int64* a6)
 {
@@ -1783,6 +2537,2624 @@ LABEL_136:
   }
   return a2;
 }
+
+void __attribute__((noreturn)) nvidia_c7f5c(__int64 a1)
+{
+  __int64 v1;
+
+  if ((*(_BYTE*)(v1 - 168) & 1) != 0) {
+    goto LABEL_4;
+  }
+  while ((*(_BYTE*)(v1 - 144) & 1) == 0) {
+    _Unwind_Resume_plt(a1);
+  LABEL_4:
+    NgxRoutine_430(*(_QWORD*)(v1 - 152),
+                   *(_QWORD*)(v1 - 168) & 0xFFFFFFFFFFFFFFFELL);
+  }
+  NgxRoutine_430(*(_QWORD*)(v1 - 128),
+                 *(_QWORD*)(v1 - 144) & 0xFFFFFFFFFFFFFFFELL);
+  _Unwind_Resume_plt(a1);
+  __udf(0);
+}
+
+void __attribute__((noreturn)) nvidia_c8580(__int64 a1)
+{
+  _QWORD* v1;
+  __int64 v2;
+
+  if ((*(_BYTE*)(v2 - 176) & 1) != 0) {
+    goto LABEL_4;
+  }
+  while ((*(_BYTE*)(v2 - 152) & 1) == 0) {
+    _Unwind_Resume_plt(a1);
+  LABEL_4:
+    NgxRoutine_430(v1[3], v1[1] & 0xFFFFFFFFFFFFFFFELL);
+  }
+  NgxRoutine_430(v1[6], v1[4] & 0xFFFFFFFFFFFFFFFELL);
+  _Unwind_Resume_plt(a1);
+  __udf(0);
+}
+
+void __attribute__((noreturn)) nvidia_c8ba0(__int64 a1)
+{
+  _QWORD* v1;
+  __int64 v2;
+
+  if ((*(_BYTE*)(v2 - 176) & 1) != 0) {
+    goto LABEL_4;
+  }
+  while ((*(_BYTE*)(v2 - 152) & 1) == 0) {
+    _Unwind_Resume_plt(a1);
+  LABEL_4:
+    NgxRoutine_430(v1[3], v1[1] & 0xFFFFFFFFFFFFFFFELL);
+  }
+  NgxRoutine_430(v1[6], v1[4] & 0xFFFFFFFFFFFFFFFELL);
+  _Unwind_Resume_plt(a1);
+  __udf(0);
+}
+
+void __attribute__((noreturn)) nvidia_c91c0(__int64 a1)
+{
+  _QWORD* v1;
+  __int64 v2;
+
+  if ((*(_BYTE*)(v2 - 176) & 1) != 0) {
+    goto LABEL_4;
+  }
+  while ((*(_BYTE*)(v2 - 152) & 1) == 0) {
+    _Unwind_Resume_plt(a1);
+  LABEL_4:
+    NgxRoutine_430(v1[3], v1[1] & 0xFFFFFFFFFFFFFFFELL);
+  }
+  NgxRoutine_430(v1[6], v1[4] & 0xFFFFFFFFFFFFFFFELL);
+  _Unwind_Resume_plt(a1);
+  __udf(0);
+}
+
+__int64 nvidia_c9770(__int64 a1, __int64 a2, __int64 a3, __int64 a4, __int64 a5,
+                     __int64 a6, __int64 a7, __int64 a8, __int64 a9,
+                     __int64 a10, __int64 a11, __int64 a12)
+{
+
+  __cxa_guard_abort_plt((__int64)&NgxData_2b89de8);
+  if ((a10 & 1) != 0) {
+    NgxRoutine_430(a12, a10 & 0xFFFFFFFFFFFFFFFELL);
+  }
+  _Unwind_Resume_plt(a1);
+  return nvidia_c97d0();
+}
+
+__int64 nvidia_ca54c(__int64 a1, __int64 a2, __int64 a3, __int64 a4, __int64 a5,
+                     __int64 a6, __int64 a7, __int64 a8, __int64 a9)
+{
+  __int64 v9;
+  unsigned __int64 v11;
+  __int64 v12;
+  __int64 v13;
+  int v14;
+  int v15;
+  int v16;
+  unsigned __int8* v17;
+  __int64 v18;
+  __int64 v19;
+  __int64 v20;
+  int v21;
+  int v22;
+  unsigned int v23;
+  unsigned __int64 v24;
+  char v25;
+  char* v26;
+  unsigned __int8* v27;
+  unsigned __int64 v28;
+  __int64 i;
+  int v30;
+  int v31;
+  int v32;
+  int v33;
+  int v34;
+  int v35;
+  int v36;
+  int v37;
+  int v38;
+  int v39;
+  unsigned __int8* v40;
+  __int64 v42;
+  __int64 v43;
+  struct {
+    __int64 v44;
+    char gap24_[3];
+    _BYTE v45[45];
+  } v44_;
+  struct {
+    unsigned __int8 v46;
+    unsigned __int8 v47;
+    _BYTE v48[6];
+  } v46_;
+  _QWORD v49[8];
+
+  v11 = COERCE_AS(__typeof__(v11),
+                  PSEUDO_REGISTER(unsigned long long, "x4", "=r")),
+  v13 = COERCE_AS(__typeof__(v13),
+                  PSEUDO_REGISTER(unsigned long long, "x2", "=r")),
+  v15 = COERCE_AS(__typeof__(v15),
+                  PSEUDO_REGISTER(unsigned long long, "x3", "=r")),
+  v19 = COERCE_AS(__typeof__(v19),
+                  PSEUDO_REGISTER(unsigned long long, "x1", "=r"));
+  NgxRoutine_db240(&a9),
+      v11 = COERCE_AS(__typeof__(v11),
+                      PSEUDO_REGISTER(unsigned long long, "x4", "=r")),
+      v13 = COERCE_AS(__typeof__(v13),
+                      PSEUDO_REGISTER(unsigned long long, "x2", "=r")),
+      v15 = COERCE_AS(__typeof__(v15),
+                      PSEUDO_REGISTER(unsigned long long, "x3", "=r")),
+      v19 = COERCE_AS(__typeof__(v19),
+                      PSEUDO_REGISTER(unsigned long long, "x1", "=r"));
+  _Unwind_Resume_plt(a1),
+      v11 = COERCE_AS(__typeof__(v11),
+                      PSEUDO_REGISTER(unsigned long long, "x4", "=r")),
+      v13 = COERCE_AS(__typeof__(v13),
+                      PSEUDO_REGISTER(unsigned long long, "x2", "=r")),
+      v15 = COERCE_AS(__typeof__(v15),
+                      PSEUDO_REGISTER(unsigned long long, "x3", "=r")),
+      v19 = COERCE_AS(__typeof__(v19),
+                      PSEUDO_REGISTER(unsigned long long, "x1", "=r"));
+  v49[0] = v9;
+  v49[1] = v12;
+  v49[7] = a1;
+  v14 = *(_DWORD*)(v13 + 8);
+  v16 = v15;
+  v17 = &v46_.v46;
+  v18 = v13;
+  v20 = v19;
+  v21 = v14 & 0x4A;
+  if (v21 == 8) {
+    v22 = 16;
+  }
+  else {
+    v22 = 10;
+  }
+  if (v21 == 64) {
+    v23 = 8;
+  }
+  else {
+    v23 = v22;
+  }
+  if ((v11 & 0x8000000000000000LL) != 0) {
+    if (v21 == 8) {
+      goto LABEL_15;
+    }
+    v24 = v11;
+    if (v21 != 64) {
+      v24 = -(__int64)v11;
+      v17 = &v46_.v47;
+      v46_.v46 = 45;
+    }
+  }
+  else {
+    if ((v14 & 0x800) == 0 || v21 == 8) {
+      goto LABEL_15;
+    }
+    v24 = v11;
+    if (v21 != 64) {
+      v17 = &v46_.v47;
+      v46_.v46 = 43;
+    LABEL_15:
+      v24 = v11;
+    }
+  }
+  if (v11 != 0 && (v14 & 0x200) != 0) {
+    if (v21 == 64) {
+      *v17++ = 48;
+    }
+    else if (v21 == 8) {
+      *v17 = 48;
+      if ((v14 & 0x4000) != 0) {
+        v25 = 88;
+      }
+      else {
+        v25 = 120;
+      }
+      v17[1] = v25;
+      v17 += 2;
+    }
+  }
+  v26 = nvidia_e1af0(v17, (char*)v49, v24, v23),
+  v11 = COERCE_AS(__typeof__(v11),
+                  PSEUDO_REGISTER(unsigned long long, "x4", "=r")),
+  v13 = COERCE_AS(__typeof__(v13),
+                  PSEUDO_REGISTER(unsigned long long, "x2", "=r")),
+  v15 = COERCE_AS(__typeof__(v15),
+                  PSEUDO_REGISTER(unsigned long long, "x3", "=r")),
+  v19 = COERCE_AS(__typeof__(v19),
+                  PSEUDO_REGISTER(unsigned long long, "x1", "=r"));
+  v27 = (unsigned __int8*)v26;
+  if ((~v14 & 0x4008) == 0) {
+    v28 = v17 - (unsigned __int8*)v26;
+    if (v17 != (unsigned __int8*)v26) {
+      for (i = ((_BYTE)v26 - (_BYTE)v17) & 7; i != 0; *v17++ = v30) {
+        v30 = *v17;
+        if ((unsigned int)(v30 - 97) < 6) {
+          LOBYTE(v30) = v30 - 32;
+        }
+        --i;
+      }
+      if (v28 <= 0xFFFFFFFFFFFFFFF8LL) {
+        do {
+          v31 = *v17;
+          if ((unsigned int)(v31 - 97) < 6) {
+            LOBYTE(v31) = v31 - 32;
+          }
+          *v17 = v31;
+          v32 = v17[1];
+          if ((unsigned int)(v32 - 97) < 6) {
+            LOBYTE(v32) = v32 - 32;
+          }
+          v17[1] = v32;
+          v33 = v17[2];
+          if ((unsigned int)(v33 - 97) < 6) {
+            LOBYTE(v33) = v33 - 32;
+          }
+          v17[2] = v33;
+          v34 = v17[3];
+          if ((unsigned int)(v34 - 97) < 6) {
+            LOBYTE(v34) = v34 - 32;
+          }
+          v17[3] = v34;
+          v35 = v17[4];
+          if ((unsigned int)(v35 - 97) < 6) {
+            LOBYTE(v35) = v35 - 32;
+          }
+          v17[4] = v35;
+          v36 = v17[5];
+          if ((unsigned int)(v36 - 97) < 6) {
+            LOBYTE(v36) = v36 - 32;
+          }
+          v17[5] = v36;
+          v37 = v17[6];
+          if ((unsigned int)(v37 - 97) < 6) {
+            LOBYTE(v37) = v37 - 32;
+          }
+          v17[6] = v37;
+          v38 = v17[7];
+          if ((unsigned int)(v38 - 97) < 6) {
+            LOBYTE(v38) = v38 - 32;
+          }
+          v17[7] = v38;
+          v17 += 8;
+        } while (v17 != (unsigned __int8*)v26);
+      }
+    }
+  }
+  v39 = *(_DWORD*)(v18 + 8) & 0xB0;
+  if (v39 == 32) {
+    v40 = (unsigned __int8*)v26;
+    goto LABEL_60;
+  }
+  if (v39 != 16) {
+  LABEL_59:
+    v40 = &v46_.v46;
+    goto LABEL_60;
+  }
+  if (v46_.v46 != 45 && v46_.v46 != 43) {
+    if (v26 - (char*)&v46_.v46 >= 2 && v46_.v46 == 48 &&
+        (v46_.v47 | 0x20) == 0x78) {
+      v40 = v46_.v48;
+      goto LABEL_60;
+    }
+    goto LABEL_59;
+  }
+  v40 = &v46_.v47;
+LABEL_60:
+  nvidia_be650((void*)((__int64)&v42), v18),
+      v11 = COERCE_AS(__typeof__(v11),
+                      PSEUDO_REGISTER(unsigned long long, "x4", "=r")),
+      v13 = COERCE_AS(__typeof__(v13),
+                      PSEUDO_REGISTER(unsigned long long, "x2", "=r")),
+      v15 = COERCE_AS(__typeof__(v15),
+                      PSEUDO_REGISTER(unsigned long long, "x3", "=r")),
+      v19 = COERCE_AS(__typeof__(v19),
+                      PSEUDO_REGISTER(unsigned long long, "x1", "=r"));
+  nvidia_cd0e0(&v46_.v46, v40, v27, (__int64)v44_.v45, &v44_.v44, &v43, &v42),
+      v11 = COERCE_AS(__typeof__(v11),
+                      PSEUDO_REGISTER(unsigned long long, "x4", "=r")),
+      v13 = COERCE_AS(__typeof__(v13),
+                      PSEUDO_REGISTER(unsigned long long, "x2", "=r")),
+      v15 = COERCE_AS(__typeof__(v15),
+                      PSEUDO_REGISTER(unsigned long long, "x3", "=r")),
+      v19 = COERCE_AS(__typeof__(v19),
+                      PSEUDO_REGISTER(unsigned long long, "x1", "=r"));
+  NgxRoutine_db240(&v42),
+      v11 = COERCE_AS(__typeof__(v11),
+                      PSEUDO_REGISTER(unsigned long long, "x4", "=r")),
+      v13 = COERCE_AS(__typeof__(v13),
+                      PSEUDO_REGISTER(unsigned long long, "x2", "=r")),
+      v15 = COERCE_AS(__typeof__(v15),
+                      PSEUDO_REGISTER(unsigned long long, "x3", "=r")),
+      v19 = COERCE_AS(__typeof__(v19),
+                      PSEUDO_REGISTER(unsigned long long, "x1", "=r"));
+  return NgxRoutine_d6d40(v20, (__int64)v44_.v45, v44_.v44, v43, v18, v16);
+}
+
+__int64 nvidia_ca88c(__int64 a1, __int64 a2, __int64 a3, __int64 a4, __int64 a5,
+                     __int64 a6, __int64 a7, __int64 a8, __int64 a9)
+{
+  __int64 v9;
+  unsigned __int64 v11;
+  __int64 v12;
+  __int64 v13;
+  int v14;
+  int v15;
+  int v16;
+  unsigned __int8* v17;
+  __int64 v18;
+  __int64 v19;
+  __int64 v20;
+  int v21;
+  int v22;
+  unsigned int v23;
+  char v24;
+  char* v25;
+  unsigned __int8* v26;
+  __int64 v28;
+  unsigned __int8* v29;
+  int v30;
+  int v31;
+  int v32;
+  int v33;
+  int v34;
+  int v35;
+  int v36;
+  int v37;
+  int v38;
+  int v39;
+  unsigned __int8* v40;
+  __int64 v42;
+  __int64 v43;
+  struct {
+    __int64 v44;
+    char gap24_[3];
+    _BYTE v45[45];
+  } v44_;
+  struct {
+    unsigned __int8 v46;
+    unsigned __int8 v47;
+    _BYTE v48[22];
+  } v46_;
+  _QWORD v49[8];
+
+  v11 = COERCE_AS(__typeof__(v11),
+                  PSEUDO_REGISTER(unsigned long long, "x4", "=r")),
+  v13 = COERCE_AS(__typeof__(v13),
+                  PSEUDO_REGISTER(unsigned long long, "x2", "=r")),
+  v15 = COERCE_AS(__typeof__(v15),
+                  PSEUDO_REGISTER(unsigned long long, "x3", "=r")),
+  v19 = COERCE_AS(__typeof__(v19),
+                  PSEUDO_REGISTER(unsigned long long, "x1", "=r"));
+  NgxRoutine_db240(&a9),
+      v11 = COERCE_AS(__typeof__(v11),
+                      PSEUDO_REGISTER(unsigned long long, "x4", "=r")),
+      v13 = COERCE_AS(__typeof__(v13),
+                      PSEUDO_REGISTER(unsigned long long, "x2", "=r")),
+      v15 = COERCE_AS(__typeof__(v15),
+                      PSEUDO_REGISTER(unsigned long long, "x3", "=r")),
+      v19 = COERCE_AS(__typeof__(v19),
+                      PSEUDO_REGISTER(unsigned long long, "x1", "=r"));
+  _Unwind_Resume_plt(a1),
+      v11 = COERCE_AS(__typeof__(v11),
+                      PSEUDO_REGISTER(unsigned long long, "x4", "=r")),
+      v13 = COERCE_AS(__typeof__(v13),
+                      PSEUDO_REGISTER(unsigned long long, "x2", "=r")),
+      v15 = COERCE_AS(__typeof__(v15),
+                      PSEUDO_REGISTER(unsigned long long, "x3", "=r")),
+      v19 = COERCE_AS(__typeof__(v19),
+                      PSEUDO_REGISTER(unsigned long long, "x1", "=r"));
+  v49[0] = v9;
+  v49[1] = v12;
+  v49[7] = a1;
+  v14 = *(_DWORD*)(v13 + 8);
+  v16 = v15;
+  v17 = &v46_.v46;
+  v18 = v13;
+  v20 = v19;
+  v21 = v14 & 0x4A;
+  if (v21 == 8) {
+    v22 = 16;
+  }
+  else {
+    v22 = 10;
+  }
+  if (v21 == 64) {
+    v23 = 8;
+  }
+  else {
+    v23 = v22;
+  }
+  if (v11 != 0 && (v14 & 0x200) != 0) {
+    if (v21 == 64) {
+      v17 = &v46_.v47;
+      v46_.v46 = 48;
+    }
+    else if (v21 == 8) {
+      v17 = v46_.v48;
+      v46_.v46 = 48;
+      if ((v14 & 0x4000) != 0) {
+        v24 = 88;
+      }
+      else {
+        v24 = 120;
+      }
+      v46_.v47 = v24;
+    }
+  }
+  v25 = nvidia_e1af0(v17, (char*)v49, v11, v23),
+  v11 = COERCE_AS(__typeof__(v11),
+                  PSEUDO_REGISTER(unsigned long long, "x4", "=r")),
+  v13 = COERCE_AS(__typeof__(v13),
+                  PSEUDO_REGISTER(unsigned long long, "x2", "=r")),
+  v15 = COERCE_AS(__typeof__(v15),
+                  PSEUDO_REGISTER(unsigned long long, "x3", "=r")),
+  v19 = COERCE_AS(__typeof__(v19),
+                  PSEUDO_REGISTER(unsigned long long, "x1", "=r"));
+  v26 = (unsigned __int8*)v25;
+  if ((~v14 & 0x4008) == 0 & v17 != (unsigned __int8*)v25) {
+    v28 = ((_BYTE)v25 - (_BYTE)v17) & 7;
+    v29 = v17;
+    if ((((_BYTE)v25 - (_BYTE)v17) & 7) != 0) {
+      v29 = v17;
+      do {
+        v30 = *v29;
+        if ((unsigned int)(v30 - 97) < 6) {
+          LOBYTE(v30) = v30 - 32;
+        }
+        --v28;
+        *v29++ = v30;
+      } while (v28 != 0);
+    }
+    if ((unsigned __int64)(v17 - (unsigned __int8*)v25) <=
+        0xFFFFFFFFFFFFFFF8LL) {
+      do {
+        v31 = *v29;
+        if ((unsigned int)(v31 - 97) < 6) {
+          LOBYTE(v31) = v31 - 32;
+        }
+        *v29 = v31;
+        v32 = v29[1];
+        if ((unsigned int)(v32 - 97) < 6) {
+          LOBYTE(v32) = v32 - 32;
+        }
+        v29[1] = v32;
+        v33 = v29[2];
+        if ((unsigned int)(v33 - 97) < 6) {
+          LOBYTE(v33) = v33 - 32;
+        }
+        v29[2] = v33;
+        v34 = v29[3];
+        if ((unsigned int)(v34 - 97) < 6) {
+          LOBYTE(v34) = v34 - 32;
+        }
+        v29[3] = v34;
+        v35 = v29[4];
+        if ((unsigned int)(v35 - 97) < 6) {
+          LOBYTE(v35) = v35 - 32;
+        }
+        v29[4] = v35;
+        v36 = v29[5];
+        if ((unsigned int)(v36 - 97) < 6) {
+          LOBYTE(v36) = v36 - 32;
+        }
+        v29[5] = v36;
+        v37 = v29[6];
+        if ((unsigned int)(v37 - 97) < 6) {
+          LOBYTE(v37) = v37 - 32;
+        }
+        v29[6] = v37;
+        v38 = v29[7];
+        if ((unsigned int)(v38 - 97) < 6) {
+          LOBYTE(v38) = v38 - 32;
+        }
+        v29[7] = v38;
+        v29 += 8;
+      } while (v29 != (unsigned __int8*)v25);
+    }
+  }
+  v39 = *(_DWORD*)(v18 + 8) & 0xB0;
+  if (v39 == 32) {
+    v40 = (unsigned __int8*)v25;
+    goto LABEL_54;
+  }
+  if (v39 != 16) {
+  LABEL_53:
+    v40 = &v46_.v46;
+    goto LABEL_54;
+  }
+  if (v46_.v46 != 45 && v46_.v46 != 43) {
+    if (v25 - (char*)&v46_.v46 >= 2 && v46_.v46 == 48 &&
+        (v46_.v47 | 0x20) == 0x78) {
+      v40 = v46_.v48;
+      goto LABEL_54;
+    }
+    goto LABEL_53;
+  }
+  v40 = &v46_.v47;
+LABEL_54:
+  nvidia_be650((void*)((__int64)&v42), v18),
+      v11 = COERCE_AS(__typeof__(v11),
+                      PSEUDO_REGISTER(unsigned long long, "x4", "=r")),
+      v13 = COERCE_AS(__typeof__(v13),
+                      PSEUDO_REGISTER(unsigned long long, "x2", "=r")),
+      v15 = COERCE_AS(__typeof__(v15),
+                      PSEUDO_REGISTER(unsigned long long, "x3", "=r")),
+      v19 = COERCE_AS(__typeof__(v19),
+                      PSEUDO_REGISTER(unsigned long long, "x1", "=r"));
+  nvidia_cd0e0(&v46_.v46, v40, v26, (__int64)v44_.v45, &v44_.v44, &v43, &v42),
+      v11 = COERCE_AS(__typeof__(v11),
+                      PSEUDO_REGISTER(unsigned long long, "x4", "=r")),
+      v13 = COERCE_AS(__typeof__(v13),
+                      PSEUDO_REGISTER(unsigned long long, "x2", "=r")),
+      v15 = COERCE_AS(__typeof__(v15),
+                      PSEUDO_REGISTER(unsigned long long, "x3", "=r")),
+      v19 = COERCE_AS(__typeof__(v19),
+                      PSEUDO_REGISTER(unsigned long long, "x1", "=r"));
+  NgxRoutine_db240(&v42),
+      v11 = COERCE_AS(__typeof__(v11),
+                      PSEUDO_REGISTER(unsigned long long, "x4", "=r")),
+      v13 = COERCE_AS(__typeof__(v13),
+                      PSEUDO_REGISTER(unsigned long long, "x2", "=r")),
+      v15 = COERCE_AS(__typeof__(v15),
+                      PSEUDO_REGISTER(unsigned long long, "x3", "=r")),
+      v19 = COERCE_AS(__typeof__(v19),
+                      PSEUDO_REGISTER(unsigned long long, "x1", "=r"));
+  return NgxRoutine_d6d40(v20, (__int64)v44_.v45, v44_.v44, v43, v18, v16);
+}
+
+void __attribute__((noreturn)) nvidia_cb280(__int64 a1)
+{
+  __int64 v1;
+  __int64 v2;
+  __int64 v4;
+  __int64 v5;
+  __int64 v6;
+  __int64 v7;
+  __int64 v8;
+  __int64 v9;
+  __int64 v10;
+  __int64 v11;
+  __int64 v12;
+  __int64 v13;
+
+  v10 = COERCE_AS(__typeof__(v10),
+                  PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+  v11 = COERCE_AS(__typeof__(v11),
+                  PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+  v12 = COERCE_AS(__typeof__(v12),
+                  PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+  v4 = COERCE_AS(__typeof__(v4),
+                 PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+  v6 = COERCE_AS(__typeof__(v6),
+                 PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+  v8 = COERCE_AS(__typeof__(v8),
+                 PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
+  __cxa_guard_abort_plt((__int64)&NgxData_2b89de8),
+      v10 = COERCE_AS(__typeof__(v10),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v11 = COERCE_AS(__typeof__(v11),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v12 = COERCE_AS(__typeof__(v12),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v4 = COERCE_AS(__typeof__(v4),
+                     PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v6 = COERCE_AS(__typeof__(v6),
+                     PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v8 = COERCE_AS(__typeof__(v8),
+                     PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
+  _Unwind_Resume_plt(a1),
+      v10 = COERCE_AS(__typeof__(v10),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v11 = COERCE_AS(__typeof__(v11),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v12 = COERCE_AS(__typeof__(v12),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v4 = COERCE_AS(__typeof__(v4),
+                     PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v6 = COERCE_AS(__typeof__(v6),
+                     PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v8 = COERCE_AS(__typeof__(v8),
+                     PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
+  v5 = v4;
+  __cxa_guard_abort_plt((__int64)&NgxData_2b89de8),
+      v10 = COERCE_AS(__typeof__(v10),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v11 = COERCE_AS(__typeof__(v11),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v12 = COERCE_AS(__typeof__(v12),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v4 = COERCE_AS(__typeof__(v4),
+                     PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v6 = COERCE_AS(__typeof__(v6),
+                     PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v8 = COERCE_AS(__typeof__(v8),
+                     PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
+  _Unwind_Resume_plt(v5),
+      v10 = COERCE_AS(__typeof__(v10),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v11 = COERCE_AS(__typeof__(v11),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v12 = COERCE_AS(__typeof__(v12),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v4 = COERCE_AS(__typeof__(v4),
+                     PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v6 = COERCE_AS(__typeof__(v6),
+                     PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v8 = COERCE_AS(__typeof__(v8),
+                     PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
+  v7 = v6;
+  __cxa_guard_abort_plt((__int64)&NgxData_2b89de8),
+      v10 = COERCE_AS(__typeof__(v10),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v11 = COERCE_AS(__typeof__(v11),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v12 = COERCE_AS(__typeof__(v12),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v4 = COERCE_AS(__typeof__(v4),
+                     PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v6 = COERCE_AS(__typeof__(v6),
+                     PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v8 = COERCE_AS(__typeof__(v8),
+                     PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
+  _Unwind_Resume_plt(v7),
+      v10 = COERCE_AS(__typeof__(v10),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v11 = COERCE_AS(__typeof__(v11),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v12 = COERCE_AS(__typeof__(v12),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v4 = COERCE_AS(__typeof__(v4),
+                     PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v6 = COERCE_AS(__typeof__(v6),
+                     PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v8 = COERCE_AS(__typeof__(v8),
+                     PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
+  v9 = v8;
+  __cxa_guard_abort_plt((__int64)&NgxData_2b89de8),
+      v10 = COERCE_AS(__typeof__(v10),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v11 = COERCE_AS(__typeof__(v11),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v12 = COERCE_AS(__typeof__(v12),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v4 = COERCE_AS(__typeof__(v4),
+                     PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v6 = COERCE_AS(__typeof__(v6),
+                     PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v8 = COERCE_AS(__typeof__(v8),
+                     PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
+  _Unwind_Resume_plt(v9),
+      v10 = COERCE_AS(__typeof__(v10),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v11 = COERCE_AS(__typeof__(v11),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v12 = COERCE_AS(__typeof__(v12),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v4 = COERCE_AS(__typeof__(v4),
+                     PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v6 = COERCE_AS(__typeof__(v6),
+                     PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v8 = COERCE_AS(__typeof__(v8),
+                     PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
+  _Unwind_Resume_plt(v10),
+      v10 = COERCE_AS(__typeof__(v10),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v11 = COERCE_AS(__typeof__(v11),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v12 = COERCE_AS(__typeof__(v12),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v4 = COERCE_AS(__typeof__(v4),
+                     PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v6 = COERCE_AS(__typeof__(v6),
+                     PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v8 = COERCE_AS(__typeof__(v8),
+                     PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
+  _Unwind_Resume_plt(v11),
+      v10 = COERCE_AS(__typeof__(v10),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v11 = COERCE_AS(__typeof__(v11),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v12 = COERCE_AS(__typeof__(v12),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v4 = COERCE_AS(__typeof__(v4),
+                     PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v6 = COERCE_AS(__typeof__(v6),
+                     PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v8 = COERCE_AS(__typeof__(v8),
+                     PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
+  v13 = v12;
+  if (v1 == 0) {
+    while (1) {
+      _Unwind_Resume_plt(v13),
+          v10 = COERCE_AS(__typeof__(v10),
+                          PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+          v11 = COERCE_AS(__typeof__(v11),
+                          PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+          v12 = COERCE_AS(__typeof__(v12),
+                          PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+          v4 = COERCE_AS(__typeof__(v4),
+                         PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+          v6 = COERCE_AS(__typeof__(v6),
+                         PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+          v8 = COERCE_AS(__typeof__(v8),
+                         PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
+      free_plt(v2),
+          v10 = COERCE_AS(__typeof__(v10),
+                          PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+          v11 = COERCE_AS(__typeof__(v11),
+                          PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+          v12 = COERCE_AS(__typeof__(v12),
+                          PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+          v4 = COERCE_AS(__typeof__(v4),
+                         PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+          v6 = COERCE_AS(__typeof__(v6),
+                         PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+          v8 = COERCE_AS(__typeof__(v8),
+                         PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
+    }
+  }
+  free_plt(v1),
+      v10 = COERCE_AS(__typeof__(v10),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v11 = COERCE_AS(__typeof__(v11),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v12 = COERCE_AS(__typeof__(v12),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v4 = COERCE_AS(__typeof__(v4),
+                     PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v6 = COERCE_AS(__typeof__(v6),
+                     PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v8 = COERCE_AS(__typeof__(v8),
+                     PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
+  _Unwind_Resume_plt(v13),
+      v10 = COERCE_AS(__typeof__(v10),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v11 = COERCE_AS(__typeof__(v11),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v12 = COERCE_AS(__typeof__(v12),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v4 = COERCE_AS(__typeof__(v4),
+                     PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v6 = COERCE_AS(__typeof__(v6),
+                     PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v8 = COERCE_AS(__typeof__(v8),
+                     PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
+  __udf(0);
+}
+
+void __attribute__((noreturn)) nvidia_cb75c(__int64 a1)
+{
+  __int64 v1;
+  __int64 v2;
+  __int64 v4;
+  __int64 v5;
+  __int64 v6;
+  __int64 v7;
+  __int64 v8;
+  __int64 v9;
+  __int64 v10;
+  __int64 v11;
+  __int64 v12;
+  __int64 v13;
+
+  v10 = COERCE_AS(__typeof__(v10),
+                  PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+  v11 = COERCE_AS(__typeof__(v11),
+                  PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+  v12 = COERCE_AS(__typeof__(v12),
+                  PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+  v4 = COERCE_AS(__typeof__(v4),
+                 PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+  v6 = COERCE_AS(__typeof__(v6),
+                 PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+  v8 = COERCE_AS(__typeof__(v8),
+                 PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
+  __cxa_guard_abort_plt((__int64)&NgxData_2b89de8),
+      v10 = COERCE_AS(__typeof__(v10),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v11 = COERCE_AS(__typeof__(v11),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v12 = COERCE_AS(__typeof__(v12),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v4 = COERCE_AS(__typeof__(v4),
+                     PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v6 = COERCE_AS(__typeof__(v6),
+                     PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v8 = COERCE_AS(__typeof__(v8),
+                     PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
+  _Unwind_Resume_plt(a1),
+      v10 = COERCE_AS(__typeof__(v10),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v11 = COERCE_AS(__typeof__(v11),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v12 = COERCE_AS(__typeof__(v12),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v4 = COERCE_AS(__typeof__(v4),
+                     PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v6 = COERCE_AS(__typeof__(v6),
+                     PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v8 = COERCE_AS(__typeof__(v8),
+                     PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
+  v5 = v4;
+  __cxa_guard_abort_plt((__int64)&NgxData_2b89de8),
+      v10 = COERCE_AS(__typeof__(v10),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v11 = COERCE_AS(__typeof__(v11),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v12 = COERCE_AS(__typeof__(v12),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v4 = COERCE_AS(__typeof__(v4),
+                     PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v6 = COERCE_AS(__typeof__(v6),
+                     PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v8 = COERCE_AS(__typeof__(v8),
+                     PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
+  _Unwind_Resume_plt(v5),
+      v10 = COERCE_AS(__typeof__(v10),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v11 = COERCE_AS(__typeof__(v11),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v12 = COERCE_AS(__typeof__(v12),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v4 = COERCE_AS(__typeof__(v4),
+                     PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v6 = COERCE_AS(__typeof__(v6),
+                     PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v8 = COERCE_AS(__typeof__(v8),
+                     PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
+  v7 = v6;
+  __cxa_guard_abort_plt((__int64)&NgxData_2b89de8),
+      v10 = COERCE_AS(__typeof__(v10),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v11 = COERCE_AS(__typeof__(v11),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v12 = COERCE_AS(__typeof__(v12),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v4 = COERCE_AS(__typeof__(v4),
+                     PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v6 = COERCE_AS(__typeof__(v6),
+                     PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v8 = COERCE_AS(__typeof__(v8),
+                     PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
+  _Unwind_Resume_plt(v7),
+      v10 = COERCE_AS(__typeof__(v10),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v11 = COERCE_AS(__typeof__(v11),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v12 = COERCE_AS(__typeof__(v12),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v4 = COERCE_AS(__typeof__(v4),
+                     PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v6 = COERCE_AS(__typeof__(v6),
+                     PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v8 = COERCE_AS(__typeof__(v8),
+                     PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
+  v9 = v8;
+  __cxa_guard_abort_plt((__int64)&NgxData_2b89de8),
+      v10 = COERCE_AS(__typeof__(v10),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v11 = COERCE_AS(__typeof__(v11),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v12 = COERCE_AS(__typeof__(v12),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v4 = COERCE_AS(__typeof__(v4),
+                     PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v6 = COERCE_AS(__typeof__(v6),
+                     PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v8 = COERCE_AS(__typeof__(v8),
+                     PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
+  _Unwind_Resume_plt(v9),
+      v10 = COERCE_AS(__typeof__(v10),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v11 = COERCE_AS(__typeof__(v11),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v12 = COERCE_AS(__typeof__(v12),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v4 = COERCE_AS(__typeof__(v4),
+                     PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v6 = COERCE_AS(__typeof__(v6),
+                     PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v8 = COERCE_AS(__typeof__(v8),
+                     PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
+  _Unwind_Resume_plt(v10),
+      v10 = COERCE_AS(__typeof__(v10),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v11 = COERCE_AS(__typeof__(v11),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v12 = COERCE_AS(__typeof__(v12),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v4 = COERCE_AS(__typeof__(v4),
+                     PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v6 = COERCE_AS(__typeof__(v6),
+                     PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v8 = COERCE_AS(__typeof__(v8),
+                     PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
+  _Unwind_Resume_plt(v11),
+      v10 = COERCE_AS(__typeof__(v10),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v11 = COERCE_AS(__typeof__(v11),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v12 = COERCE_AS(__typeof__(v12),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v4 = COERCE_AS(__typeof__(v4),
+                     PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v6 = COERCE_AS(__typeof__(v6),
+                     PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v8 = COERCE_AS(__typeof__(v8),
+                     PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
+  v13 = v12;
+  if (v1 == 0) {
+    while (1) {
+      _Unwind_Resume_plt(v13),
+          v10 = COERCE_AS(__typeof__(v10),
+                          PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+          v11 = COERCE_AS(__typeof__(v11),
+                          PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+          v12 = COERCE_AS(__typeof__(v12),
+                          PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+          v4 = COERCE_AS(__typeof__(v4),
+                         PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+          v6 = COERCE_AS(__typeof__(v6),
+                         PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+          v8 = COERCE_AS(__typeof__(v8),
+                         PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
+      free_plt(v2),
+          v10 = COERCE_AS(__typeof__(v10),
+                          PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+          v11 = COERCE_AS(__typeof__(v11),
+                          PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+          v12 = COERCE_AS(__typeof__(v12),
+                          PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+          v4 = COERCE_AS(__typeof__(v4),
+                         PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+          v6 = COERCE_AS(__typeof__(v6),
+                         PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+          v8 = COERCE_AS(__typeof__(v8),
+                         PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
+    }
+  }
+  free_plt(v1),
+      v10 = COERCE_AS(__typeof__(v10),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v11 = COERCE_AS(__typeof__(v11),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v12 = COERCE_AS(__typeof__(v12),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v4 = COERCE_AS(__typeof__(v4),
+                     PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v6 = COERCE_AS(__typeof__(v6),
+                     PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v8 = COERCE_AS(__typeof__(v8),
+                     PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
+  _Unwind_Resume_plt(v13),
+      v10 = COERCE_AS(__typeof__(v10),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v11 = COERCE_AS(__typeof__(v11),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v12 = COERCE_AS(__typeof__(v12),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v4 = COERCE_AS(__typeof__(v4),
+                     PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v6 = COERCE_AS(__typeof__(v6),
+                     PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v8 = COERCE_AS(__typeof__(v8),
+                     PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
+  __udf(0);
+}
+
+__int64 nvidia_cba24(__int64 a1, __int64 a2, __int64 a3, __int64 a4, __int64 a5,
+                     __int64 a6, __int64 a7, __int64 a8, __int64 a9,
+                     __int64 a10, __int64 a11, __int64 a12)
+{
+  __int64 v12;
+  __int64 v14;
+  __int64 v15;
+  unsigned __int64 v16;
+  __int64 v17;
+  __int64 v18;
+  int v19;
+  int v20;
+  int v21;
+  unsigned __int8* v22;
+  __int64 v23;
+  __int64 v24;
+  __int64 v25;
+  int v26;
+  int v27;
+  unsigned int v28;
+  unsigned __int64 v29;
+  char v30;
+  char* v31;
+  unsigned __int8* v32;
+  unsigned __int64 v33;
+  __int64 i;
+  int v35;
+  int v36;
+  int v37;
+  int v38;
+  int v39;
+  int v40;
+  int v41;
+  int v42;
+  int v43;
+  int v44;
+  unsigned __int8* v45;
+  __int64 v47;
+  struct {
+    __int64 v48;
+    char gap16_[4];
+    _BYTE v49[180];
+  } v48_;
+  struct {
+    unsigned __int8 v50;
+    unsigned __int8 v51;
+    _BYTE v52[6];
+  } v50_;
+  _QWORD v53[2];
+  __int64 v54[7];
+
+  v14 = COERCE_AS(__typeof__(v14),
+                  PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+  v16 = COERCE_AS(__typeof__(v16),
+                  PSEUDO_REGISTER(unsigned long long, "x4", "=r")),
+  v18 = COERCE_AS(__typeof__(v18),
+                  PSEUDO_REGISTER(unsigned long long, "x2", "=r")),
+  v20 = COERCE_AS(__typeof__(v20),
+                  PSEUDO_REGISTER(unsigned long long, "x3", "=r")),
+  v24 = COERCE_AS(__typeof__(v24),
+                  PSEUDO_REGISTER(unsigned long long, "x1", "=r"));
+  NgxRoutine_db240(&a12),
+      v14 = COERCE_AS(__typeof__(v14),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v16 = COERCE_AS(__typeof__(v16),
+                      PSEUDO_REGISTER(unsigned long long, "x4", "=r")),
+      v18 = COERCE_AS(__typeof__(v18),
+                      PSEUDO_REGISTER(unsigned long long, "x2", "=r")),
+      v20 = COERCE_AS(__typeof__(v20),
+                      PSEUDO_REGISTER(unsigned long long, "x3", "=r")),
+      v24 = COERCE_AS(__typeof__(v24),
+                      PSEUDO_REGISTER(unsigned long long, "x1", "=r"));
+  _Unwind_Resume_plt(a1),
+      v14 = COERCE_AS(__typeof__(v14),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v16 = COERCE_AS(__typeof__(v16),
+                      PSEUDO_REGISTER(unsigned long long, "x4", "=r")),
+      v18 = COERCE_AS(__typeof__(v18),
+                      PSEUDO_REGISTER(unsigned long long, "x2", "=r")),
+      v20 = COERCE_AS(__typeof__(v20),
+                      PSEUDO_REGISTER(unsigned long long, "x3", "=r")),
+      v24 = COERCE_AS(__typeof__(v24),
+                      PSEUDO_REGISTER(unsigned long long, "x1", "=r"));
+  v15 = v14;
+  if ((a9 & 1) != 0) {
+    NgxRoutine_430(a11, (4 * a9) & 0xFFFFFFFFFFFFFFF8LL),
+        v14 = COERCE_AS(__typeof__(v14),
+                        PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+        v16 = COERCE_AS(__typeof__(v16),
+                        PSEUDO_REGISTER(unsigned long long, "x4", "=r")),
+        v18 = COERCE_AS(__typeof__(v18),
+                        PSEUDO_REGISTER(unsigned long long, "x2", "=r")),
+        v20 = COERCE_AS(__typeof__(v20),
+                        PSEUDO_REGISTER(unsigned long long, "x3", "=r")),
+        v24 = COERCE_AS(__typeof__(v24),
+                        PSEUDO_REGISTER(unsigned long long, "x1", "=r"));
+  }
+  _Unwind_Resume_plt(v15),
+      v14 = COERCE_AS(__typeof__(v14),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v16 = COERCE_AS(__typeof__(v16),
+                      PSEUDO_REGISTER(unsigned long long, "x4", "=r")),
+      v18 = COERCE_AS(__typeof__(v18),
+                      PSEUDO_REGISTER(unsigned long long, "x2", "=r")),
+      v20 = COERCE_AS(__typeof__(v20),
+                      PSEUDO_REGISTER(unsigned long long, "x3", "=r")),
+      v24 = COERCE_AS(__typeof__(v24),
+                      PSEUDO_REGISTER(unsigned long long, "x1", "=r"));
+  v53[0] = v12;
+  v53[1] = v17;
+  v54[6] = v15;
+  v19 = *(_DWORD*)(v18 + 8);
+  v21 = v20;
+  v22 = &v50_.v50;
+  v23 = v18;
+  v25 = v24;
+  v26 = v19 & 0x4A;
+  if (v26 == 8) {
+    v27 = 16;
+  }
+  else {
+    v27 = 10;
+  }
+  if (v26 == 64) {
+    v28 = 8;
+  }
+  else {
+    v28 = v27;
+  }
+  if ((v16 & 0x8000000000000000LL) != 0) {
+    if (v26 == 8) {
+      goto LABEL_17;
+    }
+    v29 = v16;
+    if (v26 != 64) {
+      v29 = -(__int64)v16;
+      v22 = &v50_.v51;
+      v50_.v50 = 45;
+    }
+  }
+  else {
+    if ((v19 & 0x800) == 0 || v26 == 8) {
+      goto LABEL_17;
+    }
+    v29 = v16;
+    if (v26 != 64) {
+      v22 = &v50_.v51;
+      v50_.v50 = 43;
+    LABEL_17:
+      v29 = v16;
+    }
+  }
+  if (v16 != 0 && (v19 & 0x200) != 0) {
+    if (v26 == 64) {
+      *v22++ = 48;
+    }
+    else if (v26 == 8) {
+      *v22 = 48;
+      if ((v19 & 0x4000) != 0) {
+        v30 = 88;
+      }
+      else {
+        v30 = 120;
+      }
+      v22[1] = v30;
+      v22 += 2;
+    }
+  }
+  v31 = nvidia_e1af0(v22, (char*)v53, v29, v28),
+  v14 = COERCE_AS(__typeof__(v14),
+                  PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+  v16 = COERCE_AS(__typeof__(v16),
+                  PSEUDO_REGISTER(unsigned long long, "x4", "=r")),
+  v18 = COERCE_AS(__typeof__(v18),
+                  PSEUDO_REGISTER(unsigned long long, "x2", "=r")),
+  v20 = COERCE_AS(__typeof__(v20),
+                  PSEUDO_REGISTER(unsigned long long, "x3", "=r")),
+  v24 = COERCE_AS(__typeof__(v24),
+                  PSEUDO_REGISTER(unsigned long long, "x1", "=r"));
+  v32 = (unsigned __int8*)v31;
+  if ((~v19 & 0x4008) == 0) {
+    v33 = v22 - (unsigned __int8*)v31;
+    if (v22 != (unsigned __int8*)v31) {
+      for (i = ((_BYTE)v31 - (_BYTE)v22) & 7; i != 0; *v22++ = v35) {
+        v35 = *v22;
+        if ((unsigned int)(v35 - 97) < 6) {
+          LOBYTE(v35) = v35 - 32;
+        }
+        --i;
+      }
+      if (v33 <= 0xFFFFFFFFFFFFFFF8LL) {
+        do {
+          v36 = *v22;
+          if ((unsigned int)(v36 - 97) < 6) {
+            LOBYTE(v36) = v36 - 32;
+          }
+          *v22 = v36;
+          v37 = v22[1];
+          if ((unsigned int)(v37 - 97) < 6) {
+            LOBYTE(v37) = v37 - 32;
+          }
+          v22[1] = v37;
+          v38 = v22[2];
+          if ((unsigned int)(v38 - 97) < 6) {
+            LOBYTE(v38) = v38 - 32;
+          }
+          v22[2] = v38;
+          v39 = v22[3];
+          if ((unsigned int)(v39 - 97) < 6) {
+            LOBYTE(v39) = v39 - 32;
+          }
+          v22[3] = v39;
+          v40 = v22[4];
+          if ((unsigned int)(v40 - 97) < 6) {
+            LOBYTE(v40) = v40 - 32;
+          }
+          v22[4] = v40;
+          v41 = v22[5];
+          if ((unsigned int)(v41 - 97) < 6) {
+            LOBYTE(v41) = v41 - 32;
+          }
+          v22[5] = v41;
+          v42 = v22[6];
+          if ((unsigned int)(v42 - 97) < 6) {
+            LOBYTE(v42) = v42 - 32;
+          }
+          v22[6] = v42;
+          v43 = v22[7];
+          if ((unsigned int)(v43 - 97) < 6) {
+            LOBYTE(v43) = v43 - 32;
+          }
+          v22[7] = v43;
+          v22 += 8;
+        } while (v22 != (unsigned __int8*)v31);
+      }
+    }
+  }
+  v44 = *(_DWORD*)(v23 + 8) & 0xB0;
+  if (v44 == 32) {
+    v45 = (unsigned __int8*)v31;
+    goto LABEL_62;
+  }
+  if (v44 != 16) {
+  LABEL_61:
+    v45 = &v50_.v50;
+    goto LABEL_62;
+  }
+  if (v50_.v50 != 45 && v50_.v50 != 43) {
+    if (v31 - (char*)&v50_.v50 >= 2 && v50_.v50 == 48 &&
+        (v50_.v51 | 0x20) == 0x78) {
+      v45 = v50_.v52;
+      goto LABEL_62;
+    }
+    goto LABEL_61;
+  }
+  v45 = &v50_.v51;
+LABEL_62:
+  nvidia_be650((void*)((__int64)&v47), v23),
+      v14 = COERCE_AS(__typeof__(v14),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v16 = COERCE_AS(__typeof__(v16),
+                      PSEUDO_REGISTER(unsigned long long, "x4", "=r")),
+      v18 = COERCE_AS(__typeof__(v18),
+                      PSEUDO_REGISTER(unsigned long long, "x2", "=r")),
+      v20 = COERCE_AS(__typeof__(v20),
+                      PSEUDO_REGISTER(unsigned long long, "x3", "=r")),
+      v24 = COERCE_AS(__typeof__(v24),
+                      PSEUDO_REGISTER(unsigned long long, "x1", "=r"));
+  nvidia_cdb60(&v50_.v50, v45, v32, (__int64)v48_.v49, v54, &v48_.v48, &v47),
+      v14 = COERCE_AS(__typeof__(v14),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v16 = COERCE_AS(__typeof__(v16),
+                      PSEUDO_REGISTER(unsigned long long, "x4", "=r")),
+      v18 = COERCE_AS(__typeof__(v18),
+                      PSEUDO_REGISTER(unsigned long long, "x2", "=r")),
+      v20 = COERCE_AS(__typeof__(v20),
+                      PSEUDO_REGISTER(unsigned long long, "x3", "=r")),
+      v24 = COERCE_AS(__typeof__(v24),
+                      PSEUDO_REGISTER(unsigned long long, "x1", "=r"));
+  NgxRoutine_db240(&v47),
+      v14 = COERCE_AS(__typeof__(v14),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v16 = COERCE_AS(__typeof__(v16),
+                      PSEUDO_REGISTER(unsigned long long, "x4", "=r")),
+      v18 = COERCE_AS(__typeof__(v18),
+                      PSEUDO_REGISTER(unsigned long long, "x2", "=r")),
+      v20 = COERCE_AS(__typeof__(v20),
+                      PSEUDO_REGISTER(unsigned long long, "x3", "=r")),
+      v24 = COERCE_AS(__typeof__(v24),
+                      PSEUDO_REGISTER(unsigned long long, "x1", "=r"));
+  return NgxRoutine_d7f40(v25, (__int64)v48_.v49, v54[0], v48_.v48, v23, v21);
+}
+
+__int64 nvidia_cbd9c(__int64 a1, __int64 a2, __int64 a3, __int64 a4, __int64 a5,
+                     __int64 a6, __int64 a7, __int64 a8, __int64 a9)
+{
+  __int64 v9;
+  unsigned __int64 v11;
+  __int64 v12;
+  __int64 v13;
+  int v14;
+  int v15;
+  int v16;
+  unsigned __int8* v17;
+  __int64 v18;
+  __int64 v19;
+  __int64 v20;
+  int v21;
+  int v22;
+  unsigned int v23;
+  unsigned __int64 v24;
+  char v25;
+  char* v26;
+  unsigned __int8* v27;
+  unsigned __int64 v28;
+  __int64 i;
+  int v30;
+  int v31;
+  int v32;
+  int v33;
+  int v34;
+  int v35;
+  int v36;
+  int v37;
+  int v38;
+  int v39;
+  unsigned __int8* v40;
+  __int64 v42;
+  struct {
+    __int64 v43;
+    char gap16_[4];
+    _BYTE v44[180];
+  } v43_;
+  struct {
+    unsigned __int8 v45;
+    unsigned __int8 v46;
+    _BYTE v47[6];
+  } v45_;
+  _QWORD v48[2];
+  __int64 v49[7];
+
+  v11 = COERCE_AS(__typeof__(v11),
+                  PSEUDO_REGISTER(unsigned long long, "x4", "=r")),
+  v13 = COERCE_AS(__typeof__(v13),
+                  PSEUDO_REGISTER(unsigned long long, "x2", "=r")),
+  v15 = COERCE_AS(__typeof__(v15),
+                  PSEUDO_REGISTER(unsigned long long, "x3", "=r")),
+  v19 = COERCE_AS(__typeof__(v19),
+                  PSEUDO_REGISTER(unsigned long long, "x1", "=r"));
+  NgxRoutine_db240(&a9),
+      v11 = COERCE_AS(__typeof__(v11),
+                      PSEUDO_REGISTER(unsigned long long, "x4", "=r")),
+      v13 = COERCE_AS(__typeof__(v13),
+                      PSEUDO_REGISTER(unsigned long long, "x2", "=r")),
+      v15 = COERCE_AS(__typeof__(v15),
+                      PSEUDO_REGISTER(unsigned long long, "x3", "=r")),
+      v19 = COERCE_AS(__typeof__(v19),
+                      PSEUDO_REGISTER(unsigned long long, "x1", "=r"));
+  _Unwind_Resume_plt(a1),
+      v11 = COERCE_AS(__typeof__(v11),
+                      PSEUDO_REGISTER(unsigned long long, "x4", "=r")),
+      v13 = COERCE_AS(__typeof__(v13),
+                      PSEUDO_REGISTER(unsigned long long, "x2", "=r")),
+      v15 = COERCE_AS(__typeof__(v15),
+                      PSEUDO_REGISTER(unsigned long long, "x3", "=r")),
+      v19 = COERCE_AS(__typeof__(v19),
+                      PSEUDO_REGISTER(unsigned long long, "x1", "=r"));
+  v48[0] = v9;
+  v48[1] = v12;
+  v49[6] = a1;
+  v14 = *(_DWORD*)(v13 + 8);
+  v16 = v15;
+  v17 = &v45_.v45;
+  v18 = v13;
+  v20 = v19;
+  v21 = v14 & 0x4A;
+  if (v21 == 8) {
+    v22 = 16;
+  }
+  else {
+    v22 = 10;
+  }
+  if (v21 == 64) {
+    v23 = 8;
+  }
+  else {
+    v23 = v22;
+  }
+  if ((v11 & 0x8000000000000000LL) != 0) {
+    if (v21 == 8) {
+      goto LABEL_15;
+    }
+    v24 = v11;
+    if (v21 != 64) {
+      v24 = -(__int64)v11;
+      v17 = &v45_.v46;
+      v45_.v45 = 45;
+    }
+  }
+  else {
+    if ((v14 & 0x800) == 0 || v21 == 8) {
+      goto LABEL_15;
+    }
+    v24 = v11;
+    if (v21 != 64) {
+      v17 = &v45_.v46;
+      v45_.v45 = 43;
+    LABEL_15:
+      v24 = v11;
+    }
+  }
+  if (v11 != 0 && (v14 & 0x200) != 0) {
+    if (v21 == 64) {
+      *v17++ = 48;
+    }
+    else if (v21 == 8) {
+      *v17 = 48;
+      if ((v14 & 0x4000) != 0) {
+        v25 = 88;
+      }
+      else {
+        v25 = 120;
+      }
+      v17[1] = v25;
+      v17 += 2;
+    }
+  }
+  v26 = nvidia_e1af0(v17, (char*)v48, v24, v23),
+  v11 = COERCE_AS(__typeof__(v11),
+                  PSEUDO_REGISTER(unsigned long long, "x4", "=r")),
+  v13 = COERCE_AS(__typeof__(v13),
+                  PSEUDO_REGISTER(unsigned long long, "x2", "=r")),
+  v15 = COERCE_AS(__typeof__(v15),
+                  PSEUDO_REGISTER(unsigned long long, "x3", "=r")),
+  v19 = COERCE_AS(__typeof__(v19),
+                  PSEUDO_REGISTER(unsigned long long, "x1", "=r"));
+  v27 = (unsigned __int8*)v26;
+  if ((~v14 & 0x4008) == 0) {
+    v28 = v17 - (unsigned __int8*)v26;
+    if (v17 != (unsigned __int8*)v26) {
+      for (i = ((_BYTE)v26 - (_BYTE)v17) & 7; i != 0; *v17++ = v30) {
+        v30 = *v17;
+        if ((unsigned int)(v30 - 97) < 6) {
+          LOBYTE(v30) = v30 - 32;
+        }
+        --i;
+      }
+      if (v28 <= 0xFFFFFFFFFFFFFFF8LL) {
+        do {
+          v31 = *v17;
+          if ((unsigned int)(v31 - 97) < 6) {
+            LOBYTE(v31) = v31 - 32;
+          }
+          *v17 = v31;
+          v32 = v17[1];
+          if ((unsigned int)(v32 - 97) < 6) {
+            LOBYTE(v32) = v32 - 32;
+          }
+          v17[1] = v32;
+          v33 = v17[2];
+          if ((unsigned int)(v33 - 97) < 6) {
+            LOBYTE(v33) = v33 - 32;
+          }
+          v17[2] = v33;
+          v34 = v17[3];
+          if ((unsigned int)(v34 - 97) < 6) {
+            LOBYTE(v34) = v34 - 32;
+          }
+          v17[3] = v34;
+          v35 = v17[4];
+          if ((unsigned int)(v35 - 97) < 6) {
+            LOBYTE(v35) = v35 - 32;
+          }
+          v17[4] = v35;
+          v36 = v17[5];
+          if ((unsigned int)(v36 - 97) < 6) {
+            LOBYTE(v36) = v36 - 32;
+          }
+          v17[5] = v36;
+          v37 = v17[6];
+          if ((unsigned int)(v37 - 97) < 6) {
+            LOBYTE(v37) = v37 - 32;
+          }
+          v17[6] = v37;
+          v38 = v17[7];
+          if ((unsigned int)(v38 - 97) < 6) {
+            LOBYTE(v38) = v38 - 32;
+          }
+          v17[7] = v38;
+          v17 += 8;
+        } while (v17 != (unsigned __int8*)v26);
+      }
+    }
+  }
+  v39 = *(_DWORD*)(v18 + 8) & 0xB0;
+  if (v39 == 32) {
+    v40 = (unsigned __int8*)v26;
+    goto LABEL_60;
+  }
+  if (v39 != 16) {
+  LABEL_59:
+    v40 = &v45_.v45;
+    goto LABEL_60;
+  }
+  if (v45_.v45 != 45 && v45_.v45 != 43) {
+    if (v26 - (char*)&v45_.v45 >= 2 && v45_.v45 == 48 &&
+        (v45_.v46 | 0x20) == 0x78) {
+      v40 = v45_.v47;
+      goto LABEL_60;
+    }
+    goto LABEL_59;
+  }
+  v40 = &v45_.v46;
+LABEL_60:
+  nvidia_be650((void*)((__int64)&v42), v18),
+      v11 = COERCE_AS(__typeof__(v11),
+                      PSEUDO_REGISTER(unsigned long long, "x4", "=r")),
+      v13 = COERCE_AS(__typeof__(v13),
+                      PSEUDO_REGISTER(unsigned long long, "x2", "=r")),
+      v15 = COERCE_AS(__typeof__(v15),
+                      PSEUDO_REGISTER(unsigned long long, "x3", "=r")),
+      v19 = COERCE_AS(__typeof__(v19),
+                      PSEUDO_REGISTER(unsigned long long, "x1", "=r"));
+  nvidia_cdb60(&v45_.v45, v40, v27, (__int64)v43_.v44, v49, &v43_.v43, &v42),
+      v11 = COERCE_AS(__typeof__(v11),
+                      PSEUDO_REGISTER(unsigned long long, "x4", "=r")),
+      v13 = COERCE_AS(__typeof__(v13),
+                      PSEUDO_REGISTER(unsigned long long, "x2", "=r")),
+      v15 = COERCE_AS(__typeof__(v15),
+                      PSEUDO_REGISTER(unsigned long long, "x3", "=r")),
+      v19 = COERCE_AS(__typeof__(v19),
+                      PSEUDO_REGISTER(unsigned long long, "x1", "=r"));
+  NgxRoutine_db240(&v42),
+      v11 = COERCE_AS(__typeof__(v11),
+                      PSEUDO_REGISTER(unsigned long long, "x4", "=r")),
+      v13 = COERCE_AS(__typeof__(v13),
+                      PSEUDO_REGISTER(unsigned long long, "x2", "=r")),
+      v15 = COERCE_AS(__typeof__(v15),
+                      PSEUDO_REGISTER(unsigned long long, "x3", "=r")),
+      v19 = COERCE_AS(__typeof__(v19),
+                      PSEUDO_REGISTER(unsigned long long, "x1", "=r"));
+  return NgxRoutine_d7f40(v20, (__int64)v43_.v44, v49[0], v43_.v43, v18, v16);
+}
+
+__int64 nvidia_cc0dc(__int64 a1, __int64 a2, __int64 a3, __int64 a4, __int64 a5,
+                     __int64 a6, __int64 a7, __int64 a8, __int64 a9)
+{
+  __int64 v9;
+  unsigned __int64 v11;
+  __int64 v12;
+  __int64 v13;
+  int v14;
+  int v15;
+  int v16;
+  unsigned __int8* v17;
+  __int64 v18;
+  __int64 v19;
+  __int64 v20;
+  int v21;
+  int v22;
+  unsigned int v23;
+  char v24;
+  char* v25;
+  unsigned __int8* v26;
+  __int64 v28;
+  unsigned __int8* v29;
+  int v30;
+  int v31;
+  int v32;
+  int v33;
+  int v34;
+  int v35;
+  int v36;
+  int v37;
+  int v38;
+  int v39;
+  unsigned __int8* v40;
+  __int64 v42;
+  struct {
+    __int64 v43;
+    char gap16_[4];
+    _BYTE v44[180];
+  } v43_;
+  struct {
+    unsigned __int8 v45;
+    unsigned __int8 v46;
+    _BYTE v47[22];
+  } v45_;
+  _QWORD v48[2];
+  __int64 v49[7];
+
+  v11 = COERCE_AS(__typeof__(v11),
+                  PSEUDO_REGISTER(unsigned long long, "x4", "=r")),
+  v13 = COERCE_AS(__typeof__(v13),
+                  PSEUDO_REGISTER(unsigned long long, "x2", "=r")),
+  v15 = COERCE_AS(__typeof__(v15),
+                  PSEUDO_REGISTER(unsigned long long, "x3", "=r")),
+  v19 = COERCE_AS(__typeof__(v19),
+                  PSEUDO_REGISTER(unsigned long long, "x1", "=r"));
+  NgxRoutine_db240(&a9),
+      v11 = COERCE_AS(__typeof__(v11),
+                      PSEUDO_REGISTER(unsigned long long, "x4", "=r")),
+      v13 = COERCE_AS(__typeof__(v13),
+                      PSEUDO_REGISTER(unsigned long long, "x2", "=r")),
+      v15 = COERCE_AS(__typeof__(v15),
+                      PSEUDO_REGISTER(unsigned long long, "x3", "=r")),
+      v19 = COERCE_AS(__typeof__(v19),
+                      PSEUDO_REGISTER(unsigned long long, "x1", "=r"));
+  _Unwind_Resume_plt(a1),
+      v11 = COERCE_AS(__typeof__(v11),
+                      PSEUDO_REGISTER(unsigned long long, "x4", "=r")),
+      v13 = COERCE_AS(__typeof__(v13),
+                      PSEUDO_REGISTER(unsigned long long, "x2", "=r")),
+      v15 = COERCE_AS(__typeof__(v15),
+                      PSEUDO_REGISTER(unsigned long long, "x3", "=r")),
+      v19 = COERCE_AS(__typeof__(v19),
+                      PSEUDO_REGISTER(unsigned long long, "x1", "=r"));
+  v48[0] = v9;
+  v48[1] = v12;
+  v49[6] = a1;
+  v14 = *(_DWORD*)(v13 + 8);
+  v16 = v15;
+  v17 = &v45_.v45;
+  v18 = v13;
+  v20 = v19;
+  v21 = v14 & 0x4A;
+  if (v21 == 8) {
+    v22 = 16;
+  }
+  else {
+    v22 = 10;
+  }
+  if (v21 == 64) {
+    v23 = 8;
+  }
+  else {
+    v23 = v22;
+  }
+  if (v11 != 0 && (v14 & 0x200) != 0) {
+    if (v21 == 64) {
+      v17 = &v45_.v46;
+      v45_.v45 = 48;
+    }
+    else if (v21 == 8) {
+      v17 = v45_.v47;
+      v45_.v45 = 48;
+      if ((v14 & 0x4000) != 0) {
+        v24 = 88;
+      }
+      else {
+        v24 = 120;
+      }
+      v45_.v46 = v24;
+    }
+  }
+  v25 = nvidia_e1af0(v17, (char*)v48, v11, v23),
+  v11 = COERCE_AS(__typeof__(v11),
+                  PSEUDO_REGISTER(unsigned long long, "x4", "=r")),
+  v13 = COERCE_AS(__typeof__(v13),
+                  PSEUDO_REGISTER(unsigned long long, "x2", "=r")),
+  v15 = COERCE_AS(__typeof__(v15),
+                  PSEUDO_REGISTER(unsigned long long, "x3", "=r")),
+  v19 = COERCE_AS(__typeof__(v19),
+                  PSEUDO_REGISTER(unsigned long long, "x1", "=r"));
+  v26 = (unsigned __int8*)v25;
+  if ((~v14 & 0x4008) == 0 & v17 != (unsigned __int8*)v25) {
+    v28 = ((_BYTE)v25 - (_BYTE)v17) & 7;
+    v29 = v17;
+    if ((((_BYTE)v25 - (_BYTE)v17) & 7) != 0) {
+      v29 = v17;
+      do {
+        v30 = *v29;
+        if ((unsigned int)(v30 - 97) < 6) {
+          LOBYTE(v30) = v30 - 32;
+        }
+        --v28;
+        *v29++ = v30;
+      } while (v28 != 0);
+    }
+    if ((unsigned __int64)(v17 - (unsigned __int8*)v25) <=
+        0xFFFFFFFFFFFFFFF8LL) {
+      do {
+        v31 = *v29;
+        if ((unsigned int)(v31 - 97) < 6) {
+          LOBYTE(v31) = v31 - 32;
+        }
+        *v29 = v31;
+        v32 = v29[1];
+        if ((unsigned int)(v32 - 97) < 6) {
+          LOBYTE(v32) = v32 - 32;
+        }
+        v29[1] = v32;
+        v33 = v29[2];
+        if ((unsigned int)(v33 - 97) < 6) {
+          LOBYTE(v33) = v33 - 32;
+        }
+        v29[2] = v33;
+        v34 = v29[3];
+        if ((unsigned int)(v34 - 97) < 6) {
+          LOBYTE(v34) = v34 - 32;
+        }
+        v29[3] = v34;
+        v35 = v29[4];
+        if ((unsigned int)(v35 - 97) < 6) {
+          LOBYTE(v35) = v35 - 32;
+        }
+        v29[4] = v35;
+        v36 = v29[5];
+        if ((unsigned int)(v36 - 97) < 6) {
+          LOBYTE(v36) = v36 - 32;
+        }
+        v29[5] = v36;
+        v37 = v29[6];
+        if ((unsigned int)(v37 - 97) < 6) {
+          LOBYTE(v37) = v37 - 32;
+        }
+        v29[6] = v37;
+        v38 = v29[7];
+        if ((unsigned int)(v38 - 97) < 6) {
+          LOBYTE(v38) = v38 - 32;
+        }
+        v29[7] = v38;
+        v29 += 8;
+      } while (v29 != (unsigned __int8*)v25);
+    }
+  }
+  v39 = *(_DWORD*)(v18 + 8) & 0xB0;
+  if (v39 == 32) {
+    v40 = (unsigned __int8*)v25;
+    goto LABEL_54;
+  }
+  if (v39 != 16) {
+  LABEL_53:
+    v40 = &v45_.v45;
+    goto LABEL_54;
+  }
+  if (v45_.v45 != 45 && v45_.v45 != 43) {
+    if (v25 - (char*)&v45_.v45 >= 2 && v45_.v45 == 48 &&
+        (v45_.v46 | 0x20) == 0x78) {
+      v40 = v45_.v47;
+      goto LABEL_54;
+    }
+    goto LABEL_53;
+  }
+  v40 = &v45_.v46;
+LABEL_54:
+  nvidia_be650((void*)((__int64)&v42), v18),
+      v11 = COERCE_AS(__typeof__(v11),
+                      PSEUDO_REGISTER(unsigned long long, "x4", "=r")),
+      v13 = COERCE_AS(__typeof__(v13),
+                      PSEUDO_REGISTER(unsigned long long, "x2", "=r")),
+      v15 = COERCE_AS(__typeof__(v15),
+                      PSEUDO_REGISTER(unsigned long long, "x3", "=r")),
+      v19 = COERCE_AS(__typeof__(v19),
+                      PSEUDO_REGISTER(unsigned long long, "x1", "=r"));
+  nvidia_cdb60(&v45_.v45, v40, v26, (__int64)v43_.v44, v49, &v43_.v43, &v42),
+      v11 = COERCE_AS(__typeof__(v11),
+                      PSEUDO_REGISTER(unsigned long long, "x4", "=r")),
+      v13 = COERCE_AS(__typeof__(v13),
+                      PSEUDO_REGISTER(unsigned long long, "x2", "=r")),
+      v15 = COERCE_AS(__typeof__(v15),
+                      PSEUDO_REGISTER(unsigned long long, "x3", "=r")),
+      v19 = COERCE_AS(__typeof__(v19),
+                      PSEUDO_REGISTER(unsigned long long, "x1", "=r"));
+  NgxRoutine_db240(&v42),
+      v11 = COERCE_AS(__typeof__(v11),
+                      PSEUDO_REGISTER(unsigned long long, "x4", "=r")),
+      v13 = COERCE_AS(__typeof__(v13),
+                      PSEUDO_REGISTER(unsigned long long, "x2", "=r")),
+      v15 = COERCE_AS(__typeof__(v15),
+                      PSEUDO_REGISTER(unsigned long long, "x3", "=r")),
+      v19 = COERCE_AS(__typeof__(v19),
+                      PSEUDO_REGISTER(unsigned long long, "x1", "=r"));
+  return NgxRoutine_d7f40(v20, (__int64)v43_.v44, v49[0], v43_.v43, v18, v16);
+}
+
+void __attribute__((noreturn)) nvidia_ccb00(__int64 a1)
+{
+  __int64 v1;
+  __int64 v2;
+  __int64 v4;
+  __int64 v5;
+  __int64 v6;
+  __int64 v7;
+  __int64 v8;
+  __int64 v9;
+  __int64 v10;
+  __int64 v11;
+  __int64 v12;
+  __int64 v13;
+
+  v10 = COERCE_AS(__typeof__(v10),
+                  PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+  v11 = COERCE_AS(__typeof__(v11),
+                  PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+  v12 = COERCE_AS(__typeof__(v12),
+                  PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+  v4 = COERCE_AS(__typeof__(v4),
+                 PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+  v6 = COERCE_AS(__typeof__(v6),
+                 PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+  v8 = COERCE_AS(__typeof__(v8),
+                 PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
+  __cxa_guard_abort_plt((__int64)&NgxData_2b89de8),
+      v10 = COERCE_AS(__typeof__(v10),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v11 = COERCE_AS(__typeof__(v11),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v12 = COERCE_AS(__typeof__(v12),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v4 = COERCE_AS(__typeof__(v4),
+                     PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v6 = COERCE_AS(__typeof__(v6),
+                     PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v8 = COERCE_AS(__typeof__(v8),
+                     PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
+  _Unwind_Resume_plt(a1),
+      v10 = COERCE_AS(__typeof__(v10),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v11 = COERCE_AS(__typeof__(v11),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v12 = COERCE_AS(__typeof__(v12),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v4 = COERCE_AS(__typeof__(v4),
+                     PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v6 = COERCE_AS(__typeof__(v6),
+                     PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v8 = COERCE_AS(__typeof__(v8),
+                     PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
+  v5 = v4;
+  __cxa_guard_abort_plt((__int64)&NgxData_2b89de8),
+      v10 = COERCE_AS(__typeof__(v10),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v11 = COERCE_AS(__typeof__(v11),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v12 = COERCE_AS(__typeof__(v12),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v4 = COERCE_AS(__typeof__(v4),
+                     PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v6 = COERCE_AS(__typeof__(v6),
+                     PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v8 = COERCE_AS(__typeof__(v8),
+                     PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
+  _Unwind_Resume_plt(v5),
+      v10 = COERCE_AS(__typeof__(v10),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v11 = COERCE_AS(__typeof__(v11),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v12 = COERCE_AS(__typeof__(v12),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v4 = COERCE_AS(__typeof__(v4),
+                     PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v6 = COERCE_AS(__typeof__(v6),
+                     PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v8 = COERCE_AS(__typeof__(v8),
+                     PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
+  v7 = v6;
+  __cxa_guard_abort_plt((__int64)&NgxData_2b89de8),
+      v10 = COERCE_AS(__typeof__(v10),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v11 = COERCE_AS(__typeof__(v11),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v12 = COERCE_AS(__typeof__(v12),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v4 = COERCE_AS(__typeof__(v4),
+                     PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v6 = COERCE_AS(__typeof__(v6),
+                     PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v8 = COERCE_AS(__typeof__(v8),
+                     PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
+  _Unwind_Resume_plt(v7),
+      v10 = COERCE_AS(__typeof__(v10),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v11 = COERCE_AS(__typeof__(v11),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v12 = COERCE_AS(__typeof__(v12),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v4 = COERCE_AS(__typeof__(v4),
+                     PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v6 = COERCE_AS(__typeof__(v6),
+                     PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v8 = COERCE_AS(__typeof__(v8),
+                     PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
+  v9 = v8;
+  __cxa_guard_abort_plt((__int64)&NgxData_2b89de8),
+      v10 = COERCE_AS(__typeof__(v10),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v11 = COERCE_AS(__typeof__(v11),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v12 = COERCE_AS(__typeof__(v12),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v4 = COERCE_AS(__typeof__(v4),
+                     PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v6 = COERCE_AS(__typeof__(v6),
+                     PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v8 = COERCE_AS(__typeof__(v8),
+                     PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
+  _Unwind_Resume_plt(v9),
+      v10 = COERCE_AS(__typeof__(v10),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v11 = COERCE_AS(__typeof__(v11),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v12 = COERCE_AS(__typeof__(v12),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v4 = COERCE_AS(__typeof__(v4),
+                     PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v6 = COERCE_AS(__typeof__(v6),
+                     PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v8 = COERCE_AS(__typeof__(v8),
+                     PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
+  _Unwind_Resume_plt(v10),
+      v10 = COERCE_AS(__typeof__(v10),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v11 = COERCE_AS(__typeof__(v11),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v12 = COERCE_AS(__typeof__(v12),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v4 = COERCE_AS(__typeof__(v4),
+                     PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v6 = COERCE_AS(__typeof__(v6),
+                     PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v8 = COERCE_AS(__typeof__(v8),
+                     PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
+  _Unwind_Resume_plt(v11),
+      v10 = COERCE_AS(__typeof__(v10),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v11 = COERCE_AS(__typeof__(v11),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v12 = COERCE_AS(__typeof__(v12),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v4 = COERCE_AS(__typeof__(v4),
+                     PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v6 = COERCE_AS(__typeof__(v6),
+                     PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v8 = COERCE_AS(__typeof__(v8),
+                     PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
+  v13 = v12;
+  if (v1 == 0) {
+    while (1) {
+      _Unwind_Resume_plt(v13),
+          v10 = COERCE_AS(__typeof__(v10),
+                          PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+          v11 = COERCE_AS(__typeof__(v11),
+                          PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+          v12 = COERCE_AS(__typeof__(v12),
+                          PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+          v4 = COERCE_AS(__typeof__(v4),
+                         PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+          v6 = COERCE_AS(__typeof__(v6),
+                         PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+          v8 = COERCE_AS(__typeof__(v8),
+                         PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
+      free_plt(v2),
+          v10 = COERCE_AS(__typeof__(v10),
+                          PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+          v11 = COERCE_AS(__typeof__(v11),
+                          PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+          v12 = COERCE_AS(__typeof__(v12),
+                          PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+          v4 = COERCE_AS(__typeof__(v4),
+                         PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+          v6 = COERCE_AS(__typeof__(v6),
+                         PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+          v8 = COERCE_AS(__typeof__(v8),
+                         PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
+    }
+  }
+  free_plt(v1),
+      v10 = COERCE_AS(__typeof__(v10),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v11 = COERCE_AS(__typeof__(v11),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v12 = COERCE_AS(__typeof__(v12),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v4 = COERCE_AS(__typeof__(v4),
+                     PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v6 = COERCE_AS(__typeof__(v6),
+                     PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v8 = COERCE_AS(__typeof__(v8),
+                     PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
+  _Unwind_Resume_plt(v13),
+      v10 = COERCE_AS(__typeof__(v10),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v11 = COERCE_AS(__typeof__(v11),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v12 = COERCE_AS(__typeof__(v12),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v4 = COERCE_AS(__typeof__(v4),
+                     PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v6 = COERCE_AS(__typeof__(v6),
+                     PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v8 = COERCE_AS(__typeof__(v8),
+                     PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
+  __udf(0);
+}
+
+void __attribute__((noreturn)) nvidia_ccfdc(__int64 a1)
+{
+  __int64 v1;
+  __int64 v2;
+  __int64 v4;
+  __int64 v5;
+  __int64 v6;
+  __int64 v7;
+  __int64 v8;
+  __int64 v9;
+  __int64 v10;
+  __int64 v11;
+  __int64 v12;
+  __int64 v13;
+
+  v10 = COERCE_AS(__typeof__(v10),
+                  PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+  v11 = COERCE_AS(__typeof__(v11),
+                  PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+  v12 = COERCE_AS(__typeof__(v12),
+                  PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+  v4 = COERCE_AS(__typeof__(v4),
+                 PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+  v6 = COERCE_AS(__typeof__(v6),
+                 PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+  v8 = COERCE_AS(__typeof__(v8),
+                 PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
+  __cxa_guard_abort_plt((__int64)&NgxData_2b89de8),
+      v10 = COERCE_AS(__typeof__(v10),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v11 = COERCE_AS(__typeof__(v11),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v12 = COERCE_AS(__typeof__(v12),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v4 = COERCE_AS(__typeof__(v4),
+                     PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v6 = COERCE_AS(__typeof__(v6),
+                     PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v8 = COERCE_AS(__typeof__(v8),
+                     PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
+  _Unwind_Resume_plt(a1),
+      v10 = COERCE_AS(__typeof__(v10),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v11 = COERCE_AS(__typeof__(v11),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v12 = COERCE_AS(__typeof__(v12),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v4 = COERCE_AS(__typeof__(v4),
+                     PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v6 = COERCE_AS(__typeof__(v6),
+                     PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v8 = COERCE_AS(__typeof__(v8),
+                     PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
+  v5 = v4;
+  __cxa_guard_abort_plt((__int64)&NgxData_2b89de8),
+      v10 = COERCE_AS(__typeof__(v10),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v11 = COERCE_AS(__typeof__(v11),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v12 = COERCE_AS(__typeof__(v12),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v4 = COERCE_AS(__typeof__(v4),
+                     PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v6 = COERCE_AS(__typeof__(v6),
+                     PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v8 = COERCE_AS(__typeof__(v8),
+                     PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
+  _Unwind_Resume_plt(v5),
+      v10 = COERCE_AS(__typeof__(v10),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v11 = COERCE_AS(__typeof__(v11),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v12 = COERCE_AS(__typeof__(v12),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v4 = COERCE_AS(__typeof__(v4),
+                     PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v6 = COERCE_AS(__typeof__(v6),
+                     PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v8 = COERCE_AS(__typeof__(v8),
+                     PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
+  v7 = v6;
+  __cxa_guard_abort_plt((__int64)&NgxData_2b89de8),
+      v10 = COERCE_AS(__typeof__(v10),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v11 = COERCE_AS(__typeof__(v11),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v12 = COERCE_AS(__typeof__(v12),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v4 = COERCE_AS(__typeof__(v4),
+                     PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v6 = COERCE_AS(__typeof__(v6),
+                     PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v8 = COERCE_AS(__typeof__(v8),
+                     PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
+  _Unwind_Resume_plt(v7),
+      v10 = COERCE_AS(__typeof__(v10),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v11 = COERCE_AS(__typeof__(v11),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v12 = COERCE_AS(__typeof__(v12),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v4 = COERCE_AS(__typeof__(v4),
+                     PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v6 = COERCE_AS(__typeof__(v6),
+                     PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v8 = COERCE_AS(__typeof__(v8),
+                     PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
+  v9 = v8;
+  __cxa_guard_abort_plt((__int64)&NgxData_2b89de8),
+      v10 = COERCE_AS(__typeof__(v10),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v11 = COERCE_AS(__typeof__(v11),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v12 = COERCE_AS(__typeof__(v12),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v4 = COERCE_AS(__typeof__(v4),
+                     PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v6 = COERCE_AS(__typeof__(v6),
+                     PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v8 = COERCE_AS(__typeof__(v8),
+                     PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
+  _Unwind_Resume_plt(v9),
+      v10 = COERCE_AS(__typeof__(v10),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v11 = COERCE_AS(__typeof__(v11),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v12 = COERCE_AS(__typeof__(v12),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v4 = COERCE_AS(__typeof__(v4),
+                     PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v6 = COERCE_AS(__typeof__(v6),
+                     PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v8 = COERCE_AS(__typeof__(v8),
+                     PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
+  _Unwind_Resume_plt(v10),
+      v10 = COERCE_AS(__typeof__(v10),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v11 = COERCE_AS(__typeof__(v11),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v12 = COERCE_AS(__typeof__(v12),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v4 = COERCE_AS(__typeof__(v4),
+                     PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v6 = COERCE_AS(__typeof__(v6),
+                     PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v8 = COERCE_AS(__typeof__(v8),
+                     PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
+  _Unwind_Resume_plt(v11),
+      v10 = COERCE_AS(__typeof__(v10),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v11 = COERCE_AS(__typeof__(v11),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v12 = COERCE_AS(__typeof__(v12),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v4 = COERCE_AS(__typeof__(v4),
+                     PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v6 = COERCE_AS(__typeof__(v6),
+                     PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v8 = COERCE_AS(__typeof__(v8),
+                     PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
+  v13 = v12;
+  if (v1 == 0) {
+    while (1) {
+      _Unwind_Resume_plt(v13),
+          v10 = COERCE_AS(__typeof__(v10),
+                          PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+          v11 = COERCE_AS(__typeof__(v11),
+                          PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+          v12 = COERCE_AS(__typeof__(v12),
+                          PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+          v4 = COERCE_AS(__typeof__(v4),
+                         PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+          v6 = COERCE_AS(__typeof__(v6),
+                         PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+          v8 = COERCE_AS(__typeof__(v8),
+                         PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
+      free_plt(v2),
+          v10 = COERCE_AS(__typeof__(v10),
+                          PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+          v11 = COERCE_AS(__typeof__(v11),
+                          PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+          v12 = COERCE_AS(__typeof__(v12),
+                          PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+          v4 = COERCE_AS(__typeof__(v4),
+                         PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+          v6 = COERCE_AS(__typeof__(v6),
+                         PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+          v8 = COERCE_AS(__typeof__(v8),
+                         PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
+    }
+  }
+  free_plt(v1),
+      v10 = COERCE_AS(__typeof__(v10),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v11 = COERCE_AS(__typeof__(v11),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v12 = COERCE_AS(__typeof__(v12),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v4 = COERCE_AS(__typeof__(v4),
+                     PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v6 = COERCE_AS(__typeof__(v6),
+                     PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v8 = COERCE_AS(__typeof__(v8),
+                     PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
+  _Unwind_Resume_plt(v13),
+      v10 = COERCE_AS(__typeof__(v10),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v11 = COERCE_AS(__typeof__(v11),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v12 = COERCE_AS(__typeof__(v12),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v4 = COERCE_AS(__typeof__(v4),
+                     PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v6 = COERCE_AS(__typeof__(v6),
+                     PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v8 = COERCE_AS(__typeof__(v8),
+                     PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
+  __udf(0);
+}
+
+void __attribute__((noreturn)) nvidia_d0e64(__int64 a1)
+{
+  __int64 v1;
+
+  NgxRoutine_db240((__int64*)(v1 - 32));
+  _Unwind_Resume_plt(a1);
+  __udf(0);
+}
+
+void __attribute__((noreturn)) nvidia_d18f8(__int64 a1)
+{
+  __int64 v1;
+
+  NgxRoutine_dfc20((__int64*)(v1 - 8));
+  _Unwind_Resume_plt(a1);
+  __udf(0);
+}
+
+void __attribute__((noreturn)) nvidia_d1c74(__int64 a1)
+{
+  __int64 v1;
+  __int64 v3;
+
+  NgxRoutine_db240((__int64*)(v1 - 152));
+  v3 = *(_QWORD*)(v1 - 136);
+  *(_QWORD*)(v1 - 136) = 0;
+  if (v3 != 0) {
+    (*(void (**)(void))(v1 - 128))();
+  }
+  _Unwind_Resume_plt(a1);
+  NgxRoutine_baf40();
+}
+
+void __attribute__((noreturn))
+
+nvidia_d37b0(__int64 a1, __int64 a2, __int64 a3, __int64 a4, __int64 a5,
+             __int64 a6, __int64 a7, __int64 a8, __int64 a9, __int64 a10,
+             __int64 a11, __int64 a12, __int64 a13, __int64 a14, __int64 a15,
+             void (*a16)(void))
+{
+  __int64 v17;
+
+  NgxRoutine_db240(&a13);
+  v17 = a15;
+  a15 = 0;
+  if (v17 != 0) {
+    a16();
+  }
+  _Unwind_Resume_plt(a1);
+  NgxRoutine_baf40();
+}
+
+void __attribute__((noreturn))
+
+nvidia_d3fc8(__int64 a1, __int64 a2, __int64 a3, __int64 a4, __int64 a5,
+             __int64 a6, __int64 a7, __int64 a8, __int64 a9, __int64 a10,
+             __int64 a11, __int64 a12, __int64 a13, __int64 a14, __int64 a15,
+             __int64 a16, __int64 a17, __int64 a18, __int64 a19, __int64 a20,
+             __int64 a21, __int64 a22, __int64 a23, __int64 a24, __int64 a25,
+             __int64 a26, __int64 a27, __int64 a28, __int64 a29, __int64 a30,
+             __int64 a31, __int64 a32, __int64 a33, __int64 a34, __int64 a35,
+             void (*a36)(void))
+{
+  __int64 v37;
+
+  NgxRoutine_db240(&a33);
+  v37 = a35;
+  a35 = 0;
+  if (v37 != 0) {
+    a36();
+  }
+  _Unwind_Resume_plt(a1);
+  NgxRoutine_baf40();
+}
+
+void __attribute__((noreturn))
+
+nvidia_d5510(__int64 a1, __int64 a2, __int64 a3, __int64 a4, __int64 a5,
+             __int64 a6, __int64 a7, __int64 a8, __int64 a9, __int64 a10,
+             __int64 a11, __int64 a12, __int64 a13, __int64 a14, __int64 a15,
+             __int64 a16, __int64 a17, __int64 a18, void (*a19)(__int64),
+             __int64 a20, __int64 a21, __int64 a22, __int64 a23, __int64 a24,
+             __int64 a25, __int64 a26, __int64 a27, __int64 a28, __int64 a29,
+             __int64 a30, __int64 a31, __int64 a32, __int64 a33, __int64 a34,
+             __int64 a35, __int64 a36, __int64 a37, __int64 a38, __int64 a39,
+             __int64 a40, __int64 a41)
+{
+  __int64 v41;
+
+  if ((a27 & 1) != 0) {
+    NgxRoutine_430(a29, (4 * a27) & 0xFFFFFFFFFFFFFFF8LL);
+    if ((a30 & 1) == 0) {
+    LABEL_3:
+      if ((a33 & 1) == 0) {
+        goto LABEL_4;
+      }
+      goto LABEL_10;
+    }
+  }
+  else if ((a30 & 1) == 0) {
+    goto LABEL_3;
+  }
+  NgxRoutine_430(a32, (4 * a30) & 0xFFFFFFFFFFFFFFF8LL);
+  if ((a33 & 1) == 0) {
+  LABEL_4:
+    if ((a36 & 1) == 0) {
+      goto LABEL_5;
+    }
+    goto LABEL_11;
+  }
+LABEL_10:
+  NgxRoutine_430(a35, (4 * a33) & 0xFFFFFFFFFFFFFFF8LL);
+  if ((a36 & 1) == 0) {
+  LABEL_5:
+    if ((a39 & 1) == 0) {
+      goto LABEL_6;
+    }
+    goto LABEL_12;
+  }
+LABEL_11:
+  NgxRoutine_430(a38, (4 * a36) & 0xFFFFFFFFFFFFFFF8LL);
+  if ((a39 & 1) == 0) {
+  LABEL_6:
+    if (v41 == 0) {
+    LABEL_14:
+      _Unwind_Resume_plt(a1);
+      NgxRoutine_baf40();
+    }
+  LABEL_13:
+    a19(v41);
+    goto LABEL_14;
+  }
+LABEL_12:
+  NgxRoutine_430(a41, a39 & 0xFFFFFFFFFFFFFFFELL);
+  if (v41 == 0) {
+    goto LABEL_14;
+  }
+  goto LABEL_13;
+}
+
+void __attribute__((noreturn)) nvidia_d5944(__int64 a1, __int64 a2, __int64 a3,
+                                            __int64 a4, __int64 a5, __int64 a6,
+                                            __int64 a7, __int64 a8, __int64 a9,
+                                            __int64 a10, __int64 a11,
+                                            __int64 a12, __int64 a13,
+                                            __int64 a14, void (*a15)(void))
+{
+  __int64 v16;
+
+  NgxRoutine_db240(&a12);
+  v16 = a14;
+  a14 = 0;
+  if (v16 != 0) {
+    a15();
+  }
+  _Unwind_Resume_plt(a1);
+  NgxRoutine_baf40();
+}
+
+void __attribute__((noreturn))
+
+nvidia_d6260(__int64 a1, __int64 a2, __int64 a3, __int64 a4, __int64 a5,
+             __int64 a6, __int64 a7, __int64 a8, __int64 a9, __int64 a10,
+             __int64 a11, __int64 a12, __int64 a13, __int64 a14, __int64 a15,
+             __int64 a16, __int64 a17, __int64 a18, __int64 a19, __int64 a20,
+             __int64 a21, __int64 a22, __int64 a23, __int64 a24, __int64 a25,
+             __int64 a26, __int64 a27, __int64 a28, __int64 a29, __int64 a30,
+             __int64 a31, __int64 a32, __int64 a33, __int64 a34, __int64 a35,
+             __int64 a36, __int64 a37, __int64 a38, __int64 a39, __int64 a40,
+             __int64 a41, __int64 a42, __int64 a43)
+{
+  __int64 v43;
+  __int64 v44;
+  __int64 v46;
+  __int64 v47;
+
+  v46 = COERCE_AS(__typeof__(v46),
+                  PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
+  __cxa_guard_abort_plt((__int64)&NgxData_2b89de8),
+      v46 = COERCE_AS(__typeof__(v46),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
+  _Unwind_Resume_plt(a1),
+      v46 = COERCE_AS(__typeof__(v46),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
+  v47 = v46;
+  if ((a35 & 1) != 0) {
+    NgxRoutine_430(a37, a35 & 0xFFFFFFFFFFFFFFFELL),
+        v46 = COERCE_AS(__typeof__(v46),
+                        PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
+    if ((a38 & 1) == 0) {
+    LABEL_3:
+      if ((a41 & 1) == 0) {
+      LABEL_8:
+        NgxRoutine_db240((__int64*)(v44 - 232)),
+            v46 = COERCE_AS(__typeof__(v46),
+                            PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
+        if (v43 != 0) {
+          goto LABEL_11;
+        }
+        while (a17 == 0) {
+          _Unwind_Resume_plt(v47),
+              v46 = COERCE_AS(__typeof__(v46),
+                              PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
+        LABEL_11:
+          free_plt(v43),
+              v46 = COERCE_AS(__typeof__(v46),
+                              PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
+        }
+        free_plt(a17),
+            v46 = COERCE_AS(__typeof__(v46),
+                            PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
+        _Unwind_Resume_plt(v47),
+            v46 = COERCE_AS(__typeof__(v46),
+                            PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
+        __udf(0);
+      }
+    LABEL_7:
+      NgxRoutine_430(a43, a41 & 0xFFFFFFFFFFFFFFFELL),
+          v46 = COERCE_AS(__typeof__(v46),
+                          PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
+      goto LABEL_8;
+    }
+  }
+  else if ((a38 & 1) == 0) {
+    goto LABEL_3;
+  }
+  NgxRoutine_430(a40, a38 & 0xFFFFFFFFFFFFFFFELL),
+      v46 = COERCE_AS(__typeof__(v46),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
+  if ((a41 & 1) == 0) {
+    goto LABEL_8;
+  }
+  goto LABEL_7;
+}
+
+void __attribute__((noreturn)) nvidia_d71f4(__int64 a1)
+{
+  __int64 v2;
+  __int64 v4;
+  __int64 v5;
+
+  v4 = COERCE_AS(__typeof__(v4),
+                 PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
+  if ((*(_BYTE*)(v2 - 104) & 1) != 0) {
+    goto LABEL_5;
+  }
+LABEL_2:
+  if ((*(_BYTE*)(v2 - 80) & 1) != 0) {
+    while (1) {
+      NgxRoutine_430(*(_QWORD*)(v2 - 64),
+                     *(_QWORD*)(v2 - 80) & 0xFFFFFFFFFFFFFFFELL),
+          v4 = COERCE_AS(__typeof__(v4),
+                         PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
+      if ((*(_BYTE*)(v2 - 56) & 1) != 0) {
+        break;
+      }
+    LABEL_4:
+      NgxRoutine_db240((__int64*)(v2 - 16)),
+          v4 = COERCE_AS(__typeof__(v4),
+                         PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
+      _Unwind_Resume_plt(a1),
+          v4 = COERCE_AS(__typeof__(v4),
+                         PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
+      free_plt_alt1(),
+          v4 = COERCE_AS(__typeof__(v4),
+                         PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
+      if ((*(_BYTE*)(v2 - 104) & 1) == 0) {
+        goto LABEL_2;
+      }
+    LABEL_5:
+      NgxRoutine_430(*(_QWORD*)(v2 - 88),
+                     *(_QWORD*)(v2 - 104) & 0xFFFFFFFFFFFFFFFELL),
+          v4 = COERCE_AS(__typeof__(v4),
+                         PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
+      if ((*(_BYTE*)(v2 - 80) & 1) == 0) {
+        goto LABEL_3;
+      }
+    }
+  }
+  else {
+  LABEL_3:
+    if ((*(_BYTE*)(v2 - 56) & 1) == 0) {
+      goto LABEL_4;
+    }
+  }
+  NgxRoutine_430(*(_QWORD*)(v2 - 40),
+                 *(_QWORD*)(v2 - 56) & 0xFFFFFFFFFFFFFFFELL),
+      v4 = COERCE_AS(__typeof__(v4),
+                     PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
+  NgxRoutine_db240((__int64*)(v2 - 16)),
+      v4 = COERCE_AS(__typeof__(v4),
+                     PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
+  _Unwind_Resume_plt(a1),
+      v4 = COERCE_AS(__typeof__(v4),
+                     PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
+  v5 = v4;
+  NgxRoutine_db240((__int64*)(v2 - 16)),
+      v4 = COERCE_AS(__typeof__(v4),
+                     PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
+  _Unwind_Resume_plt(v5),
+      v4 = COERCE_AS(__typeof__(v4),
+                     PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
+  __udf(0);
+}
+
+void __attribute__((noreturn)) nvidia_d8484(__int64 a1)
+{
+  __int64 v2;
+  __int64 v4;
+  __int64 v5;
+
+  v4 = COERCE_AS(__typeof__(v4),
+                 PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
+  if ((*(_BYTE*)(v2 - 104) & 1) != 0) {
+    goto LABEL_5;
+  }
+LABEL_2:
+  if ((*(_BYTE*)(v2 - 80) & 1) != 0) {
+    while (1) {
+      NgxRoutine_430(*(_QWORD*)(v2 - 64),
+                     (4LL * *(_QWORD*)(v2 - 80)) & 0xFFFFFFFFFFFFFFF8LL),
+          v4 = COERCE_AS(__typeof__(v4),
+                         PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
+      if ((*(_BYTE*)(v2 - 56) & 1) != 0) {
+        break;
+      }
+    LABEL_4:
+      NgxRoutine_db240((__int64*)(v2 - 16)),
+          v4 = COERCE_AS(__typeof__(v4),
+                         PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
+      _Unwind_Resume_plt(a1),
+          v4 = COERCE_AS(__typeof__(v4),
+                         PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
+      free_plt_alt1(),
+          v4 = COERCE_AS(__typeof__(v4),
+                         PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
+      if ((*(_BYTE*)(v2 - 104) & 1) == 0) {
+        goto LABEL_2;
+      }
+    LABEL_5:
+      NgxRoutine_430(*(_QWORD*)(v2 - 88),
+                     (4LL * *(_QWORD*)(v2 - 104)) & 0xFFFFFFFFFFFFFFF8LL),
+          v4 = COERCE_AS(__typeof__(v4),
+                         PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
+      if ((*(_BYTE*)(v2 - 80) & 1) == 0) {
+        goto LABEL_3;
+      }
+    }
+  }
+  else {
+  LABEL_3:
+    if ((*(_BYTE*)(v2 - 56) & 1) == 0) {
+      goto LABEL_4;
+    }
+  }
+  NgxRoutine_430(*(_QWORD*)(v2 - 40),
+                 *(_QWORD*)(v2 - 56) & 0xFFFFFFFFFFFFFFFELL),
+      v4 = COERCE_AS(__typeof__(v4),
+                     PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
+  NgxRoutine_db240((__int64*)(v2 - 16)),
+      v4 = COERCE_AS(__typeof__(v4),
+                     PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
+  _Unwind_Resume_plt(a1),
+      v4 = COERCE_AS(__typeof__(v4),
+                     PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
+  v5 = v4;
+  NgxRoutine_db240((__int64*)(v2 - 16)),
+      v4 = COERCE_AS(__typeof__(v4),
+                     PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
+  _Unwind_Resume_plt(v5),
+      v4 = COERCE_AS(__typeof__(v4),
+                     PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
+  __udf(0);
+}
+
+void __attribute__((noreturn)) nvidia_d8b18(__int64 a1)
+{
+  __int64 v1;
+  __int64 v3;
+
+  __cxa_guard_abort_plt(v3);
+  NgxRoutine_baf00(v3 + 760);
+  if ((*(_BYTE*)(v1 + 288) & 1) != 0) {
+    NgxRoutine_430(*(_QWORD*)(v1 + 304),
+                   *(_QWORD*)(v1 + 288) & 0xFFFFFFFFFFFFFFFELL);
+  }
+  NgxRoutine_daf20();
+  NgxRoutine_baf00(v1);
+  _Unwind_Resume_plt(a1);
+  __udf(0);
+}
+
 __int64 nvidia_dbd00(__int64 a1, __int64* a2, _DWORD* a3, _DWORD* a4,
                      _QWORD* a5, _BYTE* a6, _BYTE* a7, _QWORD* a8)
 {
@@ -2016,4 +5388,116 @@ __int64 nvidia_dbd00(__int64 a1, __int64* a2, _DWORD* a3, _DWORD* a4,
   *a5 = v12;
   return 2;
 }
+
+void __attribute__((noreturn)) nvidia_dc098(__int64 a1)
+{
+  __int64 v1;
+
+  NgxRoutine_dfc20((__int64*)(v1 - 8));
+  _Unwind_Resume_plt(a1);
+  NgxRoutine_baf40();
+}
+
+void __attribute__((noreturn)) nvidia_dc0b0(__int64 a1)
+{
+  __int64 v1;
+
+  NgxRoutine_dfc20((__int64*)(v1 - 8));
+  _Unwind_Resume_plt(a1);
+  NgxRoutine_baf40();
+}
+
+void __attribute__((noreturn)) nvidia_dc0c8(__int64 a1)
+{
+  __int64 v1;
+
+  NgxRoutine_dfc20((__int64*)(v1 - 8));
+  _Unwind_Resume_plt(a1);
+  __udf(0);
+}
+
+void __attribute__((noreturn)) nvidia_dc44c(__int64 a1)
+{
+  __int64 v1;
+
+  NgxRoutine_dfc20((__int64*)(v1 - 8));
+  _Unwind_Resume_plt(a1);
+  NgxRoutine_baf40();
+}
+
+void __attribute__((noreturn)) nvidia_dc464(__int64 a1)
+{
+  __int64 v1;
+
+  NgxRoutine_dfc20((__int64*)(v1 - 8));
+  _Unwind_Resume_plt(a1);
+  NgxRoutine_baf40();
+}
+
+void __attribute__((noreturn)) nvidia_dc47c(__int64 a1)
+{
+  __int64 v1;
+
+  NgxRoutine_dfc20((__int64*)(v1 - 8));
+  _Unwind_Resume_plt(a1);
+  __udf(0);
+}
+
+void __attribute__((noreturn)) nvidia_dc738(__int64 a1)
+{
+  __int64 v1;
+
+  NgxRoutine_dfc20((__int64*)(v1 + 24));
+  NgxRoutine_baf40_alt1(a1);
+}
+
+void __attribute__((noreturn)) nvidia_dc750(__int64 a1)
+{
+  __int64 v1;
+
+  NgxRoutine_dfc20((__int64*)(v1 + 24));
+  NgxRoutine_baf40_alt1(a1);
+}
+
+void __attribute__((noreturn)) nvidia_dc868(__int64 a1)
+{
+  __int64 v1;
+
+  NgxRoutine_dfc20((__int64*)(v1 + 24));
+  _Unwind_Resume_plt(a1);
+  __udf(0);
+}
+
+__int64 nvidia_e0e68(__int64 a1)
+{
+  __cxa_guard_abort_plt((__int64)&NgxData_2b89de8);
+  _Unwind_Resume_plt(a1);
+  return NgxRoutine_e0e80();
+}
+
+__int64 nvidia_e0f88(__int64 a1)
+{
+  __cxa_guard_abort_plt((__int64)&NgxData_2b89de8);
+  _Unwind_Resume_plt(a1);
+  return NgxRoutine_e0fa0();
+}
+
+char* nvidia_e1adc(__int64 a1, __int64 a2, __int64 a3, __int64 a4, __int64 a5,
+                   __int64 a6, __int64 a7, __int64 a8, __int64 a9, __int64 a10)
+{
+
+  NgxRoutine_db240(&a10);
+  _Unwind_Resume_plt(a1);
+  return nvidia_e1af0_alt1();
+}
+
+void __attribute__((noreturn)) nvidia_e21bc(__int64 a1)
+{
+  __int64 v1;
+
+  NgxRoutine_dfc20((__int64*)(v1 - 40));
+  _Unwind_Resume_plt(a1);
+  __udf(0);
+}
+
 #pragma GCC visibility pop

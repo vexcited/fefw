@@ -95,7 +95,7 @@ __int64 comb_filter(__int64 result, __int64 a2, int a3, int a4, int a5,
   else {
     v11 = a3;
   }
-  v12 = (__int16*)((char*)&MovieData_a2308 + 6 * a9);
+  v12 = (__int16*)((char*)&MovieData_a2308 + 6LL * a9);
   v13 = *v12;
   v14 = v12[1];
   v15 = v12[2];
@@ -128,7 +128,7 @@ __int64 comb_filter(__int64 result, __int64 a2, int a3, int a4, int a5,
     }
     goto LABEL_31;
   }
-  v29 = (__int16*)((char*)&MovieData_a2308 + 6 * a8);
+  v29 = (__int16*)((char*)&MovieData_a2308 + 6LL * a8);
   v30 = (__int16)a6;
   v32 = *(_DWORD*)(a2 - 4 * v16);
   v33 = (int*)(a2 - 4LL * v11);

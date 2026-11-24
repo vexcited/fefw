@@ -1,5 +1,7 @@
 #include "decomp/pseudo_helpers.h"
+
 #pragma GCC visibility push(hidden)
+
 _DWORD* NgxRoutine_36f0(_DWORD* result, unsigned int*, unsigned int);
 _QWORD* NgxRoutine_312c0(__int64, _QWORD*);
 _QWORD* NgxRoutine_b1640(__int64, unsigned __int8*, char*);
@@ -199,6 +201,19 @@ __attribute__((swiftcall)) void nvidia_c04d0(PSEUDO_X8 x8_, __int64 unused_int0,
                                              __int64 a1, __int64 a2);
 __attribute__((swiftcall)) void nvidia_c06d0(PSEUDO_X8 x8_, __int64 unused_int0,
                                              __int64 a1, __int64 a2);
+__int64 NgxRoutine_be820(void);
+__int64 NgxRoutine_bf010_alt1(void);
+void _Unwind_Resume_plt_alt1(__int64);
+void __cxa_free_exception_plt();
+void __attribute__((noreturn))
+unplaced_17_bbecc(__int64 a1, __int64 a2, __int64 a3, __int64 a4, __int64 a5,
+                  __int64 a6, __int64 a7, __int64 a8, __int64 a9, __int64 a10);
+void __attribute__((noreturn))
+unplaced_17_bc6dc(__int64 a1, __int64 a2, __int64 a3, __int64 a4, __int64 a5,
+                  __int64 a6, __int64 a7, __int64 a8, __int64 a9, __int64 a10);
+__int64 unplaced_17_be80c(__int64 a1);
+__int64 unplaced_17_beffc(__int64 a1);
+
 __int64 nvidia_1b0(unsigned __int64 a1)
 {
   if (a1 < (unsigned __int64)NgxData_94c000 ||
@@ -208,6 +223,7 @@ __int64 nvidia_1b0(unsigned __int64 a1)
   return ((__typeof__((*(__int64 (**)(void))a1)()) (*)())(
       *(__int64 (**)(void))a1))(a1);
 }
+
 _QWORD* nvidia_88b0(__int64 a1, int a2)
 {
   __int64 v3;
@@ -323,6 +339,7 @@ _QWORD* nvidia_88b0(__int64 a1, int a2)
   }
   return result;
 }
+
 __attribute__((swiftcall)) void nvidia_27630(PSEUDO_X8 x8_, _QWORD* result)
 {
   _QWORD* a2 = (_QWORD*)PSEUDO_X8_VALUE(x8_);
@@ -369,6 +386,7 @@ __attribute__((swiftcall)) void nvidia_27630(PSEUDO_X8 x8_, _QWORD* result)
     return;
   }
 }
+
 __attribute__((swiftcall)) void nvidia_27750(PSEUDO_X8 x8_, _QWORD* result,
                                              _QWORD* a2)
 {
@@ -429,6 +447,7 @@ __attribute__((swiftcall)) void nvidia_27750(PSEUDO_X8 x8_, _QWORD* result,
     return;
   }
 }
+
 __attribute__((swiftcall)) void nvidia_278e0(PSEUDO_X8 x8_, _QWORD* result,
                                              _QWORD* a2)
 {
@@ -476,6 +495,7 @@ __attribute__((swiftcall)) void nvidia_278e0(PSEUDO_X8 x8_, _QWORD* result,
     return;
   }
 }
+
 __attribute__((swiftcall)) void nvidia_27a00(PSEUDO_X8 x8_, _QWORD* result,
                                              _QWORD* a2)
 {
@@ -523,6 +543,7 @@ __attribute__((swiftcall)) void nvidia_27a00(PSEUDO_X8 x8_, _QWORD* result,
     return;
   }
 }
+
 __int64 nvidia_27b30(_DWORD* a1)
 {
   __int64 v1;
@@ -550,6 +571,7 @@ __int64 nvidia_27b30(_DWORD* a1)
   NgxRoutine_bcd70(v4);
   return 1;
 }
+
 __int64 nvidia_27bf0(_DWORD* a1, __int64 a2)
 {
   __int64 v2;
@@ -581,6 +603,7 @@ __int64 nvidia_27bf0(_DWORD* a1, __int64 a2)
     return 1;
   }
 }
+
 void nvidia_27e80(_QWORD* a1)
 {
   void (*v2)(__int64);
@@ -605,6 +628,7 @@ void nvidia_27e80(_QWORD* a1)
     NgxRoutine_430(a1[6], a1[4] & 0xFFFFFFFFFFFFFFFELL);
   }
 }
+
 __int64 nvidia_27f20(__int64 a1)
 {
   void (*v2)(__int64);
@@ -638,6 +662,7 @@ __int64 nvidia_27f20(__int64 a1)
   }
   return NgxRoutine_430(a1, 2160);
 }
+
 void nvidia_28160(_QWORD* a1)
 {
   void (*v2)(__int64);
@@ -662,6 +687,7 @@ void nvidia_28160(_QWORD* a1)
     NgxRoutine_430(a1[6], a1[4] & 0xFFFFFFFFFFFFFFFELL);
   }
 }
+
 __int64 nvidia_28200(__int64 a1)
 {
   void (*v2)(__int64);
@@ -695,6 +721,7 @@ __int64 nvidia_28200(__int64 a1)
   }
   return NgxRoutine_430(a1, 3280);
 }
+
 void nvidia_284f0(_QWORD* a1)
 {
   void (*v2)(__int64);
@@ -719,6 +746,7 @@ void nvidia_284f0(_QWORD* a1)
     NgxRoutine_430(a1[6], a1[4] & 0xFFFFFFFFFFFFFFFELL);
   }
 }
+
 __int64 nvidia_28590(__int64 a1)
 {
   void (*v2)(__int64);
@@ -752,6 +780,7 @@ __int64 nvidia_28590(__int64 a1)
   }
   return NgxRoutine_430(a1, 1872);
 }
+
 void nvidia_287a0(_QWORD* a1)
 {
   void (*v2)(__int64);
@@ -776,6 +805,7 @@ void nvidia_287a0(_QWORD* a1)
     NgxRoutine_430(a1[6], a1[4] & 0xFFFFFFFFFFFFFFFELL);
   }
 }
+
 __int64 nvidia_28840(__int64 a1)
 {
   void (*v2)(__int64);
@@ -809,6 +839,7 @@ __int64 nvidia_28840(__int64 a1)
   }
   return NgxRoutine_430(a1, 1968);
 }
+
 __int64* nvidia_28900(__int64* a1, __int64 a2, __int64 a3)
 {
   __int64 v6;
@@ -849,6 +880,7 @@ __int64* nvidia_28900(__int64* a1, __int64 a2, __int64 a3)
   NgxRoutine_bcf80((__int64)v14);
   return a1;
 }
+
 __int64 nvidia_29cf0(_DWORD* a1, int a2, int a3, int a4, int a5, int a6)
 {
   bool v6;
@@ -891,6 +923,7 @@ __int64 nvidia_29cf0(_DWORD* a1, int a2, int a3, int a4, int a5, int a6)
     return 2;
   }
 }
+
 _QWORD* nvidia_29e50(_QWORD* a1)
 {
   __int64 v2;
@@ -905,6 +938,7 @@ _QWORD* nvidia_29e50(_QWORD* a1)
   NgxRoutine_bcd70(a1);
   return a1;
 }
+
 __int64 nvidia_aea40(__int64 a1, int* a2, int* a3)
 {
 
@@ -1135,6 +1169,7 @@ LABEL_31:
   ++*(_QWORD*)(a1 + 24);
   return v10;
 }
+
 unsigned __int64 nvidia_b1500(unsigned __int64 result, __int64 a2)
 {
 
@@ -1213,6 +1248,7 @@ LABEL_21:
   }
   return result;
 }
+
 __int64 nvidia_b1a80(__int64 a1, __int64* a2, __int64 a3, _QWORD** a4)
 {
 
@@ -1435,7 +1471,9 @@ LABEL_28:
   ++*(_QWORD*)(a1 + 24);
   return result;
 }
+
 void __attribute__((noreturn)) nvidia_b3380() { NgxData_954740(); }
+
 __attribute__((swiftcall)) void nvidia_b37a0(PSEUDO_X8 x8_, __int64 a1,
                                              __int64 a2)
 {
@@ -1618,6 +1656,7 @@ LABEL_33:
     return;
   }
 }
+
 bool nvidia_b42a0(__int64 a1, __int64 a2, char a3, int a4, void* a5, char a6,
                   int a7)
 {
@@ -2623,6 +2662,7 @@ LABEL_16:
   }
   return true;
 }
+
 __int64 nvidia_ba050(__int64 result, __int64 a2)
 {
   int v2;
@@ -2662,6 +2702,7 @@ __int64 nvidia_ba050(__int64 result, __int64 a2)
   }
   return result;
 }
+
 __int64 nvidia_ba2d0(__int64 a1, unsigned __int64* a2, __int64 a3, __int64 a4,
                      void (***a5)(_QWORD, __int64, _QWORD, unsigned __int64))
 {
@@ -2689,6 +2730,7 @@ __int64 nvidia_ba2d0(__int64 a1, unsigned __int64* a2, __int64 a3, __int64 a4,
   }
   return 0xFFFFFFFFLL;
 }
+
 __int64 nvidia_bbb20(__int64 a1, unsigned int a2)
 {
   unsigned int v3;
@@ -2764,6 +2806,7 @@ LABEL_18:
   *(_BYTE*)(a1 + 96) = v11;
   return v3;
 }
+
 void __attribute__((noreturn)) nvidia_bbecc(__int64 a1, __int64 a2, __int64 a3,
                                             __int64 a4, __int64 a5, __int64 a6,
                                             __int64 a7, __int64 a8, __int64 a9,
@@ -2778,6 +2821,22 @@ void __attribute__((noreturn)) nvidia_bbecc(__int64 a1, __int64 a2, __int64 a3,
   _Unwind_Resume_plt(a1);
   __udf(0);
 }
+
+void __attribute__((noreturn))
+
+unplaced_17_bbecc(__int64 a1, __int64 a2, __int64 a3, __int64 a4, __int64 a5,
+                  __int64 a6, __int64 a7, __int64 a8, __int64 a9, __int64 a10)
+{
+  _QWORD* v10;
+  __int64 v11;
+
+  NgxRoutine_db240(&a10);
+  *v10 = v11;
+  NgxRoutine_db240(v10 + 1);
+  _Unwind_Resume_plt_alt1(a1);
+  __udf(0);
+}
+
 __int64 nvidia_bc340(__int64 a1, unsigned int a2)
 {
   unsigned int v3;
@@ -2852,6 +2911,7 @@ LABEL_18:
   *(_BYTE*)(a1 + 96) = v11;
   return v3;
 }
+
 void __attribute__((noreturn)) nvidia_bc6dc(__int64 a1, __int64 a2, __int64 a3,
                                             __int64 a4, __int64 a5, __int64 a6,
                                             __int64 a7, __int64 a8, __int64 a9,
@@ -2866,6 +2926,22 @@ void __attribute__((noreturn)) nvidia_bc6dc(__int64 a1, __int64 a2, __int64 a3,
   _Unwind_Resume_plt(a1);
   __udf(0);
 }
+
+void __attribute__((noreturn))
+
+unplaced_17_bc6dc(__int64 a1, __int64 a2, __int64 a3, __int64 a4, __int64 a5,
+                  __int64 a6, __int64 a7, __int64 a8, __int64 a9, __int64 a10)
+{
+  _QWORD* v10;
+  __int64 v11;
+
+  NgxRoutine_db240(&a10);
+  *v10 = v11;
+  NgxRoutine_db240(v10 + 1);
+  _Unwind_Resume_plt_alt1(a1);
+  __udf(0);
+}
+
 __int64* nvidia_bd030(__int64* a1)
 {
   __int64 v1;
@@ -2908,6 +2984,7 @@ __int64* nvidia_bd030(__int64* a1)
   NgxRoutine_bcf80((__int64)v11);
   return a1;
 }
+
 __attribute__((swiftcall)) void nvidia_be4b0(PSEUDO_X8 x8_, __int64 a1,
                                              signed int a2)
 {
@@ -2928,6 +3005,7 @@ __attribute__((swiftcall)) void nvidia_be4b0(PSEUDO_X8 x8_, __int64 a1,
     return;
   }
 }
+
 __attribute__((swiftcall)) void nvidia_be5c0(PSEUDO_X8 x8_, _QWORD* a1,
                                              void** a2)
 {
@@ -2952,6 +3030,7 @@ __attribute__((swiftcall)) void nvidia_be5c0(PSEUDO_X8 x8_, _QWORD* a1,
     return;
   }
 }
+
 __attribute__((swiftcall)) void nvidia_be650(PSEUDO_X8 x8_, __int64 a1)
 {
   __int64* a2 = (__int64*)PSEUDO_X8_VALUE(x8_);
@@ -2960,6 +3039,7 @@ __attribute__((swiftcall)) void nvidia_be650(PSEUDO_X8 x8_, __int64 a1)
     return;
   }
 }
+
 __int64 nvidia_be740(__int64 result, int a2)
 {
   int v2;
@@ -2973,6 +3053,15 @@ __int64 nvidia_be740(__int64 result, int a2)
   }
   return result;
 }
+
+__int64 unplaced_17_be80c(__int64 a1)
+{
+
+  __cxa_free_exception_plt();
+  _Unwind_Resume_plt_alt1(a1);
+  return NgxRoutine_be820();
+}
+
 __attribute__((swiftcall)) void nvidia_be8c0(PSEUDO_X8 x8_, __int64 a1,
                                              unsigned int a2)
 {
@@ -3041,6 +3130,7 @@ LABEL_17:
     return;
   }
 }
+
 __attribute__((swiftcall)) void nvidia_be9f0(PSEUDO_X8 x8_, __int64 a1,
                                              signed int a2)
 {
@@ -3061,6 +3151,7 @@ __attribute__((swiftcall)) void nvidia_be9f0(PSEUDO_X8 x8_, __int64 a1,
     return;
   }
 }
+
 __attribute__((swiftcall)) void nvidia_bea70(PSEUDO_X8 x8_, __int64 a1,
                                              signed int a2)
 {
@@ -3081,6 +3172,7 @@ __attribute__((swiftcall)) void nvidia_bea70(PSEUDO_X8 x8_, __int64 a1,
     return;
   }
 }
+
 void __attribute__((noreturn)) nvidia_bef60(__int64 a1)
 {
 
@@ -3088,6 +3180,7 @@ void __attribute__((noreturn)) nvidia_bef60(__int64 a1)
   _Unwind_Resume_plt(a1);
   __udf(0);
 }
+
 __int64 nvidia_beffc(__int64 a1)
 {
   __int64 v3;
@@ -3096,6 +3189,15 @@ __int64 nvidia_beffc(__int64 a1)
   v3 = _Unwind_Resume_plt(a1);
   return NgxRoutine_bf010(v3);
 }
+
+__int64 unplaced_17_beffc(__int64 a1)
+{
+
+  std_exception_Destroy_exception_plt();
+  _Unwind_Resume_plt_alt1(a1);
+  return NgxRoutine_bf010_alt1();
+}
+
 void __attribute__((noreturn)) nvidia_bf080(__int64 a1)
 {
 
@@ -3103,10 +3205,12 @@ void __attribute__((noreturn)) nvidia_bf080(__int64 a1)
   _Unwind_Resume_plt(a1);
   __udf(0);
 }
+
 void __attribute__((noreturn)) nvidia_bf100()
 {
   NgxRoutine_bfba0((__int64)"basic_string");
 }
+
 __int64 nvidia_bfc00(char* a1, _QWORD* a2, unsigned int a3)
 {
   char* v3;
@@ -3158,6 +3262,7 @@ __int64 nvidia_bfc00(char* a1, _QWORD* a2, unsigned int a3)
   NgxRoutine_bf120(v15);
   return v13;
 }
+
 __attribute__((swiftcall)) void nvidia_c04d0(PSEUDO_X8 x8_, __int64 unused_int0,
                                              __int64 a1, __int64 a2)
 {
@@ -3200,6 +3305,7 @@ __attribute__((swiftcall)) void nvidia_c04d0(PSEUDO_X8 x8_, __int64 unused_int0,
 LABEL_10:
   *(_BYTE*)(v6 + v3) = 0;
 }
+
 __attribute__((swiftcall)) void nvidia_c06d0(PSEUDO_X8 x8_, __int64 unused_int0,
                                              __int64 a1, __int64 a2)
 {
@@ -3244,4 +3350,5 @@ __attribute__((swiftcall)) void nvidia_c06d0(PSEUDO_X8 x8_, __int64 unused_int0,
 LABEL_10:
   *(_DWORD*)(v7 + v4) = 0;
 }
+
 #pragma GCC visibility pop

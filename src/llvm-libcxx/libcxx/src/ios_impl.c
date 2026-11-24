@@ -18,6 +18,10 @@ void __attribute__((noreturn)) SdkRoutine_7cd620();
 void std___1_ios_base_Destroy_ios_base_7e87c0(void* this_);
 void __attribute__((noreturn)) ios_7e886c();
 void __attribute__((noreturn)) ios_7e88e0(__int64 a1);
+__int64 std___1_ios_base_init(void);
+void _Unwind_Resume_plt(__int64);
+void __cxa_free_exception_plt();
+__int64 std___1_ios_base_init_7e896c(__int64 a1);
 
 void std___1_ios_base_Destroy_ios_base_7e87c0(void* this_)
 {
@@ -68,6 +72,14 @@ void __attribute__((noreturn)) ios_7e88e0(__int64 a1)
       __cxa_guard_release_plt(&SdkData_105ffa0);
     }
   }
+}
+
+__int64 std___1_ios_base_init_7e896c(__int64 a1)
+{
+
+  __cxa_free_exception_plt();
+  _Unwind_Resume_plt(a1);
+  return std___1_ios_base_init();
 }
 
 #pragma GCC visibility pop

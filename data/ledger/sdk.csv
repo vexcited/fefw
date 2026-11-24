@@ -5702,6 +5702,7 @@ ffee0,324,verified,src/nn/fs/unplaced.c,nn_fs_GetAndClearMemoryReportInfo
 172a90,72,verified,src/nn/nlibsdk/posix_thread.cpp,pthread_self
 172ae0,12,verified,src/nn/nlibsdk/posix_thread.cpp,pthread_equal
 172af0,484,verified,src/nn/nlibsdk/posix_thread.cpp,pthread_create
+172d30,36,verified,src/nn/nlibsdk/posix_thread_impl.c,posix_thread_172d30
 172db0,84,verified,src/nn/nlibsdk/posix_thread.cpp,pthread_exit
 172e30,100,verified,src/nn/nlibsdk/posix_thread.cpp,pthread_join
 172ee0,28,verified,src/nn/nlibsdk/posix_thread.cpp,pthread_detach
@@ -14356,7 +14357,7 @@ ffee0,324,verified,src/nn/fs/unplaced.c,nn_fs_GetAndClearMemoryReportInfo
 4225a0,736,verified,src/nn/fontll/itype/unplaced.c,map_font
 4228c0,828,verified,src/nn/fontll/itype/unplaced.c,map_char
 422c20,492,verified,src/nn/fontll/itype/unplaced_12.c,nn_fontll_itype_422c20
-423c00,1396,verified,src/nn/fontll/itype/unplaced_12.c,nn_fontll_itype_423c00
+423c00,1396,disputed,src/nn/fontll/itype/unplaced_12.c,nn_fontll_itype_423c00
 4241c0,112,verified,src/nn/fontll/itype/unplaced.c,engrave_graymap
 424820,200,verified,src/nn/fontll/itype/unplaced.c,emboss_graymap
 424e80,6780,verified,src/nn/fontll/itype/unplaced.c,outline_graymap
@@ -15423,6 +15424,7 @@ ffee0,324,verified,src/nn/fs/unplaced.c,nn_fs_GetAndClearMemoryReportInfo
 48f640,132,verified,src/nn/gs/gs_graphics_frame.cpp,_ZN2nn2gs3sdk26SetGraphicsFrameLengthModeENS1_23GraphicsFrameLengthModeE
 48f720,120,verified,src/nn/gs/gs_graphics_frame.cpp,_ZN2nn2gs3sdk27SetGraphicsFrameRestartModeENS1_24GraphicsFrameRestartModeE
 48f800,120,verified,src/nn/gs/gs_graphics_frame.cpp,_ZN2nn2gs3sdk32SetGraphicsFrameGpuTimesliceModeENS1_29GraphicsFrameGpuTimesliceModeE
+48f8e0,136,verified,src/nn/gs/unplaced_5.c,nn_gs_sdk_QueryApplicationGpuTimeSpan
 48fa30,172,verified,src/nn/gs/unplaced.c,nn_gs_48fa30
 48fae0,112,verified,src/nn/gs/unplaced_7.c,nn_gs_48fae0
 48fbe0,24,verified,src/nn/gs/unplaced.c,nn_gs_48fbe0
@@ -16895,6 +16897,7 @@ ffee0,324,verified,src/nn/fs/unplaced.c,nn_fs_GetAndClearMemoryReportInfo
 4c6a60,68,verified,src/nn/movie/movie_media_lifetime.cpp,_ZN2nn5movie14MediaExtractorD2Ev
 4c6ab0,240,verified,src/nn/movie/movie_media_extractor_initialize.cpp,_ZN2nn5movie14MediaExtractor8FinalizeEv
 4c6ba0,780,verified,src/nn/movie/movie_media_extractor_initialize.cpp,_ZN2nn5movie14MediaExtractor10InitializeEPvmm
+4c6ec0,720,verified,src/nn/movie/movie_media_extractor_impl.c,nn_movie_MediaExtractor_SetUriMedia
 4c7210,84,verified,src/nn/movie/movie_media_extractor.cpp,_ZN2nn5movie14MediaExtractor16SetInMemoryMediaEPKvm
 4c7270,72,verified,src/nn/movie/movie_media_extractor.cpp,_ZN2nn5movie14MediaExtractor20SetUpMediaSourceModeEv
 4c72c0,132,verified,src/nn/movie/movie_media_extractor.cpp,_ZN2nn5movie14MediaExtractor27GetEventsForMediaSourceModeEPPNS_2os15SystemEventTypeES5_
@@ -18573,6 +18576,7 @@ ffee0,324,verified,src/nn/fs/unplaced.c,nn_fs_GetAndClearMemoryReportInfo
 537860,1216,verified,src/nandroid/libstagefright/mpeg2ts/ATSParser.cpp,_ZN8nandroid9ATSParser6Stream8parsePESEPNS_10ABitReaderEPNS0_9SyncEventE
 537d40,1152,verified,src/nandroid/libstagefright/mpeg2ts/ATSParser.cpp,_ZN8nandroid9ATSParser6Stream13onPayloadDataEjmmjPKhmiPNS0_9SyncEventE
 538340,332,verified,src/nandroid/libstagefright/mpeg2ts/ATSParser.cpp,_ZN8nandroid9ATSParser6Stream23getPesScramblingControlEPNS_10ABitReaderEPi
+538490,688,verified,src/nandroid/libstagefright/mpeg2ts/ATSParser_impl.c,nandroid_ATSParser_Stream_addAudioPresentations
 538860,184,verified,src/nandroid/libstagefright/mpeg2ts/ATSParser.cpp,_ZN8nandroid9ATSParser6Stream13getSourceTypeEv
 538920,344,verified,src/nandroid/libstagefright/mpeg2ts/ATSParser.cpp,_ZN8nandroid9ATSParserC2Ej
 538a80,144,verified,src/nandroid/libstagefright/mpeg2ts/ATSParser.cpp,_ZN8nandroid9ATSParserD2Ev
@@ -18634,7 +18638,7 @@ ffee0,324,verified,src/nn/fs/unplaced.c,nn_fs_GetAndClearMemoryReportInfo
 53b450,20,verified,src/nandroid/libstagefright/mpeg2ts/ATSParser.cpp,_ZNK8nandroid6VectorIiE16do_move_backwardEPvPKvm
 53b480,348,verified,src/nandroid/libstagefright/mpeg2ts/ATSParser_impl.c,ATSParser_53b480
 53b5e0,580,disputed,src/nandroid/libstagefright/mpeg2ts/ATSParser_impl.c,ATSParser_53b5e0
-53b960,1100,verified,src/nandroid/libstagefright/mpeg2ts/ATSParser_impl.c,ATSParser_53b960
+53b960,928,verified,src/nandroid/libstagefright/mpeg2ts/ATSParser_impl.c,ATSParser_53b960
 53bec0,576,verified,src/nandroid/libstagefright/mpeg2ts/ATSParser_impl.c,std___1___tree___assign_multi
 53c140,252,verified,src/nandroid/libstagefright/mpeg2ts/ATSParser_impl.c,ATSParser_53c140
 53c240,260,verified,src/nandroid/libstagefright/mpeg2ts/ATSParser_impl.c,ATSParser_53c240
@@ -25235,6 +25239,8 @@ ffee0,324,verified,src/nn/fs/unplaced.c,nn_fs_GetAndClearMemoryReportInfo
 64fbd0,8,verified,src/nn/sdk_trivial.cpp,_Z14SdkStub_64fbd0m
 64fbe0,8,verified,src/nn/sdk_trivial.cpp,_Z14SdkStub_64fbe0m
 64fbf0,312,verified,src/nvidia/unplaced_10.c,nvidia_64fbf0
+64fd30,144,verified,src/nvidia/unplaced_59.c,nvidia_64fd30
+64fdc0,324,verified,src/nvidia/unplaced_59.c,nvidia_64fdc0
 64ff10,4,verified,src/nn/sdk_trivial.cpp,_Z14SdkStub_64ff10v
 64ff20,4,verified,src/nvidia/nv_misc.cpp,nvnInstallGlobalDebugCallback
 64ff30,4,verified,src/nn/sdk_trivial.cpp,_Z14SdkStub_64ff30v
@@ -27317,6 +27323,7 @@ ffee0,324,verified,src/nn/fs/unplaced.c,nn_fs_GetAndClearMemoryReportInfo
 6a0890,16,verified,src/nn/unnamed/u000_2.c,SdkHr_6a0890
 6a08a0,24,verified,src/nn/unnamed/s004_1.c,SdkHr_6a08a0
 6a08c0,56,verified,src/nn/unnamed/s004_1.c,SdkHr_6a08c0
+6a0900,152,verified,src/nn/unplaced_21.c,nn_6a0900
 6a0a00,112,verified,src/nn/unnamed/s004_1.c,SdkHr_6a0a00
 6a0a70,156,verified,src/nn/unplaced_5.c,nn_6a0a70
 6a0b10,16,verified,src/nn/unnamed/u000_2.c,SdkHr_6a0b10
@@ -31554,6 +31561,7 @@ ffee0,324,verified,src/nn/fs/unplaced.c,nn_fs_GetAndClearMemoryReportInfo
 77b860,4,verified,src/nnmusl/nnmusl_libc_forwarders2.cpp,getpid
 77b870,64,verified,src/musl/src/fenv/__flt_rounds.c,__flt_rounds
 77b8b0,20,verified,src/nnmusl/nnmusl_libc_forwarders2.cpp,fesetround
+77d340,3156,verified,src/musl/src/internal/floatscan_impl.c,__floatscan
 77e440,436,verified,src/musl/src/internal/floatscan_impl.c,scanexp
 77e6b0,160,verified,src/nnmusl/nnmusl_libc_misc4.cpp,posix_memalign
 77e750,8,verified,src/nnmusl/nnmusl_fp_ops.c,__nnmusl_fdiv
@@ -31937,6 +31945,7 @@ ffee0,324,verified,src/nn/fs/unplaced.c,nn_fs_GetAndClearMemoryReportInfo
 79ffd0,88,verified,src/nnmusl/nnmusl_libc_misc2.cpp,feof
 7a0030,88,verified,src/nnmusl/nnmusl_libc_misc2.cpp,ferror
 7a00a0,588,verified,src/libc/stdio_flush.cpp,fflush
+7a0300,272,verified,src/musl/src/stdio/fgetln_impl.c,fgetln
 7a0410,68,verified,src/musl/src/stdio/fgetpos.c,fgetpos64
 7a0460,384,verified,src/nnmusl/stdio/fgets.c,fgets_unlocked
 7a0620,396,verified,src/musl/src/stdio/fgetwc_impl.c,fgetwc_unlocked
@@ -32468,6 +32477,7 @@ ffee0,324,verified,src/nn/fs/unplaced.c,nn_fs_GetAndClearMemoryReportInfo
 7cd490,12,verified,src/llvm-libcxx/libcxx/src/any.cpp,_ZNKSt12experimental15fundamentals_v112bad_any_cast4whatEv
 7cd4a0,48,verified,src/llvm-libcxx/libcxx/src/any.cpp,_ZNSt12bad_any_castD0Ev
 7cd4e0,184,verified,src/llvm-libcxx/libcxx/src/call_once.cpp,_ZNSt3__111__call_onceERVmPvPFvS2_E
+7cd5b4,28,verified,src/llvm-libcxx/libcxx/src/unplaced_14.c,llvmlibcxx_libcxx_7cd5b4
 7cd5d0,76,verified,src/llvm-libcxx/libcxx/src/call_once_impl.c,call_once_7cd5d0
 7cd61c,4,verified,src/llvm-libcxx/libcxx/src/call_once_impl.c,call_once_7cd61c
 7cd620,20,verified,src/nn/unnamed/s005_0.c,SdkHr_7cd620
@@ -32548,7 +32558,7 @@ ffee0,324,verified,src/nn/fs/unplaced.c,nn_fs_GetAndClearMemoryReportInfo
 7d3920,24,verified,src/llvm-libcxx/libcxx/src/locale_impl.c,locale_7d3920
 7d3940,64,verified,src/llvm-libcxx/libcxx/src/ios.instantiations_impl.c,ios_instantiations_7d3940
 7d39a0,52,verified,src/llvm-libcxx/libcxx/src/locale.cpp,_ZNSt12out_of_rangeC2B8ne180100EPKc
-7d39e0,336,verified,src/llvm-libcxx/libcxx/src/locale_impl.c,locale_7d39e0
+7d39e0,356,verified,src/llvm-libcxx/libcxx/src/locale_impl.c,locale_7d39e0
 7d3b50,272,verified,src/llvm-libcxx/libcxx/src/locale_impl.c,std___1___fs_filesystem_path_replace_extension
 7d3c64,40,verified,src/llvm-libcxx/libcxx/src/locale_impl.c,locale_7d3c64
 7d3ca0,264,verified,src/llvm-libcxx/libcxx/src/locale_impl.c,locale_7d3ca0
@@ -33317,9 +33327,10 @@ ffee0,324,verified,src/nn/fs/unplaced.c,nn_fs_GetAndClearMemoryReportInfo
 7f5500,260,verified,src/llvm-libcxx/libcxx/src/locale_impl.c,std___1_basic_filebuf_basic_filebuf_7f5500
 7f5650,400,verified,src/llvm-libcxx/libcxx/src/locale_impl.c,std___1_basic_filebuf_basic_filebuf_7f5650
 7f58c0,116,verified,src/llvm-libcxx/libcxx/src/locale_impl.c,std___1_basic_filebuf_close
+7f5934,24,verified,src/llvm-libcxx/libcxx/src/unplaced_14.c,llvmlibcxx_libcxx_7f5934
 7f5950,48,verified,src/nn/sdk_trivial_thunks.cpp,_Z14SdkStub_7f5950m
 7f5980,792,verified,src/llvm-libcxx/libcxx/src/locale_impl.c,std___1_basic_filebuf_swap
-7f5ca0,236,verified,src/llvm-libcxx/libcxx/src/locale_impl.c,locale_7f5ca0
+7f5ca0,224,verified,src/llvm-libcxx/libcxx/src/locale_impl.c,locale_7f5ca0
 7f5d90,632,disputed,src/llvm-libcxx/libcxx/src/unplaced_17.c,llvm_libcxx_libcxx_src_7f5d90
 7f6030,84,verified,src/llvm-libcxx/libcxx/src/locale_impl.c,std___1_basic_filebuf___read_mode
 7f6090,56,verified,src/llvm-libcxx/libcxx/src/locale_impl.c,locale_7f6090
@@ -33410,7 +33421,7 @@ ffee0,324,verified,src/nn/fs/unplaced.c,nn_fs_GetAndClearMemoryReportInfo
 801970,368,verified,src/llvm-libcxx/libcxx/src/locale.cpp,_ZNSt3__19__num_getIwE17__stage2_int_loopEwiPcRS2_RjwRKNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEPjRSD_Pw
 801b80,144,verified,src/llvm-libcxx/libcxx/src/unplaced_3.c,llvm_libcxx_libcxx_src_801b80
 801cfc,44,verified,src/llvm-libcxx/libcxx/src/locale_impl.c,locale_801cfc
-801d30,576,verified,src/llvm-libcxx/libcxx/src/locale_impl.c,std___1___num_get___stage2_float_loop_801d30
+801d30,508,verified,src/llvm-libcxx/libcxx/src/locale_impl.c,std___1___num_get___stage2_float_loop_801d30
 801f90,140,verified,src/llvm-libcxx/libcxx/src/unplaced_3.c,llvm_libcxx_libcxx_src_801f90
 8020f4,44,verified,src/llvm-libcxx/libcxx/src/locale_impl.c,locale_8020f4
 802120,144,verified,src/llvm-libcxx/libcxx/src/unplaced_3.c,llvm_libcxx_libcxx_src_802120
@@ -33583,7 +33594,7 @@ ffee0,324,verified,src/nn/fs/unplaced.c,nn_fs_GetAndClearMemoryReportInfo
 80b9f0,8,verified,src/llvm-libcxx/libcxx/src/locale.cpp,_ZNKSt3__117moneypunct_bynameIwLb1EE13do_pos_formatEv
 80ba00,8,verified,src/llvm-libcxx/libcxx/src/locale.cpp,_ZNKSt3__117moneypunct_bynameIwLb1EE13do_neg_formatEv
 80bd80,4,verified,src/llvm-libcxx/libcxx/src/locale.cpp,_ZNSt3__112__do_nothingEPv
-80bda0,1284,verified,src/llvm-libcxx/libcxx/src/locale_impl.c,std___1_money_get___do_get_80bda0
+80bda0,1444,verified,src/llvm-libcxx/libcxx/src/locale_impl.c,std___1_money_get___do_get_80bda0
 80d334,4,verified,src/llvm-libcxx/libcxx/src/locale_impl.c,locale_80d334
 80d338,204,verified,src/llvm-libcxx/libcxx/src/locale_impl.c,locale_80d338
 80d460,176,verified,src/llvm-libcxx/libcxx/src/unplaced_4.c,llvm_libcxx_libcxx_src_80d460
@@ -34171,7 +34182,7 @@ ffee0,324,verified,src/nn/fs/unplaced.c,nn_fs_GetAndClearMemoryReportInfo
 8300c0,132,verified,src/llvm-libcxx/libcxx/src/unplaced_2.c,llvmlibcxx_libcxx_8300c0
 830194,24,verified,src/llvm-libcxx/libcxx/src/locale_impl.c,locale_830194
 8301b0,132,verified,src/llvm-libcxx/libcxx/src/unplaced_5.c,llvm_libcxx_libcxx_src_8301b0
-830290,372,verified,src/llvm-libcxx/libcxx/src/locale_impl.c,locale_830290
+830290,268,verified,src/llvm-libcxx/libcxx/src/locale_impl.c,locale_830290
 830500,156,verified,src/llvm-libcxx/libcxx/src/locale_impl.c,locale_830500
 8305c0,168,verified,src/llvm-libcxx/libcxx/src/locale_impl.c,locale_8305c0
 8306a0,160,verified,src/llvm-libcxx/libcxx/src/locale_impl.c,locale_8306a0

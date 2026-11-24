@@ -579,7 +579,7 @@ __attribute__((swiftcall)) void locale_7d3ca0(PSEUDO_X8 x8_, void* a1);
 __int64 std___1___fs_filesystem_path___root_name(void* this_);
 const char* std___1___fs_filesystem_path___root_directory(void* this_);
 const char* std___1___fs_filesystem_path___root_path_raw(void* this_);
-__int64 std___1___fs_filesystem_path___relative_path(void* this_);
+__int64 std___1___fs_filesystem_path___relative_path_alt1(void* this_);
 __int64 std___1___fs_filesystem_path___parent_path(void* this_);
 char* std___1___fs_filesystem_path___filename(void* this_);
 char* std___1___fs_filesystem_path___stem(void* this_);
@@ -656,11 +656,9 @@ void __attribute__((noreturn)) locale_8000fc(__int64 a1);
 void __attribute__((noreturn)) locale_800720(__int64 a1);
 void __attribute__((noreturn)) locale_800d40(__int64 a1);
 void __attribute__((noreturn)) locale_801360(__int64 a1);
-__int64 std___1___num_get___stage2_int_loop(__int64 a1, __int64 a2, __int64 a3,
-                                            __int64 a4, __int64 a5, __int64 a6,
-                                            __int64 a7, __int64 a8, _DWORD** a9,
-                                            __int64 a10, __int64 a11,
-                                            __int64 a12);
+__int64 std___1___num_get___stage2_int_loop_alt1(
+    __int64 a1, __int64 a2, __int64 a3, __int64 a4, __int64 a5, __int64 a6,
+    __int64 a7, __int64 a8, _DWORD** a9, __int64 a10, __int64 a11, __int64 a12);
 __int64 std___1___num_get___stage2_float_prep_801b80(__int64 a1, __int64 a2,
                                                      _BYTE* a3, _BYTE* a4);
 void __attribute__((noreturn)) locale_801cfc(__int64 a1, __int64 a2, __int64 a3,
@@ -920,17 +918,17 @@ void __attribute__((noreturn)) locale_816f40(__int64 a1);
 void __attribute__((noreturn)) locale_817120(__int64 a1);
 void __attribute__((noreturn)) locale_817db0(__int64 a1);
 __int64 std___1_build_name(__int64 result, char* a2, __int64 a3, int a4);
-__int64 std___1_locale___imp_install_from_8183c0(__int64 a1, __int64 a2,
-                                                 __int64 a3,
-                                                 unsigned __int64 a4);
+__int64 std___1_locale___imp_install_from_8183c0_alt1(__int64 a1, __int64 a2,
+                                                      __int64 a3,
+                                                      unsigned __int64 a4);
 void __attribute__((noreturn)) locale_8184d0(__int64 a1);
 __int64 std___1_locale___imp_install_from_818500(__int64 a1, __int64 a2,
                                                  __int64 a3,
                                                  unsigned __int64 a4);
 void __attribute__((noreturn)) locale_818610(__int64 a1);
-__int64 std___1_locale___imp_install_from_818640(__int64 a1, __int64 a2,
-                                                 __int64 a3,
-                                                 unsigned __int64 a4);
+__int64 std___1_locale___imp_install_from_818640_alt1(__int64 a1, __int64 a2,
+                                                      __int64 a3,
+                                                      unsigned __int64 a4);
 void __attribute__((noreturn)) locale_818750(__int64 a1);
 __int64 std___1_locale___imp_install_from_818780(__int64 a1, __int64 a2,
                                                  __int64 a3,
@@ -984,13 +982,13 @@ __int64 std___1_locale___imp_install_from_819680(__int64 a1, __int64 a2,
                                                  __int64 a3,
                                                  unsigned __int64 a4);
 void __attribute__((noreturn)) locale_819790(__int64 a1);
-__int64 std___1_locale___imp_install_from_8197c0(__int64 a1, __int64 a2,
-                                                 __int64 a3,
-                                                 unsigned __int64 a4);
+__int64 std___1_locale___imp_install_from_8197c0_alt1(__int64 a1, __int64 a2,
+                                                      __int64 a3,
+                                                      unsigned __int64 a4);
 void __attribute__((noreturn)) locale_8198d0(__int64 a1);
-__int64 std___1_locale___imp_install_from_819900(__int64 a1, __int64 a2,
-                                                 __int64 a3,
-                                                 unsigned __int64 a4);
+__int64 std___1_locale___imp_install_from_819900_alt1(__int64 a1, __int64 a2,
+                                                      __int64 a3,
+                                                      unsigned __int64 a4);
 void __attribute__((noreturn)) locale_819a10(__int64 a1);
 __int64 std___1_locale___imp_install_from_819a40(__int64 a1, __int64 a2,
                                                  __int64 a3,
@@ -1000,17 +998,17 @@ __int64 std___1_locale___imp_install_from_819b80(__int64 a1, __int64 a2,
                                                  __int64 a3,
                                                  unsigned __int64 a4);
 void __attribute__((noreturn)) locale_819c90(__int64 a1);
-__int64 std___1_locale___imp_install_from_819cc0(__int64 a1, __int64 a2,
-                                                 __int64 a3,
-                                                 unsigned __int64 a4);
+__int64 std___1_locale___imp_install_from_819cc0_alt1(__int64 a1, __int64 a2,
+                                                      __int64 a3,
+                                                      unsigned __int64 a4);
 void __attribute__((noreturn)) locale_819dd0(__int64 a1);
-__int64 std___1_locale___imp_install_from_819e00(__int64 a1, __int64 a2,
-                                                 __int64 a3,
-                                                 unsigned __int64 a4);
+__int64 std___1_locale___imp_install_from_819e00_alt1(__int64 a1, __int64 a2,
+                                                      __int64 a3,
+                                                      unsigned __int64 a4);
 void __attribute__((noreturn)) locale_819f10(__int64 a1);
-__int64 std___1_locale___imp_install_from_819f40(__int64 a1, __int64 a2,
-                                                 __int64 a3,
-                                                 unsigned __int64 a4);
+__int64 std___1_locale___imp_install_from_819f40_alt1(__int64 a1, __int64 a2,
+                                                      __int64 a3,
+                                                      unsigned __int64 a4);
 void __attribute__((noreturn)) locale_81a050(__int64 a1);
 __int64 std___1_locale___imp_install_from_81a080(__int64 a1, __int64 a2,
                                                  __int64 a3,
@@ -1020,9 +1018,9 @@ __int64 std___1_locale___imp_install_from_81a1c0(__int64 a1, __int64 a2,
                                                  __int64 a3,
                                                  unsigned __int64 a4);
 void __attribute__((noreturn)) locale_81a2d0(__int64 a1);
-__int64 std___1_locale___imp_install_from_81a300(__int64 a1, __int64 a2,
-                                                 __int64 a3,
-                                                 unsigned __int64 a4);
+__int64 std___1_locale___imp_install_from_81a300_alt1(__int64 a1, __int64 a2,
+                                                      __int64 a3,
+                                                      unsigned __int64 a4);
 void __attribute__((noreturn)) locale_81a410(__int64 a1);
 __int64 std___1_locale___imp_install_from_81a440(__int64 a1, __int64 a2,
                                                  __int64 a3,
@@ -1054,7 +1052,7 @@ void __attribute__((noreturn)) locale_81b25c(__int64 a1, __int64 a2, __int64 a3,
                                              __int64 a10, __int64 a11,
                                              __int64 a12);
 __int64 std___1_locale_locale_81b318(__int64 a1);
-void std___1_locale_name_81b398(__int64 a1);
+void std___1_locale_name_81b398_alt1(__int64 a1);
 __int64 std___1_locale_global(__int64 a1);
 bool locale_81b850(__int64* a1, __int64* a2);
 void __attribute__((noreturn))
@@ -1317,6 +1315,67 @@ unsigned __int64 strftime_l_plt_alt1(__int64, unsigned __int64, __int64,
 __attribute__((swiftcall)) void
 std___1___time_get_storage___analyze(PSEUDO_X8 x8_, __int64 a1,
                                      unsigned __int8 a2, _QWORD* a3);
+__int64 SdkRoutine_801970(void);
+__int64 SdkRoutine_807eb0(void);
+__int64 SdkRoutine_810f00_alt2(__int64, __int64, __int64, __int64, __int64,
+                               void*);
+__int64 SdkRoutine_81add0_alt1(void);
+__int64 SdkRoutine_81b480_alt1(void);
+__int64 SdkRoutine_81c700(void);
+__int64 SdkRoutine_82dbb0_alt1(__int64 result, unsigned __int64);
+__int64 SdkRoutine_82dd20_alt2(__int64*);
+__int64 SdkRoutine_82f620_alt1(void);
+__int64 SdkRoutine_830970_alt1(void);
+__int64 SdkRoutine_86ee80_alt1();
+__int64 SdkRoutine_87cb10_alt1(__int64);
+__int64 SdkRoutine_87cb10_alt2();
+__int64 __cxa_begin_catch_plt_alt2(__int64);
+__int64 malloc_plt_alt2(unsigned __int64);
+__int64 newlocale_plt_alt2(char, __int64, __int64);
+__int64 std___1___call_once_plt_alt2(__int64, __int64, __int64);
+__int64 std___1___shared_count_Destroy___shared_count_plt_alt1(__int64);
+__int64 std___1_locale_locale_81b330(void);
+__int64 std___1_locale_name(void);
+__int64 std___1_money_put_do_put_812320_alt1(void);
+__int64 std___1_num_put_do_put_802f80_alt1(void);
+__int64 std___1_num_put_do_put_804140_alt1(void);
+__int64 std___1_num_put_do_put_804490_alt1(void);
+__int64 std___1_num_put_do_put_8047d0_alt1(void);
+__int64 std___1_time_get_get_806ce0_alt2(void);
+int __cxa_guard_acquire_plt_alt2(__int64);
+int memcmp_plt_alt1(__int64, __int64, unsigned __int64);
+void _Unwind_Resume_plt_alt3(__int64);
+void __cxa_guard_abort_plt_alt2(__int64);
+void __cxa_guard_release_plt_alt2(__int64);
+void __cxa_rethrow_plt_alt2();
+void free_plt_alt2(__int64);
+void std___1_locale_Destroy_locale_plt_alt2(__int64);
+unsigned __int128 std___1___fs_filesystem_path___relative_path(void* this_);
+void __attribute__((noreturn)) locale_7f7134(__int64 a1);
+__int64 std___1___num_get___stage2_int_loop(__int64 a1, __int64 a2, __int64 a3,
+                                            __int64 a4, __int64 a5, __int64 a6,
+                                            __int64 a7, __int64 a8, __int64 a9,
+                                            __int64 a10, __int64 a11,
+                                            __int64 a12);
+__int64 std___1_time_get_get(__int64 a1, __int64 a2, __int64 a3, __int64 a4,
+                             __int64 a5, __int64 a6, __int64 a7, __int64 a8,
+                             __int64 a9, __int64 a10, __int64 a11, __int64 a12,
+                             __int64 a13, __int64 a14, __int64 a15,
+                             __int64 a16);
+__int64 std___1_locale___imp_install_from_8183c0(__int64 a1, __int64 a2);
+__int64 std___1_locale___imp_install_from_818640(__int64 a1, __int64 a2);
+__int64 std___1_locale___imp_install_from_8197c0(__int64 a1, __int64 a2);
+__int64 std___1_locale___imp_install_from_819900(__int64 a1, __int64 a2);
+__int64 std___1_locale___imp_install_from_819cc0(__int64 a1, __int64 a2);
+__int64 std___1_locale___imp_install_from_819e00(__int64 a1, __int64 a2);
+__int64 std___1_locale___imp_install_from_819f40(__int64 a1, __int64 a2);
+__int64 std___1_locale___imp_install_from_81a300(__int64 a1, __int64 a2);
+__int64 std___1_locale_name_81b398(__int64 a1);
+__int64 std___1_ctype_Destroy_ctype(__int64 a1, __int64 a2, __int64 a3,
+                                    __int64 a4, __int64 a5, __int64 a6,
+                                    __int64 a7, __int64 a8, __int64 a9,
+                                    __int64 a10, __int64 a11, __int64 a12);
+void __attribute__((noreturn)) locale_829060(__int64 a1);
 __attribute__((swiftcall)) void
 
 std_exception_ptr___from_native_exception_pointer(PSEUDO_X8 x8_, void* this_)
@@ -1927,51 +1986,66 @@ const char* std___1___fs_filesystem_path___root_path_raw(void* this_)
   return result;
 }
 
-__int64 std___1___fs_filesystem_path___relative_path(void* this_)
+unsigned __int128 std___1___fs_filesystem_path___relative_path(void* this_)
 {
   unsigned __int64 v1;
   char* v2;
   unsigned __int64 v3;
-  bool v4;
-  unsigned __int64 v5;
-  int v6;
+  bool v5;
+  unsigned __int64 v6;
+  int v7;
+  unsigned __int64 v10;
+  char* v11;
+  unsigned __int64 v12;
   struct {
-    _QWORD v8[2];
-    __int64 v9;
-    __int64 v10;
-    unsigned __int8 v11;
-  } v8_;
+    _QWORD v13[2];
+    __int64 v14;
+    __int64 v15;
+    unsigned __int8 v16;
+  } v13_;
+  unsigned __int128 result;
 
   v1 = *(unsigned __int8*)this_;
   v3 = *((_QWORD*)this_ + 1);
   v2 = *((char**)this_ + 2);
-  v4 = (v1 & 1) == 0;
-  v5 = v1 >> 1;
-  v8_.v9 = 0;
-  v8_.v10 = 0;
-  if (v4) {
+  v5 = (v1 & 1) == 0;
+  v6 = v1 >> 1;
+  v13_.v14 = 0;
+  v13_.v15 = 0;
+  if (v5) {
     v2 = (char*)this_ + 1;
   }
-  if (!v4) {
-    v5 = v3;
+  if (!v5) {
+    v6 = v3;
   }
-  v8_.v8[0] = v2;
-  v8_.v8[1] = v5;
-  v8_.v11 = 1;
-  llvmlibcxx_libcxx_7d58e0((__int64)v8_.v8);
-  v6 = v8_.v11;
-  if (v8_.v11 <= 3u) {
+  v13_.v13[0] = v2;
+  v13_.v13[1] = v6;
+  v13_.v16 = 1;
+  llvmlibcxx_libcxx_7d58e0((__int64)v13_.v13);
+  v7 = v13_.v16;
+  if (v13_.v16 <= 3u) {
     do {
-      llvmlibcxx_libcxx_7d58e0((__int64)v8_.v8);
-      v6 = v8_.v11;
-    } while (v8_.v11 < 4u);
+      llvmlibcxx_libcxx_7d58e0((__int64)v13_.v13);
+      v7 = v13_.v16;
+    } while (v13_.v16 < 4u);
   }
-  if (v6 == 6) {
-    return 0;
+  if (v7 == 6) {
+    *(_QWORD*)&result = 0;
+    *((_QWORD*)&result + 1) = 0;
   }
   else {
-    return v8_.v9;
+    v10 = *(unsigned __int8*)this_;
+    v11 = (char*)this_ + 1;
+    v5 = (v10 & 1) == 0;
+    *(_QWORD*)&result = v13_.v14;
+    v12 = v10 >> 1;
+    if (!v5) {
+      v11 = *((char**)this_ + 2);
+      v12 = *((_QWORD*)this_ + 1);
+    }
+    *((_QWORD*)&result + 1) = &v11[v12 - v13_.v14];
   }
+  return result;
 }
 
 __int64 std___1___fs_filesystem_path___parent_path(void* this_)
@@ -2276,61 +2350,65 @@ __int64 std___1___fs_filesystem_path___compare(unsigned __int8* a1, __int64 a2,
   char* v26;
   unsigned __int64 v27;
   unsigned __int64 v28;
-  const char* v29;
-  __int64 v30;
-  _QWORD v32[2];
-  char* v33;
-  unsigned __int64 v34;
-  unsigned __int8 v35;
-  _QWORD v36[2];
-  char* v37;
-  unsigned __int64 v38;
-  unsigned __int8 v39;
+  char* v29;
+  unsigned __int64 v30;
+  struct {
+    _QWORD v32[2];
+    char* v33;
+    unsigned __int64 v34;
+    unsigned __int8 v35;
+  } v32_;
+  struct {
+    _QWORD v36[2];
+    char* v37;
+    unsigned __int64 v38;
+    unsigned __int8 v39;
+  } v36_;
 
   v3 = *a1;
   v5 = *((_QWORD*)a1 + 1);
   v4 = *((unsigned __int8**)a1 + 2);
   v8 = (v3 & 1) == 0;
   v9 = v3 >> 1;
-  v37 = nullptr;
-  v38 = 0;
-  v39 = 1;
+  v36_.v37 = nullptr;
+  v36_.v38 = 0;
+  v36_.v39 = 1;
   if (v8) {
     v4 = a1 + 1;
   }
   if (!v8) {
     v9 = v5;
   }
-  v36[0] = v4;
-  v36[1] = v9;
-  llvmlibcxx_libcxx_7d58e0_alt1(v36);
-  v32[0] = a2;
-  v32[1] = a3;
-  v33 = nullptr;
-  v34 = 0;
-  v35 = 1;
-  llvmlibcxx_libcxx_7d58e0_alt1(v32);
-  v10 = v39;
-  if (v39 == 2) {
-    v11 = v37;
-    v12 = v38;
-    v13 = v35;
-    if (v35 != 2) {
+  v36_.v36[0] = v4;
+  v36_.v36[1] = v9;
+  llvmlibcxx_libcxx_7d58e0((__int64)v36_.v36);
+  v32_.v32[0] = a2;
+  v32_.v32[1] = a3;
+  v32_.v33 = nullptr;
+  v32_.v34 = 0;
+  v32_.v35 = 1;
+  llvmlibcxx_libcxx_7d58e0((__int64)v32_.v32);
+  v10 = v36_.v39;
+  if (v36_.v39 == 2) {
+    v11 = v36_.v37;
+    v12 = v36_.v38;
+    v13 = v32_.v35;
+    if (v32_.v35 != 2) {
       v14 = &SdkData_bbbd5c;
       v15 = 0;
       goto LABEL_12;
     }
   }
   else {
-    v13 = v35;
-    if (v35 != 2) {
+    v13 = v32_.v35;
+    if (v32_.v35 != 2) {
       goto LABEL_34;
     }
     v11 = &SdkData_bbbd5c;
     v12 = 0;
   }
-  v14 = v33;
-  v15 = v34;
+  v14 = v32_.v33;
+  v15 = v32_.v34;
   v13 = 2;
 LABEL_12:
   if (v15 >= v12) {
@@ -2339,7 +2417,7 @@ LABEL_12:
   else {
     v16 = v15;
   }
-  LODWORD(result) = memcmp_plt(v11, v14, v16);
+  LODWORD(result) = memcmp_plt_alt1((__int64)v11, (__int64)v14, v16);
   if (v12 < v15) {
     v18 = -1;
   }
@@ -2362,9 +2440,9 @@ LABEL_12:
   LABEL_30:
     v20 = result;
     do {
-      llvmlibcxx_libcxx_7d58e0_alt1(v32);
-      v13 = v35;
-    } while (v35 < 3u);
+      llvmlibcxx_libcxx_7d58e0((__int64)v32_.v32);
+      v13 = v32_.v35;
+    } while (v32_.v35 < 3u);
     result = v20;
     if (v20 != 0) {
       return result;
@@ -2373,11 +2451,11 @@ LABEL_12:
   }
   v19 = result;
   do {
-    llvmlibcxx_libcxx_7d58e0_alt1(v36);
-  } while (v39 < 3u);
-  v13 = v35;
+    llvmlibcxx_libcxx_7d58e0((__int64)v36_.v36);
+  } while (v36_.v39 < 3u);
+  v13 = v32_.v35;
   result = v19;
-  if (v35 <= 2u) {
+  if (v32_.v35 <= 2u) {
     goto LABEL_30;
   }
 LABEL_27:
@@ -2385,7 +2463,7 @@ LABEL_27:
     return result;
   }
 LABEL_33:
-  v10 = v39;
+  v10 = v36_.v39;
 LABEL_34:
   if (v10 == 3) {
     if (v13 != 3) {
@@ -2401,33 +2479,33 @@ LABEL_34:
     }
   }
   do {
-    llvmlibcxx_libcxx_7d58e0_alt1(v36);
-  } while (v39 < 4u);
-  v13 = v35;
+    llvmlibcxx_libcxx_7d58e0((__int64)v36_.v36);
+  } while (v36_.v39 < 4u);
+  v13 = v32_.v35;
 LABEL_41:
   if (v13 <= 3) {
     do {
-      llvmlibcxx_libcxx_7d58e0_alt1(v32);
-    } while (v35 < 4u);
+      llvmlibcxx_libcxx_7d58e0((__int64)v32_.v32);
+    } while (v32_.v35 < 4u);
   }
-  for (i = v39; v39 != 1 && v39 != 6; i = v39) {
-    v23 = v35;
-    if (v35 == 1 || v35 == 6) {
+  for (i = v36_.v39; v36_.v39 != 1 & v36_.v39 != 6; i = v36_.v39) {
+    v23 = v32_.v35;
+    if (v32_.v35 == 1 | v32_.v35 == 6) {
       goto LABEL_84;
     }
     if (i > 3) {
       if (i == 4) {
       LABEL_61:
-        v26 = v37;
-        v25 = v38;
-        if (v35 > 3u) {
+        v26 = v36_.v37;
+        v25 = v36_.v38;
+        if (v32_.v35 > 3u) {
           goto LABEL_57;
         }
         goto LABEL_62;
       }
       v25 = 0;
       v26 = &SdkData_bbbd5c;
-      if (v35 > 3u) {
+      if (v32_.v35 > 3u) {
         goto LABEL_57;
       }
     }
@@ -2436,31 +2514,31 @@ LABEL_41:
         goto LABEL_61;
       }
       v25 = 1;
-      if (*v37 == 92) {
+      if (*v36_.v37 == 92) {
         v26 = "\\";
       }
       else {
         v26 = "/";
       }
-      if (v35 > 3u) {
+      if (v32_.v35 > 3u) {
       LABEL_57:
-        if (v35 != 4) {
+        if (v32_.v35 != 4) {
           v27 = 0;
-          result = memcmp_plt(v26, &SdkData_bbbd5c, 0);
+          result = memcmp_plt_alt1((__int64)v26, (__int64)&SdkData_bbbd5c, 0);
           if ((_DWORD)result != 0) {
             return result;
           }
           goto LABEL_77;
         }
       LABEL_63:
-        v27 = v34;
-        if (v34 >= v25) {
+        v27 = v32_.v34;
+        if (v32_.v34 >= v25) {
           v28 = v25;
         }
         else {
-          v28 = v34;
+          v28 = v32_.v34;
         }
-        result = memcmp_plt(v26, v33, v28);
+        result = memcmp_plt_alt1((__int64)v26, (__int64)v32_.v33, v28);
         if ((_DWORD)result != 0) {
           return result;
         }
@@ -2468,11 +2546,11 @@ LABEL_41:
       }
     }
   LABEL_62:
-    if (v35 == 2) {
+    if (v32_.v35 == 2) {
       goto LABEL_63;
     }
     v27 = 1;
-    if (*v33 == 92) {
+    if (*v32_.v33 == 92) {
       v29 = "\\";
     }
     else {
@@ -2484,7 +2562,7 @@ LABEL_41:
     else {
       v30 = 1;
     }
-    result = memcmp_plt(v26, v29, v30);
+    result = memcmp_plt_alt1((__int64)v26, (__int64)v29, v30);
     if ((_DWORD)result != 0) {
       return result;
     }
@@ -2497,10 +2575,10 @@ LABEL_41:
         return 1;
       }
     }
-    llvmlibcxx_libcxx_7d58e0_alt1(v36);
-    llvmlibcxx_libcxx_7d58e0_alt1(v32);
+    llvmlibcxx_libcxx_7d58e0((__int64)v36_.v36);
+    llvmlibcxx_libcxx_7d58e0((__int64)v32_.v32);
   }
-  v23 = v35;
+  v23 = v32_.v35;
 LABEL_84:
   if (i == 6) {
     if (v23 != 6) {
@@ -3048,15 +3126,29 @@ void __attribute__((noreturn)) locale_7f5604(__int64 a1)
   __int64 v5;
   __int64 v6;
 
-  std___1_locale_Destroy_locale_plt(v3 + 24);
+  v5 = COERCE_AS(__typeof__(v5),
+                 PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
+  std___1_locale_Destroy_locale_plt_alt2(v3 + 24),
+      v5 = COERCE_AS(__typeof__(v5),
+                     PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
   *v1 = v2 + 16;
-  std___1_locale_Destroy_locale_plt(v1 + 1);
-  _Unwind_Resume_plt_alt1(a1);
+  std___1_locale_Destroy_locale_plt_alt2((__int64)(v1 + 1)),
+      v5 = COERCE_AS(__typeof__(v5),
+                     PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
+  _Unwind_Resume_plt_alt3(a1),
+      v5 = COERCE_AS(__typeof__(v5),
+                     PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
   v6 = v5;
   *v1 = v2 + 16;
-  std___1_locale_Destroy_locale_plt(v1 + 1);
-  _Unwind_Resume_plt_alt1(v6);
-  SdkRoutine_7cd620();
+  std___1_locale_Destroy_locale_plt_alt2((__int64)(v1 + 1)),
+      v5 = COERCE_AS(__typeof__(v5),
+                     PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
+  _Unwind_Resume_plt_alt3(v6),
+      v5 = COERCE_AS(__typeof__(v5),
+                     PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
+  SdkRoutine_7cd620(),
+      v5 = COERCE_AS(__typeof__(v5),
+                     PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
 }
 
 __int64 std___1_basic_filebuf_basic_filebuf_7f5650(__int64 a1, __int64 a2)
@@ -4181,6 +4273,36 @@ void __attribute__((noreturn)) locale_7f6fd0(__int64 a1)
   __udf(0);
 }
 
+void __attribute__((noreturn)) locale_7f7134(__int64 a1)
+{
+  _QWORD* v1;
+  __int64 v3;
+  __int64 v4;
+  __int64 v6;
+  __int64 v7;
+
+  v6 = COERCE_AS(__typeof__(v6),
+                 PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
+  SdkRoutine_86ee80_alt1(),
+      v6 = COERCE_AS(__typeof__(v6),
+                     PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
+  _Unwind_Resume_plt_alt3(a1),
+      v6 = COERCE_AS(__typeof__(v6),
+                     PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
+  v7 = v6;
+  std___1_locale_Destroy_locale_plt_alt2(v4 + 24),
+      v6 = COERCE_AS(__typeof__(v6),
+                     PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
+  *v1 = v3;
+  std___1_locale_Destroy_locale_plt_alt2((__int64)(v1 + 1)),
+      v6 = COERCE_AS(__typeof__(v6),
+                     PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
+  _Unwind_Resume_plt_alt3(v7),
+      v6 = COERCE_AS(__typeof__(v6),
+                     PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
+  __udf(0);
+}
+
 void __attribute__((noreturn))
 
 locale_7f8960(__int64 a1, __int64 a2, __int64 a3, __int64 a4, __int64 a5,
@@ -4194,23 +4316,83 @@ locale_7f8960(__int64 a1, __int64 a2, __int64 a3, __int64 a4, __int64 a5,
   __int64 v19;
   __int64 v20;
 
+  v16 = COERCE_AS(__typeof__(v16),
+                  PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+  v17 = COERCE_AS(__typeof__(v17),
+                  PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+  v19 = COERCE_AS(__typeof__(v19),
+                  PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
   if ((a12 & 1) != 0) {
     goto LABEL_4;
   }
   while ((a9 & 1) == 0) {
-    _Unwind_Resume_plt_alt1(a1);
+    _Unwind_Resume_plt_alt3(a1),
+        v16 = COERCE_AS(__typeof__(v16),
+                        PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+        v17 = COERCE_AS(__typeof__(v17),
+                        PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+        v19 = COERCE_AS(__typeof__(v19),
+                        PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
   LABEL_4:
-    SdkRoutine_857220(a14, a12 & 0xFFFFFFFFFFFFFFFELL);
+    SdkRoutine_857220_alt2(a14, a12 & 0xFFFFFFFFFFFFFFFELL),
+        v16 = COERCE_AS(__typeof__(v16),
+                        PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+        v17 = COERCE_AS(__typeof__(v17),
+                        PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+        v19 = COERCE_AS(__typeof__(v19),
+                        PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
   }
-  SdkRoutine_857220(a11, a9 & 0xFFFFFFFFFFFFFFFELL);
-  _Unwind_Resume_plt_alt1(a1);
-  _Unwind_Resume_plt_alt1(v16);
+  SdkRoutine_857220_alt2(a11, a9 & 0xFFFFFFFFFFFFFFFELL),
+      v16 = COERCE_AS(__typeof__(v16),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v17 = COERCE_AS(__typeof__(v17),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v19 = COERCE_AS(__typeof__(v19),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
+  _Unwind_Resume_plt_alt3(a1),
+      v16 = COERCE_AS(__typeof__(v16),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v17 = COERCE_AS(__typeof__(v17),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v19 = COERCE_AS(__typeof__(v19),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
+  _Unwind_Resume_plt_alt3(v16),
+      v16 = COERCE_AS(__typeof__(v16),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v17 = COERCE_AS(__typeof__(v17),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v19 = COERCE_AS(__typeof__(v19),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
   v18 = v17;
-  std___1_locale_Destroy_locale_plt(v14 - 32);
-  _Unwind_Resume_plt_alt1(v18);
+  std___1_locale_Destroy_locale_plt_alt2(v14 - 32),
+      v16 = COERCE_AS(__typeof__(v16),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v17 = COERCE_AS(__typeof__(v17),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v19 = COERCE_AS(__typeof__(v19),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
+  _Unwind_Resume_plt_alt3(v18),
+      v16 = COERCE_AS(__typeof__(v16),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v17 = COERCE_AS(__typeof__(v17),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v19 = COERCE_AS(__typeof__(v19),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
   v20 = v19;
-  std___1_locale_Destroy_locale_plt(v14 - 32);
-  _Unwind_Resume_plt_alt1(v20);
+  std___1_locale_Destroy_locale_plt_alt2(v14 - 32),
+      v16 = COERCE_AS(__typeof__(v16),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v17 = COERCE_AS(__typeof__(v17),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v19 = COERCE_AS(__typeof__(v19),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
+  _Unwind_Resume_plt_alt3(v20),
+      v16 = COERCE_AS(__typeof__(v16),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v17 = COERCE_AS(__typeof__(v17),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v19 = COERCE_AS(__typeof__(v19),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
   __udf(0);
 }
 
@@ -4222,14 +4404,14 @@ void __attribute__((noreturn)) locale_7f9500(__int64 a1)
     goto LABEL_4;
   }
   while ((*(_BYTE*)(v1 - 40) & 1) == 0) {
-    _Unwind_Resume_plt_alt1(a1);
+    _Unwind_Resume_plt_alt3(a1);
   LABEL_4:
-    SdkRoutine_857220(*(_QWORD*)(v1 - 48),
-                      *(_QWORD*)(v1 - 64) & 0xFFFFFFFFFFFFFFFELL);
+    SdkRoutine_857220_alt2(*(_QWORD*)(v1 - 48),
+                           *(_QWORD*)(v1 - 64) & 0xFFFFFFFFFFFFFFFELL);
   }
-  SdkRoutine_857220(*(_QWORD*)(v1 - 24),
-                    *(_QWORD*)(v1 - 40) & 0xFFFFFFFFFFFFFFFELL);
-  _Unwind_Resume_plt_alt1(a1);
+  SdkRoutine_857220_alt2(*(_QWORD*)(v1 - 24),
+                         *(_QWORD*)(v1 - 40) & 0xFFFFFFFFFFFFFFFELL);
+  _Unwind_Resume_plt_alt3(a1);
   __udf(0);
 }
 
@@ -4241,14 +4423,14 @@ void __attribute__((noreturn)) locale_7f9bc0(__int64 a1)
     goto LABEL_4;
   }
   while ((*(_BYTE*)(v1 - 40) & 1) == 0) {
-    _Unwind_Resume_plt_alt1(a1);
+    _Unwind_Resume_plt_alt3(a1);
   LABEL_4:
-    SdkRoutine_857220(*(_QWORD*)(v1 - 48),
-                      *(_QWORD*)(v1 - 64) & 0xFFFFFFFFFFFFFFFELL);
+    SdkRoutine_857220_alt2(*(_QWORD*)(v1 - 48),
+                           *(_QWORD*)(v1 - 64) & 0xFFFFFFFFFFFFFFFELL);
   }
-  SdkRoutine_857220(*(_QWORD*)(v1 - 24),
-                    *(_QWORD*)(v1 - 40) & 0xFFFFFFFFFFFFFFFELL);
-  _Unwind_Resume_plt_alt1(a1);
+  SdkRoutine_857220_alt2(*(_QWORD*)(v1 - 24),
+                         *(_QWORD*)(v1 - 40) & 0xFFFFFFFFFFFFFFFELL);
+  _Unwind_Resume_plt_alt3(a1);
   __udf(0);
 }
 
@@ -4260,14 +4442,14 @@ void __attribute__((noreturn)) locale_7fa280(__int64 a1)
     goto LABEL_4;
   }
   while ((*(_BYTE*)(v1 - 40) & 1) == 0) {
-    _Unwind_Resume_plt_alt1(a1);
+    _Unwind_Resume_plt_alt3(a1);
   LABEL_4:
-    SdkRoutine_857220(*(_QWORD*)(v1 - 48),
-                      *(_QWORD*)(v1 - 64) & 0xFFFFFFFFFFFFFFFELL);
+    SdkRoutine_857220_alt2(*(_QWORD*)(v1 - 48),
+                           *(_QWORD*)(v1 - 64) & 0xFFFFFFFFFFFFFFFELL);
   }
-  SdkRoutine_857220(*(_QWORD*)(v1 - 24),
-                    *(_QWORD*)(v1 - 40) & 0xFFFFFFFFFFFFFFFELL);
-  _Unwind_Resume_plt_alt1(a1);
+  SdkRoutine_857220_alt2(*(_QWORD*)(v1 - 24),
+                         *(_QWORD*)(v1 - 40) & 0xFFFFFFFFFFFFFFFELL);
+  _Unwind_Resume_plt_alt3(a1);
   __udf(0);
 }
 
@@ -4279,14 +4461,14 @@ void __attribute__((noreturn)) locale_7fa940(__int64 a1)
     goto LABEL_4;
   }
   while ((*(_BYTE*)(v1 - 40) & 1) == 0) {
-    _Unwind_Resume_plt_alt1(a1);
+    _Unwind_Resume_plt_alt3(a1);
   LABEL_4:
-    SdkRoutine_857220(*(_QWORD*)(v1 - 48),
-                      *(_QWORD*)(v1 - 64) & 0xFFFFFFFFFFFFFFFELL);
+    SdkRoutine_857220_alt2(*(_QWORD*)(v1 - 48),
+                           *(_QWORD*)(v1 - 64) & 0xFFFFFFFFFFFFFFFELL);
   }
-  SdkRoutine_857220(*(_QWORD*)(v1 - 24),
-                    *(_QWORD*)(v1 - 40) & 0xFFFFFFFFFFFFFFFELL);
-  _Unwind_Resume_plt_alt1(a1);
+  SdkRoutine_857220_alt2(*(_QWORD*)(v1 - 24),
+                         *(_QWORD*)(v1 - 40) & 0xFFFFFFFFFFFFFFFELL);
+  _Unwind_Resume_plt_alt3(a1);
   __udf(0);
 }
 
@@ -4298,14 +4480,14 @@ void __attribute__((noreturn)) locale_7fb000(__int64 a1)
     goto LABEL_4;
   }
   while ((*(_BYTE*)(v1 - 40) & 1) == 0) {
-    _Unwind_Resume_plt_alt1(a1);
+    _Unwind_Resume_plt_alt3(a1);
   LABEL_4:
-    SdkRoutine_857220(*(_QWORD*)(v1 - 48),
-                      *(_QWORD*)(v1 - 64) & 0xFFFFFFFFFFFFFFFELL);
+    SdkRoutine_857220_alt2(*(_QWORD*)(v1 - 48),
+                           *(_QWORD*)(v1 - 64) & 0xFFFFFFFFFFFFFFFELL);
   }
-  SdkRoutine_857220(*(_QWORD*)(v1 - 24),
-                    *(_QWORD*)(v1 - 40) & 0xFFFFFFFFFFFFFFFELL);
-  _Unwind_Resume_plt_alt1(a1);
+  SdkRoutine_857220_alt2(*(_QWORD*)(v1 - 24),
+                         *(_QWORD*)(v1 - 40) & 0xFFFFFFFFFFFFFFFELL);
+  _Unwind_Resume_plt_alt3(a1);
   __udf(0);
 }
 
@@ -4317,14 +4499,14 @@ void __attribute__((noreturn)) locale_7fb6c0(__int64 a1)
     goto LABEL_4;
   }
   while ((*(_BYTE*)(v1 - 40) & 1) == 0) {
-    _Unwind_Resume_plt_alt1(a1);
+    _Unwind_Resume_plt_alt3(a1);
   LABEL_4:
-    SdkRoutine_857220(*(_QWORD*)(v1 - 48),
-                      *(_QWORD*)(v1 - 64) & 0xFFFFFFFFFFFFFFFELL);
+    SdkRoutine_857220_alt2(*(_QWORD*)(v1 - 48),
+                           *(_QWORD*)(v1 - 64) & 0xFFFFFFFFFFFFFFFELL);
   }
-  SdkRoutine_857220(*(_QWORD*)(v1 - 24),
-                    *(_QWORD*)(v1 - 40) & 0xFFFFFFFFFFFFFFFELL);
-  _Unwind_Resume_plt_alt1(a1);
+  SdkRoutine_857220_alt2(*(_QWORD*)(v1 - 24),
+                         *(_QWORD*)(v1 - 40) & 0xFFFFFFFFFFFFFFFELL);
+  _Unwind_Resume_plt_alt3(a1);
   __udf(0);
 }
 
@@ -4337,12 +4519,12 @@ void __attribute__((noreturn)) locale_7fbce4(__int64 a1)
     goto LABEL_4;
   }
   while ((*(_BYTE*)(v2 - 72) & 1) == 0) {
-    _Unwind_Resume_plt_alt1(a1);
+    _Unwind_Resume_plt_alt3(a1);
   LABEL_4:
-    SdkRoutine_857220(v1[3], v1[1] & 0xFFFFFFFFFFFFFFFELL);
+    SdkRoutine_857220_alt2(v1[3], v1[1] & 0xFFFFFFFFFFFFFFFELL);
   }
-  SdkRoutine_857220(v1[6], v1[4] & 0xFFFFFFFFFFFFFFFELL);
-  _Unwind_Resume_plt_alt1(a1);
+  SdkRoutine_857220_alt2(v1[6], v1[4] & 0xFFFFFFFFFFFFFFFELL);
+  _Unwind_Resume_plt_alt3(a1);
   __udf(0);
 }
 
@@ -4355,12 +4537,12 @@ void __attribute__((noreturn)) locale_7fc304(__int64 a1)
     goto LABEL_4;
   }
   while ((*(_BYTE*)(v2 - 72) & 1) == 0) {
-    _Unwind_Resume_plt_alt1(a1);
+    _Unwind_Resume_plt_alt3(a1);
   LABEL_4:
-    SdkRoutine_857220(v1[3], v1[1] & 0xFFFFFFFFFFFFFFFELL);
+    SdkRoutine_857220_alt2(v1[3], v1[1] & 0xFFFFFFFFFFFFFFFELL);
   }
-  SdkRoutine_857220(v1[6], v1[4] & 0xFFFFFFFFFFFFFFFELL);
-  _Unwind_Resume_plt_alt1(a1);
+  SdkRoutine_857220_alt2(v1[6], v1[4] & 0xFFFFFFFFFFFFFFFELL);
+  _Unwind_Resume_plt_alt3(a1);
   __udf(0);
 }
 
@@ -4373,12 +4555,12 @@ void __attribute__((noreturn)) locale_7fc924(__int64 a1)
     goto LABEL_4;
   }
   while ((*(_BYTE*)(v2 - 72) & 1) == 0) {
-    _Unwind_Resume_plt_alt1(a1);
+    _Unwind_Resume_plt_alt3(a1);
   LABEL_4:
-    SdkRoutine_857220(v1[3], v1[1] & 0xFFFFFFFFFFFFFFFELL);
+    SdkRoutine_857220_alt2(v1[3], v1[1] & 0xFFFFFFFFFFFFFFFELL);
   }
-  SdkRoutine_857220(v1[6], v1[4] & 0xFFFFFFFFFFFFFFFELL);
-  _Unwind_Resume_plt_alt1(a1);
+  SdkRoutine_857220_alt2(v1[6], v1[4] & 0xFFFFFFFFFFFFFFFELL);
+  _Unwind_Resume_plt_alt3(a1);
   __udf(0);
 }
 
@@ -4417,19 +4599,107 @@ void __attribute__((noreturn)) locale_7fd3d8(__int64 a1, __int64 a2, __int64 a3,
   __int64 v17;
   __int64 v18;
 
-  SdkRoutine_87cb10(v9 + 24);
-  SdkRoutine_87cb10(&a9);
-  _Unwind_Resume_plt_alt1(a1);
+  v12 = COERCE_AS(__typeof__(v12),
+                  PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+  v14 = COERCE_AS(__typeof__(v14),
+                  PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+  v15 = COERCE_AS(__typeof__(v15),
+                  PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+  v17 = COERCE_AS(__typeof__(v17),
+                  PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
+  SdkRoutine_87cb10_alt1(v9 + 24),
+      v12 = COERCE_AS(__typeof__(v12),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v14 = COERCE_AS(__typeof__(v14),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v15 = COERCE_AS(__typeof__(v15),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v17 = COERCE_AS(__typeof__(v17),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
+  SdkRoutine_87cb10_alt1((__int64)&a9),
+      v12 = COERCE_AS(__typeof__(v12),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v14 = COERCE_AS(__typeof__(v14),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v15 = COERCE_AS(__typeof__(v15),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v17 = COERCE_AS(__typeof__(v17),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
+  _Unwind_Resume_plt_alt3(a1),
+      v12 = COERCE_AS(__typeof__(v12),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v14 = COERCE_AS(__typeof__(v14),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v15 = COERCE_AS(__typeof__(v15),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v17 = COERCE_AS(__typeof__(v17),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
   v13 = v12;
-  SdkRoutine_87cb10(&a9);
-  _Unwind_Resume_plt_alt1(v13);
-  _Unwind_Resume_plt_alt1(v14);
+  SdkRoutine_87cb10_alt1((__int64)&a9),
+      v12 = COERCE_AS(__typeof__(v12),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v14 = COERCE_AS(__typeof__(v14),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v15 = COERCE_AS(__typeof__(v15),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v17 = COERCE_AS(__typeof__(v17),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
+  _Unwind_Resume_plt_alt3(v13),
+      v12 = COERCE_AS(__typeof__(v12),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v14 = COERCE_AS(__typeof__(v14),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v15 = COERCE_AS(__typeof__(v15),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v17 = COERCE_AS(__typeof__(v17),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
+  _Unwind_Resume_plt_alt3(v14),
+      v12 = COERCE_AS(__typeof__(v12),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v14 = COERCE_AS(__typeof__(v14),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v15 = COERCE_AS(__typeof__(v15),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v17 = COERCE_AS(__typeof__(v17),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
   v16 = v15;
-  std___1_locale_Destroy_locale_plt(v10 - 32);
-  _Unwind_Resume_plt_alt1(v16);
+  std___1_locale_Destroy_locale_plt_alt2(v10 - 32),
+      v12 = COERCE_AS(__typeof__(v12),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v14 = COERCE_AS(__typeof__(v14),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v15 = COERCE_AS(__typeof__(v15),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v17 = COERCE_AS(__typeof__(v17),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
+  _Unwind_Resume_plt_alt3(v16),
+      v12 = COERCE_AS(__typeof__(v12),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v14 = COERCE_AS(__typeof__(v14),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v15 = COERCE_AS(__typeof__(v15),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v17 = COERCE_AS(__typeof__(v17),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
   v18 = v17;
-  std___1_locale_Destroy_locale_plt(v10 - 32);
-  _Unwind_Resume_plt_alt1(v18);
+  std___1_locale_Destroy_locale_plt_alt2(v10 - 32),
+      v12 = COERCE_AS(__typeof__(v12),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v14 = COERCE_AS(__typeof__(v14),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v15 = COERCE_AS(__typeof__(v15),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v17 = COERCE_AS(__typeof__(v17),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
+  _Unwind_Resume_plt_alt3(v18),
+      v12 = COERCE_AS(__typeof__(v12),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v14 = COERCE_AS(__typeof__(v14),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v15 = COERCE_AS(__typeof__(v15),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v17 = COERCE_AS(__typeof__(v17),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
   __udf(0);
 }
 
@@ -4441,14 +4711,14 @@ void __attribute__((noreturn)) locale_7fdf3c(__int64 a1)
     goto LABEL_4;
   }
   while ((*(_BYTE*)(v1 - 144) & 1) == 0) {
-    _Unwind_Resume_plt_alt1(a1);
+    _Unwind_Resume_plt_alt3(a1);
   LABEL_4:
-    SdkRoutine_857220(*(_QWORD*)(v1 - 152),
-                      *(_QWORD*)(v1 - 168) & 0xFFFFFFFFFFFFFFFELL);
+    SdkRoutine_857220_alt2(*(_QWORD*)(v1 - 152),
+                           *(_QWORD*)(v1 - 168) & 0xFFFFFFFFFFFFFFFELL);
   }
-  SdkRoutine_857220(*(_QWORD*)(v1 - 128),
-                    *(_QWORD*)(v1 - 144) & 0xFFFFFFFFFFFFFFFELL);
-  _Unwind_Resume_plt_alt1(a1);
+  SdkRoutine_857220_alt2(*(_QWORD*)(v1 - 128),
+                         *(_QWORD*)(v1 - 144) & 0xFFFFFFFFFFFFFFFELL);
+  _Unwind_Resume_plt_alt3(a1);
   __udf(0);
 }
 
@@ -4460,14 +4730,14 @@ void __attribute__((noreturn)) locale_7fe5fc(__int64 a1)
     goto LABEL_4;
   }
   while ((*(_BYTE*)(v1 - 144) & 1) == 0) {
-    _Unwind_Resume_plt_alt1(a1);
+    _Unwind_Resume_plt_alt3(a1);
   LABEL_4:
-    SdkRoutine_857220(*(_QWORD*)(v1 - 152),
-                      *(_QWORD*)(v1 - 168) & 0xFFFFFFFFFFFFFFFELL);
+    SdkRoutine_857220_alt2(*(_QWORD*)(v1 - 152),
+                           *(_QWORD*)(v1 - 168) & 0xFFFFFFFFFFFFFFFELL);
   }
-  SdkRoutine_857220(*(_QWORD*)(v1 - 128),
-                    *(_QWORD*)(v1 - 144) & 0xFFFFFFFFFFFFFFFELL);
-  _Unwind_Resume_plt_alt1(a1);
+  SdkRoutine_857220_alt2(*(_QWORD*)(v1 - 128),
+                         *(_QWORD*)(v1 - 144) & 0xFFFFFFFFFFFFFFFELL);
+  _Unwind_Resume_plt_alt3(a1);
   __udf(0);
 }
 
@@ -4479,14 +4749,14 @@ void __attribute__((noreturn)) locale_7fecbc(__int64 a1)
     goto LABEL_4;
   }
   while ((*(_BYTE*)(v1 - 144) & 1) == 0) {
-    _Unwind_Resume_plt_alt1(a1);
+    _Unwind_Resume_plt_alt3(a1);
   LABEL_4:
-    SdkRoutine_857220(*(_QWORD*)(v1 - 152),
-                      *(_QWORD*)(v1 - 168) & 0xFFFFFFFFFFFFFFFELL);
+    SdkRoutine_857220_alt2(*(_QWORD*)(v1 - 152),
+                           *(_QWORD*)(v1 - 168) & 0xFFFFFFFFFFFFFFFELL);
   }
-  SdkRoutine_857220(*(_QWORD*)(v1 - 128),
-                    *(_QWORD*)(v1 - 144) & 0xFFFFFFFFFFFFFFFELL);
-  _Unwind_Resume_plt_alt1(a1);
+  SdkRoutine_857220_alt2(*(_QWORD*)(v1 - 128),
+                         *(_QWORD*)(v1 - 144) & 0xFFFFFFFFFFFFFFFELL);
+  _Unwind_Resume_plt_alt3(a1);
   __udf(0);
 }
 
@@ -4498,14 +4768,14 @@ void __attribute__((noreturn)) locale_7ff37c(__int64 a1)
     goto LABEL_4;
   }
   while ((*(_BYTE*)(v1 - 144) & 1) == 0) {
-    _Unwind_Resume_plt_alt1(a1);
+    _Unwind_Resume_plt_alt3(a1);
   LABEL_4:
-    SdkRoutine_857220(*(_QWORD*)(v1 - 152),
-                      *(_QWORD*)(v1 - 168) & 0xFFFFFFFFFFFFFFFELL);
+    SdkRoutine_857220_alt2(*(_QWORD*)(v1 - 152),
+                           *(_QWORD*)(v1 - 168) & 0xFFFFFFFFFFFFFFFELL);
   }
-  SdkRoutine_857220(*(_QWORD*)(v1 - 128),
-                    *(_QWORD*)(v1 - 144) & 0xFFFFFFFFFFFFFFFELL);
-  _Unwind_Resume_plt_alt1(a1);
+  SdkRoutine_857220_alt2(*(_QWORD*)(v1 - 128),
+                         *(_QWORD*)(v1 - 144) & 0xFFFFFFFFFFFFFFFELL);
+  _Unwind_Resume_plt_alt3(a1);
   __udf(0);
 }
 
@@ -4517,14 +4787,14 @@ void __attribute__((noreturn)) locale_7ffa3c(__int64 a1)
     goto LABEL_4;
   }
   while ((*(_BYTE*)(v1 - 144) & 1) == 0) {
-    _Unwind_Resume_plt_alt1(a1);
+    _Unwind_Resume_plt_alt3(a1);
   LABEL_4:
-    SdkRoutine_857220(*(_QWORD*)(v1 - 152),
-                      *(_QWORD*)(v1 - 168) & 0xFFFFFFFFFFFFFFFELL);
+    SdkRoutine_857220_alt2(*(_QWORD*)(v1 - 152),
+                           *(_QWORD*)(v1 - 168) & 0xFFFFFFFFFFFFFFFELL);
   }
-  SdkRoutine_857220(*(_QWORD*)(v1 - 128),
-                    *(_QWORD*)(v1 - 144) & 0xFFFFFFFFFFFFFFFELL);
-  _Unwind_Resume_plt_alt1(a1);
+  SdkRoutine_857220_alt2(*(_QWORD*)(v1 - 128),
+                         *(_QWORD*)(v1 - 144) & 0xFFFFFFFFFFFFFFFELL);
+  _Unwind_Resume_plt_alt3(a1);
   __udf(0);
 }
 
@@ -4536,14 +4806,14 @@ void __attribute__((noreturn)) locale_8000fc(__int64 a1)
     goto LABEL_4;
   }
   while ((*(_BYTE*)(v1 - 144) & 1) == 0) {
-    _Unwind_Resume_plt_alt1(a1);
+    _Unwind_Resume_plt_alt3(a1);
   LABEL_4:
-    SdkRoutine_857220(*(_QWORD*)(v1 - 152),
-                      *(_QWORD*)(v1 - 168) & 0xFFFFFFFFFFFFFFFELL);
+    SdkRoutine_857220_alt2(*(_QWORD*)(v1 - 152),
+                           *(_QWORD*)(v1 - 168) & 0xFFFFFFFFFFFFFFFELL);
   }
-  SdkRoutine_857220(*(_QWORD*)(v1 - 128),
-                    *(_QWORD*)(v1 - 144) & 0xFFFFFFFFFFFFFFFELL);
-  _Unwind_Resume_plt_alt1(a1);
+  SdkRoutine_857220_alt2(*(_QWORD*)(v1 - 128),
+                         *(_QWORD*)(v1 - 144) & 0xFFFFFFFFFFFFFFFELL);
+  _Unwind_Resume_plt_alt3(a1);
   __udf(0);
 }
 
@@ -4556,12 +4826,12 @@ void __attribute__((noreturn)) locale_800720(__int64 a1)
     goto LABEL_4;
   }
   while ((*(_BYTE*)(v2 - 152) & 1) == 0) {
-    _Unwind_Resume_plt_alt1(a1);
+    _Unwind_Resume_plt_alt3(a1);
   LABEL_4:
-    SdkRoutine_857220(v1[3], v1[1] & 0xFFFFFFFFFFFFFFFELL);
+    SdkRoutine_857220_alt2(v1[3], v1[1] & 0xFFFFFFFFFFFFFFFELL);
   }
-  SdkRoutine_857220(v1[6], v1[4] & 0xFFFFFFFFFFFFFFFELL);
-  _Unwind_Resume_plt_alt1(a1);
+  SdkRoutine_857220_alt2(v1[6], v1[4] & 0xFFFFFFFFFFFFFFFELL);
+  _Unwind_Resume_plt_alt3(a1);
   __udf(0);
 }
 
@@ -4574,12 +4844,12 @@ void __attribute__((noreturn)) locale_800d40(__int64 a1)
     goto LABEL_4;
   }
   while ((*(_BYTE*)(v2 - 152) & 1) == 0) {
-    _Unwind_Resume_plt_alt1(a1);
+    _Unwind_Resume_plt_alt3(a1);
   LABEL_4:
-    SdkRoutine_857220(v1[3], v1[1] & 0xFFFFFFFFFFFFFFFELL);
+    SdkRoutine_857220_alt2(v1[3], v1[1] & 0xFFFFFFFFFFFFFFFELL);
   }
-  SdkRoutine_857220(v1[6], v1[4] & 0xFFFFFFFFFFFFFFFELL);
-  _Unwind_Resume_plt_alt1(a1);
+  SdkRoutine_857220_alt2(v1[6], v1[4] & 0xFFFFFFFFFFFFFFFELL);
+  _Unwind_Resume_plt_alt3(a1);
   __udf(0);
 }
 
@@ -4592,133 +4862,27 @@ void __attribute__((noreturn)) locale_801360(__int64 a1)
     goto LABEL_4;
   }
   while ((*(_BYTE*)(v2 - 152) & 1) == 0) {
-    _Unwind_Resume_plt_alt1(a1);
+    _Unwind_Resume_plt_alt3(a1);
   LABEL_4:
-    SdkRoutine_857220(v1[3], v1[1] & 0xFFFFFFFFFFFFFFFELL);
+    SdkRoutine_857220_alt2(v1[3], v1[1] & 0xFFFFFFFFFFFFFFFELL);
   }
-  SdkRoutine_857220(v1[6], v1[4] & 0xFFFFFFFFFFFFFFFELL);
-  _Unwind_Resume_plt_alt1(a1);
+  SdkRoutine_857220_alt2(v1[6], v1[4] & 0xFFFFFFFFFFFFFFFELL);
+  _Unwind_Resume_plt_alt3(a1);
   __udf(0);
 }
 
 __int64 std___1___num_get___stage2_int_loop(__int64 a1, __int64 a2, __int64 a3,
                                             __int64 a4, __int64 a5, __int64 a6,
-                                            __int64 a7, __int64 a8, _DWORD** a9,
+                                            __int64 a7, __int64 a8, __int64 a9,
                                             __int64 a10, __int64 a11,
                                             __int64 a12)
 {
-  unsigned int v13;
-  unsigned int v14;
-  char* v15;
-  char** v16;
-  _DWORD* v17;
-  int v18;
-  unsigned __int8* v19;
-  __int64 v20;
-  char* v21;
-  unsigned __int64 v22;
-  unsigned __int64 v23;
-  _DWORD* v24;
-  __int64 result;
-  char v26;
-  char* v27;
-  unsigned int v28;
-  char** v29;
-  _DWORD* v30;
-  __int64 v31;
-  __int64 v32;
-  __int64 v33;
-  char v34;
-  char* v35;
-  char* v36;
-  char v37;
-
-  __cxa_guard_abort_plt(&SdkData_1060b80);
+  __cxa_guard_abort_plt_alt2((__int64)&SdkData_1060b80);
   if ((a10 & 1) != 0) {
-    SdkRoutine_857220(a12, a10 & 0xFFFFFFFFFFFFFFFELL);
+    SdkRoutine_857220_alt2(a12, a10 & 0xFFFFFFFFFFFFFFFELL);
   }
-  _Unwind_Resume_plt_alt1(a1);
-  v21 = *v16;
-  if (*v16 == v15) {
-    if (v13 == *(_DWORD*)(a10 + 96)) {
-      v26 = 43;
-    }
-    else {
-      if (v13 != *(_DWORD*)(a10 + 100)) {
-        goto LABEL_4;
-      }
-      v26 = 45;
-    }
-    *v16 = v21 + 1;
-    *v21 = v26;
-    *v17 = 0;
-    return 0;
-  }
-LABEL_4:
-  v22 = *v19;
-  if ((v22 & 1) != 0) {
-    v23 = *((_QWORD*)v19 + 1);
-  }
-  else {
-    v23 = v22 >> 1;
-  }
-  if (v13 == v18 && v23 != 0) {
-    v24 = *a9;
-    if ((__int64)*a9 - v20 > 159) {
-      return 0;
-    }
-    result = 0;
-    *v24 = *v17;
-    *v17 = 0;
-    *a9 = v24 + 1;
-    return result;
-  }
-  v27 = v15;
-  v28 = v14;
-  v29 = v16;
-  v30 = v17;
-  v31 = wmemchr_plt(a10, v13, 26);
-  if (v31 != 0) {
-    v32 = v31;
-  }
-  else {
-    v32 = a10 + 104;
-  }
-  v33 = (v32 - a10) >> 2;
-  if (v33 > 23) {
-    return 0xFFFFFFFFLL;
-  }
-  if (v28 == 8) {
-  LABEL_25:
-    if (v33 >= v28) {
-      return 0xFFFFFFFFLL;
-    }
-  LABEL_29:
-    v34 = *(_BYTE*)(SdkData_e89548 + v33);
-    v35 = (*v29)++;
-    *v35 = v34;
-    ++*v30;
-    return 0;
-  }
-  if (v28 != 16) {
-    if (v28 != 10) {
-      goto LABEL_29;
-    }
-    goto LABEL_25;
-  }
-  if (v33 < 22) {
-    goto LABEL_29;
-  }
-  v36 = *v29;
-  result = 0xFFFFFFFFLL;
-  if (*v29 != v27 && *v29 - v27 <= 2 && *(v36 - 1) == 48) {
-    *v30 = 0;
-    v37 = *(_BYTE*)(SdkData_e89548 + v33);
-    *v29 = v36 + 1;
-    *v36 = v37;
-    return 0;
-  }
-  return result;
+  _Unwind_Resume_plt_alt3(a1);
+  return SdkRoutine_801970();
 }
 
 __int64 std___1___num_get___stage2_float_prep_801b80(__int64 a1, __int64 a2,
@@ -5475,170 +5639,9 @@ __int64 locale_802f6c(__int64 a1, __int64 a2, __int64 a3, __int64 a4,
                       __int64 a5, __int64 a6, __int64 a7, __int64 a8,
                       __int64 a9)
 {
-  __int64 v9;
-  __int64 v11;
-  __int64 v12;
-  __int64 v13;
-  int v14;
-  unsigned int v15;
-  unsigned int v16;
-  char* v17;
-  __int64 v18;
-  int v19;
-  int v20;
-  int v21;
-  unsigned int v22;
-  __int64 v23;
-  char v24;
-  __int64 v25;
-  __int64 v26;
-  __int64 v28;
-  char* v29;
-  int v30;
-  int v31;
-  int v32;
-  int v33;
-  int v34;
-  int v35;
-  int v36;
-  int v37;
-  int v38;
-  int v39;
-  char* v40;
-  __int64 v42;
-  __int64 v43;
-  int v44;
-  _BYTE v45[45];
-  char v46;
-  unsigned __int8 v47;
-  _BYTE v48[22];
-  _QWORD v49[8];
-
-  std___1_locale_Destroy_locale_plt(&a9);
-  _Unwind_Resume_plt(a1);
-  v49[0] = v9;
-  v49[1] = v12;
-  v49[7] = a1;
-  v14 = *(_DWORD*)(v13 + 8);
-  v16 = v15;
-  v17 = &v46;
-  v18 = v13;
-  v20 = v19;
-  v21 = v14 & 0x4A;
-  if (v21 == 8) {
-    v22 = 16;
-  }
-  else {
-    v22 = 10;
-  }
-  if (v21 == 64) {
-    v23 = 8;
-  }
-  else {
-    v23 = v22;
-  }
-  if (v11 != 0 && (v14 & 0x200) != 0) {
-    if (v21 == 64) {
-      v17 = (char*)&v47;
-      v46 = 48;
-    }
-    else if (v21 == 8) {
-      v17 = v48;
-      v46 = 48;
-      if ((v14 & 0x4000) != 0) {
-        v24 = 88;
-      }
-      else {
-        v24 = 120;
-      }
-      v47 = v24;
-    }
-  }
-  v25 = locale_830290_alt1(v17, v49, v11, v23);
-  v26 = v25;
-  if ((~v14 & 0x4008) == 0 && v17 != (char*)v25) {
-    v28 = ((_BYTE)v25 - (_BYTE)v17) & 7;
-    v29 = v17;
-    if ((((_BYTE)v25 - (_BYTE)v17) & 7) != 0) {
-      v29 = v17;
-      do {
-        v30 = (unsigned __int8)*v29;
-        if ((unsigned int)(v30 - 97) < 6) {
-          LOBYTE(v30) = v30 - 32;
-        }
-        --v28;
-        *v29++ = v30;
-      } while (v28 != 0);
-    }
-    if ((unsigned __int64)&v17[-v25] <= 0xFFFFFFFFFFFFFFF8LL) {
-      do {
-        v31 = (unsigned __int8)*v29;
-        if ((unsigned int)(v31 - 97) < 6) {
-          LOBYTE(v31) = v31 - 32;
-        }
-        *v29 = v31;
-        v32 = (unsigned __int8)v29[1];
-        if ((unsigned int)(v32 - 97) < 6) {
-          LOBYTE(v32) = v32 - 32;
-        }
-        v29[1] = v32;
-        v33 = (unsigned __int8)v29[2];
-        if ((unsigned int)(v33 - 97) < 6) {
-          LOBYTE(v33) = v33 - 32;
-        }
-        v29[2] = v33;
-        v34 = (unsigned __int8)v29[3];
-        if ((unsigned int)(v34 - 97) < 6) {
-          LOBYTE(v34) = v34 - 32;
-        }
-        v29[3] = v34;
-        v35 = (unsigned __int8)v29[4];
-        if ((unsigned int)(v35 - 97) < 6) {
-          LOBYTE(v35) = v35 - 32;
-        }
-        v29[4] = v35;
-        v36 = (unsigned __int8)v29[5];
-        if ((unsigned int)(v36 - 97) < 6) {
-          LOBYTE(v36) = v36 - 32;
-        }
-        v29[5] = v36;
-        v37 = (unsigned __int8)v29[6];
-        if ((unsigned int)(v37 - 97) < 6) {
-          LOBYTE(v37) = v37 - 32;
-        }
-        v29[6] = v37;
-        v38 = (unsigned __int8)v29[7];
-        if ((unsigned int)(v38 - 97) < 6) {
-          LOBYTE(v38) = v38 - 32;
-        }
-        v29[7] = v38;
-        v29 += 8;
-      } while (v29 != (char*)v25);
-    }
-  }
-  v39 = *(_DWORD*)(v18 + 8) & 0xB0;
-  if (v39 == 32) {
-    v40 = (char*)v25;
-    goto LABEL_54;
-  }
-  if (v39 != 16) {
-  LABEL_53:
-    v40 = &v46;
-    goto LABEL_54;
-  }
-  if (v46 != 45 && v46 != 43) {
-    if (v25 - (__int64)&v46 >= 2 && v46 == 48 && (v47 | 0x20) == 0x78) {
-      v40 = v48;
-      goto LABEL_54;
-    }
-    goto LABEL_53;
-  }
-  v40 = (char*)&v47;
-LABEL_54:
-  *(struct PseudoSret*)(&v42) = std___1_ios_base_getloc_plt_alt1(v18);
-  SdkRoutine_87d080(&v46, v40, v26, v45, &v44, &v43, &v42);
-  std___1_locale_Destroy_locale_plt(&v42);
-  return SdkRoutine_810f00(v20, (int)v45, v44, v43, v18, (void*)v16);
+  std___1_locale_Destroy_locale_plt_alt2((__int64)&a9);
+  _Unwind_Resume_plt_alt3(a1);
+  return std___1_num_put_do_put_802f80_alt1();
 }
 
 __int64 std___1_num_put_do_put_802f80(__int64 a1, __int64 a2, __int64 a3,
@@ -5680,28 +5683,208 @@ void __attribute__((noreturn)) locale_803960(__int64 a1)
   __int64 v12;
   __int64 v13;
 
-  __cxa_guard_abort_plt(&SdkData_1060b80);
-  _Unwind_Resume_plt_alt1(a1);
+  v10 = COERCE_AS(__typeof__(v10),
+                  PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+  v11 = COERCE_AS(__typeof__(v11),
+                  PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+  v12 = COERCE_AS(__typeof__(v12),
+                  PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+  v4 = COERCE_AS(__typeof__(v4),
+                 PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+  v6 = COERCE_AS(__typeof__(v6),
+                 PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+  v8 = COERCE_AS(__typeof__(v8),
+                 PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
+  __cxa_guard_abort_plt_alt2((__int64)&SdkData_1060b80),
+      v10 = COERCE_AS(__typeof__(v10),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v11 = COERCE_AS(__typeof__(v11),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v12 = COERCE_AS(__typeof__(v12),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v4 = COERCE_AS(__typeof__(v4),
+                     PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v6 = COERCE_AS(__typeof__(v6),
+                     PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v8 = COERCE_AS(__typeof__(v8),
+                     PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
+  _Unwind_Resume_plt_alt3(a1),
+      v10 = COERCE_AS(__typeof__(v10),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v11 = COERCE_AS(__typeof__(v11),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v12 = COERCE_AS(__typeof__(v12),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v4 = COERCE_AS(__typeof__(v4),
+                     PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v6 = COERCE_AS(__typeof__(v6),
+                     PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v8 = COERCE_AS(__typeof__(v8),
+                     PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
   v5 = v4;
-  __cxa_guard_abort_plt(&SdkData_1060b80);
-  _Unwind_Resume_plt_alt1(v5);
+  __cxa_guard_abort_plt_alt2((__int64)&SdkData_1060b80),
+      v10 = COERCE_AS(__typeof__(v10),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v11 = COERCE_AS(__typeof__(v11),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v12 = COERCE_AS(__typeof__(v12),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v4 = COERCE_AS(__typeof__(v4),
+                     PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v6 = COERCE_AS(__typeof__(v6),
+                     PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v8 = COERCE_AS(__typeof__(v8),
+                     PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
+  _Unwind_Resume_plt_alt3(v5),
+      v10 = COERCE_AS(__typeof__(v10),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v11 = COERCE_AS(__typeof__(v11),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v12 = COERCE_AS(__typeof__(v12),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v4 = COERCE_AS(__typeof__(v4),
+                     PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v6 = COERCE_AS(__typeof__(v6),
+                     PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v8 = COERCE_AS(__typeof__(v8),
+                     PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
   v7 = v6;
-  __cxa_guard_abort_plt(&SdkData_1060b80);
-  _Unwind_Resume_plt_alt1(v7);
+  __cxa_guard_abort_plt_alt2((__int64)&SdkData_1060b80),
+      v10 = COERCE_AS(__typeof__(v10),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v11 = COERCE_AS(__typeof__(v11),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v12 = COERCE_AS(__typeof__(v12),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v4 = COERCE_AS(__typeof__(v4),
+                     PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v6 = COERCE_AS(__typeof__(v6),
+                     PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v8 = COERCE_AS(__typeof__(v8),
+                     PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
+  _Unwind_Resume_plt_alt3(v7),
+      v10 = COERCE_AS(__typeof__(v10),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v11 = COERCE_AS(__typeof__(v11),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v12 = COERCE_AS(__typeof__(v12),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v4 = COERCE_AS(__typeof__(v4),
+                     PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v6 = COERCE_AS(__typeof__(v6),
+                     PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v8 = COERCE_AS(__typeof__(v8),
+                     PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
   v9 = v8;
-  __cxa_guard_abort_plt(&SdkData_1060b80);
-  _Unwind_Resume_plt_alt1(v9);
-  _Unwind_Resume_plt_alt1(v10);
-  _Unwind_Resume_plt_alt1(v11);
+  __cxa_guard_abort_plt_alt2((__int64)&SdkData_1060b80),
+      v10 = COERCE_AS(__typeof__(v10),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v11 = COERCE_AS(__typeof__(v11),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v12 = COERCE_AS(__typeof__(v12),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v4 = COERCE_AS(__typeof__(v4),
+                     PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v6 = COERCE_AS(__typeof__(v6),
+                     PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v8 = COERCE_AS(__typeof__(v8),
+                     PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
+  _Unwind_Resume_plt_alt3(v9),
+      v10 = COERCE_AS(__typeof__(v10),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v11 = COERCE_AS(__typeof__(v11),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v12 = COERCE_AS(__typeof__(v12),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v4 = COERCE_AS(__typeof__(v4),
+                     PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v6 = COERCE_AS(__typeof__(v6),
+                     PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v8 = COERCE_AS(__typeof__(v8),
+                     PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
+  _Unwind_Resume_plt_alt3(v10),
+      v10 = COERCE_AS(__typeof__(v10),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v11 = COERCE_AS(__typeof__(v11),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v12 = COERCE_AS(__typeof__(v12),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v4 = COERCE_AS(__typeof__(v4),
+                     PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v6 = COERCE_AS(__typeof__(v6),
+                     PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v8 = COERCE_AS(__typeof__(v8),
+                     PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
+  _Unwind_Resume_plt_alt3(v11),
+      v10 = COERCE_AS(__typeof__(v10),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v11 = COERCE_AS(__typeof__(v11),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v12 = COERCE_AS(__typeof__(v12),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v4 = COERCE_AS(__typeof__(v4),
+                     PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v6 = COERCE_AS(__typeof__(v6),
+                     PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v8 = COERCE_AS(__typeof__(v8),
+                     PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
   v13 = v12;
   if (v1 == 0) {
     while (1) {
-      _Unwind_Resume_plt_alt1(v13);
-      free_plt(v2);
+      _Unwind_Resume_plt_alt3(v13),
+          v10 = COERCE_AS(__typeof__(v10),
+                          PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+          v11 = COERCE_AS(__typeof__(v11),
+                          PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+          v12 = COERCE_AS(__typeof__(v12),
+                          PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+          v4 = COERCE_AS(__typeof__(v4),
+                         PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+          v6 = COERCE_AS(__typeof__(v6),
+                         PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+          v8 = COERCE_AS(__typeof__(v8),
+                         PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
+      free_plt_alt2(v2),
+          v10 = COERCE_AS(__typeof__(v10),
+                          PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+          v11 = COERCE_AS(__typeof__(v11),
+                          PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+          v12 = COERCE_AS(__typeof__(v12),
+                          PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+          v4 = COERCE_AS(__typeof__(v4),
+                         PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+          v6 = COERCE_AS(__typeof__(v6),
+                         PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+          v8 = COERCE_AS(__typeof__(v8),
+                         PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
     }
   }
-  free_plt(v1);
-  _Unwind_Resume_plt_alt1(v13);
+  free_plt_alt2(v1),
+      v10 = COERCE_AS(__typeof__(v10),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v11 = COERCE_AS(__typeof__(v11),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v12 = COERCE_AS(__typeof__(v12),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v4 = COERCE_AS(__typeof__(v4),
+                     PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v6 = COERCE_AS(__typeof__(v6),
+                     PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v8 = COERCE_AS(__typeof__(v8),
+                     PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
+  _Unwind_Resume_plt_alt3(v13),
+      v10 = COERCE_AS(__typeof__(v10),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v11 = COERCE_AS(__typeof__(v11),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v12 = COERCE_AS(__typeof__(v12),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v4 = COERCE_AS(__typeof__(v4),
+                     PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v6 = COERCE_AS(__typeof__(v6),
+                     PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v8 = COERCE_AS(__typeof__(v8),
+                     PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
   __udf(0);
 }
 
@@ -5762,197 +5945,27 @@ __int64 locale_804104(__int64 a1, __int64 a2, __int64 a3, __int64 a4,
                       __int64 a5, __int64 a6, __int64 a7, __int64 a8,
                       __int64 a9, __int64 a10, __int64 a11, char a12)
 {
-  __int64 v12;
+  __int64 v13;
   __int64 v14;
-  __int64 v15;
-  __int64 v16;
-  __int64 v17;
-  __int64 v18;
-  int v19;
-  unsigned int v20;
-  unsigned int v21;
-  char* v22;
-  __int64 v23;
-  __int64 v24;
-  __int64 v25;
-  int v26;
-  unsigned int v27;
-  __int64 v28;
-  __int64 v29;
-  char v30;
-  __int64 v31;
-  __int64 v32;
-  unsigned __int64 v33;
-  __int64 i;
-  int v35;
-  int v36;
-  int v37;
-  int v38;
-  int v39;
-  int v40;
-  int v41;
-  int v42;
-  int v43;
-  int v44;
-  char* v45;
-  __int64 v47;
-  __int64 v48;
-  _BYTE v49[180];
-  char v50;
-  unsigned __int8 v51;
-  _BYTE v52[6];
-  _QWORD v53[2];
-  _QWORD v54[7];
 
-  std___1_locale_Destroy_locale_plt(&a12);
-  _Unwind_Resume_plt_alt1(a1);
-  v15 = v14;
+  v13 = COERCE_AS(__typeof__(v13),
+                  PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
+  std___1_locale_Destroy_locale_plt_alt2((__int64)&a12),
+      v13 = COERCE_AS(__typeof__(v13),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
+  _Unwind_Resume_plt_alt3(a1),
+      v13 = COERCE_AS(__typeof__(v13),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
+  v14 = v13;
   if ((a9 & 1) != 0) {
-    SdkRoutine_857220(a11, (4 * a9) & 0xFFFFFFFFFFFFFFF8LL);
+    SdkRoutine_857220_alt2(a11, (4 * a9) & 0xFFFFFFFFFFFFFFF8LL),
+        v13 = COERCE_AS(__typeof__(v13),
+                        PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
   }
-  _Unwind_Resume_plt_alt1(v15);
-  v53[0] = v12;
-  v53[1] = v17;
-  v54[6] = v15;
-  v19 = *(_DWORD*)(v18 + 8);
-  v21 = v20;
-  v22 = &v50;
-  v23 = v18;
-  v25 = v24;
-  v26 = v19 & 0x4A;
-  if (v26 == 8) {
-    v27 = 16;
-  }
-  else {
-    v27 = 10;
-  }
-  if (v26 == 64) {
-    v28 = 8;
-  }
-  else {
-    v28 = v27;
-  }
-  if (v16 < 0) {
-    if (v26 == 8) {
-      goto LABEL_17;
-    }
-    v29 = v16;
-    if (v26 != 64) {
-      v29 = -v16;
-      v22 = (char*)&v51;
-      v50 = 45;
-    }
-  }
-  else {
-    if ((v19 & 0x800) == 0 || v26 == 8) {
-      goto LABEL_17;
-    }
-    v29 = v16;
-    if (v26 != 64) {
-      v22 = (char*)&v51;
-      v50 = 43;
-    LABEL_17:
-      v29 = v16;
-    }
-  }
-  if (v16 != 0 && (v19 & 0x200) != 0) {
-    if (v26 == 64) {
-      *v22++ = 48;
-    }
-    else if (v26 == 8) {
-      *v22 = 48;
-      if ((v19 & 0x4000) != 0) {
-        v30 = 88;
-      }
-      else {
-        v30 = 120;
-      }
-      v22[1] = v30;
-      v22 += 2;
-    }
-  }
-  v31 = locale_830290_alt1(v22, v53, v29, v28);
-  v32 = v31;
-  if ((~v19 & 0x4008) == 0) {
-    v33 = (unsigned __int64)&v22[-v31];
-    if (v22 != (char*)v31) {
-      for (i = ((_BYTE)v31 - (_BYTE)v22) & 7; i != 0; *v22++ = v35) {
-        v35 = (unsigned __int8)*v22;
-        if ((unsigned int)(v35 - 97) < 6) {
-          LOBYTE(v35) = v35 - 32;
-        }
-        --i;
-      }
-      if (v33 <= 0xFFFFFFFFFFFFFFF8LL) {
-        do {
-          v36 = (unsigned __int8)*v22;
-          if ((unsigned int)(v36 - 97) < 6) {
-            LOBYTE(v36) = v36 - 32;
-          }
-          *v22 = v36;
-          v37 = (unsigned __int8)v22[1];
-          if ((unsigned int)(v37 - 97) < 6) {
-            LOBYTE(v37) = v37 - 32;
-          }
-          v22[1] = v37;
-          v38 = (unsigned __int8)v22[2];
-          if ((unsigned int)(v38 - 97) < 6) {
-            LOBYTE(v38) = v38 - 32;
-          }
-          v22[2] = v38;
-          v39 = (unsigned __int8)v22[3];
-          if ((unsigned int)(v39 - 97) < 6) {
-            LOBYTE(v39) = v39 - 32;
-          }
-          v22[3] = v39;
-          v40 = (unsigned __int8)v22[4];
-          if ((unsigned int)(v40 - 97) < 6) {
-            LOBYTE(v40) = v40 - 32;
-          }
-          v22[4] = v40;
-          v41 = (unsigned __int8)v22[5];
-          if ((unsigned int)(v41 - 97) < 6) {
-            LOBYTE(v41) = v41 - 32;
-          }
-          v22[5] = v41;
-          v42 = (unsigned __int8)v22[6];
-          if ((unsigned int)(v42 - 97) < 6) {
-            LOBYTE(v42) = v42 - 32;
-          }
-          v22[6] = v42;
-          v43 = (unsigned __int8)v22[7];
-          if ((unsigned int)(v43 - 97) < 6) {
-            LOBYTE(v43) = v43 - 32;
-          }
-          v22[7] = v43;
-          v22 += 8;
-        } while (v22 != (char*)v31);
-      }
-    }
-  }
-  v44 = *(_DWORD*)(v23 + 8) & 0xB0;
-  if (v44 == 32) {
-    v45 = (char*)v31;
-    goto LABEL_62;
-  }
-  if (v44 != 16) {
-  LABEL_61:
-    v45 = &v50;
-    goto LABEL_62;
-  }
-  if (v50 != 45 && v50 != 43) {
-    if (v31 - (__int64)&v50 >= 2 && v50 == 48 && (v51 | 0x20) == 0x78) {
-      v45 = v52;
-      goto LABEL_62;
-    }
-    goto LABEL_61;
-  }
-  v45 = (char*)&v51;
-LABEL_62:
-  std___1_ios_base_getloc_plt_alt2((void*)&v47);
-  SdkRoutine_87d0a0(&v50, v45, v32, v49, v54, &v48, &v47);
-  std___1_locale_Destroy_locale_plt(&v47);
-  return locale_812100_alt1(v25, v49, v54[0], v48, v23, v21);
+  _Unwind_Resume_plt_alt3(v14),
+      v13 = COERCE_AS(__typeof__(v13),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
+  return std___1_num_put_do_put_804140_alt1();
 }
 
 __int64 std___1_num_put_do_put_804140(__int64 a1, __int64 a2, __int64 a3,
@@ -5965,190 +5978,9 @@ __int64 locale_80447c(__int64 a1, __int64 a2, __int64 a3, __int64 a4,
                       __int64 a5, __int64 a6, __int64 a7, __int64 a8,
                       __int64 a9)
 {
-  __int64 v9;
-  __int64 v11;
-  __int64 v12;
-  __int64 v13;
-  int v14;
-  unsigned int v15;
-  unsigned int v16;
-  char* v17;
-  __int64 v18;
-  __int64 v19;
-  __int64 v20;
-  int v21;
-  unsigned int v22;
-  __int64 v23;
-  __int64 v24;
-  char v25;
-  __int64 v26;
-  __int64 v27;
-  unsigned __int64 v28;
-  __int64 i;
-  int v30;
-  int v31;
-  int v32;
-  int v33;
-  int v34;
-  int v35;
-  int v36;
-  int v37;
-  int v38;
-  int v39;
-  char* v40;
-  __int64 v42;
-  __int64 v43;
-  _BYTE v44[180];
-  char v45;
-  unsigned __int8 v46;
-  _BYTE v47[6];
-  _QWORD v48[2];
-  _QWORD v49[7];
-
-  std___1_locale_Destroy_locale_plt(&a9);
-  _Unwind_Resume_plt(a1);
-  v48[0] = v9;
-  v48[1] = v12;
-  v49[6] = a1;
-  v14 = *(_DWORD*)(v13 + 8);
-  v16 = v15;
-  v17 = &v45;
-  v18 = v13;
-  v20 = v19;
-  v21 = v14 & 0x4A;
-  if (v21 == 8) {
-    v22 = 16;
-  }
-  else {
-    v22 = 10;
-  }
-  if (v21 == 64) {
-    v23 = 8;
-  }
-  else {
-    v23 = v22;
-  }
-  if (v11 < 0) {
-    if (v21 == 8) {
-      goto LABEL_15;
-    }
-    v24 = v11;
-    if (v21 != 64) {
-      v24 = -v11;
-      v17 = (char*)&v46;
-      v45 = 45;
-    }
-  }
-  else {
-    if ((v14 & 0x800) == 0 || v21 == 8) {
-      goto LABEL_15;
-    }
-    v24 = v11;
-    if (v21 != 64) {
-      v17 = (char*)&v46;
-      v45 = 43;
-    LABEL_15:
-      v24 = v11;
-    }
-  }
-  if (v11 != 0 && (v14 & 0x200) != 0) {
-    if (v21 == 64) {
-      *v17++ = 48;
-    }
-    else if (v21 == 8) {
-      *v17 = 48;
-      if ((v14 & 0x4000) != 0) {
-        v25 = 88;
-      }
-      else {
-        v25 = 120;
-      }
-      v17[1] = v25;
-      v17 += 2;
-    }
-  }
-  v26 = locale_830290_alt1(v17, v48, v24, v23);
-  v27 = v26;
-  if ((~v14 & 0x4008) == 0) {
-    v28 = (unsigned __int64)&v17[-v26];
-    if (v17 != (char*)v26) {
-      for (i = ((_BYTE)v26 - (_BYTE)v17) & 7; i != 0; *v17++ = v30) {
-        v30 = (unsigned __int8)*v17;
-        if ((unsigned int)(v30 - 97) < 6) {
-          LOBYTE(v30) = v30 - 32;
-        }
-        --i;
-      }
-      if (v28 <= 0xFFFFFFFFFFFFFFF8LL) {
-        do {
-          v31 = (unsigned __int8)*v17;
-          if ((unsigned int)(v31 - 97) < 6) {
-            LOBYTE(v31) = v31 - 32;
-          }
-          *v17 = v31;
-          v32 = (unsigned __int8)v17[1];
-          if ((unsigned int)(v32 - 97) < 6) {
-            LOBYTE(v32) = v32 - 32;
-          }
-          v17[1] = v32;
-          v33 = (unsigned __int8)v17[2];
-          if ((unsigned int)(v33 - 97) < 6) {
-            LOBYTE(v33) = v33 - 32;
-          }
-          v17[2] = v33;
-          v34 = (unsigned __int8)v17[3];
-          if ((unsigned int)(v34 - 97) < 6) {
-            LOBYTE(v34) = v34 - 32;
-          }
-          v17[3] = v34;
-          v35 = (unsigned __int8)v17[4];
-          if ((unsigned int)(v35 - 97) < 6) {
-            LOBYTE(v35) = v35 - 32;
-          }
-          v17[4] = v35;
-          v36 = (unsigned __int8)v17[5];
-          if ((unsigned int)(v36 - 97) < 6) {
-            LOBYTE(v36) = v36 - 32;
-          }
-          v17[5] = v36;
-          v37 = (unsigned __int8)v17[6];
-          if ((unsigned int)(v37 - 97) < 6) {
-            LOBYTE(v37) = v37 - 32;
-          }
-          v17[6] = v37;
-          v38 = (unsigned __int8)v17[7];
-          if ((unsigned int)(v38 - 97) < 6) {
-            LOBYTE(v38) = v38 - 32;
-          }
-          v17[7] = v38;
-          v17 += 8;
-        } while (v17 != (char*)v26);
-      }
-    }
-  }
-  v39 = *(_DWORD*)(v18 + 8) & 0xB0;
-  if (v39 == 32) {
-    v40 = (char*)v26;
-    goto LABEL_60;
-  }
-  if (v39 != 16) {
-  LABEL_59:
-    v40 = &v45;
-    goto LABEL_60;
-  }
-  if (v45 != 45 && v45 != 43) {
-    if (v26 - (__int64)&v45 >= 2 && v45 == 48 && (v46 | 0x20) == 0x78) {
-      v40 = v47;
-      goto LABEL_60;
-    }
-    goto LABEL_59;
-  }
-  v40 = (char*)&v46;
-LABEL_60:
-  *(struct PseudoSret*)(&v42) = std___1_ios_base_getloc_plt_alt1(v18);
-  SdkRoutine_87d0a0(&v45, v40, v27, v44, v49, &v43, &v42);
-  std___1_locale_Destroy_locale_plt(&v42);
-  return locale_812100_alt1(v20, v44, v49[0], v43, v18, v16);
+  std___1_locale_Destroy_locale_plt_alt2((__int64)&a9);
+  _Unwind_Resume_plt_alt3(a1);
+  return std___1_num_put_do_put_804490_alt1();
 }
 
 __int64 std___1_num_put_do_put_804490(__int64 a1, __int64 a2, __int64 a3,
@@ -6161,170 +5993,9 @@ __int64 locale_8047bc(__int64 a1, __int64 a2, __int64 a3, __int64 a4,
                       __int64 a5, __int64 a6, __int64 a7, __int64 a8,
                       __int64 a9)
 {
-  __int64 v9;
-  __int64 v11;
-  __int64 v12;
-  __int64 v13;
-  int v14;
-  unsigned int v15;
-  unsigned int v16;
-  char* v17;
-  __int64 v18;
-  __int64 v19;
-  __int64 v20;
-  int v21;
-  unsigned int v22;
-  __int64 v23;
-  char v24;
-  __int64 v25;
-  __int64 v26;
-  __int64 v28;
-  char* v29;
-  int v30;
-  int v31;
-  int v32;
-  int v33;
-  int v34;
-  int v35;
-  int v36;
-  int v37;
-  int v38;
-  int v39;
-  char* v40;
-  __int64 v42;
-  __int64 v43;
-  _BYTE v44[180];
-  char v45;
-  unsigned __int8 v46;
-  _BYTE v47[22];
-  _QWORD v48[2];
-  _QWORD v49[7];
-
-  std___1_locale_Destroy_locale_plt(&a9);
-  _Unwind_Resume_plt(a1);
-  v48[0] = v9;
-  v48[1] = v12;
-  v49[6] = a1;
-  v14 = *(_DWORD*)(v13 + 8);
-  v16 = v15;
-  v17 = &v45;
-  v18 = v13;
-  v20 = v19;
-  v21 = v14 & 0x4A;
-  if (v21 == 8) {
-    v22 = 16;
-  }
-  else {
-    v22 = 10;
-  }
-  if (v21 == 64) {
-    v23 = 8;
-  }
-  else {
-    v23 = v22;
-  }
-  if (v11 != 0 && (v14 & 0x200) != 0) {
-    if (v21 == 64) {
-      v17 = (char*)&v46;
-      v45 = 48;
-    }
-    else if (v21 == 8) {
-      v17 = v47;
-      v45 = 48;
-      if ((v14 & 0x4000) != 0) {
-        v24 = 88;
-      }
-      else {
-        v24 = 120;
-      }
-      v46 = v24;
-    }
-  }
-  v25 = locale_830290_alt1(v17, v48, v11, v23);
-  v26 = v25;
-  if ((~v14 & 0x4008) == 0 && v17 != (char*)v25) {
-    v28 = ((_BYTE)v25 - (_BYTE)v17) & 7;
-    v29 = v17;
-    if ((((_BYTE)v25 - (_BYTE)v17) & 7) != 0) {
-      v29 = v17;
-      do {
-        v30 = (unsigned __int8)*v29;
-        if ((unsigned int)(v30 - 97) < 6) {
-          LOBYTE(v30) = v30 - 32;
-        }
-        --v28;
-        *v29++ = v30;
-      } while (v28 != 0);
-    }
-    if ((unsigned __int64)&v17[-v25] <= 0xFFFFFFFFFFFFFFF8LL) {
-      do {
-        v31 = (unsigned __int8)*v29;
-        if ((unsigned int)(v31 - 97) < 6) {
-          LOBYTE(v31) = v31 - 32;
-        }
-        *v29 = v31;
-        v32 = (unsigned __int8)v29[1];
-        if ((unsigned int)(v32 - 97) < 6) {
-          LOBYTE(v32) = v32 - 32;
-        }
-        v29[1] = v32;
-        v33 = (unsigned __int8)v29[2];
-        if ((unsigned int)(v33 - 97) < 6) {
-          LOBYTE(v33) = v33 - 32;
-        }
-        v29[2] = v33;
-        v34 = (unsigned __int8)v29[3];
-        if ((unsigned int)(v34 - 97) < 6) {
-          LOBYTE(v34) = v34 - 32;
-        }
-        v29[3] = v34;
-        v35 = (unsigned __int8)v29[4];
-        if ((unsigned int)(v35 - 97) < 6) {
-          LOBYTE(v35) = v35 - 32;
-        }
-        v29[4] = v35;
-        v36 = (unsigned __int8)v29[5];
-        if ((unsigned int)(v36 - 97) < 6) {
-          LOBYTE(v36) = v36 - 32;
-        }
-        v29[5] = v36;
-        v37 = (unsigned __int8)v29[6];
-        if ((unsigned int)(v37 - 97) < 6) {
-          LOBYTE(v37) = v37 - 32;
-        }
-        v29[6] = v37;
-        v38 = (unsigned __int8)v29[7];
-        if ((unsigned int)(v38 - 97) < 6) {
-          LOBYTE(v38) = v38 - 32;
-        }
-        v29[7] = v38;
-        v29 += 8;
-      } while (v29 != (char*)v25);
-    }
-  }
-  v39 = *(_DWORD*)(v18 + 8) & 0xB0;
-  if (v39 == 32) {
-    v40 = (char*)v25;
-    goto LABEL_54;
-  }
-  if (v39 != 16) {
-  LABEL_53:
-    v40 = &v45;
-    goto LABEL_54;
-  }
-  if (v45 != 45 && v45 != 43) {
-    if (v25 - (__int64)&v45 >= 2 && v45 == 48 && (v46 | 0x20) == 0x78) {
-      v40 = v47;
-      goto LABEL_54;
-    }
-    goto LABEL_53;
-  }
-  v40 = (char*)&v46;
-LABEL_54:
-  *(struct PseudoSret*)(&v42) = std___1_ios_base_getloc_plt_alt1(v18);
-  SdkRoutine_87d0a0(&v45, v40, v26, v44, v49, &v43, &v42);
-  std___1_locale_Destroy_locale_plt(&v42);
-  return locale_812100_alt1(v20, v44, v49[0], v43, v18, v16);
+  std___1_locale_Destroy_locale_plt_alt2((__int64)&a9);
+  _Unwind_Resume_plt_alt3(a1);
+  return std___1_num_put_do_put_8047d0_alt1();
 }
 
 __int64 std___1_num_put_do_put_8047d0(__int64 a1, __int64 a2, __int64 a3,
@@ -6366,28 +6037,208 @@ void __attribute__((noreturn)) locale_8051e0(__int64 a1)
   __int64 v12;
   __int64 v13;
 
-  __cxa_guard_abort_plt(&SdkData_1060b80);
-  _Unwind_Resume_plt_alt1(a1);
+  v10 = COERCE_AS(__typeof__(v10),
+                  PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+  v11 = COERCE_AS(__typeof__(v11),
+                  PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+  v12 = COERCE_AS(__typeof__(v12),
+                  PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+  v4 = COERCE_AS(__typeof__(v4),
+                 PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+  v6 = COERCE_AS(__typeof__(v6),
+                 PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+  v8 = COERCE_AS(__typeof__(v8),
+                 PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
+  __cxa_guard_abort_plt_alt2((__int64)&SdkData_1060b80),
+      v10 = COERCE_AS(__typeof__(v10),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v11 = COERCE_AS(__typeof__(v11),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v12 = COERCE_AS(__typeof__(v12),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v4 = COERCE_AS(__typeof__(v4),
+                     PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v6 = COERCE_AS(__typeof__(v6),
+                     PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v8 = COERCE_AS(__typeof__(v8),
+                     PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
+  _Unwind_Resume_plt_alt3(a1),
+      v10 = COERCE_AS(__typeof__(v10),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v11 = COERCE_AS(__typeof__(v11),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v12 = COERCE_AS(__typeof__(v12),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v4 = COERCE_AS(__typeof__(v4),
+                     PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v6 = COERCE_AS(__typeof__(v6),
+                     PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v8 = COERCE_AS(__typeof__(v8),
+                     PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
   v5 = v4;
-  __cxa_guard_abort_plt(&SdkData_1060b80);
-  _Unwind_Resume_plt_alt1(v5);
+  __cxa_guard_abort_plt_alt2((__int64)&SdkData_1060b80),
+      v10 = COERCE_AS(__typeof__(v10),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v11 = COERCE_AS(__typeof__(v11),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v12 = COERCE_AS(__typeof__(v12),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v4 = COERCE_AS(__typeof__(v4),
+                     PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v6 = COERCE_AS(__typeof__(v6),
+                     PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v8 = COERCE_AS(__typeof__(v8),
+                     PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
+  _Unwind_Resume_plt_alt3(v5),
+      v10 = COERCE_AS(__typeof__(v10),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v11 = COERCE_AS(__typeof__(v11),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v12 = COERCE_AS(__typeof__(v12),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v4 = COERCE_AS(__typeof__(v4),
+                     PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v6 = COERCE_AS(__typeof__(v6),
+                     PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v8 = COERCE_AS(__typeof__(v8),
+                     PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
   v7 = v6;
-  __cxa_guard_abort_plt(&SdkData_1060b80);
-  _Unwind_Resume_plt_alt1(v7);
+  __cxa_guard_abort_plt_alt2((__int64)&SdkData_1060b80),
+      v10 = COERCE_AS(__typeof__(v10),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v11 = COERCE_AS(__typeof__(v11),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v12 = COERCE_AS(__typeof__(v12),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v4 = COERCE_AS(__typeof__(v4),
+                     PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v6 = COERCE_AS(__typeof__(v6),
+                     PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v8 = COERCE_AS(__typeof__(v8),
+                     PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
+  _Unwind_Resume_plt_alt3(v7),
+      v10 = COERCE_AS(__typeof__(v10),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v11 = COERCE_AS(__typeof__(v11),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v12 = COERCE_AS(__typeof__(v12),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v4 = COERCE_AS(__typeof__(v4),
+                     PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v6 = COERCE_AS(__typeof__(v6),
+                     PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v8 = COERCE_AS(__typeof__(v8),
+                     PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
   v9 = v8;
-  __cxa_guard_abort_plt(&SdkData_1060b80);
-  _Unwind_Resume_plt_alt1(v9);
-  _Unwind_Resume_plt_alt1(v10);
-  _Unwind_Resume_plt_alt1(v11);
+  __cxa_guard_abort_plt_alt2((__int64)&SdkData_1060b80),
+      v10 = COERCE_AS(__typeof__(v10),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v11 = COERCE_AS(__typeof__(v11),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v12 = COERCE_AS(__typeof__(v12),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v4 = COERCE_AS(__typeof__(v4),
+                     PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v6 = COERCE_AS(__typeof__(v6),
+                     PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v8 = COERCE_AS(__typeof__(v8),
+                     PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
+  _Unwind_Resume_plt_alt3(v9),
+      v10 = COERCE_AS(__typeof__(v10),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v11 = COERCE_AS(__typeof__(v11),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v12 = COERCE_AS(__typeof__(v12),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v4 = COERCE_AS(__typeof__(v4),
+                     PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v6 = COERCE_AS(__typeof__(v6),
+                     PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v8 = COERCE_AS(__typeof__(v8),
+                     PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
+  _Unwind_Resume_plt_alt3(v10),
+      v10 = COERCE_AS(__typeof__(v10),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v11 = COERCE_AS(__typeof__(v11),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v12 = COERCE_AS(__typeof__(v12),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v4 = COERCE_AS(__typeof__(v4),
+                     PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v6 = COERCE_AS(__typeof__(v6),
+                     PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v8 = COERCE_AS(__typeof__(v8),
+                     PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
+  _Unwind_Resume_plt_alt3(v11),
+      v10 = COERCE_AS(__typeof__(v10),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v11 = COERCE_AS(__typeof__(v11),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v12 = COERCE_AS(__typeof__(v12),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v4 = COERCE_AS(__typeof__(v4),
+                     PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v6 = COERCE_AS(__typeof__(v6),
+                     PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v8 = COERCE_AS(__typeof__(v8),
+                     PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
   v13 = v12;
   if (v1 == 0) {
     while (1) {
-      _Unwind_Resume_plt_alt1(v13);
-      free_plt(v2);
+      _Unwind_Resume_plt_alt3(v13),
+          v10 = COERCE_AS(__typeof__(v10),
+                          PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+          v11 = COERCE_AS(__typeof__(v11),
+                          PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+          v12 = COERCE_AS(__typeof__(v12),
+                          PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+          v4 = COERCE_AS(__typeof__(v4),
+                         PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+          v6 = COERCE_AS(__typeof__(v6),
+                         PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+          v8 = COERCE_AS(__typeof__(v8),
+                         PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
+      free_plt_alt2(v2),
+          v10 = COERCE_AS(__typeof__(v10),
+                          PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+          v11 = COERCE_AS(__typeof__(v11),
+                          PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+          v12 = COERCE_AS(__typeof__(v12),
+                          PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+          v4 = COERCE_AS(__typeof__(v4),
+                         PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+          v6 = COERCE_AS(__typeof__(v6),
+                         PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+          v8 = COERCE_AS(__typeof__(v8),
+                         PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
     }
   }
-  free_plt(v1);
-  _Unwind_Resume_plt_alt1(v13);
+  free_plt_alt2(v1),
+      v10 = COERCE_AS(__typeof__(v10),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v11 = COERCE_AS(__typeof__(v11),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v12 = COERCE_AS(__typeof__(v12),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v4 = COERCE_AS(__typeof__(v4),
+                     PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v6 = COERCE_AS(__typeof__(v6),
+                     PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v8 = COERCE_AS(__typeof__(v8),
+                     PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
+  _Unwind_Resume_plt_alt3(v13),
+      v10 = COERCE_AS(__typeof__(v10),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v11 = COERCE_AS(__typeof__(v11),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v12 = COERCE_AS(__typeof__(v12),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v4 = COERCE_AS(__typeof__(v4),
+                     PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v6 = COERCE_AS(__typeof__(v6),
+                     PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v8 = COERCE_AS(__typeof__(v8),
+                     PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
   __udf(0);
 }
 
@@ -6502,6 +6353,19 @@ __int64 std___1_time_get_get_806c8c(__int64 a1, __int64 a2, __int64 a3,
   }
   v17 = _Unwind_Resume_plt(a1);
   return std___1_time_get_get_806ce0_alt1(v17);
+}
+
+__int64 std___1_time_get_get(__int64 a1, __int64 a2, __int64 a3, __int64 a4,
+                             __int64 a5, __int64 a6, __int64 a7, __int64 a8,
+                             __int64 a9, __int64 a10, __int64 a11, __int64 a12,
+                             __int64 a13, __int64 a14, __int64 a15, __int64 a16)
+{
+  __cxa_guard_abort_plt_alt2((__int64)&SdkData_1060b80);
+  if ((a14 & 1) != 0) {
+    SdkRoutine_857220_alt2(a16, a14 & 0xFFFFFFFFFFFFFFFELL);
+  }
+  _Unwind_Resume_plt_alt3(a1);
+  return std___1_time_get_get_806ce0_alt2();
 }
 
 _QWORD* std___1_time_get_get_806ce0(__int64 a1, _QWORD* a2, _QWORD* a3,
@@ -6996,27 +6860,9 @@ __int64 std___1_time_get___get_day(__int64 a1, __int64 a2, __int64 a3,
                                    __int64 a7, __int64 a8, __int64 a9,
                                    __int64 a10, char a11)
 {
-  _DWORD* v12;
-  _DWORD* v13;
-  _DWORD* v14;
-  _DWORD* v15;
-  __int64 v16;
-  __int64 v17;
-  __int64 v18;
-  __int64 result;
-
-  std___1_locale_Destroy_locale_plt(&a11);
-  _Unwind_Resume_plt(a1);
-  v13 = v12;
-  v15 = v14;
-  result = locale_8087a0_alt1(v16, v17, v12, v18, 2);
-  if ((unsigned int)(result - 1) <= 0x1E && (*v13 & 4) == 0) {
-    *v15 = result;
-  }
-  else {
-    *v13 |= 4u;
-  }
-  return result;
+  std___1_locale_Destroy_locale_plt_alt2((__int64)&a11);
+  _Unwind_Resume_plt_alt3(a1);
+  return SdkRoutine_807eb0();
 }
 
 _QWORD* std___1_time_get___get_white_space(__int64 a1, _QWORD** a2, _QWORD* a3,
@@ -7892,8 +7738,8 @@ void __attribute__((noreturn)) locale_809df4(__int64 a1)
 {
   __int64 v1;
 
-  std___1_locale_Destroy_locale_plt(v1 - 32);
-  _Unwind_Resume_plt_alt1(a1);
+  std___1_locale_Destroy_locale_plt_alt2(v1 - 32);
+  _Unwind_Resume_plt_alt3(a1);
   __udf(0);
 }
 
@@ -8193,8 +8039,8 @@ void __attribute__((noreturn)) locale_80b358(__int64 a1)
 {
   __int64 v1;
 
-  SdkRoutine_82dd20(v1 - 8);
-  _Unwind_Resume_plt_alt1(a1);
+  SdkRoutine_82dd20_alt2((__int64*)(v1 - 8));
+  _Unwind_Resume_plt_alt3(a1);
   __udf(0);
 }
 
@@ -12178,8 +12024,11 @@ __int64 std___1_money_put_do_put_810040(long double a1, __int64 a2, __int64 a3,
   long double v40;
   __int64 v41;
   __int64 v42;
-  _QWORD v43[12];
-  int v44;
+  struct {
+    _QWORD v43[12];
+    char gap200_[4];
+    int v44;
+  } v43_;
   struct {
     __int64 v45;
     unsigned __int64 v46;
@@ -12193,35 +12042,44 @@ __int64 std___1_money_put_do_put_810040(long double a1, __int64 a2, __int64 a3,
   struct {
     _QWORD v51[2];
     __int64 v52;
+    char gap280_[4];
+    char v53[4];
   } v51_;
-  char v53[4];
-  char v54[4];
-  _BYTE v55[4];
-  __int64 v56;
-  char v57;
-  _BYTE* v58;
-  _BYTE v59[108];
+  struct {
+    char v54[4];
+    _BYTE v55[4];
+  } v54_;
+  struct {
+    __int64 v56;
+    char gap304_[4];
+    char v57;
+  } v56_;
+  struct {
+    _BYTE* v58;
+    char gap416_[4];
+    _BYTE v59[108];
+  } v58_;
 
   v37 = COERCE_AS(__typeof__(v37),
                   PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
   v40 = a1;
-  v58 = v59;
-  v11 = snprintf_plt((__int64)v59, 0x64u, "%.0Lf", a1),
+  v58_.v58 = v58_.v59;
+  v11 = snprintf_plt((__int64)v58_.v59, 0x64u, "%.0Lf", a1),
   v37 = COERCE_AS(__typeof__(v37),
                   PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
   if (v11 >= 0x64) {
     if ((atomic_load_explicit((atomic_uchar* volatile)&SdkData_1060b80,
                               memory_order_acquire) &
          1) == 0 &&
-        __cxa_guard_acquire_plt_alt1((__int64)&SdkData_1060b80) != 0) {
-      SdkData_1060b78 = newlocale_plt_alt1(255, (__int64)"C", 0),
+        __cxa_guard_acquire_plt_alt2((__int64)&SdkData_1060b80) != 0) {
+      SdkData_1060b78 = newlocale_plt_alt2(255, (__int64)"C", 0),
       v37 = COERCE_AS(__typeof__(v37),
                       PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
-      __cxa_guard_release_plt_alt1((__int64)&SdkData_1060b80),
+      __cxa_guard_release_plt_alt2((__int64)&SdkData_1060b80),
           v37 = COERCE_AS(__typeof__(v37),
                           PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
     }
-    v12 = std___1___libcpp_asprintf_l((__int64)&v58, SdkData_1060b78,
+    v12 = std___1___libcpp_asprintf_l((__int64)&v58_.v58, SdkData_1060b78,
                                       (__int64)"%.0Lf", v40),
     v37 = COERCE_AS(__typeof__(v37),
                     PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
@@ -12232,8 +12090,8 @@ __int64 std___1_money_put_do_put_810040(long double a1, __int64 a2, __int64 a3,
                       PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
     }
     else {
-      v14 = v58;
-      v15 = malloc_plt_alt1((int)v12),
+      v14 = v58_.v58;
+      v15 = malloc_plt_alt2((int)v12),
       v37 = COERCE_AS(__typeof__(v37),
                       PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
       if (v15 != 0) {
@@ -12247,31 +12105,31 @@ __int64 std___1_money_put_do_put_810040(long double a1, __int64 a2, __int64 a3,
                     PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
     goto LABEL_50;
   }
-  v16 = &v57;
+  v16 = &v56_.v57;
   v13 = v11;
   v6 = 0;
   v14 = nullptr;
 LABEL_7:
   v39 = a3;
   *(_QWORD*)&v40 = v14;
-  std___1_ios_base_getloc_plt((void*)(&v56), a5),
+  std___1_ios_base_getloc_plt((void*)(&v56_.v56), a5),
       v37 = COERCE_AS(__typeof__(v37),
                       PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
-  v17 = v56;
+  v17 = v56_.v56;
   v18 = SdkData_e89440[0];
   v48_.v48 = (unsigned __int64)SdkData_e89440[0];
   if (atomic_load_explicit((atomic_ullong* volatile)SdkData_e89440[0],
                            memory_order_acquire) != -1) {
-    v43[0] = &v48_.v48;
-    v51_.v51[0] = v43;
-    std___1___call_once_plt_alt1((__int64)SdkData_e89440[0], (__int64)v51_.v51,
+    v43_.v43[0] = &v48_.v48;
+    v51_.v51[0] = v43_.v43;
+    std___1___call_once_plt_alt2((__int64)SdkData_e89440[0], (__int64)v51_.v51,
                                  (__int64)SdkRoutine_82f0b0),
         v37 = COERCE_AS(__typeof__(v37),
                         PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
   }
   v19 = *(_QWORD*)(v17 + 16);
   v20 = *(int*)((char*)((__int64*)0x4LL) + (_QWORD)v18 + 4) - 1LL;
-  if (v20 >= (*(_QWORD*)(v17 + 24) - v19) >> 3 ||
+  if (v20 >= (signed __int64)(*(_QWORD*)(v17 + 24) - v19) >> 3 ||
       (v21 = *(_QWORD*)(v19 + 8 * v20)) == 0) {
     locale_7f6090(),
         v37 = COERCE_AS(__typeof__(v37),
@@ -12279,10 +12137,10 @@ LABEL_7:
   }
   v22 = v13;
   (*(void (**)(__int64, _BYTE*, _BYTE*, char*))(*(_QWORD*)v21 + 64LL))(
-      v21, v58, &v58[v13], v16),
+      v21, v58_.v58, &v58_.v58[v13], v16),
       v37 = COERCE_AS(__typeof__(v37),
                       PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
-  v23 = v13 >= 1 && *v58 == 45;
+  v23 = v13 >= 1 && *v58_.v58 == 45;
   v51_.v51[1] = 0;
   v51_.v52 = 0;
   v48_.v50 = 0;
@@ -12292,20 +12150,20 @@ LABEL_7:
   v45_.v46 = 0;
   v45_.v47 = 0;
   v45_.v45 = 0;
-  SdkRoutine_87d160(a4 & 1, v23, (__int64)&v56, (__int64)v55, (__int64)v54,
-                    (__int64)v53, (__int64)v51_.v51, (__int64)&v48_.v48,
-                    (__int64)&v45_.v45, (__int64)&v44),
+  SdkRoutine_87d160(a4 & 1, v23, (__int64)&v56_.v56, (__int64)v54_.v55,
+                    (__int64)v54_.v54, (__int64)v51_.v53, (__int64)v51_.v51,
+                    (__int64)&v48_.v48, (__int64)&v45_.v45, (__int64)&v43_.v44),
       v37 = COERCE_AS(__typeof__(v37),
                       PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
-  v24 = v44;
-  if (v13 <= v44) {
+  v24 = v43_.v44;
+  if (v13 <= v43_.v44) {
     if ((v45_.v45 & 1) != 0) {
       v30 = v45_.v46;
     }
     else {
       v30 = (unsigned __int64)(unsigned __int8)v45_.v45 >> 1;
     }
-    v31 = v44 + v30;
+    v31 = v43_.v44 + v30;
     if ((v48_.v48 & 1) != 0) {
       v32 = v48_.v49;
     }
@@ -12330,15 +12188,15 @@ LABEL_7:
     else {
       v26 = (unsigned __int64)(unsigned __int8)v48_.v48 >> 1;
     }
-    v27 = v44 + 2 * (v13 - (__int64)v44) + v25 + v26 + 1;
+    v27 = v43_.v44 + 2 * (v13 - (__int64)v43_.v44) + v25 + v26 + 1;
     if (v27 < 0x65) {
     LABEL_22:
-      v28 = v43;
+      v28 = v43_.v43;
       v29 = 0;
       goto LABEL_31;
     }
   }
-  v33 = malloc_plt_alt1(v27),
+  v33 = malloc_plt_alt2(v27),
   v37 = COERCE_AS(__typeof__(v37),
                   PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
   v29 = v33;
@@ -12348,48 +12206,48 @@ LABEL_7:
     v36 = std___throw_bad_alloc_plt(v33),
     v37 = COERCE_AS(__typeof__(v37),
                     PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
-    __cxa_guard_abort_plt_alt1((__int64)&SdkData_1060b80),
+    __cxa_guard_abort_plt_alt2((__int64)&SdkData_1060b80),
         v37 = COERCE_AS(__typeof__(v37),
                         PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
-    _Unwind_Resume_plt_alt2(v36),
+    _Unwind_Resume_plt_alt3(v36),
         v37 = COERCE_AS(__typeof__(v37),
                         PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
     v38 = v37;
     if ((v45_.v45 & 1) != 0) {
-      SdkRoutine_857220_alt1(v45_.v47, v45_.v45 & 0xFFFFFFFFFFFFFFFELL),
+      SdkRoutine_857220_alt2(v45_.v47, v45_.v45 & 0xFFFFFFFFFFFFFFFELL),
           v37 = COERCE_AS(__typeof__(v37),
                           PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
       if ((v48_.v48 & 1) == 0) {
       LABEL_52:
         if ((v51_.v51[0] & 1) == 0) {
         LABEL_57:
-          std___1_locale_Destroy_locale_plt_alt1((__int64)&v56),
+          std___1_locale_Destroy_locale_plt_alt2((__int64)&v56_.v56),
               v37 = COERCE_AS(__typeof__(v37),
                               PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
           if (v6 != 0) {
             goto LABEL_60;
           }
           while (*(_QWORD*)&v40 == 0) {
-            _Unwind_Resume_plt_alt2(v38),
+            _Unwind_Resume_plt_alt3(v38),
                 v37 =
                     COERCE_AS(__typeof__(v37),
                               PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
           LABEL_60:
-            free_plt_alt1(v6),
+            free_plt_alt2(v6),
                 v37 =
                     COERCE_AS(__typeof__(v37),
                               PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
           }
-          free_plt_alt1(*(__int64*)&v40),
+          free_plt_alt2(*(__int64*)&v40),
               v37 = COERCE_AS(__typeof__(v37),
                               PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
-          _Unwind_Resume_plt_alt2(v38),
+          _Unwind_Resume_plt_alt3(v38),
               v37 = COERCE_AS(__typeof__(v37),
                               PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
           __udf(0);
         }
       LABEL_56:
-        SdkRoutine_857220_alt1(v51_.v52, v51_.v51[0] & 0xFFFFFFFFFFFFFFFELL),
+        SdkRoutine_857220_alt2(v51_.v52, v51_.v51[0] & 0xFFFFFFFFFFFFFFFELL),
             v37 = COERCE_AS(__typeof__(v37),
                             PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
         goto LABEL_57;
@@ -12398,7 +12256,7 @@ LABEL_7:
     else if ((v48_.v48 & 1) == 0) {
       goto LABEL_52;
     }
-    SdkRoutine_857220_alt1(v48_.v50, v48_.v48 & 0xFFFFFFFFFFFFFFFELL),
+    SdkRoutine_857220_alt2(v48_.v50, v48_.v48 & 0xFFFFFFFFFFFFFFFELL),
         v37 = COERCE_AS(__typeof__(v37),
                         PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
     if ((v51_.v51[0] & 1) == 0) {
@@ -12409,20 +12267,21 @@ LABEL_7:
 LABEL_31:
   SdkRoutine_87d170((__int64)v28, (__int64)&v42, (__int64)&v41,
                     *(_DWORD*)(a5 + 8), (__int64)v16, (__int64)&v16[v22], v21,
-                    v23, (__int64)v55, v54[0], v53[0], (__int64)v51_.v51,
-                    (__int64)&v48_.v48, (__int64)&v45_.v45, v24),
+                    v23, (__int64)v54_.v55, v54_.v54[0], v51_.v53[0],
+                    (__int64)v51_.v51, (__int64)&v48_.v48, (__int64)&v45_.v45,
+                    v24),
       v37 = COERCE_AS(__typeof__(v37),
                       PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
-  v34 = SdkRoutine_810f00_alt1(v39, (__int64)v28, v42, v41, a5, (void*)a6),
+  v34 = SdkRoutine_810f00_alt2(v39, (__int64)v28, v42, v41, a5, (void*)a6),
   v37 = COERCE_AS(__typeof__(v37),
                   PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
   if (v29 != 0) {
-    free_plt_alt1(v29),
+    free_plt_alt2(v29),
         v37 = COERCE_AS(__typeof__(v37),
                         PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
   }
   if ((v45_.v45 & 1) != 0) {
-    SdkRoutine_857220_alt1(v45_.v47, v45_.v45 & 0xFFFFFFFFFFFFFFFELL),
+    SdkRoutine_857220_alt2(v45_.v47, v45_.v45 & 0xFFFFFFFFFFFFFFFELL),
         v37 = COERCE_AS(__typeof__(v37),
                         PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
     if ((v48_.v48 & 1) == 0) {
@@ -12436,12 +12295,12 @@ LABEL_31:
   else if ((v48_.v48 & 1) == 0) {
     goto LABEL_35;
   }
-  SdkRoutine_857220_alt1(v48_.v50, v48_.v48 & 0xFFFFFFFFFFFFFFFELL),
+  SdkRoutine_857220_alt2(v48_.v50, v48_.v48 & 0xFFFFFFFFFFFFFFFELL),
       v37 = COERCE_AS(__typeof__(v37),
                       PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
   if ((v51_.v51[0] & 1) == 0) {
   LABEL_36:
-    std___1_locale_Destroy_locale_plt_alt1((__int64)&v56),
+    std___1_locale_Destroy_locale_plt_alt2((__int64)&v56_.v56),
         v37 = COERCE_AS(__typeof__(v37),
                         PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
     if (v6 == 0) {
@@ -12450,21 +12309,21 @@ LABEL_31:
     goto LABEL_37;
   }
 LABEL_43:
-  SdkRoutine_857220_alt1(v51_.v52, v51_.v51[0] & 0xFFFFFFFFFFFFFFFELL),
+  SdkRoutine_857220_alt2(v51_.v52, v51_.v51[0] & 0xFFFFFFFFFFFFFFFELL),
       v37 = COERCE_AS(__typeof__(v37),
                       PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
-  std___1_locale_Destroy_locale_plt_alt1((__int64)&v56),
+  std___1_locale_Destroy_locale_plt_alt2((__int64)&v56_.v56),
       v37 = COERCE_AS(__typeof__(v37),
                       PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
   if (v6 != 0) {
   LABEL_37:
-    free_plt_alt1(v6),
+    free_plt_alt2(v6),
         v37 = COERCE_AS(__typeof__(v37),
                         PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
   }
 LABEL_38:
   if (*(_QWORD*)&v40 != 0) {
-    free_plt_alt1(*(__int64*)&v40),
+    free_plt_alt2(*(__int64*)&v40),
         v37 = COERCE_AS(__typeof__(v37),
                         PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
   }
@@ -12518,8 +12377,11 @@ __int64 std___1_money_put_do_put_8110a0(__int64 a1, __int64 a2, char a3,
   __int64 v39;
   __int64 v40;
   __int64 v41;
-  _QWORD v42[12];
-  int v43;
+  struct {
+    _QWORD v42[12];
+    char gap176_[4];
+    int v43;
+  } v42_;
   struct {
     __int64 v44;
     unsigned __int64 v45;
@@ -12533,10 +12395,13 @@ __int64 std___1_money_put_do_put_8110a0(__int64 a1, __int64 a2, char a3,
   struct {
     _QWORD v50[2];
     __int64 v51;
+    char gap256_[4];
+    char v52[4];
   } v50_;
-  char v52[4];
-  char v53[4];
-  _BYTE v54[4];
+  struct {
+    char v53[4];
+    _BYTE v54[4];
+  } v53_;
   _QWORD v55[2];
 
   v37 = COERCE_AS(__typeof__(v37),
@@ -12549,16 +12414,16 @@ __int64 std___1_money_put_do_put_8110a0(__int64 a1, __int64 a2, char a3,
   v47_.v47 = (unsigned __int64)SdkData_e89440[0];
   if (atomic_load_explicit((atomic_ullong* volatile)SdkData_e89440[0],
                            memory_order_acquire) != -1) {
-    v42[0] = &v47_.v47;
-    v50_.v50[0] = v42;
-    std___1___call_once_plt_alt1((__int64)SdkData_e89440[0], (__int64)v50_.v50,
+    v42_.v42[0] = &v47_.v47;
+    v50_.v50[0] = v42_.v42;
+    std___1___call_once_plt_alt2((__int64)SdkData_e89440[0], (__int64)v50_.v50,
                                  (__int64)SdkRoutine_82f0b0),
         v37 = COERCE_AS(__typeof__(v37),
                         PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
   }
   v13 = *(_QWORD*)(v11 + 16);
   v14 = *(int*)((char*)((__int64*)0x4LL) + (_QWORD)v12 + 4) - 1LL;
-  if (v14 >= (*(_QWORD*)(v11 + 24) - v13) >> 3 ||
+  if (v14 >= (signed __int64)(*(_QWORD*)(v11 + 24) - v13) >> 3 ||
       (v15 = *(_QWORD*)(v13 + 8 * v14)) == 0) {
     locale_7f6090(),
         v37 = COERCE_AS(__typeof__(v37),
@@ -12594,13 +12459,13 @@ __int64 std___1_money_put_do_put_8110a0(__int64 a1, __int64 a2, char a3,
   v44_.v45 = 0;
   v44_.v46 = 0;
   v44_.v44 = 0;
-  SdkRoutine_87d160(a3 & 1, v20, (__int64)v55, (__int64)v54, (__int64)v53,
-                    (__int64)v52, (__int64)v50_.v50, (__int64)&v47_.v47,
-                    (__int64)&v44_.v44, (__int64)&v43),
+  SdkRoutine_87d160(a3 & 1, v20, (__int64)v55, (__int64)v53_.v54,
+                    (__int64)v53_.v53, (__int64)v50_.v52, (__int64)v50_.v50,
+                    (__int64)&v47_.v47, (__int64)&v44_.v44, (__int64)&v42_.v43),
       v37 = COERCE_AS(__typeof__(v37),
                       PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
   v21 = *a6;
-  v22 = v43;
+  v22 = v42_.v43;
   v39 = a2;
   if ((v21 & 1) != 0) {
     v23 = *((_QWORD*)a6 + 1);
@@ -12608,14 +12473,14 @@ __int64 std___1_money_put_do_put_8110a0(__int64 a1, __int64 a2, char a3,
   else {
     v23 = v21 >> 1;
   }
-  if (v43 >= (int)v23) {
+  if (v42_.v43 >= (int)v23) {
     if ((v44_.v44 & 1) != 0) {
       v30 = v44_.v45;
     }
     else {
       v30 = (unsigned __int64)(unsigned __int8)v44_.v44 >> 1;
     }
-    v31 = v43 + v30;
+    v31 = v42_.v43 + v30;
     if ((v47_.v47 & 1) != 0) {
       v32 = v47_.v48;
     }
@@ -12641,16 +12506,16 @@ __int64 std___1_money_put_do_put_8110a0(__int64 a1, __int64 a2, char a3,
     else {
       v25 = (unsigned __int64)(unsigned __int8)v47_.v47 >> 1;
     }
-    v26 = v43 + 2 * (v23 - v43) + v24 + v25 + 1;
+    v26 = v42_.v43 + 2 * (v23 - v42_.v43) + v24 + v25 + 1;
     v27 = a5;
     if (v26 < 0x65) {
     LABEL_24:
-      v28 = v42;
+      v28 = v42_.v42;
       v29 = 0;
       goto LABEL_33;
     }
   }
-  v29 = malloc_plt_alt1(v26),
+  v29 = malloc_plt_alt2(v26),
   v37 = COERCE_AS(__typeof__(v37),
                   PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
   v28 = (_QWORD*)v29;
@@ -12664,27 +12529,27 @@ __int64 std___1_money_put_do_put_8110a0(__int64 a1, __int64 a2, char a3,
   LABEL_48:
     if ((v47_.v47 & 1) != 0) {
       while (1) {
-        SdkRoutine_857220_alt1(v47_.v49, v47_.v47 & 0xFFFFFFFFFFFFFFFELL),
+        SdkRoutine_857220_alt2(v47_.v49, v47_.v47 & 0xFFFFFFFFFFFFFFFELL),
             v37 = COERCE_AS(__typeof__(v37),
                             PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
         if ((v50_.v50[0] & 1) != 0) {
           break;
         }
       LABEL_50:
-        std___1_locale_Destroy_locale_plt_alt1((__int64)v55),
+        std___1_locale_Destroy_locale_plt_alt2((__int64)v55),
             v37 = COERCE_AS(__typeof__(v37),
                             PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
-        _Unwind_Resume_plt_alt2(v36),
+        _Unwind_Resume_plt_alt3(v36),
             v37 = COERCE_AS(__typeof__(v37),
                             PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
-        free_plt_alt1(0),
+        free_plt_alt2(0),
             v37 = COERCE_AS(__typeof__(v37),
                             PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
         if ((v44_.v44 & 1) == 0) {
           goto LABEL_48;
         }
       LABEL_51:
-        SdkRoutine_857220_alt1(v44_.v46, v44_.v44 & 0xFFFFFFFFFFFFFFFELL),
+        SdkRoutine_857220_alt2(v44_.v46, v44_.v44 & 0xFFFFFFFFFFFFFFFELL),
             v37 = COERCE_AS(__typeof__(v37),
                             PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
         if ((v47_.v47 & 1) == 0) {
@@ -12698,20 +12563,20 @@ __int64 std___1_money_put_do_put_8110a0(__int64 a1, __int64 a2, char a3,
         goto LABEL_50;
       }
     }
-    SdkRoutine_857220_alt1(v50_.v51, v50_.v50[0] & 0xFFFFFFFFFFFFFFFELL),
+    SdkRoutine_857220_alt2(v50_.v51, v50_.v50[0] & 0xFFFFFFFFFFFFFFFELL),
         v37 = COERCE_AS(__typeof__(v37),
                         PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
-    std___1_locale_Destroy_locale_plt_alt1((__int64)v55),
+    std___1_locale_Destroy_locale_plt_alt2((__int64)v55),
         v37 = COERCE_AS(__typeof__(v37),
                         PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
-    _Unwind_Resume_plt_alt2(v36),
+    _Unwind_Resume_plt_alt3(v36),
         v37 = COERCE_AS(__typeof__(v37),
                         PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
     v38 = v37;
-    std___1_locale_Destroy_locale_plt_alt1((__int64)v55),
+    std___1_locale_Destroy_locale_plt_alt2((__int64)v55),
         v37 = COERCE_AS(__typeof__(v37),
                         PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
-    _Unwind_Resume_plt_alt2(v38),
+    _Unwind_Resume_plt_alt3(v38),
         v37 = COERCE_AS(__typeof__(v37),
                         PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
     __udf(0);
@@ -12723,17 +12588,17 @@ LABEL_33:
   else {
     v33 = (__int64)(a6 + 1);
   }
-  SdkRoutine_87d170((__int64)v28, (__int64)&v41, (__int64)&v40,
-                    *(_DWORD*)(a4 + 8), v33, v33 + v23, v15, v20, (__int64)v54,
-                    v53[0], v52[0], (__int64)v50_.v50, (__int64)&v47_.v47,
-                    (__int64)&v44_.v44, v22),
+  SdkRoutine_87d170(
+      (__int64)v28, (__int64)&v41, (__int64)&v40, *(_DWORD*)(a4 + 8), v33,
+      v33 + v23, v15, v20, (__int64)v53_.v54, v53_.v53[0], v50_.v52[0],
+      (__int64)v50_.v50, (__int64)&v47_.v47, (__int64)&v44_.v44, v22),
       v37 = COERCE_AS(__typeof__(v37),
                       PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
-  v34 = SdkRoutine_810f00_alt1(v39, (__int64)v28, v41, v40, a4, (void*)v27),
+  v34 = SdkRoutine_810f00_alt2(v39, (__int64)v28, v41, v40, a4, (void*)v27),
   v37 = COERCE_AS(__typeof__(v37),
                   PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
   if (v29 != 0) {
-    free_plt_alt1(v29),
+    free_plt_alt2(v29),
         v37 = COERCE_AS(__typeof__(v37),
                         PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
   }
@@ -12742,7 +12607,7 @@ LABEL_33:
       goto LABEL_40;
     }
   LABEL_44:
-    SdkRoutine_857220_alt1(v47_.v49, v47_.v47 & 0xFFFFFFFFFFFFFFFELL),
+    SdkRoutine_857220_alt2(v47_.v49, v47_.v47 & 0xFFFFFFFFFFFFFFFELL),
         v37 = COERCE_AS(__typeof__(v37),
                         PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
     if ((v50_.v50[0] & 1) == 0) {
@@ -12750,7 +12615,7 @@ LABEL_33:
     }
     goto LABEL_41;
   }
-  SdkRoutine_857220_alt1(v44_.v46, v44_.v44 & 0xFFFFFFFFFFFFFFFELL),
+  SdkRoutine_857220_alt2(v44_.v46, v44_.v44 & 0xFFFFFFFFFFFFFFFELL),
       v37 = COERCE_AS(__typeof__(v37),
                       PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
   if ((v47_.v47 & 1) != 0) {
@@ -12759,12 +12624,12 @@ LABEL_33:
 LABEL_40:
   if ((v50_.v50[0] & 1) != 0) {
   LABEL_41:
-    SdkRoutine_857220_alt1(v50_.v51, v50_.v50[0] & 0xFFFFFFFFFFFFFFFELL),
+    SdkRoutine_857220_alt2(v50_.v51, v50_.v50[0] & 0xFFFFFFFFFFFFFFFELL),
         v37 = COERCE_AS(__typeof__(v37),
                         PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
   }
 LABEL_42:
-  std___1_locale_Destroy_locale_plt_alt1((__int64)v55),
+  std___1_locale_Destroy_locale_plt_alt2((__int64)v55),
       v37 = COERCE_AS(__typeof__(v37),
                       PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
   return v34;
@@ -12807,8 +12672,11 @@ __int64 std___1_money_put_do_put_811490(long double a1, __int64 a2, __int64 a3,
   long double v40;
   __int64 v41;
   __int64 v42;
-  _QWORD v43[50];
-  int v44;
+  struct {
+    _QWORD v43[50];
+    char gap496_[4];
+    int v44;
+  } v43_;
   struct {
     __int64 v45;
     unsigned __int64 v46;
@@ -12822,35 +12690,41 @@ __int64 std___1_money_put_do_put_811490(long double a1, __int64 a2, __int64 a3,
   struct {
     _QWORD v51[2];
     __int64 v52;
+    char gap576_[4];
+    int v53;
   } v51_;
-  int v53;
-  int v54;
-  _BYTE v55[4];
+  struct {
+    int v54;
+    _BYTE v55[4];
+  } v54_;
   __int64 v56;
   char v57;
-  _BYTE* v58;
-  _BYTE v59[108];
+  struct {
+    _BYTE* v58;
+    char gap1008_[4];
+    _BYTE v59[108];
+  } v58_;
 
   v37 = COERCE_AS(__typeof__(v37),
                   PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
   v40 = a1;
-  v58 = v59;
-  v11 = snprintf_plt((__int64)v59, 0x64u, "%.0Lf", a1),
+  v58_.v58 = v58_.v59;
+  v11 = snprintf_plt((__int64)v58_.v59, 0x64u, "%.0Lf", a1),
   v37 = COERCE_AS(__typeof__(v37),
                   PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
   if (v11 >= 0x64) {
     if ((atomic_load_explicit((atomic_uchar* volatile)&SdkData_1060b80,
                               memory_order_acquire) &
          1) == 0 &&
-        __cxa_guard_acquire_plt_alt1((__int64)&SdkData_1060b80) != 0) {
-      SdkData_1060b78 = newlocale_plt_alt1(255, (__int64)"C", 0),
+        __cxa_guard_acquire_plt_alt2((__int64)&SdkData_1060b80) != 0) {
+      SdkData_1060b78 = newlocale_plt_alt2(255, (__int64)"C", 0),
       v37 = COERCE_AS(__typeof__(v37),
                       PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
-      __cxa_guard_release_plt_alt1((__int64)&SdkData_1060b80),
+      __cxa_guard_release_plt_alt2((__int64)&SdkData_1060b80),
           v37 = COERCE_AS(__typeof__(v37),
                           PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
     }
-    v12 = std___1___libcpp_asprintf_l((__int64)&v58, SdkData_1060b78,
+    v12 = std___1___libcpp_asprintf_l((__int64)&v58_.v58, SdkData_1060b78,
                                       (__int64)"%.0Lf", v40),
     v37 = COERCE_AS(__typeof__(v37),
                     PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
@@ -12861,8 +12735,8 @@ __int64 std___1_money_put_do_put_811490(long double a1, __int64 a2, __int64 a3,
                       PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
     }
     else {
-      v14 = v58;
-      v15 = malloc_plt_alt1(4LL * (int)v12),
+      v14 = v58_.v58;
+      v15 = malloc_plt_alt2(4LL * (int)v12),
       v37 = COERCE_AS(__typeof__(v37),
                       PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
       if (v15 != 0) {
@@ -12891,16 +12765,16 @@ LABEL_7:
   v48_.v48 = SdkData_e89480[0];
   if (atomic_load_explicit((atomic_ullong* volatile)SdkData_e89480[0],
                            memory_order_acquire) != -1) {
-    v43[0] = &v48_.v48;
-    v51_.v51[0] = v43;
-    std___1___call_once_plt_alt1((__int64)SdkData_e89480[0], (__int64)v51_.v51,
+    v43_.v43[0] = &v48_.v48;
+    v51_.v51[0] = v43_.v43;
+    std___1___call_once_plt_alt2((__int64)SdkData_e89480[0], (__int64)v51_.v51,
                                  (__int64)SdkRoutine_82f0b0),
         v37 = COERCE_AS(__typeof__(v37),
                         PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
   }
   v19 = *(_QWORD*)(v17 + 16);
   v20 = *(int*)((char*)((__int64*)0x4LL) + (_QWORD)v18 + 4) - 1LL;
-  if (v20 >= (*(_QWORD*)(v17 + 24) - v19) >> 3 ||
+  if (v20 >= (signed __int64)(*(_QWORD*)(v17 + 24) - v19) >> 3 ||
       (v21 = *(_QWORD*)(v19 + 8 * v20)) == 0) {
     locale_7f6090(),
         v37 = COERCE_AS(__typeof__(v37),
@@ -12908,10 +12782,10 @@ LABEL_7:
   }
   v22 = v13;
   (*(void (**)(__int64, _BYTE*, _BYTE*, char*))(*(_QWORD*)v21 + 96LL))(
-      v21, v58, &v58[v13], v16),
+      v21, v58_.v58, &v58_.v58[v13], v16),
       v37 = COERCE_AS(__typeof__(v37),
                       PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
-  v23 = v13 >= 1 && *v58 == 45;
+  v23 = v13 >= 1 && *v58_.v58 == 45;
   v51_.v52 = 0;
   v51_.v51[1] = 0;
   v51_.v51[0] = 0;
@@ -12921,20 +12795,20 @@ LABEL_7:
   v45_.v47 = 0;
   v45_.v45 = 0;
   v45_.v46 = 0;
-  SdkRoutine_87d180(a4 & 1, v23, (__int64)&v56, (__int64)v55, (__int64)&v54,
-                    (__int64)&v53, (__int64)v51_.v51, (__int64)&v48_.v48,
-                    (__int64)&v45_.v45, (__int64)&v44),
+  SdkRoutine_87d180(a4 & 1, v23, (__int64)&v56, (__int64)v54_.v55,
+                    (__int64)&v54_.v54, (__int64)&v51_.v53, (__int64)v51_.v51,
+                    (__int64)&v48_.v48, (__int64)&v45_.v45, (__int64)&v43_.v44),
       v37 = COERCE_AS(__typeof__(v37),
                       PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
-  v24 = v44;
-  if (v13 <= v44) {
+  v24 = v43_.v44;
+  if (v13 <= v43_.v44) {
     if ((v45_.v45 & 1) != 0) {
       v30 = v45_.v46;
     }
     else {
       v30 = (unsigned __int64)(unsigned __int8)v45_.v45 >> 1;
     }
-    v31 = v44 + v30;
+    v31 = v43_.v44 + v30;
     if (((unsigned __int8)v48_.v48 & 1) != 0) {
       v32 = v48_.v49;
     }
@@ -12959,15 +12833,15 @@ LABEL_7:
     else {
       v26 = (unsigned __int64)(unsigned __int8)v48_.v48 >> 1;
     }
-    v27 = v44 + 2 * (v13 - (__int64)v44) + v25 + v26 + 1;
+    v27 = v43_.v44 + 2 * (v13 - (__int64)v43_.v44) + v25 + v26 + 1;
     if (v27 < 0x65) {
     LABEL_22:
-      v28 = v43;
+      v28 = v43_.v43;
       v29 = 0;
       goto LABEL_31;
     }
   }
-  v33 = malloc_plt_alt1(4 * v27),
+  v33 = malloc_plt_alt2(4 * v27),
   v37 = COERCE_AS(__typeof__(v37),
                   PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
   v29 = v33;
@@ -12977,48 +12851,48 @@ LABEL_7:
     v36 = std___throw_bad_alloc_plt(v33),
     v37 = COERCE_AS(__typeof__(v37),
                     PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
-    __cxa_guard_abort_plt_alt1((__int64)&SdkData_1060b80),
+    __cxa_guard_abort_plt_alt2((__int64)&SdkData_1060b80),
         v37 = COERCE_AS(__typeof__(v37),
                         PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
-    _Unwind_Resume_plt_alt2(v36),
+    _Unwind_Resume_plt_alt3(v36),
         v37 = COERCE_AS(__typeof__(v37),
                         PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
     v38 = v37;
     if ((v45_.v45 & 1) != 0) {
-      SdkRoutine_857220_alt1(v45_.v47, (4 * v45_.v45) & 0xFFFFFFFFFFFFFFF8LL),
+      SdkRoutine_857220_alt2(v45_.v47, (4 * v45_.v45) & 0xFFFFFFFFFFFFFFF8LL),
           v37 = COERCE_AS(__typeof__(v37),
                           PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
       if (((unsigned __int8)v48_.v48 & 1) == 0) {
       LABEL_52:
         if ((v51_.v51[0] & 1) == 0) {
         LABEL_57:
-          std___1_locale_Destroy_locale_plt_alt1((__int64)&v56),
+          std___1_locale_Destroy_locale_plt_alt2((__int64)&v56),
               v37 = COERCE_AS(__typeof__(v37),
                               PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
           if (v6 != 0) {
             goto LABEL_60;
           }
           while (*(_QWORD*)&v40 == 0) {
-            _Unwind_Resume_plt_alt2(v38),
+            _Unwind_Resume_plt_alt3(v38),
                 v37 =
                     COERCE_AS(__typeof__(v37),
                               PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
           LABEL_60:
-            free_plt_alt1(v6),
+            free_plt_alt2(v6),
                 v37 =
                     COERCE_AS(__typeof__(v37),
                               PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
           }
-          free_plt_alt1(*(__int64*)&v40),
+          free_plt_alt2(*(__int64*)&v40),
               v37 = COERCE_AS(__typeof__(v37),
                               PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
-          _Unwind_Resume_plt_alt2(v38),
+          _Unwind_Resume_plt_alt3(v38),
               v37 = COERCE_AS(__typeof__(v37),
                               PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
           __udf(0);
         }
       LABEL_56:
-        SdkRoutine_857220_alt1(v51_.v52, v51_.v51[0] & 0xFFFFFFFFFFFFFFFELL),
+        SdkRoutine_857220_alt2(v51_.v52, v51_.v51[0] & 0xFFFFFFFFFFFFFFFELL),
             v37 = COERCE_AS(__typeof__(v37),
                             PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
         goto LABEL_57;
@@ -13027,7 +12901,7 @@ LABEL_7:
     else if (((unsigned __int8)v48_.v48 & 1) == 0) {
       goto LABEL_52;
     }
-    SdkRoutine_857220_alt1(v48_.v50,
+    SdkRoutine_857220_alt2(v48_.v50,
                            (4LL * (_QWORD)v48_.v48) & 0xFFFFFFFFFFFFFFF8LL),
         v37 = COERCE_AS(__typeof__(v37),
                         PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
@@ -13037,22 +12911,23 @@ LABEL_7:
     goto LABEL_56;
   }
 LABEL_31:
-  SdkRoutine_87d190(
-      (__int64)v28, (__int64)&v42, (__int64)&v41, *(_DWORD*)(a5 + 8),
-      (__int64)v16, (unsigned __int64)&v16[4 * v22], v21, v23, (__int64)v55,
-      v54, v53, (__int64)v51_.v51, (__int64)&v48_.v48, (__int64)&v45_.v45, v24),
+  SdkRoutine_87d190((__int64)v28, (__int64)&v42, (__int64)&v41,
+                    *(_DWORD*)(a5 + 8), (__int64)v16,
+                    (unsigned __int64)&v16[4 * v22], v21, v23,
+                    (__int64)v54_.v55, v54_.v54, v51_.v53, (__int64)v51_.v51,
+                    (__int64)&v48_.v48, (__int64)&v45_.v45, v24),
       v37 = COERCE_AS(__typeof__(v37),
                       PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
   v34 = locale_812100(v39, (__int64)v28, v42, v41, a5, a6),
   v37 = COERCE_AS(__typeof__(v37),
                   PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
   if (v29 != 0) {
-    free_plt_alt1(v29),
+    free_plt_alt2(v29),
         v37 = COERCE_AS(__typeof__(v37),
                         PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
   }
   if ((v45_.v45 & 1) != 0) {
-    SdkRoutine_857220_alt1(v45_.v47, (4 * v45_.v45) & 0xFFFFFFFFFFFFFFF8LL),
+    SdkRoutine_857220_alt2(v45_.v47, (4 * v45_.v45) & 0xFFFFFFFFFFFFFFF8LL),
         v37 = COERCE_AS(__typeof__(v37),
                         PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
     if (((unsigned __int8)v48_.v48 & 1) == 0) {
@@ -13066,13 +12941,13 @@ LABEL_31:
   else if (((unsigned __int8)v48_.v48 & 1) == 0) {
     goto LABEL_35;
   }
-  SdkRoutine_857220_alt1(v48_.v50,
+  SdkRoutine_857220_alt2(v48_.v50,
                          (4LL * (_QWORD)v48_.v48) & 0xFFFFFFFFFFFFFFF8LL),
       v37 = COERCE_AS(__typeof__(v37),
                       PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
   if ((v51_.v51[0] & 1) == 0) {
   LABEL_36:
-    std___1_locale_Destroy_locale_plt_alt1((__int64)&v56),
+    std___1_locale_Destroy_locale_plt_alt2((__int64)&v56),
         v37 = COERCE_AS(__typeof__(v37),
                         PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
     if (v6 == 0) {
@@ -13081,21 +12956,21 @@ LABEL_31:
     goto LABEL_37;
   }
 LABEL_43:
-  SdkRoutine_857220_alt1(v51_.v52, v51_.v51[0] & 0xFFFFFFFFFFFFFFFELL),
+  SdkRoutine_857220_alt2(v51_.v52, v51_.v51[0] & 0xFFFFFFFFFFFFFFFELL),
       v37 = COERCE_AS(__typeof__(v37),
                       PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
-  std___1_locale_Destroy_locale_plt_alt1((__int64)&v56),
+  std___1_locale_Destroy_locale_plt_alt2((__int64)&v56),
       v37 = COERCE_AS(__typeof__(v37),
                       PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
   if (v6 != 0) {
   LABEL_37:
-    free_plt_alt1(v6),
+    free_plt_alt2(v6),
         v37 = COERCE_AS(__typeof__(v37),
                         PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
   }
 LABEL_38:
   if (*(_QWORD*)&v40 != 0) {
-    free_plt_alt1(*(__int64*)&v40),
+    free_plt_alt2(*(__int64*)&v40),
         v37 = COERCE_AS(__typeof__(v37),
                         PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
   }
@@ -13218,13 +13093,11 @@ __int64 std___1_money_put_do_put_8122f8(__int64 a1, __int64 a2, __int64 a3,
                                         __int64 a7, __int64 a8, __int64 a9,
                                         __int64 a10, __int64 a11, __int64 a12)
 {
-  __int64 v13;
-
   if ((a10 & 1) != 0) {
-    SdkRoutine_857220(a12, (4 * a10) & 0xFFFFFFFFFFFFFFF8LL);
+    SdkRoutine_857220_alt2(a12, (4 * a10) & 0xFFFFFFFFFFFFFFF8LL);
   }
-  v13 = _Unwind_Resume_plt(a1);
-  return SdkRoutine_812320(v13);
+  _Unwind_Resume_plt_alt3(a1);
+  return std___1_money_put_do_put_812320_alt1();
 }
 
 __int64 std___1_money_put_do_put_812320(__int64 a1, __int64 a2, char a3,
@@ -13260,8 +13133,11 @@ __int64 std___1_money_put_do_put_812320(__int64 a1, __int64 a2, char a3,
   __int64 v39;
   __int64 v40;
   __int64 v41;
-  _QWORD v42[50];
-  int v43;
+  struct {
+    _QWORD v42[50];
+    char gap480_[4];
+    int v43;
+  } v42_;
   struct {
     __int64 v44;
     unsigned __int64 v45;
@@ -13275,10 +13151,13 @@ __int64 std___1_money_put_do_put_812320(__int64 a1, __int64 a2, char a3,
   struct {
     _QWORD v50[2];
     __int64 v51;
+    char gap560_[4];
+    int v52;
   } v50_;
-  int v52;
-  int v53;
-  _BYTE v54[4];
+  struct {
+    int v53;
+    _BYTE v54[4];
+  } v53_;
   _QWORD v55[2];
 
   v37 = COERCE_AS(__typeof__(v37),
@@ -13291,16 +13170,16 @@ __int64 std___1_money_put_do_put_812320(__int64 a1, __int64 a2, char a3,
   v47_.v47 = SdkData_e89480[0];
   if (atomic_load_explicit((atomic_ullong* volatile)SdkData_e89480[0],
                            memory_order_acquire) != -1) {
-    v42[0] = &v47_.v47;
-    v50_.v50[0] = v42;
-    std___1___call_once_plt_alt1((__int64)SdkData_e89480[0], (__int64)v50_.v50,
+    v42_.v42[0] = &v47_.v47;
+    v50_.v50[0] = v42_.v42;
+    std___1___call_once_plt_alt2((__int64)SdkData_e89480[0], (__int64)v50_.v50,
                                  (__int64)SdkRoutine_82f0b0),
         v37 = COERCE_AS(__typeof__(v37),
                         PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
   }
   v13 = *(_QWORD*)(v11 + 16);
   v14 = *(int*)((char*)((__int64*)0x4LL) + (_QWORD)v12 + 4) - 1LL;
-  if (v14 >= (*(_QWORD*)(v11 + 24) - v13) >> 3 ||
+  if (v14 >= (signed __int64)(*(_QWORD*)(v11 + 24) - v13) >> 3 ||
       (v15 = *(_QWORD*)(v13 + 8 * v14)) == 0) {
     locale_7f6090(),
         v37 = COERCE_AS(__typeof__(v37),
@@ -13336,13 +13215,13 @@ __int64 std___1_money_put_do_put_812320(__int64 a1, __int64 a2, char a3,
   v44_.v45 = 0;
   v44_.v46 = 0;
   v44_.v44 = 0;
-  SdkRoutine_87d180(a3 & 1, v20, (__int64)v55, (__int64)v54, (__int64)&v53,
-                    (__int64)&v52, (__int64)v50_.v50, (__int64)&v47_.v47,
-                    (__int64)&v44_.v44, (__int64)&v43),
+  SdkRoutine_87d180(a3 & 1, v20, (__int64)v55, (__int64)v53_.v54,
+                    (__int64)&v53_.v53, (__int64)&v50_.v52, (__int64)v50_.v50,
+                    (__int64)&v47_.v47, (__int64)&v44_.v44, (__int64)&v42_.v43),
       v37 = COERCE_AS(__typeof__(v37),
                       PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
   v21 = *a6;
-  v22 = v43;
+  v22 = v42_.v43;
   v39 = a2;
   if ((v21 & 1) != 0) {
     v23 = *((_QWORD*)a6 + 1);
@@ -13350,14 +13229,14 @@ __int64 std___1_money_put_do_put_812320(__int64 a1, __int64 a2, char a3,
   else {
     v23 = v21 >> 1;
   }
-  if (v43 >= (int)v23) {
+  if (v42_.v43 >= (int)v23) {
     if ((v44_.v44 & 1) != 0) {
       v30 = v44_.v45;
     }
     else {
       v30 = (unsigned __int64)(unsigned __int8)v44_.v44 >> 1;
     }
-    v31 = v43 + v30;
+    v31 = v42_.v43 + v30;
     if (((unsigned __int8)v47_.v47 & 1) != 0) {
       v32 = v47_.v48;
     }
@@ -13383,16 +13262,16 @@ __int64 std___1_money_put_do_put_812320(__int64 a1, __int64 a2, char a3,
     else {
       v25 = (unsigned __int64)(unsigned __int8)v47_.v47 >> 1;
     }
-    v26 = v43 + 2 * (v23 - v43) + v24 + v25 + 1;
+    v26 = v42_.v43 + 2 * (v23 - v42_.v43) + v24 + v25 + 1;
     v27 = a5;
     if (v26 < 0x65) {
     LABEL_24:
-      v28 = v42;
+      v28 = v42_.v42;
       v29 = 0;
       goto LABEL_33;
     }
   }
-  v29 = malloc_plt_alt1(4 * v26),
+  v29 = malloc_plt_alt2(4 * v26),
   v37 = COERCE_AS(__typeof__(v37),
                   PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
   v28 = (_QWORD*)v29;
@@ -13406,7 +13285,7 @@ __int64 std___1_money_put_do_put_812320(__int64 a1, __int64 a2, char a3,
   LABEL_48:
     if (((unsigned __int8)v47_.v47 & 1) != 0) {
       while (1) {
-        SdkRoutine_857220_alt1(v47_.v49,
+        SdkRoutine_857220_alt2(v47_.v49,
                                (4LL * (_QWORD)v47_.v47) & 0xFFFFFFFFFFFFFFF8LL),
             v37 = COERCE_AS(__typeof__(v37),
                             PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
@@ -13414,20 +13293,20 @@ __int64 std___1_money_put_do_put_812320(__int64 a1, __int64 a2, char a3,
           break;
         }
       LABEL_50:
-        std___1_locale_Destroy_locale_plt_alt1((__int64)v55),
+        std___1_locale_Destroy_locale_plt_alt2((__int64)v55),
             v37 = COERCE_AS(__typeof__(v37),
                             PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
-        _Unwind_Resume_plt_alt2(v36),
+        _Unwind_Resume_plt_alt3(v36),
             v37 = COERCE_AS(__typeof__(v37),
                             PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
-        free_plt_alt1(0),
+        free_plt_alt2(0),
             v37 = COERCE_AS(__typeof__(v37),
                             PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
         if ((v44_.v44 & 1) == 0) {
           goto LABEL_48;
         }
       LABEL_51:
-        SdkRoutine_857220_alt1(v44_.v46, (4 * v44_.v44) & 0xFFFFFFFFFFFFFFF8LL),
+        SdkRoutine_857220_alt2(v44_.v46, (4 * v44_.v44) & 0xFFFFFFFFFFFFFFF8LL),
             v37 = COERCE_AS(__typeof__(v37),
                             PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
         if (((unsigned __int8)v47_.v47 & 1) == 0) {
@@ -13441,20 +13320,20 @@ __int64 std___1_money_put_do_put_812320(__int64 a1, __int64 a2, char a3,
         goto LABEL_50;
       }
     }
-    SdkRoutine_857220_alt1(v50_.v51, v50_.v50[0] & 0xFFFFFFFFFFFFFFFELL),
+    SdkRoutine_857220_alt2(v50_.v51, v50_.v50[0] & 0xFFFFFFFFFFFFFFFELL),
         v37 = COERCE_AS(__typeof__(v37),
                         PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
-    std___1_locale_Destroy_locale_plt_alt1((__int64)v55),
+    std___1_locale_Destroy_locale_plt_alt2((__int64)v55),
         v37 = COERCE_AS(__typeof__(v37),
                         PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
-    _Unwind_Resume_plt_alt2(v36),
+    _Unwind_Resume_plt_alt3(v36),
         v37 = COERCE_AS(__typeof__(v37),
                         PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
     v38 = v37;
-    std___1_locale_Destroy_locale_plt_alt1((__int64)v55),
+    std___1_locale_Destroy_locale_plt_alt2((__int64)v55),
         v37 = COERCE_AS(__typeof__(v37),
                         PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
-    _Unwind_Resume_plt_alt2(v38),
+    _Unwind_Resume_plt_alt3(v38),
         v37 = COERCE_AS(__typeof__(v37),
                         PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
     __udf(0);
@@ -13468,7 +13347,7 @@ LABEL_33:
   }
   SdkRoutine_87d190((__int64)v28, (__int64)&v41, (__int64)&v40,
                     *(_DWORD*)(a4 + 8), v33, v33 + 4 * v23, v15, v20,
-                    (__int64)v54, v53, v52, (__int64)v50_.v50,
+                    (__int64)v53_.v54, v53_.v53, v50_.v52, (__int64)v50_.v50,
                     (__int64)&v47_.v47, (__int64)&v44_.v44, v22),
       v37 = COERCE_AS(__typeof__(v37),
                       PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
@@ -13476,7 +13355,7 @@ LABEL_33:
   v37 = COERCE_AS(__typeof__(v37),
                   PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
   if (v29 != 0) {
-    free_plt_alt1(v29),
+    free_plt_alt2(v29),
         v37 = COERCE_AS(__typeof__(v37),
                         PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
   }
@@ -13485,7 +13364,7 @@ LABEL_33:
       goto LABEL_40;
     }
   LABEL_44:
-    SdkRoutine_857220_alt1(v47_.v49,
+    SdkRoutine_857220_alt2(v47_.v49,
                            (4LL * (_QWORD)v47_.v47) & 0xFFFFFFFFFFFFFFF8LL),
         v37 = COERCE_AS(__typeof__(v37),
                         PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
@@ -13494,7 +13373,7 @@ LABEL_33:
     }
     goto LABEL_41;
   }
-  SdkRoutine_857220_alt1(v44_.v46, (4 * v44_.v44) & 0xFFFFFFFFFFFFFFF8LL),
+  SdkRoutine_857220_alt2(v44_.v46, (4 * v44_.v44) & 0xFFFFFFFFFFFFFFF8LL),
       v37 = COERCE_AS(__typeof__(v37),
                       PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
   if (((unsigned __int8)v47_.v47 & 1) != 0) {
@@ -13503,12 +13382,12 @@ LABEL_33:
 LABEL_40:
   if ((v50_.v50[0] & 1) != 0) {
   LABEL_41:
-    SdkRoutine_857220_alt1(v50_.v51, v50_.v50[0] & 0xFFFFFFFFFFFFFFFELL),
+    SdkRoutine_857220_alt2(v50_.v51, v50_.v50[0] & 0xFFFFFFFFFFFFFFFELL),
         v37 = COERCE_AS(__typeof__(v37),
                         PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
   }
 LABEL_42:
-  std___1_locale_Destroy_locale_plt_alt1((__int64)v55),
+  std___1_locale_Destroy_locale_plt_alt2((__int64)v55),
       v37 = COERCE_AS(__typeof__(v37),
                       PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
   return v34;
@@ -13714,30 +13593,30 @@ void __attribute__((noreturn)) locale_8158d0(__int64 a1)
 {
   __int64 v1;
   __int64 v3;
-  __int64 v4;
-  unsigned int v5;
-  unsigned __int64 v6;
+  unsigned int v4;
+  unsigned __int64 v5;
+  __int64 v6;
 
-  __cxa_guard_abort_plt(&SdkData_1060b90);
-  v3 = __cxa_begin_catch_plt(a1);
-  v4 = *(_QWORD*)(v1 + 16);
-  if (*(_QWORD*)(v1 + 24) != v4) {
+  __cxa_guard_abort_plt_alt2((__int64)&SdkData_1060b90);
+  __cxa_begin_catch_plt_alt2(a1);
+  v3 = *(_QWORD*)(v1 + 16);
+  if (*(_QWORD*)(v1 + 24) != v3) {
     goto LABEL_3;
   }
   while (1) {
-    __cxa_rethrow_plt(v3);
+    __cxa_rethrow_plt_alt2();
   LABEL_3:
-    v5 = 1;
-    v6 = 0;
+    v4 = 1;
+    v5 = 0;
     do {
-      v3 = *(_QWORD*)(v4 + 8 * v6);
-      if (v3 != 0 && atomic_fetch_add((atomic_ullong* volatile)(v3 + 8),
+      v6 = *(_QWORD*)(v3 + 8 * v5);
+      if (v6 != 0 && atomic_fetch_add((atomic_ullong* volatile)(v6 + 8),
                                       0xFFFFFFFFFFFFFFFFLL) == 0) {
-        v3 = (*(__int64 (**)(__int64))(*(_QWORD*)v3 + 16LL))(v3);
+        (*(void (**)(__int64))(*(_QWORD*)v6 + 16LL))(v6);
       }
-      v4 = *(_QWORD*)(v1 + 16);
-      v6 = v5++;
-    } while (v6 < (*(_QWORD*)(v1 + 24) - v4) >> 3);
+      v3 = *(_QWORD*)(v1 + 16);
+      v5 = v4++;
+    } while (v5 < (signed __int64)(*(_QWORD*)(v1 + 24) - v3) >> 3);
   }
 }
 
@@ -13762,23 +13641,23 @@ void __attribute__((noreturn)) locale_816ad0(__int64 a1)
 LABEL_3:
   if ((*(_BYTE*)(v1 + 48) & 1) != 0) {
     while (1) {
-      SdkRoutine_857220(*(_QWORD*)(v1 + 64),
-                        *(_QWORD*)(v1 + 48) & 0xFFFFFFFFFFFFFFFELL);
+      SdkRoutine_857220_alt2(*(_QWORD*)(v1 + 64),
+                             *(_QWORD*)(v1 + 48) & 0xFFFFFFFFFFFFFFFELL);
       if ((*v2 & 1) != 0) {
         break;
       }
     LABEL_5:
-      std___1___shared_count_Destroy___shared_count_plt(v1);
-      _Unwind_Resume_plt_alt1(a1);
+      std___1___shared_count_Destroy___shared_count_plt_alt1(v1);
+      _Unwind_Resume_plt_alt3(a1);
     LABEL_6:
-      SdkRoutine_857220(*(_QWORD*)(v1 + 112),
-                        *(_QWORD*)(v1 + 96) & 0xFFFFFFFFFFFFFFFELL);
+      SdkRoutine_857220_alt2(*(_QWORD*)(v1 + 112),
+                             *(_QWORD*)(v1 + 96) & 0xFFFFFFFFFFFFFFFELL);
       if ((*(_BYTE*)(v1 + 72) & 1) == 0) {
         goto LABEL_3;
       }
     LABEL_7:
-      SdkRoutine_857220(*(_QWORD*)(v1 + 88),
-                        *(_QWORD*)(v1 + 72) & 0xFFFFFFFFFFFFFFFELL);
+      SdkRoutine_857220_alt2(*(_QWORD*)(v1 + 88),
+                             *(_QWORD*)(v1 + 72) & 0xFFFFFFFFFFFFFFFELL);
       if ((*(_BYTE*)(v1 + 48) & 1) == 0) {
         goto LABEL_4;
       }
@@ -13790,10 +13669,10 @@ LABEL_3:
       goto LABEL_5;
     }
   }
-  SdkRoutine_857220(*(_QWORD*)(v1 + 40),
-                    *(_QWORD*)(v1 + 24) & 0xFFFFFFFFFFFFFFFELL);
-  std___1___shared_count_Destroy___shared_count_plt(v1);
-  _Unwind_Resume_plt_alt1(a1);
+  SdkRoutine_857220_alt2(*(_QWORD*)(v1 + 40),
+                         *(_QWORD*)(v1 + 24) & 0xFFFFFFFFFFFFFFFELL);
+  std___1___shared_count_Destroy___shared_count_plt_alt1(v1);
+  _Unwind_Resume_plt_alt3(a1);
   __udf(0);
 }
 
@@ -13811,23 +13690,23 @@ void __attribute__((noreturn)) locale_816d10(__int64 a1)
 LABEL_3:
   if ((*(_BYTE*)(v1 + 48) & 1) != 0) {
     while (1) {
-      SdkRoutine_857220(*(_QWORD*)(v1 + 64),
-                        *(_QWORD*)(v1 + 48) & 0xFFFFFFFFFFFFFFFELL);
+      SdkRoutine_857220_alt2(*(_QWORD*)(v1 + 64),
+                             *(_QWORD*)(v1 + 48) & 0xFFFFFFFFFFFFFFFELL);
       if ((*v2 & 1) != 0) {
         break;
       }
     LABEL_5:
-      std___1___shared_count_Destroy___shared_count_plt(v1);
-      _Unwind_Resume_plt_alt1(a1);
+      std___1___shared_count_Destroy___shared_count_plt_alt1(v1);
+      _Unwind_Resume_plt_alt3(a1);
     LABEL_6:
-      SdkRoutine_857220(*(_QWORD*)(v1 + 112),
-                        *(_QWORD*)(v1 + 96) & 0xFFFFFFFFFFFFFFFELL);
+      SdkRoutine_857220_alt2(*(_QWORD*)(v1 + 112),
+                             *(_QWORD*)(v1 + 96) & 0xFFFFFFFFFFFFFFFELL);
       if ((*(_BYTE*)(v1 + 72) & 1) == 0) {
         goto LABEL_3;
       }
     LABEL_7:
-      SdkRoutine_857220(*(_QWORD*)(v1 + 88),
-                        *(_QWORD*)(v1 + 72) & 0xFFFFFFFFFFFFFFFELL);
+      SdkRoutine_857220_alt2(*(_QWORD*)(v1 + 88),
+                             *(_QWORD*)(v1 + 72) & 0xFFFFFFFFFFFFFFFELL);
       if ((*(_BYTE*)(v1 + 48) & 1) == 0) {
         goto LABEL_4;
       }
@@ -13839,10 +13718,10 @@ LABEL_3:
       goto LABEL_5;
     }
   }
-  SdkRoutine_857220(*(_QWORD*)(v1 + 40),
-                    *(_QWORD*)(v1 + 24) & 0xFFFFFFFFFFFFFFFELL);
-  std___1___shared_count_Destroy___shared_count_plt(v1);
-  _Unwind_Resume_plt_alt1(a1);
+  SdkRoutine_857220_alt2(*(_QWORD*)(v1 + 40),
+                         *(_QWORD*)(v1 + 24) & 0xFFFFFFFFFFFFFFFELL);
+  std___1___shared_count_Destroy___shared_count_plt_alt1(v1);
+  _Unwind_Resume_plt_alt3(a1);
   __udf(0);
 }
 
@@ -13850,15 +13729,15 @@ void __attribute__((noreturn)) locale_816f40(__int64 a1)
 {
   __int64 v1;
 
-  SdkRoutine_87cb10(v1 + 96);
-  SdkRoutine_87cb10(v1 + 72);
-  SdkRoutine_87cb10(v1 + 48);
+  SdkRoutine_87cb10_alt1(v1 + 96);
+  SdkRoutine_87cb10_alt1(v1 + 72);
+  SdkRoutine_87cb10_alt1(v1 + 48);
   if ((*(_BYTE*)(v1 + 24) & 1) != 0) {
-    SdkRoutine_857220(*(_QWORD*)(v1 + 40),
-                      *(_QWORD*)(v1 + 24) & 0xFFFFFFFFFFFFFFFELL);
+    SdkRoutine_857220_alt2(*(_QWORD*)(v1 + 40),
+                           *(_QWORD*)(v1 + 24) & 0xFFFFFFFFFFFFFFFELL);
   }
-  std___1___shared_count_Destroy___shared_count_plt(v1);
-  _Unwind_Resume_plt_alt1(a1);
+  std___1___shared_count_Destroy___shared_count_plt_alt1(v1);
+  _Unwind_Resume_plt_alt3(a1);
   __udf(0);
 }
 
@@ -13866,15 +13745,15 @@ void __attribute__((noreturn)) locale_817120(__int64 a1)
 {
   __int64 v1;
 
-  SdkRoutine_87cb10(v1 + 96);
-  SdkRoutine_87cb10(v1 + 72);
-  SdkRoutine_87cb10(v1 + 48);
+  SdkRoutine_87cb10_alt1(v1 + 96);
+  SdkRoutine_87cb10_alt1(v1 + 72);
+  SdkRoutine_87cb10_alt1(v1 + 48);
   if ((*(_BYTE*)(v1 + 24) & 1) != 0) {
-    SdkRoutine_857220(*(_QWORD*)(v1 + 40),
-                      *(_QWORD*)(v1 + 24) & 0xFFFFFFFFFFFFFFFELL);
+    SdkRoutine_857220_alt2(*(_QWORD*)(v1 + 40),
+                           *(_QWORD*)(v1 + 24) & 0xFFFFFFFFFFFFFFFELL);
   }
-  std___1___shared_count_Destroy___shared_count_plt(v1);
-  _Unwind_Resume_plt_alt1(a1);
+  std___1___shared_count_Destroy___shared_count_plt_alt1(v1);
+  _Unwind_Resume_plt_alt3(a1);
   __udf(0);
 }
 
@@ -13989,58 +13868,57 @@ __int64 std___1_build_name(__int64 result, char* a2, __int64 a3, int a4)
   return result;
 }
 
-__int64 std___1_locale___imp_install_from_8183c0(__int64 a1, __int64 a2,
-                                                 __int64 a3,
-                                                 unsigned __int64 a4)
+__int64 std___1_locale___imp_install_from_8183c0(__int64 a1, __int64 a2)
 {
-  void(__attribute__((noreturn)) * v6)();
-  unsigned __int64 v7;
+  void(__attribute__((noreturn)) * v4)();
+  unsigned __int64 v5;
+  __int64 v6;
+  __int64 v7;
   __int64 v8;
-  __int64 v9;
-  __int64 v10;
-  __int64* v11;
-  unsigned __int64 v12;
+  __int64* v9;
+  unsigned __int64 v10;
   __int64 result;
-  void(__attribute__((noreturn)) * v14)();
-  void(__attribute__((noreturn)) * **v15)();
-  void(__attribute__((noreturn)) * *v16)();
+  void(__attribute__((noreturn)) * v12)();
+  void(__attribute__((noreturn)) * **v13)();
+  void(__attribute__((noreturn)) * *v14)();
 
-  v6 = SdkData_e89650[0];
-  v14 = SdkData_e89650[0];
+  v4 = SdkData_e89650[0];
+  v12 = SdkData_e89650[0];
   if (atomic_load_explicit((atomic_ullong* volatile)SdkData_e89650[0],
                            memory_order_acquire) != -1) {
-    v16 = &v14;
-    v15 = &v16;
-    std___1___call_once_plt(SdkData_e89650[0], &v15, SdkRoutine_82f0b0);
+    v14 = &v12;
+    v13 = &v14;
+    std___1___call_once_plt_alt2((__int64)SdkData_e89650[0], (__int64)&v13,
+                                 (__int64)SdkRoutine_82f0b0);
   }
-  v7 = *(int*)((char*)((__int64*)0x4LL) + (_QWORD)v6 + 4) - 1LL;
-  v8 = *(_QWORD*)(a2 + 16);
-  if (v7 >= (*(_QWORD*)(a2 + 24) - v8) >> 3 ||
-      (v9 = *(_QWORD*)(v8 + 8 * v7)) == 0) {
+  v5 = *(int*)((char*)((__int64*)0x4LL) + (_QWORD)v4 + 4) - 1LL;
+  v6 = *(_QWORD*)(a2 + 16);
+  if (v5 >= (signed __int64)(*(_QWORD*)(a2 + 24) - v6) >> 3 ||
+      (v7 = *(_QWORD*)(v6 + 8 * v5)) == 0) {
     locale_7f6090();
   }
-  atomic_fetch_add_explicit((atomic_ullong* volatile)(v9 + 8), 1u,
+  atomic_fetch_add_explicit((atomic_ullong* volatile)(v7 + 8), 1u,
                             memory_order_relaxed);
-  v10 = *(_QWORD*)(a1 + 16);
-  v11 = (__int64*)(a1 + 16);
-  v12 = (*(_QWORD*)(a1 + 24) - v10) >> 3;
-  if (v12 <= v7) {
-    if (v7 + 1 <= v12) {
-      if (v7 + 1 < v12) {
-        *(_QWORD*)(a1 + 24) = v10 + 8 * (v7 + 1);
+  v8 = *(_QWORD*)(a1 + 16);
+  v9 = (__int64*)(a1 + 16);
+  v10 = (signed __int64)(*(_QWORD*)(a1 + 24) - v8) >> 3;
+  if (v10 <= v5) {
+    if (v5 + 1 <= v10) {
+      if (v5 + 1 < v10) {
+        *(_QWORD*)(a1 + 24) = v8 + 8 * (v5 + 1);
       }
     }
     else {
-      SdkRoutine_82dbb0((__int64*)(a1 + 16), v7 + 1 - v12, a3, a4);
-      v10 = *v11;
+      SdkRoutine_82dbb0_alt1(a1 + 16, v5 + 1 - v10);
+      v8 = *v9;
     }
   }
-  result = *(_QWORD*)(v10 + 8 * v7);
+  result = *(_QWORD*)(v8 + 8 * v5);
   if (result != 0 && atomic_fetch_add((atomic_ullong* volatile)(result + 8),
                                       0xFFFFFFFFFFFFFFFFLL) == 0) {
     result = (*(__int64 (**)(__int64))(*(_QWORD*)result + 16LL))(result);
   }
-  *(_QWORD*)(*v11 + 8 * v7) = v9;
+  *(_QWORD*)(*v9 + 8 * v5) = v7;
   return result;
 }
 
@@ -14123,58 +14001,57 @@ void __attribute__((noreturn)) locale_818610(__int64 a1)
   __udf(0);
 }
 
-__int64 std___1_locale___imp_install_from_818640(__int64 a1, __int64 a2,
-                                                 __int64 a3,
-                                                 unsigned __int64 a4)
+__int64 std___1_locale___imp_install_from_818640(__int64 a1, __int64 a2)
 {
-  void(__attribute__((noreturn)) * v6)();
-  unsigned __int64 v7;
+  void(__attribute__((noreturn)) * v4)();
+  unsigned __int64 v5;
+  __int64 v6;
+  __int64 v7;
   __int64 v8;
-  __int64 v9;
-  __int64 v10;
-  __int64* v11;
-  unsigned __int64 v12;
+  __int64* v9;
+  unsigned __int64 v10;
   __int64 result;
-  void(__attribute__((noreturn)) * v14)();
-  void(__attribute__((noreturn)) * **v15)();
-  void(__attribute__((noreturn)) * *v16)();
+  void(__attribute__((noreturn)) * v12)();
+  void(__attribute__((noreturn)) * **v13)();
+  void(__attribute__((noreturn)) * *v14)();
 
-  v6 = SdkData_e89440[0];
-  v14 = SdkData_e89440[0];
+  v4 = SdkData_e89440[0];
+  v12 = SdkData_e89440[0];
   if (atomic_load_explicit((atomic_ullong* volatile)SdkData_e89440[0],
                            memory_order_acquire) != -1) {
-    v16 = &v14;
-    v15 = &v16;
-    std___1___call_once_plt(SdkData_e89440[0], &v15, SdkRoutine_82f0b0);
+    v14 = &v12;
+    v13 = &v14;
+    std___1___call_once_plt_alt2((__int64)SdkData_e89440[0], (__int64)&v13,
+                                 (__int64)SdkRoutine_82f0b0);
   }
-  v7 = *(int*)((char*)((__int64*)0x4LL) + (_QWORD)v6 + 4) - 1LL;
-  v8 = *(_QWORD*)(a2 + 16);
-  if (v7 >= (*(_QWORD*)(a2 + 24) - v8) >> 3 ||
-      (v9 = *(_QWORD*)(v8 + 8 * v7)) == 0) {
+  v5 = *(int*)((char*)((__int64*)0x4LL) + (_QWORD)v4 + 4) - 1LL;
+  v6 = *(_QWORD*)(a2 + 16);
+  if (v5 >= (signed __int64)(*(_QWORD*)(a2 + 24) - v6) >> 3 ||
+      (v7 = *(_QWORD*)(v6 + 8 * v5)) == 0) {
     locale_7f6090();
   }
-  atomic_fetch_add_explicit((atomic_ullong* volatile)(v9 + 8), 1u,
+  atomic_fetch_add_explicit((atomic_ullong* volatile)(v7 + 8), 1u,
                             memory_order_relaxed);
-  v10 = *(_QWORD*)(a1 + 16);
-  v11 = (__int64*)(a1 + 16);
-  v12 = (*(_QWORD*)(a1 + 24) - v10) >> 3;
-  if (v12 <= v7) {
-    if (v7 + 1 <= v12) {
-      if (v7 + 1 < v12) {
-        *(_QWORD*)(a1 + 24) = v10 + 8 * (v7 + 1);
+  v8 = *(_QWORD*)(a1 + 16);
+  v9 = (__int64*)(a1 + 16);
+  v10 = (signed __int64)(*(_QWORD*)(a1 + 24) - v8) >> 3;
+  if (v10 <= v5) {
+    if (v5 + 1 <= v10) {
+      if (v5 + 1 < v10) {
+        *(_QWORD*)(a1 + 24) = v8 + 8 * (v5 + 1);
       }
     }
     else {
-      SdkRoutine_82dbb0((__int64*)(a1 + 16), v7 + 1 - v12, a3, a4);
-      v10 = *v11;
+      SdkRoutine_82dbb0_alt1(a1 + 16, v5 + 1 - v10);
+      v8 = *v9;
     }
   }
-  result = *(_QWORD*)(v10 + 8 * v7);
+  result = *(_QWORD*)(v8 + 8 * v5);
   if (result != 0 && atomic_fetch_add((atomic_ullong* volatile)(result + 8),
                                       0xFFFFFFFFFFFFFFFFLL) == 0) {
     result = (*(__int64 (**)(__int64))(*(_QWORD*)result + 16LL))(result);
   }
-  *(_QWORD*)(*v11 + 8 * v7) = v9;
+  *(_QWORD*)(*v9 + 8 * v5) = v7;
   return result;
 }
 
@@ -15061,58 +14938,57 @@ void __attribute__((noreturn)) locale_819790(__int64 a1)
   __udf(0);
 }
 
-__int64 std___1_locale___imp_install_from_8197c0(__int64 a1, __int64 a2,
-                                                 __int64 a3,
-                                                 unsigned __int64 a4)
+__int64 std___1_locale___imp_install_from_8197c0(__int64 a1, __int64 a2)
 {
-  void(__attribute__((noreturn)) * v6)();
-  unsigned __int64 v7;
+  void(__attribute__((noreturn)) * v4)();
+  unsigned __int64 v5;
+  __int64 v6;
+  __int64 v7;
   __int64 v8;
-  __int64 v9;
-  __int64 v10;
-  __int64* v11;
-  unsigned __int64 v12;
+  __int64* v9;
+  unsigned __int64 v10;
   __int64 result;
-  void(__attribute__((noreturn)) * v14)();
-  void(__attribute__((noreturn)) * **v15)();
-  void(__attribute__((noreturn)) * *v16)();
+  void(__attribute__((noreturn)) * v12)();
+  void(__attribute__((noreturn)) * **v13)();
+  void(__attribute__((noreturn)) * *v14)();
 
-  v6 = SdkData_e89690[0];
-  v14 = SdkData_e89690[0];
+  v4 = SdkData_e89690[0];
+  v12 = SdkData_e89690[0];
   if (atomic_load_explicit((atomic_ullong* volatile)SdkData_e89690[0],
                            memory_order_acquire) != -1) {
-    v16 = &v14;
-    v15 = &v16;
-    std___1___call_once_plt(SdkData_e89690[0], &v15, SdkRoutine_82f0b0);
+    v14 = &v12;
+    v13 = &v14;
+    std___1___call_once_plt_alt2((__int64)SdkData_e89690[0], (__int64)&v13,
+                                 (__int64)SdkRoutine_82f0b0);
   }
-  v7 = *(int*)((char*)((__int64*)0x4LL) + (_QWORD)v6 + 4) - 1LL;
-  v8 = *(_QWORD*)(a2 + 16);
-  if (v7 >= (*(_QWORD*)(a2 + 24) - v8) >> 3 ||
-      (v9 = *(_QWORD*)(v8 + 8 * v7)) == 0) {
+  v5 = *(int*)((char*)((__int64*)0x4LL) + (_QWORD)v4 + 4) - 1LL;
+  v6 = *(_QWORD*)(a2 + 16);
+  if (v5 >= (signed __int64)(*(_QWORD*)(a2 + 24) - v6) >> 3 ||
+      (v7 = *(_QWORD*)(v6 + 8 * v5)) == 0) {
     locale_7f6090();
   }
-  atomic_fetch_add_explicit((atomic_ullong* volatile)(v9 + 8), 1u,
+  atomic_fetch_add_explicit((atomic_ullong* volatile)(v7 + 8), 1u,
                             memory_order_relaxed);
-  v10 = *(_QWORD*)(a1 + 16);
-  v11 = (__int64*)(a1 + 16);
-  v12 = (*(_QWORD*)(a1 + 24) - v10) >> 3;
-  if (v12 <= v7) {
-    if (v7 + 1 <= v12) {
-      if (v7 + 1 < v12) {
-        *(_QWORD*)(a1 + 24) = v10 + 8 * (v7 + 1);
+  v8 = *(_QWORD*)(a1 + 16);
+  v9 = (__int64*)(a1 + 16);
+  v10 = (signed __int64)(*(_QWORD*)(a1 + 24) - v8) >> 3;
+  if (v10 <= v5) {
+    if (v5 + 1 <= v10) {
+      if (v5 + 1 < v10) {
+        *(_QWORD*)(a1 + 24) = v8 + 8 * (v5 + 1);
       }
     }
     else {
-      SdkRoutine_82dbb0((__int64*)(a1 + 16), v7 + 1 - v12, a3, a4);
-      v10 = *v11;
+      SdkRoutine_82dbb0_alt1(a1 + 16, v5 + 1 - v10);
+      v8 = *v9;
     }
   }
-  result = *(_QWORD*)(v10 + 8 * v7);
+  result = *(_QWORD*)(v8 + 8 * v5);
   if (result != 0 && atomic_fetch_add((atomic_ullong* volatile)(result + 8),
                                       0xFFFFFFFFFFFFFFFFLL) == 0) {
     result = (*(__int64 (**)(__int64))(*(_QWORD*)result + 16LL))(result);
   }
-  *(_QWORD*)(*v11 + 8 * v7) = v9;
+  *(_QWORD*)(*v9 + 8 * v5) = v7;
   return result;
 }
 
@@ -15128,58 +15004,57 @@ void __attribute__((noreturn)) locale_8198d0(__int64 a1)
   __udf(0);
 }
 
-__int64 std___1_locale___imp_install_from_819900(__int64 a1, __int64 a2,
-                                                 __int64 a3,
-                                                 unsigned __int64 a4)
+__int64 std___1_locale___imp_install_from_819900(__int64 a1, __int64 a2)
 {
-  void(__attribute__((noreturn)) * v6)();
-  unsigned __int64 v7;
+  void(__attribute__((noreturn)) * v4)();
+  unsigned __int64 v5;
+  __int64 v6;
+  __int64 v7;
   __int64 v8;
-  __int64 v9;
-  __int64 v10;
-  __int64* v11;
-  unsigned __int64 v12;
+  __int64* v9;
+  unsigned __int64 v10;
   __int64 result;
-  void(__attribute__((noreturn)) * v14)();
-  void(__attribute__((noreturn)) * **v15)();
-  void(__attribute__((noreturn)) * *v16)();
+  void(__attribute__((noreturn)) * v12)();
+  void(__attribute__((noreturn)) * **v13)();
+  void(__attribute__((noreturn)) * *v14)();
 
-  v6 = SdkData_e89698[0];
-  v14 = SdkData_e89698[0];
+  v4 = SdkData_e89698[0];
+  v12 = SdkData_e89698[0];
   if (atomic_load_explicit((atomic_ullong* volatile)SdkData_e89698[0],
                            memory_order_acquire) != -1) {
-    v16 = &v14;
-    v15 = &v16;
-    std___1___call_once_plt(SdkData_e89698[0], &v15, SdkRoutine_82f0b0);
+    v14 = &v12;
+    v13 = &v14;
+    std___1___call_once_plt_alt2((__int64)SdkData_e89698[0], (__int64)&v13,
+                                 (__int64)SdkRoutine_82f0b0);
   }
-  v7 = *(int*)((char*)((__int64*)0x4LL) + (_QWORD)v6 + 4) - 1LL;
-  v8 = *(_QWORD*)(a2 + 16);
-  if (v7 >= (*(_QWORD*)(a2 + 24) - v8) >> 3 ||
-      (v9 = *(_QWORD*)(v8 + 8 * v7)) == 0) {
+  v5 = *(int*)((char*)((__int64*)0x4LL) + (_QWORD)v4 + 4) - 1LL;
+  v6 = *(_QWORD*)(a2 + 16);
+  if (v5 >= (signed __int64)(*(_QWORD*)(a2 + 24) - v6) >> 3 ||
+      (v7 = *(_QWORD*)(v6 + 8 * v5)) == 0) {
     locale_7f6090();
   }
-  atomic_fetch_add_explicit((atomic_ullong* volatile)(v9 + 8), 1u,
+  atomic_fetch_add_explicit((atomic_ullong* volatile)(v7 + 8), 1u,
                             memory_order_relaxed);
-  v10 = *(_QWORD*)(a1 + 16);
-  v11 = (__int64*)(a1 + 16);
-  v12 = (*(_QWORD*)(a1 + 24) - v10) >> 3;
-  if (v12 <= v7) {
-    if (v7 + 1 <= v12) {
-      if (v7 + 1 < v12) {
-        *(_QWORD*)(a1 + 24) = v10 + 8 * (v7 + 1);
+  v8 = *(_QWORD*)(a1 + 16);
+  v9 = (__int64*)(a1 + 16);
+  v10 = (signed __int64)(*(_QWORD*)(a1 + 24) - v8) >> 3;
+  if (v10 <= v5) {
+    if (v5 + 1 <= v10) {
+      if (v5 + 1 < v10) {
+        *(_QWORD*)(a1 + 24) = v8 + 8 * (v5 + 1);
       }
     }
     else {
-      SdkRoutine_82dbb0((__int64*)(a1 + 16), v7 + 1 - v12, a3, a4);
-      v10 = *v11;
+      SdkRoutine_82dbb0_alt1(a1 + 16, v5 + 1 - v10);
+      v8 = *v9;
     }
   }
-  result = *(_QWORD*)(v10 + 8 * v7);
+  result = *(_QWORD*)(v8 + 8 * v5);
   if (result != 0 && atomic_fetch_add((atomic_ullong* volatile)(result + 8),
                                       0xFFFFFFFFFFFFFFFFLL) == 0) {
     result = (*(__int64 (**)(__int64))(*(_QWORD*)result + 16LL))(result);
   }
-  *(_QWORD*)(*v11 + 8 * v7) = v9;
+  *(_QWORD*)(*v9 + 8 * v5) = v7;
   return result;
 }
 
@@ -15329,58 +15204,57 @@ void __attribute__((noreturn)) locale_819c90(__int64 a1)
   __udf(0);
 }
 
-__int64 std___1_locale___imp_install_from_819cc0(__int64 a1, __int64 a2,
-                                                 __int64 a3,
-                                                 unsigned __int64 a4)
+__int64 std___1_locale___imp_install_from_819cc0(__int64 a1, __int64 a2)
 {
-  void(__attribute__((noreturn)) * v6)();
-  unsigned __int64 v7;
+  void(__attribute__((noreturn)) * v4)();
+  unsigned __int64 v5;
+  __int64 v6;
+  __int64 v7;
   __int64 v8;
-  __int64 v9;
-  __int64 v10;
-  __int64* v11;
-  unsigned __int64 v12;
+  __int64* v9;
+  unsigned __int64 v10;
   __int64 result;
-  void(__attribute__((noreturn)) * v14)();
-  void(__attribute__((noreturn)) * **v15)();
-  void(__attribute__((noreturn)) * *v16)();
+  void(__attribute__((noreturn)) * v12)();
+  void(__attribute__((noreturn)) * **v13)();
+  void(__attribute__((noreturn)) * *v14)();
 
-  v6 = SdkData_e89448[0];
-  v14 = SdkData_e89448[0];
+  v4 = SdkData_e89448[0];
+  v12 = SdkData_e89448[0];
   if (atomic_load_explicit((atomic_ullong* volatile)SdkData_e89448[0],
                            memory_order_acquire) != -1) {
-    v16 = &v14;
-    v15 = &v16;
-    std___1___call_once_plt(SdkData_e89448[0], &v15, SdkRoutine_82f0b0);
+    v14 = &v12;
+    v13 = &v14;
+    std___1___call_once_plt_alt2((__int64)SdkData_e89448[0], (__int64)&v13,
+                                 (__int64)SdkRoutine_82f0b0);
   }
-  v7 = *(int*)((char*)((__int64*)0x4LL) + (_QWORD)v6 + 4) - 1LL;
-  v8 = *(_QWORD*)(a2 + 16);
-  if (v7 >= (*(_QWORD*)(a2 + 24) - v8) >> 3 ||
-      (v9 = *(_QWORD*)(v8 + 8 * v7)) == 0) {
+  v5 = *(int*)((char*)((__int64*)0x4LL) + (_QWORD)v4 + 4) - 1LL;
+  v6 = *(_QWORD*)(a2 + 16);
+  if (v5 >= (signed __int64)(*(_QWORD*)(a2 + 24) - v6) >> 3 ||
+      (v7 = *(_QWORD*)(v6 + 8 * v5)) == 0) {
     locale_7f6090();
   }
-  atomic_fetch_add_explicit((atomic_ullong* volatile)(v9 + 8), 1u,
+  atomic_fetch_add_explicit((atomic_ullong* volatile)(v7 + 8), 1u,
                             memory_order_relaxed);
-  v10 = *(_QWORD*)(a1 + 16);
-  v11 = (__int64*)(a1 + 16);
-  v12 = (*(_QWORD*)(a1 + 24) - v10) >> 3;
-  if (v12 <= v7) {
-    if (v7 + 1 <= v12) {
-      if (v7 + 1 < v12) {
-        *(_QWORD*)(a1 + 24) = v10 + 8 * (v7 + 1);
+  v8 = *(_QWORD*)(a1 + 16);
+  v9 = (__int64*)(a1 + 16);
+  v10 = (signed __int64)(*(_QWORD*)(a1 + 24) - v8) >> 3;
+  if (v10 <= v5) {
+    if (v5 + 1 <= v10) {
+      if (v5 + 1 < v10) {
+        *(_QWORD*)(a1 + 24) = v8 + 8 * (v5 + 1);
       }
     }
     else {
-      SdkRoutine_82dbb0((__int64*)(a1 + 16), v7 + 1 - v12, a3, a4);
-      v10 = *v11;
+      SdkRoutine_82dbb0_alt1(a1 + 16, v5 + 1 - v10);
+      v8 = *v9;
     }
   }
-  result = *(_QWORD*)(v10 + 8 * v7);
+  result = *(_QWORD*)(v8 + 8 * v5);
   if (result != 0 && atomic_fetch_add((atomic_ullong* volatile)(result + 8),
                                       0xFFFFFFFFFFFFFFFFLL) == 0) {
     result = (*(__int64 (**)(__int64))(*(_QWORD*)result + 16LL))(result);
   }
-  *(_QWORD*)(*v11 + 8 * v7) = v9;
+  *(_QWORD*)(*v9 + 8 * v5) = v7;
   return result;
 }
 
@@ -15396,58 +15270,57 @@ void __attribute__((noreturn)) locale_819dd0(__int64 a1)
   __udf(0);
 }
 
-__int64 std___1_locale___imp_install_from_819e00(__int64 a1, __int64 a2,
-                                                 __int64 a3,
-                                                 unsigned __int64 a4)
+__int64 std___1_locale___imp_install_from_819e00(__int64 a1, __int64 a2)
 {
-  void(__attribute__((noreturn)) * v6)();
-  unsigned __int64 v7;
+  void(__attribute__((noreturn)) * v4)();
+  unsigned __int64 v5;
+  __int64 v6;
+  __int64 v7;
   __int64 v8;
-  __int64 v9;
-  __int64 v10;
-  __int64* v11;
-  unsigned __int64 v12;
+  __int64* v9;
+  unsigned __int64 v10;
   __int64 result;
-  void(__attribute__((noreturn)) * v14)();
-  void(__attribute__((noreturn)) * **v15)();
-  void(__attribute__((noreturn)) * *v16)();
+  void(__attribute__((noreturn)) * v12)();
+  void(__attribute__((noreturn)) * **v13)();
+  void(__attribute__((noreturn)) * *v14)();
 
-  v6 = SdkData_e89488[0];
-  v14 = SdkData_e89488[0];
+  v4 = SdkData_e89488[0];
+  v12 = SdkData_e89488[0];
   if (atomic_load_explicit((atomic_ullong* volatile)SdkData_e89488[0],
                            memory_order_acquire) != -1) {
-    v16 = &v14;
-    v15 = &v16;
-    std___1___call_once_plt(SdkData_e89488[0], &v15, SdkRoutine_82f0b0);
+    v14 = &v12;
+    v13 = &v14;
+    std___1___call_once_plt_alt2((__int64)SdkData_e89488[0], (__int64)&v13,
+                                 (__int64)SdkRoutine_82f0b0);
   }
-  v7 = *(int*)((char*)((__int64*)0x4LL) + (_QWORD)v6 + 4) - 1LL;
-  v8 = *(_QWORD*)(a2 + 16);
-  if (v7 >= (*(_QWORD*)(a2 + 24) - v8) >> 3 ||
-      (v9 = *(_QWORD*)(v8 + 8 * v7)) == 0) {
+  v5 = *(int*)((char*)((__int64*)0x4LL) + (_QWORD)v4 + 4) - 1LL;
+  v6 = *(_QWORD*)(a2 + 16);
+  if (v5 >= (signed __int64)(*(_QWORD*)(a2 + 24) - v6) >> 3 ||
+      (v7 = *(_QWORD*)(v6 + 8 * v5)) == 0) {
     locale_7f6090();
   }
-  atomic_fetch_add_explicit((atomic_ullong* volatile)(v9 + 8), 1u,
+  atomic_fetch_add_explicit((atomic_ullong* volatile)(v7 + 8), 1u,
                             memory_order_relaxed);
-  v10 = *(_QWORD*)(a1 + 16);
-  v11 = (__int64*)(a1 + 16);
-  v12 = (*(_QWORD*)(a1 + 24) - v10) >> 3;
-  if (v12 <= v7) {
-    if (v7 + 1 <= v12) {
-      if (v7 + 1 < v12) {
-        *(_QWORD*)(a1 + 24) = v10 + 8 * (v7 + 1);
+  v8 = *(_QWORD*)(a1 + 16);
+  v9 = (__int64*)(a1 + 16);
+  v10 = (signed __int64)(*(_QWORD*)(a1 + 24) - v8) >> 3;
+  if (v10 <= v5) {
+    if (v5 + 1 <= v10) {
+      if (v5 + 1 < v10) {
+        *(_QWORD*)(a1 + 24) = v8 + 8 * (v5 + 1);
       }
     }
     else {
-      SdkRoutine_82dbb0((__int64*)(a1 + 16), v7 + 1 - v12, a3, a4);
-      v10 = *v11;
+      SdkRoutine_82dbb0_alt1(a1 + 16, v5 + 1 - v10);
+      v8 = *v9;
     }
   }
-  result = *(_QWORD*)(v10 + 8 * v7);
+  result = *(_QWORD*)(v8 + 8 * v5);
   if (result != 0 && atomic_fetch_add((atomic_ullong* volatile)(result + 8),
                                       0xFFFFFFFFFFFFFFFFLL) == 0) {
     result = (*(__int64 (**)(__int64))(*(_QWORD*)result + 16LL))(result);
   }
-  *(_QWORD*)(*v11 + 8 * v7) = v9;
+  *(_QWORD*)(*v9 + 8 * v5) = v7;
   return result;
 }
 
@@ -15463,58 +15336,57 @@ void __attribute__((noreturn)) locale_819f10(__int64 a1)
   __udf(0);
 }
 
-__int64 std___1_locale___imp_install_from_819f40(__int64 a1, __int64 a2,
-                                                 __int64 a3,
-                                                 unsigned __int64 a4)
+__int64 std___1_locale___imp_install_from_819f40(__int64 a1, __int64 a2)
 {
-  void(__attribute__((noreturn)) * v6)();
-  unsigned __int64 v7;
+  void(__attribute__((noreturn)) * v4)();
+  unsigned __int64 v5;
+  __int64 v6;
+  __int64 v7;
   __int64 v8;
-  __int64 v9;
-  __int64 v10;
-  __int64* v11;
-  unsigned __int64 v12;
+  __int64* v9;
+  unsigned __int64 v10;
   __int64 result;
-  void(__attribute__((noreturn)) * v14)();
-  void(__attribute__((noreturn)) * **v15)();
-  void(__attribute__((noreturn)) * *v16)();
+  void(__attribute__((noreturn)) * v12)();
+  void(__attribute__((noreturn)) * **v13)();
+  void(__attribute__((noreturn)) * *v14)();
 
-  v6 = SdkData_e89458[0];
-  v14 = SdkData_e89458[0];
+  v4 = SdkData_e89458[0];
+  v12 = SdkData_e89458[0];
   if (atomic_load_explicit((atomic_ullong* volatile)SdkData_e89458[0],
                            memory_order_acquire) != -1) {
-    v16 = &v14;
-    v15 = &v16;
-    std___1___call_once_plt(SdkData_e89458[0], &v15, SdkRoutine_82f0b0);
+    v14 = &v12;
+    v13 = &v14;
+    std___1___call_once_plt_alt2((__int64)SdkData_e89458[0], (__int64)&v13,
+                                 (__int64)SdkRoutine_82f0b0);
   }
-  v7 = *(int*)((char*)((__int64*)0x4LL) + (_QWORD)v6 + 4) - 1LL;
-  v8 = *(_QWORD*)(a2 + 16);
-  if (v7 >= (*(_QWORD*)(a2 + 24) - v8) >> 3 ||
-      (v9 = *(_QWORD*)(v8 + 8 * v7)) == 0) {
+  v5 = *(int*)((char*)((__int64*)0x4LL) + (_QWORD)v4 + 4) - 1LL;
+  v6 = *(_QWORD*)(a2 + 16);
+  if (v5 >= (signed __int64)(*(_QWORD*)(a2 + 24) - v6) >> 3 ||
+      (v7 = *(_QWORD*)(v6 + 8 * v5)) == 0) {
     locale_7f6090();
   }
-  atomic_fetch_add_explicit((atomic_ullong* volatile)(v9 + 8), 1u,
+  atomic_fetch_add_explicit((atomic_ullong* volatile)(v7 + 8), 1u,
                             memory_order_relaxed);
-  v10 = *(_QWORD*)(a1 + 16);
-  v11 = (__int64*)(a1 + 16);
-  v12 = (*(_QWORD*)(a1 + 24) - v10) >> 3;
-  if (v12 <= v7) {
-    if (v7 + 1 <= v12) {
-      if (v7 + 1 < v12) {
-        *(_QWORD*)(a1 + 24) = v10 + 8 * (v7 + 1);
+  v8 = *(_QWORD*)(a1 + 16);
+  v9 = (__int64*)(a1 + 16);
+  v10 = (signed __int64)(*(_QWORD*)(a1 + 24) - v8) >> 3;
+  if (v10 <= v5) {
+    if (v5 + 1 <= v10) {
+      if (v5 + 1 < v10) {
+        *(_QWORD*)(a1 + 24) = v8 + 8 * (v5 + 1);
       }
     }
     else {
-      SdkRoutine_82dbb0((__int64*)(a1 + 16), v7 + 1 - v12, a3, a4);
-      v10 = *v11;
+      SdkRoutine_82dbb0_alt1(a1 + 16, v5 + 1 - v10);
+      v8 = *v9;
     }
   }
-  result = *(_QWORD*)(v10 + 8 * v7);
+  result = *(_QWORD*)(v8 + 8 * v5);
   if (result != 0 && atomic_fetch_add((atomic_ullong* volatile)(result + 8),
                                       0xFFFFFFFFFFFFFFFFLL) == 0) {
     result = (*(__int64 (**)(__int64))(*(_QWORD*)result + 16LL))(result);
   }
-  *(_QWORD*)(*v11 + 8 * v7) = v9;
+  *(_QWORD*)(*v9 + 8 * v5) = v7;
   return result;
 }
 
@@ -15664,58 +15536,57 @@ void __attribute__((noreturn)) locale_81a2d0(__int64 a1)
   __udf(0);
 }
 
-__int64 std___1_locale___imp_install_from_81a300(__int64 a1, __int64 a2,
-                                                 __int64 a3,
-                                                 unsigned __int64 a4)
+__int64 std___1_locale___imp_install_from_81a300(__int64 a1, __int64 a2)
 {
-  void(__attribute__((noreturn)) * v6)();
-  unsigned __int64 v7;
+  void(__attribute__((noreturn)) * v4)();
+  unsigned __int64 v5;
+  __int64 v6;
+  __int64 v7;
   __int64 v8;
-  __int64 v9;
-  __int64 v10;
-  __int64* v11;
-  unsigned __int64 v12;
+  __int64* v9;
+  unsigned __int64 v10;
   __int64 result;
-  void(__attribute__((noreturn)) * v14)();
-  void(__attribute__((noreturn)) * **v15)();
-  void(__attribute__((noreturn)) * *v16)();
+  void(__attribute__((noreturn)) * v12)();
+  void(__attribute__((noreturn)) * **v13)();
+  void(__attribute__((noreturn)) * *v14)();
 
-  v6 = SdkData_e896a8[0];
-  v14 = SdkData_e896a8[0];
+  v4 = SdkData_e896a8[0];
+  v12 = SdkData_e896a8[0];
   if (atomic_load_explicit((atomic_ullong* volatile)SdkData_e896a8[0],
                            memory_order_acquire) != -1) {
-    v16 = &v14;
-    v15 = &v16;
-    std___1___call_once_plt(SdkData_e896a8[0], &v15, SdkRoutine_82f0b0);
+    v14 = &v12;
+    v13 = &v14;
+    std___1___call_once_plt_alt2((__int64)SdkData_e896a8[0], (__int64)&v13,
+                                 (__int64)SdkRoutine_82f0b0);
   }
-  v7 = *(int*)((char*)((__int64*)0x4LL) + (_QWORD)v6 + 4) - 1LL;
-  v8 = *(_QWORD*)(a2 + 16);
-  if (v7 >= (*(_QWORD*)(a2 + 24) - v8) >> 3 ||
-      (v9 = *(_QWORD*)(v8 + 8 * v7)) == 0) {
+  v5 = *(int*)((char*)((__int64*)0x4LL) + (_QWORD)v4 + 4) - 1LL;
+  v6 = *(_QWORD*)(a2 + 16);
+  if (v5 >= (signed __int64)(*(_QWORD*)(a2 + 24) - v6) >> 3 ||
+      (v7 = *(_QWORD*)(v6 + 8 * v5)) == 0) {
     locale_7f6090();
   }
-  atomic_fetch_add_explicit((atomic_ullong* volatile)(v9 + 8), 1u,
+  atomic_fetch_add_explicit((atomic_ullong* volatile)(v7 + 8), 1u,
                             memory_order_relaxed);
-  v10 = *(_QWORD*)(a1 + 16);
-  v11 = (__int64*)(a1 + 16);
-  v12 = (*(_QWORD*)(a1 + 24) - v10) >> 3;
-  if (v12 <= v7) {
-    if (v7 + 1 <= v12) {
-      if (v7 + 1 < v12) {
-        *(_QWORD*)(a1 + 24) = v10 + 8 * (v7 + 1);
+  v8 = *(_QWORD*)(a1 + 16);
+  v9 = (__int64*)(a1 + 16);
+  v10 = (signed __int64)(*(_QWORD*)(a1 + 24) - v8) >> 3;
+  if (v10 <= v5) {
+    if (v5 + 1 <= v10) {
+      if (v5 + 1 < v10) {
+        *(_QWORD*)(a1 + 24) = v8 + 8 * (v5 + 1);
       }
     }
     else {
-      SdkRoutine_82dbb0((__int64*)(a1 + 16), v7 + 1 - v12, a3, a4);
-      v10 = *v11;
+      SdkRoutine_82dbb0_alt1(a1 + 16, v5 + 1 - v10);
+      v8 = *v9;
     }
   }
-  result = *(_QWORD*)(v10 + 8 * v7);
+  result = *(_QWORD*)(v8 + 8 * v5);
   if (result != 0 && atomic_fetch_add((atomic_ullong* volatile)(result + 8),
                                       0xFFFFFFFFFFFFFFFFLL) == 0) {
     result = (*(__int64 (**)(__int64))(*(_QWORD*)result + 16LL))(result);
   }
-  *(_QWORD*)(*v11 + 8 * v7) = v9;
+  *(_QWORD*)(*v9 + 8 * v5) = v7;
   return result;
 }
 
@@ -16001,11 +15872,9 @@ void __attribute__((noreturn)) locale_81a910(__int64 a1)
 
 __int64 std___1_locale_locale_81adb8(__int64 a1)
 {
-  __int64 v2;
-
-  __cxa_guard_abort_plt(&SdkData_1060ba0);
-  v2 = _Unwind_Resume_plt(a1);
-  return SdkRoutine_81add0(v2);
+  __cxa_guard_abort_plt_alt2((__int64)&SdkData_1060ba0);
+  _Unwind_Resume_plt_alt3(a1);
+  return SdkRoutine_81add0_alt1();
 }
 
 void __attribute__((noreturn)) locale_81ae5c()
@@ -16052,79 +15921,54 @@ void __attribute__((noreturn)) locale_81b25c(__int64 a1, __int64 a2, __int64 a3,
   __int64 v12;
   __int64 v14;
 
+  v14 = COERCE_AS(__typeof__(v14),
+                  PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
   if ((a10 & 1) != 0) {
-    SdkRoutine_857220(a12, a10 & 0xFFFFFFFFFFFFFFFELL);
-    SdkRoutine_857220(v12, 312);
-    _Unwind_Resume_plt_alt1(a1);
+    SdkRoutine_857220_alt2(a12, a10 & 0xFFFFFFFFFFFFFFFELL),
+        v14 = COERCE_AS(__typeof__(v14),
+                        PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
+    SdkRoutine_857220_alt2(v12, 0x138u),
+        v14 = COERCE_AS(__typeof__(v14),
+                        PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
+    _Unwind_Resume_plt_alt3(a1),
+        v14 = COERCE_AS(__typeof__(v14),
+                        PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
     a1 = v14;
   }
-  SdkRoutine_857220(v12, 312);
-  _Unwind_Resume_plt_alt1(a1);
+  SdkRoutine_857220_alt2(v12, 0x138u),
+      v14 = COERCE_AS(__typeof__(v14),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
+  _Unwind_Resume_plt_alt3(a1),
+      v14 = COERCE_AS(__typeof__(v14),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
   __udf(0);
 }
 
 __int64 std___1_locale_locale_81b318(__int64 a1)
 {
   __int64 v1;
-  __int64* v3;
-  __int64* v4;
-  unsigned int v5;
-  unsigned int v6;
-  _QWORD* v7;
-  _QWORD* v8;
-  _QWORD* v9;
-  _QWORD* v10;
-  __int64 v11;
-  __int64 result;
 
-  SdkRoutine_857220(v1, 312);
-  _Unwind_Resume_plt_alt1(a1);
-  v4 = v3;
-  v6 = v5;
-  v8 = v7;
-  v10 = v9;
-  v11 = SdkRoutine_85e050(0x138u);
-  result = std___1_locale___imp___imp_818060(v11, *v10, *v8, v6);
-  *v4 = v11;
-  atomic_fetch_add_explicit((atomic_ullong* volatile)(v11 + 8), 1u,
-                            memory_order_relaxed);
-  return result;
+  SdkRoutine_857220_alt2(v1, 0x138u);
+  _Unwind_Resume_plt_alt3(a1);
+  return std___1_locale_locale_81b330();
 }
 
-void std___1_locale_name_81b398(__int64 a1)
+__int64 std___1_locale_name_81b398(__int64 a1)
 {
   __int64 v1;
-  _QWORD* v3;
-  __int64 v4;
-  _QWORD* v5;
-  __int64 v6;
-  __int64 v7;
-  __int64 v8;
 
-  SdkRoutine_857220(v1, 312);
-  _Unwind_Resume_plt_alt1(a1);
-  v5 = *(_QWORD**)v4;
-  if ((*(_BYTE*)(*(_QWORD*)v4 + 288LL) & 1) != 0) {
-    nandroid_extractors_mp4_4f61b0_alt1(v3, v5[38]);
-  }
-  else {
-    v6 = v5[36];
-    v7 = v5[37];
-    v8 = v5[38];
-    v3[1] = v7;
-    v3[2] = v8;
-    *v3 = v6;
-  }
+  SdkRoutine_857220_alt2(v1, 0x138u);
+  _Unwind_Resume_plt_alt3(a1);
+  return std___1_locale_name();
 }
 
 __int64 std___1_locale_global(__int64 a1)
 {
   __int64 v1;
-  __int64 v3;
 
-  SdkRoutine_857220(v1, 312);
-  v3 = _Unwind_Resume_plt(a1);
-  return SdkRoutine_81b480(v3);
+  SdkRoutine_857220_alt2(v1, 0x138u);
+  _Unwind_Resume_plt_alt3(a1);
+  return SdkRoutine_81b480_alt1();
 }
 
 bool locale_81b850(__int64* a1, __int64* a2)
@@ -16363,6 +16207,20 @@ locale_81c4a0(__int64 a1, __int64 a2, __int64 a3, __int64 a4, __int64 a5,
   SdkRoutine_857220(a14, (4 * a12) & 0xFFFFFFFFFFFFFFF8LL);
   _Unwind_Resume_plt_alt1(a1);
   __udf(0);
+}
+
+__int64 std___1_ctype_Destroy_ctype(__int64 a1, __int64 a2, __int64 a3,
+                                    __int64 a4, __int64 a5, __int64 a6,
+                                    __int64 a7, __int64 a8, __int64 a9,
+                                    __int64 a10, __int64 a11, __int64 a12)
+{
+
+  SdkRoutine_87cb10_alt2();
+  if ((a10 & 1) != 0) {
+    SdkRoutine_857220_alt2(a12, (4 * a10) & 0xFFFFFFFFFFFFFFF8LL);
+  }
+  _Unwind_Resume_plt_alt3(a1);
+  return SdkRoutine_81c700();
 }
 
 bool std___1_ctype_do_is_81c730(__int64 a1, __int16 a2, unsigned int a3)
@@ -20187,6 +20045,123 @@ void __attribute__((noreturn)) locale_827538(__int64 a1)
   __udf(0);
 }
 
+void __attribute__((noreturn)) locale_829060(__int64 a1)
+{
+  __int64 v2;
+  __int64 v4;
+  __int64 v5;
+  __int64 v6;
+  __int64 v7;
+  __int64 v8;
+  __int64 v9;
+  __int64 v10;
+  __int64 v11;
+
+  v10 = COERCE_AS(__typeof__(v10),
+                  PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+  v4 = COERCE_AS(__typeof__(v4),
+                 PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+  v6 = COERCE_AS(__typeof__(v6),
+                 PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+  v8 = COERCE_AS(__typeof__(v8),
+                 PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
+  SdkRoutine_87cb10_alt2(),
+      v10 = COERCE_AS(__typeof__(v10),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v4 = COERCE_AS(__typeof__(v4),
+                     PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v6 = COERCE_AS(__typeof__(v6),
+                     PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v8 = COERCE_AS(__typeof__(v8),
+                     PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
+  _Unwind_Resume_plt_alt3(a1),
+      v10 = COERCE_AS(__typeof__(v10),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v4 = COERCE_AS(__typeof__(v4),
+                     PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v6 = COERCE_AS(__typeof__(v6),
+                     PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v8 = COERCE_AS(__typeof__(v8),
+                     PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
+  v5 = v4;
+  SdkRoutine_82dd20_alt2((__int64*)(v2 - 16)),
+      v10 = COERCE_AS(__typeof__(v10),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v4 = COERCE_AS(__typeof__(v4),
+                     PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v6 = COERCE_AS(__typeof__(v6),
+                     PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v8 = COERCE_AS(__typeof__(v8),
+                     PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
+  _Unwind_Resume_plt_alt3(v5),
+      v10 = COERCE_AS(__typeof__(v10),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v4 = COERCE_AS(__typeof__(v4),
+                     PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v6 = COERCE_AS(__typeof__(v6),
+                     PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v8 = COERCE_AS(__typeof__(v8),
+                     PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
+  v7 = v6;
+  SdkRoutine_87cb10_alt2(),
+      v10 = COERCE_AS(__typeof__(v10),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v4 = COERCE_AS(__typeof__(v4),
+                     PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v6 = COERCE_AS(__typeof__(v6),
+                     PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v8 = COERCE_AS(__typeof__(v8),
+                     PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
+  _Unwind_Resume_plt_alt3(v7),
+      v10 = COERCE_AS(__typeof__(v10),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v4 = COERCE_AS(__typeof__(v4),
+                     PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v6 = COERCE_AS(__typeof__(v6),
+                     PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v8 = COERCE_AS(__typeof__(v8),
+                     PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
+  v9 = v8;
+  SdkRoutine_87cb10_alt2(),
+      v10 = COERCE_AS(__typeof__(v10),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v4 = COERCE_AS(__typeof__(v4),
+                     PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v6 = COERCE_AS(__typeof__(v6),
+                     PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v8 = COERCE_AS(__typeof__(v8),
+                     PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
+  _Unwind_Resume_plt_alt3(v9),
+      v10 = COERCE_AS(__typeof__(v10),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v4 = COERCE_AS(__typeof__(v4),
+                     PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v6 = COERCE_AS(__typeof__(v6),
+                     PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v8 = COERCE_AS(__typeof__(v8),
+                     PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
+  v11 = v10;
+  SdkRoutine_87cb10_alt2(),
+      v10 = COERCE_AS(__typeof__(v10),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v4 = COERCE_AS(__typeof__(v4),
+                     PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v6 = COERCE_AS(__typeof__(v6),
+                     PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v8 = COERCE_AS(__typeof__(v8),
+                     PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
+  _Unwind_Resume_plt_alt3(v11),
+      v10 = COERCE_AS(__typeof__(v10),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v4 = COERCE_AS(__typeof__(v4),
+                     PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v6 = COERCE_AS(__typeof__(v6),
+                     PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+      v8 = COERCE_AS(__typeof__(v8),
+                     PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
+  __udf(0);
+}
+
 void __attribute__((noreturn)) locale_829d34(__int64 a1)
 {
   SdkRoutine_7cd620_alt1(a1);
@@ -20262,263 +20237,263 @@ void __attribute__((noreturn)) std___1___time_get_storage___time_get_storage(
 LABEL_3:
   if ((*(_BYTE*)(v10 + 992) & 1) != 0) {
     while (1) {
-      SdkRoutine_857220(*(_QWORD*)(v10 + 1008),
-                        *(_QWORD*)(v10 + 992) & 0xFFFFFFFFFFFFFFFELL);
+      SdkRoutine_857220_alt2(*(_QWORD*)(v10 + 1008),
+                             *(_QWORD*)(v10 + 992) & 0xFFFFFFFFFFFFFFFELL);
       if ((*(_BYTE*)(v10 + 968) & 1) == 0) {
         break;
       }
     LABEL_49:
-      SdkRoutine_857220(*(_QWORD*)(v10 + 984),
-                        *(_QWORD*)(v10 + 968) & 0xFFFFFFFFFFFFFFFELL);
+      SdkRoutine_857220_alt2(*(_QWORD*)(v10 + 984),
+                             *(_QWORD*)(v10 + 968) & 0xFFFFFFFFFFFFFFFELL);
       if ((*(_BYTE*)(v10 + 944) & 1) == 0) {
         goto LABEL_6;
       }
     LABEL_50:
-      SdkRoutine_857220(*(_QWORD*)(v10 + 960),
-                        *(_QWORD*)(v10 + 944) & 0xFFFFFFFFFFFFFFFELL);
+      SdkRoutine_857220_alt2(*(_QWORD*)(v10 + 960),
+                             *(_QWORD*)(v10 + 944) & 0xFFFFFFFFFFFFFFFELL);
       if ((*(_BYTE*)(v10 + 920) & 1) == 0) {
         goto LABEL_7;
       }
     LABEL_51:
-      SdkRoutine_857220(*(_QWORD*)(v10 + 936),
-                        *(_QWORD*)(v10 + 920) & 0xFFFFFFFFFFFFFFFELL);
+      SdkRoutine_857220_alt2(*(_QWORD*)(v10 + 936),
+                             *(_QWORD*)(v10 + 920) & 0xFFFFFFFFFFFFFFFELL);
       if ((*(_BYTE*)(v10 + 896) & 1) == 0) {
         goto LABEL_8;
       }
     LABEL_52:
-      SdkRoutine_857220(*(_QWORD*)(v10 + 912),
-                        *(_QWORD*)(v10 + 896) & 0xFFFFFFFFFFFFFFFELL);
+      SdkRoutine_857220_alt2(*(_QWORD*)(v10 + 912),
+                             *(_QWORD*)(v10 + 896) & 0xFFFFFFFFFFFFFFFELL);
       if ((*(_BYTE*)(v10 + 872) & 1) == 0) {
         goto LABEL_9;
       }
     LABEL_53:
-      SdkRoutine_857220(*(_QWORD*)(v10 + 888),
-                        *(_QWORD*)(v10 + 872) & 0xFFFFFFFFFFFFFFFELL);
+      SdkRoutine_857220_alt2(*(_QWORD*)(v10 + 888),
+                             *(_QWORD*)(v10 + 872) & 0xFFFFFFFFFFFFFFFELL);
       if ((*(_BYTE*)(v10 + 848) & 1) == 0) {
         goto LABEL_10;
       }
     LABEL_54:
-      SdkRoutine_857220(*(_QWORD*)(v10 + 864),
-                        *(_QWORD*)(v10 + 848) & 0xFFFFFFFFFFFFFFFELL);
+      SdkRoutine_857220_alt2(*(_QWORD*)(v10 + 864),
+                             *(_QWORD*)(v10 + 848) & 0xFFFFFFFFFFFFFFFELL);
       if ((*(_BYTE*)(v10 + 824) & 1) == 0) {
         goto LABEL_11;
       }
     LABEL_55:
-      SdkRoutine_857220(*(_QWORD*)(v10 + 840),
-                        *(_QWORD*)(v10 + 824) & 0xFFFFFFFFFFFFFFFELL);
+      SdkRoutine_857220_alt2(*(_QWORD*)(v10 + 840),
+                             *(_QWORD*)(v10 + 824) & 0xFFFFFFFFFFFFFFFELL);
       if ((*(_BYTE*)(v10 + 800) & 1) == 0) {
         goto LABEL_12;
       }
     LABEL_56:
-      SdkRoutine_857220(*(_QWORD*)(v10 + 816),
-                        *(_QWORD*)(v10 + 800) & 0xFFFFFFFFFFFFFFFELL);
+      SdkRoutine_857220_alt2(*(_QWORD*)(v10 + 816),
+                             *(_QWORD*)(v10 + 800) & 0xFFFFFFFFFFFFFFFELL);
       if ((*(_BYTE*)(v10 + 776) & 1) == 0) {
         goto LABEL_13;
       }
     LABEL_57:
-      SdkRoutine_857220(*(_QWORD*)(v10 + 792),
-                        *(_QWORD*)(v10 + 776) & 0xFFFFFFFFFFFFFFFELL);
+      SdkRoutine_857220_alt2(*(_QWORD*)(v10 + 792),
+                             *(_QWORD*)(v10 + 776) & 0xFFFFFFFFFFFFFFFELL);
       if ((*(_BYTE*)(v10 + 752) & 1) == 0) {
         goto LABEL_14;
       }
     LABEL_58:
-      SdkRoutine_857220(*(_QWORD*)(v10 + 768),
-                        *(_QWORD*)(v10 + 752) & 0xFFFFFFFFFFFFFFFELL);
+      SdkRoutine_857220_alt2(*(_QWORD*)(v10 + 768),
+                             *(_QWORD*)(v10 + 752) & 0xFFFFFFFFFFFFFFFELL);
       if ((*(_BYTE*)(v10 + 728) & 1) == 0) {
         goto LABEL_15;
       }
     LABEL_59:
-      SdkRoutine_857220(*(_QWORD*)(v10 + 744),
-                        *(_QWORD*)(v10 + 728) & 0xFFFFFFFFFFFFFFFELL);
+      SdkRoutine_857220_alt2(*(_QWORD*)(v10 + 744),
+                             *(_QWORD*)(v10 + 728) & 0xFFFFFFFFFFFFFFFELL);
       if ((*(_BYTE*)(v10 + 704) & 1) == 0) {
         goto LABEL_16;
       }
     LABEL_60:
-      SdkRoutine_857220(*(_QWORD*)(v10 + 720),
-                        *(_QWORD*)(v10 + 704) & 0xFFFFFFFFFFFFFFFELL);
+      SdkRoutine_857220_alt2(*(_QWORD*)(v10 + 720),
+                             *(_QWORD*)(v10 + 704) & 0xFFFFFFFFFFFFFFFELL);
       if ((*(_BYTE*)(v10 + 680) & 1) == 0) {
         goto LABEL_17;
       }
     LABEL_61:
-      SdkRoutine_857220(*(_QWORD*)(v10 + 696),
-                        *(_QWORD*)(v10 + 680) & 0xFFFFFFFFFFFFFFFELL);
+      SdkRoutine_857220_alt2(*(_QWORD*)(v10 + 696),
+                             *(_QWORD*)(v10 + 680) & 0xFFFFFFFFFFFFFFFELL);
       if ((*(_BYTE*)(v10 + 656) & 1) == 0) {
         goto LABEL_18;
       }
     LABEL_62:
-      SdkRoutine_857220(*(_QWORD*)(v10 + 672),
-                        *(_QWORD*)(v10 + 656) & 0xFFFFFFFFFFFFFFFELL);
+      SdkRoutine_857220_alt2(*(_QWORD*)(v10 + 672),
+                             *(_QWORD*)(v10 + 656) & 0xFFFFFFFFFFFFFFFELL);
       if ((*(_BYTE*)(v10 + 632) & 1) == 0) {
         goto LABEL_19;
       }
     LABEL_63:
-      SdkRoutine_857220(*(_QWORD*)(v10 + 648),
-                        *(_QWORD*)(v10 + 632) & 0xFFFFFFFFFFFFFFFELL);
+      SdkRoutine_857220_alt2(*(_QWORD*)(v10 + 648),
+                             *(_QWORD*)(v10 + 632) & 0xFFFFFFFFFFFFFFFELL);
       if ((*(_BYTE*)(v10 + 608) & 1) == 0) {
         goto LABEL_20;
       }
     LABEL_64:
-      SdkRoutine_857220(*(_QWORD*)(v10 + 624),
-                        *(_QWORD*)(v10 + 608) & 0xFFFFFFFFFFFFFFFELL);
+      SdkRoutine_857220_alt2(*(_QWORD*)(v10 + 624),
+                             *(_QWORD*)(v10 + 608) & 0xFFFFFFFFFFFFFFFELL);
       if ((*(_BYTE*)(v10 + 584) & 1) == 0) {
         goto LABEL_21;
       }
     LABEL_65:
-      SdkRoutine_857220(*(_QWORD*)(v10 + 600),
-                        *(_QWORD*)(v10 + 584) & 0xFFFFFFFFFFFFFFFELL);
+      SdkRoutine_857220_alt2(*(_QWORD*)(v10 + 600),
+                             *(_QWORD*)(v10 + 584) & 0xFFFFFFFFFFFFFFFELL);
       if ((*(_BYTE*)(v10 + 560) & 1) == 0) {
         goto LABEL_22;
       }
     LABEL_66:
-      SdkRoutine_857220(*(_QWORD*)(v10 + 576),
-                        *(_QWORD*)(v10 + 560) & 0xFFFFFFFFFFFFFFFELL);
+      SdkRoutine_857220_alt2(*(_QWORD*)(v10 + 576),
+                             *(_QWORD*)(v10 + 560) & 0xFFFFFFFFFFFFFFFELL);
       if ((*(_BYTE*)(v10 + 536) & 1) == 0) {
         goto LABEL_23;
       }
     LABEL_67:
-      SdkRoutine_857220(*(_QWORD*)(v10 + 552),
-                        *(_QWORD*)(v10 + 536) & 0xFFFFFFFFFFFFFFFELL);
+      SdkRoutine_857220_alt2(*(_QWORD*)(v10 + 552),
+                             *(_QWORD*)(v10 + 536) & 0xFFFFFFFFFFFFFFFELL);
       if ((*(_BYTE*)(v10 + 512) & 1) == 0) {
         goto LABEL_24;
       }
     LABEL_68:
-      SdkRoutine_857220(*(_QWORD*)(v10 + 528),
-                        *(_QWORD*)(v10 + 512) & 0xFFFFFFFFFFFFFFFELL);
+      SdkRoutine_857220_alt2(*(_QWORD*)(v10 + 528),
+                             *(_QWORD*)(v10 + 512) & 0xFFFFFFFFFFFFFFFELL);
       if ((*(_BYTE*)(v10 + 488) & 1) == 0) {
         goto LABEL_25;
       }
     LABEL_69:
-      SdkRoutine_857220(*(_QWORD*)(v10 + 504),
-                        *(_QWORD*)(v10 + 488) & 0xFFFFFFFFFFFFFFFELL);
+      SdkRoutine_857220_alt2(*(_QWORD*)(v10 + 504),
+                             *(_QWORD*)(v10 + 488) & 0xFFFFFFFFFFFFFFFELL);
       if ((*(_BYTE*)(v10 + 464) & 1) == 0) {
         goto LABEL_26;
       }
     LABEL_70:
-      SdkRoutine_857220(*(_QWORD*)(v10 + 480),
-                        *(_QWORD*)(v10 + 464) & 0xFFFFFFFFFFFFFFFELL);
+      SdkRoutine_857220_alt2(*(_QWORD*)(v10 + 480),
+                             *(_QWORD*)(v10 + 464) & 0xFFFFFFFFFFFFFFFELL);
       if ((*(_BYTE*)(v10 + 440) & 1) == 0) {
         goto LABEL_27;
       }
     LABEL_71:
-      SdkRoutine_857220(*(_QWORD*)(v10 + 456),
-                        *(_QWORD*)(v10 + 440) & 0xFFFFFFFFFFFFFFFELL);
+      SdkRoutine_857220_alt2(*(_QWORD*)(v10 + 456),
+                             *(_QWORD*)(v10 + 440) & 0xFFFFFFFFFFFFFFFELL);
       if ((*(_BYTE*)(v10 + 416) & 1) == 0) {
         goto LABEL_28;
       }
     LABEL_72:
-      SdkRoutine_857220(*(_QWORD*)(v10 + 432),
-                        *(_QWORD*)(v10 + 416) & 0xFFFFFFFFFFFFFFFELL);
+      SdkRoutine_857220_alt2(*(_QWORD*)(v10 + 432),
+                             *(_QWORD*)(v10 + 416) & 0xFFFFFFFFFFFFFFFELL);
       if ((*(_BYTE*)(v10 + 392) & 1) == 0) {
         goto LABEL_29;
       }
     LABEL_73:
-      SdkRoutine_857220(*(_QWORD*)(v10 + 408),
-                        *(_QWORD*)(v10 + 392) & 0xFFFFFFFFFFFFFFFELL);
+      SdkRoutine_857220_alt2(*(_QWORD*)(v10 + 408),
+                             *(_QWORD*)(v10 + 392) & 0xFFFFFFFFFFFFFFFELL);
       if ((*(_BYTE*)(v10 + 368) & 1) == 0) {
         goto LABEL_30;
       }
     LABEL_74:
-      SdkRoutine_857220(*(_QWORD*)(v10 + 384),
-                        *(_QWORD*)(v10 + 368) & 0xFFFFFFFFFFFFFFFELL);
+      SdkRoutine_857220_alt2(*(_QWORD*)(v10 + 384),
+                             *(_QWORD*)(v10 + 368) & 0xFFFFFFFFFFFFFFFELL);
       if ((*(_BYTE*)(v10 + 344) & 1) == 0) {
         goto LABEL_31;
       }
     LABEL_75:
-      SdkRoutine_857220(*(_QWORD*)(v10 + 360),
-                        *(_QWORD*)(v10 + 344) & 0xFFFFFFFFFFFFFFFELL);
+      SdkRoutine_857220_alt2(*(_QWORD*)(v10 + 360),
+                             *(_QWORD*)(v10 + 344) & 0xFFFFFFFFFFFFFFFELL);
       if ((*(_BYTE*)(v10 + 320) & 1) == 0) {
         goto LABEL_32;
       }
     LABEL_76:
-      SdkRoutine_857220(*(_QWORD*)(v10 + 336),
-                        *(_QWORD*)(v10 + 320) & 0xFFFFFFFFFFFFFFFELL);
+      SdkRoutine_857220_alt2(*(_QWORD*)(v10 + 336),
+                             *(_QWORD*)(v10 + 320) & 0xFFFFFFFFFFFFFFFELL);
       if ((*(_BYTE*)(v10 + 296) & 1) == 0) {
         goto LABEL_33;
       }
     LABEL_77:
-      SdkRoutine_857220(*(_QWORD*)(v10 + 312),
-                        *(_QWORD*)(v10 + 296) & 0xFFFFFFFFFFFFFFFELL);
+      SdkRoutine_857220_alt2(*(_QWORD*)(v10 + 312),
+                             *(_QWORD*)(v10 + 296) & 0xFFFFFFFFFFFFFFFELL);
       if ((*(_BYTE*)(v10 + 272) & 1) == 0) {
         goto LABEL_34;
       }
     LABEL_78:
-      SdkRoutine_857220(*(_QWORD*)(v10 + 288),
-                        *(_QWORD*)(v10 + 272) & 0xFFFFFFFFFFFFFFFELL);
+      SdkRoutine_857220_alt2(*(_QWORD*)(v10 + 288),
+                             *(_QWORD*)(v10 + 272) & 0xFFFFFFFFFFFFFFFELL);
       if ((*(_BYTE*)(v10 + 248) & 1) == 0) {
         goto LABEL_35;
       }
     LABEL_79:
-      SdkRoutine_857220(*(_QWORD*)(v10 + 264),
-                        *(_QWORD*)(v10 + 248) & 0xFFFFFFFFFFFFFFFELL);
+      SdkRoutine_857220_alt2(*(_QWORD*)(v10 + 264),
+                             *(_QWORD*)(v10 + 248) & 0xFFFFFFFFFFFFFFFELL);
       if ((*(_BYTE*)(v10 + 224) & 1) == 0) {
         goto LABEL_36;
       }
     LABEL_80:
-      SdkRoutine_857220(*(_QWORD*)(v10 + 240),
-                        *(_QWORD*)(v10 + 224) & 0xFFFFFFFFFFFFFFFELL);
+      SdkRoutine_857220_alt2(*(_QWORD*)(v10 + 240),
+                             *(_QWORD*)(v10 + 224) & 0xFFFFFFFFFFFFFFFELL);
       if ((*(_BYTE*)(v10 + 200) & 1) == 0) {
         goto LABEL_37;
       }
     LABEL_81:
-      SdkRoutine_857220(*(_QWORD*)(v10 + 216),
-                        *(_QWORD*)(v10 + 200) & 0xFFFFFFFFFFFFFFFELL);
+      SdkRoutine_857220_alt2(*(_QWORD*)(v10 + 216),
+                             *(_QWORD*)(v10 + 200) & 0xFFFFFFFFFFFFFFFELL);
       if ((*(_BYTE*)(v10 + 176) & 1) == 0) {
         goto LABEL_38;
       }
     LABEL_82:
-      SdkRoutine_857220(*(_QWORD*)(v10 + 192),
-                        *(_QWORD*)(v10 + 176) & 0xFFFFFFFFFFFFFFFELL);
+      SdkRoutine_857220_alt2(*(_QWORD*)(v10 + 192),
+                             *(_QWORD*)(v10 + 176) & 0xFFFFFFFFFFFFFFFELL);
       if ((*(_BYTE*)(v10 + 152) & 1) == 0) {
         goto LABEL_39;
       }
     LABEL_83:
-      SdkRoutine_857220(*(_QWORD*)(v10 + 168),
-                        *(_QWORD*)(v10 + 152) & 0xFFFFFFFFFFFFFFFELL);
+      SdkRoutine_857220_alt2(*(_QWORD*)(v10 + 168),
+                             *(_QWORD*)(v10 + 152) & 0xFFFFFFFFFFFFFFFELL);
       if ((*(_BYTE*)(v10 + 128) & 1) == 0) {
         goto LABEL_40;
       }
     LABEL_84:
-      SdkRoutine_857220(*(_QWORD*)(v10 + 144),
-                        *(_QWORD*)(v10 + 128) & 0xFFFFFFFFFFFFFFFELL);
+      SdkRoutine_857220_alt2(*(_QWORD*)(v10 + 144),
+                             *(_QWORD*)(v10 + 128) & 0xFFFFFFFFFFFFFFFELL);
       if ((*(_BYTE*)(v10 + 104) & 1) == 0) {
         goto LABEL_41;
       }
     LABEL_85:
-      SdkRoutine_857220(*(_QWORD*)(v10 + 120),
-                        *(_QWORD*)(v10 + 104) & 0xFFFFFFFFFFFFFFFELL);
+      SdkRoutine_857220_alt2(*(_QWORD*)(v10 + 120),
+                             *(_QWORD*)(v10 + 104) & 0xFFFFFFFFFFFFFFFELL);
       if ((*(_BYTE*)(v10 + 80) & 1) == 0) {
         goto LABEL_42;
       }
     LABEL_86:
-      SdkRoutine_857220(*(_QWORD*)(v10 + 96),
-                        *(_QWORD*)(v10 + 80) & 0xFFFFFFFFFFFFFFFELL);
+      SdkRoutine_857220_alt2(*(_QWORD*)(v10 + 96),
+                             *(_QWORD*)(v10 + 80) & 0xFFFFFFFFFFFFFFFELL);
       if ((*(_BYTE*)(v10 + 56) & 1) == 0) {
         goto LABEL_43;
       }
     LABEL_87:
-      SdkRoutine_857220(*(_QWORD*)(v10 + 72),
-                        *(_QWORD*)(v10 + 56) & 0xFFFFFFFFFFFFFFFELL);
+      SdkRoutine_857220_alt2(*(_QWORD*)(v10 + 72),
+                             *(_QWORD*)(v10 + 56) & 0xFFFFFFFFFFFFFFFELL);
       if ((*(_BYTE*)(v10 + 32) & 1) == 0) {
         goto LABEL_44;
       }
     LABEL_88:
-      SdkRoutine_857220(*(_QWORD*)(v10 + 48),
-                        *(_QWORD*)(v10 + 32) & 0xFFFFFFFFFFFFFFFELL);
+      SdkRoutine_857220_alt2(*(_QWORD*)(v10 + 48),
+                             *(_QWORD*)(v10 + 32) & 0xFFFFFFFFFFFFFFFELL);
       if ((*(_BYTE*)(v10 + 8) & 1) != 0) {
         goto LABEL_89;
       }
     LABEL_45:
       std___1___time_get_Destroy___time_get((_QWORD*)v10);
-      _Unwind_Resume_plt(a1);
+      _Unwind_Resume_plt_alt3(a1);
     LABEL_46:
-      SdkRoutine_857220(*(_QWORD*)(v10 + 1056),
-                        *(_QWORD*)(v10 + 1040) & 0xFFFFFFFFFFFFFFFELL);
+      SdkRoutine_857220_alt2(*(_QWORD*)(v10 + 1056),
+                             *(_QWORD*)(v10 + 1040) & 0xFFFFFFFFFFFFFFFELL);
       if ((*(_BYTE*)(v10 + 1016) & 1) == 0) {
         goto LABEL_3;
       }
     LABEL_47:
-      SdkRoutine_857220(*(_QWORD*)(v10 + 1032),
-                        *(_QWORD*)(v10 + 1016) & 0xFFFFFFFFFFFFFFFELL);
+      SdkRoutine_857220_alt2(*(_QWORD*)(v10 + 1032),
+                             *(_QWORD*)(v10 + 1016) & 0xFFFFFFFFFFFFFFFELL);
       if ((*(_BYTE*)(v10 + 992) & 1) == 0) {
         goto LABEL_4;
       }
@@ -20690,10 +20665,10 @@ LABEL_44:
     goto LABEL_45;
   }
 LABEL_89:
-  SdkRoutine_857220(*(_QWORD*)(v10 + 24),
-                    *(_QWORD*)(v10 + 8) & 0xFFFFFFFFFFFFFFFELL);
+  SdkRoutine_857220_alt2(*(_QWORD*)(v10 + 24),
+                         *(_QWORD*)(v10 + 8) & 0xFFFFFFFFFFFFFFFELL);
   std___1___time_get_Destroy___time_get((_QWORD*)v10);
-  _Unwind_Resume_plt(a1);
+  _Unwind_Resume_plt_alt3(a1);
   __udf(0);
 }
 
@@ -21248,59 +21223,161 @@ void __attribute__((noreturn)) locale_82ae98(__int64 a1, __int64 a2, __int64 a3,
   __int64 v14;
   __int64 v15;
 
-  SdkRoutine_82ad70(&a10);
-  SdkRoutine_87cb10(v12 + 130);
-  SdkRoutine_87cb10(v12 + 127);
-  SdkRoutine_87cb10(v12 + 124);
-  SdkRoutine_87cb10(v12 + 121);
-  SdkRoutine_87cb10(v12 + 118);
-  SdkRoutine_87cb10(v12 + 115);
-  SdkRoutine_87cb10(v12 + 112);
-  SdkRoutine_87cb10(v12 + 109);
-  SdkRoutine_87cb10(v12 + 106);
-  SdkRoutine_87cb10(v12 + 103);
-  SdkRoutine_87cb10(v12 + 100);
-  SdkRoutine_87cb10(v12 + 97);
-  SdkRoutine_87cb10(v12 + 94);
-  SdkRoutine_87cb10(v12 + 91);
-  SdkRoutine_87cb10(v12 + 88);
-  SdkRoutine_87cb10(v12 + 85);
-  SdkRoutine_87cb10(v12 + 82);
-  SdkRoutine_87cb10(v12 + 79);
-  SdkRoutine_87cb10(v12 + 76);
-  SdkRoutine_87cb10(v12 + 73);
-  SdkRoutine_87cb10(v12 + 70);
-  SdkRoutine_87cb10(v12 + 67);
-  SdkRoutine_87cb10(v12 + 64);
-  SdkRoutine_87cb10(v12 + 61);
-  SdkRoutine_87cb10(v12 + 58);
-  SdkRoutine_87cb10(v12 + 55);
-  SdkRoutine_87cb10(v12 + 52);
-  SdkRoutine_87cb10(v12 + 49);
-  SdkRoutine_87cb10(v12 + 46);
-  SdkRoutine_87cb10(v12 + 43);
-  SdkRoutine_87cb10(v12 + 40);
-  SdkRoutine_87cb10(v12 + 37);
-  SdkRoutine_87cb10(v12 + 34);
-  SdkRoutine_87cb10(v12 + 31);
-  SdkRoutine_87cb10(v12 + 28);
-  SdkRoutine_87cb10(v12 + 25);
-  SdkRoutine_87cb10(v12 + 22);
-  SdkRoutine_87cb10(v12 + 19);
-  SdkRoutine_87cb10(v12 + 16);
-  SdkRoutine_87cb10(v12 + 13);
-  SdkRoutine_87cb10(v12 + 10);
-  SdkRoutine_87cb10(v12 + 7);
-  SdkRoutine_87cb10(v12 + 4);
-  SdkRoutine_87cb10(v12 + 1);
-  std___1___time_get_Destroy___time_get(v12);
-  v14 = _Unwind_Resume_plt(a1);
+  v14 = COERCE_AS(__typeof__(v14),
+                  PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
+  SdkRoutine_82ad70(&a10),
+      v14 = COERCE_AS(__typeof__(v14),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
+  SdkRoutine_87cb10_alt1((__int64)(v12 + 130)),
+      v14 = COERCE_AS(__typeof__(v14),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
+  SdkRoutine_87cb10_alt1((__int64)(v12 + 127)),
+      v14 = COERCE_AS(__typeof__(v14),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
+  SdkRoutine_87cb10_alt1((__int64)(v12 + 124)),
+      v14 = COERCE_AS(__typeof__(v14),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
+  SdkRoutine_87cb10_alt1((__int64)(v12 + 121)),
+      v14 = COERCE_AS(__typeof__(v14),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
+  SdkRoutine_87cb10_alt1((__int64)(v12 + 118)),
+      v14 = COERCE_AS(__typeof__(v14),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
+  SdkRoutine_87cb10_alt1((__int64)(v12 + 115)),
+      v14 = COERCE_AS(__typeof__(v14),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
+  SdkRoutine_87cb10_alt1((__int64)(v12 + 112)),
+      v14 = COERCE_AS(__typeof__(v14),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
+  SdkRoutine_87cb10_alt1((__int64)(v12 + 109)),
+      v14 = COERCE_AS(__typeof__(v14),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
+  SdkRoutine_87cb10_alt1((__int64)(v12 + 106)),
+      v14 = COERCE_AS(__typeof__(v14),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
+  SdkRoutine_87cb10_alt1((__int64)(v12 + 103)),
+      v14 = COERCE_AS(__typeof__(v14),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
+  SdkRoutine_87cb10_alt1((__int64)(v12 + 100)),
+      v14 = COERCE_AS(__typeof__(v14),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
+  SdkRoutine_87cb10_alt1((__int64)(v12 + 97)),
+      v14 = COERCE_AS(__typeof__(v14),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
+  SdkRoutine_87cb10_alt1((__int64)(v12 + 94)),
+      v14 = COERCE_AS(__typeof__(v14),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
+  SdkRoutine_87cb10_alt1((__int64)(v12 + 91)),
+      v14 = COERCE_AS(__typeof__(v14),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
+  SdkRoutine_87cb10_alt1((__int64)(v12 + 88)),
+      v14 = COERCE_AS(__typeof__(v14),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
+  SdkRoutine_87cb10_alt1((__int64)(v12 + 85)),
+      v14 = COERCE_AS(__typeof__(v14),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
+  SdkRoutine_87cb10_alt1((__int64)(v12 + 82)),
+      v14 = COERCE_AS(__typeof__(v14),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
+  SdkRoutine_87cb10_alt1((__int64)(v12 + 79)),
+      v14 = COERCE_AS(__typeof__(v14),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
+  SdkRoutine_87cb10_alt1((__int64)(v12 + 76)),
+      v14 = COERCE_AS(__typeof__(v14),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
+  SdkRoutine_87cb10_alt1((__int64)(v12 + 73)),
+      v14 = COERCE_AS(__typeof__(v14),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
+  SdkRoutine_87cb10_alt1((__int64)(v12 + 70)),
+      v14 = COERCE_AS(__typeof__(v14),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
+  SdkRoutine_87cb10_alt1((__int64)(v12 + 67)),
+      v14 = COERCE_AS(__typeof__(v14),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
+  SdkRoutine_87cb10_alt1((__int64)(v12 + 64)),
+      v14 = COERCE_AS(__typeof__(v14),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
+  SdkRoutine_87cb10_alt1((__int64)(v12 + 61)),
+      v14 = COERCE_AS(__typeof__(v14),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
+  SdkRoutine_87cb10_alt1((__int64)(v12 + 58)),
+      v14 = COERCE_AS(__typeof__(v14),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
+  SdkRoutine_87cb10_alt1((__int64)(v12 + 55)),
+      v14 = COERCE_AS(__typeof__(v14),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
+  SdkRoutine_87cb10_alt1((__int64)(v12 + 52)),
+      v14 = COERCE_AS(__typeof__(v14),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
+  SdkRoutine_87cb10_alt1((__int64)(v12 + 49)),
+      v14 = COERCE_AS(__typeof__(v14),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
+  SdkRoutine_87cb10_alt1((__int64)(v12 + 46)),
+      v14 = COERCE_AS(__typeof__(v14),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
+  SdkRoutine_87cb10_alt1((__int64)(v12 + 43)),
+      v14 = COERCE_AS(__typeof__(v14),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
+  SdkRoutine_87cb10_alt1((__int64)(v12 + 40)),
+      v14 = COERCE_AS(__typeof__(v14),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
+  SdkRoutine_87cb10_alt1((__int64)(v12 + 37)),
+      v14 = COERCE_AS(__typeof__(v14),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
+  SdkRoutine_87cb10_alt1((__int64)(v12 + 34)),
+      v14 = COERCE_AS(__typeof__(v14),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
+  SdkRoutine_87cb10_alt1((__int64)(v12 + 31)),
+      v14 = COERCE_AS(__typeof__(v14),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
+  SdkRoutine_87cb10_alt1((__int64)(v12 + 28)),
+      v14 = COERCE_AS(__typeof__(v14),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
+  SdkRoutine_87cb10_alt1((__int64)(v12 + 25)),
+      v14 = COERCE_AS(__typeof__(v14),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
+  SdkRoutine_87cb10_alt1((__int64)(v12 + 22)),
+      v14 = COERCE_AS(__typeof__(v14),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
+  SdkRoutine_87cb10_alt1((__int64)(v12 + 19)),
+      v14 = COERCE_AS(__typeof__(v14),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
+  SdkRoutine_87cb10_alt1((__int64)(v12 + 16)),
+      v14 = COERCE_AS(__typeof__(v14),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
+  SdkRoutine_87cb10_alt1((__int64)(v12 + 13)),
+      v14 = COERCE_AS(__typeof__(v14),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
+  SdkRoutine_87cb10_alt1((__int64)(v12 + 10)),
+      v14 = COERCE_AS(__typeof__(v14),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
+  SdkRoutine_87cb10_alt1((__int64)(v12 + 7)),
+      v14 = COERCE_AS(__typeof__(v14),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
+  SdkRoutine_87cb10_alt1((__int64)(v12 + 4)),
+      v14 = COERCE_AS(__typeof__(v14),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
+  SdkRoutine_87cb10_alt1((__int64)(v12 + 1)),
+      v14 = COERCE_AS(__typeof__(v14),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
+  std___1___time_get_Destroy___time_get(v12),
+      v14 = COERCE_AS(__typeof__(v14),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
+  _Unwind_Resume_plt_alt3(a1),
+      v14 = COERCE_AS(__typeof__(v14),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
   v15 = v14;
   if ((a10 & 1) == 0) {
-    _Unwind_Resume_plt(v14);
+    _Unwind_Resume_plt_alt3(v14),
+        v14 = COERCE_AS(__typeof__(v14),
+                        PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
   }
-  SdkRoutine_857220(a12, a10 & 0xFFFFFFFFFFFFFFFELL);
-  _Unwind_Resume_plt(v15);
+  SdkRoutine_857220_alt2(a12, a10 & 0xFFFFFFFFFFFFFFFELL),
+      v14 = COERCE_AS(__typeof__(v14),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
+  _Unwind_Resume_plt_alt3(v15),
+      v14 = COERCE_AS(__typeof__(v14),
+                      PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
   __udf(0);
 }
 
@@ -22013,11 +22090,9 @@ void __attribute__((noreturn)) locale_82f4e4(__int64 a1, __int64 a2, __int64 a3,
 
 __int64 locale_82f608(__int64 a1)
 {
-  __int64 v2;
-
-  __cxa_guard_abort_plt(&SdkData_1060b80);
-  v2 = _Unwind_Resume_plt(a1);
-  return SdkRoutine_82f620(v2);
+  __cxa_guard_abort_plt_alt2((__int64)&SdkData_1060b80);
+  _Unwind_Resume_plt_alt3(a1);
+  return SdkRoutine_82f620_alt1();
 }
 
 __int64 locale_82f728(__int64 a1)
@@ -22538,11 +22613,10 @@ void __attribute__((noreturn)) locale_830958(__int64 a1)
 __int64 locale_83095c(__int64 a1)
 {
   __int64 v1;
-  __int64 v3;
 
-  SdkRoutine_82dd20(v1 - 40);
-  v3 = _Unwind_Resume_plt(a1);
-  return SdkRoutine_830970(v3);
+  SdkRoutine_82dd20_alt2((__int64*)(v1 - 40));
+  _Unwind_Resume_plt_alt3(a1);
+  return SdkRoutine_830970_alt1();
 }
 
 #pragma GCC visibility pop

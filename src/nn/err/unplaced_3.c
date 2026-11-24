@@ -4,6 +4,12 @@
 
 __int64 nn_err_402cf0(__int64 a1, __int64 a2);
 void __attribute__((noreturn)) nn_err_402d04();
-void __attribute__((noreturn)) nn_err_402d04() { GameRoutine_856170(); }
+void nn_diag_detail_AbortImpl_plt_856170();
+__int64 nn_err_402cf0(__int64 a1, __int64 a2) { return (a2 << 32) | 0xA3D; }
+
+void __attribute__((noreturn)) nn_err_402d04()
+{
+  nn_diag_detail_AbortImpl_plt_856170();
+}
 
 #pragma GCC visibility pop

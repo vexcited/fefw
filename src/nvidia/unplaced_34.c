@@ -20,6 +20,10 @@ _QWORD* nvidia_c64c0(__int64 a1, _QWORD* a2, _QWORD* a3, __int64 a4, _DWORD* a5,
                      _WORD* a6);
 _QWORD* nvidia_c6b80(__int64 a1, _QWORD* a2, _QWORD* a3, __int64 a4, _DWORD* a5,
                      _DWORD* a6);
+void _Unwind_Resume_plt(__int64);
+void __attribute__((noreturn)) unplaced_34_c5d9c(__int64 a1);
+void __attribute__((noreturn)) unplaced_34_c645c(__int64 a1);
+void __attribute__((noreturn)) unplaced_34_c6b1c(__int64 a1);
 
 _QWORD* nvidia_c5750(__int64 a1, _QWORD* a2, _QWORD* a3, __int64 a4, _DWORD* a5,
                      __int64* a6)
@@ -422,6 +426,25 @@ LABEL_136:
     NgxRoutine_430(v66_.v66[2], v66_.v66[0] & 0xFFFFFFFFFFFFFFFELL);
   }
   return a2;
+}
+
+void __attribute__((noreturn)) unplaced_34_c5d9c(__int64 a1)
+{
+  __int64 v1;
+
+  if ((*(_BYTE*)(v1 - 168) & 1) != 0) {
+    goto LABEL_4;
+  }
+  while ((*(_BYTE*)(v1 - 144) & 1) == 0) {
+    _Unwind_Resume_plt(a1);
+  LABEL_4:
+    NgxRoutine_430(*(_QWORD*)(v1 - 152),
+                   *(_QWORD*)(v1 - 168) & 0xFFFFFFFFFFFFFFFELL);
+  }
+  NgxRoutine_430(*(_QWORD*)(v1 - 128),
+                 *(_QWORD*)(v1 - 144) & 0xFFFFFFFFFFFFFFFELL);
+  _Unwind_Resume_plt(a1);
+  __udf(0);
 }
 
 _QWORD* nvidia_c5e00(__int64 a1, _QWORD* a2, _QWORD* a3, __int64 a4, _DWORD* a5,
@@ -827,6 +850,25 @@ LABEL_136:
   return a2;
 }
 
+void __attribute__((noreturn)) unplaced_34_c645c(__int64 a1)
+{
+  __int64 v1;
+
+  if ((*(_BYTE*)(v1 - 168) & 1) != 0) {
+    goto LABEL_4;
+  }
+  while ((*(_BYTE*)(v1 - 144) & 1) == 0) {
+    _Unwind_Resume_plt(a1);
+  LABEL_4:
+    NgxRoutine_430(*(_QWORD*)(v1 - 152),
+                   *(_QWORD*)(v1 - 168) & 0xFFFFFFFFFFFFFFFELL);
+  }
+  NgxRoutine_430(*(_QWORD*)(v1 - 128),
+                 *(_QWORD*)(v1 - 144) & 0xFFFFFFFFFFFFFFFELL);
+  _Unwind_Resume_plt(a1);
+  __udf(0);
+}
+
 _QWORD* nvidia_c64c0(__int64 a1, _QWORD* a2, _QWORD* a3, __int64 a4, _DWORD* a5,
                      _WORD* a6)
 {
@@ -1229,6 +1271,25 @@ LABEL_136:
     NgxRoutine_430(v66_.v66[2], v66_.v66[0] & 0xFFFFFFFFFFFFFFFELL);
   }
   return a2;
+}
+
+void __attribute__((noreturn)) unplaced_34_c6b1c(__int64 a1)
+{
+  __int64 v1;
+
+  if ((*(_BYTE*)(v1 - 168) & 1) != 0) {
+    goto LABEL_4;
+  }
+  while ((*(_BYTE*)(v1 - 144) & 1) == 0) {
+    _Unwind_Resume_plt(a1);
+  LABEL_4:
+    NgxRoutine_430(*(_QWORD*)(v1 - 152),
+                   *(_QWORD*)(v1 - 168) & 0xFFFFFFFFFFFFFFFELL);
+  }
+  NgxRoutine_430(*(_QWORD*)(v1 - 128),
+                 *(_QWORD*)(v1 - 144) & 0xFFFFFFFFFFFFFFFELL);
+  _Unwind_Resume_plt(a1);
+  __udf(0);
 }
 
 _QWORD* nvidia_c6b80(__int64 a1, _QWORD* a2, _QWORD* a3, __int64 a4, _DWORD* a5,

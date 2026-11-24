@@ -129,6 +129,26 @@ __int64 nandroid_Vector_do_move_backward(__int64 a1, __int64 a2, __int64* a3,
 __int64 ATSParser_53db80(__int64 result, __int64* a2, __int64 a3);
 __int64 ATSParser_53dd40(_QWORD* a1);
 __int64 ATSParser_53ddd0(_QWORD* a1);
+__int64 SdkRoutine_857220_alt1(__int64, unsigned __int64);
+__int64 SdkRoutine_86ee70(_QWORD, _QWORD);
+__int64 SdkRoutine_86ee80(__int64);
+__int64 memmove_plt_alt1(__int64, __int64, unsigned __int64);
+__int64 nandroid_ABuffer_CreateAsCopy_plt(__int64, __int64);
+__int64 nandroid_ABuffer_meta_plt(__int64);
+__int64 nandroid_AMessage_setBuffer_plt(__int64, const char*, __int64);
+__int64 nandroid_RefBase_decStrong_plt_alt1(__int64, __int64);
+__int64 nandroid_extractors_mp4_4f6440(__int64 result);
+__int64 nandroid_serializeAudioPresentations_plt(_QWORD, _QWORD);
+__int64 std___1_ios_base_init_plt(__int64, __int64);
+__int64 std___1_locale_locale_plt_86ee50(__int64);
+extern __int64 SdkData_e888d8;
+extern __int64 SdkData_e888e8;
+extern __int64 SdkData_e888f0;
+extern void (*SdkData_e888e0[312])();
+void __attribute__((noreturn)) unplaced_dc4d0();
+void std___1_locale_Destroy_locale_plt(__int64);
+__int64 nandroid_ATSParser_Stream_addAudioPresentations(__int64 a1,
+                                                        __int64* a2);
 
 __int64 nandroid_ATSParser_Program_parseProgramMap(void* this_, void* a2)
 {
@@ -1039,6 +1059,239 @@ __int64 ATSParser_537600(_QWORD* a1)
   }
   v9 = (_QWORD*)nn_os_GetTlsValue_plt(*(unsigned int*)v5);
   return nn_movie_detail_FreeMemory(v8, v9);
+}
+
+__int64 nandroid_ATSParser_Stream_addAudioPresentations(__int64 a1, __int64* a2)
+{
+  __int64 v4;
+  __int64 v5;
+  void(__attribute__((noreturn)) * v6)();
+  __int64 v7;
+  char* v8;
+  __int64 v9;
+  __int64 v10;
+  unsigned __int64 v12;
+  char* v13;
+  unsigned __int64 v14;
+  __int64 v15;
+  unsigned __int64 v16;
+  char* v17;
+  unsigned __int64 v18;
+  char* v19;
+  unsigned __int64 v20;
+  __int64 v21;
+  unsigned __int64 v22;
+  unsigned __int64 v23;
+  __int64 v24;
+  struct {
+    __int64 v26;
+    unsigned __int64 v27;
+    char* v28;
+  } v26_;
+  struct {
+    __int64 v29[2];
+    char* v30;
+  } v29_;
+  __int64 v31;
+  struct {
+    __int64 v32;
+    __int64 v33;
+    __int64 v34;
+    __int64 v35;
+    __int64 v36;
+    __int64 v37;
+    __int64 v38;
+    unsigned __int64 v39;
+    __int64 v40;
+    __int64 v41;
+    __int64 v42;
+    __int64 v43;
+    unsigned __int64 v44;
+    __int64 v45;
+    _QWORD v46[20];
+  } v32_;
+
+  memset(&v32_.v46[1], 0, 144);
+  v32_.v44 = 0;
+  v32_.v45 = 0;
+  v32_.v42 = 0;
+  v32_.v43 = 0;
+  v32_.v40 = 0;
+  v32_.v41 = 0;
+  v32_.v38 = 0;
+  v32_.v39 = 0;
+  v32_.v36 = 0;
+  v32_.v37 = 0;
+  v32_.v34 = 0;
+  v32_.v35 = 0;
+  v4 = SdkData_e888d8;
+  v5 = SdkData_e888d8 + 64;
+  v32_.v46[0] = SdkData_e888d8 + 64;
+  v6 = SdkData_e888e0[0];
+  v7 = *(_QWORD*)((char*)SdkData_e888e0[0] +
+                  (unsigned __int64)((__int64*)0x4LL) + 4 + 8);
+  v32_.v32 = *(_QWORD*)((char*)SdkData_e888e0[0] +
+                        (unsigned __int64)((__int64*)0x4LL) + 4);
+  v32_.v33 = 0;
+  *(__int64*)((char*)&v32_.v32 + *(_QWORD*)(v32_.v32 - 24)) = v7;
+  v8 = (char*)&v32_.v32 + *(_QWORD*)(v32_.v32 - 24);
+  std___1_ios_base_init_plt((__int64)v8, (__int64)&v32_.v33);
+  *((_QWORD*)v8 + 17) = 0;
+  *((_DWORD*)v8 + 36) = -1;
+  v32_.v46[0] = v5;
+  v9 = SdkData_e888e8;
+  v32_.v32 = v4 + 24;
+  v32_.v33 = SdkData_e888e8 + 16;
+  std___1_locale_locale_plt_86ee50((__int64)&v32_.v34);
+  v32_.v38 = 0;
+  v32_.v39 = 0;
+  v32_.v36 = 0;
+  v32_.v37 = 0;
+  v10 = SdkData_e888f0;
+  v32_.v35 = 0;
+  v32_.v40 = 0;
+  v32_.v41 = 0;
+  v32_.v42 = 0;
+  v32_.v43 = 0;
+  v32_.v44 = 0;
+  v32_.v33 = SdkData_e888f0 + 16;
+  LODWORD(v32_.v45) = 16;
+  nandroid_extractors_mp4_4f6440((__int64)&v32_.v33);
+  nandroid_serializeAudioPresentations_plt(a1 + 136, &v32_.v32);
+  v31 = 0;
+  if ((v32_.v45 & 0x10) != 0) {
+    v14 = v32_.v44;
+    if (v32_.v44 < v32_.v39) {
+      v32_.v44 = v32_.v39;
+      v14 = v32_.v39;
+    }
+    v15 = v32_.v38;
+    v12 = v14 - v32_.v38;
+    if (v14 - v32_.v38 >= 0xFFFFFFFFFFFFFFF7LL) {
+      goto LABEL_49;
+    }
+  }
+  else {
+    if ((v32_.v45 & 8) == 0) {
+      v12 = 0;
+      LOBYTE(v29_.v29[0]) = 0;
+      v13 = (char*)v29_.v29 + 1;
+      goto LABEL_17;
+    }
+    v15 = v32_.v35;
+    v12 = v32_.v37 - v32_.v35;
+    if ((unsigned __int64)(v32_.v37 - v32_.v35) >= 0xFFFFFFFFFFFFFFF7LL) {
+      goto LABEL_49;
+    }
+  }
+  if (v12 >= 0x17) {
+    if ((v12 | 7) == 0x17) {
+      v16 = 26;
+    }
+    else {
+      v16 = (v12 | 7) + 1;
+    }
+    v13 = (char*)SdkRoutine_85e050(v16);
+    v29_.v29[1] = v12;
+    v29_.v30 = v13;
+    v29_.v29[0] = v16 | 1;
+    goto LABEL_16;
+  }
+  LOBYTE(v29_.v29[0]) = 2 * v12;
+  v13 = (char*)v29_.v29 + 1;
+  if (v12 != 0) {
+  LABEL_16:
+    memmove_plt_alt1((__int64)v13, v15, v12);
+  }
+LABEL_17:
+  v13[v12] = 0;
+  if ((v29_.v29[0] & 1) != 0) {
+    v17 = v29_.v30;
+  }
+  else {
+    v17 = (char*)v29_.v29 + 1;
+  }
+  if ((v32_.v45 & 0x10) != 0) {
+    v20 = v32_.v44;
+    if (v32_.v44 < v32_.v39) {
+      v32_.v44 = v32_.v39;
+      v20 = v32_.v39;
+    }
+    v21 = v32_.v38;
+    v18 = v20 - v32_.v38;
+    if (v20 - v32_.v38 >= 0xFFFFFFFFFFFFFFF7LL) {
+      goto LABEL_49;
+    }
+  }
+  else {
+    if ((v32_.v45 & 8) == 0) {
+      v18 = 0;
+      LOBYTE(v26_.v26) = 0;
+      v19 = (char*)&v26_.v26 + 1;
+      goto LABEL_34;
+    }
+    v21 = v32_.v35;
+    v18 = v32_.v37 - v32_.v35;
+    if ((unsigned __int64)(v32_.v37 - v32_.v35) >= 0xFFFFFFFFFFFFFFF7LL) {
+    LABEL_49:
+      unplaced_dc4d0();
+    }
+  }
+  if (v18 >= 0x17) {
+    if ((v18 | 7) == 0x17) {
+      v22 = 26;
+    }
+    else {
+      v22 = (v18 | 7) + 1;
+    }
+    v19 = (char*)SdkRoutine_85e050(v22);
+    v26_.v27 = v18;
+    v26_.v28 = v19;
+    v26_.v26 = v22 | 1;
+    goto LABEL_33;
+  }
+  LOBYTE(v26_.v26) = 2 * v18;
+  v19 = (char*)&v26_.v26 + 1;
+  if (v18 != 0) {
+  LABEL_33:
+    memmove_plt_alt1((__int64)v19, v21, v18);
+  }
+LABEL_34:
+  v19[v18] = 0;
+  if ((v26_.v26 & 1) != 0) {
+    v23 = v26_.v27;
+  }
+  else {
+    v23 = (unsigned __int64)(unsigned __int8)v26_.v26 >> 1;
+  }
+  nandroid_ABuffer_CreateAsCopy_plt((__int64)v17, v23);
+  if ((v26_.v26 & 1) != 0) {
+    SdkRoutine_857220_alt1((__int64)v26_.v28, v26_.v26 & 0xFFFFFFFFFFFFFFFELL);
+  }
+  if ((v29_.v29[0] & 1) != 0) {
+    SdkRoutine_857220_alt1((__int64)v29_.v30,
+                           v29_.v29[0] & 0xFFFFFFFFFFFFFFFELL);
+  }
+  nandroid_ABuffer_meta_plt(*a2);
+  nandroid_AMessage_setBuffer_plt(v29_.v29[0], "audio-presentation-info",
+                                  (__int64)&v31);
+  if (v29_.v29[0] != 0) {
+    nandroid_RefBase_decStrong_plt_alt1(v29_.v29[0], (__int64)v29_.v29);
+  }
+  if (v31 != 0) {
+    nandroid_RefBase_decStrong_plt_alt1(v31, (__int64)&v31);
+  }
+  v24 = *(__int64*)((char*)(*(void*(*)[1])0x18LL) + (_QWORD)v6);
+  v32_.v32 = *(_QWORD*)v6;
+  *(__int64*)((char*)&v32_.v32 + *(_QWORD*)(v32_.v32 - 24)) = v24;
+  v32_.v33 = v10 + 16;
+  if ((v32_.v41 & 1) != 0) {
+    SdkRoutine_857220_alt1(v32_.v43, v32_.v41 & 0xFFFFFFFFFFFFFFFELL);
+  }
+  v32_.v33 = v9 + 16;
+  std___1_locale_Destroy_locale_plt((__int64)&v32_.v34);
+  SdkRoutine_86ee70(&v32_.v32, (char*)v6 + 8);
+  return SdkRoutine_86ee80((__int64)v32_.v46);
 }
 
 __int64 ATSParser_539e50(__int64 a1, int* a2)

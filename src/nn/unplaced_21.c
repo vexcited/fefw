@@ -16,6 +16,72 @@ int strcmp_plt(const char*, const char*);
 __int64 (*nn_69ee50(__int64 a1))();
 __int64 nn_69ef10(__int64 a1, __int64 (*a2)());
 __int64 nn_6a7360(__int64 result, int a2, unsigned __int64* a3);
+__int64 SdkRoutine_86ee80();
+__int64 nn_audio_CreateAudioRendererManager_plt(bool);
+__int64 nn_diag_detail_AbortImpl_plt_858db0(__int64);
+extern _UNKNOWN** SdkData_e89eb0;
+void _Unwind_Resume_plt(__int64);
+void std___1_locale_Destroy_locale_plt(__int64);
+__int64 nn_22f7a0(unsigned int* a1);
+__int64 nn_6a0900(__int64 result, __int64 a2, __int64 a3);
+void __attribute__((noreturn)) nn_7f7134(__int64 a1);
+
+__int64 nn_22f7a0(unsigned int* a1)
+{
+  unsigned int v1;
+  unsigned int v3;
+  unsigned int v4;
+  unsigned int v5;
+  unsigned int v6;
+  unsigned int v7;
+  __int64 v8;
+  _QWORD v10[2];
+  unsigned int v11;
+  __int64 v12;
+  unsigned int v13;
+  __int64 v14;
+  __int64 v15;
+  unsigned int v16;
+  int v17;
+  struct {
+    __int64 v18;
+    char gap64_[24];
+    __int64 v19;
+  } v18_;
+
+  v1 = a1[11];
+  v18_.v19 = 0;
+  nn_audio_CreateAudioRendererManager_plt(v1 == 1);
+  v3 = *a1;
+  v4 = a1[1];
+  v14 = 0;
+  v15 = 0;
+  v18_.v18 = 0;
+  v10[0] = __PAIR64__(v4, v3);
+  v10[1] = *((_QWORD*)a1 + 1);
+  v11 = a1[4];
+  v12 = *(_QWORD*)(a1 + 5);
+  v13 = a1[7];
+  LOBYTE(v14) = *((_BYTE*)a1 + 32);
+  v5 = a1[10];
+  DWORDn(v14, sizeof(v14) / 4 - 1) = a1[9];
+  LODWORD(v15) = v5;
+  v6 = a1[12];
+  BYTE2(v14) = a1[11];
+  v7 = a1[13];
+  BYTE3(v14) = v6;
+  v16 = v7;
+  v17 = (*(__int64 (**)(_QWORD, __int64*, _QWORD*))(*(_QWORD*)((char*)0x0LL) +
+                                                    40LL))(0, &v18_.v18, v10);
+  if (v17 != 0) {
+    nn_diag_detail_AbortImpl_plt_858db0((__int64)&v17);
+  }
+  v8 = v18_.v18;
+  if (v18_.v19 != 0) {
+    (*(void (**)(__int64))(*(_QWORD*)v18_.v19 + 8LL))(v18_.v19);
+  }
+  return v8 + 4096;
+}
 
 __int64 (*nn_69ee50(__int64 a1))()
 {
@@ -66,6 +132,48 @@ __int64 nn_69ef10(__int64 a1, __int64 (*a2)())
   }
   *v5 = a2;
   return 1;
+}
+
+__int64 nn_6a0900(__int64 result, __int64 a2, __int64 a3)
+{
+  __int64 v3;
+  void(__attribute__((noreturn)) * v4)(_QWORD*, __int64, __int64);
+  __int64 v5;
+  void(__attribute__((noreturn)) * v6)(_QWORD*, __int64, __int64);
+  __int64 v8;
+  struct {
+    _QWORD v9[2];
+    __int64 v10;
+    char gap32_[8];
+    __int64 v11;
+  } v9_;
+
+  v3 = *(_QWORD*)(result + 7888);
+  v4 = *(void(__attribute__((noreturn))**)(_QWORD*, __int64, __int64))(
+      (char*)((_UNKNOWN*)0x180LL) + (_QWORD)SdkData_e89eb0);
+  if (v4 != nullptr) {
+    if (v3 != 0) {
+      v5 = *(_QWORD*)(v3 + 16);
+      v9_.v10 = *(_QWORD*)(result + 7888);
+      v9_.v11 = a2;
+      v9_.v9[0] = 0x2800020005LL;
+      v9_.v9[1] = v5;
+      v4(v9_.v9, a2, a3);
+    }
+  }
+  else {
+    v6 = *(void(__attribute__((noreturn))**)(_QWORD*, __int64, __int64))(
+        (char*)((_UNKNOWN*)0x188LL) + (_QWORD)SdkData_e89eb0);
+    if (v6 != nullptr & v3 != 0) {
+      v8 = *(_QWORD*)(v3 + 16);
+      v9_.v10 = *(_QWORD*)(result + 7888);
+      LODWORD(v9_.v11) = 0;
+      v9_.v9[0] = 0x2800030005LL;
+      v9_.v9[1] = v8;
+      v6(v9_.v9, a2, a3);
+    }
+  }
+  return result;
 }
 
 __attribute__((no_builtin("memset", "memcpy", "memmove"))) float nn_6a4de0()
@@ -374,6 +482,36 @@ __int64 nn_6a7360(__int64 result, int a2, unsigned __int64* a3)
     goto LABEL_8;
   }
   return result;
+}
+
+void __attribute__((noreturn)) nn_7f7134(__int64 a1)
+{
+  _QWORD* v1;
+  __int64 v3;
+  __int64 v4;
+  __int64 v6;
+  __int64 v7;
+
+  v6 = COERCE_AS(__typeof__(v6),
+                 PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
+  SdkRoutine_86ee80(),
+      v6 = COERCE_AS(__typeof__(v6),
+                     PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
+  _Unwind_Resume_plt(a1),
+      v6 = COERCE_AS(__typeof__(v6),
+                     PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
+  v7 = v6;
+  std___1_locale_Destroy_locale_plt(v4 + 24),
+      v6 = COERCE_AS(__typeof__(v6),
+                     PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
+  *v1 = v3;
+  std___1_locale_Destroy_locale_plt((__int64)(v1 + 1)),
+      v6 = COERCE_AS(__typeof__(v6),
+                     PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
+  _Unwind_Resume_plt(v7),
+      v6 = COERCE_AS(__typeof__(v6),
+                     PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
+  __udf(0);
 }
 
 #pragma GCC visibility pop

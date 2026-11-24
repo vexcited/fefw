@@ -123,7 +123,7 @@ __int64 comb_filter(__int64 result, __int64 a2, int a3, int a4, int a5,
   else {
     v12 = (unsigned int)a4;
   }
-  v13 = (__int16*)((char*)&SdkData_c19d4c + 6 * a9);
+  v13 = (__int16*)((char*)&SdkData_c19d4c + 6LL * a9);
   v14 = ~(_DWORD)v12;
   v15 = (unsigned int)(*v13 * (__int16)a7 + 0x4000) >> 15;
   v16 = (unsigned int)(v13[1] * (__int16)a7 + 0x4000) >> 15;
@@ -139,7 +139,7 @@ __int64 comb_filter(__int64 result, __int64 a2, int a3, int a4, int a5,
   }
   v99 = v23;
   if ((int)v23 >= 1) {
-    v24 = (__int16*)((char*)&SdkData_c19d4c + 6 * a8);
+    v24 = (__int16*)((char*)&SdkData_c19d4c + 6LL * a8);
     v25 = (__int16)a6;
     v103 = -2 - v12;
     v100 = 1 - v12;

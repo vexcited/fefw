@@ -15,6 +15,67 @@ __int64 nn_os_SdkMutexType_Unlock_plt(__int64);
 __int64 nn_os_SignalSystemEvent_plt(__int64);
 void nn_diag_detail_AbortImpl_plt_82f30();
 __int64 movie_4470(__int64* a1);
+__int64 MovieRoutine_20(void);
+__int64 __nnmusl_init_dso_plt(_QWORD, _QWORD, _QWORD, _QWORD, _QWORD, _QWORD,
+                              _QWORD, _QWORD, _QWORD, _QWORD, _QWORD, _QWORD,
+                              _QWORD, _QWORD, _QWORD, _QWORD, _QWORD, _QWORD,
+                              _QWORD, _QWORD, _QWORD);
+__int64 nn_ro_ProtectRelro_plt(_QWORD, _QWORD, _QWORD, _QWORD, _QWORD);
+extern _UNKNOWN* MovieData_85060;
+extern _UNKNOWN* MovieData_bf000;
+extern _UNKNOWN** MovieData_8ab20;
+extern _UNKNOWN MovieData_85050;
+extern _UNKNOWN MovieData_c06e8;
+extern _UNKNOWN MovieData_c06e9;
+extern _UNKNOWN MovieData_c0fe8;
+extern _UNKNOWN MovieData_c1fd0;
+extern _UNKNOWN MovieData_d0018;
+extern __int64 (**MovieData_87bb0)();
+extern __int64 (*MovieData_c1000[])();
+extern int MovieData_827a4;
+extern int MovieData_d0000;
+struct PseudoThunk __nnDetailNintendoSdkRuntimeObjectFile_plt(
+    long long a1, long long a2, long long a3, long long a4, long long a5,
+    long long a6, long long a7, long long a8, double f1, double f2, double f3,
+    double f4, double f5, double f6, double f7, double f8);
+__int64 movie_40();
+struct PseudoThunk movie_320(long long a1, long long a2, long long a3,
+                             long long a4, long long a5, long long a6,
+                             long long a7, long long a8, double f1, double f2,
+                             double f3, double f4, double f5, double f6,
+                             double f7, double f8);
+
+__int64 movie_40()
+{
+  __int64 result;
+
+  if (MovieData_d0000 != 0 ||
+      (result = __nnmusl_init_dso_plt(
+           ((_UNKNOWN*)0x0LL), &MovieData_827a4, &MovieData_c06e8,
+           &MovieData_c06e8, (char*)((_UNKNOWN*)0x0LL) + 1, &MovieData_c06e9,
+           &MovieData_c06e8, &MovieData_c06e8, (char*)((_UNKNOWN*)0x0LL) + 1,
+           &MovieData_c06e9, &MovieData_c0fe8, &MovieData_c1fd0,
+           &MovieData_85060, &MovieData_87bb0, 0, ((_UNKNOWN*)0x0LL),
+           &MovieData_87bb0, &MovieData_8ab20, ((_UNKNOWN*)0x0LL),
+           ((_UNKNOWN*)0x0LL), &MovieData_c06e8),
+       MovieData_d0000 = result, (_DWORD)result != 1)) {
+    MovieRoutine_20();
+    return nn_ro_ProtectRelro_plt(&MovieData_bf000, MovieData_c1000,
+                                  &MovieData_d0000, &MovieData_d0018,
+                                  &MovieData_85050);
+  }
+  return result;
+}
+
+struct PseudoThunk movie_320(long long a1, long long a2, long long a3,
+                             long long a4, long long a5, long long a6,
+                             long long a7, long long a8, double f1, double f2,
+                             double f3, double f4, double f5, double f6,
+                             double f7, double f8)
+{
+  return __nnDetailNintendoSdkRuntimeObjectFile_plt(
+      a1, a2, a3, a4, a5, a6, a7, a8, f1, f2, f3, f4, f5, f6, f7, f8);
+}
 
 __int64 movie_4470(__int64* a1)
 {
