@@ -4180,7 +4180,7 @@ LABEL_61:
           if (*((_BYTE*)((_UNKNOWN*)0x1164LL) +
                 (_QWORD)CudaDriverData_1422118) != 0) {
             *(_DWORD*)(v3 + 4LL * ((unsigned int)(v55 + 315) >> 5)) |=
-                1 << (v55 + 59);
+                1 << ((v55 + 59) & 0x1F);
           }
           else {
             *(_DWORD*)(v3 + 72) |= 0x80000000;

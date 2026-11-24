@@ -2430,7 +2430,7 @@ __int64 nvidia_4e310(unsigned __int64* a1, unsigned __int64 a2,
         if (v10 >= a2 >> 6) {
           v13 = v10 + 1;
           while (1) {
-            v14 = --v13 == v12 ? -1LL << a2 : -1LL;
+            v14 = --v13 == v12 ? -1LL << (a2 & 63) : -1LL;
             v15 =
                 v13 == v10 ? 0xFFFFFFFFFFFFFFFFLL >> ((~(_BYTE)a3) & 63) : -1LL;
             {
@@ -2447,51 +2447,51 @@ __int64 nvidia_4e310(unsigned __int64* a1, unsigned __int64 a2,
             }
           }
           for (i = 51;; i -= 13) {
-            if (((v16 >> ((unsigned __int8)i + 12)) & 1) != 0) {
+            if (((v16 >> ((i + 12) & 63)) & 1) != 0) {
               *a4 = i + 12 + (v13 << 6);
               return 1;
             }
-            if (((v16 >> ((unsigned __int8)i + 11)) & 1) != 0) {
+            if (((v16 >> ((i + 11) & 63)) & 1) != 0) {
               *a4 = i + 11 + (v13 << 6);
               return 1;
             }
-            if (((v16 >> ((unsigned __int8)i + 10)) & 1) != 0) {
+            if (((v16 >> ((i + 10) & 63)) & 1) != 0) {
               *a4 = i + 10 + (v13 << 6);
               return 1;
             }
-            if (((v16 >> ((unsigned __int8)i + 9)) & 1) != 0) {
+            if (((v16 >> ((i + 9) & 63)) & 1) != 0) {
               *a4 = i + 9 + (v13 << 6);
               return 1;
             }
-            if (((v16 >> ((unsigned __int8)i + 8)) & 1) != 0) {
+            if (((v16 >> ((i + 8) & 63)) & 1) != 0) {
               *a4 = i + 8 + (v13 << 6);
               return 1;
             }
-            if (((v16 >> ((unsigned __int8)i + 7)) & 1) != 0) {
+            if (((v16 >> ((i + 7) & 63)) & 1) != 0) {
               *a4 = i + 7 + (v13 << 6);
               return 1;
             }
-            if (((v16 >> ((unsigned __int8)i + 6)) & 1) != 0) {
+            if (((v16 >> ((i + 6) & 63)) & 1) != 0) {
               *a4 = i + 6 + (v13 << 6);
               return 1;
             }
-            if (((v16 >> ((unsigned __int8)i + 5)) & 1) != 0) {
+            if (((v16 >> ((i + 5) & 63)) & 1) != 0) {
               *a4 = i + 5 + (v13 << 6);
               return 1;
             }
-            if (((v16 >> ((unsigned __int8)i + 4)) & 1) != 0) {
+            if (((v16 >> ((i + 4) & 63)) & 1) != 0) {
               *a4 = i + 4 + (v13 << 6);
               return 1;
             }
-            if (((v16 >> ((unsigned __int8)i + 3)) & 1) != 0) {
+            if (((v16 >> ((i + 3) & 63)) & 1) != 0) {
               *a4 = i + 3 + (v13 << 6);
               return 1;
             }
-            if (((v16 >> ((unsigned __int8)i + 2)) & 1) != 0) {
+            if (((v16 >> ((i + 2) & 63)) & 1) != 0) {
               *a4 = i + 2 + (v13 << 6);
               return 1;
             }
-            if (((v16 >> ((unsigned __int8)i + 1)) & 1) != 0) {
+            if (((v16 >> ((i + 1) & 63)) & 1) != 0) {
               break;
             }
             if (i == -1) {
