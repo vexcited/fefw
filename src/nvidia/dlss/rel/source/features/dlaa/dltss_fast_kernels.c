@@ -12321,7 +12321,7 @@ LABEL_14:
   }
   v24 = (v23 >> 5) - 1;
   *(_DWORD*)(a1 + 352) = v24;
-  *(_DWORD*)(a1 + 356) = 32 * v24;
+  *(_DWORD*)(a1 + 356) = 32LL * v24;
   return result;
 }
 

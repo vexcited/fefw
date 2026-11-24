@@ -632,7 +632,7 @@ void SuperStripeSystem_5d0320(float a1, __int64 a2, __int64 a3, __int64 a4,
           *((float*)&f_.v115 + 1) = v88 / v51;
           v95 = (float)(v50 + v88) / v92;
           v96 = 12LL * v93;
-          v97 = (_DWORD*)&f_.v115 + 3 * v94 + 1;
+          v97 = (_DWORD*)&f_.v115 + 3LL * v94 + 1;
           if (v95 > 0x1.0000000000000p+0f) {
             v95 = 0x1.0000000000000p+0f;
           }
