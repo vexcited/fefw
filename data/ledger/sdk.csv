@@ -14356,7 +14356,7 @@ ffee0,324,verified,src/nn/fs/unplaced.c,nn_fs_GetAndClearMemoryReportInfo
 422040,1164,verified,src/nn/fontll/itype/unplaced.c,nn_fontll_itype_422040
 4225a0,736,verified,src/nn/fontll/itype/unplaced.c,map_font
 4228c0,828,verified,src/nn/fontll/itype/unplaced.c,map_char
-422c20,492,verified,src/nn/fontll/itype/unplaced_12.c,nn_fontll_itype_422c20
+422c20,500,verified,src/nn/fontll/itype/unplaced_12.c,nn_fontll_itype_422c20
 423c00,1396,disputed,src/nn/fontll/itype/unplaced_12.c,nn_fontll_itype_423c00
 4241c0,112,verified,src/nn/fontll/itype/unplaced.c,engrave_graymap
 424820,200,verified,src/nn/fontll/itype/unplaced.c,emboss_graymap
@@ -15253,7 +15253,7 @@ ffee0,324,verified,src/nn/fs/unplaced.c,nn_fs_GetAndClearMemoryReportInfo
 475660,244,verified,src/nn/gpu/gpu_sdk_util_job.cpp,_ZN2nn3gpu3sdk4util6detail15ProcessTrackingEPNS3_15ObjectAllocatorEPNS2_14JobTrackerTypeEPNS3_10MappingMapE
 475760,260,verified,src/nn/gpu/gpu_sdk_util_job.cpp,_ZN2nn3gpu3sdk4util6detail13StartTrackingEPNS3_10MappingMapEPNS2_14JobTrackerTypeEjj
 475880,388,verified,src/nn/gpu/gpu_sdk_util_job.cpp,_ZN2nn3gpu3sdk4util6detail15MergeJobEntriesEPNS2_14JobTrackerTypeEPNS3_12JobEntryListES7_PNS_4util19IntrusiveRbTreeImplE
-475a40,892,verified,src/nn/gpu/unplaced.c,nn_gpu_475a40
+475a40,972,verified,src/nn/gpu/unplaced.c,nn_gpu_475a40
 475e50,64,verified,src/nn/gpu/gpu_sdk_image_preference.cpp,_ZN2nn3gpu3sdk28MakeRgbaBlockImagePreferenceEiiiiNS_3gsv7imgdesc4impl4user5ounce24GpuOunceImagePixelFormatEtNS6_24GpuOunceImageBlockFormatE
 475e90,52,verified,src/nn/gpu/gpu_sdk_image_preference.cpp,_ZN2nn3gpu3sdk28MakeRgbaPitchImagePreferenceEiiiNS_3gsv7imgdesc4impl4user5ounce24GpuOunceImagePixelFormatENS6_17GpuOunceAlphaModeEt
 475ed0,68,verified,src/nn/gpu/gpu_sdk_debug.cpp,_ZN2nn3gpu3sdk26CreateNativeMemoryForDebugEPNS_2gs18NativeMemoryHandleEPvmNS1_15GpuMemoryHandleEm
