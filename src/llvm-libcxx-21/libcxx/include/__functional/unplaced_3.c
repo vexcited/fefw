@@ -1485,7 +1485,7 @@ LABEL_125:
     v64 = COERCE_AS(__typeof__(v64), PSEUDO_REGISTER(float, "s0", "=w")),
     v70 = COERCE_AS(__typeof__(v70), PSEUDO_REGISTER(float, "s0", "=w"));
   }
-  if (f_.v231 > v106) {
+  if (!(f_.v231 <= v106)) {
     if (!(f_.v231 < f_.v227)) {
       v5 = f_.v218;
     }
