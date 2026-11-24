@@ -36178,7 +36178,7 @@ bda1f0,24,verified,src/llvm-libcxx-21/libcxx/include/__vector/vector.h,std::vect
 bda220,1004,verified,src/game/unnamed/b010_1.c,GameHr_bda220
 bda620,4,verified,src/game/game_trivial.cpp,_Z15GameStub_bda620v
 bda630,584,verified,src/game/unnamed/b010_1.c,GameHr_bda630
-bda880,12764,verified,src/game/unplaced_16.c,game_bda880
+bda880,12952,verified,src/game/unplaced_16.c,game_bda880
 bdfce0,468,verified,src/game/unnamed/b010_0.c,GameHr_bdfce0
 bdfec0,24,verified,src/llvm-libcxx-21/libcxx/include/__vector/vector.h,std::vector<T>::__throw_length_error()
 bdfee0,24,verified,src/llvm-libcxx-21/libcxx/include/__vector/vector.h,std::vector<T>::__throw_length_error()
@@ -38610,7 +38610,7 @@ ce6740,340,verified,src/game/unnamed/e004_0.c,GameHr_ce6740
 ce68a0,260,verified,src/game/unnamed/b011_0.c,GameHr_ce68a0
 ce69c0,892,verified,src/game/unnamed/e004_0.c,GameHr_ce69c0
 ce7000,24,verified,src/llvm-libcxx-21/libcxx/include/__vector/vector.h,std::vector<T>::__throw_length_error()
-ce7020,3340,verified,src/game/unnamed/b028_0.c,GameHr_ce7020
+ce7020,3620,verified,src/game/unnamed/b028_0.c,GameHr_ce7020
 ce8440,516,verified,src/game/unnamed/b011_0.c,GameHr_ce8440
 ce8660,1276,verified,src/game/unnamed/b011_0.c,GameHr_ce8660
 ce8bb0,4,verified,src/game/game_trivial.cpp,_Z15GameStub_ce8bb0v
@@ -39641,7 +39641,7 @@ d256b0,540,verified,src/game/zview/input.c,Input_Destructor
 d258d0,80,verified,src/memory/new_delete.cpp,deleting destructor at 0xd258d0
 d25920,716,verified,src/game/unnamed/b011_0.c,GameHr_d25920
 d25cc0,1236,verified,src/game/unplaced_10.c,game_d25cc0
-d26240,160,verified,src/game/unplaced_16.c,game_d26240
+d26240,848,verified,src/game/unplaced_16.c,game_d26240
 d26b60,976,verified,src/game/unplaced_10.c,game_d26b60
 d26f50,308,verified,src/game/unplaced_10.c,game_d26f50
 d270d0,196,verified,src/game/unnamed/b011_0.c,GameHr_d270d0
@@ -47803,7 +47803,7 @@ fac5b0,4,verified,src/memory/new_delete.cpp,complete destructor at 0xfac5b0
 fac5c0,44,verified,src/memory/new_delete.cpp,deleting destructor at 0xfac5c0
 fac600,1796,verified,src/game/map/unplaced_2.c,game_map_fac600
 face80,24,verified,src/llvm-libcxx-21/libcxx/include/__vector/vector.h,std::vector<T>::__throw_length_error()
-facea0,4088,verified,src/game/unnamed/b028_0.c,GameHr_facea0
+facea0,4136,verified,src/game/unnamed/b028_0.c,GameHr_facea0
 fadfa0,588,verified,src/game/unnamed/b014_0.c,GameHr_fadfa0
 fae200,1140,verified,src/game/unnamed/b014_0.c,GameHr_fae200
 fae6a0,1504,verified,src/game/unnamed/b014_0.c,GameHr_fae6a0
@@ -54828,7 +54828,7 @@ fffcb0,1244,verified,src/game/unnamed/b014_1.c,GameHr_fffcb0
 11eed30,8,verified,src/game/game_trivial.cpp,_Z16GameStub_11eed30mm
 11eed40,28,verified,src/llvm-libcxx-21/libcxx/include/__functional/function.h,"std::__1::__function::__func<game::AIOrder::EnumerateEntrustSpecialSupport()::$_0, bool (game::Unit const*)>::target(std::type_info const&)"
 11eed60,12,verified,src/llvm-libcxx-21/libcxx/include/__functional/function.h,"std::__1::__function::__func<game::AIOrder::EnumerateEntrustSpecialSupport()::$_0, bool (game::Unit const*)>::target_type()"
-11eed80,1204,verified,src/game/ai_think.c,AIThink_11eed80
+11eed80,1208,verified,src/game/ai_think.c,AIThink_11eed80
 11ef240,408,verified,src/game/unnamed/b016_2.c,GameHr_11ef240
 11ef3e0,1320,verified,src/game/ai_think.c,AIThink_11ef3e0
 11efac0,1152,verified,src/game/unnamed/b016_2.c,GameHr_11efac0
@@ -55133,7 +55133,7 @@ fffcb0,1244,verified,src/game/unnamed/b014_1.c,GameHr_fffcb0
 1200be0,2400,verified,src/game/ai_think.c,AIThink_1200be0
 1201580,128,verified,src/game/ai_think.c,AIThink_1201580
 1201600,1520,verified,src/game/ai_think.c,game_AIThink_ActionMoveAttackRangeImpl
-1201c80,860,verified,src/game/ai_think.c,game_AIThink_ActionMoveHealRange
+1201c80,1612,verified,src/game/ai_think.c,game_AIThink_ActionMoveHealRange
 1202700,372,verified,src/game/ai_think.c,AIThink_1202700
 1202880,428,verified,src/game/ai_think.c,game_AIThink_ActionMovePerson
 1202f00,468,verified,src/game/ai_think.c,AIThink_1202f00
@@ -55259,7 +55259,7 @@ fffcb0,1244,verified,src/game/unnamed/b014_1.c,GameHr_fffcb0
 120a2e0,40,verified,src/llvm-libcxx-21/libcxx/include/__functional/function.h,"std::__1::__function::__func<game::AIThink::ActionMoveItemHolder(int, game::AIValue const&, game::AIValue const&)::$_0, void (game::map::TrickData*, int, int)>::__clone(__base*)"
 120a310,4,verified,src/llvm-libcxx-21/libcxx/include/__functional/function.h,"std::__1::__function::__func<game::AIThink::ActionMoveItemHolder(int, game::AIValue const&, game::AIValue const&)::$_0, void (game::map::TrickData*, int, int)>::destroy()"
 120a320,12,verified,src/llvm-libcxx-21/libcxx/include/__functional/function.h,"std::__1::__function::__func<game::AIThink::ActionMoveItemHolder(int, game::AIValue const&, game::AIValue const&)::$_0, void (game::map::TrickData*, int, int)>::destroy_deallocate()"
-120a330,248,verified,src/game/ai_think.c,game_AIThink_ActionMoveItemHolder_lambda0_Invoke
+120a330,248,disputed,src/game/ai_think.c,game_AIThink_ActionMoveItemHolder_lambda0_Invoke
 120a430,28,verified,src/llvm-libcxx-21/libcxx/include/__functional/function.h,"std::__1::__function::__func<game::AIThink::ActionMoveItemHolder(int, game::AIValue const&, game::AIValue const&)::$_0, void (game::map::TrickData*, int, int)>::target(std::type_info const&)"
 120a450,12,verified,src/llvm-libcxx-21/libcxx/include/__functional/function.h,"std::__1::__function::__func<game::AIThink::ActionMoveItemHolder(int, game::AIValue const&, game::AIValue const&)::$_0, void (game::map::TrickData*, int, int)>::target_type()"
 120a460,44,verified,src/llvm-libcxx-21/libcxx/include/__functional/function.h,"std::__1::__function::__func<game::AIThink::ActionMoveItemHolder(int, game::AIValue const&, game::AIValue const&)::$_1, void (int, int)>::deleting destructor"
@@ -55326,7 +55326,7 @@ fffcb0,1244,verified,src/game/unnamed/b014_1.c,GameHr_fffcb0
 120bf70,56,verified,src/llvm-libcxx-21/libcxx/include/__functional/function.h,"std::__1::__function::__func<game::AIThink::GetTerrainHealPosition(game::Unit const*, int*, int*)::$_1, void (int, int)>::__clone(__base*)"
 120bfb0,4,verified,src/llvm-libcxx-21/libcxx/include/__functional/function.h,"std::__1::__function::__func<game::AIThink::GetTerrainHealPosition(game::Unit const*, int*, int*)::$_1, void (int, int)>::destroy()"
 120bfc0,12,verified,src/llvm-libcxx-21/libcxx/include/__functional/function.h,"std::__1::__function::__func<game::AIThink::GetTerrainHealPosition(game::Unit const*, int*, int*)::$_1, void (int, int)>::destroy_deallocate()"
-120bfd0,620,verified,src/game/ai_think.c,game_AIThink_GetTerrainHealPosition_lambda1_Invoke
+120bfd0,620,disputed,src/game/ai_think.c,game_AIThink_GetTerrainHealPosition_lambda1_Invoke
 120c240,28,verified,src/llvm-libcxx-21/libcxx/include/__functional/function.h,"std::__1::__function::__func<game::AIThink::GetTerrainHealPosition(game::Unit const*, int*, int*)::$_1, void (int, int)>::target(std::type_info const&)"
 120c260,12,verified,src/llvm-libcxx-21/libcxx/include/__functional/function.h,"std::__1::__function::__func<game::AIThink::GetTerrainHealPosition(game::Unit const*, int*, int*)::$_1, void (int, int)>::target_type()"
 120c280,472,verified,src/game/unnamed/b017_0.c,GameHr_120c280
@@ -55527,7 +55527,7 @@ fffcb0,1244,verified,src/game/unnamed/b014_1.c,GameHr_fffcb0
 12190c0,28,verified,src/llvm-libcxx-21/libcxx/include/__functional/function.h,"std::__1::__function::__func<game::AIThink::GetMagicHealScoreForSingle(game::Unit*, game::AICaution const*, game::AIThink::MagicHealResult*)::$_0, void (int, int)>::target(std::type_info const&)"
 12190e0,12,verified,src/llvm-libcxx-21/libcxx/include/__functional/function.h,"std::__1::__function::__func<game::AIThink::GetMagicHealScoreForSingle(game::Unit*, game::AICaution const*, game::AIThink::MagicHealResult*)::$_0, void (int, int)>::target_type()"
 1219100,348,verified,src/game/unnamed/b017_0.c,GameHr_1219100
-1219280,740,verified,src/game/ai_think.c,AIThink_1219280
+1219280,884,verified,src/game/ai_think.c,AIThink_1219280
 12196d0,388,verified,src/game/ai_think.c,game_AIThink_ActionMindTreasure
 12198a0,1612,verified,src/game/ai_think.c,AIThink_12198a0
 121a1c0,132,verified,src/game/ai_think.c,AIThink_121a1c0
@@ -55542,7 +55542,7 @@ fffcb0,1244,verified,src/game/unnamed/b014_1.c,GameHr_fffcb0
 121c670,48,verified,src/llvm-libcxx-21/libcxx/include/__functional/function.h,"std::__1::__function::__func<game::AIThink::ActionMindTreasure(int, game::AIValue const&, game::AIValue const&)::$_0, void (game::map::TrickData*, int, int, int, int)>::__clone(__base*)"
 121c6a0,4,verified,src/llvm-libcxx-21/libcxx/include/__functional/function.h,"std::__1::__function::__func<game::AIThink::ActionMindTreasure(int, game::AIValue const&, game::AIValue const&)::$_0, void (game::map::TrickData*, int, int, int, int)>::destroy()"
 121c6b0,12,verified,src/llvm-libcxx-21/libcxx/include/__functional/function.h,"std::__1::__function::__func<game::AIThink::ActionMindTreasure(int, game::AIValue const&, game::AIValue const&)::$_0, void (game::map::TrickData*, int, int, int, int)>::destroy_deallocate()"
-121c6c0,304,verified,src/game/ai_think.c,game_AIThink_ActionMindTreasure_lambda0_Invoke
+121c6c0,304,disputed,src/game/ai_think.c,game_AIThink_ActionMindTreasure_lambda0_Invoke
 121c7f0,28,verified,src/llvm-libcxx-21/libcxx/include/__functional/function.h,"std::__1::__function::__func<game::AIThink::ActionMindTreasure(int, game::AIValue const&, game::AIValue const&)::$_0, void (game::map::TrickData*, int, int, int, int)>::target(std::type_info const&)"
 121c810,12,verified,src/llvm-libcxx-21/libcxx/include/__functional/function.h,"std::__1::__function::__func<game::AIThink::ActionMindTreasure(int, game::AIValue const&, game::AIValue const&)::$_0, void (game::map::TrickData*, int, int, int, int)>::target_type()"
 121c820,44,verified,src/llvm-libcxx-21/libcxx/include/__functional/function.h,"std::__1::__function::__func<game::AIThink::ActionMindItemUse(int, game::AIValue const&, game::AIValue const&)::$_0, void (game::Unit const*, int, int)>::deleting destructor"
@@ -55575,7 +55575,7 @@ fffcb0,1244,verified,src/game/unnamed/b014_1.c,GameHr_fffcb0
 1221be0,272,verified,src/game/ai_think.c,game_AIThink_EntrustMoveRetreat
 12220a0,680,verified,src/game/ai_think.c,AIThink_12220a0
 12224a0,636,verified,src/game/ai_think.c,game_AIThink_EntrustMoveGimmick
-1222760,2248,verified,src/game/ai_think.c,game_AIThink_EntrustMoveEnemy
+1222760,2412,verified,src/game/ai_think.c,game_AIThink_EntrustMoveEnemy
 1223200,812,disputed,src/game/ai_think.c,game_AIThink_EntrustMoveNearestFriend
 1223580,692,verified,src/game/ai_think.c,AIThink_1223580
 1223860,500,verified,src/game/ai_think.c,AIThink_1223860
@@ -55665,7 +55665,7 @@ fffcb0,1244,verified,src/game/unnamed/b014_1.c,GameHr_fffcb0
 1224c30,32,verified,src/llvm-libcxx-21/libcxx/include/__functional/function.h,"std::__1::__function::__func<game::AIThink::EntrustMoveGimmick(unsigned int)::$_0, void (game::map::TrickData*, int, int, int, int)>::__clone(__base*)"
 1224c50,4,verified,src/llvm-libcxx-21/libcxx/include/__functional/function.h,"std::__1::__function::__func<game::AIThink::EntrustMoveGimmick(unsigned int)::$_0, void (game::map::TrickData*, int, int, int, int)>::destroy()"
 1224c60,12,verified,src/llvm-libcxx-21/libcxx/include/__functional/function.h,"std::__1::__function::__func<game::AIThink::EntrustMoveGimmick(unsigned int)::$_0, void (game::map::TrickData*, int, int, int, int)>::destroy_deallocate()"
-1224c70,156,verified,src/game/ai_think.c,game_AIThink_EntrustMoveGimmick_lambda0_Invoke
+1224c70,156,disputed,src/game/ai_think.c,game_AIThink_EntrustMoveGimmick_lambda0_Invoke
 1224d10,28,verified,src/llvm-libcxx-21/libcxx/include/__functional/function.h,"std::__1::__function::__func<game::AIThink::EntrustMoveGimmick(unsigned int)::$_0, void (game::map::TrickData*, int, int, int, int)>::target(std::type_info const&)"
 1224d30,12,verified,src/llvm-libcxx-21/libcxx/include/__functional/function.h,"std::__1::__function::__func<game::AIThink::EntrustMoveGimmick(unsigned int)::$_0, void (game::map::TrickData*, int, int, int, int)>::target_type()"
 1224d40,44,verified,src/llvm-libcxx-21/libcxx/include/__functional/function.h,"std::__1::__function::__func<game::AIThink::EntrustMoveTreasure(unsigned int)::$_0, void (game::map::TrickData*, int, int, int, int)>::deleting destructor"
@@ -55673,7 +55673,7 @@ fffcb0,1244,verified,src/game/unnamed/b014_1.c,GameHr_fffcb0
 1224dd0,32,verified,src/llvm-libcxx-21/libcxx/include/__functional/function.h,"std::__1::__function::__func<game::AIThink::EntrustMoveTreasure(unsigned int)::$_0, void (game::map::TrickData*, int, int, int, int)>::__clone(__base*)"
 1224df0,4,verified,src/llvm-libcxx-21/libcxx/include/__functional/function.h,"std::__1::__function::__func<game::AIThink::EntrustMoveTreasure(unsigned int)::$_0, void (game::map::TrickData*, int, int, int, int)>::destroy()"
 1224e00,12,verified,src/llvm-libcxx-21/libcxx/include/__functional/function.h,"std::__1::__function::__func<game::AIThink::EntrustMoveTreasure(unsigned int)::$_0, void (game::map::TrickData*, int, int, int, int)>::destroy_deallocate()"
-1224e10,156,verified,src/game/ai_think.c,game_AIThink_EntrustMoveTreasure_lambda0_Invoke
+1224e10,156,disputed,src/game/ai_think.c,game_AIThink_EntrustMoveTreasure_lambda0_Invoke
 1224eb0,28,verified,src/llvm-libcxx-21/libcxx/include/__functional/function.h,"std::__1::__function::__func<game::AIThink::EntrustMoveTreasure(unsigned int)::$_0, void (game::map::TrickData*, int, int, int, int)>::target(std::type_info const&)"
 1224ed0,12,verified,src/llvm-libcxx-21/libcxx/include/__functional/function.h,"std::__1::__function::__func<game::AIThink::EntrustMoveTreasure(unsigned int)::$_0, void (game::map::TrickData*, int, int, int, int)>::target_type()"
 1224ee0,44,verified,src/llvm-libcxx-21/libcxx/include/__functional/function.h,"std::__1::__function::__func<game::AIThink::EntrustMoveTo(int, int, unsigned int)::$_0, void (int, int)>::deleting destructor"
@@ -57273,7 +57273,7 @@ fffcb0,1244,verified,src/game/unnamed/b014_1.c,GameHr_fffcb0
 128c8e0,1240,verified,src/game/data/data_file.cpp,_ZNSt3__115__inplace_mergeINS_17_ClassicAlgPolicyERN4game12_GLOBAL__N_19CompareIdENS3_13LocalIteratorINS_11__wrap_iterIPPNS2_23AutoGrowMasteryExpArrayEEEEEEEvT1_SD_SD_OT0_NS_15iterator_traitsISD_E15difference_typeESI_PNSH_10value_typeEl
 128ce20,72,verified,src/game/ai_interference_simulator.c,AIInterferenceSimulator_Destructor
 128ce70,340,verified,src/game/unplaced_6.c,game_128ce70
-128cfe0,1656,verified,src/game/ai_think.c,game_AIThink_MagicInterferenceTo
+128cfe0,1708,verified,src/game/ai_think.c,game_AIThink_MagicInterferenceTo
 128d790,44,verified,src/llvm-libcxx-21/libcxx/include/__functional/function.h,"std::__1::__function::__func<game::AIThink::MagicInterferenceTo(int, game::AIValue const&, game::AIValue const&)::$_0, void (int, int)>::deleting destructor"
 128d7c0,96,verified,src/llvm-libcxx-21/libcxx/include/__functional/function.h,"std::__1::__function::__func<game::AIThink::MagicInterferenceTo(int, game::AIValue const&, game::AIValue const&)::$_0, void (int, int)>::__clone()"
 128d820,40,verified,src/llvm-libcxx-21/libcxx/include/__functional/function.h,"std::__1::__function::__func<game::AIThink::MagicInterferenceTo(int, game::AIValue const&, game::AIValue const&)::$_0, void (int, int)>::__clone(__base*)"
@@ -57300,7 +57300,7 @@ fffcb0,1244,verified,src/game/unnamed/b014_1.c,GameHr_fffcb0
 1294f20,1932,verified,src/game/unplaced_7.c,game_1294f20
 12962a0,1444,verified,src/game/unnamed/b017_1.c,GameHr_12962a0
 12968e0,1544,verified,src/game/unplaced_7.c,game_12968e0
-12975e0,2340,verified,src/game/unplaced_16.c,game_12975e0
+12975e0,2456,verified,src/game/unplaced_16.c,game_12975e0
 12982e0,220,verified,src/game/unplaced_7.c,game_12982e0
 1298700,1236,verified,src/game/unnamed/b017_3.c,GameHr_1298700
 1298cc0,536,verified,src/game/ai_think.c,game_AIThink_ActionSpecialAttack
@@ -57347,7 +57347,7 @@ fffcb0,1244,verified,src/game/unnamed/b014_1.c,GameHr_fffcb0
 129f190,32,verified,src/llvm-libcxx-21/libcxx/include/__functional/function.h,"std::__1::__function::__func<game::AIThink::ActionSpecialAttack(int, game::AIValue const&, game::AIValue const&)::$_0, void (game::UnitSkill const&)>::__clone(__base*)"
 129f1b0,4,verified,src/llvm-libcxx-21/libcxx/include/__functional/function.h,"std::__1::__function::__func<game::AIThink::ActionSpecialAttack(int, game::AIValue const&, game::AIValue const&)::$_0, void (game::UnitSkill const&)>::destroy()"
 129f1c0,12,verified,src/llvm-libcxx-21/libcxx/include/__functional/function.h,"std::__1::__function::__func<game::AIThink::ActionSpecialAttack(int, game::AIValue const&, game::AIValue const&)::$_0, void (game::UnitSkill const&)>::destroy_deallocate()"
-129f1d0,364,disputed,src/game/ai_think.c,game_AIThink_ActionSpecialAttack_lambda0_Invoke
+129f1d0,368,disputed,src/game/ai_think.c,game_AIThink_ActionSpecialAttack_lambda0_Invoke
 129f350,28,verified,src/llvm-libcxx-21/libcxx/include/__functional/function.h,"std::__1::__function::__func<game::AIThink::ActionSpecialAttack(int, game::AIValue const&, game::AIValue const&)::$_0, void (game::UnitSkill const&)>::target(std::type_info const&)"
 129f370,12,verified,src/llvm-libcxx-21/libcxx/include/__functional/function.h,"std::__1::__function::__func<game::AIThink::ActionSpecialAttack(int, game::AIValue const&, game::AIValue const&)::$_0, void (game::UnitSkill const&)>::target_type()"
 129f380,44,verified,src/llvm-libcxx-21/libcxx/include/__functional/function.h,"std::__1::__function::__func<game::AIThink::EntrustSpecialTo(std::__1::function<bool (game::Unit const*, game::UnitSkill const&)> const&)::$_0, void (game::Unit const*, int, int, game::AIThink::AttackScoreResult const&)>::deleting destructor"
@@ -57476,10 +57476,10 @@ fffcb0,1244,verified,src/game/unnamed/b014_1.c,GameHr_fffcb0
 12a2bd0,44,verified,src/memory/new_delete.cpp,deleting destructor at 0x12a2bd0
 12a2c00,28,verified,src/game/ai_think/special_seodola_condition.c,SpecialSeodolaCondition_Unknown2
 12a2c20,44,verified,src/memory/new_delete.cpp,deleting destructor at 0x12a2c20
-12a2c50,16,verified,src/game/ai_think.c,AIThink_SpecialTalimunCondition_Unknown5
+12a2c50,16,disputed,src/game/ai_think.c,AIThink_SpecialTalimunCondition_Unknown5
 12a2c60,44,verified,src/memory/new_delete.cpp,deleting destructor at 0x12a2c60
 12a2c90,60,verified,src/game/ai_think/special_leda_condition.c,SpecialLedaCondition_Unknown4
-12a2cd0,16,verified,src/game/ai_think.c,AIThink_SpecialLedaCondition_Unknown5
+12a2cd0,16,disputed,src/game/ai_think.c,AIThink_SpecialLedaCondition_Unknown5
 12a2ce0,8,verified,src/game/game_trivial.cpp,_Z16GameStub_12a2ce0v
 12a2cf0,44,verified,src/memory/new_delete.cpp,deleting destructor at 0x12a2cf0
 12a2d20,16,verified,src/game/ai_think.c,AIThink_SpecialAnhatolyahCondition_Unknown2
@@ -57604,7 +57604,7 @@ fffcb0,1244,verified,src/game/unnamed/b014_1.c,GameHr_fffcb0
 12a8300,1640,verified,src/game/unplaced_16.c,game_12a8300
 12a9080,1312,verified,src/game/unplaced_17.c,game_12a9080
 12a9b20,732,verified,src/game/unplaced_17.c,game_12a9b20
-12a9e00,1888,verified,src/game/ai_think.c,AIThink_12a9e00
+12a9e00,2064,verified,src/game/ai_think.c,AIThink_12a9e00
 12aa9b0,464,verified,src/game/unnamed/b017_1.c,GameHr_12aa9b0
 12aab80,456,verified,src/game/unnamed/b017_1.c,GameHr_12aab80
 12aad60,524,verified,src/game/unnamed/b017_1.c,GameHr_12aad60
@@ -59694,7 +59694,7 @@ fffcb0,1244,verified,src/game/unnamed/b014_1.c,GameHr_fffcb0
 13512c0,2188,verified,src/game/unnamed/b018_0.c,GameHr_13512c0
 1351d00,376,verified,src/game/gmap/unplaced_4.c,game_gmap_1351d00
 1351e80,684,verified,src/game/gmap/unplaced_4.c,game_gmap_1351e80
-1352160,4616,verified,src/game/unnamed/b028_0.c,GameHr_1352160
+1352160,4628,verified,src/game/unnamed/b028_0.c,GameHr_1352160
 1353740,1560,verified,src/game/unnamed/b018_0.c,GameHr_1353740
 1353fb0,492,verified,src/game/unnamed/b018_2.c,GameHr_1353fb0
 13541f0,44,verified,src/llvm-libcxx-21/libcxx/include/__functional/function.h,"std::__1::__function::__func<game::gmap::TroopMgr::Impl::BeginMovePlayer()::'lambda'(game::gmap::Troop*), void (game::gmap::Troop*)>::deleting destructor"
