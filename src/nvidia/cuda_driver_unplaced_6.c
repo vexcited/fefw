@@ -9027,7 +9027,7 @@ __int64 cuda_driver_f43c0(__int64 a1, __int64 a2, int a3, unsigned int a4)
   if (v36[0] <= v35) {
     v6 = (unsigned int)v6;
     v10 = CudaDriverData_1422118;
-    v33 = (char*)CudaDriverData_1422118 + 8 * a4;
+    v33 = (char*)CudaDriverData_1422118 + 8LL * a4;
     while ((unsigned __int8)CudaDriverRoutine_4d790(
                *(unsigned __int64**)(v4 + 8), v8) == 0) {
       result = 0;

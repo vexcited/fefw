@@ -54,7 +54,7 @@ __int64 game_proc_9a61a0(__int64 result)
     goto LABEL_22;
   }
   v3 = *(_QWORD*)(eft_g_effectSystem + 104);
-  if (v3 == 0 || (v4 = GameData_21f5250[5 * v1 + 2]) == 0) {
+  if (v3 == 0 || (v4 = GameData_21f5250[5LL * v1 + 2]) == 0) {
   LABEL_22:
     v11 = *(unsigned __int8**)(v2 + 16);
     if (v11 != nullptr) {

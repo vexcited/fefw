@@ -12368,7 +12368,7 @@ __int64 nn_fontll_itype_44e2c0(int a1, int a2, unsigned int a3, _DWORD* a4)
     } while (a3 > (unsigned __int16)v7);
     v10 = 0;
     v11 = 0;
-    v12 = (unsigned __int16*)&a4[12 * a1];
+    v12 = (unsigned __int16*)&a4[12LL * a1];
     v13 = *v12;
     do {
       v15 = (unsigned __int16*)&a4[12 * v11];
@@ -12397,10 +12397,10 @@ __int64 nn_fontll_itype_44e2c0(int a1, int a2, unsigned int a3, _DWORD* a4)
       v22 = 0;
       v115 = a3 & 7;
       v112 = a4 + 7;
-      v110 = &a4[12 * a2 + 7];
+      v110 = &a4[12LL * a2 + 7];
       v111 = a4 + 55;
       v113 = v10;
-      v114 = &a4[12 * a3 - 2];
+      v114 = &a4[12LL * a3 - 2];
       while (2) {
         v23 = a4[7];
         v24 = *((unsigned __int16*)v117 + v22);
@@ -12471,8 +12471,8 @@ __int64 nn_fontll_itype_44e2c0(int a1, int a2, unsigned int a3, _DWORD* a4)
         if (a2 != (_DWORD)v24) {
           v46 = v45 <= *v110 ? v24 : a2;
           v47 = v45 <= *v110 ? a2 : v24;
-          v48 = a4[12 * v46 + 7] + (signed __int32)a4[12 * v46 + 8] / 2;
-          v49 = a4[12 * v47 + 7] - (signed __int32)a4[12 * v47 + 8] / 2;
+          v48 = a4[12LL * v46 + 7] + (signed __int32)a4[12LL * v46 + 8] / 2;
+          v49 = a4[12LL * v47 + 7] - (signed __int32)a4[12LL * v47 + 8] / 2;
           v50 = v49 - v48;
           if (v49 < v48) {
             goto LABEL_50;
@@ -12539,8 +12539,8 @@ __int64 nn_fontll_itype_44e2c0(int a1, int a2, unsigned int a3, _DWORD* a4)
           if (v45 <= v61) {
             v62 = v24;
           }
-          v64 = a4[12 * v62 + 7] + (signed __int32)a4[12 * v62 + 8] / 2;
-          v65 = a4[12 * v63 + 7] - (signed __int32)a4[12 * v63 + 8] / 2;
+          v64 = a4[12LL * v62 + 7] + (signed __int32)a4[12LL * v62 + 8] / 2;
+          v65 = a4[12LL * v63 + 7] - (signed __int32)a4[12LL * v63 + 8] / 2;
           v66 = v65 - v64;
           if (v65 < v64) {
             goto LABEL_72;

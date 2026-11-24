@@ -504,7 +504,7 @@ void SuperStripeSystem_5d0320(float a1, __int64 a2, __int64 a3, __int64 a4,
       f_.v116 = 0x0.0p+0f;
       v53 = f_.v114;
       v59 = 12LL * v57;
-      v60 = (char*)&f_.v115 + 12 * v58 + 4;
+      v60 = (char*)&f_.v115 + 12LL * v58 + 4;
       f_.v117 = v56 * 0x1.99999a0000000p-4f;
       f_.v118 = v56 * 0x1.99999a0000000p-4f;
       f_.v119 = v56 * 0x1.99999a0000000p-4f;

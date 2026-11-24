@@ -8167,7 +8167,7 @@ bool cuda_driver_1ae1f0(__int64 a1, __int64 a2, __int64 a3)
       result = CudaDriverRoutine_e7cb0(a1, a3, 0);
       v18 = v7[13];
       v19 = 4 * v10;
-      v20 = &v7[2 * v10];
+      v20 = &v7[2LL * v10];
       v20[48] = v16 >> 6;
       v20[49] = (v16 >> 38) & 0x7FFFF | ((unsigned __int16)v17 << 19);
       v21 = v18 | (1 << (4 * v10));

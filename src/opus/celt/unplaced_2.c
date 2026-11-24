@@ -466,14 +466,14 @@ unsigned __int8 opus_celt_29540(__int64 result, __int16* a2, unsigned int a3,
             if (v101 >= 0x7FFF) {
               v101 = 0x7FFF;
             }
-            v103 = v101 + v88[2 * a4];
+            v103 = v101 + v88[2LL * a4];
             if (v103 >= 0x7FFF) {
               v103 = 0x7FFF;
             }
             if (v103 <= -32768) {
               LOWORD(v103) = 0x8000;
             }
-            v88[2 * a4] = v103;
+            v88[2LL * a4] = v103;
             v104 = v86[1];
             v86 += 4;
             v105 = v104 + (int)v102;
@@ -486,14 +486,14 @@ unsigned __int8 opus_celt_29540(__int64 result, __int16* a2, unsigned int a3,
             if (v106 >= 0x7FFF) {
               v106 = 0x7FFF;
             }
-            v107 = v106 + v88[3 * a4];
+            v107 = v106 + v88[3LL * a4];
             if (v107 >= 0x7FFF) {
               v107 = 0x7FFF;
             }
             if (v107 <= -32768) {
               LOWORD(v107) = 0x8000;
             }
-            v88[3 * a4] = v107;
+            v88[3LL * a4] = v107;
             v88 = (__int16*)((char*)v88 + result);
           } while (-(__int64)(a3 & 0x7FFFFFFC) != v87);
           v84 = -v87;

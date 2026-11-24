@@ -2087,7 +2087,8 @@ _WORD* opus_silk_fixed_5ef40(__int64 a1, _WORD* a2, __int64 a3, int a4)
                              (__int64)&v14[2 * *(int*)(a1 + 4640)],
                              v10 - *(_DWORD*)(a1 + 4640));
           result = silk_sum_sqr_shift(
-              &v26, (int*)&v25, (__int64)&v14[2 * v10 + 2 * *(int*)(a1 + 4640)],
+              &v26, (int*)&v25,
+              (__int64)&v14[2LL * v10 + 2 * *(int*)(a1 + 4640)],
               v10 - *(_DWORD*)(a1 + 4640));
           if ((int)(HIDWORD(v25) - (int)v25) < 0) {
             SHIDWORD(v26) >>= (v25 - BYTE4(v25)) & 0x1F;

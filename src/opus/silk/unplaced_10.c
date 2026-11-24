@@ -293,7 +293,7 @@ __int64 opus_silk_4be00(__int64 a1, int* a2, __int64 a3, int a4)
   v32 = *(_DWORD*)(a1 + 4248);
   v33 = ((*(int*)(a1 + 4196) >> 7) + 1) >> 1;
   v34 = v31 - v23 - v33 - 2;
-  silk_LPC_analysis_filter((__int64)&v11[2 * v34], a1 + 2LL * v34 + 1348,
+  silk_LPC_analysis_filter((__int64)&v11[2LL * v34], a1 + 2LL * v34 + 1348,
                            (__int16*)&f_.v173, 2 - (-(int)v23 - v33), v23);
   v35 = *(_DWORD*)(a1 + 4272);
   if (v35 >= 0) {
@@ -465,7 +465,7 @@ LABEL_49:
     v84 = -4LL * v33;
     v85 = f_.v161;
     f_.v165 = v33;
-    v86 = &f_.v164[4 * v31];
+    v86 = &f_.v164[4LL * v31];
     do {
       v82 += 4;
       v85 -= 4;

@@ -582,7 +582,7 @@ LABEL_20:
   v35 = v402_.v430;
   if ((int)v402_.v430 >= -3) {
     v36 = 20 * v402_.v430 + 81;
-    v37 = (__int16*)&v34[2 * v28 - 4];
+    v37 = (__int16*)&v34[2LL * v28 - 4];
     v38 = (__int16*)&v34[2 * (unsigned int)(20 * v402_.v430 + 76) + 6];
     do {
       v39 = *v37--;
@@ -1918,7 +1918,7 @@ _DWORD* silk_P_Ana_calc_corr_st3(_DWORD* result, __int64 a2, int a3, __int64 a4,
   v100 = a4;
   v92 = result;
   if (a5 == 4) {
-    v98 = (char*)MovieData_c0b10 + 8 * a6;
+    v98 = (char*)MovieData_c0b10 + 8LL * a6;
     v7 = (char*)MovieData_c0ac8;
     v8 = *((char*)MovieData_c0b18 + a6);
     v9 = 34;

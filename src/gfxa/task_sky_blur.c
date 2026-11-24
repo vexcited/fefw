@@ -1370,7 +1370,7 @@ __int64 TaskSkyBlur_b75c60(_DWORD* a1, __int64 a2, __int64 a3)
     v7 = -v7;
   }
   a1[70] = v7;
-  v8 = *(_QWORD*)&a1[2 * v7 + 66];
+  v8 = *(_QWORD*)&a1[2LL * v7 + 66];
   v9 = (*(__int64 (**)(__int64))(*(_QWORD*)v8 + 56LL))(v8),
   result = COERCE_AS(__typeof__(result),
                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
@@ -1467,7 +1467,7 @@ __int64 TaskSkyBlur_b75c60(_DWORD* a1, __int64 a2, __int64 a3)
     v27 = -v27;
   }
   a1[84] = v27;
-  v28 = *(_QWORD*)&a1[2 * v27 + 80];
+  v28 = *(_QWORD*)&a1[2LL * v27 + 80];
   v29 = (*(__int64 (**)(__int64))(*(_QWORD*)v28 + 56LL))(v28),
   result = COERCE_AS(__typeof__(result),
                      PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
@@ -1695,7 +1695,7 @@ __int64 TaskSkyBlur_b75c60(_DWORD* a1, __int64 a2, __int64 a3)
       v54 = -v54;
     }
     a1[98] = v54;
-    v55 = *(_QWORD*)&a1[2 * v54 + 94];
+    v55 = *(_QWORD*)&a1[2LL * v54 + 94];
     v56 = (*(__int64 (**)(__int64))(*(_QWORD*)v55 + 56LL))(v55),
     result = COERCE_AS(__typeof__(result),
                        PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
@@ -1732,7 +1732,7 @@ __int64 TaskSkyBlur_b75c60(_DWORD* a1, __int64 a2, __int64 a3)
       v63 = -v63;
     }
     v59[4] = v63;
-    v64 = *(_QWORD*)&v59[2 * v63];
+    v64 = *(_QWORD*)&v59[2LL * v63];
     v65 = (int*)(*(_QWORD*)a1 + 13304LL);
     if (*(_BYTE*)(*(_QWORD*)a1 + 16700LL) != 0) {
       v65 = (int*)(*(_QWORD*)(*(_QWORD*)a1 + 16672LL) + 24LL);
@@ -1765,7 +1765,7 @@ __int64 TaskSkyBlur_b75c60(_DWORD* a1, __int64 a2, __int64 a3)
       v69 = -v69;
     }
     v59[18] = v69;
-    v70 = *(_QWORD*)&v59[2 * v69 + 14];
+    v70 = *(_QWORD*)&v59[2LL * v69 + 14];
     v71 = *(_QWORD*)a1 + 13304LL;
     if (*(_BYTE*)(*(_QWORD*)a1 + 16700LL) != 0) {
       v71 = *(_QWORD*)(*(_QWORD*)a1 + 16672LL) + 24LL;
