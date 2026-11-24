@@ -66103,7 +66103,7 @@ fffcb0,1244,verified,src/game/unnamed/b014_1.c,GameHr_fffcb0
 152c590,4,verified,src/game/game_trivial.cpp,_Z16GameStub_152c590v
 152c5a0,1268,verified,src/game/gmap/unplaced_2.c,game_gmap_152c5a0
 152cb00,232,verified,src/game/gmap/unplaced_2.c,game_gmap_152cb00
-152cc00,476,verified,src/game/gmap/unplaced_2.c,game_gmap_152cc00
+152cc00,704,verified,src/game/gmap/unplaced_2.c,game_gmap_152cc00
 152d420,124,verified,src/game/unnamed/b020_0.c,GameHr_152d420
 152d4a0,624,verified,src/game/unnamed/b020_0.c,GameHr_152d4a0
 152d740,364,verified,src/game/proc/unread_proc_singletons.cpp,_ZN4game21ProcJumpableSingletonINS_4gmap12_GLOBAL__N_119ProcGmapDisposTroopENS2_5LabelEE9ApplyJumpEv
@@ -66287,7 +66287,7 @@ fffcb0,1244,verified,src/game/unnamed/b014_1.c,GameHr_fffcb0
 1540e50,800,verified,src/game/gmap/unplaced_2.c,game_gmap_1540e50
 1541180,744,verified,src/game/gmap/unplaced_3.c,game_gmap_1541180
 1541940,1128,verified,src/game/gmap/unplaced_8.c,game_gmap_1541940
-1541de0,676,verified,src/game/gmap/unplaced_2.c,game_gmap_1541de0
+1541de0,700,verified,src/game/gmap/unplaced_2.c,game_gmap_1541de0
 15420c0,308,verified,src/game/gmap/unplaced_2.c,game_gmap_15420c0
 1542220,256,verified,src/game/gmap/anonymous/proc_surprise.c,ProcSurprise_Destructor
 1542320,292,verified,src/game/gmap/anonymous/proc_surprise.c,ProcSurprise_DeletingDestructor
