@@ -680,7 +680,7 @@ fff0,88,verified,src/movie/detail/movie_video_decoder_event_manager.cpp,_ZN5movi
 23ce0,564,disputed,src/movie/unnamed/p000_0.c,MovieHr_23ce0
 23fc0,2388,verified,src/opus/celt/bands.c,compute_theta
 24d60,104,verified,src/opus/celt/celt.c,resampling_factor
-24de0,1192,verified,src/opus/celt/celt_impl2.c,comb_filter
+24de0,1128,disputed,src/opus/celt/celt_impl2.c,comb_filter
 252a0,104,verified,src/opus/celt/celt.c,init_caps
 25310,40,verified,src/opus/celt/celt_impl2.c,celt_25310
 25340,12,verified,src/opus/celt/celt.c,opus_get_version_string
@@ -902,7 +902,7 @@ fff0,88,verified,src/movie/detail/movie_video_decoder_event_manager.cpp,_ZN5movi
 6cc20,964,verified,src/opus/src/opus_encoder_impl2.c,opus_encoder_6cc20
 6d020,1140,verified,src/opus/src/opus_encoder_impl2.c,opus_encoder_6d020
 6d6a0,692,verified,src/opus/src/opus_encoder.c,decide_dtx_mode
-6d9a0,440,disputed,src/opus/src/opus_encoder_impl2.c,opus_encode_float
+6d9a0,440,verified,src/opus/src/opus_encoder_impl2.c,opus_encode_float
 6dbf0,248,verified,src/opus/src/opus_encoder_impl2.c,opus_encode
 6dd30,200,verified,src/opus/src/opus_encoder.c,opus_encoder_ctl
 6ece0,4,verified,src/opus/src/opus_encoder.c,opus_encoder_destroy
@@ -912,7 +912,7 @@ fff0,88,verified,src/movie/detail/movie_video_decoder_event_manager.cpp,_ZN5movi
 6ed40,4,verified,src/opus/src/repacketizer.c,opus_repacketizer_destroy
 6ed50,296,verified,src/opus/src/repacketizer_impl.c,repacketizer_6ed50
 6ee80,8,verified,src/opus/src/repacketizer.c,opus_repacketizer_get_nb_frames
-6eea0,1368,verified,src/opus/src/repacketizer_impl.c,opus_repacketizer_out_range_impl
+6eea0,1548,verified,src/opus/src/repacketizer_impl.c,opus_repacketizer_out_range_impl
 6f4d0,12,verified,src/opus/src/repacketizer.c,opus_repacketizer_out_range
 6f4e0,28,verified,src/opus/src/repacketizer.c,opus_repacketizer_out
 6f500,36,verified,src/opus/src/repacketizer_impl.c,opus_packet_pad
@@ -930,9 +930,9 @@ fff0,88,verified,src/movie/detail/movie_video_decoder_event_manager.cpp,_ZN5movi
 751a0,80,verified,src/opus/src/opus_multistream.c,get_right_channel
 75200,80,verified,src/opus/src/opus_multistream.c,get_mono_channel
 75250,116,verified,src/opus/src/opus_multistream_decoder.c,opus_multistream_decoder_get_size
-752e0,520,verified,src/opus/src/unplaced_10.c,opus_752e0
+752e0,520,disputed,src/opus/src/unplaced_10.c,opus_752e0
 75500,288,verified,src/opus/src/opus_multistream_decoder_impl2.c,opus_multistream_decoder_create
-75620,816,verified,src/opus/src/opus_multistream_decoder_impl2.c,opus_multistream_decode_native
+75620,820,verified,src/opus/src/opus_multistream_decoder_impl2.c,opus_multistream_decode_native
 75ab0,108,verified,src/opus/src/opus_multistream_decoder.c,opus_multistream_decoder_ctl
 75b20,52,verified,src/opus/src/opus_multistream_decoder_impl2.c,opus_multistream_decode
 75b60,436,verified,src/opus/src/opus_multistream_decoder_impl2.c,opus_multistream_decoder_75b60
@@ -942,9 +942,9 @@ fff0,88,verified,src/movie/detail/movie_video_decoder_event_manager.cpp,_ZN5movi
 763f0,4,verified,src/opus/src/opus_multistream_decoder.c,opus_multistream_decoder_destroy
 76400,4044,disputed,src/opus/src/unplaced_3.c,opus_src_76400
 77980,116,verified,src/opus/src/opus_multistream_encoder.c,opus_multistream_encoder_get_size
-77a00,324,verified,src/opus/src/opus_multistream_encoder_impl2.c,opus_multistream_surround_encoder_get_size
-77b80,788,verified,src/opus/src/opus_multistream_encoder_impl2.c,opus_multistream_encoder_77b80
-77f00,628,verified,src/opus/src/opus_multistream_encoder_impl2.c,opus_multistream_surround_encoder_init
+77a00,348,verified,src/opus/src/opus_multistream_encoder_impl2.c,opus_multistream_surround_encoder_get_size
+77b80,832,verified,src/opus/src/opus_multistream_encoder_impl2.c,opus_multistream_encoder_77b80
+77f00,784,verified,src/opus/src/opus_multistream_encoder_impl2.c,opus_multistream_surround_encoder_init
 78220,312,verified,src/opus/src/opus_multistream_encoder_impl2.c,opus_multistream_encoder_create
 78360,252,verified,src/opus/src/opus_multistream_encoder.c,opus_multistream_surround_encoder_create
 793a0,348,verified,src/opus/src/opus_multistream_encoder.c,ms_get_preemph_mem

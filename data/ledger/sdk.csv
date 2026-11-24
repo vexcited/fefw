@@ -10015,11 +10015,11 @@ ffee0,324,verified,src/nn/fs/unplaced.c,nn_fs_GetAndClearMemoryReportInfo
 238e20,904,verified,src/nn/audio/server/unplaced.c,nn_audio_server_238e20
 239220,904,verified,src/nn/audio/server/unplaced.c,nn_audio_server_239220
 239620,720,verified,src/nn/audio/server/unplaced.c,nn_audio_server_239620
-239900,516,verified,src/nn/audio/server/unplaced.c,nn_audio_server_239900
+239900,524,verified,src/nn/audio/server/unplaced.c,nn_audio_server_239900
 239b20,816,verified,src/nn/audio/server/unplaced.c,nn_audio_server_239b20
 239e60,524,verified,src/nn/audio/server/unplaced.c,nn_audio_server_239e60
 23a080,8,verified,src/nn/sdk_trivial_forwarders.cpp,_Z14SdkStub_23a080m
-23a0a0,388,verified,src/nn/audio/server/unplaced.c,nn_audio_server_23a0a0
+23a0a0,392,verified,src/nn/audio/server/unplaced.c,nn_audio_server_23a0a0
 23a240,12,verified,src/nn/audio/server/info_updater.cpp,_ZNK2nn5audio6server14EffectInfoBase11GetTypeNameEv
 23a250,180,verified,src/nn/audio/server/info_updater_impl.c,info_updater_23a250
 23a310,12,verified,src/nn/audio/server/info_updater.cpp,_ZN2nn5audio6server14EffectInfoBase6UpdateEPNS0_6common17BehaviorParameter9ErrorInfoEPKvRNS1_10PoolMapperE
@@ -10198,13 +10198,13 @@ ffee0,324,verified,src/nn/fs/unplaced.c,nn_fs_GetAndClearMemoryReportInfo
 245760,4,verified,src/nn/audio/server/unplaced_4.c,nn_audio_server_245760
 245770,24,verified,src/nn/audio/server/info_updater_impl.c,info_updater_245770
 245790,72,verified,src/nn/audio/server/info_updater_impl.c,info_updater_245790
-2457e0,336,verified,src/nn/audio/server/info_updater_impl.c,info_updater_2457e0
+2457e0,336,disputed,src/nn/audio/server/info_updater_impl.c,info_updater_2457e0
 245940,8,verified,src/nn/audio/server/info_updater.cpp,_ZNK2nn5audio6server10ReverbInfoINS0_8renderer3ipc6Effect10UpdateDataILi2EEEE7GetTypeEv
 245950,12,verified,src/nn/audio/server/info_updater.cpp,_ZNK2nn5audio6server10ReverbInfoINS0_8renderer3ipc6Effect10UpdateDataILi2EEEE11GetTypeNameEv
 245960,284,verified,src/nn/audio/server/info_updater.cpp,_ZNK2nn5audio6server10ReverbInfoINS0_8renderer3ipc6Effect10UpdateDataILi2EEEE4DumpEPci
 245a80,4,verified,src/nn/audio/server/unplaced_4.c,nn_audio_server_245a80
 245a90,24,verified,src/nn/audio/server/info_updater_impl.c,info_updater_245a90
-245ab0,348,verified,src/nn/audio/server/unplaced_4.c,nn_audio_server_245ab0
+245ab0,356,verified,src/nn/audio/server/unplaced_4.c,nn_audio_server_245ab0
 245c20,8,verified,src/nn/audio/server/info_updater.cpp,_ZNK2nn5audio6server15I3dl2ReverbInfoINS0_8renderer3ipc6Effect10UpdateDataILi2EEEE7GetTypeEv
 245c30,12,verified,src/nn/audio/server/info_updater.cpp,_ZNK2nn5audio6server15I3dl2ReverbInfoINS0_8renderer3ipc6Effect10UpdateDataILi2EEEE11GetTypeNameEv
 245c40,136,verified,src/nn/audio/server/info_updater.cpp,_ZNK2nn5audio6server15I3dl2ReverbInfoINS0_8renderer3ipc6Effect10UpdateDataILi2EEEE4DumpEPci
@@ -10218,7 +10218,7 @@ ffee0,324,verified,src/nn/fs/unplaced.c,nn_fs_GetAndClearMemoryReportInfo
 2460e0,12,verified,src/nn/audio/server/info_updater.cpp,_ZNK2nn5audio6server7AuxInfoINS0_8renderer3ipc6Effect10UpdateDataILi2EEEE11GetTypeNameEv
 2460f0,72,verified,src/nn/audio/server/info_updater.cpp,_ZNK2nn5audio6server7AuxInfoINS0_8renderer3ipc6Effect10UpdateDataILi2EEEE4DumpEPci
 246140,8,verified,src/nn/audio/server/info_updater.cpp,_ZNK2nn5audio6server7AuxInfoINS0_8renderer3ipc6Effect10UpdateDataILi2EEEE15GetChannelCountEv
-246150,276,verified,src/nn/audio/server/info_updater_impl.c,info_updater_246150
+246150,320,verified,src/nn/audio/server/info_updater_impl.c,info_updater_246150
 2462c0,8,verified,src/nn/audio/server/info_updater.cpp,_ZNK2nn5audio6server16BiquadFilterInfoINS0_8renderer3ipc6Effect10UpdateDataILi2EEEE7GetTypeEv
 2462d0,12,verified,src/nn/audio/server/info_updater.cpp,_ZNK2nn5audio6server16BiquadFilterInfoINS0_8renderer3ipc6Effect10UpdateDataILi2EEEE11GetTypeNameEv
 2462e0,56,verified,src/nn/audio/server/info_updater.cpp,_ZNK2nn5audio6server16BiquadFilterInfoINS0_8renderer3ipc6Effect10UpdateDataILi2EEEE4DumpEPci
@@ -15355,7 +15355,7 @@ ffee0,324,verified,src/nn/fs/unplaced.c,nn_fs_GetAndClearMemoryReportInfo
 48a320,440,verified,src/nn/gs/unplaced_4.c,nn_gs_48a320
 48a500,408,verified,src/nn/gs/unplaced.c,nn_gs_48a500
 48a6b0,764,verified,src/nn/gs/unplaced.c,nn_gs_48a6b0
-48cb20,212,verified,src/nn/gs/unplaced.c,unplaced_48cb20
+48cb20,504,verified,src/nn/gs/unplaced.c,unplaced_48cb20
 48ce20,228,verified,src/nn/gs/unplaced.c,nn_gs_48ce20
 48cf10,332,verified,src/nn/gs/unplaced.c,unplaced_48cf10
 48d060,720,verified,src/nn/gs/unplaced.c,nn_gs_48d060
@@ -23286,7 +23286,7 @@ ffee0,324,verified,src/nn/fs/unplaced.c,nn_fs_GetAndClearMemoryReportInfo
 5e4fc0,88,verified,src/nn/vi2/vi2_service_client.cpp,_ZZN2nn3vi26detail21SetUpServiceFunctionsEPNS1_16ServiceFunctionsEPNS1_13ServiceClientEEN4$_588__invokeEPvmj
 5e5580,344,verified,src/nn/vi2/unplaced.c,nn_vi2_5e5580
 5e56e0,520,verified,src/nn/vi2/unplaced.c,nn_vi2_5e56e0
-5e5930,44,verified,src/nn/vi2/unplaced.c,unplaced_5e5930
+5e5930,80,disputed,src/nn/vi2/unplaced.c,unplaced_5e5930
 5e59a0,256,verified,src/nn/vi2/unplaced.c,nn_vi2_5e59a0
 5e5ac0,144,verified,src/nn/vi2/unplaced.c,nn_vi2_5e5ac0
 5e5be0,236,verified,src/nn/vi2/unplaced.c,nn_vi2_5e5be0
@@ -23318,7 +23318,7 @@ ffee0,324,verified,src/nn/fs/unplaced.c,nn_fs_GetAndClearMemoryReportInfo
 5e75b0,28,verified,src/nn/vi2/vi2_frontend_impl2.c,vi2_frontend_5e75b0
 5e75d0,264,verified,src/nn/vi2/vi2_frontend_impl2.c,vi2_frontend_5e75d0
 5e76e0,8,verified,src/nn/sdk_trivial.cpp,_Z14SdkStub_5e76e0m
-5e76f0,220,verified,src/nn/vi2/vi2_frontend_impl2.c,vi2_frontend_5e76f0
+5e76f0,220,disputed,src/nn/vi2/vi2_frontend_impl2.c,vi2_frontend_5e76f0
 5e77d0,40,verified,src/nn/vi2/vi2_frontend_impl2.c,vi2_frontend_5e77d0
 5e7800,88,verified,src/nn/vi2/vi2_frontend_impl2.c,vi2_frontend_5e7800
 5e7860,36,verified,src/nn/vi2/vi2_frontend_impl2.c,vi2_frontend_5e7860
@@ -23335,7 +23335,7 @@ ffee0,324,verified,src/nn/fs/unplaced.c,nn_fs_GetAndClearMemoryReportInfo
 5e7ad0,8,verified,src/nn/sdk_trivial.cpp,_Z14SdkStub_5e7ad0m
 5e7ae0,8,verified,src/nn/sdk_trivial.cpp,_Z14SdkStub_5e7ae0mj
 5e7af0,8,verified,src/nn/vi2/vi2_frontend_impl2.c,vi2_frontend_5e7af0
-5e7b00,276,verified,src/nn/vi2/vi2_frontend_impl2.c,vi2_frontend_5e7b00
+5e7b00,332,verified,src/nn/vi2/vi2_frontend_impl2.c,vi2_frontend_5e7b00
 5e7d80,416,verified,src/nn/vi2/vi2_frontend_impl2.c,vi2_frontend_5e7d80
 5e7f40,332,verified,src/nn/vi2/vi2_frontend_impl2.c,vi2_frontend_5e7f40
 5e80a0,640,verified,src/nn/vi2/vi2_frontend_impl2.c,vi2_frontend_5e80a0
@@ -23346,7 +23346,7 @@ ffee0,324,verified,src/nn/fs/unplaced.c,nn_fs_GetAndClearMemoryReportInfo
 5e8920,412,verified,src/nn/vi2/vi2_frontend_impl2.c,vi2_frontend_5e8920
 5e8af0,268,verified,src/nn/vi2/vi2_frontend_impl2.c,vi2_frontend_5e8af0
 5e8c00,280,verified,src/nn/vi2/vi2_frontend_impl2.c,vi2_frontend_5e8c00
-5e8d20,236,verified,src/nn/vi2/vi2_frontend_impl2.c,vi2_frontend_5e8d20
+5e8d20,276,verified,src/nn/vi2/vi2_frontend_impl2.c,vi2_frontend_5e8d20
 5e8e40,132,verified,src/nn/vi2/vi2_frontend_impl2.c,vi2_frontend_5e8e40
 5e8ed0,292,verified,src/nn/vi2/vi2_frontend_impl.cpp,_ZZN2nn3vi26detail13SetUpFrontendEPNS1_8FrontendEEN3$_68__invokeEPvPKNS0_9LayerTypeE
 5e9000,20,verified,src/nn/vi2/vi2_frontend_impl.cpp,_ZZN2nn3vi26detail13SetUpFrontendEPNS1_8FrontendEEN3$_78__invokeEPvPKNS0_9LayerTypeEj
@@ -26042,7 +26042,7 @@ ffee0,324,verified,src/nn/fs/unplaced.c,nn_fs_GetAndClearMemoryReportInfo
 6559e0,164,verified,src/nn/unplaced_3.c,nn_6559e0
 655aa0,320,verified,src/nn/unnamed/s003_2.c,SdkHr_655aa0
 655c00,108,verified,src/nn/unplaced_3.c,nn_655c00
-655c80,252,verified,src/nn/unplaced_3.c,unplaced_3_655c80
+655c80,256,verified,src/nn/unplaced_3.c,unplaced_3_655c80
 655d90,60,verified,src/nn/unnamed/s003_2.c,SdkHr_655d90
 655de0,224,verified,src/nn/unnamed/t001_0.c,SdkHr_655de0
 655ec0,24,verified,src/nn/unnamed/s003_2.c,SdkHr_655ec0
@@ -27160,7 +27160,7 @@ ffee0,324,verified,src/nn/fs/unplaced.c,nn_fs_GetAndClearMemoryReportInfo
 697a00,812,verified,src/nn/unplaced_4.c,nn_697a00
 697e10,808,verified,src/nn/unplaced_4.c,nn_697e10
 698210,808,verified,src/nn/unplaced_4.c,nn_698210
-698610,1000,disputed,src/nn/unplaced_8.c,nn_698610
+698610,1000,verified,src/nn/unplaced_8.c,nn_698610
 698a50,208,verified,src/nn/unnamed/s004_1.c,SdkHr_698a50
 698b20,196,verified,src/nn/unnamed/s004_1.c,SdkHr_698b20
 698bf0,504,verified,src/nn/unnamed/s004_1.c,SdkHr_698bf0
@@ -27451,7 +27451,7 @@ ffee0,324,verified,src/nn/fs/unplaced.c,nn_fs_GetAndClearMemoryReportInfo
 6a6fa0,52,verified,src/nn/unnamed/s004_2.c,SdkHr_6a6fa0
 6a6fe0,76,verified,src/nn/unnamed/s004_2.c,SdkHr_6a6fe0
 6a7030,52,verified,src/nn/unnamed/s004_2.c,SdkHr_6a7030
-6a7080,272,verified,src/nn/unplaced_21.c,nn_6a7080
+6a7080,280,verified,src/nn/unplaced_21.c,nn_6a7080
 6a71c0,316,verified,src/nn/unplaced_21.c,nn_6a71c0
 6a7310,68,verified,src/nn/unnamed/s004_2.c,SdkHr_6a7310
 6a7360,288,verified,src/nn/unplaced_21.c,nn_6a7360
