@@ -41,8 +41,8 @@ unsigned __int8* SdkRoutine_7c3400(unsigned __int8*, unsigned __int8*,
 unsigned int* SdkRoutine_7c4380(unsigned int*, unsigned int*, unsigned int*);
 __int64 std___1___introsort_7bc8c0(__int64 result, unsigned __int8* a2,
                                    __int64 a3, __int64 a4, char a5);
-unsigned int* std___1___introsort_7bd280(unsigned int* result, unsigned int* a2,
-                                         __int64 a3, __int64 a4, char a5);
+void std___1___introsort_7bd280(unsigned int* result, unsigned int* a2,
+                                __int64 a3, __int64 a4, char a5);
 __int64 std___1___introsort_7bd8c0(__int64 result, char* a2, __int64 a3,
                                    __int64 a4, char a5);
 __int64 std___1___sort_7be250(__int64 result, unsigned __int8* a2, char a3);
@@ -1053,8 +1053,8 @@ LABEL_3:
   return result;
 }
 
-unsigned int* std___1___introsort_7bd280(unsigned int* result, unsigned int* a2,
-                                         __int64 a3, __int64 a4, char a5)
+void std___1___introsort_7bd280(unsigned int* result, unsigned int* a2,
+                                __int64 a3, __int64 a4, char a5)
 {
   unsigned int* v7;
   unsigned int* v8;
@@ -1219,7 +1219,7 @@ LABEL_3:
         }
         *v8 = v74;
         v8[1] = v73;
-        return result;
+        return;
       case 4LL:
         v98 = v8[1];
         v97 = v8[2];
@@ -1281,7 +1281,7 @@ LABEL_3:
         }
         v8[1] = v108;
         v8[2] = v107;
-        return result;
+        return;
       case 5LL:
         v75 = *v8;
         v76 = v8[1];
@@ -1383,14 +1383,14 @@ LABEL_3:
         }
         v8[2] = v94;
         v8[3] = v90;
-        return result;
+        return;
       default:
         break;
       }
     }
     else {
       if ((unsigned __int64)v11 < 2) {
-        return result;
+        return;
       }
       if (v11 == 2) {
         v95 = *(a2 - 1);
@@ -1399,7 +1399,7 @@ LABEL_3:
           *v8 = v95;
           *(a2 - 1) = v96;
         }
-        return result;
+        return;
       }
     }
     if (v11 <= 23) {
@@ -1407,9 +1407,10 @@ LABEL_3:
     }
     if (v9 == 1) {
       if (v8 != a2) {
-        return SdkRoutine_7c4380(v8, a2, a2);
+        SdkRoutine_7c4380(v8, a2, a2);
+  return;
       }
-      return result;
+      return;
     }
     v12 = *(a2 - 1);
     v13 = &v8[(unsigned __int64)v11 >> 1];
@@ -1674,14 +1675,16 @@ LABEL_3:
       a4 = -v10;
       a2 = v55;
       if (v58) {
-        return result;
+        return;
       }
       goto LABEL_2;
     }
     v9 = v10 + 1;
     if (!v58) {
     LABEL_97:
-      result = std___1___introsort_7bd280(v7, v55, v54, -v10, a5 & 1),
+      std___1___introsort_7bd280(v7, v55, v54, -v10, a5 & 1),
+      result = COERCE_AS(__typeof__(result),
+                         PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
       v54 = COERCE_AS(__typeof__(v54),
                       PSEUDO_REGISTER(unsigned long long, "x2", "=r")),
       v56 = COERCE_AS(__typeof__(v56),
@@ -1739,7 +1742,7 @@ LABEL_3:
       v109 = v7 + 1;
     } while (v7 + 1 != a2);
   }
-  return result;
+  return;
 }
 
 __int64 std___1___introsort_7bd8c0(__int64 result, char* a2, __int64 a3,
@@ -8186,7 +8189,7 @@ bool algorithm_7c40a0(unsigned int* a1, unsigned int* a2)
   unsigned int v58;
   unsigned int v59;
 
-  v2 = a2 - a1;
+  v2 = ((__int64)a2 - (__int64)a1) >> 2;
   if (v2 > 2) {
     switch (v2) {
     case 3LL:
@@ -9659,7 +9662,7 @@ bool algorithm_7c5f40(__int16* a1, __int16* a2)
   int v63;
   __int16 v64;
 
-  v2 = a2 - a1;
+  v2 = ((__int64)a2 - (__int64)a1) >> 1;
   if (v2 > 2) {
     switch (v2) {
     case 3LL:
@@ -10411,7 +10414,7 @@ bool algorithm_7c6e00(unsigned __int16* a1, unsigned __int16* a2)
   unsigned int v63;
   unsigned __int16 v64;
 
-  v2 = a2 - a1;
+  v2 = ((__int64)a2 - (__int64)a1) >> 1;
   if (v2 > 2) {
     switch (v2) {
     case 3LL:
@@ -11204,7 +11207,7 @@ bool algorithm_7c7c40(int* a1, int* a2)
   int v58;
   int v59;
 
-  v2 = a2 - a1;
+  v2 = ((__int64)a2 - (__int64)a1) >> 2;
   if (v2 > 2) {
     switch (v2) {
     case 3LL:
@@ -14309,7 +14312,7 @@ bool algorithm_7cb660(float* a1, float* a2)
   float v57;
   float v58;
 
-  v2 = a2 - a1;
+  v2 = ((__int64)a2 - (__int64)a1) >> 2;
   if (v2 > 2) {
     switch (v2) {
     case 3LL:
@@ -15064,7 +15067,7 @@ bool algorithm_7cc460(double* a1, double* a2)
   double v57;
   double v58;
 
-  v2 = a2 - a1;
+  v2 = ((__int64)a2 - (__int64)a1) >> 3;
   if (v2 > 2) {
     switch (v2) {
     case 3LL:
