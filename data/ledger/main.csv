@@ -39931,7 +39931,7 @@ d44c80,848,verified,src/game/zview/character_controller/state_attack.c,StateAtta
 d45080,356,verified,src/game/zview/character_controller/state_attack.c,StateAttack_d45080
 d45200,224,verified,src/game/zview/character_controller/state_attack.c,StateAttack_d45200
 d452e0,1352,verified,src/game/zview/character_controller.c,CharacterController_StateAttack_Unknown4
-d45840,1432,disputed,src/game/zview/character_controller.c,CharacterController_d45840
+d45840,1440,verified,src/game/zview/character_controller.c,CharacterController_d45840
 d45e00,256,verified,src/game/zview/character_controller/state_attack.c,StateAttack_d45e00
 d45f20,448,verified,src/game/zview/character_controller/state_attack.c,StateAttack_d45f20
 d46180,760,verified,src/game/zview/character_controller/state_attack.c,StateAttack_Destructor
