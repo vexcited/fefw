@@ -187,7 +187,7 @@ void game_script_ed45e0(unsigned __int8* a1, unsigned __int8* a2,
       *(_DWORD*)(v26 + 24) = -1;
       v27 = *(_DWORD*)(v23 + 24);
       if (v27 != -1) {
-        v28 = (void (*)(__int64, __int64))GameData_1fee6a0[v27];
+        v28 = (void (*)(__int64, __int64))GameData_1fee6a0[(unsigned int)v27];
         v66[0] = v26;
         v28((__int64)v66, v23);
         *(_DWORD*)(v26 + 24) = v27;

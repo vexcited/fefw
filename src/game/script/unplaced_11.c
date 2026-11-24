@@ -296,7 +296,7 @@ __n128 game_script_ecea00(int a1, unsigned __int8* a2, int a3,
         *(_DWORD*)(v32 + 24) = -1;
         v33 = *((_DWORD*)v29 + 6);
         if (v33 != -1) {
-          v34 = GameData_1fee6a0[v33];
+          v34 = GameData_1fee6a0[(unsigned int)v33];
           v151_.v151 = v32;
           ((void (*)(__int64*, char*))v34)(&v151_.v151, v29),
               result = COERCE_AS(__typeof__(result),
@@ -349,7 +349,7 @@ __n128 game_script_ecea00(int a1, unsigned __int8* a2, int a3,
             *(_DWORD*)(v50 + 24) = -1;
             v51 = *(_DWORD*)(v47 + 24);
             if (v51 != -1) {
-              v52 = GameData_1fee6a0[v51];
+              v52 = GameData_1fee6a0[(unsigned int)v51];
               v161[0] = v50;
               ((void (*)(_QWORD*, __int64))v52)(v161, v47),
                   result = COERCE_AS(__typeof__(result),
@@ -510,7 +510,7 @@ __n128 game_script_ecea00(int a1, unsigned __int8* a2, int a3,
         *(_DWORD*)(v26 + 24) = -1;
         v27 = *((_DWORD*)v23 + 6);
         if (v27 != -1) {
-          v28 = GameData_1fee6a0[v27];
+          v28 = GameData_1fee6a0[(unsigned int)v27];
           v151_.v151 = v26;
           ((void (*)(__int64*, char*))v28)(&v151_.v151, v23),
               result = COERCE_AS(__typeof__(result),
@@ -563,7 +563,7 @@ __n128 game_script_ecea00(int a1, unsigned __int8* a2, int a3,
             *(_DWORD*)(v44 + 24) = -1;
             v45 = *(_DWORD*)(v41 + 24);
             if (v45 != -1) {
-              v46 = GameData_1fee6a0[v45];
+              v46 = GameData_1fee6a0[(unsigned int)v45];
               v161[0] = v44;
               ((void (*)(_QWORD*, __int64))v46)(v161, v41),
                   result = COERCE_AS(__typeof__(result),
@@ -735,7 +735,7 @@ __n128 game_script_ecea00(int a1, unsigned __int8* a2, int a3,
       *(_DWORD*)(v38 + 24) = -1;
       v39 = *((_DWORD*)v35 + 6);
       if (v39 != -1) {
-        v40 = GameData_1fee6a0[v39];
+        v40 = GameData_1fee6a0[(unsigned int)v39];
         v151_.v151 = v38;
         ((void (*)(__int64*, char*))v40)(&v151_.v151, v35),
             result = COERCE_AS(__typeof__(result),
@@ -792,7 +792,7 @@ LABEL_80:
       *(_DWORD*)(v56 + 24) = -1;
       v57 = *(_DWORD*)(v53 + 24);
       if (v57 != -1) {
-        v58 = GameData_1fee6a0[v57];
+        v58 = GameData_1fee6a0[(unsigned int)v57];
         v161[0] = v56;
         ((void (*)(_QWORD*, __int64))v58)(v161, v53),
             result = COERCE_AS(__typeof__(result),

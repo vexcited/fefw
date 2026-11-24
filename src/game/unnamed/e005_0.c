@@ -1443,7 +1443,7 @@ __int64 GameHr_ed2e40(int a1, unsigned __int8* a2, unsigned int a3,
         *(_DWORD*)(v27 + 24) = -1;
         v28 = *(_DWORD*)(v24 + 24);
         if (v28 != -1) {
-          v29 = GameData_1fee6a0[v28];
+          v29 = GameData_1fee6a0[(unsigned int)v28];
           v117 = v27;
           ((void (*)(__int64*, __int64))v29)(&v117, v24);
           *(_DWORD*)(v27 + 24) = v28;
@@ -1488,7 +1488,7 @@ __int64 GameHr_ed2e40(int a1, unsigned __int8* a2, unsigned int a3,
             *(_DWORD*)(v39 + 24) = -1;
             v40 = *(_DWORD*)(v36 + 24);
             if (v40 != -1) {
-              v41 = GameData_1fee6a0[v40];
+              v41 = GameData_1fee6a0[(unsigned int)v40];
               v128[0] = v39;
               ((void (*)(_QWORD*, __int64))v41)(v128, v36);
               *(_DWORD*)(v39 + 24) = v40;
@@ -1636,7 +1636,7 @@ __int64 GameHr_ed2e40(int a1, unsigned __int8* a2, unsigned int a3,
       *(_DWORD*)(v33 + 24) = -1;
       v34 = *(_DWORD*)(v30 + 24);
       if (v34 != -1) {
-        v35 = GameData_1fee6a0[v34];
+        v35 = GameData_1fee6a0[(unsigned int)v34];
         v117 = v33;
         ((void (*)(__int64*, __int64))v35)(&v117, v30);
         *(_DWORD*)(v33 + 24) = v34;
@@ -1687,7 +1687,7 @@ LABEL_55:
       *(_DWORD*)(v45 + 24) = -1;
       v46 = *(_DWORD*)(v42 + 24);
       if (v46 != -1) {
-        v47 = GameData_1fee6a0[v46];
+        v47 = GameData_1fee6a0[(unsigned int)v46];
         v128[0] = v45;
         ((void (*)(_QWORD*, __int64))v47)(v128, v42);
         *(_DWORD*)(v45 + 24) = v46;

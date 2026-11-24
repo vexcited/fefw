@@ -701,7 +701,7 @@ void game_script_ecc660(int a1, unsigned __int8* a2, unsigned int a3,
           __asm__ volatile("" ::"r"(v37));
         }
         if (v37 != -1) {
-          v38 = GameData_1fee6a0[v37];
+          v38 = GameData_1fee6a0[(unsigned int)v37];
           v155_.v155 = v36;
           ((void (*)(__int64*, __int64))v38)(&v155_.v155, v33);
           *(_DWORD*)(v36 + 24) = v37;
@@ -750,7 +750,7 @@ void game_script_ecc660(int a1, unsigned __int8* a2, unsigned int a3,
               __asm__ volatile("" ::"r"(v55));
             }
             if (v55 != -1) {
-              v56 = GameData_1fee6a0[v55];
+              v56 = GameData_1fee6a0[(unsigned int)v55];
               v166[0] = v54;
               ((void (*)(_QWORD*, __int64))v56)(v166, v51);
               *(_DWORD*)(v54 + 24) = v55;
@@ -899,7 +899,7 @@ void game_script_ecc660(int a1, unsigned __int8* a2, unsigned int a3,
           __asm__ volatile("" ::"r"(v31));
         }
         if (v31 != -1) {
-          v32 = GameData_1fee6a0[v31];
+          v32 = GameData_1fee6a0[(unsigned int)v31];
           v155_.v155 = v30;
           ((void (*)(__int64*, __int64))v32)(&v155_.v155, v27);
           *(_DWORD*)(v30 + 24) = v31;
@@ -948,7 +948,7 @@ void game_script_ecc660(int a1, unsigned __int8* a2, unsigned int a3,
               __asm__ volatile("" ::"r"(v49));
             }
             if (v49 != -1) {
-              v50 = GameData_1fee6a0[v49];
+              v50 = GameData_1fee6a0[(unsigned int)v49];
               v166[0] = v48;
               ((void (*)(_QWORD*, __int64))v50)(v166, v45);
               *(_DWORD*)(v48 + 24) = v49;
@@ -1108,7 +1108,7 @@ void game_script_ecc660(int a1, unsigned __int8* a2, unsigned int a3,
         __asm__ volatile("" ::"r"(v43));
       }
       if (v43 != -1) {
-        v44 = GameData_1fee6a0[v43];
+        v44 = GameData_1fee6a0[(unsigned int)v43];
         v155_.v155 = v42;
         ((void (*)(__int64*, __int64))v44)(&v155_.v155, v39);
         *(_DWORD*)(v42 + 24) = v43;
@@ -1162,7 +1162,7 @@ LABEL_80:
         __asm__ volatile("" ::"r"(v61));
       }
       if (v61 != -1) {
-        v62 = GameData_1fee6a0[v61];
+        v62 = GameData_1fee6a0[(unsigned int)v61];
         v166[0] = v60;
         ((void (*)(_QWORD*, __int64))v62)(v166, v57);
         *(_DWORD*)(v60 + 24) = v61;
