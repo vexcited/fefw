@@ -808,7 +808,7 @@ f80,252,verified,src/nvidia/dlss/rel/source/features/dlaa/dltss_fast_kernels.c,d
 86980,636,verified,src/nvidia/dlss/rel/source/features/dlaa/unplaced_2.c,nvidia_dlss_rel_source_features_dlaa_86980
 871c0,1272,verified,src/nvidia/dlss/rel/source/features/dlaa/unplaced_2.c,nvidia_dlss_rel_source_features_dlaa_871c0
 876c0,748,verified,src/nvidia/dlss/rel/source/features/dlaa/unplaced_9.c,nvidia_dlss_rel_source_features_dlaa_876c0
-87a00,932,disputed,src/nvidia/dlss/rel/source/features/dlaa/unplaced_6.c,nvidia_dlss_rel_source_features_dlaa_87a00
+87a00,1048,verified,src/nvidia/dlss/rel/source/features/dlaa/unplaced_6.c,nvidia_dlss_rel_source_features_dlaa_87a00
 88060,996,verified,src/nvidia/dlss/rel/source/features/dlaa/unplaced_2.c,nvidia_dlss_rel_source_features_dlaa_88060
 88780,588,verified,src/nvidia/dlss/rel/source/features/dlaa/unplaced_9.c,nvidia_dlss_rel_source_features_dlaa_88780
 88a20,708,verified,src/nvidia/dlss/rel/source/features/dlaa/unplaced_15.c,nvidia_dlss_rel_source_features_dlaa_88a20
@@ -833,7 +833,7 @@ f80,252,verified,src/nvidia/dlss/rel/source/features/dlaa/dltss_fast_kernels.c,d
 8dd20,592,verified,src/nvidia/dlss/rel/source/features/dlaa/unplaced_2.c,nvidia_dlss_rel_source_features_dlaa_8dd20
 8e4a0,468,verified,src/nvidia/dlss/rel/source/features/dlaa/unplaced_14.c,nvidia_dlss_rel_source_features_dlaa_8e4a0
 8e680,752,verified,src/nvidia/dlss/rel/source/features/dlaa/unplaced_16.c,nvidia_dlss_rel_source_features_dlaa_8e680
-8e9c0,932,disputed,src/nvidia/dlss/rel/source/features/dlaa/unplaced_6.c,nvidia_dlss_rel_source_features_dlaa_8e9c0
+8e9c0,1256,verified,src/nvidia/dlss/rel/source/features/dlaa/unplaced_6.c,nvidia_dlss_rel_source_features_dlaa_8e9c0
 8f020,996,verified,src/nvidia/dlss/rel/source/features/dlaa/unplaced_2.c,nvidia_dlss_rel_source_features_dlaa_8f020
 8f740,588,verified,src/nvidia/dlss/rel/source/features/dlaa/unplaced_9.c,nvidia_dlss_rel_source_features_dlaa_8f740
 8f9e0,708,verified,src/nvidia/dlss/rel/source/features/dlaa/unplaced_15.c,nvidia_dlss_rel_source_features_dlaa_8f9e0

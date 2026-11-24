@@ -64,7 +64,7 @@ void VoiceInfoManager::Initialize(int count, void* buffer, size_t size) {
   VoiceInfo* infos = static_cast<VoiceInfo*>(
     allocator.Allocate(sizeof(VoiceInfo) * count, 8));
   for (int i = 0; i < count; ++i) {
-    new (&infos[i]) VoiceInfo();
+    new (&infos[i]) VoiceInfo;
   }
   m_Infos = infos;
   m_UsedList.clear();

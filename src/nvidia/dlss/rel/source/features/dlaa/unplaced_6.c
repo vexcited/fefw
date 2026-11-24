@@ -191,6 +191,8 @@ __int64 nvidia_dlss_rel_source_features_dlaa_863c0(_QWORD* a1, __int64* a2,
   return result;
 }
 
+// The shipped build zero fills the new buffer inline, never through memset.
+__attribute__((no_builtin("memset")))
 void nvidia_dlss_rel_source_features_dlaa_87a00(_QWORD* a1, __int64* a2,
                                                 _QWORD* a3, __int64* a4)
 {
@@ -568,6 +570,8 @@ LABEL_11:
   }
 }
 
+// The shipped build zero fills the new buffer inline, never through memset.
+__attribute__((no_builtin("memset")))
 void nvidia_dlss_rel_source_features_dlaa_8e9c0(_QWORD* a1, __int64* a2,
                                                 _QWORD* a3, __int64* a4)
 {
