@@ -18754,7 +18754,7 @@ fff90,116,verified,src/snd/api.cpp,_ZN3snd10startPitchERKNS_3fnd10WeakHandleERKN
 6c9ff0,304,verified,src/game/unit/unit_job.cpp,_ZN4game4Unit12SetPollutionEi
 6ca120,292,verified,src/game/unit/unit_job.cpp,_ZNK4game4Unit10CanPolluteEv
 6ca260,1244,verified,src/game/unit.c,Unit_6ca260
-6ca760,868,verified,src/game/unit.c,Unit_6ca760
+6ca760,1016,verified,src/game/unit.c,Unit_6ca760
 6cab80,1244,verified,src/game/unit.c,Unit_6cab80
 6cb080,1012,verified,src/game/unit.c,Unit_6cb080
 6cb490,428,verified,src/game/unit.c,Unit_6cb490
@@ -18775,13 +18775,13 @@ fff90,116,verified,src/snd/api.cpp,_ZN3snd10startPitchERKNS_3fnd10WeakHandleERKN
 6cd010,248,verified,src/game/unit/unit_job.cpp,_ZN4game4Unit13Unknown6cd010Ev
 6cd120,1956,verified,src/game/unit.c,Unit_6cd120
 6cd8f0,188,verified,src/game/unit/unit_job.cpp,_ZN4game4Unit13Unknown6cd8f0Ev
-6cd9c0,472,verified,src/game/unit.c,Unit_6cd9c0
+6cd9c0,620,verified,src/game/unit.c,Unit_6cd9c0
 6cdc50,228,verified,src/game/unit/unit_job.cpp,_ZN4game4Unit11OnHpChangedEv
 6cdd40,544,verified,src/game/unit.c,Unit_6cdd40
 6cdf80,536,verified,src/game/unit.c,Unit_6cdf80
 6ce1c0,944,verified,src/game/unit.c,Unit_6ce1c0
 6ce590,184,verified,src/game/unnamed/b004_2.c,GameHr_6ce590
-6ce660,1956,verified,src/game/unit.c,Unit_6ce660
+6ce660,1960,verified,src/game/unit.c,Unit_6ce660
 6cef00,504,verified,src/game/unit.c,Unit_6cef00
 6cf1c0,620,verified,src/game/unit.c,Unit_6cf1c0
 6cf460,532,verified,src/game/unit.c,Unit_6cf460
@@ -18797,9 +18797,9 @@ fff90,116,verified,src/snd/api.cpp,_ZN3snd10startPitchERKNS_3fnd10WeakHandleERKN
 6d0b20,2192,verified,src/game/unit.c,Unit_6d0b20
 6d1400,268,verified,src/game/unit.c,game_Unit_EachEducateTargetSkill
 6d1530,448,verified,src/game/unit.c,Unit_6d1530
-6d1740,2148,verified,src/game/unit.c,game_Unit_AutoGrowMasteryLevel
+6d1740,1356,disputed,src/game/unit.c,game_Unit_AutoGrowMasteryLevel
 6d2380,240,verified,src/game/unit/unit_job.cpp,_ZN4game4Unit13Unknown6d2380Ev
-6d2480,1440,verified,src/game/unit.c,Unit_6d2480
+6d2480,1780,verified,src/game/unit.c,Unit_6d2480
 6d2b90,252,verified,src/game/unit/unit_heroes_impl.c,UnitHeroes_6d2b90
 6d2c90,160,verified,src/game/unit/unit_heroes_impl.c,UnitHeroes_6d2c90
 6d2d30,264,verified,src/game/unit/unit_job.cpp,_ZN4game4Unit11UpdateShapeEv
@@ -18817,7 +18817,7 @@ fff90,116,verified,src/snd/api.cpp,_ZN3snd10startPitchERKNS_3fnd10WeakHandleERKN
 6d7270,448,verified,src/game/unplaced.c,game_6d7270
 6d7480,944,verified,src/game/unnamed/b005_0.c,GameHr_6d7480
 6d7840,812,verified,src/game/unplaced_26.c,game_6d7840
-6d7b80,376,verified,src/game/unnamed/b005_0.c,GameHr_6d7b80
+6d7b80,380,verified,src/game/unnamed/b005_0.c,GameHr_6d7b80
 6d7d00,372,verified,src/game/unnamed/b005_0.c,GameHr_6d7d00
 6d7e80,460,verified,src/game/unnamed/b005_1.c,GameHr_6d7e80
 6d8080,248,verified,src/game/unit/unit_job.cpp,_ZN4game4Unit15ResetSkillLevelEPKc
@@ -31085,7 +31085,7 @@ a69bd0,128,verified,src/game/unnamed/b009_0.c,GameHr_a69bd0
 a69c50,44,verified,src/memory/new_delete.cpp,deleting destructor at 0xa69c50
 a69c80,1200,verified,src/game/unnamed/r003_0.c,GameHr_a69c80
 a6a320,1592,verified,src/game/unnamed/b009_0.c,GameHr_a6a320
-a6aa00,1840,verified,src/g3d/model.c,Model_a6aa00
+a6aa00,2176,verified,src/g3d/model.c,Model_a6aa00
 a6b310,452,verified,src/game/unnamed/e003_0.c,GameHr_a6b310
 a6b4e0,320,verified,src/game/templates/function.cpp,_ZNSt3__110__function12__value_funcIFvPN4game11UnrecoveredILj8EEEEE4swapB8nn210108ERS7_
 a6b620,320,verified,src/game/templates/function.cpp,_ZNSt3__110__function12__value_funcIFvPN4game11UnrecoveredILj9EEEEE4swapB8nn210108ERS7_
@@ -32833,7 +32833,7 @@ b34120,732,verified,src/game/unnamed/b009_1.c,GameHr_b34120
 b34420,456,verified,src/llvm-libcxx-21/libcxx/include//vector/unplaced.c,llvm_libcxx_21_libcxx_include___vector_b34420
 b34600,3652,verified,src/llvm-libcxx-21/libcxx/include//vector/unplaced_10.c,llvm_libcxx_21_libcxx_include___vector_b34600
 b35580,1880,verified,src/llvm-libcxx-21/libcxx/include//vector/unplaced_10.c,llvm_libcxx_21_libcxx_include___vector_b35580
-b35d00,1400,verified,src/llvm-libcxx-21/libcxx/include//vector/unplaced.c,llvm_libcxx_21_libcxx_include___vector_b35d00
+b35d00,1428,verified,src/llvm-libcxx-21/libcxx/include//vector/unplaced.c,llvm_libcxx_21_libcxx_include___vector_b35d00
 b362c0,612,verified,src/llvm-libcxx-21/libcxx/include//vector/unplaced.c,llvm_libcxx_21_libcxx_include___vector_b362c0
 b36540,464,verified,src/llvm-libcxx-21/libcxx/include//vector/unplaced.c,llvm_libcxx_21_libcxx_include___vector_b36540
 b367c0,380,verified,src/game/unnamed/b009_1.c,GameHr_b367c0
@@ -40414,7 +40414,7 @@ d6f600,476,verified,src/game/hub/unplaced_5.c,game_hub_d6f600
 d6f7f0,220,verified,src/game/unnamed/b011_1.c,GameHr_d6f7f0
 d6f8d0,376,verified,src/game/hub/map_manager.c,MapManager_d6f8d0
 d6fa80,260,verified,src/game/unnamed/b011_1.c,GameHr_d6fa80
-d6fba0,1580,verified,src/game/hub/unplaced.c,game_hub_d6fba0
+d6fba0,1452,disputed,src/game/hub/unplaced.c,game_hub_d6fba0
 d70270,52,verified,src/game/hub/unplaced_5.c,game_hub_d70270
 d70540,300,verified,src/game/unnamed/b011_1.c,GameHr_d70540
 d70670,4,verified,src/game/singleton/singletons.cpp,_ZN4game9SingletonINS_3hub10MapManagerELb0EE10InitializeEv
@@ -48673,7 +48673,7 @@ ff9cd0,16,verified,src/game/templates/shared_ptr.cpp,_ZNSt3__120__shared_ptr_emp
 ff9ce0,92,verified,src/game/templates/shared_ptr.cpp,_ZNSt3__120__shared_ptr_emplaceIN4game3hub12AreaGayaInfoENS_9allocatorIS3_EEED0Ev
 ff9d40,400,verified,src/game/unnamed/e005_4.c,GameHr_ff9d40
 ff9ee0,44,verified,src/memory/new_delete.cpp,deleting destructor at 0xff9ee0
-ff9f20,496,verified,src/game/unnamed/b014_1.c,GameHr_ff9f20
+ff9f20,536,verified,src/game/unnamed/b014_1.c,GameHr_ff9f20
 ffa240,316,verified,src/game/hub/hub_dispos_simulation.c,HubDisposSimulation_Destructor
 ffa380,80,verified,src/memory/new_delete.cpp,deleting destructor at 0xffa380
 ffa3e0,3556,verified,src/game/unplaced_22.c,game_ffa3e0
@@ -48694,7 +48694,7 @@ ffc5d0,124,verified,src/game/unnamed/b014_1.c,GameHr_ffc5d0
 ffc660,1612,verified,src/game/unplaced_23.c,game_ffc660
 ffccc0,688,verified,src/game/unnamed/b014_2.c,GameHr_ffccc0
 ffcfa0,468,verified,src/game/unnamed/e005_4.c,GameHr_ffcfa0
-ffd180,828,verified,src/game/unnamed/e005_3.c,GameHr_ffd180
+ffd180,840,verified,src/game/unnamed/e005_3.c,GameHr_ffd180
 ffd4e0,344,verified,src/game/unplaced_4.c,game_ffd4e0
 ffd6f0,108,verified,src/game/unnamed/b014_1.c,GameHr_ffd6f0
 ffd760,2012,verified,src/game/unnamed/b014_2.c,GameHr_ffd760
@@ -53114,7 +53114,7 @@ fffcb0,1244,verified,src/game/unnamed/b014_1.c,GameHr_fffcb0
 1142bc0,80,verified,src/memory/new_delete.cpp,deleting destructor at 0x1142bc0
 1142c10,80,verified,src/memory/new_delete.cpp,deleting destructor at 0x1142c10
 1142c60,80,verified,src/memory/new_delete.cpp,deleting destructor at 0x1142c60
-1142cc0,1644,verified,src/game/unplaced_6.c,game_1142cc0
+1142cc0,1716,verified,src/game/unplaced_6.c,game_1142cc0
 1143620,16852,verified,src/game/unplaced_43.c,game_1143620
 1147840,1160,verified,src/game/evt/demo/cmd.c,Cmd_Manager_Destructor
 1147d10,80,verified,src/memory/new_delete.cpp,deleting destructor at 0x1147d10
@@ -55385,7 +55385,7 @@ fffcb0,1244,verified,src/game/unnamed/b014_1.c,GameHr_fffcb0
 1212e40,752,verified,src/game/unit_util.c,game_UnitUtil_UniqueMap_Commit_1212e40
 1213180,384,verified,src/game/unit_util.c,UnitUtil_1213180
 1213320,712,verified,src/game/unit_util.c,game_UnitUtil_EachFlagUnit
-1213640,700,verified,src/game/unplaced_6.c,game_1213640
+1213640,708,verified,src/game/unplaced_6.c,game_1213640
 1214620,676,verified,src/game/unplaced_23.c,game_1214620
 12148e0,1040,verified,src/game/unnamed/b017_0.c,GameHr_12148e0
 1214d40,1048,verified,src/game/unnamed/b017_0.c,GameHr_1214d40
@@ -67089,7 +67089,7 @@ fffcb0,1244,verified,src/game/unnamed/b014_1.c,GameHr_fffcb0
 15a70a0,276,verified,src/game/unnamed/b020_1.c,GameHr_15a70a0
 15a71f0,404,verified,src/llvm-libcxx-21/libcxx/include//vector/unplaced.c,llvm_libcxx_21_libcxx_include___vector_15a71f0
 15a7390,24,verified,src/llvm-libcxx-21/libcxx/include/__vector/vector.h,std::vector<T>::__throw_length_error()
-15a73c0,2832,verified,src/llvm-libcxx-21/libcxx/include//vector/unplaced.c,llvm_libcxx_21_libcxx_include___vector_15a73c0
+15a73c0,2852,verified,src/llvm-libcxx-21/libcxx/include//vector/unplaced.c,llvm_libcxx_21_libcxx_include___vector_15a73c0
 15a8170,420,verified,src/game/unnamed/b020_1.c,GameHr_15a8170
 15a8320,856,verified,src/game/unnamed/b020_2.c,GameHr_15a8320
 15a8720,2396,verified,src/game/unnamed/r008_0.c,GameHr_15a8720
