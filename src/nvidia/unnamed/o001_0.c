@@ -775,8 +775,10 @@ __int64 CudaDriverHr_1cc6c0(__int64 a1, unsigned int a2, unsigned int a3,
   __int64 v26;
   int32x4_t v27;
   int v28;
-  int v29;
-  unsigned __int64 v30;
+  struct __attribute__((packed)) {
+    int v29;
+    unsigned __int64 v30;
+  } v29_;
 
   if (*(_DWORD*)(a1 + 34880LL * a2 + 544LL * a3 + 23377652) == 0) {
     return 10;
@@ -826,11 +828,11 @@ __int64 CudaDriverHr_1cc6c0(__int64 a1, unsigned int a2, unsigned int a3,
         goto LABEL_9;
       }
       if ((*((unsigned int (**)(__int64, _QWORD, _QWORD, int*))v6 + 331))(
-              a1, (unsigned int)v10, (unsigned int)v15, &v29) == 0) {
-        ((uint64_t*)&v20)[0] = v30;
+              a1, (unsigned int)v10, (unsigned int)v15, &v29_.v29) == 0) {
+        ((uint64_t*)&v20)[0] = v29_.v30;
         ((uint64_t*)&v20)[1] = *(_QWORD*)(a1 + v16 + 1296);
         if ((vminv_u16(vmovn_s32(vceqq_s32(v20, v27))) & 1) != 0 &&
-            v29 == v28 && *(_QWORD*)(a1 + v17) == v26 &&
+            v29_.v29 == v28 && *(_QWORD*)(a1 + v17) == v26 &&
             *(_DWORD*)(a1 + v16 + 1304) == v25) {
           *a4 = v10;
           *a5 = v15;

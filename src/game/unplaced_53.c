@@ -936,8 +936,10 @@ __int16* game_86bee0(__int64 a1)
   unsigned int v13;
   bool v14;
   int v15;
-  __int64 v17;
-  int v18;
+  struct __attribute__((packed)) {
+    __int64 v17;
+    int v18;
+  } v17_;
 
   if (game_ProcGameSkipView_instance_ != 0 &&
       *(_BYTE*)(game_ProcGameSkipView_instance_ + 152) == 3) {
@@ -980,11 +982,11 @@ __int16* game_86bee0(__int64 a1)
     }
   }
   *(float*)(a1 + 180) = v6;
-  game_86bbc0((void*)((__int64)&v17), (unsigned __int16*)a1);
+  game_86bbc0((void*)((__int64)&v17_), (unsigned __int16*)a1);
   v8 = game_gmap_GmapClock_instance_;
   if (game_gmap_GmapClock_instance_ != 0) {
-    *(_QWORD*)(game_gmap_GmapClock_instance_ + 32) = v17;
-    *(_DWORD*)(v8 + 40) = v18;
+    *(_QWORD*)(game_gmap_GmapClock_instance_ + 32) = v17_.v17;
+    *(_DWORD*)(v8 + 40) = v17_.v18;
   }
   if (v8 != 0) {
     v9 = (__int16*)(v8 + 32);

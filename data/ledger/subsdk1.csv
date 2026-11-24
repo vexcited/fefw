@@ -8083,7 +8083,7 @@ ff600,3424,verified,src/nvidia/unplaced_21.c,nvidia_ff600
 2177f0,84,verified,src/nvidia/unnamed/c004_2.c,CudaDriverHr_2177f0
 217850,88,verified,src/nvidia/unplaced_41.c,nvidia_217850
 2178b0,56,verified,src/nvidia/unnamed/c004_2.c,CudaDriverHr_2178b0
-2178f0,296,disputed,src/nvidia/unnamed/o001_0.c,CudaDriverHr_2178f0
+2178f0,296,verified,src/nvidia/unnamed/o001_0.c,CudaDriverHr_2178f0
 217a20,236,verified,src/nvidia/unnamed/c004_2.c,CudaDriverHr_217a20
 217b30,332,verified,src/nvidia/unnamed/c004_2.c,CudaDriverHr_217b30
 217c80,244,verified,src/nvidia/unnamed/c004_2.c,CudaDriverHr_217c80

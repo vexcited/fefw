@@ -196,7 +196,6 @@ __int64 nn_fs_detail_FileDataCacheSystem_Read(__int64 a1, __int64 a2,
   _QWORD* v20;
   bool v21;
   __int64 v23;
-  __int64 v24;
   unsigned __int64 v25;
   signed __int64 v26;
   signed __int64 v27;
@@ -287,9 +286,11 @@ __int64 nn_fs_detail_FileDataCacheSystem_Read(__int64 a1, __int64 a2,
       nn_os_SdkMutexType_Unlock_plt(v10 + 116);
       v23 = *(_QWORD*)(v10 + 24);
       if (v23 != 0) {
-        (*(void (**)(__int64, _QWORD*, signed __int64))(*(_QWORD*)v23 + 32LL))(
-            v23, v36_.v36, v12);
-        v16 = v24;
+        // The call returns a pair, the second register is kept.
+        v16 = (__int64)((*(unsigned __int128 (**)(__int64, _QWORD*,
+                                                  signed __int64))(
+                             *(_QWORD*)v23 + 32LL))(v23, v36_.v36, v12) >>
+                         64);
       }
       if ((v18 & 1) != 0) {
         v25 = v14 + 0x4000;
