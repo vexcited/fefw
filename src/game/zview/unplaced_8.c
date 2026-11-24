@@ -1120,10 +1120,10 @@ __int64 game_zview_cf7590(__int64 a1, float32x4_t* a2, float32x4_t* a3,
                   LANES128_OF(vextq_s8(*(int8x16_t*)&a5, *(int8x16_t*)&a5, 8u))
                       .n128_u64[0]),
         *(float32x2_t*)&a5);
-    v18 = LANES128(a4).n128_f32[0] <= 0x1.47ae160000000p-7f;
+    v18 = !(LANES128(a4).n128_f32[0] > 0x1.47ae160000000p-7f);
     LANES128(a4).n128_u32[0] = 1063675494;
     *(float32x2_t*)&a5 = vpadd_f32(*(float32x2_t*)&a5, *(float32x2_t*)&a5);
-    if (v18 && *(float*)&a5 >= 0x1.cccccc0000000p-1f) {
+    if (v18 && !(*(float*)&a5 < 0x1.cccccc0000000p-1f)) {
       goto LABEL_28;
     }
     goto LABEL_26;

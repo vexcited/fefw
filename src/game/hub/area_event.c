@@ -1035,11 +1035,11 @@ _QWORD* AreaEvent_d5a220(_QWORD* result, float32x4_t* a2, float32x4_t* a3)
                   if (v11 > 0x1.fffffe0000000p+127) {
                     v11 = 0x1.fffffe0000000p+127;
                   }
-                  if (v11 >= v12) {
+                  if (!(v11 < v12)) {
                     v11 = v6[70];
                   }
                   v14 = v6[71];
-                  if (v11 >= v14 && v14 != 0.0) {
+                  if (!(v11 < v14)&& v14 != 0.0) {
                     v11 = v6[71];
                   }
                   v16 = v11 * 0.5;

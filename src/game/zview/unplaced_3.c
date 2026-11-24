@@ -1016,7 +1016,7 @@ float* game_zview_d15100(float* a1, char a2, double a3, double a4, double a5,
   v45 = fmodf(a1[33] + 0x1.921fb60000000p+1f, 0x1.921fb60000000p+2f);
   explicit = atomic_load_explicit((atomic_uchar* volatile)&GameData_22110c8,
                                   memory_order_acquire);
-  if (v45 >= 0x0.0p+0f) {
+  if (!(v45 < 0x0.0p+0f)) {
     v47 = v45 + 0x0.0p+0f;
   }
   else {
@@ -1301,7 +1301,7 @@ LABEL_52:
                  0x1.fd70a40000000p+0f) +
          0x1.47ae140000000p-7f;
   v121 = *(_QWORD*)(*(_QWORD*)a1 + 16LL);
-  v122 = v117 >= 0x0.0p+0f ? v120 : 0x1.47ae140000000p-7f;
+  v122 = !(v117 < 0x0.0p+0f)? v120 : 0x1.47ae140000000p-7f;
   v123 = *(float*)(v121 + 296);
   v124 = *(float*)(v121 + 292);
   if ((float)((float)(PSEUDO_UNFUSED((float)(v123 - v96) *

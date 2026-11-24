@@ -277,7 +277,7 @@ void UIBase_da1870(float* a1)
             0x1.f400000000000p+9f);
   if (v1 > 0x0.0p+0f) {
     v1 = v1 - v5;
-    if (v1 >= 0x0.0p+0f) {
+    if (!(v1 < 0x0.0p+0f)) {
       goto LABEL_7;
     }
   LABEL_6:
@@ -297,7 +297,7 @@ LABEL_7:
              0x1.f400000000000p+9f);
   if (v6 > 0x0.0p+0f) {
     v6 = v6 - v7;
-    if (v6 >= 0x0.0p+0f) {
+    if (!(v6 < 0x0.0p+0f)) {
       goto LABEL_13;
     }
   LABEL_12:
@@ -362,7 +362,7 @@ LABEL_18:
                                   0x1.0aef000000000p+4f) /
                           0x1.f400000000000p+9f));
       if (v15 <= v17) {
-        if (v15 >= v17) {
+        if (!(v15 < v17)) {
           goto LABEL_37;
         }
         v15 = v15 + v18;
@@ -372,7 +372,7 @@ LABEL_18:
       }
       else {
         v15 = v15 - v18;
-        if (v15 >= v17) {
+        if (!(v15 < v17)) {
           goto LABEL_37;
         }
       }

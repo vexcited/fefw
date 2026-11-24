@@ -379,13 +379,13 @@ __int64 physx_source_geomutils_src_515ac0(__int64* a1, unsigned int* a2,
           v63 = v62 + 1;
           v47 += 2;
           v64 = (float*)(a5 + 24LL * *(unsigned int*)(a4 + 4LL * *(v61 - 1)));
-          if (v57 >= *v64) {
+          if (!(v57 < *v64)) {
             v57 = *v64;
           }
-          if (v58 >= v64[1]) {
+          if (!(v58 < v64[1])) {
             v58 = v64[1];
           }
-          if (v59 >= v64[2]) {
+          if (!(v59 < v64[2])) {
             v59 = v64[2];
           }
           if (v52 <= v64[3]) {
@@ -406,13 +406,13 @@ __int64 physx_source_geomutils_src_515ac0(__int64* a1, unsigned int* a2,
           if (v54 <= v66) {
             v54 = v66;
           }
-          if (v49 >= *v68) {
+          if (!(v49 < *v68)) {
             v49 = *v68;
           }
-          if (v55 >= v68[1]) {
+          if (!(v55 < v68[1])) {
             v55 = v68[1];
           }
-          if (v56 >= v68[2]) {
+          if (!(v56 < v68[2])) {
             v56 = v68[2];
           }
           if (v48 <= v68[3]) {
@@ -446,10 +446,10 @@ __int64 physx_source_geomutils_src_515ac0(__int64* a1, unsigned int* a2,
           if (!v78) {
             v57 = v77;
           }
-          if (v58 >= v76) {
+          if (!(v58 < v76)) {
             v58 = v76;
           }
-          if (v59 >= v73[2]) {
+          if (!(v59 < v73[2])) {
             v59 = v73[2];
           }
           if (v52 <= v73[3]) {
@@ -464,13 +464,13 @@ __int64 physx_source_geomutils_src_515ac0(__int64* a1, unsigned int* a2,
           if (v54 <= v80) {
             v54 = v80;
           }
-          if (v49 >= *v81) {
+          if (!(v49 < *v81)) {
             v49 = *v81;
           }
-          if (v55 >= v81[1]) {
+          if (!(v55 < v81[1])) {
             v55 = v81[1];
           }
-          if (v56 >= v81[2]) {
+          if (!(v56 < v81[2])) {
             v56 = v81[2];
           }
           if (v48 <= v81[3]) {
@@ -510,13 +510,13 @@ __int64 physx_source_geomutils_src_515ac0(__int64* a1, unsigned int* a2,
                            *(unsigned int*)(a4 +
                                             4LL * *(unsigned int*)(v42 +
                                                                    4LL * v85)));
-        if (v57 >= *v86) {
+        if (!(v57 < *v86)) {
           v57 = *v86;
         }
-        if (v58 >= v86[1]) {
+        if (!(v58 < v86[1])) {
           v58 = v86[1];
         }
-        if (v59 >= v86[2]) {
+        if (!(v59 < v86[2])) {
           v59 = v86[2];
         }
         if (v52 <= v86[3]) {
@@ -531,10 +531,10 @@ __int64 physx_source_geomutils_src_515ac0(__int64* a1, unsigned int* a2,
         }
         v89 = v53 - v58;
         v90 = v54 - v59;
-        if (v49 >= *v87) {
+        if (!(v49 < *v87)) {
           v49 = *v87;
         }
-        if (v55 >= v87[1]) {
+        if (!(v55 < v87[1])) {
           v55 = v87[1];
         }
         v91 = v87[2];
@@ -546,7 +546,7 @@ __int64 physx_source_geomutils_src_515ac0(__int64* a1, unsigned int* a2,
             (float)((float)((float)(PSEUDO_UNFUSED(v88 * v90)) +
                             (float)(v88 * v89)) +
                     (float)(v89 * v90));
-        if (v56 >= v91) {
+        if (!(v56 < v91)) {
           v56 = v91;
         }
         if (v48 <= v92) {

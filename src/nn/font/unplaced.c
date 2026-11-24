@@ -667,7 +667,7 @@ __int64 nn_font_5665e0(__int64 a1, float* a2, unsigned __int64* a3, int a4)
                     v66 = COERCE_AS(__typeof__(v66),
                                     PSEUDO_REGISTER(float, "s0", "=w"));
                 v67 = v64 + v66;
-                if (a2[3] >= v67) {
+                if (!(a2[3] < v67)) {
                   v67 = a2[3];
                 }
                 a2[3] = v67;
@@ -765,7 +765,7 @@ __int64 nn_font_5665e0(__int64 a1, float* a2, unsigned __int64* a3, int a4)
           v66 = COERCE_AS(__typeof__(v66), PSEUDO_REGISTER(float, "s0", "=w"));
           v45 = v43 + v44;
           if ((v36 & 1) == 0 ||
-              (float)(v45 + *(float*)(a1 + 72)) <= *(float*)(a1 + 60)) {
+              !((float)(v45 + *(float*)(a1 + 72)) > *(float*)(a1 + 60))) {
             goto LABEL_104;
           }
           v24 = 1;
@@ -797,7 +797,7 @@ __int64 nn_font_5665e0(__int64 a1, float* a2, unsigned __int64* a3, int a4)
         v88_.v91[1] = v23;
         LODWORD(v88_.v91[5]) = (v33 & 1) == 0;
         *(float*)(a1 + 20) = v25;
-        if (v14 >= 0x1.fffffe0000000p+127f || v32 == 10 || v26 == 0) {
+        if (!(v14 < 0x1.fffffe0000000p+127f)|| v32 == 10 || v26 == 0) {
           goto LABEL_72;
         }
         v70_.v70 = 0;
@@ -828,7 +828,7 @@ __int64 nn_font_5665e0(__int64 a1, float* a2, unsigned __int64* a3, int a4)
             *(_QWORD*)v48 + 32LL))(v48, (__int64)&v70_.v70, (__int64)v84, v32),
             v66 =
                 COERCE_AS(__typeof__(v66), PSEUDO_REGISTER(float, "s0", "=w"));
-        if (*(float*)&v70_.v71 <= *(float*)&v70_.v70 ||
+        if (!(*(float*)&v70_.v71 > *(float*)&v70_.v70)||
             (float)(*((float*)&v72_.v73 + 1) - *(float*)&v88_.v91[3]) <=
                 *(float*)(a1 + 60)) {
           break;
@@ -867,7 +867,7 @@ __int64 nn_font_5665e0(__int64 a1, float* a2, unsigned __int64* a3, int a4)
       if (!v35) {
         v56 = v58;
       }
-      if (*(float*)&v86 >= v59) {
+      if (!(*(float*)&v86 < v59)) {
         v57 = v59;
       }
       *a2 = v56;
