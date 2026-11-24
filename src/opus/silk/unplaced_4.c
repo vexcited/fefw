@@ -448,7 +448,7 @@ __int64 opus_silk_2f0ec0(_DWORD* a1, __int64 a2, __int64 a3, __int64 a4,
   v21 = (char*)&v387_.v387 - ((v20 + 15) & 0xFFFFFFFFFFFFFFF0LL);
   memset_plt((__int64)v21, 0, v20);
   v387_.v419 = a3;
-  if ((int)v16 >= 1) {
+  if ((unsigned int)v16 >= 1) {
     v22 = *(unsigned __int8*)(a3 + 34);
     v23 = *(_DWORD*)(a2 + 4320);
     v24 = (_QWORD*)(a2 + 3840);
@@ -730,7 +730,7 @@ LABEL_45:
   v370 = 0;
   *(&v387_.v387 - 20) = 0;
   *(&v387_.v387 - 19) = 0;
-  if ((int)v19[1145] >= 1) {
+  if ((unsigned int)v19[1145] >= 1) {
     v104 = a2 + 1280;
     v105 = 0;
     v106 = 0;
@@ -837,7 +837,7 @@ LABEL_45:
       v139 = v136 - 15;
       v140 = (int)0x80000000 >> v139;
       v141 = v137 >> v138;
-      if (v137 > (int)0x80000000 >> v139) {
+      if (v137 > (unsigned int)0x80000000 >> v139) {
         v140 = v137;
       }
       if (v137 <= (int)(0x7FFFFFFFu >> v139)) {
@@ -1069,7 +1069,7 @@ LABEL_45:
             } while (v208 < (int)(v207 - v113));
           }
         }
-        if ((int)v133 >= 1) {
+        if ((unsigned int)v133 >= 1) {
           v209 = v205;
           v210 = v387_.v400;
           for (i = 0; i != v133; ++i) {

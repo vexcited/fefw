@@ -4285,7 +4285,7 @@ __int64 UnitNatives_11873e0(__int64 result, char a2)
             v5 = *(char**)(result + 608);
             v6 = *(char**)(result + 600);
             v7 = v5 - v6;
-            if ((int)((unsigned __int64)(v5 - v6) >> 2) < 1) {
+            if ((unsigned int)((unsigned __int64)(v5 - v6) >> 2) < 1) {
               v10 = 0;
             }
             else {
@@ -4465,7 +4465,7 @@ _BYTE* UnitNatives_1187600(__int64 a1, char a2)
             v13 = *(char**)(v4 + 608);
             v14 = *(char**)(v4 + 600);
             v15 = v13 - v14;
-            if ((int)((unsigned __int64)(v13 - v14) >> 2) < 1) {
+            if ((unsigned int)((unsigned __int64)(v13 - v14) >> 2) < 1) {
               v18 = 0;
             }
             else {

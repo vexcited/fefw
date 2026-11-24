@@ -1457,7 +1457,7 @@ LABEL_221:
                       *(int*)(v41 + 4 * v257) >> v195 >> 3;
                   *(_DWORD*)(v41 + 4 * v257) = 0;
                   v256 -= 4;
-                  *(int*)(v180 + 4 * v257) = *(int*)(v179 + 4 * v257) < 1;
+                  *(int*)(v180 + 4 * v257) = *(_DWORD*)(v179 + 4 * v257) < 1;
                   ++v257;
                 } while (v256 != 0);
                 if ((unsigned __int64)((int)v31 - v35) > 0xFFFFFFFFFFFFFFFCLL) {

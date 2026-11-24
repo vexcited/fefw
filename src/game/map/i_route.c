@@ -1316,7 +1316,7 @@ __int64 IRoute_7502e0(__int64 a1, int a2, int a3, __int64 a4, __int64 a5,
     return IRoute_74f280(a1, v14);
   }
   v10 = *(unsigned int*)(a1 + 136);
-  if ((int)v10 >= 1) {
+  if ((unsigned int)v10 >= 1) {
     v13 = (unsigned __int8*)(a1 + 8);
     v14 = 1;
     do {

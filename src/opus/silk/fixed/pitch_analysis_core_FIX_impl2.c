@@ -495,7 +495,7 @@ __int64 silk_pitch_analysis_core(__int64 a1, __int64 a2, _WORD* a3, _BYTE* a4,
   v435 = v18 + 3;
   memset_plt(v19, 0, v17);
   LODWORD(v402_.v417) = a8;
-  if ((int)(v18 + 3) < 1) {
+  if ((unsigned int)(v18 + 3) < 1) {
     goto LABEL_12;
   }
   v20 = (v18 + 4) >> 1;
@@ -919,7 +919,7 @@ LABEL_93:
   v155 = (__int16*)&v400[-272];
   v156 = &v400[-298];
   memset_plt(&v400[-272], 0, 268);
-  if ((int)v151 < 1) {
+  if ((unsigned int)v151 < 1) {
     v157 = (int)v402_.v428;
     goto LABEL_103;
   }
@@ -1069,7 +1069,7 @@ LABEL_103:
   v402_.v407 = v133;
   v402_.v405 = v169;
   memset_plt(v43, 0, v42);
-  if ((int)v35 >= 1) {
+  if ((unsigned int)v35 >= 1) {
     LODWORD(v402_.v429) = 0;
     LODWORD(v402_.v427) = v197;
     v198 = (__int64)(v402_.v419 + 320);
@@ -1152,7 +1152,7 @@ LABEL_103:
       LODWORD(v402_.v429) = v402_.v429 + 1;
     } while ((_DWORD)v402_.v429 != (_DWORD)v402_.v430);
   }
-  if ((int)v402_.v421 < 1) {
+  if ((unsigned int)v402_.v421 < 1) {
     LODWORD(v402_.v425) = 0;
     LODWORD(v402_.v418) = 0;
     v222 = v402_.v412;
@@ -1179,7 +1179,7 @@ LABEL_103:
     v225 = (char*)MovieData_c0ac0;
   }
   v402_.v419 = v225;
-  if ((int)v402_.v424 < 1) {
+  if ((unsigned int)v402_.v424 < 1) {
     goto LABEL_243;
   }
   v226 = 0;
@@ -1203,7 +1203,7 @@ LABEL_103:
   do {
     v402_.v429 = v226;
     v233 = *((_DWORD*)v436 + v226);
-    if ((int)v35 < 1) {
+    if ((unsigned int)v35 < 1) {
       memset_plt(v432, 0, v402_.v416);
     }
     else {
@@ -1371,7 +1371,7 @@ LABEL_103:
   if (v282 <= 8) {
     v290 = v402_.v409;
     v288 = v402_.v414;
-    if ((int)v35 >= 1) {
+    if ((unsigned int)v35 >= 1) {
       v291 = v35 & 3;
       if ((unsigned int)v35 >= 4) {
         v293 = 0;
@@ -1481,7 +1481,7 @@ LABEL_103:
       v309 = v402_.v403;
     }
     LODWORD(v402_.v427) = v309;
-    if ((int)v35 >= 1) {
+    if ((unsigned int)v35 >= 1) {
       v310 = (int)v402_.v414;
       v311 = v35 & 7;
       if ((unsigned int)v35 >= 8) {
@@ -1547,7 +1547,7 @@ LABEL_103:
     v330 = opus_652a0(v328 + 2LL * (unsigned int)(20 * v282),
                       v328 + 2LL * (unsigned int)(20 * v282), v322 * v329);
     v288 = 0;
-    if (v308 <= (int)v402_.v427 && (int)v402_.v426 >= 1) {
+    if (v308 <= (int)v402_.v427 && (unsigned int)v402_.v426 >= 1) {
       v331 = v402_.v430;
       v332 = 0;
       v288 = 0;

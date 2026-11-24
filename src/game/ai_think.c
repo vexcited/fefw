@@ -16446,13 +16446,13 @@ bool AIThink_121a340(_QWORD* a1, __int64 a2)
             } while (!v28);
           }
           else {
-            if ((int)(v92 - v30) <= v31[28]) {
+            if ((unsigned int)(v92 - v30) <= v31[28]) {
               v49 = v31[28];
             }
             else {
               v49 = v92 - v30;
             }
-            if ((int)(v97 - v30) <= v31[29]) {
+            if ((unsigned int)(v97 - v30) <= v31[29]) {
               v50 = v31[29];
             }
             else {

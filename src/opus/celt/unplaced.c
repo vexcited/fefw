@@ -735,7 +735,7 @@ unsigned __int64 opus_celt_2e2a60(__int64 a1, __int64 a2, _DWORD* a3,
     v38 = 0;
     v36 = (_DWORD*)v22;
     v39 = v19 - v30;
-    if ((int)v19 - v30 > 0) {
+    if ((unsigned int)v19 - v30 > 0) {
       goto LABEL_21;
     }
   LABEL_12:

@@ -343,7 +343,7 @@ __int64 opus_src_30f260(int* a1, unsigned __int8* a2, signed int a3,
       v38 = v28;
       v139_.v152 = v35;
       v39 = v24 == 1002;
-      if (v21 > (int)result) {
+      if (v21 > (unsigned int)result) {
         return 0xFFFFFFFFLL;
       }
     LABEL_60:
@@ -819,7 +819,7 @@ __int64 opus_src_30f260(int* a1, unsigned __int8* a2, signed int a3,
                         if (v21 >= v14) {
                           v120 = v139_.v146;
                           LODWORD(v128) = v118 * v139_.v146;
-                          if ((int)(v118 * v139_.v146) < 1) {
+                          if ((unsigned int)(v118 * v139_.v146) < 1) {
                             v128 = (int)v128;
                           }
                           else {

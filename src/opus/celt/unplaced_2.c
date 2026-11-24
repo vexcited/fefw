@@ -294,7 +294,7 @@ unsigned __int8 opus_celt_29540(__int64 result, __int16* a2, unsigned int a3,
   if (a4 == 2 && a5 == 1 && a8 == 0) {
     LODWORD(v17) = *a7;
     LODWORD(v16) = a7[1];
-    if ((int)a3 >= 1) {
+    if ((unsigned int)a3 >= 1) {
       v19 = *(_QWORD*)result;
       v18 = *(_QWORD*)(result + 8);
       v20 = *a6;
@@ -410,7 +410,7 @@ unsigned __int8 opus_celt_29540(__int64 result, __int16* a2, unsigned int a3,
       LODWORD(v82) = a7[v80];
       v83 = *(_QWORD*)(v15 + 8 * v80);
       if (a8 != 0) {
-        if ((int)a3 < 1) {
+        if ((unsigned int)a3 < 1) {
           goto LABEL_76;
         }
         if (a3 >= 4) {
@@ -537,7 +537,7 @@ unsigned __int8 opus_celt_29540(__int64 result, __int16* a2, unsigned int a3,
         }
       }
       else {
-        if ((int)a3 < 1) {
+        if ((unsigned int)a3 < 1) {
         LABEL_76:
           LODWORD(v11) = a7[v80];
           // The original stores the state back even with no samples.
@@ -906,7 +906,7 @@ unsigned __int8 opus_celt_29540(__int64 result, __int16* a2, unsigned int a3,
     v197 = v279_.v280 + 16;
     while (1) {
       LODWORD(v198) = a7[v192];
-      if ((int)a3 < 1) {
+      if ((unsigned int)a3 < 1) {
         LODWORD(v201) = a7[v192];
       }
       else {
@@ -1096,7 +1096,7 @@ unsigned __int8 opus_celt_29540(__int64 result, __int16* a2, unsigned int a3,
       }
     }
   }
-  if ((int)a3 >= 1) {
+  if ((unsigned int)a3 >= 1) {
     v255 = 0;
     if ((int)a4 <= 1) {
       v256 = 1;

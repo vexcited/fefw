@@ -1122,7 +1122,7 @@ __int64 celt_decode_lost(__int64* a1, int a2, int a3)
         v224 = v419_.v440;
         v225 = 0;
         v226 = v419_.v438;
-        if ((int)v419_.v444 < 1) {
+        if ((unsigned int)v419_.v444 < 1) {
           goto LABEL_216;
         }
         goto LABEL_271;
@@ -1246,7 +1246,7 @@ __int64 celt_decode_lost(__int64* a1, int a2, int a3)
       v283 = frac_div32(v282 >> 1, v228);
       v284 = celt_sqrt(v283);
       memmove_plt(v125, v125 + 4 * v419_.v485, v419_.v471);
-      if ((int)v202 < 1) {
+      if ((unsigned int)v202 < 1) {
         v290 = 0;
         v318 = (__int16*)v200;
       }
@@ -1410,7 +1410,7 @@ __int64 celt_decode_lost(__int64* a1, int a2, int a3)
       MovieRoutine_362a0(v125 + 0x2000 + 4 * v419_.v476, v318,
                          v125 + 0x2000 + 4 * v419_.v476, v202, 24,
                          (__int64)&v419_.v520);
-      if ((int)v202 < 1) {
+      if ((unsigned int)v202 < 1) {
         if (v290 == 0) {
           goto LABEL_384;
         }
@@ -1421,7 +1421,7 @@ __int64 celt_decode_lost(__int64* a1, int a2, int a3)
           v359 = celt_sqrt(v358);
           v360 = v419_.v480;
           v361 = v419_.v421;
-          if ((int)v419_.v488 < 1) {
+          if ((unsigned int)v419_.v488 < 1) {
             goto LABEL_381;
           }
           v362 = v359 ^ 0x7FFF;
@@ -1515,7 +1515,7 @@ __int64 celt_decode_lost(__int64* a1, int a2, int a3)
             } while (v383 != 0);
           }
         LABEL_381:
-          if ((int)v419_.v489 >= 1) {
+          if ((unsigned int)v419_.v489 >= 1) {
             v387 = v119;
             v388 = v125 + 4 * v419_.v479;
             do {
@@ -2066,7 +2066,7 @@ __int64 celt_decode_lost(__int64* a1, int a2, int a3)
   }
   v419_.v508 = v39;
   v82 = *(_DWORD*)(v6 + 44);
-  if ((int)v419_.v512 >= 1 && v40 > (int)v419_.v511) {
+  if ((unsigned int)v419_.v512 >= 1 && v40 > (int)v419_.v511) {
     v83 = 0;
     v84 = 0;
     v419_.v489 = v5;
@@ -2329,7 +2329,7 @@ __int64 celt_synthesis(__int16** a1, __int64 a2, int** a3, __int64 a4, int a5,
     result = memcpy_plt(v29, v23, v25);
     v31 = v131_.v133;
     v32 = v131_.v141;
-    if ((int)v131_.v133 >= 1) {
+    if ((unsigned int)v131_.v133 >= 1) {
       v131_.v139 = v23;
       v33 = a1;
       v34 = 0;
@@ -2366,7 +2366,7 @@ __int64 celt_synthesis(__int16** a1, __int64 a2, int** a3, __int64 a4, int a5,
     v58 = v131_.v148;
     v131_.v136 = a2;
     v131_.v139 = v23;
-    if ((int)v131_.v133 <= 0) {
+    if ((unsigned int)v131_.v133 <= 0) {
       v73 = 2 * v22;
       v75 = v131_.v138;
       v74 = v131_.v139;
@@ -2461,7 +2461,7 @@ __int64 celt_synthesis(__int16** a1, __int64 a2, int** a3, __int64 a4, int a5,
       denormalise_bands((__int64)a1, v45 + 2 * v50, v131_.v149,
                         v131_.v138 + 2 * v131_.v140, v49, v48, v51, v52, v44);
   v53 = v131_.v133;
-  if ((int)v50 >= 1) {
+  if ((unsigned int)v50 >= 1) {
     v54 = (__int64)(int)v131_.v136 >> 1;
     v55 = v50 & 7;
     if ((unsigned int)v50 < 8) {
@@ -2515,7 +2515,7 @@ __int64 celt_synthesis(__int16** a1, __int64 a2, int** a3, __int64 a4, int a5,
 LABEL_41:
   v100 = v131_.v141;
   v101 = v131_.v137;
-  if ((int)v53 >= 1) {
+  if ((unsigned int)v53 >= 1) {
     v102 = a1;
     v103 = 0;
     v104 = v53;
@@ -2531,7 +2531,7 @@ LABEL_41:
   }
 LABEL_44:
   v106 = v131_.v146;
-  if ((int)v131_.v146 >= 1) {
+  if ((unsigned int)v131_.v146 >= 1) {
     v107 = v131_.v146 & 0x7FFFFFF8;
     v108 = 0;
     if (v131_.v132 <= 1) {

@@ -2513,7 +2513,7 @@ nvidia_cc780(_QWORD* a1)
           v103 = *(unsigned int*)(i + 1092);
           __asm__ volatile("" ::"r"(v103));
         }
-        if ((int)v103 < 1) {
+        if ((unsigned int)v103 < 1) {
           goto LABEL_297;
         }
         v104 = v103 + 1;

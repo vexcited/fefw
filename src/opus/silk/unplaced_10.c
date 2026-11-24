@@ -571,7 +571,7 @@ LABEL_68:
   v108 = *(int*)(a1 + 2328);
   *((_QWORD*)v102 - 7) = v99;
   *((_QWORD*)v102 - 6) = v106;
-  if ((int)v108 > 0) {
+  if ((unsigned int)v108 > 0) {
     f_.v169 = (_QWORD*)(a1 + 1284);
     v109 = (__int16)f_.v173;
     v110 = SWORD1(f_.v173);

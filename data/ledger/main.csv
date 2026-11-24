@@ -20284,7 +20284,7 @@ fff90,116,verified,src/snd/api.cpp,_ZN3snd10startPitchERKNS_3fnd10WeakHandleERKN
 754760,996,disputed,src/game/map/map_util.c,MapUtil_754760
 754da0,428,verified,src/game/script/unit_natives_impl.c,UnitNatives_754da0
 754f50,552,verified,src/game/script/unit_natives_impl.c,UnitNatives_754f50
-7551a0,532,verified,src/game/script/unit_natives_impl.c,UnitNatives_7551a0
+7551a0,504,verified,src/game/script/unit_natives_impl.c,UnitNatives_7551a0
 7553f0,488,verified,src/game/script/unit_natives_impl.c,UnitNatives_7553f0
 7555e0,628,verified,src/game/map/map_util.c,MapUtil_7555e0
 755860,392,verified,src/game/map/map_util.c,MapUtil_755860
@@ -53838,7 +53838,7 @@ fffcb0,1244,verified,src/game/unnamed/b014_1.c,GameHr_fffcb0
 1186e80,656,verified,src/game/script/unit_natives.cpp,_ZN4game6script4unit12BreakBarrierERKN2as6stringEb
 1187140,216,verified,src/game/script/unit_natives.cpp,_ZN4game6script4unit13RepairBarrierEiiib
 1187220,444,verified,src/game/script/unit_natives.cpp,_ZN4game6script4unit13RepairBarrierERKN2as6stringEiib
-11873e0,500,disputed,src/game/script/unit_natives_impl.c,UnitNatives_11873e0
+11873e0,512,verified,src/game/script/unit_natives_impl.c,UnitNatives_11873e0
 1187600,688,disputed,src/game/script/unit_natives_impl.c,UnitNatives_1187600
 1187900,196,verified,src/game/script/unit_natives.cpp,_ZN4game6script4unit6ReloadEi
 11879e0,412,verified,src/game/script/unit_natives.cpp,_ZN4game6script4unit6ReloadERKN2as6stringE
@@ -55532,7 +55532,7 @@ fffcb0,1244,verified,src/game/unnamed/b014_1.c,GameHr_fffcb0
 12198a0,1612,verified,src/game/ai_think.c,AIThink_12198a0
 121a1c0,132,verified,src/game/ai_think.c,AIThink_121a1c0
 121a250,212,verified,src/game/ai_think.c,AIThink_121a250
-121a340,1500,disputed,src/game/ai_think.c,AIThink_121a340
+121a340,1412,disputed,src/game/ai_think.c,AIThink_121a340
 121ae60,400,verified,src/game/ai_think.c,AIThink_121ae60
 121b000,1552,verified,src/game/unplaced_43.c,game_121b000
 121b950,336,verified,src/game/ai_think.c,AIThink_121b950

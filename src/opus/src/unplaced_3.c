@@ -5174,7 +5174,7 @@ LABEL_22:
       (unsigned __int64)(v21 * (__int64)((unsigned int)v140_.v155 >> 1)) >> 31;
   v29 = MovieData_b3998[(unsigned int)v28 >> 14];
   v30 = MovieData_b3998[((unsigned int)v28 >> 14) + 1];
-  if ((int)v140_.v156 < 1) {
+  if ((unsigned int)v140_.v156 < 1) {
   LABEL_26:
     if (a2 < 1) {
       return result;

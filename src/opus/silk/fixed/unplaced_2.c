@@ -2467,7 +2467,7 @@ _DWORD* opus_silk_fixed_5fa60(__int64 a1, __int64 a2, __int64 a3, __int64 a4,
   v77[1] = 0;
   v76[0] = 0;
   v76[1] = 0;
-  if ((int)v5 < 1) {
+  if ((unsigned int)v5 < 1) {
     goto LABEL_48;
   }
   v11 = v5 & 7;
@@ -2621,7 +2621,7 @@ LABEL_48:
     }
   }
   else {
-    if ((int)v5 >= 1) {
+    if ((unsigned int)v5 >= 1) {
       v50 = 0;
       v51 = (__int64)v44;
       v52 = a4 - 2LL * v41;

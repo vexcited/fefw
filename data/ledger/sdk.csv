@@ -11873,7 +11873,7 @@ ffee0,324,verified,src/nn/fs/unplaced.c,nn_fs_GetAndClearMemoryReportInfo
 2e2830,104,verified,src/opus/celt/mathops.c,celt_rsqrt_norm
 2e28a0,176,verified,src/opus/celt/mathops.c,celt_sqrt
 2e2950,244,verified,src/opus/celt/mathops.c,celt_cos_norm
-2e2a60,1880,disputed,src/opus/celt/unplaced.c,opus_celt_2e2a60
+2e2a60,2092,disputed,src/opus/celt/unplaced.c,opus_celt_2e2a60
 2e32e0,1092,verified,src/opus/celt/mdct.c,clt_mdct_backward_c
 2e3750,96,verified,src/opus/celt/modes.c,opus_custom_mode_create
 2e37c0,1800,verified,src/opus/celt/unplaced_5.c,opus_celt_2e37c0
@@ -11910,7 +11910,7 @@ ffee0,324,verified,src/nn/fs/unplaced.c,nn_fs_GetAndClearMemoryReportInfo
 2ef640,1668,verified,src/opus/silk/unplaced.c,opus_silk_2ef640
 2efd20,160,verified,src/opus/silk/NLSF_unpack.c,silk_NLSF_unpack
 2efdc0,804,disputed,src/opus/silk/unplaced_8.c,opus_silk_2efdc0
-2f0ec0,2224,disputed,src/opus/silk/unplaced_4.c,opus_silk_2f0ec0
+2f0ec0,3588,verified,src/opus/silk/unplaced_4.c,opus_silk_2f0ec0
 2f2920,2056,disputed,src/opus/silk/NSQ_del_dec.c,silk_noise_shape_quantizer_del_dec
 2f4190,40,verified,src/opus/silk/PLC.c,silk_PLC_Reset
 2f41c0,596,verified,src/opus/silk/PLC.c,silk_PLC
