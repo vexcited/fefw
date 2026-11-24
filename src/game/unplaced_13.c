@@ -2710,7 +2710,7 @@ LABEL_23:
   BYTE1(v301[2]) = 0;
   WORD1(v301[2]) = 0;
   HIDWORD(v301[2]) = 0;
-  strcpy((char*)v301, " GameData/Dispos");
+  strcpy((char*)v301, " GameData/Dispos/");
   v15 = strlen(a1),
   v124 = COERCE_AS(__typeof__(v124),
                    PSEUDO_REGISTER(unsigned long long, "x1", "=r")),

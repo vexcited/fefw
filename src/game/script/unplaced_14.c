@@ -76,7 +76,7 @@ void game_script_cab8c0(_QWORD* a1)
     v13_.v14 = nullptr;
     v15_.v16 = nullptr;
     v17_.v18 = nullptr;
-    strcpy((char*)v12, "(MID_HubMenu_SubQues");
+    strcpy((char*)v12, "(MID_HubMenu_SubQuest");
     v19_.v20 = v19_.v19;
     v19_.v19[0] = GameData_1fd4080;
     v19_.v19[1] = a1;
