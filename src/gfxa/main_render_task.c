@@ -1,4 +1,5 @@
 #include "decomp/pseudo_helpers.h"
+#include "decomp/pseudo_float.h"
 
 #pragma GCC visibility push(hidden)
 
@@ -9276,13 +9277,13 @@ LABEL_103:
                 LANES128(v278).n128_u64[1] = *(unsigned int*)(v275 + 20);
                 LANES128(v280).n128_u64[0] = *(_QWORD*)(v275 + 24);
                 LANES128(v280).n128_u64[1] = *(unsigned int*)(v275 + 32);
-                v281 = vsubq_f32(vsubq_f32(v277, vmulq_f32(v278, v267)), v280);
+                v281 = vsubq_f32(vsubq_f32(v277, PSEUDO_ROUNDED(vmulq_f32(v278, v267))), v280);
                 *(_QWORD*)v279 = LANES128(v281).n128_u64[0];
                 *(_DWORD*)(v279 + 8) = LANES128(v281).n128_u32[2];
                 LANES128(v281).n128_u64[0] = *(_QWORD*)(v275 + 12);
                 v282 = *(_QWORD*)(v4 + 1296) + 8 * v276;
                 LANES128(v281).n128_u64[1] = *(unsigned int*)(v275 + 20);
-                v283 = vaddq_f32(v277, vmulq_f32(v281, v267));
+                v283 = vaddq_f32(v277, PSEUDO_ROUNDED(vmulq_f32(v281, v267)));
                 LANES128(v281).n128_u64[0] = *(_QWORD*)(v275 + 36);
                 LANES128(v281).n128_u64[1] = *(unsigned int*)(v275 + 44);
                 v284 = vaddq_f32(v283, v281);

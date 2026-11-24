@@ -35600,7 +35600,7 @@ bb78e0,3344,verified,src/gfxa/main_render_task.c,MainRenderTask_Destructor
 bb8600,80,verified,src/memory/new_delete.cpp,deleting destructor at 0xbb8600
 bb8650,1168,verified,src/gfxa/main_render_task.c,MainRenderTask_bb8650
 bb8af0,288,verified,src/gfxa/main_render_task.c,MainRenderTask_bb8af0
-bb8c40,12700,disputed,src/gfxa/main_render_task.c,MainRenderTask_Unknown2
+bb8c40,12796,verified,src/gfxa/main_render_task.c,MainRenderTask_Unknown2
 bbc200,592,verified,src/gfxa/anonymous/unplaced_2.c,gfxa_anonymous_bbc200
 bbc460,264,verified,src/game/unnamed/b009_2.c,GameHr_bbc460
 bbc570,424,verified,src/game/unnamed/e003_0.c,GameHr_bbc570
