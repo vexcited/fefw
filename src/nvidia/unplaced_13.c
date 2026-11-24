@@ -1935,9 +1935,10 @@ __int64 nvidia_135980(__int64 a1)
   __int64 v42;
   char v43;
   unsigned int v44;
+  // Up to 124 register operations of 24 bytes each.
   struct {
     _BYTE v45[97];
-    _BYTE v46[7];
+    _BYTE v46[2879];
   } v45_;
   __int64 v47;
   _DWORD v48[3];
