@@ -2771,9 +2771,13 @@ __int64 Character_caf760(__int64 a1)
               LANES128(v23).n128_f32[0] =
                   LANES128(v23).n128_f32[0] * 0x1.ca5dc20000000p+5f;
               f_.v27 = LANES128(v23).n128_u32[0];
-              v24 = game_hub_d5ae40(v17, &f_.v26, 0x143700000LL,
-                                    LANES128(v23).n128_f64[0],
-                                    LANES128(v19).n128_f64[0]);
+              // The callee reads the upper halves, which `fmov s` cleared.
+              v24 = game_hub_d5ae40(
+                  v17, &f_.v26, 0x143700000LL,
+                  COERCE_AS(double, (unsigned long long)LANES128(v23)
+                                        .n128_u32[0]),
+                  COERCE_AS(double, (unsigned long long)LANES128(v19)
+                                        .n128_u32[0]));
               v15 = a1;
               if (!v24) {
                 GameRoutine_cacba0((__int64)f_.v28);

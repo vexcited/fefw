@@ -37907,7 +37907,7 @@ caea10,196,verified,src/game/script/hub_character_natives_impl.c,HubCharacterNat
 caeae0,572,verified,src/game/hub/unplaced_4.c,game_hub_caeae0
 caed40,588,verified,src/game/hub/character.c,game_hub_Character_SetPopupAmes
 caf150,280,verified,src/game/hub/character.c,Character_caf150
-caf760,508,disputed,src/game/hub/character.c,Character_caf760
+caf760,684,verified,src/game/hub/character.c,Character_caf760
 cafa30,336,verified,src/game/hub/character.c,Character_cafa30
 cafb80,284,verified,src/game/hub/character.c,Character_cafb80
 cafca0,696,verified,src/game/hub/character.c,Character_cafca0
