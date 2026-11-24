@@ -271,14 +271,12 @@ void game_script_ed0c20(int a1, unsigned __int8* a2, unsigned int a3,
   struct {
     __int64 v107;
     unsigned __int64 v108;
-  } v107_;
-  struct {
     __int64 v109;
     __int64 v110;
     __int64 v111;
     __int64 v112;
     unsigned __int64 v113;
-  } v109_;
+  } v107_;
   struct {
     __int64 v114;
     unsigned __int64 v115;
@@ -287,14 +285,12 @@ void game_script_ed0c20(int a1, unsigned __int8* a2, unsigned int a3,
   struct {
     __int64 v117;
     unsigned __int64 v118;
-  } v117_;
-  struct {
     __int64 v119;
     __int64 v120;
     __int64 v121;
     __int64 v122;
     unsigned __int64 v123;
-  } v119_;
+  } v117_;
   struct {
     __int64 v124;
     unsigned __int64 v125;
@@ -303,14 +299,12 @@ void game_script_ed0c20(int a1, unsigned __int8* a2, unsigned int a3,
   struct {
     __int64 v127;
     unsigned __int64 v128;
-  } v127_;
-  struct {
     __int64 v129;
     __int64 v130;
     __int64 v131;
     __int64 v132;
     unsigned __int64 v133;
-  } v129_;
+  } v127_;
   struct {
     __int64 v134;
     unsigned __int64 v135;
@@ -404,23 +398,23 @@ void game_script_ed0c20(int a1, unsigned __int8* a2, unsigned int a3,
     else {
       v107_.v107 = v137_.v137;
       v107_.v108 = v137_.v138;
-      v109_.v109 = v137_.v139;
+      v107_.v109 = v137_.v139;
     }
     v29 = v140_.v140;
     v30 = v140_.v141;
-    v109_.v111 = 0;
-    v109_.v112 = 0;
+    v107_.v111 = 0;
+    v107_.v112 = 0;
     v31 = v140_.v141 - v140_.v140;
-    v109_.v110 = 0;
+    v107_.v110 = 0;
     if (v140_.v141 != v140_.v140) {
       if (v31 < 0) {
         goto LABEL_227;
       }
       v32 =
           fw_memory_HeapManager_Allocate(*v20, v140_.v141 - v140_.v140, 16, 0);
-      v109_.v110 = v32;
-      v109_.v111 = v32;
-      v109_.v112 = v32 + v31;
+      v107_.v110 = v32;
+      v107_.v111 = v32;
+      v107_.v112 = v32 + v31;
       do {
         *(_BYTE*)v32 = 0;
         *(_DWORD*)(v32 + 24) = -1;
@@ -434,9 +428,9 @@ void game_script_ed0c20(int a1, unsigned __int8* a2, unsigned int a3,
         v29 += 32;
         v32 += 32;
       } while (v29 != v30);
-      v109_.v111 = v32;
+      v107_.v111 = v32;
     }
-    v109_.v113 = v140_.v143;
+    v107_.v113 = v140_.v143;
     if ((v144_.v144 & 1) != 0) {
       fw_text_String_CopyTerminated(&v114_.v114, v144_.v146, v144_.v145);
       if ((v107_.v107 & 1) != 0) {
@@ -449,19 +443,19 @@ void game_script_ed0c20(int a1, unsigned __int8* a2, unsigned int a3,
       v114_.v116 = v144_.v146;
       if ((v107_.v107 & 1) != 0) {
       LABEL_44:
-        fw_text_String_CopyTerminated(&v147_.v147, v109_.v109, v107_.v108);
+        fw_text_String_CopyTerminated(&v147_.v147, v107_.v109, v107_.v108);
       LABEL_69:
-        v47 = v109_.v110;
-        v48 = v109_.v111;
+        v47 = v107_.v110;
+        v48 = v107_.v111;
         v147_.v151 = 0;
         v147_.v152 = 0;
-        v49 = v109_.v111 - v109_.v110;
+        v49 = v107_.v111 - v107_.v110;
         v147_.v150 = 0;
-        if (v109_.v111 != v109_.v110) {
+        if (v107_.v111 != v107_.v110) {
           if (v49 < 0) {
             goto LABEL_227;
           }
-          v50 = fw_memory_HeapManager_Allocate(*v20, v109_.v111 - v109_.v110,
+          v50 = fw_memory_HeapManager_Allocate(*v20, v107_.v111 - v107_.v110,
                                                16, 0);
           v147_.v150 = v50;
           v147_.v151 = v50;
@@ -481,7 +475,7 @@ void game_script_ed0c20(int a1, unsigned __int8* a2, unsigned int a3,
           } while (v47 != v48);
           v147_.v151 = v50;
         }
-        v147_.v153 = v109_.v113;
+        v147_.v153 = v107_.v113;
         if ((v114_.v114 & 1) != 0) {
           fw_text_String_CopyTerminated(&v154_.v154, v114_.v116, v114_.v115);
         }
@@ -542,11 +536,11 @@ void game_script_ed0c20(int a1, unsigned __int8* a2, unsigned int a3,
           }
           nn_mem_StandardAllocator_Free(*v20 + v85, v114_.v116);
         }
-        v86 = v109_.v110;
-        v69 = &v109_.v109;
-        if (v109_.v110 != 0) {
-          v87 = v109_.v111;
-          if (v109_.v110 == v109_.v111) {
+        v86 = v107_.v110;
+        v69 = &v107_.v109;
+        if (v107_.v110 != 0) {
+          v87 = v107_.v111;
+          if (v107_.v110 == v107_.v111) {
             goto LABEL_172;
           }
           do {
@@ -559,9 +553,9 @@ void game_script_ed0c20(int a1, unsigned __int8* a2, unsigned int a3,
             *(_DWORD*)(v87 - 8) = -1;
             v87 -= 32;
           } while (v89 != v86);
-          v109_.v111 = v86;
-          v86 = v109_.v110;
-          if (v109_.v110 != 0) {
+          v107_.v111 = v86;
+          v86 = v107_.v110;
+          if (v107_.v110 != 0) {
           LABEL_172:
             v90 = 128;
             if (*(_QWORD*)(*v20 + 200) == 0) {
@@ -578,7 +572,7 @@ void game_script_ed0c20(int a1, unsigned __int8* a2, unsigned int a3,
     }
     v147_.v147 = v107_.v107;
     v147_.v148 = v107_.v108;
-    v147_.v149 = v109_.v109;
+    v147_.v149 = v107_.v109;
     goto LABEL_69;
   }
   if (a1 == 7) {
@@ -588,23 +582,23 @@ void game_script_ed0c20(int a1, unsigned __int8* a2, unsigned int a3,
     else {
       v117_.v117 = v137_.v137;
       v117_.v118 = v137_.v138;
-      v119_.v119 = v137_.v139;
+      v117_.v119 = v137_.v139;
     }
     v23 = v140_.v140;
     v24 = v140_.v141;
-    v119_.v121 = 0;
-    v119_.v122 = 0;
+    v117_.v121 = 0;
+    v117_.v122 = 0;
     v25 = v140_.v141 - v140_.v140;
-    v119_.v120 = 0;
+    v117_.v120 = 0;
     if (v140_.v141 != v140_.v140) {
       if (v25 < 0) {
         goto LABEL_227;
       }
       v26 =
           fw_memory_HeapManager_Allocate(*v20, v140_.v141 - v140_.v140, 16, 0);
-      v119_.v120 = v26;
-      v119_.v121 = v26;
-      v119_.v122 = v26 + v25;
+      v117_.v120 = v26;
+      v117_.v121 = v26;
+      v117_.v122 = v26 + v25;
       do {
         *(_BYTE*)v26 = 0;
         *(_DWORD*)(v26 + 24) = -1;
@@ -618,9 +612,9 @@ void game_script_ed0c20(int a1, unsigned __int8* a2, unsigned int a3,
         v23 += 32;
         v26 += 32;
       } while (v23 != v24);
-      v119_.v121 = v26;
+      v117_.v121 = v26;
     }
-    v119_.v123 = v140_.v143;
+    v117_.v123 = v140_.v143;
     if ((v144_.v144 & 1) != 0) {
       fw_text_String_CopyTerminated(&v124_.v124, v144_.v146, v144_.v145);
       if ((v117_.v117 & 1) != 0) {
@@ -633,19 +627,19 @@ void game_script_ed0c20(int a1, unsigned __int8* a2, unsigned int a3,
       v124_.v126 = v144_.v146;
       if ((v117_.v117 & 1) != 0) {
       LABEL_33:
-        fw_text_String_CopyTerminated(&v147_.v147, v119_.v119, v117_.v118);
+        fw_text_String_CopyTerminated(&v147_.v147, v117_.v119, v117_.v118);
       LABEL_58:
-        v41 = v119_.v120;
-        v42 = v119_.v121;
+        v41 = v117_.v120;
+        v42 = v117_.v121;
         v147_.v151 = 0;
         v147_.v152 = 0;
-        v43 = v119_.v121 - v119_.v120;
+        v43 = v117_.v121 - v117_.v120;
         v147_.v150 = 0;
-        if (v119_.v121 == v119_.v120) {
+        if (v117_.v121 == v117_.v120) {
           goto LABEL_65;
         }
         if ((v43 & 0x8000000000000000LL) == 0) {
-          v44 = fw_memory_HeapManager_Allocate(*v20, v119_.v121 - v119_.v120,
+          v44 = fw_memory_HeapManager_Allocate(*v20, v117_.v121 - v117_.v120,
                                                16, 0);
           v147_.v150 = v44;
           v147_.v151 = v44;
@@ -665,7 +659,7 @@ void game_script_ed0c20(int a1, unsigned __int8* a2, unsigned int a3,
           } while (v41 != v42);
           v147_.v151 = v44;
         LABEL_65:
-          v147_.v153 = v119_.v123;
+          v147_.v153 = v117_.v123;
           if ((v124_.v124 & 1) != 0) {
             fw_text_String_CopyTerminated(&v154_.v154, v124_.v126, v124_.v125);
           }
@@ -726,11 +720,11 @@ void game_script_ed0c20(int a1, unsigned __int8* a2, unsigned int a3,
             }
             nn_mem_StandardAllocator_Free(*v20 + v77, v124_.v126);
           }
-          v78 = v119_.v120;
-          v69 = &v119_.v119;
-          if (v119_.v120 != 0) {
-            v79 = v119_.v121;
-            if (v119_.v120 == v119_.v121) {
+          v78 = v117_.v120;
+          v69 = &v117_.v119;
+          if (v117_.v120 != 0) {
+            v79 = v117_.v121;
+            if (v117_.v120 == v117_.v121) {
               goto LABEL_146;
             }
             do {
@@ -743,9 +737,9 @@ void game_script_ed0c20(int a1, unsigned __int8* a2, unsigned int a3,
               *(_DWORD*)(v79 - 8) = -1;
               v79 -= 32;
             } while (v81 != v78);
-            v119_.v121 = v78;
-            v78 = v119_.v120;
-            if (v119_.v120 != 0) {
+            v117_.v121 = v78;
+            v78 = v117_.v120;
+            if (v117_.v120 != 0) {
             LABEL_146:
               v82 = 128;
               if (*(_QWORD*)(*v20 + 200) == 0) {
@@ -773,7 +767,7 @@ void game_script_ed0c20(int a1, unsigned __int8* a2, unsigned int a3,
     }
     v147_.v147 = v117_.v117;
     v147_.v148 = v117_.v118;
-    v147_.v149 = v119_.v119;
+    v147_.v149 = v117_.v119;
     goto LABEL_58;
   }
   v22 = v20;
@@ -783,22 +777,22 @@ void game_script_ed0c20(int a1, unsigned __int8* a2, unsigned int a3,
   else {
     v127_.v127 = v137_.v137;
     v127_.v128 = v137_.v138;
-    v129_.v129 = v137_.v139;
+    v127_.v129 = v137_.v139;
   }
   v35 = v140_.v140;
   v36 = v140_.v141;
-  v129_.v131 = 0;
-  v129_.v132 = 0;
+  v127_.v131 = 0;
+  v127_.v132 = 0;
   v37 = v140_.v141 - v140_.v140;
-  v129_.v130 = 0;
+  v127_.v130 = 0;
   if (v140_.v141 != v140_.v140) {
     if (v37 < 0) {
       goto LABEL_227;
     }
     v38 = fw_memory_HeapManager_Allocate(*v22, v140_.v141 - v140_.v140, 16, 0);
-    v129_.v130 = v38;
-    v129_.v131 = v38;
-    v129_.v132 = v38 + v37;
+    v127_.v130 = v38;
+    v127_.v131 = v38;
+    v127_.v132 = v38 + v37;
     do {
       *(_BYTE*)v38 = 0;
       *(_DWORD*)(v38 + 24) = -1;
@@ -812,9 +806,9 @@ void game_script_ed0c20(int a1, unsigned __int8* a2, unsigned int a3,
       v35 += 32;
       v38 += 32;
     } while (v35 != v36);
-    v129_.v131 = v38;
+    v127_.v131 = v38;
   }
-  v129_.v133 = v140_.v143;
+  v127_.v133 = v140_.v143;
   if ((v144_.v144 & 1) != 0) {
     fw_text_String_CopyTerminated(&v134_.v134, v144_.v146, v144_.v145);
     if ((v127_.v127 & 1) != 0) {
@@ -823,7 +817,7 @@ void game_script_ed0c20(int a1, unsigned __int8* a2, unsigned int a3,
   LABEL_79:
     v147_.v147 = v127_.v127;
     v147_.v148 = v127_.v128;
-    v147_.v149 = v129_.v129;
+    v147_.v149 = v127_.v129;
     goto LABEL_80;
   }
   v134_.v134 = v144_.v144;
@@ -833,19 +827,19 @@ void game_script_ed0c20(int a1, unsigned __int8* a2, unsigned int a3,
     goto LABEL_79;
   }
 LABEL_55:
-  fw_text_String_CopyTerminated(&v147_.v147, v129_.v129, v127_.v128);
+  fw_text_String_CopyTerminated(&v147_.v147, v127_.v129, v127_.v128);
 LABEL_80:
-  v53 = v129_.v130;
-  v54 = v129_.v131;
+  v53 = v127_.v130;
+  v54 = v127_.v131;
   v147_.v151 = 0;
   v147_.v152 = 0;
-  v55 = v129_.v131 - v129_.v130;
+  v55 = v127_.v131 - v127_.v130;
   v147_.v150 = 0;
-  if (v129_.v131 != v129_.v130) {
+  if (v127_.v131 != v127_.v130) {
     if (v55 < 0) {
       goto LABEL_227;
     }
-    v56 = fw_memory_HeapManager_Allocate(*v22, v129_.v131 - v129_.v130, 16, 0);
+    v56 = fw_memory_HeapManager_Allocate(*v22, v127_.v131 - v127_.v130, 16, 0);
     v147_.v150 = v56;
     v147_.v151 = v56;
     v147_.v152 = v56 + v55;
@@ -864,7 +858,7 @@ LABEL_80:
     } while (v53 != v54);
     v147_.v151 = v56;
   }
-  v147_.v153 = v129_.v133;
+  v147_.v153 = v127_.v133;
   if ((v134_.v134 & 1) != 0) {
     fw_text_String_CopyTerminated(&v154_.v154, v134_.v136, v134_.v135);
   }
@@ -875,7 +869,7 @@ LABEL_80:
   }
   v20 = v22;
   GameRoutine_f47e80((__int64)v21, 6, &v147_.v147);
-  v69 = &v129_.v129;
+  v69 = &v127_.v129;
   if ((v154_.v154 & 1) != 0 && v154_.v156 != 0) {
     v70 = 128;
     if (*(_QWORD*)(*v22 + 200) == 0) {
@@ -926,10 +920,10 @@ LABEL_80:
     }
     nn_mem_StandardAllocator_Free(*v22 + v93, v134_.v136);
   }
-  v94 = v129_.v130;
-  if (v129_.v130 != 0) {
-    v95 = v129_.v131;
-    if (v129_.v130 == v129_.v131) {
+  v94 = v127_.v130;
+  if (v127_.v130 != 0) {
+    v95 = v127_.v131;
+    if (v127_.v130 == v127_.v131) {
       goto LABEL_198;
     }
     do {
@@ -942,9 +936,9 @@ LABEL_80:
       *(_DWORD*)(v95 - 8) = -1;
       v95 -= 32;
     } while (v97 != v94);
-    v129_.v131 = v94;
-    v94 = v129_.v130;
-    if (v129_.v130 != 0) {
+    v127_.v131 = v94;
+    v94 = v127_.v130;
+    if (v127_.v130 != 0) {
     LABEL_198:
       v98 = 128;
       if (*(_QWORD*)(*v22 + 200) == 0) {
