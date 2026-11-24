@@ -4372,7 +4372,7 @@ __int64 nvidia_64de60(__int64 result, __int64 a2, __int64 a3, __int64* a4,
     }
     v12 = *a5;
     v13 = a5[3];
-    v14 = (char*)SdkData_e89ba0 + 48 * (int)v10;
+    v14 = (char*)SdkData_e89ba0 + 48LL * (int)v10;
     v15 = (unsigned __int8)v14[8];
     v79 = v14;
     v16 = (unsigned __int8)v14[9];
@@ -4723,7 +4723,7 @@ __int64 nvidia_64e500(__int64 a1, __int64 a2, __int64* a3, unsigned int* a4,
   }
   v11 = *a4;
   v12 = a4[3];
-  v13 = (char*)SdkData_e89ba0 + 48 * (int)v10;
+  v13 = (char*)SdkData_e89ba0 + 48LL * (int)v10;
   result = (unsigned __int8)v13[8];
   v42 = v13;
   v15 = (unsigned __int8)v13[9];

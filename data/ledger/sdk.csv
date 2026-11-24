@@ -25050,7 +25050,7 @@ ffee0,324,verified,src/nn/fs/unplaced.c,nn_fs_GetAndClearMemoryReportInfo
 649b10,40,verified,src/nvidia/unplaced_9.c,nvidia_649b10
 649b40,176,verified,src/nvidia/unplaced_9.c,nvidia_649b40
 649bf0,380,verified,src/nvidia/unplaced_9.c,nvidia_649bf0
-649d70,864,disputed,src/nvidia/unplaced_9.c,nvidia_649d70
+649d70,864,verified,src/nvidia/unplaced_9.c,nvidia_649d70
 64a0d0,12,verified,src/nn/sdk_trivial.cpp,_Z14SdkStub_64a0d0v
 64a0e0,172,verified,src/nvidia/unplaced_9.c,nvidia_64a0e0
 64a190,12,verified,src/nvidia/unplaced_9.c,nvidia_64a190
@@ -25138,8 +25138,8 @@ ffee0,324,verified,src/nn/fs/unplaced.c,nn_fs_GetAndClearMemoryReportInfo
 64d7a0,404,verified,src/nvidia/unplaced_9.c,nvidia_64d7a0
 64d950,176,verified,src/nvidia/unplaced_19.c,nvidia_64d950
 64da00,1000,verified,src/nvidia/unplaced_9.c,nvidia_64da00
-64de60,1668,disputed,src/nvidia/unplaced_9.c,nvidia_64de60
-64e500,828,disputed,src/nvidia/unplaced_9.c,nvidia_64e500
+64de60,1688,verified,src/nvidia/unplaced_9.c,nvidia_64de60
+64e500,828,verified,src/nvidia/unplaced_9.c,nvidia_64e500
 64e860,420,verified,src/nvidia/unplaced_9.c,nvidia_64e860
 64ea10,104,verified,src/nvidia/unplaced_9.c,nvidia_64ea10
 64ea80,700,verified,src/nvidia/unplaced_9.c,nvidia_64ea80

@@ -9796,7 +9796,7 @@ __int64 AIThink_1205840(__int64 a1, unsigned int a2, __int64 a3, __int64 a4)
       if ((GameRoutine_747a00(*(_QWORD*)(*(_QWORD*)GameData_21306a0[0] + 8LL),
                               v52, v16, *(_QWORD*)(v6 + 8), 0) &
            1) != 0) {
-        v53 = (char*)v105 + 2 * (int)v51;
+        v53 = (char*)v105 + 2LL * (int)v51;
         *v53 = v52;
         v53[1] = v16;
         if ((int)v51++ > 62) {

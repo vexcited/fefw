@@ -50499,7 +50499,7 @@ fffcb0,1244,verified,src/game/unnamed/b014_1.c,GameHr_fffcb0
 108b900,2136,verified,src/game/unplaced_5.c,game_108b900
 108c1a0,228,verified,src/game/unnamed/b015_0.c,GameHr_108c1a0
 108c2a0,268,verified,src/game/script/hub_character_natives_impl.c,HubCharacterNatives_108c2a0
-108c3c0,356,disputed,src/game/script/unplaced_14.c,game_script_108c3c0
+108c3c0,356,verified,src/game/script/unplaced_14.c,game_script_108c3c0
 108c540,232,verified,src/game/unnamed/b015_0.c,GameHr_108c540
 108c640,252,verified,src/game/unnamed/e006_0.c,GameHr_108c640
 108c760,300,verified,src/game/unplaced_5.c,game_108c760
@@ -55147,7 +55147,7 @@ fffcb0,1244,verified,src/game/unnamed/b014_1.c,GameHr_fffcb0
 1204820,1196,verified,src/game/unplaced_28.c,game_1204820
 1204e40,1640,verified,src/game/ai_think.c,game_AIThink_ActionMoveClan
 1205560,700,verified,src/game/ai_think.c,AIThink_1205560
-1205840,1780,disputed,src/game/ai_think.c,AIThink_1205840
+1205840,1664,disputed,src/game/ai_think.c,AIThink_1205840
 1205fc0,384,verified,src/game/ai_think.c,game_AIThink_ActionMoveRetreat
 1206440,1456,verified,src/game/ai_think.c,game_AIThink_ActionMoveItemHolder
 1206b80,1344,verified,src/game/ai_think.c,game_AIThink_MoveAgitation

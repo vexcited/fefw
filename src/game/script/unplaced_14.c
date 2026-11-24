@@ -1065,7 +1065,7 @@ const char* game_script_108c3c0(int a1)
   }
   v6 = 639;
 LABEL_21:
-  v8 = (&game_hub_g_motions)[5 * v6];
+  v8 = (&game_hub_g_motions)[5LL * v6];
   if (v8 == nullptr || *v8 == 45) {
     v8 = "Null";
     if (a1 == 1525034596) {

@@ -2065,7 +2065,7 @@ __int64 MovieHr_4a340(__int64 a1, __int64 a2, int a3, __int64 a4, __int64 a5,
       v353 = (_QWORD*)(a2 + 1300 * v294);
       do {
         --v293;
-        v354 = *(_QWORD*)((char*)v353 + 4 * (int)v26);
+        v354 = *(_QWORD*)((char*)v353 + 4LL * (int)v26);
         v355 = *(_QWORD*)((char*)v353 + v352 + 8);
         v356 = *(_QWORD*)((char*)v353 + v352 + 24);
         v353[2] = *(_QWORD*)((char*)v353 + v352 + 16);

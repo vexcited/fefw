@@ -2216,7 +2216,7 @@ unsigned int opus_silk_fixed_5f5e0(__int64 a1, __int64 a2, __int64 a3,
   opus_silk_fixed_5b060((__int64)v13, a4 + 2LL * v12 - 2 * v6, 1, v5);
   v14 = *(int*)(a1 + 4596);
   v15 = a4 + 2LL * v12 - 2 * v6 + 2 * v14;
-  v16 = 2LL * (int)(*(_DWORD*)(a1 + 4548) - 2 * (int)v14);
+  v16 = 2LL * (int)(*(_DWORD*)(a1 + 4548) - 2LL * (int)v14);
   memcpy_plt(&v13[v14], v15, v16);
   opus_silk_fixed_5b060((__int64)&v13[v14 + (unsigned __int64)v16 / 2],
                         v15 + v16, 2, v14);
