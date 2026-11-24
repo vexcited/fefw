@@ -6306,7 +6306,7 @@ __int64 GameHr_11945e0(__int64 a1, const char* a2, __int64* a3)
     do {
       v26 = *(unsigned int*)(v24 + 24);
       if ((_DWORD)v26 != -1) {
-        ((void (*)(__int64*, __int64))decltype_c81af0_ptr[v26])(&v36, v24);
+        ((void (*)(__int64*, __int64))GameData_2014ea0[v26])(&v36, v24);
       }
       *(_DWORD*)(v24 + 24) = -1;
       v24 -= 32;
@@ -6324,7 +6324,7 @@ __int64 GameHr_11945e0(__int64 a1, const char* a2, __int64* a3)
       v28 = v10 + v15;
       v29 = *(unsigned int*)(v10 + v15 - 8);
       if ((_DWORD)v29 != -1) {
-        ((void (*)(__int64*, __int64))decltype_c81af0_ptr[v29])(&f_.v33,
+        ((void (*)(__int64*, __int64))GameData_2014ea0[v29])(&f_.v33,
                                                                 v28 - 32);
       }
       v15 -= 32;

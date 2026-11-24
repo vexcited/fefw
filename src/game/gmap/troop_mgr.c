@@ -234,7 +234,7 @@ __n128 game_gmap_TroopMgr_Impl_UpdateCorps(__int64 a1, __int64 a2);
 __int64 game_gmap_TroopMgr_CanCreateCorps();
 __attribute__((swiftcall)) void TroopMgr_134b820(PSEUDO_X8 x8_, _QWORD* a1);
 __attribute__((swiftcall)) void TroopMgr_134bbe0(PSEUDO_X8 x8_, __int64 a1);
-void TroopMgr_134be40();
+void TroopMgr_134be40(__int64 a1);
 __int64 TroopMgr_134c680(__int64 a1);
 __int64 TroopMgr_134ca00_alt1(__int64 a1) __asm__("TroopMgr_134ca00");
 __int64 game_gmap_TroopMgr_EachEncountTroop(__int64 (*a1)(), __int64 a2);
@@ -4153,7 +4153,7 @@ __attribute__((swiftcall)) void TroopMgr_134bbe0(PSEUDO_X8 x8_, __int64 a1)
   }
 }
 
-void TroopMgr_134be40()
+void TroopMgr_134be40(__int64 a1)
 {
   __int64 (*v0)();
   __int64 v1;
@@ -4255,7 +4255,7 @@ void TroopMgr_134be40()
 
   if (game_GameModeData_instance_ != 0 &&
       (*(_BYTE*)(game_GameModeData_instance_ + 92) & 2) != 0) {
-    v0 = (__int64 (*)())TroopMgr_134c680_alt1();
+    v0 = (__int64 (*)())TroopMgr_134c680(a1);
     TroopMgr_134b820_alt1((void*)(&v90_.v90), (__int64)v0);
     v1 = X8CALL_X0(__int64, GameRoutine_134b980((void*)(&v88_.v88), v0));
     v2 = *(_DWORD*)(*(_QWORD*)v90_.v90 + 84LL);

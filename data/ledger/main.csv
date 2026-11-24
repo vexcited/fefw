@@ -52579,7 +52579,7 @@ fffcb0,1244,verified,src/game/unnamed/b014_1.c,GameHr_fffcb0
 1108560,12,verified,src/game/game_trivial.cpp,_Z16GameStub_1108560v
 1108570,44,verified,src/memory/new_delete.cpp,deleting destructor at 0x1108570
 11085a0,8,verified,src/game/game_trivial.cpp,_Z16GameStub_11085a0v
-11085c0,972,verified,src/game/unnamed/b016_1.c,GameHr_11085c0
+11085c0,976,verified,src/game/unnamed/b016_1.c,GameHr_11085c0
 11089a0,312,verified,src/game/unnamed/b016_0.c,GameHr_11089a0
 1108ae0,492,verified,src/game/character/character_ish_appear.c,CharacterIshAppear_Unknown5
 1108d00,400,verified,src/game/character/character_ish_appear.c,CharacterIshAppear_1108d00
@@ -54152,7 +54152,7 @@ fffcb0,1244,verified,src/game/unnamed/b014_1.c,GameHr_fffcb0
 1194380,56,verified,src/game/unnamed/b016_1.c,GameHr_1194380
 11943c0,216,verified,src/game/unplaced_20.c,game_11943c0
 11944d0,216,verified,src/game/unnamed/b016_1.c,GameHr_11944d0
-11945e0,640,disputed,src/game/unnamed/b016_1.c,GameHr_11945e0
+11945e0,640,verified,src/game/unnamed/b016_1.c,GameHr_11945e0
 1194890,340,verified,src/game/proc_manager.c,game_ProcManager_FindByDesc
 1194a00,1032,verified,src/game/unnamed/b016_2.c,GameHr_1194a00
 1194e80,672,verified,src/game/unnamed/b016_1.c,GameHr_1194e80
@@ -59827,7 +59827,7 @@ fffcb0,1244,verified,src/game/unnamed/b014_1.c,GameHr_fffcb0
 134b820,324,verified,src/game/gmap/troop_mgr.c,TroopMgr_134b820
 134b980,312,verified,src/game/gmap/troop_mgr.c,game_gmap_TroopMgr_GetEncountEnemyList
 134bbe0,524,verified,src/game/gmap/troop_mgr.c,TroopMgr_134bbe0
-134be40,88,disputed,src/game/gmap/troop_mgr.c,TroopMgr_134be40
+134be40,1160,verified,src/game/gmap/troop_mgr.c,TroopMgr_134be40
 134c680,696,verified,src/game/gmap/troop_mgr.c,TroopMgr_134c680
 134ca00,904,verified,src/game/gmap/troop_mgr.c,TroopMgr_134ca00
 134cdc0,672,verified,src/game/gmap/troop_mgr.c,game_gmap_TroopMgr_EachEncountTroop

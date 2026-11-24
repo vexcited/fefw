@@ -410,6 +410,7 @@ __int64 GameRoutine_125b8e0(_QWORD, _QWORD, _QWORD);
 __int64 GameRoutine_127be60(_QWORD);
 unsigned int GameRoutine_12daf00(void);
 unsigned __int8 GameRoutine_13261c0(_QWORD);
+__int64 GameRoutine_13261c0_alt1(_QWORD) __asm__("GameRoutine_13261c0");
 __int64 GameRoutine_132ffa0(_QWORD);
 __int64 GameRoutine_13300a0(_QWORD);
 __int64 GameRoutine_13305c0(_QWORD, _QWORD);
@@ -9489,7 +9490,8 @@ __int64 GameHr_14aeda0(__int64 result)
 LABEL_16:
   v9 = *v7;
 LABEL_17:
-  result = GameRoutine_13261c0(v9);
+  // The next call takes the whole register this one leaves.
+  result = GameRoutine_13261c0_alt1(v9);
   if ((unsigned __int8)result == 4) {
     return result;
   }
