@@ -6290,7 +6290,7 @@ __int64 GameHr_11945e0(__int64 a1, const char* a2, __int64* a3)
       *(_BYTE*)v18 = 0;
       *(_DWORD*)(v18 + 24) = -1;
       if (v19 != -1) {
-        v20 = GameData_2014fb0[v19];
+        v20 = GameData_2014fb0[(unsigned int)v19];
         v36 = v16 + v17;
         ((void (*)(__int64*))v20)(&v36);
         *(_DWORD*)(v18 + 24) = v19;

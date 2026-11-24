@@ -5186,7 +5186,7 @@ __int64 GameHr_d5bb40(__int64* a1, __int64 a2)
   *(_BYTE*)v13 = 0;
   *(_DWORD*)(v13 + 48) = -1;
   if (v12 != -1) {
-    v15 = GameData_1fdce38[v12];
+    v15 = GameData_1fdce38[(unsigned int)v12];
     v26 = v11 + v4;
     ((void (*)(__int64*, __int64))v15)(&v26, a2);
     v2 = *a1;
@@ -5205,7 +5205,7 @@ __int64 GameHr_d5bb40(__int64* a1, __int64 a2)
       *(_DWORD*)(v19 + 48) = -1;
       v20 = *(_DWORD*)(v2 + v18 + 48);
       if (v20 != -1) {
-        v21 = GameData_1fdce38[v20];
+        v21 = GameData_1fdce38[(unsigned int)v20];
         v26 = v17 + v18;
         ((void (*)(__int64*))v21)(&v26);
         *(_DWORD*)(v19 + 48) = v20;

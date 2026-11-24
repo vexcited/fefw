@@ -412,7 +412,7 @@ LABEL_26:
             *(_DWORD*)(v56 + 24) = -1;
             v57 = *(_DWORD*)(v52 + 24);
             if (v57 != -1) {
-              v58 = GameData_1fd3e18[v57];
+              v58 = GameData_1fd3e18[(unsigned int)v57];
               v91_.v91 = v56;
               ((void (*)(__int64*, __int64))v58)(&v91_.v91, v52);
               *(_DWORD*)(v56 + 24) = v57;
