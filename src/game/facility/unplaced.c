@@ -1122,7 +1122,7 @@ __int64 game_facility_94abe0(__int64 a1)
     if (!(v11 > 1)) {
       v11 = 1;
     }
-    if (!(*(_DWORD*)(game_GameModeData_instance_ + 72) < v11)) {
+    if (!(*(int*)(game_GameModeData_instance_ + 72) < v11)) {
       v12 = 0;
     }
     else {
@@ -1552,7 +1552,7 @@ __int64 game_facility_9c0c20(_DWORD* a1)
     v8 = game_map_history_g_transporter_ptr[0];
     do {
       if (v7 != 0) {
-        if (*(_DWORD*)(v7 + 80) >= v3) {
+        if (*(int*)(v7 + 80) >= v3) {
           goto LABEL_11;
         }
       }

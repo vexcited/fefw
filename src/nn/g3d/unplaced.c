@@ -669,7 +669,7 @@ __int64 nn_g3d_5e9f40(__int64 a1, __int64 a2)
   GameRoutine_5dfff0(a1, *(_DWORD*)(a2 + 56), (*(_WORD*)(a2 + 4) & 4) != 0);
   v4 = *(unsigned __int8*)(a2 + 66);
   *(_DWORD*)(a1 + 60) = v4;
-  v5 = v4 == 0 || *(_DWORD*)(a1 + 56) < v4;
+  v5 = v4 == 0 || *(int*)(a1 + 56) < v4;
   *(_DWORD*)(a1 + 64) = *GameData_2136530;
   if (!v5) {
     v6 = 0;

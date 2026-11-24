@@ -764,7 +764,7 @@ void nn_g3d_5f0040(__int64 a1, long double a2)
   v3 = *(unsigned __int16*)(a1 + 100);
   v5 = **(_DWORD**)(a1 + 8);
   v6 = *(_DWORD*)(a1 + 60);
-  if (v6 >= 1 && v6 <= *(_DWORD*)(a1 + 56)) {
+  if (v6 >= 1 && v6 <= *(int*)(a1 + 56)) {
     if (*(_WORD*)(a1 + 100) == 0) {
       return;
     }

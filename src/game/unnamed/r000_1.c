@@ -1474,7 +1474,7 @@ __int64 GameHr_2aa8a0(__int64 result, __int64 a2)
     v6 = v2;
     v2 = (_QWORD*)*v2;
   } while (v6 != *(_QWORD**)(result + 16) &&
-           *((_DWORD*)v2 - 35) > *(_DWORD*)(a2 + 260));
+           *((_DWORD*)v2 - 35) > *(int*)(a2 + 260));
   v7 = *v3;
   *v3 = (__int64)v2;
   *(_QWORD*)(v7 + 8) = v6;

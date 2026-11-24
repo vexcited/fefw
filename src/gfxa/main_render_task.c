@@ -3718,7 +3718,7 @@ __int64 MainRenderTask_bb8650(__int64 result, __int64* a2)
   else {
     v12 = *(_QWORD*)(result + 24);
     v13 = 0;
-    if ((signed int)v7 < *(_DWORD*)v12) {
+    if ((signed int)v7 < *(int*)v12) {
       v14 = (__int64*)(*(_QWORD*)(v12 + 112) + 48LL * v7);
       v13 = *v14;
       v9 = v14[1];

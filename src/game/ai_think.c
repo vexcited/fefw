@@ -33683,7 +33683,7 @@ void game_AIThink_ActionSpecialAttack_lambda0_Invoke(__int64 a1, _DWORD* a2)
       v8 = *(_QWORD*)(a1 + 16);
       v9 = *(_DWORD*)(v8 + 16);
       if ((v9 & 0x81) != 0) {
-        if (*(_DWORD*)v5 >= v7) {
+        if (*(int*)v5 >= v7) {
           return;
         }
         goto LABEL_6;
@@ -33697,15 +33697,15 @@ void game_AIThink_ActionSpecialAttack_lambda0_Invoke(__int64 a1, _DWORD* a2)
               return;
             }
           }
-          else if (*(_DWORD*)v5 >= v7) {
+          else if (*(int*)v5 >= v7) {
             return;
           }
           goto LABEL_6;
         }
       }
-      if (*(_DWORD*)v5 < v7 || (v14 = *(_DWORD*)(v5 + 28)) < 0 ||
-          *(_DWORD*)v5 <= v7 &&
-              (v14 | (*(_DWORD*)(v5 + 32) << 16)) > (v6[3] | (v6[4] << 16))) {
+      if (*(int*)v5 < v7 || (v14 = *(int*)(v5 + 28)) < 0 ||
+          *(int*)v5 <= v7 &&
+              (v14 | (*(int*)(v5 + 32) << 16)) > (v6[3] | (v6[4] << 16))) {
       LABEL_6:
         *(_DWORD*)v5 = v7;
         *(_QWORD*)(*(_QWORD*)(a1 + 32) + 8LL) =
@@ -34058,7 +34058,7 @@ LABEL_41:
   v53 = *(_QWORD*)(a1 + 32);
   v54 = *(_DWORD*)(v53 + 16);
   if ((v54 & 0x81) != 0) {
-    if (*(_DWORD*)v52 >= v51) {
+    if (*(int*)v52 >= v51) {
       return result;
     }
     goto LABEL_101;
@@ -34072,21 +34072,21 @@ LABEL_41:
           return result;
         }
       }
-      else if (*(_DWORD*)v52 >= v51) {
+      else if (*(int*)v52 >= v51) {
         return result;
       }
       goto LABEL_101;
     }
   }
-  if (*(_DWORD*)v52 < v51 || (v58 = *(_DWORD*)(v52 + 28)) < 0) {
+  if (*(int*)v52 < v51 || (v58 = *(int*)(v52 + 28)) < 0) {
     goto LABEL_101;
   }
   wantLo = *(_DWORD*)(*(_QWORD*)(a1 + 56) + 12LL);
   wantHi = *(_DWORD*)(*(_QWORD*)(a1 + 56) + 16LL);
   // Both fields are read before the order test.
   __asm__ volatile("" : "+r"(wantLo), "+r"(wantHi));
-  if (*(_DWORD*)v52 <= v51 &&
-      !((v58 | (*(_DWORD*)(v52 + 32) << 16)) <= (wantLo | (wantHi << 16)))) {
+  if (*(int*)v52 <= v51 &&
+      !((v58 | (*(int*)(v52 + 32) << 16)) <= (wantLo | (wantHi << 16)))) {
   LABEL_101:
     *(_DWORD*)v52 = v51;
     *(_QWORD*)(*(_QWORD*)(a1 + 72) + 8LL) =

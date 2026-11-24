@@ -1360,7 +1360,7 @@ __int64 IRoute_7502e0(__int64 a1, int a2, int a3, __int64 a4, __int64 a5,
     if (*(_DWORD*)(a1 + 172) + (int)result <=
         *(_DWORD*)(*(_QWORD*)(v25 + 8) + 8LL)) {
       v26 = a1 + 8;
-      v27 = ((unsigned int)v20 >> 30) & 2 | (v22 < 0);
+      v27 = ((int)v20 >> 30) & 2 | (v22 < 0);
       if (v22 > 0) {
         LOBYTE(v27) = v27 | 4;
       }
@@ -1410,7 +1410,7 @@ __int64 IRoute_7502e0(__int64 a1, int a2, int a3, __int64 a4, __int64 a5,
       *(_DWORD*)(a1 + 160) = v30;
       if ((_DWORD)v32 != 0) {
         v65 = v32 & 3;
-        if ((unsigned int)v32 >= 4) {
+        if ((int)v32 >= 4) {
           v67 = (unsigned int)v32 & 0xFFFFFFFC;
           v68 = (unsigned __int8*)(a1 + 11);
           v66 = 0;
@@ -1505,7 +1505,7 @@ __int64 IRoute_7502e0(__int64 a1, int a2, int a3, __int64 a4, __int64 a5,
                  (int*)&f_.v79, a5, a6);
   result = v19[1];
   LODWORD(v49) = a2 + 32 * a3;
-  if ((unsigned int)v49 >= 0x400) {
+  if ((int)v49 >= 0x400) {
     v49 = 0;
   }
   else {
