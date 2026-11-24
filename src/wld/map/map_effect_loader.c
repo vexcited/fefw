@@ -341,7 +341,8 @@ __int64 wld_map_MapEffectLoader_LoadAsync_lambda0_Invoke(__int64 result,
     v141 = *(_QWORD*)(result + 8);
     v4 = ElfFile_631220(v2 + 800, "world::data::s_disposEffect");
     v5 = ElfFile_631220(v2 + 800, "world::data::disposEffect_num");
-    v6 = *(_OWORD*)(v3 + 64);
+    // The original loads the block before anything else uses it.
+    v6 = *(volatile _OWORD*)(v3 + 64);
     v7 = (unsigned int*)v5;
     v144 = 0;
     v145 = 0;
