@@ -1935,8 +1935,10 @@ __int64 nvidia_135980(__int64 a1)
   __int64 v42;
   char v43;
   unsigned int v44;
-  _BYTE v45[97];
-  _BYTE v46[7];
+  struct {
+    _BYTE v45[97];
+    _BYTE v46[7];
+  } v45_;
   __int64 v47;
   _DWORD v48[3];
 
@@ -1999,7 +2001,7 @@ LABEL_6:
               v12 = v7;
               do {
                 v13 = v4 + 32LL * v12;
-                v14 = &v45[v11];
+                v14 = &v45_.v45[v11];
                 v8 += 4;
                 v11 += 96;
                 *v14 = *(_BYTE*)v13;
@@ -2047,7 +2049,7 @@ LABEL_6:
             }
             v19 = v10 & 3;
             if ((v10 & 3) != 0) {
-              v20 = (unsigned __int64*)&v45[24 * v8 + 8];
+              v20 = (unsigned __int64*)&v45_.v45[24 * v8 + 8];
               v21 = v7 + v8;
               do {
                 v22 = v4 + 32LL * v21;
@@ -2063,13 +2065,13 @@ LABEL_6:
                 v20 += 3;
               } while (v19 != 0);
             }
-            v23 = NvRmGpuProfilerV2RegOpsExec_plt(*(_QWORD*)(v2 + 40), v45, v9,
-                                                  v48, &v47);
+            v23 = NvRmGpuProfilerV2RegOpsExec_plt(*(_QWORD*)(v2 + 40), v45_.v45,
+                                                  v9, v48, &v47);
             if (v23 != 0) {
               break;
             }
             if ((unsigned int)v3 >= 8) {
-              v25 = v46;
+              v25 = v45_.v46;
               v24 = 0;
               do {
                 v26 = v7 + (unsigned int)v24;
@@ -2107,7 +2109,7 @@ LABEL_6:
             }
             v36 = v10 & 7;
             if ((v10 & 7) != 0) {
-              v37 = &v45[24 * v24 + 8];
+              v37 = &v45_.v45[24 * v24 + 8];
               v38 = v7 + v24;
               do {
                 v39 = v4 + 32LL * v38++;

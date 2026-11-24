@@ -2038,8 +2038,10 @@ _WORD* opus_silk_fixed_5ef40(__int64 a1, _WORD* a2, __int64 a3, int a4)
   int v16;
   int v17;
   int v18;
-  _QWORD v20[4];
-  _QWORD v21[4];
+  struct {
+    _QWORD v20[4];
+    _QWORD v21[4];
+  } v20_;
   __int64 v22;
   __int64 v23;
   _QWORD v24[8];
@@ -2056,8 +2058,8 @@ _WORD* opus_silk_fixed_5ef40(__int64 a1, _WORD* a2, __int64 a3, int a4)
   memset(v24, 0, sizeof(v24));
   v22 = 0;
   v23 = 0;
-  memset(v21, 0, sizeof(v21));
-  memset(v20, 0, sizeof(v20));
+  memset(v20_.v21, 0, sizeof(v20_.v21));
+  memset(v20_.v20, 0, sizeof(v20_.v20));
   *(_BYTE*)(a1 + 4783) = 4;
   result = (_WORD*)opus_silk_fixed_5b1c0((_DWORD*)&v23 + 1, (int*)&v22 + 1,
                                          (__int64)v27, a3, a4, v10, v5, v4);
@@ -2078,11 +2080,12 @@ _WORD* opus_silk_fixed_5ef40(__int64 a1, _WORD* a2, __int64 a3, int a4)
         memset_plt(v14, 0, 4LL * v10);
         v15 = 3;
         while (1) {
-          opus_silk_560c0((__int64)v20, a1 + 4500, (__int64)a2, v15,
+          opus_silk_560c0((__int64)v20_.v20, a1 + 4500, (__int64)a2, v15,
                           *(_DWORD*)(a1 + 4640));
-          MovieRoutine_45380((__int64)v21, (__int64)v20, *(_DWORD*)(a1 + 4640));
-          silk_LPC_analysis_filter((__int64)v14, a3, (__int16*)v21, 2 * v10,
-                                   *(_DWORD*)(a1 + 4640));
+          MovieRoutine_45380((__int64)v20_.v21, (__int64)v20_.v20,
+                             *(_DWORD*)(a1 + 4640));
+          silk_LPC_analysis_filter((__int64)v14, a3, (__int16*)v20_.v21,
+                                   2 * v10, *(_DWORD*)(a1 + 4640));
           silk_sum_sqr_shift((_DWORD*)&v26 + 1, (int*)&v25 + 1,
                              (__int64)&v14[2 * *(int*)(a1 + 4640)],
                              v10 - *(_DWORD*)(a1 + 4640));
@@ -2194,8 +2197,10 @@ unsigned int opus_silk_fixed_5f5e0(__int64 a1, __int64 a2, __int64 a3,
   } v56_;
   _QWORD v58[4];
   __int64 v59;
-  _QWORD v60[7];
-  _QWORD v61[4];
+  struct {
+    _QWORD v60[7];
+    _QWORD v61[4];
+  } v60_;
   _QWORD v62[8];
   __int64 v63;
 
@@ -2207,8 +2212,8 @@ unsigned int opus_silk_fixed_5f5e0(__int64 a1, __int64 a2, __int64 a3,
   v56_.v57 = a1 + 4096;
   v11 = *(_DWORD*)(a1 + 4584);
   memset(v62, 0, sizeof(v62));
-  memset(v61, 0, sizeof(v61));
-  memset(v60, 0, sizeof(v60));
+  memset(v60_.v61, 0, sizeof(v60_.v61));
+  memset(v60_.v60, 0, sizeof(v60_.v60));
   v59 = 0;
   v12 = v11 + v5 + v7;
   memset(v58, 0, sizeof(v58));
@@ -2225,7 +2230,7 @@ unsigned int opus_silk_fixed_5f5e0(__int64 a1, __int64 a2, __int64 a3,
                 *(_DWORD*)(a1 + 4648) + 1);
   v17 = *(_DWORD*)(a1 + 4648);
   LODWORD(v62[0]) += ((unsigned __int64)(33LL * SLODWORD(v62[0])) >> 15) + 1;
-  v18 = MovieRoutine_64c40((__int64)v61, (unsigned int*)v62, v17);
+  v18 = MovieRoutine_64c40((__int64)v60_.v61, (unsigned int*)v62, v17);
   if (v18 <= 1) {
     v19 = 1;
   }
@@ -2269,7 +2274,7 @@ unsigned int opus_silk_fixed_5f5e0(__int64 a1, __int64 a2, __int64 a3,
     v33 = v30;
   }
   *(_DWORD*)(a2 + 392) = v33;
-  MovieRoutine_5ff80((__int64)&v59, (__int64)v61, *(_DWORD*)(a1 + 4648));
+  MovieRoutine_5ff80((__int64)&v59, (__int64)v60_.v61, *(_DWORD*)(a1 + 4648));
   v34 = *(_DWORD*)(a1 + 4648);
   if (v34 >= 1) {
     v35 = v34 & 3;
@@ -2281,7 +2286,7 @@ unsigned int opus_silk_fixed_5f5e0(__int64 a1, __int64 a2, __int64 a3,
       goto LABEL_40;
     }
     v37 = 0;
-    v38 = (int*)v60;
+    v38 = (int*)v60_.v60;
     v39 = (_WORD*)v58 + 2;
     do {
       v40 = *(v38 - 1);
@@ -2327,7 +2332,7 @@ unsigned int opus_silk_fixed_5f5e0(__int64 a1, __int64 a2, __int64 a3,
     if ((v34 & 3) != 0) {
     LABEL_40:
       v47 = (_WORD*)v58 + v36;
-      v48 = (int*)&v60[-1] + v36;
+      v48 = (int*)&v60_.v60[-1] + v36;
       do {
         v49 = *v48++;
         v50 = v49 >> 12;
@@ -2460,14 +2465,16 @@ _DWORD* opus_silk_fixed_5fa60(__int64 a1, __int64 a2, __int64 a3, __int64 a4,
     __int64 v74;
     __int64 v75;
   } v72_;
-  _QWORD v76[2];
-  _QWORD v77[2];
+  struct {
+    _QWORD v76[2];
+    _QWORD v77[2];
+  } v76_;
 
   v5 = *(unsigned int*)(a1 + 4580);
-  v77[0] = 0;
-  v77[1] = 0;
-  v76[0] = 0;
-  v76[1] = 0;
+  v76_.v77[0] = 0;
+  v76_.v77[1] = 0;
+  v76_.v76[0] = 0;
+  v76_.v76[1] = 0;
   if ((unsigned int)v5 < 1) {
     goto LABEL_48;
   }
@@ -2527,7 +2534,7 @@ _DWORD* opus_silk_fixed_5fa60(__int64 a1, __int64 a2, __int64 a3, __int64 a4,
     } while (v11 != 0);
   }
 LABEL_28:
-  v21 = (int*)v77;
+  v21 = (int*)v76_.v77;
   v22 = v5;
   v23 = (int*)a2;
   if (v13 >= 0) {
@@ -2538,7 +2545,7 @@ LABEL_28:
   }
   v25 = __clz(v24);
   v26 = v13 << (v25 - 1);
-  v27 = (unsigned int*)v76;
+  v27 = (unsigned int*)v76_.v76;
   do {
     v29 = *v23++;
     v28 = v29;
@@ -2613,7 +2620,7 @@ LABEL_48:
                        *(_DWORD*)(a1 + 4588), *(_DWORD*)(a1 + 4580));
     silk_LTP_scale_ctrl_FIX(a1, a2, a5);
     opus_silk_5ace0((__int64)v44, a4 - 2LL * *(int*)(a1 + 4640), a2 + 80,
-                    a2 + 124, (__int64)v77, *(_DWORD*)(a1 + 4588),
+                    a2 + 124, (__int64)v76_.v77, *(_DWORD*)(a1 + 4588),
                     *(_DWORD*)(a1 + 4580), *(_DWORD*)(a1 + 4640));
     if (*(_DWORD*)(a1 + 4664) != 0) {
     LABEL_50:
@@ -2628,7 +2635,7 @@ LABEL_48:
       v52 = a4 - 2LL * v41;
       LODWORD(v53) = *(_DWORD*)(a1 + 4588);
       do {
-        opus_651a0(v51, v52, *((_DWORD*)v77 + v50), v41 + v53);
+        opus_651a0(v51, v52, *((_DWORD*)v76_.v77 + v50), v41 + v53);
         v53 = *(int*)(a1 + 4588);
         v41 = *(_DWORD*)(a1 + 4640);
         ++v50;
@@ -2702,7 +2709,7 @@ LABEL_72:
   silk_process_NLSFs(a1, a2 + 16, (__int16*)&v72_.v72, a1 + 4500);
   result = silk_residual_energy_FIX(
       (_DWORD*)(a2 + 400), a2 + 416, (__int64)v44, (__int16*)(a2 + 16),
-      (__int64)v76, *(_DWORD*)(a1 + 4588), *(_DWORD*)(a1 + 4580),
+      (__int64)v76_.v76, *(_DWORD*)(a1 + 4588), *(_DWORD*)(a1 + 4580),
       *(_DWORD*)(a1 + 4640), *(_DWORD*)(a1 + 5108));
   v70 = v72_.v73;
   *(_QWORD*)(a1 + 4500) = v72_.v72;

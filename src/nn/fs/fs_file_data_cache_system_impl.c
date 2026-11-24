@@ -206,8 +206,10 @@ __int64 nn_fs_detail_FileDataCacheSystem_Read(__int64 a1, __int64 a2,
   unsigned int v31;
   __int64 v34;
   __int64 v35;
-  _QWORD v36[5];
-  _QWORD v37[2];
+  struct {
+    _QWORD v36[5];
+    _QWORD v37[2];
+  } v36_;
   __int64 v38;
   signed __int64 v39;
   __int64 v40;
@@ -231,19 +233,19 @@ __int64 nn_fs_detail_FileDataCacheSystem_Read(__int64 a1, __int64 a2,
   v41 = 0;
   v38 = 0;
   v39 = 0;
-  v37[0] = a3;
-  v37[1] = a5;
+  v36_.v37[0] = a3;
+  v36_.v37[1] = a5;
   *(_BYTE*)(a8 + 136) = 1;
   if (a5 < 0) {
     goto LABEL_51;
   }
   v10 = a1;
   v12 = a3 & 0xFFFFFFFFFFFFC000LL;
-  v36[0] = a3;
-  v36[1] = a5;
-  v36[2] = a6;
-  v36[3] = a7;
-  v36[4] = a2;
+  v36_.v36[0] = a3;
+  v36_.v36[1] = a5;
+  v36_.v36[2] = a6;
+  v36_.v36[3] = a7;
+  v36_.v36[4] = a2;
   nn_os_AcquireReadLock_plt(a1 + 120);
   v13 = a5 + a3;
   if (v12 < a5 + a3) {
@@ -286,7 +288,7 @@ __int64 nn_fs_detail_FileDataCacheSystem_Read(__int64 a1, __int64 a2,
       v23 = *(_QWORD*)(v10 + 24);
       if (v23 != 0) {
         (*(void (**)(__int64, _QWORD*, signed __int64))(*(_QWORD*)v23 + 32LL))(
-            v23, v36, v12);
+            v23, v36_.v36, v12);
         v16 = v24;
       }
       if ((v18 & 1) != 0) {
@@ -341,10 +343,11 @@ __int64 nn_fs_detail_FileDataCacheSystem_Read(__int64 a1, __int64 a2,
           }
         }
       LABEL_28:
-        nn_fs_detail_FileDataCacheSystem_DoCopy_plt(v10, a2, a4, &v39, v37);
+        nn_fs_detail_FileDataCacheSystem_DoCopy_plt(v10, a2, a4, &v39,
+                                                    v36_.v37);
         LOBYTE(v38) = 0;
         v28 = nn_fs_detail_FileDataCacheSystem_DoCache_plt(v10, a2, a4, &v42,
-                                                           v37, v44);
+                                                           v36_.v37, v44);
         if (v28 == 0) {
           v18 = 1;
           v14 = 0x4000;
@@ -357,7 +360,8 @@ __int64 nn_fs_detail_FileDataCacheSystem_Read(__int64 a1, __int64 a2,
         goto LABEL_49;
       }
       if (v17) {
-        nn_fs_detail_FileDataCacheSystem_DoCopy_plt(v10, a2, a4, &v39, v37);
+        nn_fs_detail_FileDataCacheSystem_DoCopy_plt(v10, a2, a4, &v39,
+                                                    v36_.v37);
         BYTE4(v34) = 0;
         LOBYTE(v38) = 0;
       }
@@ -377,11 +381,11 @@ __int64 nn_fs_detail_FileDataCacheSystem_Read(__int64 a1, __int64 a2,
       break;
     }
     if ((v34 & 0x100000000LL) != 0) {
-      nn_fs_detail_FileDataCacheSystem_DoCopy_plt(v10, a2, a4, &v39, v37);
+      nn_fs_detail_FileDataCacheSystem_DoCopy_plt(v10, a2, a4, &v39, v36_.v37);
     }
     if ((v34 & 1) != 0) {
-      v28 = nn_fs_detail_FileDataCacheSystem_DoCache_plt(v10, a2, a4, &v42, v37,
-                                                         v44);
+      v28 = nn_fs_detail_FileDataCacheSystem_DoCache_plt(v10, a2, a4, &v42,
+                                                         v36_.v37, v44);
       if (v28 != 0) {
       LABEL_49:
         v31 = v28;
@@ -391,7 +395,7 @@ __int64 nn_fs_detail_FileDataCacheSystem_Read(__int64 a1, __int64 a2,
   }
   v30 = *(_QWORD*)(v10 + 24);
   if (v30 != 0) {
-    (*(void (**)(__int64, _QWORD*))(*(_QWORD*)v30 + 40LL))(v30, v36);
+    (*(void (**)(__int64, _QWORD*))(*(_QWORD*)v30 + 40LL))(v30, v36_.v36);
   }
   v31 = 0;
 LABEL_48:

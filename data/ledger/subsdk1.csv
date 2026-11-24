@@ -7854,7 +7854,7 @@ ff600,3424,verified,src/nvidia/unplaced_21.c,nvidia_ff600
 20e110,40,verified,src/nvidia/unnamed/c004_1.c,CudaDriverHr_20e110
 20e140,52,verified,src/nvidia/unnamed/c004_1.c,CudaDriverHr_20e140
 20e180,80,verified,src/nvidia/unnamed/c004_1.c,CudaDriverHr_20e180
-20e1e0,1104,disputed,src/nvidia/unplaced_21.c,nvidia_20e1e0
+20e1e0,988,disputed,src/nvidia/unplaced_21.c,nvidia_20e1e0
 20e7f0,100,verified,src/nvidia/unnamed/c004_1.c,CudaDriverHr_20e7f0
 20e860,300,verified,src/nvidia/unnamed/c004_1.c,CudaDriverHr_20e860
 20e9a0,400,verified,src/nvidia/unnamed/c004_1.c,CudaDriverHr_20e9a0

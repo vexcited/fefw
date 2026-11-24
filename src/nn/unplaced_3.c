@@ -4476,8 +4476,10 @@ __int64 nn_65fce0(__int64 a1, int a2, __int64 a3, unsigned __int64 a4)
   __int64 v93;
   __int64 v94;
   int v97;
-  uint16x4_t v98[195];
-  _QWORD v99[10];
+  struct {
+    uint16x4_t v98[195];
+    _QWORD v99[10];
+  } v98_;
   struct {
     __int64 v100[6];
     int v101;
@@ -4580,8 +4582,10 @@ __int64 nn_65fce0(__int64 a1, int a2, __int64 a3, unsigned __int64 a4)
   _QWORD v154[2016];
   _DWORD v155[2];
   int v156;
-  _QWORD v157[4];
-  _QWORD v158[43];
+  struct {
+    _QWORD v157[4];
+    _QWORD v158[43];
+  } v157_;
 
   v10 = COERCE_AS(__typeof__(v10),
                   PSEUDO_REGISTER(unsigned long long, "x4", "=r")),
@@ -4589,17 +4593,17 @@ __int64 nn_65fce0(__int64 a1, int a2, __int64 a3, unsigned __int64 a4)
                   PSEUDO_REGISTER(unsigned long long, "x3", "=r"));
   v100_.v103 = 0;
   v100_.v101 = 0;
-  v158[0] = 0;
-  memset(v99, 0, 72);
+  v157_.v158[0] = 0;
+  memset(v98_.v99, 0, 72);
   memset(&v112_.v112[3], 0, 24);
-  v158[5] = 0;
-  v158[10] = 0;
-  v158[15] = 0;
-  v158[20] = 0;
-  v158[25] = 0;
-  v158[30] = 0;
-  v158[35] = 0;
-  v158[40] = 0;
+  v157_.v158[5] = 0;
+  v157_.v158[10] = 0;
+  v157_.v158[15] = 0;
+  v157_.v158[20] = 0;
+  v157_.v158[25] = 0;
+  v157_.v158[30] = 0;
+  v157_.v158[35] = 0;
+  v157_.v158[40] = 0;
   v100_.v102 = 0;
   v100_.v105 = 0;
   v100_.v100[0] = 0;
@@ -4669,7 +4673,7 @@ __int64 nn_65fce0(__int64 a1, int a2, __int64 a3, unsigned __int64 a4)
   v148_.v149 = 0;
   memset(&v142_.v142[3], 0, 24);
   memset(&v148_.v148[3], 0, 24);
-  memset_plt((void*)v98, nullptr, 1564, a4),
+  memset_plt((void*)v98_.v98, nullptr, 1564, a4),
       v10 = COERCE_AS(__typeof__(v10),
                       PSEUDO_REGISTER(unsigned long long, "x4", "=r")),
       v21 = COERCE_AS(__typeof__(v21),
@@ -4714,7 +4718,7 @@ __int64 nn_65fce0(__int64 a1, int a2, __int64 a3, unsigned __int64 a4)
     while (1) {
       v17 = *v15;
       v15 += 2;
-      v18 = SdkRoutine_662a90((__int64)v157, v17),
+      v18 = SdkRoutine_662a90((__int64)v157_.v157, v17),
       v10 = COERCE_AS(__typeof__(v10),
                       PSEUDO_REGISTER(unsigned long long, "x4", "=r")),
       v21 = COERCE_AS(__typeof__(v21),
@@ -4796,7 +4800,7 @@ __int64 nn_65fce0(__int64 a1, int a2, __int64 a3, unsigned __int64 a4)
           if (*v36 != 0) {
             ++v28;
           }
-          v38 = v157[5 * (int)v35 + 4];
+          v38 = v157_.v157[5 * (int)v35 + 4];
           v39 = (*(__int64 (**)(__int64))(*(_QWORD*)v38 + 16LL))(v38),
           v10 = COERCE_AS(__typeof__(v10),
                           PSEUDO_REGISTER(unsigned long long, "x4", "=r")),
@@ -4878,7 +4882,7 @@ __int64 nn_65fce0(__int64 a1, int a2, __int64 a3, unsigned __int64 a4)
           else {
             v46 = v94;
           }
-          v99[v35] = v45;
+          v98_.v99[v35] = v45;
           if ((*(unsigned int (**)(__int64))(*(_QWORD*)v38 + 1072LL))(v38) !=
               0) {
             ++v34;
@@ -4913,7 +4917,7 @@ __int64 nn_65fce0(__int64 a1, int a2, __int64 a3, unsigned __int64 a4)
       v29 = 0;
       v30 = 0;
       v31 = 0;
-      v32 = v158;
+      v32 = v157_.v158;
       do {
         if (((1 << v29) & (*(_DWORD*)(a1 + 128) >> 18) & 0x1FF) != 0) {
           v30 += (*(unsigned int (**)(_QWORD))(*(_QWORD*)*v32 + 1072LL))(*v32),
@@ -4937,7 +4941,7 @@ __int64 nn_65fce0(__int64 a1, int a2, __int64 a3, unsigned __int64 a4)
           v57 = 0;
           v58 = 0;
           *(_QWORD*)(*(_QWORD*)(a1 + 120) + 8LL) = v55;
-          v59 = v158;
+          v59 = v157_.v158;
           do {
             if (((1 << v57) & (*(_DWORD*)(a1 + 128) >> 18) & 0x1FF) != 0) {
               v60 = (_QWORD*)*v59;
@@ -4996,28 +5000,28 @@ LABEL_82:
       v73 = &v156;
       do {
         if (*(v73 - 2) == v66) {
-          memcpy_plt(v98, v70 + 2, 1564),
+          memcpy_plt(v98_.v98, v70 + 2, 1564),
               v10 = COERCE_AS(__typeof__(v10),
                               PSEUDO_REGISTER(unsigned long long, "x4", "=r")),
               v21 = COERCE_AS(__typeof__(v21),
                               PSEUDO_REGISTER(unsigned long long, "x3", "=r"));
         }
         if (*(v73 - 1) == v66) {
-          memcpy_plt(v98, v70 + 2, 1564),
+          memcpy_plt(v98_.v98, v70 + 2, 1564),
               v10 = COERCE_AS(__typeof__(v10),
                               PSEUDO_REGISTER(unsigned long long, "x4", "=r")),
               v21 = COERCE_AS(__typeof__(v21),
                               PSEUDO_REGISTER(unsigned long long, "x3", "=r"));
         }
         if (*v73 == v66) {
-          memcpy_plt(v98, v70 + 2, 1564),
+          memcpy_plt(v98_.v98, v70 + 2, 1564),
               v10 = COERCE_AS(__typeof__(v10),
                               PSEUDO_REGISTER(unsigned long long, "x4", "=r")),
               v21 = COERCE_AS(__typeof__(v21),
                               PSEUDO_REGISTER(unsigned long long, "x3", "=r"));
         }
         if (v73[1] == v66) {
-          memcpy_plt(v98, v70 + 2, 1564),
+          memcpy_plt(v98_.v98, v70 + 2, 1564),
               v10 = COERCE_AS(__typeof__(v10),
                               PSEUDO_REGISTER(unsigned long long, "x4", "=r")),
               v21 = COERCE_AS(__typeof__(v21),
@@ -5037,7 +5041,7 @@ LABEL_82:
           do {
             v78 = (int)v155[v76];
             v79 = *(_QWORD*)(a3 + 16 * v76);
-            v80 = v99[v78];
+            v80 = v98_.v99[v78];
             v81 = &v154[224 * (int)v78];
             if (v80 != 0) {
               v82 = *((unsigned int*)v81 + 404);
@@ -5107,7 +5111,7 @@ LABEL_82:
     do {
       v75 = *v74++;
       if (v75 == v66) {
-        memcpy_plt(v98, v70 + 2, 1564),
+        memcpy_plt(v98_.v98, v70 + 2, 1564),
             v10 = COERCE_AS(__typeof__(v10),
                             PSEUDO_REGISTER(unsigned long long, "x4", "=r")),
             v21 = COERCE_AS(__typeof__(v21),
@@ -5121,7 +5125,7 @@ LABEL_82:
   if (v97 == v65 && v28 == v65) {
     *(_QWORD*)(a1 + 128) = v64 | 0x8000000;
   LABEL_94:
-    SdkRoutine_693860(a1, v100_.v100, v98),
+    SdkRoutine_693860(a1, v100_.v100, v98_.v98),
         v10 = COERCE_AS(__typeof__(v10),
                         PSEUDO_REGISTER(unsigned long long, "x4", "=r")),
         v21 = COERCE_AS(__typeof__(v21),

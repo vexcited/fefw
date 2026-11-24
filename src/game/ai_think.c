@@ -16225,10 +16225,14 @@ bool AIThink_121a340(_QWORD* a1, __int64 a2)
   __int64 v114;
   __int64 v115;
   int v116;
-  _QWORD v117[2];
-  _BYTE v118[2224];
-  _BYTE v119[2232];
-  _QWORD v120[2];
+  struct {
+    _QWORD v117[2];
+    _BYTE v118[2224];
+  } v117_;
+  struct {
+    _BYTE v119[2232];
+    _QWORD v120[2];
+  } v119_;
   __int64 v121;
   __int64 v122;
   __int64 v123;
@@ -16271,10 +16275,10 @@ bool AIThink_121a340(_QWORD* a1, __int64 a2)
   }
   GameRoutine_11fe0c0(v128, *a1);
   v10 = GameData_21306b8[0];
-  v117[0] = GameData_21306b8[0] + 16;
-  GameHr_6c2b50_alt2(v118);
-  GameHr_6c2b50_alt2(v119);
-  GameRoutine_790080(v120);
+  v117_.v117[0] = GameData_21306b8[0] + 16;
+  GameHr_6c2b50_alt2(v117_.v118);
+  GameHr_6c2b50_alt2(v119_.v119);
+  GameRoutine_790080(v119_.v120);
   v13 = *((_DWORD*)a1 + 4);
   v14 = *((_DWORD*)a1 + 5);
   v109 = -1;
@@ -16284,7 +16288,7 @@ bool AIThink_121a340(_QWORD* a1, __int64 a2)
   v113 = 0;
   v100 = v13;
   v15 = *a1;
-  v117[0] = GameData_21308b8 + 16;
+  v117_.v117[0] = GameData_21308b8 + 16;
   v126 = 0;
   v107 = 0;
   v108 = -1;
@@ -16572,14 +16576,14 @@ bool AIThink_121a340(_QWORD* a1, __int64 a2)
             v107 = v74;
             v114 = -1;
             v115 = 0;
-            game_128df90(v117, &v107);
-            AiInterferenceSimulator_128e230(v117, &v107);
-            GameHr_11fbb20_alt2(v117);
-            AIBattleSimulator_11fbe50((__int64)v117, 0);
-            AIBattleSimulator_11fbe50((__int64)v117, 1);
-            AiBattleSimulator_11fc090_alt3(v117, 0);
-            v75 = AiBattleSimulator_11fc090_alt3(v117, 1);
-            AIBattleSimulator_11fc220((__int64)v117, v75);
+            game_128df90(v117_.v117, &v107);
+            AiInterferenceSimulator_128e230(v117_.v117, &v107);
+            GameHr_11fbb20_alt2(v117_.v117);
+            AIBattleSimulator_11fbe50((__int64)v117_.v117, 0);
+            AIBattleSimulator_11fbe50((__int64)v117_.v117, 1);
+            AiBattleSimulator_11fc090_alt3(v117_.v117, 0);
+            v75 = AiBattleSimulator_11fc090_alt3(v117_.v117, 1);
+            AIBattleSimulator_11fc220((__int64)v117_.v117, v75);
             v15 = v99;
             v76 = (int)v127;
             v77 = (*(__int64 (**)(__int64))(*(_QWORD*)v89 + 152LL))(v89);
@@ -16617,20 +16621,20 @@ bool AIThink_121a340(_QWORD* a1, __int64 a2)
   v10 = GameData_21306b8[0];
   v23 = (v8[3] & 0x80000000) == 0;
 LABEL_141:
-  v117[0] = v10 + 16;
-  v120[0] = GameData_212d238[0] + 16;
+  v117_.v117[0] = v10 + 16;
+  v119_.v120[0] = GameData_212d238[0] + 16;
   v124[1125] = GameData_212da50[0] + 2;
   if (v125 != 0) {
     (*(void (**)(__int64))(*(_QWORD*)v125 + 8LL))(v125);
     v125 = 0;
   }
-  v120[1] = GameData_212d258[0] + 2;
+  v119_.v120[1] = GameData_212d258[0] + 2;
   BattleSide_Destructor_alt3(v124, v11, v12);
   BattleSide_Destructor_alt3(&v123, v83, v84);
   BattleSide_Destructor_alt3(&v122, v85, v86);
   BattleSide_Destructor_alt3(&v121, v87, v88);
-  game_Unit_Destroy_Unit_alt3(v119);
-  game_Unit_Destroy_Unit_alt3(v118);
+  game_Unit_Destroy_Unit_alt3(v119_.v119);
+  game_Unit_Destroy_Unit_alt3(v117_.v118);
   AISupportSkillScope_11fef70(v128);
   return v23;
 }

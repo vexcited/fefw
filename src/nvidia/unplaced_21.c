@@ -13693,11 +13693,13 @@ __int64 nvidia_20e1e0(_QWORD* a1, __int64 a2, _DWORD* a3, int a4)
   unsigned int v59;
   _DWORD* v60;
   unsigned int* v62;
-  _QWORD v63[4];
-  _QWORD v64[8];
+  struct {
+    _QWORD v63[4];
+    _QWORD v64[8];
+  } v63_;
   _QWORD v65[22];
 
-  memset(v64, 0, sizeof(v64));
+  memset(v63_.v64, 0, sizeof(v63_.v64));
   memset(v65, 0, 160);
   if (a1 == nullptr) {
     return 201;
@@ -13713,7 +13715,7 @@ __int64 nvidia_20e1e0(_QWORD* a1, __int64 a2, _DWORD* a3, int a4)
     goto LABEL_72;
   }
   v60 = a3;
-  CudaDriverRoutine_20ebc0((__int64)v4, (__int64)v64, (__int64)v65);
+  CudaDriverRoutine_20ebc0((__int64)v4, (__int64)v63_.v64, (__int64)v65);
   if (cuda_driver_predicates_9ae50((__int64)v4)) {
     {
       v7 = v4[1097];
@@ -13819,7 +13821,7 @@ __int64 nvidia_20e1e0(_QWORD* a1, __int64 a2, _DWORD* a3, int a4)
     }
     goto LABEL_58;
   }
-  memset(v63, 0, sizeof(v63));
+  memset(v63_.v63, 0, sizeof(v63_.v63));
   if (cuda_driver_predicates_9ae50((__int64)v4) ||
       CudaDriverRoutine_9adf0((__int64)v4)) {
     v19 = 3;
@@ -13827,7 +13829,8 @@ __int64 nvidia_20e1e0(_QWORD* a1, __int64 a2, _DWORD* a3, int a4)
   else {
     v19 = 2;
   }
-  (*(void (**)(_QWORD, _QWORD*, _QWORD))(a1[8] + 19384LL))(a1[21], v63, a1[23]);
+  (*(void (**)(_QWORD, _QWORD*, _QWORD))(a1[8] + 19384LL))(a1[21], v63_.v63,
+                                                           a1[23]);
   v20 = 0;
   v21 = 0;
   v22 = v4 + 1372;
@@ -13835,10 +13838,10 @@ __int64 nvidia_20e1e0(_QWORD* a1, __int64 a2, _DWORD* a3, int a4)
   while (2) {
     v24 = 32;
     {
-      v25 = ~*((_DWORD*)v63 + v20);
+      v25 = ~*((_DWORD*)v63_.v63 + v20);
       __asm__ volatile("" ::"r"(v25));
     }
-    *((_DWORD*)v63 + v20) = v25;
+    *((_DWORD*)v63_.v63 + v20) = v25;
     do {
       if ((v25 & 1) != 0) {
         {
@@ -13846,14 +13849,14 @@ __int64 nvidia_20e1e0(_QWORD* a1, __int64 a2, _DWORD* a3, int a4)
           __asm__ volatile("" ::"r"(v33));
         }
         *((_DWORD*)&v65[8] + v33) |= 1 << v22[v21];
-        *((_DWORD*)v63 + v20) = v25 >> 1;
+        *((_DWORD*)v63_.v63 + v20) = v25 >> 1;
         {
           v26 = v4[934] + v21;
           __asm__ volatile("" ::"r"(v26));
         }
         if ((v25 & 2) == 0) {
         LABEL_31:
-          *((_DWORD*)v63 + v20) = v25 >> 2;
+          *((_DWORD*)v63_.v63 + v20) = v25 >> 2;
           {
             v27 = v4[934] + v26;
             __asm__ volatile("" ::"r"(v27));
@@ -13865,7 +13868,7 @@ __int64 nvidia_20e1e0(_QWORD* a1, __int64 a2, _DWORD* a3, int a4)
         }
       }
       else {
-        *((_DWORD*)v63 + v20) = v25 >> 1;
+        *((_DWORD*)v63_.v63 + v20) = v25 >> 1;
         {
           v26 = v4[934] + v21;
           __asm__ volatile("" ::"r"(v26));
@@ -13879,14 +13882,14 @@ __int64 nvidia_20e1e0(_QWORD* a1, __int64 a2, _DWORD* a3, int a4)
         __asm__ volatile("" ::"r"(v34));
       }
       *((_DWORD*)&v65[8] + v34) |= 1 << v22[v26];
-      *((_DWORD*)v63 + v20) = v25 >> 2;
+      *((_DWORD*)v63_.v63 + v20) = v25 >> 2;
       {
         v27 = v4[934] + v26;
         __asm__ volatile("" ::"r"(v27));
       }
       if ((v25 & 4) == 0) {
       LABEL_32:
-        *((_DWORD*)v63 + v20) = v25 >> 3;
+        *((_DWORD*)v63_.v63 + v20) = v25 >> 3;
         {
           v28 = v4[934] + v27;
           __asm__ volatile("" ::"r"(v28));
@@ -13902,14 +13905,14 @@ __int64 nvidia_20e1e0(_QWORD* a1, __int64 a2, _DWORD* a3, int a4)
         __asm__ volatile("" ::"r"(v35));
       }
       *((_DWORD*)&v65[8] + v35) |= 1 << v22[v27];
-      *((_DWORD*)v63 + v20) = v25 >> 3;
+      *((_DWORD*)v63_.v63 + v20) = v25 >> 3;
       {
         v28 = v4[934] + v27;
         __asm__ volatile("" ::"r"(v28));
       }
       if ((v25 & 8) == 0) {
       LABEL_33:
-        *((_DWORD*)v63 + v20) = v25 >> 4;
+        *((_DWORD*)v63_.v63 + v20) = v25 >> 4;
         {
           v29 = v4[934] + v28;
           __asm__ volatile("" ::"r"(v29));
@@ -13925,14 +13928,14 @@ __int64 nvidia_20e1e0(_QWORD* a1, __int64 a2, _DWORD* a3, int a4)
         __asm__ volatile("" ::"r"(v36));
       }
       *((_DWORD*)&v65[8] + v36) |= 1 << v22[v28];
-      *((_DWORD*)v63 + v20) = v25 >> 4;
+      *((_DWORD*)v63_.v63 + v20) = v25 >> 4;
       {
         v29 = v4[934] + v28;
         __asm__ volatile("" ::"r"(v29));
       }
       if ((v25 & 0x10) == 0) {
       LABEL_34:
-        *((_DWORD*)v63 + v20) = v25 >> 5;
+        *((_DWORD*)v63_.v63 + v20) = v25 >> 5;
         {
           v30 = v4[934] + v29;
           __asm__ volatile("" ::"r"(v30));
@@ -13948,14 +13951,14 @@ __int64 nvidia_20e1e0(_QWORD* a1, __int64 a2, _DWORD* a3, int a4)
         __asm__ volatile("" ::"r"(v37));
       }
       *((_DWORD*)&v65[8] + v37) |= 1 << v22[v29];
-      *((_DWORD*)v63 + v20) = v25 >> 5;
+      *((_DWORD*)v63_.v63 + v20) = v25 >> 5;
       {
         v30 = v4[934] + v29;
         __asm__ volatile("" ::"r"(v30));
       }
       if ((v25 & 0x20) == 0) {
       LABEL_35:
-        *((_DWORD*)v63 + v20) = v25 >> 6;
+        *((_DWORD*)v63_.v63 + v20) = v25 >> 6;
         {
           v31 = v4[934] + v30;
           __asm__ volatile("" ::"r"(v31));
@@ -13971,7 +13974,7 @@ __int64 nvidia_20e1e0(_QWORD* a1, __int64 a2, _DWORD* a3, int a4)
         __asm__ volatile("" ::"r"(v38));
       }
       *((_DWORD*)&v65[8] + v38) |= 1 << v22[v30];
-      *((_DWORD*)v63 + v20) = v25 >> 6;
+      *((_DWORD*)v63_.v63 + v20) = v25 >> 6;
       {
         v31 = v4[934] + v30;
         __asm__ volatile("" ::"r"(v31));
@@ -13983,7 +13986,7 @@ __int64 nvidia_20e1e0(_QWORD* a1, __int64 a2, _DWORD* a3, int a4)
           __asm__ volatile("" ::"r"(v39));
         }
         *((_DWORD*)&v65[8] + v39) |= 1 << v22[v31];
-        *((_DWORD*)v63 + v20) = v25 >> 7;
+        *((_DWORD*)v63_.v63 + v20) = v25 >> 7;
         {
           v32 = v4[934] + v31;
           __asm__ volatile("" ::"r"(v32));
@@ -13994,7 +13997,7 @@ __int64 nvidia_20e1e0(_QWORD* a1, __int64 a2, _DWORD* a3, int a4)
         goto LABEL_45;
       }
     LABEL_36:
-      *((_DWORD*)v63 + v20) = v25 >> 7;
+      *((_DWORD*)v63_.v63 + v20) = v25 >> 7;
       {
         v32 = v4[934] + v31;
         __asm__ volatile("" ::"r"(v32));
@@ -14010,7 +14013,7 @@ __int64 nvidia_20e1e0(_QWORD* a1, __int64 a2, _DWORD* a3, int a4)
     LABEL_28:
       v25 >>= 8;
       v24 -= 8;
-      *((_DWORD*)v63 + v20) = v25;
+      *((_DWORD*)v63_.v63 + v20) = v25;
       {
         v21 = v4[934] + v32;
         __asm__ volatile("" ::"r"(v21));
@@ -14046,7 +14049,8 @@ LABEL_58:
           do {
             if ((v4[v57 + 887] & (1 << v58)) != 0) {
               if (((*((_DWORD*)&v65[8] + v55) >> v59) & 1) != 0) {
-                *(_DWORD*)(a2 + 4LL * *((unsigned int*)v64 + v55)) |= 1 << v58;
+                *(_DWORD*)(a2 + 4LL * *((unsigned int*)v63_.v64 + v55)) |=
+                    1 << v58;
                 {
                   v54 = v4[938];
                   __asm__ volatile("" ::"r"(v54));

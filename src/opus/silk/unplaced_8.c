@@ -1031,16 +1031,19 @@ __int64 opus_silk_2f9f80(__int64 a1, __int64 a2, int a3)
   char* v29;
   __int64 v30;
   int v31;
-  _QWORD v32[4];
-  _QWORD v33[4];
+  struct {
+    _QWORD v32[4];
+    _QWORD v33[4];
+  } v32_;
 
   v3 = *(_DWORD*)(a1 + 2324);
-  memset(v33, 0, sizeof(v33));
-  memset(v32, 0, sizeof(v32));
+  memset(v32_.v33, 0, sizeof(v32_.v33));
+  memset(v32_.v32, 0, sizeof(v32_.v32));
   silk_gains_dequant(a2 + 16, (char*)(a1 + 2760), (_BYTE*)(a1 + 2312), a3 == 2,
                      v3);
-  silk_NLSF_decode((__int64)v33, (char*)(a1 + 2768), *(_QWORD*)(a1 + 2752));
-  silk_NLSF2A(a2 + 64, (__int64)v33, *(_DWORD*)(a1 + 2340));
+  silk_NLSF_decode((__int64)v32_.v33, (char*)(a1 + 2768),
+                   *(_QWORD*)(a1 + 2752));
+  silk_NLSF2A(a2 + 64, (__int64)v32_.v33, *(_DWORD*)(a1 + 2340));
   if (*(_DWORD*)(a1 + 2376) == 1) {
     *(_BYTE*)(a1 + 2791) = 4;
   LABEL_8:
@@ -1057,8 +1060,8 @@ __int64 opus_silk_2f9f80(__int64 a1, __int64 a2, int a3)
     if ((unsigned int)v7 >= 4) {
       v10 = (__int16*)(a1 + 2350);
       v11 = 0;
-      v12 = (_WORD*)v32 + 2;
-      v13 = (__int16*)v33 + 2;
+      v12 = (_WORD*)v32_.v32 + 2;
+      v13 = (__int16*)v32_.v33 + 2;
       do {
         v11 -= 4;
         v14 =
@@ -1087,8 +1090,8 @@ __int64 opus_silk_2f9f80(__int64 a1, __int64 a2, int a3)
         goto LABEL_14;
       }
     }
-    v19 = (_WORD*)v32 + v9;
-    v20 = (__int16*)v33 + v9;
+    v19 = (_WORD*)v32_.v32 + v9;
+    v20 = (__int16*)v32_.v33 + v9;
     v21 = (__int16*)(a1 + 2 * v9 + 2344);
     do {
       v23 = *v21++;
@@ -1099,10 +1102,10 @@ __int64 opus_silk_2f9f80(__int64 a1, __int64 a2, int a3)
     } while (v8 != 0);
   }
 LABEL_14:
-  silk_NLSF2A(a2 + 32, (__int64)v32, v7);
+  silk_NLSF2A(a2 + 32, (__int64)v32_.v32, v7);
 LABEL_15:
   v25 = *(int*)(a1 + 2340);
-  memcpy_plt(a1 + 2344, (__int64)v33, 2 * v25);
+  memcpy_plt(a1 + 2344, (__int64)v32_.v33, 2 * v25);
   if (*(_DWORD*)(a1 + 4184) != 0) {
     opus_silk_2f67c0(a2 + 32, v25, 63570);
     opus_silk_2f67c0(a2 + 64, *(_DWORD*)(a1 + 2340), 63570);

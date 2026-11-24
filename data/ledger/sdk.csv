@@ -9009,7 +9009,7 @@ ffee0,324,verified,src/nn/fs/unplaced.c,nn_fs_GetAndClearMemoryReportInfo
 1f25f0,72,verified,src/nn/audio/audio_fft_work_buffer.cpp,_ZN2nn5audio6detail26GetFftWorkBufferSizeCommonEmNS0_14FftProcessTypeEi
 1f2640,8,verified,src/nn/audio/audio_fft_api.cpp,_ZN2nn5audio6detail31GetFftWorkBufferAlignmentCommonEv
 1f2660,2648,verified,src/nn/audio/unplaced.c,nn_audio_detail_InitializeFftWorkBufferCommon
-1f31e0,888,verified,src/nn/audio/unplaced.c,nn_audio_detail_FftInPlaceProcessComplexDoubleCommon
+1f31e0,1200,verified,src/nn/audio/unplaced.c,nn_audio_detail_FftInPlaceProcessComplexDoubleCommon
 1f36e0,772,disputed,src/nn/audio/unplaced.c,nn_audio_1f36e0
 1f3a00,596,disputed,src/nn/audio/unplaced.c,nn_audio_detail_FftInPlaceProcessRealDoubleCommon
 1f3c60,16,verified,src/nn/audio/vector_fill.cpp,_ZN2nn5audio4util10RoundInt32El
@@ -10758,9 +10758,9 @@ ffee0,324,verified,src/nn/fs/unplaced.c,nn_fs_GetAndClearMemoryReportInfo
 27b900,104,verified,src/nn/audio/adspshell/adspshell.cpp,_ZN2nn5audio9adspshell6detail21SendStressTestCommandERKNS2_19StressTestParameterE
 27b970,88,verified,src/nn/audio/common/unplaced.c,nn_audio_common_GetExecutionTimeoutMonitor
 27b9d0,92,verified,src/nn/audio/unplaced.c,nn_audio_27b9d0
-27ba40,884,verified,src/nn/audio/unplaced.c,nn_audio_27ba40
+27ba40,860,verified,src/nn/audio/unplaced.c,nn_audio_27ba40
 27bf20,712,verified,src/nn/audio/unplaced.c,nn_audio_27bf20
-27c340,688,verified,src/nn/audio/unplaced.c,nn_audio_27c340
+27c340,664,verified,src/nn/audio/unplaced.c,nn_audio_27c340
 27c760,84,verified,src/nn/audio/unplaced.c,nn_audio_27c760
 27c7c0,652,verified,src/nn/audio/unplaced.c,nn_audio_27c7c0
 27ca60,636,verified,src/nn/audio/unplaced.c,nn_audio_27ca60
@@ -14559,7 +14559,7 @@ ffee0,324,verified,src/nn/fs/unplaced.c,nn_fs_GetAndClearMemoryReportInfo
 44d780,232,verified,src/nn/fontll/itype/unplaced_3.c,nn_fontll_itype_44d780
 44d880,688,verified,src/nn/fontll/itype/unplaced_3.c,nn_fontll_itype_44d880
 44dba0,868,verified,src/nn/fontll/itype/unplaced_7.c,nn_fontll_itype_44dba0
-44e2c0,1384,disputed,src/nn/fontll/itype/unplaced_3.c,nn_fontll_itype_44e2c0
+44e2c0,668,disputed,src/nn/fontll/itype/unplaced_3.c,nn_fontll_itype_44e2c0
 44e9e0,292,disputed,src/nn/fontll/itype/unplaced_3.c,nn_fontll_itype_44e9e0
 44eb20,300,verified,src/nn/unnamed/h000_0.c,SdkHr_44eb20
 44ec60,52,verified,src/nn/unnamed/h000_0.c,SdkHr_44ec60
@@ -25184,7 +25184,7 @@ ffee0,324,verified,src/nn/fs/unplaced.c,nn_fs_GetAndClearMemoryReportInfo
 650060,8,verified,src/nn/sdk_trivial.cpp,_Z14SdkStub_650060m
 650070,12,verified,src/nn/unnamed/u000_1.c,SdkHr_650070
 650080,8,verified,src/nn/sdk_trivial.cpp,_Z14SdkStub_650080mj
-6500a0,1528,verified,src/nn/unplaced_3.c,nn_6500a0
+6500a0,1540,verified,src/nn/unplaced_3.c,nn_6500a0
 650730,700,verified,src/nn/unplaced_16.c,nn_650730
 6509f0,20,verified,src/nn/unnamed/u000_1.c,SdkHr_6509f0
 650a10,288,verified,src/nn/unnamed/s003_2.c,SdkHr_650a10
@@ -26274,7 +26274,7 @@ ffee0,324,verified,src/nn/fs/unplaced.c,nn_fs_GetAndClearMemoryReportInfo
 660e70,8,verified,src/nn/sdk_trivial.cpp,_Z14SdkStub_660e70m
 660e80,8,verified,src/nn/sdk_trivial.cpp,_Z14SdkStub_660e80m
 660e90,140,verified,src/nn/unnamed/s003_2.c,SdkHr_660e90
-660f20,3416,verified,src/nn/unplaced_3.c,nn_660f20
+660f20,3004,disputed,src/nn/unplaced_3.c,nn_660f20
 661d40,164,verified,src/nn/unnamed/s003_2.c,SdkHr_661d40
 661df0,44,verified,src/nn/unnamed/s003_2.c,SdkHr_661df0
 661e20,48,verified,src/nn/unnamed/s003_2.c,SdkHr_661e20
@@ -26661,7 +26661,7 @@ ffee0,324,verified,src/nn/fs/unplaced.c,nn_fs_GetAndClearMemoryReportInfo
 66a170,900,verified,src/nn/unplaced_3.c,nn_66a170
 66a500,460,verified,src/nn/unnamed/s004_0.c,SdkHr_66a500
 66a6d0,976,verified,src/nn/unplaced_7.c,nn_66a6d0
-66aaa0,1152,verified,src/nn/unplaced_3.c,nn_66aaa0
+66aaa0,1160,verified,src/nn/unplaced_3.c,nn_66aaa0
 66afc0,348,verified,src/nn/unplaced_8.c,nn_66afc0
 66b130,100,verified,src/nn/unnamed/s004_0.c,SdkHr_66b130
 66b1a0,72,verified,src/nn/unnamed/s004_0.c,SdkHr_66b1a0

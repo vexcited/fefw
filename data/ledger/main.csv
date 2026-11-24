@@ -16175,7 +16175,7 @@ fff90,116,verified,src/snd/api.cpp,_ZN3snd10startPitchERKNS_3fnd10WeakHandleERKN
 5a6e40,876,verified,src/game/unnamed/r001_0.c,GameHr_5a6e40
 5a71b0,24,verified,src/game/unnamed/b003_1.c,GameHr_5a71b0
 5a71e0,852,verified,src/game/unnamed/b003_1.c,GameHr_5a71e0
-5a7540,952,disputed,src/nn/ui2d/detail/unplaced.c,nn_ui2d_detail_5a7540
+5a7540,952,verified,src/nn/ui2d/detail/unplaced.c,nn_ui2d_detail_5a7540
 5a7930,432,verified,src/game/unnamed/b003_1.c,GameHr_5a7930
 5a7ae0,420,verified,src/game/unnamed/b003_1.c,GameHr_5a7ae0
 5a7ca0,308,verified,src/game/unnamed/b003_1.c,GameHr_5a7ca0
@@ -43454,7 +43454,7 @@ e6a4e0,316,verified,src/game/cmdbtl/anonymous/proc_cmd_btl_seq_battle.c,ProcCmdB
 e6a620,392,verified,src/game/cmdbtl/anonymous/proc_cmd_btl_seq_battle.c,ProcCmdBtlSeqBattle_e6a620
 e6a7b0,396,verified,src/game/cmdbtl/anonymous/proc_cmd_btl_seq_battle.c,ProcCmdBtlSeqBattle_e6a7b0
 e6a9a0,16,verified,src/game/game_trivial_forwarders.cpp,_Z15GameStub_e6a9a0v
-e6a9b0,616,disputed,src/game/unplaced_31.c,game_e6a9b0
+e6a9b0,616,verified,src/game/unplaced_31.c,game_e6a9b0
 e6ad20,904,verified,src/game/cmdbtl/anonymous/proc_cmd_btl_seq_battle.c,ProcCmdBtlSeqBattle_e6ad20
 e6b0b0,88,verified,src/game/cmdbtl/anonymous/proc_cmd_btl_seq_battle.c,ProcCmdBtlSeqBattle_e6b0b0
 e6b110,136,verified,src/game/cmdbtl/anonymous/proc_cmd_btl_seq_battle.c,ProcCmdBtlSeqBattle_e6b110

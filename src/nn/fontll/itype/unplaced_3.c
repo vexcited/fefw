@@ -12350,21 +12350,25 @@ __int64 nn_fontll_itype_44e2c0(int a1, int a2, unsigned int a3, _DWORD* a4)
   unsigned __int64 v113;
   _DWORD* v114;
   __int64 v115;
-  _QWORD v116[32];
-  _QWORD v117[15];
-  _QWORD v118[9];
-  _QWORD v119[2];
+  struct {
+    _QWORD v116[32];
+    _QWORD v117[15];
+  } v116_;
+  struct {
+    _QWORD v118[9];
+    _QWORD v119[2];
+  } v118_;
   _QWORD v120[31];
 
-  v118[0] = 0;
-  memset(v117, 0, sizeof(v117));
+  v118_.v118[0] = 0;
+  memset(v116_.v117, 0, sizeof(v116_.v117));
   if ((int)a3 >= 1) {
     v7 = 0;
     v8 = a3;
-    memset(v116, 0, sizeof(v116));
+    memset(v116_.v116, 0, sizeof(v116_.v116));
     do {
       v9 = (unsigned __int16)v7++;
-      *((_DWORD*)v116 + v9) = a4[12 * (unsigned int)v9 + 7];
+      *((_DWORD*)v116_.v116 + v9) = a4[12 * (unsigned int)v9 + 7];
     } while (a3 > (unsigned __int16)v7);
     v10 = 0;
     v11 = 0;
@@ -12389,7 +12393,7 @@ __int64 nn_fontll_itype_44e2c0(int a1, int a2, unsigned int a3, _DWORD* a4)
       if ((unsigned int)v21 <= 0xF) {
       LABEL_5:
         v14 = v10++;
-        *((_WORD*)v117 + v14) = v11;
+        *((_WORD*)v116_.v117 + v14) = v11;
       }
       ++v11;
     } while (a3 > v11);
@@ -12403,13 +12407,13 @@ __int64 nn_fontll_itype_44e2c0(int a1, int a2, unsigned int a3, _DWORD* a4)
       v114 = &a4[12LL * a3 - 2];
       while (2) {
         v23 = a4[7];
-        v24 = *((unsigned __int16*)v117 + v22);
+        v24 = *((unsigned __int16*)v116_.v117 + v22);
         v25 = &a4[12 * v24];
         v26 = v25[7];
         memset(v120, 0, 240);
-        v119[0] = 0;
-        v119[1] = 0;
-        memset(&v118[1], 0, 64);
+        v118_.v119[0] = 0;
+        v118_.v119[1] = 0;
+        memset(&v118_.v118[1], 0, 64);
         if (v26 == v23) {
           goto LABEL_126;
         }
@@ -12445,7 +12449,7 @@ __int64 nn_fontll_itype_44e2c0(int a1, int a2, unsigned int a3, _DWORD* a4)
         v27 = 0;
         if (v115 != 0) {
         LABEL_30:
-          v37 = (_DWORD*)v119 + v27;
+          v37 = (_DWORD*)v118_.v119 + v27;
           v38 = &v112[12 * v27];
           v39 = v8 & 7;
           do {
@@ -12503,7 +12507,7 @@ __int64 nn_fontll_itype_44e2c0(int a1, int a2, unsigned int a3, _DWORD* a4)
           }
           if (v50 <= 47) {
           LABEL_50:
-            v45 = *((_DWORD*)v119 + v24) - 64;
+            v45 = *((_DWORD*)v118_.v119 + v24) - 64;
             v25[7] = v45;
           }
         }
@@ -12513,7 +12517,7 @@ __int64 nn_fontll_itype_44e2c0(int a1, int a2, unsigned int a3, _DWORD* a4)
           v53 = v25[6] - v45;
         }
         if ((unsigned int)v53 > 0x60 || v45 < (signed __int32)a4[6]) {
-          v25[7] = *((_DWORD*)v119 + v24);
+          v25[7] = *((_DWORD*)v118_.v119 + v24);
           goto LABEL_126;
         }
         v54 = v114;
@@ -12521,7 +12525,7 @@ __int64 nn_fontll_itype_44e2c0(int a1, int a2, unsigned int a3, _DWORD* a4)
         v56 = -1;
         v57 = 1;
         v58 = 0;
-        v59 = (char*)v118 + 7;
+        v59 = (char*)v118_.v118 + 7;
         do {
           if (v8 == v55) {
           LABEL_56:
@@ -12625,7 +12629,7 @@ __int64 nn_fontll_itype_44e2c0(int a1, int a2, unsigned int a3, _DWORD* a4)
       }
       v86 = v24;
       while (2) {
-        if (*((_BYTE*)v118 + v86 + 7) == 0) {
+        if (*((_BYTE*)v118_.v118 + v86 + 7) == 0) {
           if (v86 <= 1) {
             goto LABEL_22;
           }
@@ -12672,7 +12676,7 @@ __int64 nn_fontll_itype_44e2c0(int a1, int a2, unsigned int a3, _DWORD* a4)
       }
       if ((v8 & 7) != 0) {
         v106 = &a4[12 * v97];
-        v107 = (int*)v119 + v97;
+        v107 = (int*)v118_.v119 + v97;
         v108 = v106 + 7;
         do {
           v109 = *v107++;
@@ -12686,7 +12690,7 @@ __int64 nn_fontll_itype_44e2c0(int a1, int a2, unsigned int a3, _DWORD* a4)
       v94 = 0;
       do {
         v95 = (unsigned __int16)v94++;
-        a4[12 * (unsigned int)v95 + 7] = *((_DWORD*)v116 + v95);
+        a4[12 * (unsigned int)v95 + 7] = *((_DWORD*)v116_.v116 + v95);
       } while (a3 > (unsigned __int16)v94);
       return result;
     }

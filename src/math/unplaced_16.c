@@ -314,8 +314,10 @@ __attribute__((swiftcall)) void math_719ca0(PSEUDO_X8 x8_, unsigned __int64* a1,
   float v80;
   float v81;
   float v82;
-  _BYTE v83[872];
-  _BYTE v84[2320];
+  struct {
+    _BYTE v83[872];
+    _BYTE v84[2320];
+  } v83_;
   _BYTE v85[872];
   struct {
     _QWORD v86[109];
@@ -583,9 +585,9 @@ LABEL_32:
     goto LABEL_34;
   }
 LABEL_44:
-  memcpy_plt((__int64)v84, (__int64)&v101_.v101, 0x910u);
-  SdkRoutine_87a290((__int64)v84);
-  memcpy_plt((__int64)&v101_.v101, (__int64)v84, 0x910u);
+  memcpy_plt((__int64)v83_.v84, (__int64)&v101_.v101, 0x910u);
+  SdkRoutine_87a290((__int64)v83_.v84);
+  memcpy_plt((__int64)&v101_.v101, (__int64)v83_.v84, 0x910u);
   SdkRoutine_87a2a0((void*)(v86_.v86), v85, &v101_.v101);
   v54 = v89_.v90;
   v101_.v105 = v89_.v90;
@@ -624,9 +626,9 @@ LABEL_44:
       v59 += 9;
     } while (v54 != 0);
   }
-  memcpy_plt((__int64)v83, (__int64)&v101_.v105, 0x368u);
-  result =
-      X8CALL_X0(void*, SdkRoutine_87a2b0((void*)(&v101_.v105), v86_.v86, v83));
+  memcpy_plt((__int64)v83_.v83, (__int64)&v101_.v105, 0x368u);
+  result = X8CALL_X0(
+      void*, SdkRoutine_87a2b0((void*)(&v101_.v105), v86_.v86, v83_.v83));
   v75 = sqrtf(v86_.v87[10] - v101_.v107[5]);
   v76 = sqrtf(v86_.v87[20] - v101_.v107[15]);
   v77 = sqrtf(v86_.v87[30] - v101_.v107[25]);

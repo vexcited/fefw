@@ -85,13 +85,15 @@ __int64 nn_ui2d_detail_5a7540(__int64 result, __int64 a2, float32x4_t* a3,
   unsigned __int64* v59;
   unsigned __int64 v60;
   unsigned __int64 v61;
-  unsigned __int64 v62[2];
-  _QWORD v63[11];
+  struct {
+    unsigned __int64 v62[2];
+    _QWORD v63[11];
+  } v62_;
 
   if (*(int*)(result + 16) >= 1) {
-    v63[7] = v7;
-    v63[9] = v5;
-    v63[10] = v6;
+    v62_.v63[7] = v7;
+    v62_.v63[9] = v5;
+    v62_.v63[10] = v6;
     v9 = 8;
     v13 = result;
     v14 = 0;
@@ -120,10 +122,10 @@ __int64 nn_ui2d_detail_5a7540(__int64 result, __int64 a2, float32x4_t* a3,
         ++v16;
       } while (v16 < *(int*)(v13 + 16));
       if (v17 != 0) {
-        v63[6] = 0;
-        result = (__int64)GameRoutine_5a3a90(v62, a2, v17, v18, 0, 0, 0);
-        v21 = v62[1];
-        v22 = v63[1];
+        v62_.v63[6] = 0;
+        result = (__int64)GameRoutine_5a3a90(v62_.v62, a2, v17, v18, 0, 0, 0);
+        v21 = v62_.v62[1];
+        v22 = v62_.v63[1];
         *(_QWORD*)(v13 + 40) = 0;
         *(_QWORD*)(v13 + 48) = v21;
         LODWORD(v21) = *(_DWORD*)(v13 + 16);
@@ -253,9 +255,10 @@ __int64 nn_ui2d_detail_5a7540(__int64 result, __int64 a2, float32x4_t* a3,
             *(_QWORD*)(*(_QWORD*)(v13 + 24) + v24 + 32) = v54;
             v27 = *(_DWORD*)(v13 + 44);
             v28 = *(_QWORD*)(*(_QWORD*)(v13 + 24) + v24 + 8);
-            result = (*(__int64 (**)(__int64, unsigned __int64*, __int64,
-                                     _QWORD*, __int64, _QWORD))(
-                *(_QWORD*)v28 + 104LL))(v28, v62, v13 + 40, v63, v13 + 44, 0);
+            result =
+                (*(__int64 (**)(__int64, unsigned __int64*, __int64, _QWORD*,
+                                __int64, _QWORD))(*(_QWORD*)v28 + 104LL))(
+                    v28, v62_.v62, v13 + 40, v62_.v63, v13 + 44, 0);
             ++v25;
             v23 += 56;
             *(_DWORD*)(*(_QWORD*)(v13 + 24) + v24 + 20) = v27;
