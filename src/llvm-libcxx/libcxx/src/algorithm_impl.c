@@ -1181,7 +1181,7 @@ LABEL_3:
   while (1) {
     v10 = v9;
     v7 = v8;
-    v11 = a2 - v8;
+    v11 = ((__int64)a2 - (__int64)v8) >> 2;
     if (v11 > 2) {
       switch (v11) {
       case 3LL:

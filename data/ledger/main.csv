@@ -18630,7 +18630,7 @@ fff90,116,verified,src/snd/api.cpp,_ZN3snd10startPitchERKNS_3fnd10WeakHandleERKN
 6b83e0,920,verified,src/game/unplaced_26.c,game_6b83e0
 6b87d0,432,verified,src/game/templates/vector.cpp,_ZNSt3__16vectorIN4game16UnrecoveredValueILj0ELm24ELm8EEENS_9allocatorIS3_EEE8__appendEm
 6b8c20,364,verified,src/game/unplaced.c,game_6b8c20
-6b8da0,188,disputed,src/game/unplaced_51.c,game_6b8da0
+6b8da0,372,disputed,src/game/unplaced_51.c,game_6b8da0
 6b9400,184,verified,src/game/unplaced.c,game_6b9400
 6b94d0,56,verified,src/game/unnamed/b004_2.c,GameHr_6b94d0
 6b9520,352,verified,src/game/unnamed/e001_1.c,GameHr_6b9520
@@ -26749,7 +26749,7 @@ fff90,116,verified,src/snd/api.cpp,_ZN3snd10startPitchERKNS_3fnd10WeakHandleERKN
 90f520,100,verified,src/game/unplaced_25.c,game_90f520
 90f590,440,verified,src/game/unplaced_2.c,game_90f590
 90f760,704,verified,src/game/unnamed/b007_2.c,GameHr_90f760
-90fb60,424,disputed,src/game/unplaced_51.c,game_90fb60
+90fb60,424,verified,src/game/unplaced_51.c,game_90fb60
 90fd20,1328,verified,src/game/unplaced_13.c,game_90fd20
 910280,956,verified,src/game/unplaced_28.c,game_910280
 910680,328,verified,src/game/unplaced_2.c,game_910680
@@ -52222,7 +52222,7 @@ fffcb0,1244,verified,src/game/unnamed/b014_1.c,GameHr_fffcb0
 10fde00,84,verified,src/game/character/ik_slope_crawling.c,IKSlopeCrawling_Destructor
 10fde60,116,verified,src/game/character/ik_slope_crawling.c,IKSlopeCrawling_DeletingDestructor
 10fdee0,12,verified,src/game/game_trivial.cpp,_Z16GameStub_10fdee0v
-10fdef0,1704,disputed,src/game/unplaced_51.c,game_10fdef0
+10fdef0,1704,verified,src/game/unplaced_51.c,game_10fdef0
 10fe5a0,44,verified,src/llvm-libcxx-21/libcxx/include/__functional/function.h,"std::__1::__function::__func<game::character::IKSlopeCrawling::IKSlopeCrawling(game::character::CharacterBuilder const*, game::character::DisabledBy const&, game::character::IKFoot const*)::$_0, void (int, nn::g3d::WorldMtxManip&)>::deleting destructor"
 10fe5d0,76,verified,src/llvm-libcxx-21/libcxx/include/__functional/function.h,"std::__1::__function::__func<game::character::IKSlopeCrawling::IKSlopeCrawling(game::character::CharacterBuilder const*, game::character::DisabledBy const&, game::character::IKFoot const*)::$_0, void (int, nn::g3d::WorldMtxManip&)>::__clone()"
 10fe620,24,verified,src/llvm-libcxx-21/libcxx/include/__functional/function.h,"std::__1::__function::__func<game::character::IKSlopeCrawling::IKSlopeCrawling(game::character::CharacterBuilder const*, game::character::DisabledBy const&, game::character::IKFoot const*)::$_0, void (int, nn::g3d::WorldMtxManip&)>::__clone(__base*)"
@@ -67063,7 +67063,7 @@ fffcb0,1244,verified,src/game/unnamed/b014_1.c,GameHr_fffcb0
 15a13c0,380,verified,src/game/unnamed/b020_2.c,GameHr_15a13c0
 15a1540,484,verified,src/game/unnamed/b020_2.c,GameHr_15a1540
 15a1740,644,verified,src/game/unnamed/b020_2.c,GameHr_15a1740
-15a19e0,1524,disputed,src/game/gameui/unplaced_15.c,game_gameui_15a19e0
+15a19e0,3044,verified,src/game/gameui/unplaced_15.c,game_gameui_15a19e0
 15a2880,440,verified,src/game/unnamed/b020_1.c,GameHr_15a2880
 15a2a40,832,verified,src/game/gameui/unplaced_6.c,game_gameui_15a2a40
 15a2ea0,2708,verified,src/game/gameui/unplaced.c,game_gameui_15a2ea0
@@ -85619,7 +85619,7 @@ fffcb0,1244,verified,src/game/unnamed/b014_1.c,GameHr_fffcb0
 194b9a0,1104,verified,src/memory/unplaced_18.c,memory_194b9a0
 194bdf0,176,verified,src/gfx/render/shadow_volume_culling.c,ShadowVolumeCulling_Unknown4
 194bea0,4,verified,src/game/game_trivial.cpp,_Z16GameStub_194bea0v
-194bec0,1408,disputed,src/game/unplaced_51.c,game_194bec0
+194bec0,1720,disputed,src/game/unplaced_51.c,game_194bec0
 194cb90,452,verified,src/game/unnamed/r010_1.c,GameHr_194cb90
 194cd60,852,verified,src/gfx/unplaced_3.c,gfx_194cd60
 194d120,108,verified,src/game/unnamed/b026_1.c,GameHr_194d120

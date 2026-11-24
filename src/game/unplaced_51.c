@@ -2200,7 +2200,7 @@ LABEL_2:
   v160 = a2 - 2;
   while (1) {
     v9 = v11;
-    v12 = a2 - v11;
+    v12 = ((__int64)a2 - (__int64)v11) >> 3;
     if (v12 <= 2) {
       if ((unsigned __int64)v12 < 2) {
         return result;
