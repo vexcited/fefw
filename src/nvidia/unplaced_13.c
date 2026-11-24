@@ -181,7 +181,7 @@ void CudaDriverStub_10fdf0();
 void CudaDriverStub_111420();
 __int64 nvidia_11ea0(__int64 a1, _BYTE* a2);
 __int64 nvidia_211a0(__int64 a1, _BYTE* a2);
-__int64 nvidia_42ee0(__int64 a1, _DWORD* a2, __int64 a3);
+unsigned int nvidia_42ee0(__int64 a1, _DWORD* a2, __int64 a3);
 __int64 nvidia_60ae0(__int64 a1, int a2, int a3);
 __int64 nvidia_60ca0(__int64 a1, int a2, _DWORD* a3);
 __int64 nvidia_7daa0(__int64 a1, char a2, int a3, __int64 a4);
@@ -217,7 +217,7 @@ unsigned int CudaDriverRoutine_103780_alt1(__int64, __int64);
 unsigned int cuda_driver_misc_helpers_ded50_alt1(__int64, __int64*,
                                                  unsigned int);
 
-__int64 nvidia_42ee0(__int64 a1, _DWORD* a2, __int64 a3)
+unsigned int nvidia_42ee0(__int64 a1, _DWORD* a2, __int64 a3)
 {
   __int64 result;
   __int64 v7;

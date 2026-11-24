@@ -23,11 +23,11 @@ __int64 silk_init_encoder(_DWORD*, int);
 __int64 silk_resampler(_DWORD*, __int64, __int64, int);
 extern _UNKNOWN* MovieData_c09f0;
 extern _UNKNOWN* MovieData_c0a48;
-__int64 opus_silk_528e0(_DWORD* a1, _DWORD* a2, __int64 a3, int a4, __int64 a5,
-                        int* a6, int a7, int a8);
+unsigned int opus_silk_528e0(_DWORD* a1, _DWORD* a2, __int64 a3, int a4,
+                             __int64 a5, int* a6, int a7, int a8);
 
-__int64 opus_silk_528e0(_DWORD* a1, _DWORD* a2, __int64 a3, int a4, __int64 a5,
-                        int* a6, int a7, int a8)
+unsigned int opus_silk_528e0(_DWORD* a1, _DWORD* a2, __int64 a3, int a4,
+                             __int64 a5, int* a6, int a7, int a8)
 {
   int v8;
   _DWORD* v12;

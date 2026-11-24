@@ -378,7 +378,7 @@ __int64 cuda_driver_23cd0(__int64 a1, __int64 a2, __int64* a3, __int64 a4,
 __int64 cuda_driver_24340(unsigned __int64 a1, __int64 a2);
 __int64 cuda_driver_24490(__int64* a1, _QWORD* a2, __int64* a3);
 __int64 cuda_driver_251d0(__int64 a1, char a2);
-__int64 cuda_driver_254e0(__int64 a1, char a2);
+unsigned int cuda_driver_254e0(__int64 a1, char a2);
 __int64 CudaDriverRoutine_99f70(__int64, __int64);
 __int64 cuda_driver_26f80(__int64 a1, int a2);
 __int64 cuda_driver_271e0(_DWORD* a1, int a2, int a3, int a4);
@@ -451,8 +451,8 @@ __int64 cuda_driver_55a00(__int64 a1, __int64 a2, __int64 a3, __int64 a4,
                           __int64 a5, __int64 a6, __int64 a7);
 __int64 cuda_driver_58e10(__int64 a1, __int64 a2, __int64 a3, __int64 a4,
                           __int64 a5, __int64 a6, __int64 a7);
-__int64 cuda_driver_595a0(__int64 a1, _QWORD* a2, unsigned int a3,
-                          unsigned int a4);
+unsigned int cuda_driver_595a0(__int64 a1, _QWORD* a2, unsigned int a3,
+                               unsigned int a4);
 void cuda_driver_59a40(_DWORD* a1, __int64 a2, char a3, char a4);
 void cuda_driver_59ce0(__int64 a1);
 __int64 cuda_driver_5a060(__int64 a1);
@@ -482,7 +482,8 @@ unsigned int cuda_driver_9bad0(__int64*, __int64*);
 __int64 cuda_driver_9e5f0(__int64, __int64, __int128*);
 __int64 memcpy_plt(__int64, __int64, unsigned __int64);
 unsigned __int64 CudaDriverRoutine_5b820(__int64);
-__int64 cuda_driver_unplaced_2_4f330(_QWORD* a1, unsigned __int64* a2, int a3);
+unsigned int cuda_driver_unplaced_2_4f330(_QWORD* a1, unsigned __int64* a2,
+                                          int a3);
 __int64 cuda_driver_57800(__int64 a1, __int64 a2, __int64 a3);
 
 __int64 cuda_driver_21400(__int64 a1, __int64 a2, int a3)
@@ -1865,7 +1866,7 @@ __int64 cuda_driver_251d0(__int64 a1, char a2)
   return result;
 }
 
-__int64 cuda_driver_254e0(__int64 a1, char a2)
+unsigned int cuda_driver_254e0(__int64 a1, char a2)
 {
   __int64 result;
   __int64 v5;
@@ -5401,7 +5402,8 @@ __int64 cuda_driver_4db20(unsigned __int64* a1, unsigned __int64 a2,
   return result;
 }
 
-__int64 cuda_driver_unplaced_2_4f330(_QWORD* a1, unsigned __int64* a2, int a3)
+unsigned int cuda_driver_unplaced_2_4f330(_QWORD* a1, unsigned __int64* a2,
+                                          int a3)
 {
   __int64 result;
   _QWORD* v7;
@@ -6362,8 +6364,8 @@ __int64 cuda_driver_58e10(__int64 a1, __int64 a2, __int64 a3, __int64 a4,
   return v15;
 }
 
-__int64 cuda_driver_595a0(__int64 a1, _QWORD* a2, unsigned int a3,
-                          unsigned int a4)
+unsigned int cuda_driver_595a0(__int64 a1, _QWORD* a2, unsigned int a3,
+                               unsigned int a4)
 {
   _BOOL8 v8;
   __int64 v12;

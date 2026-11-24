@@ -28,17 +28,13 @@ extern char GameData_1a9f09e;
 int GameRoutine_1a09cf0(__int64, __int64, unsigned __int64);
 unsigned __int64 GameRoutine_1a09c70(const char*);
 unsigned __int8* VariableRegister_8327a0(unsigned __int8*, unsigned __int8*);
-__int64 llvm_libcxx_21_libcxx_include___functional_8319e0(__int64 result,
-                                                          unsigned __int8* a2,
-                                                          __int64 a3,
-                                                          __int64 a4, char a5);
+unsigned int llvm_libcxx_21_libcxx_include___functional_8319e0(
+    __int64 result, unsigned __int8* a2, __int64 a3, __int64 a4, char a5);
 __int64 llvm_libcxx_21_libcxx_include___functional_87bf20(__int64 result,
                                                           __int64* a2);
 
-__int64 llvm_libcxx_21_libcxx_include___functional_8319e0(__int64 result,
-                                                          unsigned __int8* a2,
-                                                          __int64 a3,
-                                                          __int64 a4, char a5)
+unsigned int llvm_libcxx_21_libcxx_include___functional_8319e0(
+    __int64 result, unsigned __int8* a2, __int64 a3, __int64 a4, char a5)
 {
   __int64 v8;
   unsigned __int8* v9;

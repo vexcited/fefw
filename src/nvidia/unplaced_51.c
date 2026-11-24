@@ -192,7 +192,7 @@ __int64 nvidia_91c20(__int64 a1, __int64 a2, _QWORD* a3, int a4, char a5,
 __int64 nvidia_92980(_QWORD* a1);
 __int64 nvidia_92a90(__int64 a1, __int64 a2, __int64 a3);
 __int64 nvidia_92b30(__int64 result);
-__int64 nvidia_98d00(_QWORD* a1, int a2);
+unsigned int nvidia_98d00(_QWORD* a1, int a2);
 __int64 nvidia_99530(__int64 a1);
 bool nvidia_bbe30(__int64 a1);
 __int64 nvidia_cc780(_QWORD* a1);
@@ -820,7 +820,7 @@ __int64 nvidia_92b30(__int64 result)
   return result;
 }
 
-__int64 nvidia_98d00(_QWORD* a1, int a2)
+unsigned int nvidia_98d00(_QWORD* a1, int a2)
 {
   __int64 result;
   __int64 v5;

@@ -1589,7 +1589,7 @@ __int64 CudaDriverHr_225ae0(_BYTE* a1, __int64 a2)
   return result;
 }
 
-__int64 CudaDriverHr_225b60(__int64 a1, __int64 a2, char** a3, __int64 a4)
+unsigned int CudaDriverHr_225b60(__int64 a1, __int64 a2, char** a3, __int64 a4)
 {
   char* v4;
   char* v5;

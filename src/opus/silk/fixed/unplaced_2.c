@@ -39,8 +39,8 @@ __int64 opus_silk_fixed_5b1c0(_DWORD* a1, int* a2, __int64 a3, __int64 a4,
 __int64 opus_silk_fixed_5cf80(__int64 result, __int64 a2, int a3, int a4,
                               _DWORD* a5, int a6);
 _WORD* opus_silk_fixed_5ef40(__int64 a1, _WORD* a2, __int64 a3, int a4);
-__int64 opus_silk_fixed_5f5e0(__int64 a1, __int64 a2, __int64 a3, __int64 a4,
-                              unsigned int a5);
+unsigned int opus_silk_fixed_5f5e0(__int64 a1, __int64 a2, __int64 a3,
+                                   __int64 a4, unsigned int a5);
 _DWORD* opus_silk_fixed_5fa60(__int64 a1, __int64 a2, __int64 a3, __int64 a4,
                               int a5);
 __int64 opus_silk_fixed_60180(__int64 result, __int64 a2, int a3);
@@ -2136,8 +2136,8 @@ LABEL_20:
   return result;
 }
 
-__int64 opus_silk_fixed_5f5e0(__int64 a1, __int64 a2, __int64 a3, __int64 a4,
-                              unsigned int a5)
+unsigned int opus_silk_fixed_5f5e0(__int64 a1, __int64 a2, __int64 a3,
+                                   __int64 a4, unsigned int a5)
 {
   int v5;
   __int64 v6;

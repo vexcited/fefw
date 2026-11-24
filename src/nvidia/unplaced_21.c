@@ -349,8 +349,8 @@ long double nvidia_12700(__int64 a1, __int64 a2, __int64 a3, __int64 a4);
 __int64 nvidia_19440(__int64 a1, __int64 a2, __int64 a3, __int64 a4, _QWORD* a5,
                      __int64 a6);
 __int64 nvidia_25b80();
-__int64 nvidia_2bb60(__int64 a1, _QWORD** a2, __int64 a3, char a4, __int64 a5,
-                     _BYTE* a6, __int64 a7);
+unsigned int nvidia_2bb60(__int64 a1, _QWORD** a2, __int64 a3, char a4,
+                          __int64 a5, _BYTE* a6, __int64 a7);
 __int64 nvidia_34020(char a1, __int64 a2, __int64 a3, __int64 a4, __int64 a5,
                      __int64 a6, __int64 a7, __int64 a8, __int64 a9);
 unsigned __int64* nvidia_4d420(unsigned __int64* result, unsigned __int64 a2,
@@ -1536,8 +1536,8 @@ __int64 nvidia_25b80()
   return result;
 }
 
-__int64 nvidia_2bb60(__int64 a1, _QWORD** a2, __int64 a3, char a4, __int64 a5,
-                     _BYTE* a6, __int64 a7)
+unsigned int nvidia_2bb60(__int64 a1, _QWORD** a2, __int64 a3, char a4,
+                          __int64 a5, _BYTE* a6, __int64 a7)
 {
   __int64 result;
   __int64 v14;
