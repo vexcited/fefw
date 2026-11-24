@@ -216,7 +216,8 @@ __int64 CudaDriverStub_1dbfa0(_QWORD);
 __int64 CudaDriverStub_1dbfc0(_QWORD);
 __int64 CudaDriverStub_2066f0(_QWORD, _QWORD, _QWORD);
 __int64 CudaDriverStub_4f840(_QWORD);
-__int64 CudaDriverStub_57450(_QWORD);
+// The callee is a bare ret, so it reads none of the registers.
+__int64 CudaDriverStub_57450(void);
 __int64 CudaDriverStub_5ab60(_QWORD, _QWORD);
 __int64 CudaDriverStub_8e1f0(void);
 __int64 CudaDriverStub_9b050(_QWORD);
@@ -6374,7 +6375,7 @@ __int64 cuda_driver_595a0(__int64 a1, _QWORD* a2, unsigned int a3,
 
   v8 = CudaDriverRoutine_98110(*(_QWORD*)(*(_QWORD*)a1 + 8LL));
   if ((a4 & 0x20) == 0 && v8) {
-    CudaDriverStub_57450(v8);
+    CudaDriverStub_57450();
   }
   v12 = a1;
   if (*(_BYTE*)(a1 + 37) == 0) {

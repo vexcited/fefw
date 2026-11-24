@@ -530,7 +530,7 @@ fcc0,1900,verified,src/nvidia/unnamed/c000_0.c,CudaDriverHr_fcc0
 253a0,116,verified,src/nvidia/cuda_driver_context_impl.cpp,_Z32cuCtxGetStreamPriorityRange_implPjS_
 25420,136,verified,src/nvidia/unnamed/c000_0.c,CudaDriverHr_25420
 254d0,8,verified,src/nvidia/cuda_driver_stubs_forwarders.cpp,_Z20CudaDriverStub_254d0m
-254e0,248,verified,src/nvidia/cuda_driver_unplaced_2.c,cuda_driver_254e0
+254e0,276,disputed,src/nvidia/cuda_driver_unplaced_2.c,cuda_driver_254e0
 25610,8,verified,src/nvidia/cuda_driver_stubs_thunks.cpp,_Z20CudaDriverStub_25610m
 25620,8,verified,src/nvidia/cuda_driver_stubs_forwarders.cpp,_Z20CudaDriverStub_25620m
 25630,256,verified,src/nvidia/unnamed/c000_1.c,CudaDriverHr_25630
@@ -790,7 +790,7 @@ fcc0,1900,verified,src/nvidia/unnamed/c000_0.c,CudaDriverHr_fcc0
 316f0,376,verified,src/nvidia/cuda_driver_unplaced_2.c,cuda_driver_316f0
 31870,1348,verified,src/nvidia/unplaced_24.c,nvidia_31870
 31dc0,348,verified,src/nvidia/unplaced_24.c,nvidia_31dc0
-32230,336,verified,src/nvidia/cuda_driver_unplaced_2.c,cuda_driver_32230
+32230,372,verified,src/nvidia/cuda_driver_unplaced_2.c,cuda_driver_32230
 32540,276,verified,src/nvidia/cuda_driver_object_impl.cpp,_Z35cuGraphConditionalHandleCreate_implmmmjj
 32660,332,verified,src/nvidia/unnamed/c000_1.c,CudaDriverHr_32660
 327b0,448,verified,src/nvidia/cuda_driver_unplaced_2.c,cuda_driver_327b0
@@ -1418,7 +1418,7 @@ fcc0,1900,verified,src/nvidia/unnamed/c000_0.c,CudaDriverHr_fcc0
 599a0,160,verified,src/nvidia/unnamed/c000_2.c,CudaDriverHr_599a0
 59a40,656,verified,src/nvidia/cuda_driver_unplaced_2.c,cuda_driver_59a40
 59ce0,824,verified,src/nvidia/cuda_driver_unplaced_2.c,cuda_driver_59ce0
-5a060,184,verified,src/nvidia/cuda_driver_unplaced_2.c,cuda_driver_5a060
+5a060,196,verified,src/nvidia/cuda_driver_unplaced_2.c,cuda_driver_5a060
 5a140,212,verified,src/nvidia/unnamed/c000_2.c,CudaDriverHr_5a140
 5a220,460,verified,src/nvidia/cuda_driver_unplaced_2.c,cuda_driver_5a220
 5a420,328,verified,src/nvidia/unnamed/c000_2.c,CudaDriverHr_5a420
