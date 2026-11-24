@@ -1633,7 +1633,7 @@ float fmodf(float, float);
 float game_combat_e401e0(float*, float*);
 float math_Vec3_Angle(float32x4_t*, float32x4_t*);
 float sinf(float);
-long double asin(long double, long double);
+double asin(double);
 long double atan2(double, double);
 void CharacterRotate_d519c0(int8x16_t*);
 void GameRoutine_10da940(__int64);
@@ -4954,7 +4954,7 @@ __attribute__((swiftcall)) void game_108dd30(PSEUDO_X8 x8_, __int64 a1,
     if (*(double*)&v22 < -0x1.0000000000000p+0) {
       *(double*)&v22 = -0x1.0000000000000p+0;
     }
-    v23 = asin(v22, v21);
+    *(double*)&v23 = asin(*(double*)&v22);
     *(float*)&v23 = *(double*)&v23;
     v27 = LODWORD(v23);
     *(float*)&v23 =
@@ -5080,7 +5080,7 @@ game_108df10(PSEUDO_X8 x8_, __int64 a1, char* a2, int8x16_t* a3, long double a5)
     if (*(double*)&v20 < -0x1.0000000000000p+0) {
       *(double*)&v20 = -0x1.0000000000000p+0;
     }
-    v21 = asin(v20, v19);
+    *(double*)&v21 = asin(*(double*)&v20);
     *(float*)&v21 = *(double*)&v21;
     v25 = LODWORD(v21);
     *(float*)&v21 =
@@ -5250,7 +5250,7 @@ LABEL_11:
   if (*(double*)&v27 < -0x1.0000000000000p+0) {
     *(double*)&v27 = -0x1.0000000000000p+0;
   }
-  v28 = asin(v27, v26);
+  *(double*)&v28 = asin(*(double*)&v27);
   v29 = v42;
   *(float*)&v28 = *(double*)&v28;
   v33 = LODWORD(v28);

@@ -16,7 +16,7 @@ double sin(double);
 extern _DWORD GameData_1c0b528[3];
 extern _UNKNOWN* GameData_212c540;
 float task_618640(int, float result, float, float, float);
-long double asin(long double, long double);
+double asin(double);
 long double atan2(double, double);
 void game_cutscene_1808f40(__int64 a1, float a2);
 
@@ -435,7 +435,7 @@ void game_cutscene_1808f40(__int64 a1, float a2)
           if (*(double*)&v123 < -0x1.0000000000000p+0) {
             *(double*)&v123 = -0x1.0000000000000p+0;
           }
-          v124 = asin(v123, v122);
+          *(double*)&v124 = asin(*(double*)&v123);
           v125 = *(double*)&v124;
           *(float*)&v124 = vmuls_lane_f32(
               LANES128(v158).n128_f32[0],

@@ -143,7 +143,7 @@ extern _UNKNOWN game_g_random_mutex;
 extern __int128 GameData_1a82dd0;
 extern __int64* game_map_MapRandom_instance__ptr[3];
 extern __int64 game_g_frame_clock;
-long double asin(long double, long double);
+double asin(double);
 long double atan2(double, double);
 void snd_Fade_Fade_10c830(__int64, float);
 _QWORD* game_character_CharacterObservable_CharacterObservable_lambda4_Invoke(
@@ -2647,7 +2647,7 @@ _QWORD* game_character_CharacterObservable_CharacterObservable_lambda4_Invoke(
         if (*(double*)&v35 < -0x1.0000000000000p+0) {
           *(double*)&v35 = -0x1.0000000000000p+0;
         }
-        v36 = asin(v35, v34),
+        *(double*)&v36 = asin(*(double*)&v35),
         v11 = COERCE_AS(__typeof__(v11), PSEUDO_REGISTER(__n128, "v0", "=w")),
         v12 = COERCE_AS(__typeof__(v12), PSEUDO_REGISTER(__n128, "v1", "=w")),
         v120 = COERCE_AS(__typeof__(v120), PSEUDO_REGISTER(__n128, "v0", "=w")),
@@ -2898,7 +2898,7 @@ _QWORD* game_character_CharacterObservable_CharacterObservable_lambda4_Invoke(
         if (*(double*)&v58 < -0x1.0000000000000p+0) {
           *(double*)&v58 = -0x1.0000000000000p+0;
         }
-        v59 = asin(v58, v57),
+        *(double*)&v59 = asin(*(double*)&v58),
         v11 = COERCE_AS(__typeof__(v11), PSEUDO_REGISTER(__n128, "v0", "=w")),
         v12 = COERCE_AS(__typeof__(v12), PSEUDO_REGISTER(__n128, "v1", "=w")),
         v120 = COERCE_AS(__typeof__(v120), PSEUDO_REGISTER(__n128, "v0", "=w")),

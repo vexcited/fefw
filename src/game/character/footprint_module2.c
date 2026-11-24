@@ -33,7 +33,7 @@ extern __int64* eft_g_effectSystem_ptr[3];
 extern char GameData_1a9f09e;
 extern int GameData_21d92e0;
 float GameRoutine_9e1800(unsigned __int64*);
-long double asin(long double, long double);
+double asin(double);
 long double atan2(double, double);
 __int64 game_character_FootprintModule2_Start_lambda0_Invoke(__int64 a1,
                                                              unsigned int** a2);
@@ -847,7 +847,7 @@ __int64 game_character_FootprintModule2_Start_lambda0_Invoke(__int64 a1,
       if (*(double*)&v25 < -0x1.0000000000000p+0) {
         *(double*)&v25 = -0x1.0000000000000p+0;
       }
-      v26 = asin(v25, v24),
+      *(double*)&v26 = asin(*(double*)&v25),
       v38 = COERCE_AS(__typeof__(v38),
                       PSEUDO_REGISTER(unsigned long long, "x1", "=r"));
       *(float*)&v26 = *(double*)&v26;
