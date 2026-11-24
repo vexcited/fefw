@@ -1094,31 +1094,31 @@ void nvidia_6225f0(__int64 a1, float a2, float a3, float a4)
                 (float)(v8 * 0x1.5798ee0000000p-25f)) +
         (float)(v10 * 0x1.fb85660000000p-1f);
   v14 = 0x1.b7cdfe0000000p-34f;
-  if (v12 >= v13) {
+  if (!(v12 < v13)) {
     v15 = v12;
   }
   else {
     v15 = v13;
   }
-  if (v11 >= v15) {
+  if (!(v11 < v15)) {
     v15 = v11;
   }
-  if (v15 >= 0x1.b7cdfe0000000p-34f) {
+  if (!(v15 < 0x1.b7cdfe0000000p-34f)) {
     v16 = v15;
   }
   else {
     v16 = 0x1.b7cdfe0000000p-34f;
   }
-  if (v13 >= v12) {
+  if (!(v13 < v12)) {
     v17 = v12;
   }
   else {
     v17 = v13;
   }
-  if (v17 >= v11) {
+  if (!(v17 < v11)) {
     v17 = v11;
   }
-  if (v17 >= 0x1.b7cdfe0000000p-34f) {
+  if (!(v17 < 0x1.b7cdfe0000000p-34f)) {
     v14 = v17;
   }
   v18 = v16 - v14;
@@ -1176,10 +1176,10 @@ void nvidia_6225f0(__int64 a1, float a2, float a3, float a4)
         0x1.ca5dc1a63c1f8p+5;
   }
   v34 = v23 + 0x1.6800000000000p+8f;
-  if (v23 >= 0x0.0p+0f) {
+  if (!(v23 < 0x0.0p+0f)) {
     v34 = v23;
   }
-  if (v34 >= -0x1.6800000000000p+7f) {
+  if (!(v34 < -0x1.6800000000000p+7f)) {
     if (v34 <= 0x1.6800000000000p+7f) {
       goto LABEL_41;
     }
@@ -1191,7 +1191,7 @@ void nvidia_6225f0(__int64 a1, float a2, float a3, float a4)
   v34 = v34 + v35;
 LABEL_41:
   v36 = 0x0.0p+0f;
-  if (fabsf(v34) >= 0x1.0e00000000000p+6f) {
+  if (!(fabsf(v34) < 0x1.0e00000000000p+6f)) {
     goto LABEL_54;
   }
   v37 = 0x0.0p+0f;
@@ -1241,13 +1241,13 @@ LABEL_54:
   if (v47 < 0x0.0p+0f) {
     v47 = 0x0.0p+0f;
   }
-  if (v30 >= 0x0.0p+0f) {
+  if (!(v30 < 0x0.0p+0f)) {
     v48 = v30;
   }
   else {
     v48 = 0x0.0p+0f;
   }
-  if (v31 >= 0x0.0p+0f) {
+  if (!(v31 < 0x0.0p+0f)) {
     v49 = v31;
   }
   else {
@@ -1378,11 +1378,11 @@ LABEL_54:
     v90 = v87 / v89;
     v91 = v88 / v89;
     v92 = 0x0.0p+0f;
-    if (v88 >= 0x0.0p+0f) {
+    if (!(v88 < 0x0.0p+0f)) {
       v92 = v88;
     }
     v93 = powf_plt(v92, *(float*)(a1 + 284));
-    if (v91 >= 0x1.b7cdfe0000000p-34f) {
+    if (!(v91 < 0x1.b7cdfe0000000p-34f)) {
       v94 = v91;
     }
     else {
@@ -1449,13 +1449,13 @@ LABEL_54:
       v111 = 0x0.0p+0f;
     }
     v113 = v111 / 0x1.3880000000000p+13f;
-    if ((float)(v76 + (float)(v109 * v83)) >= 0x0.0p+0f) {
+    if (!((float)(v76 + (float)(v109 * v83)) < 0x0.0p+0f)) {
       v114 = v76 + (float)(v109 * v83);
     }
     else {
       v114 = 0x0.0p+0f;
     }
-    if (v112 >= 0x0.0p+0f) {
+    if (!(v112 < 0x0.0p+0f)) {
       v115 = v112;
     }
     else {

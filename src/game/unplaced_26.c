@@ -11994,9 +11994,10 @@ LABEL_62:
                              LANES128_OF(vextq_s8(v37, v37, 8u)).n128_u64[0]),
                    COERCE_AS(float32x2_t, LANES128(v37).n128_u64[0])))
           .n64_u64[0];
-  v32 = LANES64_OF(vpadd_f32(COERCE_AS(float32x2_t, LANES128(v37).n128_u64[0]),
+  v32 =
+      !(LANES64_OF(vpadd_f32(COERCE_AS(float32x2_t, LANES128(v37).n128_u64[0]),
                              COERCE_AS(float32x2_t, LANES128(v37).n128_u64[0])))
-            .n64_f32[0] <= (float)(*(float*)(a1 + 80) * *(float*)(a1 + 80));
+            .n64_f32[0] > (float)(*(float*)(a1 + 80) * *(float*)(a1 + 80)));
 LABEL_63:
   v38 = snd_fnd_WeakHandle_isValid((__int64*)(a1 + 16));
   v39 = v31 != 0 && v32;
@@ -12056,9 +12057,9 @@ LABEL_63:
     }
   }
   else if (*(_DWORD*)(*(_QWORD*)a1 + 16LL) == *(_DWORD*)(a1 + 8)) {
-    if (v57 <= 0x0.0p+0f || (game_14a1cc0((__int64*)a1, 0x0.0p+0f),
-                             v61 = *(unsigned __int8*)(a1 + 84),
-                             *(float*)(a1 + 88) = v57, v61 == 1)) {
+    if (!(v57 > 0x0.0p+0f) || (game_14a1cc0((__int64*)a1, 0x0.0p+0f),
+                               v61 = *(unsigned __int8*)(a1 + 84),
+                               *(float*)(a1 + 88) = v57, v61 == 1)) {
       GameRoutine_14a3260((__int64*)a1, 0);
       *(_DWORD*)(a1 + 88) = -1082130432;
     }

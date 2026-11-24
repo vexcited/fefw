@@ -587,7 +587,7 @@ void llvm_libcxx_21_libcxx_include___functional_10b8b50(__int64 a1, __int64 a2,
         if (LANES128(v39).n128_f32[0] <= 0x1.0000000000000p+0f) {
           v40 = LANES128(v39).n128_f32[0];
         }
-        if (LANES128(v39).n128_f32[0] >= 0x0.0p+0f) {
+        if (!(LANES128(v39).n128_f32[0] < 0x0.0p+0f)) {
           PSEUDO_LOW_LANE128(v39, n128_f32, v40);
         }
         else {
@@ -721,7 +721,7 @@ void llvm_libcxx_21_libcxx_include___functional_10b8b50(__int64 a1, __int64 a2,
     else {
       v49 = LANES128(v48).n128_f32[0];
     }
-    if (LANES128(v48).n128_f32[0] >= -0x1.0000000000000p+0f) {
+    if (!(LANES128(v48).n128_f32[0] < -0x1.0000000000000p+0f)) {
       v50 = v49;
     }
     else {
@@ -729,7 +729,7 @@ void llvm_libcxx_21_libcxx_include___functional_10b8b50(__int64 a1, __int64 a2,
     }
     v51 = sqrtf(0x1.0000000000000p+0f - (float)(v50 * v50));
     v52 = v42 * 0x1.1df46a0000000p-6f;
-    if (v50 >= 0x0.0p+0f) {
+    if (!(v50 < 0x0.0p+0f)) {
       v55 = *(float*)((char*)((_UNKNOWN**)0x8LL) + (_QWORD)GameData_212c2f0);
       v56 = *(float*)((char*)((__int128*)0x10LL) + (_QWORD)GameData_212c2f0);
       v57 =
@@ -800,7 +800,7 @@ void llvm_libcxx_21_libcxx_include___functional_10b8b50(__int64 a1, __int64 a2,
         v54 = v60;
       }
     }
-    else if (v50 >= -0x1.6a09e60000000p-1f) {
+    else if (!(v50 < -0x1.6a09e60000000p-1f)) {
       v61 = (float)-v50 / v51;
       v54 =
           (float)(PSEUDO_UNFUSED(
@@ -1194,7 +1194,7 @@ void llvm_libcxx_21_libcxx_include___functional_10b8b50(__int64 a1, __int64 a2,
       if (v101 <= 0x1.3333340000000p-3f) {
         v100 = v101;
       }
-      if (v101 >= -0x1.3333340000000p-3f) {
+      if (!(v101 < -0x1.3333340000000p-3f)) {
         v102 = v100;
       }
       else {
@@ -1209,7 +1209,7 @@ void llvm_libcxx_21_libcxx_include___functional_10b8b50(__int64 a1, __int64 a2,
         v105 = v104;
       }
       *(_OWORD*)(v3 + 288) = v103;
-      if (v104 >= -0x1.47ae140000000p-4f) {
+      if (!(v104 < -0x1.47ae140000000p-4f)) {
         v106 = v105;
       }
       else {

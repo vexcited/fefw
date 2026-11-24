@@ -24216,7 +24216,7 @@ ffee0,324,verified,src/nn/fs/unplaced.c,nn_fs_GetAndClearMemoryReportInfo
 621720,696,verified,src/nvidia/unplaced_3.c,nvidia_621720
 621a20,2348,verified,src/nvidia/unplaced_3.c,nvidia_621a20
 622350,604,verified,src/nvidia/unplaced_3.c,nvidia_622350
-6225f0,3672,disputed,src/nvidia/unplaced_25.c,nvidia_6225f0
+6225f0,3672,verified,src/nvidia/unplaced_25.c,nvidia_6225f0
 623710,824,verified,src/nvidia/unplaced_3.c,nvidia_623710
 623a50,56,verified,src/nvidia/unplaced_3.c,nvidia_623a50
 623a90,20,verified,src/nvidia/unplaced_3.c,nvidia_623a90
