@@ -393,6 +393,16 @@ _QWORD* nn_66f9b0();
 __int64 nn_66fa80(__int64 a1);
 __int64 nn_os_LockMutex_plt_alt2(_QWORD);
 __int64 nn_os_UnlockMutex_plt_alt2(_QWORD);
+__int64 NvOsSleepMS_plt(unsigned int);
+__int64 NvOsThreadYield_plt(void);
+__int64 NvOsWaitUS_plt(_QWORD);
+extern _QWORD SdkData_10439b8[735];
+extern _UNKNOWN* SdkData_e767b0;
+int strcmp_plt_alt2(const char*, const char*);
+typedef __int128 SdkAlign_1042088 __attribute__((aligned(8)));
+extern SdkAlign_1042088 SdkData_1042088;
+__int64 unplaced_3_655c80(__int64 a1, __int64 a2, __int64 a3, _QWORD* a4);
+__int64 unplaced_3_65cdf0(__int64 result, unsigned int* a2);
 
 __int64 nn_aee50(unsigned __int8* a1, __int64 a2, __int64 a3,
                  unsigned __int64 a4)
@@ -1954,6 +1964,52 @@ __int64 nn_655c00(void* a1, __int64 a2, __int64 a3, unsigned __int64 a4)
     }
     SdkRoutine_64fff0(0);
     memcpy_plt(SdkData_e89c30, SdkData_e89c38, 5880);
+  }
+  return 1;
+}
+
+__int64 unplaced_3_655c80(__int64 a1, __int64 a2, __int64 a3, _QWORD* a4)
+{
+  int v5;
+  int v9;
+  __int64 v10;
+  int v11;
+
+  if (*(_BYTE*)a2 != 110) {
+    return 0;
+  }
+  if (*(_BYTE*)(a2 + 1) != 118 || *(_BYTE*)(a2 + 2) != 110) {
+    return 0;
+  }
+  v5 = 734;
+  v9 = 0;
+  while (1) {
+    while (1) {
+      v10 = (unsigned int)((v5 + v9) >> 1);
+      v11 = strcmp_plt_alt2((const char*)(a2 + 3),
+                            &SdkData_c77db2[SdkData_c7d240[(unsigned int)v10]]);
+      if (v11 < 1) {
+        break;
+      }
+      v9 = v10 + 1;
+      if (v5 < (int)v10 + 1) {
+        return 0;
+      }
+    }
+    if ((v11 & 0x80000000) == 0) {
+      break;
+    }
+    v5 = v10 - 1;
+    if ((int)v10 - 1 < v9) {
+      return 0;
+    }
+  }
+  if ((unsigned int)v10 > 0x2DF) {
+    return 0;
+  }
+  *(_QWORD*)(a1 + 8 * v10) = a3;
+  if (a4 != nullptr) {
+    *a4 = SdkData_10439b8[v10];
   }
   return 1;
 }
@@ -3915,6 +3971,42 @@ __int64 nn_65cdb0(__int64 a1)
                                          (_QWORD)SdkData_e89bd8))(a1, &v2);
 }
 
+__int64 unplaced_3_65cdf0(__int64 result, unsigned int* a2)
+{
+  int* v2;
+  int v3;
+
+  if ((unsigned int)(result - 1) > 4) {
+    v2 = (int*)&SdkData_1042088 + 1;
+  }
+  else {
+    v2 = (int*)*(&SdkData_e767b0 + (unsigned int)(result - 1));
+  }
+  v3 = *v2;
+  if (v3 > 2) {
+    if (v3 == 3) {
+      return NvOsSleepMS_plt(1u);
+    }
+    if (v3 == 4) {
+      return NvOsWaitUS_plt(250);
+    }
+    if (v3 != 5) {
+      return result;
+    }
+    if (a2 != nullptr) {
+      return NvOsWaitUS_plt(*a2);
+    }
+    return NvOsThreadYield_plt();
+  }
+  if (v3 == 0) {
+    return NvOsThreadYield_plt();
+  }
+  if (v3 == 2) {
+    return NvOsSleepMS_plt(0);
+  }
+  return result;
+}
+
 __int64 nn_65ce80(unsigned int a1) { return __clz(a1) ^ 0x1F; }
 
 float nn_65ce90(float result)
@@ -4388,8 +4480,9 @@ long double nn_65fa80(__int64 a1, __int64 a2, __int64 a3, unsigned __int64 a4)
   return result;
 }
 
-__attribute__((no_builtin("memset", "memcpy", "memmove")))
-__int64 nn_65fce0(__int64 a1, int a2, __int64 a3, unsigned __int64 a4)
+__attribute__((no_builtin("memset", "memcpy", "memmove"))) __int64
+
+nn_65fce0(__int64 a1, int a2, __int64 a3, unsigned __int64 a4)
 {
   __int64 v6;
   unsigned int add;

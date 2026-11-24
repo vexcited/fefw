@@ -6,6 +6,8 @@ __int64 libjpegturbonx_1f9e0(__int64 result, _BYTE** a2, _QWORD* a3,
                              unsigned int a4, int a5);
 __int64 libjpegturbonx_543a0(__int64 result, __int64 a2, __int64 a3, int a4);
 __int64 libjpegturbonx_54820(__int64 result, __int64 a2, __int64 a3, int a4);
+__int64 memset_plt(__int64, int, unsigned __int64);
+__int64 unplaced_3_545a0(__int64 result, __int64 a2, __int64 a3, int a4);
 
 __int64 libjpegturbonx_1f9e0(__int64 result, _BYTE** a2, _QWORD* a3,
                              unsigned int a4, int a5)
@@ -248,6 +250,140 @@ __int64 libjpegturbonx_543a0(__int64 result, __int64 a2, __int64 a3, int a4)
         v13 += 8;
       } while ((_DWORD)result != 0);
       goto LABEL_4;
+    }
+  }
+  return result;
+}
+
+__int64 unplaced_3_545a0(__int64 result, __int64 a2, __int64 a3, int a4)
+{
+  unsigned __int64 v4;
+  __int64 v5;
+  __int64 v6;
+  __int64 v7;
+  __int64 v8;
+  unsigned __int8* v9;
+  _BYTE* v10;
+  int i;
+  __int64 v12;
+  unsigned __int8* v13;
+  _QWORD* v14;
+  unsigned __int8* v15;
+  int v16;
+  int v17;
+  __int64 v18;
+  __int64 v19;
+  __int64* v20;
+  __int64 v21;
+  __int64 v22;
+  __int64 v23;
+  __int64 v24;
+  __int64 v25;
+  __int64* v26;
+  __int64 v27;
+  __int64 v28;
+  __int64 v29;
+  __int64* v30;
+  __int64 v31;
+
+  if (a4 >= 1) {
+    v4 = *(unsigned int*)(result + 144);
+    if ((_DWORD)v4 != 0) {
+      v5 = *(unsigned int*)(result + 152);
+      v6 = (unsigned int)a4;
+      if ((int)v5 > 0) {
+        v7 = 0;
+        v8 = *(_QWORD*)(*(_QWORD*)(result + 656) + 48LL);
+        while (1) {
+          v9 = *(unsigned __int8**)(a2 + 8 * v7);
+          v10 = *(_BYTE**)(a3 + 8 * v7);
+          for (i = v4; i != 0; --i) {
+            if ((unsigned int)v5 < 8) {
+              v12 = 0;
+              result = 0;
+              v13 = v9;
+              if ((v5 & 7) == 0) {
+                goto LABEL_7;
+              }
+            LABEL_14:
+              v20 = (__int64*)(v8 + 8 * v12);
+              v21 = v5 & 7;
+              do {
+                v23 = *v20++;
+                v22 = v23;
+                LODWORD(v23) = *v13++;
+                --v21;
+                result = (unsigned int)result +
+                         *(unsigned __int8*)(v22 + (unsigned int)v23);
+              } while (v21 != 0);
+              goto LABEL_7;
+            }
+            v12 = 0;
+            LODWORD(result) = 0;
+            v14 = (_QWORD*)(v8 + 32);
+            do {
+              v15 = &v9[v12];
+              v12 += 8;
+              v16 = result + *(unsigned __int8*)(*(v14 - 4) + *v15) +
+                    *(unsigned __int8*)(*(v14 - 3) + v15[1]) +
+                    *(unsigned __int8*)(*(v14 - 2) + v15[2]);
+              v17 = *(unsigned __int8*)(*(v14 - 1) + v15[3]) +
+                    *(unsigned __int8*)(*v14 + v15[4]) +
+                    *(unsigned __int8*)(v14[1] + v15[5]);
+              v18 = v14[2];
+              v19 = v14[3];
+              v14 += 8;
+              result = v16 + v17 + *(unsigned __int8*)(v18 + v15[6]) +
+                       (unsigned int)*(unsigned __int8*)(v19 + v15[7]);
+            } while ((v5 & 0x7FFFFFF8) != v12);
+            v13 = &v9[v12];
+            if ((v5 & 7) != 0) {
+              goto LABEL_14;
+            }
+          LABEL_7:
+            v9 += v5;
+            *v10++ = result;
+          }
+          if (++v7 == v6) {
+            return result;
+          }
+        }
+      }
+      v24 = a4 & 7;
+      if ((unsigned int)(a4 - 1) < 7) {
+        v25 = 0;
+        if ((a4 & 7) == 0) {
+          return result;
+        }
+        goto LABEL_23;
+      }
+      v26 = (__int64*)(a3 + 32);
+      v27 = 0;
+      v28 = a3;
+      v29 = -(__int64)(a4 & 0x7FFFFFF8);
+      do {
+        memset_plt(*(v26 - 4), 0, v4);
+        memset_plt(*(v26 - 3), 0, v4);
+        memset_plt(*(v26 - 2), 0, v4);
+        memset_plt(*(v26 - 1), 0, v4);
+        memset_plt(*v26, 0, v4);
+        memset_plt(v26[1], 0, v4);
+        memset_plt(v26[2], 0, v4);
+        result = memset_plt(v26[3], 0, v4);
+        v27 -= 8;
+        v26 += 8;
+      } while (v29 != v27);
+      v25 = -v27;
+      a3 = v28;
+      if (v24 != 0) {
+      LABEL_23:
+        v30 = (__int64*)(a3 + 8 * v25);
+        do {
+          v31 = *v30++;
+          result = memset_plt(v31, 0, v4);
+          --v24;
+        } while (v24 != 0);
+      }
     }
   }
   return result;

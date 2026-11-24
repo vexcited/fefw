@@ -290,6 +290,9 @@ unsigned __int8 CudaDriverRoutine_1ec4a0(__int64, _QWORD*);
 __int64 cuda_driver_21f6b0(__int64 a1, unsigned __int64* a2);
 __int64 cuda_driver_21f790(unsigned int* a1, __int64 a2, __int64 a3);
 float cuda_driver_229040();
+__int64 nvidia_1222e0(__int64, unsigned int);
+extern _DWORD CudaDriverData_13b5194[6];
+__int64 cuda_driver_unplaced_12_228630(__int64 a1, unsigned int a2);
 
 __int64 cuda_driver_21ebe0(_QWORD* a1, unsigned __int64 a2, float64x2_t* a3,
                            float64x2_t* a4)
@@ -684,6 +687,22 @@ __int64 cuda_driver_228210()
 {
   return *((unsigned __int8*)((_UNKNOWN*)0x17BCLL) +
            (_QWORD)CudaDriverData_1422118);
+}
+
+__int64 cuda_driver_unplaced_12_228630(__int64 a1, unsigned int a2)
+{
+  unsigned int v2;
+  __int64 v3;
+
+  if (a1 == 0) {
+    return 999;
+  }
+  if (a2 > 5) {
+    return 1;
+  }
+  v2 = CudaDriverData_13b5194[a2];
+  v3 = CudaDriverRoutine_98340(a1);
+  return nvidia_1222e0(v3, v2);
 }
 
 __int64 cuda_driver_228eb0(__int64 a1, __int64 a2, __int64 a3)

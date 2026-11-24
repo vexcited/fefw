@@ -91,6 +91,9 @@ __int64 vi2_frontend_5e8e40(_QWORD* a1, __int64 a2, __int64 a3,
                             unsigned __int64 a4);
 __int64 vi2_frontend_5e9100(__int64 a1, _DWORD* a2, _QWORD* a3, __int64 a4);
 __int64 vi2_frontend_5e78f0(__int64 result, unsigned __int8 a2);
+extern __int64 SdkData_e88fc0;
+__int64 vi2_frontend_5ebd90(__int64 a1, __int64 a2, unsigned __int64 a3,
+                            _BYTE* a4, __int64 a5);
 
 __int64 vi2_frontend_5e72f0(__int64 a1, __int64 a2, __int64 a3)
 {
@@ -1561,6 +1564,79 @@ __int64 vi2_frontend_5e9100(__int64 a1, _DWORD* a2, _QWORD* a3, __int64 a4)
       a3[1] = v12;
       return 0;
     }
+  }
+  return result;
+}
+
+__int64 vi2_frontend_5ebd90(__int64 a1, __int64 a2, unsigned __int64 a3,
+                            _BYTE* a4, __int64 a5)
+{
+  __int64 v5;
+  __int64 v7;
+  __int64 v8;
+  __int64 v12;
+  __int64 result;
+  char v14;
+  unsigned __int64 v15;
+  _DWORD* v16;
+  _DWORD* v17;
+  int v18;
+  __int64 v19;
+  struct {
+    char gap8_[4];
+    _BYTE v20[4];
+    __int64 v21;
+  } v20_;
+
+  v20_.v21 = v5;
+  v8 = *(_QWORD*)(a5 + 8);
+  v7 = *(_QWORD*)(a5 + 16);
+  v20_.v20[0] = 0;
+  v12 = SdkData_e88fc0;
+  result = (*(__int64 (**)(_QWORD, __int64, __int64, _BYTE*, __int64))(
+      *(_QWORD*)v8 + 504LL))(*(_QWORD*)(*(_QWORD*)v8 + 24LL), SdkData_e88fc0, 4,
+                             v20_.v20, v7);
+  if ((_DWORD)result == 0) {
+    v14 = v20_.v20[0];
+    if (a3 != 0) {
+      v15 = a3 >= v20_.v20[0] ? v20_.v20[0] : a3;
+      if (v20_.v20[0] != 0) {
+        v16 = (_DWORD*)(v12 + 28);
+        v17 = (_DWORD*)(a2 + 28);
+        do {
+          v19 = *(_QWORD*)(v16 - 7);
+          if (v19 == 1) {
+            v18 = 60;
+          }
+          else {
+            if (v19 != 2) {
+              goto LABEL_10;
+            }
+            v18 = 120;
+          }
+          *(v17 - 7) = v18;
+          *(v17 - 5) = *(v16 - 4);
+          *(v17 - 4) = *(v16 - 3);
+          *(v17 - 3) = *(v16 - 2);
+          *(v17 - 2) = *(v16 - 1);
+          *(v17 - 1) = *(_DWORD*)v16;
+          *(_DWORD*)v17 = v16[1];
+          v17[1] = v16[2];
+          v17[2] = v16[3];
+          v17[3] = v16[4];
+          v17[4] = v16[5];
+          v17[5] = v16[6];
+          v17[6] = v16[7];
+          *(v17 - 6) = *(v16 - 5);
+        LABEL_10:
+          --v15;
+          v17 += 14;
+          v16 += 16;
+        } while (v15 != 0);
+      }
+    }
+    *a4 = v14;
+    return 0;
   }
   return result;
 }

@@ -124,6 +124,21 @@ __int64 nn_gs_48d7f0(__int64 a1, _QWORD* a2, __int64 a3);
 unsigned int* nn_gs_48f4a0(unsigned int* result);
 __int64 nn_gs_48fa30(__int64 a1);
 __int64 nn_gs_48fbe0();
+__int64 SdkRoutine_47c140_alt2(__int64 result, __int64, unsigned __int64,
+                               unsigned __int64*);
+__int64 memcpy_plt(__int64, __int64, unsigned __int64);
+__int64 nn_gs_47bda0_alt3(_QWORD*, __int64, __int64);
+__int64 nn_gs_48a6b0_alt2(_QWORD*, __int64, __int64);
+__int64 nn_gs_impl_EnsureGraphicsAllocatorThreadLocalData_plt_alt2(_QWORD);
+__int64 nn_os_SdkMutexType_TryLock_plt_alt1(__int64);
+__int64 nn_os_SdkMutexType_Unlock_plt_alt1(__int64);
+__int64 unplaced_48cb20_alt1(__int64 result, __int64);
+void nn_detail_UnexpectedDefaultImpl_plt_857150_alt1();
+void nn_diag_detail_AbortImpl_plt_856170_alt1();
+__int64 unplaced_47ad70(__int64 a1);
+__int64 unplaced_47ad80(__int64 a1, unsigned __int64 a2);
+__int64 unplaced_48cb20(__int64 result, unsigned __int64 a2);
+__int64 unplaced_48cf10(__int64 a1, __int64 a2, unsigned __int64 a3);
 
 __int64 nn_gs_sdk_BootGraphicsSystem(__int64 this_, __int64 a2)
 {
@@ -188,6 +203,16 @@ __int64 nn_gs_47ace0(__int64 a1, __int64 a2)
   else {
     return 0;
   }
+}
+
+__int64 unplaced_47ad70(__int64 a1)
+{
+  return unplaced_48cb20_alt1((__int64)&nn_gs_sdk_g_GraphicsAllocator, a1);
+}
+
+__int64 unplaced_47ad80(__int64 a1, unsigned __int64 a2)
+{
+  return unplaced_48cf10((__int64)&nn_gs_sdk_g_GraphicsAllocator, a1, a2);
 }
 
 __int64 nn_gs_47ada0(__int64 result)
@@ -4402,6 +4427,218 @@ __int64 nn_gs_48a6b0(__int64* a1, unsigned __int64 a2, _QWORD** a3)
   }
 }
 
+__int64 unplaced_48cb20(__int64 result, unsigned __int64 a2)
+{
+  __int64 v3;
+  __int64 v4;
+  unsigned __int64* v5;
+  __int64 v6;
+  __int64 v7;
+  _QWORD* v8;
+  __int64 v9;
+  _QWORD* v10;
+  _QWORD* v11;
+  __int64 v12;
+  __int64 v13;
+  __int64 v14;
+  bool v15;
+  __int64 v16;
+  _QWORD* v17;
+  __int64 v18;
+  __int64 v19;
+  __int64 v20;
+  struct {
+    _QWORD* v21;
+    __int64 v22;
+    __int64 v23;
+    __int64 v24;
+    __int64 v25;
+    __int64 v26;
+    __int64 v27;
+    __int64 v28;
+    __int64 v29;
+    __int64 v30;
+    __int64 v31;
+    __int64 v32;
+    __int64 v33;
+  } v21_;
+
+  if (a2 == 0) {
+    return result;
+  }
+  v3 = result;
+  if ((a2 & 0xFFF) != 0) {
+    v4 = *(_QWORD*)(a2 & 0xFFFFFFFFFFFFF000LL);
+    if (v4 != 2) {
+      if (v4 != 1) {
+        nn_detail_UnexpectedDefaultImpl_plt_857150_alt1();
+      }
+      v5 = (unsigned __int64*)
+          nn_gs_impl_EnsureGraphicsAllocatorThreadLocalData_plt_alt2(result);
+      if (v5 != nullptr) {
+        if ((a2 & 0x3FF) == 0) {
+          return SdkRoutine_47c140_alt2(
+              *(__int64*)((char*)((__int64*)0x50LL) + v3),
+              (__int64)((__int64*)0x58LL) + v3, a2, v5);
+        }
+        result =
+            nn_gs_47bda0_alt3((char*)((_UNKNOWN*)0x80LL) + v3, a2, (__int64)v5);
+        if ((result & 1) == 0) {
+          nn_diag_detail_AbortImpl_plt_856170_alt1();
+        }
+        return result;
+      }
+      v21_.v32 = 0;
+      v21_.v33 = 0;
+      v21_.v30 = 0;
+      v21_.v31 = 0;
+      v21_.v28 = 0;
+      v21_.v29 = 0;
+      v21_.v26 = 0;
+      v21_.v27 = 0;
+      v21_.v24 = 0;
+      v21_.v25 = 0;
+      v21_.v22 = 0;
+      v21_.v23 = 0;
+      v21_.v21 = nullptr;
+      if ((a2 & 0x3FF) != 0) {
+        if ((nn_gs_47bda0_alt3((char*)((_UNKNOWN*)0x80LL) + v3, a2,
+                               (__int64)&v21_.v21) &
+             1) == 0) {
+          nn_diag_detail_AbortImpl_plt_856170_alt1();
+        }
+        result = nn_gs_47b000((__int64)((_UNKNOWN*)0x80LL) + v3, &v21_.v21);
+        v11 = v21_.v21;
+        v21_.v21 = nullptr;
+        if (v11 == nullptr) {
+          return result;
+        }
+      }
+      else {
+        SdkRoutine_47c140_alt2(*(__int64*)((char*)((__int64*)0x50LL) + v3),
+                               (__int64)((__int64*)0x58LL) + v3, a2,
+                               (unsigned __int64*)&v21_.v21);
+        result = nn_gs_47b000((__int64)((_UNKNOWN*)0x80LL) + v3, &v21_.v21);
+        v11 = v21_.v21;
+        v21_.v21 = nullptr;
+        if (v11 == nullptr) {
+          return result;
+        }
+      }
+      result =
+          nn_os_SdkMutexType_TryLock_plt_alt1((__int64)((__int64*)0x58LL) + v3);
+      if ((result & 1) != 0) {
+        v16 = *(_QWORD*)((char*)((char*)0x60LL) + v3);
+        v17 = *(_QWORD**)((char*)((__int64*)0x4LL) + v16 + 4);
+        *v17 = v11;
+        *(__int64*)((char*)((__int64*)0x4LL) + v16 + 4) = (__int64)v11;
+        v11[1] = v17;
+        *v11 = v16;
+        return nn_os_SdkMutexType_Unlock_plt_alt1((__int64)((__int64*)0x58LL) +
+                                                  v3);
+      }
+      else {
+        v18 = *(_QWORD*)((char*)((_UNKNOWN*)0x70LL) + v3);
+        *v11 = v18;
+        v19 = v18;
+        atomic_compare_exchange_strong_explicit(
+            (atomic_ullong* volatile)((char*)((_UNKNOWN*)0x70LL) + v3),
+            (unsigned __int64*)&v19, (unsigned __int64)v11,
+            memory_order_release, memory_order_relaxed);
+        if (v19 != v18) {
+          v20 = v19;
+          do {
+            *v11 = v19;
+            atomic_compare_exchange_strong_explicit(
+                (atomic_ullong* volatile)((char*)((_UNKNOWN*)0x70LL) + v3),
+                (unsigned __int64*)&v20, (unsigned __int64)v11,
+                memory_order_release, memory_order_relaxed);
+            v15 = v20 == v19;
+            v19 = v20;
+          } while (!v15);
+        }
+      }
+      return result;
+    }
+    v7 = nn_gs_impl_EnsureGraphicsAllocatorThreadLocalData_plt_alt2(result);
+    if (v7 != 0) {
+      result =
+          nn_gs_48a6b0_alt2((char*)((_UNKNOWN*)0x3C0LL) + v3, a2, v7 + 104);
+      if ((result & 1) == 0) {
+        nn_diag_detail_AbortImpl_plt_856170_alt1();
+      }
+      return result;
+    }
+    v21_.v28 = 0;
+    v21_.v29 = 0;
+    v21_.v26 = 0;
+    v21_.v27 = 0;
+    v21_.v24 = 0;
+    v21_.v25 = 0;
+    v21_.v22 = 0;
+    v21_.v23 = 0;
+    v21_.v21 = nullptr;
+    if ((nn_gs_48a6b0_alt2((char*)((_UNKNOWN*)0x3C0LL) + v3, a2,
+                           (__int64)&v21_.v21) &
+         1) == 0) {
+      nn_diag_detail_AbortImpl_plt_856170_alt1();
+    }
+  }
+  else {
+    v6 = nn_gs_impl_EnsureGraphicsAllocatorThreadLocalData_plt_alt2(result);
+    if (v6 != 0) {
+      return nn_gs_48ce20((char*)((_UNKNOWN*)0x3B8LL) + v3, a2, v6 + 104);
+    }
+    v21_.v28 = 0;
+    v21_.v29 = 0;
+    v21_.v26 = 0;
+    v21_.v27 = 0;
+    v21_.v24 = 0;
+    v21_.v25 = 0;
+    v21_.v22 = 0;
+    v21_.v23 = 0;
+    v21_.v21 = nullptr;
+    nn_gs_48ce20((char*)((_UNKNOWN*)0x3B8LL) + v3, a2, (__int64)&v21_.v21);
+  }
+  v8 = v21_.v21;
+  v21_.v21 = nullptr;
+  if (v8 != nullptr) {
+    if ((nn_os_SdkMutexType_TryLock_plt_alt1((__int64)((_UNKNOWN*)0x3C8LL) +
+                                             v3) &
+         1) != 0) {
+      v9 = *(_QWORD*)((char*)((_UNKNOWN*)0x3D0LL) + v3);
+      v10 = *(_QWORD**)((char*)((__int64*)0x4LL) + v9 + 4);
+      *v10 = v8;
+      *(__int64*)((char*)((__int64*)0x4LL) + v9 + 4) = (__int64)v8;
+      *(__int64*)((char*)((__int64*)0x4LL) + (_QWORD)v8 + 4) = (__int64)v10;
+      *v8 = v9;
+      nn_os_SdkMutexType_Unlock_plt_alt1((__int64)((_UNKNOWN*)0x3C8LL) + v3);
+    }
+    else {
+      v12 = *(_QWORD*)((char*)((_UNKNOWN*)0x3E0LL) + v3);
+      *v8 = v12;
+      v13 = v12;
+      atomic_compare_exchange_strong_explicit(
+          (atomic_ullong* volatile)((char*)((_UNKNOWN*)0x3E0LL) + v3),
+          (unsigned __int64*)&v13, (unsigned __int64)v8, memory_order_release,
+          memory_order_relaxed);
+      if (v13 != v12) {
+        v14 = v13;
+        do {
+          *v8 = v13;
+          atomic_compare_exchange_strong_explicit(
+              (atomic_ullong* volatile)((char*)((_UNKNOWN*)0x3E0LL) + v3),
+              (unsigned __int64*)&v14, (unsigned __int64)v8,
+              memory_order_release, memory_order_relaxed);
+          v15 = v14 == v13;
+          v13 = v14;
+        } while (!v15);
+      }
+    }
+  }
+  return nn_gs_47b780((__int64)((_UNKNOWN*)0x3C0LL) + v3, &v21_.v21);
+}
+
 __int64 nn_gs_48ce20(_QWORD* a1, unsigned __int64 a2, __int64 a3)
 {
   _QWORD* v6;
@@ -4447,6 +4684,76 @@ __int64 nn_gs_48ce20(_QWORD* a1, unsigned __int64 a2, __int64 a3)
     __udf(0);
   }
   return result;
+}
+
+__int64 unplaced_48cf10(__int64 a1, __int64 a2, unsigned __int64 a3)
+{
+  __int64 v5;
+  __int64 v6;
+  unsigned __int64 v7;
+  __int64 v8;
+  char v9;
+  __int64 v10;
+  _QWORD v12[3];
+  __int64 v13;
+  __int64 v14;
+  __int64 v15;
+  __int64 v16;
+
+  v15 = a2;
+  if (a2 == 0) {
+    v12[0] = 0;
+    v16 = 0;
+    if ((nn_gs_489e80(a1, (__int64)v12, (__int64)&v16, a3, 16) & 1) != 0) {
+      return v12[0];
+    }
+    else {
+      return 0;
+    }
+  }
+  v5 = a2;
+  if ((a2 & 0xFFF) == 0) {
+    v16 = 2;
+  LABEL_11:
+    v7 = nn_gs_48d480((__int64)((_UNKNOWN*)0x3B8LL) + a1, a2);
+    if (a3 <= v7) {
+      return v5;
+    }
+    goto LABEL_12;
+  }
+  v6 = *(_QWORD*)(a2 & 0xFFFFFFFFFFFFF000LL);
+  v16 = v6;
+  if (v6 == 2) {
+    goto LABEL_11;
+  }
+  if (v6 != 1) {
+    nn_detail_UnexpectedDefaultImpl_plt_857150_alt1();
+  }
+  v7 = nn_gs_48d380((__int64)((__int64*)0x48LL) + a1, a2);
+  if (a3 > v7) {
+  LABEL_12:
+    v14 = 0;
+    v13 = 0;
+    if ((v7 & -(__int64)v7) <= 0x10) {
+      v8 = 16;
+    }
+    else {
+      v8 = v7 & -(__int64)v7;
+    }
+    v9 =
+        nn_gs_489e80(a1, (__int64)&v14, (__int64)&v13, (a3 + v8 - 1) & -v8, v8);
+    v10 = 0;
+    if ((v9 & 1) != 0) {
+      memcpy_plt(v14, v5, v7);
+      v12[0] = a1;
+      v12[1] = &v15;
+      v12[2] = &v16;
+      nn_gs_48d060(v12);
+      return v14;
+    }
+    return v10;
+  }
+  return v5;
 }
 
 __int64 nn_gs_48d060(_QWORD* a1)

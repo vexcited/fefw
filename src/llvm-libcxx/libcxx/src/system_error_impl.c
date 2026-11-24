@@ -45,6 +45,71 @@ void __attribute__((noreturn)) std___1___throw_system_error(unsigned int a1,
                                                             const char* a2);
 void __attribute__((noreturn)) system_error_7e5110(__int64 a1, __int64 a2,
                                                    __int64 a3);
+__int64 SdkRoutine_85e050(unsigned __int64);
+__int64 std___1___do_message_message(void);
+extern _UNKNOWN* SdkData_ea9420;
+__attribute__((swiftcall)) void
+system_error_7e46c0(PSEUDO_X8 x8_, __int64 unused_int0, int a1);
+__attribute__((swiftcall)) void
+system_error_7e47a0(PSEUDO_X8 x8_, __int64 unused_int0, int a1);
+unsigned __int128 system_error_7e4810(__int64 a1, unsigned int a2);
+
+__attribute__((swiftcall)) void system_error_7e46c0(PSEUDO_X8 x8_,
+                                                    __int64 unused_int0, int a1)
+{
+  _QWORD* a2 = (_QWORD*)PSEUDO_X8_VALUE(x8_);
+  char* result;
+
+  if (a1 < 4096) {
+    (char*)std___1___do_message_message();
+    return;
+  }
+  result = (char*)SdkRoutine_85e050(0x28u);
+  *a2 = 41;
+  a2[1] = 34;
+  a2[2] = result;
+  strcpy(result, "unspecified generic_category error");
+  {
+    result;
+    return;
+  }
+}
+
+__attribute__((swiftcall)) void system_error_7e47a0(PSEUDO_X8 x8_,
+                                                    __int64 unused_int0, int a1)
+{
+  _QWORD* a2 = (_QWORD*)PSEUDO_X8_VALUE(x8_);
+  char* result;
+
+  if (a1 < 4096) {
+    (char*)std___1___do_message_message();
+    return;
+  }
+  result = (char*)SdkRoutine_85e050(0x28u);
+  *a2 = 41;
+  a2[1] = 33;
+  a2[2] = result;
+  strcpy(result, "unspecified system_category error");
+  {
+    result;
+    return;
+  }
+}
+
+unsigned __int128 system_error_7e4810(__int64 a1, unsigned int a2)
+{
+  unsigned __int128 result;
+
+  *(_QWORD*)&result = a2;
+  if ((int)a2 <= 4095) {
+    *((_QWORD*)&result + 1) = &SdkData_ea9418;
+  }
+  else {
+    *((_QWORD*)&result + 1) = &SdkData_ea9420;
+  }
+  return result;
+}
+
 void __attribute__((noreturn))
 
 system_error_7e4988(__int64 a1, __int64 a2, __int64 a3, __int64 a4, __int64 a5,

@@ -9,6 +9,10 @@ __int64 opus_6f8a0(unsigned __int8* a1, int a2, int a3);
 __int64 opus_752e0(unsigned int* a1, unsigned int a2, unsigned int a3, int a4,
                    int a5, __int64 a6);
 __int64 opus_75d80(__int64 result, int a2, int a3, __int16* a4, int a5, int a6);
+__int64 opus_packet_pad_plt(_QWORD, _QWORD, _QWORD);
+__int64 opus_packet_parse_impl(unsigned __int8*, int, int, _BYTE*, __int64,
+                               _WORD*, _DWORD*, _DWORD*);
+__int64 unplaced_10_6f780(unsigned __int8* a1, int a2, int a3, int a4);
 
 __int64 opus_667f0(int a1)
 {
@@ -87,6 +91,53 @@ __int64 opus_6f660(unsigned __int8* a1, int a2)
     v11_.v12 += v8;
   }
   return GameRoutine_6eea0(v11_.v11, 0, v10, a1, a2, 0, 0);
+}
+
+__int64 unplaced_10_6f780(unsigned __int8* a1, int a2, int a3, int a4)
+{
+  int v6;
+  int v7;
+  __int64 result;
+  int v10;
+  int v11;
+  struct {
+    _QWORD v12[12];
+    char gap104_[4];
+    _BYTE v13[4];
+  } v12_;
+
+  if (a2 < 1) {
+    return 0xFFFFFFFFLL;
+  }
+  v6 = a3 - a2;
+  v7 = a2;
+  if (a3 == a2) {
+    return 0;
+  }
+  if (a3 < a2) {
+    return 0xFFFFFFFFLL;
+  }
+  v12_.v13[0] = 0;
+  memset(v12_.v12, 0, sizeof(v12_.v12));
+  v11 = 0;
+  if (a4 < 2) {
+    return opus_packet_pad_plt(a1, (unsigned int)v7, (unsigned int)(v6 + v7));
+  }
+  v10 = a4 - 1;
+  while (v7 >= 1) {
+    result =
+        opus_packet_parse_impl(a1, v7, 1, v12_.v13, 0, v12_.v12, nullptr, &v11);
+    if ((result & 0x80000000) != 0) {
+      return result;
+    }
+    --v10;
+    a1 += v11;
+    v7 -= v11;
+    if (v10 == 0) {
+      return opus_packet_pad_plt(a1, (unsigned int)v7, (unsigned int)(v6 + v7));
+    }
+  }
+  return 4294967292LL;
 }
 
 __int64 opus_6f8a0(unsigned __int8* a1, int a2, int a3)

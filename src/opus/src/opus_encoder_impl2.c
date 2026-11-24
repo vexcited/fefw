@@ -24,6 +24,73 @@ __int64 memset_plt_alt1(__int64, int, unsigned __int64) __asm__("memset_plt");
 __int64 opus_src_694e0(int*, __int64, int, _BYTE*, int, int, __int64,
                        unsigned int, unsigned int, unsigned int, unsigned int,
                        __int64, int);
+__int64 MovieFree_plt(_QWORD);
+__int64 MovieMalloc_plt(_QWORD);
+__int64 celt_encoder_get_size(int);
+__int64 opus_encoder_init_plt(_QWORD, _QWORD, _QWORD, _QWORD);
+__int64 silk_Get_Encoder_Size(_DWORD*);
+__int64 opus_encoder_68a50(int a1, unsigned int a2, unsigned int a3,
+                           _DWORD* a4);
+
+__int64 opus_encoder_68a50(int a1, unsigned int a2, unsigned int a3, _DWORD* a4)
+{
+
+#pragma clang fp contract(on)
+
+  __int64 result;
+  __int64 v9;
+  __int64 v10;
+  int v11;
+  int v12;
+  unsigned int v13;
+
+  if (a1 <= 15999) {
+    if (a1 != 8000 && a1 != 12000) {
+      goto LABEL_9;
+    }
+  }
+  else if (a1 != 16000 && a1 != 48000 && a1 != 24000) {
+    goto LABEL_9;
+  }
+  if (a2 - 3 < 0xFFFFFFFE || a3 - 2048 > 3 || a3 == 2050) {
+  LABEL_9:
+    result = 0;
+    if (a4 != nullptr) {
+      *(_DWORD*)a4 = -1;
+    }
+    return result;
+  }
+  v13 = 0;
+  if ((unsigned int)silk_Get_Encoder_Size(&v13) != 0) {
+    v9 = MovieMalloc_plt(0);
+    if (v9 != 0) {
+    LABEL_16:
+      v10 = v9;
+      v11 = opus_encoder_init_plt(v9, (unsigned int)a1, a2, a3);
+      if (a4 != nullptr) {
+        *(_DWORD*)a4 = v11;
+      }
+      if (v11 == 0) {
+        return v10;
+      }
+      MovieFree_plt(v10);
+      return 0;
+    }
+  }
+  else {
+    v13 = (v13 + 7) & 0xFFFFFFF8;
+    v12 = celt_encoder_get_size(a2);
+    v9 = MovieMalloc_plt((int)(v12 + 16224 + v13));
+    if (v9 != 0) {
+      goto LABEL_16;
+    }
+  }
+  result = 0;
+  if (a4 != nullptr) {
+    *(_DWORD*)a4 = -7;
+  }
+  return result;
+}
 
 __int64 opus_encoder_68dc0(__int64 result, __int64 a2, unsigned int a3, int a4,
                            int a5, unsigned int a6, int a7)

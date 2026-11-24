@@ -35,6 +35,9 @@ void __attribute__((noreturn))
 iostream_7f801c(__int64 a1, __int64 a2, __int64 a3, __int64 a4, __int64 a5,
                 __int64 a6, __int64 a7, __int64 a8, __int64 a9, char a10);
 __int64 std___1___stdoutbuf_Destroy___stdoutbuf_7f8040(_QWORD* a1);
+__int64 SdkRoutine_7f75a0(__int64, char);
+__int64 iostream_7f7440(__int64 a1);
+__int64 iostream_7f7450(__int64 a1);
 
 void std___1_ios_base_Init_Init(void* this_)
 {
@@ -61,6 +64,10 @@ __int64 std___1___stdinbuf_Destroy___stdinbuf_7f7380(_QWORD* a1)
   std___1_locale_Destroy_locale_plt(a1 + 1);
   return SdkRoutine_857220(a1, 104);
 }
+
+__int64 iostream_7f7440(__int64 a1) { return SdkRoutine_7f75a0(a1, 0); }
+
+__int64 iostream_7f7450(__int64 a1) { return SdkRoutine_7f75a0(a1, 1); }
 
 __int64 iostream_7f7760(__int64 a1, __int64 a2, __int64 a3)
 {

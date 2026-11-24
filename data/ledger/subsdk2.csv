@@ -553,8 +553,9 @@ fff0,88,verified,src/movie/detail/movie_video_decoder_event_manager.cpp,_ZN5movi
 18900,736,verified,src/movie/detail/movie_task_queue_impl.c,movie_detail_TaskQueue_ProcessEvents
 18c20,820,verified,src/movie/detail/movie_task_queue_impl.c,movie_detail_TaskQueue_TaskQueueSocketHandlerThreadBody
 18f60,372,verified,src/movie/detail/movie_task_queue_impl.c,movie_detail_TaskQueue_ProcessEventRegistration
-19160,344,verified,src/movie/detail/movie_task_queue_impl.c,movie_detail_TaskQueue_ProcessEventUnregistration
+19160,252,verified,src/movie/detail/movie_task_queue_impl.c,movie_detail_TaskQueue_ProcessEventUnregistration
 192d0,92,verified,src/movie/detail/movie_task_queue.cpp,_ZN5movie6detail9TaskQueue12EventHandler10IsSignaledEv
+19330,60,verified,src/movie/detail/movie_task_queue_impl.c,movie_task_queue_19330
 19370,68,verified,src/movie/detail/movie_task_queue.cpp,_ZN5movie6detail9TaskQueue12EventHandler4LinkEPN2nn2os13MultiWaitTypeE
 193c0,264,verified,src/movie/detail/movie_task_queue.cpp,_ZN5movie6detail9TaskQueue26RegisterThreadEventHandlerEPNS_14IAsyncCallbackE
 194e0,188,verified,src/movie/detail/movie_task_queue.cpp,_ZN5movie6detail9TaskQueue28UnregisterThreadEventHandlerEPNS_14IAsyncCallbackE
@@ -680,6 +681,7 @@ fff0,88,verified,src/movie/detail/movie_video_decoder_event_manager.cpp,_ZN5movi
 24d60,104,verified,src/opus/celt/celt.c,resampling_factor
 24de0,1192,verified,src/opus/celt/celt_impl2.c,comb_filter
 252a0,104,verified,src/opus/celt/celt.c,init_caps
+25310,40,verified,src/opus/celt/celt_impl2.c,celt_25310
 25340,12,verified,src/opus/celt/celt.c,opus_get_version_string
 25350,72,verified,src/opus/celt/celt_decoder.c,celt_decoder_get_size
 253a0,236,verified,src/opus/celt/celt_decoder.c,celt_decoder_init
@@ -873,6 +875,7 @@ fff0,88,verified,src/movie/detail/movie_video_decoder_event_manager.cpp,_ZN5movi
 66b80,788,verified,src/opus/src/opus_decoder.c,opus_decode_native
 67c50,72,verified,src/opus/src/opus_decoder.c,opus_packet_get_bandwidth
 67ca0,20,verified,src/opus/src/opus_decoder.c,opus_packet_get_nb_channels
+67cc0,60,verified,src/opus/src/unplaced_11.c,opus_67cc0
 67ec0,156,verified,src/opus/src/opus_decoder_impl2.c,opus_decoder_67ec0
 67f60,124,verified,src/opus/src/opus_decoder.c,opus_decoder_ctl
 68320,4,verified,src/opus/src/opus_decoder.c,opus_decoder_destroy
@@ -882,6 +885,7 @@ fff0,88,verified,src/movie/detail/movie_video_decoder_event_manager.cpp,_ZN5movi
 68690,120,verified,src/opus/src/opus_decoder.c,celt_exp2
 68710,124,verified,src/opus/src/unplaced_10.c,opus_68710
 68790,152,verified,src/opus/src/opus_encoder.c,opus_encoder_init
+68a50,372,verified,src/opus/src/opus_encoder_impl2.c,opus_encoder_68a50
 68be0,292,verified,src/opus/src/opus_encoder.c,downmix_float
 68dc0,868,verified,src/opus/src/opus_encoder_impl2.c,opus_encoder_68dc0
 69160,64,verified,src/opus/src/opus_encoder.c,frame_size_select
@@ -897,7 +901,7 @@ fff0,88,verified,src/movie/detail/movie_video_decoder_event_manager.cpp,_ZN5movi
 6cc20,964,verified,src/opus/src/opus_encoder_impl2.c,opus_encoder_6cc20
 6d020,1140,verified,src/opus/src/opus_encoder_impl2.c,opus_encoder_6d020
 6d6a0,692,verified,src/opus/src/opus_encoder.c,decide_dtx_mode
-6d9a0,172,disputed,src/opus/src/opus_encoder_impl2.c,opus_encode_float
+6d9a0,440,disputed,src/opus/src/opus_encoder_impl2.c,opus_encode_float
 6dbf0,248,verified,src/opus/src/opus_encoder_impl2.c,opus_encode
 6dd30,200,verified,src/opus/src/opus_encoder.c,opus_encoder_ctl
 6ece0,4,verified,src/opus/src/opus_encoder.c,opus_encoder_destroy
@@ -912,6 +916,7 @@ fff0,88,verified,src/movie/detail/movie_video_decoder_event_manager.cpp,_ZN5movi
 6f4e0,28,verified,src/opus/src/repacketizer.c,opus_repacketizer_out
 6f500,36,verified,src/opus/src/repacketizer_impl.c,opus_packet_pad
 6f660,16,verified,src/opus/src/unplaced_10.c,opus_6f660
+6f780,280,verified,src/opus/src/unplaced_10.c,unplaced_10_6f780
 6f8a0,104,verified,src/opus/src/unplaced_10.c,opus_6f8a0
 6fab0,24,verified,src/opus/src/unplaced_2.c,opus_6fab0
 6fad0,16,verified,src/opus/src/unplaced_2.c,opus_6fad0

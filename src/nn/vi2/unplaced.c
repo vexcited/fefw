@@ -56,6 +56,7 @@ __int64 nn_vi2_5e6da0(_QWORD* a1, __int64 a2, __int64 a3);
 __int64 nn_vi2_5eb900(__int64 a1, __int64 a2);
 __int64* unplaced_5e5930(__int64* result, __int64 a2);
 __int64 unplaced_5e5ce0(_QWORD* a1, _QWORD* a2, __int64 a3);
+__int64 unplaced_5e5cd0(_QWORD* a1, _QWORD* a2, __int64 a3);
 
 __attribute__((swiftcall)) void nn_vi2_5e1874(PSEUDO_X8 x8_, __int64 result,
                                               int a2, __int64 a3)
@@ -454,6 +455,11 @@ __int64 nn_vi2_5e5be0(__int64 a1)
   *(_QWORD*)(a1 + 8) = 0;
   *(_QWORD*)(a1 + 16) = 0;
   return result;
+}
+
+__int64 unplaced_5e5cd0(_QWORD* a1, _QWORD* a2, __int64 a3)
+{
+  return unplaced_5e5ce0(a1, a2, a3);
 }
 
 __int64 unplaced_5e5ce0(_QWORD* a1, _QWORD* a2, __int64 a3)

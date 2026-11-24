@@ -6587,13 +6587,13 @@ fff90,116,verified,src/snd/api.cpp,_ZN3snd10startPitchERKNS_3fnd10WeakHandleERKN
 1b51e0,196,verified,src/angelscript/angelscript/source/as_context.cpp,_ZN10asCContext23GetAddressOfReturnValueEv
 1b52b0,124,verified,src/angelscript/angelscript/source/as_context_impl.c,asCContext_1b52b0
 1b5340,300,verified,src/angelscript/angelscript/source/as_context_impl.c,asCContext_1b5340
-1b5480,176,verified,src/angelscript/angelscript/source/as_context_impl.c,asCContext_1b5480
+1b5480,300,verified,src/angelscript/angelscript/source/as_context_impl.c,asCContext_1b5480
 1b55c0,296,verified,src/angelscript/angelscript/source/as_context_impl.c,asCContext_1b55c0
-1b5700,160,verified,src/angelscript/angelscript/source/as_context_impl.c,asCContext_1b5700
+1b5700,300,verified,src/angelscript/angelscript/source/as_context_impl.c,asCContext_1b5700
 1b5840,296,verified,src/angelscript/angelscript/source/as_context_impl.c,asCContext_1b5840
 1b5980,300,verified,src/angelscript/angelscript/source/as_context_impl.c,asCContext_1b5980
-1b5ac0,136,verified,src/angelscript/angelscript/source/as_context_impl.c,asCContext_1b5ac0
-1b5be0,320,verified,src/angelscript/angelscript/source/as_context_impl.c,asCContext_1b5be0
+1b5ac0,260,verified,src/angelscript/angelscript/source/as_context_impl.c,asCContext_1b5ac0
+1b5be0,396,verified,src/angelscript/angelscript/source/as_context_impl.c,asCContext_1b5be0
 1b5d80,272,verified,src/angelscript/angelscript/source/as_context_impl.c,asCContext_1b5d80
 1b5ea0,184,verified,src/angelscript/angelscript/source/as_context_impl.c,asCContext_1b5ea0
 1b5f60,176,verified,src/angelscript/fork/angelscript/source/as_context.cpp,_ZN10asCContext5AbortEv
@@ -6602,7 +6602,7 @@ fff90,116,verified,src/snd/api.cpp,_ZN3snd10startPitchERKNS_3fnd10WeakHandleERKN
 1b6460,264,verified,src/angelscript/fork/angelscript/source/as_context.cpp,_ZN10asCContext20SetInternalExceptionEPKcb
 1b6580,72,disputed,src/angelscript/fork/angelscript/source/as_context.cpp,_ZN10asCContext21PrepareScriptFunctionEv
 1b67c0,4952,verified,src/angelscript/fork/angelscript/source/as_context.cpp,_ZN10asCContext11ExecuteNextEv
-1b87a0,560,verified,src/angelscript/angelscript/source/as_context_impl.c,asCContext_1b87a0
+1b87a0,564,verified,src/angelscript/angelscript/source/as_context_impl.c,asCContext_1b87a0
 1b89f0,440,verified,src/angelscript/angelscript/source/as_context.cpp,_ZN10asCContext13PushCallStateEv
 1b8c00,504,verified,src/angelscript/angelscript/source/unplaced.c,angelscript_angelscript_source_1b8c00
 1b8e00,316,verified,src/angelscript/angelscript/source/as_context.cpp,_ZN10asCContext12PopCallStateEv
@@ -7038,7 +7038,7 @@ fff90,116,verified,src/snd/api.cpp,_ZN3snd10startPitchERKNS_3fnd10WeakHandleERKN
 1db540,176,verified,src/angelscript/fork/angelscript/source/as_module.cpp,_ZN9asCModule16AddScriptSectionEPKcS1_mi
 1db600,344,verified,src/angelscript/fork/angelscript/source/as_module.cpp,_ZN9asCModule5BuildEv
 1db800,1896,disputed,src/angelscript/angelscript/source/as_module.cpp,_ZN9asCModule21HasExternalReferencesEb
-1dbf80,768,verified,src/angelscript/angelscript/source/as_module_impl.c,asCModule_1dbf80
+1dbf80,768,disputed,src/angelscript/angelscript/source/as_module_impl.c,asCModule_1dbf80
 1dc2b0,32,verified,src/angelscript/angelscript/source/as_module.cpp,_ZNK9asCModule18GetFunctionByIndexEj
 1dc2d0,428,verified,src/angelscript/fork/angelscript/source/as_module.cpp,_ZN9asCModule14InitGlobalPropEP17asCGlobalPropertyP16asIScriptContext
 1dc560,208,verified,src/angelscript/angelscript/source/as_module.cpp,_ZN9asCModule22UninitializeGlobalPropEP17asCGlobalProperty

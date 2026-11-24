@@ -77,6 +77,8 @@ __int64 nn_os_DestroyThread_plt_alt1(__int64);
 __int64 nn_os_LockMutex_plt_alt1(__int64);
 __int64 nn_os_UnlockMutex_plt_alt1(__int64);
 __int64 nn_os_WaitThread_plt_alt1(__int64);
+__int64 nn_os_UnlinkMultiWaitHolder_plt_alt1(__int64);
+__int64 movie_task_queue_19330(__int64 result);
 
 __int64 movie_detail_TaskQueue_WorkerThread_DestroyThread(__int64 this_)
 {
@@ -1691,6 +1693,21 @@ __int64 movie_detail_TaskQueue_ProcessEventUnregistration(__int64 this_,
     }
   }
   return this_;
+}
+
+__int64 movie_task_queue_19330(__int64 result)
+{
+
+#pragma clang fp contract(on)
+
+  __int64 v1;
+
+  if (*(_BYTE*)(result + 152) == 1) {
+    v1 = result;
+    result = nn_os_UnlinkMultiWaitHolder_plt_alt1(result + 88);
+    *(_BYTE*)(v1 + 152) = 0;
+  }
+  return result;
 }
 
 __int64 movie_detail_TaskQueue_SocketEventResult_SocketEventResult(

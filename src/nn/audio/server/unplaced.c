@@ -115,6 +115,90 @@ __int64 nn_audio_server_23b590(__int64 a1, _DWORD* a2);
 __int64 nn_audio_server_23b5a0(__int64 a1);
 __int64 nn_audio_server_23b730(__int64 a1);
 __int64 nn_audio_server_23b8e0();
+__int64
+    nn_audio_server_AudioRendererManagerImpl_AudioDeviceImpl_AcquireAudioInputDeviceNotification_plt(
+        _QWORD);
+__int64
+    nn_audio_server_AudioRendererManagerImpl_AudioDeviceImpl_AcquireAudioOutputDeviceNotification_plt(
+        _QWORD);
+__int64
+    nn_audio_server_AudioRendererManagerImpl_AudioDeviceImpl_GetActiveAudioDeviceNameAuto_plt(
+        _QWORD);
+__int64
+    nn_audio_server_AudioRendererManagerImpl_AudioDeviceImpl_GetActiveAudioDeviceName_plt(
+        _QWORD);
+__int64
+    nn_audio_server_AudioRendererManagerImpl_AudioDeviceImpl_GetActiveAudioOutputDeviceName_plt(
+        _QWORD);
+__int64
+    nn_audio_server_AudioRendererManagerImpl_AudioDeviceImpl_GetActiveChannelCount_plt(
+        _QWORD);
+__int64
+    nn_audio_server_AudioRendererManagerImpl_AudioDeviceImpl_GetAudioDeviceOutputVolumeAuto_plt(
+        _QWORD);
+__int64
+    nn_audio_server_AudioRendererManagerImpl_AudioDeviceImpl_GetAudioDeviceOutputVolume_plt(
+        _QWORD);
+__int64
+    nn_audio_server_AudioRendererManagerImpl_AudioDeviceImpl_IsActiveOutputDeviceEstimatedLowLatency_plt(
+        _QWORD);
+__int64
+    nn_audio_server_AudioRendererManagerImpl_AudioDeviceImpl_IsAudioDeviceOutputVolumeAutoTuneEnabled_plt(
+        _QWORD);
+__int64
+    nn_audio_server_AudioRendererManagerImpl_AudioDeviceImpl_ListAudioDeviceNameAuto_plt(
+        _QWORD);
+__int64
+    nn_audio_server_AudioRendererManagerImpl_AudioDeviceImpl_ListAudioDeviceName_plt(
+        _QWORD);
+__int64
+    nn_audio_server_AudioRendererManagerImpl_AudioDeviceImpl_ListAudioOutputDeviceName_plt(
+        _QWORD);
+__int64
+    nn_audio_server_AudioRendererManagerImpl_AudioDeviceImpl_QueryAudioDeviceInputEvent_plt(
+        _QWORD);
+__int64
+    nn_audio_server_AudioRendererManagerImpl_AudioDeviceImpl_QueryAudioDeviceOutputEvent_plt(
+        _QWORD);
+__int64
+    nn_audio_server_AudioRendererManagerImpl_AudioDeviceImpl_QueryAudioDeviceSystemEvent_plt(
+        _QWORD);
+__int64
+    nn_audio_server_AudioRendererManagerImpl_AudioDeviceImpl_ReleaseAudioInputDeviceNotification_plt(
+        _QWORD);
+__int64
+    nn_audio_server_AudioRendererManagerImpl_AudioDeviceImpl_ReleaseAudioOutputDeviceNotification_plt(
+        _QWORD);
+__int64
+    nn_audio_server_AudioRendererManagerImpl_AudioDeviceImpl_SetAudioDeviceOutputVolumeAutoTuneEnabled_plt(
+        _QWORD);
+__int64
+    nn_audio_server_AudioRendererManagerImpl_AudioDeviceImpl_SetAudioDeviceOutputVolumeAuto_plt(
+        _QWORD);
+__int64
+    nn_audio_server_AudioRendererManagerImpl_AudioDeviceImpl_SetAudioDeviceOutputVolume_plt(
+        _QWORD);
+__int64 unplaced_23b790(__int64 a1);
+__int64 unplaced_23b7a0(__int64 a1);
+__int64 unplaced_23b7b0(__int64 a1);
+__int64 unplaced_23b7c0(__int64 a1);
+__int64 unplaced_23b7d0(__int64 a1);
+__int64 unplaced_23b7e0(__int64 a1);
+__int64 unplaced_23b7f0(__int64 a1);
+__int64 unplaced_23b800(__int64 a1);
+__int64 unplaced_23b810(__int64 a1);
+__int64 unplaced_23b820(__int64 a1);
+__int64 unplaced_23b830(__int64 a1);
+__int64 unplaced_23b840(__int64 a1);
+__int64 unplaced_23b850(__int64 a1);
+__int64 unplaced_23b860(__int64 a1);
+__int64 unplaced_23b870(__int64 a1);
+__int64 unplaced_23b880(__int64 a1);
+__int64 unplaced_23b890(__int64 a1);
+__int64 unplaced_23b8a0(__int64 a1);
+__int64 unplaced_23b8b0(__int64 a1);
+__int64 unplaced_23b8c0(__int64 a1);
+__int64 unplaced_23b8d0(__int64 a1);
 
 __int64 nn_audio_server_238b20(_QWORD* a1)
 {
@@ -1791,6 +1875,132 @@ __int64 nn_audio_server_23b730(__int64 a1)
     return nn_os_UnlockMutex_plt(v3 + 1);
   }
   return result;
+}
+
+__int64 unplaced_23b790(__int64 a1)
+{
+  return nn_audio_server_AudioRendererManagerImpl_AudioDeviceImpl_ListAudioDeviceName_plt(
+      a1 + 8);
+}
+
+__int64 unplaced_23b7a0(__int64 a1)
+{
+  return nn_audio_server_AudioRendererManagerImpl_AudioDeviceImpl_SetAudioDeviceOutputVolume_plt(
+      a1 + 8);
+}
+
+__int64 unplaced_23b7b0(__int64 a1)
+{
+  return nn_audio_server_AudioRendererManagerImpl_AudioDeviceImpl_GetAudioDeviceOutputVolume_plt(
+      a1 + 8);
+}
+
+__int64 unplaced_23b7c0(__int64 a1)
+{
+  return nn_audio_server_AudioRendererManagerImpl_AudioDeviceImpl_GetActiveAudioDeviceName_plt(
+      a1 + 8);
+}
+
+__int64 unplaced_23b7d0(__int64 a1)
+{
+  return nn_audio_server_AudioRendererManagerImpl_AudioDeviceImpl_QueryAudioDeviceSystemEvent_plt(
+      a1 + 8);
+}
+
+__int64 unplaced_23b7e0(__int64 a1)
+{
+  return nn_audio_server_AudioRendererManagerImpl_AudioDeviceImpl_GetActiveChannelCount_plt(
+      a1 + 8);
+}
+
+__int64 unplaced_23b7f0(__int64 a1)
+{
+  return nn_audio_server_AudioRendererManagerImpl_AudioDeviceImpl_ListAudioDeviceNameAuto_plt(
+      a1 + 8);
+}
+
+__int64 unplaced_23b800(__int64 a1)
+{
+  return nn_audio_server_AudioRendererManagerImpl_AudioDeviceImpl_SetAudioDeviceOutputVolumeAuto_plt(
+      a1 + 8);
+}
+
+__int64 unplaced_23b810(__int64 a1)
+{
+  return nn_audio_server_AudioRendererManagerImpl_AudioDeviceImpl_GetAudioDeviceOutputVolumeAuto_plt(
+      a1 + 8);
+}
+
+__int64 unplaced_23b820(__int64 a1)
+{
+  return nn_audio_server_AudioRendererManagerImpl_AudioDeviceImpl_GetActiveAudioDeviceNameAuto_plt(
+      a1 + 8);
+}
+
+__int64 unplaced_23b830(__int64 a1)
+{
+  return nn_audio_server_AudioRendererManagerImpl_AudioDeviceImpl_QueryAudioDeviceInputEvent_plt(
+      a1 + 8);
+}
+
+__int64 unplaced_23b840(__int64 a1)
+{
+  return nn_audio_server_AudioRendererManagerImpl_AudioDeviceImpl_QueryAudioDeviceOutputEvent_plt(
+      a1 + 8);
+}
+
+__int64 unplaced_23b850(__int64 a1)
+{
+  return nn_audio_server_AudioRendererManagerImpl_AudioDeviceImpl_GetActiveAudioOutputDeviceName_plt(
+      a1 + 8);
+}
+
+__int64 unplaced_23b860(__int64 a1)
+{
+  return nn_audio_server_AudioRendererManagerImpl_AudioDeviceImpl_ListAudioOutputDeviceName_plt(
+      a1 + 8);
+}
+
+__int64 unplaced_23b870(__int64 a1)
+{
+  return nn_audio_server_AudioRendererManagerImpl_AudioDeviceImpl_AcquireAudioInputDeviceNotification_plt(
+      a1 + 8);
+}
+
+__int64 unplaced_23b880(__int64 a1)
+{
+  return nn_audio_server_AudioRendererManagerImpl_AudioDeviceImpl_ReleaseAudioInputDeviceNotification_plt(
+      a1 + 8);
+}
+
+__int64 unplaced_23b890(__int64 a1)
+{
+  return nn_audio_server_AudioRendererManagerImpl_AudioDeviceImpl_AcquireAudioOutputDeviceNotification_plt(
+      a1 + 8);
+}
+
+__int64 unplaced_23b8a0(__int64 a1)
+{
+  return nn_audio_server_AudioRendererManagerImpl_AudioDeviceImpl_ReleaseAudioOutputDeviceNotification_plt(
+      a1 + 8);
+}
+
+__int64 unplaced_23b8b0(__int64 a1)
+{
+  return nn_audio_server_AudioRendererManagerImpl_AudioDeviceImpl_SetAudioDeviceOutputVolumeAutoTuneEnabled_plt(
+      a1 + 8);
+}
+
+__int64 unplaced_23b8c0(__int64 a1)
+{
+  return nn_audio_server_AudioRendererManagerImpl_AudioDeviceImpl_IsAudioDeviceOutputVolumeAutoTuneEnabled_plt(
+      a1 + 8);
+}
+
+__int64 unplaced_23b8d0(__int64 a1)
+{
+  return nn_audio_server_AudioRendererManagerImpl_AudioDeviceImpl_IsActiveOutputDeviceEstimatedLowLatency_plt(
+      a1 + 8);
 }
 
 __int64 nn_audio_server_23b8e0()

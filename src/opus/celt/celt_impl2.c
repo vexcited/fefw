@@ -7,6 +7,8 @@ extern _UNKNOWN MovieData_a2308;
 __int64 comb_filter(__int64 result, __int64 a2, int a3, int a4, int a5,
                     unsigned __int16 a6, unsigned __int16 a7, int a8, int a9,
                     __int16* a10, unsigned int a11);
+extern int MovieData_a233c[42];
+char* celt_25310(int a1);
 
 __int64 comb_filter(__int64 result, __int64 a2, int a3, int a4, int a5,
                     unsigned __int16 a6, unsigned __int16 a7, int a8, int a9,
@@ -285,6 +287,19 @@ LABEL_25:
     goto LABEL_45;
   }
   return result;
+}
+
+char* celt_25310(int a1)
+{
+
+#pragma clang fp contract(on)
+
+  if ((unsigned int)(a1 - 1) >= 0xFFFFFFF8) {
+    return (char*)MovieData_a233c + MovieData_a233c[-a1];
+  }
+  else {
+    return "unknown error";
+  }
 }
 
 #pragma GCC visibility pop
