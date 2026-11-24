@@ -447,9 +447,9 @@ ffe0,36,verified,src/nn/crypto/detail/sha3_impl.cpp,_ZNK2nn6crypto6detail8Sha3Im
 1d2a0,272,verified,src/libjpeg-turbo-nx/jccolor.c,rgb_gray_convert
 1d9c0,1808,verified,src/libjpeg-turbo-nx/jccolor.c,_ZL15rgb_rgb_convertP20jpeg_compress_structPPhPS2_ji
 1e560,4820,verified,src/libjpeg-turbo-nx/unplaced_2.c,libjpeg_turbo_nx_1e560
-1f9e0,700,verified,src/libjpeg-turbo-nx/unplaced_3.c,libjpegturbonx_1f9e0
+1f9e0,868,verified,src/libjpeg-turbo-nx/unplaced_3.c,libjpegturbonx_1f9e0
 1fd60,372,verified,src/libjpeg-turbo-nx/jcdctmgr_impl.c,nndetailImageJpeg_jinit_forward_dct
-1ff00,1232,verified,src/libjpeg-turbo-nx/unplaced_4.c,libjpegturbonx_1ff00
+1ff00,1232,disputed,src/libjpeg-turbo-nx/unplaced_4.c,libjpegturbonx_1ff00
 20580,168,verified,src/libjpeg-turbo-nx/jcdctmgr.c,_ZL11forward_DCTP20jpeg_compress_structP19jpeg_component_infoPPhPA64_sjjj
 20640,168,verified,src/libjpeg-turbo-nx/jcdctmgr.c,_ZL17forward_DCT_floatP20jpeg_compress_structP19jpeg_component_infoPPhPA64_sjjj
 207a0,1848,verified,src/image/jpeg_encoder_control.cpp,jpeg_encoder_control::derive
@@ -593,7 +593,7 @@ ffe0,36,verified,src/nn/crypto/detail/sha3_impl.cpp,_ZNK2nn6crypto6detail8Sha3Im
 44900,812,verified,src/libjpeg-turbo-nx/jdinput_impl.c,jdinput_44900
 44c60,16,verified,src/libjpeg-turbo-nx/jdinput.c,_ZL17finish_input_passP22jpeg_decompress_struct
 44c80,476,verified,src/libjpeg-turbo-nx/jdmainct.c,jinit_d_main_controller
-44e80,400,verified,src/libjpeg-turbo-nx/jdmainct_impl.c,jdmainct_44e80
+44e80,628,verified,src/libjpeg-turbo-nx/jdmainct_impl.c,jdmainct_44e80
 45260,556,verified,src/libjpeg-turbo-nx/jdmainct.c,_ZL25process_data_context_mainP22jpeg_decompress_structPPhPjj
 457c0,160,verified,src/libjpeg-turbo-nx/jdmainct.c,_ZL24process_data_simple_mainP22jpeg_decompress_structPPhPjj
 45860,36,verified,src/libjpeg-turbo-nx/jdmainct.c,_ZL23process_data_crank_postP22jpeg_decompress_structPPhPjj
@@ -681,10 +681,10 @@ ffe0,36,verified,src/nn/crypto/detail/sha3_impl.cpp,_ZNK2nn6crypto6detail8Sha3Im
 53ee0,4,verified,src/libjpeg-turbo/jquant1.c,finish_pass_1_quant
 53ef0,24,verified,src/libjpeg-turbo-nx/jquant1.c,_ZL21new_color_map_1_quantP22jpeg_decompress_struct
 53f20,320,verified,src/libjpeg-turbo-nx/unplaced.c,libjpegturbonx_53f20
-543a0,128,verified,src/libjpeg-turbo-nx/unplaced_3.c,libjpegturbonx_543a0
-545a0,568,verified,src/libjpeg-turbo-nx/unplaced_3.c,unplaced_3_545a0
-54820,304,verified,src/libjpeg-turbo-nx/unplaced_3.c,libjpegturbonx_54820
-54ae0,460,verified,src/libjpeg-turbo-nx/unplaced_4.c,libjpegturbonx_54ae0
+543a0,480,verified,src/libjpeg-turbo-nx/unplaced_3.c,libjpegturbonx_543a0
+545a0,588,verified,src/libjpeg-turbo-nx/unplaced_3.c,unplaced_3_545a0
+54820,624,verified,src/libjpeg-turbo-nx/unplaced_3.c,libjpegturbonx_54820
+54ae0,732,verified,src/libjpeg-turbo-nx/unplaced_4.c,libjpegturbonx_54ae0
 54e00,1272,verified,src/libjpeg-turbo-nx/unplaced_4.c,libjpegturbonx_54e00
 55330,1400,verified,src/libjpeg-turbo-nx/jquant2.c,jinit_2pass_quantizer
 558b0,692,verified,src/libjpeg-turbo-nx/jquant2.c,_ZL18start_pass_2_quantP22jpeg_decompress_structi

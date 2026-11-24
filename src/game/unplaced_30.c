@@ -1283,7 +1283,7 @@ void game_eab880(__int64 a1)
       *(_DWORD*)(v10 + 24) = -1;
       v11 = *(_DWORD*)(v5 + 24);
       if (v11 != -1) {
-        v12 = GameData_1fed708[v11];
+        v12 = GameData_1fed708[(unsigned int)v11];
         v24 = v10;
         ((void (*)(__int64*, __int64))v12)(&v24, v5);
         *(_DWORD*)(v10 + 24) = v11;
