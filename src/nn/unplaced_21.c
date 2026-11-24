@@ -6,6 +6,67 @@ extern _UNKNOWN* SdkData_e89bd8;
 float nn_6a4de0();
 bool nn_6a7080(__int64 a1, int a2, __int64 a3);
 bool nn_6a71c0(__int64 a1, int a2, __int64 a3);
+__int64 nvidia_64b9e0(__int64 result, char, int, __int64);
+__int64 nvidia_64be80(__int64 result, unsigned __int64, char);
+extern _UNKNOWN* SdkData_e89d28;
+extern _UNKNOWN* SdkData_ea7c28;
+extern __int64 (*SdkData_ea7c20)();
+extern __int64 (*nn_655f60_ptr)();
+int strcmp_plt(const char*, const char*);
+__int64 (*nn_69ee50(__int64 a1))();
+__int64 nn_69ef10(__int64 a1, __int64 (*a2)());
+__int64 nn_6a7360(__int64 result, int a2, unsigned __int64* a3);
+
+__int64 (*nn_69ee50(__int64 a1))()
+{
+  __int64 (**v3)();
+
+  if (*(_BYTE*)a1 != 110 || *(_BYTE*)(a1 + 1) != 118 ||
+      *(_BYTE*)(a1 + 2) != 110) {
+    return nullptr;
+  }
+  if (strcmp_plt((const char*)(a1 + 3), "DeviceInitialize") == 0) {
+    v3 = &SdkData_ea7c20;
+    return *v3;
+  }
+  if (strcmp_plt((const char*)(a1 + 3), "DeviceGetProcAddress") == 0) {
+    v3 = &nn_655f60_ptr;
+    return *v3;
+  }
+  if (strcmp_plt((const char*)(a1 + 3), "SetExternalDebuggerEnabledNVX") != 0) {
+    return nullptr;
+  }
+  else {
+    return *(__int64 (**)(void))SdkData_e89d28;
+  }
+}
+
+__int64 nn_69ef10(__int64 a1, __int64 (*a2)())
+{
+  __int64 (**v5)();
+
+  if (*(_BYTE*)a1 != 110 || *(_BYTE*)(a1 + 1) != 118 ||
+      *(_BYTE*)(a1 + 2) != 110) {
+    return 0;
+  }
+  if (strcmp_plt((const char*)(a1 + 3), "DeviceInitialize") != 0) {
+    if (strcmp_plt((const char*)(a1 + 3), "DeviceGetProcAddress") != 0) {
+      if (strcmp_plt((const char*)(a1 + 3), "SetExternalDebuggerEnabledNVX") !=
+          0) {
+        return 0;
+      }
+      v5 = (__int64 (**)(void))&SdkData_ea7c28;
+    }
+    else {
+      v5 = &nn_655f60_ptr;
+    }
+  }
+  else {
+    v5 = &SdkData_ea7c20;
+  }
+  *v5 = a2;
+  return 1;
+}
 
 __attribute__((no_builtin("memset", "memcpy", "memmove"))) float nn_6a4de0()
 {
@@ -246,6 +307,73 @@ bool nn_6a71c0(__int64 a1, int a2, __int64 a3)
     }
   }
   return a1 != 0;
+}
+
+__int64 nn_6a7360(__int64 result, int a2, unsigned __int64* a3)
+{
+  __int64 v6;
+  __int64 v7;
+  unsigned __int64 v8;
+  unsigned __int64 v9;
+  int v10;
+  __int64 v11;
+  struct {
+    _QWORD v12[3];
+    int v13;
+    char v14;
+    char gap61_[3];
+    char v15;
+    char gap65_[7];
+    int v16;
+    int v17;
+    _QWORD* v18;
+    __int64 v19;
+  } v12_;
+
+  if (a2 >= 1) {
+    v6 = result;
+    v7 = (unsigned int)a2;
+    while (1) {
+      v9 = *a3++;
+      v8 = v9;
+      v10 = v9 & 3;
+      v12_.v16 = v10;
+      if (v10 == 2) {
+        break;
+      }
+      if (v10 == 1) {
+        v12_.v17 = HIWORD(v8);
+        v12_.v18 = (_QWORD*)(v8 & 0xFFFFFFFFFFFCLL);
+        v12_.v19 = 0;
+        result = nvidia_64b9e0(v6, 0, v12_.v17, v8 & 0xFFFFFFFFFFFCLL);
+        if (--v7 == 0) {
+          return result;
+        }
+      }
+      else {
+        v11 = 0;
+        v12_.v17 = 0;
+        v12_.v18 = (_QWORD*)v8;
+      LABEL_8:
+        v12_.v19 = v11;
+        result = nvidia_64be80(v6, v8, 0);
+        if (--v7 == 0) {
+          return result;
+        }
+      }
+    }
+    v12_.v12[2] = 0;
+    v12_.v13 = v8 >> 40;
+    v12_.v15 = 2;
+    v12_.v17 = 0;
+    v12_.v18 = v12_.v12;
+    v12_.v12[0] = v12_.v12[0] & 0xFFFFFF00 | 0x100000003LL;
+    v12_.v12[1] = v8 & 0xFFFFFFFFFCLL;
+    v12_.v14 = v12_.v14 & 0xF8 | 3;
+    v11 = 4 * (v8 >> 40);
+    goto LABEL_8;
+  }
+  return result;
 }
 
 #pragma GCC visibility pop

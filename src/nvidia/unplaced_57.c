@@ -28,6 +28,74 @@ __int64 nvidia_21ad30(_QWORD* a1, __int64 a2, __int64 a3, __int64 a4,
                       __int64 a5, unsigned int a6, __int64 a7, __int64 a8);
 __int64 nvidia_23ec50(int a1, int a2, unsigned int a3, unsigned int a4,
                       unsigned int a5, __int64* a6, __int64* a7);
+_QWORD* CudaDriverRoutine_8e530(_QWORD* result);
+__int64 CudaDriverRoutine_105ae0(__int64, __int64, __int64, __int64, __int64,
+                                 _WORD*, unsigned int);
+__int64 CudaDriverRoutine_1085d0(__int64);
+__int64 CudaDriverRoutine_10dd50(__int64);
+__int64 CudaDriverRoutine_1295f0(__int64, unsigned __int8, char, char);
+__int64 CudaDriverRoutine_12e340(__int64 result);
+__int64 CudaDriverRoutine_19e6f0(__int64, __int64, __int64, int);
+__int64 CudaDriverRoutine_19e9d0(__int64, unsigned __int64, unsigned __int64,
+                                 __int64);
+__int64 CudaDriverRoutine_19ec80(__int64, unsigned __int64, unsigned __int64,
+                                 __int64);
+__int64 CudaDriverRoutine_21b2d0(__int64, __int64, __int64, __int64, __int64);
+__int64 CudaDriverRoutine_8e220();
+__int64 CudaDriverRoutine_97310(__int64, __int64);
+__int64 CudaDriverRoutine_e58b0(__int64, __int64, __int64, __int64, __int64,
+                                __int64, __int64);
+__int64 CudaDriverRoutine_ee120(__int64);
+__int64 CudaDriverStub_102e00(_QWORD);
+__int64 CudaDriverStub_12db60(_QWORD);
+__int64 CudaDriverStub_12db80(_QWORD);
+__int64 CudaDriverStub_1db190(_QWORD);
+__int64 CudaDriverStub_97300(__int64);
+__int64 CudaDriverStub_97320(__int64);
+__int64 cuda_driver_108520(__int64);
+__int64 cuda_driver_1da1b0(__int64, __int64*, __int64, _QWORD*);
+__int64 cuda_driver_unplaced_4_8e400(_QWORD*);
+__int64 nvidia_19cde0_alt1(__int64, __int64, __int64, unsigned int, int);
+__int64 nvidia_972f0(__int64, __int64);
+bool CudaDriverRoutine_1a0fd0();
+bool CudaDriverRoutine_9adf0(__int64);
+bool cuda_driver_predicates_9ae50(__int64);
+extern _UNKNOWN* CudaDriverData_1422118;
+extern __int64 CudaDriverData_1423000;
+extern __int64 CudaDriverData_143bad8;
+extern __int64 CudaDriverData_143bd88;
+extern int CudaDriverData_144d334;
+extern unsigned int CudaDriverData_13b4fac[11];
+void CudaDriverRoutine_72e0();
+void CudaDriverRoutine_e3180();
+__int64 nvidia_50950(__int64 a1, __int64 a2, __int64 a3, unsigned int a4,
+                     __int64 a5, __int64 a6);
+__int64 nvidia_52830(__int64 a1, __int64 a2, __int64 a3, unsigned int a4,
+                     __int64 a5, __int64 a6, char a7);
+__int64 nvidia_60a30(__int64 result);
+_QWORD* nvidia_60a40(_QWORD* a1);
+_QWORD* nvidia_60a60(_QWORD* result);
+_QWORD* nvidia_60a80(_QWORD* result);
+__int64 nvidia_60b80();
+__int64 nvidia_60b90(__int64 result);
+__int64 nvidia_64090(__int64 a1, __int64 a2);
+__int64 nvidia_640a0(__int64 a1);
+__int64 nvidia_640b0(__int64 a1);
+__int64 nvidia_640c0(__int64 a1, __int64 a2);
+__int64 nvidia_8e2d0(__int64 result);
+__int64 nvidia_128260(__int64 a1);
+__int64 nvidia_19c8d0(__int64 a1, __int64 a2, __int64 a3, unsigned int a4);
+__int64 nvidia_19c8e0(__int64 a1, __int64 a2, __int64 a3, unsigned int a4);
+__int64 nvidia_19cde0(__int64 a1, unsigned __int64 a2, __int64 a3,
+                      unsigned int a4, int a5);
+__int64 nvidia_1fca00(unsigned int a1, int a2);
+__int64 nvidia_21ad20(__int64 a1, __int64 a2, __int64 a3, __int64 a4);
+__int64 nvidia_221a50(_QWORD* a1, __int64 a2, __int64 a3, unsigned int a4,
+                      unsigned int a5);
+__int64 nvidia_221ac0(__int64* a1, __int64 a2, __int64 a3, __int64 a4,
+                      unsigned int a5);
+__int64 nvidia_2384b0(_QWORD* a1, int* a2, int a3, int a4, unsigned int a5,
+                      char a6);
 
 void nvidia_36680(__int64 a1, __int64 a2, unsigned int* a3)
 {
@@ -42,6 +110,12 @@ void nvidia_36680(__int64 a1, __int64 a2, unsigned int* a3)
   }
 }
 
+__int64 nvidia_50950(__int64 a1, __int64 a2, __int64 a3, unsigned int a4,
+                     __int64 a5, __int64 a6)
+{
+  return nvidia_52830(a1, a2, a3, a4, a5, a6, 0);
+}
+
 __int64 nvidia_50960(__int64 a1)
 {
   if (a1 == 0) {
@@ -49,6 +123,106 @@ __int64 nvidia_50960(__int64 a1)
   }
   GameRoutine_105c00();
   return 0;
+}
+
+__int64 nvidia_52830(__int64 a1, __int64 a2, __int64 a3, unsigned int a4,
+                     __int64 a5, __int64 a6, char a7)
+{
+  __int64 result;
+  __int64 v15;
+  char v16;
+  unsigned int v17;
+  __int64 v18;
+  struct {
+    __int16 v19;
+    char gap18_[6];
+    int v20;
+    char v21;
+  } v19_;
+  _BYTE v22[184];
+
+  v18 = 0;
+  if (a1 == 0 || *(_DWORD*)a1 != 0) {
+    return 400;
+  }
+  result = 1;
+  if (a2 != 0 && a3 != 0) {
+    result = ((__int64 (*)(_QWORD, __int64, __int64, _QWORD, _QWORD, __int64,
+                           __int64, __int64))CudaDriverRoutine_e3180)(
+        a4, a5, a6, 0, 0, 6, 1, 1);
+    if ((_DWORD)result == 0) {
+      v15 = a4;
+      v16 = a7 & 1;
+      v17 = CudaDriverRoutine_e58b0(*(_QWORD*)(a1 + 64), a5, a6, v15,
+                                    (__int64)v22, (__int64)&v18,
+                                    (__int64)&v19_.v19);
+      v19_.v21 = v19_.v21 & 0xFE | v16;
+      v19_.v19 |= 4u;
+      v19_.v20 = 12;
+      cuda_driver_108520(a1 + 24);
+      if (v17 == 0) {
+        v17 = CudaDriverRoutine_105ae0(a1, a2, a3, v18, (__int64)v22, &v19_.v19,
+                                       1u);
+      }
+      CudaDriverRoutine_1085d0(a1 + 24);
+      CudaDriverRoutine_12e340(v18);
+      return v17;
+    }
+  }
+  return result;
+}
+
+__int64 nvidia_60a30(__int64 result) { return nvidia_8e2d0(result); }
+
+_QWORD* nvidia_60a40(_QWORD* a1)
+{
+  if (CudaDriverData_144d334 == 0) {
+    return (_QWORD*)cuda_driver_unplaced_4_8e400(a1);
+  }
+  return a1;
+}
+
+_QWORD* nvidia_60a60(_QWORD* result)
+{
+  if (CudaDriverData_144d334 == 0) {
+    return CudaDriverRoutine_8e530(result);
+  }
+  return result;
+}
+
+_QWORD* nvidia_60a80(_QWORD* result)
+{
+  *result = (char*)&CudaDriverRoutine_72e0 + (_QWORD)CudaDriverData_1422118;
+  return result;
+}
+
+__int64 nvidia_60b80() { return CudaDriverRoutine_8e220(); }
+
+__int64 nvidia_60b90(__int64 result)
+{
+  CudaDriverData_143bad8 = result;
+  return result;
+}
+
+__int64 nvidia_64090(__int64 a1, __int64 a2) { return nvidia_972f0(a1, a2); }
+
+__int64 nvidia_640a0(__int64 a1) { return CudaDriverStub_97300(a1); }
+
+__int64 nvidia_640b0(__int64 a1) { return CudaDriverStub_97320(a1); }
+
+__int64 nvidia_640c0(__int64 a1, __int64 a2)
+{
+  return CudaDriverRoutine_97310(a1, a2);
+}
+
+__int64 nvidia_8e2d0(__int64 result)
+{
+  *(_QWORD*)(result + 64) = 0;
+  *(_OWORD*)result = (__typeof__(*(_OWORD*)result)){0};
+  *(_OWORD*)(result + 16) = (__typeof__(*(_OWORD*)(result + 16))){0};
+  *(_OWORD*)(result + 32) = (__typeof__(*(_OWORD*)(result + 32))){0};
+  *(_OWORD*)(result + 48) = (__typeof__(*(_OWORD*)(result + 48))){0};
+  return CudaDriverRoutine_12e340(result);
 }
 
 __int64 nvidia_1222e0(__int64 a1, unsigned int a2)
@@ -61,6 +235,160 @@ __int64 nvidia_1222e0(__int64 a1, unsigned int a2)
   v2 = *(_QWORD*)(a1 + 232);
   *(_DWORD*)(v2 + 82088) = a2;
   return 0;
+}
+
+__int64 nvidia_128260(__int64 a1)
+{
+  unsigned __int8 v1;
+  __int64 v2;
+
+  if (*(_QWORD*)(a1 + 408) == 2) {
+    v1 = *(_QWORD*)(CudaDriverData_143bd88 + 48) == 0;
+  }
+  else {
+    v2 = *(_QWORD*)(a1 + 416);
+    v1 = v2 == 0 || *(_BYTE*)(v2 + 944) == 0;
+  }
+  return CudaDriverRoutine_1295f0(a1, v1, 0, 0);
+}
+
+__int64 nvidia_19c8d0(__int64 a1, __int64 a2, __int64 a3, unsigned int a4)
+{
+  return nvidia_19cde0_alt1(a1, a2, a3, a4, 0);
+}
+
+__int64 nvidia_19c8e0(__int64 a1, __int64 a2, __int64 a3, unsigned int a4)
+{
+  return nvidia_19cde0_alt1(a1, a2, a3, a4, 1);
+}
+
+__int64 nvidia_19cde0(__int64 a1, unsigned __int64 a2, __int64 a3,
+                      unsigned int a4, int a5)
+{
+  __int64 v5;
+  unsigned __int64 v7;
+  __int64 result;
+  unsigned __int64 v9;
+  unsigned __int64 v10;
+  __int64 v11;
+  __int64 v14;
+  unsigned int v15;
+  unsigned __int64 v16;
+  unsigned __int64 v17;
+  int v18;
+  unsigned __int64 v19;
+  __int64 v20;
+  int v21;
+  unsigned int v22;
+
+  v5 = *(_QWORD*)(a1 + 8);
+  v7 = a4;
+  result = 4;
+  v9 = *(_QWORD*)(v5 + 1064);
+  if (v9 != 0) {
+    v10 = v9 >> 2;
+  }
+  else {
+    v10 = a4;
+  }
+  if (a1 == 0) {
+    return result;
+  }
+  v11 = a3;
+  if (a3 == 0 || a4 == 0) {
+    return result;
+  }
+  v14 = CudaDriverData_1423000;
+  CudaDriverStub_12db60(CudaDriverData_1423000 + 80);
+  if (a5 != 0) {
+    if (v10 != 0) {
+      while (1) {
+        if (v10 >= v7) {
+          v16 = v7;
+        }
+        else {
+          v16 = v10;
+        }
+        if (v16 >= 0x2000000) {
+          v17 = 0x2000000;
+        }
+        else {
+          v17 = v16;
+        }
+        if (!CudaDriverRoutine_1a0fd0()) {
+          goto LABEL_10;
+        }
+        v18 = CudaDriverRoutine_19ec80(*(_QWORD*)(a1 + 112), a2, v17, v11);
+        if (v18 != 0) {
+          break;
+        }
+      LABEL_11:
+        v11 += v17;
+        a2 += v17;
+        v7 -= v17;
+        if (v7 == 0) {
+          goto LABEL_37;
+        }
+      }
+      if (v18 != 45) {
+        goto LABEL_39;
+      }
+      CudaDriverRoutine_19e6f0(*(_QWORD*)(a1 + 112), a2, v17, 2);
+    LABEL_10:
+      v15 = (*(__int64 (**)(__int64, unsigned __int64, __int64,
+                            unsigned __int64, __int64))(
+          *(_QWORD*)(*(_QWORD*)(a1 + 8) + 32306416LL) + 288LL))(a1, a2, v11,
+                                                                v17, 1);
+      if (v15 != 0) {
+        goto LABEL_38;
+      }
+      goto LABEL_11;
+    }
+  LABEL_36:
+    v22 = 4;
+    goto LABEL_40;
+  }
+  if (v10 == 0) {
+    goto LABEL_36;
+  }
+  while (1) {
+    v19 = v10 >= v7 ? v7 : v10;
+    v20 = v19 >= 0x2000000 ? 0x2000000LL : v19;
+    if (CudaDriverRoutine_1a0fd0()) {
+      break;
+    }
+  LABEL_24:
+    v15 = (*(__int64 (**)(__int64, unsigned __int64, __int64, __int64, _QWORD))(
+        *(_QWORD*)(*(_QWORD*)(a1 + 8) + 32306416LL) + 288LL))(a1, a2, v11, v20,
+                                                              0);
+    if (v15 != 0) {
+    LABEL_38:
+      v22 = v15;
+      goto LABEL_40;
+    }
+  LABEL_25:
+    v11 += v20;
+    a2 += v20;
+    v7 -= v20;
+    if (v7 == 0) {
+    LABEL_37:
+      v22 = 0;
+      goto LABEL_40;
+    }
+  }
+  v21 = CudaDriverRoutine_19e9d0(*(_QWORD*)(a1 + 112), a2, v20, v11);
+  if (v21 == 0) {
+    goto LABEL_25;
+  }
+  if (v21 == 45) {
+    CudaDriverRoutine_19e6f0(*(_QWORD*)(a1 + 112), a2, v20, 3);
+    goto LABEL_24;
+  }
+LABEL_39:
+  v22 = 10;
+LABEL_40:
+  CudaDriverStub_12db80(v14 + 80);
+  return v22;
 }
 
 __int64 nvidia_1b7d80(unsigned int a1, __int64 a2, __int64 a3)
@@ -878,6 +1206,25 @@ __int64 nvidia_1f4790(int a1, int a2, unsigned int a3, unsigned int a4,
   return result;
 }
 
+__int64 nvidia_1fca00(unsigned int a1, int a2)
+{
+  __int64 result;
+  int v4;
+
+  if (a1 > 5) {
+    return 1;
+  }
+  result = 0;
+  if (a2 != 0) {
+    v4 = 0;
+  }
+  else {
+    v4 = 2;
+  }
+  *((_DWORD*)CudaDriverData_1422118 + a1 + 4557) = v4;
+  return result;
+}
+
 __int64 nvidia_218740(__int64 result, __int64 a2, __int64* a3)
 {
   __int64 v3;
@@ -889,6 +1236,11 @@ __int64 nvidia_218740(__int64 result, __int64 a2, __int64* a3)
   }
   *a3 = v3 + 1;
   return result;
+}
+
+__int64 nvidia_21ad20(__int64 a1, __int64 a2, __int64 a3, __int64 a4)
+{
+  return CudaDriverRoutine_21b2d0(a1, a2, a3, a4, 0);
 }
 
 __int64 nvidia_21ad30(_QWORD* a1, __int64 a2, __int64 a3, __int64 a4,
@@ -908,6 +1260,113 @@ __int64 nvidia_21ad30(_QWORD* a1, __int64 a2, __int64 a3, __int64 a4,
       *(_QWORD*)(a2 + 64) + 19216LL))(*a1, a2, a3, a4, a5, 0, 2 - a6, a8, v8,
                                       v9);
   return 0;
+}
+
+__int64 nvidia_221a50(_QWORD* a1, __int64 a2, __int64 a3, unsigned int a4,
+                      unsigned int a5)
+{
+  if (a5 > 0xA) {
+    return 1;
+  }
+  *a1 = (*(__int64 (**)(_QWORD, __int64, _QWORD, _QWORD))(
+      *(_QWORD*)(a2 + 64) + 19096LL))(*a1, a3, a4, CudaDriverData_13b4fac[a5]);
+  return 0;
+}
+
+__int64 nvidia_221ac0(__int64* a1, __int64 a2, __int64 a3, __int64 a4,
+                      unsigned int a5)
+{
+  __int64 v5;
+  unsigned int v11;
+  __int64 result;
+  __int64 v13;
+
+  if (a5 > 0xA) {
+    return 1;
+  }
+  v5 = *(_QWORD*)(a2 + 64);
+  v11 = CudaDriverData_13b4fac[a5];
+  if (!CudaDriverRoutine_9adf0(v5) && !cuda_driver_predicates_9ae50(v5) ||
+      (result = 1, ((1LL << a5) & 0x77C) != 0) || a5 <= 3) {
+    v13 = (*(__int64 (**)(__int64, __int64, __int64, _QWORD))(
+        *(_QWORD*)(a2 + 64) + 19104LL))(*a1, a3, a4, v11);
+    result = 0;
+    *a1 = v13;
+  }
+  return result;
+}
+
+__int64 nvidia_2384b0(_QWORD* a1, int* a2, int a3, int a4, unsigned int a5,
+                      char a6)
+{
+  __int64 result;
+  __int64 v13;
+  __int64 v14;
+  unsigned int v15;
+  unsigned int v16;
+  int v17;
+  __int64 v18;
+  unsigned int v19;
+  unsigned int v20;
+  unsigned int v21;
+  __int64 v22[48];
+  __int64 v23;
+  __int64 v24;
+
+  v24 = 0;
+  v23 = 0;
+  result = CudaDriverRoutine_df060((__int64)&v24);
+  if ((_DWORD)result == 0) {
+    result = 1;
+    if (a1 != nullptr && a5 <= 0x10 && ((1 << a5) & 0x10110) != 0 && a3 != 0 &&
+        a4 != 0) {
+      v13 = *(_QWORD*)((char*)((char*)0x40LL) + v24);
+      v14 = v24 + 24;
+      memset(&v22[2], 0, 240);
+      v15 = *(_DWORD*)(v13 + 3920);
+      v16 = *(_DWORD*)(v13 + 3936);
+      if (16 * a5 > v15) {
+        v15 = 16 * a5;
+      }
+      *(_OWORD*)&v22[32] = (__typeof__(*(_OWORD*)&v22[32])){0};
+      if (v15 > v16) {
+        v16 = v15;
+      }
+      memset(&v22[34], 0, 64);
+      v17 = (a3 + v16 - 1) & -v16;
+      *a2 = v17;
+      memset(&v22[42], 0, 48);
+      v18 = 0x80000208000202LL;
+      if ((a6 & 1) == 0) {
+        v18 = 0x8000021C000202LL;
+      }
+      v22[0] = v18;
+      v22[1] = 2418016256LL;
+      cuda_driver_108520(v14);
+      v19 = cuda_driver_1da1b0(*(_QWORD*)((char*)((_UNKNOWN*)0x50LL) + v24),
+                               v22, (unsigned int)(v17 * a4), &v23);
+      CudaDriverRoutine_1085d0(v24 + 24);
+      if (v19 != 0) {
+        return v19;
+      }
+      else {
+        v20 = CudaDriverRoutine_10dd50(v23);
+        if (v20 != 0) {
+          v21 = v20;
+          cuda_driver_108520(v24 + 24);
+          CudaDriverStub_1db190(&v23);
+          CudaDriverRoutine_1085d0(v24 + 24);
+          return v21;
+        }
+        else {
+          CudaDriverRoutine_ee120(v23);
+          *a1 = CudaDriverStub_102e00(v23);
+          return 0;
+        }
+      }
+    }
+  }
+  return result;
 }
 
 __int64 nvidia_23ec50(int a1, int a2, unsigned int a3, unsigned int a4,
