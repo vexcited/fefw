@@ -19,6 +19,8 @@
 
 #include <set>
 
+#include <nandroid/GlobalAllocator.h>
+
 #include <nandroid/media/NdkMediaFormat.h>
 
 #include <nandroid/media/stagefright/foundation/ADebug.h>
@@ -76,8 +78,12 @@ private:
     off64_t mIdatOffset;
     size_t mIdatSize;
 
-    std::set<uint32_t> mRequiredBoxes;
-    std::set<uint32_t> mBoxesSeen;
+    // The SDK allocates the nodes of these sets with the global allocation
+    // functions instead of the movie heap.
+    std::set<uint32_t, std::less<uint32_t>, GlobalAllocator<uint32_t> >
+        mRequiredBoxes;
+    std::set<uint32_t, std::less<uint32_t>, GlobalAllocator<uint32_t> >
+        mBoxesSeen;
 
     bool mImageItemsValid;
     uint32_t mCurrentItemIndex;

@@ -19083,12 +19083,12 @@ ffee0,324,verified,src/nn/fs/unplaced.c,nn_fs_GetAndClearMemoryReportInfo
 562420,60,verified,src/nn/sdk_trivial_thunks.cpp,_Z14SdkStub_562420m
 562460,140,verified,src/nandroid/extractors/mp4/ItemTable.cpp,_ZN8nandroid4heif9ItemTableD0Ev
 562500,496,verified,src/nandroid/extractors/mp4/ItemTable_impl.c,nandroid_heif_ItemTable_parse
-562720,188,disputed,src/nandroid/extractors/mp4/ItemTable.cpp,_ZN8nandroid4heif9ItemTable12parseIlocBoxElm
+562720,300,verified,src/nandroid/extractors/mp4/ItemTable.cpp,_ZN8nandroid4heif9ItemTable12parseIlocBoxElm
 562860,192,verified,src/nandroid/extractors/mp4/ItemTable_impl.c,nandroid_heif_ItemTable_parseIinfBox
 562bc0,180,verified,src/nandroid/extractors/mp4/ItemTable.cpp,_ZN8nandroid4heif9ItemTable12parseIprpBoxElm
 562c90,128,verified,src/nandroid/extractors/mp4/ItemTable.cpp,_ZN8nandroid4heif9ItemTable12parsePitmBoxElm
 562d10,16,verified,src/nandroid/extractors/mp4/ItemTable.cpp,_ZN8nandroid4heif9ItemTable12parseIdatBoxElm
-562d20,332,verified,src/nandroid/extractors/mp4/ItemTable.cpp,_ZN8nandroid4heif9ItemTable12parseIrefBoxElm
+562d20,368,verified,src/nandroid/extractors/mp4/ItemTable.cpp,_ZN8nandroid4heif9ItemTable12parseIrefBoxElm
 562ea0,1628,verified,src/nandroid/extractors/mp4/ItemTable_impl.c,nandroid_heif_ItemTable_buildImageItemsIfPossible
 563560,112,verified,src/nandroid/extractors/mp4/ItemTable_impl.c,ItemTable_563560
 5635d0,320,verified,src/nandroid/extractors/mp4/ItemTable_impl.c,ItemTable_5635d0
@@ -19119,7 +19119,7 @@ ffee0,324,verified,src/nn/fs/unplaced.c,nn_fs_GetAndClearMemoryReportInfo
 564850,164,verified,src/nandroid/extractors/mp4/ItemTable_impl.c,ItemTable_564850
 564900,4,verified,src/nandroid/extractors/mp4/ItemTable.cpp,_ZNK8nandroid6VectorINS_4heif11ExtentEntryEE12do_constructEPvm
 564910,4,verified,src/nandroid/extractors/mp4/ItemTable.cpp,_ZNK8nandroid6VectorINS_4heif11ExtentEntryEE10do_destroyEPvm
-564920,200,verified,src/nandroid/extractors/mp4/ItemTable.cpp,_ZNK8nandroid6VectorINS_4heif11ExtentEntryEE7do_copyEPvPKvm
+564920,212,verified,src/nandroid/extractors/mp4/ItemTable.cpp,_ZNK8nandroid6VectorINS_4heif11ExtentEntryEE7do_copyEPvPKvm
 564a20,192,verified,src/nandroid/extractors/mp4/ItemTable.cpp,_ZNK8nandroid6VectorINS_4heif11ExtentEntryEE8do_splatEPvPKvm
 564b00,232,verified,src/nandroid/extractors/mp4/ItemTable.cpp,_ZNK8nandroid6VectorINS_4heif11ExtentEntryEE15do_move_forwardEPvPKvm
 564c00,200,verified,src/nandroid/extractors/mp4/ItemTable.cpp,_ZNK8nandroid6VectorINS_4heif11ExtentEntryEE16do_move_backwardEPvPKvm
