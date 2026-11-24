@@ -342,7 +342,7 @@ LABEL_25:
     v82 = v111_.v129;
     v78 = quant_coarse_energy_impl_alt1(
         v111_.v129, v111_.v130, v111_.v131, a5, (__int64)v111_.v119, a7,
-        v111_.v127, (__int64)&MovieData_a5c0d + 84 * (int)v111_.v128 + 42,
+        v111_.v127, (__int64)&MovieData_a5c0d + 84LL * (int)v111_.v128 + 42,
         (__int64)v111_.v120, (__int64)a9, v111_.v132, v111_.v128, 1, v111_.v126,
         v110);
     if ((v111_.v118 & 1) != 0) {
@@ -392,7 +392,7 @@ LABEL_25:
   a9[6] = v111_.v141;
   result = quant_coarse_energy_impl_alt1(
       v111_.v129, v111_.v130, v111_.v131, a5, a6, a7, v111_.v127,
-      (__int64)&MovieData_a5c0d + 84 * (int)v79, v111_.v125, (__int64)a9,
+      (__int64)&MovieData_a5c0d + 84LL * (int)v79, v111_.v125, (__int64)a9,
       v111_.v132, v77, 0, v111_.v126, v21);
   if (v111_.v121 &&
       ((unsigned int)v111_.v128 < (unsigned int)result ||
