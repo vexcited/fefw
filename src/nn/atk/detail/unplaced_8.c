@@ -8,7 +8,7 @@ _QWORD* HardwareOpusDecoderManager_2b97b0(_QWORD* result);
 __int64 BaseNx_288b50(__int64, unsigned int);
 __int64 BaseNx_288da0(_QWORD*, __int64);
 __int64 GameRoutine_2a3470(__int64 result, int);
-__int64 GameRoutine_2a3510(_QWORD, _QWORD, float);
+__int64 GameRoutine_2a3510(_QWORD, _QWORD);
 __int64 GameRoutine_2a6520(__int64, unsigned int*, int, __int64, unsigned int);
 __int64 GameRoutine_2a6920(__int64 result, int);
 __int64 GameRoutine_2a6930(__int64);
@@ -143,7 +143,7 @@ __int64 nn_atk_detail_293bd0(__int64 a1, __int64 a2, __int64 a3, __int64 a4)
         GameRoutine_2a3450(result + 32, v15);
         GameRoutine_2a3470(v16 + 32, HIBYTE(v41_.v42));
         v18 = GameRoutine_2a3490(v16 + 32, BYTE5(v41_.v42));
-        GameRoutine_2a3510(v16 + 32, BYTE6(v41_.v42), v18);
+        GameRoutine_2a3510(v16 + 32, BYTE6(v41_.v42));
         GameRoutine_2a3520(v16 + 32, (unsigned __int8)v41_.v43);
         v19 = (float)(*(int*)(a4 + 16) + BYTE3(v41_.v43) - 64) /
               0x1.f800000000000p+5f;

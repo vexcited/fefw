@@ -12,7 +12,7 @@ __int64 BasicSoundPlayer_Unknown2(void);
 __int64 GameRoutine_2829c0(_QWORD);
 __int64 GameRoutine_2a3450(_QWORD, _QWORD);
 __int64 GameRoutine_2a3470(_QWORD, _QWORD);
-__int64 GameRoutine_2a3510(_QWORD, _QWORD, float);
+__int64 GameRoutine_2a3510(_QWORD, _QWORD);
 __int64 GameRoutine_2a3810(__int64 result);
 __int64 GameRoutine_2a64c0(__int64 result);
 __int64 GameRoutine_2a6520(__int64, unsigned int*, int, __int64, unsigned int);
@@ -688,7 +688,7 @@ __int64 WaveSoundPlayer_2ad8b0(__int64 a1)
       GameRoutine_2a3450_alt1(v10 + 32, *(unsigned __int8*)(a1 + 340));
       GameRoutine_2a3470_alt1(v10 + 32, *(unsigned __int8*)(a1 + 343));
       v12 = GameRoutine_2a3490(v10 + 32, *(unsigned __int8*)(a1 + 341));
-      GameRoutine_2a3510(v10 + 32, *(unsigned __int8*)(a1 + 342), v12);
+      GameRoutine_2a3510(v10 + 32, *(unsigned __int8*)(a1 + 342));
       GameRoutine_2a3520(v10 + 32, v11);
       *(_BYTE*)(v10 + 196) = *(_BYTE*)(a1 + 249);
       GameRoutine_2a6920_alt1(v10, *(_DWORD*)(a1 + 368));

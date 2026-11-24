@@ -8740,7 +8740,7 @@ fff90,116,verified,src/snd/api.cpp,_ZN3snd10startPitchERKNS_3fnd10WeakHandleERKN
 294ec0,20,verified,src/game/unnamed/v000_0.c,GameHr_294ec0
 294ee0,72,verified,src/game/unnamed/b001_2.c,GameHr_294ee0
 294f30,36,verified,src/nn/atk/detail/unplaced.c,nn_atk_detail_294f30
-294f60,736,disputed,src/nn/atk/detail/unplaced.c,nn_atk_detail_294f60
+294f60,740,verified,src/nn/atk/detail/unplaced.c,nn_atk_detail_294f60
 295250,156,verified,src/game/unnamed/b001_2.c,GameHr_295250
 2952f0,172,verified,src/nn/atk/detail/stream_sound.c,StreamSound_Unknown3
 2953a0,160,verified,src/nn/atk/detail/stream_sound.c,StreamSound_Unknown4

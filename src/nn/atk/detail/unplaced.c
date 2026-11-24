@@ -23,7 +23,7 @@ __int64 GameRoutine_28b4e0(__int64, __int64);
 __int64 GameRoutine_290820(__int64, unsigned int, __int64);
 __int64 GameRoutine_29e630(__int64 result);
 __int64 GameRoutine_2a3470(__int64 result, int);
-__int64 GameRoutine_2a3510(_QWORD, _QWORD, float);
+__int64 GameRoutine_2a3510(_QWORD, _QWORD);
 __int64 GameRoutine_2a3750();
 __int64 GameRoutine_2a3780();
 __int64 GameRoutine_2a37b0();
@@ -1506,7 +1506,7 @@ LABEL_27:
   }
   v23 = (unsigned int)*(char*)(a1 + 498);
   if ((v23 & 0x80000000) == 0) {
-    GameRoutine_2a3510(v12 + 32, v23, a6);
+    GameRoutine_2a3510(v12 + 32, v23);
   }
   v24 = *(char*)(a1 + 499);
   if ((v24 & 0x80000000) == 0) {
