@@ -84,6 +84,12 @@ __int64
 ui_LayoutAccessor_FindPane_alt1(__int64*,
                                 __int64) __asm__("ui_LayoutAccessor_FindPane");
 void game_gmap_GmapSpotNameManager_Update(__int64 a1, int* a2);
+__int64 GameRoutine_1660b90(__int64 result, char);
+__int64 LayoutAccessor_155e830(__int64 result, char);
+unsigned int* game_gmap_SpotMgr_GetCurrentSpot();
+__int64
+game_gmap_GmapSpotNameManager_ShowOnlyDagsionHp_lambda0_Invoke(__int64 a1,
+                                                               __int64 a2);
 
 void game_gmap_GmapSpotNameManager_ShowOnlyDagsionHp(__int64 a1, char a2)
 {
@@ -3495,6 +3501,30 @@ __int64 game_gmap_GmapSpotNameManager_PersistentTick_lambda0_Invoke(__int64 a1,
     return GameRoutine_1596b00(*(_QWORD*)(a2 + 72));
   }
   return result;
+}
+
+__int64
+
+game_gmap_GmapSpotNameManager_ShowOnlyDagsionHp_lambda0_Invoke(__int64 a1,
+                                                               __int64 a2)
+{
+
+#pragma clang fp contract(on)
+
+  unsigned int* v4;
+  __int64 v5;
+  char v6;
+
+  if (*(_BYTE*)(a2 + 105) == 1) {
+    v4 = *(unsigned int**)(a2 + 88);
+    if (v4 == game_gmap_SpotMgr_GetCurrentSpot()) {
+      return GameRoutine_1660b90(a2, **(_BYTE**)(a1 + 8));
+    }
+  }
+  v5 = *(_QWORD*)a2;
+  v6 = (**(_BYTE**)(a1 + 8) & 1) == 0;
+  *(_BYTE*)(a2 + 104) = v6;
+  return LayoutAccessor_155e830(v5, v6);
 }
 
 #pragma GCC visibility pop

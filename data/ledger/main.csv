@@ -16943,7 +16943,7 @@ fff90,116,verified,src/snd/api.cpp,_ZN3snd10startPitchERKNS_3fnd10WeakHandleERKN
 5eab00,312,verified,src/nn/g3d/shape_anim_obj.c,ShapeAnimObj_Unknown3
 5eac40,628,verified,src/nn/g3d/shape_anim_obj.c,ShapeAnimObj_Unknown7
 5eaee0,8,verified,src/game/game_trivial_forwarders.cpp,_Z15GameStub_5eaee0m
-5eaef0,1736,verified,src/game/unplaced_53.c,game_5eaef0
+5eaef0,1736,disputed,src/game/unplaced_53.c,game_5eaef0
 5eb5c0,92,verified,src/nn/g3d/unplaced.c,nn_g3d_5eb5c0
 5eb620,252,verified,src/game/unnamed/b003_3.c,GameHr_5eb620
 5eb740,1168,verified,src/nn/g3d/unplaced_12.c,nn_g3d_5eb740
@@ -17732,6 +17732,7 @@ fff90,116,verified,src/snd/api.cpp,_ZN3snd10startPitchERKNS_3fnd10WeakHandleERKN
 637b00,208,verified,src/game/unnamed/b004_2.c,GameHr_637b00
 637c90,24,verified,src/llvm-libcxx-21/libcxx/include/__vector/vector.h,std::vector<T>::__throw_length_error()
 637cc0,496,verified,src/game/unnamed/e001_1.c,GameHr_637cc0
+637ec0,492,verified,src/fs/unplaced_12.c,fs_637ec0
 6380e0,308,verified,src/game/unnamed/b004_1.c,GameHr_6380e0
 638220,24,verified,src/fs/unplaced_3.c,fs_638220
 638240,28,verified,src/game/unnamed/b004_1.c,GameHr_638240
@@ -24476,7 +24477,7 @@ fff90,116,verified,src/snd/api.cpp,_ZN3snd10startPitchERKNS_3fnd10WeakHandleERKN
 86bbc0,332,verified,src/game/unplaced_53.c,game_86bbc0
 86bd10,208,verified,src/game/proc_progress_async.c,ProcProgressAsync_Destructor
 86bde0,252,verified,src/game/proc_progress_async.c,ProcProgressAsync_DeletingDestructor
-86bee0,436,verified,src/game/unplaced_53.c,game_86bee0
+86bee0,436,disputed,src/game/unplaced_53.c,game_86bee0
 86c0b0,52,verified,src/game/singleton/singletons.cpp,_ZN4game9SingletonINS_12GameScheduleELb0EED2Ev
 86c0f0,88,verified,src/game/singleton/singletons.cpp,_ZN4game9SingletonINS_12GameScheduleELb0EED0Ev
 86c160,1304,verified,src/game/unnamed/r002_0.c,GameHr_86c160
@@ -24968,7 +24969,7 @@ fff90,116,verified,src/snd/api.cpp,_ZN3snd10startPitchERKNS_3fnd10WeakHandleERKN
 883680,40,verified,src/game/gmap/proc_gmap_seq.c,ProcGmapSeq_883680
 8836c0,356,verified,src/game/gmap/proc_gmap_seq.c,ProcGmapSeq_8836c0
 883860,64,verified,src/game/gmap/proc_gmap_seq.c,ProcGmapSeq_883860
-8838a0,168,verified,src/game/gmap/proc_gmap_seq.c,ProcGmapSeq_8838a0
+8838a0,1272,verified,src/game/gmap/proc_gmap_seq.c,ProcGmapSeq_8838a0
 8840d0,32,verified,src/game/gmap/proc_gmap_seq.c,ProcGmapSeq_8840d0
 884100,1360,verified,src/game/gmap/proc_gmap_seq.c,ProcGmapSeq_884100
 8846c0,476,verified,src/game/gmap/proc_gmap_seq.c,ProcGmapSeq_8846c0
@@ -38229,6 +38230,7 @@ cb8f20,284,verified,src/game/hub/unplaced.c,game_hub_cb8f20
 cb9060,72,verified,src/game/unnamed/b010_2.c,GameHr_cb9060
 cb90b0,392,verified,src/game/unnamed/f000_0.c,GameHr_cb90b0
 cb9240,516,verified,src/game/unnamed/b010_3.c,GameHr_cb9240
+cb9480,740,verified,src/game/hub/unplaced_23.c,game_hub_cb9480
 cb9a30,1000,verified,src/game/hub/unplaced.c,game_hub_cb9a30
 cb9e40,472,verified,src/game/hub/unplaced.c,game_hub_cb9e40
 cba040,344,verified,src/game/script/hub_character_natives_impl.c,HubCharacterNatives_cba040
@@ -59503,7 +59505,7 @@ fffcb0,1244,verified,src/game/unnamed/b014_1.c,GameHr_fffcb0
 1333de0,292,verified,src/game/gmap/spot_mgr.c,SpotMgr_1333de0
 1333f20,536,verified,src/game/unnamed/b018_1.c,GameHr_1333f20
 1334160,476,verified,src/game/gmap/spot_mgr.c,SpotMgr_1334160
-1334360,476,verified,src/game/gmap/spot_mgr.c,SpotMgr_1334360
+1334360,476,disputed,src/game/gmap/spot_mgr.c,SpotMgr_1334360
 1334560,1848,verified,src/game/gmap/spot_mgr.c,SpotMgr_1334560
 1334d40,352,verified,src/game/gmap/spot_mgr.c,SpotMgr_1334d40
 1334ec0,876,verified,src/game/gmap/spot_mgr.c,SpotMgr_1334ec0
@@ -86951,7 +86953,7 @@ fffcb0,1244,verified,src/game/unnamed/b014_1.c,GameHr_fffcb0
 19a0430,24,verified,src/llvm-libcxx-21/libcxx/include/__functional/function.h,"std::__1::__function::__func<game::gmap::GmapSpotNameManager::Update(game::BitFlagMask<game::gmap::GmapUIDef::UpdateFlag> const&)::$_3, void (game::gmap::GmapSpotName&)>::__clone(__base*)"
 19a0450,4,verified,src/llvm-libcxx-21/libcxx/include/__functional/function.h,"std::__1::__function::__func<game::gmap::GmapSpotNameManager::Update(game::BitFlagMask<game::gmap::GmapUIDef::UpdateFlag> const&)::$_3, void (game::gmap::GmapSpotName&)>::destroy()"
 19a0460,12,verified,src/llvm-libcxx-21/libcxx/include/__functional/function.h,"std::__1::__function::__func<game::gmap::GmapSpotNameManager::Update(game::BitFlagMask<game::gmap::GmapUIDef::UpdateFlag> const&)::$_3, void (game::gmap::GmapSpotName&)>::destroy_deallocate()"
-19a0470,480,verified,src/game/gmap/gmap_spot_name_manager.c,game_gmap_GmapSpotNameManager_Update_lambda3_Invoke
+19a0470,456,verified,src/game/gmap/gmap_spot_name_manager.c,game_gmap_GmapSpotNameManager_Update_lambda3_Invoke
 19a0680,28,verified,src/llvm-libcxx-21/libcxx/include/__functional/function.h,"std::__1::__function::__func<game::gmap::GmapSpotNameManager::Update(game::BitFlagMask<game::gmap::GmapUIDef::UpdateFlag> const&)::$_3, void (game::gmap::GmapSpotName&)>::target(std::type_info const&)"
 19a06a0,12,verified,src/llvm-libcxx-21/libcxx/include/__functional/function.h,"std::__1::__function::__func<game::gmap::GmapSpotNameManager::Update(game::BitFlagMask<game::gmap::GmapUIDef::UpdateFlag> const&)::$_3, void (game::gmap::GmapSpotName&)>::target_type()"
 19a06b0,44,verified,src/llvm-libcxx-21/libcxx/include/__functional/function.h,"std::__1::__function::__func<game::gmap::GmapSpotNameManager::PersistentTick()::$_0, void (game::gmap::GmapSpotName&)>::deleting destructor"
@@ -86967,6 +86969,7 @@ fffcb0,1244,verified,src/game/unnamed/b014_1.c,GameHr_fffcb0
 19a0840,24,verified,src/llvm-libcxx-21/libcxx/include/__functional/function.h,"std::__1::__function::__func<game::gmap::GmapSpotNameManager::ShowOnlyDagsionHp(bool)::$_0, void (game::gmap::GmapSpotName&)>::__clone(__base*)"
 19a0860,4,verified,src/llvm-libcxx-21/libcxx/include/__functional/function.h,"std::__1::__function::__func<game::gmap::GmapSpotNameManager::ShowOnlyDagsionHp(bool)::$_0, void (game::gmap::GmapSpotName&)>::destroy()"
 19a0870,12,verified,src/llvm-libcxx-21/libcxx/include/__functional/function.h,"std::__1::__function::__func<game::gmap::GmapSpotNameManager::ShowOnlyDagsionHp(bool)::$_0, void (game::gmap::GmapSpotName&)>::destroy_deallocate()"
+19a0880,132,verified,src/game/gmap/gmap_spot_name_manager.c,game_gmap_GmapSpotNameManager_ShowOnlyDagsionHp_lambda0_Invoke
 19a0910,28,verified,src/llvm-libcxx-21/libcxx/include/__functional/function.h,"std::__1::__function::__func<game::gmap::GmapSpotNameManager::ShowOnlyDagsionHp(bool)::$_0, void (game::gmap::GmapSpotName&)>::target(std::type_info const&)"
 19a0930,12,verified,src/llvm-libcxx-21/libcxx/include/__functional/function.h,"std::__1::__function::__func<game::gmap::GmapSpotNameManager::ShowOnlyDagsionHp(bool)::$_0, void (game::gmap::GmapSpotName&)>::target_type()"
 19a0940,4,verified,src/game/game_trivial.cpp,_Z16GameStub_19a0940v
