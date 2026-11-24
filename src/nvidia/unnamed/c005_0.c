@@ -1373,6 +1373,7 @@ _QWORD* CudaDriverHr_2231b0(_QWORD* result, __int64 a2, __int64 a3)
   return result;
 }
 
+__attribute__((noinline))
 __int64 CudaDriverHr_2244b0(_QWORD* a1)
 {
   _BYTE* v1;

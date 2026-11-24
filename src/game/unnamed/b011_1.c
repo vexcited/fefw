@@ -5301,6 +5301,7 @@ __int64 GameHr_d5bd40(__int64 a1, __int64 a2)
   return result;
 }
 
+__attribute__((noinline))
 char** GameHr_d5c0e0(char** result, __int64 a2, __int64 a3, unsigned __int64 a4)
 {
   __int64 v4;

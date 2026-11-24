@@ -9118,8 +9118,8 @@ ffee0,324,verified,src/nn/fs/unplaced.c,nn_fs_GetAndClearMemoryReportInfo
 1f68c0,392,verified,src/nn/audio/loudness_calculator.cpp,_ZN2nn5audio6detail22LoudnessCalculatorImpl10InitializeEPvmi
 1f6a60,124,verified,src/nn/audio/loudness_calculator.cpp,_ZN2nn5audio6detail22LoudnessCalculatorImpl5ResetEv
 1f6ae0,124,verified,src/nn/audio/loudness_calculator.cpp,_ZN2nn5audio6detail22LoudnessCalculatorImpl8FinalizeEv
-1f6b60,1312,disputed,src/nn/audio/loudness_calculator.cpp,_ZN2nn5audio6detail22LoudnessCalculatorImpl7AnalyzeEPKsi
-1f7090,148,disputed,src/nn/audio/loudness_calculator.cpp,_ZN2nn5audio6detail22LoudnessCalculatorImpl20CalcKWeightingFilterEif
+1f6b60,1312,verified,src/nn/audio/loudness_calculator.cpp,_ZN2nn5audio6detail22LoudnessCalculatorImpl7AnalyzeEPKsi
+1f7090,148,verified,src/nn/audio/loudness_calculator.cpp,_ZN2nn5audio6detail22LoudnessCalculatorImpl20CalcKWeightingFilterEif
 1f7140,1396,verified,src/nn/audio/loudness_calculator.cpp,_ZN2nn5audio6detail22LoudnessCalculatorImpl4CalcEv
 1f7700,788,verified,src/nn/audio/ne10/modules/dsp/NE10_fft.c,nnaudiodetail_ne10_factor
 1f7a60,736,disputed,src/nn/audio/ne10/modules/dsp/NE10_fft.c,nnaudiodetail_ne10_fft_generate_twiddles_int32

@@ -17,7 +17,7 @@ void game_character_IKSlopeCargo_IKSlopeCargo(__int64 a1, _QWORD* a2,
 __attribute__((swiftcall)) void GameRoutine_1085a10(PSEUDO_X8, _QWORD, _QWORD,
                                                     _QWORD, _QWORD);
 __attribute__((swiftcall)) void
-GameRoutine_109da60(PSEUDO_X8, float32x4_t*, float32x4_t*, int8x16_t result);
+GameRoutine_109da60(PSEUDO_X8, float32x4_t*, float32x4_t*, float t);
 __int64 GameRoutine_10fdef0(float32x4_t*, float32x4_t*, float32x4_t*,
                             float32x4_t*, _DWORD*);
 extern _UNKNOWN* GameData_212c558;
@@ -402,7 +402,8 @@ void game_character_IKSlopeCargo_IKSlopeCargo_lambda0_Invoke(__int64 a1,
     v47 = *(_OWORD*)(v3 + 80);
     *((_QWORD*)&v47 + 1) = LANES128(v85).n128_u32[2];
     *(_OWORD*)(v3 + 80) = v47;
-    GameRoutine_109da60((void*)(&v94), (float32x4_t*)(v3 + 96), &v88, v45);
+    GameRoutine_109da60((void*)(&v94), (float32x4_t*)(v3 + 96), &v88,
+                        LANES128(v45).n128_f32[0]);
     v48 = LANES128(v94).n128_u32[2];
     *(_QWORD*)(v3 + 96) = LANES128(v94).n128_u64[0];
     v49 = *(float32x4_t*)(v3 + 96);

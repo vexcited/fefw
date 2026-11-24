@@ -858,6 +858,7 @@ void SuperStripeSystem_5d0a40(__int64 a1, __int64 a2)
   }
 }
 
+__attribute__((noinline))
 float SuperStripeSystem_5d0cd0(float32x4_t* a1, float32x4_t* a2, __int64 a3,
                                int a4, int a5, float a6)
 {

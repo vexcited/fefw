@@ -1028,6 +1028,7 @@ __int64 GameHr_5784d0(_QWORD* a1, void (*a2)(__int64, __int64, __int64),
                                                       a1[75] + 4320LL, a3);
 }
 
+__attribute__((noinline))
 __int64 GameHr_578920(__int64 a1, int a2, int a3, int a4, int a5)
 {
   return *(_QWORD*)(a1 + 608) + 8LL * (12 * a2 + 4 * a3 + a4 + 2 * a5);

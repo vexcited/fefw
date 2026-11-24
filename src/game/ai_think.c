@@ -19329,6 +19329,7 @@ __int64 AIThink_12211a0(__int64 a1, __int64 a2, int* a3)
   return AIThink_1223580_alt2(&v15_.v15);
 }
 
+__attribute__((noinline))
 __int64 game_AIThink_EntrustMoveTo(__int64 a1, unsigned int a2, int a3, int a4)
 {
   __int64 v4;

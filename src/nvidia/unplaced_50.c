@@ -3,6 +3,15 @@
 _DWORD* NgxRoutine_36f0(_DWORD* result, unsigned int*, unsigned int);
 extern _UNKNOWN NgxData_f55ac;
 extern _UNKNOWN NgxData_f5830;
+extern _UNKNOWN NgxData_f4f74;
+extern _UNKNOWN NgxData_f5008;
+extern _UNKNOWN NgxData_f506c;
+extern _UNKNOWN NgxData_f50e0;
+extern _UNKNOWN NgxData_f51a0;
+extern _UNKNOWN NgxData_f528c;
+extern _UNKNOWN NgxData_f5358;
+extern _UNKNOWN NgxData_f53f8;
+extern _UNKNOWN NgxData_f54c0;
 extern _UNKNOWN NgxData_f591c;
 extern _UNKNOWN NgxData_f59e4;
 extern _UNKNOWN NgxData_f5a84;
@@ -38,16 +47,16 @@ char* nvidia_b4020(int a1)
     result = (const char*)&NgxData_f5adc;
     break;
   case -1160773627:
-    result = "N";
+    result = (const char*)&NgxData_f528c;
     break;
   case -1160773626:
-    result = "N";
+    result = (const char*)&NgxData_f51a0;
     break;
   case -1160773625:
     result = (const char*)&NgxData_f5f48;
     break;
   case -1160773624:
-    result = "N";
+    result = (const char*)&NgxData_f50e0;
     break;
   case -1160773623:
     result = (const char*)&NgxData_f5c64;
@@ -59,10 +68,10 @@ char* nvidia_b4020(int a1)
     result = (const char*)&NgxData_f5830;
     break;
   case -1160773620:
-    result = "N";
+    result = (const char*)&NgxData_f5358;
     break;
   case -1160773619:
-    result = "N";
+    result = (const char*)&NgxData_f4f74;
     break;
   case -1160773618:
     result = (const char*)&NgxData_f59e4;
@@ -74,17 +83,17 @@ char* nvidia_b4020(int a1)
     result = (const char*)&NgxData_f55ac;
     break;
   case -1160773615:
-    result = "N";
+    result = (const char*)&NgxData_f506c;
     break;
   case -1160773614:
-    result = "N";
+    result = (const char*)&NgxData_f54c0;
     break;
   default:
     if (a1 == 1) {
-      result = "N";
+      result = (const char*)&NgxData_f5008;
     }
     else {
-      result = "u";
+      result = (const char*)&NgxData_f53f8;
     }
     break;
   }

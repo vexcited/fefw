@@ -7145,6 +7145,7 @@ __int64 CudaDriverHr_20f540(__int64 a1)
   return 0;
 }
 
+__attribute__((noinline))
 __int64 CudaDriverHr_20f580(__int64 result)
 {
   if ((unsigned int)result > 0x25 || ((1LL << result) & 0x2060598411LL) == 0) {

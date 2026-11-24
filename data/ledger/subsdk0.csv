@@ -1152,7 +1152,7 @@ b3fe0,12,verified,src/nvidia/ngx_api.cpp,NVSDK_NGX_Parameter_GetULL
 b3ff0,12,verified,src/nvidia/ngx_api.cpp,NVSDK_NGX_Parameter_GetF
 b4000,12,verified,src/nvidia/ngx_api.cpp,NVSDK_NGX_Parameter_GetUI
 b4010,12,verified,src/nvidia/ngx_api.cpp,NVSDK_NGX_Parameter_GetVoidPointer
-b4020,44,disputed,src/nvidia/unplaced_50.c,nvidia_b4020
+b4020,44,verified,src/nvidia/unplaced_50.c,nvidia_b4020
 b41e0,188,verified,src/nvidia/unplaced_20.c,nvidia_b41e0
 b42a0,1812,verified,src/nvidia/unplaced_17.c,nvidia_b42a0
 b49c0,460,verified,src/nvidia/dlss/rel/source/common/util-log.c,util_log_b49c0

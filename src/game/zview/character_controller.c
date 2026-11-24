@@ -4597,6 +4597,7 @@ LABEL_143:
   goto LABEL_149;
 }
 
+__attribute__((noinline))
 float CharacterController_d40750(__int64 a1, __int64 a2, __int64 a3, __int64 a4)
 {
 

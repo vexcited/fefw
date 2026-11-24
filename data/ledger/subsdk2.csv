@@ -845,7 +845,7 @@ fff0,88,verified,src/movie/detail/movie_video_decoder_event_manager.cpp,_ZN5movi
 5d1c0,2996,verified,src/movie/unnamed/p000_0.c,MovieHr_5d1c0
 5dde0,180,verified,src/opus/silk/fixed/encode_frame_FIX.c,silk_encode_do_VAD_FIX
 5dea0,3968,verified,src/opus/silk/fixed/encode_frame_FIX_impl.c,silk_encode_frame_FIX
-5ef40,728,disputed,src/opus/silk/fixed/unplaced_2.c,opus_silk_fixed_5ef40
+5ef40,728,verified,src/opus/silk/fixed/unplaced_2.c,opus_silk_fixed_5ef40
 5f240,668,verified,src/opus/silk/fixed/find_LTP_FIX.c,silk_find_LTP_FIX
 5f5e0,1116,verified,src/opus/silk/fixed/unplaced_2.c,opus_silk_fixed_5f5e0
 5fa60,1112,disputed,src/opus/silk/fixed/unplaced_2.c,opus_silk_fixed_5fa60
