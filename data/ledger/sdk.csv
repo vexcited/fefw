@@ -1587,7 +1587,7 @@ a1040,100,verified,src/nn/util/util_compression.cpp,_ZN2nn4util43InitializeStrea
 a10b0,4,verified,src/nn/util/util_compression.cpp,_ZN2nn4util23StreamingDecompressZlibEPmS1_PvmPKvmPNS0_30StreamingDecompressZlibContextE
 a1200,4,verified,src/nn/util/util_compression.cpp,_ZN2nn4util23StreamingDecompressGzipEPmS1_PvmPKvmPNS0_30StreamingDecompressZlibContextE
 a1210,4,verified,src/nn/util/util_compression.cpp,_ZN2nn4util26StreamingDecompressDeflateEPmS1_PvmPKvmPNS0_30StreamingDecompressZlibContextE
-a1220,108,disputed,src/nn/util/string_builder.cpp,_ZN2nn4util6MemmemEPKvmS2_m
+a1220,108,verified,src/nn/util/string_builder.cpp,_ZN2nn4util6MemmemEPKvmS2_m
 a1290,24,verified,src/nn/util/string_builder.cpp,_ZN2nn4util13StringBuilderC2EPcm
 a12b0,24,verified,src/nn/util/string_builder.cpp,_ZN2nn4util13StringBuilder5ClearEv
 a12d0,24,verified,src/nn/util/string_builder.cpp,_ZN2nn4util13StringBuilderC2ENS_4SpanIcEE

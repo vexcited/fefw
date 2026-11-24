@@ -106,20 +106,31 @@ void* Memmem(const void* haystack, size_t haystackSize, const void* needle,
     return const_cast<uint8_t*>(bytes);
   }
 
-  if (haystackSize >= needleSize) {
-    ptrdiff_t last = haystackSize - needleSize;
-    for (ptrdiff_t i = 0; i <= last; ++i) {
-      for (size_t j = 0; j < haystackSize - i; ++j) {
-        if (bytes[i + j] != pattern[j]) {
+  if (haystackSize < needleSize ||
+    static_cast<ptrdiff_t>(haystackSize - needleSize) < 0) {
+    return nullptr;
+  }
+
+  // The scan compares pointers, so a range that wraps reads nothing.
+  const uint8_t* end = bytes + haystackSize;
+  const uint8_t* last = end - needleSize;
+  size_t remaining = haystackSize;
+  for (const uint8_t* p = bytes;; ++p, --remaining) {
+    if (p < end) {
+      size_t j = 0;
+      do {
+        if (p[j] != pattern[j]) {
           break;
         }
         if (j == needleSize - 1) {
-          return const_cast<uint8_t*>(bytes + i);
+          return const_cast<uint8_t*>(p);
         }
-      }
+      } while (++j != remaining);
+    }
+    if (p >= last) {
+      return nullptr;
     }
   }
-  return nullptr;
 }
 
 }
