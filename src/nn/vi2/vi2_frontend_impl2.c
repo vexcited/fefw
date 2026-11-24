@@ -307,7 +307,12 @@ __int64 vi2_frontend_5e76f0(__int64 a1, _DWORD* a2, __int64* a3)
   v12 = v16;
   *(_BYTE*)(v10 + 176) = 2;
   *(_QWORD*)(v10 + 184) = v12;
-  result = nn_syncpt_sdk_MakeNativeSyncHandleFromSyncPointHandle_plt(v15);
+  result = ({
+    unsigned __int128 r_ =
+        nn_syncpt_sdk_MakeNativeSyncHandleFromSyncPointHandle_plt_pair(v15);
+    v14 = COERCE_AS(__typeof__(v14), (unsigned long long)(r_ >> 64));
+    (__int64)(unsigned long long)r_;
+  });
   *a2 = v9;
   *a3 = result;
   a3[1] = v14;

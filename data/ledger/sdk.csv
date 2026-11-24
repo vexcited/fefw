@@ -23322,7 +23322,7 @@ ffee0,324,verified,src/nn/fs/unplaced.c,nn_fs_GetAndClearMemoryReportInfo
 5e75b0,28,verified,src/nn/vi2/vi2_frontend_impl2.c,vi2_frontend_5e75b0
 5e75d0,264,verified,src/nn/vi2/vi2_frontend_impl2.c,vi2_frontend_5e75d0
 5e76e0,8,verified,src/nn/sdk_trivial.cpp,_Z14SdkStub_5e76e0m
-5e76f0,220,disputed,src/nn/vi2/vi2_frontend_impl2.c,vi2_frontend_5e76f0
+5e76f0,220,verified,src/nn/vi2/vi2_frontend_impl2.c,vi2_frontend_5e76f0
 5e77d0,40,verified,src/nn/vi2/vi2_frontend_impl2.c,vi2_frontend_5e77d0
 5e7800,88,verified,src/nn/vi2/vi2_frontend_impl2.c,vi2_frontend_5e7800
 5e7860,36,verified,src/nn/vi2/vi2_frontend_impl2.c,vi2_frontend_5e7860
