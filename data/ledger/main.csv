@@ -76405,7 +76405,7 @@ fffcb0,1244,verified,src/game/unnamed/b014_1.c,GameHr_fffcb0
 1763740,620,verified,src/game/unnamed/b023_1.c,GameHr_1763740
 1763ac0,336,verified,src/game/telop/telop_result.c,TelopResult_1763ac0
 1763c20,488,verified,src/game/telop/unplaced.c,game_telop_1763c20
-1763e20,292,disputed,src/game/unnamed/b023_1.c,GameHr_1763e20
+1763e20,292,verified,src/game/unnamed/b023_1.c,GameHr_1763e20
 17644e0,1392,verified,src/game/telop/unplaced_5.c,game_telop_17644e0
 1764a60,768,verified,src/game/telop/unplaced_2.c,game_telop_1764a60
 1764d60,1156,verified,src/game/telop/unplaced_5.c,game_telop_1764d60
