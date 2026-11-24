@@ -6590,7 +6590,7 @@ void llvm_libcxx_21_libcxx_include___functional_138f6a0(__int64* result)
             v26 = *(float32x4_t*)(v14 + 304);
             v27 = v1[7];
             LANES128(v22).n128_f32[0] =
-                v20 *
+                PSEUDO_ROUNDED(v20) *
                 (float)((float)((float)(v11 +
                                         (float)((float)(v86 +
                                                         (float)((float)(v10 +
