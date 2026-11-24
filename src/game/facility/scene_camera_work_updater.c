@@ -1857,7 +1857,8 @@ __int64 SceneCameraWorkUpdater_StateBlackOutWait_Unknown3(__int64 a1,
        ((unsigned __int64)*(unsigned __int8*)(game_ProcFadeView_instance_ + 480)
         << 6);
   if (*(float*)(v3 + 172) == *(float*)(v3 + 168)) {
-    (*(void (**)(unsigned __int64))(*(_QWORD*)(v3 + 160) + 16LL))(v3 + 160);
+    v4 = COERCE_AS(__typeof__(v4), (*(__n128(**)(unsigned __int64))(
+                                       *(_QWORD*)(v3 + 160) + 16LL))(v3 + 160));
   }
   else {
     v4 = *(_OWORD*)(v3 + 208);
@@ -2296,7 +2297,9 @@ __int64 game_facility_SceneCameraWorkUpdater_InitializeTickTimer_lambda0_Invoke(
       return game_809dc0(result, v2, v1);
     }
     if (*(float*)(v5 + 12) == *(float*)(v5 + 8)) {
-      (*(void (**)(unsigned __int64))(*(_QWORD*)v5 + 16LL))(v5);
+      v6 =
+          COERCE_AS(__typeof__(v6),
+                    (*(__n128(**)(unsigned __int64))(*(_QWORD*)v5 + 16LL))(v5));
     }
     else {
       v6 = *(_OWORD*)(v5 + 48);

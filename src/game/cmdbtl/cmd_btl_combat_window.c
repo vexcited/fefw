@@ -381,7 +381,9 @@ __int64 CmdBtlCombatWindow_17c1d50(__int64 result)
                                                   480)
             << 6);
       if (*(float*)(v6 + 172) == *(float*)(v6 + 168)) {
-        (*(void (**)(unsigned __int64))(*(_QWORD*)(v6 + 160) + 16LL))(v6 + 160);
+        v7 = COERCE_AS(__typeof__(v7),
+                       (*(__n128(**)(unsigned __int64))(*(_QWORD*)(v6 + 160) +
+                                                        16LL))(v6 + 160));
       }
       else {
         v7 = *(_OWORD*)(v6 + 208);
@@ -615,8 +617,10 @@ void CmdBtlCombatWindow_Unknown4(__int64 a1)
   if (game_ProcFadeView_instance_ != 0) {
     if (*(float*)(game_ProcFadeView_instance_ + 300) ==
         *(float*)(game_ProcFadeView_instance_ + 296)) {
-      (*(void (**)(__int64))(*(_QWORD*)(game_ProcFadeView_instance_ + 288) +
-                             16LL))(game_ProcFadeView_instance_ + 288);
+      v3 = COERCE_AS(__typeof__(v3),
+                     (*(__n128(**)(__int64))(
+                         *(_QWORD*)(game_ProcFadeView_instance_ + 288) + 16LL))(
+                         game_ProcFadeView_instance_ + 288));
     }
     else {
       v3 = *(_OWORD*)(game_ProcFadeView_instance_ + 336);
@@ -683,7 +687,9 @@ __int64 CmdBtlCombatWindow_17c2410(__int64 result, unsigned __int64 a2,
                                                 480)
           << 6);
     if (*(float*)(v9 + 172) == *(float*)(v9 + 168)) {
-      (*(void (**)(unsigned __int64))(*(_QWORD*)(v9 + 160) + 16LL))(v9 + 160);
+      v10 = COERCE_AS(__typeof__(v10),
+                      (*(__n128(**)(unsigned __int64))(*(_QWORD*)(v9 + 160) +
+                                                       16LL))(v9 + 160));
     }
     else {
       v10 = *(_OWORD*)(v9 + 208);

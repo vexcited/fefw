@@ -129,7 +129,9 @@ void game_gmap_ProcBeforeEncountSeq_WaitEncountMotionTick(__int64 a1)
                                                 480)
           << 6);
     if (*(float*)(v4 + 172) == *(float*)(v4 + 168)) {
-      (*(void (**)(unsigned __int64))(*(_QWORD*)(v4 + 160) + 16LL))(v4 + 160);
+      v5 = COERCE_AS(__typeof__(v5),
+                     (*(__n128(**)(unsigned __int64))(*(_QWORD*)(v4 + 160) +
+                                                      16LL))(v4 + 160));
     }
     else {
       v5 = *(_OWORD*)(v4 + 208);
@@ -182,7 +184,7 @@ void game_gmap_ProcBeforeEncountSeq_WaitEncountMotionTick(__int64 a1)
     (*(void (**)(__int64))(*v20_.v21 + v12))((__int64)v20_.v21);
   }
   if (!TroopMgr_134d080(*(_QWORD*)(a1 + 152)) &&
-      *(float*)(a1 + 208) >= 0x1.e000000000000p+5f) {
+      !(*(float*)(a1 + 208) < 0x1.e000000000000p+5f)) {
     v13 = *(unsigned __int8**)(a1 + 16);
     if (v13 == nullptr) {
       goto LABEL_37;

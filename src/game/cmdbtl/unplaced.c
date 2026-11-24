@@ -280,7 +280,9 @@ __int64 game_cmdbtl_e63210()
                                                 480)
           << 6);
     if (*(float*)(v1 + 172) == *(float*)(v1 + 168)) {
-      (*(void (**)(unsigned __int64))(*(_QWORD*)(v1 + 160) + 16LL))(v1 + 160);
+      v2 = COERCE_AS(__typeof__(v2),
+                     (*(__n128(**)(unsigned __int64))(*(_QWORD*)(v1 + 160) +
+                                                      16LL))(v1 + 160));
     }
     else {
       v2 = *(_OWORD*)(v1 + 208);

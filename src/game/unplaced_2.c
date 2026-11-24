@@ -6598,7 +6598,8 @@ __int64 game_914820()
        ((unsigned __int64)*(unsigned __int8*)(game_ProcFadeView_instance_ + 480)
         << 6);
   if (*(float*)(v0 + 172) == *(float*)(v0 + 168)) {
-    (*(void (**)(unsigned __int64))(*(_QWORD*)(v0 + 160) + 16LL))(v0 + 160);
+    v1 = COERCE_AS(__typeof__(v1), (*(__n128(**)(unsigned __int64))(
+                                       *(_QWORD*)(v0 + 160) + 16LL))(v0 + 160));
   }
   else {
     v1 = *(_OWORD*)(v0 + 208);
@@ -6632,7 +6633,8 @@ void game_914b80(__int64 a1)
        ((unsigned __int64)*(unsigned __int8*)(game_ProcFadeView_instance_ + 480)
         << 6);
   if (*(float*)(v2 + 172) == *(float*)(v2 + 168)) {
-    (*(void (**)(unsigned __int64))(*(_QWORD*)(v2 + 160) + 16LL))(v2 + 160);
+    v3 = COERCE_AS(__typeof__(v3), (*(__n128(**)(unsigned __int64))(
+                                       *(_QWORD*)(v2 + 160) + 16LL))(v2 + 160));
   }
   else {
     v3 = *(_OWORD*)(v2 + 208);
@@ -12723,8 +12725,9 @@ __int64 game_968b60(__int64 a1, __int64 a2, __int64 a3)
                    unsigned __int8*)(game_ProcFadeView_instance_ + 480)
                << 6);
         if (*(float*)(v10 + 172) == *(float*)(v10 + 168)) {
-          (*(void (**)(unsigned __int64))(*(_QWORD*)(v10 + 160) + 16LL))(v10 +
-                                                                         160);
+          v11 = COERCE_AS(__typeof__(v11),
+                          (*(__n128(**)(unsigned __int64))(
+                              *(_QWORD*)(v10 + 160) + 16LL))(v10 + 160));
         }
         else {
           v11 = *(_OWORD*)(v10 + 208);
@@ -12758,8 +12761,10 @@ __int64 game_968b60(__int64 a1, __int64 a2, __int64 a3)
                            unsigned __int8*)(game_ProcFadeView_instance_ + 480)
                        << 6);
                 if (*(float*)(v18 + 172) == *(float*)(v18 + 168)) {
-                  (*(void (**)(unsigned __int64))(*(_QWORD*)(v18 + 160) +
-                                                  16LL))(v18 + 160);
+                  v19 =
+                      COERCE_AS(__typeof__(v19),
+                                (*(__n128(**)(unsigned __int64))(
+                                    *(_QWORD*)(v18 + 160) + 16LL))(v18 + 160));
                 }
                 else {
                   v19 = *(_OWORD*)(v18 + 208);
@@ -12846,7 +12851,9 @@ LABEL_34:
                                                  480)
            << 6);
     if (*(float*)(v22 + 172) == *(float*)(v22 + 168)) {
-      (*(void (**)(unsigned __int64))(*(_QWORD*)(v22 + 160) + 16LL))(v22 + 160);
+      v23 = COERCE_AS(__typeof__(v23),
+                      (*(__n128(**)(unsigned __int64))(*(_QWORD*)(v22 + 160) +
+                                                       16LL))(v22 + 160));
     }
     else {
       v23 = *(_OWORD*)(v22 + 208);

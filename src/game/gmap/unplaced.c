@@ -2929,14 +2929,13 @@ unsigned __int64 game_gmap_133d680(__int64 a1, __int64 a2, __int64 a3)
                                                   480)
             << 6);
       if (*(float*)(v8 + 172) == *(float*)(v8 + 168)) {
-        (*(void (**)(unsigned __int64))(*(_QWORD*)(v8 + 160) + 16LL))(v8 + 160),
-            v14 =
-                COERCE_AS(__typeof__(v14), PSEUDO_REGISTER(__n128, "v0", "=w")),
-            v24 =
-                COERCE_AS(__typeof__(v24), PSEUDO_REGISTER(__n128, "v0", "=w")),
-            v4 = COERCE_AS(__typeof__(v4), PSEUDO_REGISTER(__n128, "v0", "=w")),
-            v40 =
-                COERCE_AS(__typeof__(v40), PSEUDO_REGISTER(__n128, "v0", "=w"));
+        v9 = COERCE_AS(__typeof__(v9),
+                       (*(__n128(**)(unsigned __int64))(*(_QWORD*)(v8 + 160) +
+                                                        16LL))(v8 + 160)),
+        v14 = COERCE_AS(__typeof__(v14), PSEUDO_REGISTER(__n128, "v0", "=w")),
+        v24 = COERCE_AS(__typeof__(v24), PSEUDO_REGISTER(__n128, "v0", "=w")),
+        v4 = COERCE_AS(__typeof__(v4), PSEUDO_REGISTER(__n128, "v0", "=w")),
+        v40 = COERCE_AS(__typeof__(v40), PSEUDO_REGISTER(__n128, "v0", "=w"));
       }
       else {
         v9 = *(_OWORD*)(v8 + 208);
@@ -4481,8 +4480,9 @@ LABEL_54:
                                                    480)
              << 6);
       if (*(float*)(v20 + 172) == *(float*)(v20 + 168)) {
-        (*(void (**)(unsigned __int64))(*(_QWORD*)(v20 + 160) + 16LL))(v20 +
-                                                                       160);
+        v21 = COERCE_AS(__typeof__(v21),
+                        (*(__n128(**)(unsigned __int64))(*(_QWORD*)(v20 + 160) +
+                                                         16LL))(v20 + 160));
       }
       else {
         v21 = *(_OWORD*)(v20 + 208);
@@ -4743,10 +4743,10 @@ void game_gmap_1341ac0(__int64 a1)
                                                    480)
              << 6);
       if (*(float*)(v17 + 172) == *(float*)(v17 + 168)) {
-        (*(void (**)(unsigned __int64))(*(_QWORD*)(v17 + 160) + 16LL))(v17 +
-                                                                       160),
-            v22 =
-                COERCE_AS(__typeof__(v22), PSEUDO_REGISTER(__n128, "v0", "=w"));
+        v18 = COERCE_AS(__typeof__(v18),
+                        (*(__n128(**)(unsigned __int64))(*(_QWORD*)(v17 + 160) +
+                                                         16LL))(v17 + 160)),
+        v22 = COERCE_AS(__typeof__(v22), PSEUDO_REGISTER(__n128, "v0", "=w"));
       }
       else {
         v18 = *(_OWORD*)(v17 + 208);
@@ -7466,9 +7466,11 @@ void game_gmap_15230c0(__int64 a1)
                                                   480)
             << 6);
       if (*(float*)(v9 + 172) == *(float*)(v9 + 168)) {
-        (*(void (**)(unsigned __int64))(*(_QWORD*)(v9 + 160) + 16LL))(v9 + 160),
-            v5 = COERCE_AS(__typeof__(v5), PSEUDO_REGISTER(__n128, "v0", "=w")),
-            v6 = COERCE_AS(__typeof__(v6), PSEUDO_REGISTER(__n128, "v1", "=w"));
+        v10 = COERCE_AS(__typeof__(v10),
+                        (*(__n128(**)(unsigned __int64))(*(_QWORD*)(v9 + 160) +
+                                                         16LL))(v9 + 160)),
+        v5 = COERCE_AS(__typeof__(v5), PSEUDO_REGISTER(__n128, "v0", "=w")),
+        v6 = COERCE_AS(__typeof__(v6), PSEUDO_REGISTER(__n128, "v1", "=w"));
       }
       else {
         v10 = *(_OWORD*)(v9 + 208);
@@ -7939,7 +7941,9 @@ void game_gmap_1524f30(__int64 a1)
                                                 480)
           << 6);
     if (*(float*)(v4 + 172) == *(float*)(v4 + 168)) {
-      (*(void (**)(unsigned __int64))(*(_QWORD*)(v4 + 160) + 16LL))(v4 + 160);
+      v5 = COERCE_AS(__typeof__(v5),
+                     (*(__n128(**)(unsigned __int64))(*(_QWORD*)(v4 + 160) +
+                                                      16LL))(v4 + 160));
     }
     else {
       v5 = *(_OWORD*)(v4 + 208);
@@ -8192,9 +8196,11 @@ void game_gmap_152b340(__int64 a1)
                                                 480)
           << 6);
     if (*(float*)(v4 + 172) == *(float*)(v4 + 168)) {
-      (*(void (**)(unsigned __int64))(*(_QWORD*)(v4 + 160) + 16LL))(v4 + 160),
-          v20 = COERCE_AS(__typeof__(v20),
-                          PSEUDO_REGISTER(unsigned long long, "x1", "=r"));
+      v5 = COERCE_AS(__typeof__(v5),
+                     (*(__n128(**)(unsigned __int64))(*(_QWORD*)(v4 + 160) +
+                                                      16LL))(v4 + 160)),
+      v20 = COERCE_AS(__typeof__(v20),
+                      PSEUDO_REGISTER(unsigned long long, "x1", "=r"));
     }
     else {
       v5 = *(_OWORD*)(v4 + 208);

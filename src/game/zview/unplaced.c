@@ -1812,7 +1812,8 @@ __int64 game_zview_cf27d0(__int64 a1, __int64 a2)
        ((unsigned __int64)*(unsigned __int8*)(game_ProcFadeView_instance_ + 480)
         << 6);
   if (*(float*)(v4 + 172) == *(float*)(v4 + 168)) {
-    (*(void (**)(unsigned __int64))(*(_QWORD*)(v4 + 160) + 16LL))(v4 + 160);
+    v5 = COERCE_AS(__typeof__(v5), (*(__n128(**)(unsigned __int64))(
+                                       *(_QWORD*)(v4 + 160) + 16LL))(v4 + 160));
   }
   else {
     v5 = *(_OWORD*)(v4 + 208);
@@ -8893,7 +8894,9 @@ LABEL_109:
       ((unsigned __int64)*(unsigned __int8*)(game_ProcFadeView_instance_ + 480)
        << 6);
   if (*(float*)(v81 + 172) == *(float*)(v81 + 168)) {
-    (*(void (**)(unsigned __int64))(*(_QWORD*)(v81 + 160) + 16LL))(v81 + 160);
+    v82 = COERCE_AS(__typeof__(v82),
+                    (*(__n128(**)(unsigned __int64))(*(_QWORD*)(v81 + 160) +
+                                                     16LL))(v81 + 160));
   }
   else {
     v82 = *(_OWORD*)(v81 + 208);

@@ -699,7 +699,9 @@ __int64 game_zview_CharacterModel_UpdateOutlineBold(__int64 a1)
   if (v10 != 0) {
     v11 = v10 + ((unsigned __int64)*(unsigned __int8*)(v10 + 480) << 6);
     if (*(float*)(v11 + 172) == *(float*)(v11 + 168)) {
-      (*(void (**)(unsigned __int64))(*(_QWORD*)(v11 + 160) + 16LL))(v11 + 160);
+      v12 = COERCE_AS(__typeof__(v12),
+                      (*(__n128(**)(unsigned __int64))(*(_QWORD*)(v11 + 160) +
+                                                       16LL))(v11 + 160));
     }
     else {
       v12 = *(_OWORD*)(v11 + 208);
@@ -927,7 +929,9 @@ LABEL_70:
   if (v54 != 0) {
     v55 = v54 + ((unsigned __int64)*(unsigned __int8*)(v54 + 480) << 6);
     if (*(float*)(v55 + 172) == *(float*)(v55 + 168)) {
-      (*(void (**)(unsigned __int64))(*(_QWORD*)(v55 + 160) + 16LL))(v55 + 160);
+      v56 = COERCE_AS(__typeof__(v56),
+                      (*(__n128(**)(unsigned __int64))(*(_QWORD*)(v55 + 160) +
+                                                       16LL))(v55 + 160));
     }
     else {
       v56 = *(_OWORD*)(v55 + 208);

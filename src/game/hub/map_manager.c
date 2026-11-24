@@ -811,7 +811,9 @@ __int64* MapManager_d6f8d0(__int64* result)
                                                   480)
             << 6);
       if (*(float*)(v9 + 172) == *(float*)(v9 + 168)) {
-        (*(void (**)(unsigned __int64))(*(_QWORD*)(v9 + 160) + 16LL))(v9 + 160);
+        v10 = COERCE_AS(__typeof__(v10),
+                        (*(__n128(**)(unsigned __int64))(*(_QWORD*)(v9 + 160) +
+                                                         16LL))(v9 + 160));
       }
       else {
         v10 = *(_OWORD*)(v9 + 208);
@@ -879,7 +881,9 @@ __int64 game_hub_MapManager_Load_lambda0_Invoke(__int64 a1)
                                                 480)
           << 6);
     if (*(float*)(v6 + 172) == *(float*)(v6 + 168)) {
-      (*(void (**)(unsigned __int64))(*(_QWORD*)(v6 + 160) + 16LL))(v6 + 160);
+      v7 = COERCE_AS(__typeof__(v7),
+                     (*(__n128(**)(unsigned __int64))(*(_QWORD*)(v6 + 160) +
+                                                      16LL))(v6 + 160));
     }
     else {
       v7 = *(_OWORD*)(v6 + 208);

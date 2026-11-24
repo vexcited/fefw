@@ -4191,7 +4191,8 @@ void game_f464a0(__int64 a1)
        ((unsigned __int64)*(unsigned __int8*)(game_ProcFadeView_instance_ + 480)
         << 6);
   if (*(float*)(v4 + 172) == *(float*)(v4 + 168)) {
-    (*(void (**)(unsigned __int64))(*(_QWORD*)(v4 + 160) + 16LL))(v4 + 160);
+    v5 = COERCE_AS(__typeof__(v5), (*(__n128(**)(unsigned __int64))(
+                                       *(_QWORD*)(v4 + 160) + 16LL))(v4 + 160));
   }
   else {
     v5 = *(_OWORD*)(v4 + 208);
@@ -4457,7 +4458,9 @@ void game_f469c0(__int64 a1)
                                                  480)
            << 6);
     if (*(float*)(v12 + 172) == *(float*)(v12 + 168)) {
-      (*(void (**)(unsigned __int64))(*(_QWORD*)(v12 + 160) + 16LL))(v12 + 160);
+      v13 = COERCE_AS(__typeof__(v13),
+                      (*(__n128(**)(unsigned __int64))(*(_QWORD*)(v12 + 160) +
+                                                       16LL))(v12 + 160));
     }
     else {
       v13 = *(_OWORD*)(v12 + 208);
@@ -4681,7 +4684,8 @@ void game_f5ab60(__int64 a1)
        ((unsigned __int64)*(unsigned __int8*)(game_ProcFadeView_instance_ + 480)
         << 6);
   if (*(float*)(v4 + 172) == *(float*)(v4 + 168)) {
-    (*(void (**)(unsigned __int64))(*(_QWORD*)(v4 + 160) + 16LL))(v4 + 160);
+    v5 = COERCE_AS(__typeof__(v5), (*(__n128(**)(unsigned __int64))(
+                                       *(_QWORD*)(v4 + 160) + 16LL))(v4 + 160));
   }
   else {
     v5 = *(_OWORD*)(v4 + 208);
@@ -5413,7 +5417,8 @@ bool game_f86d10(__int64 a1, __int64* a2, char a3)
                            (_QWORD*)(*(_QWORD*)(v11 + 160) + 16LL))(v11 + 160))
                   .n128_f32[3] == 1.0f) {
             if (*(float*)(v12 + 12) == *(float*)(v12 + 8)) {
-              (*(void (**)(unsigned __int64))(*(_QWORD*)v12 + 16LL))(v12);
+              v13 = COERCE_AS(__typeof__(v13), (*(__n128(**)(unsigned __int64))(
+                                                   *(_QWORD*)v12 + 16LL))(v12));
             }
             else {
               v13 = *(_OWORD*)(v12 + 48);
@@ -6245,7 +6250,8 @@ void game_f9ce00(__int64 a1)
        ((unsigned __int64)*(unsigned __int8*)(game_ProcFadeView_instance_ + 480)
         << 6);
   if (*(float*)(v4 + 172) == *(float*)(v4 + 168)) {
-    (*(void (**)(unsigned __int64))(*(_QWORD*)(v4 + 160) + 16LL))(v4 + 160);
+    v5 = COERCE_AS(__typeof__(v5), (*(__n128(**)(unsigned __int64))(
+                                       *(_QWORD*)(v4 + 160) + 16LL))(v4 + 160));
   }
   else {
     v5 = *(_OWORD*)(v4 + 208);

@@ -3422,8 +3422,9 @@ void game_16db800(__int64 a1)
                    unsigned __int8*)(game_ProcFadeView_instance_ + 480)
                << 6);
         if (*(float*)(v16 + 172) == *(float*)(v16 + 168)) {
-          (*(void (**)(unsigned __int64))(*(_QWORD*)(v16 + 160) + 16LL))(v16 +
-                                                                         160);
+          v17 = COERCE_AS(__typeof__(v17),
+                          (*(__n128(**)(unsigned __int64))(
+                              *(_QWORD*)(v16 + 160) + 16LL))(v16 + 160));
         }
         else {
           v17 = *(_OWORD*)(v16 + 208);
@@ -4302,7 +4303,8 @@ __int64 game_1738db0(__int64 a1)
                       (_QWORD*)(*(_QWORD*)(v3 + 160) + 16LL))(v3 + 160))
                  .n128_f32[3] == 1.0f)) {
       if (*(float*)(v4 + 12) == *(float*)(v4 + 8)) {
-        (*(void (**)(unsigned __int64))(*(_QWORD*)v4 + 16LL))(v4);
+        v5 = COERCE_AS(__typeof__(v5), (*(__n128(**)(unsigned __int64))(
+                                           *(_QWORD*)v4 + 16LL))(v4));
       }
       else {
         v5 = *(_OWORD*)(v4 + 48);
@@ -4478,10 +4480,11 @@ _QWORD* game_1786010(_QWORD* result)
                                                    480)
              << 6);
       if (*(float*)(v20 + 172) == *(float*)(v20 + 168)) {
-        (*(void (**)(unsigned __int64))(*(_QWORD*)(v20 + 160) + 16LL))(v20 +
-                                                                       160),
-            v16 = COERCE_AS(__typeof__(v16),
-                            PSEUDO_REGISTER(unsigned long long, "x1", "=r"));
+        v21 = COERCE_AS(__typeof__(v21),
+                        (*(__n128(**)(unsigned __int64))(*(_QWORD*)(v20 + 160) +
+                                                         16LL))(v20 + 160)),
+        v16 = COERCE_AS(__typeof__(v16),
+                        PSEUDO_REGISTER(unsigned long long, "x1", "=r"));
       }
       else {
         v21 = *(_OWORD*)(v20 + 208);

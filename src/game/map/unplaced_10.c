@@ -4300,24 +4300,26 @@ void game_map_f515e0(__int64 a1)
                                                 480)
           << 6);
     if (*(float*)(v4 + 172) == *(float*)(v4 + 168)) {
-      (*(void (**)(unsigned __int64))(*(_QWORD*)(v4 + 160) + 16LL))(v4 + 160),
-          v19 = COERCE_AS(__typeof__(v19), PSEUDO_REGISTER(float, "s1", "=w")),
-          v24 = COERCE_AS(__typeof__(v24), PSEUDO_REGISTER(__n128, "v1", "=w")),
-          v26 = COERCE_AS(__typeof__(v26), PSEUDO_REGISTER(__n128, "v2", "=w")),
-          v52 = COERCE_AS(__typeof__(v52),
-                          PSEUDO_REGISTER(unsigned long long, "x1", "=r")),
-          v53 = COERCE_AS(__typeof__(v53),
-                          PSEUDO_REGISTER(unsigned long long, "x2", "=r")),
-          v54 = COERCE_AS(__typeof__(v54),
-                          PSEUDO_REGISTER(unsigned long long, "x3", "=r")),
-          v55 = COERCE_AS(__typeof__(v55),
-                          PSEUDO_REGISTER(unsigned long long, "x4", "=r")),
-          v56 = COERCE_AS(__typeof__(v56),
-                          PSEUDO_REGISTER(unsigned long long, "x5", "=r")),
-          v57 = COERCE_AS(__typeof__(v57),
-                          PSEUDO_REGISTER(unsigned long long, "x6", "=r")),
-          v58 = COERCE_AS(__typeof__(v58),
-                          PSEUDO_REGISTER(unsigned long long, "x7", "=r"));
+      v5 = COERCE_AS(__typeof__(v5),
+                     (*(__n128(**)(unsigned __int64))(*(_QWORD*)(v4 + 160) +
+                                                      16LL))(v4 + 160)),
+      v19 = COERCE_AS(__typeof__(v19), PSEUDO_REGISTER(float, "s1", "=w")),
+      v24 = COERCE_AS(__typeof__(v24), PSEUDO_REGISTER(__n128, "v1", "=w")),
+      v26 = COERCE_AS(__typeof__(v26), PSEUDO_REGISTER(__n128, "v2", "=w")),
+      v52 = COERCE_AS(__typeof__(v52),
+                      PSEUDO_REGISTER(unsigned long long, "x1", "=r")),
+      v53 = COERCE_AS(__typeof__(v53),
+                      PSEUDO_REGISTER(unsigned long long, "x2", "=r")),
+      v54 = COERCE_AS(__typeof__(v54),
+                      PSEUDO_REGISTER(unsigned long long, "x3", "=r")),
+      v55 = COERCE_AS(__typeof__(v55),
+                      PSEUDO_REGISTER(unsigned long long, "x4", "=r")),
+      v56 = COERCE_AS(__typeof__(v56),
+                      PSEUDO_REGISTER(unsigned long long, "x5", "=r")),
+      v57 = COERCE_AS(__typeof__(v57),
+                      PSEUDO_REGISTER(unsigned long long, "x6", "=r")),
+      v58 = COERCE_AS(__typeof__(v58),
+                      PSEUDO_REGISTER(unsigned long long, "x7", "=r"));
     }
     else {
       v5 = *(_OWORD*)(v4 + 208);

@@ -718,7 +718,9 @@ LABEL_17:
                                                  480)
            << 6);
     if (*(float*)(v10 + 172) == *(float*)(v10 + 168)) {
-      (*(void (**)(unsigned __int64))(*(_QWORD*)(v10 + 160) + 16LL))(v10 + 160);
+      v11 = COERCE_AS(__typeof__(v11),
+                      (*(__n128(**)(unsigned __int64))(*(_QWORD*)(v10 + 160) +
+                                                       16LL))(v10 + 160));
     }
     else {
       v11 = *(_OWORD*)(v10 + 208);
@@ -797,7 +799,9 @@ LABEL_40:
                                                  480)
            << 6);
     if (*(float*)(v18 + 172) == *(float*)(v18 + 168)) {
-      (*(void (**)(unsigned __int64))(*(_QWORD*)(v18 + 160) + 16LL))(v18 + 160);
+      v19 = COERCE_AS(__typeof__(v19),
+                      (*(__n128(**)(unsigned __int64))(*(_QWORD*)(v18 + 160) +
+                                                       16LL))(v18 + 160));
     }
     else {
       v19 = *(_OWORD*)(v18 + 208);
@@ -890,7 +894,9 @@ LABEL_14:
                                                 480)
           << 6);
     if (*(float*)(v9 + 172) == *(float*)(v9 + 168)) {
-      (*(void (**)(unsigned __int64))(*(_QWORD*)(v9 + 160) + 16LL))(v9 + 160);
+      v10 = COERCE_AS(__typeof__(v10),
+                      (*(__n128(**)(unsigned __int64))(*(_QWORD*)(v9 + 160) +
+                                                       16LL))(v9 + 160));
     }
     else {
       v10 = *(_OWORD*)(v9 + 208);
@@ -941,7 +947,9 @@ void ui_1567d70(__int64 a1, char a2)
                                                 480)
           << 6);
     if (*(float*)(v2 + 172) == *(float*)(v2 + 168)) {
-      (*(void (**)(unsigned __int64))(*(_QWORD*)(v2 + 160) + 16LL))(v2 + 160);
+      v5 = COERCE_AS(__typeof__(v5),
+                     (*(__n128(**)(unsigned __int64))(*(_QWORD*)(v2 + 160) +
+                                                      16LL))(v2 + 160));
     }
     else {
       v5 = *(_OWORD*)(v2 + 208);

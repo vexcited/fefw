@@ -1051,20 +1051,21 @@ LABEL_16:
                        unsigned __int8*)(game_ProcFadeView_instance_ + 480)
                    << 6);
             if (*(float*)(v19 + 172) == *(float*)(v19 + 168)) {
-              (*(void (**)(unsigned __int64))(*(_QWORD*)(v19 + 160) + 16LL))(
-                  v19 + 160),
-                  v14 = COERCE_AS(__typeof__(v14),
-                                  PSEUDO_REGISTER(__n128, "v0", "=w")),
-                  v28 = COERCE_AS(__typeof__(v28),
-                                  PSEUDO_REGISTER(__n128, "v0", "=w")),
-                  v50 = COERCE_AS(__typeof__(v50),
-                                  PSEUDO_REGISTER(__n128, "v0", "=w")),
-                  v52 = COERCE_AS(__typeof__(v52),
-                                  PSEUDO_REGISTER(__n128, "v0", "=w")),
-                  v62 = COERCE_AS(__typeof__(v62),
-                                  PSEUDO_REGISTER(__n128, "v0", "=w")),
-                  v64 = COERCE_AS(__typeof__(v64),
-                                  PSEUDO_REGISTER(__n128, "v0", "=w"));
+              v20 = COERCE_AS(__typeof__(v20),
+                              (*(__n128(**)(unsigned __int64))(
+                                  *(_QWORD*)(v19 + 160) + 16LL))(v19 + 160)),
+              v14 = COERCE_AS(__typeof__(v14),
+                              PSEUDO_REGISTER(__n128, "v0", "=w")),
+              v28 = COERCE_AS(__typeof__(v28),
+                              PSEUDO_REGISTER(__n128, "v0", "=w")),
+              v50 = COERCE_AS(__typeof__(v50),
+                              PSEUDO_REGISTER(__n128, "v0", "=w")),
+              v52 = COERCE_AS(__typeof__(v52),
+                              PSEUDO_REGISTER(__n128, "v0", "=w")),
+              v62 = COERCE_AS(__typeof__(v62),
+                              PSEUDO_REGISTER(__n128, "v0", "=w")),
+              v64 = COERCE_AS(__typeof__(v64),
+                              PSEUDO_REGISTER(__n128, "v0", "=w"));
             }
             else {
               v20 = *(_OWORD*)(v19 + 208);
@@ -1294,20 +1295,15 @@ LABEL_75:
                    unsigned __int8*)(game_ProcFadeView_instance_ + 480)
                << 6);
         if (*(float*)(v35 + 172) == *(float*)(v35 + 168)) {
-          (*(void (**)(unsigned __int64))(*(_QWORD*)(v35 + 160) + 16LL))(v35 +
-                                                                         160),
-              v14 = COERCE_AS(__typeof__(v14),
-                              PSEUDO_REGISTER(__n128, "v0", "=w")),
-              v28 = COERCE_AS(__typeof__(v28),
-                              PSEUDO_REGISTER(__n128, "v0", "=w")),
-              v50 = COERCE_AS(__typeof__(v50),
-                              PSEUDO_REGISTER(__n128, "v0", "=w")),
-              v52 = COERCE_AS(__typeof__(v52),
-                              PSEUDO_REGISTER(__n128, "v0", "=w")),
-              v62 = COERCE_AS(__typeof__(v62),
-                              PSEUDO_REGISTER(__n128, "v0", "=w")),
-              v64 = COERCE_AS(__typeof__(v64),
-                              PSEUDO_REGISTER(__n128, "v0", "=w"));
+          v36 = COERCE_AS(__typeof__(v36),
+                          (*(__n128(**)(unsigned __int64))(
+                              *(_QWORD*)(v35 + 160) + 16LL))(v35 + 160)),
+          v14 = COERCE_AS(__typeof__(v14), PSEUDO_REGISTER(__n128, "v0", "=w")),
+          v28 = COERCE_AS(__typeof__(v28), PSEUDO_REGISTER(__n128, "v0", "=w")),
+          v50 = COERCE_AS(__typeof__(v50), PSEUDO_REGISTER(__n128, "v0", "=w")),
+          v52 = COERCE_AS(__typeof__(v52), PSEUDO_REGISTER(__n128, "v0", "=w")),
+          v62 = COERCE_AS(__typeof__(v62), PSEUDO_REGISTER(__n128, "v0", "=w")),
+          v64 = COERCE_AS(__typeof__(v64), PSEUDO_REGISTER(__n128, "v0", "=w"));
         }
         else {
           v36 = *(_OWORD*)(v35 + 208);

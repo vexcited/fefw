@@ -1910,7 +1910,9 @@ void Object_dfdc40(__int64 a1, float a2)
                                                 480)
           << 6);
     if (*(float*)(v4 + 172) == *(float*)(v4 + 168)) {
-      (*(void (**)(unsigned __int64))(*(_QWORD*)(v4 + 160) + 16LL))(v4 + 160);
+      v5 = COERCE_AS(__typeof__(v5),
+                     (*(__n128(**)(unsigned __int64))(*(_QWORD*)(v4 + 160) +
+                                                      16LL))(v4 + 160));
     }
     else {
       v5 = *(_OWORD*)(v4 + 208);

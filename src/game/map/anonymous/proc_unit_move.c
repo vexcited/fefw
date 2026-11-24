@@ -504,8 +504,10 @@ void ProcUnitMove_Unknown2(__int64 a1)
                                                 480)
           << 6);
     if (*(float*)(v4 + 172) == *(float*)(v4 + 168)) {
-      (*(void (**)(unsigned __int64))(*(_QWORD*)(v4 + 160) + 16LL))(v4 + 160),
-          v49 = COERCE_AS(__typeof__(v49), PSEUDO_REGISTER(__n128, "v0", "=w"));
+      v5 = COERCE_AS(__typeof__(v5),
+                     (*(__n128(**)(unsigned __int64))(*(_QWORD*)(v4 + 160) +
+                                                      16LL))(v4 + 160)),
+      v49 = COERCE_AS(__typeof__(v49), PSEUDO_REGISTER(__n128, "v0", "=w"));
     }
     else {
       v5 = *(_OWORD*)(v4 + 208);

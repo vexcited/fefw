@@ -364,8 +364,9 @@ void map_camera_StartShake(unsigned int a1)
                   unsigned __int8*)(game_ProcFadeView_instance_ + 480)
               << 6);
         if (*(float*)(v8 + 172) == *(float*)(v8 + 168)) {
-          (*(void (**)(unsigned __int64))(*(_QWORD*)(v8 + 160) + 16LL))(v8 +
-                                                                        160);
+          v9 = COERCE_AS(__typeof__(v9),
+                         (*(__n128(**)(unsigned __int64))(*(_QWORD*)(v8 + 160) +
+                                                          16LL))(v8 + 160));
         }
         else {
           v9 = *(_OWORD*)(v8 + 208);
@@ -397,8 +398,9 @@ void map_camera_StartShake(unsigned int a1)
                   unsigned __int8*)(game_ProcFadeView_instance_ + 480)
               << 6);
         if (*(float*)(v4 + 172) == *(float*)(v4 + 168)) {
-          (*(void (**)(unsigned __int64))(*(_QWORD*)(v4 + 160) + 16LL))(v4 +
-                                                                        160);
+          v5 = COERCE_AS(__typeof__(v5),
+                         (*(__n128(**)(unsigned __int64))(*(_QWORD*)(v4 + 160) +
+                                                          16LL))(v4 + 160));
         }
         else {
           v5 = *(_OWORD*)(v4 + 208);
@@ -434,8 +436,9 @@ void map_camera_StartShake(unsigned int a1)
                                                    480)
              << 6);
       if (*(float*)(v12 + 172) == *(float*)(v12 + 168)) {
-        (*(void (**)(unsigned __int64))(*(_QWORD*)(v12 + 160) + 16LL))(v12 +
-                                                                       160);
+        v13 = COERCE_AS(__typeof__(v13),
+                        (*(__n128(**)(unsigned __int64))(*(_QWORD*)(v12 + 160) +
+                                                         16LL))(v12 + 160));
       }
       else {
         v13 = *(_OWORD*)(v12 + 208);

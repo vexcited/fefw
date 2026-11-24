@@ -2950,7 +2950,9 @@ __int64 ProcGmapMove_154ac20(__int64 a1, __n128 a2, long double a3)
                                                 480)
           << 6);
     if (*(float*)(v6 + 172) == *(float*)(v6 + 168)) {
-      (*(void (**)(unsigned __int64))(*(_QWORD*)(v6 + 160) + 16LL))(v6 + 160);
+      v7 = COERCE_AS(__typeof__(v7),
+                     (*(__n128(**)(unsigned __int64))(*(_QWORD*)(v6 + 160) +
+                                                      16LL))(v6 + 160));
     }
     else {
       v7 = *(_OWORD*)(v6 + 208);
@@ -3073,7 +3075,9 @@ void ProcGmapMove_154b040()
                                                 480)
           << 6);
     if (*(float*)(v2 + 172) == *(float*)(v2 + 168)) {
-      (*(void (**)(unsigned __int64))(*(_QWORD*)(v2 + 160) + 16LL))(v2 + 160);
+      v3 = COERCE_AS(__typeof__(v3),
+                     (*(__n128(**)(unsigned __int64))(*(_QWORD*)(v2 + 160) +
+                                                      16LL))(v2 + 160));
     }
     else {
       v3 = *(_OWORD*)(v2 + 208);

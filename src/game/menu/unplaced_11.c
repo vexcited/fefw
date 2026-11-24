@@ -2244,8 +2244,9 @@ __int64 game_menu_16dcd30(__int64 a1, __int64 a2, _QWORD* a3, __int64 a4)
                    unsigned __int8*)(game_ProcFadeView_instance_ + 480)
                << 6);
         if (*(float*)(v28 + 172) == *(float*)(v28 + 168)) {
-          (*(void (**)(unsigned __int64))(*(_QWORD*)(v28 + 160) + 16LL))(v28 +
-                                                                         160);
+          v29 = COERCE_AS(__typeof__(v29),
+                          (*(__n128(**)(unsigned __int64))(
+                              *(_QWORD*)(v28 + 160) + 16LL))(v28 + 160));
         }
         else {
           v29 = *(_OWORD*)(v28 + 208);

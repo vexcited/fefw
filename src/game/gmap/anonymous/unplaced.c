@@ -928,9 +928,11 @@ void game_gmap_anonymous_1523820(__int64 a1, char a2)
                                                 480)
           << 6);
     if (*(float*)(v6 + 172) == *(float*)(v6 + 168)) {
-      (*(void (**)(unsigned __int64))(*(_QWORD*)(v6 + 160) + 16LL))(v6 + 160),
-          v14 = COERCE_AS(__typeof__(v14),
-                          PSEUDO_REGISTER(unsigned long long, "x1", "=r"));
+      v7 = COERCE_AS(__typeof__(v7),
+                     (*(__n128(**)(unsigned __int64))(*(_QWORD*)(v6 + 160) +
+                                                      16LL))(v6 + 160)),
+      v14 = COERCE_AS(__typeof__(v14),
+                      PSEUDO_REGISTER(unsigned long long, "x1", "=r"));
     }
     else {
       v7 = *(_OWORD*)(v6 + 208);
@@ -1100,7 +1102,9 @@ void game_gmap_anonymous_15377f0(__int64 a1)
                                                 480)
           << 6);
     if (*(float*)(v4 + 172) == *(float*)(v4 + 168)) {
-      (*(void (**)(unsigned __int64))(*(_QWORD*)(v4 + 160) + 16LL))(v4 + 160);
+      v5 = COERCE_AS(__typeof__(v5),
+                     (*(__n128(**)(unsigned __int64))(*(_QWORD*)(v4 + 160) +
+                                                      16LL))(v4 + 160));
     }
     else {
       v5 = *(_OWORD*)(v4 + 208);
@@ -1177,7 +1181,9 @@ void game_gmap_anonymous_1537930(__int64 a1)
                                                 480)
           << 6);
     if (*(float*)(v9 + 172) == *(float*)(v9 + 168)) {
-      (*(void (**)(unsigned __int64))(*(_QWORD*)(v9 + 160) + 16LL))(v9 + 160);
+      v10 = COERCE_AS(__typeof__(v10),
+                      (*(__n128(**)(unsigned __int64))(*(_QWORD*)(v9 + 160) +
+                                                       16LL))(v9 + 160));
     }
     else {
       v10 = *(_OWORD*)(v9 + 208);
@@ -1227,7 +1233,9 @@ void game_gmap_anonymous_15382f0(__int64 a1)
                                                 480)
           << 6);
     if (*(float*)(v4 + 172) == *(float*)(v4 + 168)) {
-      (*(void (**)(unsigned __int64))(*(_QWORD*)(v4 + 160) + 16LL))(v4 + 160);
+      v5 = COERCE_AS(__typeof__(v5),
+                     (*(__n128(**)(unsigned __int64))(*(_QWORD*)(v4 + 160) +
+                                                      16LL))(v4 + 160));
     }
     else {
       v5 = *(_OWORD*)(v4 + 208);

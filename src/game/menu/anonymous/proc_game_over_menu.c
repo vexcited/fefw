@@ -241,7 +241,8 @@ __int64 ProcGameOverMenu_1738fd0(__int64 a1)
                       (_QWORD*)(*(_QWORD*)(v4 + 160) + 16LL))(v4 + 160))
                  .n128_f32[3] == 1.0f)) {
       if (*(float*)(v5 + 12) == *(float*)(v5 + 8)) {
-        (*(void (**)(unsigned __int64))(*(_QWORD*)v5 + 16LL))(v5);
+        v6 = COERCE_AS(__typeof__(v6), (*(__n128(**)(unsigned __int64))(
+                                           *(_QWORD*)v5 + 16LL))(v5));
       }
       else {
         v6 = *(_OWORD*)(v5 + 48);

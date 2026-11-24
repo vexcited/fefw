@@ -120,7 +120,8 @@ __int64 MapCharacter_9da6e0(__int64 a1, char** a2, int a3)
        ((unsigned __int64)*(unsigned __int8*)(game_ProcFadeView_instance_ + 480)
         << 6);
   if (*(float*)(v8 + 172) == *(float*)(v8 + 168)) {
-    (*(void (**)(unsigned __int64))(*(_QWORD*)(v8 + 160) + 16LL))(v8 + 160);
+    v9 = COERCE_AS(__typeof__(v9), (*(__n128(**)(unsigned __int64))(
+                                       *(_QWORD*)(v8 + 160) + 16LL))(v8 + 160));
   }
   else {
     v9 = *(_OWORD*)(v8 + 208);

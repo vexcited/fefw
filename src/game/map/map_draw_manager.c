@@ -3919,8 +3919,10 @@ void game_map_MapDrawManager_UpdateTrickDangerMapPos()
                            unsigned __int8*)(game_ProcFadeView_instance_ + 480)
                        << 6);
                 if (*(float*)(v25 + 172) == *(float*)(v25 + 168)) {
-                  (*(void (**)(unsigned __int64))(*(_QWORD*)(v25 + 160) +
-                                                  16LL))(v25 + 160);
+                  v26 =
+                      COERCE_AS(__typeof__(v26),
+                                (*(__n128(**)(unsigned __int64))(
+                                    *(_QWORD*)(v25 + 160) + 16LL))(v25 + 160));
                 }
                 else {
                   v26 = *(_OWORD*)(v25 + 208);

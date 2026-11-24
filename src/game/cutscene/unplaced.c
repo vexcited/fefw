@@ -994,7 +994,9 @@ void game_cutscene_181a060(__int64 a1)
                                                  480)
            << 6);
     if (*(float*)(v13 + 172) == *(float*)(v13 + 168)) {
-      (*(void (**)(unsigned __int64))(*(_QWORD*)(v13 + 160) + 16LL))(v13 + 160);
+      v14 = COERCE_AS(__typeof__(v14),
+                      (*(__n128(**)(unsigned __int64))(*(_QWORD*)(v13 + 160) +
+                                                       16LL))(v13 + 160));
     }
     else {
       v14 = *(_OWORD*)(v13 + 208);
@@ -1134,8 +1136,9 @@ void game_cutscene_181aa10(__int64 a1, char a2)
                   unsigned __int8*)(game_ProcFadeView_instance_ + 480)
               << 6);
         if (*(float*)(v7 + 172) == *(float*)(v7 + 168)) {
-          (*(void (**)(unsigned __int64))(*(_QWORD*)(v7 + 160) + 16LL))(v7 +
-                                                                        160);
+          v8 = COERCE_AS(__typeof__(v8),
+                         (*(__n128(**)(unsigned __int64))(*(_QWORD*)(v7 + 160) +
+                                                          16LL))(v7 + 160));
         }
         else {
           v8 = *(_OWORD*)(v7 + 208);

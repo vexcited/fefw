@@ -15529,8 +15529,9 @@ void game_d50180(__int64 a1)
                                                    480)
              << 6);
       if (*(float*)(v16 + 172) == *(float*)(v16 + 168)) {
-        (*(void (**)(unsigned __int64))(*(_QWORD*)(v16 + 160) + 16LL))(v16 +
-                                                                       160);
+        v17 = COERCE_AS(__typeof__(v17),
+                        (*(__n128(**)(unsigned __int64))(*(_QWORD*)(v16 + 160) +
+                                                         16LL))(v16 + 160));
       }
       else {
         v17 = *(_OWORD*)(v16 + 208);
@@ -25314,7 +25315,9 @@ void game_113d3c0(__int64 a1, int a2)
                                                   480)
             << 6);
       if (*(float*)(v3 + 172) == *(float*)(v3 + 168)) {
-        (*(void (**)(unsigned __int64))(*(_QWORD*)(v3 + 160) + 16LL))(v3 + 160);
+        v4 = COERCE_AS(__typeof__(v4),
+                       (*(__n128(**)(unsigned __int64))(*(_QWORD*)(v3 + 160) +
+                                                        16LL))(v3 + 160));
       }
       else {
         v4 = *(_OWORD*)(v3 + 208);

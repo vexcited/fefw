@@ -186,8 +186,9 @@ __int64 BasicMenu_16dd280(_QWORD* a1)
                                                    480)
              << 6);
       if (*(float*)(v15 + 172) == *(float*)(v15 + 168)) {
-        (*(void (**)(unsigned __int64))(*(_QWORD*)(v15 + 160) + 16LL))(v15 +
-                                                                       160);
+        v16 = COERCE_AS(__typeof__(v16),
+                        (*(__n128(**)(unsigned __int64))(*(_QWORD*)(v15 + 160) +
+                                                         16LL))(v15 + 160));
       }
       else {
         v16 = *(_OWORD*)(v15 + 208);

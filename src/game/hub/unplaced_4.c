@@ -2320,7 +2320,8 @@ __int64 game_hub_efa580(__int64 a1)
        ((unsigned __int64)*(unsigned __int8*)(game_ProcFadeView_instance_ + 480)
         << 6);
   if (*(float*)(v5 + 172) == *(float*)(v5 + 168)) {
-    (*(void (**)(unsigned __int64))(*(_QWORD*)(v5 + 160) + 16LL))(v5 + 160);
+    v6 = COERCE_AS(__typeof__(v6), (*(__n128(**)(unsigned __int64))(
+                                       *(_QWORD*)(v5 + 160) + 16LL))(v5 + 160));
   }
   else {
     v6 = *(_OWORD*)(v5 + 208);

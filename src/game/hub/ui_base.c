@@ -333,7 +333,9 @@ LABEL_18:
   }
   v11 = v10 + ((unsigned __int64)*(unsigned __int8*)(v10 + 480) << 6);
   if (*(float*)(v11 + 172) == *(float*)(v11 + 168)) {
-    (*(void (**)(unsigned __int64))(*(_QWORD*)(v11 + 160) + 16LL))(v11 + 160);
+    v12 = COERCE_AS(__typeof__(v12),
+                    (*(__n128(**)(unsigned __int64))(*(_QWORD*)(v11 + 160) +
+                                                     16LL))(v11 + 160));
   }
   else {
     v12 = *(_OWORD*)(v11 + 208);

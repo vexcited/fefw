@@ -430,13 +430,12 @@ float game_zview_d21160(__int64 a1)
                                                 480)
           << 6);
     if (*(float*)(v7 + 172) == *(float*)(v7 + 168)) {
-      (*(void (**)(unsigned __int64))(*(_QWORD*)(v7 + 160) + 16LL))(v7 + 160),
-          v152 =
-              COERCE_AS(__typeof__(v152), PSEUDO_REGISTER(float, "s1", "=w")),
-          v156 =
-              COERCE_AS(__typeof__(v156), PSEUDO_REGISTER(float, "s0", "=w")),
-          v235 =
-              COERCE_AS(__typeof__(v235), PSEUDO_REGISTER(float, "s1", "=w"));
+      v8 = COERCE_AS(__typeof__(v8),
+                     (*(__n128(**)(unsigned __int64))(*(_QWORD*)(v7 + 160) +
+                                                      16LL))(v7 + 160)),
+      v152 = COERCE_AS(__typeof__(v152), PSEUDO_REGISTER(float, "s1", "=w")),
+      v156 = COERCE_AS(__typeof__(v156), PSEUDO_REGISTER(float, "s0", "=w")),
+      v235 = COERCE_AS(__typeof__(v235), PSEUDO_REGISTER(float, "s1", "=w"));
     }
     else {
       v8 = *(_OWORD*)(v7 + 208);

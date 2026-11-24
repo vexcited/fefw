@@ -1159,10 +1159,12 @@ LABEL_24:
       __asm__ volatile("" ::"r"(v44));
     }
     if (*(float*)(v44 + 172) == *(float*)(v44 + 168)) {
-      (*(void (**)(unsigned __int64))(*(_QWORD*)(v44 + 160) + 16LL))(v44 + 160),
-          v25 = COERCE_AS(__typeof__(v25), PSEUDO_REGISTER(float, "s1", "=w")),
-          v55 = COERCE_AS(__typeof__(v55),
-                          PSEUDO_REGISTER(unsigned long long, "x8", "=r"));
+      v45 = COERCE_AS(__typeof__(v45),
+                      (*(__n128(**)(unsigned __int64))(*(_QWORD*)(v44 + 160) +
+                                                       16LL))(v44 + 160)),
+      v25 = COERCE_AS(__typeof__(v25), PSEUDO_REGISTER(float, "s1", "=w")),
+      v55 = COERCE_AS(__typeof__(v55),
+                      PSEUDO_REGISTER(unsigned long long, "x8", "=r"));
     }
     else {
       v45 = *(_OWORD*)(v44 + 208);

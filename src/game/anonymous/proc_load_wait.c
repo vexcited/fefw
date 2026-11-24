@@ -199,7 +199,9 @@ __int64 ProcLoadWait_9a4d20(int a1, _QWORD* a2)
                                                 480)
           << 6);
     if (*(float*)(v8 + 172) == *(float*)(v8 + 168)) {
-      (*(void (**)(unsigned __int64))(*(_QWORD*)(v8 + 160) + 16LL))(v8 + 160);
+      v9 = COERCE_AS(__typeof__(v9),
+                     (*(__n128(**)(unsigned __int64))(*(_QWORD*)(v8 + 160) +
+                                                      16LL))(v8 + 160));
     }
     else {
       v9 = *(_OWORD*)(v8 + 208);
@@ -290,9 +292,11 @@ void ProcLoadWait_9a5560(__int64 a1, __int64 a2)
                                                 480)
           << 6);
     if (*(float*)(v6 + 172) == *(float*)(v6 + 168)) {
-      (*(void (**)(unsigned __int64))(*(_QWORD*)(v6 + 160) + 16LL))(v6 + 160),
-          v12 = COERCE_AS(__typeof__(v12),
-                          PSEUDO_REGISTER(unsigned long long, "x1", "=r"));
+      v7 = COERCE_AS(__typeof__(v7),
+                     (*(__n128(**)(unsigned __int64))(*(_QWORD*)(v6 + 160) +
+                                                      16LL))(v6 + 160)),
+      v12 = COERCE_AS(__typeof__(v12),
+                      PSEUDO_REGISTER(unsigned long long, "x1", "=r"));
     }
     else {
       v7 = *(_OWORD*)(v6 + 208);

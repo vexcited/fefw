@@ -4598,7 +4598,9 @@ void memory_e82ea0(__int64 a1)
                                                 480)
           << 6);
     if (*(float*)(v7 + 172) == *(float*)(v7 + 168)) {
-      (*(void (**)(unsigned __int64))(*(_QWORD*)(v7 + 160) + 16LL))(v7 + 160);
+      v8 = COERCE_AS(__typeof__(v8),
+                     (*(__n128(**)(unsigned __int64))(*(_QWORD*)(v7 + 160) +
+                                                      16LL))(v7 + 160));
     }
     else {
       v8 = *(_OWORD*)(v7 + 208);

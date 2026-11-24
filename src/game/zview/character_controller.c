@@ -344,7 +344,9 @@ void CharacterController_StateWarpTo_Unknown3(__int64 a1)
   if (v7 != 0) {
     v8 = v7 + ((unsigned __int64)*(unsigned __int8*)(v7 + 480) << 6);
     if (*(float*)(v8 + 172) == *(float*)(v8 + 168)) {
-      (*(void (**)(unsigned __int64))(*(_QWORD*)(v8 + 160) + 16LL))(v8 + 160);
+      v9 = COERCE_AS(__typeof__(v9),
+                     (*(__n128(**)(unsigned __int64))(*(_QWORD*)(v8 + 160) +
+                                                      16LL))(v8 + 160));
     }
     else {
       v9 = *(_OWORD*)(v8 + 208);
@@ -403,7 +405,9 @@ void CharacterController_StateWarpTo_Unknown5(__int64 a1)
                                                   480)
             << 6);
       if (*(float*)(v8 + 172) == *(float*)(v8 + 168)) {
-        (*(void (**)(unsigned __int64))(*(_QWORD*)(v8 + 160) + 16LL))(v8 + 160);
+        v9 = COERCE_AS(__typeof__(v9),
+                       (*(__n128(**)(unsigned __int64))(*(_QWORD*)(v8 + 160) +
+                                                        16LL))(v8 + 160));
       }
       else {
         v9 = *(_OWORD*)(v8 + 208);
@@ -513,8 +517,9 @@ void CharacterController_StateWarpTo_Unknown4(int32x2_t* a1)
                                                    480)
              << 6);
       if (*(float*)(v15 + 172) == *(float*)(v15 + 168)) {
-        (*(void (**)(unsigned __int64))(*(_QWORD*)(v15 + 160) + 16LL))(v15 +
-                                                                       160);
+        v16 = COERCE_AS(__typeof__(v16),
+                        (*(__n128(**)(unsigned __int64))(*(_QWORD*)(v15 + 160) +
+                                                         16LL))(v15 + 160));
       }
       else {
         v16 = *(_OWORD*)(v15 + 208);

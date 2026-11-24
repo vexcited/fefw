@@ -6442,7 +6442,9 @@ void ProcGmapSeq_8865e0(__int64 a1)
                                                 480)
           << 6);
     if (*(float*)(v2 + 172) == *(float*)(v2 + 168)) {
-      (*(void (**)(unsigned __int64))(*(_QWORD*)(v2 + 160) + 16LL))(v2 + 160);
+      v3 = COERCE_AS(__typeof__(v3),
+                     (*(__n128(**)(unsigned __int64))(*(_QWORD*)(v2 + 160) +
+                                                      16LL))(v2 + 160));
     }
     else {
       v3 = *(_OWORD*)(v2 + 208);

@@ -1997,12 +1997,13 @@ LABEL_28:
                                                    480)
              << 6);
       if (*(float*)(v73 + 172) == *(float*)(v73 + 168)) {
-        (*(void (**)(unsigned __int64))(*(_QWORD*)(v73 + 160) + 16LL))(v73 +
-                                                                       160),
-            v114 = COERCE_AS(__typeof__(v114),
-                             PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
-            v56 = COERCE_AS(__typeof__(v56),
-                            PSEUDO_REGISTER(unsigned long long, "x1", "=r"));
+        v74 = COERCE_AS(__typeof__(v74),
+                        (*(__n128(**)(unsigned __int64))(*(_QWORD*)(v73 + 160) +
+                                                         16LL))(v73 + 160)),
+        v114 = COERCE_AS(__typeof__(v114),
+                         PSEUDO_REGISTER(unsigned long long, "x0", "=r")),
+        v56 = COERCE_AS(__typeof__(v56),
+                        PSEUDO_REGISTER(unsigned long long, "x1", "=r"));
       }
       else {
         v74 = *(_OWORD*)(v73 + 208);
@@ -2647,8 +2648,9 @@ __int64 game_map_fb01c0(__int64 a1)
                    unsigned __int8*)(game_ProcFadeView_instance_ + 480)
                << 6);
         if (*(float*)(v16 + 172) == *(float*)(v16 + 168)) {
-          (*(void (**)(unsigned __int64))(*(_QWORD*)(v16 + 160) + 16LL))(v16 +
-                                                                         160);
+          v17 = COERCE_AS(__typeof__(v17),
+                          (*(__n128(**)(unsigned __int64))(
+                              *(_QWORD*)(v16 + 160) + 16LL))(v16 + 160));
         }
         else {
           v17 = *(_OWORD*)(v16 + 208);

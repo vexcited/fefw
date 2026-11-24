@@ -5204,12 +5204,14 @@ LABEL_391:
               v257 = v256 +
                      ((unsigned __int64)*(unsigned __int8*)(v256 + 480) << 6);
               if (*(float*)(v257 + 172) == *(float*)(v257 + 168)) {
-                (*(void (**)(unsigned __int64))(*(_QWORD*)(v257 + 160) + 16LL))(
-                    v257 + 160),
-                    v209 = COERCE_AS(__typeof__(v209),
-                                     PSEUDO_REGISTER(float, "s0", "=w")),
-                    v211 = COERCE_AS(__typeof__(v211),
-                                     PSEUDO_REGISTER(float, "s0", "=w"));
+                v258 =
+                    COERCE_AS(__typeof__(v258),
+                              (*(__n128(**)(unsigned __int64))(
+                                  *(_QWORD*)(v257 + 160) + 16LL))(v257 + 160)),
+                v209 = COERCE_AS(__typeof__(v209),
+                                 PSEUDO_REGISTER(float, "s0", "=w")),
+                v211 = COERCE_AS(__typeof__(v211),
+                                 PSEUDO_REGISTER(float, "s0", "=w"));
               }
               else {
                 v258 = *(_OWORD*)(v257 + 208);
@@ -5239,12 +5241,13 @@ LABEL_391:
           v253 =
               v252 + ((unsigned __int64)*(unsigned __int8*)(v252 + 480) << 6);
           if (*(float*)(v253 + 172) == *(float*)(v253 + 168)) {
-            (*(void (**)(unsigned __int64))(*(_QWORD*)(v253 + 160) + 16LL))(
-                v253 + 160),
-                v209 = COERCE_AS(__typeof__(v209),
-                                 PSEUDO_REGISTER(float, "s0", "=w")),
-                v211 = COERCE_AS(__typeof__(v211),
-                                 PSEUDO_REGISTER(float, "s0", "=w"));
+            v254 = COERCE_AS(__typeof__(v254),
+                             (*(__n128(**)(unsigned __int64))(
+                                 *(_QWORD*)(v253 + 160) + 16LL))(v253 + 160)),
+            v209 =
+                COERCE_AS(__typeof__(v209), PSEUDO_REGISTER(float, "s0", "=w")),
+            v211 =
+                COERCE_AS(__typeof__(v211), PSEUDO_REGISTER(float, "s0", "=w"));
           }
           else {
             v254 = *(_OWORD*)(v253 + 208);
@@ -5288,12 +5291,14 @@ LABEL_391:
               v267 = v266 +
                      ((unsigned __int64)*(unsigned __int8*)(v266 + 480) << 6);
               if (*(float*)(v267 + 172) == *(float*)(v267 + 168)) {
-                (*(void (**)(unsigned __int64))(*(_QWORD*)(v267 + 160) + 16LL))(
-                    v267 + 160),
-                    v209 = COERCE_AS(__typeof__(v209),
-                                     PSEUDO_REGISTER(float, "s0", "=w")),
-                    v211 = COERCE_AS(__typeof__(v211),
-                                     PSEUDO_REGISTER(float, "s0", "=w"));
+                v268 =
+                    COERCE_AS(__typeof__(v268),
+                              (*(__n128(**)(unsigned __int64))(
+                                  *(_QWORD*)(v267 + 160) + 16LL))(v267 + 160)),
+                v209 = COERCE_AS(__typeof__(v209),
+                                 PSEUDO_REGISTER(float, "s0", "=w")),
+                v211 = COERCE_AS(__typeof__(v211),
+                                 PSEUDO_REGISTER(float, "s0", "=w"));
               }
               else {
                 v268 = *(_OWORD*)(v267 + 208);
@@ -5318,12 +5323,14 @@ LABEL_391:
               v271 = v270 +
                      ((unsigned __int64)*(unsigned __int8*)(v270 + 480) << 6);
               if (*(float*)(v271 + 172) == *(float*)(v271 + 168)) {
-                (*(void (**)(unsigned __int64))(*(_QWORD*)(v271 + 160) + 16LL))(
-                    v271 + 160),
-                    v209 = COERCE_AS(__typeof__(v209),
-                                     PSEUDO_REGISTER(float, "s0", "=w")),
-                    v211 = COERCE_AS(__typeof__(v211),
-                                     PSEUDO_REGISTER(float, "s0", "=w"));
+                v272 =
+                    COERCE_AS(__typeof__(v272),
+                              (*(__n128(**)(unsigned __int64))(
+                                  *(_QWORD*)(v271 + 160) + 16LL))(v271 + 160)),
+                v209 = COERCE_AS(__typeof__(v209),
+                                 PSEUDO_REGISTER(float, "s0", "=w")),
+                v211 = COERCE_AS(__typeof__(v211),
+                                 PSEUDO_REGISTER(float, "s0", "=w"));
               }
               else {
                 v272 = *(_OWORD*)(v271 + 208);
@@ -5359,12 +5366,11 @@ LABEL_391:
     if (v278 != 0) {
       v279 = v278 + ((unsigned __int64)*(unsigned __int8*)(v278 + 480) << 6);
       if (*(float*)(v279 + 172) == *(float*)(v279 + 168)) {
-        (*(void (**)(unsigned __int64))(*(_QWORD*)(v279 + 160) + 16LL))(v279 +
-                                                                        160),
-            v209 =
-                COERCE_AS(__typeof__(v209), PSEUDO_REGISTER(float, "s0", "=w")),
-            v211 =
-                COERCE_AS(__typeof__(v211), PSEUDO_REGISTER(float, "s0", "=w"));
+        v280 = COERCE_AS(__typeof__(v280),
+                         (*(__n128(**)(unsigned __int64))(
+                             *(_QWORD*)(v279 + 160) + 16LL))(v279 + 160)),
+        v209 = COERCE_AS(__typeof__(v209), PSEUDO_REGISTER(float, "s0", "=w")),
+        v211 = COERCE_AS(__typeof__(v211), PSEUDO_REGISTER(float, "s0", "=w"));
       }
       else {
         v280 = *(_OWORD*)(v279 + 208);

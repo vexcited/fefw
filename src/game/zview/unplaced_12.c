@@ -2784,10 +2784,11 @@ LABEL_440:
                         unsigned __int8*)(game_ProcFadeView_instance_ + 480)
                     << 6);
             if (*(float*)(v328 + 172) == *(float*)(v328 + 168)) {
-              (*(void (**)(unsigned __int64))(*(_QWORD*)(v328 + 160) + 16LL))(
-                  v328 + 160),
-                  v321 = COERCE_AS(__typeof__(v321),
-                                   PSEUDO_REGISTER(float, "s1", "=w"));
+              v329 = COERCE_AS(__typeof__(v329),
+                               (*(__n128(**)(unsigned __int64))(
+                                   *(_QWORD*)(v328 + 160) + 16LL))(v328 + 160)),
+              v321 = COERCE_AS(__typeof__(v321),
+                               PSEUDO_REGISTER(float, "s1", "=w"));
             }
             else {
               v329 = *(_OWORD*)(v328 + 208);

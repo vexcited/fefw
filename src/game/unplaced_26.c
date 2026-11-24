@@ -5722,7 +5722,9 @@ void game_cf8840(__int64 a1)
                                                   480)
             << 6);
       if (*(float*)(v9 + 172) == *(float*)(v9 + 168)) {
-        (*(void (**)(unsigned __int64))(*(_QWORD*)(v9 + 160) + 16LL))(v9 + 160);
+        v10 = COERCE_AS(__typeof__(v10),
+                        (*(__n128(**)(unsigned __int64))(*(_QWORD*)(v9 + 160) +
+                                                         16LL))(v9 + 160));
       }
       else {
         v10 = *(_OWORD*)(v9 + 208);

@@ -249,8 +249,9 @@ void game_zview_10cae60(__int64 a1, char a2, double a3, long double a4,
                                                    480)
              << 6);
       if (*(float*)(v14 + 172) == *(float*)(v14 + 168)) {
-        (*(void (**)(unsigned __int64))(*(_QWORD*)(v14 + 160) + 16LL))(v14 +
-                                                                       160);
+        v15 = COERCE_AS(__typeof__(v15),
+                        (*(__n128(**)(unsigned __int64))(*(_QWORD*)(v14 + 160) +
+                                                         16LL))(v14 + 160));
       }
       else {
         v15 = *(_OWORD*)(v14 + 208);

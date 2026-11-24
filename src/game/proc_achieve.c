@@ -67,7 +67,9 @@ void ProcAchieve_Unknown2()
                                                 480)
           << 6);
     if (*(float*)(v0 + 172) == *(float*)(v0 + 168)) {
-      (*(void (**)(unsigned __int64))(*(_QWORD*)(v0 + 160) + 16LL))(v0 + 160);
+      v1 = COERCE_AS(__typeof__(v1),
+                     (*(__n128(**)(unsigned __int64))(*(_QWORD*)(v0 + 160) +
+                                                      16LL))(v0 + 160));
     }
     else {
       v1 = *(_OWORD*)(v0 + 208);

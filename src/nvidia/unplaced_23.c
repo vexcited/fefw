@@ -1271,7 +1271,7 @@ __int64 nvidia_64b4e0(__int64 a1)
                 ? (v24 = (unsigned __int64)(v22 + 24) >> 48 == 0)
                 : (v24 = false),
             v24)) {
-    result = (v22 + 24) | (HIDWORD(v23) << 48) | 1;
+    result = (v22 + 24) | ((unsigned __int64)HIDWORD(v23) << 48) | 1;
   }
   else {
     result = v22 + 16;

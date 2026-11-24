@@ -4060,7 +4060,9 @@ void GameHr_80a0c0()
                                                 480)
           << 6);
     if (*(float*)(v1 + 172) == *(float*)(v1 + 168)) {
-      (*(void (**)(unsigned __int64))(*(_QWORD*)(v1 + 160) + 16LL))(v1 + 160);
+      v2 = COERCE_AS(__typeof__(v2),
+                     (*(__n128(**)(unsigned __int64))(*(_QWORD*)(v1 + 160) +
+                                                      16LL))(v1 + 160));
     }
     else {
       v2 = *(_OWORD*)(v1 + 208);
@@ -4178,7 +4180,9 @@ __int64 GameHr_80a7c0(__int64 result)
     v3 = GameData_21ec550 +
          ((unsigned __int64)*(unsigned __int8*)(GameData_21ec550 + 480) << 6);
     if (*(float*)(v3 + 172) == *(float*)(v3 + 168)) {
-      (*(void (**)(unsigned __int64))(*(_QWORD*)(v3 + 160) + 16LL))(v3 + 160);
+      v4 = COERCE_AS(__typeof__(v4),
+                     (*(__n128(**)(unsigned __int64))(*(_QWORD*)(v3 + 160) +
+                                                      16LL))(v3 + 160));
     }
     else {
       v4 = *(_OWORD*)(v3 + 208);

@@ -409,11 +409,11 @@ __int64* game_ObjectInfoConst_CreateEffect_lambda0_Invoke(__int64* result,
                      unsigned __int8*)(game_ProcFadeView_instance_ + 480)
                  << 6);
           if (*(float*)(v19 + 172) == *(float*)(v19 + 168)) {
-            (*(void (**)(unsigned __int64))(*(_QWORD*)(v19 + 160) + 16LL))(v19 +
-                                                                           160),
-                v16 =
-                    COERCE_AS(__typeof__(v16),
-                              PSEUDO_REGISTER(unsigned long long, "x1", "=r"));
+            v20 = COERCE_AS(__typeof__(v20),
+                            (*(__n128(**)(unsigned __int64))(
+                                *(_QWORD*)(v19 + 160) + 16LL))(v19 + 160)),
+            v16 = COERCE_AS(__typeof__(v16),
+                            PSEUDO_REGISTER(unsigned long long, "x1", "=r"));
           }
           else {
             v20 = *(_OWORD*)(v19 + 208);
@@ -966,8 +966,9 @@ game_ObjectInfoConst_CreateEffect_lambda1_Invoke(unsigned __int64 result,
                      unsigned __int8*)(game_ProcFadeView_instance_ + 480)
                  << 6);
           if (*(float*)(v40 + 172) == *(float*)(v40 + 168)) {
-            (*(void (**)(unsigned __int64))(*(_QWORD*)(v40 + 160) + 16LL))(v40 +
-                                                                           160);
+            v41 = COERCE_AS(__typeof__(v41),
+                            (*(__n128(**)(unsigned __int64))(
+                                *(_QWORD*)(v40 + 160) + 16LL))(v40 + 160));
           }
           else {
             v41 = *(_OWORD*)(v40 + 208);

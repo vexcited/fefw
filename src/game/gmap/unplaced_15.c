@@ -68,7 +68,9 @@ __int64 game_gmap_13150c0(__int64 a1)
   if (v7 != 0) {
     v8 = v7 + ((unsigned __int64)*(unsigned __int8*)(v7 + 480) << 6);
     if (*(float*)(v8 + 172) == *(float*)(v8 + 168)) {
-      (*(void (**)(__int64))(*(_QWORD*)(v8 + 160) + 16LL))(v8 + 160);
+      v9 = COERCE_AS(
+          __typeof__(v9),
+          (*(__n128(**)(__int64))(*(_QWORD*)(v8 + 160) + 16LL))(v8 + 160));
     }
     else {
       v9 = *(_OWORD*)(v8 + 208);

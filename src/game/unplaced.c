@@ -9046,7 +9046,8 @@ bool game_80a5b0()
        ((unsigned __int64)*(unsigned __int8*)(game_ProcFadeView_instance_ + 480)
         << 6);
   if (*(float*)(v0 + 172) == *(float*)(v0 + 168)) {
-    (*(void (**)(unsigned __int64))(*(_QWORD*)(v0 + 160) + 16LL))(v0 + 160);
+    v1 = COERCE_AS(__typeof__(v1), (*(__n128(**)(unsigned __int64))(
+                                       *(_QWORD*)(v0 + 160) + 16LL))(v0 + 160));
   }
   else {
     v1 = *(_OWORD*)(v0 + 208);
@@ -14370,7 +14371,9 @@ bool game_8680c0()
                                                 480)
           << 6);
     if (*(float*)(v2 + 172) == *(float*)(v2 + 168)) {
-      (*(void (**)(unsigned __int64))(*(_QWORD*)(v2 + 160) + 16LL))(v2 + 160);
+      v3 = COERCE_AS(__typeof__(v3),
+                     (*(__n128(**)(unsigned __int64))(*(_QWORD*)(v2 + 160) +
+                                                      16LL))(v2 + 160));
     }
     else {
       v3 = *(_OWORD*)(v2 + 208);
@@ -14465,7 +14468,9 @@ bool game_868630()
                                                 480)
           << 6);
     if (*(float*)(v2 + 172) == *(float*)(v2 + 168)) {
-      (*(void (**)(unsigned __int64))(*(_QWORD*)(v2 + 160) + 16LL))(v2 + 160);
+      v3 = COERCE_AS(__typeof__(v3),
+                     (*(__n128(**)(unsigned __int64))(*(_QWORD*)(v2 + 160) +
+                                                      16LL))(v2 + 160));
     }
     else {
       v3 = *(_OWORD*)(v2 + 208);
@@ -14518,8 +14523,9 @@ __int16* game_8697c0(__int16* result, char a2, float a3)
                    unsigned __int8*)(game_ProcFadeView_instance_ + 480)
                << 6);
         if (*(float*)(v10 + 172) == *(float*)(v10 + 168)) {
-          (*(void (**)(unsigned __int64))(*(_QWORD*)(v10 + 160) + 16LL))(v10 +
-                                                                         160);
+          v11 = COERCE_AS(__typeof__(v11),
+                          (*(__n128(**)(unsigned __int64))(
+                              *(_QWORD*)(v10 + 160) + 16LL))(v10 + 160));
         }
         else {
           v11 = *(_OWORD*)(v10 + 208);
