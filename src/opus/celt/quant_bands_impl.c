@@ -702,7 +702,7 @@ __int64 unquant_coarse_energy(__int64 result, int a2, int a3, __int64 a4,
   else {
     v13 = a7;
   }
-  v23 = (char*)&MovieData_a5c0d + 84LL * a8 + 42 * a5;
+  v23 = (char*)&MovieData_a5c0d + 84LL * a8 + 42LL * a5;
   v14 = 8 * *(_DWORD*)(a6 + 8) + 32;
   do {
     v15 = 0;

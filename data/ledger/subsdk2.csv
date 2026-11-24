@@ -743,7 +743,7 @@ fff0,88,verified,src/movie/detail/movie_video_decoder_event_manager.cpp,_ZN5movi
 3d580,832,disputed,src/opus/celt/quant_bands_impl.c,quant_coarse_energy_impl
 3d900,316,verified,src/opus/celt/quant_bands.c,quant_fine_energy
 3da60,560,verified,src/opus/celt/quant_bands.c,quant_energy_finalise
-3dca0,504,disputed,src/opus/celt/quant_bands_impl.c,unquant_coarse_energy
+3dca0,504,verified,src/opus/celt/quant_bands_impl.c,unquant_coarse_energy
 3dee0,212,verified,src/opus/celt/quant_bands.c,unquant_fine_energy
 3dfe0,416,verified,src/opus/celt/quant_bands.c,unquant_energy_finalise
 3e1a0,1212,verified,src/opus/celt/vq_impl2.c,op_pvq_search_c
