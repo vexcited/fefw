@@ -151,7 +151,7 @@ double __floatscan(_QWORD* a1, int a2, unsigned int a3, double a4)
   long double v142;
   unsigned int v143;
   long double v144;
-  _DWORD v145[60];
+  _DWORD v145[64];
   int v146;
   int v147;
 
