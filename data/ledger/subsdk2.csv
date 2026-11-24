@@ -885,7 +885,7 @@ fff0,88,verified,src/movie/detail/movie_video_decoder_event_manager.cpp,_ZN5movi
 694e0,1436,disputed,src/opus/src/unplaced_6.c,opus_src_694e0
 6c310,112,verified,src/opus/src/opus_encoder.c,user_bitrate_to_bitrate
 6c380,120,verified,src/opus/src/opus_encoder.c,gen_toc
-6c400,800,verified,src/opus/src/unplaced_3.c,opus_src_6c400
+6c400,800,disputed,src/opus/src/unplaced_3.c,opus_src_6c400
 6c740,136,verified,src/opus/src/opus_encoder.c,compute_redundancy_bytes
 6c7d0,192,verified,src/opus/src/opus_encoder.c,hp_cutoff
 6c8a0,576,verified,src/opus/src/opus_encoder_impl2.c,opus_encoder_6c8a0
