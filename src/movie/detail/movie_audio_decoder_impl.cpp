@@ -21,6 +21,9 @@ void* AllocateMemory(size_t alignment, size_t size,
 
 }
 
+// The vector out of range throw the original build keeps out of line.
+extern "C" [[noreturn]] void movie_detail_9f40();
+
 namespace movie::detail {
 
 using nn::movie::MediaProperty;
@@ -32,6 +35,14 @@ using nn::movie::detail::ThreadInfo;
 using nn::movie::detail::ThreadManager;
 
 namespace {
+
+template <class List>
+[[gnu::always_inline]] inline auto& CheckedAt(List& list, size_t index) {
+  if (index >= list.size()) {
+    movie_detail_9f40();
+  }
+  return list[index];
+}
 
 enum Message : uintptr_t {
   Message_Initialize,
@@ -583,7 +594,7 @@ MovieResult AudioDecoderImpl::DecodeInputBufferEvent() {
   size_t consumedSize = 0;
   size_t sampleCount = 0;
   m_InputBufferMutex.Lock();
-  AudioInputBuffer* input = m_InputBuffers.at(inputIndex);
+  AudioInputBuffer* input = CheckedAt(m_InputBuffers, inputIndex);
   MovieResult result;
   ConfigurationData* data = input->m_pConfigurationData;
   if (data != nullptr) {
@@ -635,7 +646,7 @@ MovieResult AudioDecoderImpl::DecodeInputBufferEvent() {
   format->GetInt32(&channelCount, "channel-count");
   format->GetInt32(&sampleRate, "sample-rate");
   nn::movie::Buffer* buffer = nullptr;
-  AudioFrame* frame = m_OutputBuffers.at(outputIndex);
+  AudioFrame* frame = CheckedAt(m_OutputBuffers, outputIndex);
   result = frame->GetBuffer(&buffer);
   if (result == MovieResult_Success) {
     if (input->m_FilledSize != 0) {
