@@ -21739,7 +21739,7 @@ fff90,116,verified,src/snd/api.cpp,_ZN3snd10startPitchERKNS_3fnd10WeakHandleERKN
 7c0d80,248,verified,src/game/map/camera.c,Camera_7c0d80
 7c0e80,596,verified,src/game/map/camera.c,Camera_7c0e80
 7c10e0,704,verified,src/game/map/camera.c,Camera_7c10e0
-7c13a0,784,disputed,src/game/map/camera.c,Camera_7c13a0
+7c13a0,784,verified,src/game/map/camera.c,Camera_7c13a0
 7c16d0,252,verified,src/game/map/camera.c,Camera_7c16d0
 7c1800,8,verified,src/game/game_trivial.cpp,_Z15GameStub_7c1800m
 7c1810,8,verified,src/game/game_trivial.cpp,_Z15GameStub_7c1810m

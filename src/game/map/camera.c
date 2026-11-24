@@ -2334,7 +2334,7 @@ __attribute__((swiftcall)) void Camera_7c13a0(PSEUDO_X8 x8_, __int64 a1,
                                               int8x16_t* a2)
 {
 
-#pragma clang fp contract(on)
+#pragma clang fp contract(fast)
 
   float32x4_t* a3 = (float32x4_t*)PSEUDO_X8_VALUE(x8_);
   _QWORD* v3;
