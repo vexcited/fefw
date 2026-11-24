@@ -31561,7 +31561,7 @@ ffee0,324,verified,src/nn/fs/unplaced.c,nn_fs_GetAndClearMemoryReportInfo
 77b860,4,verified,src/nnmusl/nnmusl_libc_forwarders2.cpp,getpid
 77b870,64,verified,src/musl/src/fenv/__flt_rounds.c,__flt_rounds
 77b8b0,20,verified,src/nnmusl/nnmusl_libc_forwarders2.cpp,fesetround
-77d340,3156,verified,src/musl/src/internal/floatscan_impl.c,__floatscan
+77d340,3240,disputed,src/musl/src/internal/floatscan_impl.c,__floatscan
 77e440,436,verified,src/musl/src/internal/floatscan_impl.c,scanexp
 77e6b0,160,verified,src/nnmusl/nnmusl_libc_misc4.cpp,posix_memalign
 77e750,8,verified,src/nnmusl/nnmusl_fp_ops.c,__nnmusl_fdiv
