@@ -16545,12 +16545,12 @@ fff90,116,verified,src/snd/api.cpp,_ZN3snd10startPitchERKNS_3fnd10WeakHandleERKN
 5cdd50,180,verified,src/game/unnamed/b003_2.c,GameHr_5cdd50
 5cde10,80,verified,src/game/unnamed/b003_2.c,GameHr_5cde10
 5cde60,600,verified,src/game/unnamed/b003_2.c,GameHr_5cde60
-5ce190,396,disputed,src/nn/vfx/detail/super_stripe_system.c,SuperStripeSystem_5ce190
+5ce190,396,verified,src/nn/vfx/detail/super_stripe_system.c,SuperStripeSystem_5ce190
 5ce320,6212,verified,src/nn/vfx/unplaced_6.c,nn_vfx_5ce320
 5cfd20,904,disputed,src/nn/vfx/unplaced_4.c,nn_vfx_5cfd20
 5d0320,1640,disputed,src/nn/vfx/detail/super_stripe_system.c,SuperStripeSystem_5d0320
 5d0a40,640,verified,src/nn/vfx/unplaced_8.c,nn_vfx_5d0a40
-5d0cd0,456,disputed,src/nn/vfx/detail/super_stripe_system.c,SuperStripeSystem_5d0cd0
+5d0cd0,456,verified,src/nn/vfx/detail/super_stripe_system.c,SuperStripeSystem_5d0cd0
 5d0ea0,40,verified,src/game/unnamed/b003_2.c,GameHr_5d0ea0
 5d0ee0,48,verified,src/game/unnamed/b003_2.c,GameHr_5d0ee0
 5d0f20,364,verified,src/game/unnamed/b003_3.c,GameHr_5d0f20

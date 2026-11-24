@@ -949,8 +949,9 @@ float SuperStripeSystem_5d0cd0(float32x4_t* a1, float32x4_t* a2, __int64 a3,
       v31 = *(float32x4_t*)(v23 + 32);
       v39 = v30;
     LABEL_9:
-      v14 = vaddq_f32(vmulq_n_f32(v31, 0x1.0000000000000p+0f - a6),
-                      vmulq_n_f32(v16[2], a6));
+      v14 = vaddq_f32(
+          PSEUDO_ROUNDED(vmulq_n_f32(v31, 0x1.0000000000000p+0f - a6)),
+          PSEUDO_ROUNDED(vmulq_n_f32(v16[2], a6)));
       goto LABEL_10;
     }
     v32 = *(_QWORD*)(a3 + 8);
@@ -987,7 +988,7 @@ float SuperStripeSystem_5d0cd0(float32x4_t* a1, float32x4_t* a2, __int64 a3,
   LANES128(v12).n128_u64[0] = 0xBE800000BE800000LL;
   LANES128(v12).n128_u64[1] = 0xBE800000BE800000LL;
   v39 = vmulq_f32(v13, v12);
-  v14 = vaddq_f32(vmulq_f32(v6[2], COERCE_AS(float32x4_t, 0)),
+  v14 = vaddq_f32(PSEUDO_ROUNDED(vmulq_f32(v6[2], COERCE_AS(float32x4_t, 0))),
                   *(float32x4_t*)(a3 + 32));
   a6 = 0x1.0000000000000p+0f;
 LABEL_10:

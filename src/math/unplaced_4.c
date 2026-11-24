@@ -4473,6 +4473,8 @@ __attribute__((swiftcall)) void math_724480(PSEUDO_X8 x8_, float* a1)
 
 float nerd_linear_algebra_sinc(float* a1)
 {
+
+#pragma clang fp contract(off)
   float v1;
   float v3;
 
