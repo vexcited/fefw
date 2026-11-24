@@ -2,7 +2,7 @@
  "modules": {
   "main": {
    "text": 27316080,
-   "functions": 89170
+   "functions": 89433
   },
   "rtld": {
    "text": 10048,
@@ -10,7 +10,7 @@
   },
   "sdk": {
    "text": 8902192,
-   "functions": 45332
+   "functions": 45454
   },
   "subsdk0": {
    "text": 932432,
@@ -18,11 +18,11 @@
   },
   "subsdk1": {
    "text": 2481504,
-   "functions": 9592
+   "functions": 9640
   },
   "subsdk2": {
    "text": 542576,
-   "functions": 1530
+   "functions": 1563
   }
  }
 }
