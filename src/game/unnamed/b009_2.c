@@ -3227,7 +3227,7 @@ __int64 GameHr_b86bc0(__int64 a1, unsigned int a2, char a3, int a4)
       while (v15 != v16) {
         v17 = *(_QWORD*)(*v15 + 120);
         result = wmemchr(*(_QWORD*)(*v15 + 112), a2,
-                         (v17 - *(_QWORD*)(*v15 + 112)) >> 2);
+                         ((__int64)(v17 - *(_QWORD*)(*v15 + 112))) >> 2);
         v18 = *v15;
         if (result != 0) {
           v19 = result;

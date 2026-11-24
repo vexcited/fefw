@@ -5600,7 +5600,7 @@ __int64 ProcGmapSeq_884ff0(__int64 result)
       v5 = result;
       v6 = *(_QWORD*)(v4 + 40);
       v7 = wmemchr_alt1(*(_QWORD*)(v4 + 32), v3,
-                        (v6 - *(_QWORD*)(v4 + 32)) >> 2);
+                        ((__int64)(v6 - *(_QWORD*)(v4 + 32))) >> 2);
       v8 = *(_QWORD*)(v4 + 32);
       v9 = *(_QWORD*)(v4 + 40);
       if (v7 != 0) {
