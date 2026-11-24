@@ -1,6 +1,10 @@
 #include "decomp/pseudo_helpers.h"
 
 #pragma GCC visibility push(hidden)
+__int64 GameRoutine_5e5e40();
+__int64 GameRoutine_5e66a0();
+__int64 GameRoutine_856170();
+__int64 GameRoutine_85be70();
 
 __int64 SdkRoutine_5e5930();
 __int64 nn_detail_UnexpectedDefaultImpl_plt_857150(_QWORD);

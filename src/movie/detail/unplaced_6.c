@@ -1,6 +1,8 @@
 #include "decomp/pseudo_helpers.h"
 
 #pragma GCC visibility push(hidden)
+__int64 GameRoutine_82f30();
+__int64 GameRoutine_83430();
 
 void __attribute__((noreturn)) movie_detail_fef8();
 void __attribute__((noreturn)) movie_detail_ff48();

@@ -1,6 +1,9 @@
 #include "decomp/pseudo_helpers.h"
 
 #pragma GCC visibility push(hidden)
+__int64 GameRoutine_863470();
+__int64 GameRoutine_8636b0();
+__int64 GameRoutine_8630a0();
 
 __int64 nn_audio_server_AddressInfo_GetReference_plt(_QWORD, _QWORD);
 __int64 nn_audio_server_PoolMapper_TryAttachBuffer_plt(_QWORD, _QWORD, _QWORD,

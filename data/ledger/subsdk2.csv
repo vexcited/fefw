@@ -932,7 +932,7 @@ fff0,88,verified,src/movie/detail/movie_video_decoder_event_manager.cpp,_ZN5movi
 751a0,80,verified,src/opus/src/opus_multistream.c,get_right_channel
 75200,80,verified,src/opus/src/opus_multistream.c,get_mono_channel
 75250,116,verified,src/opus/src/opus_multistream_decoder.c,opus_multistream_decoder_get_size
-752e0,520,disputed,src/opus/src/unplaced_10.c,opus_752e0
+752e0,520,verified,src/opus/src/unplaced_10.c,opus_752e0
 75500,288,verified,src/opus/src/opus_multistream_decoder_impl2.c,opus_multistream_decoder_create
 75620,820,verified,src/opus/src/opus_multistream_decoder_impl2.c,opus_multistream_decode_native
 75ab0,108,verified,src/opus/src/opus_multistream_decoder.c,opus_multistream_decoder_ctl

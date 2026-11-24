@@ -1,6 +1,9 @@
 #include "decomp/pseudo_helpers.h"
 
 #pragma GCC visibility push(hidden)
+__int64 GameRoutine_84620();
+__int64 GameRoutine_84680();
+__int64 GameRoutine_66220();
 
 __int64 encode_size(_QWORD, _QWORD);
 __int64 memmove_plt(_QWORD, _QWORD, _QWORD);

@@ -1,6 +1,7 @@
 #include "decomp/pseudo_helpers.h"
 
 #pragma GCC visibility push(hidden)
+__int64 GameRoutine_7cd620();
 
 __int64 SdkRoutine_857220(_QWORD, _QWORD);
 __int64 _Unwind_Resume_plt(_QWORD);

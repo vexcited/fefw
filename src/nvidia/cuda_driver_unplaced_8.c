@@ -3,6 +3,7 @@
 #include "decomp/pseudo_float.h"
 
 #pragma GCC visibility push(hidden)
+__int64 GameRoutine_98340();
 
 _DWORD* CudaDriverRoutine_1a28d0();
 _DWORD* CudaDriverRoutine_1abf10(_DWORD*, unsigned __int64, unsigned int);

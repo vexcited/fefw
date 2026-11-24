@@ -1,6 +1,7 @@
 #include "decomp/pseudo_helpers.h"
 
 #pragma GCC visibility push(hidden)
+__int64 GameRoutine_856170();
 
 __int64 nn_wsi_5edba0(unsigned __int8* a1);
 

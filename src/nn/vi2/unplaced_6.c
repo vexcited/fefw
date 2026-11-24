@@ -1,6 +1,7 @@
 #include "decomp/pseudo_helpers.h"
 
 #pragma GCC visibility push(hidden)
+__int64 GameRoutine_857150();
 
 __int64 nn_detail_UnexpectedDefaultImpl_plt_857150(_QWORD);
 __int64 nn_gs_sdk_BlankUserImage_plt(_QWORD, _QWORD, _QWORD);

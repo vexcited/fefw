@@ -1,6 +1,7 @@
 #include "decomp/pseudo_helpers.h"
 
 #pragma GCC visibility push(hidden)
+__int64 MovieRoutine_78460();
 
 __int64 MovieFree_plt(_QWORD);
 __int64 MovieMalloc_plt(_QWORD);

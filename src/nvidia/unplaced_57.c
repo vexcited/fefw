@@ -1,6 +1,7 @@
 #include "decomp/pseudo_helpers.h"
 
 #pragma GCC visibility push(hidden)
+__int64 GameRoutine_105c00();
 
 __int64 CudaDriverRoutine_df060(__int64);
 __int64 CudaDriverStub_12dd30(_QWORD);

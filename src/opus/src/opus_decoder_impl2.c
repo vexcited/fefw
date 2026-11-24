@@ -1,6 +1,7 @@
 #include "decomp/pseudo_helpers.h"
 
 #pragma GCC visibility push(hidden)
+__int64 GameRoutine_84620();
 
 __int64 opus_decoder_68420(__int64 result, __int64 a2, __int64 a3, int a4,
                            unsigned int a5, __int16* a6, int a7);
