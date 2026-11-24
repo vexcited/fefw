@@ -2524,7 +2524,7 @@ void llvm_libcxx_21_libcxx_include___functional_bf4660(__int64 a1, __int64 a2)
                 v105),
       vceqzq_f32(v107));
   v112 = v779;
-  LANES128(v112).n128_u32[1] = vmuls_lane_f32(
+  LANES128(v112).n128_f32[1] = vmuls_lane_f32(
       v13, COERCE_AS(float32x2_t, LANES128(v779).n128_u64[0]), 1);
   v113 = vmulq_f32(v112, v112);
   LANES128(v113).n128_u64[0] =

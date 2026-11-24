@@ -697,7 +697,7 @@ LABEL_27:
   }
   LANES128(result).n128_u64[0] = *v2;
   LANES64(v33).n64_u64[0] = v2[1];
-  LANES64(v33).n64_u32[1] = vmuls_lane_f32(v30, v33, 1);
+  LANES64(v33).n64_f32[1] = vmuls_lane_f32(v30, v33, 1);
   *(float32x2_t*)&LANES128(result).n128_i8[8] = v33;
   *v4 = result;
   return result;

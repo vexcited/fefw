@@ -76,7 +76,7 @@ void llvm_libcxx_21_libcxx_include___functional_feb630(__int64 a1)
     v11 = GameRoutine_1a0a550(v10, 0x1.0000000000000p-1f);
     *(_QWORD*)&v12 = *v2;
     LANES64(v13).n64_u64[0] = v2[1];
-    LANES64(v13).n64_u32[1] = vmuls_lane_f32(v11, v13, 1);
+    LANES64(v13).n64_f32[1] = vmuls_lane_f32(v11, v13, 1);
     *((float32x2_t*)&v12 + 1) = v13;
     *v4 = v12;
   }

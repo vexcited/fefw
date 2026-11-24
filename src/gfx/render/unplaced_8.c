@@ -842,10 +842,10 @@ int8x16_t* gfx_render_b7ea80(__int64 a1, float32x4_t* a2)
     v119 = v120;
   }
   LANES128(v125).n128_f32[2] = v123;
-  LANES128(v124).n128_u32[1] = vmuls_lane_f32(
+  LANES128(v124).n128_f32[1] = vmuls_lane_f32(
       v118, COERCE_AS(float32x2_t, LANES128(v115).n128_u64[0]), 1);
   v126 = vaddq_f32(v96, vaddq_f32(v95, v97));
-  LANES128(v124).n128_u32[2] = vmuls_lane_f32(v118, v115, 2);
+  LANES128(v124).n128_f32[2] = vmuls_lane_f32(v118, v115, 2);
   v136 = vmulq_f32(v313, vsubq_f32(v318, v125));
   v127 = vmlaq_lane_f32(
       vmlaq_n_f32(
@@ -936,9 +936,9 @@ int8x16_t* gfx_render_b7ea80(__int64 a1, float32x4_t* a2)
   else {
     v148 = LANES128(a2[2]).n128_f32[1];
   }
-  LANES128(v146).n128_u32[1] = vmuls_lane_f32(
+  LANES128(v146).n128_f32[1] = vmuls_lane_f32(
       v144, COERCE_AS(float32x2_t, LANES128(v142).n128_u64[0]), 1);
-  LANES128(v146).n128_u32[2] = vmuls_lane_f32(v144, v142, 2);
+  LANES128(v146).n128_f32[2] = vmuls_lane_f32(v144, v142, 2);
   *(float32x4_t*)(a1 + 224) = vaddq_f32(
       vmulq_n_f32(v136, (float)(v148 - LANES64(v108).n64_f32[0]) / v112),
       vmulq_n_f32(
