@@ -195,7 +195,7 @@ __attribute__((swiftcall)) void math_716e80(PSEUDO_X8 x8_, __int64 result,
               *(float*)(v49 + 4 * v53) =
                   *(float*)(v49 + 4 * v53) +
                   (float)((float)((float)(v54 * *(float*)&v9[4 * v53]) -
-                                  (float)(PSEUDO_UNFUSED(*(float*)&v9[4 * v53] *
+                                  (float)(PSEUDO_ROUNDED(*(float*)&v9[4 * v53] *
                                                          v52))) +
                           (float)(v55 * *(float*)&v10[4 * v53]));
               ++v53;
