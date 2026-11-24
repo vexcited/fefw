@@ -2600,7 +2600,7 @@ __int64 nvidia_106130(__int64 a1, __int64 a2)
       v6 = 0;
     }
     else {
-      v7 = *((_BYTE*)&CudaDriverRoutine_4198 + (_QWORD)CudaDriverData_1422118);
+      v7 = *((_BYTE*)CudaDriverData_1422118 + 16792);
       v8 = *(_DWORD*)(a2 + 1984);
       v11 = v8 == 0;
       v9 = v8 + 1;
@@ -2614,7 +2614,7 @@ __int64 nvidia_106130(__int64 a1, __int64 a2)
         return 200;
       }
     }
-    if (*((_BYTE*)&CudaDriverRoutine_4198 + (_QWORD)v5) != 0) {
+    if (*((_BYTE*)v5 + 16793) != 0) {
       if (*(_BYTE*)(*(_QWORD*)(a2 + 64) + 17082LL) != 0) {
         v10 = v6;
       }
@@ -2622,7 +2622,7 @@ __int64 nvidia_106130(__int64 a1, __int64 a2)
         v10 = 0;
       }
       v11 =
-          v10 == 1 & (*((_BYTE*)&CudaDriverRoutine_4198 + (_QWORD)v5) & 4) == 0;
+          v10 == 1 & (*((_BYTE*)v5 + 16792) & 4) == 0;
       if (v11) {
         CudaDriverRoutine_205fa0(0, *(_QWORD*)(a2 + 96), (__int64)&v13, &v14);
         v13 = (*(__int64 (**)(__int64, __int64, __int64))(*(_QWORD*)(a2 + 64) +
