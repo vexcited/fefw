@@ -51599,7 +51599,7 @@ fffcb0,1244,verified,src/game/unnamed/b014_1.c,GameHr_fffcb0
 10d8370,84,verified,src/game/combat/action_arts.c,ActionArts_Unknown6
 10d83e0,792,verified,src/game/combat/action_arts.c,ActionArts_Unknown7
 10d8720,260,verified,src/game/unnamed/e006_2.c,GameHr_10d8720
-10d8910,396,disputed,src/game/combat/action_raze_blaze.c,ActionRazeBlaze_Unknown5
+10d8910,396,verified,src/game/combat/action_raze_blaze.c,ActionRazeBlaze_Unknown5
 10d8b10,116,verified,src/game/combat/action_raze_blaze.c,ActionRazeBlaze_Unknown6
 10d8ba0,244,verified,src/game/combat/action_passive_skill.c,ActionPassiveSkill_Unknown5
 10d8ca0,264,verified,src/game/combat/action_passive_skill.c,ActionPassiveSkill_Unknown6
@@ -78027,11 +78027,11 @@ fffcb0,1244,verified,src/game/unnamed/b014_1.c,GameHr_fffcb0
 17ba740,516,verified,src/game/unnamed/b024_0.c,GameHr_17ba740
 17ba950,340,verified,src/game/unnamed/b024_1.c,GameHr_17ba950
 17baac0,796,verified,src/game/unnamed/b024_0.c,GameHr_17baac0
-17badf0,216,disputed,src/game/gameui/unplaced_4.c,game_gameui_17badf0
+17badf0,216,verified,src/game/gameui/unplaced_4.c,game_gameui_17badf0
 17baee0,552,verified,src/game/unnamed/b024_0.c,GameHr_17baee0
 17bb120,216,verified,src/game/gameui/unplaced_14.c,game_gameui_17bb120
 17bb200,532,verified,src/game/unnamed/b024_0.c,GameHr_17bb200
-17bb420,212,disputed,src/game/gameui/unplaced_4.c,game_gameui_17bb420
+17bb420,216,verified,src/game/gameui/unplaced_4.c,game_gameui_17bb420
 17bb500,568,verified,src/game/unnamed/b024_0.c,GameHr_17bb500
 17bb750,240,verified,src/game/unnamed/b024_0.c,GameHr_17bb750
 17bb840,12,verified,src/game/unnamed/v000_3.c,GameHr_17bb840

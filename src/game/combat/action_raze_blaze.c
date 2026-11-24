@@ -56,6 +56,9 @@ void ActionRazeBlaze_Unknown5(__int64 a1, __n128 a2)
       v7 = *(_DWORD*)(a1 + 24);
       v8 = *(_QWORD*)(*(_QWORD*)(a1 + 8) + 368LL);
       v9 = *(_QWORD*)(v8 + 40);
+      // The shipped build reads through the neighbouring pointers, checks an
+      // assert left behind.
+      (void)*(volatile __int64*)(*(_QWORD*)(v8 + 32) + 8);
       v10 = *(_QWORD*)(v9 + 392);
       v11 = *(_QWORD*)(v9 + 400);
       if (v11 != 0) {
@@ -79,6 +82,10 @@ void ActionRazeBlaze_Unknown5(__int64 a1, __n128 a2)
       *(_QWORD*)&v16 = 0;
       CharacterAnimator_1079580(v8, v15, v16, -0x1.0000000000000p+0f,
                                 0x1.0000000000000p+0f);
+      (void)*(volatile __int64*)(*(_QWORD*)(*(_QWORD*)(*(_QWORD*)(a1 + 8) +
+                                                       504LL) +
+                                            80LL) +
+                                 8);
       v17 =
           *(_QWORD*)(*(_QWORD*)(*(_QWORD*)(*(_QWORD*)(a1 + 8) + 504LL) + 88LL) +
                      112LL);

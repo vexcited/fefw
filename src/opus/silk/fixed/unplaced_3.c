@@ -975,7 +975,7 @@ LABEL_29:
       v73 = 0x7FFF;
     }
     *(_WORD*)(a1 + 2 * v67) = v73;
-    if (v67 >= (unsigned int)a3) {
+    if (v67 >= (int)a3) {
       goto LABEL_31;
     }
     v74 = v73;

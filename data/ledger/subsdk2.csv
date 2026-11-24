@@ -857,7 +857,7 @@ fff0,88,verified,src/movie/detail/movie_video_decoder_event_manager.cpp,_ZN5movi
 64260,796,verified,src/opus/silk/fixed/process_gains_FIX.c,silk_process_gains_FIX
 64580,248,verified,src/opus/silk/fixed/residual_energy_FIX.c,silk_residual_energy_FIX
 64800,1004,verified,src/opus/silk/fixed/unplaced_3.c,opus_silk_fixed_64800
-64c40,868,disputed,src/opus/silk/fixed/unplaced_3.c,opus_silk_fixed_64c40
+64c40,868,verified,src/opus/silk/fixed/unplaced_3.c,opus_silk_fixed_64c40
 651a0,244,verified,src/opus/unplaced_2.c,opus_651a0
 652a0,236,verified,src/opus/unplaced_2.c,opus_652a0
 653a0,236,verified,src/opus/unplaced_2.c,opus_653a0

@@ -6348,17 +6348,28 @@ __int64 game_gameui_17badf0()
   __int64* v0;
   __int64 v1;
   __int64 v3;
+  bool v4;
 
   v0 = LayoutAccessor_155fbe0(
       (__int64*)(*(_QWORD*)game_hub_ProgressEventView_instance__ptr[0] + 168LL),
       "L_Clock");
   GameHr_1562680((__int64)v0, "SkipOut", 0x1.0000000000000p+0f);
   v1 = std___1___shared_weak_count_lock(v0[1]);
-  if (v1 != 0 && atomic_fetch_add((atomic_ullong* volatile)(v1 + 8),
-                                  0xFFFFFFFFFFFFFFFFLL) == 0) {
-    v3 = v1;
-    (*(void (**)(__int64))(*(_QWORD*)v1 + 16LL))(v1);
-    std___1___shared_weak_count___release_weak(v3);
+  // The shipped build reads the use count again, a check left by an assert.
+  v4 = 1;
+  if (v1 != 0) {
+    if (v0[0] != 0) {
+      v4 = (*(_BYTE*)(v0[0] + 24) != 0 ? v0[0] + 152 : 0) != v0[2];
+    }
+    if (atomic_fetch_add((atomic_ullong* volatile)(v1 + 8),
+                         0xFFFFFFFFFFFFFFFFLL) == 0) {
+      v3 = v1;
+      (*(void (**)(__int64))(*(_QWORD*)v1 + 16LL))(v1);
+      std___1___shared_weak_count___release_weak(v3);
+    }
+  }
+  if (v4) {
+    (void)*(volatile __int64*)(v0[1] + 8);
   }
   return (*(__int64 (**)(__int64))(*(_QWORD*)v0[2] + 72LL))(v0[2]);
 }
@@ -6368,17 +6379,28 @@ __int64 game_gameui_17bb420()
   __int64* v0;
   __int64 v1;
   __int64 v3;
+  bool v4;
 
   v0 = LayoutAccessor_155fbe0(
       (__int64*)(*(_QWORD*)game_hub_ProgressEventView_instance__ptr[0] + 168LL),
       "L_Clock");
   GameHr_1562680((__int64)v0, "Skip_ShortOut", 0x1.0000000000000p+0f);
   v1 = std___1___shared_weak_count_lock(v0[1]);
-  if (v1 != 0 && atomic_fetch_add((atomic_ullong* volatile)(v1 + 8),
-                                  0xFFFFFFFFFFFFFFFFLL) == 0) {
-    v3 = v1;
-    (*(void (**)(__int64))(*(_QWORD*)v1 + 16LL))(v1);
-    std___1___shared_weak_count___release_weak(v3);
+  // The shipped build reads the use count again, a check left by an assert.
+  v4 = 1;
+  if (v1 != 0) {
+    if (v0[0] != 0) {
+      v4 = (*(_BYTE*)(v0[0] + 24) != 0 ? v0[0] + 152 : 0) != v0[2];
+    }
+    if (atomic_fetch_add((atomic_ullong* volatile)(v1 + 8),
+                         0xFFFFFFFFFFFFFFFFLL) == 0) {
+      v3 = v1;
+      (*(void (**)(__int64))(*(_QWORD*)v1 + 16LL))(v1);
+      std___1___shared_weak_count___release_weak(v3);
+    }
+  }
+  if (v4) {
+    (void)*(volatile __int64*)(v0[1] + 8);
   }
   return (*(__int64 (**)(__int64))(*(_QWORD*)v0[2] + 72LL))(v0[2]);
 }

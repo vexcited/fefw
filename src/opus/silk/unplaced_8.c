@@ -444,7 +444,7 @@ __int64 opus_silk_2efdc0(int* a1, int* a2, __int64 a3, __int64 a4, _BYTE* a5,
       v207_.v233 = (unsigned int)v19[1147];
       if (v69 >= 1) {
         v71 = (__int64)((v70 >> 4) + 1) >> 1;
-        if ((unsigned int)v69 < 8) {
+        if ((int)v69 < 8) {
           v72 = 0;
           v73 = v69 & 7;
           if ((v69 & 7) == 0) {

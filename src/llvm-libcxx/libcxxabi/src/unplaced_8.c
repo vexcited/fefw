@@ -316,7 +316,7 @@ char* llvm_libcxx_libcxxabi_src_8393e0(unsigned __int16** a1)
     v13 = (unsigned __int64)(v12 + v11) >> 1;
     v14 = (unsigned __int8*)&SdkData_e82c40 + 16 * v13;
     v15 = *v14;
-    if (v15 < v10 || v15 == v10 && v14[1] < (unsigned int)*v9) {
+    if (v15 < v10 || v15 == v10 && v14[1] < (int)*v9) {
       v12 = v13 + 1;
       v13 = v11;
     }
@@ -343,7 +343,7 @@ char* llvm_libcxx_libcxxabi_src_8393e0(unsigned __int16** a1)
                      PSEUDO_REGISTER(unsigned long long, "x1", "=r")),
     v187 = COERCE_AS(__typeof__(v187),
                      PSEUDO_REGISTER(unsigned long long, "x1", "=r"));
-    if ((unsigned int)v18 > 0xA) {
+    if ((int)v18 > 0xA) {
       v21 = v17;
       v22 = v20;
       goto LABEL_40;
@@ -1715,7 +1715,7 @@ char* llvm_libcxx_libcxxabi_src_8393e0(unsigned __int16** a1)
       v148 = (unsigned __int8*)&SdkData_e82c40 + 16 * v147;
       v149 = *v148;
       if (v149 < v144 ||
-          v149 == v144 && v148[1] < (unsigned int)*((unsigned __int8*)v1 + 3)) {
+          v149 == v144 && v148[1] < (int)*((unsigned __int8*)v1 + 3)) {
         v146 = v147 + 1;
         v147 = v145;
       }
