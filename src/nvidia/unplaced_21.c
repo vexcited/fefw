@@ -8074,7 +8074,7 @@ __int64 nvidia_10f540(__int64 a1, __int64 a2)
     goto LABEL_17;
   }
 LABEL_18:
-  if ((*((_BYTE*)((_UNKNOWN*)0x1840LL) + (_QWORD)v4) & 0x10) != 0) {
+  if ((*((_BYTE*)((_UNKNOWN*)0x1841LL) + (_QWORD)v4) & 0x10) != 0) {
     {
       v10 = (*(_BYTE*)(a1 + 16977) & 2) != 0;
       __asm__ volatile("" ::"r"(v10));
@@ -8091,7 +8091,7 @@ LABEL_19:
     if (v10) {
       return 2;
     }
-    if ((*((_BYTE*)((_UNKNOWN*)0x1840LL) + (_QWORD)v4) & 0x40) == 0) {
+    if ((*((_BYTE*)((_UNKNOWN*)0x1841LL) + (_QWORD)v4) & 0x40) == 0) {
       return 0;
     }
     return (*(_DWORD*)(a1 + 16976) & 0x100) != 0;
