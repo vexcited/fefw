@@ -561,9 +561,9 @@ LABEL_49:
         v103 = v99[3];
         v104 = (float)(v254 * (float)(v103 - v94)) -
                (float)(PSEUDO_UNFUSED((float)(v101 - v95) * v253));
-        if ((float)((float)(v254 * (float)(v102 - v94)) -
-                    (float)(PSEUDO_UNFUSED((float)(v100 - v95) * v253))) <=
-            0x0.0p+0f) {
+        if (!((float)((float)(v254 * (float)(v102 - v94)) -
+                      (float)(PSEUDO_UNFUSED((float)(v100 - v95) * v253))) >
+              0x0.0p+0f)) {
           break;
         }
         if (!(v104 > 0x0.0p+0f)) {
