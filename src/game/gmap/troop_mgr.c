@@ -3912,8 +3912,7 @@ __attribute__((swiftcall)) void TroopMgr_134b820(PSEUDO_X8 x8_, _QWORD* a1)
   }
 }
 
-__attribute__((swiftcall)) void
-
+__attribute__((swiftcall, noinline)) void
 game_gmap_TroopMgr_GetEncountEnemyList(PSEUDO_X8 x8_, __int64 (*a1)())
 {
   __int64 (**a2)() = (__int64 (**)())PSEUDO_X8_VALUE(x8_);

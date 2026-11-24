@@ -169,7 +169,7 @@ private:
 // Same as EntryAspect, but only for the node selected as detail target.
 class DetailAspect final : public BaseAspect<CommandGenerator> {
 public:
-  explicit DetailAspect(const AspectParameter& parameter)
+  [[gnu::noinline]] explicit DetailAspect(const AspectParameter& parameter)
     : BaseAspect(parameter.generator), m_NodeId(parameter.nodeId),
       m_IsValid(false) {
     PerformanceManager* manager = m_Target->GetPerformanceManager();
