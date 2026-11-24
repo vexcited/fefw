@@ -6583,7 +6583,7 @@ ff600,3424,verified,src/nvidia/unplaced_21.c,nvidia_ff600
 1c8d30,172,verified,src/nvidia/unnamed/o001_0.c,CudaDriverHr_1c8d30
 1c8de0,296,verified,src/nvidia/unnamed/c003_2.c,CudaDriverHr_1c8de0
 1c8f20,692,verified,src/nvidia/unnamed/c003_2.c,CudaDriverHr_1c8f20
-1c92a0,540,disputed,src/nvidia/unnamed/c003_2.c,CudaDriverHr_1c92a0
+1c92a0,560,verified,src/nvidia/unnamed/c003_2.c,CudaDriverHr_1c92a0
 1c94d0,212,verified,src/nvidia/unnamed/i000_0.c,CudaDriverHr_1c94d0
 1c9550,28,verified,src/nvidia/unnamed/c003_2.c,CudaDriverHr_1c9550
 1c9570,28,verified,src/nvidia/unnamed/c003_2.c,CudaDriverHr_1c9570

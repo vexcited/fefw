@@ -4032,7 +4032,7 @@ __int64 CudaDriverHr_1c92a0(__int64 a1, unsigned int a2, _QWORD* a3,
                       if ((unsigned int)v19 > 0x40) {
                         v23 = 0;
                       }
-                      v22 = v21[1] >> v19 << v23;
+                      v22 = v21[1] >> (v19 & 0x3F) << (v23 & 0x3F);
                     }
                     else {
                       v22 = *v21 >> v19;
