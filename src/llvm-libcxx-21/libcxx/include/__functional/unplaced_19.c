@@ -6674,8 +6674,7 @@ void llvm_libcxx_21_libcxx_include___functional_10a98e0(__int64 a1, float a2,
   LANES128(v22).n128_u64[0] = *(_QWORD*)(a1 + 160);
   LANES128(v22).n128_f32[1] = v6;
   *(_OWORD*)(a1 + 144) = v23;
-  LODWORD(v23) = *(_DWORD*)(a1 + 168);
-  LANES128(v22).n128_u64[1] = v23;
+  LANES128(v22).n128_u64[1] = *(unsigned int*)(a1 + 168);
   v20[5] = v22;
   game_10d95c0(a1);
   game_10d9a00(a1);
