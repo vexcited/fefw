@@ -1510,8 +1510,14 @@ __int64 game_facility_DiningSceneDiff_Initialize_lambda1_Invoke(__int64 a1)
         goto LABEL_23;
       }
       v12 = *(_QWORD*)(v2 + 72);
-      if (v12 != 0 && *(_QWORD*)(v10[3] + 1672LL) ==
-                          *(_QWORD*)(*(_QWORD*)(v12 + 24) + 1672LL)) {
+      // The original compares here even though both outcomes join, so the
+      // loads stay.
+      if (v12 != 0 && ({
+            __int64 seat = *(_QWORD*)(v10[3] + 1672LL);
+            __int64 other = *(_QWORD*)(*(_QWORD*)(v12 + 24) + 1672LL);
+            __asm__ volatile("" ::"r"(seat), "r"(other));
+            seat == other;
+          })) {
         goto LABEL_20;
       }
     }
@@ -1575,8 +1581,14 @@ LABEL_25:
         goto LABEL_53;
       }
       v23 = *(_QWORD*)(v2 + 72);
-      if (v23 != 0 && *(_QWORD*)(v21[3] + 1672LL) ==
-                          *(_QWORD*)(*(_QWORD*)(v23 + 24) + 1672LL)) {
+      // The original compares here even though both outcomes join, so the
+      // loads stay.
+      if (v23 != 0 && ({
+            __int64 seat = *(_QWORD*)(v21[3] + 1672LL);
+            __int64 other = *(_QWORD*)(*(_QWORD*)(v23 + 24) + 1672LL);
+            __asm__ volatile("" ::"r"(seat), "r"(other));
+            seat == other;
+          })) {
         goto LABEL_44;
       }
     }
@@ -1634,8 +1646,13 @@ LABEL_55:
   }
   else {
     v36 = *(_QWORD*)(v2 + 72);
-    if (v36 == 0 || *(_QWORD*)(*(_QWORD*)(result + 24) + 1672LL) !=
-                        *(_QWORD*)(*(_QWORD*)(v36 + 24) + 1672LL)) {
+    // Both outcomes join here too, the original still compares.
+    if (v36 == 0 || ({
+          __int64 seat = *(_QWORD*)(*(_QWORD*)(result + 24) + 1672LL);
+          __int64 other = *(_QWORD*)(*(_QWORD*)(v36 + 24) + 1672LL);
+          __asm__ volatile("" ::"r"(seat), "r"(other));
+          seat != other;
+        })) {
       goto LABEL_75;
     }
   }

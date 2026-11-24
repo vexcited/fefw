@@ -62177,7 +62177,7 @@ fffcb0,1244,verified,src/game/unnamed/b014_1.c,GameHr_fffcb0
 1415080,24,verified,src/llvm-libcxx-21/libcxx/include/__functional/function.h,"std::__1::__function::__func<game::facility::DiningSceneDiff::Initialize(game::facility::DiningArgs const*)::$_1, void ()>::__clone(__base*)"
 14150a0,4,verified,src/llvm-libcxx-21/libcxx/include/__functional/function.h,"std::__1::__function::__func<game::facility::DiningSceneDiff::Initialize(game::facility::DiningArgs const*)::$_1, void ()>::destroy()"
 14150b0,12,verified,src/llvm-libcxx-21/libcxx/include/__functional/function.h,"std::__1::__function::__func<game::facility::DiningSceneDiff::Initialize(game::facility::DiningArgs const*)::$_1, void ()>::destroy_deallocate()"
-14150c0,1428,disputed,src/game/facility/dining_scene_diff.c,game_facility_DiningSceneDiff_Initialize_lambda1_Invoke
+14150c0,1436,verified,src/game/facility/dining_scene_diff.c,game_facility_DiningSceneDiff_Initialize_lambda1_Invoke
 1415660,28,verified,src/llvm-libcxx-21/libcxx/include/__functional/function.h,"std::__1::__function::__func<game::facility::DiningSceneDiff::Initialize(game::facility::DiningArgs const*)::$_1, void ()>::target(std::type_info const&)"
 1415680,12,verified,src/llvm-libcxx-21/libcxx/include/__functional/function.h,"std::__1::__function::__func<game::facility::DiningSceneDiff::Initialize(game::facility::DiningArgs const*)::$_1, void ()>::target_type()"
 1415690,72,verified,src/llvm-libcxx-21/libcxx/include/__functional/function.h,"std::__1::__function::__func<game::facility::DiningSceneDiff::LoadProp()::$_0, void ()>::destructor"
