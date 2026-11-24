@@ -85,9 +85,9 @@ __attribute__((swiftcall)) void GameRoutine_15d4100(PSEUDO_X8, _QWORD, _QWORD);
 __attribute__((swiftcall)) void GameRoutine_15d4240(PSEUDO_X8, _QWORD, _QWORD);
 __attribute__((swiftcall)) void LayoutAccessor_1560070(PSEUDO_X8, _QWORD,
                                                        _QWORD);
-__n128 game_menu_anonymous_ProcScountInfo_OnInit(__int64* a1);
+void game_menu_anonymous_ProcScountInfo_OnInit(__int64* a1);
 
-__n128 game_menu_anonymous_ProcScountInfo_OnInit(__int64* a1)
+void game_menu_anonymous_ProcScountInfo_OnInit(__int64* a1)
 {
   _QWORD* v1;
   __int64 v3;
@@ -1174,9 +1174,10 @@ LABEL_300:
     result = std___1___shared_weak_count___release_weak(v157);
   }
   if (v158_.v159 != 0) {
-    return std___1___shared_weak_count___release_weak(v158_.v159);
+    std___1___shared_weak_count___release_weak(v158_.v159);
+  return;
   }
-  return result;
+  return;
 }
 
 __int64 ProcScountInfo_Unknown92(__int64 a1)
