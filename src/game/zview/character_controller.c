@@ -2678,7 +2678,7 @@ void CharacterController_StateActionRoot_Unknown4(__int64 a1)
     else {
       v34 = (float)(v33 + 0x0.0p+0f) + 0x1.921fb60000000p+2f;
     }
-    if (v34 > 0x1.921fb60000000p+1f) {
+    if (!(v34 <= 0x1.921fb60000000p+1f)) {
       v34 = v34 + -0x1.921fb60000000p+2f;
     }
     if (!(fabsf(v34) < 0x1.6571840000000p-2f)) {
@@ -2701,14 +2701,14 @@ void CharacterController_StateActionRoot_Unknown4(__int64 a1)
     }
     break;
   case 1:
-    if ((float)((float)(PSEUDO_UNFUSED(*(float*)(v8 + 588) *
-                                       *(float*)(v8 + 588))) +
-                (float)(*(float*)(v8 + 584) * *(float*)(v8 + 584))) >
-        0x0.0p+0f) {
+    if (!((float)((float)(PSEUDO_UNFUSED(*(float*)(v8 + 588) *
+                                         *(float*)(v8 + 588))) +
+                  (float)(*(float*)(v8 + 584) * *(float*)(v8 + 584))) <=
+          0x0.0p+0f)) {
       v27 = (float)(PSEUDO_UNFUSED(*((float*)&v7 + 1) * *((float*)&v7 + 1))) +
             (float)(*(float*)&v7 * *(float*)&v7);
       v28 = 0x0.0p+0f;
-      if (v27 > 0x0.0p+0f) {
+      if (!(v27 <= 0x0.0p+0f)) {
         if (*(float*)&v7 == 0x0.0p+0f && *((float*)&v7 + 1) == 0x0.0p+0f) {
           v30 = *((float*)&v7 + 1);
           v29 = *(float*)&v7;
@@ -2735,7 +2735,7 @@ void CharacterController_StateActionRoot_Unknown4(__int64 a1)
       else {
         v88 = (float)(v85 + 0x0.0p+0f) + 0x1.921fb60000000p+2f;
       }
-      if (v88 > 0x1.921fb60000000p+1f) {
+      if (!(v88 <= 0x1.921fb60000000p+1f)) {
         v88 = v88 + -0x1.921fb60000000p+2f;
       }
       if (!(fabsf(v88) > 0x1.921fb60000000p-1f)) {
@@ -2881,13 +2881,13 @@ LABEL_44:
                                      *(float*)(v13 + 672))) +
               (float)(*(float*)(v13 + 668) * *(float*)(v13 + 668))) < v26)) {
       if ((v23 & 0x80) != 0) {
-        if (v20 < 0x1.99999a0000000p-5f) {
+        if (!(v20 >= 0x1.99999a0000000p-5f)) {
           v20 = 0x1.99999a0000000p-5f;
         }
         *(float*)(a1 + 20) = v20;
       }
       else {
-        if (v20 < 0x1.99999a0000000p-3f) {
+        if (!(v20 >= 0x1.99999a0000000p-3f)) {
           v20 = 0x1.99999a0000000p-3f;
         }
         *(float*)(a1 + 20) = v20;

@@ -299,7 +299,7 @@ void game_zview_10cae60(__int64 a1, char a2, double a3, long double a4,
     }
     v30 = *(_QWORD*)(a1 + 96);
     v31 = *(_QWORD*)(a1 + 104);
-    if (v29 > 0x1.921fb60000000p+1f) {
+    if (!(v29 <= 0x1.921fb60000000p+1f)) {
       v29 = v29 + -0x1.921fb60000000p+2f;
     }
     LANES128(v198_.v198).n128_f32[0] = v29;
@@ -380,7 +380,7 @@ void game_zview_10cae60(__int64 a1, char a2, double a3, long double a4,
       v44 = 0x1.0000000000000p+0f;
     }
     v45 = sqrtf(v44);
-    if (v21 > 0x0.0p+0f) {
+    if (!(v21 <= 0x0.0p+0f)) {
       v46 = vmulq_n_f32(v37, 0x1.0000000000000p+0f / *(float*)&a7);
       LANES128(v46).n128_u32[3] = 0;
       v47 = vsubq_f32(v43, v46);

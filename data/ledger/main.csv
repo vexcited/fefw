@@ -39883,7 +39883,7 @@ d3e000,28,verified,src/game/game_trivial_misc.cpp,_Z15GameStub_d3e000v
 d3e020,72,verified,src/game/zview/character_controller/state_action_root.c,StateActionRoot_Unknown3
 d3e070,140,verified,src/game/zview/character_controller/state_action_root.c,StateActionRoot_Unknown5
 d3e100,160,verified,src/game/zview/character_controller/state_action_root.c,StateActionRoot_d3e100
-d3e1e0,2592,disputed,src/game/zview/character_controller.c,CharacterController_StateActionRoot_Unknown4
+d3e1e0,2348,disputed,src/game/zview/character_controller.c,CharacterController_StateActionRoot_Unknown4
 d3eec0,44,verified,src/memory/new_delete.cpp,deleting destructor at 0xd3eec0
 d3eef0,36,verified,src/game/zview/character_controller/state_action_root.c,StateActionRoot_Unknown2
 d3ef20,1124,verified,src/game/zview/character_controller.c,CharacterController_StateJump_Unknown3
@@ -50798,7 +50798,7 @@ fffcb0,1244,verified,src/game/unnamed/b014_1.c,GameHr_fffcb0
 10a6f70,24,verified,src/llvm-libcxx-21/libcxx/include/__functional/function.h,"std::__1::__function::__func<game::character::CharacterSelfie::Start(bool, std::__1::shared_ptr<wld::Camera> const&)::$_0, void ()>::__clone(__base*)"
 10a6f90,4,verified,src/llvm-libcxx-21/libcxx/include/__functional/function.h,"std::__1::__function::__func<game::character::CharacterSelfie::Start(bool, std::__1::shared_ptr<wld::Camera> const&)::$_0, void ()>::destroy()"
 10a6fa0,12,verified,src/llvm-libcxx-21/libcxx/include/__functional/function.h,"std::__1::__function::__func<game::character::CharacterSelfie::Start(bool, std::__1::shared_ptr<wld::Camera> const&)::$_0, void ()>::destroy_deallocate()"
-10a6fb0,2596,disputed,src/game/character/character_selfie.c,game_character_CharacterSelfie_Start_lambda0_Invoke
+10a6fb0,2596,verified,src/game/character/character_selfie.c,game_character_CharacterSelfie_Start_lambda0_Invoke
 10a7a10,28,verified,src/llvm-libcxx-21/libcxx/include/__functional/function.h,"std::__1::__function::__func<game::character::CharacterSelfie::Start(bool, std::__1::shared_ptr<wld::Camera> const&)::$_0, void ()>::target(std::type_info const&)"
 10a7a30,12,verified,src/llvm-libcxx-21/libcxx/include/__functional/function.h,"std::__1::__function::__func<game::character::CharacterSelfie::Start(bool, std::__1::shared_ptr<wld::Camera> const&)::$_0, void ()>::target_type()"
 10a7a40,544,verified,src/game/combat/combat_settings.c,game_combat_CombatSettings_CombatSettings

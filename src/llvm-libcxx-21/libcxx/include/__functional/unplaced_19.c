@@ -6599,11 +6599,11 @@ void llvm_libcxx_21_libcxx_include___functional_10a98e0(__int64 a1, float a2,
     v7 = -0x1.0000000000000p+0f;
     v8 = *(float*)(*(_QWORD*)(a1 + 16) - 12LL);
     v9 = *(float*)(*(_QWORD*)GameData_212d270 + 204LL);
-    if (v9 > 0x0.0p+0f) {
+    if (!(v9 <= 0x0.0p+0f)) {
       v7 = 0x0.0p+0f;
       if (v9 < 0x1.0000000000000p+0f) {
         v7 = -0x1.0000000000000p+0f;
-        if (a2 > 0x0.0p+0f) {
+        if (!(a2 <= 0x0.0p+0f)) {
           v10 = a2;
           v82 =
               *(float*)(a1 + 164) +
@@ -6628,7 +6628,7 @@ void llvm_libcxx_21_libcxx_include___functional_10a98e0(__int64 a1, float a2,
     if (v6 < v15) {
       v14 = v14 + v14;
     }
-    if (v14 > 0x0.0p+0f) {
+    if (!(v14 <= 0x0.0p+0f)) {
       if (v14 >= 0x1.0000000000000p+0f) {
         v15 = v6;
       }
@@ -6650,7 +6650,7 @@ void llvm_libcxx_21_libcxx_include___functional_10a98e0(__int64 a1, float a2,
   }
   v16 = 0x0.0p+0f;
   v17 = *(float*)(*(_QWORD*)v5 + 208LL);
-  if (v17 > 0x0.0p+0f) {
+  if (!(v17 <= 0x0.0p+0f)) {
     v16 = 0x1.0000000000000p+0f;
     if (v17 < 0x1.0000000000000p+0f) {
       v16 = 0x0.0p+0f;

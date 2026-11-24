@@ -907,7 +907,7 @@ void game_character_CharacterSelfie_Start_lambda0_Invoke(__int64 a1)
   }
   v24 = v24 && v23 < 0x1.47ae160000000p-9f;
   v25 = v24;
-  if (v25 || v22 < 0x1.47ae160000000p-9f) {
+  if (v25 || !(v22 >= 0x1.47ae160000000p-9f)) {
   LABEL_40:
     CharacterSelfie_10a6ac0_alt2(v1);
     return;
@@ -915,7 +915,7 @@ void game_character_CharacterSelfie_Start_lambda0_Invoke(__int64 a1)
 LABEL_41:
   v27 = *(float*)(v1 + 144);
   v28 = GameData_212d448[0];
-  if (v27 > 0x0.0p+0f) {
+  if (!(v27 <= 0x0.0p+0f)) {
     if (*GameData_212d448[0] != 0) {
       v29 = *GameData_212d448[0];
       v30 = nn_os_ConvertToTimeSpan_alt2(
@@ -1051,7 +1051,7 @@ LABEL_41:
   *(double*)&v56 =
       (float)(*(float*)&v56 + (float)(v51 * LANES128(v127).n128_f32[3])) +
       (float)(*(float*)&v56 + (float)(v51 * LANES128(v127).n128_f32[3]));
-  if (*(double*)&v56 > 0x1.0000000000000p+0) {
+  if (!(*(double*)&v56 <= 0x1.0000000000000p+0)) {
     *(double*)&v56 = 0x1.0000000000000p+0;
   }
   if (*(double*)&v56 < -0x1.0000000000000p+0) {
