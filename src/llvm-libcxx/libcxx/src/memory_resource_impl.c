@@ -24,6 +24,16 @@ __int64 std___1_pmr_synchronized_pool_resource_do_deallocate(__int64 a1,
                                                              __int64 a3,
                                                              __int64 a4);
 void __attribute__((noreturn)) memory_resource_7d7fd0(__int64 a1);
+void __attribute__((noreturn)) memory_resource_7d7da4(__int64 a1);
+bool memory_resource_7d7db0(__int64 a1, __int64 a2);
+
+void __attribute__((noreturn)) memory_resource_7d7da4(__int64 a1)
+{
+  GameRoutine_7cd620(a1);
+}
+
+bool memory_resource_7d7db0(__int64 a1, __int64 a2) { return a1 == a2; }
+
 __int64
 
 std___1_pmr_synchronized_pool_resource_Destroy_synchronized_pool_resource_7d7e50(

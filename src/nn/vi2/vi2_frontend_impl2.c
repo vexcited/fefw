@@ -90,6 +90,7 @@ __int64 vi2_frontend_5e8d20(__int64 a1, unsigned __int64* a2);
 __int64 vi2_frontend_5e8e40(_QWORD* a1, __int64 a2, __int64 a3,
                             unsigned __int64 a4);
 __int64 vi2_frontend_5e9100(__int64 a1, _DWORD* a2, _QWORD* a3, __int64 a4);
+__int64 vi2_frontend_5e78f0(__int64 result, unsigned __int8 a2);
 
 __int64 vi2_frontend_5e72f0(__int64 a1, __int64 a2, __int64 a3)
 {
@@ -394,6 +395,19 @@ __int64 vi2_frontend_5e78c0(__int64 result, unsigned __int16 a2, __int64 a3)
     v4 = *(unsigned int*)(v3 + 88) | ((unsigned __int64)a2 << 32) | (a3 << 48);
     *(_QWORD*)(v3 + 80) |= 2uLL;
     *(_QWORD*)(v3 + 88) = v4;
+  }
+  return result;
+}
+
+__int64 vi2_frontend_5e78f0(__int64 result, unsigned __int8 a2)
+{
+  __int64 v2;
+
+  if (a2 <= 3u && (*(_BYTE*)(result + 40) & 8) != 0) {
+    v2 = *(_QWORD*)(result + 16);
+    *(_QWORD*)(v2 + 96) =
+        *(_QWORD*)(v2 + 96) & 0xFFFFFFFFFFFFFF0FLL | (16LL * (a2 & 0xF));
+    *(_QWORD*)(v2 + 80) |= 0x40uLL;
   }
   return result;
 }

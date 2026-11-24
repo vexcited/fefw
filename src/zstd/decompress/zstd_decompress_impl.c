@@ -142,6 +142,7 @@ unsigned __int64 ZSTD_decompressMultiFrame(__int64 a1, char* a2, __int64 a3,
                                            unsigned __int64 a7, __int64 a8);
 __int64 ZSTD_decompress(char* a1, __int64 a2, unsigned __int8* a3,
                         unsigned __int64 a4);
+__int64 zstd_decompress_221dc0(__int64 a1, int a2, _QWORD* a3, __int64 a4);
 
 __int64 zstd_decompress_220dd0(__int64 a1)
 {
@@ -469,6 +470,37 @@ __int64 ZSTD_DCtx_reset(__int64* a1, __int64 a2, __int64 a3, int a4,
     }
   }
   return result;
+}
+
+__int64 zstd_decompress_221dc0(__int64 a1, int a2, _QWORD* a3, __int64 a4)
+{
+
+#pragma clang fp contract(on)
+
+  __int64 v4;
+
+  if (a2 > 2) {
+    if (a2 == 3) {
+      v4 = 19080;
+      goto LABEL_10;
+    }
+    if (a2 == 4) {
+      return 801;
+    }
+  }
+  else {
+    if (a2 == 0) {
+      v4 = 19048;
+      goto LABEL_10;
+    }
+    if (a2 == 2) {
+      v4 = 19056;
+    LABEL_10:
+      *a3 = (*(__int64 (**)(_QWORD, __int64, __int64, _QWORD))(
+          *(_QWORD*)(a1 + 64) + v4))(*a3, a4, 1, 0);
+    }
+  }
+  return 0;
 }
 
 __int64 zstd_decompress_221e50(__int64 a1, __int64 a2, __int64 a3)

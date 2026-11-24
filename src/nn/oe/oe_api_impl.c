@@ -46,7 +46,10 @@ __int64 nn_oe_GetLimitedApplicationLicenseType(void* this_);
 __int64 nn_oe_TryUpgradeLimitedApplicationLicense(void* this_);
 void* nn_oe_GetLimitedApplicationLicenseUpgradableEvent(void* this_);
 __int64 oe_api_5989b0();
+void __attribute__((noreturn)) oe_api_596eec();
 __int64 oe_api_596ee4() { return nn_applet_SetWirelessPriorityMode_plt(1); }
+
+void __attribute__((noreturn)) oe_api_596eec() { GameRoutine_856170(); }
 
 __int64 nn_oe_GetOperationMode(void* this_)
 {

@@ -20,6 +20,96 @@ __int64 game_604060(__int64 a1, __int64* a2, float* a3);
 __attribute__((swiftcall)) void game_86bbc0(PSEUDO_X8 x8_,
                                             unsigned __int16* result);
 __int16* game_86bee0(__int64 a1);
+__int64 GameRoutine_4f21f0(__int64, __int64, _DWORD*, int32x4_t*, float32x2_t*,
+                           float32x4_t, double, double, float32x4_t, __int64,
+                           __int64);
+__int64 GameRoutine_4f71f0(__int64, __int64, _DWORD*, _DWORD*, float32x2_t*,
+                           float32x4_t, float32x4_t, __int64, __int64);
+__int64 physx_source_geomutils_src_pcm_4f1e20(__int64, _DWORD*, _DWORD*,
+                                              float32x4_t*, float32x2_t*,
+                                              double, double, double, double,
+                                              float32x4_t, double, double,
+                                              float32x4_t, __int64, __int64);
+__int64 physx_source_geomutils_src_pcm_4f70c0(__int64, double, float32x2_t,
+                                              __int64, float32x4_t*,
+                                              float32x4_t*, int32x2_t*, __int64,
+                                              __int64);
+bool physx_source_geomutils_src_469330(__int64, float*, __int64, float32x4_t*,
+                                       float*, __int64, __int64);
+bool physx_source_geomutils_src_469a30(__int64, __int64, float*, float*, float*,
+                                       __int64, __int64);
+bool game_3b1230(__int64 a1, __int64 a2, float* a3, float* a4, float* a5,
+                 __int64 a6, __int64 a7);
+bool game_3b1240(__int64 a1, float* a2, __int64 a3, float32x4_t* a4, float* a5,
+                 __int64 a6, __int64 a7);
+__int64 game_3b1370(__int64 a1, __int64 a2, _DWORD* a3, _DWORD* a4,
+                    float32x2_t* a5, float32x4_t a6, float32x4_t a7, __int64 a8,
+                    __int64 a9);
+__int64 game_3b1380(__int64 a1, double a2, float32x2_t a3, __int64 a4,
+                    float32x4_t* a5, float32x4_t* a6, int32x2_t* a7, __int64 a8,
+                    __int64 a9);
+__int64 game_3b1390(__int64 a1, __int64 a2, _DWORD* a3, int32x4_t* a4,
+                    float32x2_t* a5, float32x4_t a6, double a7, double a8,
+                    float32x4_t a9, __int64 a10, __int64 a11);
+__int64 game_3b13a0(__int64 a1, _DWORD* a2, _DWORD* a3, float32x4_t* a4,
+                    float32x2_t* a5, double a6, double a7, double a8, double a9,
+                    float32x4_t a10, double a11, double a12, float32x4_t a13,
+                    __int64 a14, __int64 a15);
+
+bool game_3b1230(__int64 a1, __int64 a2, float* a3, float* a4, float* a5,
+                 __int64 a6, __int64 a7)
+{
+
+#pragma clang fp contract(off)
+  return physx_source_geomutils_src_469a30(a1, a2, a3, a4, a5, a6, a7);
+}
+
+bool game_3b1240(__int64 a1, float* a2, __int64 a3, float32x4_t* a4, float* a5,
+                 __int64 a6, __int64 a7)
+{
+
+#pragma clang fp contract(off)
+  return physx_source_geomutils_src_469330(a1, a2, a3, a4, a5, a6, a7);
+}
+
+__int64 game_3b1370(__int64 a1, __int64 a2, _DWORD* a3, _DWORD* a4,
+                    float32x2_t* a5, float32x4_t a6, float32x4_t a7, __int64 a8,
+                    __int64 a9)
+{
+
+#pragma clang fp contract(off)
+  return GameRoutine_4f71f0(a1, a2, a3, a4, a5, a6, a7, a8, a9);
+}
+
+__int64 game_3b1380(__int64 a1, double a2, float32x2_t a3, __int64 a4,
+                    float32x4_t* a5, float32x4_t* a6, int32x2_t* a7, __int64 a8,
+                    __int64 a9)
+{
+
+#pragma clang fp contract(off)
+  return physx_source_geomutils_src_pcm_4f70c0(a1, a2, a3, a4, a5, a6, a7, a8,
+                                               a9);
+}
+
+__int64 game_3b1390(__int64 a1, __int64 a2, _DWORD* a3, int32x4_t* a4,
+                    float32x2_t* a5, float32x4_t a6, double a7, double a8,
+                    float32x4_t a9, __int64 a10, __int64 a11)
+{
+
+#pragma clang fp contract(off)
+  return GameRoutine_4f21f0(a1, a2, a3, a4, a5, a6, a7, a8, a9, a10, a11);
+}
+
+__int64 game_3b13a0(__int64 a1, _DWORD* a2, _DWORD* a3, float32x4_t* a4,
+                    float32x2_t* a5, double a6, double a7, double a8, double a9,
+                    float32x4_t a10, double a11, double a12, float32x4_t a13,
+                    __int64 a14, __int64 a15)
+{
+
+#pragma clang fp contract(off)
+  return physx_source_geomutils_src_pcm_4f1e20(
+      a1, a2, a3, a4, a5, a6, a7, a8, a9, a10, a11, a12, a13, a14, a15);
+}
 
 float game_5eaef0(__int64 a1, float32x4_t* a2, float a3, float a4, float a5,
                   float a6, double a7, double a8)

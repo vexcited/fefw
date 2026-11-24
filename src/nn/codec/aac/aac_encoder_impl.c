@@ -6,6 +6,11 @@ __int64 nn_detail_UnexpectedDefaultImpl_plt_857150(_QWORD);
 extern unsigned int SdkData_bb0590[8];
 __int64 aac_encoder_362b40(__int64 result);
 __int64 aac_encoder_362ba0(int a1);
+void __attribute__((noreturn)) aac_encoder_36269c();
+void __attribute__((noreturn)) aac_encoder_3626e8();
+void __attribute__((noreturn)) aac_encoder_36269c() { GameRoutine_857150(); }
+
+void __attribute__((noreturn)) aac_encoder_3626e8() { GameRoutine_857150(); }
 
 __int64 aac_encoder_362b40(__int64 result)
 {

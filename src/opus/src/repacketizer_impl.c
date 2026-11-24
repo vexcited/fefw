@@ -12,6 +12,49 @@ __int64 opus_packet_parse_impl(_QWORD, _QWORD, _QWORD, _QWORD, _QWORD, _QWORD,
 __int64 opus_repacketizer_out_range_impl(char* a1, unsigned int a2, int a3,
                                          _BYTE* a4, int a5, int a6, int a7);
 __int64 opus_packet_pad(_BYTE* a1, unsigned int a2, int a3);
+__int64 repacketizer_6ed50(unsigned __int8* a1, unsigned __int8* a2, int a3);
+
+__int64 repacketizer_6ed50(unsigned __int8* a1, unsigned __int8* a2, int a3)
+{
+
+#pragma clang fp contract(on)
+
+  __int64 result;
+  int v9;
+  __int64 v10;
+  int v11;
+  _BYTE v12[4];
+
+  if (a3 < 1) {
+    return 4294967292LL;
+  }
+  if (*((_DWORD*)a1 + 1) != 0) {
+    if ((*a2 ^ (unsigned int)*a1) > 3) {
+      return 4294967292LL;
+    }
+  }
+  else {
+    *a1 = *a2;
+    *((_DWORD*)a1 + 122) = GameRoutine_84620(a2, 8000);
+  }
+  v9 = GameRoutine_84680(a2, (unsigned int)a3);
+  if (v9 < 1) {
+    return 4294967292LL;
+  }
+  v10 = *((int*)a1 + 1);
+  if ((signed __int32)(((int)v10 + v9) * *((_DWORD*)a1 + 122)) > 960) {
+    return 4294967292LL;
+  }
+  v11 = v9;
+  v12[0] = 0;
+  result = GameRoutine_66220(a2, a3, 0, v12, (__int64)&a1[8 * v10 + 8],
+                             &a1[2 * v10 + 392], nullptr, nullptr);
+  if ((int)result >= 1) {
+    *((_DWORD*)a1 + 1) += v11;
+    return 0;
+  }
+  return result;
+}
 
 __int64 opus_repacketizer_out_range_impl(char* a1, unsigned int a2, int a3,
                                          _BYTE* a4, int a5, int a6, int a7)

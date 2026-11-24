@@ -4,6 +4,43 @@
 
 __int64 opus_decoder_68420(__int64 result, __int64 a2, __int64 a3, int a4,
                            unsigned int a5, __int16* a6, int a7);
+__int64 opus_decoder_67ec0(__int64 a1, _BYTE* a2, int a3);
+
+__int64 opus_decoder_67ec0(__int64 a1, _BYTE* a2, int a3)
+{
+
+#pragma clang fp contract(on)
+
+  unsigned int v3;
+  int v5;
+  unsigned int v6;
+
+  if (a3 < 1) {
+    return 0xFFFFFFFFLL;
+  }
+  v3 = *(_DWORD*)(a1 + 12);
+  if ((*a2 & 3) != 0) {
+    if ((*a2 & 3) == 3) {
+      if (a3 == 1) {
+        return 4294967292LL;
+      }
+      v5 = a2[1] & 0x3F;
+    }
+    else {
+      v5 = 2;
+    }
+  }
+  else {
+    v5 = 1;
+  }
+  v6 = GameRoutine_84620(a2, v3) * v5;
+  if ((int)(25 * v6) <= (int)(3 * v3)) {
+    return v6;
+  }
+  else {
+    return 4294967292LL;
+  }
+}
 
 __int64 opus_decoder_68420(__int64 result, __int64 a2, __int64 a3, int a4,
                            unsigned int a5, __int16* a6, int a7)

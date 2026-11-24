@@ -16,6 +16,18 @@ __int64 nn_os_SignalSystemEvent_plt(_QWORD);
 __int64
 movie_detail_AudioDecoderImpl_ExecuteAudioDecoderThreadBody(void* this_);
 __int64 movie_detail_AudioDecoderImpl_DeallocateWorkerBuffer(__int64 result);
+__int64 movie_audio_decoder_6a40(__int64 a1, int a2);
+
+__int64 movie_audio_decoder_6a40(__int64 a1, int a2)
+{
+  if ((unsigned int)(a2 - 65) < 2) {
+    return 0;
+  }
+  if (a2 == 67 && (*(_BYTE*)(a1 + 9912) & 1) != 0) {
+    return 0;
+  }
+  return 47;
+}
 
 __int64 movie_detail_AudioDecoderImpl_ExecuteAudioDecoderThreadBody(void* this_)
 {

@@ -31,6 +31,13 @@ void llvm_libcxx_21_libcxx_include___memory_1989340(__int64* a1, _QWORD* a2,
 void llvm_libcxx_21_libcxx_include___memory_198ad80(__int64 a1, int a2,
                                                     __int64 a3,
                                                     unsigned __int64 a4);
+__int64 GameRoutine_2b0();
+__int64 llvm_libcxx_21_libcxx_include___memory_a96fe4();
+
+__int64 llvm_libcxx_21_libcxx_include___memory_a96fe4()
+{
+  return GameRoutine_2b0();
+}
 
 void llvm_libcxx_21_libcxx_include___memory_1989340(__int64* a1, _QWORD* a2,
                                                     __int64 a3,

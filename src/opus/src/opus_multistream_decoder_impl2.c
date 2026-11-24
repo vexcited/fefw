@@ -34,6 +34,8 @@ __int64 opus_multistream_decode(int* a1, __int64 a2, int a3, __int64 a4, int a5,
                                 unsigned int a6);
 __int64 opus_multistream_decode_float(int* a1, __int64 a2, int a3, __int64 a4,
                                       int a5, unsigned int a6);
+__int64 opus_multistream_decoder_75b60(__int64 result, int a2, int a3,
+                                       _WORD* a4, int a5, int a6);
 
 __int64 opus_multistream_decoder_create(unsigned int a1, unsigned int a2,
                                         int a3, unsigned int a4, __int64 a5,
@@ -292,6 +294,152 @@ __int64 opus_multistream_decode(int* a1, __int64 a2, int a3, __int64 a4, int a5,
       (void (*)(__int64, __int64, _QWORD, char*, __int64, _QWORD,
                 __int64))MovieRoutine_75b60,
       a5, a6, 0, 0);
+}
+
+__int64 opus_multistream_decoder_75b60(__int64 result, int a2, int a3,
+                                       _WORD* a4, int a5, int a6)
+{
+
+#pragma clang fp contract(on)
+
+  __int64 v6;
+  __int64 v7;
+  __int64 v8;
+  __int64 v9;
+  __int64 v10;
+  __int64 v11;
+  __int64 v12;
+  __int64 v13;
+  __int64 v14;
+  _WORD* v15;
+  __int64 v16;
+  _WORD* v17;
+  _WORD* v18;
+  __int16* v19;
+  __int16 v20;
+  __int16* v21;
+  _WORD* v22;
+  __int16 v23;
+  __int16* v24;
+  _WORD* v25;
+  __int16 v26;
+  __int16* v27;
+  _WORD* v28;
+  __int16 v29;
+  __int16* v30;
+  _WORD* v31;
+  __int16 v32;
+  __int16* v33;
+  __int16* v34;
+  __int16* v35;
+  _WORD* v36;
+  __int16 v37;
+  _WORD* v38;
+  _WORD* v39;
+  _WORD* v40;
+  _WORD* v41;
+  _WORD* v42;
+  _WORD* v43;
+  _WORD* v44;
+  _WORD* v45;
+
+  if (a4 != nullptr) {
+    if (a6 >= 1) {
+      v6 = a5;
+      v7 = a2;
+      v8 = a6 & 7;
+      v9 = a2;
+      v10 = a5;
+      if ((unsigned int)a6 >= 8) {
+        v15 = (_WORD*)(result + 2LL * a3);
+        v16 = a6 & 0x7FFFFFF8;
+        v11 = 0;
+        v17 = a4;
+        do {
+          v18 = &v15[v7];
+          v11 += 8;
+          *v15 = *v17;
+          v19 = &v17[v6];
+          v15 += 8 * v7;
+          v17 += 8 * v6;
+          v20 = *v19;
+          v21 = &v19[v10];
+          *v18 = v20;
+          v22 = &v18[v9];
+          v23 = *v21;
+          v24 = &v21[v10];
+          *v22 = v23;
+          v25 = &v22[v9];
+          v26 = *v24;
+          v27 = &v24[v10];
+          *v25 = v26;
+          v28 = &v25[v9];
+          v29 = *v27;
+          v30 = &v27[v10];
+          *v28 = v29;
+          v31 = &v28[v9];
+          v32 = *v30;
+          v33 = &v30[v10];
+          *v31 = v32;
+          v34 = &v31[v9];
+          *v34 = *v33;
+          v34[v9] = v33[v10];
+        } while (v16 != v11);
+      }
+      else {
+        v11 = 0;
+      }
+      if (v8 != 0) {
+        v35 = &a4[v11 * v6];
+        v36 = (_WORD*)(result + 2 * v11 * v7 + 2LL * a3);
+        do {
+          v37 = *v35;
+          v35 = (__int16*)((char*)v35 + v10 * 2);
+          --v8;
+          *v36 = v37;
+          v36 = (_WORD*)((char*)v36 + v9 * 2);
+        } while (v8 != 0);
+      }
+    }
+  }
+  else if (a6 >= 1) {
+    v12 = a6 & 7;
+    v13 = a2;
+    if ((unsigned int)a6 >= 8) {
+      v38 = (_WORD*)(result + 2LL * a3);
+      v14 = 0;
+      do {
+        v39 = &v38[a2];
+        *v38 = 0;
+        v14 += 8;
+        v38 += 8 * a2;
+        *v39 = 0;
+        v40 = &v39[v13];
+        *v40 = 0;
+        v41 = &v40[v13];
+        *v41 = 0;
+        v42 = &v41[v13];
+        *v42 = 0;
+        v43 = &v42[v13];
+        *v43 = 0;
+        v44 = &v43[v13];
+        *v44 = 0;
+        v44[a2] = 0;
+      } while ((a6 & 0x7FFFFFF8) != v14);
+    }
+    else {
+      v14 = 0;
+    }
+    if ((a6 & 7) != 0) {
+      v45 = (_WORD*)(result + 2 * v14 * a2 + 2LL * a3);
+      do {
+        *v45 = 0;
+        v45 = (_WORD*)((char*)v45 + v13 * 2);
+        --v12;
+      } while (v12 != 0);
+    }
+  }
+  return result;
 }
 
 __int64 opus_multistream_decode_float(int* a1, __int64 a2, int a3, __int64 a4,

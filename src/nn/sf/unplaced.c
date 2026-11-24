@@ -54,6 +54,7 @@ __int64 nn_sf_180780(__int64 a1, const char* a2);
 __int64 nn_sf_180840(__int64 a1, _DWORD* a2, int a3);
 __int64 nn_sf_1809c0(__int64 a1, _DWORD* a2, const char* a3);
 __int64 nn_sf_180b60(__int64 a1, int a2);
+__int64 unplaced_17f800(__int64 a1, __int64* a2);
 
 __int64 nn_sf_b8390(__int64 a1, _QWORD* a2)
 {
@@ -556,6 +557,44 @@ __int64 nn_sf_17f6d0(__int64 a1, __int64 a2)
     }
   }
   return result;
+}
+
+__int64 unplaced_17f800(__int64 a1, __int64* a2)
+{
+  __int64 v2;
+  __int64 v3;
+  __int64 v6;
+  __int64 v7;
+  __int64 v8;
+  __int64 v9;
+  _QWORD v11[4];
+
+  if (*(int*)(a1 + 72) >= 1) {
+    v11[2] = v2;
+    v11[3] = v3;
+    v6 = 0;
+    do {
+      (*(__attribute__((swiftcall)) void (**)(PSEUDO_X8, _QWORD, _QWORD))(
+          **(_QWORD**)(a1 + 16) + 32LL))(
+          (void*)(v11), *(_QWORD*)(a1 + 16),
+          *(unsigned int*)(*(_QWORD*)(a1 + 24) + 4 * v6));
+      v7 = v11[0];
+      v8 = v11[1];
+      v9 = *a2;
+      v11[0] = 0;
+      *a2 = v7;
+      a2[1] = v8;
+      if (v9 != 0) {
+        (*(void (**)(__int64))(*(_QWORD*)v9 + 8LL))(v9);
+        if (v11[0] != 0) {
+          (*(void (**)(_QWORD))(*(_QWORD*)v11[0] + 8LL))(v11[0]);
+        }
+      }
+      ++v6;
+      a2 += 2;
+    } while (v6 < *(int*)(a1 + 72));
+  }
+  return 0;
 }
 
 __int64 nn_sf_17f8c0(__int64 a1, _QWORD* a2)

@@ -686,6 +686,9 @@ __int64 cuda_driver_misc_helpers_decc0(__int64 a1);
 __int64 cuda_driver_misc_helpers_ded50(__int64 a1, __int64* a2,
                                        unsigned int a3);
 __int64 cuda_driver_misc_helpers_deeb0(__int64 a1, char a2);
+__int64 cuda_driver_misc_helpers_17800(int a1, int a2, unsigned int a3,
+                                       unsigned int a4, unsigned int a5,
+                                       __int64* a6, __int64* a7);
 
 __int64 cuda_driver_misc_helpers_3b40(_DWORD* a1, unsigned int a2)
 {
@@ -2312,6 +2315,208 @@ __int64 cuda_driver_misc_helpers_177d0(__int64 a1, _QWORD* a2, _DWORD* a3)
     *a2 = 6240;
     *a3 = 8;
     return 0;
+  }
+  return result;
+}
+
+__int64 cuda_driver_misc_helpers_17800(int a1, int a2, unsigned int a3,
+                                       unsigned int a4, unsigned int a5,
+                                       __int64* a6, __int64* a7)
+{
+
+#pragma clang fp contract(on)
+
+  __int64 result;
+  __int64 v9;
+  __int64 v10;
+  __int64 v11;
+
+  if (a2 > 1) {
+    if (a2 == 2) {
+      result = 4;
+      v11 = (unsigned int)(a1 - 7);
+      v9 = 42496LL * a3 + 664LL * a4 + 16;
+      v10 = 584;
+      switch (v11) {
+      case 0LL:
+        goto LABEL_21;
+      case 2LL:
+        result = 4;
+        v10 = 544;
+        goto LABEL_21;
+      case 3LL:
+        result = 4;
+        v10 = 548;
+        goto LABEL_21;
+      case 4LL:
+        result = 4;
+        v10 = 552;
+        goto LABEL_21;
+      case 5LL:
+        result = 4;
+        v10 = 556;
+        goto LABEL_21;
+      case 6LL:
+        result = 4;
+        v10 = 560;
+        goto LABEL_21;
+      case 7LL:
+        result = 4;
+        v10 = 564;
+        goto LABEL_21;
+      case 8LL:
+        result = 8;
+        v10 = 536;
+        goto LABEL_21;
+      case 10LL:
+        result = 4;
+        v10 = 524;
+        goto LABEL_21;
+      case 11LL:
+        result = 4;
+        v10 = 528;
+        goto LABEL_21;
+      case 12LL:
+        result = 4;
+        v10 = 532;
+        goto LABEL_21;
+      case 13LL:
+        result = 4;
+        v10 = 576;
+        goto LABEL_21;
+      case 14LL:
+        result = 4;
+        v10 = 588;
+        goto LABEL_21;
+      case 15LL:
+        result = 4;
+        v10 = 592;
+        goto LABEL_21;
+      case 16LL:
+        result = 4;
+        v10 = 596;
+        goto LABEL_21;
+      case 17LL:
+        result = 4;
+        v10 = 580;
+        goto LABEL_21;
+      case 18LL:
+        result = 4;
+        v10 = 612;
+        goto LABEL_21;
+      case 19LL:
+        result = 8;
+        v10 = 616;
+        goto LABEL_21;
+      case 20LL:
+        result = 4;
+        v10 = 608;
+        goto LABEL_21;
+      case 21LL:
+        result = 8;
+        v10 = 568;
+        goto LABEL_21;
+      case 24LL:
+        result = 8;
+        v10 = 624;
+        goto LABEL_21;
+      case 27LL:
+        result = 4;
+        v10 = 632;
+        goto LABEL_21;
+      case 28LL:
+        result = 8;
+        v10 = 600;
+        goto LABEL_21;
+      case 34LL:
+        result = 4;
+        v10 = 512;
+        goto LABEL_21;
+      case 35LL:
+        result = 4;
+        v10 = 516;
+        goto LABEL_21;
+      case 39LL:
+        result = 4;
+        v10 = 636;
+        goto LABEL_21;
+      case 40LL:
+        result = 1;
+        v10 = 660;
+        goto LABEL_21;
+      case 41LL:
+        result = 1;
+        v10 = 661;
+        goto LABEL_21;
+      case 42LL:
+        result = 4;
+        v10 = 640;
+        goto LABEL_21;
+      case 43LL:
+        result = 4;
+        v10 = 644;
+        goto LABEL_21;
+      case 44LL:
+        result = 8;
+        v10 = 648;
+        goto LABEL_21;
+      case 45LL:
+        result = 4;
+        v10 = 656;
+        goto LABEL_21;
+      default:
+        return result;
+      }
+    }
+    else {
+      if (a2 != 3) {
+      LABEL_10:
+        *a6 = 0;
+        *a7 = 0;
+        return 4;
+      }
+      result = 4;
+      v9 = 42496LL * a3 + 664LL * a4 + 16LL * a5 + 16;
+      if (a1 == 44) {
+        v10 = 0;
+        goto LABEL_21;
+      }
+      if (a1 == 45) {
+      LABEL_15:
+        v10 = 4;
+        result = 4;
+      LABEL_21:
+        *a6 = v10;
+        *a7 = result;
+        *a6 += v9;
+        return 0;
+      }
+    }
+  }
+  else {
+    if (a2 != 0) {
+      if (a2 == 1) {
+        return 4;
+      }
+      goto LABEL_10;
+    }
+    result = 4;
+    switch (a1) {
+    case 0:
+      v10 = 0;
+      v9 = 0;
+      goto LABEL_21;
+    case 3:
+      v10 = 8;
+      result = 8;
+      v9 = 0;
+      goto LABEL_21;
+    case 1:
+      v9 = 0;
+      goto LABEL_15;
+    default:
+      break;
+    }
   }
   return result;
 }

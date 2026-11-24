@@ -25,6 +25,20 @@ bool physx_source_geomutils_src_pcm_4dce40(
     __int64* a6, __int64 a7, double a8, double a9, double a10, double a11,
     float32x4_t a12, double a13, double a14, float32x4_t a15);
 __int64 physx_source_geomutils_src_pcm_5017e0(__int64 result, __int64 a2);
+extern __int128 GameData_1a82dd0;
+extern __int128 GameData_1a83090;
+extern __int128 GameData_1a83610;
+extern __int128 GameData_1a837f0;
+extern __int128 GameData_1a83930;
+__int64 physx_source_geomutils_src_pcm_4f1e20(
+    __int64 a1, _DWORD* a2, _DWORD* a3, float32x4_t* a4, float32x2_t* a5,
+    double a6, double a7, double a8, double a9, float32x4_t a10, double a11,
+    double a12, float32x4_t a13, __int64 a14, __int64 a15);
+__int64 physx_source_geomutils_src_pcm_4f70c0(__int64 a1, double a2,
+                                              float32x2_t a3, __int64 a4,
+                                              float32x4_t* a5, float32x4_t* a6,
+                                              int32x2_t* a7, __int64 a8,
+                                              __int64 a9);
 
 bool physx_source_geomutils_src_pcm_4dce40(
     __int64 a1, __int64 a2, int8x16_t* a3, int32x4_t* a4, int32x2_t* a5,
@@ -1017,6 +1031,533 @@ bool physx_source_geomutils_src_pcm_4dce40(
   }
   return physx_Gu_MultiplePersistentContactManifold_addManifoldContactsToContactBuffer_501460(
       v21, a7, v266, v265, &v268);
+}
+
+__int64 physx_source_geomutils_src_pcm_4f1e20(
+    __int64 a1, _DWORD* a2, _DWORD* a3, float32x4_t* a4, float32x2_t* a5,
+    double a6, double a7, double a8, double a9, float32x4_t a10, double a11,
+    double a12, float32x4_t a13, __int64 a14, __int64 a15)
+{
+  float32x4_t v15;
+  int32x4_t v16;
+  int32x4_t v17;
+  float32x2_t v18;
+  float v19;
+  int8x16_t v20;
+  int8x8_t v21;
+  int8x8_t v22;
+  int8x16_t v23;
+  float32x4_t v24;
+  int8x8_t v25;
+  int8x8_t v26;
+  float32x4_t v27;
+  float32x4_t v28;
+  float32x2_t v29;
+  int8x16_t v30;
+  float32x4_t v31;
+  float32x4_t v32;
+  float32x4_t v33;
+  float32x4_t v34;
+  float32x4_t v35;
+  float32x4_t v36;
+  float32x2_t v37;
+  unsigned __int8 v38;
+  int8x16_t v39;
+  unsigned __int64 v40;
+  float32x2_t v41;
+  float32x2_t v42;
+  float32x2_t v43;
+  float32x2_t v44;
+  float32x2_t v45;
+  float32x2_t v46;
+  float32x2_t v47;
+  float32x2_t v48;
+  float32x2_t v49;
+  float32x2_t v50;
+  float32x2_t v51;
+  float32x4_t v52;
+  int8x16_t v53;
+  unsigned __int32 v54;
+  int8x8_t v55;
+  float32x4_t v56;
+  int8x8_t v57;
+  int8x16_t v58;
+  float32x4_t v59;
+  float32x4_t v60;
+  float32x4_t v61;
+  float32x4_t v62;
+  float32x4_t v63;
+  int8x16_t v64;
+  float32x4_t v65;
+  int8x16_t v66;
+  float32x4_t v67;
+  int8x16_t v68;
+  int32x4_t v69;
+  int8x8_t v70;
+  int8x8_t v71;
+  int8x8_t v72;
+  float32x4_t v73;
+  float32x4_t v74;
+  int8x16_t v75;
+  int8x16_t v76;
+  int16x4_t v77;
+  int8x16_t v78;
+  float32x4_t v79;
+  int8x8_t v80;
+  float32x4_t v81;
+  int8x16_t v82;
+  float32x4_t v83;
+  float32x4_t v84;
+  float32x4_t v85;
+  unsigned int v86;
+  float32x4_t* v87;
+
+  LANES128(a13).n128_u64[0] = *((_QWORD*)a3 + 2);
+  LANES128(a10).n128_u64[0] = LANES128(a4[1]).n128_u64[0];
+  v16 = *a4;
+  v20 = *a4;
+  v17 = vdupq_laneq_s32(*a4, 3);
+  LANES128(v15).n128_u32[0] = a2[2];
+  {
+    __typeof__(a6) z_ = (__typeof__(a6)){0};
+    LODWORD(z_) = *(_DWORD*)(a1 + 8);
+    a6 = z_;
+  }
+  LANES64(v18).n64_u64[0] =
+      LANES64_OF(vadd_f32(*(float32x2_t*)&a6,
+                          COERCE_AS(float32x2_t, LANES64(*(a5)).n64_u64[0])))
+          .n64_u64[0];
+  {
+    __typeof__(v19) z_ = (__typeof__(v19)){0};
+    LODWORD(z_) =
+        LANES64_OF(vmla_f32(COERCE_AS(float32x2_t, 0xBF000000BF000000LL),
+                            COERCE_AS(float32x2_t, LANES128(v17).n128_u64[0]),
+                            COERCE_AS(float32x2_t, LANES128(v17).n128_u64[0])))
+            .n64_u32[0];
+    v19 = z_;
+  }
+  LANES128(v15).n128_u32[1] = a2[3];
+  LANES128(v20).n128_u32[3] = 0;
+  LANES128(a13).n128_u32[2] = a3[6];
+  LANES128(a10).n128_u32[2] = LANES128(a4[1]).n128_u32[2];
+  LANES64(v21).n64_u64[0] = LANES128_OF(vextq_s8(v20, v20, 8u)).n128_u64[0];
+  LANES128(v15).n128_u32[2] = a2[4];
+  LANES64(v22).n64_u64[0] =
+      LANES64_OF(
+          vext_s8(COERCE_AS(int8x8_t, LANES128(*(a4)).n128_u64[0]), v21, 4u))
+          .n64_u64[0];
+  v23 = vsubq_f32(a13, a10);
+  v24 = vmulq_n_f32(v23, v19);
+  LANES128(v24).n128_u32[3] = 0;
+  LANES64(v25).n64_u64[0] =
+      LANES64_OF(
+          vmls_f32(
+              vmul_f32(v21, COERCE_AS(float32x2_t, LANES128(v23).n128_u64[0])),
+              COERCE_AS(float32x2_t, LANES128(*(a4)).n128_u64[0]),
+              COERCE_AS(float32x2_t,
+                        LANES128_OF(vextq_s8(v23, v23, 8u)).n128_u64[0])))
+          .n64_u64[0];
+  LANES64(v26).n64_u64[0] =
+      LANES64_OF(
+          vmls_f32(
+              vmul_f32(
+                  COERCE_AS(float32x2_t, LANES128(*(a4)).n128_u64[0]),
+                  COERCE_AS(float32x2_t,
+                            LANES128_OF(vextq_s8(v23, v23, 4u)).n128_u64[0])),
+              v22, COERCE_AS(float32x2_t, LANES128(v23).n128_u64[0])))
+          .n64_u64[0];
+  v27 = vmulq_f32(v20, v23);
+  LANES128(v27).n128_u64[0] = LANES128_OF(vpaddq_f32(v27, v27)).n128_u64[0];
+  LANES128(v28).n128_u64[0] = LANES64_OF(vext_s8(v26, v25, 4u)).n64_u64[0];
+  LANES128(v28).n128_u64[1] = LANES64(v26).n64_u32[0];
+  LANES64(v29).n64_u64[0] =
+      LANES64_OF(vdup_lane_s32(vmul_f32(v18, v18), 0)).n64_u64[0];
+  v30 = vmlsq_laneq_f32(v24, v28, *a4, 3);
+  LANES128(v30).n128_u64[1] = LANES128_OF(vextq_s8(v30, v30, 8u)).n128_u32[0];
+  v31 = vmlaq_n_f32(
+      v30, v20,
+      LANES64_OF(vpadd_f32(COERCE_AS(float32x2_t, LANES128(v27).n128_u64[0]),
+                           COERCE_AS(float32x2_t, LANES128(v27).n128_u64[0])))
+          .n64_f32[0]);
+  v32 = vnegq_f32(v15);
+  v33 = vaddq_f32(v31, v31);
+  LANES128(v32).n128_u32[3] = 0;
+  LANES128(v33).n128_u32[3] = 0;
+  v34 = vmaxq_f32(vminq_f32(v33, v15), v32);
+  v35 = vsubq_f32(v33, v34);
+  v36 = vmulq_f32(v35, v35);
+  LANES128(v36).n128_u64[0] = LANES128_OF(vpaddq_f32(v36, v36)).n128_u64[0];
+  LANES64(v37).n64_u64[0] =
+      LANES64_OF(vpadd_f32(COERCE_AS(float32x2_t, LANES128(v36).n128_u64[0]),
+                           COERCE_AS(float32x2_t, LANES128(v36).n128_u64[0])))
+          .n64_u64[0];
+  v38 = LANES64_OF(vcgt_f32(v29, v37)).n64_u8[0];
+  if ((v38 & 1) != 0) {
+    v39 = vcgeq_f32(v15, vabsq_f32(v33));
+    v40 = LANES128_OF(vextq_s8(v39, v39, 8u)).n128_u64[0];
+    LANES128(v39).n128_u64[0] = LANES64_OF(vmovn_s32(v39)).n64_u64[0];
+    LANES128(v39).n128_u64[1] = v40;
+    if (LANES64_OF(
+            vuzp1_s8(
+                vdup_lane_s16(
+                    vceq_s32(COERCE_AS(int32x2_t,
+                                       (LANES64_OF(vmovn_s16(v39)).n64_u64[0] &
+                                        0xFFFFFF00FFFFFFLL)),
+                             COERCE_AS(int32x2_t, 0xFFFFFF00FFFFFFLL)),
+                    0),
+                *(int8x8_t*)&a6))
+            .n64_u32[0] == -1) {
+      v69 = vsubq_f32(v15, vabsq_f32(v34));
+      LANES64(v70).n64_u64[0] =
+          LANES64_OF(
+              vdup_lane_s32(COERCE_AS(int32x2_t, LANES128(v69).n128_u64[0]), 0))
+              .n64_u64[0];
+      LANES64(v71).n64_u64[0] = LANES64_OF(vdup_laneq_s32(v69, 2)).n64_u64[0];
+      LANES64(v72).n64_u64[0] =
+          LANES64_OF(
+              vdup_lane_s32(COERCE_AS(int32x2_t, LANES128(v69).n128_u64[0]), 1))
+              .n64_u64[0];
+      LANES128(v73).n128_u64[0] = LANES64(v70).n64_u64[0];
+      LANES128(v74).n128_u64[0] = LANES64(v71).n64_u64[0];
+      LANES128(v73).n128_u64[1] = LANES64(v70).n64_u32[0];
+      LANES128(v74).n128_u64[1] = LANES64(v71).n64_u32[0];
+      v75 = vcgeq_f32(v69, v74);
+      v76 = vcgeq_f32(v69, v73);
+      LANES128(v74).n128_u64[0] =
+          LANES128_OF(vextq_s8(v75, v75, 8u)).n128_u64[0];
+      LANES128(v75).n128_u64[0] = LANES64_OF(vmovn_s32(v75)).n64_u64[0];
+      LANES128(v73).n128_u64[0] =
+          LANES128_OF(vextq_s8(v76, v76, 8u)).n128_u64[0];
+      LANES128(v76).n128_u64[0] = LANES64_OF(vmovn_s32(v76)).n64_u64[0];
+      LANES128(v75).n128_u64[1] = LANES128(v74).n128_u64[0];
+      LANES128(v76).n128_u64[1] = LANES128(v73).n128_u64[0];
+      LANES128(v75).n128_u64[0] =
+          LANES64_OF(vceq_s32(COERCE_AS(int32x2_t,
+                                        (LANES64_OF(vmovn_s16(v75)).n64_u64[0] &
+                                         0xFFFFFF00FFFFFFLL)),
+                              COERCE_AS(int32x2_t, 0xFFFFFF00FFFFFFLL)))
+              .n64_u64[0];
+      LANES64(v77).n64_u64[0] =
+          LANES64_OF(vceq_s32(COERCE_AS(int32x2_t,
+                                        (LANES64_OF(vmovn_s16(v76)).n64_u64[0] &
+                                         0xFFFFFF00FFFFFFLL)),
+                              COERCE_AS(int32x2_t, 0xFFFFFF00FFFFFFLL)))
+              .n64_u64[0];
+      v54 = LANES64_OF(
+                vneg_f32(vbsl_s8(
+                    vdup_lane_s32(
+                        COERCE_AS(int32x2_t, LANES128(v75).n128_u64[0]), 0),
+                    v71, vbsl_s8(vdup_lane_s32(v77, 0), v70, v72))))
+                .n64_u32[0];
+      v78 = vmulq_f32(
+          vbslq_s8(vcgezq_f32(v34), COERCE_AS(int8x16_t, GameData_1a837f0),
+                   COERCE_AS(int8x16_t, GameData_1a83930)),
+          vbslq_s8(vcltzq_s32(vshlq_n_s32(
+                       vmovl_u16(vdup_lane_s16(
+                           COERCE_AS(int16x4_t, LANES128(v75).n128_u64[0]), 0)),
+                       0x1Fu)),
+                   COERCE_AS(int8x16_t, GameData_1a83090),
+                   vbslq_s8(vcltzq_s32(vshlq_n_s32(
+                                vmovl_u16(vdup_lane_s16(v77, 0)), 0x1Fu)),
+                            COERCE_AS(int8x16_t, GameData_1a82dd0),
+                            COERCE_AS(int8x16_t, GameData_1a83610))));
+      v79 = vmulq_n_f32(v78, v19);
+      LANES128(v79).n128_u32[3] = 0;
+      LANES64(v80).n64_u64[0] =
+          LANES64_OF(
+              vmls_f32(
+                  vmul_f32(
+                      COERCE_AS(float32x2_t, LANES128(v16).n128_u64[0]),
+                      COERCE_AS(
+                          float32x2_t,
+                          LANES128_OF(vextq_s8(v78, v78, 4u)).n128_u64[0])),
+                  v22, COERCE_AS(float32x2_t, LANES128(v78).n128_u64[0])))
+              .n64_u64[0];
+      LANES128(v81).n128_u64[0] =
+          LANES64_OF(
+              vext_s8(v80,
+                      vmls_f32(
+                          vmul_f32(v21, COERCE_AS(float32x2_t,
+                                                  LANES128(v78).n128_u64[0])),
+                          COERCE_AS(float32x2_t, LANES128(v16).n128_u64[0]),
+                          COERCE_AS(
+                              float32x2_t,
+                              LANES128_OF(vextq_s8(v78, v78, 8u)).n128_u64[0])),
+                      4u))
+              .n64_u64[0];
+      LANES128(v81).n128_u64[1] = LANES64(v80).n64_u32[0];
+      v82 = vmlaq_f32(v79, v17, v81);
+      LANES128(v82).n128_u64[1] =
+          LANES128_OF(vextq_s8(v82, v82, 8u)).n128_u32[0];
+      v83 = vmulq_f32(v20, v78);
+      LANES128(v83).n128_u64[0] = LANES128_OF(vpaddq_f32(v83, v83)).n128_u64[0];
+      v84 = vmlaq_n_f32(
+          v82, v20,
+          LANES64_OF(
+              vpadd_f32(COERCE_AS(float32x2_t, LANES128(v83).n128_u64[0]),
+                        COERCE_AS(float32x2_t, LANES128(v83).n128_u64[0])))
+              .n64_f32[0]);
+      v62 = vaddq_f32(v84, v84);
+      LANES128(v62).n128_u32[3] = 0;
+      v85 = vmulq_n_f32(v62, *(float*)&v54);
+      LANES128(v85).n128_u32[3] = 0;
+      v68 = vsubq_f32(a13, v85);
+    }
+    else {
+      LANES64(v41).n64_u64[0] = LANES64_OF(vrsqrte_f32(v37)).n64_u64[0];
+      LANES64(v42).n64_u64[0] =
+          LANES64_OF(vmul_f32(v41, vrsqrts_f32(vmul_f32(v41, v41), v37)))
+              .n64_u64[0];
+      LANES64(v43).n64_u64[0] =
+          LANES64_OF(vmul_f32(v42, vrsqrts_f32(vmul_f32(v42, v42), v37)))
+              .n64_u64[0];
+      LANES64(v44).n64_u64[0] =
+          LANES64_OF(vmul_f32(v43, vrsqrts_f32(vmul_f32(v43, v43), v37)))
+              .n64_u64[0];
+      LANES64(v45).n64_u64[0] =
+          LANES64_OF(vmul_f32(v44, vrsqrts_f32(vmul_f32(v44, v44), v37)))
+              .n64_u64[0];
+      LANES64(v46).n64_u64[0] = LANES64_OF(vrecpe_f32(v45)).n64_u64[0];
+      LANES64(v47).n64_u64[0] =
+          LANES64_OF(vmul_f32(v46, vrecps_f32(v45, v46))).n64_u64[0];
+      LANES64(v48).n64_u64[0] =
+          LANES64_OF(vmul_f32(v47, vrecps_f32(v45, v47))).n64_u64[0];
+      LANES64(v49).n64_u64[0] =
+          LANES64_OF(vmul_f32(v48, vrecps_f32(v45, v48))).n64_u64[0];
+      LANES64(v50).n64_u64[0] =
+          LANES64_OF(vmul_f32(v49, vrecps_f32(v45, v49))).n64_u64[0];
+      LANES64(v51).n64_u64[0] = LANES64_OF(vrecps_f32(v45, v50)).n64_u64[0];
+      v52 = vmulq_n_f32(v35, LANES64(v45).n64_f32[0]);
+      v53 = v52;
+      v54 = LANES64_OF(vmul_f32(v50, v51)).n64_u32[0];
+      LANES128(v53).n128_u32[3] = 0;
+      LANES64(v55).n64_u64[0] = LANES128_OF(vextq_s8(v53, v53, 8u)).n128_u64[0];
+      v56 = vmulq_n_f32(v53, v19);
+      LANES128(v56).n128_u32[3] = 0;
+      LANES64(v57).n64_u64[0] =
+          LANES64_OF(
+              vmls_f32(
+                  vmul_f32(
+                      COERCE_AS(float32x2_t, LANES128(v16).n128_u64[0]),
+                      vext_s8(COERCE_AS(int8x8_t, LANES128(v52).n128_u64[0]),
+                              v55, 4u)),
+                  v22, COERCE_AS(float32x2_t, LANES128(v52).n128_u64[0])))
+              .n64_u64[0];
+      LANES128(v52).n128_u64[0] =
+          LANES64_OF(
+              vext_s8(
+                  v57,
+                  vmls_f32(vmul_f32(v21, COERCE_AS(float32x2_t,
+                                                   LANES128(v52).n128_u64[0])),
+                           COERCE_AS(float32x2_t, LANES128(v16).n128_u64[0]),
+                           v55),
+                  4u))
+              .n64_u64[0];
+      LANES128(v52).n128_u64[1] = LANES64(v57).n64_u32[0];
+      v58 = vmlaq_f32(v56, v17, v52);
+      LANES128(v58).n128_u64[1] =
+          LANES128_OF(vextq_s8(v58, v58, 8u)).n128_u32[0];
+      v59 = vmulq_f32(v20, v53);
+      LANES128(v59).n128_u64[0] = LANES128_OF(vpaddq_f32(v59, v59)).n128_u64[0];
+      v60 = vmlaq_n_f32(
+          v58, v20,
+          LANES64_OF(
+              vpadd_f32(COERCE_AS(float32x2_t, LANES128(v59).n128_u64[0]),
+                        COERCE_AS(float32x2_t, LANES128(v59).n128_u64[0])))
+              .n64_f32[0]);
+      v61 = vmulq_n_f32(v34, v19);
+      LANES128(v61).n128_u32[3] = 0;
+      v62 = vaddq_f32(v60, v60);
+      LANES128(v62).n128_u32[3] = 0;
+      LANES128(v60).n128_u64[0] =
+          LANES64_OF(
+              vmls_f32(
+                  vmul_f32(
+                      COERCE_AS(float32x2_t, LANES128(v16).n128_u64[0]),
+                      COERCE_AS(
+                          float32x2_t,
+                          LANES128_OF(vextq_s8(v34, v34, 4u)).n128_u64[0])),
+                  v22, COERCE_AS(float32x2_t, LANES128(v34).n128_u64[0])))
+              .n64_u64[0];
+      LANES128(v63).n128_u64[0] =
+          LANES64_OF(
+              vext_s8(COERCE_AS(int8x8_t, LANES128(v60).n128_u64[0]),
+                      vmls_f32(
+                          vmul_f32(v21, COERCE_AS(float32x2_t,
+                                                  LANES128(v34).n128_u64[0])),
+                          COERCE_AS(float32x2_t, LANES128(v16).n128_u64[0]),
+                          COERCE_AS(
+                              float32x2_t,
+                              LANES128_OF(vextq_s8(v34, v34, 8u)).n128_u64[0])),
+                      4u))
+              .n64_u64[0];
+      LANES128(v63).n128_u64[1] = LANES128(v60).n128_u32[0];
+      v64 = vmlaq_f32(v61, v17, v63);
+      LANES128(v64).n128_u64[1] =
+          LANES128_OF(vextq_s8(v64, v64, 8u)).n128_u32[0];
+      v65 = vmulq_f32(v20, v34);
+      LANES128(v65).n128_u64[0] = LANES128_OF(vpaddq_f32(v65, v65)).n128_u64[0];
+      v66 = vmlaq_n_f32(
+          v64, v20,
+          LANES64_OF(
+              vpadd_f32(COERCE_AS(float32x2_t, LANES128(v65).n128_u64[0]),
+                        COERCE_AS(float32x2_t, LANES128(v65).n128_u64[0])))
+              .n64_f32[0]);
+      LANES128(v66).n128_u64[1] =
+          LANES128_OF(vextq_s8(v66, v66, 8u)).n128_u32[0];
+      LANES128(v67).n128_u64[0] = 0x4000000040000000LL;
+      LANES128(v67).n128_u64[1] = 0x4000000040000000LL;
+      v68 = vmlaq_f32(a10, v67, v66);
+      LANES128(v68).n128_u64[1] =
+          LANES128_OF(vextq_s8(v68, v68, 8u)).n128_u32[0];
+    }
+    v86 = *(_DWORD*)(a15 + 20480);
+    *(_DWORD*)(a15 + 20480) = v86 + 1;
+    v87 = (float32x4_t*)(a15 + 80LL * v86);
+    *v87 = v62;
+    v87[1] = v68;
+    LANES128(*(v87)).n128_f32[3] = *(float*)&v54 - *(float*)&a6;
+    LANES128(v87[3]).n128_u32[1] = -1;
+  }
+  return v38 & 1;
+}
+
+__int64 physx_source_geomutils_src_pcm_4f70c0(__int64 a1, double a2,
+                                              float32x2_t a3, __int64 a4,
+                                              float32x4_t* a5, float32x4_t* a6,
+                                              int32x2_t* a7, __int64 a8,
+                                              __int64 a9)
+{
+  int8x16_t v9;
+  float32x4_t v10;
+  float32x4_t v11;
+  int8x8_t v12;
+  int8x16_t v13;
+  int8x16_t v14;
+  int8x8_t v15;
+  float32x4_t v16;
+  float32x2_t v17;
+  int8x8_t v18;
+  int8x8_t v19;
+  float32x4_t v20;
+  float32x4_t v21;
+  int8x16_t v22;
+  int32x2_t v23;
+  unsigned __int8 v24;
+  float v25;
+  unsigned int v26;
+  float32x4_t v27;
+  int8x16_t* v28;
+  float32x4_t v29;
+  int8x16_t v30;
+  int8x16_t v31;
+
+  v9 = *a6;
+  v10 = a6[1];
+  v11 = a5[1];
+  v13 = *a6;
+  LANES128(v11).n128_u32[3] = 0;
+  LANES128(v10).n128_u32[3] = 0;
+  LANES64(v12).n64_u64[0] = LANES128_OF(vdupq_laneq_s32(*a6, 3)).n128_u64[0];
+  PSEUDO_LOW_LANE64(a3, n64_u32, *(_DWORD*)(a1 + 8));
+  LANES128(v13).n128_u32[3] = 0;
+  v14 = vsubq_f32(v11, v10);
+  LANES64(v15).n64_u64[0] = LANES128_OF(vextq_s8(v13, v13, 8u)).n128_u64[0];
+  v16 = vmulq_n_f32(
+      v14, LANES64_OF(
+               vmla_f32(COERCE_AS(float32x2_t, 0xBF000000BF000000LL), v12, v12))
+               .n64_f32[0]);
+  LANES128(v16).n128_u32[3] = 0;
+  LANES64(v17).n64_u64[0] =
+      LANES64_OF(
+          vext_s8(COERCE_AS(int8x8_t, LANES128(*(a6)).n128_u64[0]), v15, 4u))
+          .n64_u64[0];
+  LANES64(v18).n64_u64[0] =
+      LANES64_OF(
+          vmls_f32(
+              vmul_f32(v15, COERCE_AS(float32x2_t, LANES128(v14).n128_u64[0])),
+              COERCE_AS(float32x2_t, LANES128(*(a6)).n128_u64[0]),
+              COERCE_AS(float32x2_t,
+                        LANES128_OF(vextq_s8(v14, v14, 8u)).n128_u64[0])))
+          .n64_u64[0];
+  LANES64(v19).n64_u64[0] =
+      LANES64_OF(
+          vmls_f32(
+              vmul_f32(
+                  COERCE_AS(float32x2_t, LANES128(*(a6)).n128_u64[0]),
+                  COERCE_AS(float32x2_t,
+                            LANES128_OF(vextq_s8(v14, v14, 4u)).n128_u64[0])),
+              v17, COERCE_AS(float32x2_t, LANES128(v14).n128_u64[0])))
+          .n64_u64[0];
+  v20 = vmulq_f32(v13, v14);
+  LANES128(v20).n128_u64[0] = LANES128_OF(vpaddq_f32(v20, v20)).n128_u64[0];
+  LANES128(v21).n128_u64[0] = LANES64_OF(vext_s8(v19, v18, 4u)).n64_u64[0];
+  LANES128(v21).n128_u64[1] = LANES64(v19).n64_u32[0];
+  v22 = vmlsq_laneq_f32(v16, v21, *a6, 3);
+  LANES128(v22).n128_u64[1] = LANES128_OF(vextq_s8(v22, v22, 8u)).n128_u32[0];
+  LANES128(v22).n128_u64[0] =
+      LANES128_OF(
+          vmlaq_n_f32(
+              v22, v13,
+              LANES64_OF(
+                  vpadd_f32(COERCE_AS(float32x2_t, LANES128(v20).n128_u64[0]),
+                            COERCE_AS(float32x2_t, LANES128(v20).n128_u64[0])))
+                  .n64_f32[0]))
+          .n128_u64[0];
+  LANES64(v23).n64_u64[0] =
+      LANES64_OF(
+          vdup_lane_s32(
+              vsub_f32(
+                  vadd_f32(COERCE_AS(float32x2_t, LANES128(v22).n128_u64[0]),
+                           COERCE_AS(float32x2_t, LANES128(v22).n128_u64[0])),
+                  a3),
+              0))
+          .n64_u64[0];
+  v24 = LANES64_OF(
+            vcge_f32(vdup_lane_s32(
+                         COERCE_AS(int32x2_t, LANES64(*(a7)).n64_u64[0]), 0),
+                     v23))
+            .n64_u8[0];
+  if ((v24 & 1) != 0) {
+    {
+      __typeof__(v25) z_ = (__typeof__(v25)){0};
+      LODWORD(z_) = LANES64_OF(vadd_f32(v12, v12)).n64_u32[0];
+      v25 = z_;
+    }
+    v26 = *(_DWORD*)(a9 + 20480);
+    v27 = vmulq_n_f32(
+        v13,
+        LANES64_OF(vadd_f32(COERCE_AS(float32x2_t, LANES128(v9).n128_u64[0]),
+                            COERCE_AS(float32x2_t, LANES128(v9).n128_u64[0])))
+            .n64_f32[0]);
+    *(_DWORD*)(a9 + 20480) = v26 + 1;
+    LANES128(v27).n128_u32[3] = 0;
+    v28 = (int8x16_t*)(a9 + 80LL * v26);
+    LANES128(v29).n128_u64[0] =
+        LANES64_OF(
+            vext_s8(v12,
+                    COERCE_AS(int8x8_t,
+                              LANES128_OF(vextq_s8(v9, v9, 8u)).n128_u64[0]),
+                    4u))
+            .n64_u64[0];
+    LANES128(v28[3]).n128_u32[1] = -1;
+    LANES128(v29).n128_u64[1] =
+        LANES64_OF(vneg_f32(vdup_lane_s32(
+                       COERCE_AS(int32x2_t, LANES128(v9).n128_u64[0]), 1)))
+            .n64_u32[0];
+    v30 = vmlaq_n_f32(v27, v29, v25);
+    LANES128(v30).n128_u64[1] = LANES128_OF(vextq_s8(v30, v30, 8u)).n128_u32[0];
+    LANES128(v30).n128_u32[0] =
+        LANES64_OF(vadd_f32(COERCE_AS(float32x2_t, LANES128(v30).n128_u64[0]),
+                            COERCE_AS(float32x2_t, 0xBF800000BF800000LL)))
+            .n64_u32[0];
+    v31 = vmlsq_lane_f32(v11, v30, a3, 0);
+    LANES128(v31).n128_u64[1] = LANES128_OF(vextq_s8(v31, v31, 8u)).n128_u32[0];
+    *v28 = v30;
+    v28[1] = v31;
+    LANES128(*(v28)).n128_u32[3] = LANES64(v23).n64_u32[0];
+  }
+  return v24 & 1;
 }
 
 __int64 physx_source_geomutils_src_pcm_5017e0(__int64 result, __int64 a2)

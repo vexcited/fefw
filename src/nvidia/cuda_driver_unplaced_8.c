@@ -47,8 +47,8 @@ __int64 CudaDriverRoutine_12e510(__int64, __int64);
 __int64 CudaDriverRoutine_12f300(__int64*);
 __int64 CudaDriverRoutine_1383e0(__int64 result, int);
 unsigned int CudaDriverRoutine_1398c0(_DWORD*, __int64, __int64, int, __int64,
-                                 unsigned int, int, __int64, char, __int64,
-                                 char);
+                                      unsigned int, int, __int64, char, __int64,
+                                      char);
 __int64 CudaDriverRoutine_15fd0(__int64);
 __int64 CudaDriverRoutine_195dc0(_QWORD*, __int64, __int64);
 __int64 CudaDriverRoutine_197480(__int64 result, __int64, unsigned int,
@@ -469,6 +469,10 @@ __int64 CudaDriverStub_107f90_alt4(_QWORD);
 __int64 CudaDriverStub_108070_alt4(_QWORD);
 __int64 CudaDriverStub_107f90_alt5(_QWORD, _QWORD, _QWORD);
 __int64 CudaDriverStub_12e320_alt1(void);
+__int64 cuda_driver_unplaced_8_129430(__int64 a1, __int64 a2);
+__int64 cuda_driver_unplaced_8_1aa1b0(int a1, int a2, unsigned int a3,
+                                      unsigned int a4, unsigned int a5,
+                                      __int64* a6, __int64* a7);
 
 __int64 cuda_driver_120c20(__int64 a1, __int64 a2, __int64 a3, __int64 a4)
 {
@@ -2013,6 +2017,14 @@ __int64 cuda_driver_128f20(unsigned __int64 a1, __int64 a2, __int64 a3,
     return 0;
   }
   return result;
+}
+
+__int64 cuda_driver_unplaced_8_129430(__int64 a1, __int64 a2)
+{
+  if (a2 != 2) {
+    GameRoutine_98340(a1);
+  }
+  return 0;
 }
 
 __int64 cuda_driver_12a100()
@@ -4868,8 +4880,9 @@ long double cuda_driver_1a51a0(__int64 a1, __int64 a2, int* a3, __int64 a4)
   return result;
 }
 
-__attribute__((no_builtin("memset", "memcpy", "memmove")))
-_DWORD* cuda_driver_1a5840(__int64 a1, __int64* a2, __int64 a3)
+__attribute__((no_builtin("memset", "memcpy", "memmove"))) _DWORD*
+
+cuda_driver_1a5840(__int64 a1, __int64* a2, __int64 a3)
 {
   __int64 v3;
   __int64 v7;
@@ -6329,6 +6342,205 @@ __int64 cuda_driver_1a9930(__int64 a1)
   *(_BYTE*)(v5 + 436) |= 4u;
   *(_QWORD*)(a1 + 4280) = 0x200000000000000LL;
   *(_BYTE*)(v5 + 492) = 1;
+  return result;
+}
+
+__int64 cuda_driver_unplaced_8_1aa1b0(int a1, int a2, unsigned int a3,
+                                      unsigned int a4, unsigned int a5,
+                                      __int64* a6, __int64* a7)
+{
+  __int64 result;
+  __int64 v9;
+  __int64 v10;
+  __int64 v11;
+
+  if (a2 > 1) {
+    if (a2 == 2) {
+      result = 4;
+      v11 = (unsigned int)(a1 - 7);
+      v9 = (43008LL * a3 + 672LL * a4) | 0x10;
+      v10 = 584;
+      switch (v11) {
+      case 0LL:
+        goto LABEL_21;
+      case 2LL:
+        result = 4;
+        v10 = 544;
+        goto LABEL_21;
+      case 3LL:
+        result = 4;
+        v10 = 548;
+        goto LABEL_21;
+      case 4LL:
+        result = 4;
+        v10 = 552;
+        goto LABEL_21;
+      case 5LL:
+        result = 4;
+        v10 = 556;
+        goto LABEL_21;
+      case 6LL:
+        result = 4;
+        v10 = 560;
+        goto LABEL_21;
+      case 7LL:
+        result = 4;
+        v10 = 564;
+        goto LABEL_21;
+      case 8LL:
+        result = 8;
+        v10 = 536;
+        goto LABEL_21;
+      case 10LL:
+        result = 4;
+        v10 = 524;
+        goto LABEL_21;
+      case 11LL:
+        result = 4;
+        v10 = 528;
+        goto LABEL_21;
+      case 12LL:
+        result = 4;
+        v10 = 532;
+        goto LABEL_21;
+      case 13LL:
+        result = 4;
+        v10 = 576;
+        goto LABEL_21;
+      case 14LL:
+        result = 4;
+        v10 = 588;
+        goto LABEL_21;
+      case 15LL:
+        result = 4;
+        v10 = 592;
+        goto LABEL_21;
+      case 16LL:
+        result = 4;
+        v10 = 596;
+        goto LABEL_21;
+      case 17LL:
+        result = 4;
+        v10 = 580;
+        goto LABEL_21;
+      case 18LL:
+        result = 4;
+        v10 = 612;
+        goto LABEL_21;
+      case 19LL:
+        result = 8;
+        v10 = 616;
+        goto LABEL_21;
+      case 20LL:
+        result = 4;
+        v10 = 608;
+        goto LABEL_21;
+      case 21LL:
+        result = 8;
+        v10 = 568;
+        goto LABEL_21;
+      case 24LL:
+        result = 8;
+        v10 = 624;
+        goto LABEL_21;
+      case 27LL:
+        result = 4;
+        v10 = 632;
+        goto LABEL_21;
+      case 28LL:
+        result = 8;
+        v10 = 600;
+        goto LABEL_21;
+      case 34LL:
+        result = 4;
+        v10 = 512;
+        goto LABEL_21;
+      case 35LL:
+        result = 4;
+        v10 = 516;
+        goto LABEL_21;
+      case 39LL:
+        result = 4;
+        v10 = 636;
+        goto LABEL_21;
+      case 40LL:
+        result = 1;
+        v10 = 668;
+        goto LABEL_21;
+      case 41LL:
+        result = 1;
+        v10 = 669;
+        goto LABEL_21;
+      case 42LL:
+        result = 4;
+        v10 = 640;
+        goto LABEL_21;
+      case 43LL:
+        result = 4;
+        v10 = 644;
+        goto LABEL_21;
+      case 44LL:
+        result = 8;
+        v10 = 648;
+        goto LABEL_21;
+      case 45LL:
+        result = 4;
+        v10 = 656;
+        goto LABEL_21;
+      default:
+        return result;
+      }
+    }
+    else {
+      if (a2 != 3) {
+      LABEL_10:
+        *a6 = 0;
+        *a7 = 0;
+        return 4;
+      }
+      result = 4;
+      v9 = 43008LL * a3 + 672LL * a4 + 16LL * a5 + 16;
+      if (a1 == 44) {
+        v10 = 0;
+        goto LABEL_21;
+      }
+      if (a1 == 45) {
+      LABEL_15:
+        v10 = 4;
+        result = 4;
+      LABEL_21:
+        *a6 = v10;
+        *a7 = result;
+        *a6 += v9;
+        return 0;
+      }
+    }
+  }
+  else {
+    if (a2 != 0) {
+      if (a2 == 1) {
+        return 4;
+      }
+      goto LABEL_10;
+    }
+    result = 4;
+    switch (a1) {
+    case 0:
+      v10 = 0;
+      v9 = 0;
+      goto LABEL_21;
+    case 3:
+      v10 = 8;
+      result = 8;
+      v9 = 0;
+      goto LABEL_21;
+    case 1:
+      v9 = 0;
+      goto LABEL_15;
+    default:
+      break;
+    }
+  }
   return result;
 }
 

@@ -14,6 +14,9 @@ __int64 movie_video_decoder_types_fb20();
 __int64 movie_video_decoder_types_fb24();
 __int64 movie_video_decoder_types_fd00();
 __int64 movie_video_decoder_types_fd04();
+void __attribute__((noreturn)) movie_video_decoder_types_fad8();
+void __attribute__((noreturn)) movie_video_decoder_types_fb28();
+void __attribute__((noreturn)) movie_video_decoder_types_fd08();
 
 __int64 movie_video_decoder_types_fad0()
 {
@@ -23,6 +26,11 @@ __int64 movie_video_decoder_types_fad0()
 __int64 movie_video_decoder_types_fad4()
 {
   return nn_codec_FinalizeVp8Decoder_plt();
+}
+
+void __attribute__((noreturn)) movie_video_decoder_types_fad8()
+{
+  GameRoutine_82f30();
 }
 
 __int64 movie_video_decoder_types_fb20()
@@ -35,6 +43,11 @@ __int64 movie_video_decoder_types_fb24()
   return nn_codec_RegisterVp8DecoderBuffer_plt();
 }
 
+void __attribute__((noreturn)) movie_video_decoder_types_fb28()
+{
+  GameRoutine_83430();
+}
+
 __int64 movie_video_decoder_types_fd00()
 {
   return nn_codec_GetH264DecoderSubmissionReadyEvent_plt();
@@ -43,6 +56,11 @@ __int64 movie_video_decoder_types_fd00()
 __int64 movie_video_decoder_types_fd04()
 {
   return nn_codec_GetVp8DecoderSubmissionReadyEvent_plt();
+}
+
+void __attribute__((noreturn)) movie_video_decoder_types_fd08()
+{
+  GameRoutine_83430();
 }
 
 #pragma GCC visibility pop

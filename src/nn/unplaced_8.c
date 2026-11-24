@@ -208,6 +208,7 @@ __int64 nn_6adbf0(__int64 a1);
 __int64 nn_6addf0(__int64 result);
 float nn_75a7c0(void* this_);
 __int64 nn_762070(__int64 a1, __int64 a2, int a3, int a4);
+__int64 unplaced_8_69fa60(__int64 a1);
 
 __int64 nn_aead0(__int64 a1, ...)
 {
@@ -3513,6 +3514,30 @@ LABEL_9:
     return v10;
   }
   return result;
+}
+
+__int64 unplaced_8_69fa60(__int64 a1)
+{
+  int v1;
+  __int64 v2;
+
+  v1 = *(_DWORD*)(a1 + 24);
+  switch (v1) {
+  case 1:
+    v2 = 1;
+    goto LABEL_7;
+  case 3:
+    v2 = 2;
+    goto LABEL_7;
+  case 2:
+    v2 = 4;
+  LABEL_7:
+    *(_QWORD*)(a1 + 16) = v2;
+    return 0;
+  default:
+    break;
+  }
+  return 5;
 }
 
 __int64 nn_69fd40(__int64 a1)

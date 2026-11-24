@@ -14,6 +14,170 @@ extern __int64 (*physx_PxLightCpuTask_Destroy_PxLightCpuTask_ptr_1f87a50[])();
 extern __int64 (*physx_PxLightCpuTask_Destroy_PxLightCpuTask_ptr_1f87b08[])();
 float GameRoutine_1a0a010(float);
 void physx_source_simulationcontroller_src_3d72e0(__int64 a1, _QWORD* a2);
+__int64 PxGetBroadcastAllocator(_BYTE*);
+__int64 PxGetFoundation();
+__int64 physx_Dy_FeatherstoneArticulation_getCacheDataSize(int, int);
+__int64 physx_Dy_FeatherstoneArticulation_getDofs(_QWORD);
+__int64 physx_Sc_BodyCore_getSim(_QWORD);
+__int64 physx_source_simulationcontroller_src_3893d0();
+extern char GameData_1a9f09e;
+__int64 physx_source_simulationcontroller_src_310510(__int64 a1);
+__int64 physx_source_simulationcontroller_src_312ba0(__int64 a1);
+__int64 physx_source_simulationcontroller_src_312bd0(__int64 a1, __int64* a2);
+__int64 physx_source_simulationcontroller_src_312e00(__int64 a1);
+__int64 physx_source_simulationcontroller_src_388740(__int64 result,
+                                                     __int64 a2);
+float physx_source_simulationcontroller_src_389390(__int64 a1);
+__int64 physx_source_simulationcontroller_src_389eb0(__int64 result, __int64 a2,
+                                                     unsigned int a3);
+
+__int64 physx_source_simulationcontroller_src_310510(__int64 a1)
+{
+  if (*(_QWORD*)a1 != 0) {
+    return *(unsigned int*)(a1 + 24);
+  }
+  else {
+    return 0xFFFFFFFFLL;
+  }
+}
+
+__int64 physx_source_simulationcontroller_src_312ba0(__int64 a1)
+{
+  int v2;
+
+  v2 = physx_Dy_FeatherstoneArticulation_getDofs(*(_QWORD*)a1);
+  return physx_Dy_FeatherstoneArticulation_getCacheDataSize(
+      v2, *(_DWORD*)(a1 + 32));
+}
+
+__int64 physx_source_simulationcontroller_src_312bd0(__int64 a1, __int64* a2)
+{
+  int v4;
+  __int64 result;
+
+  v4 = physx_Dy_FeatherstoneArticulation_getDofs(*(_QWORD*)a1);
+  result = physx_Dy_FeatherstoneArticulation_getCacheDataSize(
+      v4, *(_DWORD*)(a1 + 32));
+  if ((_DWORD)result != 0) {
+    return GameRoutine_1a0ba50(*a2, 0, (unsigned int)result);
+  }
+  return result;
+}
+
+__int64 physx_source_simulationcontroller_src_312e00(__int64 a1)
+{
+  int v1;
+
+  v1 = *(_DWORD*)(a1 + 136);
+  return (unsigned int)physx_Dy_FeatherstoneArticulation_getDofs(*(_QWORD*)a1) *
+         v1;
+}
+
+__int64 physx_source_simulationcontroller_src_388740(__int64 result, __int64 a2)
+{
+  __int64 v3;
+  __int64 v4;
+  unsigned __int64 v5;
+
+  v3 = result;
+  if (a2 != 0 && *(_QWORD*)(result + 1200) == 0 &&
+      *(_DWORD*)(result + 1068) != 0) {
+    v4 = *(_QWORD*)(result + 1024);
+    v5 = 0;
+    do {
+      result = physx_Sc_BodyCore_getSim(*(_QWORD*)(v4 + 8 * v5++));
+      *(_WORD*)(result + 108) |= 0x40u;
+    } while (v5 < *(unsigned int*)(v3 + 1068));
+  }
+  *(_QWORD*)(v3 + 1200) = a2;
+  return result;
+}
+
+float physx_source_simulationcontroller_src_389390(__int64 a1)
+{
+
+#pragma clang fp contract(off)
+  if ((*(_BYTE*)(a1 + 1222) & 8) == 0) {
+    physx_source_simulationcontroller_src_3893d0();
+  }
+  return *(float*)(a1 + 4892);
+}
+
+__int64 physx_source_simulationcontroller_src_389eb0(__int64 result, __int64 a2,
+                                                     unsigned int a3)
+{
+  __int64 v3;
+  __int64 v5;
+  unsigned __int64 v6;
+  __int64 v7;
+  __int64 v8;
+  __int64 v9;
+  __int64 v10;
+  __int64 v11;
+  __int64 v12;
+  __int64 v13;
+  __int64 v14;
+  __int64 vars0;
+  __int64 _8;
+  __int64 vars30;
+  __int64 _38;
+
+  v3 = result;
+  if (a2 != 0) {
+    if (*(_DWORD*)(result + 988) >= a3) {
+      v10 = *(_QWORD*)(result + 976);
+      if (a3 == 0) {
+      LABEL_13:
+        *(_QWORD*)(v3 + 976) = v10;
+        *(_DWORD*)(v3 + 984) = a3;
+        return result;
+      }
+      v6 = a3;
+    LABEL_12:
+      result = GameRoutine_1a0b950(v10, a2, v6);
+      goto LABEL_13;
+    }
+    v5 = a2;
+    v6 = a3;
+    v7 = PxGetBroadcastAllocator(nullptr);
+    v8 = (*(__int64 (**)(__int64, _QWORD, char*, const char*, __int64))(
+        *(_QWORD*)v7 + 16LL))(
+        v7, a3, &GameData_1a9f09e,
+        "/Inside/Lib/PhysX/O/physx/source/simulationcontroller/src/ScScene.cpp",
+        1494);
+    if (v8 != 0) {
+      v9 = *(_QWORD*)(v3 + 976);
+      v10 = v8;
+      *(_DWORD*)(v3 + 988) = a3;
+      if (v9 != 0) {
+        v11 = PxGetBroadcastAllocator(nullptr);
+        (*(void (**)(__int64, __int64))(*(_QWORD*)v11 + 24LL))(v11, v9);
+        *(_QWORD*)(v3 + 976) = 0;
+      }
+      a2 = v5;
+      goto LABEL_12;
+    }
+    vars30 = vars0;
+    _38 = _8;
+    v14 = PxGetFoundation();
+    return (*(__int64 (**)(__int64, __int64, const char*, __int64,
+                           const char*))(*(_QWORD*)v14 + 88LL))(
+        v14, 16,
+        "/Inside/Lib/PhysX/O/physx/source/simulationcontroller/src/ScScene.cpp",
+        1502, "Failed to allocate memory for filter shader data!");
+  }
+  else {
+    v12 = *(_QWORD*)(result + 976);
+    if (v12 != 0) {
+      v13 = PxGetBroadcastAllocator(nullptr);
+      result =
+          (*(__int64 (**)(__int64, __int64))(*(_QWORD*)v13 + 24LL))(v13, v12);
+      *(_QWORD*)(v3 + 976) = 0;
+    }
+    *(_QWORD*)(v3 + 984) = 0;
+  }
+  return result;
+}
 
 void physx_source_simulationcontroller_src_3d72e0(__int64 a1, _QWORD* a2)
 {

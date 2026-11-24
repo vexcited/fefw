@@ -220,6 +220,8 @@ __int64 nvidia_64d7a0_alt2(__int64 result, __int64, __int64, __int64,
                            unsigned int, int, int, int);
 __int64 nvidia_64f5d0_alt1(__int64, __int64, int, __int64, int, int, int, int,
                            int, int, int, int, int, char, char, char, char);
+__int64 unplaced_9_64a800(__int64 a1, __int64 a2, __int64* a3, _QWORD* a4,
+                          _QWORD* a5);
 
 __int64 nvidia_647010(__int64 a1, int a2)
 {
@@ -3344,6 +3346,28 @@ __int64 nvidia_64a7e0(__int64 a1)
 {
   SdkRoutine_66fe10(*(_QWORD*)(a1 + 200));
   return 0;
+}
+
+__int64 unplaced_9_64a800(__int64 a1, __int64 a2, __int64* a3, _QWORD* a4,
+                          _QWORD* a5)
+{
+  __int64 v5;
+
+  if (a2 == 5) {
+    v5 = (signed __int64)*(_QWORD*)(*(_QWORD*)(a1 + 200) + 10184LL) / 2LL;
+  }
+  else {
+    v5 = 0;
+  }
+  *a3 = v5;
+  *a4 = 256;
+  *a5 = 16;
+  if (*a3 != 0) {
+    return 0;
+  }
+  else {
+    return 10;
+  }
 }
 
 __int64 nvidia_64a850(__int64 a1, __int64 a2, __int64 a3, __int64 a4,

@@ -9,6 +9,667 @@ physx_NpArticulationLink_getGlobalPose(PSEUDO_X8, __int64, __int64);
 float GameRoutine_1a09fb0(float);
 float GameRoutine_1a09fc0(float);
 __int64 physx_source_physx_src_2f19f0(__int64 result, __int64 a2);
+__attribute__((swiftcall)) void
+physx_NpArticulationLink_getGlobalPose_alt1(PSEUDO_X8, __int64);
+__attribute__((swiftcall)) void physx_NpScene_getFlags(PSEUDO_X8,
+                                                       __int64 result);
+__int64 GameRoutine_2d8750(unsigned int, __int64);
+__int64 GameRoutine_2d8df0(unsigned int, __int64);
+__int64 GameRoutine_2de160(unsigned int);
+__int64 GameRoutine_3102c0(_QWORD*);
+__int64 GameRoutine_3102e0(__int64*);
+__int64 GameRoutine_310380(__int64*);
+__int64 GameRoutine_310390(__int64*);
+__int64 GameRoutine_3103a0(__int64*, __int64, char);
+__int64 GameRoutine_3103c0(__int64*, __int64, char);
+__int64 GameRoutine_3103e0(__int64*);
+__int64 GameRoutine_3103f0(__int64*);
+__int64 GameRoutine_310400(__int64*);
+__int64 GameRoutine_310410(__int64*);
+__int64 GameRoutine_3104d0(_QWORD*);
+__int64 GameRoutine_38df50(__int64 result, unsigned __int8, unsigned __int8,
+                           _BYTE*);
+__int64 GameRoutine_3d7b70(__int64);
+__int64 GameRoutine_3d7b90(__int64);
+__int64 GameRoutine_3d7ba0(__int64 result, float);
+__int64 PxGetFoundation();
+__int64 physx_NpActor_onActorRelease(__int64);
+__int64 physx_NpArticulationReducedCoordinate_setGlobalPose(__int64);
+__int64 physx_NpArticulationReducedCoordinate_wakeUpInternal(__int64, int, int);
+__int64 physx_NpScene_addActorInternal(__int64, __int64, __int64);
+__int64 physx_NpScene_addActorsInternal(__int64, _QWORD*, unsigned int,
+                                        __int64);
+__int64 physx_Sc_BodyCore_setBody2World(__int64 result, __int64);
+__int64 physx_Sc_Scene_setCCDContactModifyCallback(__int64 result, __int64);
+__int64 physx_Sc_Scene_setCCDMaxPasses(__int64 result, int);
+__int64 physx_source_simulationcontroller_src_388740(__int64 result, __int64);
+__int64 physx_source_simulationcontroller_src_389eb0(__int64 result, __int64,
+                                                     unsigned int);
+extern _UNKNOWN* GameData_2135580;
+extern _UNKNOWN GameData_1f83c90;
+float GameRoutine_1a0a010(float);
+float GameRoutine_3d7bb0(__int64);
+__int64 physx_source_physx_src_2d8830(__int64 a1, __int64 a2);
+float physx_source_physx_src_2d89a0(__int64 a1, __int64 a2);
+float physx_source_physx_src_2d8a20(__int64 a1, float a2);
+__int64 physx_source_physx_src_2d8b70(__int64 result, int a2, char a3);
+__int64 physx_source_physx_src_2d8c20(__int64 a1, __int64 a2, __int64 a3);
+__int64 physx_source_physx_src_2d9ca0(__int64 a1, __int64 a2);
+__int64 physx_source_physx_src_2dccd0(__int64 a1, __int64 a2);
+__int64 physx_source_physx_src_2dcd30(__int64 a1, __int64 a2);
+__int64 physx_source_physx_src_2dcda0(__int64 a1, __int64 a2);
+__int64 physx_source_physx_src_2dcdf0(__int64 a1);
+__int64 physx_source_physx_src_2dce00(__int64 result, __int64 a2);
+__int64 physx_source_physx_src_2dce60(__int64 a1, int a2);
+__int64 physx_source_physx_src_2dceb0(__int64 a1);
+__int64 physx_source_physx_src_2dcec0(__int64 result, float a2);
+__int64 physx_source_physx_src_2dcf30(__int64 a1, float a2);
+float physx_source_physx_src_2dcf80(__int64 a1);
+__int64 physx_source_physx_src_2dcf90(__int64 a1);
+__int64 physx_source_physx_src_2dd0d0(__int64 a1);
+__int64 physx_source_physx_src_2dd130(__int64 a1, __int64 a2, unsigned int a3);
+__int64 physx_source_physx_src_2de3d0(__int64 a1, unsigned __int8 a2,
+                                      unsigned __int8 a3, _BYTE* a4);
+__int64 physx_source_physx_src_2de430(__int64 result, int a2);
+__int64 physx_source_physx_src_2de4a0(__int64 result, int a2);
+__int64 physx_source_physx_src_2de510(__int64 a1, int a2, float a3);
+float physx_source_physx_src_2de5f0(__int64 a1, __int64 a2);
+__int64 physx_source_physx_src_2de6e0(__int64 result, float a2);
+__int64 physx_source_physx_src_2de750(__int64 result, float a2);
+__int64 physx_source_physx_src_2de7c0(__int64 result, float a2);
+__int64 physx_source_physx_src_2df5b0(__int64 a1);
+__int64 physx_source_physx_src_2df680(__int64 a1, __int64 a2, __int64 a3,
+                                      __int64 a4);
+__int64 physx_source_physx_src_2f3ef0(__int64 a1);
+__int64 physx_source_physx_src_2f3f00(__int64 a1);
+__int64 physx_source_physx_src_2f4230(__int64 a1);
+__int64 physx_source_physx_src_2f4240(__int64 a1);
+__int64 physx_source_physx_src_2f42a0(__int64 a1, __int64 a2);
+__int64 physx_source_physx_src_2f4300(__int64 a1, __int64 a2);
+__int64 physx_source_physx_src_2f4360(__int64 a1, __int64 a2);
+__int64 physx_source_physx_src_2f43c0(__int64 a1, __int64 a2);
+__int64 physx_source_physx_src_2f4420(__int64 a1);
+__int64 physx_source_physx_src_2f4480(__int64 a1);
+__int64 physx_source_physx_src_2f44e0(__int64 a1);
+__int64 physx_source_physx_src_2f4540(__int64 a1);
+__int64 physx_source_physx_src_2f4ba0(__int64 a1);
+__int64 physx_source_physx_src_2f4bb0(__int64 a1, float* a2, char a3);
+__attribute__((swiftcall)) void physx_source_physx_src_2f4c10(PSEUDO_X8 x8_,
+                                                              __int64 a1);
+__int64 physx_source_physx_src_2fa5a0(__int64 a1, float* a2, char a3);
+void __attribute__((noreturn)) physx_source_physx_src_2fc130();
+__int64 physx_source_physx_src_2fc140(__int64 a1);
+void __attribute__((noreturn)) physx_source_physx_src_2fc160();
+
+__int64 physx_source_physx_src_2d8830(__int64 a1, __int64 a2)
+{
+  __int64 v3;
+  __int64 v4;
+  __int64 v5;
+  __int64 v6;
+
+  if (*(_BYTE*)(a1 + 1043) == 1) {
+    return GameRoutine_2de160(0xB5Cu);
+  }
+  if (*(_DWORD*)(a1 + 5788) != 2) {
+    return GameRoutine_2d8750(
+        0xB63u, (__int64)"PxScene::advance: advance() called illegally! "
+                         "advance() needed to be called after fetchCollision()"
+                         " and before fetchResult()!!");
+  }
+  v3 = a1 + 672;
+  *(_QWORD*)(a1 + 696) = a2;
+  *(_DWORD*)(a1 + 5788) = 3;
+  *(_BYTE*)(a1 + 1001) = 1;
+  if (a2 != 0) {
+    v4 = a1;
+    (*(void (**)(__int64))(*(_QWORD*)a2 + 32LL))(a2);
+    a1 = v4;
+  }
+  v5 = *(_QWORD*)(a1 + 656);
+  *(_DWORD*)(a1 + 960) = 1;
+  *(_QWORD*)(a1 + 952) = v3;
+  v6 = a1;
+  *(_QWORD*)(a1 + 944) = v5;
+  (*(void (**)(__int64))(*(_QWORD*)(a1 + 672) + 32LL))(v3);
+  (*(void (**)(_QWORD, __int64))(**(_QWORD**)(v6 + 688) + 144LL))(
+      *(_QWORD*)(v6 + 688), v3);
+  (*(void (**)(_QWORD, __int64))(**(_QWORD**)(v6 + 944) + 144LL))(
+      *(_QWORD*)(v6 + 944), v6 + 928);
+  return 1;
+}
+
+float physx_source_physx_src_2d89a0(__int64 a1, __int64 a2)
+{
+
+#pragma clang fp contract(off)
+  __int64 v2;
+  float result;
+
+  result = COERCE_AS(__typeof__(result), PSEUDO_REGISTER(float, "s0", "=w"));
+  if (*(_BYTE*)(a1 + 1002) == 1) {
+    v2 = PxGetFoundation(),
+    result = COERCE_AS(__typeof__(result), PSEUDO_REGISTER(float, "s0", "=w"));
+    (*(void (**)(__int64, __int64, const char*, __int64, const char*))(
+        *(_QWORD*)v2 + 88LL))(
+        v2, 8, "/Inside/Lib/PhysX/O/physx/source/physx/src/NpScene.cpp", 337,
+        "PxScene::setGravity() not allowed while simulation is running. Call "
+        "will be ignored."),
+        result =
+            COERCE_AS(__typeof__(result), PSEUDO_REGISTER(float, "s0", "=w"));
+  }
+  else {
+    *(_QWORD*)(a1 + 1536) = *(_QWORD*)a2;
+    result = *(float*)(a2 + 8);
+    *(float*)(a1 + 1544) = result;
+  }
+  return result;
+}
+
+float physx_source_physx_src_2d8a20(__int64 a1, float a2)
+{
+
+#pragma clang fp contract(off)
+  __int64 v2;
+  float result;
+
+  result = COERCE_AS(__typeof__(result), PSEUDO_REGISTER(float, "s0", "=w"));
+  if (*(_BYTE*)(a1 + 1002) == 1) {
+    v2 = PxGetFoundation(),
+    result = COERCE_AS(__typeof__(result), PSEUDO_REGISTER(float, "s0", "=w"));
+    (*(void (**)(__int64, __int64, const char*, __int64, const char*))(
+        *(_QWORD*)v2 + 88LL))(
+        v2, 8, "/Inside/Lib/PhysX/O/physx/source/physx/src/NpScene.cpp", 359,
+        "PxScene::setBounceThresholdVelocity() not allowed while simulation is "
+        "running. Call will be ignored."),
+        result =
+            COERCE_AS(__typeof__(result), PSEUDO_REGISTER(float, "s0", "=w"));
+  }
+  else {
+    result = -a2;
+    *(float*)(*(_QWORD*)(a1 + 1472) + 120LL) = result;
+  }
+  return result;
+}
+
+__int64 physx_source_physx_src_2d8b70(__int64 result, int a2, char a3)
+{
+  __int64 v3;
+  int v4;
+  int v5;
+  int v6;
+  __int64 v7;
+
+  if (*(_BYTE*)(result + 1002) == 1) {
+    v3 = PxGetFoundation();
+    return (*(__int64 (**)(__int64, __int64, const char*, __int64,
+                           const char*))(*(_QWORD*)v3 + 88LL))(
+        v3, 8, "/Inside/Lib/PhysX/O/physx/source/physx/src/NpScene.cpp", 423,
+        "PxScene::setFlag() not allowed while simulation is running. Call will "
+        "be ignored.");
+  }
+  else {
+    v4 = *(_DWORD*)(result + 2340);
+    v5 = v4 | a2;
+    v6 = v4 & ~a2;
+    if ((a3 & 1) != 0) {
+      v6 = v5;
+    }
+    v7 = *(_QWORD*)(result + 1432);
+    *(_DWORD*)(result + 2340) = v6;
+    *(_BYTE*)(v7 + 2376) = (v6 & 0x40) != 0;
+    *(_BYTE*)(v7 + 2377) = (v6 & 0x100) == 0;
+  }
+  return result;
+}
+
+__int64 physx_source_physx_src_2d8c20(__int64 a1, __int64 a2, __int64 a3)
+{
+  __int64 v3;
+
+  if (*(_BYTE*)(a1 + 1002) == 1) {
+    v3 = PxGetFoundation();
+    (*(void (**)(__int64, __int64, const char*, __int64, const char*))(
+        *(_QWORD*)v3 + 88LL))(
+        v3, 8, "/Inside/Lib/PhysX/O/physx/source/physx/src/NpScene.cpp", 500,
+        "PxScene::addActor() not allowed while simulation is running. Call "
+        "will be ignored.");
+    return 0;
+  }
+  else if (*(_QWORD*)(a2 + *((_QWORD*)GameData_2135580 +
+                             *(unsigned __int16*)(a2 + 8))) != 0) {
+    return GameRoutine_2d8750(
+        0x1FAu, (__int64)"PxScene::addActor(): Actor already assigned to a "
+                         "scene. Call will be ignored!");
+  }
+  else {
+    return physx_NpScene_addActorInternal(a1, a2, a3);
+  }
+}
+
+__int64 physx_source_physx_src_2d9ca0(__int64 a1, __int64 a2)
+{
+  if ((*(_BYTE*)(a2 + 96) & 1) != 0) {
+    return physx_NpScene_addActorsInternal(a1, *(_QWORD**)(a2 + 88),
+                                           *(_DWORD*)(a2 + 80), a2);
+  }
+  else {
+    return GameRoutine_2d8df0(0x248u,
+                              (__int64)"PxScene::addActors(): Provided pruning "
+                                       "structure is not valid.");
+  }
+}
+
+__int64 physx_source_physx_src_2dccd0(__int64 a1, __int64 a2)
+{
+  __int64 v2;
+
+  if (*(_BYTE*)(a1 + 1002) != 1) {
+    return physx_source_simulationcontroller_src_388740(a1 + 1120, a2);
+  }
+  v2 = PxGetFoundation();
+  return (*(__int64 (**)(__int64, __int64, const char*, __int64, const char*))(
+      *(_QWORD*)v2 + 88LL))(
+      v2, 8, "/Inside/Lib/PhysX/O/physx/source/physx/src/NpScene.cpp", 2352,
+      "PxScene::setSimulationEventCallback() not allowed while simulation is "
+      "running. Call will be ignored.");
+}
+
+__int64 physx_source_physx_src_2dcd30(__int64 a1, __int64 a2)
+{
+  __int64 v2;
+  __int64 v4;
+  __int64 v5;
+
+  if (*(_BYTE*)(a1 + 1002) == 1) {
+    v2 = PxGetFoundation();
+    return (*(__int64 (**)(__int64, __int64, const char*, __int64,
+                           const char*))(*(_QWORD*)v2 + 88LL))(
+        v2, 8, "/Inside/Lib/PhysX/O/physx/source/physx/src/NpScene.cpp", 2369,
+        "PxScene::setContactModifyCallback() not allowed while simulation is "
+        "running. Call will be ignored.");
+  }
+  else {
+    v4 = *(_QWORD*)(a1 + 1432);
+    v5 = *(_QWORD*)(v4 + 640);
+    *(_QWORD*)(v4 + 632) = a2;
+    return (*(__int64 (**)(__int64))(*(_QWORD*)v5 + 240LL))(v5);
+  }
+}
+
+__int64 physx_source_physx_src_2dcda0(__int64 a1, __int64 a2)
+{
+  __int64 v2;
+
+  if (*(_BYTE*)(a1 + 1002) != 1) {
+    return physx_Sc_Scene_setCCDContactModifyCallback(a1 + 1120, a2);
+  }
+  v2 = PxGetFoundation();
+  return (*(__int64 (**)(__int64, __int64, const char*, __int64, const char*))(
+      *(_QWORD*)v2 + 88LL))(
+      v2, 8, "/Inside/Lib/PhysX/O/physx/source/physx/src/NpScene.cpp", 2386,
+      "PxScene::setCCDContactModifyCallback() not allowed while simulation is "
+      "running. Call will be ignored.");
+}
+
+__int64 physx_source_physx_src_2dcdf0(__int64 a1)
+{
+  return GameRoutine_3d7b70(a1 + 1120);
+}
+
+__int64 physx_source_physx_src_2dce00(__int64 result, __int64 a2)
+{
+  __int64 v2;
+
+  if (*(_BYTE*)(result + 1002) == 1) {
+    v2 = PxGetFoundation();
+    return (*(__int64 (**)(__int64, __int64, const char*, __int64,
+                           const char*))(*(_QWORD*)v2 + 88LL))(
+        v2, 8, "/Inside/Lib/PhysX/O/physx/source/physx/src/NpScene.cpp", 2403,
+        "PxScene::setBroadPhaseCallback() not allowed while simulation is "
+        "running. Call will be ignored.");
+  }
+  else {
+    *(_QWORD*)(result + 1136) = a2;
+  }
+  return result;
+}
+
+__int64 physx_source_physx_src_2dce60(__int64 a1, int a2)
+{
+  __int64 v2;
+
+  if (*(_BYTE*)(a1 + 1002) != 1) {
+    return physx_Sc_Scene_setCCDMaxPasses(a1 + 1120, a2);
+  }
+  v2 = PxGetFoundation();
+  return (*(__int64 (**)(__int64, __int64, const char*, __int64, const char*))(
+      *(_QWORD*)v2 + 88LL))(
+      v2, 8, "/Inside/Lib/PhysX/O/physx/source/physx/src/NpScene.cpp", 2421,
+      "PxScene::setCCDMaxPasses() not allowed while simulation is running. "
+      "Call will be ignored.");
+}
+
+__int64 physx_source_physx_src_2dceb0(__int64 a1)
+{
+  return GameRoutine_3d7b90(a1 + 1120);
+}
+
+__int64 physx_source_physx_src_2dcec0(__int64 result, float a2)
+{
+
+#pragma clang fp contract(off)
+  __int64 v2;
+
+  if (*(_BYTE*)(result + 1002) == 1) {
+    v2 = PxGetFoundation();
+    return (*(__int64 (**)(__int64, __int64, const char*, __int64,
+                           const char*))(*(_QWORD*)v2 + 88LL))(
+        v2, 8, "/Inside/Lib/PhysX/O/physx/source/physx/src/NpScene.cpp", 2439,
+        "PxScene::setCCDMaxSeparation() not allowed while simulation is "
+        "running. Call will be ignored.");
+  }
+  else {
+    *(float*)(*(_QWORD*)(result + 1472) + 128LL) = a2;
+  }
+  return result;
+}
+
+__int64 physx_source_physx_src_2dcf30(__int64 a1, float a2)
+{
+
+#pragma clang fp contract(off)
+  __int64 v2;
+
+  if (*(_BYTE*)(a1 + 1002) != 1) {
+    return GameRoutine_3d7ba0(a1 + 1120, a2);
+  }
+  v2 = PxGetFoundation();
+  return (*(__int64 (**)(__int64, __int64, const char*, __int64, const char*))(
+      *(_QWORD*)v2 + 88LL))(
+      v2, 8, "/Inside/Lib/PhysX/O/physx/source/physx/src/NpScene.cpp", 2457,
+      "PxScene::setCCDThreshold() not allowed while simulation is running. "
+      "Call will be ignored.");
+}
+
+float physx_source_physx_src_2dcf80(__int64 a1)
+{
+
+#pragma clang fp contract(off)
+  return GameRoutine_3d7bb0(a1 + 1120);
+}
+
+__int64 physx_source_physx_src_2dcf90(__int64 a1)
+{
+  return (*(__int64 (**)(_QWORD))(**(_QWORD**)(*(_QWORD*)(a1 + 1440) + 384LL) +
+                                  72LL))(
+      *(_QWORD*)(*(_QWORD*)(a1 + 1440) + 384LL));
+}
+
+__int64 physx_source_physx_src_2dd0d0(__int64 a1)
+{
+  __int64 v1;
+
+  if (*(_BYTE*)(a1 + 1002) != 1) {
+    return (*(__int64 (**)(_QWORD))(
+        **(_QWORD**)(*(_QWORD*)(a1 + 1440) + 384LL) + 40LL))(
+        *(_QWORD*)(*(_QWORD*)(a1 + 1440) + 384LL));
+  }
+  v1 = PxGetFoundation();
+  (*(void (**)(__int64, __int64, const char*, __int64, const char*))(
+      *(_QWORD*)v1 + 88LL))(
+      v1, 8, "/Inside/Lib/PhysX/O/physx/source/physx/src/NpScene.cpp", 2523,
+      "PxScene::removeBroadPhaseRegion() not allowed while simulation is "
+      "running. Call will be ignored.");
+  return 0;
+}
+
+__int64 physx_source_physx_src_2dd130(__int64 a1, __int64 a2, unsigned int a3)
+{
+  __int64 v3;
+
+  if (*(_BYTE*)(a1 + 1002) != 1) {
+    return physx_source_simulationcontroller_src_389eb0(a1 + 1120, a2, a3);
+  }
+  v3 = PxGetFoundation();
+  return (*(__int64 (**)(__int64, __int64, const char*, __int64, const char*))(
+      *(_QWORD*)v3 + 88LL))(
+      v3, 8, "/Inside/Lib/PhysX/O/physx/source/physx/src/NpScene.cpp", 2538,
+      "PxScene::setFilterShaderData() not allowed while simulation is running. "
+      "Call will be ignored.");
+}
+
+__int64 physx_source_physx_src_2de3d0(__int64 a1, unsigned __int8 a2,
+                                      unsigned __int8 a3, _BYTE* a4)
+{
+  __int64 v4;
+
+  if (*(_BYTE*)(a1 + 1002) != 1) {
+    return GameRoutine_38df50(a1 + 1120, a2, a3, a4);
+  }
+  v4 = PxGetFoundation();
+  return (*(__int64 (**)(__int64, __int64, const char*, __int64, const char*))(
+      *(_QWORD*)v4 + 88LL))(
+      v4, 8, "/Inside/Lib/PhysX/O/physx/source/physx/src/NpScene.cpp", 3135,
+      "PxScene::setDominanceGroupPair() not allowed while simulation is "
+      "running. Call will be ignored.");
+}
+
+__int64 physx_source_physx_src_2de430(__int64 result, int a2)
+{
+  __int64 v2;
+
+  if (*(_BYTE*)(result + 1002) == 1) {
+    v2 = PxGetFoundation();
+    return (*(__int64 (**)(__int64, __int64, const char*, __int64,
+                           const char*))(*(_QWORD*)v2 + 88LL))(
+        v2, 8, "/Inside/Lib/PhysX/O/physx/source/physx/src/NpScene.cpp", 3166,
+        "PxScene::setSolverBatchSize() not allowed while simulation is "
+        "running. Call will be ignored.");
+  }
+  else {
+    *(_DWORD*)(*(_QWORD*)(result + 1472) + 140LL) = a2;
+  }
+  return result;
+}
+
+__int64 physx_source_physx_src_2de4a0(__int64 result, int a2)
+{
+  __int64 v2;
+
+  if (*(_BYTE*)(result + 1002) == 1) {
+    v2 = PxGetFoundation();
+    return (*(__int64 (**)(__int64, __int64, const char*, __int64,
+                           const char*))(*(_QWORD*)v2 + 88LL))(
+        v2, 8, "/Inside/Lib/PhysX/O/physx/source/physx/src/NpScene.cpp", 3184,
+        "PxScene::setSolverArticulationBatchSize() not allowed while "
+        "simulation is running. Call will be ignored.");
+  }
+  else {
+    *(_DWORD*)(*(_QWORD*)(result + 1472) + 144LL) = a2;
+  }
+  return result;
+}
+
+__int64 physx_source_physx_src_2de510(__int64 a1, int a2, float a3)
+{
+
+#pragma clang fp contract(off)
+  __int64 v3;
+  __int64 v5;
+
+  if (*(_BYTE*)(a1 + 1002) == 1) {
+    v3 = PxGetFoundation();
+    (*(void (**)(__int64, __int64, const char*, __int64, const char*))(
+        *(_QWORD*)v3 + 88LL))(
+        v3, 8, "/Inside/Lib/PhysX/O/physx/source/physx/src/NpScene.cpp", 3205,
+        "PxScene::setVisualizationParameter() not allowed while simulation is "
+        "running. Call will be ignored.");
+    return 0;
+  }
+  else if (a2 < 28) {
+    if (a3 >= 0x0.0p+0f) {
+      *(_BYTE*)(a1 + 2896) = 1;
+      v5 = *(_QWORD*)(a1 + 1432);
+      *(float*)(v5 + 4LL * (unsigned int)a2 + 656) = a3;
+      return 1;
+    }
+    else {
+      return GameRoutine_2d8df0(0xC8Au,
+                                (__int64)"setVisualizationParameter: value "
+                                         "must be larger or equal to 0.");
+    }
+  }
+  else {
+    return GameRoutine_2d8df0(
+        0xC88u, (__int64)"setVisualizationParameter: parameter out of range.");
+  }
+}
+
+float physx_source_physx_src_2de5f0(__int64 a1, __int64 a2)
+{
+
+#pragma clang fp contract(off)
+  __int64 v2;
+  float result;
+  __int64 v4;
+  int v5;
+  int v6;
+
+  result = COERCE_AS(__typeof__(result), PSEUDO_REGISTER(float, "s0", "=w"));
+  if (*(_BYTE*)(a1 + 1002) == 1) {
+    v2 = PxGetFoundation(),
+    result = COERCE_AS(__typeof__(result), PSEUDO_REGISTER(float, "s0", "=w"));
+    (*(void (**)(__int64, __int64, const char*, __int64, const char*))(
+        *(_QWORD*)v2 + 88LL))(
+        v2, 8, "/Inside/Lib/PhysX/O/physx/source/physx/src/NpScene.cpp", 3233,
+        "PxScene::setVisualizationCullingBox() not allowed while simulation is "
+        "running. Call will be ignored."),
+        result =
+            COERCE_AS(__typeof__(result), PSEUDO_REGISTER(float, "s0", "=w"));
+  }
+  else {
+    v4 = *(_QWORD*)(a1 + 1432);
+    *(_QWORD*)(v4 + 768) = *(_QWORD*)a2;
+    v5 = *(_DWORD*)(a2 + 12);
+    *(_DWORD*)(v4 + 776) = *(_DWORD*)(a2 + 8);
+    *(_DWORD*)(v4 + 780) = v5;
+    result = *(float*)(a2 + 16);
+    v6 = *(_DWORD*)(a2 + 20);
+    *(float*)(v4 + 784) = result;
+    *(_DWORD*)(v4 + 788) = v6;
+  }
+  return result;
+}
+
+__int64 physx_source_physx_src_2de6e0(__int64 result, float a2)
+{
+
+#pragma clang fp contract(off)
+  __int64 v2;
+
+  if (*(_BYTE*)(result + 1002) == 1) {
+    v2 = PxGetFoundation();
+    return (*(__int64 (**)(__int64, __int64, const char*, __int64,
+                           const char*))(*(_QWORD*)v2 + 88LL))(
+        v2, 8, "/Inside/Lib/PhysX/O/physx/source/physx/src/NpScene.cpp", 3286,
+        "PxScene::setMaxBiasCoefficient() not allowed while simulation is "
+        "running. Call will be ignored.");
+  }
+  else {
+    *(float*)(*(_QWORD*)(result + 1472) + 96LL) = a2;
+  }
+  return result;
+}
+
+__int64 physx_source_physx_src_2de750(__int64 result, float a2)
+{
+
+#pragma clang fp contract(off)
+  __int64 v2;
+
+  if (*(_BYTE*)(result + 1002) == 1) {
+    v2 = PxGetFoundation();
+    return (*(__int64 (**)(__int64, __int64, const char*, __int64,
+                           const char*))(*(_QWORD*)v2 + 88LL))(
+        v2, 8, "/Inside/Lib/PhysX/O/physx/source/physx/src/NpScene.cpp", 3304,
+        "PxScene::setFrictionOffsetThreshold() not allowed while simulation is "
+        "running. Call will be ignored.");
+  }
+  else {
+    *(float*)(*(_QWORD*)(result + 1472) + 124LL) = a2;
+  }
+  return result;
+}
+
+__int64 physx_source_physx_src_2de7c0(__int64 result, float a2)
+{
+
+#pragma clang fp contract(off)
+  __int64 v2;
+
+  if (*(_BYTE*)(result + 1002) == 1) {
+    v2 = PxGetFoundation();
+    return (*(__int64 (**)(__int64, __int64, const char*, __int64,
+                           const char*))(*(_QWORD*)v2 + 88LL))(
+        v2, 8, "/Inside/Lib/PhysX/O/physx/source/physx/src/NpScene.cpp", 3322,
+        "PxScene::setFrictionCorrelationDistance() not allowed while "
+        "simulation is running. Call will be ignored.");
+  }
+  else {
+    *(float*)(*(_QWORD*)(result + 1472) + 132LL) = a2;
+  }
+  return result;
+}
+
+__int64 physx_source_physx_src_2df5b0(__int64 a1)
+{
+  __int64 v1;
+
+  if (*(_BYTE*)(a1 + 1001) != 1) {
+    return (*(__int64 (**)(_QWORD))(**(_QWORD**)(a1 + 1488) + 400LL))(
+        *(_QWORD*)(a1 + 1488));
+  }
+  v1 = PxGetFoundation();
+  return (*(__int64 (**)(__int64, __int64, const char*, __int64, const char*))(
+      *(_QWORD*)v1 + 88LL))(
+      v1, 8, "/Inside/Lib/PhysX/O/physx/source/physx/src/NpScene.cpp", 3700,
+      "PxScene::copySoftBodyData() not allowed while simulation is running. "
+      "Call will be ignored.");
+}
+
+__int64 physx_source_physx_src_2df680(__int64 a1, __int64 a2, __int64 a3,
+                                      __int64 a4)
+{
+  __int64 v4;
+
+  if (*(_BYTE*)(a1 + 1002) == 1) {
+    v4 = PxGetFoundation();
+    return (*(__int64 (**)(__int64, __int64, const char*, __int64,
+                           const char*))(*(_QWORD*)v4 + 88LL))(
+        v4, 8, "/Inside/Lib/PhysX/O/physx/source/physx/src/NpScene.cpp", 3718,
+        "PxScene::applyParticleBufferData() not allowed while simulation is "
+        "running. Call will be ignored.");
+  }
+  else if (a2 != 0 && a4 != 0) {
+    if ((*(_BYTE*)(a1 + 6009) & 1) != 0) {
+      return (*(__int64 (**)(_QWORD))(**(_QWORD**)(a1 + 1488) + 416LL))(
+          *(_QWORD*)(a1 + 1488));
+    }
+    else {
+      return GameRoutine_2d8750(
+          0xE90u, (__int64)"PxScene::applyParticleBufferData(): it is illegal "
+                           "to call this function if the scene is not conf"
+                           "igured for direct-GPU access or the direct-GPU API "
+                           "has not been initialized yet.");
+    }
+  }
+  else {
+    return GameRoutine_2d8750(
+        0xE8Au, (__int64)"PxScene::applyParticleBufferData, indices and/or "
+                         "flags has to be valid pointer.");
+  }
+}
 
 __int64 physx_source_physx_src_2f19f0(__int64 result, __int64 a2)
 {
@@ -638,6 +1299,404 @@ __int64 physx_source_physx_src_2f19f0(__int64 result, __int64 a2)
     }
   }
   return result;
+}
+
+__int64 physx_source_physx_src_2f3ef0(__int64 a1)
+{
+  return GameRoutine_3102c0((_QWORD*)(a1 + 40));
+}
+
+__int64 physx_source_physx_src_2f3f00(__int64 a1)
+{
+  return GameRoutine_3102e0((__int64*)(a1 + 40));
+}
+
+__int64 physx_source_physx_src_2f4230(__int64 a1)
+{
+  return GameRoutine_310380((__int64*)(a1 + 40));
+}
+
+__int64 physx_source_physx_src_2f4240(__int64 a1)
+{
+  __int64 v1;
+  __int64 v2;
+
+  v1 = *(_QWORD*)(a1 + 24);
+  if (v1 == 0 || *(_BYTE*)(v1 + 1002) != 1) {
+    return GameRoutine_310390((__int64*)(a1 + 40));
+  }
+  v2 = PxGetFoundation();
+  return (*(__int64 (**)(__int64, __int64, const char*, __int64, const char*))(
+      *(_QWORD*)v2 + 88LL))(
+      v2, 8,
+      "/Inside/Lib/PhysX/O/physx/source/physx/src/"
+      "NpArticulationReducedCoordinate.cpp",
+      227,
+      "PxArticulationReducedCoordinate::commonInit() not allowed while "
+      "simulation is running. Call will be ignored.");
+}
+
+__int64 physx_source_physx_src_2f42a0(__int64 a1, __int64 a2)
+{
+  __int64 v2;
+  __int64 v3;
+
+  v2 = *(_QWORD*)(a1 + 24);
+  if (v2 == 0 || *(_BYTE*)(v2 + 1002) != 1) {
+    return GameRoutine_3103a0((__int64*)(a1 + 40), a2, 0);
+  }
+  v3 = PxGetFoundation();
+  return (*(__int64 (**)(__int64, __int64, const char*, __int64, const char*))(
+      *(_QWORD*)v3 + 88LL))(
+      v3, 8,
+      "/Inside/Lib/PhysX/O/physx/source/physx/src/"
+      "NpArticulationReducedCoordinate.cpp",
+      239,
+      "PxArticulationReducedCoordinate::computeGeneralizedGravityForce() not "
+      "allowed while simulation is running. Ca"
+      "ll will be ignored.");
+}
+
+__int64 physx_source_physx_src_2f4300(__int64 a1, __int64 a2)
+{
+  __int64 v2;
+  __int64 v3;
+
+  v2 = *(_QWORD*)(a1 + 24);
+  if (v2 == 0 || *(_BYTE*)(v2 + 1002) != 1) {
+    return GameRoutine_3103a0((__int64*)(a1 + 40), a2, 1);
+  }
+  v3 = PxGetFoundation();
+  return (*(__int64 (**)(__int64, __int64, const char*, __int64, const char*))(
+      *(_QWORD*)v3 + 88LL))(
+      v3, 8,
+      "/Inside/Lib/PhysX/O/physx/source/physx/src/"
+      "NpArticulationReducedCoordinate.cpp",
+      250,
+      "PxArticulationReducedCoordinate::computeGravityCompensation() not "
+      "allowed while simulation is running. Call will be ignored.");
+}
+
+__int64 physx_source_physx_src_2f4360(__int64 a1, __int64 a2)
+{
+  __int64 v2;
+  __int64 v3;
+
+  v2 = *(_QWORD*)(a1 + 24);
+  if (v2 == 0 || *(_BYTE*)(v2 + 1002) != 1) {
+    return GameRoutine_3103c0((__int64*)(a1 + 40), a2, 0);
+  }
+  v3 = PxGetFoundation();
+  return (*(__int64 (**)(__int64, __int64, const char*, __int64, const char*))(
+      *(_QWORD*)v3 + 88LL))(
+      v3, 8,
+      "/Inside/Lib/PhysX/O/physx/source/physx/src/"
+      "NpArticulationReducedCoordinate.cpp",
+      262,
+      "PxArticulationReducedCoordinate::computeCoriolisAndCentrifugalForce() "
+      "not allowed while simulation is running"
+      ". Call will be ignored.");
+}
+
+__int64 physx_source_physx_src_2f43c0(__int64 a1, __int64 a2)
+{
+  __int64 v2;
+  __int64 v3;
+
+  v2 = *(_QWORD*)(a1 + 24);
+  if (v2 == 0 || *(_BYTE*)(v2 + 1002) != 1) {
+    return GameRoutine_3103c0((__int64*)(a1 + 40), a2, 1);
+  }
+  v3 = PxGetFoundation();
+  return (*(__int64 (**)(__int64, __int64, const char*, __int64, const char*))(
+      *(_QWORD*)v3 + 88LL))(
+      v3, 8,
+      "/Inside/Lib/PhysX/O/physx/source/physx/src/"
+      "NpArticulationReducedCoordinate.cpp",
+      273,
+      "PxArticulationReducedCoordinate::computeCoriolisCompensation() not "
+      "allowed while simulation is running. Call "
+      "will be ignored.");
+}
+
+__int64 physx_source_physx_src_2f4420(__int64 a1)
+{
+  __int64 v1;
+  __int64 v2;
+
+  v1 = *(_QWORD*)(a1 + 24);
+  if (v1 == 0 || *(_BYTE*)(v1 + 1002) != 1) {
+    return GameRoutine_3103e0((__int64*)(a1 + 40));
+  }
+  v2 = PxGetFoundation();
+  return (*(__int64 (**)(__int64, __int64, const char*, __int64, const char*))(
+      *(_QWORD*)v2 + 88LL))(
+      v2, 8,
+      "/Inside/Lib/PhysX/O/physx/source/physx/src/"
+      "NpArticulationReducedCoordinate.cpp",
+      284,
+      "PxArticulationReducedCoordinate::computeGeneralizedExternalForce() not "
+      "allowed while simulation is running. C"
+      "all will be ignored.");
+}
+
+__int64 physx_source_physx_src_2f4480(__int64 a1)
+{
+  __int64 v1;
+  __int64 v2;
+
+  v1 = *(_QWORD*)(a1 + 24);
+  if (v1 == 0 || *(_BYTE*)(v1 + 1002) != 1) {
+    return GameRoutine_3103f0((__int64*)(a1 + 40));
+  }
+  v2 = PxGetFoundation();
+  return (*(__int64 (**)(__int64, __int64, const char*, __int64, const char*))(
+      *(_QWORD*)v2 + 88LL))(
+      v2, 8,
+      "/Inside/Lib/PhysX/O/physx/source/physx/src/"
+      "NpArticulationReducedCoordinate.cpp",
+      295,
+      "PxArticulationReducedCoordinate::computeJointAcceleration() not allowed "
+      "while simulation is running. Call will be ignored.");
+}
+
+__int64 physx_source_physx_src_2f44e0(__int64 a1)
+{
+  __int64 v1;
+  __int64 v2;
+
+  v1 = *(_QWORD*)(a1 + 24);
+  if (v1 == 0 || *(_BYTE*)(v1 + 1002) != 1) {
+    return GameRoutine_310400((__int64*)(a1 + 40));
+  }
+  v2 = PxGetFoundation();
+  return (*(__int64 (**)(__int64, __int64, const char*, __int64, const char*))(
+      *(_QWORD*)v2 + 88LL))(
+      v2, 8,
+      "/Inside/Lib/PhysX/O/physx/source/physx/src/"
+      "NpArticulationReducedCoordinate.cpp",
+      306,
+      "PxArticulationReducedCoordinate::computeJointForce() not allowed while "
+      "simulation is running. Call will be ignored.");
+}
+
+__int64 physx_source_physx_src_2f4540(__int64 a1)
+{
+  __int64 v1;
+  __int64 v2;
+
+  v1 = *(_QWORD*)(a1 + 24);
+  if (v1 == 0 || *(_BYTE*)(v1 + 1002) != 1) {
+    return GameRoutine_310410((__int64*)(a1 + 40));
+  }
+  v2 = PxGetFoundation();
+  return (*(__int64 (**)(__int64, __int64, const char*, __int64, const char*))(
+      *(_QWORD*)v2 + 88LL))(
+      v2, 8,
+      "/Inside/Lib/PhysX/O/physx/source/physx/src/"
+      "NpArticulationReducedCoordinate.cpp",
+      317,
+      "PxArticulationReducedCoordinate::computeDenseJacobian() not allowed "
+      "while simulation is running. Call will be ignored.");
+}
+
+__int64 physx_source_physx_src_2f4ba0(__int64 a1)
+{
+  return GameRoutine_3104d0((_QWORD*)(a1 + 40));
+}
+
+__int64 physx_source_physx_src_2f4bb0(__int64 a1, float* a2, char a3)
+{
+
+#pragma clang fp contract(off)
+  __int64 v3;
+  __int64 v4;
+
+  v3 = *(_QWORD*)(a1 + 24);
+  if (v3 == 0 || *(_BYTE*)(v3 + 1002) != 1) {
+    return physx_source_physx_src_2fa5a0(**(_QWORD**)(a1 + 112), a2, a3 & 1);
+  }
+  v4 = PxGetFoundation();
+  return (*(__int64 (**)(__int64, __int64, const char*, __int64, const char*))(
+      *(_QWORD*)v4 + 88LL))(
+      v4, 8,
+      "/Inside/Lib/PhysX/O/physx/source/physx/src/"
+      "NpArticulationReducedCoordinate.cpp",
+      489,
+      "PxArticulationReducedCoordinate::setRootGlobalPose() not allowed while "
+      "simulation is running. Call will be ignored.");
+}
+
+__attribute__((swiftcall)) void physx_source_physx_src_2f4c10(PSEUDO_X8 x8_,
+                                                              __int64 a1)
+{
+  __int64 a2 = (__int64)PSEUDO_X8_VALUE(x8_);
+  __int64 v2;
+  __int64 v4;
+
+  v2 = *(_QWORD*)(a1 + 24);
+  if (v2 != 0 && *(_BYTE*)(v2 + 1001) == 1 && (*(_BYTE*)(v2 + 6008) & 1) == 0) {
+    v4 = PxGetFoundation();
+    (*(void (**)(__int64, __int64, const char*, __int64, const char*))(
+        *(_QWORD*)v4 + 88LL))(
+        v4, 8,
+        "/Inside/Lib/PhysX/O/physx/source/physx/src/"
+        "NpArticulationReducedCoordinate.cpp",
+        500,
+        "PxArticulationReducedCoordinate::getRootGlobalPose() not allowed "
+        "while simulation is running, except in a split si"
+        "mulation during PxScene::collide() and up to PxScene::advance().");
+    *(_QWORD*)(a2 + 16) = 0;
+    *(_DWORD*)(a2 + 24) = 0;
+    *(_QWORD*)a2 = 0;
+    *(_QWORD*)(a2 + 8) = 0x3F80000000000000LL;
+  }
+  else {
+    physx_NpArticulationLink_getGlobalPose_alt1((void*)(a2),
+                                                **(_QWORD**)(a1 + 112));
+  }
+}
+
+__int64 physx_source_physx_src_2fa5a0(__int64 a1, float* a2, char a3)
+{
+  __int64 v3;
+  __int64 v7;
+  __int64 result;
+  __int64 v9;
+  float v10;
+  float v11;
+  float v12;
+  float v13;
+  float v14;
+  float v15;
+  float v16;
+  float v17;
+  float v18;
+  float v19;
+  float v20;
+  float v21;
+  float v22;
+  float v23;
+  float v24;
+  float v25;
+  float v26;
+  float v27;
+  float v28;
+  float v29;
+  float v30;
+  float v31;
+  float v32;
+  float v33;
+  float v34[7];
+
+  v3 = *(_QWORD*)(a1 + 24);
+  if (v3 != 0) {
+    if (*(_BYTE*)(v3 + 1002) == 1) {
+      v7 = PxGetFoundation();
+      return (*(__int64 (**)(__int64, __int64, const char*, __int64,
+                             const char*))(*(_QWORD*)v7 + 88LL))(
+          v7, 8,
+          "/Inside/Lib/PhysX/O/physx/source/physx/src/NpArticulationLink.cpp",
+          349,
+          "PxArticulationLink::setGlobalPose() not allowed while simulation is "
+          "running. Call will be ignored.");
+    }
+    physx_NpScene_getFlags((void*)(v34), *(_QWORD*)(a1 + 24));
+    if ((BYTE2(v34[0]) & 2) != 0 && *(_BYTE*)(v3 + 6009) == 1) {
+      v9 = PxGetFoundation();
+      (*(void (**)(__int64, __int64, const char*, __int64, const char*))(
+          *(_QWORD*)v9 + 88LL))(
+          v9, 8,
+          "/Inside/Lib/PhysX/O/physx/source/physx/src/NpArticulationLink.cpp",
+          353,
+          "PxArticulationLink::setGlobalPose(): it is illegal to call this "
+          "method if PxSceneFlag::eENABLE_DIRECT_GPU_API is enabled!");
+    }
+  }
+  v10 = 0x1.0000000000000p+0f /
+        GameRoutine_1a0a010(
+            (float)((float)((float)(PSEUDO_UNFUSED(a2[1] * a2[1])) +
+                            (float)(*a2 * *a2)) +
+                    (float)(a2[2] * a2[2])) +
+            (float)(a2[3] * a2[3]));
+  v11 = *(float*)(a1 + 148) + *(float*)(a1 + 148);
+  v12 = *(float*)(a1 + 152) + *(float*)(a1 + 152);
+  v13 = *(float*)(a1 + 144) + *(float*)(a1 + 144);
+  v14 = v10 * a2[2];
+  v15 = v10 * a2[1];
+  v16 = *a2 * v10;
+  v17 = v10 * a2[3];
+  v18 = (float)(v17 * v17) + -0x1.0000000000000p-1f;
+  v19 = (float)((float)(PSEUDO_UNFUSED(v15 * v11)) + (float)(v16 * v13)) +
+        (float)(v14 * v12);
+  v20 =
+      a2[4] +
+      (float)((float)((float)(PSEUDO_UNFUSED(
+                          v17 * (float)((float)(v15 * v12) -
+                                        (float)(PSEUDO_UNFUSED(v14 * v11))))) +
+                      (float)(v13 * v18)) +
+              (float)(v16 * v19));
+  v21 =
+      a2[5] +
+      (float)((float)((float)(PSEUDO_UNFUSED(
+                          v17 * (float)((float)(v14 * v13) -
+                                        (float)(PSEUDO_UNFUSED(v16 * v12))))) +
+                      (float)(v11 * v18)) +
+              (float)(v15 * v19));
+  v22 = (float)(PSEUDO_UNFUSED(
+            v17 *
+            (float)((float)(v16 * v11) - (float)(PSEUDO_UNFUSED(v15 * v13))))) +
+        (float)(v12 * v18);
+  v24 = *(float*)(a1 + 136);
+  v23 = *(float*)(a1 + 140);
+  v34[4] = v20;
+  v34[5] = v21;
+  v25 = v22 + (float)(v14 * v19);
+  v26 = *(float*)(a1 + 128);
+  v27 = *(float*)(a1 + 132);
+  v28 = (float)((float)(PSEUDO_UNFUSED(v14 * v23)) + (float)(v17 * v24)) +
+        (float)(v16 * v27);
+  v29 = (float)((float)(PSEUDO_UNFUSED(v16 * v23)) + (float)(v17 * v26)) +
+        (float)(v15 * v24);
+  v30 =
+      (float)((float)((float)(PSEUDO_UNFUSED(v15 * v23)) + (float)(v17 * v27)) +
+              (float)(v14 * v26)) -
+      (float)(v24 * v16);
+  v31 = -(float)(v16 * v26);
+  v32 = v28 - (float)(v26 * v15);
+  v33 = a2[6];
+  v34[0] = v29 - (float)(v27 * v14);
+  v34[1] = v30;
+  v34[2] = v32;
+  v34[3] = (float)((float)(v31 + (float)(v17 * v23)) - (float)(v15 * v27)) -
+           (float)(v14 * v24);
+  v34[6] = v33 + v25;
+  result = physx_Sc_BodyCore_setBody2World(a1 + 80, (__int64)v34);
+  if (v3 != 0 && (a3 & 1) != 0) {
+    physx_NpArticulationReducedCoordinate_wakeUpInternal(*(_QWORD*)(a1 + 256),
+                                                         0, 1);
+  }
+  else if (v3 == 0) {
+    return result;
+  }
+  return physx_NpArticulationReducedCoordinate_setGlobalPose(
+      *(_QWORD*)(a1 + 256));
+}
+
+void __attribute__((noreturn)) physx_source_physx_src_2fc130()
+{
+  __udf(0x8002u);
+}
+
+__int64 physx_source_physx_src_2fc140(__int64 a1)
+{
+  *(_QWORD*)a1 = &GameData_1f83c90;
+  return physx_NpActor_onActorRelease(a1);
+}
+
+void __attribute__((noreturn)) physx_source_physx_src_2fc160()
+{
+  __udf(0x8002u);
 }
 
 #pragma GCC visibility pop

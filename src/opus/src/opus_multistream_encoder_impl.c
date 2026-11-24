@@ -14,6 +14,8 @@ __int64 nncodecLibopus_opus_multistream_encoder_create(
 __int64 opus_multistream_encoder_321880(__int64 a1);
 __int64 opus_copy_channel_in_float(__int64 result, int a2, __int64 a3, int a4,
                                    int a5, int a6);
+_WORD* opus_multistream_encoder_321a40(_WORD* result, int a2, __int64 a3,
+                                       int a4, int a5, int a6);
 
 __int64 nncodecLibopus_opus_multistream_encoder_create(unsigned int a1,
                                                        unsigned int a2, int a3,
@@ -185,6 +187,99 @@ __int64 opus_multistream_encoder_321880(__int64 a1)
     }
   }
   return v5;
+}
+
+_WORD* opus_multistream_encoder_321a40(_WORD* result, int a2, __int64 a3,
+                                       int a4, int a5, int a6)
+{
+  __int64 v6;
+  __int64 v7;
+  __int64 v8;
+  __int64 v9;
+  __int64 v10;
+  __int64 v11;
+  _WORD* v12;
+  __int64 v13;
+  _WORD* v14;
+  _WORD* v15;
+  __int16* v16;
+  __int16 v17;
+  __int16* v18;
+  _WORD* v19;
+  __int16 v20;
+  __int16* v21;
+  _WORD* v22;
+  __int16 v23;
+  __int16* v24;
+  _WORD* v25;
+  __int16 v26;
+  __int16* v27;
+  _WORD* v28;
+  __int16 v29;
+  __int16* v30;
+  __int16* v31;
+  _WORD* v32;
+  __int16* v33;
+  __int16 v34;
+
+  if (a6 >= 1) {
+    v6 = a4;
+    v7 = a2;
+    v8 = a6 & 7;
+    v9 = a2;
+    v10 = a4;
+    if ((unsigned int)a6 >= 8) {
+      v12 = (_WORD*)(a3 + 2LL * a5);
+      v13 = a6 & 0x7FFFFFF8;
+      v11 = 0;
+      v14 = result;
+      do {
+        v15 = &v14[v7];
+        v11 += 8;
+        *v14 = *v12;
+        v16 = &v12[v6];
+        v14 += 8 * v7;
+        v12 += 8 * v6;
+        v17 = *v16;
+        v18 = &v16[v10];
+        *v15 = v17;
+        v19 = &v15[v9];
+        v20 = *v18;
+        v21 = &v18[v10];
+        *v19 = v20;
+        v22 = &v19[v9];
+        v23 = *v21;
+        v24 = &v21[v10];
+        *v22 = v23;
+        v25 = &v22[v9];
+        v26 = *v24;
+        v27 = &v24[v10];
+        *v25 = v26;
+        v28 = &v25[v9];
+        v29 = *v27;
+        v30 = &v27[v10];
+        *v28 = v29;
+        v31 = &v28[v9];
+        *v31 = *v30;
+        v31[v9] = v30[v10];
+      } while (v13 != v11);
+    }
+    else {
+      v11 = 0;
+    }
+    if (v8 != 0) {
+      v32 = &result[v11 * v7];
+      v33 = (__int16*)(a3 + 2 * v11 * v6 + 2LL * a5);
+      do {
+        v34 = *v33;
+        v33 = (__int16*)((char*)v33 + v10 * 2);
+        --v8;
+        *v32 = v34;
+        v32 = (_WORD*)((char*)v32 + v9 * 2);
+      } while (v8 != 0);
+    }
+  }
+  return result;
 }
 
 __int64 opus_copy_channel_in_float(__int64 result, int a2, __int64 a3, int a4,
