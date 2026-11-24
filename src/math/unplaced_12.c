@@ -382,7 +382,7 @@ __attribute__((swiftcall)) void math_622ac0(PSEUDO_X8 x8_, float32x2_t* a1)
     else {
       if (LANES128(v2).n128_f32[0] >= 0x0.0p+0f) {
         v76 = -v6;
-        v23 = LANES128(v2).n128_f32[0] > (float)-v6;
+        v23 = !(LANES128(v2).n128_f32[0] <= (float)-v6);
         v77 = *(float*)GameData_212c2f0;
         v78 = *(float*)((char*)((_UNKNOWN**)0x8LL) + (_QWORD)GameData_212c2f0);
         v79 = *(float*)((char*)((__int128*)0x10LL) + (_QWORD)GameData_212c2f0);
@@ -698,7 +698,7 @@ __attribute__((swiftcall)) void math_622ac0(PSEUDO_X8 x8_, float32x2_t* a1)
     else {
       if (LANES128(v2).n128_f32[0] >= 0x0.0p+0f) {
         v105 = -v6;
-        v23 = LANES128(v2).n128_f32[0] > (float)-v6;
+        v23 = !(LANES128(v2).n128_f32[0] <= (float)-v6);
         v106 = *(float*)GameData_212c2f0;
         v107 = *(float*)((char*)((_UNKNOWN**)0x8LL) + (_QWORD)GameData_212c2f0);
         v108 = *(float*)((char*)((__int128*)0x10LL) + (_QWORD)GameData_212c2f0);
@@ -884,7 +884,7 @@ __attribute__((swiftcall)) void math_622ac0(PSEUDO_X8 x8_, float32x2_t* a1)
   if (!(v17 >= 0x0.0p+0f)) {
     if (!(v16 >= 0x0.0p+0f)) {
       v52 = v17 / v16;
-      v23 = v17 > v16;
+      v23 = !(v17 <= v16);
       v53 = v16 / v17;
       v54 = *(float*)((char*)((_UNKNOWN**)0x8LL) + (_QWORD)GameData_212c2f0);
       v55 = *(float*)((char*)((__int128*)0x10LL) + (_QWORD)GameData_212c2f0);
@@ -965,7 +965,7 @@ __attribute__((swiftcall)) void math_622ac0(PSEUDO_X8 x8_, float32x2_t* a1)
       goto LABEL_5;
     }
     v112 = -v17;
-    v23 = v16 > (float)-v17;
+    v23 = !(v16 <= (float)-v17);
     v113 = *(float*)GameData_212c2f0;
     v114 = *(float*)((char*)((_UNKNOWN**)0x8LL) + (_QWORD)GameData_212c2f0);
     v115 = *(float*)((char*)((__int128*)0x10LL) + (_QWORD)GameData_212c2f0);
@@ -1357,7 +1357,7 @@ LABEL_5:
       if (v19 >= 0x0.0p+0f) {
         v99 = -v20;
         v100 = v99 / v19;
-        v23 = v19 > v99;
+        v23 = !(v19 <= v99);
         v101 = v19 / v99;
         v102 = *(float*)((char*)((_UNKNOWN**)0x8LL) + (_QWORD)GameData_212c2f0);
         v103 = *(float*)((char*)((__int128*)0x10LL) + (_QWORD)GameData_212c2f0);
@@ -1428,7 +1428,7 @@ LABEL_5:
       }
       else {
         v22 = v20 / v19;
-        v23 = v20 > v19;
+        v23 = !(v20 <= v19);
         v24 = v19 / v20;
         v25 = *(float*)((char*)((_UNKNOWN**)0x8LL) + (_QWORD)GameData_212c2f0);
         v26 = *(float*)((char*)((__int128*)0x10LL) + (_QWORD)GameData_212c2f0);

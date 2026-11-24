@@ -17457,7 +17457,7 @@ fff90,116,verified,src/snd/api.cpp,_ZN3snd10startPitchERKNS_3fnd10WeakHandleERKN
 622930,264,verified,src/math/quaternion.cpp,_ZNK4math4Quat6RotateERKNS_4Vec3E
 622a40,96,verified,src/math/quaternion.cpp,_ZN4math4Quat9NormalizeEv
 622aa0,28,verified,src/math/quaternion.cpp,_ZNK4math4Quat3DotERKS0_
-622ac0,2260,disputed,src/math/unplaced_12.c,math_622ac0
+622ac0,2616,verified,src/math/unplaced_12.c,math_622ac0
 623860,248,verified,src/math/quaternion.cpp,_ZNK4math4Quat15ToEulerianAngleERfS1_S1_
 623960,260,verified,src/math/quaternion.cpp,_ZNK4math4Quat15ToEulerianAngleEv
 623a70,800,verified,src/math/quaternion.cpp,_ZN4math4Quat5SlerpERKS0_S2_f
@@ -52838,7 +52838,7 @@ fffcb0,1244,verified,src/game/unnamed/b014_1.c,GameHr_fffcb0
 112b850,24,verified,src/llvm-libcxx-21/libcxx/include/__functional/function.h,"std::__1::__function::__func<game::character::CharacterDamageFalldown::OnEnable()::$_2, void (int, nn::g3d::WorldMtxManip&)>::__clone(__base*)"
 112b870,4,verified,src/llvm-libcxx-21/libcxx/include/__functional/function.h,"std::__1::__function::__func<game::character::CharacterDamageFalldown::OnEnable()::$_2, void (int, nn::g3d::WorldMtxManip&)>::destroy()"
 112b880,12,verified,src/llvm-libcxx-21/libcxx/include/__functional/function.h,"std::__1::__function::__func<game::character::CharacterDamageFalldown::OnEnable()::$_2, void (int, nn::g3d::WorldMtxManip&)>::destroy_deallocate()"
-112b890,68,disputed,src/game/character/character_damage_falldown.c,game_character_CharacterDamageFalldown_OnEnable_lambda2_Invoke
+112b890,1072,disputed,src/game/character/character_damage_falldown.c,game_character_CharacterDamageFalldown_OnEnable_lambda2_Invoke
 112bcd0,28,verified,src/llvm-libcxx-21/libcxx/include/__functional/function.h,"std::__1::__function::__func<game::character::CharacterDamageFalldown::OnEnable()::$_2, void (int, nn::g3d::WorldMtxManip&)>::target(std::type_info const&)"
 112bcf0,12,verified,src/llvm-libcxx-21/libcxx/include/__functional/function.h,"std::__1::__function::__func<game::character::CharacterDamageFalldown::OnEnable()::$_2, void (int, nn::g3d::WorldMtxManip&)>::target_type()"
 112bd00,556,verified,src/game/unnamed/b016_0.c,GameHr_112bd00
