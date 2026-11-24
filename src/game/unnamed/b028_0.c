@@ -12041,7 +12041,12 @@ __int64 GameHr_75d120(__int64 a1, char a2)
            (v9 = *(_QWORD*)(*(_QWORD*)(*GameData_212c880[0] + 64) +
                             8LL * (*(_DWORD*)(*GameData_212cfd0[0] + 56) &
                                    0xFFF))) == 0 ||
-           (unsigned int)*(unsigned __int8*)(v9 + 250) - 13 >= 2) &&
+           ({
+             // The original reads the kind before it tests v8.
+             unsigned int kind = *(unsigned __int8*)(v9 + 250);
+             __asm__ volatile("" ::"r"(kind));
+             kind;
+           }) - 13 >= 2) &&
           v8 <= 0x11 && ((1 << v8) & 0x33800) != 0) {
         return GameRoutine_657850(v4, &GameData_21cfd28, "ProcMapSeqMind", 1,
                                   a1);

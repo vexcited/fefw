@@ -20393,7 +20393,7 @@ fff90,116,verified,src/snd/api.cpp,_ZN3snd10startPitchERKNS_3fnd10WeakHandleERKN
 75d0e0,28,verified,src/llvm-libcxx-21/libcxx/include/__functional/function.h,"std::__1::__function::__func<game::map::MapUtil::CanSummon(game::Unit const*, game::UnitSkill const&, int, int)::$_0, void (game::map::MapUtil::SummonArgs const&)>::target(std::type_info const&)"
 75d100,12,verified,src/llvm-libcxx-21/libcxx/include/__functional/function.h,"std::__1::__function::__func<game::map::MapUtil::CanSummon(game::Unit const*, game::UnitSkill const&, int, int)::$_0, void (game::map::MapUtil::SummonArgs const&)>::target_type()"
 75d110,8,verified,src/game/game_trivial_thunks.cpp,_Z15GameStub_75d110m
-75d120,5400,disputed,src/game/unnamed/b028_0.c,GameHr_75d120
+75d120,5400,verified,src/game/unnamed/b028_0.c,GameHr_75d120
 75e720,176,verified,src/game/unnamed/b005_1.c,GameHr_75e720
 75e7e0,140,verified,src/game/unnamed/b005_1.c,GameHr_75e7e0
 75e870,96,verified,src/game/unnamed/b005_1.c,GameHr_75e870
