@@ -4210,12 +4210,12 @@ __int64 CudaDriverHr_21ada0(__int64 a1, unsigned int* a2)
   return result;
 }
 
-bool CudaDriverHr_21ae90(__int64 a1, unsigned int a2, _QWORD* a3)
+unsigned int CudaDriverHr_21ae90(__int64 a1, unsigned int a2, _QWORD* a3)
 {
   __int64 v5;
 
   if (a1 == 0 || a3 == nullptr) {
-    return true;
+    return 1;
   }
   v5 = CudaDriverRoutine_98340(a1);
   return CudaDriverRoutine_208ef0(*(_QWORD*)(v5 + 2112), a2, a3);

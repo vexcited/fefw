@@ -64037,7 +64037,7 @@ fffcb0,1244,verified,src/game/unnamed/b014_1.c,GameHr_fffcb0
 1486980,40,verified,src/game/unnamed/b019_1.c,GameHr_1486980
 14869b0,344,verified,src/game/unnamed/b019_1.c,GameHr_14869b0
 1486b70,152,verified,src/game/unnamed/b019_1.c,GameHr_1486b70
-1486c20,356,verified,src/game/unnamed/b019_1.c,GameHr_1486c20
+1486c20,384,verified,src/game/unnamed/b019_1.c,GameHr_1486c20
 1486de0,316,verified,src/game/unnamed/b019_1.c,GameHr_1486de0
 1486f50,412,verified,src/game/unnamed/b019_1.c,GameHr_1486f50
 14870f0,132,verified,src/game/facility/anonymous/impl.c,Impl_Destructor_14870f0
@@ -64375,7 +64375,7 @@ fffcb0,1244,verified,src/game/unnamed/b014_1.c,GameHr_fffcb0
 14a06a0,372,verified,src/game/unplaced_12.c,game_14a06a0
 14a0820,280,verified,src/game/unplaced_17.c,game_14a0820
 14a0940,328,verified,src/game/unplaced_17.c,game_14a0940
-14a0af0,364,verified,src/game/unnamed/b019_1.c,GameHr_14a0af0
+14a0af0,360,verified,src/game/unnamed/b019_1.c,GameHr_14a0af0
 14a0c60,584,verified,src/game/unnamed/b019_1.c,GameHr_14a0c60
 14a0ec0,100,verified,src/game/unplaced_12.c,game_14a0ec0
 14a0f30,348,verified,src/game/unplaced_17.c,game_14a0f30
@@ -64384,7 +64384,7 @@ fffcb0,1244,verified,src/game/unnamed/b014_1.c,GameHr_fffcb0
 14a1240,292,verified,src/game/unnamed/b019_1.c,GameHr_14a1240
 14a1390,184,verified,src/game/unnamed/b019_1.c,GameHr_14a1390
 14a1460,180,verified,src/game/unplaced_12.c,game_14a1460
-14a1520,160,verified,src/game/unnamed/b019_1.c,GameHr_14a1520
+14a1520,184,verified,src/game/unnamed/b019_1.c,GameHr_14a1520
 14a15e0,180,verified,src/game/unplaced_12.c,game_14a15e0
 14a16a0,220,verified,src/game/unnamed/b019_1.c,GameHr_14a16a0
 14a17c0,100,verified,src/game/unnamed/b019_1.c,GameHr_14a17c0
@@ -64449,7 +64449,7 @@ fffcb0,1244,verified,src/game/unnamed/b014_1.c,GameHr_fffcb0
 14a7980,284,verified,src/game/unnamed/b019_1.c,GameHr_14a7980
 14a7aa0,328,verified,src/game/templates/unplaced_2.c,game_templates_14a7aa0
 14a7c40,864,verified,src/game/unnamed/b019_1.c,GameHr_14a7c40
-14a80a0,2216,verified,src/game/unnamed/b019_1.c,GameHr_14a80a0
+14a80a0,2284,verified,src/game/unnamed/b019_1.c,GameHr_14a80a0
 14a89d0,356,verified,src/game/templates/vector.cpp,_ZNSt3__16vectorIPN4game11UnrecoveredILj13EEENS_9allocatorIS4_EEE18__assign_with_sizeB8nn210108IPS4_S9_EEvT_T0_l
 14a8b40,44,verified,src/llvm-libcxx-21/libcxx/include/__functional/function.h,"std::__1::__function::__func<game::gmap::Miasma::TryChangeState()::$_0, void (game::gmap::Troop*)>::deleting destructor"
 14a8b70,76,verified,src/llvm-libcxx-21/libcxx/include/__functional/function.h,"std::__1::__function::__func<game::gmap::Miasma::TryChangeState()::$_0, void (game::gmap::Troop*)>::__clone()"
@@ -64539,7 +64539,7 @@ fffcb0,1244,verified,src/game/unnamed/b014_1.c,GameHr_fffcb0
 14ae960,364,verified,src/game/proc/unread_proc_singletons.cpp,_ZN4game21ProcJumpableSingletonINS_4gmap12_GLOBAL__N_118ProcGmapCommandSeqENS1_14GmapCommandSeq4KindEE9ApplyJumpEv
 14aeae0,632,verified,src/game/gmap/anonymous/unplaced.c,game_gmap_anonymous_14aeae0
 14aeda0,348,disputed,src/game/unnamed/b019_1.c,GameHr_14aeda0
-14af000,372,disputed,src/game/unnamed/b019_1.c,GameHr_14af000
+14af000,492,verified,src/game/unnamed/b019_1.c,GameHr_14af000
 14af220,348,verified,src/game/unnamed/b019_1.c,GameHr_14af220
 14af3a0,528,verified,src/game/gmap/anonymous/unplaced.c,game_gmap_anonymous_14af3a0
 14af600,196,verified,src/game/unnamed/b019_1.c,GameHr_14af600
@@ -70059,7 +70059,7 @@ fffcb0,1244,verified,src/game/unnamed/b014_1.c,GameHr_fffcb0
 1637bc0,12,verified,src/game/cmdbtl/cmdbtl_unit_select_menu.cpp,_ZN4game6cmdbtl20CmdBtlUnitSelectMenu13ImplUnknown05Ev
 1637bd0,12,verified,src/game/cmdbtl/cmdbtl_unit_select_menu.cpp,_ZThn1056_N4game6cmdbtl20CmdBtlUnitSelectMenu13ImplUnknown05Ev
 1637be0,244,verified,src/game/cmdbtl/cmdbtl_unit_select_menu_impl.c,CmdbtlUnitSelectMenu_1637be0
-1637cf0,124,disputed,src/game/cmdbtl/cmdbtl_unit_select_menu_impl.c,CmdbtlUnitSelectMenu_1637cf0
+1637cf0,280,verified,src/game/cmdbtl/cmdbtl_unit_select_menu_impl.c,CmdbtlUnitSelectMenu_1637cf0
 1637e20,304,verified,src/game/cmdbtl/cmd_btl_unit_select_menu.c,game_cmdbtl_CmdBtlUnitSelectMenu_UpdateInfo
 16380e0,8,verified,src/game/cmdbtl/cmdbtl_unit_select_menu.cpp,_ZN4game6cmdbtl20CmdBtlUnitSelectMenu10Unknown101Ev
 1638100,628,verified,src/game/cmdbtl/cmd_btl_unit_select_menu.c,CmdBtlUnitSelectMenu_1638100

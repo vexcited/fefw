@@ -345,7 +345,7 @@ __int64 cuda_driver_61d40(_DWORD* a1, __int64* a2, __int64 a3, __int64 a4);
 __int64 cuda_driver_61ea0(__int64 a1, char a2, _BYTE* a3);
 __int64 cuda_driver_62140(_QWORD* a1);
 __int64 cuda_driver_621d0(__int64 a1, unsigned int* a2, bool* a3);
-long double cuda_driver_63b40(int a1, __int64 a2, __int64 a3);
+void cuda_driver_63b40(int a1, __int64 a2, __int64 a3);
 __int64* cuda_driver_640e0(__int64* result, _QWORD* a2, char a3);
 int64x2_t* cuda_driver_64280(int64x2_t* result, unsigned __int32 a2,
                              unsigned int a3, __int64 a4);
@@ -1081,14 +1081,12 @@ __int64 cuda_driver_621d0(__int64 a1, unsigned int* a2, bool* a3)
   }
 }
 
-long double cuda_driver_63b40(int a1, __int64 a2, __int64 a3)
+void cuda_driver_63b40(int a1, __int64 a2, __int64 a3)
 {
 
 #pragma clang fp contract(off)
   _OWORD* v3;
-  long double result;
 
-  result = COERCE_AS(__typeof__(result), PSEUDO_REGISTER(__n128, "v0", "=w"));
   if (a1 > 6) {
     switch (a1) {
     case 7:
@@ -1105,11 +1103,12 @@ long double cuda_driver_63b40(int a1, __int64 a2, __int64 a3)
       *(_OWORD*)a3 = CudaDriverData_11157a0;
       *(_OWORD*)(a3 + 16) = CudaDriverData_1115300;
       *(_OWORD*)(a3 + 32) = CudaDriverData_11156e0;
-      return *(long double*)&CudaDriverData_11157a0;
+      return;
     default:
-      return result;
+      return;
     }
-    return cuda_driver_misc_helpers_43a0(v3);
+    cuda_driver_misc_helpers_43a0(v3);
+    return;
   }
   if (a1 == 5) {
     *(_OWORD*)(a3 + 32) = CudaDriverData_1115a00;
@@ -1118,7 +1117,7 @@ long double cuda_driver_63b40(int a1, __int64 a2, __int64 a3)
     *(_OWORD*)(a3 + 80) = CudaDriverData_1116010;
     *(_OWORD*)a3 = CudaDriverData_1115cc0;
     *(_OWORD*)(a3 + 16) = CudaDriverData_1115360;
-    return *(long double*)&CudaDriverData_1115cc0;
+    return;
   }
   else if (a1 == 6) {
     *(_OWORD*)(a3 + 32) = CudaDriverData_1115a00;
@@ -1127,9 +1126,9 @@ long double cuda_driver_63b40(int a1, __int64 a2, __int64 a3)
     *(_OWORD*)(a3 + 80) = CudaDriverData_1116010;
     *(_OWORD*)a3 = CudaDriverData_1115cc0;
     *(_OWORD*)(a3 + 16) = CudaDriverData_1115360;
-    return *(long double*)&CudaDriverData_1115cc0;
+    return;
   }
-  return result;
+  return;
 }
 
 __int64* cuda_driver_640e0(__int64* result, _QWORD* a2, char a3)

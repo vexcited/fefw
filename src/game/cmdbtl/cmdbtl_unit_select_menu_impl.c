@@ -5,7 +5,7 @@
 __attribute__((swiftcall)) void GameRoutine_1560070(PSEUDO_X8, _QWORD, _QWORD);
 __int64 GameRoutine_1593d90(_QWORD, _QWORD);
 __int64 GameRoutine_15940f0(_QWORD, _QWORD, _QWORD);
-__int64 GameRoutine_1637e20(_QWORD);
+void GameRoutine_1637e20(_QWORD);
 __int64 GameRoutine_16cd870(void);
 __int64 LayoutAccessor_155fbe0(_QWORD, _QWORD);
 __int64 __dynamic_cast(_QWORD, _QWORD, _QWORD, _QWORD);
@@ -16,10 +16,11 @@ extern __int64 GameData_206e7b8;
 extern __int64* GameData_212e008[9];
 extern char GameData_1a9f09e;
 void __attribute__((noreturn)) GameRoutine_60a310(_QWORD, _QWORD);
-__int64 CmdbtlUnitSelectMenu_1637be0(__int64 a1, __int64 a2);
-__int64 CmdbtlUnitSelectMenu_1637cf0(__int64 a1);
+unsigned int CmdbtlUnitSelectMenu_1637be0(__int64 a1, __int64 a2);
+void CmdbtlUnitSelectMenu_1637cf0(__int64 a1);
 
-__int64 CmdbtlUnitSelectMenu_1637be0(__int64 a1, __int64 a2)
+__attribute__((noinline)) unsigned int
+CmdbtlUnitSelectMenu_1637be0(__int64 a1, __int64 a2)
 {
   __int64 v3;
   __int64 v4;
@@ -84,7 +85,7 @@ LABEL_13:
   return v14;
 }
 
-__int64 CmdbtlUnitSelectMenu_1637cf0(__int64 a1)
+void CmdbtlUnitSelectMenu_1637cf0(__int64 a1)
 {
   __int64 v2;
   int v3;
@@ -129,7 +130,8 @@ __int64 CmdbtlUnitSelectMenu_1637cf0(__int64 a1)
   if (v10_.v11 != 0) {
     std___1___shared_weak_count___release_weak(v10_.v11);
   }
-  return GameRoutine_1637e20(a1);
+  GameRoutine_1637e20(a1);
+  return;
 }
 
 #pragma GCC visibility pop
