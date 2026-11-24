@@ -1688,13 +1688,14 @@ unsigned __int8* nvidia_c52a0(_QWORD** a1, _QWORD* a2, unsigned __int8* a3,
   unsigned __int8* v60;
   char* v61;
   _QWORD** v62;
-  char v64;
+  // Flags for up to 100 entries, larger inputs use the heap.
+  char v64[100];
 
   v10 = a3;
   v13 = (a4 - a3) >> 3;
   v14 = 0xAAAAAAAAAAAAAAABLL * v13;
   if (0xAAAAAAAAAAAAAAABLL * v13 < 0x65) {
-    v61 = &v64;
+    v61 = v64;
     v58 = a6;
     v59 = 0;
     if (a3 != a4) {

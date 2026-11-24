@@ -44,7 +44,7 @@ e10,16,verified,src/nvidia/dlss/rel/source/features/dlaa/dltss_fast_kernels.c,dl
 e20,260,verified,src/nvidia/dlss/rel/source/features/dlaa/dltss_fast_kernels.c,dltss_fkinterface_nhwc_conv_1x1_128_128_032_fp16_e5m3_Launch
 f30,56,verified,src/nvidia/dlss/rel/source/features/dlaa/dltss_fast_kernels.c,dltss_fkinterface_nhwc_conv_3x3_064_032_064_fp16_fp16_GetGridDim
 f70,16,verified,src/nvidia/dlss/rel/source/features/dlaa/dltss_fast_kernels.c,dltss_fkinterface_nhwc_conv_3x3_064_032_064_fp16_fp16_GetBlockDim
-f80,252,verified,src/nvidia/dlss/rel/source/features/dlaa/dltss_fast_kernels.c,dltss_fkinterface_nhwc_conv_3x3_064_032_064_fp16_fp16_Launch
+f80,260,verified,src/nvidia/dlss/rel/source/features/dlaa/dltss_fast_kernels.c,dltss_fkinterface_nhwc_conv_3x3_064_032_064_fp16_fp16_Launch
 1090,56,verified,src/nvidia/dlss/rel/source/features/dlaa/dltss_fast_kernels.c,dltss_fkinterface_nhwc_conv_3x3_064_064_032_fp16_fp16_GetGridDim
 10d0,16,verified,src/nvidia/dlss/rel/source/features/dlaa/dltss_fast_kernels.c,dltss_fkinterface_nhwc_conv_3x3_064_064_032_fp16_fp16_GetBlockDim
 10e0,260,verified,src/nvidia/dlss/rel/source/features/dlaa/dltss_fast_kernels.c,dltss_fkinterface_nhwc_conv_3x3_064_064_032_fp16_fp16_Launch
@@ -80,7 +80,7 @@ f80,252,verified,src/nvidia/dlss/rel/source/features/dlaa/dltss_fast_kernels.c,d
 1ee0,260,verified,src/nvidia/dlss/rel/source/features/dlaa/dltss_fast_kernels.c,dltss_fkinterface_nhwc_conv_3x3_256_024_032_fp16_fp16_Launch
 1ff0,56,verified,src/nvidia/dlss/rel/source/features/dlaa/dltss_fast_kernels.c,dltss_fkinterface_nhwc_conv_3x3_256_032_032_e5m3_e5m3_GetGridDim
 2030,16,verified,src/nvidia/dlss/rel/source/features/dlaa/dltss_fast_kernels.c,dltss_fkinterface_nhwc_conv_3x3_256_032_032_e5m3_e5m3_GetBlockDim
-2040,160,verified,src/nvidia/dlss/rel/source/features/dlaa/dltss_fast_kernels.c,dltss_fkinterface_nhwc_conv_3x3_256_032_032_e5m3_e5m3_Launch
+2040,264,verified,src/nvidia/dlss/rel/source/features/dlaa/dltss_fast_kernels.c,dltss_fkinterface_nhwc_conv_3x3_256_032_032_e5m3_e5m3_Launch
 2150,56,verified,src/nvidia/dlss/rel/source/features/dlaa/dltss_fast_kernels.c,dltss_fkinterface_nhwc_conv_3x3_256_032_032_e5m3_fp16_GetGridDim
 2190,16,verified,src/nvidia/dlss/rel/source/features/dlaa/dltss_fast_kernels.c,dltss_fkinterface_nhwc_conv_3x3_256_032_032_e5m3_fp16_GetBlockDim
 21a0,264,verified,src/nvidia/dlss/rel/source/features/dlaa/dltss_fast_kernels.c,dltss_fkinterface_nhwc_conv_3x3_256_032_032_e5m3_fp16_Launch
@@ -155,7 +155,7 @@ f80,252,verified,src/nvidia/dlss/rel/source/features/dlaa/dltss_fast_kernels.c,d
 40f0,228,verified,src/nvidia/dlss/rel/source/features/dlaa/dltss_fast_kernels.c,dltss_fkinterface_nchw8_conv_3x3_pool_512_032_008_fp16_fp16_Launch
 41e0,52,verified,src/nvidia/dlss/rel/source/features/dlaa/dltss_fast_kernels.c,dltss_fkinterface_nchw8_conv_3x3_pool_conv_1x1_pool_512_032_008_fp16_e5m3_GetGridDim
 4220,16,verified,src/nvidia/dlss/rel/source/features/dlaa/dltss_fast_kernels.c,dltss_fkinterface_nchw8_conv_3x3_pool_conv_1x1_pool_512_032_008_fp16_e5m3_GetBlockDim
-4230,168,verified,src/nvidia/dlss/rel/source/features/dlaa/dltss_fast_kernels.c,dltss_fkinterface_nchw8_conv_3x3_pool_conv_1x1_pool_512_032_008_fp16_e5m3_Launch
+4230,168,disputed,src/nvidia/dlss/rel/source/features/dlaa/dltss_fast_kernels.c,dltss_fkinterface_nchw8_conv_3x3_pool_conv_1x1_pool_512_032_008_fp16_e5m3_Launch
 42e0,52,verified,src/nvidia/dlss/rel/source/features/dlaa/dltss_fast_kernels.c,dltss_fkinterface_nchw8_conv_3x3_pool_conv_1x1_pool_512_032_008_fp16_fp16_GetGridDim
 4320,16,verified,src/nvidia/dlss/rel/source/features/dlaa/dltss_fast_kernels.c,dltss_fkinterface_nchw8_conv_3x3_pool_conv_1x1_pool_512_032_008_fp16_fp16_GetBlockDim
 43e0,64,verified,src/nvidia/dlss/rel/source/features/dlaa/dltss_fast_kernels.c,dltss_fkinterface_nhwc_conv_1x1_pool_256_064_032_e5m3_e5m3_GetGridDim
@@ -176,7 +176,7 @@ f80,252,verified,src/nvidia/dlss/rel/source/features/dlaa/dltss_fast_kernels.c,d
 4d70,16,verified,src/nvidia/dlss/rel/source/features/dlaa/dltss_fast_kernels.c,dltss_fkinterface_nhwc_conv_3x3_pool_128_064_032_e5m3_fp16_GetBlockDim
 4eb0,64,verified,src/nvidia/dlss/rel/source/features/dlaa/dltss_fast_kernels.c,dltss_fkinterface_nhwc_conv_3x3_pool_128_064_032_fp16_fp16_GetGridDim
 4ef0,16,verified,src/nvidia/dlss/rel/source/features/dlaa/dltss_fast_kernels.c,dltss_fkinterface_nhwc_conv_3x3_pool_128_064_032_fp16_fp16_GetBlockDim
-4f00,192,verified,src/nvidia/dlss/rel/source/features/dlaa/dltss_fast_kernels.c,dltss_fkinterface_nhwc_conv_3x3_pool_128_064_032_fp16_fp16_Launch
+4f00,192,disputed,src/nvidia/dlss/rel/source/features/dlaa/dltss_fast_kernels.c,dltss_fkinterface_nhwc_conv_3x3_pool_128_064_032_fp16_fp16_Launch
 5030,64,verified,src/nvidia/dlss/rel/source/features/dlaa/dltss_fast_kernels.c,dltss_fkinterface_nhwc_conv_3x3_pool_064_064_032_e5m3_fp16_GetGridDim
 5070,16,verified,src/nvidia/dlss/rel/source/features/dlaa/dltss_fast_kernels.c,dltss_fkinterface_nhwc_conv_3x3_pool_064_064_032_e5m3_fp16_GetBlockDim
 51b0,64,verified,src/nvidia/dlss/rel/source/features/dlaa/dltss_fast_kernels.c,dltss_fkinterface_nhwc_conv_3x3_pool_064_064_032_fp16_fp16_GetGridDim
@@ -383,7 +383,7 @@ f80,252,verified,src/nvidia/dlss/rel/source/features/dlaa/dltss_fast_kernels.c,d
 7ab0,4,verified,src/nvidia/ngx_trivial.cpp,_Z12NgxStub_7ab0v
 7ac0,44,verified,src/nvidia/dlss/rel/source/features/dlaa/dltss_fast_kernels.c,dltss_fkinterface_nhwc_bilinear_upsample_conv_3x3_conv_1x1_256_064_032_032_064_e5m3_e5m3_GetGridDim
 7af0,16,verified,src/nvidia/dlss/rel/source/features/dlaa/dltss_fast_kernels.c,dltss_fkinterface_nhwc_bilinear_upsample_conv_3x3_conv_1x1_256_064_032_032_064_e5m3_e5m3_GetBlockDim
-7b00,148,disputed,src/nvidia/dlss/rel/source/features/dlaa/dltss_fast_kernels.c,dltss_fkinterface_nhwc_bilinear_upsample_conv_3x3_conv_1x1_256_064_032_032_064_e5m3_e5m3_Launch
+7b00,252,disputed,src/nvidia/dlss/rel/source/features/dlaa/dltss_fast_kernels.c,dltss_fkinterface_nhwc_bilinear_upsample_conv_3x3_conv_1x1_256_064_032_032_064_e5m3_e5m3_Launch
 7c10,44,verified,src/nvidia/dlss/rel/source/features/dlaa/dltss_fast_kernels.c,dltss_fkinterface_nhwc_bilinear_upsample_conv_3x3_conv_1x1_256_064_032_032_064_fp16_fp16_GetGridDim
 7c40,16,verified,src/nvidia/dlss/rel/source/features/dlaa/dltss_fast_kernels.c,dltss_fkinterface_nhwc_bilinear_upsample_conv_3x3_conv_1x1_256_064_032_032_064_fp16_fp16_GetBlockDim
 7c60,264,verified,src/nvidia/dlss/rel/source/features/dlaa/dltss_fast_kernels.c,dltss_fkinterface_nhwc_bilinear_upsample_conv_3x3_conv_1x1_256_064_032_032_064_fp16_fp16_Launch
@@ -418,9 +418,9 @@ f80,252,verified,src/nvidia/dlss/rel/source/features/dlaa/dltss_fast_kernels.c,d
 8820,16,verified,src/nvidia/dlss/rel/source/features/dlaa/dltss_fast_kernels.c,dltss_fkinterface_nhwc_refnet_sparse_aniso_5x5_512_016_016_fp16_fp16_GetBlockDim
 8830,128,verified,src/nvidia/dlss/rel/source/features/dlaa/dltss_fast_kernels.c,dltss_fkinterface_nhwc_refnet_sparse_aniso_5x5_512_016_016_fp16_fp16_Launch
 88b0,460,verified,src/nvidia/unplaced_17.c,nvidia_88b0
-8b20,39800,verified,src/nvidia/dlss/rel/source/features/dlaa/dltss_fast_kernels.c,dltss_fkinterface_FastKernels_RegisterGridCallbacks
-12ed0,40720,verified,src/nvidia/dlss/rel/source/features/dlaa/dltss_fast_kernels.c,dltss_fkinterface_FastKernels_RegisterBlockCallbacks
-1d280,40040,verified,src/nvidia/dlss/rel/source/features/dlaa/dltss_fast_kernels.c,dltss_fkinterface_FastKernels_RegisterLaunchCallbacks
+8b20,39880,verified,src/nvidia/dlss/rel/source/features/dlaa/dltss_fast_kernels.c,dltss_fkinterface_FastKernels_RegisterGridCallbacks
+12ed0,40840,verified,src/nvidia/dlss/rel/source/features/dlaa/dltss_fast_kernels.c,dltss_fkinterface_FastKernels_RegisterBlockCallbacks
+1d280,40100,verified,src/nvidia/dlss/rel/source/features/dlaa/dltss_fast_kernels.c,dltss_fkinterface_FastKernels_RegisterLaunchCallbacks
 27630,280,verified,src/nvidia/unplaced_17.c,nvidia_27630
 27750,388,verified,src/nvidia/unplaced_17.c,nvidia_27750
 278e0,280,verified,src/nvidia/unplaced_17.c,nvidia_278e0
@@ -1400,7 +1400,7 @@ c2a60,1340,verified,src/nvidia/unplaced_14.c,nvidia_c2a60
 c3120,1208,verified,src/nvidia/unplaced_14.c,nvidia_c3120
 c4f8c,56,verified,src/nvidia/unnamed/n001_0.c,NgxHr_c4f8c
 c4ff0,260,verified,src/nvidia/unplaced_14.c,nvidia_c4ff0
-c52a0,948,disputed,src/nvidia/unplaced_18.c,nvidia_c52a0
+c52a0,1068,verified,src/nvidia/unplaced_18.c,nvidia_c52a0
 c5718,36,verified,src/nvidia/unnamed/n001_1.c,NgxHr_c5718
 c5750,1352,verified,src/nvidia/unplaced_34.c,nvidia_c5750
 c5e00,1324,verified,src/nvidia/unplaced_34.c,nvidia_c5e00
