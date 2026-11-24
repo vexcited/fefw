@@ -6193,7 +6193,7 @@ __int64 TroopMgr_134d2e0(__int64 a1)
               if (v198 == v9) {
                 v141 = 4;
               LABEL_224:
-                (*v198)[v141]();
+                ((__int64 (*)(void*))(*v198)[v141])((void*)v198);
               }
               else if (v198 != nullptr) {
                 v141 = 5;
@@ -7547,7 +7547,7 @@ bool TroopMgr_134efc0(__int64 a1, __int64 a2)
                 if (v144 == &v141) {
                   v97 = 4;
                 LABEL_119:
-                  (*v144)[v97]();
+                  ((__int64 (*)(void*))(*v144)[v97])((void*)v144);
                 }
                 else if (v144 != nullptr) {
                   v97 = 5;
@@ -7616,7 +7616,7 @@ bool TroopMgr_134efc0(__int64 a1, __int64 a2)
       }
       v32 = 5;
     }
-    v27 = (__int64 (***)())(*v27)[v32]();
+    v27 = (__int64 (***)())((__int64 (*)(void*))(*v27)[v32])((void*)v27);
   LABEL_35:
     if ((v139 & 1) == 0) {
       if ((unsigned __int64)v24 < v25) {

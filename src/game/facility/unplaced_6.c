@@ -77,7 +77,7 @@ void game_facility_1984d70(__int64 a1)
   if (v15 != nullptr) {
     v11 = 5;
   LABEL_14:
-    (*v15)[v11]();
+    ((__int64 (*)(void*))(*v15)[v11])((void*)v15);
   }
   v14 = v10;
   v13 = GameData_2007758;
@@ -92,7 +92,7 @@ void game_facility_1984d70(__int64 a1)
     }
     v12 = 5;
   }
-  (*v15)[v12]();
+  ((__int64 (*)(void*))(*v15)[v12])((void*)v15);
 }
 
 #pragma GCC visibility pop

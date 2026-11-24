@@ -293,7 +293,7 @@ void MapPanelTutorial_Unknown3(__int64 a1)
     }
     v11 = 5;
   }
-  (*v6)[v11]();
+  ((__int64 (*)(void*))(*v6)[v11])((void*)v6);
 LABEL_22:
   v140 = (unsigned __int8**)&v141;
   v16 = *(char**)(*(_QWORD*)GameData_212d020[0] + 248LL);
@@ -332,7 +332,7 @@ LABEL_22:
     if (v116 != nullptr) {
       v25 = 5;
     LABEL_38:
-      (*v116)[v25]();
+      ((__int64 (*)(void*))(*v116)[v25])((void*)v116);
     }
     GameRoutine_fcacb0(v1, &v117, 1, v22, v23, v24, GameData_212c958);
     if ((atomic_load_explicit((atomic_uchar* volatile)&GameData_21a6130,

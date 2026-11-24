@@ -481,7 +481,7 @@ __int64 game_facility_anonymous_ProcTheaterSceneAct_StartOpeningCameraWork(
           if (v21 != nullptr) {
             v16 = 5;
           LABEL_25:
-            result = (*v21)[v16]();
+            result = ((__int64 (*)(void*))(*v21)[v16])((void*)v21);
           }
         LABEL_26:
           v17 = v23;
@@ -494,7 +494,7 @@ __int64 game_facility_anonymous_ProcTheaterSceneAct_StartOpeningCameraWork(
         }
         v14 = 5;
       }
-      (*v21)[v14]();
+      ((__int64 (*)(void*))(*v21)[v14])((void*)v21);
       goto LABEL_21;
     }
   }

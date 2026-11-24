@@ -395,7 +395,8 @@ __int64 (***game_facility_anonymous_ProcOpening_StartCameraWork(
           if (v20 != nullptr) {
             v15 = 5;
           LABEL_22:
-            result = (__int64 (***)())(*v20)[v15]();
+            result =
+                (__int64 (***)())((__int64 (*)(void*))(*v20)[v15])((void*)v20);
           }
         LABEL_23:
           v16 = v22;
@@ -410,7 +411,7 @@ __int64 (***game_facility_anonymous_ProcOpening_StartCameraWork(
         }
         v13 = 5;
       }
-      (*v20)[v13]();
+      ((__int64 (*)(void*))(*v20)[v13])((void*)v20);
       goto LABEL_18;
     }
   }
