@@ -30154,7 +30154,7 @@ ffee0,324,verified,src/nn/fs/unplaced.c,nn_fs_GetAndClearMemoryReportInfo
 71cda0,1832,verified,src/math/cholesky.cpp,_ZN4nerd14linear_algebra34LLowerCholeskyDecompositionInPlaceIfLln24ENS0_11LMatrixType5DenseILb1EEEEEDaRNS0_7LMatrixIT_XT0_EXT0_ET1_EE
 71dea0,1368,verified,src/math/dynamic_matrix_product.cpp,_ZN4nerd14linear_algebramlIffLl6ELln27ELl6ENS0_11LMatrixType5DenseILb1EEES4_EEDaRKNS0_7LMatrixIT_XT1_EXT2_ET4_EERKNS5_IT0_XT2_EXT3_ET5_EE
 71e4c0,1708,verified,src/math/dynamic_matrix_product.cpp,_ZN4nerd14linear_algebramlIffLl6ELln27ELln27ENS0_11LMatrixType5DenseILb1EEES4_EEDaRKNS0_7LMatrixIT_XT1_EXT2_ET4_EERKNS5_IT0_XT2_EXT3_ET5_EE
-71ec60,288,verified,src/math/unplaced_4.c,math_71ec60
+71ec60,424,verified,src/math/unplaced_4.c,math_71ec60
 71f240,1540,verified,src/math/symmetric_inverse.cpp,fw::math::InverseSymmetric27
 71f940,1812,verified,src/math/cholesky.cpp,_ZN4nerd14linear_algebra34LLowerCholeskyDecompositionInPlaceIfLln27ENS0_11LMatrixType5DenseILb1EEEEEDaRNS0_7LMatrixIT_XT0_EXT0_ET1_EE
 7200f0,476,verified,src/math/kalman_reset.cpp,_ZN2fw4math17MapStateIndices21EPNS0_8IndexMapEPNS0_12StateIndicesILm21EEE
@@ -30186,7 +30186,7 @@ ffee0,324,verified,src/nn/fs/unplaced.c,nn_fs_GetAndClearMemoryReportInfo
 7264c0,544,verified,src/math/unplaced_14.c,math_7264c0
 726720,1044,verified,src/math/unplaced_4.c,math_726720
 726b80,296,verified,src/math/unplaced_4.c,math_726b80
-727520,920,disputed,src/math/unplaced_4.c,math_727520
+727520,588,disputed,src/math/unplaced_4.c,math_727520
 728260,344,verified,src/math/matrix.cpp,_ZN4nerd14linear_algebraplIffLl21ELl21ENS0_11LMatrixType5DenseILb1EEES4_EEDaRKNS0_7LMatrixIT_XT1_EXT2_ET3_EERKNS5_IT0_XT1_EXT2_ET4_EE
 7283c0,868,verified,src/nn/unnamed/s004_2.c,SdkHr_7283c0
 728730,800,verified,src/math/unplaced_10.c,math_728730

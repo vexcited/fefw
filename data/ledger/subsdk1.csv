@@ -933,7 +933,7 @@ fcc0,1900,verified,src/nvidia/unnamed/c000_0.c,CudaDriverHr_fcc0
 3c510,200,verified,src/nvidia/cuda_driver_copy_impl.cpp,_Z20cuMemcpyDtoH_v2_implmmm
 3c660,200,verified,src/nvidia/cuda_driver_copy_impl.cpp,_Z25cuMemcpyDtoH_v2_ptds_implmmm
 3c7b0,208,verified,src/nvidia/cuda_driver_copy_impl.cpp,_Z22cuMemcpyDtoHAsync_implmjjm
-3c900,272,verified,src/nvidia/cuda_driver_copy_impl.cpp,_Z25cuMemcpyDtoHAsync_v2_implmmmm
+3c900,352,verified,src/nvidia/cuda_driver_copy_impl.cpp,_Z25cuMemcpyDtoHAsync_v2_implmmmm
 3cab0,272,verified,src/nvidia/cuda_driver_copy_impl.cpp,_Z30cuMemcpyDtoHAsync_v2_ptsz_implmmmm
 3cc60,200,verified,src/nvidia/cuda_driver_copy_impl.cpp,_Z17cuMemcpyDtoD_impljjj
 3cdb0,200,verified,src/nvidia/cuda_driver_copy_impl.cpp,_Z20cuMemcpyDtoD_v2_implmmm
