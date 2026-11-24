@@ -42349,7 +42349,7 @@ e26640,900,verified,src/game/hub/global_map_data.c,game_hub_GlobalMapData_SetupA
 e26b40,1456,verified,src/game/unnamed/b012_0.c,GameHr_e26b40
 e273d0,324,verified,src/game/unnamed/b012_0.c,GameHr_e273d0
 e27520,480,verified,src/game/unnamed/b012_0.c,GameHr_e27520
-e27700,2040,verified,src/game/unnamed/e004_5.c,GameHr_e27700
+e27700,1824,verified,src/game/unnamed/e004_5.c,GameHr_e27700
 e28380,700,verified,src/game/unnamed/b012_0.c,GameHr_e28380
 e286a0,740,verified,src/game/hub/unplaced.c,game_hub_e286a0
 e289a0,432,verified,src/game/unnamed/b012_1.c,GameHr_e289a0
@@ -42477,7 +42477,7 @@ e32520,404,verified,src/game/zview/state_machines_impl.c,StateMachines_e32520
 e326e0,1400,verified,src/game/combat/unplaced.c,game_combat_e326e0
 e32e50,228,verified,src/game/combat/unplaced.c,game_combat_e32e50
 e32f40,384,verified,src/game/zview/state_machines_impl.c,StateMachines_e32f40
-e330c0,332,disputed,src/game/unnamed/e004_5.c,GameHr_e330c0
+e330c0,356,verified,src/game/unnamed/e004_5.c,GameHr_e330c0
 e33240,304,verified,src/game/zview/state_machines.cpp,_ZN4game6combat12StateMachineD0Ev
 e33380,304,verified,src/game/zview/state_machines.cpp,_ZN4game5zview13IStateMachineINS_6combat11StateActionEED0Ev
 e334b0,24,verified,src/llvm-libcxx-21/libcxx/include/__vector/vector.h,std::vector<T>::__throw_length_error()

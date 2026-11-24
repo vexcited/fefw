@@ -81,7 +81,7 @@ void __attribute__((noreturn)) String_60a1d0();
 __int64 GameHr_e27700(__int64* a1, const char* a2, unsigned __int64 a3,
                       const char* a4, unsigned __int64 a5, __int64* a6,
                       _DWORD* a7);
-void GameHr_e330c0(__int64 a1, unsigned int a2);
+float GameHr_e330c0(__int64 a1, unsigned int a2);
 
 __int64 GameHr_e27700(__int64* a1, const char* a2, unsigned __int64 a3,
                       const char* a4, unsigned __int64 a5, __int64* a6,
@@ -1021,7 +1021,7 @@ LABEL_251:
   return v49;
 }
 
-void GameHr_e330c0(__int64 a1, unsigned int a2)
+float GameHr_e330c0(__int64 a1, unsigned int a2)
 {
   char v4;
   __int64 v5;
@@ -1034,9 +1034,15 @@ void GameHr_e330c0(__int64 a1, unsigned int a2)
   __int64 v12;
   __int64 v13;
   __int64 v14;
+  float v15;
+  float v16;
+  unsigned int v17;
 
   v4 = GameRoutine_108cfd0_alt1(a2);
   v5 = *(_QWORD*)(*(_QWORD*)(a1 + 176) + 56LL);
+  // The shipped build reads through the neighbouring pointer, an assert left
+  // behind.
+  (void)*(volatile __int64*)(*(_QWORD*)(*(_QWORD*)(a1 + 176) + 48LL) + 8);
   v6 = *(_QWORD*)(v5 + 392);
   v7 = *(_QWORD*)(v5 + 400);
   if ((v4 & 1) != 0) {
@@ -1045,6 +1051,8 @@ void GameHr_e330c0(__int64 a1, unsigned int a2)
                                 memory_order_relaxed);
     }
     v8 = CharacterModel_1070c00(*(_QWORD*)(v6 + 11608), a2);
+    v15 = *(float*)(v8 + 2);
+    v16 = *((float*)(v8 + 2) + 1);
     v10 = v8[5];
     v9 = v8[6];
     v11 = v9 - v10;
@@ -1060,7 +1068,7 @@ void GameHr_e330c0(__int64 a1, unsigned int a2)
           }
           nn_mem_StandardAllocator_Free(*(_QWORD*)v12 + v14, v13);
         }
-        return;
+        return __builtin_fmaf(v15 - v16, 0.5f, v16);
       }
     }
     else {
@@ -1084,12 +1092,17 @@ void GameHr_e330c0(__int64 a1, unsigned int a2)
   if (v7 != 0) {
     atomic_fetch_add_explicit((atomic_ullong* volatile)(v7 + 8), 1u,
                               memory_order_relaxed);
+    v17 = *(unsigned int*)(v6 + 11624);
     if (atomic_fetch_add((atomic_ullong* volatile)(v7 + 8),
                          0xFFFFFFFFFFFFFFFFLL) == 0) {
       (*(void (**)(__int64))(*(_QWORD*)v7 + 16LL))(v7);
       std___1___shared_weak_count___release_weak(v7);
     }
   }
+  else {
+    v17 = *(unsigned int*)(v6 + 11624);
+  }
+  return v17 < 2 ? 3.0f : 20.0f;
 }
 
 __int64 GameHr_e66fa0(__int64 a1)
