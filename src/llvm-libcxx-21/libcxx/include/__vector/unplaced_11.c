@@ -1000,7 +1000,7 @@ LABEL_64:
   LABEL_117:
     v117 = *(_QWORD*)(v98 + 8);
     if ((int)v103 <
-        (int)((unsigned __int64)(*(_QWORD*)(v98 + 16) - v117) >> 3)) {
+        (int)((unsigned __int64)((__int64)(*(_QWORD*)(v98 + 16) - v117)) >> 3)) {
       *(_QWORD*)(v117 + 8 * v103) = v100[24] + 24 * v136;
     }
     goto LABEL_98;
@@ -1032,7 +1032,7 @@ LABEL_64:
           LABEL_91:
             v92 = *(_QWORD*)(v73 + 8);
             if ((int)v78 <
-                (int)((unsigned __int64)(*(_QWORD*)(v73 + 16) - v92) >> 3)) {
+                (int)((unsigned __int64)((__int64)(*(_QWORD*)(v73 + 16) - v92)) >> 3)) {
               *(_QWORD*)(v92 + 8 * v78) = v75[24] + 24 * v135;
             }
             goto LABEL_72;

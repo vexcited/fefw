@@ -31521,7 +31521,7 @@ a99370,24,verified,src/llvm-libcxx-21/libcxx/include/__vector/vector.h,std::vect
 a993a0,1340,verified,src/llvm-libcxx-21/libcxx/include//vector/unplaced.c,llvm_libcxx_21_libcxx_include___vector_a993a0
 a99910,288,verified,src/game/unnamed/b009_0.c,GameHr_a99910
 a99a40,508,verified,src/game/unnamed/b009_0.c,GameHr_a99a40
-a99c80,1576,disputed,src/llvm-libcxx-21/libcxx/include//vector/unplaced_11.c,llvm_libcxx_21_libcxx_include___vector_a99c80
+a99c80,1576,verified,src/llvm-libcxx-21/libcxx/include//vector/unplaced_11.c,llvm_libcxx_21_libcxx_include___vector_a99c80
 a9a7e0,340,verified,src/game/unnamed/b009_0.c,GameHr_a9a7e0
 a9a960,728,verified,src/game/unnamed/b009_0.c,GameHr_a9a960
 a9ac50,516,verified,src/llvm-libcxx-21/libcxx/include//vector/unplaced.c,llvm_libcxx_21_libcxx_include___vector_a9ac50
@@ -46266,7 +46266,7 @@ f3c930,12,verified,src/llvm-libcxx-21/libcxx/include/__functional/function.h,"st
 f3c940,4,verified,src/memory/new_delete.cpp,complete destructor at 0xf3c940
 f3c950,44,verified,src/memory/new_delete.cpp,deleting destructor at 0xf3c950
 f3c980,116,verified,src/game/graphics/object_transparent_module.c,ObjectTransparentModule_Unknown8
-f3cdc0,172,disputed,src/game/graphics/object_transparent_module.c,ObjectTransparentModule_Unknown9
+f3cdc0,232,verified,src/game/graphics/object_transparent_module.c,ObjectTransparentModule_Unknown9
 f3cec0,336,verified,src/game/graphics/object_transparent_module.c,ObjectTransparentModule_f3cec0
 f3d060,12,verified,src/game/game_trivial.cpp,_Z15GameStub_f3d060v
 f3d070,328,verified,src/game/templates/vector.cpp,_ZNSt3__16vectorINS_10shared_ptrIN4game11UnrecoveredILj13EEEEENS_9allocatorIS5_EEE12emplace_backIJRKS5_EEERS5_DpOT_

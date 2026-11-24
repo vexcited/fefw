@@ -75,7 +75,7 @@ __int64 ObjectTransparentModule_Unknown9(__int64 a1)
     v3 = *(_QWORD*)(GameData_21c9758 + 240);
     v4 = *(int*)(a1 + 40);
     if (0xAAAAAAAAAAAAAAABLL *
-            ((*(_QWORD*)(GameData_21c9758 + 248) - v3) >> 3) >
+            ((__int64)(*(_QWORD*)(GameData_21c9758 + 248) - v3) >> 3) >
         v4) {
       v5 = (__int64*)(v3 + 24LL * (int)v4);
       v7 = *v5;
