@@ -8400,8 +8400,8 @@ LABEL_168:
     v123 = 0x0.0p+0f;
     v124 = 0;
     if (v90 != 0 && (*(_BYTE*)(a1 + 128) & 1) != 0) {
-      if ((float)(*(float*)(a1 + 92) - *(float*)(a1 + 124)) <=
-          (float)(a4 + a4)) {
+      if (!((float)(*(float*)(a1 + 92) - *(float*)(a1 + 124)) >
+            (float)(a4 + a4))) {
         v124 = 0;
       }
       else {

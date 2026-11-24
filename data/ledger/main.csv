@@ -38880,7 +38880,7 @@ cfc680,28,verified,src/llvm-libcxx-21/libcxx/include/__functional/function.h,"st
 cfc6a0,12,verified,src/llvm-libcxx-21/libcxx/include/__functional/function.h,"std::__1::__function::__func<void game::character::CharacterBuilder::EachModule<wld::ClothModule, game::zview::CharacterModel::ClothStabilize()::$_0>(game::zview::CharacterModel::ClothStabilize()::$_0&&) const::'lambda'(wld::Object&), void (wld::Object&)>::target_type()"
 cfc6b0,100,verified,src/game/game_trivial_shared_pointers.cpp,_Z15GameStub_cfc6b0m
 cfc720,136,verified,src/game/game_trivial_owner_deletes.cpp,_Z15GameStub_cfc720m
-cfc7c0,2960,disputed,src/game/unplaced_10.c,game_cfc7c0
+cfc7c0,2968,disputed,src/game/unplaced_10.c,game_cfc7c0
 cfd8e0,164,verified,src/game/unnamed/b011_0.c,GameHr_cfd8e0
 cfd990,256,verified,src/game/unnamed/f000_0.c,GameHr_cfd990
 cfdb00,1224,verified,src/game/unplaced_16.c,game_cfdb00
@@ -45348,7 +45348,7 @@ f067f0,812,verified,src/game/unnamed/b013_1.c,GameHr_f067f0
 f06b60,700,verified,src/game/unnamed/b013_0.c,GameHr_f06b60
 f06e20,6124,verified,src/game/map/unplaced.c,game_map_f06e20
 f086e0,700,verified,src/game/map/unplaced.c,game_map_f086e0
-f089a0,2548,disputed,src/game/map/unplaced.c,game_map_f089a0
+f089a0,2548,verified,src/game/map/unplaced.c,game_map_f089a0
 f093a0,584,verified,src/game/map/map_draw_manager.c,game_map_MapDrawManager_UpdateMesh
 f09600,320,verified,src/game/unnamed/b013_0.c,GameHr_f09600
 f09740,136,verified,src/game/unnamed/b013_0.c,GameHr_f09740
