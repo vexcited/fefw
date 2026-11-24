@@ -1375,7 +1375,7 @@ __attribute__((swiftcall)) void BattleTarget_8fef10(PSEUDO_X8 x8_, __int64 a1)
     }
   LABEL_15:
     {
-      v8 = (float)((float)((float)(*(_DWORD*)(a1 + 12) + 256) *
+      v8 = (float)((float)((float)(*(int*)(a1 + 12) + 256) *
                            0x1.4000000000000p+2f) +
                    0x1.4000000000000p+1f) +
            -0x1.4000000000000p+10f;
@@ -1383,7 +1383,7 @@ __attribute__((swiftcall)) void BattleTarget_8fef10(PSEUDO_X8 x8_, __int64 a1)
     }
     v10 = GameData_21ca2e8;
     {
-      v9 = (float)((float)((float)(*(_DWORD*)(a1 + 16) + 256) *
+      v9 = (float)((float)((float)(*(int*)(a1 + 16) + 256) *
                            0x1.4000000000000p+2f) +
                    0x1.4000000000000p+1f) +
            -0x1.4000000000000p+10f;
@@ -1966,11 +1966,11 @@ LABEL_15:
       goto LABEL_19;
     }
   LABEL_28:
-    v17 = (float)((float)((float)(*(_DWORD*)(a1 + 12) + 256) *
+    v17 = (float)((float)((float)(*(int*)(a1 + 12) + 256) *
                           0x1.4000000000000p+2f) +
                   0x1.4000000000000p+1f) +
           -0x1.4000000000000p+10f;
-    v18 = (float)((float)((float)(*(_DWORD*)(a1 + 16) + 256) *
+    v18 = (float)((float)((float)(*(int*)(a1 + 16) + 256) *
                           0x1.4000000000000p+2f) +
                   0x1.4000000000000p+1f) +
           -0x1.4000000000000p+10f;

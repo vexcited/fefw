@@ -57,7 +57,7 @@ void game_cmdbtl_1005280(_QWORD* a1)
         (v6 = game_GameVariableTable_Find(
              *(_QWORD**)(game_GameModeData_instance_ + 48),
              (unsigned __int64*)&v29_.v29)) != 0) {
-      v7 = (float)(*(_DWORD*)(v6 + 32) - 100);
+      v7 = (float)(*(int*)(v6 + 32) - 100);
     }
     else {
       v7 = -0x1.9000000000000p+6f;

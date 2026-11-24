@@ -4674,11 +4674,11 @@ float CharacterController_d40750(__int64 a1, __int64 a2, __int64 a3, __int64 a4)
   *(_QWORD*)(a1 + 124) = v10;
   *(_QWORD*)(a1 + 132) = v11;
   {
-    v12 = (float)(*(_DWORD*)(a1 + 124) - v7);
+    v12 = (float)(*(int*)(a1 + 124) - v7);
     __asm__ volatile("" ::"w"(v12));
   }
   {
-    v13 = (float)(*(_DWORD*)(a1 + 128) - v8);
+    v13 = (float)(*(int*)(a1 + 128) - v8);
     __asm__ volatile("" ::"w"(v13));
   }
   {
@@ -6694,8 +6694,10 @@ LABEL_8:
   *(float*)(v25 + 144) = v78;
   v28 = *(_QWORD*)(a1 + 8);
   *(_DWORD*)(v25 + 148) = 1;
-  v29 = vaddq_f32(COERCE_AS(float32x4_t, v26), vmulq_n_f32(v74, v78));
-  v30 = vaddq_f32(COERCE_AS(float32x4_t, v26), vmulq_n_f32(v74, *(float*)&v27));
+  v29 = vaddq_f32(COERCE_AS(float32x4_t, v26),
+                  PSEUDO_UNFUSED(vmulq_n_f32(v74, v78)));
+  v30 = vaddq_f32(COERCE_AS(float32x4_t, v26),
+                  PSEUDO_UNFUSED(vmulq_n_f32(v74, *(float*)&v27)));
   *(_QWORD*)(v25 + 112) = LANES128(v29).n128_u64[0];
   *(_QWORD*)(v25 + 128) = LANES128(v30).n128_u64[0];
   v31 = *(_OWORD*)(v25 + 112);

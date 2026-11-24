@@ -1014,7 +1014,7 @@ void GameHr_6d5120(__int64 result, int a2, __int64 a3)
       v66 = v175 + v78 * v77;
     LABEL_80:
       v67 = *(float*)(a3 + 8) *
-            (float)(*(_DWORD*)(a3 + 4) + (v66 & ~(v66 >> 31)));
+            (float)(*(int*)(a3 + 4) + (v66 & ~(v66 >> 31)));
       v68 = ((int)v67 & ~((int)v67 >> 31)) + *((_DWORD*)&v158_.v158 + v35);
       *((_DWORD*)&v158_.v158 + v35) = v68;
       if ((int)v68 >= 100) {

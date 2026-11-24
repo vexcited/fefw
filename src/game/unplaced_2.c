@@ -12924,17 +12924,17 @@ LABEL_34:
               goto LABEL_60;
             }
           }
-          v38 = (float)((float)((float)(*(_DWORD*)(a3 + 40) + 256) * 5.0f) +
+          v38 = (float)((float)((float)(*(int*)(a3 + 40) + 256) * 5.0f) +
                         2.5f) +
                 -0x1.4000000000000p+10f;
-          v39 = (float)((float)((float)(*(_DWORD*)(a3 + 44) + 256) * 5.0f) +
+          v39 = (float)((float)((float)(*(int*)(a3 + 44) + 256) * 5.0f) +
                         2.5f) +
                 -0x1.4000000000000p+10f;
           if (*GameData_212ce80[0] != 0) {
-            v75 = (float)((float)((float)(*(_DWORD*)(a3 + 44) + 256) * 5.0f) +
+            v75 = (float)((float)((float)(*(int*)(a3 + 44) + 256) * 5.0f) +
                           2.5f) +
                   -0x1.4000000000000p+10f;
-            v72 = (float)((float)((float)(*(_DWORD*)(a3 + 40) + 256) * 5.0f) +
+            v72 = (float)((float)((float)(*(int*)(a3 + 40) + 256) * 5.0f) +
                           2.5f) +
                   -0x1.4000000000000p+10f;
             v40 = Height_7c4d10(*(_QWORD*)(*GameData_212ce80[0] + 61456), v72,

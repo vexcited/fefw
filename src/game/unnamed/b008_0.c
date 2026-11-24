@@ -3610,20 +3610,20 @@ void GameHr_963d60()
             goto LABEL_15;
           }
         }
-        v15 = (float)((float)((float)(*(_DWORD*)(v1 + 40) + 256) *
+        v15 = (float)((float)((float)(*(int*)(v1 + 40) + 256) *
                               0x1.4000000000000p+2f) +
                       0x1.4000000000000p+1f) +
               -0x1.4000000000000p+10f;
-        v16 = (float)((float)((float)(*(_DWORD*)(v1 + 44) + 256) *
+        v16 = (float)((float)((float)(*(int*)(v1 + 44) + 256) *
                               0x1.4000000000000p+2f) +
                       0x1.4000000000000p+1f) +
               -0x1.4000000000000p+10f;
         if (GameData_21ca2e8 != 0) {
-          v23 = (float)((float)((float)(*(_DWORD*)(v1 + 40) + 256) *
+          v23 = (float)((float)((float)(*(int*)(v1 + 40) + 256) *
                                 0x1.4000000000000p+2f) +
                         0x1.4000000000000p+1f) +
                 -0x1.4000000000000p+10f;
-          v24 = (float)((float)((float)(*(_DWORD*)(v1 + 44) + 256) *
+          v24 = (float)((float)((float)(*(int*)(v1 + 44) + 256) *
                                 0x1.4000000000000p+2f) +
                         0x1.4000000000000p+1f) +
                 -0x1.4000000000000p+10f;

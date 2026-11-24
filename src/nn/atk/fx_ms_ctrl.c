@@ -67,7 +67,7 @@ __int64 FxMSCtrl_Unknown5(__int64 result, __int64 a2, int* a3)
     v11 = 0;
     v12 = 1;
     do {
-      v11 += (int)fabsf((float)(*(_DWORD*)(a2 + 4LL * v6 * (int)v10 + 4 * v4) +
+      v11 += (int)fabsf((float)(*(int*)(a2 + 4LL * v6 * (int)v10 + 4 * v4) +
                                 *(_DWORD*)(a2 + 4LL * v6 * (int)v10)));
       if ((v12 & 1) == 0) {
         v11 /= 2;

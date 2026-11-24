@@ -1799,20 +1799,20 @@ __int64 EffectConst_963740(__int64 a1, __int64* a2, int a3, int a4)
                   goto LABEL_28;
                 }
               }
-              v33 = (float)((float)((float)(*(_DWORD*)(v9 + 40) + 256) *
+              v33 = (float)((float)((float)(*(int*)(v9 + 40) + 256) *
                                     0x1.4000000000000p+2f) +
                             0x1.4000000000000p+1f) +
                     -0x1.4000000000000p+10f;
-              v34 = (float)((float)((float)(*(_DWORD*)(v9 + 44) + 256) *
+              v34 = (float)((float)((float)(*(int*)(v9 + 44) + 256) *
                                     0x1.4000000000000p+2f) +
                             0x1.4000000000000p+1f) +
                     -0x1.4000000000000p+10f;
               if (GameData_21ca2e8 != 0) {
-                v64 = (float)((float)((float)(*(_DWORD*)(v9 + 40) + 256) *
+                v64 = (float)((float)((float)(*(int*)(v9 + 40) + 256) *
                                       0x1.4000000000000p+2f) +
                               0x1.4000000000000p+1f) +
                       -0x1.4000000000000p+10f;
-                v66 = (float)((float)((float)(*(_DWORD*)(v9 + 44) + 256) *
+                v66 = (float)((float)((float)(*(int*)(v9 + 44) + 256) *
                                       0x1.4000000000000p+2f) +
                               0x1.4000000000000p+1f) +
                       -0x1.4000000000000p+10f;
@@ -1976,20 +1976,20 @@ __int64 EffectConst_963740(__int64 a1, __int64* a2, int a3, int a4)
           goto LABEL_55;
         }
       }
-      v50 = (float)((float)((float)(*(_DWORD*)(v9 + 40) + 256) *
+      v50 = (float)((float)((float)(*(int*)(v9 + 40) + 256) *
                             0x1.4000000000000p+2f) +
                     0x1.4000000000000p+1f) +
             -0x1.4000000000000p+10f;
-      v51 = (float)((float)((float)(*(_DWORD*)(v9 + 44) + 256) *
+      v51 = (float)((float)((float)(*(int*)(v9 + 44) + 256) *
                             0x1.4000000000000p+2f) +
                     0x1.4000000000000p+1f) +
             -0x1.4000000000000p+10f;
       if (GameData_21ca2e8 != 0) {
-        v65 = (float)((float)((float)(*(_DWORD*)(v9 + 40) + 256) *
+        v65 = (float)((float)((float)(*(int*)(v9 + 40) + 256) *
                               0x1.4000000000000p+2f) +
                       0x1.4000000000000p+1f) +
               -0x1.4000000000000p+10f;
-        v67 = (float)((float)((float)(*(_DWORD*)(v9 + 44) + 256) *
+        v67 = (float)((float)((float)(*(int*)(v9 + 44) + 256) *
                               0x1.4000000000000p+2f) +
                       0x1.4000000000000p+1f) +
               -0x1.4000000000000p+10f;
