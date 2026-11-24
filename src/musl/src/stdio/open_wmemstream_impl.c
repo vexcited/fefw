@@ -3,7 +3,7 @@
 #pragma GCC visibility push(hidden)
 
 __int64 mbsnrtowcs_plt(_QWORD, _QWORD, _QWORD, _QWORD, _QWORD);
-__int64 memset_plt(void* this_, void*, int, unsigned __int64);
+__int64 memset_plt(__int64, int, unsigned __int64);
 __int64 realloc_plt(_QWORD, _QWORD);
 __int64 wms_write(_QWORD* a1, __int64 a2, __int64 a3);
 
@@ -49,8 +49,8 @@ __int64 wms_write(_QWORD* a1, __int64 a2, __int64 a3)
     *(_QWORD*)(v6 + 24) = v10;
     v13 = *(_QWORD*)(v6 + 40);
     *v12 = v10;
-    memset_plt(*(__int64**)(v6 + 24), (void*)(*(_QWORD*)(v6 + 24) + 4 * v13),
-               nullptr, 4 * (v8 - v13));
+    memset_plt((__int64)((void*)(*(_QWORD*)(v6 + 24) + 4 * v13)), 0,
+               4 * (v8 - v13));
     v7 = *(_QWORD*)(v6 + 16);
     *(_QWORD*)(v6 + 40) = v8;
   }

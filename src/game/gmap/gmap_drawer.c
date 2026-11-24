@@ -7921,7 +7921,7 @@ LABEL_8:
                 v467 = v469 - 1;
                 v593 = true;
                 v1446 = v481;
-                if ((_DWORD)v469 - 1 < 0) {
+                if ((int)v469 - 1 < 0) {
                   goto LABEL_475;
                 }
                 goto LABEL_373;

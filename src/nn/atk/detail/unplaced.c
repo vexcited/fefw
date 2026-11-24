@@ -922,7 +922,7 @@ __int64 nn_atk_detail_28a040(__int64 a1, __int64 a2, __int64 a3, __int64 a4,
           v36 = *(_QWORD*)(a1 + 1944);
           v37 = (a6 + 4095) & 0xFFFFFFFFFFFFF000LL;
           v38 = *(_DWORD*)(a1 + 1712);
-          if ((*(_DWORD*)(a1 + 1716) + v38 < 0) ^
+          if (((int)(*(_DWORD*)(a1 + 1716) + v38) < 0) ^
                   __OFADD__(*(_DWORD*)(a1 + 1716), v38) |
               (*(_DWORD*)(a1 + 1716) + v38 == 0)) {
             v39 = 0;

@@ -4271,7 +4271,7 @@ bool game_map_75a760(__int64* a1, __int64* a2, __int64* a3)
   v25 = COERCE_AS(__typeof__(v25), PSEUDO_REGISTER(float, "s0", "=w")),
   v27 = COERCE_AS(__typeof__(v27), PSEUDO_REGISTER(float, "s0", "=w")),
   v8 = COERCE_AS(__typeof__(v8), PSEUDO_REGISTER(float, "s0", "=w"));
-  v6 = a2 - a1;
+  v6 = ((__int64)a2 - (__int64)a1) >> 3;
   if (v6 <= 2) {
     if ((unsigned __int64)v6 >= 2) {
       if (v6 == 2) {

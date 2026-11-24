@@ -840,14 +840,14 @@ fff0,88,verified,src/movie/detail/movie_video_decoder_event_manager.cpp,_ZN5movi
 5aff0,104,verified,src/opus/silk/fixed/LTP_scale_ctrl_FIX.c,silk_LTP_scale_ctrl_FIX
 5b060,252,verified,src/opus/silk/fixed/unplaced_2.c,opus_silk_fixed_5b060
 5b160,76,verified,src/opus/silk/fixed/autocorr_FIX.c,silk_autocorr
-5b1c0,5964,disputed,src/opus/silk/fixed/unplaced_2.c,opus_silk_fixed_5b1c0
+5b1c0,6140,disputed,src/opus/silk/fixed/unplaced_2.c,opus_silk_fixed_5b1c0
 5cf80,512,verified,src/opus/silk/fixed/unplaced_2.c,opus_silk_fixed_5cf80
 5d1c0,2996,verified,src/movie/unnamed/p000_0.c,MovieHr_5d1c0
 5dde0,180,verified,src/opus/silk/fixed/encode_frame_FIX.c,silk_encode_do_VAD_FIX
 5dea0,3968,verified,src/opus/silk/fixed/encode_frame_FIX_impl.c,silk_encode_frame_FIX
 5ef40,728,disputed,src/opus/silk/fixed/unplaced_2.c,opus_silk_fixed_5ef40
 5f240,668,verified,src/opus/silk/fixed/find_LTP_FIX.c,silk_find_LTP_FIX
-5f5e0,888,disputed,src/opus/silk/fixed/unplaced_2.c,opus_silk_fixed_5f5e0
+5f5e0,1116,disputed,src/opus/silk/fixed/unplaced_2.c,opus_silk_fixed_5f5e0
 5fa60,1112,disputed,src/opus/silk/fixed/unplaced_2.c,opus_silk_fixed_5fa60
 5ff80,452,verified,src/opus/silk/fixed/unplaced_5.c,opus_silk_fixed_5ff80
 60180,592,verified,src/opus/silk/fixed/unplaced_2.c,opus_silk_fixed_60180

@@ -2956,12 +2956,13 @@ LABEL_17:
       v15 = *v13;
       if (*(_BYTE*)(*v13 + 176) == 3 && *(_BYTE*)(*v13 + 112) == 0) {
       LABEL_30:
-        if ((GameHr_16520a0(*v13, GameData_1bee1cc[8 * *(int*)(a1 + 184) + 7]) &
+        if ((GameHr_16520a0(*v13,
+                            GameData_1bee1cc[8LL * *(int*)(a1 + 184) + 7]) &
              1) != 0) {
           v18 = (__int64**)ui_1685c40((_QWORD*)a1, &v113);
           game_gmap_GmapUIDef_SetQuestIcon(
               (__int64)(v18 + 2), v15,
-              GameData_1bee1cc[8 * *(int*)(a1 + 184) + 7]);
+              GameData_1bee1cc[8LL * *(int*)(a1 + 184) + 7]);
           v19 = *v18;
           if (*v18 != nullptr) {
             v20 = *(float*)(a1 + 280);

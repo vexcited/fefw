@@ -1413,7 +1413,7 @@ bool GameHr_cf3580(__int64* a1, __int64* a2)
   __int64 v14;
   __int64 v15;
 
-  v2 = a2 - a1;
+  v2 = ((__int64)a2 - (__int64)a1) >> 3;
   if (v2 <= 2) {
     if ((unsigned __int64)v2 >= 2) {
       if (v2 == 2) {

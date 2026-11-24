@@ -11895,7 +11895,7 @@ _DWORD* nn_fontll_itype_44d520(_DWORD* result, int a2, __int64 a3)
     for (i = (unsigned int)a2; i != 0; --i) {
       v13 = *(v8 - 2);
       v14 = *v8 / 2;
-      if (result[1] - (v13 + v14) >= 0) {
+      if ((int)(result[1] - (v13 + v14)) >= 0) {
         v15 = result[1] - (v13 + v14);
       }
       else {

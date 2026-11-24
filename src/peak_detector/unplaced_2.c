@@ -7,8 +7,6 @@
 __attribute__((swiftcall)) void SdkRoutine_87af00(PSEUDO_X8, _QWORD, _QWORD,
                                                   float, float, double);
 __int64 memset_plt(__int64, int, unsigned __int64);
-__int64 memset_plt_alt1(void* this_, void*, int,
-                        unsigned __int64) __asm__("memset_plt");
 __int64 peak_detector_FindPeakPeriod_plt(_QWORD, _QWORD, _QWORD);
 __int64 peak_detector_FindPeaks_plt(_QWORD, _QWORD, _QWORD, _QWORD);
 float expf_plt(float);
@@ -451,8 +449,8 @@ __int64* peak_detector_759f00(__int64* this_)
       } while (v13 < (unsigned __int64)v12);
     }
     if (v11 > (unsigned __int64)v12) {
-      memset_plt_alt1(v12, (void*)(*v10 + 4LL * (_QWORD)v12), nullptr,
-                      4 * (v11 - (_DWORD)v12));
+      memset_plt((__int64)((void*)(*v10 + 4LL * (_QWORD)v12)), 0,
+                 4 * (v11 - (_DWORD)v12));
     LABEL_9:
       v10[1] = v11;
       v10 = *(_QWORD**)(v7 + 80);
@@ -519,8 +517,8 @@ LABEL_10:
     }
   }
   else {
-    this_ = memset_plt_alt1(v27, (void*)&(*v26)[(_QWORD)v27], nullptr,
-                            4 * ((int)v25 - (int)v27));
+    this_ = (__int64*)memset_plt((__int64)((void*)&(*v26)[(_QWORD)v27]), 0,
+                                 4 * ((int)v25 - (int)v27));
   }
   v26[1] = (unsigned int*)v25;
   v26 = *(unsigned int***)(v7 + 80);

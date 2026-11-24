@@ -362,7 +362,7 @@ bool fs_645980(__int64* a1, __int64* a2)
   __int64 v50;
   __int64 v51;
 
-  v2 = a2 - a1;
+  v2 = ((__int64)a2 - (__int64)a1) >> 3;
   if (v2 > 2) {
     switch (v2) {
     case 3LL:

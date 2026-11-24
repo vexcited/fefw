@@ -12,8 +12,6 @@ __int64 PulseSignal_GetFilteredAverageSignal_plt(_QWORD, float);
 __int64 PulseSignal_PushNewValueAndUpdateScale_plt(_QWORD, _QWORD);
 __int64 memcpy_plt(_QWORD, _QWORD, _QWORD);
 __int64 memset_plt(__int64, int, unsigned __int64);
-__int64 memset_plt_alt1(void* this_, void*, int,
-                        unsigned __int64) __asm__("memset_plt");
 __int64 nerd_gillette_internal_otete_jaimev2_DecodeFullFrameShapeROK_plt(
     _QWORD, _QWORD, _QWORD, _QWORD, _QWORD, _QWORD, _QWORD, _QWORD, _QWORD);
 __int64 nerd_gillette_internal_otete_jaimev2_DecodeHasFullFrameShapeROK_plt(
@@ -86,8 +84,7 @@ __int64 nerd_gillette_internal_otete_jaimev2_756d40(__int64 a1, __int64 a2,
   int v21;
   _DWORD* v22;
   int v23;
-  _DWORD v25[4];
-  __int64 v26;
+  _DWORD v25[132];
   __int64 v27;
   struct {
     __int64 v28;
@@ -149,7 +146,7 @@ __int64 nerd_gillette_internal_otete_jaimev2_756d40(__int64 a1, __int64 a2,
               v28_.v29 = 0;
               v27 = 0;
               v28_.v28 = 0;
-              memset_plt_alt1((__int64*)v30[0], (void*)v25, nullptr, 528);
+              memset_plt((__int64)((void*)v25), 0, 528);
               nerd_gillette_internal_otete_jaimev2_DecodeFullFrameShapeROK_plt(
                   &v28_.v28, 0, &v27, 0, v25, *(v11 - 1), v15, v35, &v33);
               v21 = v25[0];
@@ -159,7 +156,7 @@ __int64 nerd_gillette_internal_otete_jaimev2_756d40(__int64 a1, __int64 a2,
               v23 = v25[3];
               v22[2] = v25[2];
               v22[3] = v23;
-              memcpy_plt(v22 + 4, &v26, 512);
+              memcpy_plt(v22 + 4, &v25[4], 512);
               *(_QWORD*)(a1 + 448) = v12;
               ++v9;
             }
@@ -294,7 +291,7 @@ __int64 nerd_gillette_internal_otete_jaimev2_756f40(__int64* a1, __int64* a2,
   __int64 v115;
   unsigned int v116;
   __int64 v117;
-  _DWORD v118[8];
+  _DWORD v118[128];
   _BYTE v119[488];
 
   if (PulseSignal_GetProgress_plt(a1 + 26) == 0x1.0000000000000p+0f) {
@@ -351,7 +348,7 @@ __int64 nerd_gillette_internal_otete_jaimev2_756f40(__int64* a1, __int64* a2,
       if (v13 >= v22) {
         LODWORD(v23) = v21[3];
         v29 = v22 - v13;
-        if ((_DWORD)v22 - (_DWORD)v13 < 0) {
+        if ((int)((_DWORD)v22 - (_DWORD)v13) < 0) {
           goto LABEL_7;
         }
       }
@@ -387,7 +384,7 @@ __int64 nerd_gillette_internal_otete_jaimev2_756f40(__int64* a1, __int64* a2,
       if ((_DWORD)v30 == *((_DWORD*)a1 + 98) && v29 <= (unsigned int)v23) {
         if (v29 != 0) {
           v111 = v16;
-          memset_plt_alt1(v30, (void*)v118, nullptr, 512);
+          memset_plt((__int64)((void*)v118), 0, 512);
           v32 = 100 * v21[1];
           if (v29 >= 8) {
             v71 = v119;
@@ -501,7 +498,7 @@ __int64 nerd_gillette_internal_otete_jaimev2_756f40(__int64* a1, __int64* a2,
       goto LABEL_52;
     }
     v112 = v16;
-    memset_plt_alt1(nullptr, (void*)v118, nullptr, 512);
+    memset_plt((__int64)((void*)v118), 0, 512);
     v37 = *v21;
     v38 = 100 * v21[1];
     if ((unsigned int)v36 >= 8) {

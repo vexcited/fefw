@@ -11971,7 +11971,7 @@ bool algorithm_7c8a60(__int64* a1, __int64* a2)
   __int64 v58;
   __int64 v59;
 
-  v2 = a2 - a1;
+  v2 = ((__int64)a2 - (__int64)a1) >> 3;
   if (v2 > 2) {
     switch (v2) {
     case 3LL:
@@ -12718,7 +12718,7 @@ bool algorithm_7c9880(unsigned __int64* a1, unsigned __int64* a2)
   unsigned __int64 v58;
   unsigned __int64 v59;
 
-  v2 = a2 - a1;
+  v2 = ((__int64)a2 - (__int64)a1) >> 3;
   if (v2 > 2) {
     switch (v2) {
     case 3LL:

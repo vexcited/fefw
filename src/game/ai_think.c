@@ -16409,7 +16409,7 @@ bool AIThink_121a340(_QWORD* a1, __int64 a2)
                       v40 = v103 - v129;
                     }
                     v41 = HIDWORD(v129) - v102;
-                    if (HIDWORD(v129) - v102 < 0) {
+                    if ((int)(HIDWORD(v129) - v102) < 0) {
                       v41 = v102 - HIDWORD(v129);
                     }
                     v42 = v41 + v40;
@@ -16512,7 +16512,7 @@ bool AIThink_121a340(_QWORD* a1, __int64 a2)
                         v63 = v103 - v129;
                       }
                       v64 = HIDWORD(v129) - v102;
-                      if (HIDWORD(v129) - v102 < 0) {
+                      if ((int)(HIDWORD(v129) - v102) < 0) {
                         v64 = v102 - HIDWORD(v129);
                       }
                       v65 = v64 + v63;

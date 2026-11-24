@@ -758,7 +758,7 @@ __int64 game_gmap_anonymous_168ad00(__int64 a1)
     v7 = 1;
     goto LABEL_11;
   }
-  if (GameData_1bee1cc[8 * *(int*)(GameData_225e7a0 + 184) + 1] != 1) {
+  if (GameData_1bee1cc[8LL * *(int*)(GameData_225e7a0 + 184) + 1] != 1) {
     goto LABEL_10;
   }
   v1 = *(_QWORD*)(GameData_21c96e8 + 8);

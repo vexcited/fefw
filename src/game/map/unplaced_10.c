@@ -1798,8 +1798,7 @@ __int64 game_map_79f000(__int64 a1, _DWORD* a2)
       v51 = 1;
     }
     v52 = v51 * v35;
-    if (!((v52 + *(_DWORD*)(v50 + v9) < 0) ^
-              __OFADD__(v52, *(_DWORD*)(v50 + v9)) |
+    if (!((v52 + *(int*)(v50 + v9) < 0) ^ __OFADD__(v52, *(_DWORD*)(v50 + v9)) |
           (v52 + *(_DWORD*)(v50 + v9) == 0))) {
       *(_DWORD*)(v50 + v9) = -v52;
     }
@@ -1837,7 +1836,7 @@ __int64 game_map_79f000(__int64 a1, _DWORD* a2)
       else {
         v67 = 0;
       }
-      if (!((v67 + *(_DWORD*)(v64 + v36) < 0) ^
+      if (!(((int)(v67 + *(_DWORD*)(v64 + v36)) < 0) ^
                 __OFADD__(v67, *(_DWORD*)(v64 + v36)) |
             (v67 + *(_DWORD*)(v64 + v36) == 0))) {
         *(_DWORD*)(v64 + v36) = -v67;
@@ -1876,7 +1875,7 @@ __int64 game_map_79f000(__int64 a1, _DWORD* a2)
         v62 = 1;
       }
       v69 = v62 * v58;
-      if (!((v69 + *(_DWORD*)(v60 + v30) < 0) ^
+      if (!(((int)(v69 + *(_DWORD*)(v60 + v30)) < 0) ^
                 __OFADD__(v69, *(_DWORD*)(v60 + v30)) |
             (v69 + *(_DWORD*)(v60 + v30) == 0))) {
         *(_DWORD*)(v60 + v30) = -v69;
@@ -2093,7 +2092,7 @@ __int64 game_map_79f000(__int64 a1, _DWORD* a2)
     else {
       v56 = 0;
     }
-    if (!((v56 + *(_DWORD*)(v21 + v24) < 0) ^
+    if (!(((int)(v56 + *(_DWORD*)(v21 + v24)) < 0) ^
               __OFADD__(v56, *(_DWORD*)(v21 + v24)) |
           (v56 + *(_DWORD*)(v21 + v24) == 0))) {
       *(_DWORD*)(v21 + v24) = -v56;

@@ -559,7 +559,7 @@ void llvm_libcxx_21_libcxx_include___functional_bf3cc0(__int64 a1, __int64 a2)
               goto LABEL_31;
             }
             v61 = v48;
-            if ((LODWORD(v48) ^ LODWORD(v51)) < 0) {
+            if ((int)(LODWORD(v48) ^ LODWORD(v51)) < 0) {
               goto LABEL_31;
             }
             v62 = LANES128(v36).n128_u32[1];
@@ -576,7 +576,7 @@ void llvm_libcxx_21_libcxx_include___functional_bf3cc0(__int64 a1, __int64 a2)
             if (fabsf(v65) <= 0x1.0000000000000p+0f) {
               goto LABEL_31;
             }
-            if ((LODWORD(v65) ^ LODWORD(v61)) < 0) {
+            if ((int)(LODWORD(v65) ^ LODWORD(v61)) < 0) {
               goto LABEL_31;
             }
             v66 = vaddq_f32(v32,
@@ -586,7 +586,7 @@ void llvm_libcxx_21_libcxx_include___functional_bf3cc0(__int64 a1, __int64 a2)
             if (fabsf(v67) <= 0x1.0000000000000p+0f) {
               goto LABEL_31;
             }
-            if ((LODWORD(v67) ^ LODWORD(v61)) < 0) {
+            if ((int)(LODWORD(v67) ^ LODWORD(v61)) < 0) {
               goto LABEL_31;
             }
             v68 = LANES128(v36).n128_u32[0];
@@ -599,13 +599,13 @@ void llvm_libcxx_21_libcxx_include___functional_bf3cc0(__int64 a1, __int64 a2)
             v71 = (float)(0x1.0000000000000p+0f / LANES128(v70).n128_f32[3]) *
                   LANES128(v70).n128_f32[0];
             if (fabsf(v71) <= 0x1.0000000000000p+0f ||
-                (LODWORD(v61) ^ LODWORD(v71)) < 0 ||
+                (int)(LODWORD(v61) ^ LODWORD(v71)) < 0 ||
                 (v72 = vaddq_f32(v32, vmlaq_n_f32(v69, v29, v49)),
                  v73 = (float)(0x1.0000000000000p+0f /
                                LANES128(v72).n128_f32[3]) *
                        LANES128(v72).n128_f32[0],
                  fabsf(v73) <= 0x1.0000000000000p+0f) ||
-                (LODWORD(v61) ^ LODWORD(v73)) < 0 ||
+                (int)(LODWORD(v61) ^ LODWORD(v73)) < 0 ||
                 (v74 = vmlaq_lane_f32(
                      vmulq_n_f32(v28, *(float*)&v68), v27,
                      COERCE_AS(float32x2_t, (v68 | (v62 << 32))), 1),
@@ -614,13 +614,13 @@ void llvm_libcxx_21_libcxx_include___functional_bf3cc0(__int64 a1, __int64 a2)
                                LANES128(v75).n128_f32[3]) *
                        LANES128(v75).n128_f32[0],
                  fabsf(v76) <= 0x1.0000000000000p+0f) ||
-                (LODWORD(v76) ^ LODWORD(v61)) < 0 ||
+                (int)(LODWORD(v76) ^ LODWORD(v61)) < 0 ||
                 (v77 = vaddq_f32(v32, vmlaq_n_f32(v74, v29, v49)),
                  v78 = (float)(0x1.0000000000000p+0f /
                                LANES128(v77).n128_f32[3]) *
                        LANES128(v77).n128_f32[0],
                  fabsf(v78) <= 0x1.0000000000000p+0f) ||
-                (LODWORD(v78) ^ LODWORD(v61)) < 0) {
+                (int)(LODWORD(v78) ^ LODWORD(v61)) < 0) {
             LABEL_31:
               v54 = v21[2];
               if ((unsigned __int64)v23 < v9) {

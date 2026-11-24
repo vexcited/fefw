@@ -2066,7 +2066,7 @@ _WORD* opus_silk_fixed_5ef40(__int64 a1, _WORD* a2, __int64 a3, int a4)
     opus_silk_fixed_5b1c0(&v23, (int*)&v22, (__int64)v24, a3 + 4LL * v10, a4,
                           v10, 2, *(_DWORD*)(a1 + 4640));
     v12 = v22 - HIDWORD(v22);
-    if ((int)v22 - HIDWORD(v22) < 0) {
+    if ((int)((int)v22 - HIDWORD(v22)) < 0) {
       HIDWORD(v22) = v22;
       v13 = (SHIDWORD(v23) >> (-v12 & 0x1F)) - v23;
     }
@@ -2089,7 +2089,7 @@ _WORD* opus_silk_fixed_5ef40(__int64 a1, _WORD* a2, __int64 a3, int a4)
           result = silk_sum_sqr_shift(
               &v26, (int*)&v25, (__int64)&v14[2 * v10 + 2 * *(int*)(a1 + 4640)],
               v10 - *(_DWORD*)(a1 + 4640));
-          if (HIDWORD(v25) - (int)v25 < 0) {
+          if ((int)(HIDWORD(v25) - (int)v25) < 0) {
             SHIDWORD(v26) >>= (v25 - BYTE4(v25)) & 0x1F;
             v16 = v26 + HIDWORD(v26);
             v17 = -(int)v25;

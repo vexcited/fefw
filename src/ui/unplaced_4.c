@@ -900,7 +900,7 @@ __int64 ui_1685800(__int64* a1, unsigned __int8 a2)
       }
       v7 = (a2 & 1) == 0 && *(_DWORD*)(GameData_225e7a0 + 300) == 1;
       v8 = v7 | a2 & (*((_DWORD*)a1 + 23) != 2);
-      if (GameData_1bee1cc[8 * *(int*)(GameData_225e7a0 + 184) + 1] != 1) {
+      if (GameData_1bee1cc[8LL * *(int*)(GameData_225e7a0 + 184) + 1] != 1) {
         goto LABEL_22;
       }
       v9 = *a1;
