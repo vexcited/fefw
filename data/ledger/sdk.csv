@@ -4650,7 +4650,7 @@ ffee0,324,verified,src/nn/fs/unplaced.c,nn_fs_GetAndClearMemoryReportInfo
 141af0,428,verified,src/nn/nlibsdk/nlib_printf_engine.cpp,_ZN2nn7nlibsdk14FormatFallbackEPwmPKwSt9__va_list
 142bc0,52,verified,src/nn/nlibsdk/nlib_printf.cpp,_ZN2nn7nlibsdk17VsnPrintfFallbackEPcmPKcSt9__va_list
 142c00,52,verified,src/nn/nlibsdk/nlib_printf.cpp,_ZN2nn7nlibsdk17VsnPrintfFallbackEPwmPKwSt9__va_list
-142c40,564,verified,src/nn/nlibsdk/nlib_printf_engine.cpp,_ZN2nn7nlibsdk17VsnPrintfFallbackEPDsmPKDsSt9__va_list
+142c40,404,disputed,src/nn/nlibsdk/nlib_printf_engine.cpp,_ZN2nn7nlibsdk17VsnPrintfFallbackEPDsmPKDsSt9__va_list
 143d10,716,verified,src/nn/nlibsdk/nlib_printf_engine.cpp,_ZN2nn7nlibsdk17VsnPrintfFallbackEPDimPKDiSt9__va_list
 144dd0,216,verified,src/nn/nlibsdk/nlib_printf.cpp,nnmem_nlib_snwprintf_fallback
 144eb0,276,verified,src/nn/nlibsdk/nlib_strto_fallback.cpp,nnmem_nlib_strto_int32_fallback
@@ -14308,7 +14308,7 @@ ffee0,324,verified,src/nn/fs/unplaced.c,nn_fs_GetAndClearMemoryReportInfo
 423c00,1396,verified,src/nn/fontll/itype/unplaced_12.c,nn_fontll_itype_423c00
 4241c0,112,verified,src/nn/fontll/itype/unplaced.c,engrave_graymap
 424820,200,verified,src/nn/fontll/itype/unplaced.c,emboss_graymap
-424e80,6616,verified,src/nn/fontll/itype/unplaced.c,outline_graymap
+424e80,6780,verified,src/nn/fontll/itype/unplaced.c,outline_graymap
 427000,1120,verified,src/nn/fontll/itype/unplaced.c,soft_outline_graymap
 427480,5880,verified,src/nn/fontll/itype/unplaced.c,Soften
 429280,3652,verified,src/nn/fontll/itype/unplaced.c,pixelbold_graymap2
@@ -14504,7 +14504,7 @@ ffee0,324,verified,src/nn/fs/unplaced.c,nn_fs_GetAndClearMemoryReportInfo
 43d610,368,verified,src/nn/fontll/itype/unplaced_2.c,fsg_ReduceMatrix
 43d780,2916,verified,src/nn/fontll/itype/unplaced_3.c,make_graymap
 43e6c0,2612,verified,src/nn/fontll/itype/unplaced_3.c,nn_fontll_itype_43e6c0
-43f120,1836,verified,src/nn/fontll/itype/unplaced_3.c,trim_convert
+43f120,2500,verified,src/nn/fontll/itype/unplaced_3.c,trim_convert
 43fb70,80,verified,src/nn/fontll/itype/fs_font.c,copy_graymap
 43fbc0,724,verified,src/nn/fontll/itype/unplaced_3.c,get_graymap
 43fec0,1156,verified,src/nn/fontll/itype/unplaced_3.c,get_phased_graymap
@@ -14559,11 +14559,11 @@ ffee0,324,verified,src/nn/fs/unplaced.c,nn_fs_GetAndClearMemoryReportInfo
 44d780,232,verified,src/nn/fontll/itype/unplaced_3.c,nn_fontll_itype_44d780
 44d880,688,verified,src/nn/fontll/itype/unplaced_3.c,nn_fontll_itype_44d880
 44dba0,868,verified,src/nn/fontll/itype/unplaced_7.c,nn_fontll_itype_44dba0
-44e2c0,668,disputed,src/nn/fontll/itype/unplaced_3.c,nn_fontll_itype_44e2c0
+44e2c0,1384,disputed,src/nn/fontll/itype/unplaced_3.c,nn_fontll_itype_44e2c0
 44e9e0,292,disputed,src/nn/fontll/itype/unplaced_3.c,nn_fontll_itype_44e9e0
 44eb20,300,verified,src/nn/unnamed/h000_0.c,SdkHr_44eb20
 44ec60,52,verified,src/nn/unnamed/h000_0.c,SdkHr_44ec60
-44eca0,296,verified,src/nn/fontll/itype/unplaced_3.c,get_EBLC_partial
+44eca0,540,verified,src/nn/fontll/itype/unplaced_3.c,get_EBLC_partial
 44eee0,532,verified,src/nn/fontll/itype/unplaced_3.c,nn_fontll_itype_44eee0
 44fa00,864,verified,src/nn/fontll/itype/unplaced_3.c,nn_fontll_itype_44fa00
 44fda0,620,verified,src/nn/fontll/itype/unplaced_3.c,nn_fontll_itype_44fda0
@@ -14604,7 +14604,7 @@ ffee0,324,verified,src/nn/fs/unplaced.c,nn_fs_GetAndClearMemoryReportInfo
 453200,244,verified,src/nn/fontll/itype/fs_ttf.c,swap_head
 453300,208,verified,src/nn/fontll/itype/fs_ttf.c,swap_hhea
 4533d0,208,verified,src/nn/fontll/itype/fs_ttf.c,swap_vhea
-4534a0,704,verified,src/nn/fontll/itype/unplaced_3.c,nn_fontll_itype_4534a0
+4534a0,1516,verified,src/nn/fontll/itype/unplaced_3.c,nn_fontll_itype_4534a0
 453b20,172,verified,src/nn/fontll/itype/unplaced_3.c,get_name
 453be0,504,verified,src/nn/fontll/itype/unplaced_9.c,nn_fontll_itype_453be0
 4546e0,284,verified,src/nn/fontll/itype/fs_typeset.c,TYPESET_init
