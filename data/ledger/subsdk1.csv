@@ -2183,7 +2183,7 @@ fcc0,1900,verified,src/nvidia/unnamed/c000_0.c,CudaDriverHr_fcc0
 88ba0,1300,verified,src/nvidia/cuda_driver_unplaced_4.c,cuda_driver_88ba0
 89100,584,verified,src/nvidia/cuda_driver_unplaced_4.c,cuda_driver_89100
 89350,16,verified,src/nvidia/cuda_driver_stubs_thunks.cpp,_Z20CudaDriverStub_89350mmmmm
-89360,1304,disputed,src/nvidia/unplaced_21.c,nvidia_89360
+89360,2212,verified,src/nvidia/unplaced_21.c,nvidia_89360
 89e50,276,verified,src/nvidia/cuda_driver_unplaced_4.c,cuda_driver_89e50
 89f80,1264,verified,src/nvidia/cuda_driver_unplaced_4.c,cuda_driver_unplaced_4_89f80
 8a4c0,380,verified,src/nvidia/cuda_driver_unplaced_4.c,cuda_driver_8a4c0
