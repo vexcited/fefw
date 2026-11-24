@@ -3160,7 +3160,7 @@ __int64 game_gmap_1655e80(__int64 a1)
               *(_DWORD*)(a1 + 44) = -1082130432;
             }
             v64 = f_.v116 <= -1;
-            v65 = (signed __int32)*(_DWORD*)(a1 + 48) % f_.v116;
+            v65 = (signed __int32)*(int*)(a1 + 48) % f_.v116;
             v66 = (__int64*)((_UNKNOWN**)0x8LL);
             v67 = &f_.v100 + 2 * v65;
             *(_DWORD*)(a1 + 48) = v65;

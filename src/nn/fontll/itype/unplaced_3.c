@@ -728,7 +728,7 @@ make_graymap(__int64 a1, __int64 a2, __int64 a3, int a4)
         v228 = *(unsigned int**)(v212 + 64);
         v85 = *(_DWORD*)(v212 + 20);
         v214 = v84;
-        v86 = ((*(_DWORD*)(v212 + 24) - v85) / v83 + 0x8000) & 0xFFFF0000;
+        v86 = ((*(int*)(v212 + 24) - v85) / v83 + 0x8000) & 0xFFFF0000;
         v87 = (v85 & 0xFFFF0000) + v86 * v84;
         *(_DWORD*)(v30 + 14368) = v87;
         if (v84 != v213) {

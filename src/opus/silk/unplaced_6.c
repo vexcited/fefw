@@ -295,7 +295,7 @@ LABEL_18:
     __asm__ volatile("" ::"r"(v37));
   }
   {
-    v38 = *(_DWORD*)&v12[v35 / 2];
+    v38 = *(int*)&v12[v35 / 2];
     __asm__ volatile("" ::"r"(v38));
   }
   *(_DWORD*)v17 = v37;

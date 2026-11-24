@@ -1612,7 +1612,7 @@ __int64 TaskSkyBlur_b75c60(_DWORD* a1, __int64 a2, __int64 a3)
     LANES128(v34).n128_u64[1] = __PAIR64__(-0x1.0000000000000p+0f, v42);
   }
   v44 = *(_DWORD*)(a3 + 16);
-  v45 = *(_DWORD*)(a3 + 20) / 2;
+  v45 = *(int*)(a3 + 20) / 2;
   *(float*)&v46 =
       (float)(*(float*)(a3 + 24) + *(float*)(a3 + 24)) / (float)(v44 / 2);
   *((float*)&v46 + 1) =
@@ -1638,7 +1638,7 @@ __int64 TaskSkyBlur_b75c60(_DWORD* a1, __int64 a2, __int64 a3)
           v47, v78, 2));
   vst4q_f32((float*)v29, v79);
   *(_DWORD*)(v29 + 68) = v45;
-  *(_DWORD*)(v29 + 64) = v44 / 2;
+  *(int*)(v29 + 64) = v44 / 2;
   *(_DWORD*)(v29 + 72) = *(_DWORD*)(a3 + 32);
   *(float*)(v29 + 76) = *(float*)(a3 + 36) + 0x1.0000000000000p+0f;
   v48 =
@@ -1706,8 +1706,8 @@ __int64 TaskSkyBlur_b75c60(_DWORD* a1, __int64 a2, __int64 a3)
     v34 = COERCE_AS(__typeof__(v34), PSEUDO_REGISTER(__n128, "v2", "=w")),
     v37 = COERCE_AS(__typeof__(v37), PSEUDO_REGISTER(float, "s1", "=w"));
     v57 = *(_DWORD*)(*(_QWORD*)(a3 + 56) + 124LL);
-    v58 = vcvts_n_f32_s32(*(_DWORD*)(a3 + 20) / 2, 9u);
-    *(float*)v56 = vcvts_n_f32_s32(*(_DWORD*)(a3 + 16) / 2, 0xAu);
+    v58 = vcvts_n_f32_s32(*(int*)(a3 + 20) / 2, 9u);
+    *(float*)v56 = vcvts_n_f32_s32(*(int*)(a3 + 16) / 2, 0xAu);
     *(float*)(v56 + 4) = v58;
     *(_DWORD*)(v56 + 8) = v57;
     *(_QWORD*)(v56 + 12) = 0x41CB3333C16A4D3CLL;

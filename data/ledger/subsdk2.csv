@@ -690,12 +690,12 @@ fff0,88,verified,src/movie/detail/movie_video_decoder_event_manager.cpp,_ZN5movi
 2b090,72,verified,src/opus/celt/celt_encoder.c,celt_encoder_get_size
 2b0e0,248,verified,src/opus/celt/celt_encoder.c,celt_encoder_init
 2b1e0,820,verified,src/opus/celt/celt_encoder_impl2.c,celt_encoder_2b1e0
-2b560,1092,disputed,src/opus/celt/celt_encoder_impl2.c,celt_encode_with_ec
-2f940,1128,disputed,src/opus/celt/celt_encoder_impl2.c,run_prefilter
+2b560,1092,verified,src/opus/celt/celt_encoder_impl2.c,celt_encode_with_ec
+2f940,1128,verified,src/opus/celt/celt_encoder_impl2.c,run_prefilter
 2ffe0,1136,disputed,src/opus/celt/unplaced_4.c,opus_celt_2ffe0
 30a20,944,verified,src/opus/celt/celt_encoder.c,compute_mdcts
 30f00,1448,verified,src/opus/celt/unplaced_9.c,opus_celt_30f00
-333a0,2116,disputed,src/opus/celt/celt_encoder_impl2.c,tf_analysis
+333a0,2116,verified,src/opus/celt/celt_encoder_impl2.c,tf_analysis
 34060,1376,verified,src/opus/celt/celt_encoder.c,alloc_trim_analysis
 34f60,144,verified,src/opus/celt/celt_encoder.c,opus_custom_encoder_ctl
 35700,732,verified,src/opus/celt/unplaced_8.c,opus_celt_35700
@@ -795,7 +795,7 @@ fff0,88,verified,src/movie/detail/movie_video_decoder_event_manager.cpp,_ZN5movi
 50640,2532,verified,src/opus/silk/unplaced_2.c,opus_silk_50640
 51580,500,disputed,src/opus/silk/unplaced_7.c,opus_silk_51580
 51780,672,verified,src/opus/silk/decode_indices.c,silk_decode_indices
-51b60,768,disputed,src/opus/silk/unplaced_3.c,opus_silk_51b60
+51b60,768,verified,src/opus/silk/unplaced_3.c,opus_silk_51b60
 51e80,612,verified,src/opus/silk/unplaced_2.c,opus_silk_51e80
 52100,1120,verified,src/opus/silk/unplaced_2.c,opus_silk_52100
 52610,420,verified,src/opus/silk/unplaced_2.c,opus_silk_52610
@@ -827,7 +827,7 @@ fff0,88,verified,src/movie/detail/movie_video_decoder_event_manager.cpp,_ZN5movi
 586e0,1176,verified,src/opus/silk/unplaced_2.c,opus_silk_586e0
 58bc0,1164,verified,src/opus/silk/unplaced_2.c,opus_silk_58bc0
 590a0,476,verified,src/opus/silk/unplaced_2.c,opus_silk_590a0
-592e0,2684,disputed,src/opus/silk/unplaced_3.c,opus_silk_592e0
+592e0,2684,verified,src/opus/silk/unplaced_3.c,opus_silk_592e0
 59ee0,920,verified,src/opus/silk/unplaced_2.c,opus_silk_59ee0
 5a290,308,verified,src/opus/silk/stereo_decode_pred.c,silk_stereo_decode_pred
 5a3d0,52,verified,src/opus/silk/stereo_decode_pred.c,silk_stereo_decode_mid_only

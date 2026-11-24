@@ -3740,7 +3740,7 @@ dltss_fkinterface_nchw8_bilinear_upsample_conv_1x1_128_128_032_fp16_fp16_Launch(
   *(_QWORD*)(result + 104) =
       2 * ((*(int*)(result + 44) * (__int64)*(int*)(result + 40)) << v6);
   *(_QWORD*)(result + 112) = 2 * (v4 << v6);
-  *(_DWORD*)(result + 384) = (v5 + *(_DWORD*)(result + 48) - 1) / v5 - 1;
+  *(int*)(result + 384) = (v5 + *(int*)(result + 48) - 1) / v5 - 1;
   return result;
 }
 
@@ -11398,7 +11398,7 @@ dltss_fkinterface_nchw8_conv_1x1_pool_256_064_032_e5m3_e5m3_Launch(__int64 a1,
         *(int*)(a1 + 108);
   *(_QWORD*)(a1 + 160) = *(int*)(a1 + 80) * (__int64)v3 * *(int*)(a1 + 84);
   *(_QWORD*)(a1 + 168) = v16;
-  v17 = (v3 + *(_DWORD*)(a1 + 92) - 1) / v3 - 1;
+  v17 = (v3 + *(int*)(a1 + 92) - 1) / v3 - 1;
   *(_DWORD*)(a1 + 352) = v17;
   *(_DWORD*)(a1 + 356) = v17 * v3;
   return result;
@@ -11953,7 +11953,7 @@ dltss_fkinterface_nchw8_conv_3x3_pool_064_064_008_e5m3_fp16_Launch(__int64 a1,
         *(int*)(a1 + 108);
   *(_QWORD*)(a1 + 160) = *(int*)(a1 + 80) * (__int64)v3 * *(int*)(a1 + 84);
   *(_QWORD*)(a1 + 168) = v16;
-  v17 = (v3 + *(_DWORD*)(a1 + 92) - 1) / v3 - 1;
+  v17 = (v3 + *(int*)(a1 + 92) - 1) / v3 - 1;
   *(_DWORD*)(a1 + 352) = v17;
   *(_DWORD*)(a1 + 356) = v17 * v3;
   return result;
@@ -12016,7 +12016,7 @@ dltss_fkinterface_nchw8_conv_3x3_pool_064_064_008_fp16_fp16_Launch(__int64 a1,
         *(int*)(a1 + 108);
   *(_QWORD*)(a1 + 160) = 2 * v3 * (__int64)*(int*)(a1 + 80) * *(int*)(a1 + 84);
   *(_QWORD*)(a1 + 168) = v16;
-  v17 = (v3 + *(_DWORD*)(a1 + 92) - 1) / v3 - 1;
+  v17 = (v3 + *(int*)(a1 + 92) - 1) / v3 - 1;
   *(_DWORD*)(a1 + 352) = v17;
   *(_DWORD*)(a1 + 356) = v17 * v3;
   return result;
@@ -12484,7 +12484,7 @@ dltss_fkinterface_nchw8_conv_1x1_064_064_032_fp16_fp16_Launch(__int64 result)
   *(_QWORD*)(result + 88) =
       2 * ((*(int*)(result + 36) * (__int64)*(int*)(result + 32)) << v6);
   *(_QWORD*)(result + 96) = 2 * (v4 << v6);
-  *(_DWORD*)(result + 368) = (v5 + *(_DWORD*)(result + 40) - 1) / v5 - 1;
+  *(int*)(result + 368) = (v5 + *(int*)(result + 40) - 1) / v5 - 1;
   return result;
 }
 
@@ -12577,7 +12577,7 @@ dltss_fkinterface_nchw8_conv_3x3_128_128_008_fp16_fp16_Launch(__int64 result)
   *(_QWORD*)(result + 88) =
       2 * ((*(int*)(result + 36) * (__int64)*(int*)(result + 32)) << v6);
   *(_QWORD*)(result + 96) = 2 * (v4 << v6);
-  *(_DWORD*)(result + 368) = (v5 + *(_DWORD*)(result + 40) - 1) / v5 - 1;
+  *(int*)(result + 368) = (v5 + *(int*)(result + 40) - 1) / v5 - 1;
   return result;
 }
 
@@ -12609,7 +12609,7 @@ dltss_fkinterface_nchw8_bilinear_upsample_conv_1x1_128_064_032_fp16_fp16_Launch(
   *(_QWORD*)(result + 104) =
       2 * ((*(int*)(result + 44) * (__int64)*(int*)(result + 40)) << v6);
   *(_QWORD*)(result + 112) = 2 * (v4 << v6);
-  *(_DWORD*)(result + 384) = (v5 + *(_DWORD*)(result + 48) - 1) / v5 - 1;
+  *(int*)(result + 384) = (v5 + *(int*)(result + 48) - 1) / v5 - 1;
   return result;
 }
 
@@ -12641,7 +12641,7 @@ dltss_fkinterface_nchw8_bilinear_upsample_conv_3x3_128_128_008_fp16_fp16_Launch(
   *(_QWORD*)(result + 104) =
       2 * ((*(int*)(result + 44) * (__int64)*(int*)(result + 40)) << v6);
   *(_QWORD*)(result + 112) = 2 * (v4 << v6);
-  *(_DWORD*)(result + 384) = (v5 + *(_DWORD*)(result + 48) - 1) / v5 - 1;
+  *(int*)(result + 384) = (v5 + *(int*)(result + 48) - 1) / v5 - 1;
   return result;
 }
 

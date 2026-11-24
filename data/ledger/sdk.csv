@@ -14502,7 +14502,7 @@ ffee0,324,verified,src/nn/fs/unplaced.c,nn_fs_GetAndClearMemoryReportInfo
 43d540,76,verified,src/nn/fontll/itype/fsglue.c,delete_key
 43d590,116,verified,src/nn/fontll/itype/fsglue.c,get_dropout_control
 43d610,368,verified,src/nn/fontll/itype/unplaced_2.c,fsg_ReduceMatrix
-43d780,2364,disputed,src/nn/fontll/itype/unplaced_3.c,make_graymap
+43d780,2916,verified,src/nn/fontll/itype/unplaced_3.c,make_graymap
 43e6c0,2612,verified,src/nn/fontll/itype/unplaced_3.c,nn_fontll_itype_43e6c0
 43f120,1836,verified,src/nn/fontll/itype/unplaced_3.c,trim_convert
 43fb70,80,verified,src/nn/fontll/itype/fs_font.c,copy_graymap
@@ -14546,7 +14546,7 @@ ffee0,324,verified,src/nn/fs/unplaced.c,nn_fs_GetAndClearMemoryReportInfo
 444d00,224,verified,src/nn/fontll/itype/unplaced_3.c,internal_get_outline
 444de0,676,verified,src/nn/fontll/itype/unplaced_3.c,FSS_get_gpos_pts
 445090,332,verified,src/nn/fontll/itype/unplaced_3.c,make_outline_ttf
-4451e0,184,disputed,src/nn/fontll/itype/unplaced_6.c,nn_fontll_itype_4451e0
+4451e0,1924,disputed,src/nn/fontll/itype/unplaced_6.c,nn_fontll_itype_4451e0
 449700,836,verified,src/nn/fontll/itype/unplaced_3.c,nn_fontll_itype_449700
 449b00,1280,verified,src/nn/fontll/itype/unplaced_3.c,nn_fontll_itype_449b00
 44a800,1144,verified,src/nn/fontll/itype/unplaced_3.c,nn_fontll_itype_44a800

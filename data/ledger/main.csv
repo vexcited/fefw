@@ -70685,7 +70685,7 @@ fffcb0,1244,verified,src/game/unnamed/b014_1.c,GameHr_fffcb0
 1655ae0,12,verified,src/llvm-libcxx-21/libcxx/include/__functional/function.h,"std::__1::__function::__func<game::gmap::GmapUIDef::SetQuestIcon(game::gameui::Util::QuestIconSwitcher&, game::gmap::Spot const*, bool)::$_10, void (game::gameui::Util::QuestIcon&)>::target_type()"
 1655af0,24,verified,src/llvm-libcxx-21/libcxx/include/__vector/vector.h,std::vector<T>::__throw_out_of_range()
 1655b20,768,verified,src/game/gmap/gmap_troop_info.c,game_gmap_GmapTroopInfo_Setup
-1655e80,1572,disputed,src/game/gmap/unplaced_2.c,game_gmap_1655e80
+1655e80,1572,verified,src/game/gmap/unplaced_2.c,game_gmap_1655e80
 1656640,1024,verified,src/game/gmap/unplaced_2.c,game_gmap_1656640
 1656a50,64,verified,src/game/unnamed/b021_2.c,GameHr_1656a50
 1656db0,44,verified,src/llvm-libcxx-21/libcxx/include/__functional/function.h,"std::__1::__function::__func<game::gmap::(anonymous namespace)::HasPlayer(game::gmap::Troop const*)::$_0, void (game::gmap::Troop*)>::deleting destructor"
