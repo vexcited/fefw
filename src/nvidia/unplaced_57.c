@@ -16,6 +16,52 @@ long double CudaDriverRoutine_1b86c0(unsigned __int64, _OWORD*);
 unsigned __int64 CudaDriverRoutine_1b8800(unsigned __int64 result,
                                           unsigned __int8);
 __int64 nvidia_1b7d80(unsigned int a1, __int64 a2, __int64 a3);
+void nvidia_36680(__int64 a1, __int64 a2, unsigned int* a3);
+__int64 nvidia_50960(__int64 a1);
+__int64 nvidia_1222e0(__int64 a1, unsigned int a2);
+__int64 nvidia_1c2c40(int a1, int a2, unsigned int a3, unsigned int a4,
+                      unsigned int a5, __int64* a6, __int64* a7);
+__int64 nvidia_1f4790(int a1, int a2, unsigned int a3, unsigned int a4,
+                      unsigned int a5, __int64* a6, __int64* a7);
+__int64 nvidia_218740(__int64 result, __int64 a2, __int64* a3);
+__int64 nvidia_21ad30(_QWORD* a1, __int64 a2, __int64 a3, __int64 a4,
+                      __int64 a5, unsigned int a6, __int64 a7, __int64 a8);
+__int64 nvidia_23ec50(int a1, int a2, unsigned int a3, unsigned int a4,
+                      unsigned int a5, __int64* a6, __int64* a7);
+
+void nvidia_36680(__int64 a1, __int64 a2, unsigned int* a3)
+{
+  __int64 v3;
+  __int64 v4;
+
+  v3 = *a3;
+  if ((unsigned int)v3 < a3[1] && (*(_BYTE*)(a2 + 13848) & 3) == 2) {
+    v4 = *((_QWORD*)a3 + 1);
+    *a3 = v3 + 1;
+    *(_QWORD*)(v4 + 8 * v3) = a2;
+  }
+}
+
+__int64 nvidia_50960(__int64 a1)
+{
+  if (a1 == 0) {
+    return 400;
+  }
+  GameRoutine_105c00();
+  return 0;
+}
+
+__int64 nvidia_1222e0(__int64 a1, unsigned int a2)
+{
+  __int64 v2;
+
+  if (a2 > 6) {
+    return 1;
+  }
+  v2 = *(_QWORD*)(a1 + 232);
+  *(_DWORD*)(v2 + 82088) = a2;
+  return 0;
+}
 
 __int64 nvidia_1b7d80(unsigned int a1, __int64 a2, __int64 a3)
 {
@@ -437,6 +483,626 @@ __int64 nvidia_1b7d80(unsigned int a1, __int64 a2, __int64 a3)
       if (v7 % 0xA == 1) {
         *(_BYTE*)(a3 + 7) = 24;
       }
+    }
+  }
+  return result;
+}
+
+__int64 nvidia_1c2c40(int a1, int a2, unsigned int a3, unsigned int a4,
+                      unsigned int a5, __int64* a6, __int64* a7)
+{
+  __int64 v8;
+  __int64 v9;
+  __int64 result;
+  __int64 v11;
+
+  if (a2 > 1) {
+    if (a2 == 2) {
+      result = 4;
+      v11 = (unsigned int)(a1 - 7);
+      v8 = 0;
+      v9 = 24064LL * a3 + 376LL * a4 + 16;
+      switch (v11) {
+      case 0LL:
+        goto LABEL_24;
+      case 1LL:
+        goto LABEL_16;
+      case 2LL:
+        result = 4;
+        v8 = 8;
+        goto LABEL_24;
+      case 3LL:
+        result = 4;
+        v8 = 12;
+        goto LABEL_24;
+      case 4LL:
+        result = 4;
+        v8 = 16;
+        goto LABEL_24;
+      case 5LL:
+        result = 4;
+        v8 = 20;
+        goto LABEL_24;
+      case 6LL:
+        result = 4;
+        v8 = 24;
+        goto LABEL_24;
+      case 7LL:
+        result = 4;
+        v8 = 28;
+        goto LABEL_24;
+      case 9LL:
+        result = 4;
+        v8 = 32;
+        goto LABEL_24;
+      case 10LL:
+        result = 4;
+        v8 = 36;
+        goto LABEL_24;
+      case 11LL:
+        result = 4;
+        v8 = 40;
+        goto LABEL_24;
+      case 12LL:
+        result = 4;
+        v8 = 44;
+        goto LABEL_24;
+      case 13LL:
+        result = 4;
+        v8 = 48;
+        goto LABEL_24;
+      case 14LL:
+        result = 4;
+        v8 = 52;
+        goto LABEL_24;
+      case 15LL:
+        result = 4;
+        v8 = 56;
+        goto LABEL_24;
+      case 16LL:
+        result = 4;
+        v8 = 60;
+        goto LABEL_24;
+      case 17LL:
+        result = 4;
+        v8 = 64;
+        goto LABEL_24;
+      case 18LL:
+        result = 4;
+        v8 = 68;
+        goto LABEL_24;
+      case 20LL:
+        result = 4;
+        v8 = 72;
+        goto LABEL_24;
+      case 22LL:
+        result = 4;
+        v8 = 76;
+        goto LABEL_24;
+      case 23LL:
+        result = 4;
+        v8 = 80;
+        goto LABEL_24;
+      case 25LL:
+        result = 4;
+        v8 = 84;
+        goto LABEL_24;
+      case 26LL:
+        result = 4;
+        v8 = 88;
+        goto LABEL_24;
+      case 27LL:
+        result = 4;
+        v8 = 92;
+        goto LABEL_24;
+      case 29LL:
+        result = 4;
+        v8 = 96;
+        goto LABEL_24;
+      case 30LL:
+        result = 4;
+        v8 = 100;
+        goto LABEL_24;
+      case 31LL:
+        result = 4;
+        v8 = 104;
+        goto LABEL_24;
+      case 32LL:
+        result = 4;
+        v8 = 108;
+        goto LABEL_24;
+      case 34LL:
+        result = 4;
+        v8 = 368;
+        goto LABEL_24;
+      case 39LL:
+        result = 4;
+        v8 = 372;
+        goto LABEL_24;
+      default:
+        return result;
+      }
+    }
+    else {
+      if (a2 != 3) {
+        goto LABEL_11;
+      }
+      result = 4;
+      v9 = 24064LL * a3 + 376LL * a4 + 8LL * a5 + 128;
+      if (a1 == 44) {
+        v8 = 0;
+        goto LABEL_24;
+      }
+      if (a1 == 45) {
+      LABEL_16:
+        v8 = 4;
+        result = 4;
+      LABEL_24:
+        *a6 = v8;
+        *a7 = result;
+        *a6 += v9;
+        return 0;
+      }
+    }
+  }
+  else {
+    if (a2 != 0) {
+      if (a2 == 1) {
+        if (a1 != 6) {
+          return 4;
+        }
+        v8 = 0;
+        v9 = 8LL * a3 + 866320;
+        goto LABEL_22;
+      }
+    LABEL_11:
+      *a6 = 0;
+      *a7 = 0;
+      return 4;
+    }
+    result = 4;
+    switch (a1) {
+    case 0:
+      v8 = 0;
+      v9 = 0;
+      goto LABEL_24;
+    case 3:
+      v8 = 8;
+      v9 = 0;
+    LABEL_22:
+      result = 8;
+      goto LABEL_24;
+    case 1:
+      v9 = 0;
+      goto LABEL_16;
+    default:
+      break;
+    }
+  }
+  return result;
+}
+
+__int64 nvidia_1f4790(int a1, int a2, unsigned int a3, unsigned int a4,
+                      unsigned int a5, __int64* a6, __int64* a7)
+{
+  __int64 result;
+  __int64 v9;
+  __int64 v10;
+  __int64 v11;
+
+  if (a2 > 1) {
+    if (a2 == 2) {
+      result = 4;
+      v11 = (unsigned int)(a1 - 7);
+      v10 = 0;
+      v9 = 48640LL * a3 + 380LL * a4 + 16;
+      switch (v11) {
+      case 0LL:
+        goto LABEL_21;
+      case 1LL:
+        goto LABEL_15;
+      case 2LL:
+        result = 4;
+        v10 = 8;
+        goto LABEL_21;
+      case 3LL:
+        result = 4;
+        v10 = 12;
+        goto LABEL_21;
+      case 4LL:
+        result = 4;
+        v10 = 16;
+        goto LABEL_21;
+      case 5LL:
+        result = 4;
+        v10 = 20;
+        goto LABEL_21;
+      case 6LL:
+        result = 4;
+        v10 = 24;
+        goto LABEL_21;
+      case 7LL:
+        result = 4;
+        v10 = 28;
+        goto LABEL_21;
+      case 9LL:
+        result = 4;
+        v10 = 32;
+        goto LABEL_21;
+      case 10LL:
+        result = 4;
+        v10 = 36;
+        goto LABEL_21;
+      case 11LL:
+        result = 4;
+        v10 = 40;
+        goto LABEL_21;
+      case 12LL:
+        result = 4;
+        v10 = 44;
+        goto LABEL_21;
+      case 13LL:
+        result = 4;
+        v10 = 48;
+        goto LABEL_21;
+      case 14LL:
+        result = 4;
+        v10 = 52;
+        goto LABEL_21;
+      case 15LL:
+        result = 4;
+        v10 = 56;
+        goto LABEL_21;
+      case 16LL:
+        result = 4;
+        v10 = 60;
+        goto LABEL_21;
+      case 17LL:
+        result = 4;
+        v10 = 64;
+        goto LABEL_21;
+      case 18LL:
+        result = 4;
+        v10 = 68;
+        goto LABEL_21;
+      case 20LL:
+        result = 4;
+        v10 = 72;
+        goto LABEL_21;
+      case 22LL:
+        result = 4;
+        v10 = 76;
+        goto LABEL_21;
+      case 23LL:
+        result = 4;
+        v10 = 80;
+        goto LABEL_21;
+      case 25LL:
+        result = 4;
+        v10 = 84;
+        goto LABEL_21;
+      case 26LL:
+        result = 4;
+        v10 = 88;
+        goto LABEL_21;
+      case 27LL:
+        result = 4;
+        v10 = 92;
+        goto LABEL_21;
+      case 29LL:
+        result = 4;
+        v10 = 96;
+        goto LABEL_21;
+      case 30LL:
+        result = 4;
+        v10 = 100;
+        goto LABEL_21;
+      case 31LL:
+        result = 4;
+        v10 = 104;
+        goto LABEL_21;
+      case 32LL:
+        result = 4;
+        v10 = 108;
+        goto LABEL_21;
+      case 34LL:
+        result = 4;
+        v10 = 368;
+        goto LABEL_21;
+      case 39LL:
+        result = 4;
+        v10 = 372;
+        goto LABEL_21;
+      case 40LL:
+        result = 1;
+        v10 = 376;
+        goto LABEL_21;
+      case 41LL:
+        result = 1;
+        v10 = 377;
+        goto LABEL_21;
+      default:
+        return result;
+      }
+    }
+    else {
+      if (a2 != 3) {
+      LABEL_10:
+        *a6 = 0;
+        *a7 = 0;
+        return 4;
+      }
+      result = 4;
+      v9 = 48640LL * a3 + 380LL * a4 + 8LL * a5 + 128;
+      if (a1 == 44) {
+        v10 = 0;
+        goto LABEL_21;
+      }
+      if (a1 == 45) {
+      LABEL_15:
+        v10 = 4;
+        result = 4;
+      LABEL_21:
+        *a6 = v10;
+        *a7 = result;
+        *a6 += v9;
+        return 0;
+      }
+    }
+  }
+  else {
+    if (a2 != 0) {
+      if (a2 == 1) {
+        return 4;
+      }
+      goto LABEL_10;
+    }
+    result = 4;
+    switch (a1) {
+    case 0:
+      v10 = 0;
+      v9 = 0;
+      goto LABEL_21;
+    case 3:
+      v10 = 8;
+      result = 8;
+      v9 = 0;
+      goto LABEL_21;
+    case 1:
+      v9 = 0;
+      goto LABEL_15;
+    default:
+      break;
+    }
+  }
+  return result;
+}
+
+__int64 nvidia_218740(__int64 result, __int64 a2, __int64* a3)
+{
+  __int64 v3;
+
+  v3 = *a3;
+  if (*a3 < (unsigned __int64)a3[1]) {
+    *(_QWORD*)(a3[2] + 8 * v3) = result;
+    v3 = *a3;
+  }
+  *a3 = v3 + 1;
+  return result;
+}
+
+__int64 nvidia_21ad30(_QWORD* a1, __int64 a2, __int64 a3, __int64 a4,
+                      __int64 a5, unsigned int a6, __int64 a7, __int64 a8)
+{
+  __int64 v8;
+  __int64 v9;
+
+  if (a2 == 0) {
+    return 201;
+  }
+  if (a6 > 2) {
+    return 1;
+  }
+  *a1 = (*(__int64 (**)(_QWORD, __int64, __int64, __int64, __int64, _QWORD,
+                        _QWORD, __int64, __int64, __int64))(
+      *(_QWORD*)(a2 + 64) + 19216LL))(*a1, a2, a3, a4, a5, 0, 2 - a6, a8, v8,
+                                      v9);
+  return 0;
+}
+
+__int64 nvidia_23ec50(int a1, int a2, unsigned int a3, unsigned int a4,
+                      unsigned int a5, __int64* a6, __int64* a7)
+{
+  __int64 result;
+  __int64 v9;
+  __int64 v10;
+  __int64 v11;
+
+  if (a2 > 1) {
+    if (a2 == 2) {
+      result = 4;
+      v11 = (unsigned int)(a1 - 7);
+      v9 = 42496LL * a3 + 664LL * a4 + 16;
+      v10 = 584;
+      switch (v11) {
+      case 0LL:
+        goto LABEL_21;
+      case 2LL:
+        result = 4;
+        v10 = 544;
+        goto LABEL_21;
+      case 3LL:
+        result = 4;
+        v10 = 548;
+        goto LABEL_21;
+      case 4LL:
+        result = 4;
+        v10 = 552;
+        goto LABEL_21;
+      case 5LL:
+        result = 4;
+        v10 = 556;
+        goto LABEL_21;
+      case 6LL:
+        result = 4;
+        v10 = 560;
+        goto LABEL_21;
+      case 7LL:
+        result = 4;
+        v10 = 564;
+        goto LABEL_21;
+      case 8LL:
+        result = 8;
+        v10 = 536;
+        goto LABEL_21;
+      case 10LL:
+        result = 4;
+        v10 = 524;
+        goto LABEL_21;
+      case 11LL:
+        result = 4;
+        v10 = 528;
+        goto LABEL_21;
+      case 12LL:
+        result = 4;
+        v10 = 532;
+        goto LABEL_21;
+      case 13LL:
+        result = 4;
+        v10 = 576;
+        goto LABEL_21;
+      case 14LL:
+        result = 4;
+        v10 = 588;
+        goto LABEL_21;
+      case 15LL:
+        result = 4;
+        v10 = 592;
+        goto LABEL_21;
+      case 16LL:
+        result = 4;
+        v10 = 596;
+        goto LABEL_21;
+      case 17LL:
+        result = 4;
+        v10 = 580;
+        goto LABEL_21;
+      case 18LL:
+        result = 4;
+        v10 = 612;
+        goto LABEL_21;
+      case 19LL:
+        result = 8;
+        v10 = 616;
+        goto LABEL_21;
+      case 20LL:
+        result = 4;
+        v10 = 608;
+        goto LABEL_21;
+      case 21LL:
+        result = 8;
+        v10 = 568;
+        goto LABEL_21;
+      case 24LL:
+        result = 8;
+        v10 = 624;
+        goto LABEL_21;
+      case 27LL:
+        result = 4;
+        v10 = 632;
+        goto LABEL_21;
+      case 28LL:
+        result = 8;
+        v10 = 600;
+        goto LABEL_21;
+      case 34LL:
+        result = 4;
+        v10 = 512;
+        goto LABEL_21;
+      case 35LL:
+        result = 4;
+        v10 = 516;
+        goto LABEL_21;
+      case 39LL:
+        result = 4;
+        v10 = 636;
+        goto LABEL_21;
+      case 40LL:
+        result = 1;
+        v10 = 660;
+        goto LABEL_21;
+      case 41LL:
+        result = 1;
+        v10 = 661;
+        goto LABEL_21;
+      case 42LL:
+        result = 4;
+        v10 = 640;
+        goto LABEL_21;
+      case 43LL:
+        result = 4;
+        v10 = 644;
+        goto LABEL_21;
+      case 44LL:
+        result = 8;
+        v10 = 648;
+        goto LABEL_21;
+      case 45LL:
+        result = 4;
+        v10 = 656;
+        goto LABEL_21;
+      default:
+        return result;
+      }
+    }
+    else {
+      if (a2 != 3) {
+      LABEL_10:
+        *a6 = 0;
+        *a7 = 0;
+        return 4;
+      }
+      result = 4;
+      v9 = 42496LL * a3 + 664LL * a4 + 16LL * a5 + 16;
+      if (a1 == 44) {
+        v10 = 0;
+        goto LABEL_21;
+      }
+      if (a1 == 45) {
+      LABEL_15:
+        v10 = 4;
+        result = 4;
+      LABEL_21:
+        *a6 = v10;
+        *a7 = result;
+        *a6 += v9;
+        return 0;
+      }
+    }
+  }
+  else {
+    if (a2 != 0) {
+      if (a2 == 1) {
+        return 4;
+      }
+      goto LABEL_10;
+    }
+    result = 4;
+    switch (a1) {
+    case 0:
+      v10 = 0;
+      v9 = 0;
+      goto LABEL_21;
+    case 3:
+      v10 = 8;
+      result = 8;
+      v9 = 0;
+      goto LABEL_21;
+    case 1:
+      v9 = 0;
+      goto LABEL_15;
+    default:
+      break;
     }
   }
   return result;

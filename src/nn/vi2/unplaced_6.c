@@ -34,6 +34,8 @@ __int64 nn_vi2_5e97c0(__int64 a1, __int64 a2, int a3, unsigned int a4,
                       __int64 a8, __int64 a9, unsigned int a10);
 __int64 nn_vi2_5e99d0(__int64 a1, __int64 a2, unsigned int a3, __int64 a4,
                       __int64 a5, __int64 a6, __int64 a7, __int64 a8);
+void __attribute__((noreturn)) nn_vi2_5e18a8();
+void __attribute__((noreturn)) nn_vi2_5e18a8() { GameRoutine_857150(); }
 
 __int64 nn_vi2_5e1920(__int64* a1, __int64* a2, __int64* a3, int a4)
 {

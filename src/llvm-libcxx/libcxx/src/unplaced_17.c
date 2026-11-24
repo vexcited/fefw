@@ -7,6 +7,12 @@ unsigned __int64 fread_plt(__int64, unsigned __int64, unsigned __int64,
                            __int64);
 void __attribute__((noreturn)) locale_7f6090();
 __int64 llvm_libcxx_libcxx_src_7f5d90(__int64 a1);
+void __attribute__((noreturn)) llvm_libcxx_libcxx_src_7d7da4(__int64 a1);
+
+void __attribute__((noreturn)) llvm_libcxx_libcxx_src_7d7da4(__int64 a1)
+{
+  GameRoutine_7cd620(a1);
+}
 
 __int64 llvm_libcxx_libcxx_src_7f5d90(__int64 a1)
 {
