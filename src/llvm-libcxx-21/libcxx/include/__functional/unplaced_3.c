@@ -6381,7 +6381,7 @@ bool llvm_libcxx_21_libcxx_include___functional_127a1a0(__int64 a1, _DWORD* a2)
          v8 < v9) ||
         (v10 = *(_DWORD*)(v6 + 20)) < 0 ||
         ((v11 = v7[3] | (v7[4] << 16), v8 <= v9)
-             ? (v12 = (v10 | (*(_DWORD*)(v6 + 24) << 16)) <= v11)
+             ? (v12 = (int)(v10 | (*(_DWORD*)(v6 + 24) << 16)) <= v11)
              : (v12 = true),
          !v12)) {
       *(_QWORD*)v6 = *(_QWORD*)(*(_QWORD*)(*v4 + 64) + 8LL * (*a2 & 0xFFF));
