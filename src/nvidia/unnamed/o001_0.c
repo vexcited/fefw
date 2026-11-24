@@ -820,7 +820,8 @@ __int64 CudaDriverHr_1cc6c0(__int64 a1, unsigned int a2, unsigned int a3,
         if ((unsigned int)v15 > 0x40) {
           v19 = 0;
         }
-        if (((*(_QWORD*)(v18 + 56) >> v15 << v19) & 1) == 0) {
+        if (((*(_QWORD*)(v18 + 56) >> (v15 & 0x3F) << (v19 & 0x3F)) & 1) ==
+            0) {
           goto LABEL_9;
         }
       }

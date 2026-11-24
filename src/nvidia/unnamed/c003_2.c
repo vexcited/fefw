@@ -3169,7 +3169,7 @@ __int64 CudaDriverHr_1c7b20(__int64 a1, unsigned int a2, _QWORD* a3, _BYTE* a4)
   if ((unsigned int)v9 > 0x40) {
     v11 = 0;
   }
-  if (((a3[1] >> v9 << v11) & 1) == 0) {
+  if (((a3[1] >> (v9 & 0x3F) << (v11 & 0x3F)) & 1) == 0) {
     goto LABEL_7;
   }
 LABEL_14:
@@ -5639,7 +5639,7 @@ __int64 CudaDriverHr_1cbf80(__int64 a1, char a2)
         if ((unsigned int)v17 > 0x40) {
           v18 = 0;
         }
-        if (((v14[7] >> v17 << v18) & 1) == 0) {
+        if (((v14[7] >> (v17 & 0x3F) << (v18 & 0x3F)) & 1) == 0) {
           goto LABEL_10;
         }
       LABEL_17:
@@ -5792,7 +5792,7 @@ __int64 CudaDriverHr_1cbf80(__int64 a1, char a2)
         if ((unsigned int)v46 > 0x40) {
           v48 = 0;
         }
-        if (((v44[7] >> v46 << v48) & 1) != 0) {
+        if (((v44[7] >> (v46 & 0x3F) << (v48 & 0x3F)) & 1) != 0) {
           goto LABEL_62;
         }
       }

@@ -6585,7 +6585,8 @@ __int64 cuda_driver_84ec0(__int64 a1, unsigned int a2, __int64* a3,
             if ((unsigned int)v22 > 0x40) {
               v24 = 0;
             }
-            if ((((unsigned __int64)a3[1] >> v22 << v24) & 1) != 0) {
+            if ((((unsigned __int64)a3[1] >> (v22 & 0x3F) << (v24 & 0x3F)) &
+                 1) != 0) {
             LABEL_14:
               result = (*(__int64 (**)(_QWORD, _QWORD, char*))(a1 + 23375784))(
                   *(_QWORD*)(a1 + 24), *v23, v43);
