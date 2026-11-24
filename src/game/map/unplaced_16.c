@@ -518,10 +518,10 @@ LABEL_66:
         v79 = LANES128(v67).n128_f32[1];
         v80 = fabsf(v68 * fabsf(LANES128(v75).n128_f32[2]));
         if (!(LANES128(v67).n128_f32[2] > LANES128(v66).n128_f32[2])) {
-          if (!(LANES128(v67).n128_f32[2] < LANES128(v66).n128_f32[2])||
+          if (!(LANES128(v67).n128_f32[2] < LANES128(v66).n128_f32[2]) ||
               (v78 = LANES128(v67).n128_f32[2] + v80,
-               (float)(LANES128(v67).n128_f32[2] + v80) <=
-                   LANES128(v66).n128_f32[2])) {
+               !((float)(LANES128(v67).n128_f32[2] + v80) >
+                 LANES128(v66).n128_f32[2]))) {
           LABEL_82:
             v66 = vsubq_f32(v66, v67);
             LANES128(v81).n128_u64[0] = LODWORD(v77);
@@ -619,8 +619,8 @@ LABEL_66:
         goto LABEL_76;
       }
       v77 = LANES128(v67).n128_f32[0] + v76;
-      if ((float)(LANES128(v67).n128_f32[0] + v76) <=
-          LANES128(v66).n128_f32[0]) {
+      if (!((float)(LANES128(v67).n128_f32[0] + v76) >
+            LANES128(v66).n128_f32[0])) {
         goto LABEL_76;
       }
     }

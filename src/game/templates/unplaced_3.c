@@ -266,7 +266,7 @@ void game_templates_a55a00(__int64 a1, __int64* a2, unsigned __int8 a3, char a4,
   if (v12 == v13) {
     return;
   }
-  if (a6 <= 0x1.0000000000000p+0f) {
+  if (!(a6 > 0x1.0000000000000p+0f)) {
     v16 = a6;
   }
   else {

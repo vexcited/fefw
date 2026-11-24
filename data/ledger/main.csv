@@ -30890,7 +30890,7 @@ a542c0,312,verified,src/game/unnamed/b008_3.c,GameHr_a542c0
 a54400,44,verified,src/game/unnamed/b008_2.c,GameHr_a54400
 a54440,3080,verified,src/game/templates/unplaced_4.c,game_templates_a54440
 a55600,980,verified,src/game/unnamed/b008_2.c,GameHr_a55600
-a55a00,2948,disputed,src/game/templates/unplaced_3.c,game_templates_a55a00
+a55a00,2948,verified,src/game/templates/unplaced_3.c,game_templates_a55a00
 a56600,1092,verified,src/game/templates/unplaced_4.c,game_templates_a56600
 a56ac0,1040,verified,src/game/templates/unplaced_3.c,game_templates_a56ac0
 a56ee0,24,verified,src/llvm-libcxx-21/libcxx/include/__vector/vector.h,std::vector<T>::__throw_length_error()
@@ -33881,12 +33881,12 @@ b7fb40,16,verified,src/gfx/render/camera.cpp,_ZNK3gfx6render12ShadowCamera8HasVi
 b7fb50,8,verified,src/gfx/render/camera.cpp,_ZNK3gfx6render12ShadowCamera8GetViewsEv
 b7fb60,8,verified,src/gfx/render/camera.cpp,_ZNK3gfx6render12ShadowCamera14GetFocalLengthEv
 b7fb70,472,verified,src/game/unnamed/b009_2.c,GameHr_b7fb70
-b7fd60,6184,verified,src/gfx/render/unplaced_2.c,gfx_render_b7fd60
+b7fd60,6180,verified,src/gfx/render/unplaced_2.c,gfx_render_b7fd60
 b81e20,544,verified,src/gfx/render/unplaced_3.c,gfx_render_b81e20
 b82060,3572,verified,src/game/unnamed/b009_2.c,GameHr_b82060
 b83060,1024,verified,src/gfx/render/unplaced_2.c,gfx_render_b83060
 b83490,7952,verified,src/game/unnamed/b028_0.c,GameHr_b83490
-b853e0,1240,disputed,src/gfx/render/unplaced_2.c,gfx_render_b853e0
+b853e0,3852,verified,src/gfx/render/unplaced_2.c,gfx_render_b853e0
 b86660,732,verified,src/game/unnamed/b009_2.c,GameHr_b86660
 b869a0,296,verified,src/game/unnamed/b009_2.c,GameHr_b869a0
 b86ad0,228,verified,src/game/unnamed/b009_2.c,GameHr_b86ad0

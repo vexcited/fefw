@@ -1191,7 +1191,7 @@ void llvm_libcxx_21_libcxx_include___functional_10b8b50(__int64 a1, __int64 a2,
       *(int32x2_t*)(v3 + 288) = vrev64_s32(v99);
       v100 = 0x1.3333340000000p-3f;
       v101 = vmuls_lane_f32(0x1.99999a0000000p-3f, v99, 1);
-      if (v101 <= 0x1.3333340000000p-3f) {
+      if (!(v101 > 0x1.3333340000000p-3f)) {
         v100 = v101;
       }
       if (!(v101 < -0x1.3333340000000p-3f)) {
@@ -1205,7 +1205,7 @@ void llvm_libcxx_21_libcxx_include___functional_10b8b50(__int64 a1, __int64 a2,
       *((_QWORD*)&v103 + 1) = LODWORD(v93);
       v104 = -0x1.0a3d700000000p-3f * LANES64(v99).n64_f32[0];
       v105 = 0x1.47ae140000000p-5f;
-      if (v104 <= 0x1.47ae140000000p-5f) {
+      if (!(v104 > 0x1.47ae140000000p-5f)) {
         v105 = v104;
       }
       *(_OWORD*)(v3 + 288) = v103;
