@@ -13042,7 +13042,7 @@ __int64 game_AIThink_ActionMoveItemHolder_lambda0_Invoke(__int64 result,
         v13 = 0;
       }
       if (v11 < v13 || (v14 = *v9[3]) < 0 ||
-          (v11 <= v13 ? (v15 = (v14 | (*v9[4] << 16)) <= (v4 | (v5 << 16)))
+          (v11 <= v13 ? (v15 = (int)(v14 | (*v9[4] << 16)) <= (v4 | (v5 << 16)))
                       : (v15 = true),
            !v15)) {
         *v9[5] = v12;
@@ -17415,9 +17415,10 @@ __int64 game_AIThink_ActionMindTreasure_lambda0_Invoke(__int64 a1, __int64 a2,
             }
             v26 = **(_DWORD**)(a1 + 24);
             if (v26 < v24 || (*v25 & 0x80000000) != 0 ||
-                (v26 <= v24 ? (v27 = (*v25 | (**(_DWORD**)(a1 + 40) << 16)) <=
-                                     (v8 | (v10 << 16)))
-                            : (v27 = true),
+                (v26 <= v24
+                     ? (v27 = (int)(*v25 | (**(_DWORD**)(a1 + 40) << 16)) <=
+                              (v8 | (v10 << 16)))
+                     : (v27 = true),
                  !v27)) {
               *v25 = v8;
               **(_DWORD**)(a1 + 40) = v10;
@@ -22107,6 +22108,7 @@ __int64 game_AIThink_EntrustMoveGimmick_lambda0_Invoke(__int64 result,
   _DWORD* v13;
   unsigned int v14;
   bool v15;
+  unsigned int v16;
 
   v6 = *a5;
   v7 = *a6;
@@ -22127,9 +22129,15 @@ __int64 game_AIThink_EntrustMoveGimmick_lambda0_Invoke(__int64 result,
       v12 = 0;
     }
     v14 = **(_DWORD**)(result + 8);
+    // The shipped build reads the second half of the position before it
+    // decides whether the tie break needs it.
     if (v14 < v12 || (*v13 & 0x80000000) != 0 ||
-        (v14 <= v12 ? (v15 = (*v13 | (**(_DWORD**)(result + 24) << 16)) <=
-                             (v6 | (v7 << 16)))
+        ({
+          v16 = **(_DWORD**)(result + 24);
+          __asm__ volatile("" ::"r"(v16));
+          0;
+        }) ||
+        (v14 <= v12 ? (v15 = (int)(*v13 | (v16 << 16)) <= (v6 | (v7 << 16)))
                     : (v15 = true),
          !v15)) {
       *v13 = v6;
@@ -22194,7 +22202,7 @@ __int64 game_AIThink_EntrustMoveTreasure_lambda0_Invoke(__int64 result,
       __asm__ volatile("" ::"r"(v14));
     }
     if (v14 < v12 || (*v13 & 0x80000000) != 0 ||
-        (v14 <= v12 ? (v15 = (*v13 | (**(_DWORD**)(result + 24) << 16)) <=
+        (v14 <= v12 ? (v15 = (int)(*v13 | (**(_DWORD**)(result + 24) << 16)) <=
                              (v6 | (v7 << 16)))
                     : (v15 = true),
          !v15)) {
@@ -35067,12 +35075,12 @@ __int64 AIThink_SpecialDitlihCondition_Unknown8(__int64 a1, __int64 a2)
 
 bool AIThink_SpecialTalimunCondition_Unknown5(__int64 a1, _DWORD* a2)
 {
-  return *a2 > 0;
+  return (signed __int32)*a2 > 0;
 }
 
 bool AIThink_SpecialLedaCondition_Unknown5(__int64 a1, _DWORD* a2)
 {
-  return *a2 > 1;
+  return (signed __int32)*a2 > 1;
 }
 
 bool AIThink_SpecialAnhatolyahCondition_Unknown2(__int64 a1, _DWORD* a2)
