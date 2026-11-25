@@ -361,7 +361,7 @@ void MapPanelRage_Unknown4(_QWORD* a1)
   v22_.v29 = 0;
   v7 = (float32x4_t*)*GameData_212f878;
   v8 = *(float32x4_t*)GameData_212c958;
-  strcpy((char*)v22_.v22, "$MapPanelDeployR");
+  qmemcpy(v22_.v22, "$MapPanelDeployRage", 20);
   v22_.v25 = 0x400000000LL;
   v22_.v26 = 1;
   v9 = vmulq_f32(v8, v7[58]);
@@ -396,7 +396,7 @@ void MapPanelRage_Unknown4(_QWORD* a1)
   v17 = v14[59];
   v16 = v14[60];
   v22_.v29 = 0;
-  strcpy((char*)v22_.v22, "$MapPanelDeployR");
+  qmemcpy(v22_.v22, "$MapPanelDeployRage", 20);
   v22_.v25 = 0x400000000LL;
   v18 = vmulq_f32(v15, v16);
   v19 = vmulq_f32(v15, v17);

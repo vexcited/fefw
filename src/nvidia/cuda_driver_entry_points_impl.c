@@ -56,9 +56,9 @@ __int64 cuda_driver_misc_helpers_ded50(__int64, __int64*, unsigned int);
 __int64 cuda_driver_misc_helpers_ded50_alt1(_QWORD, _QWORD, _QWORD) __asm__(
     "cuda_driver_misc_helpers_ded50");
 extern _UNKNOWN* CudaDriverData_1432160;
-void CudaDriverRoutine_25180();
-void CudaDriverStub_25140();
-void CudaDriverStub_25160();
+void CudaDriverRoutine_25180(__int64, __int64, int, int);
+void CudaDriverStub_25140(__int64, int, int);
+void CudaDriverStub_25160(__int64, __int64, int, int, int);
 void cuda_driver_entry_points_13ccb0(__int64 a1, int a2, int a3);
 void cuda_driver_entry_points_13cf00(__int64 a1, __int64 a2, int a3, int a4,
                                      int a5);
@@ -157,7 +157,7 @@ void cuda_driver_entry_points_13ccb0(__int64 a1, int a2, int a3)
                  (_QWORD)CudaDriverData_1432160) == 0 ||
       (unsigned int)CudaDriverRoutine_121c60(&v27) != 0 ||
       (unsigned int)cuda_driver_misc_helpers_ded50(v27, &v26, 0x10u) != 0) {
-    CudaDriverStub_25140(),
+    CudaDriverStub_25140(a1, a2, a3),
         v7 = COERCE_AS(__typeof__(v7),
                        PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
   }
@@ -186,7 +186,7 @@ void cuda_driver_entry_points_13ccb0(__int64 a1, int a2, int a3)
         v7 = COERCE_AS(__typeof__(v7),
                        PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
     if (v28 == 0) {
-      CudaDriverStub_25140(),
+      CudaDriverStub_25140(v11_.v11, v11_.v12, v11_.v13),
           v7 = COERCE_AS(__typeof__(v7),
                          PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
       v29 = v7;
@@ -268,7 +268,7 @@ void cuda_driver_entry_points_13cf00(__int64 a1, __int64 a2, int a3, int a4,
                  (_QWORD)CudaDriverData_1432160) == 0 ||
       (unsigned int)CudaDriverRoutine_121c60(&v32) != 0 ||
       (unsigned int)cuda_driver_misc_helpers_ded50(v32, &v31, 0x10u) != 0) {
-    CudaDriverStub_25160(),
+    CudaDriverStub_25160(a1, a2, a3, a4, a5),
         v11 = COERCE_AS(__typeof__(v11),
                         PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
   }
@@ -299,7 +299,8 @@ void cuda_driver_entry_points_13cf00(__int64 a1, __int64 a2, int a3, int a4,
         v11 = COERCE_AS(__typeof__(v11),
                         PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
     if (v33 == 0) {
-      CudaDriverStub_25160(),
+      CudaDriverStub_25160(v15_.v15[0], v15_.v15[1], v15_.v16, v15_.v17,
+                           v15_.v18),
           v11 = COERCE_AS(__typeof__(v11),
                           PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
       v34 = v11;
@@ -379,7 +380,7 @@ void cuda_driver_entry_points_13d160(__int64 a1, __int64 a2, int a3, int a4)
                  (_QWORD)CudaDriverData_1432160) == 0 ||
       (unsigned int)CudaDriverRoutine_121c60(&v30) != 0 ||
       (unsigned int)cuda_driver_misc_helpers_ded50(v30, &v29, 0x10u) != 0) {
-    CudaDriverRoutine_25180(),
+    CudaDriverRoutine_25180(a1, a2, a3, a4),
         v9 = COERCE_AS(__typeof__(v9),
                        PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
   }
@@ -409,7 +410,7 @@ void cuda_driver_entry_points_13d160(__int64 a1, __int64 a2, int a3, int a4)
         v9 = COERCE_AS(__typeof__(v9),
                        PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
     if (v16 == 0) {
-      CudaDriverRoutine_25180(),
+      CudaDriverRoutine_25180(v13_.v13[0], v13_.v13[1], v13_.v14, v13_.v15),
           v9 = COERCE_AS(__typeof__(v9),
                          PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
       v31 = v9;

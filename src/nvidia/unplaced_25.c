@@ -68,7 +68,7 @@ __int64 nvidia_6280e0(__int64*, unsigned __int64);
 
 __int64 nvidia_629c90(__int64);
 
-__int64 nvidia_644c60();
+__int64 nvidia_644c60(__int64);
 
 __int64 nvidia_644cf0(__int64, __int64, _QWORD*, __int64, __int64*,
                       unsigned __int64);
@@ -1533,8 +1533,7 @@ __int64 nvidia_62a540(__int64 a1, __int64 a2, __int64 a3, __int64* a4)
   *(_QWORD*)(v8 + 1184) = 0;
   v30_.v30 = 16843009;
   v30_.v31 = 1;
-  nvidia_629c90(v8);
-  v11 = nvidia_644c60();
+  v11 = nvidia_644c60(nvidia_629c90(v8) + 18);
   v12 = v10(v4, v11, v8 + 624, v8 + 1136);
   if (v12 == 0) {
     v12 = (*(__int64 (**)(_QWORD))(**(_QWORD**)(v8 + 1136) + 16LL))(

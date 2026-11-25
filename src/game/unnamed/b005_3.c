@@ -71,8 +71,8 @@ void __attribute__((noreturn)) GameRoutine_7a3bd0(void);
 __int64 GameRoutine_7a3d80(_QWORD);
 __int64 GameRoutine_84edc0(_QWORD, _QWORD);
 __int64 GameRoutine_9a2850(_QWORD);
-__int64 BattleInfo_7a3000();
-__int64 BattleInfo_7a3110();
+__int64 BattleInfo_7a3000(_QWORD);
+__int64 BattleInfo_7a3110(_QWORD);
 __int64 BattleSide_7a2950(_QWORD*);
 __int64 GameHr_79c7f0(__int64);
 int __cxa_guard_acquire(__int64);
@@ -2286,8 +2286,8 @@ __int64 GameHr_7a76a0(__int64 a1, __int64 a2, __int64 a3)
     v8[10] = v10;
     v8[8] = *(_DWORD*)(a2 + 96);
     v8[11] = *(_DWORD*)(a2 + 104);
-    v8[12] = BattleInfo_7a3000();
-    v8[13] = BattleInfo_7a3110();
+    v8[12] = BattleInfo_7a3000(a2);
+    v8[13] = BattleInfo_7a3110(a2);
   }
   v11 = *(unsigned __int8*)(a3 + 16);
   if (*(unsigned __int8*)(a2 + 16) != v11) {
@@ -2312,8 +2312,8 @@ __int64 GameHr_7a76a0(__int64 a1, __int64 a2, __int64 a3)
     v14[10] = v16;
     v14[8] = *(_DWORD*)(a3 + 96);
     v14[11] = *(_DWORD*)(a3 + 104);
-    v14[12] = BattleInfo_7a3000();
-    v14[13] = BattleInfo_7a3110();
+    v14[12] = BattleInfo_7a3000(a3);
+    v14[13] = BattleInfo_7a3110(a3);
   }
   return a1;
 }

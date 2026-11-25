@@ -1154,7 +1154,7 @@ void MapPanelDeployMove_Unknown4(_QWORD* a1)
   v46_.v50 = 1;
   v10 = v7[39];
   v9 = v7[40];
-  strcpy((char*)v46_.v46, "$MapPanelDeployM");
+  qmemcpy(v46_.v46, "$MapPanelDeployMove", 20);
   v11 = vmulq_f32(v8, v9);
   v12 = vmulq_f32(v8, v10);
   LODWORD(v13) = LANES128_OF(vextq_s8(v11, v11, 8u)).n128_u32[0];

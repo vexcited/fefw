@@ -5,7 +5,7 @@
 #pragma GCC visibility push(hidden)
 __int64 GameRoutine_98340();
 
-_DWORD* CudaDriverRoutine_1a28d0();
+_DWORD* CudaDriverRoutine_1a28d0(unsigned int);
 _DWORD* CudaDriverRoutine_1abf10(_DWORD*, unsigned __int64, unsigned int);
 _QWORD* CudaDriverRoutine_1a0f20(__int64);
 _QWORD* CudaDriverRoutine_1bc4b0(_QWORD*);
@@ -41,8 +41,10 @@ __int64 CudaDriverRoutine_122ee0(__int64);
 __int64 CudaDriverRoutine_122fe0(__int64*);
 __int64 CudaDriverRoutine_123080(_QWORD*);
 __int64 CudaDriverRoutine_127550();
-__int64 CudaDriverRoutine_12dd10();
-__int64 CudaDriverRoutine_12e300();
+__int64 CudaDriverRoutine_12dd10(unsigned int, __int64);
+__int64 CudaDriverRoutine_12e300(const char*, void*, __int64);
+extern const char CudaDriverData_11201cb[];
+extern const char CudaDriverData_112a6fb[];
 __int64 CudaDriverRoutine_12e340(__int64 result);
 __int64 CudaDriverRoutine_12e510(__int64, __int64);
 __int64 CudaDriverRoutine_12f300(__int64*);
@@ -455,6 +457,7 @@ __int64 memset_plt_alt1(__int64, int, unsigned __int64) __asm__("memset_plt");
 unsigned __int8 CudaDriverRoutine_5adc0(__int64);
 extern _DWORD CudaDriverData_1116290[4];
 extern __int128 CudaDriverData_11160a0;
+extern __int128 CudaDriverData_14302d0;
 void CudaDriverRoutine_4488();
 void CudaDriverRoutine_44d0();
 void CudaDriverRoutine_5c060(__int64);
@@ -630,8 +633,12 @@ __int64 cuda_driver_121520(__int64* a1)
   __int64 v11;
   __int64 v12;
 
-  CudaDriverRoutine_12dd10();
-  CudaDriverRoutine_12dd10();
+  CudaDriverRoutine_12dd10(DWORD1(CudaDriverData_14302d0), 1);
+  CudaDriverRoutine_12dd10(
+      DWORD2(CudaDriverData_14302d0),
+      *((_DWORD*)a1 + 2) != 0
+          ? *(_QWORD*)(*a1 + 8LL * (unsigned int)(*((_DWORD*)a1 + 2) - 1))
+          : 0);
   v2 = CudaDriverData_1422118;
   CudaDriverStub_107f90((char*)((_UNKNOWN*)0x17C8LL) +
                         (_QWORD)CudaDriverData_1422118);
@@ -1223,11 +1230,13 @@ __int64 cuda_driver_124170()
 {
   _BYTE v1[64];
 
-  if ((unsigned int)CudaDriverRoutine_12e300() == 0 &&
+  if ((unsigned int)CudaDriverRoutine_12e300(CudaDriverData_11201cb, v1, 64) ==
+          0 &&
       (unsigned int)atoi_plt(v1) != 0) {
     *((_BYTE*)((_UNKNOWN*)0x1860LL) + (_QWORD)CudaDriverData_1422118) |= 2u;
   }
-  if ((unsigned int)CudaDriverRoutine_12e300() != 0 ||
+  if ((unsigned int)CudaDriverRoutine_12e300(CudaDriverData_112a6fb, v1, 64) !=
+          0 ||
       (unsigned int)atoi_plt(v1) == 0) {
     return 0;
   }
@@ -1362,12 +1371,12 @@ __int64 cuda_driver_125290(_QWORD* a1)
     }
   }
   CudaDriverRoutine_107f40(a1 + 257, 56, 0);
-  v2 = CudaDriverRoutine_1a28d0();
+  v2 = CudaDriverRoutine_1a28d0(32);
   a1[259] = v2;
   if (v2 == nullptr) {
     return 2;
   }
-  v3 = CudaDriverRoutine_1a28d0();
+  v3 = CudaDriverRoutine_1a28d0(32);
   a1[260] = v3;
   if (v3 == nullptr) {
     return 2;

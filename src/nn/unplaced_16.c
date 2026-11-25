@@ -22,7 +22,7 @@ __int64 SdkRoutine_65eff0(__int64 result);
 __int64 SdkRoutine_664fc0(__int64 result);
 __int64 SdkRoutine_6704c0(__int64 result, __int64);
 __int64 SdkRoutine_6730c0(__int64, __int128*, __int64);
-__int64 SdkRoutine_6a0860();
+__int64 SdkRoutine_6a0860(__int64);
 __int64 SdkRoutine_6a0870(__int64 result);
 __int64 SdkRoutine_6ade40(__int64 result);
 __int64 memcpy_plt(__int64, __int64, unsigned __int64);
@@ -542,7 +542,7 @@ __int64 nn_69b010(__int64 a1)
     return 0;
   }
   v4 = v3;
-  v5 = (_QWORD*)SdkRoutine_6a0860();
+  v5 = (_QWORD*)SdkRoutine_6a0860(24);
   if (v5 == nullptr) {
     v12 = *(_QWORD*)(a1 + 7888);
     if (v12 != 0) {

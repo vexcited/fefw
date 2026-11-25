@@ -74,7 +74,7 @@ __int64 game_gmap_anonymous_1542460_alt1(__int64 a1) __asm__(
 __int64 GameRoutine_1537c80(_QWORD, _QWORD);
 __int64 MiasmaManager_14ab300(_QWORD, _QWORD);
 __int64 SpotMgr_1333f20(__int64);
-__n128 GameRoutine_14c6620();
+__n128 GameRoutine_14c6620(__int64);
 __n128 SpotMgr_1334560(__int64);
 extern _UNKNOWN GameData_1abd669;
 extern __int64* GameData_212c780;
@@ -82,7 +82,7 @@ extern __int64 GameData_21c96e8;
 extern __int64 GameData_22416b0;
 unsigned int* game_gmap_SpotMgr_GetCurrentSpot_alt1() __asm__(
     "game_gmap_SpotMgr_GetCurrentSpot");
-void game_gmap_anonymous_14aeae0();
+void game_gmap_anonymous_14aeae0(__int64 a1);
 __int64 game_gmap_anonymous_14af3a0(__int64 result);
 _QWORD* GameHr_14a10d0(_QWORD*, __int64, __int64, const char*);
 _QWORD* Situation_767300_alt1(__int64*, _QWORD*) __asm__("Situation_767300");
@@ -266,7 +266,7 @@ LABEL_25:
   return 3;
 }
 
-void game_gmap_anonymous_14aeae0()
+void game_gmap_anonymous_14aeae0(__int64 a1)
 {
   __int64* v0;
   __int64 v1;
@@ -409,7 +409,7 @@ LABEL_14:
   }
   v29 = GameData_21316c8;
   if (*(_QWORD*)GameData_21316c8 != 0) {
-    GameRoutine_14c6620();
+    GameRoutine_14c6620(a1);
   }
   if (*(_BYTE*)(*GameData_2130e70 + 52) == 0) {
     v30 = *(_QWORD*)(*v0 + 8);

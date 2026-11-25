@@ -32,7 +32,7 @@ __int64 cuda_driver_20b420(unsigned int, unsigned int, __int64);
 __int64 cuda_driver_helpers_1db920(__int64, unsigned __int64);
 __int64 memset_plt(__int64, int, unsigned __int64);
 unsigned __int8 CudaDriverRoutine_9aa40(__int64);
-unsigned __int8 CudaDriverRoutine_e5960();
+unsigned __int8 CudaDriverRoutine_e5960(__int64);
 extern _UNKNOWN* CudaDriverData_1422118;
 extern _UNKNOWN* CudaDriverData_14225e0;
 extern _UNKNOWN CudaDriverData_14347a8;
@@ -206,7 +206,7 @@ __int64 nvidia_e5a00(__int64* a1, _QWORD* a2)
   __int64 result;
   unsigned __int64 v15;
 
-  if (!CudaDriverRoutine_e5960()) {
+  if (!CudaDriverRoutine_e5960((__int64)a2)) {
     return 0;
   }
   v4 = CudaDriverStub_12e330(72);

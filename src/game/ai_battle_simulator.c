@@ -14,8 +14,8 @@ __int64 GameRoutine_7a3220(_QWORD);
 extern _QWORD GameData_1b016c8[4];
 float AiBattleSimulator_11fc090(__int64 a1, unsigned int a2);
 __int64 BattleInfo_79c520(__int64);
-__int64 BattleInfo_7a3000();
-__int64 BattleInfo_7a3110();
+__int64 BattleInfo_7a3000(_QWORD);
+__int64 BattleInfo_7a3110(_QWORD);
 __int64 BattleSide_7a2950(_QWORD*);
 __int64 game_HasSkill(_QWORD*, unsigned int*);
 extern _QWORD game_g_shared_system_skills_ptr;
@@ -113,7 +113,7 @@ void AIBattleSimulator_11fbe50(__int64 a1, int a2)
         }
       }
     }
-    v9 = BattleInfo_7a3000();
+    v9 = BattleInfo_7a3000(v3 + 4488);
     if ((v9 & ~(v9 >> 31)) >= 100) {
       v10 = 100;
     }
@@ -144,7 +144,7 @@ void AIBattleSimulator_11fbe50(__int64 a1, int a2)
       v17 = 0x0.0p+0f;
     }
     else {
-      v14 = BattleInfo_7a3110();
+      v14 = BattleInfo_7a3110(v3 + 4488);
       v15 = 0x1.0000000000000p+0f - *((float*)v5 + 4);
       v16 = v15 * (float)((float)v14 / 0x1.9000000000000p+6f);
       v17 = 0x0.0p+0f;

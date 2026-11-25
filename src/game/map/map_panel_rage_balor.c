@@ -480,7 +480,7 @@ void MapPanelRageBalor_Unknown4(_QWORD* a1)
   v13_.v20 = 0;
   v8 = v6[57];
   v7 = v6[58];
-  strcpy((char*)v13_.v13, "$MapPanelDeployR");
+  qmemcpy(v13_.v13, "$MapPanelDeployRage", 20);
   v9 = vmulq_f32(v5, v7);
   v10 = vmulq_f32(v5, v8);
   LODWORD(v11) = LANES128_OF(vextq_s8(v9, v9, 8u)).n128_u32[0];

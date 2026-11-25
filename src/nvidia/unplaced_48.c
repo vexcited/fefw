@@ -12,7 +12,7 @@ __int64 CudaDriverRoutine_1085d0(__int64 result);
 __int64 CudaDriverRoutine_114270(unsigned int);
 __int64 CudaDriverRoutine_1182d0(__int64, __int64);
 __int64 CudaDriverRoutine_125470(__int64 result);
-__int64 CudaDriverRoutine_125740();
+__int64 CudaDriverRoutine_125740(__int64);
 __int64 CudaDriverRoutine_12e340(__int64 result);
 __int64 CudaDriverRoutine_1a2980(int*, unsigned __int64);
 __int64 CudaDriverRoutine_1ba7d0(__int64, __int64);
@@ -329,7 +329,7 @@ __int64 nvidia_f0ba0(__int64 a1)
       }
       *(_QWORD*)(a1 + 160) = 0;
       *(_QWORD*)(a1 + 168) = 0;
-      CudaDriverRoutine_125740();
+      CudaDriverRoutine_125740(*(_QWORD*)(a1 + 200));
     }
     CudaDriverStub_108070(v15 + 128);
     if (*(_DWORD*)((char*)((_UNKNOWN*)0x318LL) + (_QWORD)v2) != 0) {

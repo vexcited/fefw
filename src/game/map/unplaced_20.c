@@ -78,7 +78,7 @@ void game_map_f596e0(__int64 a1)
     v34 = 0;
     v7 = *(float32x4_t*)(*GameData_212f878 + 144);
     v6 = *(float32x4_t*)(*GameData_212f878 + 160);
-    strcpy((char*)v28, "$MapPanelDeployM");
+    qmemcpy(v28, "$MapPanelDeployMove", 20);
     v8 = vmulq_f32(v5, v6);
     v9 = vmulq_f32(v5, v7);
     LODWORD(v10) = LANES128_OF(vextq_s8(v8, v8, 8u)).n128_u32[0];

@@ -110,7 +110,7 @@ __int64 GameRoutine_9db9e0(unsigned int, unsigned int);
 __int64 GameRoutine_a69620(__int64*, __int64*);
 __int64 GameRoutine_ae0560();
 __int64 GameRoutine_e9f200(__int64 result);
-__int64 GameRoutine_ec1530();
+__int64 GameRoutine_ec1530(_QWORD);
 __int64 GameVariable_828800(__int64, unsigned __int64*, int);
 __int64 HubCharacterNatives_cabfc0(__int64 result, char);
 __int64 MapInfo_825040(__int64, int);
@@ -538,6 +538,7 @@ extern __int64 fw_memory_g_heap_manager;
 extern __int64 fw_memory_g_heap_manager_ptr;
 extern __int64 game_GameModeData_instance_;
 extern __int64 game_ProcFadeView_instance_;
+extern __int64 GameData_21f4cc0;
 extern __int64 game_ProcGameSkipView_instance_;
 extern __int64 game_UnitListSet_instance_;
 extern __int64 game_hub_ProcHubSeqView_instance_;
@@ -660,7 +661,7 @@ extern int GameData_21d9128;
 extern int GameData_21d9138;
 extern int GameData_21d9864;
 float AiBattleSimulator_11fc090(__int64, unsigned int);
-float GameRoutine_d1fae0();
+float GameRoutine_d1fae0(_QWORD);
 float game_5c4910(float*, float, float);
 float game_5c4de0(float, float);
 float powf(float, float);
@@ -10346,7 +10347,7 @@ LABEL_20:
   v28 = *(_QWORD*)v21;
   v29 = *(float*)(*(_QWORD*)(*(_QWORD*)(*(_QWORD*)(v24 + 24) + 16LL) + 488LL) +
                   36LL);
-  v30 = GameRoutine_d1fae0();
+  v30 = GameRoutine_d1fae0(v28);
   v31 = *(_QWORD*)(v28 + 1160);
   if (v31 != 0) {
     GameHr_d23780(
@@ -12055,7 +12056,7 @@ __int64 game_1007060(__int64 a1)
     GameRoutine_100b790(v3);
     if ((*(_BYTE*)(a1 + 11) & 1) == 0 &&
         (*(_BYTE*)(*(_QWORD*)v2 + 10LL) & 1) == 0 &&
-        (GameRoutine_ec1530() & 1) == 0 &&
+        (GameRoutine_ec1530(GameData_21f4cc0) & 1) == 0 &&
         game_ProcGameSkipView_instance_ != 0 &&
         *(_BYTE*)(game_ProcGameSkipView_instance_ + 152) != 0) {
       *(_DWORD*)(game_ProcGameSkipView_instance_ + 156) |= 2u;
@@ -12103,7 +12104,8 @@ __int64 game_1007060(__int64 a1)
     }
   }
   if ((*(_BYTE*)(*(_QWORD*)v2 + 10LL) & 1) == 0 &&
-      (GameRoutine_ec1530() & 1) == 0 && game_ProcGameSkipView_instance_ != 0 &&
+      (GameRoutine_ec1530(GameData_21f4cc0) & 1) == 0 &&
+      game_ProcGameSkipView_instance_ != 0 &&
       *(_BYTE*)(game_ProcGameSkipView_instance_ + 152) != 0) {
     *(_DWORD*)(game_ProcGameSkipView_instance_ + 156) |= 2u;
   }

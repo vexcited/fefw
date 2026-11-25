@@ -100,7 +100,7 @@ __int64 GameRoutine_8ca200(_QWORD*);
 __int64 GameRoutine_8cfec0(_QWORD, _QWORD);
 __int64 GameRoutine_930b90(__int64, __int64);
 __int64 GameRoutine_932360(_QWORD, _QWORD);
-__int64 GameRoutine_94a480();
+__int64 GameRoutine_94a480(__int64);
 __int64 GameRoutine_975940(__int64);
 __int64 GameRoutine_975940_alt1(_QWORD) __asm__("GameRoutine_975940");
 __int64 GameRoutine_9db9e0(unsigned int, unsigned int);
@@ -7541,7 +7541,7 @@ LABEL_19:
   *(_QWORD*)(a1 + 56) = FacilityDialogueFile_196e860(
       0, *(_QWORD*)(**(_QWORD**)(a1 + 8) + 392LL),
       *(_QWORD*)(*(_QWORD*)(*(_QWORD*)(a1 + 8) + 8LL) + 392LL));
-  GameRoutine_94a480();
+  GameRoutine_94a480(*(_QWORD*)(a1 + 32));
   v29[1] = (unsigned __int64)&GameData_1ada574;
   v29[0] = game_HashString((__int64)&GameData_1ada574);
   if (game_GameModeData_instance_ != 0 &&

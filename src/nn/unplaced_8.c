@@ -57,11 +57,11 @@ __int64 SdkRoutine_65d7b0(__int64);
 __int64 SdkRoutine_65ed60(_QWORD);
 __int64 SdkRoutine_66f7e0(__int64);
 __int64 SdkRoutine_6700e0(__int64 result);
-__int64 SdkRoutine_6a0860();
+__int64 SdkRoutine_6a0860(__int64);
 __int64 SdkRoutine_6a0870(__int64 result);
 __int64 SdkRoutine_6a0b80(__int64 result);
 __int64 SdkRoutine_6add10(__int64 result, int);
-__int64 SdkRoutine_6ade10();
+__int64 SdkRoutine_6ade10(__int64, __int64, __int64);
 __int64 fw_rtld_RegisterCrtDestructor();
 __int64 memcpy_plt(__int64, __int64, unsigned __int64);
 __int64 memset_plt(__int64, int, unsigned __int64);
@@ -1198,7 +1198,7 @@ __int64 nn_654330(__int64 a1, __int64 a2)
     *(_DWORD*)(a1 + 7536) = -1;
     nn_os_LockMutex_plt((__int64)SdkData_e89c10);
     *(_DWORD*)(a1 + 7576) = 6;
-    v12 = SdkRoutine_6ade10();
+    v12 = SdkRoutine_6ade10(328, 0, 0);
     if (v12 != 0) {
       *(_QWORD*)(v12 + 24) = 0;
       *(_QWORD*)(v12 + 232) = 0;
@@ -3573,7 +3573,7 @@ __int64 nn_69fd40(__int64 a1)
     return 5;
   }
   v6 = (_QWORD*)v5;
-  v7 = (_QWORD*)SdkRoutine_6a0860();
+  v7 = (_QWORD*)SdkRoutine_6a0860(40);
   *v7 = *(_QWORD*)(v6[2] + 2528LL);
   v7[1] = v6[6];
   v7[2] = v6[13];

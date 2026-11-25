@@ -37,7 +37,7 @@ __int64 GameRoutine_73a560(_QWORD*);
 __int64 GameRoutine_747a00(__int64, __int64, __int64, __int64, char);
 __int64 GameRoutine_a51280(__int64, const char*);
 __int64 GameRoutine_d76fd0(__int64 result, __int64, __int64, float*);
-__int64 GameRoutine_ec1530();
+__int64 GameRoutine_ec1530(_QWORD);
 __int64 LayoutAccessor_155ea30(__int64*);
 __int64 LayoutAccessor_1562cf0(__int64 result, const char*);
 __int64 LayoutAccessor_1563280(__int64*, __int64, char);
@@ -80,6 +80,7 @@ bool LayoutAccessor_1563380(__int64*, __int64, char);
 bool game_11f30c0(__int64, unsigned __int16*, char);
 bool game_183b340(_DWORD*, int*);
 extern _QWORD game_g_shared_system_skills_ptr;
+extern __int64 GameData_21f4cc0;
 extern _UNKNOWN* GameData_212c190;
 extern _UNKNOWN* GameData_212c2f0;
 extern _UNKNOWN* GameData_212c540;
@@ -2514,7 +2515,7 @@ __int64 game_100b330(__int64 result)
   v3 = *(unsigned __int8*)(v1 + 9);
   *(_BYTE*)(v1 + 8) = 0;
   if (v3 != 0 && (*(_BYTE*)(v1 + 10) & 1) == 0) {
-    result = GameRoutine_ec1530();
+    result = GameRoutine_ec1530(GameData_21f4cc0);
     if ((result & 1) == 0 && *(int*)(v1 + 24) <= 0) {
       result = ((__int64 (*)(unsigned __int8*, int, char))GameRoutine_1011550)(
           *(unsigned __int8**)GameData_212f510[0], 0, 1);

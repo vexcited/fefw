@@ -10,7 +10,7 @@ __int64 GameRoutine_1562cf0(_QWORD, _QWORD);
 __int64 GameRoutine_156c5d0(_QWORD, _QWORD, _QWORD);
 __int64 GameRoutine_1595700(_QWORD, _QWORD, _QWORD);
 __int64 GameRoutine_15970e0(_QWORD, _QWORD, _QWORD, _QWORD, _QWORD);
-__int64 GameRoutine_16966e0();
+__int64 GameRoutine_16966e0(unsigned __int64);
 __int64 GameRoutine_1842580(_QWORD, _QWORD, _QWORD);
 __int64 GameRoutine_1a09ce0(_QWORD, _QWORD, _QWORD);
 __int64 GameRoutine_a4dbe0(_QWORD, _QWORD, _QWORD, _QWORD);
@@ -494,7 +494,10 @@ LABEL_13:
   LABEL_40:
     v34[v33] = 0;
     GameRoutine_1a09ce0(v152, " ", 1);
-    v36 = *(_QWORD*)(GameRoutine_16966e0() + 32);
+    v36 = *(_QWORD*)(GameRoutine_16966e0((v155[0] & 1) != 0
+                                              ? v156
+                                              : (unsigned __int64)&v154 | 9) +
+                     32);
     v37 = *v26;
     v167 = -1;
     v168 = -1;

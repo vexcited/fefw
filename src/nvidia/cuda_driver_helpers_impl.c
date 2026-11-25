@@ -23,7 +23,7 @@ __int64 CudaDriverRoutine_12e340_alt1(__int64 result) __asm__(
     "CudaDriverRoutine_12e340");
 __int64 CudaDriverRoutine_12e350(_QWORD);
 __int64 CudaDriverRoutine_12e430(_QWORD, _QWORD);
-__int64 CudaDriverRoutine_12e480();
+__int64 CudaDriverRoutine_12e480(void*, __int64);
 __int64 CudaDriverRoutine_12e4a0(_QWORD*);
 __int64 CudaDriverRoutine_12e4c0(_QWORD*);
 __int64 CudaDriverRoutine_12e510(_QWORD, _QWORD);
@@ -1330,7 +1330,7 @@ __int64 cuda_driver_helpers_1b6dc0(__int64 a1, int a2, __int64 a3, char a4,
   __int64 v19;
 
   v18 = 0;
-  if (a4 != 0 && (unsigned int)CudaDriverRoutine_12e480() != 0) {
+  if (a4 != 0 && (unsigned int)CudaDriverRoutine_12e480(&v19, 0) != 0) {
     CudaDriverRoutine_12e340_alt1(0);
     return 304;
   }

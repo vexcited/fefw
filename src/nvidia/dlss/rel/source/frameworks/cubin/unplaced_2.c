@@ -4,8 +4,8 @@
 
 __attribute__((swiftcall)) void
 ngx_cubin_vulkan_b9220(PSEUDO_X8, __int64 result, __int64*);
-__int64 NgxRoutine_e2c70();
-__int64 NgxRoutine_e2ca0();
+__int64 NgxRoutine_e2c70(_QWORD);
+__int64 NgxRoutine_e2ca0(_QWORD);
 __int64 memcpy_plt(_QWORD, _QWORD, _QWORD);
 __int64 vkCmdCopyBuffer_plt(_QWORD, _QWORD, _QWORD, _QWORD, _QWORD);
 __int64 vkCmdPipelineBarrier_plt(_QWORD, _QWORD, _QWORD, _QWORD, _QWORD, _QWORD,
@@ -42,15 +42,15 @@ __int64 nvidia_dlss_rel_source_frameworks_cubin_b90a0(__int64 a1, __int64 a2,
   v11 = *a6;
   v22 = 0;
   v23[0] = v10;
-  NgxRoutine_e2c70();
+  NgxRoutine_e2c70(a1 + 984);
   ngx_cubin_vulkan_b9220((void*)(v21), a1 + 992, v23);
   if (v21[0] == a1 + 1017) {
-    NgxRoutine_e2ca0();
+    NgxRoutine_e2ca0(a1 + 984);
     return 0xFFFFFFFFLL;
   }
   else {
     v18 = *(_QWORD*)(v21[0] + 8LL);
-    NgxRoutine_e2ca0();
+    NgxRoutine_e2ca0(a1 + 984);
     if ((unsigned int)vkMapMemory_plt(*(_QWORD*)(a1 + 840), v18, 0, a3, 0,
                                       &v22) != 0) {
       return 0xFFFFFFFFLL;

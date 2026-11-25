@@ -18,7 +18,7 @@ __int64 nn_fs_CloseFile();
 __int64 nn_fs_DeleteFile(const char*);
 __int64 nn_fs_GetEntryType(__int64, const char*);
 __int64 nn_fs_GetFileSize();
-__int64 nn_fs_ReadFile_1a0a620();
+__int64 nn_fs_ReadFile_1a0a620(_QWORD, _QWORD, _QWORD, _QWORD, _QWORD);
 bool GameRoutine_8759f0(unsigned __int8*, __int64);
 bool GameRoutine_876070(unsigned __int8*, __int64);
 bool VariableRegister_832ec0(__int64*, __int64*, __int64);
@@ -518,7 +518,8 @@ __int64 llvm_libcxx_21_libcxx_include___functional_87bf20(__int64 result,
           if ((_DWORD)result == 0 && *(_DWORD*)(v2 + 48) == 0) {
             v31[0] = 0;
             v23 = GameData_21eea58;
-            result = nn_fs_ReadFile_1a0a620();
+            result = nn_fs_ReadFile_1a0a620((__int64)v31, *(_QWORD*)(v2 + 40),
+                                            0, *(_QWORD*)(v23 + 216), 256);
             if (*(_DWORD*)(v2 + 48) == 0) {
               LOWORD(v31[0]) = 0;
               BYTE4(v31[1]) = 0;

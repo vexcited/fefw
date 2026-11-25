@@ -70,13 +70,15 @@ __int64 SdkRoutine_65b8f0();
 __int64 SdkRoutine_65cf40(_QWORD, _QWORD);
 __int64 SdkRoutine_65cf50(__int64 result);
 __int64 SdkRoutine_65cf70(__int64 result, __int64, __int64);
-__int64 SdkRoutine_65cfa0();
+__int64 SdkRoutine_65cfa0(__int64);
 __int64 SdkRoutine_65d040(_QWORD, _QWORD);
 __int64 SdkRoutine_65d0a0(_OWORD*, __int64);
 __int64 SdkRoutine_65d380(__int64);
 __int64 SdkRoutine_65d580(__int64, __int64);
 __int64 SdkRoutine_65ee20(__int64, int);
-__int64 SdkRoutine_65f8b0();
+__int64 SdkRoutine_65f8b0(const char*);
+extern const char SdkData_bb8f40[];
+extern const char SdkData_bc1be2[];
 __int64 SdkRoutine_65fae0(__int64, __int64);
 __int64 SdkRoutine_660940(__int64 result, unsigned __int64, __int64, int,
                           __int64, _DWORD*);
@@ -107,7 +109,7 @@ __int64 SdkRoutine_693860(__int64, __int64*, uint16x4_t*);
 __int64 SdkRoutine_699440(_DWORD*, __int64, __int64*, __int64, int, char);
 __int64 SdkRoutine_69a140(__int64 result, char, char);
 __int64 SdkRoutine_69efe0();
-__int64 SdkRoutine_6a0860();
+__int64 SdkRoutine_6a0860(__int64);
 __int64 SdkRoutine_6a0870(__int64 result);
 __int64 SdkRoutine_6a0890();
 __int64 SdkRoutine_6a0a00(__int64 result, _DWORD*);
@@ -1779,7 +1781,7 @@ __int64 nn_654ee0(__int64 a1, __int64 a2, __int64 a3, __int64 a4, __int64 a5)
   } v30_;
 
   nn_os_LockMutex_plt_alt1(SdkData_e89c10);
-  if ((SdkRoutine_65cfa0() & 1) != 0 && *(_QWORD*)(a2 + 16) != 0 &&
+  if ((SdkRoutine_65cfa0(a1) & 1) != 0 && *(_QWORD*)(a2 + 16) != 0 &&
       *(int*)(a2 + 8) >= 1) {
     v10 = 0;
     v11 = 0;
@@ -2639,7 +2641,7 @@ __int64 (***nn_658390(__int64 a1))(_QWORD, __int64)
   }
   v4 = SdkData_1042120;
   if (SdkData_1042120 != 0 ||
-      (v4 = SdkRoutine_65f8b0(), SdkData_1042120 = v4, v4 != 0)) {
+      (v4 = SdkRoutine_65f8b0(SdkData_bb8f40), SdkData_1042120 = v4, v4 != 0)) {
     v5 = (__int64 (*)(__int64*))(*(__int64 (**)(__int64, const char*))(
         (char*)((_UNKNOWN*)0xD8LL) + (_QWORD)SdkData_e89bd8))(v4, "Handshake");
     SdkData_1042128 = (__int64)v5;
@@ -2953,7 +2955,7 @@ __int64 nn_658b20(__int64 a1, __int64 a2, __int64 a3, unsigned __int64 a4)
     if (*v7 == 0) {
       *v7 = 8;
     }
-    v8 = (void*)SdkRoutine_6a0860(),
+    v8 = (void*)SdkRoutine_6a0860(96LL * *(int*)(a1 + 168)),
     v12 = COERCE_AS(__typeof__(v12),
                     PSEUDO_REGISTER(unsigned long long, "x3", "=r")),
     v6 = COERCE_AS(__typeof__(v6),
@@ -2971,7 +2973,8 @@ __int64 nn_658b20(__int64 a1, __int64 a2, __int64 a3, unsigned __int64 a4)
     *(_QWORD*)(a1 + 176) = v8;
     *(_DWORD*)(a1 + 172) = 0;
     if (*(_QWORD*)(*(_QWORD*)(v10 + 7720) + 11534344LL) == 0) {
-      v11 = (void*)SdkRoutine_6a0860(),
+      v11 = (void*)SdkRoutine_6a0860(
+          96LL * *(int*)(*(_QWORD*)(v10 + 7720) + 11534336LL)),
       v12 = COERCE_AS(__typeof__(v12),
                       PSEUDO_REGISTER(unsigned long long, "x3", "=r")),
       v6 = COERCE_AS(__typeof__(v6),
@@ -5024,7 +5027,7 @@ nn_65fce0(__int64 a1, int a2, __int64 a3, unsigned __int64 a4)
         v32 += 5;
       } while (v29 != 9);
       if (v30 + 16LL * v31 != 0) {
-        v55 = SdkRoutine_6a0860(),
+        v55 = SdkRoutine_6a0860(v30 + 16LL * v31),
         v10 = COERCE_AS(__typeof__(v10),
                         PSEUDO_REGISTER(unsigned long long, "x4", "=r")),
         v21 = COERCE_AS(__typeof__(v21),
@@ -8108,7 +8111,7 @@ __int64 nn_66fa80(__int64 a1)
 
   v2 = SdkData_10422a0;
   if (SdkData_10422a0 == 0) {
-    v10 = SdkRoutine_65f8b0();
+    v10 = SdkRoutine_65f8b0(SdkData_bc1be2);
     if (v10 == 0) {
       return 0;
     }

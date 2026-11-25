@@ -17,7 +17,7 @@ __int64* GameRoutine_6b7aa0(__int64* result, __int64*, __int64*,
 __int64* GameRoutine_92b0a0(_QWORD*, unsigned __int8*);
 __int64 BasicMenu_16dcd30(__int64, __int64, _QWORD*, __int64);
 __int64 FacilityUtil_949e50();
-__int64 GameHubData_dbd8e0();
+__int64 GameHubData_dbd8e0(__int64);
 __int64 GameRoutine_1130770(_QWORD, _QWORD, _QWORD);
 __int64 GameRoutine_1403f60(_QWORD);
 __int64 GameRoutine_1405080(_QWORD);
@@ -1108,7 +1108,7 @@ LABEL_15:
   if (*(_BYTE*)(v10 + 84) != 0) {
     *(_BYTE*)(v10 + 84) = 0;
   }
-  GameHubData_dbd8e0();
+  GameHubData_dbd8e0(*(_QWORD*)GameData_212dbf0[1]);
   v11 = *(_QWORD*)v2;
   v12 = *(_BYTE*)(*(_QWORD*)v2 + 11LL);
   v13 = (__int64*)GameData_212dbf0[0];

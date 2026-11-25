@@ -6,10 +6,11 @@ _QWORD* nvidia_dlss_rel_source_frameworks_cubin_a7260(_QWORD*, __int64*);
 __int64 NVSDK_NGX_Result_FAIL_OutOfGPUMemory(__int64, int, int, __int64,
                                              __int64, _QWORD*);
 __int64 NgxRoutine_2b0();
-__int64 NgxRoutine_e2db0();
-__int64 NgxRoutine_e2de0();
+__int64 NgxRoutine_e2db0(_QWORD);
+__int64 NgxRoutine_e2de0(_QWORD);
 __int64 nvidia_dlss_acc20(__int64, unsigned int*, __int64, _DWORD**);
 extern _UNKNOWN* NgxData_952228;
+extern _UNKNOWN* NgxData_9547a8;
 extern __int64* NgxData_9547b0[2];
 extern __int64* NgxData_9547b8;
 void NgxRoutine_b4b90(__int64, __int64, __int64, __int64, ...);
@@ -39,7 +40,7 @@ __int64 nvidia_dlss_rel_source_b5cf0(__int64 a1, int a2, __int64 a3,
   unsigned int* v12;
 
   *a4 = nullptr;
-  NgxRoutine_e2db0();
+  NgxRoutine_e2db0((__int64)NgxData_9547a8);
   if (*(__int64*)((char*)NgxData_9547b0[0] +
                   (unsigned __int64)&(*(_BYTE(*)[16])0x10LL)[8]) < 2uLL) {
     v9 = *(
@@ -77,7 +78,7 @@ __int64 nvidia_dlss_rel_source_b5cf0(__int64 a1, int a2, __int64 a3,
         (__int64)"Error: multiple active Devices present and CreateFeature() "
                  "didn't specify wanted Device");
   }
-  NgxRoutine_e2de0();
+  NgxRoutine_e2de0((__int64)NgxData_9547a8);
   return v8;
 }
 

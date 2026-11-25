@@ -41,8 +41,8 @@ __int64 NgxRoutine_bcf80(__int64 result);
 __int64 NgxRoutine_bf010(_QWORD);
 __int64 NgxRoutine_db240(__int64*);
 __int64 NgxRoutine_db310(__int64*, __int64);
-__int64 NgxRoutine_e2c70();
-__int64 NgxRoutine_e2ca0();
+__int64 NgxRoutine_e2c70(_QWORD);
+__int64 NgxRoutine_e2ca0(_QWORD);
 __int64 _Unwind_Resume_plt(_QWORD);
 __int64 __errno_location_plt(_QWORD);
 __int64 fopen_plt(const char*, const char*);
@@ -2677,7 +2677,7 @@ __int64 nvidia_ba050(__int64 result, __int64 a2)
   if (v2 != 0) {
     if (v2 == 1) {
       v4 = result;
-      NgxRoutine_e2c70();
+      NgxRoutine_e2c70(v4 + 984);
       v8 = *(_QWORD*)a2;
       ngx_cubin_vulkan_b9220((void*)(&v7), v4 + 992, &v8);
       vkDestroyBuffer_plt(*(_QWORD*)(v4 + 840), v8, 0);
@@ -2685,7 +2685,7 @@ __int64 nvidia_ba050(__int64 result, __int64 a2)
       ngx_cubin_vulkan_b9220((void*)(&v9), v4 + 992, &v8);
       NgxRoutine_badc0(v4 + 992, &v9);
       NgxRoutine_430(a2, 56);
-      return NgxRoutine_e2ca0();
+      return NgxRoutine_e2ca0(v4 + 984);
     }
   }
   else {
@@ -2711,15 +2711,15 @@ __int64 nvidia_ba2d0(__int64 a1, unsigned __int64* a2, __int64 a3, __int64 a4,
   __int64 v12;
   __int64 v14;
 
-  NgxRoutine_e2c70();
+  NgxRoutine_e2c70(a1 + 984);
   ngx_cubin_vulkan_b9220((void*)(&v14), a1 + 992, a2);
   if (v14 == a1 + 1017) {
-    NgxRoutine_e2ca0();
+    NgxRoutine_e2ca0(a1 + 984);
   }
   else {
     v10 = (a3 >> 32) * a4;
     v11 = *(_QWORD*)(v14 + 8);
-    NgxRoutine_e2ca0();
+    NgxRoutine_e2ca0(a1 + 984);
     v12 = *(_QWORD*)(a1 + 840);
     v14 = 0;
     if ((unsigned int)vkMapMemory_plt(v12, v11, 0, v10, 0, &v14) == 0) {

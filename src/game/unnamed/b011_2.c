@@ -1252,9 +1252,9 @@ __int64 GameRoutine_cbb4c0(_QWORD, _QWORD);
 
 _QWORD* GameRoutine_ceca80(_QWORD* result, __int64, char);
 
-__int64 GameRoutine_d270d0();
+__int64 GameRoutine_d270d0(__int64);
 
-bool GameRoutine_d27750();
+bool GameRoutine_d27750(__int64);
 
 _QWORD* GameRoutine_d53ec0(_QWORD* result, char);
 
@@ -1516,6 +1516,7 @@ extern __int64 (*game_hub_anonymous_ProcHubSeqEncounterResult_vtable[])();
 
 extern __int64 game_ProcGameSkipView_instance_;
 
+extern __int64 GameData_220f848;
 extern __int64 game_g_game_setting;
 
 extern __int64 game_hub_ProcHubSeqView_instance_;
@@ -3781,7 +3782,7 @@ bool GameHr_d8d3a0(__int64 a1, int a2)
                 (*(_BYTE*)(game_g_game_setting + 901) & 1) != 0 &&
                 *(_BYTE*)(game_g_game_setting + 902) == 1))) {
     v9 = a2;
-    v10 = GameRoutine_d27750();
+    v10 = GameRoutine_d27750(GameData_220f848);
     a2 = v9;
     if (!v10) {
       return false;
@@ -3794,7 +3795,7 @@ bool GameHr_d8d3a0(__int64 a1, int a2)
     if (a2 == 4) {
       return (*(_BYTE*)(game_g_game_setting + 953) & 8) != 0;
     }
-    if (a2 != 5 || (GameRoutine_d270d0() & 1) == 0 ||
+    if (a2 != 5 || (GameRoutine_d270d0(GameData_220f848) & 1) == 0 ||
         (GameRoutine_1551d30_alt1() & 1) == 0) {
       return false;
     }

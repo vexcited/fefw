@@ -449,7 +449,7 @@ __int64 AIThink_12998a0_alt1(_QWORD, _QWORD) __asm__("AIThink_12998a0");
 __int64 AIThink_12a9e00_alt1(_QWORD) __asm__("AIThink_12a9e00");
 __int64 AIThink_ProcessingScope_Destructor_alt1(_QWORD) __asm__(
     "AIThink_ProcessingScope_Destructor");
-__int64 BattleInfo_7a3000();
+__int64 BattleInfo_7a3000(_QWORD);
 __int64 BattleInfo_7a3000_alt1(_QWORD) __asm__("BattleInfo_7a3000");
 __int64 BattleInfo_7a3110(_QWORD);
 __int64 BattleSide_79ff80(_QWORD);
@@ -28477,7 +28477,8 @@ void game_AIThink_MagicInterferenceTo_lambda0_Invoke(_QWORD* a1, int* a2,
       v98_.v101 = *(__int16*)(v33 + 490);
       AiInterferenceSimulator_128e230_alt1((__int64)v91, (__int64)&v80_.v80);
       game_128ce70((__int64)v91);
-      if (v98_.v102 == 1 && (!v78 || (int)BattleInfo_7a3000() >= 1) &&
+      if (v98_.v102 == 1 &&
+          (!v78 || (int)BattleInfo_7a3000((__int64)v91 + 4488) >= 1) &&
           ((v79[3] & 0x80000000) != 0 || *v79 < v98_.v100 ||
            *v79 <= v98_.v100 && v26 < (int)v79[1])) {
         *v79 = v98_.v100;

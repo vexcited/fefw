@@ -28,7 +28,8 @@ __int64 SdkRoutine_65d0a0(_QWORD, _QWORD);
 __int64 SdkRoutine_65d470(_QWORD, _QWORD, _QWORD);
 bool SdkRoutine_65ed60(void);
 bool SdkRoutine_65ed60_alt1(_QWORD) __asm__("SdkRoutine_65ed60");
-__int64 SdkRoutine_65f8b0();
+__int64 SdkRoutine_65f8b0(const char*);
+extern const char SdkData_bc7c34[];
 __int64 SdkRoutine_66a6d0(_QWORD, _QWORD, _QWORD);
 __int64 SdkRoutine_66fcf0(_QWORD, _QWORD, _QWORD);
 __int64 SdkRoutine_66fe10(_QWORD);
@@ -3569,7 +3570,7 @@ bool nvidia_64aea0(_QWORD** a1)
 
   v2 = SdkData_1040968;
   if (SdkData_1040968 == nullptr) {
-    v4 = SdkRoutine_65f8b0();
+    v4 = SdkRoutine_65f8b0(SdkData_bc7c34);
     if (v4 != 0) {
       v2 = (void*)(*(__int64 (**)(__int64, const char*))(
           (char*)((_UNKNOWN*)0xD8LL) + (_QWORD)SdkData_e89bd8))(

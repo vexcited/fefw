@@ -342,8 +342,8 @@ __int64 BaseNx_287dc0(_QWORD*, __int64, unsigned int);
 __int64 BaseNx_2888d0(__int64 result, __int64, char);
 __int64 BaseNx_288ae0(__int64 result);
 __int64 BaseNx_2890f0(int);
-__int64 BaseNx_2891a0();
-__int64 BaseNx_2891c0();
+__int64 BaseNx_2891a0(__int64);
+__int64 BaseNx_2891c0(__int64);
 __int64 BaseNx_2891e0(__int64 result, char, char, char, char, char, char, int,
                       int, int, int);
 __int64 BaseNx_2a06f0(__int64 result);
@@ -3842,6 +3842,7 @@ __int64 GameHr_28aca0(__int64 result, int a2, unsigned int a3)
   void* v4;
   __int64 v5;
   __int64 i;
+  char v6;
 
   if (*(_DWORD*)(result + 224 + 4LL * a3) != a2) {
     v3 = result;
@@ -3852,11 +3853,12 @@ __int64 GameHr_28aca0(__int64 result, int a2, unsigned int a3)
     *(_DWORD*)(v5 + 8) = 80;
     result = BaseNx_2a0e80((__int64)v4, (_QWORD*)v5);
     if (*(_BYTE*)(v3 + 1696) == 1) {
-      BaseNx_2891a0();
+      v6 = 0;
+      BaseNx_2891a0((__int64)&v6);
       for (i = *(_QWORD*)(v3 + 1512); i != v3 + 1504; i = *(_QWORD*)(i + 8)) {
         FinalMix_2b5a60((_QWORD*)(i - 72));
       }
-      BaseNx_2891c0();
+      BaseNx_2891c0((__int64)&v6);
       return FinalMix_2b5a60((_QWORD*)(v3 + 1384));
     }
   }
@@ -3939,14 +3941,16 @@ __int64 GameHr_28b1a0(__int64 result)
 {
   __int64 v1;
   __int64 i;
+  char v2;
 
   if (*(_BYTE*)(result + 1696) == 1) {
     v1 = result;
-    BaseNx_2891a0();
+    v2 = 0;
+    BaseNx_2891a0((__int64)&v2);
     for (i = *(_QWORD*)(v1 + 1512); i != v1 + 1504; i = *(_QWORD*)(i + 8)) {
       FinalMix_2b5960((_QWORD*)(i - 72));
     }
-    BaseNx_2891c0();
+    BaseNx_2891c0((__int64)&v2);
     return FinalMix_2b5960((_QWORD*)(v1 + 1384));
   }
   return result;
@@ -3979,15 +3983,17 @@ float GameHr_28b230(__int64 a1)
 __int64 GameHr_28b290(__int64 a1, _QWORD* a2)
 {
   __int64 v4;
+  char v5;
 
-  BaseNx_2891a0();
+  v5 = 0;
+  BaseNx_2891a0((__int64)&v5);
   v4 = a2[9];
   a2 += 9;
   *a2 = *(_QWORD*)(a1 + 1504);
   *(_QWORD*)(v4 + 8) = a1 + 1504;
   *(_QWORD*)(*(_QWORD*)(a1 + 1504) + 8LL) = a2;
   *(_QWORD*)(a1 + 1504) = v4;
-  return BaseNx_2891c0();
+  return BaseNx_2891c0((__int64)&v5);
 }
 
 __int64 GameHr_28b300(__int64 a1, __int64* a2)
@@ -3995,8 +4001,10 @@ __int64 GameHr_28b300(__int64 a1, __int64* a2)
   __int64* v4;
   __int64* v5;
   __int64 v6;
+  char v7;
 
-  BaseNx_2891a0();
+  v7 = 0;
+  BaseNx_2891a0((__int64)&v7);
   v4 = *(__int64**)(a1 + 1512);
   if (v4 != (__int64*)(a1 + 1504)) {
     while (1) {
@@ -4006,7 +4014,7 @@ __int64 GameHr_28b300(__int64 a1, __int64* a2)
       }
       v4 = (__int64*)v4[1];
       if (v5 == (__int64*)(a1 + 1504)) {
-        return BaseNx_2891c0();
+        return BaseNx_2891c0((__int64)&v7);
       }
     }
     v6 = *v5;
@@ -4015,7 +4023,7 @@ __int64 GameHr_28b300(__int64 a1, __int64* a2)
     *(_QWORD*)(v6 + 8) = v4;
     *v4 = v6;
   }
-  return BaseNx_2891c0();
+  return BaseNx_2891c0((__int64)&v7);
 }
 
 __int64 GameHr_28b3a0(__int64 a1, int a2)
@@ -4023,15 +4031,17 @@ __int64 GameHr_28b3a0(__int64 a1, int a2)
   __int64 v4;
   int v5;
   __int64 v7;
+  char v8;
 
   if ((*(_BYTE*)(a1 + 1697) & 1) != 0) {
     return *(_QWORD*)(a1 + 1488) + ((__int64)a2 << 8);
   }
-  BaseNx_2891a0();
+  v8 = 0;
+  BaseNx_2891a0((__int64)&v8);
   v4 = *(_QWORD*)(a1 + 1512);
   if (v4 == a1 + 1504) {
   LABEL_6:
-    BaseNx_2891c0();
+    BaseNx_2891c0((__int64)&v8);
     return *(_QWORD*)(a1 + 1488) + ((__int64)a2 << 8);
   }
   v5 = a2 + 1;
@@ -4042,7 +4052,7 @@ __int64 GameHr_28b3a0(__int64 a1, int a2)
     }
   }
   v7 = v4 - 72;
-  BaseNx_2891c0();
+  BaseNx_2891c0((__int64)&v8);
   return v7;
 }
 
@@ -4051,15 +4061,17 @@ __int64 GameHr_28b440(__int64 a1, int a2)
   __int64 v4;
   int v5;
   __int64 v7;
+  char v8;
 
   if ((*(_BYTE*)(a1 + 1697) & 1) != 0) {
     return *(_QWORD*)(a1 + 1488) + ((__int64)a2 << 8);
   }
-  BaseNx_2891a0();
+  v8 = 0;
+  BaseNx_2891a0((__int64)&v8);
   v4 = *(_QWORD*)(a1 + 1512);
   if (v4 == a1 + 1504) {
   LABEL_6:
-    BaseNx_2891c0();
+    BaseNx_2891c0((__int64)&v8);
     return *(_QWORD*)(a1 + 1488) + ((__int64)a2 << 8);
   }
   v5 = a2 + 1;
@@ -4070,7 +4082,7 @@ __int64 GameHr_28b440(__int64 a1, int a2)
     }
   }
   v7 = v4 - 72;
-  BaseNx_2891c0();
+  BaseNx_2891c0((__int64)&v8);
   return v7;
 }
 

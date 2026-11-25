@@ -457,14 +457,13 @@ void MapPanelTargetSelect_Unknown4(__int64 a1)
     char v19;
   } v10_;
 
-  strcpy((char*)&v10_.v10[2] + 1, "ts");
   HIDWORD(v10_.v10[2]) = 0;
   v10_.v18 = 0;
   v10_.v19 = 0;
   v10_.v15 = 0;
   v10_.v16 = 0;
   v10_.v17 = 0;
-  strcpy((char*)v10_.v10, "$MapPanelDeployA");
+  qmemcpy(v10_.v10, "$MapPanelDeployArts", 20);
   v1 = *(unsigned int*)(a1 + 40);
   if ((unsigned int)v1 >= 0x2C) {
     String_60a250("array::at");

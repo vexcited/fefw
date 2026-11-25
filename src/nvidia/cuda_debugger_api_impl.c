@@ -3,7 +3,12 @@
 #pragma GCC visibility push(hidden)
 
 __int64 CudaDriverRoutine_12df40(_DWORD*, void (*)(void));
-__int64 CudaDriverRoutine_12e300();
+__int64 CudaDriverRoutine_12e300(const char*, void*, __int64);
+extern const char CudaDriverData_1116ecd[];
+extern const char CudaDriverData_1118829[];
+extern const char CudaDriverData_1128e10[];
+extern const char CudaDriverData_1128ee5[];
+extern const char CudaDriverData_112b7b3[];
 __int64 CudaDriverStub_12db70(_QWORD, _QWORD);
 __int64 atoi_plt(_QWORD);
 extern _DWORD CudaDriverData_14328d4;
@@ -39,31 +44,38 @@ __int64 cuda_debugger_api_7d040()
   _QWORD v1[8];
 
   memset(v1, 0, sizeof(v1));
-  if ((unsigned int)CudaDriverRoutine_12e300() != 0) {
+  if ((unsigned int)CudaDriverRoutine_12e300(CudaDriverData_1116ecd, v1, 64) !=
+      0) {
     result = (unsigned int)CudaDriverData_14335d4;
     if (CudaDriverData_14335d4 == 0) {
       return result;
     }
   LABEL_5:
-    if ((unsigned int)CudaDriverRoutine_12e300() != 0) {
-      if ((unsigned int)CudaDriverRoutine_12e300() != 0) {
+    if ((unsigned int)CudaDriverRoutine_12e300(CudaDriverData_112b7b3, v1,
+                                               64) != 0) {
+      if ((unsigned int)CudaDriverRoutine_12e300(CudaDriverData_1128ee5, v1,
+                                                 64) != 0) {
         goto LABEL_7;
       }
     }
     else {
       *(_DWORD*)CudaDriverData_1421ff0[0] = atoi_plt(v1);
-      if ((unsigned int)CudaDriverRoutine_12e300() != 0) {
+      if ((unsigned int)CudaDriverRoutine_12e300(CudaDriverData_1128ee5, v1,
+                                                 64) != 0) {
       LABEL_7:
-        if ((unsigned int)CudaDriverRoutine_12e300() != 0) {
+        if ((unsigned int)CudaDriverRoutine_12e300(CudaDriverData_1118829, v1,
+                                                   64) != 0) {
           goto LABEL_8;
         }
         goto LABEL_12;
       }
     }
     *(_DWORD*)CudaDriverData_1422000[0] = atoi_plt(v1);
-    if ((unsigned int)CudaDriverRoutine_12e300() != 0) {
+    if ((unsigned int)CudaDriverRoutine_12e300(CudaDriverData_1118829, v1,
+                                               64) != 0) {
     LABEL_8:
-      if ((unsigned int)CudaDriverRoutine_12e300() != 0) {
+      if ((unsigned int)CudaDriverRoutine_12e300(CudaDriverData_1128e10, v1,
+                                                 64) != 0) {
         return CudaDriverStub_12db70("CUDBG_GET_SESSION_FROM_ENV", "0");
       }
     LABEL_13:
@@ -72,7 +84,8 @@ __int64 cuda_debugger_api_7d040()
     }
   LABEL_12:
     *(_DWORD*)CudaDriverData_1422008[0] = atoi_plt(v1);
-    if ((unsigned int)CudaDriverRoutine_12e300() != 0) {
+    if ((unsigned int)CudaDriverRoutine_12e300(CudaDriverData_1128e10, v1,
+                                               64) != 0) {
       return CudaDriverStub_12db70("CUDBG_GET_SESSION_FROM_ENV", "0");
     }
     goto LABEL_13;

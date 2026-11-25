@@ -36,7 +36,8 @@ __int64 CudaDriverRoutine_1294a0();
 __int64 CudaDriverRoutine_1294c0();
 __int64 CudaDriverRoutine_129500();
 __int64 CudaDriverRoutine_12e060(__int64, unsigned int, _DWORD*, int, int);
-__int64 CudaDriverRoutine_12e300();
+__int64 CudaDriverRoutine_12e300(const char*, void*, __int64);
+extern const char CudaDriverData_111e3e8[];
 __int64 CudaDriverRoutine_12e340(__int64 result);
 __int64 CudaDriverRoutine_12e510();
 __int64 CudaDriverRoutine_19b630(__int64, unsigned int, unsigned int,
@@ -1746,14 +1747,15 @@ __int64 nvidia_12f980(int* a1)
 {
   int v2;
   int v4;
-  _BYTE v5[14];
+  _BYTE v5[64];
 
   if (*((_BYTE*)((_UNKNOWN*)0xF7CLL) + (_QWORD)CudaDriverData_1422118 + 3) !=
       0) {
     v2 = 1;
   }
   else {
-    if ((unsigned int)CudaDriverRoutine_12e300() != 0) {
+    if ((unsigned int)CudaDriverRoutine_12e300(CudaDriverData_111e3e8, v5, 64) !=
+        0) {
       v2 = CudaDriverData_143bdc0;
       goto LABEL_6;
     }

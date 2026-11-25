@@ -964,7 +964,7 @@ void MapPanelSortie_Unknown4(_QWORD* a1)
   v22_.v28 = 0;
   v22_.v29 = 0;
   v22_.v26 = 1;
-  strcpy((char*)v22_.v22, "$MapPanelDeployM");
+  qmemcpy(v22_.v22, "$MapPanelDeployMove", 20);
   v17 = vmulq_f32(v16, (*v4)[80]);
   LODWORD(v18) = LANES128_OF(vextq_s8(v17, v17, 8u)).n128_u32[0];
   HIDWORD(v18) = LANES64_OF(vdup_laneq_s32(v17, 3)).n64_u32[0];

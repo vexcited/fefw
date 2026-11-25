@@ -271,7 +271,7 @@ void CharacterController_d45840(__int64 a1, float32x2_t* a2);
 void CharacterController_StateDamage_Unknown3(__int64 a1);
 __attribute__((swiftcall)) void GameRoutine_d2caa0(PSEUDO_X8, __int64 result);
 __int64 game_zview_d198c0(float32x2_t*, float32x2_t*, char, char);
-bool GameRoutine_d2d4e0();
+bool GameRoutine_d2d4e0(__int64);
 extern __int64 (*eft_ClampCurve_ptr)();
 unsigned __int64 GameRoutine_d2b5f0(__int64);
 void CharacterController_d48660(__int64 a1, unsigned __int32 a2, int* a3);
@@ -7242,7 +7242,7 @@ void CharacterController_d48660(__int64 a1, unsigned __int32 a2, int* a3)
         v13 = *(_QWORD*)(v12 + 468);
       }
       if ((v13 & 0x100000000LL) == 0) {
-        if (GameRoutine_d2d4e0()) {
+        if (GameRoutine_d2d4e0(*(_DWORD*)(*(_QWORD*)(v11 + 344) + 360LL))) {
           LODWORD(v13) = 1257611790;
         }
         else if ((*(_BYTE*)(*(_QWORD*)(v11 + 16) + 384LL) & 0x10) != 0) {

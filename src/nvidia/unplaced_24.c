@@ -2,7 +2,7 @@
 
 #pragma GCC visibility push(hidden)
 
-_DWORD* CudaDriverRoutine_1a1f40();
+_DWORD* CudaDriverRoutine_1a1f40(unsigned int);
 _QWORD* CudaDriverRoutine_1b7d00(_QWORD* result, __int64);
 __int64 CudaAddMemAllocNode(_QWORD*, __int64, __int64, __int64, __int64,
                             __int64);
@@ -977,7 +977,7 @@ __int64 nvidia_b0f30(__int64 a1, __int64 a2)
             }
             if (v9 != 0 ||
                 (*(_QWORD*)(*(_QWORD*)(a2 + 8) + 320LL) =
-                     CudaDriverRoutine_1a1f40(),
+                     CudaDriverRoutine_1a1f40(8),
                  (v9 = *(_QWORD*)(*(_QWORD*)(a2 + 8) + 320LL)) != 0)) {
               v10 = CudaDriverStub_1a28c0(v9, v6, 0, 0);
               if (v10 != 0) {
@@ -1028,7 +1028,7 @@ __int64 nvidia_b0f30(__int64 a1, __int64 a2)
         if (v15 != nullptr) {
           return CudaDriverStub_1a2350((__int64)v15, v12, v12);
         }
-        v15 = CudaDriverRoutine_1a1f40();
+        v15 = CudaDriverRoutine_1a1f40(8);
         *(_QWORD*)(v14 + 1024) = v15;
         if (v15 != nullptr) {
           return CudaDriverStub_1a2350((__int64)v15, v12, v12);

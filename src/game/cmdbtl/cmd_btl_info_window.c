@@ -59,7 +59,7 @@ __int64 BattleInfoWindow_1835140(__int64, __int64*, unsigned int, __int64, char,
                                  char);
 __int64 BattleInfoWindow_18352d0(__int64, __int64*, unsigned int, __int64, char,
                                  char);
-__int64 BattleInfo_7a3110();
+__int64 BattleInfo_7a3110(_QWORD);
 __int64 BattleSide_7a2480(__int64);
 __int64 CmdBtlParty_e77060(unsigned int, __int64, __int64*);
 __int64 CombatHudWindow_1832b70(__int64, unsigned int, char);
@@ -1447,7 +1447,7 @@ LABEL_48:
   GameRoutine_1841000(v56, 13),
       v54 = COERCE_AS(__typeof__(v54), PSEUDO_REGISTER(float, "s1", "=w")),
       v55 = COERCE_AS(__typeof__(v55), PSEUDO_REGISTER(float, "s2", "=w"));
-  v57 = BattleInfo_7a3110(),
+  v57 = BattleInfo_7a3110(v8 + 1536),
   v54 = COERCE_AS(__typeof__(v54), PSEUDO_REGISTER(float, "s1", "=w")),
   v55 = COERCE_AS(__typeof__(v55), PSEUDO_REGISTER(float, "s2", "=w"));
   v58 = ui_LayoutAccessor_FindPane(a1 + 3, "T_Link_Critical_Num"),

@@ -88,7 +88,7 @@ __int64 SdkRoutine_875f90(_QWORD, _QWORD);
 __int64 SdkRoutine_875fa0(_QWORD);
 __int64 SdkRoutine_875fb0(_QWORD, _QWORD, _QWORD, _QWORD, _QWORD);
 __int64 SdkRoutine_875fc0(_QWORD);
-__int64 SdkRoutine_ce990();
+__int64 SdkRoutine_ce990(__int64);
 __int64 NvOsFree_plt(_QWORD);
 bool nvidia_62b7f0(int);
 extern __int64 (*nvidia_62b670_ptr[])();
@@ -1135,7 +1135,7 @@ __int64 SdkHr_62b0a0(__int64 a1, __int64 a2, __int64 a3, __int64 a4, _QWORD* a5)
   *((_DWORD*)v15 + 11) = v16;
   *v15 = SdkData_e73958;
   if (*a5 != 0) {
-    SdkRoutine_ce990();
+    SdkRoutine_ce990((__int64)v15);
     *((_BYTE*)v15 + 17) = 1;
     (*(void (**)(_QWORD*))(*v15 + 8LL))(v15);
     SdkRoutine_875b30(v15);
@@ -1178,7 +1178,7 @@ __int64 SdkHr_62b300(__int64 a1, __int64 a2, __int64 a3, __int64 a4, __int64 a5,
   *((_DWORD*)v16 + 11) = v17;
   *v16 = SdkData_e73958;
   if (*a6 != 0) {
-    SdkRoutine_ce990();
+    SdkRoutine_ce990((__int64)v16);
     *((_BYTE*)v16 + 17) = 1;
     (*(void (**)(_QWORD*))(*v16 + 8LL))(v16);
     SdkRoutine_875b30(v16);

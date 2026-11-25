@@ -222,7 +222,7 @@ __int64 game_map_f1da00(float32x4_t* a1)
   v2 = *(_QWORD*)game_script_hub_g_frame_counter_ptr[0];
   LOWORD(v155_.v162) = 0;
   v3 = *(float*)(v2 + 160);
-  strcpy((char*)v155_.v155, "$MapPanelDeployM");
+  qmemcpy(v155_.v155, "$MapPanelDeployMove", 20);
   v4 = *(float32x4_t*)GameData_212c958;
   v5 = GameData_212f878;
   v155_.v158 = 0x100000000LL;

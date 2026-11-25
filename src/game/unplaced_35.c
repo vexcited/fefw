@@ -10,7 +10,8 @@ __int64 DynamicRenderingTexture_576260(char*, __int64, _DWORD*, _DWORD*, int,
 __int64 GameRoutine_10f4050(__int64, unsigned __int8*);
 __int64 GameRoutine_112180(__int64, __int64);
 __int64 GameRoutine_14a1240(_QWORD*, __int64, __int64, __int64);
-__int64 GameRoutine_1a0a7c0();
+__attribute__((swiftcall)) void GameRoutine_1a0a7c0(PSEUDO_X8, _QWORD, _QWORD);
+extern const char GameData_1ac690d[];
 __int64 GameRoutine_1a0b950(__int64, __int64, unsigned __int64);
 __int64 GameRoutine_1a0ba50(__int64, int, unsigned __int64);
 __int64 GameRoutine_2b0();
@@ -25,7 +26,7 @@ __int64 GameRoutine_6037e0(__int64, __int64);
 __int64 GameRoutine_603c30(int);
 __int64 GameRoutine_604000(__int64, int);
 __int64 GameRoutine_6068a0(_QWORD, _QWORD, _QWORD, _QWORD);
-__int64 GameRoutine_6068b0();
+__int64 GameRoutine_6068b0(__int64, unsigned int, __int64);
 __int64 GameRoutine_6068c0(void);
 __int64 GameRoutine_6068d0(_QWORD);
 __int64 GameRoutine_651410(__int64);
@@ -1498,8 +1499,9 @@ __int64 game_606510(__int64 a1, __int64 a2, unsigned __int8* a3)
         *(_QWORD*)(a1 + 16), *((unsigned int*)a3 + 8),
         *((unsigned int*)a3 + 9));
   }
-  GameRoutine_6034e0(*((_DWORD*)a3 + 1));
-  GameRoutine_6068b0();
+  GameRoutine_6068b0(*(_QWORD*)(a1 + 16),
+                     GameRoutine_6034e0(*((_DWORD*)a3 + 1)),
+                     *(_QWORD*)(a1 + 8));
   ((void (*)(__int64, __int64, __int64, __int64, __int64))GameData_21a4420)(
       *(_QWORD*)(a1 + 16), GameData_1b331b8[a3[8]], GameData_1b331b8[a3[9]],
       GameData_1b331b8[a3[10]], GameData_1b331b8[a3[11]]);
@@ -1713,7 +1715,9 @@ void game_14a20b0(__int64* a1)
                                     PSEUDO_REGISTER(float, "s0", "=w")),
                     v38 = COERCE_AS(__typeof__(v38),
                                     PSEUDO_REGISTER(float, "s0", "=w"));
-                GameRoutine_1a0a7c0(),
+                GameRoutine_1a0a7c0((void*)(v42_.v42),
+                                    (__int64)GameData_1ac690d,
+                                    v10 + 64),
                     v29 = COERCE_AS(__typeof__(v29),
                                     PSEUDO_REGISTER(float, "s0", "=w")),
                     v38 = COERCE_AS(__typeof__(v38),

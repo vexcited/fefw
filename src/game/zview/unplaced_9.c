@@ -49,7 +49,7 @@ float game_d27af0(float, float, float, float);
 float powf(float, float);
 float32x4_t game_zview_103fb80(__int64);
 int __cxa_guard_acquire(__int64);
-unsigned __int64* GameRoutine_d28060();
+unsigned __int64* GameRoutine_d28060(_QWORD);
 void __attribute__((noreturn)) GameRoutine_8123d0();
 void __cxa_guard_release(__int64);
 void game_1040540(int8x16_t*);
@@ -1271,7 +1271,7 @@ LABEL_211:
   v154 = *(float*)(a1 + 688);
   v155 = (float)(*(float*)(*(_QWORD*)v75 + 160LL) * 0x1.0aef000000000p+4f) /
          0x1.f400000000000p+9f;
-  GameRoutine_d28060(),
+  GameRoutine_d28060(*v147),
       v152 = COERCE_AS(__typeof__(v152), PSEUDO_REGISTER(float, "s1", "=w")),
       v156 = COERCE_AS(__typeof__(v156), PSEUDO_REGISTER(float, "s0", "=w")),
       v235 = COERCE_AS(__typeof__(v235), PSEUDO_REGISTER(float, "s1", "=w"));

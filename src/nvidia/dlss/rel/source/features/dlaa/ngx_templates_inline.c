@@ -15,9 +15,9 @@ __int64 NgxRoutine_b4b90_alt1(_QWORD, _QWORD, _QWORD, const char*,
                               ...) __asm__("NgxRoutine_b4b90");
 __int64 NgxRoutine_b4b90_alt3(__int64, __int64, __int64, const char*,
                               ...) __asm__("NgxRoutine_b4b90");
-__int64 NgxRoutine_e2db0();
+__int64 NgxRoutine_e2db0(_QWORD);
 __int64 NgxRoutine_e2db0_alt1(_QWORD) __asm__("NgxRoutine_e2db0");
-__int64 NgxRoutine_e2de0();
+__int64 NgxRoutine_e2de0(_QWORD);
 __int64 NgxRoutine_e2de0_alt1(_QWORD) __asm__("NgxRoutine_e2de0");
 __int64 dlaa_34c80(__int64, __int64, unsigned __int64, __int64, __int64*);
 __int64 dlaa_367a0(__int64*, int*, int, int, int, int);
@@ -127,7 +127,7 @@ __int64 ngx_templates_aa760(__int64 a1, int a2, int a3, int a4, _DWORD* a5,
     v18 = v17;
   }
   nvidia_dlss_ab9e0((__int64)&v37_.v37, (__int64)"PerfQualityValue", v18);
-  NgxRoutine_e2db0();
+  NgxRoutine_e2db0((__int64)&NgxData_2b70a08);
   if (NgxData_2b6add8 != 0) {
     dlaa_scaling_7d420(*(_QWORD*)(NgxData_2b6add8 + 72), (__int64)&v37_.v37);
   }
@@ -138,7 +138,7 @@ __int64 ngx_templates_aa760(__int64 a1, int a2, int a3, int a4, _DWORD* a5,
         314, (__int64)"GetOptimalSettingsCommon",
         (__int64)"Error: could't find initialized instance");
   }
-  NgxRoutine_e2de0();
+  NgxRoutine_e2de0((__int64)&NgxData_2b70a08);
   nvidia_dlss_abac0((__int64)&v37_.v37, (__int64)"OutWidth", &v36);
   nvidia_dlss_abac0((__int64)&v37_.v37, (__int64)"OutHeight", &v35);
   nvidia_dlss_abac0((__int64)&v37_.v37,
@@ -713,7 +713,7 @@ __int64 ngx_templates_b5710(unsigned __int64 a1, __int64 a2, int a3, __int64 a4,
   const void* v28;
   const void** v29;
 
-  NgxRoutine_e2db0();
+  NgxRoutine_e2db0((__int64)NgxData_9547a8);
   v17 = nvidia_dlss_rel_source_34b70(a2, a4);
   if (v17 >> 20 == 2989) {
     NgxRoutine_b4b90_alt2(
@@ -780,7 +780,7 @@ __int64 ngx_templates_b5710(unsigned __int64 a1, __int64 a2, int a3, __int64 a4,
         (__int64)"Error: Device pointer was nullptr");
     v17 = -1160773627;
   }
-  NgxRoutine_e2de0();
+  NgxRoutine_e2de0((__int64)NgxData_9547a8);
   return v17;
 }
 

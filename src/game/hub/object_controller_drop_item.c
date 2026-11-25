@@ -98,7 +98,7 @@ __int64 GameHr_17cbee0(__int64, int);
 __int64 GameHr_17cbfa0(__int64, int);
 __int64 GameHr_dbc2c0(_QWORD*, __int64);
 __int64 GameHr_eb62f0(int);
-__int64 ItemSupport_f2e340();
+__int64 ItemSupport_f2e340(__int64, __int64);
 __int64 game_989ea0(__int64 result, int, __int64);
 __int64 game_hub_dfc000(__int64 result);
 __int64 snd_Fade_Destroy_Fade(_QWORD*);
@@ -112,6 +112,7 @@ extern __int64 GameData_212c6a0[3];
 extern __int64 GameData_212dbb8[9];
 extern __int64 GameData_2130f48;
 extern __int64 GameData_2131678;
+extern __int64 GameData_22124d8;
 extern __int64 game_GameModeData_instance_;
 extern __int64 game_script_hub_g_frame_counter_ptr[3];
 float powf(float, float);
@@ -1362,7 +1363,8 @@ LABEL_42:
         }
         break;
       case 1:
-        ItemSupport_f2e340(),
+        ItemSupport_f2e340(GameData_22124d8,
+                           *(_QWORD*)(*(_QWORD*)(a1 + 8) + 224LL)),
             v29 =
                 COERCE_AS(__typeof__(v29), PSEUDO_REGISTER(__n128, "v0", "=w"));
         break;

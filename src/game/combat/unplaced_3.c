@@ -93,7 +93,7 @@ void CombatLegionManager_e2c0e0(__int64);
 void GameRoutine_1068b40(__int64, char);
 void GameRoutine_106a7f0(float, float, float);
 void GameRoutine_10cd6a0(_QWORD*, char*, float, float);
-void GameRoutine_110bd40();
+void GameRoutine_110bd40(__int64);
 void GameRoutine_e56ec0(__int64, _QWORD*, __int64, unsigned __int64);
 void __attribute__((noreturn)) GameRoutine_60a210();
 void __attribute__((noreturn)) GameRoutine_60a310();
@@ -2195,7 +2195,7 @@ LABEL_35:
     goto LABEL_70;
   }
   *(_DWORD*)(a1 + 256) = 1;
-  GameRoutine_110bd40(),
+  GameRoutine_110bd40(*(_QWORD*)(a1 + 192)),
       v40 = COERCE_AS(__typeof__(v40),
                       PSEUDO_REGISTER(unsigned long long, "x1", "=r"));
   v45 = *(_QWORD*)(a1 + 8);

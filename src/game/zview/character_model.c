@@ -117,7 +117,7 @@ __int64 nn_mem_StandardAllocator_Free_alt1(_QWORD, _QWORD) __asm__(
 __int64 strlen(_QWORD);
 __int64 wld_Crc32_alt1(int, unsigned __int8*,
                        unsigned __int64) __asm__("wld_Crc32");
-bool GameRoutine_d2d4e0();
+bool GameRoutine_d2d4e0(__int64);
 extern _DWORD* GameData_212d168;
 extern _UNKNOWN* GameData_212c540;
 extern _UNKNOWN* GameData_212deb8;
@@ -1594,7 +1594,7 @@ char* CharacterModel_cf5da0(__int64 a1)
     v7 = *(_QWORD*)(v5 + 280);
     while (v6 != v7) {
       if (*(_BYTE*)(v6 + 20) == 1 && *(float*)(v6 + 16) == 0x0.0p+0f &&
-          GameRoutine_d2d4e0()) {
+          GameRoutine_d2d4e0(*(_DWORD*)v6)) {
         v12 = (_QWORD*)(v6 + 16);
         v13 = *(unsigned __int8*)(v5 + 88);
         *(_DWORD*)(v5 + 24) = *(_DWORD*)v6;

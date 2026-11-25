@@ -6,6 +6,7 @@ __n128 nn_mem_StandardAllocator_Free(_QWORD, _QWORD);
 __n128 std___1___shared_weak_count___release_weak(_QWORD);
 extern __int64 (*GameData_1ffd948[])();
 extern __int64 (*game_hub_DropItemCalculatorHub_vtable[])();
+extern __int64 GameData_21f3cf0;
 extern __int64 GameData_22124f0;
 extern __int64 fw_memory_g_heap_manager_ptr;
 extern int GameData_222e198;
@@ -16,7 +17,7 @@ __attribute__((swiftcall)) void game_hub_e009e0(PSEUDO_X8, _QWORD*,
                                                 unsigned __int64*);
 __int64* GameRoutine_fcf860(__int64**, __int64*);
 __int64 GameRoutine_60a020(__int64, __int64);
-__int64 GameRoutine_dbde80();
+__int64 GameRoutine_dbde80(__int64);
 __int64 fw_memory_HeapManager_Allocate(__int64, __int64, __int64, unsigned int);
 __int64 fw_text_String_CopyTerminated(__int64*, __int64, unsigned __int64);
 __int64 game_GameVariableTable_Find(_QWORD*, unsigned __int64*);
@@ -1585,7 +1586,7 @@ LABEL_60:
       goto LABEL_114;
     }
   LABEL_387:
-    result = GameRoutine_dbde80();
+    result = GameRoutine_dbde80(GameData_21f3cf0);
   }
   if ((f_.v230 & 1) != 0 && f_.v232 != nullptr) {
     v220 = 128;

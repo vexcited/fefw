@@ -25,7 +25,8 @@ __int64 CudaDriverRoutine_12df40(_DWORD*, void (*)(__int64, __int64));
 __int64 CudaDriverRoutine_12e060(__int64*, unsigned int, _DWORD*, int,
                                  unsigned int);
 __int64 CudaDriverRoutine_12e270(_QWORD*);
-__int64 CudaDriverRoutine_12e300();
+__int64 CudaDriverRoutine_12e300(const char*, void*, __int64);
+extern const char CudaDriverData_111c957[];
 __int64 CudaDriverRoutine_12e340(__int64 result);
 __int64 CudaDriverRoutine_12e510(__int64, __int64);
 __int64 CudaDriverRoutine_12eb10(__int64, ...);
@@ -3391,7 +3392,8 @@ __int64 nvidia_130a80(_QWORD* a1)
   v3 = (int*)v2;
   memset_plt(v2, 0, 0x2D8u);
   if (CudaDriverData_1435727 == 0) {
-    v4 = CudaDriverRoutine_12e300();
+    v4 = CudaDriverRoutine_12e300(CudaDriverData_111c957,
+                                  &CudaDriverData_1434ce5, 2625);
     CudaDriverData_1434ce4 = v4 == 0;
     if (v4 != 0) {
       CudaDriverData_1435726 = 0;

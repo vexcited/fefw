@@ -14,8 +14,8 @@ __int64 NgxRoutine_be820(__int64, __int64);
 __int64 NgxRoutine_bfc00(char*, _QWORD*, unsigned int);
 __int64 NgxRoutine_db160(__int64 result);
 __int64 NgxRoutine_db240(__int64*);
-__int64 NgxRoutine_e2c70();
-__int64 NgxRoutine_e2ca0();
+__int64 NgxRoutine_e2c70(_QWORD);
+__int64 NgxRoutine_e2ca0(_QWORD);
 __int64 __errno_location_plt(void);
 __int64 close_plt(_QWORD);
 __int64 fcntl_plt(_QWORD, _QWORD, _QWORD);
@@ -42,6 +42,7 @@ extern __int64* NgxData_954770;
 extern char* NgxData_954760[4];
 extern char* NgxData_954790[2];
 extern char* NgxData_954798;
+extern _UNKNOWN* NgxData_9547a0;
 extern char NgxData_2b78b30[];
 extern char NgxData_2b80b30[];
 extern char NgxData_2b88b2f;
@@ -152,7 +153,7 @@ void util_log_b4d10(__int64 a1, int a2, const char* a3, __int64 a4,
   v11 = NgxData_954788;
   v12 = *NgxData_954770 == 0 && *NgxData_954780[0] == nullptr;
   if (!v12 || (*NgxData_954798 & 1) != 0 || *NgxData_954788 != nullptr) {
-    v16 = NgxRoutine_e2c70();
+    v16 = NgxRoutine_e2c70((__int64)NgxData_9547a0);
     v17 = a6[1];
     v20[0] = *a6;
     v20[1] = v17;
@@ -181,7 +182,7 @@ void util_log_b4d10(__int64 a1, int a2, const char* a3, __int64 a4,
       v19 = (void (*)(char*, _QWORD, _QWORD))*v11;
       if (*v11 == nullptr) {
       LABEL_16:
-        NgxRoutine_e2ca0();
+        NgxRoutine_e2ca0((__int64)NgxData_9547a0);
         return;
       }
     }

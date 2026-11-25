@@ -38,7 +38,7 @@ __int64 nvidia_638690(_QWORD*);
 __int64 nvidia_63a200(__int64);
 __int64 nvidia_63b090(unsigned int*, __int64, __int64, __int64);
 __int64 nvidia_643ff0();
-__int64 nvidia_644c60();
+__int64 nvidia_644c60(__int64);
 __int64 nvidia_644ce0(__int64, int);
 __int64 nvidia_644cf0(__int64, __int64, _QWORD*, __int64, __int64*,
                       unsigned __int64);
@@ -1446,8 +1446,7 @@ __int64 nvstl_mutex_impl_nvos_635770(__int64 a1, __int64 a2)
   *(_QWORD*)a1 = v4 + 2;
   *(_QWORD*)(a1 + 256) = 0;
   *(_QWORD*)(a1 + 24) = SdkData_e747e0;
-  nvidia_629c90(a1);
-  v5 = nvidia_644c60();
+  v5 = nvidia_644c60(nvidia_629c90(a1) + 18);
   v6 = (*(__int64 (**)(__int64))(*(_QWORD*)a2 + 32LL))(a2);
   *(_QWORD*)(a1 + 296) = v5;
   *(_QWORD*)(a1 + 304) = v6;

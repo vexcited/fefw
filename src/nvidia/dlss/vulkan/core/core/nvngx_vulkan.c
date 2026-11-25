@@ -24,8 +24,8 @@ __int64 NgxRoutine_b4b90(_QWORD, _QWORD, _QWORD, const char*, ...);
 __int64 NgxRoutine_b4b90_alt1(__int64, __int64, __int64, __int64,
                               ...) __asm__("NgxRoutine_b4b90");
 __int64 NgxRoutine_baf10(__int64 result);
-__int64 NgxRoutine_e2db0();
-__int64 NgxRoutine_e2de0();
+__int64 NgxRoutine_e2db0(_QWORD);
+__int64 NgxRoutine_e2de0(_QWORD);
 __int64 memcpy_plt(_QWORD, _QWORD, _QWORD);
 __int64 memset_plt(_QWORD, _QWORD, _QWORD);
 __int64 nvidia_dlss_ad6d0(unsigned int, __int64);
@@ -323,7 +323,7 @@ __int64 nvngx_vulkan_af240(__int64 a1, __int64 a2, __int64 a3, __int64 a4,
     *(_QWORD*)(v18 + 8) = a4;
     *(_QWORD*)(v18 + 16) = a5;
     *(_OWORD*)(v18 + 24) = v59;
-    NgxRoutine_e2db0(),
+    NgxRoutine_e2db0((__int64)(v17 + 4452)),
         v12 = COERCE_AS(__typeof__(v12),
                         PSEUDO_REGISTER(unsigned long long, "x5", "=r")),
         v13 = COERCE_AS(__typeof__(v13),
@@ -341,7 +341,7 @@ __int64 nvngx_vulkan_af240(__int64 a1, __int64 a2, __int64 a3, __int64 a4,
                                PSEUDO_REGISTER(unsigned long long, "x6", "=r")),
                v14 = COERCE_AS(__typeof__(v14),
                                PSEUDO_REGISTER(unsigned long long, "x7", "=r"));
-    NgxRoutine_e2de0(),
+    NgxRoutine_e2de0((__int64)(v17 + 4452)),
         v12 = COERCE_AS(__typeof__(v12),
                         PSEUDO_REGISTER(unsigned long long, "x5", "=r")),
         v13 = COERCE_AS(__typeof__(v13),

@@ -49,8 +49,8 @@ unsigned __int128 Manager_bc6460_pair(_QWORD*, float32x4_t*,
 __int64 BattleArea_8b9d00(_QWORD);
 __int64 BattleInfo_790800(_QWORD, _QWORD, _QWORD, _QWORD);
 __int64 BattleInfo_790b00(_QWORD, _QWORD);
-__int64 BattleInfo_7a3000();
-__int64 BattleInfo_7a3110();
+__int64 BattleInfo_7a3000(_QWORD);
+__int64 BattleInfo_7a3110(_QWORD);
 __int64 BattleSide_7a2950(_QWORD*);
 __int64 BattleSide_Destructor(_QWORD);
 __int64 CharacterBuilder_1084a50(_QWORD, _QWORD);
@@ -12789,8 +12789,8 @@ _WORD* game_10ea490(__int64 a1, __int64 a2)
   *(_DWORD*)(a1 + 80) = v16;
   *(_DWORD*)(a1 + 64) = v16;
   *(_DWORD*)(a1 + 68) = BattleSide_7a2950((_QWORD*)a2);
-  *(_DWORD*)(a1 + 72) = BattleInfo_7a3000();
-  *(_DWORD*)(a1 + 76) = BattleInfo_7a3110();
+  *(_DWORD*)(a1 + 72) = BattleInfo_7a3000(a2);
+  *(_DWORD*)(a1 + 76) = BattleInfo_7a3110(a2);
   *(_DWORD*)(a1 + 84) = *(_DWORD*)(a2 + 80);
   *(_DWORD*)(a1 + 88) = *(_DWORD*)(a2 + 84);
   v17 = *(_QWORD*)(a2 + 24);

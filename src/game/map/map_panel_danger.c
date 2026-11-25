@@ -2436,14 +2436,13 @@ void MapPanelDanger_Unknown4(_QWORD* a1)
       v6 = (float)*(int*)(v7 + 32);
     }
   }
-  strcpy((char*)&v99_.v99[2] + 1, "ge");
   HIDWORD(v99_.v99[2]) = 0;
   BYTE4(v99_.v106) = 0;
   v99_.v107 = 0;
   LOWORD(v99_.v106) = 0;
   v99_.v104 = 0;
   v99_.v105 = 0;
-  strcpy((char*)v99_.v99, "$MapPanelEnemyRa");
+  qmemcpy(v99_.v99, "$MapPanelEnemyRange", 20);
   v8 = (float)((float)(v6 / 0x1.9000000000000p+6f) * 0x1.99999a0000000p-1f) +
        0x1.99999a0000000p-3f;
   v9 = (float32x4_t*)GameData_212c958;

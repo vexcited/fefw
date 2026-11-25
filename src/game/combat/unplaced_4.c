@@ -9842,9 +9842,7 @@ LABEL_377:
   *(_QWORD*)v249 = GameData_1fe5e38;
   v252 = *(_QWORD*)(v3 + 128);
   v253 = GameData_212f4b8[0] + 2;
-  strcpy((char*)(v249 + 80), "&Stratagem_ZOC_D");
-  *(_BYTE*)(v249 + 97) = 0;
-  *(_WORD*)(v249 + 98) = 0;
+  qmemcpy((char*)(v249 + 80), "&Stratagem_ZOC_Dagza", 20);
   *(_DWORD*)(v249 + 100) = 0;
   *(_QWORD*)(v249 + 24) = v253;
   *(_DWORD*)(v249 + 32) = 1119879168;

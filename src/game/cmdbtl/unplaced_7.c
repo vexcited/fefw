@@ -4,7 +4,7 @@
 
 bool GameRoutine_163a9f0(__int64*, __int64*, __int64*, __int64*);
 bool GameRoutine_163ab40(__int64*, __int64*);
-bool GameRoutine_ec1940();
+__int64 GameRoutine_ec1940(_QWORD);
 bool ui_game_15b75f0(__int64, __int64);
 extern __int64* GameData_212ea58;
 extern __int64 GameData_21f4cc0;
@@ -21,7 +21,7 @@ __int64 game_cmdbtl_e63390()
   __int64 v2;
   int v3;
 
-  result = ((__int64 (*)())GameRoutine_ec1940)();
+  result = GameRoutine_ec1940(GameData_21f4cc0);
   if (((result & 1) != 0 || *(_BYTE*)(GameData_21f4cc0 + 12) == 1) &&
       (*(_BYTE*)(*GameData_212ea58 + 12576) & 1) == 0) {
     *(_BYTE*)(*GameData_212ea58 + 12576) = 1;

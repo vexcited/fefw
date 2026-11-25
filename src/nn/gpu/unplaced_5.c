@@ -27,7 +27,7 @@ __int64 nn_os_TimedWaitSystemEvent_plt(_QWORD, _QWORD);
 __int64 nn_sm_detail_SendSessionRequest(unsigned int*);
 extern __int64 nn_gpu_impl_user_g_pGsvUserSession;
 extern void (*SdkData_e87798[4])();
-void SdkRoutine_1a5658();
+void SdkRoutine_1a5658(__int64, __int64, int, int);
 __int64 nn_gpu_466e20(__int64 a1, unsigned int** a2, int* a3);
 __int64 nn_gpu_469140(__int64 a1, _QWORD** a2, unsigned __int64* a3,
                       __int64* a4, int* a5, __int64* a6, __int64* a7, char* a8,
@@ -638,7 +638,7 @@ __int64 nn_gpu_46b020(__int64 a1, __int64 a2, __int64 a3, int a4, __int64 a5,
   while ((nn_os_TimedWaitSystemEvent_plt(a3 + 40 + 48LL * v25, 1000000000) &
           1) == 0)
     ;
-  SdkRoutine_1a5658(),
+  SdkRoutine_1a5658(a5, a6, 32, 0),
       v18 = COERCE_AS(__typeof__(v18),
                       PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
   v19 = v25;

@@ -10,6 +10,8 @@ extern __int64 NgxData_2b89768;
 
 extern __int64 NgxData_2b89978;
 
+extern _UNKNOWN NgxData_2b89a80;
+
 extern _UNKNOWN NgxData_2b89a90;
 
 extern __int64 (*NgxData_94eb40[])();
@@ -83,7 +85,7 @@ __int64 NgxRoutine_bafa0(_QWORD, _QWORD, _QWORD);
 
 __int64 NgxRoutine_bb400();
 
-void NgxRoutine_bb9a0();
+void NgxRoutine_bb9a0(void*);
 
 __int64 NgxRoutine_bcd70(_QWORD);
 
@@ -1655,7 +1657,7 @@ __int64 NgxHr_bc860(__int64 a1, unsigned int a2)
 
 __int64 NgxHr_bc990()
 {
-  NgxRoutine_bb9a0();
+  NgxRoutine_bb9a0(&NgxData_2b89a80);
   return NgxRoutine_2b0();
 }
 

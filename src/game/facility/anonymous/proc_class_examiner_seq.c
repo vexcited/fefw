@@ -9,7 +9,7 @@ extern __int64 game_UnitListSet_instance_;
 void FacilityUnitList_145e2c0(__int64**, __int64, char);
 __int64 ProcClassExaminerSeq_Unknown18();
 __int64 ProcClassExaminerSeq_Destructor();
-__int64 GameRoutine_195a5c0();
+__int64 GameRoutine_195a5c0(__int64);
 __int64 game_ProcInst_Unregister(__int64 result);
 __int64 game_facility_ReleaseGroups();
 extern __int64 (*GameData_203cb48[])();
@@ -33,7 +33,7 @@ void ProcClassExaminerSeq_Destructor_1435990(__int64 a1)
   *(_QWORD*)a1 = game_facility_anonymous_ProcClassExaminerSeq_vtable;
   *(_QWORD*)(a1 + 208) = &ProcClassExaminerSeq_Destructor_ptr;
   game_facility_ReleaseGroups();
-  GameRoutine_195a5c0();
+  GameRoutine_195a5c0(a1 + 208);
   v2 = *(_QWORD*)(a1 + 248);
   if (v2 != 0) {
     *(_QWORD*)(a1 + 256) = v2;

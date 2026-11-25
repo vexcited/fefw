@@ -2,7 +2,7 @@
 
 #pragma GCC visibility push(hidden)
 
-_DWORD* CudaDriverRoutine_1a2c40();
+_DWORD* CudaDriverRoutine_1a2c40(unsigned int);
 _QWORD* CudaDriverRoutine_d39b0(_QWORD* result, _QWORD*);
 _QWORD* cuda_driver_checks_1024a0(__int64, unsigned __int64, unsigned __int64,
                                   __int64);
@@ -6786,7 +6786,7 @@ __int64 cuda_driver_eb200(__int64 a1, __int64 a2, __int64 a3, __int64 a4,
       goto LABEL_17;
     }
     v11 = v24_.v27;
-    v12 = CudaDriverRoutine_1a2c40();
+    v12 = CudaDriverRoutine_1a2c40(v11);
     *(_QWORD*)(a1 + 4520) = v12;
     if (v12 == nullptr) {
       return 2;

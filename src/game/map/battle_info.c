@@ -91,8 +91,8 @@ __int64 BattleInfo_795fc0_alt2(__int64, __int64,
                                unsigned int*) __asm__("BattleInfo_795fc0");
 __int64 BattleInfo_79c7f0(__int64);
 __int64 BattleInfo_79c940(__int64, unsigned int*);
-__int64 BattleInfo_7a3000();
-__int64 BattleInfo_7a3110();
+__int64 BattleInfo_7a3000(_QWORD);
+__int64 BattleInfo_7a3110(_QWORD);
 __int64 BattleSide_79f000(__int64, _DWORD*);
 __int64 BattleSide_7a17c0(__int64, _WORD*, unsigned __int8);
 __int64 BattleSide_7a1a00(__int64, _DWORD*);
@@ -1196,8 +1196,8 @@ LABEL_14:
           v30[10] = v32;
           v30[8] = *(_DWORD*)(v19 + 96);
           v30[11] = *(_DWORD*)(v19 + 104);
-          v30[12] = BattleInfo_7a3000();
-          v30[13] = BattleInfo_7a3110();
+          v30[12] = BattleInfo_7a3000(v19);
+          v30[13] = BattleInfo_7a3110(v19);
         }
         v25 = *(_QWORD*)(*(_QWORD*)(*v14 + 64) + 8LL * (*(_DWORD*)a3 & 0xFFF));
       }
