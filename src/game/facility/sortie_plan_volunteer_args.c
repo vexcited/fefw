@@ -9,7 +9,7 @@ __int64 SortiePlanVolunteerArgs_Unknown12(__int64 a1);
 __attribute__((swiftcall)) void
 game_12dd620(PSEUDO_X8, unsigned __int16* result, int, int, int);
 __int64 GameVariable_828800(__int64, unsigned __int64*, int);
-__int64 game_958960();
+__int64 game_958960(__int64);
 extern __int64 GameData_212c6c0[2];
 extern __int64 GameData_2246cb0;
 extern __int64 GameData_22492a8;
@@ -27,7 +27,7 @@ unsigned __int16* SortiePlanVolunteerArgs_Unknown4(_BYTE* a1)
   if (GameData_2246cb0 != 0) {
     *(_QWORD*)(GameData_2246cb0 + 160) = *(_QWORD*)(GameData_2246cb0 + 152);
   }
-  a1[16] = game_958960();
+  a1[16] = game_958960(*(_QWORD*)(a1 + 8));
   (*(void (**)(_BYTE*))(*(_QWORD*)a1 + 96LL))(a1);
   if (game_gmap_GmapClock_instance_ != 0) {
     v2 = (__int16*)(game_gmap_GmapClock_instance_ + 8);

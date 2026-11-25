@@ -9,7 +9,7 @@ __int64 GameRoutine_14d5420(__int64);
 __int64 GameRoutine_60a020(__int64, const char*);
 __int64 GameRoutine_adfc40(__int64);
 __int64 MapSortieMenu_871860(__int64, __int64, __int64, __int64, __int64);
-__int64 Registration_a4db40();
+char* Registration_a4db40(__int64, _BYTE*);
 __int64 ScoutBaseProc_f6c060(__int64, __int64*, const char*, __int64, __int64,
                              __int64);
 __int64 game_menu_Dialog__CreateBind_game_menu_Dialog(__int64, __int64);
@@ -34,6 +34,7 @@ extern __int64 GameData_212dbb8[9];
 extern __int64 GameData_21316c8;
 extern __int64 fw_memory_g_heap_manager_ptr;
 extern char** msg_MessageManager_empty_text__ptr;
+extern __int64* msg_MessageManager_instance__ptr[2];
 void BasicMenu_16e1f40(_QWORD*, __int64, __int64);
 void nn_mem_StandardAllocator_Free(__int64, __int64);
 __int64 game_gmap_131d2a0(__int64 a1);
@@ -214,7 +215,8 @@ __int64 game_gmap_131d2a0(__int64 a1)
                   if (v47 != 0) {
                     v48 = GameRoutine_adf880(v47, 0);
                     if (v48 != nullptr && *v48 != 0) {
-                      v49 = (const char*)Registration_a4db40();
+                      v49 = (const char*)Registration_a4db40(
+                          *msg_MessageManager_instance__ptr[0], (_BYTE*)v48);
                     }
                     else {
                       v49 = *msg_MessageManager_empty_text__ptr;

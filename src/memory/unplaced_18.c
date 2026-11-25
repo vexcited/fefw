@@ -15,7 +15,7 @@ __int64 GameRoutine_d2d5e0(signed int);
 __int64 UnitUtil_12122d0(__int64*);
 __int64 game_GameVariableTable_Find(_QWORD*, unsigned __int64*);
 __int64 game_HashString(__int64 result);
-bool llvm_libcxx_21_libcxx_include___memory_d2d4e0();
+bool llvm_libcxx_21_libcxx_include___memory_d2d4e0(__int64 a1);
 extern _UNKNOWN* GameData_212c188;
 extern _UNKNOWN* GameData_212c540;
 extern _UNKNOWN* GameData_212c958;
@@ -364,7 +364,9 @@ __int64 memory_d196c0(__int64 result, char a2, float a3)
     __asm__ volatile("" ::"r"(v8));
   }
   if ((v8 & 0x100000000LL) == 0) {
-    result = ((__int64 (*)())llvm_libcxx_21_libcxx_include___memory_d2d4e0)(),
+    result = ((__int64 (*)(__int64))
+                  llvm_libcxx_21_libcxx_include___memory_d2d4e0)(
+        *(unsigned int*)(*(_QWORD*)(v3 + 344) + 360)),
     v12 = COERCE_AS(__typeof__(v12),
                     PSEUDO_REGISTER(unsigned long long, "x1", "=r")),
     v13 = COERCE_AS(__typeof__(v13),

@@ -2261,7 +2261,7 @@ __int64 GameRoutine_102dee0_alt1(__int64, __int64,
 __int64 GameRoutine_103a200_alt1(__int64 result,
                                  __int64) __asm__("GameRoutine_103a200");
 __int64 GameRoutine_112180_alt1(__int64, __int64) __asm__("GameRoutine_112180");
-__int64 dtAlloc();
+__int64 dtAlloc(__int64, int);
 __int64 dtAllocNavMesh();
 __int64 dtAllocNavMeshQuery();
 __int64 dtAllocTileCache();
@@ -5974,7 +5974,7 @@ __int64 GameHr_fe79c0(__int64 result)
                   break;
                 }
                 v20 = v16;
-                v21 = dtAlloc();
+                v21 = dtAlloc(v20, 0);
                 if (v21 == 0) {
                   break;
                 }

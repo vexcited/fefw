@@ -594,7 +594,7 @@ __int64 ui_LayoutAccessor_FindPartsLayout(__int64*, __int64);
 __int64 wld_Crc32(int, unsigned __int8*, unsigned __int64);
 bool GameRoutine_811200(const char*);
 bool GameRoutine_d1cdc0(__int64, unsigned int);
-bool llvm_libcxx_21_libcxx_include___memory_d2d4e0();
+bool llvm_libcxx_21_libcxx_include___memory_d2d4e0(__int64 a1);
 char* GameRoutine_874b20(unsigned __int8, unsigned __int8, int, int);
 char* game_util_Format(const char*, ...);
 extern _DWORD* GameData_212d168;
@@ -6684,7 +6684,8 @@ LABEL_126:
           v94 = z_;
         }
         if (*(float*)&v94 == 0x0.0p+0f &&
-            llvm_libcxx_21_libcxx_include___memory_d2d4e0()) {
+            llvm_libcxx_21_libcxx_include___memory_d2d4e0(
+                *(unsigned int*)v109)) {
           v111 = (_QWORD*)(v109 + 16);
           v112 = *(unsigned __int8*)(v108 + 88);
           *(_DWORD*)(v108 + 24) = *(_DWORD*)v109;

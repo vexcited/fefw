@@ -12,7 +12,7 @@ __int64 GameRoutine_f71d40(__int64, __int64, __int64);
 __int64 game_hub_f71fc0(__int64, __int64, __int64);
 __int64 std___1___shared_weak_count___release_weak(__int64);
 __int64 std___1___shared_weak_count_lock(__int64);
-bool llvm_libcxx_21_libcxx_include___memory_d2d4e0();
+bool llvm_libcxx_21_libcxx_include___memory_d2d4e0(__int64 a1);
 extern __int64* GameData_212ebb0[7];
 extern __int64 GameData_212dbb8[9];
 void GameHr_cb2900(__int64, __int64*);
@@ -48,7 +48,9 @@ __int64 game_hub_cac090(_QWORD* a1)
     v3 = std___1___shared_weak_count_lock(result);
     v4 = (float32x4_t*)a1[24];
     v5 = *(float*)(a1[3] + 548LL);
-    result = ((__int64 (*)())llvm_libcxx_21_libcxx_include___memory_d2d4e0)();
+    result = ((__int64 (*)(__int64))
+                  llvm_libcxx_21_libcxx_include___memory_d2d4e0)(
+        *(unsigned int*)(*(_QWORD*)(*(_QWORD*)(a1[3] + 8) + 344) + 360));
     LANES128(v6).n128_u32[0] = 0;
     LANES128(v6).n128_u64[1] = 0;
     v7 = v5 * 0x1.3333340000000p-1f;

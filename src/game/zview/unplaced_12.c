@@ -27,7 +27,7 @@ bool game_zview_d16b40(float, double, double, double, double, double,
 bool game_zview_d17160(float, __int64, __int64, float32x4_t*, float32x4_t*);
 __int64 std___1___shared_weak_count___release_weak(__int64);
 bool CharacterController_d42740(_QWORD*, float32x4_t**, int*);
-bool llvm_libcxx_21_libcxx_include___memory_d2d4e0();
+bool llvm_libcxx_21_libcxx_include___memory_d2d4e0(__int64 a1);
 extern _UNKNOWN* GameData_212c188;
 extern _UNKNOWN* GameData_212c190;
 extern _UNKNOWN GameData_21a60e8;
@@ -878,7 +878,8 @@ LABEL_24:
           v59 = *(_QWORD*)(v58 + 468);
         }
         if ((v59 & 0x100000000LL) == 0) {
-          if (llvm_libcxx_21_libcxx_include___memory_d2d4e0()) {
+          if (llvm_libcxx_21_libcxx_include___memory_d2d4e0(
+                  *(unsigned int*)(v57 + 360))) {
             LODWORD(v59) = 1257611790;
           }
           else if ((*(_BYTE*)(*(_QWORD*)(v55 + 16) + 384LL) & 0x10) != 0) {

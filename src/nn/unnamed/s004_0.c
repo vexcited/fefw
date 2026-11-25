@@ -346,7 +346,7 @@ double SdkRoutine_6a1420_alt1(__int64, __int64, int);
 double nn_685160(__int64, unsigned __int8);
 double nn_695b00(__int64, unsigned __int64, unsigned int);
 double nn_69d8e0(__int64, int);
-void nn_658370();
+void nn_658370(__int64, __int64);
 void SdkHr_665b40(__int64 a1, unsigned int* a2, __int64 a3);
 
 __int64 SdkHr_6649b0(__int64 result)
@@ -1611,7 +1611,7 @@ void SdkHr_665b40(__int64 a1, unsigned int* a2, __int64 a3)
       a2 += 4;
       continue;
     case 0x68u:
-      nn_658370();
+      nn_658370(a1, *((_QWORD*)a2 + 1));
       a2 += 4;
       continue;
     case 0x69u:

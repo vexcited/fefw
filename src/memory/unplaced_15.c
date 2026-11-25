@@ -4,7 +4,7 @@
 
 __attribute__((swiftcall)) void
 CmdBtlCameraCutSuccessCapture_f43790(PSEUDO_X8, float32x4_t**);
-__attribute__((swiftcall)) void game_hub_e1b4d0(PSEUDO_X8, _QWORD);
+__attribute__((swiftcall)) void game_hub_e1b4d0(PSEUDO_X8, _QWORD, int);
 __attribute__((swiftcall)) void game_hub_e1bfe0(PSEUDO_X8, __int64, __int64,
                                                 __int64*);
 __int64 Manager_d55430();
@@ -17,7 +17,7 @@ __int64 snd_play_ff2d0(__int64, __int64, __int64, unsigned int, unsigned int,
                        int, float, float);
 __int64 std___1___shared_weak_count___release_weak(__int64);
 __int64 std___1___shared_weak_count_lock(__int64);
-bool llvm_libcxx_21_libcxx_include___memory_d2d4e0();
+bool llvm_libcxx_21_libcxx_include___memory_d2d4e0(__int64 a1);
 double snd_Fade_Fade_10c830(__int64, float);
 extern _UNKNOWN* GameData_212c540;
 extern _UNKNOWN GameData_21a6130;
@@ -215,10 +215,12 @@ void memory_e20800(__int64 a1, __int64* a2)
       *(_QWORD*)&GameData_21a6120 = *(_QWORD*)GameData_212c540;
       *((_QWORD*)&GameData_21a6120 + 1) = v72;
       __cxa_guard_release((__int64)&GameData_21a6130),
-          v29 = COERCE_AS(__typeof__(v29), PSEUDO_REGISTER(__n128, "v0", "=w"));
+          v29 = COERCE_AS(__typeof__(v29), PSEUDO_REGISTER(__n128, "v0", "=w")),
+          v11 = COERCE_AS(__typeof__(v11),
+                          PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
     }
   }
-  game_hub_e1b4d0((void*)(f_.v80), v11),
+  game_hub_e1b4d0((void*)(f_.v80), v11, 13),
       v29 = COERCE_AS(__typeof__(v29), PSEUDO_REGISTER(__n128, "v0", "=w"));
   game_hub_e1bfe0((void*)(&f_.v78), v12, (__int64)f_.v80,
                   (__int64*)&GameData_21a6120),
@@ -279,7 +281,8 @@ void memory_e20800(__int64 a1, __int64* a2)
       v22 = v20;
       if (v21 != 0) {
         v23 = *(float*)(*(_QWORD*)(v21 + 24) + 548LL);
-        v24 = llvm_libcxx_21_libcxx_include___memory_d2d4e0(),
+        v24 = llvm_libcxx_21_libcxx_include___memory_d2d4e0(*(unsigned int*)(
+            *(_QWORD*)(*(_QWORD*)(*(_QWORD*)(v21 + 24) + 8) + 344) + 360)),
         v29 = COERCE_AS(__typeof__(v29), PSEUDO_REGISTER(__n128, "v0", "=w"));
         LANES128(v25).n128_u32[0] = 0;
         LANES128(v25).n128_u64[1] = 0;
@@ -631,7 +634,7 @@ void memory_f433d0(__int64 a1)
       goto LABEL_18;
     }
     v20 = LANES128(v10).n128_f32[0] + v18;
-    if (v20 <= LANES128(f_.v36).n128_f32[0]) {
+    if (!(v20 > LANES128(f_.v36).n128_f32[0])) {
       goto LABEL_18;
     }
   LABEL_16:
@@ -647,7 +650,7 @@ LABEL_18:
   v21 = fabsf(v14 * fabsf(LANES128(v17).n128_f32[1]));
   if (v19 > LANES128(f_.v36).n128_f32[1]) {
     v19 = v19 - v21;
-    if (v19 >= LANES128(f_.v36).n128_f32[1]) {
+    if (!(v19 < LANES128(f_.v36).n128_f32[1])) {
       goto LABEL_24;
     }
   LABEL_23:
@@ -662,20 +665,20 @@ LABEL_18:
   }
 LABEL_24:
   v22 = fabsf(v14 * fabsf(LANES128(v17).n128_f32[2]));
-  if (LANES128(v10).n128_f32[2] <= LANES128(f_.v36).n128_f32[2]) {
-    if (LANES128(v10).n128_f32[2] >= LANES128(f_.v36).n128_f32[2]) {
+  if (!(LANES128(v10).n128_f32[2] > LANES128(f_.v36).n128_f32[2])) {
+    if (!(LANES128(v10).n128_f32[2] < LANES128(f_.v36).n128_f32[2])) {
       goto LABEL_30;
     }
     LANES128(v10).n128_f32[0] = LANES128(v10).n128_f32[2] + v22;
-    if ((float)(LANES128(v10).n128_f32[2] + v22) <=
-        LANES128(f_.v36).n128_f32[2]) {
+    if (!((float)(LANES128(v10).n128_f32[2] + v22) >
+          LANES128(f_.v36).n128_f32[2])) {
       goto LABEL_30;
     }
   }
   else {
     LANES128(v10).n128_f32[0] = LANES128(v10).n128_f32[2] - v22;
-    if ((float)(LANES128(v10).n128_f32[2] - v22) >=
-        LANES128(f_.v36).n128_f32[2]) {
+    if (!((float)(LANES128(v10).n128_f32[2] - v22) <
+          LANES128(f_.v36).n128_f32[2])) {
       goto LABEL_30;
     }
   }

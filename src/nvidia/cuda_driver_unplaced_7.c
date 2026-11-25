@@ -226,7 +226,10 @@ unsigned int cuda_driver_12ea30(int*);
 unsigned __int8 cuda_driver_87f00(unsigned int*);
 unsigned __int8 cuda_driver_f7b60(int*, __int64);
 unsigned __int8 cuda_driver_faa80(__int64, int*);
-unsigned __int8 cuda_driver_misc_helpers_de860();
+unsigned __int8 cuda_driver_misc_helpers_de860(__int64);
+extern const char CudaDriverData_1128de6[];
+extern const char CudaDriverData_112d966[];
+extern const char CudaDriverData_1119368[];
 unsigned __int8 cuda_driver_predicates_9ae80();
 unsigned __int8 cuda_driver_predicates_f7a00(int*);
 double pow_plt(double, double, double);
@@ -2338,11 +2341,14 @@ __int64 cuda_driver_101570()
                                  v2);
     if (v4 == 0) {
       *((_BYTE*)&CudaDriverRoutine_4e68 + (_QWORD)v0) =
-          cuda_driver_misc_helpers_de860();
-      *((_BYTE*)&CudaDriverRoutine_4e68 + (_QWORD)v0) =
-          cuda_driver_misc_helpers_de860();
+          cuda_driver_misc_helpers_de860(
+              (__int64)CudaDriverData_1128de6);
+      *((_BYTE*)&CudaDriverRoutine_4e68 + (_QWORD)v0 + 1) =
+          cuda_driver_misc_helpers_de860(
+              (__int64)CudaDriverData_112d966);
       *((_BYTE*)&CudaDriverRoutine_4e68 + (_QWORD)v0 + 2) =
-          cuda_driver_misc_helpers_de860();
+          cuda_driver_misc_helpers_de860(
+              (__int64)CudaDriverData_1119368);
       *(_DWORD*)((char*)&CudaDriverRoutine_4e48 + (_QWORD)v0) = 0;
       *(_QWORD*)((char*)&CudaDriverRoutine_4e80 + (_QWORD)v0) = 0;
       return v4;

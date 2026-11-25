@@ -14,7 +14,7 @@ __int64 GameRoutine_ce6740(__int64, __int64);
 __int64 GameRoutine_ecb40(void);
 __int64 fs_Manager_createFileAsync_fs_File(__int64, __int64);
 __int64 fw_memory_HeapManager_Allocate(__int64, __int64, __int64, unsigned int);
-__int64 game_cutscene_17ffbf0();
+__int64 game_cutscene_17ffbf0(__int64, unsigned __int64);
 __int64 nn_oe_SetCpuBoostMode(_QWORD);
 __int64 nn_os_AcquireReadLock(__int64);
 __int64 nn_os_ClearEvent(__int64);
@@ -1127,7 +1127,12 @@ void game_cutscene_181a480(__int64 a1, char a2)
     }
     GameData_21c9699 = 1;
   }
-  if ((*(_BYTE*)(a1 + 40) & 1) != 0 || (game_cutscene_17ffbf0() & 1) == 0) {
+  if ((*(_BYTE*)(a1 + 40) & 1) != 0 ||
+      (game_cutscene_17ffbf0(
+           (*(_BYTE*)(a1 + 8) & 1) == 0 ? a1 + 9 : *(_QWORD*)(a1 + 24),
+           (*(_BYTE*)(a1 + 8) & 1) == 0 ? *(unsigned __int8*)(a1 + 8) >> 1
+                                        : *(_QWORD*)(a1 + 16)) &
+       1) == 0) {
     *(_BYTE*)(a1 + 43) = 1;
   LABEL_32:
     if (GameData_21c9699 == 1) {
