@@ -2,7 +2,7 @@
 
 #pragma GCC visibility push(hidden)
 
-__int64 Message_16f9b50(__int64);
+__int64 Message_16f9b50(__int64, __int64*, __int64*);
 __int64 strlen(_QWORD);
 extern char* GameData_2036780[4];
 __int64 game_facility_anonymous_13e2b70(__int64 result);
@@ -17,6 +17,8 @@ __int64 game_facility_anonymous_13e2b70(__int64 result)
   unsigned __int8 v6;
   __int64 v7;
   const char* v8;
+  __int64 v9[2];
+  __int64 v10[2];
 
   if (*(_QWORD*)(result + 240) == 0) {
     v1 = *(_BYTE*)(result + 225);
@@ -45,8 +47,11 @@ __int64 game_facility_anonymous_13e2b70(__int64 result)
     v7 = result;
     v8 = "MID_TheaterWatch_Bad_Message";
   LABEL_14:
-    strlen(v8);
-    return Message_16f9b50(v7);
+    v9[0] = (__int64)v8;
+    v9[1] = strlen(v8);
+    v10[0] = (__int64)"";
+    v10[1] = 0;
+    return Message_16f9b50(v7, v9, v10);
   }
   return result;
 }

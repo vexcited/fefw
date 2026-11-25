@@ -61,7 +61,7 @@ __int64 fw_memory_HeapManager_Allocate_alt1(
     unsigned int) __asm__("fw_memory_HeapManager_Allocate");
 __int64 game_UnitPool_GetFirst(int*);
 __int64 game_gameui_Util_EachItemFromTransporter(__int64);
-__int64 game_gameui_anonymous_15d2540(__int64*, _WORD*);
+__int64 game_gameui_anonymous_15d2540(__int64*, _WORD*, __int64);
 __int64 game_gameui_anonymous_15d2540_alt1(_QWORD, _QWORD, _QWORD) __asm__(
     "game_gameui_anonymous_15d2540");
 __int64 game_menu_BasicMenu_Unknown96(__int64 result);
@@ -422,7 +422,9 @@ __n128 TransporterPoolMenu_Unknown96(__int64 a1)
       if (v12 != 0) {
         v13 = v12;
         if (v18[0] != nullptr) {
-          game_gameui_anonymous_15d2540(v18[0], v8),
+          game_gameui_anonymous_15d2540(
+              v18[0], v8,
+              *(_BYTE*)(v1 + 389) != 0 ? *(_QWORD*)(v1 + 360) : 0LL),
               result = COERCE_AS(__typeof__(result),
                                  PSEUDO_REGISTER(__n128, "v0", "=w"));
         }
@@ -475,7 +477,10 @@ __int64 TransporterPoolMenu_Unknown102(__int64 a1)
     if (v5 != 0) {
       v6 = v5;
       if (v7_.v7 != nullptr) {
-        game_gameui_anonymous_15d2540(v7_.v7, v2);
+        game_gameui_anonymous_15d2540(v7_.v7, v2,
+                                      *(_BYTE*)(v1 + 389) != 0
+                                          ? *(_QWORD*)(v1 + 360)
+                                          : 0LL);
       }
       if (atomic_fetch_add((atomic_ullong* volatile)(v6 + 8),
                            0xFFFFFFFFFFFFFFFFLL) == 0) {

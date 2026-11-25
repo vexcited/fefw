@@ -27166,7 +27166,7 @@ ffee0,324,verified,src/nn/fs/unplaced.c,nn_fs_GetAndClearMemoryReportInfo
 697a00,812,verified,src/nn/unplaced_4.c,nn_697a00
 697e10,808,verified,src/nn/unplaced_4.c,nn_697e10
 698210,808,verified,src/nn/unplaced_4.c,nn_698210
-698610,1000,verified,src/nn/unplaced_8.c,nn_698610
+698610,1032,disputed,src/nn/unplaced_8.c,nn_698610
 698a50,208,verified,src/nn/unnamed/s004_1.c,SdkHr_698a50
 698b20,196,verified,src/nn/unnamed/s004_1.c,SdkHr_698b20
 698bf0,504,verified,src/nn/unnamed/s004_1.c,SdkHr_698bf0

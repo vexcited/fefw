@@ -106,14 +106,14 @@ __int64 cuda_driver_5a700(__int64*, char, _BYTE*, unsigned int, unsigned int);
 __int64 cuda_driver_5e7e0(__int64);
 __int64 cuda_driver_c36c0(__int64);
 __int64 cuda_driver_d3530(_QWORD*, __int64, __int64, __int64, __int64, __int64,
-                          __int64);
+                          __int64, __int64);
 __int64 cuda_driver_d8220(_QWORD*, __int64, __int64, __int64, __int64, __int64);
 __int64 cuda_driver_d82e0(_QWORD*, __int64, __int64, __int64, __int64, __int64,
                           __int64, char);
 __int64 cuda_driver_d8550(_QWORD*, __int64, __int64, __int64, __int64, __int64,
-                          __int64);
+                          __int64, __int64);
 __int64 cuda_driver_d8770(_QWORD*, __int64, __int64, __int64, __int64, __int64,
-                          __int64);
+                          __int64, __int64);
 __int64 cuda_driver_misc_helpers_4bb0(__int64 result);
 __int64 cuda_driver_misc_helpers_ded50(__int64, __int64*, unsigned int);
 __int64 cuda_driver_misc_helpers_deeb0(__int64, char);
@@ -472,7 +472,7 @@ __int64 nvidia_31870(_QWORD* a1, __int64 a2, __int64 a3, __int64 a4,
       if ((unsigned int)CudaDriverRoutine_2b880(&v23, a2, 8, a3, 0, v14) != 0) {
         return 1;
       }
-      result = cuda_driver_d8550(a1, v23, a3, 0, 0, v14, (__int64)(v15 + 2)),
+      result = cuda_driver_d8550(a1, v23, a3, 0, 0, v14, (__int64)(v15 + 2), 2),
       v18 = COERCE_AS(__typeof__(v18),
                       PSEUDO_REGISTER(unsigned long long, "x3", "=r")),
       v19 = COERCE_AS(__typeof__(v19),
@@ -494,7 +494,7 @@ __int64 nvidia_31870(_QWORD* a1, __int64 a2, __int64 a3, __int64 a4,
       if ((unsigned int)CudaDriverRoutine_2b880(&v23, a2, 9, a3, 0, v14) != 0) {
         return 1;
       }
-      result = cuda_driver_d8770(a1, v23, a3, 0, 0, v14, (__int64)(v15 + 2)),
+      result = cuda_driver_d8770(a1, v23, a3, 0, 0, v14, (__int64)(v15 + 2), 2),
       v18 = COERCE_AS(__typeof__(v18),
                       PSEUDO_REGISTER(unsigned long long, "x3", "=r")),
       v19 = COERCE_AS(__typeof__(v19),
@@ -534,7 +534,7 @@ __int64 nvidia_31870(_QWORD* a1, __int64 a2, __int64 a3, __int64 a4,
             0) {
           return 1;
         }
-        result = cuda_driver_d3530(&v23, v22, a3, 0, 0, v14, v17),
+        result = cuda_driver_d3530(&v23, v22, a3, 0, 0, v14, v17, 2),
         v18 = COERCE_AS(__typeof__(v18),
                         PSEUDO_REGISTER(unsigned long long, "x3", "=r")),
         v19 = COERCE_AS(__typeof__(v19),

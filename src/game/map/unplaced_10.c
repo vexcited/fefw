@@ -103,7 +103,7 @@ bool TargetEnumerator_780410(_BYTE*, __int64, __int16, unsigned int,
 bool game_HasActiveSkill_843420(_DWORD*, __int64);
 bool game_SkillKey_IsUsable(_DWORD*);
 bool game_Unit_CanSwitchMount(__int64);
-char* GameHr_6fb960(__int64);
+char* GameHr_6fb960(__int64, __int64);
 char* HistoryLogInfo_6fb810(__int64);
 char* game_Unit_GetJobName(_QWORD*);
 char* game_map_74efc0(char*, char*, char*);
@@ -323,7 +323,7 @@ void __attribute__((noreturn)) GameRoutine_f15920();
 void __attribute__((noreturn)) String_60a1d0();
 void __attribute__((noreturn)) String_60a250(const char*);
 void game_map_MapDrawConst_AddCellPlaneMask(__int64, float32x4_t*, int, int,
-                                            int);
+                                            int, __int64);
 void game_map_f1d220(__int64 a1);
 void game_map_f54ba0(__int64* a1, unsigned __int64 a2);
 void game_map_11408e0(__int64 a1, int a2, __int64* a3);
@@ -3865,7 +3865,8 @@ void game_map_f1d220(__int64 a1)
   LANES128(v79_.v79[0]).n128_u64[0] =
       (unsigned __int64)game_map_CursorUnitMeshData_vtable;
   v79_.v97 = 1;
-  game_map_MapDrawConst_AddCellPlaneMask(a1, v79_.v79, v4, v5, v6);
+  game_map_MapDrawConst_AddCellPlaneMask(a1, v79_.v79, v4, v5, v6,
+                                         (__int64)GameData_212c958);
   v8 = (*(unsigned __int64 (**)(__int64))((char*)((char*)0x20LL) +
                                           LANES128(v79_.v79[0]).n128_u64[0]))(
       (__int64)v79_.v79);
@@ -6146,7 +6147,7 @@ __int64 game_map_17cece0(__int64 a1, __int64 a2, char a3, char a4, __int64 a5)
   *(_BYTE*)(a1 + 116) = a3;
   if ((a4 & 1) != 0) {
     if (a5 != 0) {
-      v7 = GameHr_6fb960(a2);
+      v7 = GameHr_6fb960(a2, a5);
       if (v7 == nullptr) {
         goto LABEL_14;
       }
@@ -6189,7 +6190,7 @@ __int64 game_map_17cece0(__int64 a1, __int64 a2, char a3, char a4, __int64 a5)
     v8 = "T_Txt_L";
   }
   if (a5 != 0) {
-    v9 = GameHr_6fb960(a2);
+    v9 = GameHr_6fb960(a2, a5);
     if (v9 == nullptr) {
       goto LABEL_24;
     }

@@ -205,7 +205,7 @@ __int64 Crc32List_11e2f0(__int64 a1, __int64* a2, __int64 a3);
 __int64 Crc32List_11e370(__int64 a1, __int64* a2);
 __int64 Crc32List_112550(__int64, __int64, __int64, unsigned int, unsigned int);
 __int64 GameHr_127e30(__int64, __int64, __int64, __int64, __int64, __int64,
-                      __int64);
+                      __int64, __int64);
 __int64 GameHr_128110(__int64, __int64, __int64, __int64, __int64, __int64,
                       __int64, __int64, __int64);
 __int64 GameHr_132040(__int64, __int64, const char*, __int64);
@@ -231,7 +231,7 @@ void nn_diag_detail_AbortImpl_1a0a590_alt1() __asm__(
 __int64 Crc32List_116570(__int64 a1, __int64 a2, const char* a3, __int64 a4);
 __int64 Crc32List_118060(__int64 a1, __int64 a2, const char* a3, __int64 a4);
 __int64 Crc32List_119920(__int64 a1, __int64 a2, __int64 a3, __int64 a4,
-                         __int64 a5, __int64 a6, __int64 a7);
+                         __int64 a5, __int64 a6, __int64 a7, __int64 a8);
 __int64 Crc32List_119a10(__int64 a1, __int64 a2, __int64 a3, __int64 a4,
                          const char* a5, __int64 a6, __int64 a7, __int64 a8,
                          __int64 a9);
@@ -1728,7 +1728,7 @@ __int64 Crc32List_119830(__int64 a1, __int64 a2, __int64 a3, __int64 a4,
 }
 
 __int64 Crc32List_119920(__int64 a1, __int64 a2, __int64 a3, __int64 a4,
-                         __int64 a5, __int64 a6, __int64 a7)
+                         __int64 a5, __int64 a6, __int64 a7, __int64 a8)
 {
   unsigned int v14;
   unsigned int v15;
@@ -1753,7 +1753,7 @@ __int64 Crc32List_119920(__int64 a1, __int64 a2, __int64 a3, __int64 a4,
   *(_WORD*)(v17 + 2 * v16) = -1;
   v19 = *(_QWORD*)(a1 + 16) + 6120LL * v18;
   nn_os_UnlockMutex_alt1(a1 + 40);
-  GameHr_127e30(v19, a2, a3, a4, a5, a6, a7);
+  GameHr_127e30(v19, a2, a3, a4, a5, a6, a7, a8);
   return v19;
 }
 

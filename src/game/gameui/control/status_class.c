@@ -83,7 +83,7 @@ __int64 StatusClass_189dc40(__int64 result, _QWORD* a2, int a3, unsigned int a4,
                             char a5, float a6);
 __int64
 ControlCreator_13633c0_alt1(__int64 result) __asm__("ControlCreator_13633c0");
-__int64 GameHr_189d910(__int64 result, __int64, int, int, int);
+__int64 GameHr_189d910(__int64 result, __int64, int, int, int, char);
 __int64 GameRoutine_19a8d80(__int64, __int64, char, unsigned int*, __int64, int,
                             char, char, __int16);
 __int64 JobIcon_19a8c50(__int64, __int64);
@@ -674,7 +674,7 @@ LABEL_92:
   v72 = 0;
   v76 = 0;
 LABEL_93:
-  GameHr_189d910((__int64)a1, (__int64)a2, v72, v75, v76);
+  GameHr_189d910((__int64)a1, (__int64)a2, v72, v75, v76, a7 & 1);
   GameRoutine_1581fc0((__int64)(a1 + 11), 0, a2);
   v77 = ui_LayoutAccessor_FindAlignment_alt1(a1 + 11, (__int64)"A_Class");
   if (v77 != 0) {

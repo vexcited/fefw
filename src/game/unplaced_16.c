@@ -629,7 +629,7 @@ void FieldUnit_1015950(float32x4_t*);
 void GameHr_1226120(__int64, __int64);
 void GameHr_127f300(_QWORD*, unsigned __int64*, __int64);
 void GameHr_16253e0();
-void GameHr_9b2000(_QWORD*, __int64*);
+void GameHr_9b2000(_QWORD*, __int64*, __int64);
 void GameHr_bbf3a0(__int64, __int64);
 void GameHr_efd1d0(__int64, __int64);
 void GameRoutine_112e140(unsigned __int8*);
@@ -6445,7 +6445,7 @@ LABEL_174:
     v148_.v148 = GameData_1fb3508;
     v148_.v149 = &GameData_21f61c0;
     v148_.v150 = (__int64*)&v148_.v148;
-    GameHr_9b2000(&GameData_21f61c0, v151_.v151);
+    GameHr_9b2000(&GameData_21f61c0, v151_.v151, (__int64)&v148_.v148);
     if (v148_.v150 == (__int64*)&v148_.v148) {
       v136 = 32;
     LABEL_271:

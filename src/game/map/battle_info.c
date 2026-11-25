@@ -120,7 +120,7 @@ __int64 __cxa_guard_release(_QWORD);
 __int64 fw_memory_HeapManager_Allocate(__int64, __int64, __int64, unsigned int);
 __int64 game_8007e0(__int64*, __int64, char);
 __int64 game_8c4fc0(__int64 result, __int64);
-__int64 game_97ec90(__int64);
+__int64 game_97ec90(__int64, __int64*);
 __int64 game_GameVariableTable_Find(_QWORD*, unsigned __int64*);
 __int64 game_HasSkill_alt1(_QWORD*, unsigned int*) __asm__("game_HasSkill");
 __int64 game_map_BattleSide_CalculateTerrain(__int64 result);
@@ -1895,7 +1895,7 @@ __int64 BattleInfo_796f20(__int64 a1, __int64 a2)
         v18 = *(_QWORD*)(v6 + 392);
         v19[0] = v6;
         v19[1] = v18;
-        if ((game_97ec90(a2) & 1) == 0) {
+        if ((game_97ec90(a2, (__int64*)v19) & 1) == 0) {
           return 0;
         }
       }

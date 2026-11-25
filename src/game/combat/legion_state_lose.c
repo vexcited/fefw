@@ -3,7 +3,7 @@
 #pragma GCC visibility push(hidden)
 
 _QWORD* CharacterDie_10ba960(_QWORD* result);
-__int64 GameHr_e41cc0(__int64);
+__int64 GameHr_e41cc0(__int64, int);
 __int64 StateMachines_e32520(__int64, __int64);
 __int64 fw_memory_HeapManager_Allocate(__int64, __int64, __int64, unsigned int);
 __int64 game_character_1084940(__int64 result, char, float);
@@ -575,7 +575,7 @@ _QWORD* LegionStateLose_Unknown3(__int64 a1)
   }
   v8[18] = v11;
   if (*(_BYTE*)(*(_QWORD*)(*(_QWORD*)(v9 + 64) + 8LL) + 110LL) != 1) {
-    v53 = GameHr_e41cc0(*(_QWORD*)(v9 + 104));
+    v53 = GameHr_e41cc0(*(_QWORD*)(v9 + 104), (int)0xFB5F83E2);
     v54 = *(_QWORD*)(v9 + 104);
     v55 = v53;
     if (GameHr_e412a0(v54, v53)) {

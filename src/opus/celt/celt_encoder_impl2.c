@@ -75,7 +75,7 @@ __int64 run_prefilter(_QWORD* a1, __int64 a2, __int64 a3, int a4, int a5,
                       int a11, __int64 a12);
 __int64 tf_analysis(__int64 a1, int a2, int a3, __int64 a4, int a5, __int64 a6,
                     int a7, unsigned int a8, __int16 a9, int a10, _DWORD* a11);
-__int64 opus_celt_3aa60(__int64, _WORD*, int, int);
+__int64 opus_celt_3aa60(__int64, _WORD*, int, int, unsigned int);
 __int64 opus_celt_3c380(__int64, int, unsigned int, int, _DWORD*, unsigned int,
                         int);
 unsigned int MovieRoutine_30f00_alt1(__int64, _WORD*, int, int,
@@ -4634,7 +4634,8 @@ LABEL_12:
     v43 = &v80_.v80[-((v42 + 15) & 0xFFFFFFFFFFFFFFF0LL)];
     memset_plt(v43, 0, v42);
     v44 = v80_.v97;
-    opus_celt_3aa60((__int64)v101, v43, v41, v80_.v88);
+    opus_celt_3aa60((__int64)v101, v43, v41, v80_.v88,
+                    *((_DWORD*)v44 + 19));
     v45 = v80_.v96;
     MovieRoutine_3b720((__int64)(v43 + 512), (__int64)v43, v80_.v96, 979,
                        &v100);

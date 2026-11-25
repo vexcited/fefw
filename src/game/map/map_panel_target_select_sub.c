@@ -46,7 +46,8 @@ _QWORD* game_map_DeployData_TargetEnumerateSubTarget_alt1(
     unsigned int) __asm__("game_map_DeployData_TargetEnumerateSubTarget");
 __int64* MapPanelTargetSelect_f17c00_alt1(__int64**, __int64*) __asm__(
     "MapPanelTargetSelect_f17c00");
-__int64 GameHr_fcacb0(__int64, __int64, __int64, __int64, __int64, __int16);
+__int64 GameHr_fcacb0(__int64, __int64, __int64, __int64, __int64, __int16,
+                      __int64);
 __int64 GameRoutine_60a020_alt1(__int64,
                                 const char*) __asm__("GameRoutine_60a020");
 __int64 GameRoutine_f172c0_alt1(float, __int64, _QWORD*,
@@ -275,7 +276,8 @@ LABEL_32:
     }
     (*(void (**)(__int64))(*v57_.v58 + v28))((__int64)v57_.v58);
   LABEL_49:
-    GameHr_fcacb0(a1, (__int64)v59_.v59, 1, v24, v25, v27);
+    GameHr_fcacb0(a1, (__int64)v59_.v59, 1, v24, v25, v27,
+                  (__int64)GameData_212c958);
     if ((atomic_load_explicit((atomic_uchar* volatile)&GameData_21a6130,
                               memory_order_acquire) &
          1) == 0 &&

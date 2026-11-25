@@ -43,7 +43,7 @@ __int64 game_facility_anonymous_IndividualListMenu_SortAndFilter(__int64 a1);
 __int64 LayoutAccessor_155e830(__int64 result, char);
 __int64 LayoutAccessor_1562cf0(__int64 result, const char*);
 __int64 game_facility_anonymous_1935e90(__int64, char);
-__int64 game_gameui_Util_SetUnitInfoMasteryLevel(_QWORD*);
+__int64 game_gameui_Util_SetUnitInfoMasteryLevel(_QWORD*, __int64);
 extern __int64* GameData_212e008[9];
 extern __int64 GameData_21175a8;
 __int64 IndividualListMenu_1935790(__int64 a1);
@@ -172,6 +172,7 @@ __int64 IndividualListMenu_1935790(__int64 a1)
     __int64 v11;
     __int64 v12;
   } v11_;
+  __int64 v13;
 
   LayoutAccessor_1560070((void*)(&v11_.v11),
                          (__int64*)(*(_QWORD*)(a1 + 1056) + 200LL),
@@ -207,7 +208,15 @@ __int64 IndividualListMenu_1935790(__int64 a1)
     atomic_fetch_add_explicit((atomic_ullong* volatile)(v2 + 16), 1u,
                               memory_order_relaxed);
   }
-  game_gameui_Util_SetUnitInfoMasteryLevel(v10);
+  v13 = 0;
+  if ((unsigned __int64)*(int*)(v6 + 40) <
+      (unsigned __int64)((*(_QWORD*)(*GameData_212dcd0 + 56) -
+                          *(_QWORD*)(*GameData_212dcd0 + 48)) >>
+                         3)) {
+    v13 = *(_QWORD*)(*(_QWORD*)(*GameData_212dcd0 + 48) +
+                     8LL * *(int*)(v6 + 40));
+  }
+  game_gameui_Util_SetUnitInfoMasteryLevel(v10, v13);
   if (v2 != 0) {
     std___1___shared_weak_count___release_weak(v2);
     atomic_fetch_add_explicit((atomic_ullong* volatile)(v2 + 16), 1u,

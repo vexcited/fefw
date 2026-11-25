@@ -57,7 +57,7 @@ __int64 ui_LayoutAccessor_FindAlignment(__int64*, __int64);
 __int64 ui_LayoutAccessor_FindPane(__int64*, __int64);
 __int64 ui_LayoutAccessor_SetPaneSize(__int64 result, __int64, float, float);
 const char* Pane_58fac0(__int64, const char*);
-float game_156c160(__int64);
+float game_156c160(__int64, char);
 void GameRoutine_156c910_alt1(__int64, const char*, int,
                               ...) __asm__("GameRoutine_156c910");
 __int64 GameHr_15940f0(__int64 a1, unsigned int a2, unsigned int a3);
@@ -560,7 +560,7 @@ __int64 GameHr_15940f0(__int64 a1, unsigned int a2, unsigned int a3)
             }
           }
           v19 = ui_LayoutAccessor_FindPane(v7, (__int64)"A_Txt");
-          v20 = game_156c160(v19);
+          v20 = game_156c160(v19, 0);
           v21 = *(float*)(v14 + 80);
           v22 = *(_DWORD*)(v14 + 84);
           v23 = v20;

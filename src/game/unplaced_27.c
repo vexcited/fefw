@@ -7,7 +7,7 @@ __int64* game_8aef60(__int64, unsigned __int16*);
 __int64 Dir_70df40(__int16*, __int16*);
 __int64 GameHr_fbcd00(unsigned int);
 __int64 GameRoutine_715440();
-__int64 Message_16f9b50(__int64);
+__int64 Message_16f9b50(__int64, __int64*, __int64*);
 __int64 fw_memory_HeapManager_Allocate(__int64, __int64, __int64, unsigned int);
 __int64 fw_text_String_CopyTerminated(__int64*, __int64, unsigned __int64);
 __int64 game_HashString(__int64 result);
@@ -1128,7 +1128,7 @@ LABEL_37:
   v32[1] = strlen(v5);
   v33_.v33[0] = &GameData_1a9f09e;
   v33_.v33[1] = 0;
-  Message_16f9b50(a1);
+  Message_16f9b50(a1, (__int64*)v32, (__int64*)v33_.v33);
   v23 = *(__int64**)(a1 + 168);
   if ((unsigned __int64)v23 >= *(_QWORD*)(a1 + 176)) {
     v26 = Manager_66cc20((__int64*)(a1 + 160), &v29_.v29);
@@ -1199,6 +1199,8 @@ __attribute__((swiftcall)) void game_10081e0(PSEUDO_X8 x8_, char* a1)
     _WORD v34[8];
     char* v35;
   } v34_;
+  __int64 v36[2];
+  __int64 v37[2];
 
   v2 = *((_QWORD*)a1 + 26);
   v3 = (__int64)a1;
@@ -1372,8 +1374,11 @@ LABEL_24:
     if ((v15 & 1) == 0) {
       a1 = (char*)&v31_.v31 + 1;
     }
-    GameRoutine_1a09c70(a1);
-    v16 = Message_16f9b50(v3);
+    v36[0] = (__int64)a1;
+    v36[1] = GameRoutine_1a09c70(a1);
+    v37[0] = (__int64)&GameData_1a9f09e;
+    v37[1] = 0;
+    v16 = Message_16f9b50(v3, v36, v37);
     if (v16 != 0) {
       if ((v34_.v34[0] & 1) != 0) {
         v17 = v34_.v35;

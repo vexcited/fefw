@@ -14,7 +14,7 @@ __int64 GameRoutine_1a09ce0(__int64, const char*, unsigned __int64);
 __int64 GameRoutine_60a020(__int64, const char*);
 __int64 GameRoutine_930b90(__int64, __int64);
 __int64 LayoutAccessor_155e830(__int64 result, char);
-__int64 Manager_18cfba0(__int64);
+__int64 Manager_18cfba0(__int64, _QWORD*);
 __int64 Manager_18cfcb0(__int64);
 __int64 Pane_58dee0(__int64 result, __int64);
 __int64 Pane_58df60(__int64 result, _QWORD*);
@@ -1829,7 +1829,7 @@ LABEL_12:
     v21 = v15 >> 1;
   }
   if (v21 != 0) {
-    Manager_18cfba0(*GameData_212c598[0]);
+    Manager_18cfba0(*GameData_212c598[0], (_QWORD*)(v14 + 160));
   }
   if (v19 == 0) {
     goto LABEL_54;

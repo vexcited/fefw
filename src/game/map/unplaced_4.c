@@ -80,7 +80,7 @@ bool BattleSide_7a11b0(__int64);
 bool GameRoutine_748d40(__int64, int, int);
 bool game_HasSkill(_QWORD*, _DWORD*);
 bool game_map_784840(_QWORD*, int, int, long double);
-char* GameHr_6fb960(__int64);
+char* GameHr_6fb960(__int64, __int64);
 char* GameRoutine_6e7840(char*, char*, char*);
 const char* GameRoutine_156bee0(const char* result, __int64, __int64, __int64,
                                 char, float, float);
@@ -2942,7 +2942,7 @@ void game_map_7b0700(__int64 a1)
                                    PSEUDO_REGISTER(__n128, "v0", "=w")),
                     v78 = COERCE_AS(__typeof__(v78),
                                     PSEUDO_REGISTER(__n128, "v0", "=w"));
-                v87 = GameHr_6fb960(v82),
+                v87 = GameHr_6fb960(v82, v86),
                 v52 = COERCE_AS(__typeof__(v52),
                                 PSEUDO_REGISTER(__n128, "v0", "=w")),
                 v7 = COERCE_AS(__typeof__(v7),

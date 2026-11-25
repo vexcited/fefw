@@ -399,7 +399,7 @@ __attribute__((swiftcall)) void game_66fe60(PSEUDO_X8, _QWORD*);
 __attribute__((swiftcall)) void game_670240(PSEUDO_X8, __int64 result, __int64,
                                             unsigned __int64);
 __int64 Registration_17d5020(__int64, _QWORD*);
-__int64 Registration_17d5100(__int64, _QWORD*);
+__int64 Registration_17d5100(__int64, _QWORD*, __int64);
 __int64 fw_world_JobQueue_Submit(__int64, int);
 __int64 nn_mem_StandardAllocator_ClearThreadCache();
 __int64 nn_os_AcquireReadLock(__int64);
@@ -6174,7 +6174,8 @@ void GameHr_a5bc80(__int64 (**a1)())
                 goto LABEL_106;
               }
             }
-            else if ((Registration_17d5100((__int64)(a1 + 13), &v82_.v82) &
+            else if ((Registration_17d5100((__int64)(a1 + 13), &v82_.v82,
+                                           100000) &
                       1) == 0) {
               goto LABEL_58;
             }

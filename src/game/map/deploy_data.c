@@ -92,7 +92,7 @@ __int64 ITarget_775580(_QWORD, _QWORD, _QWORD);
 __int64 MapUtil_753570(_QWORD, _QWORD);
 __int64 Mind_746340(void);
 __int64 UnitItem_6e91b0(_QWORD, _QWORD);
-__int64 VTarget_778140(_QWORD, _QWORD);
+__int64 VTarget_778140(_QWORD, _QWORD, char, _QWORD);
 __int64 VTarget_779940(_QWORD, _QWORD);
 __int64 game_6c51e0(_QWORD);
 __int64 game_6c6ec0(_QWORD);
@@ -2375,7 +2375,7 @@ LABEL_148:
   if (*((_BYTE*)a2 + 64) == 0) {
     goto LABEL_181;
   }
-  VTarget_778140(v4 + 6629, v81);
+  VTarget_778140(v4 + 6629, v81, *((_BYTE*)a2 + 64), 0);
   v98 = *((_QWORD*)v74 + 6);
   if (v98 != 0) {
     *((_DWORD*)v4 + 13268) =
@@ -3017,7 +3017,7 @@ LABEL_181:
       if (v206 != 0 && *(_BYTE*)(v206 + 104) == 2) {
         GameRoutine_777820(&v470);
         v470 = game_map_MapDrawTarget_vtable;
-        VTarget_778140(&v470, v146);
+        VTarget_778140(&v470, v146, 5, *((_QWORD*)v145 + 6));
         v207 = *((char*)v145 + 196);
         v208 = *((char*)v145 + 197);
         v469 = &i;
@@ -3027,7 +3027,7 @@ LABEL_181:
       else {
         GameRoutine_777820(&v470);
         v470 = game_map_MapDrawTarget_vtable;
-        VTarget_778140(&v470, v146);
+        VTarget_778140(&v470, v146, 4, 0);
         v210 = *((char*)v145 + 196);
         v208 = *((char*)v145 + 197);
         v469 = &i;

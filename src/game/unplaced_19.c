@@ -377,7 +377,7 @@ void __attribute__((noreturn)) GameRoutine_fa64f0();
 void __attribute__((noreturn)) String_60a1d0();
 void __attribute__((noreturn)) fs_60a230();
 void __cxa_guard_release(__int64);
-void game_17a9aa0(__int64, __int64);
+void game_17a9aa0(__int64, __int64, __int64, __int64);
 void game_191d680(__int64, char);
 void nn_detail_UnexpectedDefaultImpl();
 void nn_mem_StandardAllocator_Free(__int64, __int64);
@@ -394,7 +394,8 @@ __int64 game_15fc820(__int64 a1, float32x4_t* a2);
 __int64 game_16dbb80(__int64* a1);
 __int64 game_171beb0(__int64 a1, char a2);
 __int64 game_173df20(__int64 result);
-__attribute__((swiftcall)) void game_1796700(PSEUDO_X8 x8_, __int64 a1);
+__attribute__((swiftcall)) void game_1796700(PSEUDO_X8 x8_, __int64 a1,
+                                             __int64 a3, __int64 a4);
 __int64 game_17d3320(__int64 result, char a2);
 __attribute__((swiftcall)) void game_17d3510(PSEUDO_X8 x8_,
                                              unsigned __int64 a1);
@@ -12145,7 +12146,8 @@ __int64 game_173df20(__int64 result)
   return result;
 }
 
-__attribute__((swiftcall)) void game_1796700(PSEUDO_X8 x8_, __int64 a1)
+__attribute__((swiftcall)) void game_1796700(PSEUDO_X8 x8_, __int64 a1,
+                                             __int64 a3, __int64 a4)
 {
   __int64* a2 = (__int64*)PSEUDO_X8_VALUE(x8_);
   _QWORD* v4;
@@ -12163,7 +12165,7 @@ __attribute__((swiftcall)) void game_1796700(PSEUDO_X8 x8_, __int64 a1)
   v4[1] = 0;
   v4[2] = 0;
   *v4 = GameData_20c9c40;
-  game_17a9aa0((__int64)(v4 + 3), a1);
+  game_17a9aa0((__int64)(v4 + 3), a1, a3, a4);
   *((_BYTE*)v6 + 1065) = 0;
   v6[3] = game_gameui_control_KeyArrow_vtable;
   v6[12] = GameData_20c9c00;

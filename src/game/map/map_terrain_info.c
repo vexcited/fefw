@@ -36,7 +36,7 @@ __int64 MapTerrainInfo_Unknown5(__int64 result);
 __int64 LayoutAccessor_155e830(_QWORD, _QWORD);
 __int64 LayoutAccessor_155ea30(_QWORD);
 __int64 UnitSkillList_844040(_QWORD, _QWORD);
-__int64 UnitSkillList_84cc00(_QWORD);
+__int64 UnitSkillList_84cc00(_QWORD, _DWORD*, char);
 extern __int64* GameData_212c880[5];
 __int64 MapTerrainInfo_DeletingDestructor(__int64 result);
 __int64 game_map_MapTerrainInfo_SetSkillIcon_lambda0_Invoke(__int64 result,
@@ -425,7 +425,7 @@ __int64 game_map_MapTerrainInfo_SetSkillIcon_lambda0_Invoke(__int64 result,
   v3 = *(_QWORD*)(*(_QWORD*)(*GameData_212c880[0] + 64) + 8LL * (*a2 & 0xFFF));
   if (v3 != 0 && (*(_WORD*)(v3 + 754) & 0x10) != 0) {
     v4 = *(_QWORD*)(result + 8);
-    result = UnitSkillList_84cc00(v4 + 328);
+    result = UnitSkillList_84cc00(v4 + 328, a2, 1);
     if ((result & 1) != 0) {
       v5 = *(_QWORD*)(v4 + 360);
       v6 = *(_QWORD*)(v4 + 368);
@@ -523,7 +523,7 @@ __int64 game_map_MapTerrainInfo_SetSkillIcon_lambda1_Invoke(__int64 a1,
   v2 = *(_QWORD*)(a1 + 8);
   result = UnitSkillList_844040(a2, **(_QWORD**)(a1 + 16));
   if ((result & 1) != 0) {
-    result = UnitSkillList_84cc00(v2 + 328);
+    result = UnitSkillList_84cc00(v2 + 328, (_DWORD*)a2, 1);
     if ((result & 1) != 0) {
       v4 = *(_QWORD*)(v2 + 360);
       v5 = *(_QWORD*)(v2 + 368);

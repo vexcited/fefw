@@ -303,7 +303,7 @@ __int64 game_Unit_GetParam(_QWORD, _QWORD, _QWORD);
 __int64 game_Unit_GetParamLimit(_QWORD, _QWORD);
 __int64
 game_Unit_GetUnknown6cba30_alt1(__int64) __asm__("game_Unit_GetUnknown6cba30");
-__int64 game_gameui_15a0300(_QWORD, _QWORD);
+__int64 game_gameui_15a0300(_QWORD, _QWORD, __int64**, __int64, char);
 __int64 game_gameui_15a2ea0(_QWORD, _QWORD, _QWORD);
 __int64 game_map_790ba0(_QWORD);
 __int64 nn_mem_StandardAllocator_Free_alt1(_QWORD, _QWORD) __asm__(
@@ -15818,7 +15818,10 @@ __attribute__((swiftcall)) void game_gameui_Util_GetNewSkillList(PSEUDO_X8 x8_,
           a2 = a4[1];
           v27[0] = &v29;
           if (v18 != a2) {
-            game_gameui_15a0300(v18, a2);
+            game_gameui_15a0300(
+                v18, a2, (__int64**)v27,
+                2LL * (63 - __builtin_clzll((unsigned __int64)(a2 - v18) >> 3)),
+                1);
           }
           result = (__int64)v27;
           v27[0] = GameData_204e218;

@@ -7,7 +7,8 @@
 __attribute__((swiftcall)) void Quat_624bc0(PSEUDO_X8, __int64);
 __attribute__((swiftcall)) void math_622ac0(PSEUDO_X8, float32x2_t*);
 __int64 ElfFile_631220(__int64*, const char*);
-__int64 GameHr_fcacb0(__int64, __int64, __int64, __int64, __int64, __int16);
+__int64 GameHr_fcacb0(__int64, __int64, __int64, __int64, __int64, __int16,
+                      __int64);
 __int64 GameRoutine_10e65a0(__int64 result, int8x16_t**, unsigned int, __int64,
                             __int64, __int64, __int64, __int64, __int128,
                             float32x4_t, float32x4_t, float32x4_t, float32x4_t,
@@ -95,7 +96,7 @@ __int64 GameRoutine_1a0b950(__int64, __int64, unsigned __int64);
 __int64 GameRoutine_89aac0(_QWORD*, _QWORD*);
 __int64 GameRoutine_8ea9a0(__int64);
 __int64 Impl_13261c0(__int64);
-__int64 Message_16f9b50(__int64);
+__int64 Message_16f9b50(__int64, __int64*, __int64*);
 __int64 ProcInst_657850(__int64, __int64, const char*, char, __int64);
 __int64 UnitItem_6e8800(__int64 result, unsigned __int64*);
 __int64 game_HashString(__int64 result);
@@ -107,6 +108,7 @@ __int64 snd_play_ff2d0(__int64, __int64, __int64, unsigned int, unsigned int,
 char* game_util_Format(const char*, ...);
 extern _BYTE GameData_225d6e8[12];
 extern _UNKNOWN* GameData_212c730;
+extern _UNKNOWN* GameData_212c958;
 extern _UNKNOWN GameData_1a8f344;
 extern __int64 (*GameData_2094908[])();
 extern __int64 (*GameData_2094988[])();
@@ -2813,7 +2815,7 @@ void llvm_libcxx_21_libcxx_include___functional_f19a80(__int64 a1, __int64* a2)
           v55 = COERCE_AS(__typeof__(v55), PSEUDO_REGISTER(__n128, "v0", "=w"));
     LABEL_27:
       GameHr_fcacb0(v3, (__int64)&v82_.v82, 1, (unsigned int)(char)*v12,
-                    (unsigned int)(char)v12[1], v24),
+                    (unsigned int)(char)v12[1], v24, (__int64)GameData_212c958),
           v28 = COERCE_AS(__typeof__(v28), PSEUDO_REGISTER(__n128, "v0", "=w")),
           v55 = COERCE_AS(__typeof__(v55), PSEUDO_REGISTER(__n128, "v0", "=w"));
       v26 = *v12;
@@ -2957,7 +2959,7 @@ void llvm_libcxx_21_libcxx_include___functional_f19a80(__int64 a1, __int64* a2)
         v55 = COERCE_AS(__typeof__(v55), PSEUDO_REGISTER(__n128, "v0", "=w"));
   LABEL_57:
     GameHr_fcacb0(v3, (__int64)&v82_.v82, 1, (unsigned int)(char)*v38,
-                  (unsigned int)(char)v38[1], v51),
+                  (unsigned int)(char)v38[1], v51, (__int64)GameData_212c958),
         v28 = COERCE_AS(__typeof__(v28), PSEUDO_REGISTER(__n128, "v0", "=w")),
         v55 = COERCE_AS(__typeof__(v55), PSEUDO_REGISTER(__n128, "v0", "=w"));
     v53 = *v38;
@@ -3099,6 +3101,8 @@ void llvm_libcxx_21_libcxx_include___functional_1665330(__int64 a1, __int64* a2)
     _QWORD v14[2];
     char* v15;
   } v14_;
+  __int64 v16[2];
+  __int64 v17[2];
 
   v2 = *a2;
   v3 = *(_QWORD*)(a1 + 16);
@@ -3148,8 +3152,11 @@ void llvm_libcxx_21_libcxx_include___functional_1665330(__int64 a1, __int64* a2)
   else {
     v12 = (char*)v14_.v14 + 1;
   }
-  GameRoutine_1a09c70(v12);
-  Message_16f9b50(v2);
+  v16[0] = (__int64)v12;
+  v16[1] = GameRoutine_1a09c70(v12);
+  v17[0] = (__int64)&GameData_1a9f09e;
+  v17[1] = 0;
+  Message_16f9b50(v2, v16, v17);
   if ((v14_.v14[0] & 1) != 0 && v14_.v15 != nullptr) {
     v13 = 128;
     if (*(_QWORD*)(*(_QWORD*)fw_memory_g_heap_manager_ptr + 200LL) == 0) {

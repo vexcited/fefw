@@ -23,7 +23,7 @@ __int64 opus_silk_5ace0(__int64 result, __int64, __int64, __int64, __int64, int,
                         int, int);
 __int64 silk_LPC_analysis_filter(__int64, __int64, __int16*, int, int);
 __int64 silk_LTP_scale_ctrl_FIX(__int64 result, __int64, int);
-__int64 silk_autocorr(signed int*, _DWORD*, __int16*, int, int);
+__int64 silk_autocorr(signed int*, _DWORD*, __int16*, int, int, int);
 __int64 silk_find_LTP_FIX(__int64 result, int*, __int64, int*, unsigned int,
                           int, unsigned int);
 __int64 silk_log2lin(unsigned int);
@@ -2227,7 +2227,7 @@ unsigned int opus_silk_fixed_5f5e0(__int64 a1, __int64 a2, __int64 a3,
   opus_silk_fixed_5b060((__int64)&v13[v14 + (unsigned __int64)v16 / 2],
                         v15 + v16, 2, v14);
   silk_autocorr((signed int*)v62, (_DWORD*)&v63 + 1, v13, *(_DWORD*)(a1 + 4548),
-                *(_DWORD*)(a1 + 4648) + 1);
+                *(_DWORD*)(a1 + 4648) + 1, a5);
   v17 = *(_DWORD*)(a1 + 4648);
   LODWORD(v62[0]) += ((unsigned __int64)(33LL * SLODWORD(v62[0])) >> 15) + 1;
   v18 = MovieRoutine_64c40((__int64)v60_.v61, (unsigned int*)v62, v17);

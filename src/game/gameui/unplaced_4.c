@@ -81,7 +81,7 @@ bool Util_1579d20(__int64, __int64);
 bool game_HasActiveSkill_843420(_DWORD*, __int64);
 bool game_Unit_IsLocked(__int64);
 char* GameHr_6ed030(__int64);
-char* GameHr_6fb960(__int64);
+char* GameHr_6fb960(__int64, __int64);
 char* GameRoutine_a4dbe0(__int64, const char*, char);
 char* HistoryLogInfo_6fb810(__int64);
 char* game_1604250(int);
@@ -1067,7 +1067,8 @@ LABEL_17:
   v11 = *a2;
   if ((*a2 & 0xFFF) != 0) {
     v12 = GameHr_6fb960(*(_QWORD*)(*(_QWORD*)(*GameData_212c880[0] + 64) +
-                                   8 * (*a2 & 0xFFFLL)));
+                                   8 * (*a2 & 0xFFFLL)),
+                        (__int64)a4);
     if (v12 != nullptr) {
       v13 = (__int64)v12;
       v14 = ui_LayoutAccessor_FindTextBox(a1, (__int64)"T_Txt");

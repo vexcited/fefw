@@ -179,7 +179,7 @@ void game_facility_ClassChangeJobMenu_CopyUnitAndPergeSkill(__int64 a1,
                                                             __int64 a2);
 __attribute__((swiftcall)) void GameRoutine_fa73c0(PSEUDO_X8, __int64*,
                                                    _QWORD*);
-__int64 GameHr_189d910(__int64 result, __int64, int, int, int);
+__int64 GameHr_189d910(__int64 result, __int64, int, int, int, char);
 __int64 GameHr_67ed20_alt1(_QWORD*) __asm__("GameHr_67ed20");
 __int64 GameHr_95f500(char, __int64, __int64, __int64);
 __int64 GameRoutine_1567590(__int64 result, char);
@@ -1540,7 +1540,7 @@ __int64 ClassChangeJobMenu_Unknown88(__int64* a1)
             v23 = 0;
             v26 = 0;
           }
-          GameHr_189d910(v17, v19, v23, v25, v26);
+          GameHr_189d910(v17, v19, v23, v25, v26, 1);
           v29 = *(_QWORD*)(*(_QWORD*)(v18 + 24) + 1104LL);
           if (v29 != 0) {
             v30 = a1[133];
@@ -1602,7 +1602,7 @@ __int64 ClassChangeJobMenu_Unknown88(__int64* a1)
           }
         }
         else {
-          GameHr_189d910(v17, v19, 0, 0, 0);
+          GameHr_189d910(v17, v19, 0, 0, 0, 1);
         }
         v24 = 0;
         goto LABEL_73;

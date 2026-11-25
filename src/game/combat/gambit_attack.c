@@ -23,7 +23,7 @@ __int64 game_combat_GambitAttack_Run_lambda0_Invoke_alt1(
     __int64 a1, __int64* a2, _DWORD* a3, long double a4,
     long double a5) __asm__("game_combat_GambitAttack_Run_lambda0_Invoke");
 __attribute__((swiftcall)) void GambitAttack_Unknown3(PSEUDO_X8 x8_);
-__int64 GameHr_e41cc0(__int64);
+__int64 GameHr_e41cc0(__int64, int);
 __int64 fw_memory_HeapManager_Allocate_alt1(
     __int64, __int64, __int64,
     unsigned int) __asm__("fw_memory_HeapManager_Allocate");
@@ -210,7 +210,13 @@ __int64 game_combat_GambitAttack_Run_lambda0_Invoke(__int64 a1, __int64* a2,
   else {
     v5 = 0x0.0p+0f;
   }
-  v6 = GameHr_e41cc0(*(_QWORD*)(v3 + 104));
+  v6 = GameHr_e41cc0(
+      *(_QWORD*)(v3 + 104),
+      *(int*)(*(_QWORD*)(*(_QWORD*)(a1 + 8) + 56LL) +
+              4 * ((unsigned __int64)(int)*a3 %
+                   ((*(_QWORD*)(*(_QWORD*)(a1 + 8) + 64LL) -
+                     *(_QWORD*)(*(_QWORD*)(a1 + 8) + 56LL)) >>
+                    2))));
   v7 = (__int64*)fw_memory_g_heap_manager_ptr;
   v8 = fw_memory_HeapManager_Allocate_alt1(
       *(_QWORD*)fw_memory_g_heap_manager_ptr, 264, 16, 0);

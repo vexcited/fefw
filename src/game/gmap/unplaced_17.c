@@ -18,7 +18,7 @@ __int64 GameRoutine_1546f80();
 __int64 GameRoutine_17b8e80(__int64, char);
 __int64 LayoutAccessor_1555150(__int64, char);
 __int64 LayoutAccessor_155e830(__int64 result, char);
-__int64 Message_16f9b50(__int64);
+__int64 Message_16f9b50(__int64, __int64*, __int64*);
 __int64 ProcGmapPhaseSeq_14c6e20();
 __int64 ProcGmapPhaseSeq_14c6e70();
 __int64 ProcGmapPhaseSeq_14c7300();
@@ -2180,14 +2180,19 @@ __int64 game_gmap_15368e0(__int64 result)
   __int64 v1;
   __int64 v2;
   char* v3;
+  __int64 v4[2];
+  __int64 v5[2];
 
   if (*(_BYTE*)(result + 152) == 1) {
     v1 = *(_QWORD*)(*(_QWORD*)(result + 168) + 56LL);
     if (v1 != 0) {
       v2 = result;
       v3 = GameRoutine_adf970(v1, 0);
-      GameRoutine_1a09c70(v3);
-      return Message_16f9b50(v2);
+      v4[0] = (__int64)"MID_Gmap_ShowOpenSpot_Message";
+      v4[1] = 29;
+      v5[0] = (__int64)v3;
+      v5[1] = GameRoutine_1a09c70(v3);
+      return Message_16f9b50(v2, v4, v5);
     }
   }
   return result;

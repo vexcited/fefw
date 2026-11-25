@@ -11,7 +11,7 @@ __int64 GameRoutine_1a0ba50(__int64, int, unsigned __int64);
 __int64 GameRoutine_2766a0(_QWORD*);
 __int64 GameRoutine_276720(__int64, __int64);
 __int64 GameRoutine_27b620(_QWORD*);
-__int64 SoundArchivePlayer_27a2c0(__int64, __int64, __int64);
+__int64 SoundArchivePlayer_27a2c0(__int64, __int64, __int64, __int64);
 __int64 SoundDataManager_27b710(__int64, __int64);
 bool SoundDataManager_27b740(__int64, __int64, __int64, __int64);
 extern __int64* GameData_21349b0;
@@ -186,7 +186,8 @@ __int64 snd_target_15b660(__int64 result, char* a2, __int64 a3,
           v39 = v37;
         }
         SoundDataManager_27b740(v16 + 784, v16 + 32, v39, v36);
-        SoundArchivePlayer_27a2c0(v9 + 2392, (__int64)a5, v16 + 32);
+        SoundArchivePlayer_27a2c0(v9 + 2392, (__int64)a5, v16 + 32,
+                                  v16 + 784);
         *(_DWORD*)(v16 + 1388) = *(_DWORD*)(v9 + 80);
         *(_QWORD*)(v16 + 1392) = GameRoutine_190240(v16);
         return BaseNX_15ad00(v9, v16 + 1376);

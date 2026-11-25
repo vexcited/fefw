@@ -28,7 +28,7 @@ void GameRoutine_156c5d0(__int64, __int64, char);
 __int64 TransportMenu_170b4c0(__int64 a1);
 __attribute__((swiftcall)) void LayoutAccessor_1560070(PSEUDO_X8, __int64*,
                                                        const char*);
-__int64 game_gameui_anonymous_15d2540(__int64*, _WORD*);
+__int64 game_gameui_anonymous_15d2540(__int64*, _WORD*, __int64);
 __int64 std___1___shared_weak_count___release_weak_alt1(__int64) __asm__(
     "std___1___shared_weak_count___release_weak");
 __int64 std___1___shared_weak_count_lock_alt1(__int64) __asm__(
@@ -165,7 +165,7 @@ __int64 TransportMenu_170b5f0(__int64 a1)
         if (v5 != 0) {
           v6 = v5;
           if (v7_.v7 != nullptr) {
-            game_gameui_anonymous_15d2540(v7_.v7, v4);
+            game_gameui_anonymous_15d2540(v7_.v7, v4, 0);
           }
           if (atomic_fetch_add((atomic_ullong* volatile)(v6 + 8),
                                0xFFFFFFFFFFFFFFFFLL) == 0) {

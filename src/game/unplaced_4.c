@@ -148,7 +148,7 @@ __int64 fw_text_String_CopyTerminated(__int64*, __int64, unsigned __int64);
 __int64 fw_text_String_CopyTerminated_alt1(_QWORD, _QWORD, _QWORD) __asm__(
     "fw_text_String_CopyTerminated");
 __int64 game_809ba0(float);
-__int64 game_809dc0(float);
+__int64 game_809dc0(__int64, _QWORD*, float);
 __int64 game_GameVariableTable_Find(_QWORD, _QWORD);
 __int64 game_GameVariableTable_Find_alt1(_QWORD*, unsigned __int64*) __asm__(
     "game_GameVariableTable_Find");
@@ -209,6 +209,8 @@ extern _UNKNOWN* GameData_212c550;
 extern _UNKNOWN* GameData_212c558;
 extern _UNKNOWN* GameData_212c560;
 extern _UNKNOWN* GameData_212c840;
+extern _UNKNOWN* GameData_212c958;
+extern _UNKNOWN* GameData_212c960;
 extern _UNKNOWN* GameData_2130228;
 extern _UNKNOWN GameData_1a8a4bd;
 extern _UNKNOWN GameData_1a8e354;
@@ -5378,6 +5380,7 @@ bool game_f86d10(__int64 a1, __int64* a2, char a3)
   __int128 v13;
   unsigned __int64 v14;
   __int128 v16;
+  _QWORD* v17;
 
   if ((a3 & 1) != 0) {
     v3 = *a2;
@@ -5411,6 +5414,7 @@ bool game_f86d10(__int64 a1, __int64* a2, char a3)
         }
       LABEL_15:
         v11 = v10 + ((unsigned __int64)*(unsigned __int8*)(v10 + 480) << 6);
+        v17 = (_QWORD*)GameData_212c960;
         if (*(float*)(v11 + 172) == *(float*)(v11 + 168)) {
           v12 = v11 + 160;
           if (LANES128_OF(((__n128 (*)(unsigned __int64)) *
@@ -5424,9 +5428,10 @@ bool game_f86d10(__int64 a1, __int64* a2, char a3)
               v13 = *(_OWORD*)(v12 + 48);
             }
             v16 = v13;
+            v17 = (_QWORD*)&v16;
           }
         }
-        game_809dc0(0.0f);
+        game_809dc0(v10, v17, 0.0f);
         if (game_ProcFadeView_instance_ == 0) {
           return true;
         }
@@ -5488,7 +5493,8 @@ bool game_f86e80(__int64 a1, __int64* a2, char a3)
           return true;
         }
       LABEL_15:
-        game_809dc0(v9);
+        game_809dc0(game_ProcFadeView_instance_, (_QWORD*)GameData_212c960,
+                    v9);
         goto LABEL_16;
       }
       if (*v12 == 102) {
@@ -5528,6 +5534,7 @@ bool game_f86f50(__int64 a1, __int64* a2, char a3)
   int v11;
   unsigned __int64 v12;
   _BYTE* v14;
+  _QWORD* v15;
 
   if ((a3 & 1) == 0) {
     goto LABEL_22;
@@ -5570,11 +5577,15 @@ LABEL_14:
     if (game_ProcFadeView_instance_ == 0) {
       return true;
     }
+    v15 = (_QWORD*)GameData_212c960;
   }
-  else if (game_ProcFadeView_instance_ == 0) {
-    return true;
+  else {
+    if (game_ProcFadeView_instance_ == 0) {
+      return true;
+    }
+    v15 = (_QWORD*)GameData_212c958;
   }
-  game_809dc0(v9);
+  game_809dc0(game_ProcFadeView_instance_, v15, v9);
 LABEL_22:
   if (game_ProcFadeView_instance_ != 0) {
     v12 = game_ProcFadeView_instance_ +

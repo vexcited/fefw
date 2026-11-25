@@ -17,7 +17,7 @@ __int64 GameRoutine_63b800(__int64, __int64, unsigned __int8*, __int64,
 __int64 GameRoutine_63c1a0(unsigned __int8*, __int64, __int64, __int64,
                            unsigned __int64, __int64 (*)(_QWORD));
 __int64 GameRoutine_63c3f0();
-__int64 fs_639780(char, __int64*, __int64);
+__int64 fs_639780(char, __int64*, __int64, unsigned __int64);
 __int64 fs_63b1a0(__int64, unsigned __int64, unsigned int);
 __int64 fs_63c410(__int64, __int64, unsigned int, unsigned int);
 __int64 fw_memory_HeapManager_Allocate(__int64, __int64, __int64, unsigned int);
@@ -61,6 +61,7 @@ _QWORD* fs_63b420(unsigned int a1, __int64 a2, unsigned __int64 a3,
 __int64 fs_63fdc0_alt1(__int64* a1, __int64 a2, char** a3, __int64 a4,
                        __int64 a5, unsigned __int64 a6) __asm__("fs_63fdc0");
 __int64 GameHr_639910(char*, _QWORD*);
+unsigned __int128 GameHr_639910_pair(char*, _QWORD*) __asm__("GameHr_639910");
 __int64 GameHr_63b800(__int64, __int64, unsigned __int8*, int, unsigned __int8*,
                       char, __int64, unsigned __int64);
 __int64 GameHr_63c1a0(unsigned __int8*, __int64, __int64, __int64,
@@ -1224,6 +1225,7 @@ __int64 fs_638a60(__int64 a1, char a2)
   char v13;
   __int16 v14;
   char v15;
+  unsigned __int128 v16;
 
   v11 = 0;
   v14 = 0;
@@ -1233,8 +1235,9 @@ __int64 fs_638a60(__int64 a1, char a2)
   if ((**(_BYTE**)(a1 + 16) & 1) == 0) {
     v6 = *(__int64**)(a1 + 8);
   LABEL_6:
-    v8 = GameHr_639910((char*)&v11, v6);
-    result = fs_639780(a2 & 1, v6, v8);
+    v16 = GameHr_639910_pair((char*)&v11, v6);
+    v8 = (__int64)(unsigned __int64)v16;
+    result = fs_639780(a2 & 1, v6, v8, (unsigned __int64)(v16 >> 64));
     goto LABEL_7;
   }
   v4 = *(unsigned __int8***)a1;

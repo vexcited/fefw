@@ -47,7 +47,7 @@ __int64 fw_memory_HeapManager_Allocate_alt1(
     __int64, __int64, __int64,
     unsigned int) __asm__("fw_memory_HeapManager_Allocate");
 __int64 fw_text_String_CopyTerminated(__int64*, __int64, unsigned __int64);
-__int64 memcmp(_QWORD, _QWORD);
+__int64 memcmp(_QWORD, _QWORD, _QWORD);
 __int64 memcmp_alt1(_QWORD, _QWORD, _QWORD) __asm__("memcmp");
 __int64 memcpy(_QWORD, _QWORD, _QWORD);
 __int64 memmove(_QWORD, _QWORD, _QWORD);
@@ -458,7 +458,7 @@ bool Layout_c13be0(__int64 a1, __int64 a2, __int64 a3, __int64 a4, char a5)
   }
   if (a3 == v13) {
     v15 = (v5 & 1) != 0 ? *(_QWORD*)(a1 + 184) : v12;
-    if ((unsigned int)memcmp(a2, v15) == 0) {
+    if ((unsigned int)memcmp(a2, v15, a3) == 0) {
       return (*(_DWORD*)(a1 + 244) & 0xFFFFFFFD) == 0;
     }
   }
@@ -477,7 +477,7 @@ bool Layout_c13be0(__int64 a1, __int64 a2, __int64 a3, __int64 a4, char a5)
     return false;
   }
   v19 = (v16 & 1) != 0 ? *(_QWORD*)(a1 + 208) : a1 + 193;
-  if ((unsigned int)memcmp(a2, v19) != 0) {
+  if ((unsigned int)memcmp(a2, v19, a3) != 0) {
     return false;
   }
   GameRoutine_c1a430(a1 + 416, a1 + 456);

@@ -6,7 +6,7 @@ _QWORD* GameManager_a2c820(__int64, __int64, char);
 __int64 CharacterBuilder_1084a50(__int64, _BYTE*);
 __int64 snd_Fade_Destroy_Fade(_QWORD*);
 __int64 snd_Fade_Fade_10cb00(__int64, __int64);
-__int64 snd_a2c9c0(__int64 result);
+__int64 snd_a2c9c0(__int64 result, __int64);
 __int64 std___1___shared_weak_count___release_weak(_QWORD);
 __int64 std___1___shared_weak_count_lock(_QWORD);
 extern __int128 GameData_1a82af0;
@@ -148,7 +148,7 @@ __int64 Sound_f90970(__int64 result)
     v1 = result;
     snd_Fade_Fade_10cb00((__int64)v6, (__int64)"FadeTime_BGM_CmdBtl_Out");
     v2 = game_sound_g_game_sound_ptr[0];
-    snd_a2c9c0(*game_sound_g_game_sound_ptr[0]);
+    snd_a2c9c0(*game_sound_g_game_sound_ptr[0], (__int64)v6);
     result = snd_Fade_Destroy_Fade(v6);
     v3 = *(unsigned __int8*)(v1 + 10);
     *(_BYTE*)(v1 + 8) = 0;

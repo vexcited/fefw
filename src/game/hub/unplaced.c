@@ -293,7 +293,7 @@ __int64 game_zview_d1ff20(_QWORD, _QWORD, _QWORD);
 
 __int64 memchr(_QWORD, _QWORD, _QWORD);
 
-__int64 memcmp(_QWORD, _QWORD);
+__int64 memcmp(_QWORD, _QWORD, _QWORD);
 
 __int64 memcmp_alt1(_QWORD, _QWORD, _QWORD) __asm__("memcmp");
 
@@ -2747,7 +2747,7 @@ __attribute__((swiftcall)) void game_hub_cb8f20(PSEUDO_X8 x8_, __int64 result,
         v11 = *(_QWORD*)(v10 + 8);
         result = strlen(v11);
         if (a3 == result) {
-          result = memcmp(a2, v11);
+          result = memcmp(a2, v11, a3);
           if ((_DWORD)result == 0) {
             goto LABEL_11;
           }
@@ -2757,7 +2757,7 @@ __attribute__((swiftcall)) void game_hub_cb8f20(PSEUDO_X8 x8_, __int64 result,
           v13 = *(_QWORD*)(v12 + 8);
           result = strlen(v13);
           if (a3 == result) {
-            result = memcmp(a2, v13);
+            result = memcmp(a2, v13, a3);
             if ((_DWORD)result == 0) {
             LABEL_11:
               v15 = v9;

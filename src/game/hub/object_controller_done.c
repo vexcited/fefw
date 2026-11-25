@@ -21,7 +21,7 @@ __int64 ObjectControllerDone_ec04c0(__int64 a1);
 __int64 ObjectControllerDone_ec05a0(__int64 a1);
 _QWORD* GameRoutine_dbc1e0_alt1(_QWORD*, __int64) __asm__("GameRoutine_dbc1e0");
 __int64 GameHr_dbc2c0(_QWORD*, __int64);
-__int64 MapObjectModule_a7d640(__int64, __int64, unsigned __int64);
+__int64 MapObjectModule_a7d640(__int64, __int64, unsigned __int64, char);
 __int64 Object_dfd100(__int64);
 __int64 game_hub_dfc1e0(__int64);
 __int64 GameRoutine_e1be10_alt1(__int64, __int64) __asm__("GameRoutine_e1be10");
@@ -137,7 +137,7 @@ __int64 ObjectControllerDone_Unknown2(__int64 result)
                 result = game_hub_dfc1e0(*(_QWORD*)(v1 + 8));
                 if (result != 0) {
                   result = MapObjectModule_a7d640(
-                      result, (__int64)&GameData_1a8a12f, 3u);
+                      result, (__int64)&GameData_1a8a12f, 3u, 0);
                 }
                 *(_BYTE*)(v1 + 17) = 1;
               }

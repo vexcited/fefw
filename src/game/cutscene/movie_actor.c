@@ -18,7 +18,7 @@ GameRoutine_18d0ec0_alt1(_QWORD*,
                          unsigned __int8*) __asm__("GameRoutine_18d0ec0");
 __int64 GameHr_b86660(__int64);
 __int64 Manager_18cfa40(__int64, __int64);
-__int64 Manager_18cfba0(__int64);
+__int64 Manager_18cfba0(__int64, _QWORD*);
 __int64 nn_os_TryWaitLightEvent(__int64);
 __int64 MovieActor_Unknown4(__int64 result, float a2, float a3);
 
@@ -125,7 +125,7 @@ __int64 MovieActor_Unknown4(__int64 result, float a2, float a3)
         result = nn_os_TryWaitLightEvent(*(_QWORD*)(result + 40) + 684LL);
         if ((result & 1) != 0) {
         LABEL_19:
-          Manager_18cfba0(*GameData_212c598[0]);
+          Manager_18cfba0(*GameData_212c598[0], (_QWORD*)(v3 + 16));
           result = GameHr_b86660(
               *(_QWORD*)(*(_QWORD*)(*(_QWORD*)(GameData_21c6978 + 32) - 8LL) +
                          40LL));

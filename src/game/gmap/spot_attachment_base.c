@@ -85,7 +85,7 @@ __int64 SpotAttachmentBase_14d4a20(__int64 a1, __int64 a2);
 __int64 SpotAttachmentBase_14d4c90(__int64 result, __int64 a2, int a3);
 __int64 SpotAttachmentBase_14d4e10_alt1(__int64 a1) __asm__(
     "SpotAttachmentBase_14d4e10");
-__int64 Dir_70df40(_QWORD);
+__int64 Dir_70df40(_QWORD, __int16*);
 __int64 SpotAttachmentBase_14d44d0(__int16* a1);
 __int16* Dir_70dd80_alt1(__int16* result, __int16*) __asm__("Dir_70dd80");
 unsigned __int16*
@@ -121,6 +121,7 @@ __int64 SpotAttachmentBase_14d44d0(__int16* a1)
   __int16 v26;
   __int16 v27;
   int v28;
+  __int16 v29[6];
 
   v1 = game_gmap_GmapClock_instance_;
   v2 = (_WORD*)game_gmap_GmapClock_kDefaultTime_ptr;
@@ -145,7 +146,7 @@ __int64 SpotAttachmentBase_14d44d0(__int16* a1)
                 ((__int64)a1[8] << 6) + a1[9]) {
     return 100;
   }
-  v10 = Dir_70df40(a1 + 10);
+  v10 = Dir_70df40(a1 + 10, a1 + 4);
   if ((unsigned int)v10 >= 0x3C) {
     v11 = v10 / 0x3Cu;
   }
@@ -198,7 +199,13 @@ __int64 SpotAttachmentBase_14d44d0(__int16* a1)
   v27 = v18;
   LOWORD(v28) = v19;
   HIWORD(v28) = v20;
-  v22 = Dir_70df40(v3);
+  v29[0] = v24;
+  v29[1] = v25;
+  v29[2] = v26;
+  v29[3] = v27;
+  v29[4] = LOWORD(v28);
+  v29[5] = HIWORD(v28);
+  v22 = Dir_70df40(v3, v29);
   if (v22 != 0) {
     if (v22 < 1) {
       v23 = -100;

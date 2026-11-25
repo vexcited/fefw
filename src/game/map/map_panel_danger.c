@@ -93,7 +93,8 @@ GameRoutine_f155c0_alt2(__int64* result, char*, char*,
                         unsigned __int64) __asm__("GameRoutine_f155c0");
 __int64 GameHr_fcabb0(long double, __int64, __int64, int, char, char, __int64,
                       __int64);
-__int64 GameHr_fcacb0(__int64, __int64, __int64, __int64, __int64, __int16);
+__int64 GameHr_fcacb0(__int64, __int64, __int64, __int64, __int64, __int16,
+                      __int64);
 __int64 MapDrawConst_fcbcc0_alt1(__int64, int, unsigned __int8, unsigned __int8,
                                  __int64, char) __asm__("MapDrawConst_fcbcc0");
 __int64 game_UnitPool_GetFirst_alt1(int*) __asm__("game_UnitPool_GetFirst");
@@ -683,7 +684,8 @@ LABEL_8:
         if (v339_.v340 == nullptr) {
         LABEL_19:
           game_map_f54d00_alt1((__int64)v370_.v370);
-          GameHr_fcacb0(a1, (__int64)v370_.v370, 1, v12, v14, v18);
+          GameHr_fcacb0(a1, (__int64)v370_.v370, 1, v12, v14, v18,
+                        (__int64)GameData_212c958);
           MapPanelDanger_f14660(v326, (__int64)v370_.v370);
           v11 = *(_QWORD*)(*GameData_212ce98[0] + 152);
           v17 = *(unsigned __int8*)(v11 + v16 + 8);
@@ -710,7 +712,8 @@ LABEL_8:
       }
       game_map_f54d00_alt1((__int64)&v361);
       v10 = 1;
-      GameHr_fcacb0(a1, (__int64)&v361, 1, v12, v14, v20);
+      GameHr_fcacb0(a1, (__int64)&v361, 1, v12, v14, v20,
+                    (__int64)GameData_212c958);
       MapPanelDanger_f14660((__int64**)(a1 + 40), (__int64)&v361);
       if (v8 != v9) {
         goto LABEL_8;

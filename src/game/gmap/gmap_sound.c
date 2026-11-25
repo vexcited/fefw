@@ -12,7 +12,7 @@ __attribute__((swiftcall)) void snd_playAt_ff5f0(PSEUDO_X8, _QWORD, _QWORD,
 __attribute__((swiftcall)) void snd_play_ff2d0(PSEUDO_X8, _QWORD, _QWORD,
                                                _QWORD, _QWORD, _QWORD, _QWORD,
                                                double, float);
-__int64 GameManager_a2cf60(__int64 result);
+__int64 GameManager_a2cf60(__int64 result, __int64, _BYTE*, float);
 __int64 GameRoutine_112180(_QWORD, _QWORD);
 __int64 GameRoutine_60a020(_QWORD, _QWORD);
 __int64 GmapSound_1531270_alt1(_QWORD,
@@ -347,7 +347,9 @@ LABEL_22:
               if (v22[2] == result) {
               LABEL_65:
                 if (v22[3] != 0) {
-                  return GameManager_a2cf60(*game_sound_g_game_sound_ptr[0]);
+                  return GameManager_a2cf60(*game_sound_g_game_sound_ptr[0],
+                                            *(_QWORD*)(v22[3] + 32),
+                                            (_BYTE*)"", 0.0f);
                 }
                 return result;
               }

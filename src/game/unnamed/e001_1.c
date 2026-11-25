@@ -298,7 +298,7 @@ __int64 GameRoutine_78d280_alt1(__int64, __int64) __asm__("GameRoutine_78d280");
 __int64 GameRoutine_799290_alt1(_QWORD*) __asm__("GameRoutine_799290");
 __int64 GameRoutine_845bc0_alt1(__int64, __int64) __asm__("GameRoutine_845bc0");
 __int64 Image_72b4a0(__int64);
-__int64 ProcMapSeqTargetSelect_78e3c0(__int64);
+__int64 ProcMapSeqTargetSelect_78e3c0(__int64, unsigned __int8);
 __int64 VTarget_778500(__int64);
 __int64 VTarget_7797e0(_DWORD*, unsigned __int8);
 __int64 fw_memory_HeapManager_Allocate(__int64, __int64, __int64, unsigned int);
@@ -8724,6 +8724,7 @@ __int64 GameHr_789670(__int64 result)
   __int64 v35;
   void* v36;
   _QWORD v37[25];
+  unsigned __int8 v38;
 
   v1 = result;
   v2 = (__int64*)game_g_game_setting_ptr;
@@ -8792,15 +8793,17 @@ __int64 GameHr_789670(__int64 result)
     if (v5 > 2) {
       if (v5 == 4) {
         v6 = v1;
+        v38 = 8;
       }
       else {
         if (v5 != 3) {
           return result;
         }
         v6 = v1;
+        v38 = 2;
       }
     LABEL_57:
-      result = ProcMapSeqTargetSelect_78e3c0(v6);
+      result = ProcMapSeqTargetSelect_78e3c0(v6, v38);
       if ((result & 1) == 0) {
         return result;
       }
@@ -8809,6 +8812,7 @@ __int64 GameHr_789670(__int64 result)
     if (v5 == 1) {
     LABEL_56:
       v6 = v1;
+      v38 = 1;
       goto LABEL_57;
     }
     if (v5 != 2) {
@@ -8816,6 +8820,7 @@ __int64 GameHr_789670(__int64 result)
     }
   LABEL_21:
     v6 = v1;
+    v38 = 4;
     goto LABEL_57;
   }
   v14 = *(_DWORD*)(v3 + 948);

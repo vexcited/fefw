@@ -405,7 +405,7 @@ __int64 ResourceBuilder_b6f2d0(_QWORD* a1, _QWORD* a2, __int64* a3,
                                unsigned int* a4);
 __int64 ResourceBuilder_b782c0(__int64 a1, _QWORD* a2, _QWORD* a3, __int64* a4,
                                __int64 a5);
-__int64 PrimitiveDrawManager_19932a0(__int64, __int64, __int64, __int64);
+__int64 PrimitiveDrawManager_19932a0(__int64, __int64, __int64, __int64, int);
 __int64 PrimitiveDrawManager_1995760(__int64, _QWORD*, int);
 __int64 PrimitiveDrawManager_1996450(_QWORD*, __int64, unsigned int);
 __int64 ResourceBuilder_b71010(__int64 result, _QWORD* a2, __int64* a3,
@@ -9445,7 +9445,7 @@ __int64 ResourceBuilder_b71010(__int64 result, _QWORD* a2, __int64* a3,
                       PSEUDO_REGISTER(unsigned long long, "x1", "=r")),
       v23 = COERCE_AS(__typeof__(v23),
                       PSEUDO_REGISTER(unsigned long long, "x1", "=r"));
-      PrimitiveDrawManager_19932a0(*v6, (__int64)"CharaMask", 9, v12),
+      PrimitiveDrawManager_19932a0(*v6, (__int64)"CharaMask", 9, v12, (int)v16),
           v16 = COERCE_AS(__typeof__(v16),
                           PSEUDO_REGISTER(unsigned long long, "x1", "=r")),
           v19 = COERCE_AS(__typeof__(v19),

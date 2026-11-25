@@ -11,7 +11,8 @@ __int64* GameRoutine_f155c0(__int64* result, char*, char*, unsigned __int64);
 __int64* fw_containers_BalanceAfterInsert(__int64* result, __int64*);
 __int64 CharacterController_d42d20(__int64 result, char*, char*,
                                    unsigned __int64);
-__int64 GameHr_fcacb0(__int64, __int64, __int64, __int64, __int64, __int16);
+__int64 GameHr_fcacb0(__int64, __int64, __int64, __int64, __int64, __int16,
+                      __int64);
 __int64 GameRoutine_112180(__int64, __int64);
 __int64 MapDrawConst_fcbcc0(__int64, int, unsigned __int8, unsigned __int8,
                             __int64, char);
@@ -25,6 +26,7 @@ __int64 snd_playAt_ff5f0(__int64, __int64, __int64, __int64, unsigned int,
 extern _UNKNOWN* GameData_212c188;
 extern _UNKNOWN* GameData_212c190;
 extern _UNKNOWN* GameData_212c540;
+extern _UNKNOWN* GameData_212c958;
 extern _UNKNOWN GameData_1aad2d5;
 extern _UNKNOWN GameData_21a6130;
 extern __int128 GameData_1a829d0;
@@ -645,7 +647,8 @@ LABEL_22:
     LABEL_38:
       ((__int64 (*)(__int64))(*v112_.v114)[v24])((__int64)v112_.v114);
     }
-    GameHr_fcacb0(v1, (__int64)&v115_.v115, 1, v20, v21, v23);
+    GameHr_fcacb0(v1, (__int64)&v115_.v115, 1, v20, v21, v23,
+                  (__int64)GameData_212c958);
     if ((atomic_load_explicit((atomic_uchar* volatile)&GameData_21a6130,
                               memory_order_acquire) &
          1) == 0 &&

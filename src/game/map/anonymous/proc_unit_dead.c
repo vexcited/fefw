@@ -35,7 +35,7 @@ __int64 GameRoutine_c8b5a0_alt1(__int64, unsigned int, __int64, unsigned int,
                                 unsigned int) __asm__("GameRoutine_c8b5a0");
 __int64 Image_72b4a0_alt1(__int64) __asm__("Image_72b4a0");
 __int64 MapUtil_757430(__int64 result);
-__int64 game_97ec90(__int64);
+__int64 game_97ec90(__int64, __int64*);
 void Image_72a260_alt1(__int64) __asm__("Image_72a260");
 void ProcUnitDead_76f5d0(__int64 a1);
 __int64 GameHr_961420(__int64, const char**, __int64);
@@ -91,12 +91,15 @@ __int64 ProcUnitDead_76ed60(__int64 result)
   __int64 v4;
   unsigned int v5;
   __int64 v6;
+  __int64 v7[2];
 
   v1 = *(unsigned __int8*)(result + 160);
   if (v1 <= 3 && v1 != 1) {
     v3 = *(_QWORD*)(result + 152);
     if (v3 == 0) {
-      return game_97ec90(result);
+      v7[0] = 0;
+      v7[1] = 0;
+      return game_97ec90(result, v7);
     }
     v4 = *(_QWORD*)(v3 + 440);
     if (v4 != 0) {
@@ -111,7 +114,9 @@ __int64 ProcUnitDead_76ed60(__int64 result)
         v5, 0xFFFFFFFF, 0xFFFFFFFF);
     if ((result & 1) == 0) {
       result = v6;
-      return game_97ec90(result);
+      v7[0] = *(_QWORD*)(result + 152);
+      v7[1] = v7[0] != 0 ? *(_QWORD*)(v7[0] + 392) : 0;
+      return game_97ec90(result, v7);
     }
   }
   return result;

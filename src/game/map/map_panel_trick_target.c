@@ -92,7 +92,8 @@ __int64* game_UnitPool_Get_alt1(_BYTE*) __asm__("game_UnitPool_Get");
 __int64 CharacterController_d42d20_alt1(
     __int64 result, char*, char*,
     unsigned __int64) __asm__("CharacterController_d42d20");
-__int64 GameHr_fcacb0(__int64, __int64, __int64, __int64, __int64, __int16);
+__int64 GameHr_fcacb0(__int64, __int64, __int64, __int64, __int64, __int16,
+                      __int64);
 __int64 GameRoutine_74e220_alt1(__int64 result, int*, char*,
                                 unsigned __int64) __asm__("GameRoutine_74e220");
 __int64 MapDrawConst_fcbcc0_alt1(__int64, int, unsigned __int8, unsigned __int8,
@@ -1079,7 +1080,8 @@ LABEL_181:
         (*(void (**)(__int64))(*v232_.v233 + v130))((__int64)v232_.v233);
       LABEL_223:
         GameHr_fcacb0(a1, (__int64)&v234_.v234, 1, (unsigned int)(char)*v108,
-                      (unsigned int)(char)v108[1], v129);
+                      (unsigned int)(char)v108[1], v129,
+                      (__int64)GameData_212c958);
         if ((atomic_load_explicit((atomic_uchar* volatile)&GameData_21a6130,
                                   memory_order_acquire) &
              1) == 0 &&

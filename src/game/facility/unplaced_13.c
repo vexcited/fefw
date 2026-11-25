@@ -25,7 +25,7 @@ __attribute__((swiftcall)) void game_facility_140d160(PSEUDO_X8 x8_,
                                                       __int64 a1);
 __int64 GameRoutine_1a0b940(__int64, __int64, unsigned __int64);
 __int64 LayoutAccessor_155ea30(__int64*);
-__int64 Message_16f9b50(__int64);
+__int64 Message_16f9b50(__int64, __int64*, __int64*);
 __int64 snd_Fade_Destroy_Fade(_QWORD*);
 __int64 snd_play_ff2d0(__int64, __int64, __int64, unsigned int, unsigned int,
                        int, float, float);
@@ -344,6 +344,8 @@ __int64 game_facility_1662370(__int64 a1)
     _QWORD v14[2];
     char* v15;
   } v14_;
+  __int64 v16[2];
+  __int64 v17[2];
 
   if (game_gameui_Footer_instance_ != 0 &&
       (LayoutAccessor_155ea30((__int64*)(game_gameui_Footer_instance_ + 168)) &
@@ -397,8 +399,11 @@ __int64 game_facility_1662370(__int64 a1)
     else {
       v10 = (char*)v14_.v14 + 1;
     }
-    GameRoutine_1a09c70(v10);
-    v11 = Message_16f9b50(a1);
+    v16[0] = (__int64)v10;
+    v16[1] = GameRoutine_1a09c70(v10);
+    v17[0] = (__int64)"";
+    v17[1] = 0;
+    v11 = Message_16f9b50(a1, v16, v17);
     if ((v14_.v14[0] & 1) != 0 && v14_.v15 != nullptr) {
       v12 = v11;
       v13 = 128;

@@ -4,7 +4,8 @@
 
 __int64 NgxRoutine_420(_QWORD);
 __int64 NgxRoutine_430(_QWORD, _QWORD);
-__int64 nvidia_dlss_rel_source_features_dlaa_76570(_QWORD);
+__int64 nvidia_dlss_rel_source_features_dlaa_76570(_QWORD, __int64, __int64,
+                                                   unsigned __int64);
 __int64 nvidia_dlss_rel_source_features_dlaa_7c330(void);
 __int64 nvidia_dlss_rel_source_features_dlaa_5e9c0(__int64 a1);
 __int64 nvidia_dlss_rel_source_features_dlaa_72b20(__int64 a1, unsigned int a2,
@@ -759,7 +760,8 @@ __int64 nvidia_dlss_rel_source_features_dlaa_72b20(__int64 a1, unsigned int a2,
   v372 = 0;
   v373 = 0;
   v11[2] = 16;
-  nvidia_dlss_rel_source_features_dlaa_76570(&v370);
+  nvidia_dlss_rel_source_features_dlaa_76570(&v370, (__int64)v11,
+                                             (__int64)v11 + 24, 3);
   v12 = v370;
   v13 = v371;
   if (v370 == v371) {
@@ -829,7 +831,8 @@ __int64 nvidia_dlss_rel_source_features_dlaa_72b20(__int64 a1, unsigned int a2,
   v372 = 0;
   v373 = 0;
   v26[2] = 32;
-  nvidia_dlss_rel_source_features_dlaa_76570(&v370);
+  nvidia_dlss_rel_source_features_dlaa_76570(&v370, (__int64)v26,
+                                             (__int64)v26 + 24, 3);
   v27 = v370;
   v28 = v371;
   if (v370 == v371) {
@@ -901,7 +904,8 @@ __int64 nvidia_dlss_rel_source_features_dlaa_72b20(__int64 a1, unsigned int a2,
   v372 = 0;
   v42[2] = 64;
   v373 = 0;
-  nvidia_dlss_rel_source_features_dlaa_76570(&v370);
+  nvidia_dlss_rel_source_features_dlaa_76570(&v370, (__int64)v42,
+                                             (__int64)v42 + 24, 3);
   v43 = v370;
   v44 = v371;
   if (v370 == v371) {
@@ -971,7 +975,8 @@ __int64 nvidia_dlss_rel_source_features_dlaa_72b20(__int64 a1, unsigned int a2,
   v57[2] = 64;
   *v57 = v41;
   v57[1] = v368;
-  nvidia_dlss_rel_source_features_dlaa_76570(&v370);
+  nvidia_dlss_rel_source_features_dlaa_76570(&v370, (__int64)v57,
+                                             (__int64)v57 + 24, 3);
   v58 = v370;
   v59 = v371;
   if (v370 == v371) {
@@ -1049,7 +1054,8 @@ __int64 nvidia_dlss_rel_source_features_dlaa_72b20(__int64 a1, unsigned int a2,
   v372 = 0;
   v73[2] = 64;
   v373 = 0;
-  nvidia_dlss_rel_source_features_dlaa_76570(&v370);
+  nvidia_dlss_rel_source_features_dlaa_76570(&v370, (__int64)v73,
+                                             (__int64)v73 + 24, 3);
   v74 = v370;
   v75 = v371;
   if (v370 == v371) {
@@ -1121,7 +1127,8 @@ __int64 nvidia_dlss_rel_source_features_dlaa_72b20(__int64 a1, unsigned int a2,
   v373 = 0;
   *v89 = v362;
   v89[1] = v361;
-  nvidia_dlss_rel_source_features_dlaa_76570(&v370);
+  nvidia_dlss_rel_source_features_dlaa_76570(&v370, (__int64)v89,
+                                             (__int64)v89 + 24, 3);
   v90 = v370;
   v91 = v371;
   if (v370 == v371) {
@@ -1195,7 +1202,8 @@ __int64 nvidia_dlss_rel_source_features_dlaa_72b20(__int64 a1, unsigned int a2,
   v372 = 0;
   v373 = 0;
   v106[2] = 96;
-  nvidia_dlss_rel_source_features_dlaa_76570(&v370);
+  nvidia_dlss_rel_source_features_dlaa_76570(&v370, (__int64)v106,
+                                             (__int64)v106 + 24, 3);
   v107 = v370;
   v108 = v371;
   if (v370 == v371) {
@@ -1266,7 +1274,8 @@ __int64 nvidia_dlss_rel_source_features_dlaa_72b20(__int64 a1, unsigned int a2,
   v372 = 0;
   v373 = 0;
   v121[2] = 96;
-  nvidia_dlss_rel_source_features_dlaa_76570(&v370);
+  nvidia_dlss_rel_source_features_dlaa_76570(&v370, (__int64)v121,
+                                             (__int64)v121 + 24, 3);
   v122 = v370;
   v123 = v371;
   if (v370 == v371) {
@@ -1341,7 +1350,8 @@ __int64 nvidia_dlss_rel_source_features_dlaa_72b20(__int64 a1, unsigned int a2,
   v372 = 0;
   v373 = 0;
   v138[2] = 128;
-  nvidia_dlss_rel_source_features_dlaa_76570(&v370);
+  nvidia_dlss_rel_source_features_dlaa_76570(&v370, (__int64)v138,
+                                             (__int64)v138 + 24, 3);
   v139 = v370;
   v140 = v371;
   if (v370 == v371) {
@@ -1412,7 +1422,8 @@ __int64 nvidia_dlss_rel_source_features_dlaa_72b20(__int64 a1, unsigned int a2,
   v372 = 0;
   v373 = 0;
   v153[2] = 128;
-  nvidia_dlss_rel_source_features_dlaa_76570(&v370);
+  nvidia_dlss_rel_source_features_dlaa_76570(&v370, (__int64)v153,
+                                             (__int64)v153 + 24, 3);
   v154 = v370;
   v155 = v371;
   if (v370 == v371) {
@@ -1485,7 +1496,8 @@ __int64 nvidia_dlss_rel_source_features_dlaa_72b20(__int64 a1, unsigned int a2,
   v372 = 0;
   v373 = 0;
   v170[2] = 160;
-  nvidia_dlss_rel_source_features_dlaa_76570(&v370);
+  nvidia_dlss_rel_source_features_dlaa_76570(&v370, (__int64)v170,
+                                             (__int64)v170 + 24, 3);
   v171 = v370;
   v172 = v371;
   if (v370 == v371) {
@@ -1556,7 +1568,8 @@ __int64 nvidia_dlss_rel_source_features_dlaa_72b20(__int64 a1, unsigned int a2,
   v372 = 0;
   v373 = 0;
   v185[2] = 160;
-  nvidia_dlss_rel_source_features_dlaa_76570(&v370);
+  nvidia_dlss_rel_source_features_dlaa_76570(&v370, (__int64)v185,
+                                             (__int64)v185 + 24, 3);
   v186 = v370;
   v187 = v371;
   if (v370 == v371) {
@@ -1626,7 +1639,8 @@ __int64 nvidia_dlss_rel_source_features_dlaa_72b20(__int64 a1, unsigned int a2,
   v372 = 0;
   v373 = 0;
   v200[2] = 128;
-  nvidia_dlss_rel_source_features_dlaa_76570(&v370);
+  nvidia_dlss_rel_source_features_dlaa_76570(&v370, (__int64)v200,
+                                             (__int64)v200 + 24, 3);
   v201 = v370;
   v202 = v371;
   if (v370 == v371) {
@@ -1697,7 +1711,8 @@ __int64 nvidia_dlss_rel_source_features_dlaa_72b20(__int64 a1, unsigned int a2,
   v372 = 0;
   v373 = 0;
   v215[2] = 96;
-  nvidia_dlss_rel_source_features_dlaa_76570(&v370);
+  nvidia_dlss_rel_source_features_dlaa_76570(&v370, (__int64)v215,
+                                             (__int64)v215 + 24, 3);
   v216 = v370;
   v217 = v371;
   if (v370 == v371) {
@@ -1768,7 +1783,8 @@ __int64 nvidia_dlss_rel_source_features_dlaa_72b20(__int64 a1, unsigned int a2,
   v373 = 0;
   *v231 = v362;
   v231[1] = v361;
-  nvidia_dlss_rel_source_features_dlaa_76570(&v370);
+  nvidia_dlss_rel_source_features_dlaa_76570(&v370, (__int64)v231,
+                                             (__int64)v231 + 24, 3);
   v232 = v370;
   v233 = v371;
   if (v370 == v371) {
@@ -1839,7 +1855,8 @@ __int64 nvidia_dlss_rel_source_features_dlaa_72b20(__int64 a1, unsigned int a2,
   v373 = 0;
   *v247 = v354;
   v247[1] = v368;
-  nvidia_dlss_rel_source_features_dlaa_76570(&v370);
+  nvidia_dlss_rel_source_features_dlaa_76570(&v370, (__int64)v247,
+                                             (__int64)v247 + 24, 3);
   v248 = v370;
   v249 = v371;
   if (v370 == v371) {
@@ -1911,7 +1928,8 @@ __int64 nvidia_dlss_rel_source_features_dlaa_72b20(__int64 a1, unsigned int a2,
   v372 = 0;
   v373 = 0;
   v263[2] = 32;
-  nvidia_dlss_rel_source_features_dlaa_76570(&v370);
+  nvidia_dlss_rel_source_features_dlaa_76570(&v370, (__int64)v263,
+                                             (__int64)v263 + 24, 3);
   v264 = v370;
   v265 = v371;
   if (v370 == v371) {
@@ -1986,7 +2004,8 @@ __int64 nvidia_dlss_rel_source_features_dlaa_72b20(__int64 a1, unsigned int a2,
   v372 = 0;
   v373 = 0;
   v280[2] = 40;
-  nvidia_dlss_rel_source_features_dlaa_76570(&v370);
+  nvidia_dlss_rel_source_features_dlaa_76570(&v370, (__int64)v280,
+                                             (__int64)v280 + 24, 3);
   v281 = v370;
   v282 = v371;
   if (v370 == v371) {
@@ -2057,7 +2076,8 @@ __int64 nvidia_dlss_rel_source_features_dlaa_72b20(__int64 a1, unsigned int a2,
   v371 = nullptr;
   v372 = 0;
   v373 = 0;
-  nvidia_dlss_rel_source_features_dlaa_76570(&v370);
+  nvidia_dlss_rel_source_features_dlaa_76570(&v370, (__int64)v296,
+                                             (__int64)v296 + 24, 3);
   v297 = v370;
   v298 = v371;
   if (v370 == v371) {
@@ -2129,9 +2149,13 @@ __int64 nvidia_dlss_rel_source_features_dlaa_72b20(__int64 a1, unsigned int a2,
   v313 = *(_QWORD*)(a1 + 2040);
   *(_QWORD*)(a1 + 2144) = *(_QWORD*)(a1 + 2032);
   *(_QWORD*)(a1 + 2152) = v313;
-  nvidia_dlss_rel_source_features_dlaa_76570(a1 + 2184);
+  nvidia_dlss_rel_source_features_dlaa_76570(
+      a1 + 2184, *(_QWORD*)(a1 + 2072), *(_QWORD*)(a1 + 2080),
+      (*(__int64*)(a1 + 2080) - *(__int64*)(a1 + 2072)) >> 3);
   *(_BYTE*)(a1 + 2208) = *(_BYTE*)(a1 + 2096);
-  nvidia_dlss_rel_source_features_dlaa_76570(a1 + 2216);
+  nvidia_dlss_rel_source_features_dlaa_76570(
+      a1 + 2216, *(_QWORD*)(a1 + 2104), *(_QWORD*)(a1 + 2112),
+      (*(__int64*)(a1 + 2112) - *(__int64*)(a1 + 2104)) >> 3);
   v314 = *(_QWORD*)(a1 + 2056);
   *(_QWORD*)(a1 + 2272) = *(_QWORD*)(a1 + 2048);
   *(_QWORD*)(a1 + 2280) = v314;
@@ -2142,9 +2166,13 @@ __int64 nvidia_dlss_rel_source_features_dlaa_72b20(__int64 a1, unsigned int a2,
   v316 = *(_QWORD*)(a1 + 2040);
   *(_QWORD*)(a1 + 2256) = *(_QWORD*)(a1 + 2032);
   *(_QWORD*)(a1 + 2264) = v316;
-  nvidia_dlss_rel_source_features_dlaa_76570(a1 + 2296);
+  nvidia_dlss_rel_source_features_dlaa_76570(
+      a1 + 2296, *(_QWORD*)(a1 + 2072), *(_QWORD*)(a1 + 2080),
+      (*(__int64*)(a1 + 2080) - *(__int64*)(a1 + 2072)) >> 3);
   *(_BYTE*)(a1 + 2320) = *(_BYTE*)(a1 + 2096);
-  nvidia_dlss_rel_source_features_dlaa_76570(a1 + 2328);
+  nvidia_dlss_rel_source_features_dlaa_76570(
+      a1 + 2328, *(_QWORD*)(a1 + 2104), *(_QWORD*)(a1 + 2112),
+      (*(__int64*)(a1 + 2112) - *(__int64*)(a1 + 2104)) >> 3);
   v317 = *(_QWORD*)(a1 + 2056);
   *(_QWORD*)(a1 + 2384) = *(_QWORD*)(a1 + 2048);
   *(_QWORD*)(a1 + 2392) = v317;
@@ -2155,13 +2183,18 @@ __int64 nvidia_dlss_rel_source_features_dlaa_72b20(__int64 a1, unsigned int a2,
   v319 = *(_QWORD*)(a1 + 2040);
   *(_QWORD*)(a1 + 2368) = *(_QWORD*)(a1 + 2032);
   *(_QWORD*)(a1 + 2376) = v319;
-  nvidia_dlss_rel_source_features_dlaa_76570(a1 + 2408);
+  nvidia_dlss_rel_source_features_dlaa_76570(
+      a1 + 2408, *(_QWORD*)(a1 + 2072), *(_QWORD*)(a1 + 2080),
+      (*(__int64*)(a1 + 2080) - *(__int64*)(a1 + 2072)) >> 3);
   *(_BYTE*)(a1 + 2432) = *(_BYTE*)(a1 + 2096);
-  nvidia_dlss_rel_source_features_dlaa_76570(a1 + 2440);
+  nvidia_dlss_rel_source_features_dlaa_76570(
+      a1 + 2440, *(_QWORD*)(a1 + 2104), *(_QWORD*)(a1 + 2112),
+      (*(__int64*)(a1 + 2112) - *(__int64*)(a1 + 2104)) >> 3);
   if ((a4 & 1) != 0) {
     v320 = NgxRoutine_420(8);
     *(_QWORD*)v320 = v352;
-    nvidia_dlss_rel_source_features_dlaa_76570(a1 + 984);
+    nvidia_dlss_rel_source_features_dlaa_76570(a1 + 984, (__int64)v320,
+                                               (__int64)v320 + 8, 1);
     v321 = *(_QWORD*)(*(_QWORD*)v320 + 48LL);
     if (*(_QWORD*)(a1 + 944) > v321) {
       v321 = *(_QWORD*)(a1 + 944);
@@ -2171,7 +2204,8 @@ __int64 nvidia_dlss_rel_source_features_dlaa_72b20(__int64 a1, unsigned int a2,
     v322 = (_QWORD*)NgxRoutine_420(16);
     *v322 = v365;
     v322[1] = v367;
-    nvidia_dlss_rel_source_features_dlaa_76570(a1 + 1656);
+    nvidia_dlss_rel_source_features_dlaa_76570(a1 + 1656, (__int64)v322,
+                                               (__int64)v322 + 16, 2);
     v323 = *(_QWORD*)(v322[1] + 48LL) + *(_QWORD*)(*v322 + 48LL);
     if (*(_QWORD*)(a1 + 1616) > v323) {
       v323 = *(_QWORD*)(a1 + 1616);
@@ -2180,7 +2214,8 @@ __int64 nvidia_dlss_rel_source_features_dlaa_72b20(__int64 a1, unsigned int a2,
     NgxRoutine_430(v322, 16);
     v324 = NgxRoutine_420(8);
     *(_QWORD*)v324 = v229;
-    nvidia_dlss_rel_source_features_dlaa_76570(a1 + 536);
+    nvidia_dlss_rel_source_features_dlaa_76570(a1 + 536, (__int64)v324,
+                                               (__int64)v324 + 8, 1);
     v325 = *(_QWORD*)(*(_QWORD*)v324 + 48LL);
     if (*(_QWORD*)(a1 + 496) > v325) {
       v325 = *(_QWORD*)(a1 + 496);
@@ -2190,7 +2225,8 @@ __int64 nvidia_dlss_rel_source_features_dlaa_72b20(__int64 a1, unsigned int a2,
     v326 = (_QWORD*)NgxRoutine_420(16);
     *v326 = v355;
     v326[1] = v357;
-    nvidia_dlss_rel_source_features_dlaa_76570(a1 + 1992);
+    nvidia_dlss_rel_source_features_dlaa_76570(a1 + 1992, (__int64)v326,
+                                               (__int64)v326 + 16, 2);
     v327 = *(_QWORD*)(v326[1] + 48LL) + *(_QWORD*)(*v326 + 48LL);
     if (*(_QWORD*)(a1 + 1952) > v327) {
       v327 = *(_QWORD*)(a1 + 1952);
@@ -2199,7 +2235,8 @@ __int64 nvidia_dlss_rel_source_features_dlaa_72b20(__int64 a1, unsigned int a2,
     NgxRoutine_430(v326, 16);
     v328 = NgxRoutine_420(8);
     *(_QWORD*)v328 = v278;
-    nvidia_dlss_rel_source_features_dlaa_76570(v351);
+    nvidia_dlss_rel_source_features_dlaa_76570(v351, (__int64)v328,
+                                               (__int64)v328 + 8, 1);
     v329 = *(_QWORD*)(*(_QWORD*)v328 + 48LL);
     if (*(_QWORD*)(a1 + 48) > v329) {
       v329 = *(_QWORD*)(a1 + 48);
@@ -2208,7 +2245,8 @@ __int64 nvidia_dlss_rel_source_features_dlaa_72b20(__int64 a1, unsigned int a2,
     NgxRoutine_430(v328, 8);
     v330 = NgxRoutine_420(8);
     *(_QWORD*)v330 = a1;
-    nvidia_dlss_rel_source_features_dlaa_76570(a1 + 2216);
+    nvidia_dlss_rel_source_features_dlaa_76570(a1 + 2216, (__int64)v330,
+                                               (__int64)v330 + 8, 1);
     v331 = *(_QWORD*)(*(_QWORD*)v330 + 48LL);
     if (*(_QWORD*)(a1 + 2176) > v331) {
       v331 = *(_QWORD*)(a1 + 2176);
@@ -2218,7 +2256,8 @@ __int64 nvidia_dlss_rel_source_features_dlaa_72b20(__int64 a1, unsigned int a2,
     v332 = (_QWORD*)NgxRoutine_420(16);
     *v332 = v363;
     v332[1] = v366;
-    nvidia_dlss_rel_source_features_dlaa_76570(a1 + 1544);
+    nvidia_dlss_rel_source_features_dlaa_76570(a1 + 1544, (__int64)v332,
+                                               (__int64)v332 + 16, 2);
     v333 = *(_QWORD*)(v332[1] + 48LL) + *(_QWORD*)(*v332 + 48LL);
     if (*(_QWORD*)(a1 + 1504) > v333) {
       v333 = *(_QWORD*)(a1 + 1504);
@@ -2227,7 +2266,8 @@ __int64 nvidia_dlss_rel_source_features_dlaa_72b20(__int64 a1, unsigned int a2,
     NgxRoutine_430(v332, 16);
     v334 = NgxRoutine_420(8);
     *(_QWORD*)v334 = v353;
-    nvidia_dlss_rel_source_features_dlaa_76570(a1 + 760);
+    nvidia_dlss_rel_source_features_dlaa_76570(a1 + 760, (__int64)v334,
+                                               (__int64)v334 + 8, 1);
     v335 = *(_QWORD*)(*(_QWORD*)v334 + 48LL);
     if (*(_QWORD*)(a1 + 720) > v335) {
       v335 = *(_QWORD*)(a1 + 720);
@@ -2237,7 +2277,8 @@ __int64 nvidia_dlss_rel_source_features_dlaa_72b20(__int64 a1, unsigned int a2,
     v336 = (_QWORD*)NgxRoutine_420(16);
     *v336 = v369;
     v336[1] = v356;
-    nvidia_dlss_rel_source_features_dlaa_76570(a1 + 1768);
+    nvidia_dlss_rel_source_features_dlaa_76570(a1 + 1768, (__int64)v336,
+                                               (__int64)v336 + 16, 2);
     v337 = *(_QWORD*)(v336[1] + 48LL) + *(_QWORD*)(*v336 + 48LL);
     if (*(_QWORD*)(a1 + 1728) > v337) {
       v337 = *(_QWORD*)(a1 + 1728);
@@ -2247,7 +2288,8 @@ __int64 nvidia_dlss_rel_source_features_dlaa_72b20(__int64 a1, unsigned int a2,
     v338 = (_QWORD*)NgxRoutine_420(16);
     *v338 = v245;
     v338[1] = v261;
-    nvidia_dlss_rel_source_features_dlaa_76570(a1 + 312);
+    nvidia_dlss_rel_source_features_dlaa_76570(a1 + 312, (__int64)v338,
+                                               (__int64)v338 + 16, 2);
     v339 = *(_QWORD*)(v338[1] + 48LL) + *(_QWORD*)(*v338 + 48LL);
     if (*(_QWORD*)(a1 + 272) > v339) {
       v339 = *(_QWORD*)(a1 + 272);
@@ -2256,7 +2298,8 @@ __int64 nvidia_dlss_rel_source_features_dlaa_72b20(__int64 a1, unsigned int a2,
     NgxRoutine_430(v338, 16);
     v340 = NgxRoutine_420(8);
     *(_QWORD*)v340 = v359;
-    nvidia_dlss_rel_source_features_dlaa_76570(a1 + 2328);
+    nvidia_dlss_rel_source_features_dlaa_76570(a1 + 2328, (__int64)v340,
+                                               (__int64)v340 + 8, 1);
     v341 = *(_QWORD*)(a1 + 2288);
     v342 = (_QWORD*)v340;
     v343 = 8;
@@ -2272,7 +2315,8 @@ __int64 nvidia_dlss_rel_source_features_dlaa_72b20(__int64 a1, unsigned int a2,
     v345[3] = v229;
     v345[4] = v355;
     v345[5] = v357;
-    nvidia_dlss_rel_source_features_dlaa_76570(a1 + 2216);
+    nvidia_dlss_rel_source_features_dlaa_76570(a1 + 2216, (__int64)v345,
+                                               (__int64)v345 + 64, 8);
     v346 = *(_QWORD*)(v345[7] + 48LL) + *(_QWORD*)(v345[6] + 48LL) +
            *(_QWORD*)(v345[5] + 48LL) + *(_QWORD*)(v345[4] + 48LL) +
            *(_QWORD*)(v345[3] + 48LL) + *(_QWORD*)(v345[2] + 48LL) +
@@ -2291,7 +2335,8 @@ __int64 nvidia_dlss_rel_source_features_dlaa_72b20(__int64 a1, unsigned int a2,
     v347[5] = v245;
     v347[6] = v261;
     v347[7] = v359;
-    nvidia_dlss_rel_source_features_dlaa_76570(a1 + 2328);
+    nvidia_dlss_rel_source_features_dlaa_76570(a1 + 2328, (__int64)v347,
+                                               (__int64)v347 + 64, 8);
     v343 = 64;
     v342 = v347;
     v344 = *(_QWORD*)(v347[7] + 48LL) + *(_QWORD*)(v347[6] + 48LL) +
@@ -2308,7 +2353,8 @@ __int64 nvidia_dlss_rel_source_features_dlaa_72b20(__int64 a1, unsigned int a2,
   v348 = (_QWORD*)NgxRoutine_420(16);
   *v348 = v364;
   v348[1] = v360;
-  nvidia_dlss_rel_source_features_dlaa_76570(a1 + 2440);
+  nvidia_dlss_rel_source_features_dlaa_76570(a1 + 2440, (__int64)v348,
+                                             (__int64)v348 + 16, 2);
   v349 = *(_QWORD*)(v348[1] + 48LL) + *(_QWORD*)(*v348 + 48LL);
   if (*(_QWORD*)(a1 + 2400) > v349) {
     v349 = *(_QWORD*)(a1 + 2400);

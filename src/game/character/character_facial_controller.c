@@ -28,7 +28,7 @@ __n128 CharacterFacialController_Destructor(__int64 a1);
 _QWORD* GameRoutine_10a0100(_QWORD* result, __int64);
 __int64 CharacterFacialController_10b4280(__int64 result, float);
 __int64 GameRoutine_10b3cb0(_QWORD, _QWORD);
-__int64 MaterialAnimModule_be7090(float);
+__int64 MaterialAnimModule_be7090(_QWORD*, __int64, unsigned __int64, float);
 __int64 Model_a661a0(__int64, int, __int64, int);
 __int64 __cxa_guard_acquire(_QWORD);
 __int64 __cxa_guard_release(_QWORD);
@@ -515,6 +515,12 @@ void CharacterFacialController_10b2280(__int64 a1, unsigned int a2, float a3)
               if (v24 == v19) {
                 if (v20 != v22 && *(_QWORD*)(v22 + 8) != 0) {
                   MaterialAnimModule_be7090(
+                      *(_QWORD**)(v22 + 8),
+                      (*(_BYTE*)(v10 + 400) & 1) != 0 ? *(_QWORD*)(v10 + 416)
+                                                      : v10 + 401,
+                      (*(_BYTE*)(v10 + 400) & 1) != 0
+                          ? *(_QWORD*)(v10 + 408)
+                          : *(unsigned __int8*)(v10 + 400) >> 1,
                       *(float*)(*(_QWORD*)GameData_212d270 + 356LL));
                 }
                 break;

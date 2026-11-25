@@ -13,7 +13,8 @@ __int64 memset_plt(_QWORD, _QWORD, _QWORD);
 __int64 quant_band_stereo(__int64, __int16*, __int16*, unsigned int, int,
                           unsigned int, __int64, unsigned int, _WORD*, __int64,
                           int);
-__int64 quant_partition(_QWORD, _QWORD, _QWORD, _QWORD);
+__int64 quant_partition(_QWORD, _QWORD, _QWORD, _QWORD, int, _WORD*, int,
+                        unsigned int, int);
 extern _UNKNOWN* MovieData_c09c8;
 extern unsigned __int8 MovieData_a2220[16];
 extern unsigned __int8 MovieData_a2250[16];
@@ -2269,7 +2270,8 @@ LABEL_41:
         goto LABEL_71;
       }
     LABEL_78:
-      v259 = quant_partition(a1, a2, (unsigned int)v22, a4);
+      v259 = quant_partition(a1, a2, (unsigned int)v22, a4, v153, (_WORD*)a6,
+                             a7, (unsigned __int16)a9, a11);
       if (a1[1] != 0) {
       LABEL_79:
         if (v257 != 0) {
@@ -2534,7 +2536,8 @@ LABEL_71:
   if (a6 != 0) {
     MovieRoutine_23220(a6, v154, v155, v245);
   }
-  v259 = quant_partition(a1, a2, (unsigned int)v22, a4);
+  v259 = quant_partition(a1, a2, (unsigned int)v22, a4, v153, (_WORD*)a6, a7,
+                         (unsigned __int16)a9, a11);
   if (a1[1] != 0) {
     interleave_hadamard(a2, v154, v155, v245);
     goto LABEL_79;

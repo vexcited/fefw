@@ -10,13 +10,14 @@ __int64 NvTegraSysInit_plt(_QWORD);
 __int64 nvidia_5f10c0(_QWORD, _QWORD, _QWORD);
 __int64 nvidia_5f1150(_QWORD, _QWORD, _QWORD);
 __int64 nvidia_5f11c0();
-__int64 nvidia_625d50(char*);
+__int64 nvidia_625d50(char*, _DWORD*);
 __int64 nvidia_628ea0(void);
 __int64 nvidia_632420(void);
 __int64 nvidia_63fa00(void);
 __int64 nvrm_sync_60b500(void);
 extern __int64 (*nvidia_5f0d40_ptr[3])();
 extern int SdkData_10406a8;
+extern int SdkData_10406ac;
 unsigned __int64 NvUStrlConvertCodePage(_WORD* a1, unsigned __int64 a2, int a3,
                                         char* a4, __int64 a5, int a6);
 __int64 nvidia_60b3f0(__int64 a1);
@@ -212,7 +213,7 @@ __int64 nvidia_625d00()
   }
   SdkData_10406a8 = NvTegraSysGetChipId_plt();
   v0 = (char*)NvTegraSysGetPlatform_plt();
-  return nvidia_625d50(v0);
+  return nvidia_625d50(v0, (_DWORD*)&SdkData_10406ac);
 }
 
 __int64 nvidia_6280e0(__int64* a1, unsigned __int64 a2)

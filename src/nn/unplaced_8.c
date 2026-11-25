@@ -65,7 +65,7 @@ __int64 SdkRoutine_6ade10();
 __int64 fw_rtld_RegisterCrtDestructor();
 __int64 memcpy_plt(__int64, __int64, unsigned __int64);
 __int64 memset_plt(__int64, int, unsigned __int64);
-__int64 nn_65ed70(__int64);
+__int64 nn_65ed70(__int64, int);
 __int64 nn_65f540(__int64, __int64, _DWORD*);
 __int64 nn_66a6d0(__int64 result, __int64, __int64*);
 __int64 nn_applet_GetAppletResourceUserId_plt(__int64);
@@ -1048,7 +1048,7 @@ __int64 nn_654330(__int64 a1, __int64 a2)
   ++SdkData_10420ac;
   memset_plt(a1, 0, 0x2320u);
   SdkRoutine_654d40(a1);
-  if ((nn_65ed70(a1 + 2520) & 1) != 0) {
+  if ((nn_65ed70(a1 + 2520, *(int*)(a2 + 4)) & 1) != 0) {
     nn_os_LockMutex_plt((__int64)SdkData_e89c10);
     nn_65f3c0((void*)((__int64)v16), a1 + 2520);
     memcpy_plt(a1 + 16, (__int64)v16, 0x118u);

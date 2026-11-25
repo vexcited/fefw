@@ -16,6 +16,9 @@ extern __int64 GameData_212dce8;
 extern __int64 GameData_212dd18[3];
 extern __int64 GameData_2131208[3];
 extern __int64 GameData_2131210[2];
+extern _UNKNOWN* GameData_2131238;
+extern _UNKNOWN* GameData_2131240;
+extern _UNKNOWN* GameData_2131248;
 extern __int64 GameData_224ade8;
 extern __int64 fw_memory_g_heap_manager_ptr;
 extern __int64* GameData_2132488;
@@ -152,7 +155,10 @@ __int64 game_GameVariableTable_Find(_QWORD*, unsigned __int64*);
 __int64 game_HashString_alt1(__int64 result) __asm__("game_HashString");
 __int64 game_ProcInst_Register(__int64);
 __int64 game_facility_140c240(_QWORD, _QWORD, _QWORD, _QWORD);
-__int64 game_facility_14994e0(__int64);
+__int64 game_facility_14994e0(__int64, const char**, __int64);
+void game_facility_14992c0(unsigned __int8** a1, _QWORD* a2);
+__int64 TheaterActFuncCaller_14993d0(__int64* a1, __int64 a2);
+__int64 game_facility_1499450(__int64* a1, __int64 a2, long double a3);
 __int64 memcpy(_QWORD, _QWORD, _QWORD);
 __int64 snd_Fade_Destroy_Fade(_QWORD*);
 __int64 snd_Fade_Destroy_Fade_alt1(_QWORD) __asm__("snd_Fade_Destroy_Fade");
@@ -3684,9 +3690,12 @@ LABEL_46:
   *(_DWORD*)(v52 + 40) = 1065353216;
   v55 = (__int64*)v52;
   *(_QWORD*)v52 = GameData_2131630[0] + 2;
-  game_facility_14994e0(v52 + 8);
-  game_facility_14994e0(v54);
-  game_facility_14994e0(v54);
+  game_facility_14994e0(v52 + 8, (const char**)GameData_2131238,
+                        (__int64)game_facility_14992c0);
+  game_facility_14994e0(v54, (const char**)GameData_2131240,
+                        (__int64)TheaterActFuncCaller_14993d0);
+  game_facility_14994e0(v54, (const char**)GameData_2131248,
+                        (__int64)game_facility_1499450);
   v56 = *v55;
   *v53 = v55;
   (*(void (**)(__int64*))(v56 + 16))(v55);

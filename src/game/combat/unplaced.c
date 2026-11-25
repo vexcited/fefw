@@ -196,7 +196,7 @@ float32x4_t* game_combat_106f5a0(__int64 a1, __int64* a2);
 __int64* CharacterModel_1070c00_alt1(__int64,
                                      int) __asm__("CharacterModel_1070c00");
 __int64 GameHr_e41bc0(__int64);
-__int64 GameHr_e41cc0(__int64);
+__int64 GameHr_e41cc0(__int64, int);
 __int64 memcpy_alt1(__int64, __int64, unsigned __int64) __asm__("memcpy");
 __int64 nn_os_LockMutex_alt1(__int64) __asm__("nn_os_LockMutex");
 __int64 nn_os_UnlockMutex_alt1(__int64) __asm__("nn_os_UnlockMutex");
@@ -626,10 +626,9 @@ __int64 game_combat_e326e0(__int64 a1, __int64* a2)
   v81 = v4;
   v11 = 0;
   do {
-    *(_DWORD*)(v10 +
-               v11) = GameHr_e41cc0(v8),
-               v24 = COERCE_AS(__typeof__(v24),
-                               PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
+    *(_DWORD*)(v10 + v11) = GameHr_e41cc0(v8, *(_DWORD*)(v10 + v11)),
+        v24 = COERCE_AS(__typeof__(v24),
+                        PSEUDO_REGISTER(unsigned long long, "x0", "=r"));
     v11 += 8;
   } while (v9 != v11);
   v12 = 0;

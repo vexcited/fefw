@@ -251,9 +251,11 @@ void SceneManager_FacilityMapArgs_DeletingDestructor(_QWORD* a1);
 _QWORD* GameRoutine_654050(_QWORD* result, _QWORD*);
 _QWORD* GameRoutine_66b000(__int64*, _QWORD*);
 __int64 GameRoutine_1953a90(void);
-__int64 game_facility_1498870(__int64);
+__int64 game_facility_1498870(__int64, const char*, __int64);
+void game_facility_1498790(unsigned __int8** a1, __int64 a2);
 extern _DWORD* GameData_2130fb8;
 extern _DWORD* GameData_2131358;
+extern char GameData_1ab56b0[];
 extern _DWORD* GameData_21315e0;
 extern _UNKNOWN* GameData_212c540;
 extern _UNKNOWN GameData_21a6130;
@@ -620,7 +622,8 @@ void game_facility_SceneManager_SceneManager(__int64 a1)
   *(_DWORD*)(v36 + 40) = 1065353216;
   *(_QWORD*)(v36 + 8) = 0;
   *(_QWORD*)v36 = GameData_2131610[0] + 2;
-  game_facility_1498870(v36 + 8);
+  game_facility_1498870(v36 + 8, GameData_1ab56b0,
+                        (__int64)game_facility_1498790);
   {
     v39 = *v37;
     __asm__ volatile("" ::"r"(v39));

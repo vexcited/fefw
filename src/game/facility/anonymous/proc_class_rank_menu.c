@@ -55,7 +55,7 @@ void ProcClassRankMenu_Unknown94(__int64* a1);
 _QWORD* GameMenu_16e9cd0(__int64, __int64);
 __attribute__((swiftcall)) void LayoutAccessor_1560070(PSEUDO_X8, __int64*,
                                                        const char*);
-__int64 game_gameui_Util_SetUnitInfoMasteryLevel(_QWORD*);
+__int64 game_gameui_Util_SetUnitInfoMasteryLevel(_QWORD*, __int64);
 __int64 game_menu_BasicMenu_Unknown16de4d0_alt1(__int64) __asm__(
     "game_menu_BasicMenu_Unknown16de4d0");
 __int64 game_menu_BasicMenu_Unknown96_alt1(__int64 result) __asm__(
@@ -256,11 +256,11 @@ void ProcClassRankMenu_Unknown96(__int64* a1)
           if (v4 != 0) {
             atomic_fetch_add_explicit((atomic_ullong* volatile)(v4 + 16), 1u,
                                       memory_order_relaxed);
-            game_gameui_Util_SetUnitInfoMasteryLevel(v10);
+            game_gameui_Util_SetUnitInfoMasteryLevel(v10, v3);
             std___1___shared_weak_count___release_weak_alt1(v4);
             goto LABEL_18;
           }
-          game_gameui_Util_SetUnitInfoMasteryLevel(v10);
+          game_gameui_Util_SetUnitInfoMasteryLevel(v10, v3);
         }
         else if (v4 != 0) {
         LABEL_18:
@@ -673,12 +673,12 @@ LABEL_20:
     v63[0] = v13;
     v63[1] = v12;
     if (v12 == 0) {
-      game_gameui_Util_SetUnitInfoMasteryLevel(v63);
+      game_gameui_Util_SetUnitInfoMasteryLevel(v63, *(_QWORD*)(a1 + 1064));
       goto LABEL_33;
     }
     atomic_fetch_add_explicit((atomic_ullong* volatile)(v12 + 16), 1u,
                               memory_order_relaxed);
-    game_gameui_Util_SetUnitInfoMasteryLevel(v63);
+    game_gameui_Util_SetUnitInfoMasteryLevel(v63, *(_QWORD*)(a1 + 1064));
     std___1___shared_weak_count___release_weak_alt1(v12);
   }
   else if (v12 == 0) {

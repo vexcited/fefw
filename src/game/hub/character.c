@@ -270,7 +270,7 @@ GameRoutine_cac400_alt1(PSEUDO_X8, __int64, int) __asm__("GameRoutine_cac400");
 __attribute__((swiftcall)) void
 game_e99570_alt1(PSEUDO_X8, __int64***) __asm__("game_e99570");
 __int64 GameHr_67f200(__int64);
-__int64 GameHr_67f360(__int64);
+__int64 GameHr_67f360(__int64, int);
 __int64 GameHr_7e8000(__int64);
 __int64 GameHr_918ce0(__int64*, __int64);
 __int64 GameHr_cee4a0(__int64);
@@ -3497,7 +3497,7 @@ __int64 Character_cb0480(__int64 a1, __int64 a2)
             v18 = (__int64*)GameData_21c9988;
           }
         }
-        v19 = (__int64*)GameHr_67f360(*(_QWORD*)(a1 + 16));
+        v19 = (__int64*)GameHr_67f360(*(_QWORD*)(a1 + 16), v15);
         if (*(_QWORD*)(v18[3] + 1112) != 0 && v18[11] != 0) {
           v18 = *(__int64**)(v18[3] + 1112);
         }

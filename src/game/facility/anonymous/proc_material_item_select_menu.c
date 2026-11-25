@@ -74,7 +74,7 @@ __int64 GameRoutine_156c910(_QWORD, const char*, ...);
 __int64 GameRoutine_157cff0(_QWORD, _QWORD, _QWORD, _QWORD);
 __int64 LayoutAccessor_155fbe0(_QWORD, _QWORD);
 __int64 LayoutAccessor_1562cf0(_QWORD, _QWORD);
-__int64 Manager_136a920(_QWORD, _QWORD, _QWORD, _QWORD);
+__int64 Manager_136a920(_QWORD, _QWORD, _QWORD, _QWORD, const char*);
 __int64 ui_LayoutAccessor_FindPane(_QWORD, _QWORD);
 extern _UNKNOWN* GameData_212da30;
 extern __int64* GameData_212d670[3];
@@ -539,7 +539,7 @@ __int64 ProcMaterialItemSelectMenu_Unknown141(__int64 a1)
       if (v21 != 0) {
         *(_DWORD*)(v21 + 12) = v20;
       }
-      Manager_136a920(ui_Manager_instance_ + 1264, v19, 0, 7);
+      Manager_136a920(ui_Manager_instance_ + 1264, v19, 0, 7, "IconStock_Gold");
     }
   }
   result = ui_LayoutAccessor_FindPane(a1 + 848, "T_CountNum");

@@ -10,7 +10,7 @@ __int64 GameRoutine_1a09ce0(_QWORD, _QWORD, _QWORD);
 __int64 GameRoutine_67ec40(_QWORD);
 __int64 fw_memory_HeapManager_Allocate(_QWORD, _QWORD, _QWORD, _QWORD);
 __int64 game_HashString(_QWORD);
-__int64 memchr(_QWORD, _QWORD);
+__int64 memchr(_QWORD, _QWORD, _QWORD);
 __int64 memcmp(_QWORD, _QWORD, _QWORD);
 __int64 memcpy(_QWORD, _QWORD, _QWORD);
 __int64 memmove(_QWORD, _QWORD, _QWORD);
@@ -979,7 +979,7 @@ __int64 SpineSlotChecker_1923b20(__int64 result, __int64 a2)
         else {
           v9 = (char*)&v26_.v26 + 1;
         }
-        v4 = memchr(v9, 95);
+        v4 = memchr(v9, 95, v8);
         if (v4 == 0 || v4 - (_QWORD)v9 == -1) {
         LABEL_41:
           if ((*(_BYTE*)v3 & 1) != 0) {

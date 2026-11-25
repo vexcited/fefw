@@ -7,7 +7,7 @@ __int64 NvOsFree_plt(_QWORD);
 __int64 NvOsMutexLockEx_plt(_QWORD);
 __int64 NvOsMutexUnlockEx_plt(_QWORD);
 __int64 nvidia_63b210(__int64, unsigned int*);
-__int64 nvstl_mutex_impl_nvos_63b190(__int64);
+__int64 nvstl_mutex_impl_nvos_63b190(__int64, __int64);
 void __attribute__((noreturn)) nvidia_62a350(__int64, __int64, __int64,
                                              __int64);
 __int64 nvidia_nvstl_impl_63a4e0(__int64 a1, unsigned int* a2, __int64* a3);
@@ -40,7 +40,7 @@ __int64 nvidia_nvstl_impl_63a4e0(__int64 a1, unsigned int* a2, __int64* a3)
   v7 = NvOsAlloc_plt(48);
   if (v7 != 0) {
     v8 = v7;
-    nvstl_mutex_impl_nvos_63b190(v7);
+    nvstl_mutex_impl_nvos_63b190(v7, a1);
     *a3 = v8;
     v6 = nvidia_63b210(v8, a2);
     if (v6 == 0) {

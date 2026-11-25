@@ -9,7 +9,7 @@ extern __int64 (*game_ProcInst_vtable[])();
 extern __int64 GameData_21f3c90;
 __int64 ProcHubSeqEnter_Destructor(__int64 a1);
 __int64 CharacterControllerPlayer_10c8e20(void);
-__int64 CharacterControllerPlayer_10c9b80(float);
+__int64 CharacterControllerPlayer_10c9b80(__int64, __int64, char, float);
 __int64 GameRoutine_104e1d0(_QWORD, _QWORD);
 __int64 GameRoutine_104e620(_QWORD);
 __int64 GameRoutine_104f0e0(_QWORD, _QWORD);
@@ -73,7 +73,7 @@ __int64 ProcHubSeqEnter_916060(__int64 result);
 _QWORD* ProcHubSeqEnter_9161e0(__int64 a1);
 __int64 ProcHubSeqEnter_916720(__int64 result);
 __int64 ProcHubSeqEnter_916810(__int64 result);
-void ProcHubSeqEnter_916860();
+void ProcHubSeqEnter_916860(int a1);
 __int64 ProcHubSeqEnter_916950(__int64 result);
 void ProcHubSeqEnter_916bb0();
 void ProcHubSeqEnter_916df0();
@@ -251,7 +251,7 @@ int sprintf_alt1(__int64, const char*, ...) __asm__("sprintf");
 void GameHr_913ca0(__int64, __int64);
 void ProcHubSeqEnter_915440(__int64 a1);
 void ProcHubSeqEnter_916440(__int64 a1);
-__int64 Message_16f9b50(__int64);
+__int64 Message_16f9b50(__int64, __int64*, __int64*);
 extern _UNKNOWN GameData_1ae979a;
 const char* ProcHubSeqEnter_917b00(__int64 a1);
 
@@ -1374,7 +1374,9 @@ __int64 ProcHubSeqEnter_916720(__int64 result)
   __int64 v2;
   __int64 v3;
   __int64 v4;
+  int v5;
 
+  v5 = result;
   v1 = *(_QWORD*)(GameData_21ec7c0 + 80);
   if (v1 != 0) {
     v2 = *(_QWORD*)(GameData_21ec7c0 + 72);
@@ -1391,7 +1393,9 @@ __int64 ProcHubSeqEnter_916720(__int64 result)
     else {
       result = *(_QWORD*)(v2 + 56);
       if (*(_DWORD*)(v2 + 1112) == 3 && result != 0) {
-        result = CharacterControllerPlayer_10c9b80(0.6);
+        result = CharacterControllerPlayer_10c9b80(
+            result, COERCE_UNSIGNED_INT((float)v5 / 1000.0f) | 0x100000000LL,
+            1, 0.6);
       }
     }
     if (atomic_fetch_add((atomic_ullong* volatile)(v4 + 8),
@@ -1415,7 +1419,7 @@ __int64 ProcHubSeqEnter_916810(__int64 result)
   return result;
 }
 
-void ProcHubSeqEnter_916860()
+void ProcHubSeqEnter_916860(int a1)
 {
   __int64 v0;
   __int64 v1;
@@ -1436,7 +1440,9 @@ void ProcHubSeqEnter_916860()
       }
     }
     else if (*(_DWORD*)(v1 + 1112) == 3 && *(_QWORD*)(v1 + 56) != 0) {
-      CharacterControllerPlayer_10c9b80(0.4);
+      CharacterControllerPlayer_10c9b80(
+          *(_QWORD*)(v1 + 56),
+          COERCE_UNSIGNED_INT((float)a1 / 1000.0f) | 0x100000000LL, 1, 0.4);
     }
     if (atomic_fetch_add((atomic_ullong* volatile)(v3 + 8),
                          0xFFFFFFFFFFFFFFFFLL) == 0) {
@@ -2381,6 +2387,7 @@ const char* ProcHubSeqEnter_917b00(__int64 a1)
     const char* v12;
     void* v13;
   } v12_;
+  __int64 v14[2];
 
   v2 = *(__int64**)(*GameData_212d458[0] + 24);
   v3 = *(__int64**)(*GameData_212d458[0] + 32);
@@ -2462,7 +2469,9 @@ LABEL_24:
   if ((v4 & 1) == 0 && *(_DWORD*)(GameData_21f3d10 + 136) == 1) {
     v12_.v12 = "MID_Dungeon_Enemy_Destroy";
     v12_.v13 = (__int128*)((char*)0x10LL + 9);
-    Message_16f9b50(a1);
+    v14[0] = (__int64)"";
+    v14[1] = 0;
+    Message_16f9b50(a1, (__int64*)&v12_, v14);
   }
   v12_.v13 = &GameData_1ae979a;
   v12_.v12 = (const char*)game_HashString_alt2((__int64)&GameData_1ae979a);

@@ -76,7 +76,8 @@ __int64*
 GameRoutine_f155c0_alt2(__int64* result, char*, char*,
                         unsigned __int64) __asm__("GameRoutine_f155c0");
 __int64 GameHr_fcabb0(__int64, __int64, int, char, char, __int64, __int64);
-__int64 GameHr_fcacb0(__int64, __int64, __int64, __int64, __int64, __int16);
+__int64 GameHr_fcacb0(__int64, __int64, __int64, __int64, __int64, __int16,
+                      __int64);
 __int64 GameRoutine_f097d0_alt1(__int64) __asm__("GameRoutine_f097d0");
 __int64 MapDrawConst_fcbcc0_alt1(__int64, int, unsigned __int8, unsigned __int8,
                                  __int64, char) __asm__("MapDrawConst_fcbcc0");
@@ -460,7 +461,8 @@ void game_map_MapPanelDeployMove_UpdateMesh(__int64 a1)
             game_map_f54910_alt1((__int64)v176_.v176);
             LANES128(v176_.v176[0]).n128_u64[0] =
                 (unsigned __int64)game_map_DeployMeshData_vtable;
-            GameHr_fcacb0(a1, (__int64)v176_.v176, 1, v33, v34, v37);
+            GameHr_fcacb0(a1, (__int64)v176_.v176, 1, v33, v34, v37,
+                          (__int64)GameData_212c958);
             if ((v148 & 1) != 0) {
               MapPanelDeployMove_10452a0(v5, (__int64)v176_.v176);
               MapDrawConst_fcc4f0_alt1(a1, v146, 0, v176_.v176, v33, v34, v37);

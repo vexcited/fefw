@@ -62,7 +62,7 @@ __int64 nvidia_629f40(__int64*, __int64, __int64);
 __int64 nvidia_62a2d0(_QWORD*, __int64);
 __int64 nvidia_63e080_alt1(_QWORD, _QWORD, _QWORD,
                            _QWORD) __asm__("nvidia_63e080");
-__int64 nvidia_63f980(_QWORD);
+__int64 nvidia_63f980(_QWORD, unsigned __int64);
 __int64 nvidia_63fca0_alt1(__int64, __int64, __int64,
                            __int64*) __asm__("nvidia_63fca0");
 __int64 nvidia_644da0_alt1(_QWORD, _QWORD, _QWORD,
@@ -437,7 +437,7 @@ __int64 nvidia_63e1e0(__int64 a1, __int64 a2, __int64 a3, __int64 a4,
         LODWORD(v34) = 2;
         goto LABEL_22;
       }
-      v14 = nvidia_63f980(v27);
+      v14 = nvidia_63f980(v27, (unsigned int)v38);
       if (v14 == 0) {
         v15 = (_DWORD*)v27[0];
         if ((_DWORD)v38 != 0) {
@@ -502,7 +502,7 @@ LABEL_23:
     v19 = nullptr;
     if (v10 != 0) {
     LABEL_25:
-      nvidia_63f980(v27);
+      nvidia_63f980(v27, 0);
       if (*((_BYTE*)a7 + 16) == 1) {
         goto LABEL_26;
       }
@@ -522,7 +522,7 @@ LABEL_23:
   else {
     v10 = 0;
   }
-  nvidia_63f980(v27);
+  nvidia_63f980(v27, 0);
   if (*((_BYTE*)a7 + 16) != 1) {
     goto LABEL_33;
   }
@@ -567,7 +567,7 @@ LABEL_34:
     v10 = v24;
   }
 LABEL_45:
-  nvidia_63f980(v27);
+  nvidia_63f980(v27, 0);
   NvOsFree_plt(v27[0]);
   return v10;
 }

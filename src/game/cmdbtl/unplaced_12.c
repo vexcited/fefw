@@ -25,7 +25,7 @@ __int64 nn_os_LockMutex(__int64);
 __int64 nn_os_UnlockMutex(__int64);
 __int64 std___1___shared_weak_count___release_weak(__int64);
 __int64 std___1___shared_weak_count_lock(__int64);
-bool CmdBtlParty_e773c0(__int64, _QWORD*, _QWORD*);
+bool CmdBtlParty_e773c0(__int64, _QWORD*, _QWORD*, unsigned int);
 extern _DWORD GameData_1b94910[3];
 extern _QWORD GameData_1b01768[4];
 extern _UNKNOWN GameData_1a91cbb;
@@ -181,8 +181,8 @@ __int64 game_cmdbtl_eaa1a0(__int64 a1, __int64* a2)
   if (v2 != 0) {
     atomic_fetch_add_explicit((atomic_ullong* volatile)(v2 + 8), 1u,
                               memory_order_relaxed);
-    result = ((__int64 (*)(__int64, _QWORD*, _QWORD*))CmdBtlParty_e773c0)(
-        v6, v74, v73);
+    result = ((__int64 (*)(__int64, _QWORD*, _QWORD*,
+                           unsigned int))CmdBtlParty_e773c0)(v6, v74, v73, v5);
     v11 = result;
     if (atomic_fetch_add((atomic_ullong* volatile)(v2 + 8),
                          0xFFFFFFFFFFFFFFFFLL) == 0) {
@@ -194,8 +194,8 @@ __int64 game_cmdbtl_eaa1a0(__int64 a1, __int64* a2)
     }
   }
   else {
-    result = ((__int64 (*)(__int64, _QWORD*, _QWORD*))CmdBtlParty_e773c0)(
-        v6, v74, v73);
+    result = ((__int64 (*)(__int64, _QWORD*, _QWORD*,
+                           unsigned int))CmdBtlParty_e773c0)(v6, v74, v73, v5);
     v11 = result;
     if (v9 == 0) {
       goto LABEL_13;

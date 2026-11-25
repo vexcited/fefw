@@ -68,7 +68,8 @@ __int64* game_UnitPool_Get_alt1(_BYTE*) __asm__("game_UnitPool_Get");
 __int64 CharacterController_d42d20_alt1(
     __int64 result, char*, char*,
     unsigned __int64) __asm__("CharacterController_d42d20");
-__int64 GameHr_fcacb0(__int64, __int64, __int64, __int64, __int64, __int16);
+__int64 GameHr_fcacb0(__int64, __int64, __int64, __int64, __int64, __int16,
+                      __int64);
 __int64 MapDrawConst_fcbcc0_alt1(__int64, int, unsigned __int8, unsigned __int8,
                                  __int64, char) __asm__("MapDrawConst_fcbcc0");
 __int64 fw_memory_HeapManager_Allocate_alt1(
@@ -732,7 +733,8 @@ void game_map_MapPanelTrickDestroy_UpdateTarget(__int64 a1)
               LABEL_135:
                 v80 = a1;
                 GameHr_fcacb0(a1, (__int64)&i_.i, 1, (unsigned int)(char)*v78,
-                              (unsigned int)(char)v78[1], v84);
+                              (unsigned int)(char)v78[1], v84,
+                              (__int64)GameData_212c958);
               }
               if ((atomic_load_explicit(
                        (atomic_uchar* volatile)&GameData_21a6130,

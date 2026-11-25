@@ -35,7 +35,7 @@ __int64 ui_1839560(__int64 a1, char a2, unsigned int a3);
 __int64* game_820d50(int);
 __int64 LayoutAccessor_155cda0(__int64 result, const char*, const char*);
 __int64 LayoutAccessor_1566d90(__int64, char);
-__int64 Util_157c0a0(__int64*);
+__int64 Util_157c0a0(__int64*, char);
 __int64 game_GameVariableTable_Find(_QWORD*, unsigned __int64*);
 __int64 ui_LayoutAccessor_FindAlignment_alt1(__int64*, __int64) __asm__(
     "ui_LayoutAccessor_FindAlignment");
@@ -373,7 +373,7 @@ LABEL_62:
         ui_LayoutAccessor_SetPaneVisible(v5 + 168, (__int64)"L_Honor", 1);
         LayoutAccessor_1560070((void*)(&v106_.v106), (__int64*)(v5 + 168),
                                "L_Honor");
-        Util_157c0a0(&v106_.v106);
+        Util_157c0a0(&v106_.v106, 1);
         if (v106_.v107 != 0) {
           std___1___shared_weak_count___release_weak(v106_.v107);
         }

@@ -27,7 +27,7 @@ __int64 celt_decode_lost(__int64* a1, int a2, int a3);
 __int64 celt_synthesis(__int16** a1, __int64 a2, int** a3, __int64 a4, int a5,
                        int a6, int a7, unsigned int a8, int a9, int a10,
                        int a11, int a12, unsigned int a13);
-__int64 opus_celt_3aa60(__int64, _WORD*, int, int);
+__int64 opus_celt_3aa60(__int64, _WORD*, int, int, unsigned int);
 
 __int64 celt_decode_lost(__int64* a1, int a2, int a3)
 {
@@ -671,7 +671,8 @@ __int64 celt_decode_lost(__int64* a1, int a2, int a3)
     else {
       v419_.v534[0] = 0;
       memset_plt(&v419_.v520, 0, 2048);
-      opus_celt_3aa60((__int64)v419_.v519, &v419_.v520, 2048, v419_.v512);
+      opus_celt_3aa60((__int64)v419_.v519, &v419_.v520, 2048, v419_.v512,
+                      *((_DWORD*)a1 + 10));
       v6 = v419_.v516;
       MovieRoutine_3b720((__int64)&v419_.v533, (__int64)&v419_.v520, 1328, 620,
                          v419_.v534);

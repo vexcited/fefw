@@ -26,7 +26,7 @@ __int64 ui_LayoutAccessor_FindPane(__int64*, __int64);
 __int64 ui_LayoutAccessor_FindTextBox(__int64*, __int64);
 __int64 ui_LayoutAccessor_GetPartsLayout(__int64*, const char*);
 __int64 ui_LayoutAccessor_SetPaneVisible(__int64 result, __int64, char);
-char* GameHr_6fb960(__int64);
+char* GameHr_6fb960(__int64, __int64);
 char* GameHr_6fbd80(__int64, int);
 char* GameRoutine_a4dbe0(__int64, const char*, char);
 char* LayoutAccessor_1562060(char* result, __int64, const char*);
@@ -304,7 +304,8 @@ void game_gameui_control_18a7ae0(__int64 a1, unsigned int* a2, _QWORD* a3,
                                        (*a2 & 0xFFF) != 0);
       if ((*a2 & 0xFFF) != 0) {
         v17 = GameHr_6fb960(
-            *(_QWORD*)(*(_QWORD*)(*v13 + 64) + 8LL * (*a2 & 0xFFF)));
+            *(_QWORD*)(*(_QWORD*)(*v13 + 64) + 8LL * (*a2 & 0xFFF)),
+            (__int64)a3);
         if (v17 != nullptr) {
           v18 = (__int64)v17;
           v19 = ui_LayoutAccessor_FindTextBox((__int64*)(a1 + 88),

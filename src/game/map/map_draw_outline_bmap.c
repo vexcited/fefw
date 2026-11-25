@@ -5,6 +5,7 @@
 #pragma GCC visibility push(hidden)
 
 __int64 GameRoutine_f59d40(_QWORD);
+extern _UNKNOWN* GameData_212c958;
 extern __int64 (*game_map_MapDrawOutlineBmap_vtable[])();
 __int64 MapDrawOutlineBmap_Destructor(_QWORD* a1);
 __n128 nn_mem_StandardAllocator_Free(_QWORD);
@@ -23,7 +24,8 @@ void MapDrawOutlineBmap_DeletingDestructor(__int64 a1);
 __attribute__((swiftcall)) void game_fcb000(PSEUDO_X8, _QWORD, _QWORD);
 __int64* GameRoutine_64dfe0(__int64* result, __int64*);
 __int64* game_8224a0(unsigned __int8);
-__int64 GameHr_fcacb0(__int64, __int64, __int64, __int64, __int64, __int16);
+__int64 GameHr_fcacb0(__int64, __int64, __int64, __int64, __int64, __int16,
+                      __int64);
 __int64 MapDrawConst_fcc820(__int64, float32x4_t*, float32x4_t*, __int128*,
                             unsigned __int64*, unsigned __int8);
 __int64 game_GameVariableTable_Find(_QWORD*, unsigned __int64*);
@@ -445,7 +447,8 @@ void MapDrawOutlineBmap_Unknown3(__int64 a1)
         goto LABEL_17;
       }
       game_map_f54d00((__int64)v225_.v225);
-      GameHr_fcacb0(a1, (__int64)v225_.v225, 2, v23, v24, v46);
+      GameHr_fcacb0(a1, (__int64)v225_.v225, 2, v23, v24, v46,
+                    (__int64)GameData_212c958);
       MapDrawOutlineBmap_f59960(v203, (__int64)v225_.v225);
       v47 = (v225_.v231 - 0x61C8864680B583EBLL +
              (((v225_.v230 + 0x1FB68949BF00A3D6LL) ^ 0x9E3779B97F4A7C18LL)
