@@ -632,7 +632,7 @@ __int64 Trick_7ca860(__int64 a1, __int64 a2, __int64 a3, __int64 a4, __int64 a5,
       v103 = v102;
       if (HIDWORD(v108) * (int)v108 < 2) {
         if (HIDWORD(v108) * (_DWORD)v108 == 1) {
-          *((_DWORD*)v122 + (((int)v107 + 32 * HIDWORD(v107)) >> 5)) |= 1
+          *((_DWORD*)v122 + ((int)((int)v107 + 32 * HIDWORD(v107)) >> 5)) |= 1
                                                                         << v107;
         }
       LABEL_80:

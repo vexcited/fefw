@@ -4072,7 +4072,7 @@ __int64 CudaDriverHr_197c60(__int64* a1, int a2, __int64 a3)
   *(_OWORD*)(v6 + 40) = 0u;
   *(_OWORD*)(v6 + 24) = 0u;
   *(_DWORD*)(v6 + 8) = a2;
-  result = (*(__int64 (**)(void))(a3 + 152))();
+  result = (*(__int64 (**)(__int64))(a3 + 152))(v7);
   if ((_DWORD)result != 0) {
     v9 = result;
     (*(void (**)(__int64))(*(_QWORD*)v7 + 168LL))(v7);
@@ -5373,7 +5373,7 @@ __int64 CudaDriverHr_19c9c0(__int64 a1, char a2, __int64 a3)
   __int64 v22;
   _DWORD* v23;
 
-  result = (*(__int64 (**)(void))(*(_QWORD*)(a1 + 32306416) + 104LL))();
+  result = (*(__int64 (**)(__int64))(*(_QWORD*)(a1 + 32306416) + 104LL))(a1);
   if ((_DWORD)result != 0) {
     return result;
   }

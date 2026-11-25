@@ -2474,8 +2474,8 @@ __int64*** GameHr_a88b20(__int64*** result, int a2, char a3, __int64 a4)
                 result = (__int64***)GameRoutine_a8ade0(v30);
                 v34 = (__int64**)v30[73];
                 for (j = (__int64**)v30[74]; v34 != j;
-                     result =
-                         (__int64***)(*(__int64 (**)(void))(v37 + v38))()) {
+                     result = (__int64***)(*(__int64 (**)(__int64*))(
+                         v37 + v38))(v36)) {
                   v36 = *v34++;
                   v37 = *v36;
                   if (*((_BYTE*)v36 + 16) != 0) {

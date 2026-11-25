@@ -6104,7 +6104,7 @@ LABEL_46:
     if (v37 != 0 && *(_DWORD*)(v37 + 24) != 0) {
       v38 = CudaDriverRoutine_5ef60(v36, 0);
       if (v38 != 0) {
-        (*(void (**)(void))(v38 + 34008))();
+        (*(void (**)(__int64))(v38 + 34008))(v38);
       }
     }
   }

@@ -1705,7 +1705,7 @@ __int64 CudaDriverHr_220230(int a1, _DWORD* a2, __int64 a3)
   if (a3 == 0) {
     return 1;
   }
-  result = (*(__int64 (**)(void))(v5 + 20752))();
+  result = (*(__int64 (**)(__int64, _DWORD*))(v5 + 20752))(v5, a2);
   if ((int)result > 499) {
     if ((_DWORD)result != 500) {
       if ((_DWORD)result != 800) {
@@ -2316,7 +2316,7 @@ __int64 CudaDriverHr_2216a0(_QWORD* a1, __int64 a2)
     return 1;
   }
   *a1 = (*(__int64 (**)(_QWORD))(*(_QWORD*)(a2 + 64) + 19184LL))(*a1);
-  *a1 = (*(__int64 (**)(void))(*(_QWORD*)(a2 + 64) + 19176LL))();
+  *a1 = (*(__int64 (**)(_QWORD))(*(_QWORD*)(a2 + 64) + 19176LL))(*a1);
   return 0;
 }
 

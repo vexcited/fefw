@@ -31656,7 +31656,8 @@ LABEL_56:
                       v111 = *(_DWORD*)(v122 + 8);
                       if (v111 >= (unsigned int)v129_.v129 &&
                           (v111 > (unsigned int)v129_.v129 ||
-                           (*(_DWORD*)v122 | (*(_DWORD*)(v122 + 4) << 16)) <=
+                           (int)(*(_DWORD*)v122 |
+                                 (*(_DWORD*)(v122 + 4) << 16)) <=
                                (v67 | (v56 << 16)))) {
                         goto LABEL_213;
                       }

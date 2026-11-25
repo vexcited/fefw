@@ -1470,7 +1470,7 @@ LABEL_6:
     v45 = *v7;
     goto LABEL_40;
   }
-  (*(void (**)(void))(v44 + 16))();
+  (*(void (**)(_QWORD))(v44 + 16))(*(_QWORD*)(a1 + 240));
   result = 4294957289LL;
 LABEL_116:
   *v7 = 0;

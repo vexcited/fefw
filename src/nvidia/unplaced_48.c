@@ -778,7 +778,7 @@ __int64 nvidia_12f6b0(__int64 a1, __int64 a2)
   if (v2 != 2 && (v3 = *(_DWORD*)(a2 + 21864)) != 2 &&
       (v2 == v3 || (v2 == 0 ? (v5 = v3 == 1) : (v5 = false),
                     v5 || (v2 == 1 ? (v6 = v3 == 0) : (v6 = false), v6)))) {
-    return (*(__int64 (**)(void))(a1 + 21088))();
+    return (*(__int64 (**)(__int64, __int64))(a1 + 21088))(a1, a2);
   }
   else {
     return 0;

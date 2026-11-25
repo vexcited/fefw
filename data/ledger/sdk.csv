@@ -14510,12 +14510,12 @@ ffee0,324,verified,src/nn/fs/unplaced.c,nn_fs_GetAndClearMemoryReportInfo
 4337a0,88,verified,src/nn/fontll/itype/unplaced_2.c,nn_fontll_itype_4337a0
 433800,88,verified,src/nn/fontll/itype/unplaced_2.c,nn_fontll_itype_433800
 433860,256,verified,src/nn/fontll/itype/unplaced_2.c,nn_fontll_itype_433860
-433960,13300,verified,src/nn/fontll/itype/unplaced_2.c,nn_fontll_itype_433960
+433960,13360,verified,src/nn/fontll/itype/unplaced_2.c,nn_fontll_itype_433960
 437950,128,verified,src/nn/fontll/itype/unplaced_2.c,nn_fontll_itype_437950
 4379e0,352,verified,src/nn/fontll/itype/unplaced_2.c,nn_fontll_itype_4379e0
 437b60,540,verified,src/nn/fontll/itype/unplaced_2.c,nn_fontll_itype_437b60
 437da0,724,verified,src/nn/fontll/itype/unplaced_2.c,nn_fontll_itype_437da0
-4380a0,488,verified,src/nn/fontll/itype/unplaced_2.c,nn_fontll_itype_4380a0
+4380a0,488,disputed,src/nn/fontll/itype/unplaced_2.c,nn_fontll_itype_4380a0
 438290,112,verified,src/nn/fontll/itype/fsglue.c,ScaleFuncCall
 438300,140,verified,src/nn/fontll/itype/fsglue.c,get_glyph_parms
 438390,236,verified,src/nn/fontll/itype/fsglue.c,fs_NewSfnt
@@ -17521,7 +17521,7 @@ ffee0,324,verified,src/nn/fs/unplaced.c,nn_fs_GetAndClearMemoryReportInfo
 4ebf20,136,verified,src/nandroid/extractors/mp4/MPEG4Extractor.cpp,_ZN8nandroid14MPEG4Extractor21findTrackByMimePrefixEPKc
 4ebfc0,104,verified,src/nandroid/extractors/mp4/MPEG4Extractor.cpp,_ZN8nandroid2spINS_11SampleTableEEaSEPS1_
 4ec030,436,verified,src/nandroid/extractors/mp4/MPEG4Extractor.cpp,_ZN8nandroid14MPEG4Extractor11verifyTrackEPNS0_5TrackE
-4ec1f0,620,verified,src/nandroid/extractors/mp4/MPEG4Extractor_impl.c,MPEG4Extractor_4ec1f0
+4ec1f0,632,verified,src/nandroid/extractors/mp4/MPEG4Extractor_impl.c,MPEG4Extractor_4ec1f0
 4ec470,148,verified,src/nandroid/extractors/mp4/MPEG4Extractor_impl.c,MPEG4Extractor_4ec470
 4ec510,408,verified,src/nandroid/extractors/mp4/MPEG4Extractor.cpp,_ZN8nandroid14MPEG4Extractor20parseALACSampleEntryEPl
 4ec6b0,104,verified,src/nandroid/extractors/mp4/MPEG4Extractor.cpp,_ZN8nandroid2spINS_7ABufferEEaSEPS1_
@@ -17546,7 +17546,7 @@ ffee0,324,verified,src/nn/fs/unplaced.c,nn_fs_GetAndClearMemoryReportInfo
 4efc00,232,verified,src/nandroid/extractors/mp4/MPEG4Extractor_impl.c,MPEG4Extractor_4efc00
 4efd00,472,verified,src/nandroid/extractors/mp4/MPEG4Extractor.cpp,_ZN8nandroid14MPEG4Extractor14parseQTMetaValEilm
 4eff50,236,verified,src/nandroid/extractors/mp4/MPEG4Extractor.cpp,_ZN8nandroid14MPEG4Extractor27parseChannelCountSampleRateEPlPtS2_
-4f0040,160,verified,src/nandroid/extractors/mp4/MPEG4Extractor_impl.c,MPEG4Extractor_4f0040
+4f0040,164,verified,src/nandroid/extractors/mp4/MPEG4Extractor_impl.c,MPEG4Extractor_4f0040
 4f00f0,176,verified,src/nandroid/extractors/mp4/MPEG4Extractor_impl.c,MPEG4Extractor_4f00f0
 4f01a0,196,verified,src/nandroid/extractors/mp4/MPEG4Extractor_impl.c,MPEG4Extractor_4f01a0
 4f0270,68,verified,src/nandroid/extractors/mp4/MPEG4Extractor_impl.c,MPEG4Extractor_4f0270
@@ -17577,7 +17577,7 @@ ffee0,324,verified,src/nn/fs/unplaced.c,nn_fs_GetAndClearMemoryReportInfo
 4f2560,160,verified,src/nandroid/extractors/mp4/MPEG4Extractor.cpp,_ZNK8nandroid11MPEG4Source12parseNALSizeEPKh
 4f2600,76,verified,src/nandroid/extractors/mp4/MPEG4Extractor.cpp,_ZN8nandroid11MPEG4Source16parseHEVCLayerIdEPKhm
 4f2650,3100,verified,src/nandroid/extractors/mp4/MPEG4Extractor.cpp,_ZN8nandroid11MPEG4Source4readEPPNS_17MediaBufferHelperEPKNS_16MediaTrackHelper11ReadOptionsE
-4f32a0,1668,verified,src/nandroid/extractors/mp4/MPEG4Extractor_impl.c,nandroid_MPEG4Source_fragmentedRead
+4f32a0,1692,verified,src/nandroid/extractors/mp4/MPEG4Extractor_impl.c,nandroid_MPEG4Source_fragmentedRead
 4f3d20,712,verified,src/nandroid/extractors/mp4/MPEG4Extractor_impl.c,nandroid_MPEG4Extractor_Sniff
 4f43e0,12,verified,src/nn/sdk_trivial.cpp,_Z14SdkStub_4f43e0v
 4f43f0,60,verified,src/nn/sdk_trivial_thunks.cpp,_Z14SdkStub_4f43f0m

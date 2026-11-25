@@ -3101,7 +3101,8 @@ __int64 CudaDriverHr_5c0c0(__int64 a1, __int64* a2, char a3)
   return result;
 }
 
-__int64 CudaDriverHr_5c190(__int64 a1, __int64* a2, __int64 a3, unsigned int a4)
+__int64 CudaDriverHr_5c190(__int64 a1, __int64* a2, __int64 a3, unsigned int a4,
+                           unsigned int a5)
 {
   __int64 v5;
   __int64 result;
@@ -3110,8 +3111,10 @@ __int64 CudaDriverHr_5c190(__int64 a1, __int64* a2, __int64 a3, unsigned int a4)
   *a2 = (*(__int64 (**)(__int64, _QWORD, _QWORD, __int64, __int64, _QWORD,
                         __int64))(*(_QWORD*)(v5 + 64) + 19112LL))(*a2, 0, 0, v5,
                                                                   a3, a4, 1);
-  *a2 = (*(__int64 (**)(void))(*(_QWORD*)(v5 + 64) + 19064LL))();
-  result = (*(__int64 (**)(void))(*(_QWORD*)(v5 + 64) + 19192LL))();
+  *a2 = (*(__int64 (**)(__int64, __int64, _QWORD, __int64))(
+      *(_QWORD*)(v5 + 64) + 19064LL))(*a2, a3, a5, 1);
+  result = (*(__int64 (**)(__int64, _QWORD))(*(_QWORD*)(v5 + 64) + 19192LL))(
+      *a2, 0);
   *a2 = result;
   return result;
 }
@@ -5466,7 +5469,7 @@ __int64 CudaDriverHr_634b0(__int64 a1, int a2)
 {
   __int64 result;
 
-  LODWORD(result) = (*(__int64 (**)(void))(a1 + 20656))();
+  LODWORD(result) = (*(__int64 (**)(__int64))(a1 + 20656))(a1);
   if ((_DWORD)result == 801 && a2 == 2) {
     return 0;
   }

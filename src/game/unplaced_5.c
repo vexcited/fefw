@@ -10462,7 +10462,7 @@ bool game_108cee0(int a1)
       v7 = v5[1];
       if (v7 == a1) {
         if (*((_DWORD*)v5 + 4) == a1) {
-          return *((_DWORD*)v5 + 5) < 100;
+          return *((int*)v5 + 5) < 100;
         }
       }
       else if ((v7 & v2) != v3) {
@@ -10494,7 +10494,7 @@ bool game_108cee0(int a1)
   if (*((_DWORD*)v5 + 4) != a1) {
     goto LABEL_14;
   }
-  return *((_DWORD*)v5 + 5) < 100;
+  return *((int*)v5 + 5) < 100;
 }
 
 __attribute__((swiftcall)) void game_108d130(PSEUDO_X8 x8_, __int64 a1,

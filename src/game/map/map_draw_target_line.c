@@ -2645,7 +2645,7 @@ __int64 game_map_MapDrawTargetLine_UpdateMesh_lambda0_Invoke(__int64 a1,
                                                              _DWORD* a2,
                                                              _DWORD* a3)
 {
-  return (*(_DWORD*)(**(_QWORD**)(a1 + 8) + 4LL * ((*a2 + 32 * *a3) >> 5) +
+  return (*(_DWORD*)(**(_QWORD**)(a1 + 8) + 4LL * ((int)(*a2 + 32 * *a3) >> 5) +
                      2120) >>
           *a2) &
          1;
@@ -2655,7 +2655,7 @@ __int64 game_map_MapDrawTargetLine_UpdateMesh_lambda1_Invoke(__int64 a1,
                                                              _DWORD* a2,
                                                              _DWORD* a3)
 {
-  return (*(_DWORD*)(**(_QWORD**)(a1 + 8) + 4LL * ((*a2 + 32 * *a3) >> 5) +
+  return (*(_DWORD*)(**(_QWORD**)(a1 + 8) + 4LL * ((int)(*a2 + 32 * *a3) >> 5) +
                      2376) >>
           *a2) &
          1;

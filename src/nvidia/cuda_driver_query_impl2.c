@@ -442,7 +442,7 @@ __int64 cuda_driver_query_4a0c0(__int64 a1, __int64 a2, unsigned int* a3,
     if (*(_DWORD*)a2 == 2) {
       v37 = v19;
       v36 = CudaDriverRoutine_87a10(v12);
-      v23 = (*(__int64 (**)(void))(*(_QWORD*)(v38 + 64) + 19768LL))();
+      v23 = (*(__int64 (**)(__int64))(*(_QWORD*)(v38 + 64) + 19768LL))(v36);
       result = 1;
       if (a3 == nullptr) {
         return result;

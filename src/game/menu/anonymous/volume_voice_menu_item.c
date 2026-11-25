@@ -169,7 +169,7 @@ __int64 VolumeVoiceMenuItem_OnDeselect(__int64 a1)
   if (!v4) {
     v5 = 520;
   }
-  (*(void (**)(void))(v2 + v5))();
+  (*(void (**)(__int64))(v2 + v5))(a1);
   v6 = *(_QWORD*)(a1 + 128);
   if (v6 != 0) {
     v7 = *(_QWORD*)(a1 + 120);

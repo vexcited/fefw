@@ -6021,7 +6021,9 @@ __int64 nvidia_1c4ab0(__int64 a1, unsigned int a2, unsigned int a3,
   }
   v7 = a1 + 23375776;
   if (*(_DWORD*)(a1 + 23377132) == 5) {
-    return (*(__int64 (**)(void))(a1 + 23376496))();
+    return (*(__int64 (**)(__int64, unsigned int, unsigned int,
+                           unsigned __int64, __int64, unsigned int))(
+        a1 + 23376496))(a1, a2, a3, a4, a5, a6);
   }
   nvidia_1cb040(a1, a2, a3, a4, a6, 1);
   result = (*(__int64 (**)(__int64, __int64))(v7 + 152))(*(_QWORD*)(a1 + 24),

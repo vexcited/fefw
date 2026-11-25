@@ -9131,7 +9131,8 @@ __int64 cuda_driver_f43c0(__int64 a1, __int64 a2, int a3, unsigned int a4)
                 v30 = *(_QWORD*)(*(_QWORD*)v29 + 632LL);
                 v29 = *(_QWORD*)v29 + 680LL;
               } while (v30 != v28);
-              result = (*(__int64 (**)(void))(v28 + 2224))();
+              result = (*(__int64 (**)(__int64, __int64, __int64))(v28 + 2224))(
+                  v28, v29 - 680, 0);
               if ((_DWORD)result != 0) {
                 goto LABEL_31;
               }

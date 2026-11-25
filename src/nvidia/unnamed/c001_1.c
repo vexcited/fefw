@@ -6159,7 +6159,7 @@ __int64 CudaDriverHr_9f0d0(__int64 a1)
     return 0;
   }
   v3 = CudaDriverRoutine_5ef60(*(_QWORD*)(a1 + 72), 0);
-  result = (*(__int64 (**)(void))(v3 + 34000))();
+  result = (*(__int64 (**)(__int64))(v3 + 34000))(v3);
   if ((_DWORD)result == 0 || (_DWORD)result == 201) {
     return 0;
   }

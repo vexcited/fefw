@@ -1018,12 +1018,12 @@ void game_hub_cabb20(__int64 a1)
   if (*(_BYTE*)(a1 + 1060) == 1) {
     v3 = *(float*)(a1 + 1056);
     v4 = fabsf(*(float*)(*(_QWORD*)(*(_QWORD*)(a1 + 24) + 8LL) + 228LL));
-    if (!(v3 > 0x0.0p+0f)) {
+    if (v3 <= 0x0.0p+0f) {
       if (v3 >= 0x0.0p+0f || (v3 = v3 + v4) <= 0x0.0p+0f) {
       LABEL_9:
         *(float*)(a1 + 1056) = v3;
         *(_BYTE*)(a1 + 1060) = 1;
-        if (v3 > 0x0.0p+0f) {
+        if (!(v3 <= 0x0.0p+0f)) {
           goto LABEL_13;
         }
         goto LABEL_10;
@@ -6179,7 +6179,7 @@ LABEL_32:
                   v61 = *(unsigned __int16*)(v58 + 12);
                   v62 = v58 + 8 + 16 * v61;
                   v63 = *(_DWORD*)v62;
-                  if (*(_DWORD*)(v58 + 8) < *(_DWORD*)v62) {
+                  if (*(int*)(v58 + 8) < *(int*)v62) {
                     do {
                       v66 = (__int64)v63 >> 3;
                       if (v59 > v66) {
@@ -6191,7 +6191,7 @@ LABEL_32:
                         v64 = 0;
                       }
                       v61 = *(unsigned __int16*)(v58 + 12 + 16 * v61 + 2 * v64);
-                      v65 = v63 < *(_DWORD*)(v60 + 16 * v61);
+                      v65 = v63 < *(int*)(v60 + 16 * v61);
                       v63 = *(_DWORD*)(v60 + 16 * v61);
                     } while (v65);
                     v62 = v60 + 16 * v61;

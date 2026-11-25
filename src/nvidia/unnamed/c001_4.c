@@ -192,7 +192,8 @@ __int64 CudaDriverHr_b42b0(_QWORD* a1, _QWORD* a2, __int64* a3,
       else {
         if ((unsigned __int8)a10 != 2) {
           if ((_BYTE)a10 == 0) {
-            v17 = (*(__int64 (**)(void))(*(_QWORD*)(a1[3] + 64LL) + 18872LL))();
+            v17 = (*(__int64 (**)(__int64))(*(_QWORD*)(a1[3] + 64LL) +
+                                            18872LL))(v16);
             v18 = *(unsigned int*)(v32 + 80);
           LABEL_41:
             v25 = v17 + v18;

@@ -316,7 +316,7 @@ float memory_17bc5a0(float32x4_t* a1)
       }
       v43 = 40;
     }
-    (*(void (**)(void))(LANES128(*(v80)).n128_u64[0] + v43))();
+    (*(void (**)(float32x4_t*))(LANES128(*(v80)).n128_u64[0] + v43))(v80);
     goto LABEL_59;
   }
 LABEL_60:
@@ -397,7 +397,7 @@ LABEL_60:
         }
         v65 = 40;
       }
-      (*(void (**)(void))(LANES128(*(v80)).n128_u64[0] + v65))();
+      (*(void (**)(float32x4_t*))(LANES128(*(v80)).n128_u64[0] + v65))(v80);
       goto LABEL_133;
     }
     if (v54 == 0) {

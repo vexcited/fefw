@@ -312,7 +312,7 @@ __int64 nvidia_1be50(__int64* a1, __int64 a2, __int64 a3, __int64 a4,
                      __int64 a5);
 __int64 nvidia_5bbb0(__int64 a1);
 __int64 nvidia_5bbc0(__int64 a1);
-__int64 nvidia_5bbd0(__int64 a1);
+__int64 nvidia_5bbd0(__int64 a1, __int64 a2);
 __int64 nvidia_81310(__int64 a1);
 __int64 nvidia_97290(__int64 a1, __int64 a2);
 __int64 nvidia_972f0(__int64 a1, __int64 a2);
@@ -333,15 +333,20 @@ __int64 nvidia_1236a0(_QWORD* a1);
 __int64 nvidia_12f5b0(__int64 a1);
 __int64 nvidia_12f6a0(__int64 a1);
 __int64 nvidia_130a80(_QWORD* a1);
-__int64 nvidia_19d940(__int64 a1);
+__int64 nvidia_19d940(__int64 a1, __int64 a2, __int64 a3, __int64 a4,
+                      __int64 a5, __int64 a6, __int64 a7);
 __int64 nvidia_1acac0(__int64 a1, __int64 a2, __int64 a3);
 _DWORD* nvidia_1ae490(_DWORD** a1, __int64 a2, __int64 a3, __int64 a4,
                       __int64 a5);
 __int64 nvidia_1b6960(__int64 a1);
-__int64 nvidia_1c2fb0(__int64 a1);
-__int64 nvidia_1c2fc0(__int64 a1);
-__int64 nvidia_1c3030(__int64 a1);
-__int64 nvidia_1c3040(__int64 a1);
+__int64 nvidia_1c2fb0(__int64 a1, __int64 a2, __int64 a3, __int64 a4,
+                      __int64 a5, __int64 a6);
+__int64 nvidia_1c2fc0(__int64 a1, __int64 a2, __int64 a3, __int64 a4,
+                      __int64 a5);
+__int64 nvidia_1c3030(__int64 a1, __int64 a2, __int64 a3, __int64 a4,
+                      __int64 a5, __int64 a6);
+__int64 nvidia_1c3040(__int64 a1, __int64 a2, __int64 a3, __int64 a4,
+                      __int64 a5);
 __int64 nvidia_1c3410(__int64 a1, unsigned int a2, unsigned int a3, int a4);
 __int64 nvidia_1c80d0(__int64 a1, _QWORD* a2, __int64* a3);
 __int64 nvidia_1cbda0(__int64 a1);
@@ -350,7 +355,7 @@ __int64 nvidia_1cc8f0(__int64 a1, __int64 a2);
 __int64 nvidia_1cdd70(__int64 a1, __int64 a2, __int64 a3, __int64* a4,
                       __int64 a5);
 __int64 nvidia_1d9f90(__int64 a1);
-__int64 nvidia_1da010(__int64 a1);
+__int64 nvidia_1da010(__int64 a1, __int64 a2);
 __int64 nvidia_1e27d0(__int64* a1);
 __int64 nvidia_1f76a0(__int64* a1, __int64 a2, __int64 a3, __int64 a4,
                       __int64 a5);
@@ -1488,20 +1493,17 @@ __int64 nvidia_1be50(__int64* a1, __int64 a2, __int64 a3, __int64 a4,
 
 __int64 nvidia_5bbb0(__int64 a1)
 {
-  return ((__typeof__((*(__int64 (**)(void))(a1 + 33968))()) (*)())(
-      *(__int64 (**)(void))(a1 + 33968)))(a1);
+  return (*(__int64 (**)(__int64))(a1 + 33968))(a1);
 }
 
 __int64 nvidia_5bbc0(__int64 a1)
 {
-  return ((__typeof__((*(__int64 (**)(void))(a1 + 33976))()) (*)())(
-      *(__int64 (**)(void))(a1 + 33976)))(a1);
+  return (*(__int64 (**)(__int64))(a1 + 33976))(a1);
 }
 
-__int64 nvidia_5bbd0(__int64 a1)
+__int64 nvidia_5bbd0(__int64 a1, __int64 a2)
 {
-  return ((__typeof__((*(__int64 (**)(void))(a1 + 33984))()) (*)())(
-      *(__int64 (**)(void))(a1 + 33984)))(a1);
+  return (*(__int64 (**)(__int64, __int64))(a1 + 33984))(a1, a2);
 }
 
 __int64 nvidia_81310(__int64 a1)
@@ -1630,8 +1632,7 @@ __int64 nvidia_97290(__int64 a1, __int64 a2)
 
 __int64 nvidia_972f0(__int64 a1, __int64 a2)
 {
-  return ((__typeof__((*(__int64 (**)(void))(**(_QWORD**)a2 + 48LL))()) (*)())(
-      *(__int64 (**)(void))(**(_QWORD**)a2 + 48LL)))(a1);
+  return (*(__int64 (**)(__int64, __int64))(**(_QWORD**)a2 + 48LL))(a1, a2);
 }
 
 __int64 nvidia_98650(__int64 a1, char a2)
@@ -1750,8 +1751,7 @@ LABEL_12:
 
 __int64 nvidia_99e40(__int64 a1)
 {
-  return ((__typeof__((*(__int64 (**)(void))(a1 + 21192))()) (*)())(
-      *(__int64 (**)(void))(a1 + 21192)))(a1);
+  return (*(__int64 (**)(__int64))(a1 + 21192))(a1);
 }
 
 __int64 nvidia_e1b60()
@@ -3311,14 +3311,12 @@ __int64 nvidia_1236a0(_QWORD* a1)
 
 __int64 nvidia_12f5b0(__int64 a1)
 {
-  return ((__typeof__((*(__int64 (**)(void))(a1 + 21584))()) (*)())(
-      *(__int64 (**)(void))(a1 + 21584)))(a1);
+  return (*(__int64 (**)(__int64))(a1 + 21584))(a1);
 }
 
 __int64 nvidia_12f6a0(__int64 a1)
 {
-  return ((__typeof__((*(__int64 (**)(void))(a1 + 20616))()) (*)())(
-      *(__int64 (**)(void))(a1 + 20616)))(a1);
+  return (*(__int64 (**)(__int64))(a1 + 20616))(a1);
 }
 
 __int64 nvidia_130a80(_QWORD* a1)
@@ -3733,10 +3731,12 @@ LABEL_103:
   return 0;
 }
 
-__int64 nvidia_19d940(__int64 a1)
+__int64 nvidia_19d940(__int64 a1, __int64 a2, __int64 a3, __int64 a4,
+                      __int64 a5, __int64 a6, __int64 a7)
 {
-  return ((__typeof__((*(__int64 (**)(void))(a1 + 23375672))()) (*)())(
-      *(__int64 (**)(void))(a1 + 23375672)))(a1);
+  return (*(__int64 (**)(__int64, __int64, __int64, __int64, __int64,
+                         __int64, __int64))(a1 + 23375672))(
+      a1, a2, a3, a4, a5, a6, a7);
 }
 
 __int64 nvidia_1acac0(__int64 a1, __int64 a2, __int64 a3)
@@ -4642,28 +4642,32 @@ LABEL_48:
   return result;
 }
 
-__int64 nvidia_1c2fb0(__int64 a1)
+__int64 nvidia_1c2fb0(__int64 a1, __int64 a2, __int64 a3, __int64 a4,
+                      __int64 a5, __int64 a6)
 {
-  return ((__typeof__((*(__int64 (**)(void))(a1 + 23375712))()) (*)())(
-      *(__int64 (**)(void))(a1 + 23375712)))(a1);
+  return (*(__int64 (**)(__int64, __int64, __int64, __int64, __int64,
+                         __int64))(a1 + 23375712))(a1, a2, a3, a4, a5, a6);
 }
 
-__int64 nvidia_1c2fc0(__int64 a1)
+__int64 nvidia_1c2fc0(__int64 a1, __int64 a2, __int64 a3, __int64 a4,
+                      __int64 a5)
 {
-  return ((__typeof__((*(__int64 (**)(void))(a1 + 23375728))()) (*)())(
-      *(__int64 (**)(void))(a1 + 23375728)))(a1);
+  return (*(__int64 (**)(__int64, __int64, __int64, __int64,
+                         __int64))(a1 + 23375728))(a1, a2, a3, a4, a5);
 }
 
-__int64 nvidia_1c3030(__int64 a1)
+__int64 nvidia_1c3030(__int64 a1, __int64 a2, __int64 a3, __int64 a4,
+                      __int64 a5, __int64 a6)
 {
-  return ((__typeof__((*(__int64 (**)(void))(a1 + 23375888))()) (*)())(
-      *(__int64 (**)(void))(a1 + 23375888)))(a1);
+  return (*(__int64 (**)(__int64, __int64, __int64, __int64, __int64,
+                         __int64))(a1 + 23375888))(a1, a2, a3, a4, a5, a6);
 }
 
-__int64 nvidia_1c3040(__int64 a1)
+__int64 nvidia_1c3040(__int64 a1, __int64 a2, __int64 a3, __int64 a4,
+                      __int64 a5)
 {
-  return ((__typeof__((*(__int64 (**)(void))(a1 + 23375904))()) (*)())(
-      *(__int64 (**)(void))(a1 + 23375904)))(a1);
+  return (*(__int64 (**)(__int64, __int64, __int64, __int64,
+                         __int64))(a1 + 23375904))(a1, a2, a3, a4, a5);
 }
 
 __int64 nvidia_1c3410(__int64 a1, unsigned int a2, unsigned int a3, int a4)
@@ -4685,8 +4689,9 @@ __int64 nvidia_1c3410(__int64 a1, unsigned int a2, unsigned int a3, int a4)
   v8 = *(_QWORD*)(v4 + 1688) + (unsigned int)(16 * v5);
   *(_BYTE*)(v8 + 9) = *(_BYTE*)(*(_QWORD*)(v4 + 1720) + v5);
   *(_DWORD*)v8 = *(_DWORD*)(*(_QWORD*)(v4 + 1696) + 4 * v5);
-  return ((__typeof__((*(__int64 (**)(void))(a1 + 23375472))()) (*)())(
-      *(__int64 (**)(void))(a1 + 23375472)))(a1);
+  return (*(__int64 (**)(__int64, unsigned int, unsigned int, __int64,
+                         __int64))(a1 + 23375472))(
+      a1, a2, a3, *(_QWORD*)(v4 + 1688), v5);
 }
 
 __int64 nvidia_1c80d0(__int64 a1, _QWORD* a2, __int64* a3)
@@ -4993,14 +4998,12 @@ __int64 nvidia_1cdd70(__int64 a1, __int64 a2, __int64 a3, __int64* a4,
 
 __int64 nvidia_1d9f90(__int64 a1)
 {
-  return ((__typeof__((*(__int64 (**)(void))(a1 + 2304))()) (*)())(
-      *(__int64 (**)(void))(a1 + 2304)))(a1);
+  return (*(__int64 (**)(__int64))(a1 + 2304))(a1);
 }
 
-__int64 nvidia_1da010(__int64 a1)
+__int64 nvidia_1da010(__int64 a1, __int64 a2)
 {
-  return ((__typeof__((*(__int64 (**)(void))(a1 + 2216))()) (*)())(
-      *(__int64 (**)(void))(a1 + 2216)))(a1);
+  return (*(__int64 (**)(__int64, __int64))(a1 + 2216))(a1, a2);
 }
 
 __int64 nvidia_1e27d0(__int64* a1)
@@ -6052,8 +6055,7 @@ __int64 nvidia_21fad0(__int64 a1)
   __int64 v1;
 
   if (a1 != 0 && (v1 = *(_QWORD*)(a1 + 64)) != 0) {
-    return ((__typeof__((*(__int64 (**)(void))(v1 + 20688))()) (*)())(
-        *(__int64 (**)(void))(v1 + 20688)))(a1);
+    return (*(__int64 (**)(__int64, unsigned int))(v1 + 20688))(a1, 1);
   }
   else {
     return 999;
@@ -6065,8 +6067,7 @@ __int64 nvidia_21faf0(__int64 a1)
   __int64 v1;
 
   if (a1 != 0 && (v1 = *(_QWORD*)(a1 + 64)) != 0) {
-    return ((__typeof__((*(__int64 (**)(void))(v1 + 20688))()) (*)())(
-        *(__int64 (**)(void))(v1 + 20688)))(a1);
+    return (*(__int64 (**)(__int64, unsigned int))(v1 + 20688))(a1, 0);
   }
   else {
     return 999;

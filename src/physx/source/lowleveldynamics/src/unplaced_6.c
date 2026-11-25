@@ -1537,8 +1537,8 @@ void physx_source_lowleveldynamics_src_337a60(__int64 a1, float* a2, _QWORD* a3,
       return;
     }
   LABEL_51:
-    v82 = *(_QWORD*)PxGetBroadcastAllocator(nullptr);
-    (*(void (**)(void))(v82 + 24))();
+    v82 = PxGetBroadcastAllocator(nullptr);
+    (*(void (**)(__int64, unsigned __int64))(*(_QWORD*)v82 + 24))(v82, v16);
     return;
   }
   v33 = (unsigned int)(32 * v10);

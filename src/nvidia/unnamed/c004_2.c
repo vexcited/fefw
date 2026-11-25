@@ -3739,7 +3739,7 @@ __int64 CudaDriverHr_21a120(int a1, unsigned int a2, __int64 a3, _QWORD* a4,
       else {
         *a4 = v14;
         if (a5 != nullptr) {
-          *a5 = (*(__int64 (**)(void))(v10 + 19448))();
+          *a5 = (*(__int64 (**)(__int64))(v10 + 19448))(v14);
         }
         return 0;
       }
@@ -3768,7 +3768,7 @@ __int64 CudaDriverHr_21a220(__int64 a1, __int64 a2, __int64 a3, _QWORD* a4,
   }
   *a4 = 0;
   if (a5 != nullptr) {
-    *a5 = (*(__int64 (**)(void))(*(_QWORD*)(a1 + 64) + 19448LL))();
+    *a5 = (*(__int64 (**)(__int64))(*(_QWORD*)(a1 + 64) + 19448LL))(*a4);
   }
   return 0;
 }
@@ -5928,7 +5928,7 @@ __int64 CudaDriverHr_21dd60(__int64 a1, _DWORD* a2)
   if (v4 == 0) {
     return 1;
   }
-  (*(void (**)(void))(v4 + 18744))();
+  (*(void (**)(__int64, int*, __int64, __int64))(v4 + 18744))(a1, &v7, 0, 0);
   result = 0;
   if (a2 != nullptr) {
     *a2 = v7;
@@ -5970,7 +5970,9 @@ __int64 CudaDriverHr_21de70(__int64 a1, _DWORD* a2)
   __int64 v3;
   __int64 v4;
   __int64 result;
+  __int64 v7;
 
+  v7 = 0;
   if (a1 == 0) {
     return 1;
   }
@@ -5986,12 +5988,13 @@ __int64 CudaDriverHr_21de70(__int64 a1, _DWORD* a2)
   if (v4 == 0) {
     return 1;
   }
-  (*(void (**)(void))(v4 + 18744))();
+  (*(void (**)(__int64, __int64, __int64*, __int64))(v4 + 18744))(a1, 0, &v7,
+                                                                   0);
   if (a2 == nullptr) {
     return 0;
   }
   result = 0;
-  *a2 = 0;
+  *a2 = v7;
   return result;
 }
 

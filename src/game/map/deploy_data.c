@@ -4323,7 +4323,7 @@ __int64 game_map_DeployData_BuildDeploy_Trick_lambda0_Invoke(__int64 result,
   __int64 v3;
 
   {
-    v3 = **(_QWORD**)(result + 8) + 4LL * ((*a2 + 32 * *a3) >> 5);
+    v3 = **(_QWORD**)(result + 8) + 4LL * ((int)(*a2 + 32 * *a3) >> 5);
     __asm__ volatile("" ::"r"(v3));
   }
   *(_DWORD*)(v3 + 12872) |= 1 << *a2;
@@ -4336,7 +4336,7 @@ __int64 game_map_DeployData_BuildDeploy_Trick_lambda1_Invoke(__int64 result,
 {
   __int64 v3;
 
-  v3 = **(_QWORD**)(result + 8) + 4LL * ((*a2 + 32 * *a3) >> 5);
+  v3 = **(_QWORD**)(result + 8) + 4LL * ((int)(*a2 + 32 * *a3) >> 5);
   *(_DWORD*)(v3 + 12872) |= 1 << *a2;
   return result;
 }

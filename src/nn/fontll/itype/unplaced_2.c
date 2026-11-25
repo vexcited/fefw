@@ -176,14 +176,24 @@ __int64 nn_fontll_itype_42fea0(__int64 a1)
   __int64 v3;
   __int64 result;
   _DWORD* v5;
+  __int64 v6;
+  __int64 v7;
+  __int64 v8;
 
   v2 = (*(_BYTE*)(a1 + 90) & 1) == 0;
   *(_QWORD*)(a1 + 40) -= 4LL;
   v3 = 112;
+  v6 = 16;
+  v7 = 24;
   if (v2) {
     v3 = 104;
+    v6 = 0;
+    v7 = 8;
   }
-  result = (*(__int64 (**)(void))(a1 + v3))();
+  v8 = **(int**)(a1 + 40);
+  result = (*(__int64 (**)(__int64, unsigned int, unsigned int))(a1 + v3))(
+      a1, *(_DWORD*)(*(_QWORD*)(*(_QWORD*)(a1 + 16) + v6) + 4 * v8),
+      *(_DWORD*)(*(_QWORD*)(*(_QWORD*)(a1 + 16) + v7) + 4 * v8));
   v5 = *(_DWORD**)(a1 + 40);
   *(_QWORD*)(a1 + 40) = v5 + 1;
   *v5 = result;

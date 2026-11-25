@@ -3482,7 +3482,7 @@ __int64 nvidia_59350(__int64 a1)
     __asm__ volatile("" ::"r"(v3));
   }
   *(_QWORD*)(*(_QWORD*)a1 + 8LL * *(unsigned int*)(a1 + 24) + 48) = 0;
-  (*(void (**)(void))(a1 + 33904))();
+  (*(void (**)(__int64))(a1 + 33904))(a1);
   {
     v4 = *(_QWORD**)(a1 + 48);
     __asm__ volatile("" ::"r"(v4));

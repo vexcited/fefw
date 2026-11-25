@@ -3660,7 +3660,7 @@ __int64 GameHr_1cf840(__int64 a1, __int64 a2, __int64 a3)
         return ((__int64 (*)(_QWORD*))v13)(v14);
       }
     }
-    return (*(__int64 (**)(void))((char*)v13 + *v14))();
+    return (*(__int64 (**)(_QWORD*))((char*)v13 + *v14))(v14);
   }
   if (v9 != 14) {
     return (*(__int64 (**)(__int64))v8)(a2);

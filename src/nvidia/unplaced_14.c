@@ -9493,7 +9493,7 @@ void __attribute__((noreturn)) nvidia_d1c74(__int64 a1)
   v3 = *(_QWORD*)(v1 - 136);
   *(_QWORD*)(v1 - 136) = 0;
   if (v3 != 0) {
-    (*(void (**)(void))(v1 - 128))();
+    (*(void (**)(__int64))(v1 - 128))(v3);
   }
   v4 = _Unwind_Resume_plt(a1);
   NgxRoutine_baf40(v4);
@@ -9508,7 +9508,7 @@ void __attribute__((noreturn)) unplaced_14_d1c74(__int64 a1)
   v3 = *(_QWORD*)(v1 - 136);
   *(_QWORD*)(v1 - 136) = 0;
   if (v3 != 0) {
-    (*(void (**)(void))(v1 - 128))();
+    (*(void (**)(__int64))(v1 - 128))(v3);
   }
   _Unwind_Resume_plt_alt1(a1);
   NgxRoutine_baf40_alt1();

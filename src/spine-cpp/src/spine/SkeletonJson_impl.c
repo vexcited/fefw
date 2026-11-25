@@ -186986,7 +186986,7 @@ __int64 spine_SkeletonJson_readAnimation(__int64 a1, __int64 a2, _QWORD* a3)
               v99 = COERCE_AS(__typeof__(v99),
                               PSEUDO_REGISTER(unsigned long long, "x5", "=r"));
           v1134_.v1134 = GameData_21322b8[0] + 2;
-          v1032 = *(_QWORD*)GameRoutine_19e10(),
+          v1032 = GameRoutine_19e10(),
           v100 = COERCE_AS(__typeof__(v100),
                            PSEUDO_REGISTER(unsigned long long, "x6", "=r")),
           v101 = COERCE_AS(__typeof__(v101),
@@ -524087,7 +524087,7 @@ LABEL_672:
           v1134_.v1134 = v892 + 2;
           v1134_.v1135 = 0;
           if (v1134_.v1137 != 0) {
-            v1032 = *(_QWORD*)GameRoutine_19e10(),
+            v1032 = GameRoutine_19e10(),
             v100 = COERCE_AS(__typeof__(v100),
                              PSEUDO_REGISTER(unsigned long long, "x6", "=r")),
             v101 = COERCE_AS(__typeof__(v101),
@@ -567681,7 +567681,7 @@ LABEL_865:
       v99 = COERCE_AS(__typeof__(v99),
                       PSEUDO_REGISTER(unsigned long long, "x5", "=r"));
   v1134_.v1134 = GameData_21322b8[0] + 2;
-  v1032 = *(_QWORD*)GameRoutine_19e10(),
+  v1032 = GameRoutine_19e10(),
   v100 = COERCE_AS(__typeof__(v100),
                    PSEUDO_REGISTER(unsigned long long, "x6", "=r")),
   v101 = COERCE_AS(__typeof__(v101),
@@ -568408,7 +568408,10 @@ LABEL_865:
   v99 = COERCE_AS(__typeof__(v99),
                   PSEUDO_REGISTER(unsigned long long, "x5", "=r"));
 LABEL_857:
-  (*(void (**)(void))(v1032 + 40))(),
+  (*(void (**)(__int64, unsigned __int64, const char*, __int64))(
+      *(_QWORD*)v1032 + 40LL))(
+      v1032, v1134_.v1136,
+      "/Program/Externals/Spine/include\\spine/SpineString.h", 206),
       v100 = COERCE_AS(__typeof__(v100),
                        PSEUDO_REGISTER(unsigned long long, "x6", "=r")),
       v101 = COERCE_AS(__typeof__(v101),

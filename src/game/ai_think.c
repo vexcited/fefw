@@ -4469,7 +4469,7 @@ __int64 game_AIThink_ActiveCauseHealRange_lambda0_Invoke(__int64 result,
 {
   **(_BYTE**)(result + 8) |=
       (*(_DWORD*)(*(_QWORD*)(*(_QWORD*)GameData_21306a0[0] + 8LL) +
-                  4LL * ((*a2 + 32 * *a3) >> 5) + 2248) >>
+                  4LL * ((int)(*a2 + 32 * *a3) >> 5) + 2248) >>
        *a2) &
       1;
   return result;
@@ -9591,7 +9591,7 @@ __int64 AIThink_1205840(__int64 a1, unsigned int a2, __int64 a3, __int64 a4)
   unsigned int v102;
   int v103;
   unsigned int v104;
-  _QWORD v105[4];
+  _QWORD v105[16];
   _QWORD* v106;
   __int64 v107;
   __int64 v108;
@@ -12902,8 +12902,9 @@ __int64 game_AIThink_ActionMoveTreasure_lambda0_Invoke(__int64 result,
             }
             v24 = **(_DWORD**)(result + 16);
             if (v24 < v22 || (*v23 & 0x80000000) != 0 ||
-                (v24 <= v22 ? (v25 = (*v23 | (**(_DWORD**)(result + 32)
-                                              << 16)) <= (v6 | (v7 << 16)))
+                (v24 <= v22 ? (v25 = (int)(*v23 | (**(_DWORD**)(result + 32)
+                                                   << 16)) <=
+                                    (v6 | (v7 << 16)))
                             : (v25 = true),
                  !v25)) {
               *v23 = v6;
@@ -13646,8 +13647,8 @@ __int64 game_AIThink_GetTerrainHealPosition_lambda1_Invoke(__int64 result,
             if (v13 == 0) {
               v14 = ((((unsigned int)~*(
                            _DWORD*)(*(_QWORD*)GameData_21306c8[0] +
-                                    4LL * ((**(_DWORD**)(v5 + 16) +
-                                            32 * **(_DWORD**)(v5 + 24)) >>
+                                    4LL * ((int)(**(_DWORD**)(v5 + 16) +
+                                                 32 * **(_DWORD**)(v5 + 24)) >>
                                            5) +
                                     8) >>
                        **(_DWORD**)(v5 + 16)) &
@@ -13675,8 +13676,9 @@ __int64 game_AIThink_GetTerrainHealPosition_lambda1_Invoke(__int64 result,
           LABEL_31:
             v24 = **(_DWORD**)(v5 + 64);
             if (v24 >= v19 &&
-                (v24 > v19 || (v21 | (***(_DWORD***)(v5 + 72) << 16)) <=
-                                  (v3 | (v4 << 16)))) {
+                (v24 > v19 ||
+                 (int)(v21 | (***(_DWORD***)(v5 + 72) << 16)) <=
+                     (v3 | (v4 << 16)))) {
               return result;
             }
           LABEL_32:
@@ -14578,7 +14580,7 @@ LABEL_45:
       }
       if (*(_DWORD*)a2 < v73 ||
           *(_DWORD*)a2 <= v73 &&
-              (v75 | (*(_DWORD*)(a2 + 8) << 16)) > (v66 | (v67 << 16))) {
+              (int)(v75 | (*(_DWORD*)(a2 + 8) << 16)) > (v66 | (v67 << 16))) {
       LABEL_120:
         *(_DWORD*)a2 = v73;
         *(_DWORD*)(a2 + 4) = v66;
@@ -14690,7 +14692,8 @@ LABEL_45:
         }
         if (*(_DWORD*)a2 < v49 ||
             *(_DWORD*)a2 <= v49 &&
-                (v50 | (*(_DWORD*)(a2 + 8) << 16)) > (v42 | (v43 << 16))) {
+                (int)(v50 | (*(_DWORD*)(a2 + 8) << 16)) >
+                    (v42 | (v43 << 16))) {
           goto LABEL_63;
         }
       LABEL_64:
@@ -17395,7 +17398,7 @@ __int64 game_AIThink_ActionMindTreasure_lambda0_Invoke(__int64 a1, __int64 a2,
       *(_QWORD*)(*(_QWORD*)(a1 + 8) + 8LL), 0);
   if ((result & 1) != 0) {
     v13 = *(_DWORD**)(a1 + 16);
-    if (*v13 == -1 || v6 >= *v13) {
+    if (*v13 == -1 || v6 >= (int)*v13) {
       v15 = v13[2];
       if (v15 == -1 || v6 <= v15) {
         v17 = v13[1];
@@ -17567,7 +17570,7 @@ __int64 game_AIThink_ActionMindGimmick_lambda0_Invoke(__int64 a1, __int64 a2,
       }
       v19 = **(_DWORD**)(a1 + 32);
       if (v19 < v17 || (*v18 & 0x80000000) != 0 ||
-          (v19 <= v17 ? (v20 = (*v18 | (**(_DWORD**)(a1 + 48) << 16)) <=
+          (v19 <= v17 ? (v20 = (int)(*v18 | (**(_DWORD**)(a1 + 48) << 16)) <=
                                (v8 | (v10 << 16)))
                       : (v20 = true),
            !v20)) {
@@ -23767,9 +23770,10 @@ bool AIThink_1277f40(__int64 a1, __int64 a2)
       v73 = *(char*)(v53 + 2);
       v74 = v54 - 4 * v31 + 400;
       if (*(_DWORD*)a2 < v74 || (v75 = *(_DWORD*)(a2 + 4)) < 0 ||
-          (*(_DWORD*)a2 <= v74 ? (v76 = (v75 | (*(_DWORD*)(a2 + 8) << 16)) <=
-                                        (v72 | (v73 << 16)))
-                               : (v76 = true),
+          (*(_DWORD*)a2 <= v74
+               ? (v76 = (int)(v75 | (*(_DWORD*)(a2 + 8) << 16)) <=
+                        (v72 | (v73 << 16)))
+               : (v76 = true),
            !v76)) {
         *(_DWORD*)a2 = v74;
         *(_DWORD*)(a2 + 4) = v72;
@@ -24863,7 +24867,7 @@ LABEL_26:
       v12 = v53;
       if (*(_DWORD*)a2 < v48 || (v50 = *(_DWORD*)(a2 + 4)) < 0 ||
           *(_DWORD*)a2 <= v48 &&
-              (v50 | (*(_DWORD*)(a2 + 8) << 16)) > (v49 | (v47 << 16))) {
+              (int)(v50 | (*(_DWORD*)(a2 + 8) << 16)) > (v49 | (v47 << 16))) {
         *(_DWORD*)a2 = v48;
         *(_DWORD*)(a2 + 4) = v49;
         *(_DWORD*)(a2 + 8) = v47;
@@ -25132,7 +25136,8 @@ bool AIThink_1279680(__int64 a1, unsigned int* a2)
           v35 = a2[2];
           if (v35 < (unsigned int)v44 || ((v36 = a2[3]) & 0x80000000) != 0 ||
               v35 <= (unsigned int)v44 &&
-                  (int)(v36 | (a2[4] << 16)) > (HIDWORD(v44) | (v45 << 16))) {
+                  (int)(v36 | (a2[4] << 16)) >
+                      (int)(HIDWORD(v44) | (v45 << 16))) {
             v19 = v44;
             *a2 = v18;
             a2[1] = v13;
@@ -25408,7 +25413,7 @@ bool game_AIThink_RageCore_lambda0_Invoke(__int64 a1, _DWORD* a2)
          v8 < v9) ||
         (v10 = *(_DWORD*)(v6 + 20)) < 0 ||
         ((v11 = v7[3] | (v7[4] << 16), v8 <= v9)
-             ? (v12 = (v10 | (*(_DWORD*)(v6 + 24) << 16)) <= v11)
+             ? (v12 = (int)(v10 | (*(_DWORD*)(v6 + 24) << 16)) <= v11)
              : (v12 = true),
          !v12)) {
       *(_QWORD*)v6 = *(_QWORD*)(*(_QWORD*)(*v4 + 64) + 8LL * (*a2 & 0xFFF));
@@ -26537,7 +26542,7 @@ void game_AIThink_GambitAttackCore_lambda1_Invoke(__int64 a1, _DWORD* a2)
             v130 = *(char*)(v128 + 2);
             if (*(_DWORD*)v3 < v127 || (v131 = *(_DWORD*)(v3 + 4)) < 0 ||
                 (*(_DWORD*)v3 <= v127
-                     ? (v132 = (v131 | (*(_DWORD*)(v3 + 8) << 16)) <=
+                     ? (v132 = (int)(v131 | (*(_DWORD*)(v3 + 8) << 16)) <=
                                (v129 | (v130 << 16)))
                      : (v132 = true),
                  !v132)) {
@@ -26617,7 +26622,7 @@ LABEL_73:
         (v55 = *(unsigned int**)(v146 + 16),
          (v56 = *(_DWORD*)(v54 + 8)) < *v55) ||
         (v57 = *(_DWORD*)(v54 + 12)) < 0 ||
-        v56 <= *v55 && (v57 | (*(_DWORD*)(v54 + 16) << 16)) >
+        v56 <= *v55 && (int)(v57 | (*(_DWORD*)(v54 + 16) << 16)) >
                            (int)(v55[1] | (v55[2] << 16))) {
       *(_QWORD*)v54 = *(_QWORD*)(*(_QWORD*)(*GameData_212c880[0] + 64) +
                                  8LL * (*a2 & 0xFFF));
@@ -27194,7 +27199,7 @@ void game_AIThink_GambitHealCore_lambda0_Invoke(_QWORD* a1, _DWORD* a2)
         if (*(_QWORD*)v23 == 0 ||
             (v24 = (unsigned int*)a1[2], (v25 = *(_DWORD*)(v23 + 8)) < *v24) ||
             (v26 = *(_DWORD*)(v23 + 12)) < 0 ||
-            v25 <= *v24 && (v26 | (*(_DWORD*)(v23 + 16) << 16)) >
+            v25 <= *v24 && (int)(v26 | (*(_DWORD*)(v23 + 16) << 16)) >
                                (int)(v24[1] | (v24[2] << 16))) {
           *(_QWORD*)v23 = *(_QWORD*)(*(_QWORD*)(*GameData_212c880[0] + 64) +
                                      8LL * (*a2 & 0xFFF));
@@ -33719,7 +33724,8 @@ void game_AIThink_ActionSpecialAttack_lambda0_Invoke(__int64 a1, _DWORD* a2)
       }
       if (*(int*)v5 < v7 || (v14 = *(int*)(v5 + 28)) < 0 ||
           *(int*)v5 <= v7 &&
-              (v14 | (*(int*)(v5 + 32) << 16)) > (v6[3] | (v6[4] << 16))) {
+              (v14 | (*(int*)(v5 + 32) << 16)) >
+                  (int)(v6[3] | (v6[4] << 16))) {
       LABEL_6:
         *(_DWORD*)v5 = v7;
         *(_QWORD*)(*(_QWORD*)(a1 + 32) + 8LL) =
@@ -35114,7 +35120,7 @@ __int64 AIThink_SpecialBurnupSingleAttackCondition_Unknown3(__int64 a1,
 
 bool AIThink_SpecialBurnupMultiAttackCondition_Unknown3(__int64 a1, _DWORD* a2)
 {
-  return *a2 > 1;
+  return *(int*)a2 > 1;
 }
 
 bool AIThink_SpecialEntrustSingleAttackCondition_Unknown2(__int64 a1,
@@ -35125,23 +35131,23 @@ bool AIThink_SpecialEntrustSingleAttackCondition_Unknown2(__int64 a1,
 
 bool AIThink_SpecialEntrustAssistCondition_Unknown4(__int64 a1, _DWORD* a2)
 {
-  return *a2 >= *(_DWORD*)(a1 + 8);
+  return *(int*)a2 >= *(int*)(a1 + 8);
 }
 
 bool AIThink_SpecialEntrustInterferenceCondition_Unknown5(__int64 a1,
                                                           _DWORD* a2)
 {
-  return *a2 >= *(_DWORD*)(a1 + 8);
+  return *(int*)a2 >= *(int*)(a1 + 8);
 }
 
 bool AIThink_SpecialEntrustSummonCondition_Unknown6(__int64 a1, _DWORD* a2)
 {
-  return *a2 > 1;
+  return *(int*)a2 > 1;
 }
 
 bool AIThink_SpecialEntrustEnhancementCondition_Unknown7(__int64 a1, _DWORD* a2)
 {
-  return *a2 > 1;
+  return *(int*)a2 > 1;
 }
 
 __int64 AIThink_12a3060(__int64 a1, int a2, __int64 a3, __int64 a4)

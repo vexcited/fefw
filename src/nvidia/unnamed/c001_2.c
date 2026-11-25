@@ -523,7 +523,8 @@ __int64 CudaDriverHr_85210(__int64 a1, unsigned int a2, unsigned int a3,
       v34 = v19;
     }
     v33 = v11 + *(unsigned int*)(v30 + 68);
-    result = (*(__int64 (**)(void))(a1 + 23376048))();
+    result = (*(__int64 (**)(__int64, __int64*, __int64))(a1 + 23376048))(
+        v33, &v33, 1);
     if ((_DWORD)result != 0) {
       return result;
     }

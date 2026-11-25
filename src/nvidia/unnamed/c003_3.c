@@ -922,7 +922,9 @@ __int64 CudaDriverHr_1c5a00(__int64 a1, unsigned int a2, unsigned int a3,
   }
   v7 = (__int64 (**)(_QWORD, __int64, __int64, _QWORD))(a1 + 23375920);
   if (*(_DWORD*)(a1 + 23377132) == 5) {
-    return (*(__int64 (**)(void))(a1 + 23376504))();
+    return (*(__int64 (**)(__int64, unsigned int, unsigned int,
+                           unsigned __int64, __int64, unsigned int))(
+        a1 + 23376504))(a1, a2, a3, a4, a5, a6);
   }
   v12 = a4;
   result = (*(__int64 (**)(_QWORD, __int64*))(a1 + 23375928))(

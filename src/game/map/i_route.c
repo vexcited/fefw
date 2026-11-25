@@ -3112,7 +3112,7 @@ __int64 game_map_IRoute_IsSightOut_lambda0_Invoke(__int64 result, _DWORD* a2,
     else {
       v6 = 0;
     }
-    v3 = (*(_DWORD*)(v5 + (v6 << 7) + 4LL * ((*a2 + 32 * *a3) >> 5) + 8) >>
+    v3 = (*(_DWORD*)(v5 + (v6 << 7) + 4LL * ((int)(*a2 + 32 * *a3) >> 5) + 8) >>
           *a2) &
          1;
   }

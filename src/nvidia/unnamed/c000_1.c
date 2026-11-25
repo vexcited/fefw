@@ -4849,6 +4849,7 @@ __int64 CudaDriverHr_4aa00(_QWORD* a1, __int64 a2, __int64 a3,
   unsigned __int64 v12;
   __int64 v13;
   __int64 v14;
+  unsigned int v15;
 
   v14 = 0;
   v13 = 0;
@@ -4866,9 +4867,10 @@ __int64 CudaDriverHr_4aa00(_QWORD* a1, __int64 a2, __int64 a3,
                 (*(_DWORD*)(*(_QWORD*)(v13 + 64) + 3936LL) - 1)) != 0) {
         return 1;
       }
-      v12 =
-          a4 / (unsigned int)CudaDriverRoutine_87a10(*(unsigned int*)(a2 + 96));
-      if (v12 <= (*(__int64 (**)(void))(*(_QWORD*)(v13 + 64) + 19768LL))()) {
+      v15 = CudaDriverRoutine_87a10(*(unsigned int*)(a2 + 96));
+      v12 = a4 / v15;
+      if (v12 <= (*(__int64 (**)(__int64))(*(_QWORD*)(v13 + 64) +
+                                           19768LL))(v15)) {
         CudaDriverRoutine_108520(v13 + 24, 0, 0, 0);
         CudaDriverRoutine_11eb60(a2, a3, a4);
         CudaDriverRoutine_1085d0(v13 + 24);

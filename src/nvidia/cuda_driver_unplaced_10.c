@@ -1048,7 +1048,7 @@ __int64 cuda_driver_1e5b10(_QWORD* a1)
   __int64 v7;
   unsigned __int64 v8;
   int v9;
-  int v10;
+  __int64 v10;
   __int64 v11;
   __int64 v12;
   _QWORD* v13;
@@ -1159,7 +1159,7 @@ __int64 cuda_driver_1e5b10(_QWORD* a1)
     goto LABEL_17;
   }
   v10 = CudaDriverStub_1dbab0(*v6);
-  v11 = (*(__int64 (**)(void))(a1[8] + 19184LL))();
+  v11 = (*(__int64 (**)(__int64))(a1[8] + 19184LL))(v10);
   *((_DWORD*)v6 + 2) = (*(__int64 (**)(__int64))(a1[8] + 19176LL))(v11)-v10;
   v12 = CudaDriverStub_12e330(34256);
   if (v12 == 0) {

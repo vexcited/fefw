@@ -4813,7 +4813,8 @@ __int64 cuda_driver_1c5fa0(__int64 a1, _DWORD* a2, _DWORD* a3, _QWORD* a4)
   *a2 = 0;
   *a3 = 0;
   *a4 = 0;
-  result = (*(__int64 (**)(void))(*(_QWORD*)(a1 + 32306416) + 264LL))();
+  result = (*(__int64 (**)(__int64, _DWORD*))(*(_QWORD*)(a1 + 32306416) +
+                                               264LL))(a1, a2);
   __builtin_arm_dmb(0xDu);
   if ((_DWORD)result == 0) {
     *a2 = 1;
@@ -4898,7 +4899,8 @@ __int64 cuda_driver_1c61b0(__int64 a1, unsigned int a2)
   unsigned int v9;
 
   v4 = a1 + 23375624;
-  if (((*(__int64 (**)(void))(*(_QWORD*)(a1 + 32306416) + 336LL))() & 1) == 0) {
+  if (((*(__int64 (**)(__int64))(*(_QWORD*)(a1 + 32306416) + 336LL))(a1) & 1) ==
+      0) {
     v6 = *(__int64 (**)(__int64, __int64, _QWORD, unsigned int*))(v4 + 984);
     v7 = 0;
     result = v6(a1, 1, a2, &v7);

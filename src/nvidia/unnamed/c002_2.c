@@ -5274,7 +5274,7 @@ __int64 CudaDriverHr_12f8e0(__int64 a1)
     goto LABEL_2;
   }
   v3 = a1;
-  v4 = (*(__int64 (**)(void))(a1 + 20504))();
+  v4 = (*(__int64 (**)(__int64))(a1 + 20504))(a1);
   if (v4 == 0) {
     v1 = *(_DWORD*)(v3 + 17216);
     a1 = v3;

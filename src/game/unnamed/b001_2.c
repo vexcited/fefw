@@ -4283,7 +4283,7 @@ __int64 GameHr_28bc80(__int64 a1, __int64 a2, unsigned int a3, unsigned int a4,
 
   result = 0;
   if ((a3 & 0x80000000) == 0 && *(_BYTE*)(a1 + 16) != 0) {
-    if ((signed int)a3 >= *(_DWORD*)GameRoutine_28bed0(*(_QWORD*)(a1 + 8))) {
+    if ((signed int)a3 >= *(int*)GameRoutine_28bed0(*(_QWORD*)(a1 + 8))) {
       return 0;
     }
     else {

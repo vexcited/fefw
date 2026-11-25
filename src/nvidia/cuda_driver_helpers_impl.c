@@ -384,7 +384,7 @@ __int64 cuda_driver_helpers_b8340(_QWORD* a1, __int64 a2, __int64 a3)
   *v6 = a3;
   v6[1] = a2;
   v7 = v6;
-  result = (*(__int64 (**)(void))(a2 + 2432))();
+  result = (*(__int64 (**)(_QWORD*))(a2 + 2432))(v7);
   if ((_DWORD)result != 0) {
     CudaDriverRoutine_12e340(v7);
     return 2;
@@ -415,7 +415,8 @@ __int64 cuda_driver_helpers_b8410(__int64 a1, __int64 a2, __int64 a3)
 {
   __int64 result;
 
-  result = (*(__int64 (**)(void))(*(_QWORD*)(a3 + 632) + 2448LL))();
+  result = (*(__int64 (**)(__int64, __int64, __int64))(
+      *(_QWORD*)(a3 + 632) + 2448LL))(a1, a2, a3);
   if ((_DWORD)result == 0) {
     *(_QWORD*)(a3 + 728) = a1;
   }
