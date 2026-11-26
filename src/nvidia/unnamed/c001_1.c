@@ -673,6 +673,7 @@ __int64 CudaDriverHr_76290(unsigned int a1, unsigned int a2, unsigned int a3,
   __int64 v21;
   __int64 v22;
   char v23;
+  __int64 v20_;
 
   v10 = a5;
   v16 = a7 == nullptr || a8 == 0;
@@ -700,9 +701,10 @@ __int64 CudaDriverHr_76290(unsigned int a1, unsigned int a2, unsigned int a3,
       result = CudaDriverRoutine_6cac0_alt1(0x3FFu, a1, a2, a3, a4);
       if ((_DWORD)result == 0) {
         v18 = (_QWORD*)CudaDriverData_1423000;
-        result = (*(__int64 (**)(void))(
-            *(_QWORD*)(*(_QWORD*)CudaDriverData_1423000 + 8LL * a1) +
-            23375744LL))();
+        v20_ = *(_QWORD*)(*(_QWORD*)CudaDriverData_1423000 + 8LL * a1);
+        result =
+            (*(__int64 (**)(__int64, unsigned int, unsigned int, unsigned int,
+                            __int64))(v20_ + 23375744LL))(v20_, a2, a3, a4, a8);
         if ((_DWORD)result == 0 && v10 != nullptr && *a7 != 0 && a6 != 0) {
           v19 = 0;
           do {

@@ -6646,6 +6646,7 @@ LABEL_14:
 __int64 nvidia_1f5430(__int64 a1)
 {
   _BOOL8 v2;
+  __int64 v3_;
 
   if (a1 == 0 || *(_QWORD*)(a1 + 8) == 0) {
     return 10;
@@ -6661,7 +6662,9 @@ __int64 nvidia_1f5430(__int64 a1)
         *(_QWORD*)(*(_QWORD*)(a1 + 8) + 32306416LL) + 272LL))(a1);
   }
   if (*(_DWORD*)(a1 + 260) != 0) {
-    return (*(__int64 (**)(void))(*(_QWORD*)(a1 + 8) + 23376376LL))();
+    v3_ = *(_QWORD*)(a1 + 8);
+    return (*(__int64 (**)(__int64, unsigned int, unsigned int))(
+        v3_ + 23376376LL))(v3_, *(_DWORD*)(a1 + 260), *(_DWORD*)(a1 + 240));
   }
   else {
     return 0;
