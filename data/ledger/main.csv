@@ -19385,7 +19385,7 @@ fff90,116,verified,src/snd/api.cpp,_ZN3snd10startPitchERKNS_3fnd10WeakHandleERKN
 6fcdd0,388,verified,src/game/unnamed/b005_0.c,GameHr_6fcdd0
 6fcf60,304,verified,src/game/unnamed/b005_0.c,GameHr_6fcf60
 6fd090,692,disputed,src/game/unnamed/b005_0.c,GameHr_6fd090
-6fd360,6384,verified,src/game/skill_file.c,game_SkillFile_OnBuild
+6fd360,10576,verified,src/game/skill_file.c,game_SkillFile_OnBuild
 703310,48,verified,src/game/unnamed/e001_1.c,GameHr_703310
 703340,8,verified,src/game/game_trivial.cpp,_Z15GameStub_703340m
 703360,664,verified,src/game/skill_file.c,SkillFile_Unknown5
@@ -31607,7 +31607,7 @@ a94240,632,verified,src/game/templates/hash_table.cpp,_ZNSt3__112__hash_tableINS
 a944e0,404,verified,src/game/templates/hash_table.cpp,_ZNSt3__112__hash_tableINS_17__hash_value_typeINS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEPN4game11UnrecoveredILj5EEEEENS_22__unordered_map_hasherIS7_NS_4pairIKS7_SB_EENS_4hashIS7_EENS_8equal_toIS7_EELb1EEENS_21__unordered_map_equalIS7_SG_SK_SI_Lb1EEENS5_ISG_EEE4findIS7_EENS_15__hash_iteratorIPNS_11__hash_nodeISC_PvEEEERKT_
 a94680,1464,verified,src/game/templates/unplaced_2.c,game_templates_a94680
 a94c80,384,verified,src/game/templates/hash_table.cpp,_ZNSt3__112__hash_tableINS_17__hash_value_typeINS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEPN4game11UnrecoveredILj2EEEEENS_22__unordered_map_hasherIS7_NS_4pairIKS7_SB_EENS8_21UnrecoveredStringHashENS_8equal_toIvEELb1EEENS_21__unordered_map_equalIS7_SG_SJ_SH_Lb1EEENS5_ISG_EEE4findINS_17basic_string_viewIcS4_EEEENS_15__hash_iteratorIPNS_11__hash_nodeISC_PvEEEERKT_
-a94e20,2384,verified,src/gfxa/unplaced.c,gfxa_a94e20
+a94e20,2624,verified,src/gfxa/unplaced.c,gfxa_a94e20
 a95880,1068,verified,src/task/processing_impl.c,Processing_a95880
 a95cb0,4,verified,src/game/game_trivial.cpp,_Z15GameStub_a95cb0v
 a95cc0,44,verified,src/llvm-libcxx-21/libcxx/include/__functional/function.h,"std::__1::__function::__func<gfxa::Initialize()::$_0, void (gxc::RenderContext&, char const*, void*)>::deleting destructor"
@@ -31749,8 +31749,8 @@ aa1690,708,verified,src/graphics/settings_impl.c,Settings_aa1690
 aa1a00,308,verified,src/gfxa/unplaced.c,gfxa_aa1a00
 aa1b50,628,verified,src/game/unnamed/r003_2.c,GameHr_aa1b50
 aa1dd0,336,verified,src/game/unnamed/b009_0.c,GameHr_aa1dd0
-aa1f20,56,verified,src/gfxa/unplaced.c,gfxa_aa1f20
-aa2110,156,verified,src/gfxa/unplaced.c,gfxa_aa2110
+aa1f20,240,verified,src/gfxa/unplaced.c,gfxa_aa1f20
+aa2110,180,verified,src/gfxa/unplaced.c,gfxa_aa2110
 aa21d0,388,verified,src/game/unnamed/b009_0.c,GameHr_aa21d0
 aa2360,68480,verified,src/graphics/settings.cpp,fw::graphics::ReadSettings
 ab4070,10012,verified,src/gfxa/unplaced_2.c,gfxa_ab4070
@@ -33027,7 +33027,7 @@ b3fbe0,1108,verified,src/gfxa/probe2_update_task.c,gfxa_Probe2UpdateTask_initial
 b40200,1016,verified,src/gfxa/probe2_update_task.c,Probe2UpdateTask_Destructor
 b40620,80,verified,src/memory/new_delete.cpp,deleting destructor at 0xb40620
 b40670,1044,verified,src/memory/unplaced_12.c,memory_b40670
-b40ac0,2140,verified,src/gfxa/unplaced.c,gfxa_b40ac0
+b40ac0,2144,verified,src/gfxa/unplaced.c,gfxa_b40ac0
 b44060,1772,verified,src/gfxa/unplaced_4.c,gfxa_b44060
 b447c0,548,verified,src/gfxa/unplaced_3.c,gfxa_b447c0
 b44a40,24,verified,src/llvm-libcxx-21/libcxx/include/__vector/vector.h,std::vector<T>::__throw_length_error()
@@ -33634,7 +33634,7 @@ b6a2a0,12,verified,src/llvm-libcxx-21/libcxx/include/__functional/function.h,"st
 b6a2b0,32,verified,src/gfx/flow/resource_builder_impl.c,ResourceBuilder_b6a2b0
 b6a2d0,28,verified,src/llvm-libcxx-21/libcxx/include/__functional/function.h,"std::__1::__function::__func<gfxa::TaskHeightFog::Impl::Impl(gfx::Manager&)::$_1, void (nn::gfx::SamplerInfo&)>::target(std::type_info const&)"
 b6a2f0,12,verified,src/llvm-libcxx-21/libcxx/include/__functional/function.h,"std::__1::__function::__func<gfxa::TaskHeightFog::Impl::Impl(gfx::Manager&)::$_1, void (nn::gfx::SamplerInfo&)>::target_type()"
-b6a300,1176,verified,src/gfxa/unplaced.c,gfxa_b6a300
+b6a300,1136,verified,src/gfxa/unplaced.c,gfxa_b6a300
 b6ab10,488,verified,src/gfxa/task_ibl.c,gfxa_TaskIBL_Worker_Worker
 b6adf0,232,verified,src/gfx/flow/resource_builder_impl.c,ResourceBuilder_b6adf0
 b6aee0,24,verified,src/llvm-libcxx-21/libcxx/include/__vector/vector.h,std::vector<T>::__throw_length_error()
@@ -84411,7 +84411,7 @@ fffcb0,1244,verified,src/game/unnamed/b014_1.c,GameHr_fffcb0
 18e09f0,20,verified,src/gfxa/task_capsule_ao.c,gfxa_TaskCapsuleAO_Impl_Impl_lambda1_Invoke
 18e0a10,28,verified,src/llvm-libcxx-21/libcxx/include/__functional/function.h,"std::__1::__function::__func<gfxa::TaskCapsuleAO::Impl::Impl(gfx::Manager&)::$_1, void (nn::gfx::SamplerInfo&)>::target(std::type_info const&)"
 18e0a30,12,verified,src/llvm-libcxx-21/libcxx/include/__functional/function.h,"std::__1::__function::__func<gfxa::TaskCapsuleAO::Impl::Impl(gfx::Manager&)::$_1, void (nn::gfx::SamplerInfo&)>::target_type()"
-18e0a40,1372,verified,src/gfxa/unplaced.c,gfxa_18e0a40
+18e0a40,1412,verified,src/gfxa/unplaced.c,gfxa_18e0a40
 18e1100,24,verified,src/llvm-libcxx-21/libcxx/include/__vector/vector.h,std::vector<T>::__throw_length_error()
 18e1120,3556,verified,src/game/unnamed/b028_0.c,GameHr_18e1120
 18e2460,1040,verified,src/game/unnamed/b025_2.c,GameHr_18e2460
