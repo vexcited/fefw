@@ -740,10 +740,10 @@ int8x16_t* gfx_render_b7ea80(__int64 a1, float32x4_t* a2)
   LANES128(v103).n128_f32[0] =
       (float)(0x1.0000000000000p+0f / LANES128(v100).n128_f32[3]) *
       LANES128(v100).n128_f32[0];
-  LANES128(v101).n128_u32[1] =
+  LANES128(v101).n128_f32[1] =
       vmuls_lane_f32(0x1.0000000000000p+0f / LANES128(v99).n128_f32[3],
                      COERCE_AS(float32x2_t, LANES128(v99).n128_u64[0]), 1);
-  LANES128(v103).n128_u32[1] =
+  LANES128(v103).n128_f32[1] =
       vmuls_lane_f32(0x1.0000000000000p+0f / LANES128(v100).n128_f32[3],
                      COERCE_AS(float32x2_t, LANES128(v100).n128_u64[0]), 1);
   LANES128(v101).n128_u64[1] = COERCE_UNSIGNED_INT(vmuls_lane_f32(

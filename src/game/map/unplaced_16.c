@@ -250,10 +250,10 @@ __int64 game_map_f1da00(float32x4_t* a1)
   LOBYTE(v164_.v171) = 1;
   v164_.v166 = vmulq_f32(v4, v12);
   v164_.v167 = vmulq_f32(v4, v11);
-  LANES128(v164_.v166).n128_u32[3] =
+  LANES128(v164_.v166).n128_f32[3] =
       vmuls_lane_f32(LANES128(v164_.v166).n128_f32[3], v155_.v156, 3);
   LANES128(v4).n128_u64[0] = __PAIR64__(v10, v9);
-  LANES128(v164_.v167).n128_u32[3] =
+  LANES128(v164_.v167).n128_f32[3] =
       vmuls_lane_f32(LANES128(v164_.v167).n128_f32[3], v155_.v157, 3);
   LANES128(v4).n128_u64[1] = v9;
   v164_.v170 = v4;

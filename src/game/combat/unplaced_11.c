@@ -970,7 +970,7 @@ float32x4_t game_combat_10a3bd0(float32x4_t* a1)
       (float)((float)(v66 * LANES64(v67).n64_f32[0]) *
               LANES128(v68).n128_f32[1]);
   LANES128(v69).n128_u64[0] = LANES64(v99).n64_u64[0];
-  LANES128(v69).n128_u32[2] =
+  LANES128(v69).n128_f32[2] =
       vmuls_lane_f32(v66 * LANES64(v67).n64_f32[0], v68, 2);
   v70 = v66 + 0x1.1111120000000p-5f;
   LANES64(v67).n64_f32[0] = v70 * LANES64(v67).n64_f32[0];

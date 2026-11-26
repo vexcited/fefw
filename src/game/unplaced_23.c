@@ -3047,7 +3047,7 @@ void game_5c2180(float a1, float a2, __int64 a3, float32x4_t* a4, __int64 a5,
     LANES128(v11).n128_f32[0] =
         *(float*)(v12 + 1456) * LANES128(v7).n128_f32[0];
     *a4 = v11;
-    LANES128(v11).n128_u32[1] =
+    LANES128(v11).n128_f32[1] =
         vmuls_lane_f32(*(float*)(*(_QWORD*)(a5 + 24) + 1460LL),
                        COERCE_AS(float32x2_t, LANES128(v9).n128_u64[0]), 1);
     *a4 = v11;

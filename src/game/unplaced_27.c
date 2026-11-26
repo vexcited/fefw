@@ -484,7 +484,7 @@ unsigned __int64 game_a794a0(unsigned __int64 result, __int64* a2,
   v11 = v9[28];
   v13 = v9[29];
   LANES128(v14).n128_u64[0] = 0;
-  HIDWORD(v10) = __builtin_elementwise_sqrt(
+  *((float*)&v10 + 1) = __builtin_elementwise_sqrt(
       (float)(LANES128_OF(vmulq_f32(v11, v11)).n128_f32[1] +
               (float)(LANES128(v11).n128_f32[0] * LANES128(v11).n128_f32[0])) +
       (float)(COERCE_FLOAT(LANES128(v9[28]).n128_u64[1]) *
@@ -612,7 +612,7 @@ unsigned __int64 game_a794a0(unsigned __int64 result, __int64* a2,
               COERCE_FLOAT(LANES128(*(a3)).n128_u64[1])));
   LANES128(v11).n128_u32[0] = 0;
   LANES128(v45).n128_u64[0] = 0;
-  LANES128(v11).n128_u32[1] = __builtin_elementwise_sqrt(
+  LANES128(v11).n128_f32[1] = __builtin_elementwise_sqrt(
       (float)(LANES128_OF(vmulq_f32(v46, v46)).n128_f32[1] +
               (float)(LANES128(v46).n128_f32[0] * LANES128(v46).n128_f32[0])) +
       (float)(COERCE_FLOAT(LANES128(a3[1]).n128_u64[1]) *

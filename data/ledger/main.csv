@@ -16535,7 +16535,7 @@ fff90,116,verified,src/snd/api.cpp,_ZN3snd10startPitchERKNS_3fnd10WeakHandleERKN
 5c1520,1232,verified,src/game/unplaced_9.c,game_5c1520
 5c19f0,596,verified,src/game/unplaced_9.c,game_5c19f0
 5c1c50,140,disputed,src/game/unplaced_9.c,game_5c1c50
-5c2180,1312,disputed,src/game/unplaced_23.c,game_5c2180
+5c2180,1320,disputed,src/game/unplaced_23.c,game_5c2180
 5c26c0,1536,disputed,src/game/unplaced_9.c,game_5c26c0
 5c2d00,1364,verified,src/game/unplaced_9.c,game_5c2d00
 5c32a0,1536,verified,src/game/unplaced_9.c,game_5c32a0
@@ -42860,7 +42860,7 @@ e43d20,4,verified,src/memory/new_delete.cpp,complete destructor at 0xe43d20
 e43d30,44,verified,src/memory/new_delete.cpp,deleting destructor at 0xe43d30
 e43d60,632,verified,src/game/combat/unplaced.c,game_combat_e43d60
 e44050,884,verified,src/game/combat/unplaced.c,game_combat_e44050
-e443d0,644,verified,src/game/combat/unplaced_11.c,game_combat_e443d0
+e443d0,644,disputed,src/game/combat/unplaced_11.c,game_combat_e443d0
 e44660,4,verified,src/memory/new_delete.cpp,complete destructor at 0xe44660
 e44670,44,verified,src/memory/new_delete.cpp,deleting destructor at 0xe44670
 e446a0,296,verified,src/game/combat/unplaced.c,game_combat_e446a0
@@ -42876,7 +42876,7 @@ e4bf40,1348,verified,src/game/unnamed/b012_2.c,GameHr_e4bf40
 e4c790,292,verified,src/game/combat/legion_gambit.c,LegionGambit_e4c790
 e4c8c0,752,verified,src/game/combat/legion_gambit.c,LegionGambit_e4c8c0
 e4cbb0,244,verified,src/game/unnamed/e004_0.c,GameHr_e4cbb0
-e4cdb0,1692,verified,src/game/combat/unplaced_11.c,game_combat_e4cdb0
+e4cdb0,1828,disputed,src/game/combat/unplaced_11.c,game_combat_e4cdb0
 e4d550,1048,verified,src/game/combat/legion_gambit.c,LegionGambit_e4d550
 e4d990,1488,verified,src/game/combat/legion_gambit.c,LegionGambit_e4d990
 e4df90,280,verified,src/game/templates/vector.cpp,_ZNSt3__16vectorIN4game16UnrecoveredValueILj8ELm4ELm4EEENS_9allocatorIS3_EEE9push_backB8nn210108ERKS3_
@@ -45973,7 +45973,7 @@ f1cdd0,376,verified,src/game/unnamed/b013_1.c,GameHr_f1cdd0
 f1cf80,656,verified,src/game/map/map_draw_cursor.c,MapDrawCursor_Unknown6
 f1d210,4,verified,src/game/map/map_draw.cpp,_ZN4game3map11MapDrawBase10InitializeEv
 f1d220,1628,verified,src/game/map/unplaced_10.c,game_map_f1d220
-f1da00,2348,disputed,src/game/map/unplaced_16.c,game_map_f1da00
+f1da00,3032,disputed,src/game/map/unplaced_16.c,game_map_f1da00
 f1e780,260,verified,src/game/map/mesh_data.cpp,_ZN4game3map18CursorUnitMeshDataD0Ev
 f1e890,104,verified,src/game/map/map_draw_cursor.c,MapDrawCursor_Destructor
 f1e900,144,verified,src/game/map/map_draw_cursor.c,MapDrawCursor_DeletingDestructor
@@ -49603,7 +49603,7 @@ fffcb0,1244,verified,src/game/unnamed/b014_1.c,GameHr_fffcb0
 103be10,132,verified,src/game/map/trick_destroy_mesh_data.c,TrickDestroyMeshData_ResetMatrix
 103bea0,4,verified,src/game/game_trivial.cpp,_Z16GameStub_103bea0v
 103bec0,948,verified,src/game/map/map_panel_trick_destroy.c,game_map_MapPanelTrickDestroy_UpdateTarget
-103cfe0,692,verified,src/game/map/unplaced_13.c,game_map_103cfe0
+103cfe0,828,verified,src/game/map/unplaced_13.c,game_map_103cfe0
 103d400,260,verified,src/game/map/mesh_data.cpp,_ZN4game3map20TrickDestroyMeshDataD0Ev
 103d510,20,verified,src/game/map/map_panel_trick_destroy.c,MapPanelTrickDestroy_Destructor
 103d530,96,verified,src/game/map/map_panel_trick_destroy.c,MapPanelTrickDestroy_DeletingDestructor
@@ -51415,7 +51415,7 @@ fffcb0,1244,verified,src/game/unnamed/b014_1.c,GameHr_fffcb0
 10cace0,44,verified,src/llvm-libcxx-21/libcxx/include/__memory/shared_ptr.h,"std::__1::__shared_ptr_emplace<game::hub::NoticeEvent, std::__1::allocator<game::hub::NoticeEvent>>::__on_zero_shared_weak()"
 10cad10,152,verified,src/game/zview/character_model_look_at.c,CharacterModelLookAt_Destructor
 10cadb0,176,verified,src/game/zview/character_model_look_at.c,CharacterModelLookAt_DeletingDestructor
-10cae60,328,disputed,src/game/zview/unplaced_16.c,game_zview_10cae60
+10cae60,372,disputed,src/game/zview/unplaced_16.c,game_zview_10cae60
 10cbdc0,112,verified,src/game/unnamed/b015_1.c,GameHr_10cbdc0
 10cbe60,384,verified,src/game/unnamed/b015_1.c,GameHr_10cbe60
 10cbfe0,3768,verified,src/game/unplaced_13.c,game_10cbfe0
@@ -56476,7 +56476,7 @@ fffcb0,1244,verified,src/game/unnamed/b014_1.c,GameHr_fffcb0
 123f0a0,292,verified,src/game/unnamed/b017_0.c,GameHr_123f0a0
 123f1e0,1248,verified,src/game/unnamed/b017_0.c,GameHr_123f1e0
 123f720,588,verified,src/game/unnamed/b017_0.c,GameHr_123f720
-123f980,904,verified,src/game/map/unplaced_13.c,game_map_123f980
+123f980,908,verified,src/game/map/unplaced_13.c,game_map_123f980
 123ff80,4100,verified,src/game/unnamed/b028_0.c,GameHr_123ff80
 1241020,580,verified,src/game/unnamed/b017_1.c,GameHr_1241020
 1241280,752,verified,src/game/map/history/anonymous/unplaced.c,game_map_history_anonymous_1241280
@@ -85799,7 +85799,7 @@ fffcb0,1244,verified,src/game/unnamed/b014_1.c,GameHr_fffcb0
 1944040,48,verified,src/cphysx/thread/executor.c,Executor_Unknown4
 19440d0,152,verified,src/gfx/render/screen_area_culling.c,ScreenAreaCulling_Unknown2
 1944170,560,verified,src/gfx/render/screen_area_culling.c,ScreenAreaCulling_Unknown3
-19443a0,568,verified,src/gfx/render/unplaced_8.c,gfx_render_19443a0
+19443a0,568,disputed,src/gfx/render/unplaced_8.c,gfx_render_19443a0
 19445e0,44,verified,src/memory/new_delete.cpp,deleting destructor at 0x19445e0
 1944620,236,verified,src/game/unnamed/b026_0.c,GameHr_1944620
 1944720,332,verified,src/memory/unplaced_2.c,memory_1944720

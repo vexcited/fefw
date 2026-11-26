@@ -385,7 +385,7 @@ void game_zview_10cae60(__int64 a1, char a2, double a3, long double a4,
       LANES128(v46).n128_u32[3] = 0;
       v47 = vsubq_f32(v43, v46);
       v48 = vsubq_f32(v46, v43);
-      LANES128(v47).n128_u32[1] =
+      LANES128(v47).n128_f32[1] =
           vmuls_lane_f32(0x1.0000000000000p-1f,
                          COERCE_AS(float32x2_t, LANES128(v47).n128_u64[0]), 1);
       v49 = vmulq_f32(v47, v47);
