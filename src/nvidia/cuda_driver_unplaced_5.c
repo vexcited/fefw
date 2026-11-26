@@ -2637,7 +2637,7 @@ __int64 cuda_driver_bdf60(__int64 a1, unsigned int a2, __int64* a3, __int64 a4,
     goto LABEL_84;
   }
   memset(v79, 0, sizeof(v79));
-  if ((unsigned int)v13 < 0xB) {
+  if ((int)v13 < 0xB) {
     v20 = v78;
   }
   else {

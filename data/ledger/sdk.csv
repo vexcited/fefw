@@ -26791,7 +26791,7 @@ ffee0,324,verified,src/nn/fs/unplaced.c,nn_fs_GetAndClearMemoryReportInfo
 66c300,8,verified,src/nn/unnamed/u000_2.c,SdkHr_66c300
 66c310,8,verified,src/nn/sdk_trivial.cpp,_Z14SdkStub_66c310m
 66c320,8,verified,src/nn/sdk_trivial.cpp,_Z14SdkStub_66c320m
-66c330,32,disputed,src/nn/unnamed/s004_0.c,SdkHr_66c330
+66c330,32,verified,src/nn/unnamed/s004_0.c,SdkHr_66c330
 66c350,12,verified,src/nn/unnamed/u000_2.c,SdkHr_66c350
 66c360,8,verified,src/nn/sdk_trivial.cpp,_Z14SdkStub_66c360m
 66c370,8,verified,src/nn/sdk_trivial.cpp,_Z14SdkStub_66c370m
@@ -30755,7 +30755,7 @@ ffee0,324,verified,src/nn/fs/unplaced.c,nn_fs_GetAndClearMemoryReportInfo
 74c170,64,verified,src/nerd_gillette_internal/otete/image_codec2.c,nerd_gillette_internal_otete_ImageCodec2_Dequantization
 74c1b0,856,verified,src/nerd_gillette_internal/otete/image_codec2.c,nerd_gillette_internal_otete_ImageCodec2_OldDequantization
 74c520,1204,verified,src/nerd_gillette_internal/otete/image_codec2.c,nerd_gillette_internal_otete_ImageCodec2_Encode
-74cb80,1308,disputed,src/nerd_gillette_internal/otete/unplaced_4.c,nerd_gillette_internal_otete_74cb80
+74cb80,784,disputed,src/nerd_gillette_internal/otete/unplaced_4.c,nerd_gillette_internal_otete_74cb80
 74dc00,44,verified,src/nerd_gillette_internal/otete/image_codec2.c,nerd_gillette_internal_otete_ImageCodec2_DecodeInPlace_74dc00
 74dc40,3644,verified,src/nerd_gillette_internal/otete/unplaced_3.c,nerd_gillette_internal_otete_74dc40
 74ead0,44,verified,src/nerd_gillette_internal/otete/image_codec2.c,nerd_gillette_internal_otete_ImageCodec2_DecodeInPlace_74ead0

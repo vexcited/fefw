@@ -3870,7 +3870,7 @@ float SdkHr_66c2e0(__int64 a1, float a2, float a3, float a4, float a5, float a6,
 
 __int64 SdkHr_66c330(__int64 a1, int a2)
 {
-  if (a2 >= *(_DWORD*)(a1 + 16)) {
+  if (a2 >= *(int*)(a1 + 16)) {
     return 0;
   }
   else {
