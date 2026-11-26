@@ -1089,7 +1089,7 @@ afa40,132,verified,src/nvidia/dlss/vulkan/core/core/nvngx_vulkan.c,nvngx_vulkan_
 afad0,52,verified,src/nvidia/dlss/vulkan/core/core/nvngx_vulkan.c,nvngx_vulkan_afad0
 afb10,20,verified,src/nvidia/ngx_trivial_wrappers.cpp,_Z13NgxStub_afb10mm
 afb30,16,verified,src/nvidia/ngx_trivial_wrappers.cpp,_Z13NgxStub_afb30m
-afb40,228,disputed,src/nvidia/unplaced_55.c,nvidia_afb40
+afb40,228,verified,src/nvidia/unplaced_55.c,nvidia_afb40
 afc30,460,verified,src/nvidia/dlss/vulkan/core/core/nvngx_generic_api_inline.c,nvngx_generic_api_afc30
 afe00,488,verified,src/nvidia/dlss/vulkan/core/core/nvngx_generic_api_inline.c,nvngx_generic_api_afe00
 b0000,212,verified,src/nvidia/dlss/vulkan/core/core/unplaced.c,nvidia_dlss_vulkan_core_core_b0000

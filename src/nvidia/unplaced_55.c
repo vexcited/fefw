@@ -800,15 +800,15 @@ LABEL_14:
 
 __int64 nvidia_afb40(int a1, __int64 a2, __int64 a3)
 {
-  __int64 (*v4)(void);
+  __int64 (*v4)(int, __int64, __int64);
 
   if (a1 < 17) {
     if (NgxData_2b70a48 != 0) {
       if (a2 != 0 && a3 != 0) {
-        v4 = *(__int64 (**)(void))(NgxData_2b70a48 + 120LL * (unsigned int)a1 +
-                                   32864);
+        v4 = *(__int64 (**)(int, __int64, __int64))(
+            NgxData_2b70a48 + 120LL * (unsigned int)a1 + 32864);
         if (v4 != nullptr) {
-          return v4();
+          return v4(a1, a2, a3);
         }
         else {
           return 3134193675LL;
