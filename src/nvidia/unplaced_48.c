@@ -397,7 +397,7 @@ void nvidia_f29c0(unsigned __int64 a1)
   __int64 v2;
   __int64 v3;
 
-  v1 = (char*)CudaDriverData_1422118 + 8 * **(unsigned int**)(a1 + 176);
+  v1 = (char*)CudaDriverData_1422118 + 8LL * **(unsigned int**)(a1 + 176);
   do {
     v2 = *((_QWORD*)v1 + 2299);
     v3 = v2;

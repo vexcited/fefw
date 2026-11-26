@@ -2224,8 +2224,8 @@ __int64 nvidia_22f640(__int64* a1, _DWORD* a2, __int64 a3, __int64 a4,
     unsigned int v25;
     unsigned int v26;
   } v25_;
-  _DWORD v27[2];
   struct {
+    _DWORD v27[2];
     _QWORD v28[6];
     __int16 v29;
     char gap66_[6];
@@ -2234,6 +2234,7 @@ __int64 nvidia_22f640(__int64* a1, _DWORD* a2, __int64 a3, __int64 a4,
     char v31;
     char gap89_[7];
     __int64 v32;
+    char tail_[176];
   } v28_;
   _DWORD* v33;
 
@@ -2273,13 +2274,13 @@ __int64 nvidia_22f640(__int64* a1, _DWORD* a2, __int64 a3, __int64 a4,
       v15 = *(_QWORD*)(v6 + 8);
       __asm__ volatile("" ::"r"(v15));
     }
-    v27[0] = 104;
+    v28_.v27[0] = 104;
     v28_.v31 = v14;
     v28_.v29 = v13;
     v28_.v32 = a5;
     v28_.v28[4] = v15;
     v28_.v30 = (__int64*)&v33;
-    cuda_driver_20b420(0xBu, 2u, (__int64)v27);
+    cuda_driver_20b420(0xBu, 2u, (__int64)&v28_);
   }
   if (CudaDriverStub_b9300(a3) && CudaDriverRoutine_bbdf0(a3)) {
     v16 = v33;
@@ -2299,14 +2300,14 @@ __int64 nvidia_22f640(__int64* a1, _DWORD* a2, __int64 a3, __int64 a4,
         v21 = *(_QWORD*)(v6 + 8);
         __asm__ volatile("" ::"r"(v21));
       }
-      v27[0] = 541204678;
-      v27[1] = v21 >> 40;
+      v28_.v27[0] = 541204678;
+      v28_.v27[1] = v21 >> 40;
       LODWORD(v28_.v28[0]) = v21 >> 8;
       CudaDriverStub_640d0((__int64)v28_.v28 + 4, v5, 0x100u);
       v25_.v25 = 12;
       v25_.v26 = 64;
       result = CudaDriverRoutine_197480((__int64)v33, a2, 1u, &v25_.v26,
-                                        (__int64)v27, 0x110u,
+                                        (__int64)&v28_, 0x110u,
                                         (_QWORD*)(a3 + 832), &v25_.v25);
     }
     else {

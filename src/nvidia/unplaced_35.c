@@ -3719,6 +3719,7 @@ __int64 nvidia_d6ca0(_QWORD* a1, __int64 a2, int a3, _DWORD* a4)
     __int128 v104;
     __int128 v105;
     __int64 v106;
+    char tail_[416];
   } v103_;
   _QWORD* v107;
   __int64 v108[3];

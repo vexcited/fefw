@@ -6061,7 +6061,7 @@ __int64 nvidia_f2e00(unsigned int* a1, __int64 a2, unsigned __int64* a3,
   f_.v19 = 0;
   if (v4 != 0 || (v4 = atomic_fetch_or(
                       (atomic_ullong* volatile)((char*)CudaDriverData_1422118 +
-                                                8 * *a1 + 18392),
+                                                8LL * *a1 + 18392),
                       0)) != 0) {
     v8 = *(_DWORD*)(v4 + 112);
     result = CudaDriverStub_118070(a2),
@@ -10318,7 +10318,7 @@ __int64 nvidia_1ba340(int a1, unsigned __int64 a2)
     return 1;
   }
   v4 = *((unsigned int**)CudaDriverData_1422118 + a1 + 35);
-  v5 = (char*)CudaDriverData_1422118 + 8 * *v4;
+  v5 = (char*)CudaDriverData_1422118 + 8LL * *v4;
   if (*((_QWORD*)v5 + 2363) < a2) {
     *((_QWORD*)v5 + 2363) = a2;
   }

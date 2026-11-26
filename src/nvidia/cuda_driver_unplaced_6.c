@@ -8405,6 +8405,7 @@ __int64 cuda_driver_f1d70(__int64 a1, __int64 a2, _QWORD* a3)
     char gap24_[296];
     __int64 v14;
     __int64 v15;
+    char tail_[56];
   } v12_;
   __int64 v16;
 

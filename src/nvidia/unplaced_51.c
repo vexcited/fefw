@@ -5020,7 +5020,7 @@ __int64 nvidia_f2cf0(unsigned int* a1, __int64* a2)
   v6 = COERCE_AS(__typeof__(v6),
                  PSEUDO_REGISTER(unsigned long long, "x2", "=r"));
   v2 = atomic_fetch_or((atomic_ullong* volatile)((char*)CudaDriverData_1422118 +
-                                                 8 * *a1 + 18392),
+                                                 8LL * *a1 + 18392),
                        0);
   if (v2 != 0) {
     result = 0;
