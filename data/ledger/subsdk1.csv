@@ -1877,7 +1877,7 @@ fcc0,1900,verified,src/nvidia/unnamed/c000_0.c,CudaDriverHr_fcc0
 70450,240,verified,src/nvidia/unplaced_35.c,nvidia_70450
 70540,244,verified,src/nvidia/unnamed/c001_0.c,CudaDriverHr_70540
 70640,220,verified,src/nvidia/unplaced_35.c,nvidia_70640
-70720,164,disputed,src/nvidia/unplaced_51.c,nvidia_70720
+70720,164,verified,src/nvidia/unplaced_51.c,nvidia_70720
 707d0,184,verified,src/nvidia/unnamed/c001_0.c,CudaDriverHr_707d0
 70890,140,verified,src/nvidia/unnamed/c001_0.c,CudaDriverHr_70890
 70920,168,verified,src/nvidia/unnamed/c001_0.c,CudaDriverHr_70920
@@ -1906,7 +1906,7 @@ fcc0,1900,verified,src/nvidia/unnamed/c000_0.c,CudaDriverHr_fcc0
 71c40,180,verified,src/nvidia/unnamed/c001_0.c,CudaDriverHr_71c40
 71d00,232,verified,src/nvidia/unnamed/c001_0.c,CudaDriverHr_71d00
 71df0,200,verified,src/nvidia/unnamed/c001_0.c,CudaDriverHr_71df0
-71ec0,196,disputed,src/nvidia/unplaced_51.c,nvidia_71ec0
+71ec0,196,verified,src/nvidia/unplaced_51.c,nvidia_71ec0
 72060,8,verified,src/nvidia/cuda_driver_stubs.cpp,_Z20CudaDriverStub_72060v
 72070,8,verified,src/nvidia/cuda_driver_stubs.cpp,_Z20CudaDriverStub_72070v
 72160,292,verified,src/nvidia/unnamed/c001_0.c,CudaDriverHr_72160
@@ -1929,9 +1929,9 @@ fcc0,1900,verified,src/nvidia/unnamed/c000_0.c,CudaDriverHr_fcc0
 73530,168,verified,src/nvidia/unnamed/c001_0.c,CudaDriverHr_73530
 735e0,232,verified,src/nvidia/unnamed/c001_0.c,CudaDriverHr_735e0
 736d0,204,verified,src/nvidia/unnamed/c001_0.c,CudaDriverHr_736d0
-737a0,196,disputed,src/nvidia/unplaced_51.c,nvidia_737a0
-73870,196,disputed,src/nvidia/unplaced_48.c,nvidia_73870
-73940,196,disputed,src/nvidia/unplaced_48.c,nvidia_73940
+737a0,196,verified,src/nvidia/unplaced_51.c,nvidia_737a0
+73870,196,verified,src/nvidia/unplaced_48.c,nvidia_73870
+73940,196,verified,src/nvidia/unplaced_48.c,nvidia_73940
 73a20,292,verified,src/nvidia/unnamed/c001_0.c,CudaDriverHr_73a20
 73b50,260,verified,src/nvidia/unnamed/c001_0.c,CudaDriverHr_73b50
 73c80,364,verified,src/nvidia/unnamed/c001_0.c,CudaDriverHr_73c80

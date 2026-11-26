@@ -181,9 +181,9 @@ __int64 nvidia_70720(unsigned int a1, unsigned int a2, unsigned int a3,
 __int64 nvidia_71020(unsigned int a1, unsigned int a2, unsigned int a3,
                      _QWORD* a4);
 __int64 nvidia_71ec0(unsigned int a1, unsigned int a2, unsigned int a3,
-                     __int64 a4, __int64 a5);
+                     __int64 a4, __int64 a5, unsigned int a6);
 __int64 nvidia_737a0(unsigned int a1, unsigned int a2, unsigned int a3,
-                     __int64 a4, __int64 a5);
+                     __int64 a4, __int64 a5, unsigned int a6);
 __int64 nvidia_806c0_alt1(__int64 a1, __int64 a2, char* a3, _BYTE* a4,
                           __int64* a5);
 __int64 nvidia_8aae0(__int64 a1);
@@ -341,15 +341,16 @@ __int64 nvidia_70720(unsigned int a1, unsigned int a2, unsigned int a3,
                      __int64 a4)
 {
   __int64 result;
+  __int64 v6_;
 
   if (a4 == 0) {
     return 4;
   }
   result = CudaDriverRoutine_6cac0(0xFFu, a1, a2, a3, 0xFFFFFFFF);
   if ((_DWORD)result == 0) {
-    return (*(__int64 (**)(void))(
-        *(_QWORD*)(*(_QWORD*)CudaDriverData_1423000 + 8LL * a1) +
-        23375528LL))();
+    v6_ = *(_QWORD*)(*(_QWORD*)CudaDriverData_1423000 + 8LL * a1);
+    return (*(__int64 (**)(__int64, unsigned int, unsigned int, __int64))(
+        v6_ + 23375528LL))(v6_, a2, a3, a4);
   }
   return result;
 }
@@ -393,35 +394,39 @@ __int64 nvidia_71020(unsigned int a1, unsigned int a2, unsigned int a3,
 }
 
 __int64 nvidia_71ec0(unsigned int a1, unsigned int a2, unsigned int a3,
-                     __int64 a4, __int64 a5)
+                     __int64 a4, __int64 a5, unsigned int a6)
 {
   __int64 result;
+  __int64 v6_;
 
   if (a5 == 0) {
     return 4;
   }
   result = CudaDriverRoutine_6cac0(0x4FFu, a1, a2, a3, 0xFFFFFFFF);
   if ((_DWORD)result == 0) {
-    return (*(__int64 (**)(void))(
-        *(_QWORD*)(*(_QWORD*)CudaDriverData_1423000 + 8LL * a1) +
-        23375664LL))();
+    v6_ = *(_QWORD*)(*(_QWORD*)CudaDriverData_1423000 + 8LL * a1);
+    return (*(__int64 (**)(__int64, unsigned int, unsigned int, __int64,
+                           __int64, unsigned int))(v6_ + 23375664LL))(
+        v6_, a2, a3, a4, a5, a6);
   }
   return result;
 }
 
 __int64 nvidia_737a0(unsigned int a1, unsigned int a2, unsigned int a3,
-                     __int64 a4, __int64 a5)
+                     __int64 a4, __int64 a5, unsigned int a6)
 {
   __int64 result;
+  __int64 v6_;
 
   if (a5 == 0) {
     return 4;
   }
   result = CudaDriverRoutine_6cac0(0x4FFu, a1, a2, a3, 0xFFFFFFFF);
   if ((_DWORD)result == 0) {
-    return (*(__int64 (**)(void))(
-        *(_QWORD*)(*(_QWORD*)CudaDriverData_1423000 + 8LL * a1) +
-        23375856LL))();
+    v6_ = *(_QWORD*)(*(_QWORD*)CudaDriverData_1423000 + 8LL * a1);
+    return (*(__int64 (**)(__int64, unsigned int, unsigned int, __int64,
+                           __int64, unsigned int))(v6_ + 23375856LL))(
+        v6_, a2, a3, a4, a5, a6);
   }
   return result;
 }

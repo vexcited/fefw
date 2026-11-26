@@ -85,9 +85,9 @@ void CudaDriverRoutine_74dc();
 void XXH32(int32x4_t*, unsigned __int64, unsigned int);
 __int64 nvidia_51dd0(_QWORD* a1, __int64 a2);
 __int64 nvidia_73870(unsigned int a1, unsigned int a2, unsigned int a3,
-                     __int64 a4, __int64 a5);
+                     __int64 a4, __int64 a5, unsigned int a6);
 __int64 nvidia_73940(unsigned int a1, unsigned int a2, unsigned int a3,
-                     unsigned int a4, __int64 a5, __int64 a6);
+                     unsigned int a4, __int64 a5, __int64 a6, unsigned int a7);
 __int64 nvidia_bc6c0(__int64 a1, int a2, char a3);
 __int64 nvidia_f0ba0(__int64 a1);
 void nvidia_f29c0(unsigned __int64 a1);
@@ -127,35 +127,39 @@ __int64 nvidia_51dd0(_QWORD* a1, __int64 a2)
 }
 
 __int64 nvidia_73870(unsigned int a1, unsigned int a2, unsigned int a3,
-                     __int64 a4, __int64 a5)
+                     __int64 a4, __int64 a5, unsigned int a6)
 {
   __int64 result;
+  __int64 v6_;
 
   if (a5 == 0) {
     return 4;
   }
   result = CudaDriverRoutine_6cac0(0x4FFu, a1, a2, a3, 0xFFFFFFFF);
   if ((_DWORD)result == 0) {
-    return (*(__int64 (**)(void))(
-        *(_QWORD*)(*(_QWORD*)CudaDriverData_1423000 + 8LL * a1) +
-        23375848LL))();
+    v6_ = *(_QWORD*)(*(_QWORD*)CudaDriverData_1423000 + 8LL * a1);
+    return (*(__int64 (**)(__int64, unsigned int, unsigned int, __int64,
+                           __int64, unsigned int))(v6_ + 23375848LL))(
+        v6_, a2, a3, a4, a5, a6);
   }
   return result;
 }
 
 __int64 nvidia_73940(unsigned int a1, unsigned int a2, unsigned int a3,
-                     unsigned int a4, __int64 a5, __int64 a6)
+                     unsigned int a4, __int64 a5, __int64 a6, unsigned int a7)
 {
   __int64 result;
+  __int64 v6_;
 
   if (a6 == 0) {
     return 4;
   }
   result = CudaDriverRoutine_6cac0(0x7FFu, a1, a2, a3, a4);
   if ((_DWORD)result == 0) {
-    return (*(__int64 (**)(void))(
-        *(_QWORD*)(*(_QWORD*)CudaDriverData_1423000 + 8LL * a1) +
-        23375864LL))();
+    v6_ = *(_QWORD*)(*(_QWORD*)CudaDriverData_1423000 + 8LL * a1);
+    return (*(__int64 (**)(__int64, unsigned int, unsigned int, unsigned int,
+                           __int64, __int64, unsigned int))(v6_ + 23375864LL))(
+        v6_, a2, a3, a4, a5, a6, a7);
   }
   return result;
 }
