@@ -9727,7 +9727,7 @@ bool game_1732160(_DWORD* a1, int* a2)
   int v36;
   int v37;
 
-  v2 = a2 - (__typeof__(a2))a1;
+  v2 = ((__int64)a2 - (__int64)a1) >> 2;
   if (v2 > 2) {
     if (v2 == 3) {
       v11 = *(_DWORD*)a1;

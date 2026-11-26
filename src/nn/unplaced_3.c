@@ -4276,7 +4276,7 @@ __int64 nn_65f400(__int64 a1, int a2, int a3, char a4, char a5)
   _QWORD v13[6];
   unsigned int v16;
 
-  v7 = (char*)SdkData_e89ba0 + 48 * a2;
+  v7 = (char*)SdkData_e89ba0 + 48LL * a2;
   if ((*v7 & 1) == 0) {
     return 0;
   }
@@ -7159,7 +7159,7 @@ __int64 nn_66aaa0(__int64 a1, __int64 a2)
         result = 0;
         v37 = v68_.v73;
         v38 = v68_.v74;
-        v39 = (unsigned __int8*)SdkData_e89ba0 + 48 * (int)v35;
+        v39 = (unsigned __int8*)SdkData_e89ba0 + 48LL * (int)v35;
         v40 = *(_QWORD*)(a1 + 72) & 0xFFFFFFFFFFFFFF00LL | v39[8];
         *(_QWORD*)(a1 + 72) = v40;
         v41 = v40 & 0xFFFFFFFFFFFF00FFLL | ((unsigned __int64)v39[9] << 8);
@@ -7316,7 +7316,7 @@ __int64 nn_66aaa0(__int64 a1, __int64 a2)
     *(_QWORD*)(a1 + 40) = v21;
     v22 = v21 & 0xFFFF7FFFFFFFFFFFLL;
     v23 = SdkData_e89ba0;
-    v24 = (char*)SdkData_e89ba0 + 48 * ((int)((_DWORD)v14 << 23) >> 23);
+    v24 = (char*)SdkData_e89ba0 + 48LL * ((int)((_DWORD)v14 << 23) >> 23);
     v25 = 0x800000000000LL;
     if (v24[15] == 0) {
       v25 = 0;

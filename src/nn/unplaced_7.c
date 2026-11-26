@@ -191,7 +191,7 @@ LABEL_31:
   *(_DWORD*)(a2 + 40) = v17;
   *(_QWORD*)(a2 + 64) = *(_QWORD*)(result + 72) >> 16;
   if (a3 != nullptr && (*((_BYTE*)a3 + 7) & 4) != 0) {
-    v21 = (char*)SdkData_e89ba0 + 48 * *((int*)a3 + 2);
+    v21 = (char*)SdkData_e89ba0 + 48LL * *((int*)a3 + 2);
     v22 = (unsigned __int8)v21[8];
     if (v22 >= (unsigned __int8)*(_DWORD*)(result + 72)) {
       v26 = v22 / (unsigned __int8)*(_DWORD*)(result + 72);

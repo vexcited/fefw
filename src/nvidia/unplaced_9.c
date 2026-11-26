@@ -5070,7 +5070,7 @@ _QWORD* nvidia_64ea80(_QWORD* result, __int64 a2)
   *(_DWORD*)(v3 + 116) = *(_QWORD*)(*(_QWORD*)a2 + 32LL);
   *(_DWORD*)(v3 + 120) = *(unsigned __int16*)(*(_QWORD*)a2 + 36LL);
   v10 = *(_QWORD*)(*(_QWORD*)a2 + 40LL);
-  v11 = (char*)SdkData_e89ba0 + 48 * ((int)((_DWORD)v10 << 7) >> 23);
+  v11 = (char*)SdkData_e89ba0 + 48LL * ((int)((_DWORD)v10 << 7) >> 23);
   if (v11[14] != 0 || v11[15] != 0) {
     v12 = *(_DWORD*)(a2 + 108);
     v13 = *(unsigned __int16*)(a2 + 104);

@@ -278,7 +278,7 @@ __int64 SdkHr_669cf0(__int64 a1)
   if (v2 != 10 && (*(_DWORD*)(a1 + 32) & 0x50) == 0) {
     v6 = *(_DWORD*)(a1 + 56);
     if ((v1 & 8) != 0 && *(_BYTE*)(v3 + 7580) == 1) {
-      v7 = (unsigned __int8*)SdkData_e89ba0 + 48 * v6;
+      v7 = (unsigned __int8*)SdkData_e89ba0 + 48LL * v6;
       if (v7[14] != 0 || v7[15] != 0) {
         v8 = *(_DWORD*)(v3 + 7284) != 1981175382;
       LABEL_14:

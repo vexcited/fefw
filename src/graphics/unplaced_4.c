@@ -60,7 +60,7 @@ __int64 graphics_691060(__int64 a1, __int64 a2, int a3, char a4)
   DWORD2(v27_.v27) = *(_DWORD*)(a2 + 8);
   *((float*)&v27_.v27 + 3) = v9;
   v11 = v9;
-  v12 = (char*)SdkData_e89ba0 + 48 * a3;
+  v12 = (char*)SdkData_e89ba0 + 48LL * a3;
   v13 = v10 == 0x0.0p+0f && (v12[11] == 0 || v5 == 0x0.0p+0f) &&
         (v12[12] == 0 || *((float*)&v27_.v27 + 2) == 0x0.0p+0f) &&
         (v9 == 0x0.0p+0f | v12[13] == 0);

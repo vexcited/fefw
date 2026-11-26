@@ -20546,7 +20546,7 @@ fff90,116,verified,src/snd/api.cpp,_ZN3snd10startPitchERKNS_3fnd10WeakHandleERKN
 760320,252,verified,src/game/unnamed/b005_1.c,GameHr_760320
 760430,52,verified,src/game/unnamed/b005_1.c,GameHr_760430
 760470,184,verified,src/game/unnamed/b005_1.c,GameHr_760470
-760540,540,disputed,src/game/map/unplaced_4.c,game_map_760540
+760540,544,verified,src/game/map/unplaced_4.c,game_map_760540
 760880,844,verified,src/game/unnamed/b005_1.c,GameHr_760880
 760c10,136,verified,src/game/unnamed/b005_1.c,GameHr_760c10
 760ca0,88,verified,src/game/unnamed/b005_1.c,GameHr_760ca0
@@ -75872,7 +75872,7 @@ fffcb0,1244,verified,src/game/unnamed/b014_1.c,GameHr_fffcb0
 17316f0,152,verified,src/game/game_trivial_shared_owners.cpp,_Z16GameStub_17316f0m
 1731790,8,verified,src/game/facility/blacksmith_item_menu_item.cpp,_ZN4game4menu13BasicMenuItem10GetHelpMidEv
 17317a0,2056,verified,src/game/unnamed/b023_0.c,GameHr_17317a0
-1732160,564,disputed,src/game/unplaced_23.c,game_1732160
+1732160,628,verified,src/game/unplaced_23.c,game_1732160
 1732480,44,verified,src/llvm-libcxx-21/libcxx/include/__functional/function.h,"std::__1::__function::__func<game::gmap::GmapCorpsMenu::ExchangeImpl(bool, game::gmap::GmapCorpsMenuItem*, game::gmap::GmapCorpsMenuItem*, bool)::$_0::operator()(game::gmap::(anonymous namespace)::CorpsMenuBase*) const::'lambda'(auto), bool (game::gmap::GmapCorpsMenuItem*)>::deleting destructor"
 17324b0,80,verified,src/llvm-libcxx-21/libcxx/include/__functional/function.h,"std::__1::__function::__func<game::gmap::GmapCorpsMenu::ExchangeImpl(bool, game::gmap::GmapCorpsMenuItem*, game::gmap::GmapCorpsMenuItem*, bool)::$_0::operator()(game::gmap::(anonymous namespace)::CorpsMenuBase*) const::'lambda'(auto), bool (game::gmap::GmapCorpsMenuItem*)>::__clone()"
 1732500,24,verified,src/llvm-libcxx-21/libcxx/include/__functional/function.h,"std::__1::__function::__func<game::gmap::GmapCorpsMenu::ExchangeImpl(bool, game::gmap::GmapCorpsMenuItem*, game::gmap::GmapCorpsMenuItem*, bool)::$_0::operator()(game::gmap::(anonymous namespace)::CorpsMenuBase*) const::'lambda'(auto), bool (game::gmap::GmapCorpsMenuItem*)>::__clone(__base*)"

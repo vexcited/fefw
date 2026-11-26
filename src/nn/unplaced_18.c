@@ -49,7 +49,7 @@ __int64 nn_6913c0(__int64 a1, unsigned int* a2, unsigned int a3, char a4)
   v23 = (__typeof__(v23)){0};
   *(_QWORD*)&v24_.v24 = __PAIR64__(v5, v4);
   *((_QWORD*)&v24_.v24 + 1) = __PAIR64__(v6, v7);
-  v10 = (char*)SdkData_e89ba0 + 48 * (int)a3;
+  v10 = (char*)SdkData_e89ba0 + 48LL * (int)a3;
   if (v4 == 0 &&
       (v10[11] != 0 ? (v11 = v5 == 0) : (v11 = true),
        v11 && (v10[12] != 0 ? (v12 = v7 == 0) : (v12 = true), v12))) {

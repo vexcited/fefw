@@ -672,7 +672,7 @@ unsigned __int64 nn_669a20(__int64 a1, unsigned __int64* a2)
   }
   else {
     nn_66a170(v23_.v23, (__int64)v17_.v17);
-    if ((SdkData_ea4528[12 * SDWORD2(v17_.v19)] & 1) != 0) {
+    if ((SdkData_ea4528[12LL * SDWORD2(v17_.v19)] & 1) != 0) {
       result = v23_.v24 >> 16;
     }
     else {
@@ -723,7 +723,7 @@ LABEL_13:
     }
     else {
       nn_66a170(v23_.v23, (__int64)v17_.v17);
-      if ((SdkData_ea4528[12 * SDWORD2(v17_.v19)] & 1) != 0) {
+      if ((SdkData_ea4528[12LL * SDWORD2(v17_.v19)] & 1) != 0) {
         v15 = v23_.v24 >> 16;
       }
       else {

@@ -389,7 +389,7 @@ _DWORD* nn_66b8d0(_DWORD* a1, _QWORD* a2)
     v3 = a1[8];
     v4 = a1[9];
   }
-  v7 = (unsigned __int8*)SdkData_e89ba0 + 48 * a1[14];
+  v7 = (unsigned __int8*)SdkData_e89ba0 + 48LL * a1[14];
   nvidia_6474d0((__int64)v10, v3, v4, v7[16], a1[15], v7[8], v7[9], a1[13],
                 a1[10], a1[11], a1[12]);
   return nvidia_647700(v10, (__int64)a2, v9, (a1[8] & 0x800) != 0);

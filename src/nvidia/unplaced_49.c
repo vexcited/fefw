@@ -346,7 +346,7 @@ __int64 nvidia_64d350(__int64 result, __int64* a2, __int64* a3, int a4, int a5,
     v49 = &v45[v47];
     __asm__ volatile("" ::"r"(v49));
   }
-  v50 = (char*)SdkData_e89ba0 + 48 * v17;
+  v50 = (char*)SdkData_e89ba0 + 48LL * v17;
   if (v50[14] != 0 || v50[15] != 0) {
     v51 = 0x4000000;
     v52 = a9;

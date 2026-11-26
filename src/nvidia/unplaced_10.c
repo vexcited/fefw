@@ -393,9 +393,9 @@ LABEL_13:
     return result;
   }
   v22 = a8 << 28;
-  v23 = (char*)SdkData_e89ba0 + 48 * (int)v9;
+  v23 = (char*)SdkData_e89ba0 + 48LL * (int)v9;
   v24 = ((__int64)(int)v8 >> 25) - 5;
-  v25 = (char*)SdkData_e89ba0 + 48 * (int)v12;
+  v25 = (char*)SdkData_e89ba0 + 48LL * (int)v12;
   v26 = *a4;
   v27 = *a7;
   v28 = (unsigned __int8)v23[8];
@@ -638,7 +638,7 @@ __int64 nvidia_64f5d0(__int64 a1, __int64 a2, int a3, __int64 a4, int a5,
   v25 = (char*)SdkData_e89ba0;
   result = 536961157;
   if ((a17 & 1) != 0) {
-    v27 = (char*)SdkData_e89ba0 + 48 * a3;
+    v27 = (char*)SdkData_e89ba0 + 48LL * a3;
     if (*(_DWORD*)(a2 + 24) == 2) {
       *v18 = 537157772;
       v18[1] = *((_DWORD*)v27 + 7);

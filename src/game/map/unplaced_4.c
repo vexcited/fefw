@@ -858,7 +858,7 @@ __int64 game_map_760540()
   else {
     v10 = v4[104];
   }
-  v11 = &v4[24 * v10];
+  v11 = &v4[24LL * v10];
   v12 = GameData_212ce90[0];
   v13 = GameData_21309c8[0];
   if (*((_QWORD*)v11 + 6) != *((_QWORD*)v11 + 7)) {
