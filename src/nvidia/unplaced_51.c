@@ -647,7 +647,7 @@ LABEL_49:
 
 __int64 nvidia_8aae0(__int64 a1)
 {
-  return (unsigned int)(1 << (*(_BYTE*)(a1 + 40) + 6));
+  return (unsigned int)(1 << ((*(_DWORD*)(a1 + 40) + 6) & 31));
 }
 
 __int64 nvidia_8ee20(__int64 a1, unsigned __int64 a2, unsigned __int64* a3)

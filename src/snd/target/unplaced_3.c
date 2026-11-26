@@ -17,7 +17,7 @@ bool SoundDataManager_27b740(__int64, __int64, __int64, __int64);
 extern __int64* GameData_21349b0;
 extern __int64 snd_g_memory;
 extern char GameData_1a9f09e;
-int GameRoutine_1a09cf0(__int64, __int64, unsigned __int64);
+__int64 GameRoutine_1a09cf0(__int64, __int64, unsigned __int64);
 unsigned __int64 GameRoutine_190020(__int64*, const char*);
 unsigned __int64 GameRoutine_1a09c70(const char*);
 unsigned __int64 GameRoutine_279360(__int64, const char*);

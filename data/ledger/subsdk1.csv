@@ -2212,7 +2212,7 @@ fcc0,1900,verified,src/nvidia/unnamed/c000_0.c,CudaDriverHr_fcc0
 8a8a0,308,verified,src/nvidia/unnamed/c001_0.c,CudaDriverHr_8a8a0
 8a9e0,188,verified,src/nvidia/unnamed/c001_0.c,CudaDriverHr_8a9e0
 8aaa0,56,verified,src/nvidia/cuda_driver_helpers.cpp,_Z23CudaDriverRoutine_8aaa0mm
-8aae0,20,disputed,src/nvidia/unplaced_51.c,nvidia_8aae0
+8aae0,20,verified,src/nvidia/unplaced_51.c,nvidia_8aae0
 8ab00,20,verified,src/nvidia/unplaced_57.c,nvidia_8ab00
 8ab20,148,verified,src/nvidia/unnamed/c001_0.c,CudaDriverHr_8ab20
 8abc0,64,verified,src/nvidia/unnamed/c001_0.c,CudaDriverHr_8abc0
