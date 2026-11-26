@@ -12,7 +12,8 @@ __int64 ATSParser_53c140_alt1(_QWORD, _QWORD) __asm__("ATSParser_53c140");
 __int64 ATSParser_53c240_alt1(_QWORD, _QWORD) __asm__("ATSParser_53c240");
 __int64 ATSParser_53c460_alt1(_QWORD, _QWORD, _QWORD,
                               _QWORD) __asm__("ATSParser_53c460");
-__int64 ATSParser_53c680_alt1(void) __asm__("ATSParser_53c680");
+__int64 ATSParser_53c680_alt1(__int64, __int64,
+                              __int64) __asm__("ATSParser_53c680");
 __int64 ATSParser_53c7b0_alt1(_QWORD, _QWORD,
                               _QWORD) __asm__("ATSParser_53c7b0");
 __int64 SdkRoutine_4c3860(__int64, __int64, _QWORD**);
@@ -1563,7 +1564,13 @@ __int64* ATSParser_53b5e0(__int64* result, __int64 a2, __int64 a3,
             SdkRoutine_870bc0(v27 + 16, *(_QWORD*)(v26 + 16), v26 + 24);
             result = (__int64*)(v27 + 48);
             if ((*(_BYTE*)(v27 + 48) & 1) != 0) {
-              result = (__int64*)ATSParser_53c680_alt1();
+              result = (__int64*)ATSParser_53c680_alt1(
+                  (__int64)result,
+                  (*(_BYTE*)(v26 + 48) & 1) == 0 ? v26 + 49
+                                                 : *(_QWORD*)(v26 + 64),
+                  (*(_BYTE*)(v26 + 48) & 1) == 0
+                      ? *(unsigned __int8*)(v26 + 48) >> 1
+                      : *(_QWORD*)(v26 + 56));
             }
             else if ((*(_BYTE*)(v26 + 48) & 1) != 0) {
               result = (__int64*)ATSParser_53c7b0_alt1(
@@ -1609,7 +1616,13 @@ __int64* ATSParser_53b5e0(__int64* result, __int64 a2, __int64 a3,
             SdkRoutine_870bc0(v19 + 16, *(_QWORD*)(v18 + 16), v18 + 24);
             v21 = (_QWORD*)(v19 + 48);
             if ((*(_BYTE*)(v19 + 48) & 1) != 0) {
-              ATSParser_53c680_alt1();
+              ATSParser_53c680_alt1((__int64)v21,
+                                    (*(_BYTE*)(v18 + 48) & 1) == 0
+                                        ? v18 + 49
+                                        : *(_QWORD*)(v18 + 64),
+                                    (*(_BYTE*)(v18 + 48) & 1) == 0
+                                        ? *(unsigned __int8*)(v18 + 48) >> 1
+                                        : *(_QWORD*)(v18 + 56));
             }
             else if ((*(_BYTE*)(v18 + 48) & 1) != 0) {
               ATSParser_53c7b0_alt1(v21, *(_QWORD*)(a2 + v16 + 64),
