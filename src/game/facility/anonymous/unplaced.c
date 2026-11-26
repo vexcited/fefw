@@ -299,7 +299,7 @@ _BYTE* game_facility_anonymous_9d0bc0(_BYTE* a1)
             0x80000000) != 0)) {
     v11 = *v5;
     result = (_BYTE*)(*(__int64 (**)(_BYTE*))(*(_QWORD*)a1 + 560LL))(a1);
-    v10 = *result != 0 && *(_DWORD*)(*(_QWORD*)(v11 + 16) + 144LL) < 200;
+    v10 = *result != 0 && *(int*)(*(_QWORD*)(v11 + 16) + 144LL) < 200;
   }
   else {
     v10 = false;

@@ -502,7 +502,7 @@ __int64 FacilityUtil_948620(__int64 a1, __int64** a2)
     if (v13 <= 1) {
       v13 = 1;
     }
-    if (*(_DWORD*)(game_GameModeData_instance_ + 72) >= v13) {
+    if (*(int*)(game_GameModeData_instance_ + 72) >= v13) {
       v14 = 0;
     }
     else {

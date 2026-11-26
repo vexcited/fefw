@@ -27291,7 +27291,7 @@ fff90,116,verified,src/snd/api.cpp,_ZN3snd10startPitchERKNS_3fnd10WeakHandleERKN
 931c00,284,verified,src/game/unit/unit_variables_impl.c,UnitVariables_931c00
 931d30,556,verified,src/game/unnamed/b007_2.c,GameHr_931d30
 931f60,212,verified,src/game/unnamed/b007_2.c,GameHr_931f60
-932040,248,disputed,src/game/unnamed/b007_2.c,GameHr_932040
+932040,248,verified,src/game/unnamed/b007_2.c,GameHr_932040
 932160,204,verified,src/game/unnamed/b007_2.c,GameHr_932160
 932240,264,disputed,src/game/unnamed/b007_2.c,GameHr_932240
 932360,240,verified,src/game/unnamed/b007_2.c,GameHr_932360
@@ -27501,7 +27501,7 @@ fff90,116,verified,src/snd/api.cpp,_ZN3snd10startPitchERKNS_3fnd10WeakHandleERKN
 947f80,576,verified,src/game/facility/unplaced_25.c,game_facility_947f80
 948220,268,verified,src/game/facility/volunteer_args.c,VolunteerArgs_948220
 948340,668,verified,src/game/facility/facility_util.c,FacilityUtil_948340
-948620,464,disputed,src/game/facility/facility_util.c,FacilityUtil_948620
+948620,464,verified,src/game/facility/facility_util.c,FacilityUtil_948620
 948800,588,verified,src/game/facility/facility_util.c,FacilityUtil_948800
 948a50,276,verified,src/game/facility/volunteer_args.c,VolunteerArgs_948a50
 948b80,364,verified,src/game/facility/volunteer_args.c,VolunteerArgs_948b80
@@ -29351,7 +29351,7 @@ fff90,116,verified,src/snd/api.cpp,_ZN3snd10startPitchERKNS_3fnd10WeakHandleERKN
 9d0b80,8,verified,src/game/game_trivial.cpp,_Z15GameStub_9d0b80v
 9d0b90,28,verified,src/llvm-libcxx-21/libcxx/include/__functional/function.h,"std::__1::__function::__func<game::facility::(anonymous namespace)::ProcObeliskDepositoryRideMenu::ZRCall()::'lambda0'(auto), int (game::menu::DialogMenuItem*)>::target(std::type_info const&)"
 9d0bb0,12,verified,src/llvm-libcxx-21/libcxx/include/__functional/function.h,"std::__1::__function::__func<game::facility::(anonymous namespace)::ProcObeliskDepositoryRideMenu::ZRCall()::'lambda0'(auto), int (game::menu::DialogMenuItem*)>::target_type()"
-9d0bc0,280,disputed,src/game/facility/anonymous/unplaced.c,game_facility_anonymous_9d0bc0
+9d0bc0,280,verified,src/game/facility/anonymous/unplaced.c,game_facility_anonymous_9d0bc0
 9d0ce0,152,verified,src/game/facility/obelisk_depository_ride_menu_item.cpp,_ZN4game8facility12_GLOBAL__N_129ObeliskDepositoryRideMenuItemD0Ev
 9d0d80,1152,verified,src/game/facility/anonymous/obelisk_depository_ride_menu_item.c,game_facility_anonymous_ObeliskDepositoryRideMenuItem_ACall
 9d12c0,92,verified,src/game/facility/obelisk_depository_ride_menu_item.cpp,_ZN4game8facility12_GLOBAL__N_129ObeliskDepositoryRideMenuItem12PlayDecideSeEv

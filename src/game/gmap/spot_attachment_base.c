@@ -147,7 +147,7 @@ __int64 SpotAttachmentBase_14d44d0(__int16* a1)
     return 100;
   }
   v10 = Dir_70df40(a1 + 10, a1 + 4);
-  if ((unsigned int)v10 >= 0x3C) {
+  if ((int)v10 >= 0x3C) {
     v11 = v10 / 0x3Cu;
   }
   else {

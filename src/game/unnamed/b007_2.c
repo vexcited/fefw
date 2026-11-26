@@ -7358,7 +7358,7 @@ __int64 GameHr_932040(__int64 a1, __int64 a2)
   if (v13 >= v10) {
     v13 = v10;
   }
-  if (v10 >= *(_DWORD*)GameData_21d9988) {
+  if (v10 >= *(int*)GameData_21d9988) {
     v14 = v13;
   }
   else {
