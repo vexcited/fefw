@@ -155,7 +155,7 @@ __int64 ShopMenuItem_Trade_Unknown4(_QWORD* a1)
                  0, 65537, 0, 0.0f, 1.0f);
   snd_Fade_Destroy_Fade(&v10);
   if (*((int*)a1 - 3) >= 1) {
-    for (i = 0; i < *((_DWORD*)a1 - 3); ++i) {
+    for (i = 0; i < (int)(*((_DWORD*)a1 - 3)); ++i) {
       if ((game_8a26a0(a1[3]) & 1) == 0) {
         continue;
       }

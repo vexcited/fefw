@@ -567,7 +567,7 @@ __int64* GameHr_5e2b40(__int64* result)
           do {
             v7 = v3 + *((_DWORD*)result + 5) * v6++;
             *(_DWORD*)(result[1] + 4LL * v7) |= v5;
-          } while (v6 < *((_DWORD*)result + 4));
+          } while (v6 < (int)(*((_DWORD*)result + 4)));
           v4 = *result;
         }
         *(_DWORD*)(v4 + 4 * v3++) = 0;

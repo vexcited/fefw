@@ -2056,7 +2056,7 @@ char** GameHr_eabe20(char** result, __int64 a2, __int64 a3, unsigned __int64 a4)
           *v5 = 0;
           *((_DWORD*)v5 + 6) = -1;
           if (v28 != -1) {
-            v29 = GameData_1fed708[v28];
+            v29 = GameData_1fed708[(unsigned int)v28];
             v36 = v5;
             result = (char**)((__int64 (*)(char**, __int64))v29)(&v36, v8);
             *((_DWORD*)v5 + 6) = v28;
@@ -2158,7 +2158,7 @@ LABEL_42:
       *((_DWORD*)v31 + 6) = -1;
       v32 = *(_DWORD*)(v15 + 24);
       if (v32 != -1) {
-        v33 = GameData_1fed708[v32];
+        v33 = GameData_1fed708[(unsigned int)v32];
         v36 = v31;
         result = (char**)((__int64 (*)(char**, __int64))v33)(&v36, v15);
         *((_DWORD*)v31 + 6) = v32;
@@ -2188,7 +2188,8 @@ __int64 GameHr_eac1e0(__int64 result, _DWORD* a2, _DWORD* a3)
       return result;
     }
     v5 = a3;
-    result = ((__int64 (*)(char*, _DWORD*))GameData_1fed6f0[v4])(&v7, v3);
+    result = ((__int64 (*)(char*, _DWORD*))GameData_1fed6f0[(unsigned int)v4])(
+        &v7, v3);
     a3 = v5;
   }
   v3[6] = -1;

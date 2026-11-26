@@ -288,14 +288,15 @@ __int64 GameHr_eaea00(__int64 a1, int a2, __int64* a3)
     v19 = -1;
     v10 = *(_DWORD*)(v8 + 24);
     if (v10 != -1) {
-      v11 = GameData_1feddc0[v10];
+      v11 = GameData_1feddc0[(unsigned int)v10];
       v20 = v18;
       ((void (*)(_BYTE**, __int64))v11)(&v20, v8);
       v19 = v10;
     }
     GameRoutine_eaec10(a1 + 64, v18);
     if (v19 != -1) {
-      ((void (*)(_BYTE**, _BYTE*))GameData_1fedda8[v19])(&v20, v18);
+      ((void (*)(_BYTE**, _BYTE*))GameData_1fedda8[(unsigned int)v19])(&v20,
+                                                                       v18);
     }
   }
   *(_DWORD*)(a1 + 88) = *((_DWORD*)a3 + 12);

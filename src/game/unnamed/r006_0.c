@@ -2312,14 +2312,15 @@ __int64 GameHr_11401e0(__int64 a1, int a2, __int64* a3)
     v19 = -1;
     v10 = *(_DWORD*)(v8 + 24);
     if (v10 != -1) {
-      v11 = GameData_2011e18[v10];
+      v11 = GameData_2011e18[(unsigned int)v10];
       v20 = v18;
       ((void (*)(_BYTE**, __int64))v11)(&v20, v8);
       v19 = v10;
     }
     GameRoutine_eaec10(a1 + 64, v18);
     if (v19 != -1) {
-      ((void (*)(_BYTE**, _BYTE*))GameData_2011e00[v19])(&v20, v18);
+      ((void (*)(_BYTE**, _BYTE*))GameData_2011e00[(unsigned int)v19])(&v20,
+                                                                       v18);
     }
   }
   *(_DWORD*)(a1 + 88) = *((_DWORD*)a3 + 12);

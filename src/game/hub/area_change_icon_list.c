@@ -118,7 +118,7 @@ void AreaChangeIconList_Unknown2(__int64 a1, __int64 a2)
         v13 = *(_DWORD*)(a1 + 72);
         *(_QWORD*)(a1 + 32) = v11;
         if (v13 >= 1) {
-          for (j = 0; j < *(_DWORD*)(a1 + 72); ++j) {
+          for (j = 0; j < *(int*)(a1 + 72); ++j) {
             sprintf(v56, "L_AreaChange%d", j);
             if (j != 0) {
               v16 = *(_QWORD*)(a2 + 8);
@@ -244,7 +244,7 @@ void AreaChangeIconList_Unknown2(__int64 a1, __int64 a2)
         v32 = *(_DWORD*)(a1 + 76);
         *(_QWORD*)(a1 + 56) = v30;
         if (v32 >= 1) {
-          for (m = 0; m < *(_DWORD*)(a1 + 76); ++m) {
+          for (m = 0; m < *(int*)(a1 + 76); ++m) {
             sprintf(v56, "L_HubOut%d", m);
             if (m != 0) {
               v35 = *(_QWORD*)(a2 + 8);

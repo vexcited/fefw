@@ -109,7 +109,7 @@ void CondTalkIconList_Unknown2(__int64 a1, __int64 a2)
         v13 = *(_DWORD*)(a1 + 48);
         *(_QWORD*)(a1 + 32) = v11;
         if (v13 >= 1) {
-          for (j = 0; j < *(_DWORD*)(a1 + 48); ++j) {
+          for (j = 0; j < *(int*)(a1 + 48); ++j) {
             sprintf(v37, "L_CondTalk%d", j);
             if (j != 0) {
               v16 = *(_QWORD*)(a2 + 8);

@@ -3636,7 +3636,7 @@ __int64* game_hub_cdd140(_QWORD* a1, __int64* a2)
       *((_DWORD*)v10 + 6) = -1;
       v11 = *(_DWORD*)(v7 + 24);
       if (v11 != -1) {
-        v12 = GameData_1fd4d30[v11];
+        v12 = GameData_1fd4d30[(unsigned int)v11];
         v13 = v10;
         result = (__int64*)((__int64 (*)(__int64**, __int64))v12)(&v13, v7);
         *((_DWORD*)v10 + 6) = v11;

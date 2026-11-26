@@ -9598,13 +9598,13 @@ __int64 game_1213640(__int64 result, char* a2, __int64 a3, char a4)
               *((_DWORD*)a2 - 1) = v160;
               *((_DWORD*)v8 + 1) = v162;
               v163 = *((_DWORD*)a2 - 1);
-              if (v163 <= *(_DWORD*)v8) {
+              if (v163 <= *(int*)v8) {
                 v164 = *(_DWORD*)v8;
               }
               else {
                 v164 = *((_DWORD*)a2 - 1);
               }
-              if (v163 >= *(_DWORD*)v8) {
+              if (v163 >= *(int*)v8) {
                 v163 = *(_DWORD*)v8;
               }
               *((_DWORD*)a2 - 1) = v163;
@@ -9622,13 +9622,13 @@ __int64 game_1213640(__int64 result, char* a2, __int64 a3, char a4)
             case 4LL:
               v168 = *((_DWORD*)v8 + 1);
               v167 = *((_DWORD*)v8 + 2);
-              if (*(_DWORD*)v8 <= v167) {
+              if (*(int*)v8 <= v167) {
                 v169 = *((_DWORD*)v8 + 2);
               }
               else {
                 v169 = *(_DWORD*)v8;
               }
-              if (*(_DWORD*)v8 < v167) {
+              if (*(int*)v8 < v167) {
                 v167 = *(_DWORD*)v8;
               }
               *((_DWORD*)v8 + 2) = v167;
@@ -9645,7 +9645,7 @@ __int64 game_1213640(__int64 result, char* a2, __int64 a3, char a4)
               }
               *((_DWORD*)a2 - 1) = v170;
               v172 = *(_DWORD*)v8;
-              if (*(_DWORD*)v8 <= v171) {
+              if (*(int*)v8 <= v171) {
                 v173 = v171;
               }
               else {
@@ -9684,7 +9684,7 @@ __int64 game_1213640(__int64 result, char* a2, __int64 a3, char a4)
             case 5LL:
               v138 = *(_DWORD*)v8;
               v139 = *((_DWORD*)v8 + 1);
-              if (*(_DWORD*)v8 <= v139) {
+              if (*(int*)v8 <= v139) {
                 v140 = *((_DWORD*)v8 + 1);
               }
               else {
@@ -9745,7 +9745,7 @@ __int64 game_1213640(__int64 result, char* a2, __int64 a3, char a4)
               v152 = *(_DWORD*)v8;
               v154 = *((_DWORD*)v8 + 2);
               v153 = *((_DWORD*)v8 + 3);
-              if (v153 <= *(_DWORD*)v8) {
+              if (v153 <= *(int*)v8) {
                 v155 = *(_DWORD*)v8;
               }
               else {
@@ -9794,7 +9794,7 @@ __int64 game_1213640(__int64 result, char* a2, __int64 a3, char a4)
             if (v9 == 2) {
               v158 = *((_DWORD*)a2 - 1);
               v159 = *(_DWORD*)v8;
-              if (v158 > *(_DWORD*)v8) {
+              if (v158 > *(int*)v8) {
                 *(_DWORD*)v8 = v158;
                 *((_DWORD*)a2 - 1) = v159;
               }
@@ -9865,8 +9865,8 @@ __int64 game_1213640(__int64 result, char* a2, __int64 a3, char a4)
                   }
                   else {
                     v194 = *((_DWORD*)v193 + 1);
-                    v195 = *(_DWORD*)v193 <= v194;
-                    if (*(_DWORD*)v193 < v194) {
+                    v195 = *(int*)v193 <= v194;
+                    if (*(int*)v193 < v194) {
                       v194 = *(_DWORD*)v193;
                     }
                     if (!v195) {
@@ -9889,10 +9889,10 @@ __int64 game_1213640(__int64 result, char* a2, __int64 a3, char a4)
                       if (v192 < v9) {
                         v194 = *(_DWORD*)v193;
                         v198 = *((_DWORD*)v193 + 1);
-                        if (*(_DWORD*)v193 >= v198) {
+                        if (*(int*)v193 >= v198) {
                           v194 = *((_DWORD*)v193 + 1);
                         }
-                        if (*(_DWORD*)v193 <= v198) {
+                        if (*(int*)v193 <= v198) {
                           v192 = v199;
                         }
                         else {
@@ -9905,7 +9905,7 @@ __int64 game_1213640(__int64 result, char* a2, __int64 a3, char a4)
                       else {
                         v194 = *(_DWORD*)v193;
                         v192 = v199;
-                        if (*(_DWORD*)v193 > v197) {
+                        if (*(int*)v193 > v197) {
                           break;
                         }
                       }
@@ -9972,7 +9972,7 @@ __int64 game_1213640(__int64 result, char* a2, __int64 a3, char a4)
                         v213 = (v213 - 1) >> 1;
                         v215 = &v8[4 * v213];
                         v216 = *(_DWORD*)v215;
-                      } while (*(_DWORD*)v215 > v214);
+                      } while (*(int*)v215 > v214);
                       *(_DWORD*)v208 = v214;
                     }
                   }
@@ -10000,13 +10000,13 @@ __int64 game_1213640(__int64 result, char* a2, __int64 a3, char a4)
           *((_DWORD*)a2 - 1) = v12;
           *v11 = v13;
           v14 = *((_DWORD*)a2 - 1);
-          if (v14 <= *(_DWORD*)v8) {
+          if (v14 <= *(int*)v8) {
             v15 = *(_DWORD*)v8;
           }
           else {
             v15 = *((_DWORD*)a2 - 1);
           }
-          if (v14 >= *(_DWORD*)v8) {
+          if (v14 >= *(int*)v8) {
             v14 = *(_DWORD*)v8;
           }
           *((_DWORD*)a2 - 1) = v14;
@@ -10136,10 +10136,10 @@ __int64 game_1213640(__int64 result, char* a2, __int64 a3, char a4)
             goto LABEL_93;
           }
         LABEL_92:
-          if (*((_DWORD*)v8 - 1) > v44) {
+          if ((int)(*((_DWORD*)v8 - 1)) > v44) {
             goto LABEL_93;
           }
-          if (v44 <= *((_DWORD*)a2 - 1)) {
+          if (v44 <= (int)(*((_DWORD*)a2 - 1))) {
             v130 = v8 + 4;
             do {
               v8 = v130;
@@ -10147,7 +10147,7 @@ __int64 game_1213640(__int64 result, char* a2, __int64 a3, char a4)
                 break;
               }
               v130 += 4;
-            } while (v44 <= *(_DWORD*)v8);
+            } while (v44 <= *(int*)v8);
           }
           else {
             do {
@@ -10189,7 +10189,7 @@ __int64 game_1213640(__int64 result, char* a2, __int64 a3, char a4)
           *(_DWORD*)v137 = v44;
         }
         v45 = *(_DWORD*)v8;
-        if (*(_DWORD*)v8 <= v10) {
+        if (*(int*)v8 <= v10) {
           v46 = *((_DWORD*)a2 - 1);
         }
         else {
@@ -10212,8 +10212,8 @@ __int64 game_1213640(__int64 result, char* a2, __int64 a3, char a4)
         }
         *((_DWORD*)a2 - 1) = v47;
         v49 = *(_DWORD*)v8;
-        v50 = v48 <= *(_DWORD*)v8;
-        if (v48 > *(_DWORD*)v8) {
+        v50 = v48 <= *(int*)v8;
+        if (v48 > *(int*)v8) {
           v49 = *v11;
         }
         *v11 = v49;
@@ -10227,7 +10227,7 @@ __int64 game_1213640(__int64 result, char* a2, __int64 a3, char a4)
           goto LABEL_92;
         }
       LABEL_93:
-        if (v44 <= *((_DWORD*)a2 - 1)) {
+        if (v44 <= (int)(*((_DWORD*)a2 - 1))) {
           v53 = v8 + 4;
           do {
             v51 = v53;
@@ -10235,7 +10235,7 @@ __int64 game_1213640(__int64 result, char* a2, __int64 a3, char a4)
               break;
             }
             v53 += 4;
-          } while (v44 <= *(_DWORD*)v51);
+          } while (v44 <= *(int*)v51);
         }
         else {
           v51 = v8;
@@ -10277,37 +10277,38 @@ __int64 game_1213640(__int64 result, char* a2, __int64 a3, char a4)
           if (v61 == 0) {
             for (i = 0; i != 64; i += 16) {
               v66 = &v56[4 * i];
-              v67 = ((unsigned __int64)(*((_DWORD*)v66 + 14) <= v44)
+              v67 = ((unsigned __int64)((int)(*((_DWORD*)v66 + 14)) <= v44)
                      << ((unsigned __int8)i + 14)) |
-                    ((unsigned __int64)(*((_DWORD*)v66 + 13) <= v44)
+                    ((unsigned __int64)((int)(*((_DWORD*)v66 + 13)) <= v44)
                      << ((unsigned __int8)i + 13)) |
-                    ((unsigned __int64)(*((_DWORD*)v66 + 12) <= v44)
+                    ((unsigned __int64)((int)(*((_DWORD*)v66 + 12)) <= v44)
                      << ((unsigned __int8)i + 12)) |
-                    ((unsigned __int64)(*((_DWORD*)v66 + 11) <= v44)
+                    ((unsigned __int64)((int)(*((_DWORD*)v66 + 11)) <= v44)
                      << ((unsigned __int8)i + 11)) |
-                    ((unsigned __int64)(*((_DWORD*)v66 + 10) <= v44)
+                    ((unsigned __int64)((int)(*((_DWORD*)v66 + 10)) <= v44)
                      << ((unsigned __int8)i + 10)) |
-                    ((unsigned __int64)(*((_DWORD*)v66 + 9) <= v44)
+                    ((unsigned __int64)((int)(*((_DWORD*)v66 + 9)) <= v44)
                      << ((unsigned __int8)i + 9)) |
-                    ((unsigned __int64)(*((_DWORD*)v66 + 8) <= v44)
+                    ((unsigned __int64)((int)(*((_DWORD*)v66 + 8)) <= v44)
                      << ((unsigned __int8)i + 8)) |
-                    ((unsigned __int64)(*((_DWORD*)v66 + 7) <= v44)
+                    ((unsigned __int64)((int)(*((_DWORD*)v66 + 7)) <= v44)
                      << ((unsigned __int8)i + 7)) |
-                    ((unsigned __int64)(*((_DWORD*)v66 + 6) <= v44)
+                    ((unsigned __int64)((int)(*((_DWORD*)v66 + 6)) <= v44)
                      << ((unsigned __int8)i + 6)) |
-                    ((unsigned __int64)(*((_DWORD*)v66 + 5) <= v44)
+                    ((unsigned __int64)((int)(*((_DWORD*)v66 + 5)) <= v44)
                      << ((unsigned __int8)i + 5)) |
-                    ((unsigned __int64)(*((_DWORD*)v66 + 4) <= v44)
+                    ((unsigned __int64)((int)(*((_DWORD*)v66 + 4)) <= v44)
                      << ((unsigned __int8)i + 4)) |
-                    ((unsigned __int64)(*((_DWORD*)v66 + 3) <= v44)
+                    ((unsigned __int64)((int)(*((_DWORD*)v66 + 3)) <= v44)
                      << ((unsigned __int8)i + 3)) |
-                    ((unsigned __int64)(*((_DWORD*)v66 + 2) <= v44)
+                    ((unsigned __int64)((int)(*((_DWORD*)v66 + 2)) <= v44)
                      << ((unsigned __int8)i + 2)) |
-                    ((unsigned __int64)(*((_DWORD*)v66 + 1) <= v44)
+                    ((unsigned __int64)((int)(*((_DWORD*)v66 + 1)) <= v44)
                      << ((unsigned __int8)i + 1)) |
-                    ((unsigned __int64)(*(_DWORD*)v66 <= v44) << i) | v61;
+                    ((unsigned __int64)(*(int*)v66 <= v44) << i) | v61;
               v68 = i + 15;
-              v61 = ((unsigned __int64)(*((_DWORD*)v66 + 15) <= v44) << v68) |
+              v61 = ((unsigned __int64)((int)(*((_DWORD*)v66 + 15)) <= v44)
+                     << v68) |
                     v67;
             }
           }
@@ -10315,32 +10316,32 @@ __int64 game_1213640(__int64 result, char* a2, __int64 a3, char a4)
             v69 = 0;
             v70 = v58;
             do {
-              v71 = ((unsigned __int64)(*((_DWORD*)v70 - 9) > v44)
+              v71 = ((unsigned __int64)((int)(*((_DWORD*)v70 - 9)) > v44)
                      << ((unsigned __int8)v69 + 9)) |
-                    ((unsigned __int64)(*((_DWORD*)v70 - 8) > v44)
+                    ((unsigned __int64)((int)(*((_DWORD*)v70 - 8)) > v44)
                      << ((unsigned __int8)v69 + 8)) |
-                    ((unsigned __int64)(*((_DWORD*)v70 - 7) > v44)
+                    ((unsigned __int64)((int)(*((_DWORD*)v70 - 7)) > v44)
                      << ((unsigned __int8)v69 + 7)) |
-                    ((unsigned __int64)(*((_DWORD*)v70 - 6) > v44)
+                    ((unsigned __int64)((int)(*((_DWORD*)v70 - 6)) > v44)
                      << ((unsigned __int8)v69 + 6)) |
-                    ((unsigned __int64)(*((_DWORD*)v70 - 5) > v44)
+                    ((unsigned __int64)((int)(*((_DWORD*)v70 - 5)) > v44)
                      << ((unsigned __int8)v69 + 5)) |
-                    ((unsigned __int64)(*((_DWORD*)v70 - 4) > v44)
+                    ((unsigned __int64)((int)(*((_DWORD*)v70 - 4)) > v44)
                      << ((unsigned __int8)v69 + 4)) |
-                    ((unsigned __int64)(*((_DWORD*)v70 - 3) > v44)
+                    ((unsigned __int64)((int)(*((_DWORD*)v70 - 3)) > v44)
                      << ((unsigned __int8)v69 + 3)) |
-                    ((unsigned __int64)(*((_DWORD*)v70 - 2) > v44)
+                    ((unsigned __int64)((int)(*((_DWORD*)v70 - 2)) > v44)
                      << ((unsigned __int8)v69 + 2)) |
-                    ((unsigned __int64)(*((_DWORD*)v70 - 1) > v44)
+                    ((unsigned __int64)((int)(*((_DWORD*)v70 - 1)) > v44)
                      << ((unsigned __int8)v69 + 1)) |
-                    ((unsigned __int64)(*(_DWORD*)v70 > v44) << v69) | v60;
-              v72 = ((unsigned __int64)(*((_DWORD*)v70 - 12) > v44)
+                    ((unsigned __int64)(*(int*)v70 > v44) << v69) | v60;
+              v72 = ((unsigned __int64)((int)(*((_DWORD*)v70 - 12)) > v44)
                      << ((unsigned __int8)v69 + 12)) |
-                    ((unsigned __int64)(*((_DWORD*)v70 - 11) > v44)
+                    ((unsigned __int64)((int)(*((_DWORD*)v70 - 11)) > v44)
                      << ((unsigned __int8)v69 + 11)) |
-                    ((unsigned __int64)(*((_DWORD*)v70 - 10) > v44)
+                    ((unsigned __int64)((int)(*((_DWORD*)v70 - 10)) > v44)
                      << ((unsigned __int8)v69 + 10));
-              v73 = (unsigned __int64)(*((_DWORD*)v70 - 13) > v44)
+              v73 = (unsigned __int64)((int)(*((_DWORD*)v70 - 13)) > v44)
                     << ((unsigned __int8)v69 + 13);
               v75 = *((_DWORD*)v70 - 15);
               v74 = *((_DWORD*)v70 - 14);
@@ -10448,17 +10449,17 @@ __int64 game_1213640(__int64 result, char* a2, __int64 a3, char a4)
             v87 = 0;
             v88 = v56;
             do {
-              v89 = ((unsigned __int64)(*((_DWORD*)v88 + 5) <= v44)
+              v89 = ((unsigned __int64)((int)(*((_DWORD*)v88 + 5)) <= v44)
                      << ((unsigned __int8)v87 + 5)) |
-                    ((unsigned __int64)(*((_DWORD*)v88 + 4) <= v44)
+                    ((unsigned __int64)((int)(*((_DWORD*)v88 + 4)) <= v44)
                      << ((unsigned __int8)v87 + 4)) |
-                    ((unsigned __int64)(*((_DWORD*)v88 + 3) <= v44)
+                    ((unsigned __int64)((int)(*((_DWORD*)v88 + 3)) <= v44)
                      << ((unsigned __int8)v87 + 3)) |
-                    ((unsigned __int64)(*((_DWORD*)v88 + 2) <= v44)
+                    ((unsigned __int64)((int)(*((_DWORD*)v88 + 2)) <= v44)
                      << ((unsigned __int8)v87 + 2)) |
-                    ((unsigned __int64)(*((_DWORD*)v88 + 1) <= v44)
+                    ((unsigned __int64)((int)(*((_DWORD*)v88 + 1)) <= v44)
                      << ((unsigned __int8)v87 + 1)) |
-                    ((unsigned __int64)(*(_DWORD*)v88 <= v44) << v87) | v61;
+                    ((unsigned __int64)(*(int*)v88 <= v44) << v87) | v61;
               v90 = *((_DWORD*)v88 + 6);
               v91 = *((_DWORD*)v88 + 7);
               v88 += 32;

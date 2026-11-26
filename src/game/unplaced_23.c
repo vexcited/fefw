@@ -6410,7 +6410,7 @@ LABEL_11:
       *(_DWORD*)(v25 + 24) = -1;
       v26 = *(_DWORD*)(v22 + 24);
       if (v26 != -1) {
-        v27 = GameData_1fdcdb8[v26];
+        v27 = GameData_1fdcdb8[(unsigned int)v26];
         *(_QWORD*)&v37_.v37 = v25;
         ((void (*)(__int128*, __int64))v27)(&v37_.v37, v22);
         *(_DWORD*)(v25 + 24) = v26;

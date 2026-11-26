@@ -82,7 +82,7 @@ __int64 LegionStateBattleSupporter_Unknown3(__int64 a1)
       v14 = *(_DWORD*)(v3 + 20) + v13;
       v12 = (unsigned int*)(v3 + 16);
       if (v11 >= v14) {
-        if (v11 >= *(_DWORD*)(v3 + 28) + v14) {
+        if (v11 >= (int)(*(_DWORD*)(v3 + 28) + v14)) {
           v12 = (unsigned int*)v3;
         }
         else {

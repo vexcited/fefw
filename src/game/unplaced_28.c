@@ -278,7 +278,7 @@ __int64 game_910280(__int64 a1, _DWORD* a2, __int64 a3)
       v13 = (unsigned int)(v11 - 5) >= 2 ? 0 : (*a2 >> 19) & 0x1F;
       __asm__ volatile("" ::"r"(v13));
     }
-    if (v13 - ((*a2 >> 12) & 0x7F) + v12 < 1) {
+    if (v13 - (int)((*a2 >> 12) & 0x7F) + v12 < 1) {
       return 0;
     }
   }

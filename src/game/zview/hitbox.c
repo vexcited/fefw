@@ -264,7 +264,8 @@ __int64 Hitbox_d4aa30(__int64 result, _DWORD* a2, _DWORD* a3)
       return result;
     }
     v6 = a3;
-    result = ((__int64 (*)(char*, __int64))GameData_1fdc1d8[v4])(&v7, v3);
+    result = ((__int64 (*)(char*, __int64))GameData_1fdc1d8[(unsigned int)v4])(
+        &v7, v3);
     a3 = v6;
   }
   *(_DWORD*)(v3 + 96) = -1;

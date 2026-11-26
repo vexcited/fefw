@@ -2660,7 +2660,7 @@ _QWORD* game_GameConverge_Impl_CommonInfo_Merge(__int64 a1, char a2, int a3)
       v19 = 0;
       do {
         v20 = *(_DWORD*)(*(_QWORD*)(v13 + 8) + v18);
-        if (*(_DWORD*)(v16 + v18) < v20) {
+        if (*(int*)(v16 + v18) < v20) {
           *(_DWORD*)(v16 + v18) = v20;
           v16 = *(_QWORD*)(v14 + 8);
           v15 = *(_QWORD*)(v14 + 16);

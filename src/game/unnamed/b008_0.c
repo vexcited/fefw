@@ -7278,7 +7278,7 @@ __int64 GameHr_990b90(__int64 a1)
   v2 = a1;
   if (v1 != nullptr && *v1 != 0) {
     LODWORD(a1) = GameRoutine_990a70(a1);
-    if ((int)a1 < *(_DWORD*)(v2 + 60)) {
+    if ((int)a1 < *(int*)(v2 + 60)) {
       return 0;
     }
   }

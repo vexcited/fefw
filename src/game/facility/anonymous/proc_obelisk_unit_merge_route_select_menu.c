@@ -884,7 +884,7 @@ __int64 ProcObeliskUnitMergeRouteSelectMenu_9d3c00(__int64 a1)
           *(_QWORD**)(game_GameModeData_instance_ + 48),
           (unsigned __int64*)&GameData_21f81b0);
       if (v7 != 0) {
-        if (v6 < *(_DWORD*)(v7 + 32)) {
+        if (v6 < *(int*)(v7 + 32)) {
         LABEL_14:
           v8 = (int*)(v5 + 60);
         LABEL_17:

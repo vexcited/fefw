@@ -3271,7 +3271,8 @@ void PopupController_d7e220(__int64 a1)
               v40 = *(_DWORD*)(v23 + v38 + 24);
               if (v40 != -1) {
                 v75 = v36 + v38;
-                ((void (*)(unsigned __int64*))GameData_1fdd958[v40])(&v75);
+                ((void (*)(unsigned __int64*))
+                     GameData_1fdd958[(unsigned int)v40])(&v75);
                 *(_DWORD*)(v39 + 24) = v40;
               }
               v38 += 32;

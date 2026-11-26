@@ -1572,7 +1572,7 @@ __int64 game_facility_9c0c20(_DWORD* a1)
         }
       }
       ++v6;
-    } while (v6 < a1[21]);
+    } while (v6 < (int)(a1[21]));
   }
   return result;
 }

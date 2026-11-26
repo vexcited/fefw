@@ -8481,11 +8481,11 @@ bool game_90cb60(__int64 a1)
   else {
     v16 = 0;
   }
-  return v16 <= ((*(_DWORD*)(*(_QWORD*)(a1 + 24) + 104LL) -
-                  *(_DWORD*)(*(_QWORD*)(a1 + 24) + 108LL)) &
-                 ~((int)((*(_DWORD*)(*(_QWORD*)(a1 + 24) + 104LL) -
-                          *(_DWORD*)(*(_QWORD*)(a1 + 24) + 108LL))) >>
-                   31));
+  return v16 <= ((int)((*(_DWORD*)(*(_QWORD*)(a1 + 24) + 104LL) -
+                        *(_DWORD*)(*(_QWORD*)(a1 + 24) + 108LL)) &
+                       ~((int)((*(_DWORD*)(*(_QWORD*)(a1 + 24) + 104LL) -
+                                *(_DWORD*)(*(_QWORD*)(a1 + 24) + 108LL))) >>
+                         31)));
 }
 
 __int64 game_90fd20(__int64 a1, _DWORD* a2)
@@ -9724,8 +9724,8 @@ __int64* game_cb3d30(__int64* result, __int64* a2, __int64* a3)
     goto LABEL_8;
   }
   if (v3 != 5) {
-    result = (__int64*)((__int64 (*)(char*, __int64*))GameData_1fd3de0[v3])(
-        &v18, result);
+    result = (__int64*)((__int64 (*)(
+        char*, __int64*))GameData_1fd3de0[(unsigned int)v3])(&v18, result);
   LABEL_8:
     *((_DWORD*)v5 + 6) = -1;
     v9 = a3[1];

@@ -1059,7 +1059,7 @@ LABEL_4:
   else {
     v7 = 0x10000;
   }
-  return v6 < v7 + v3[28];
+  return v6 < (int)(v7 + v3[28]);
 }
 
 #pragma GCC visibility pop

@@ -2212,7 +2212,7 @@ __int64* GameHr_1214d40(__int64* result, __int64* a2, __int64** a3,
                   }
                   else if (v40[2] == v37) {
                   LABEL_63:
-                    if (v34 >= *((_DWORD*)v40 + 6)) {
+                    if (v34 >= (int)(*((_DWORD*)v40 + 6))) {
                       break;
                     }
                   LABEL_60:

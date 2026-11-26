@@ -11138,7 +11138,7 @@ float game_eac260(__int64* a1, _DWORD* a2, float* a3)
       return result;
     }
     v6 = a3;
-    ((void (*)(char*, __int64))decltype_c81af0_ptr[v4])(&v7, v3);
+    ((void (*)(char*, __int64))decltype_c81af0_ptr[(unsigned int)v4])(&v7, v3);
     a3 = v6;
   }
   *(_DWORD*)(v3 + 24) = -1;
@@ -11195,8 +11195,8 @@ __int64* game_eac2e0(__int64** a1, __int64* a2, __int64* a3)
         goto LABEL_11;
       }
     }
-    result = (__int64*)((__int64 (*)(char*, __int64*))decltype_c81af0_ptr[v6])(
-        &v22, v10);
+    result = (__int64*)((__int64 (*)(
+        char*, __int64*))decltype_c81af0_ptr[(unsigned int)v6])(&v22, v10);
     goto LABEL_11;
   }
   if (a2 != a3) {

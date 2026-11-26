@@ -646,7 +646,8 @@ LABEL_43:
     v54_.v54 = 0;
     v58_.v59 = (unsigned __int64)(v36 + 4);
   }
-  ((void (*)(char*, __int64*))GameData_1fe2820[v37])(&v62, &v54_.v54);
+  ((void (*)(char*, __int64*))GameData_1fe2820[(unsigned int)v37])(&v62,
+                                                                   &v54_.v54);
 LABEL_54:
   v54_.v57 = -1;
   if ((v51_.v51 & 1) != 0 && v51_.v53 != 0) {

@@ -1347,7 +1347,7 @@ __int64 game_facility_DepositoryMenuItem_OnDialogYes(__int64 a1)
             *(_DWORD*)(game_GameModeData_instance_ + 80) = v17;
           }
           ++v15;
-        } while (v15 < *(_DWORD*)(a1 + 84));
+        } while (v15 < *(int*)(a1 + 84));
       }
       goto LABEL_42;
     }

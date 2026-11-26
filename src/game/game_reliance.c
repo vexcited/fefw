@@ -2312,7 +2312,7 @@ __int64 GameReliance_8e24a0(_QWORD* a1, __int64* a2)
           if (v34 >= v31) {
             v34 = v31;
           }
-          if (*(_DWORD*)GameData_21d99c8 <= v31) {
+          if (*(int*)GameData_21d99c8 <= v31) {
             v35 = v34;
           }
           else {

@@ -489,21 +489,21 @@ _QWORD* StatusLV_18a3250(_QWORD* result, __int64 a2, int a3)
   v8 = *(_DWORD*)(v7 + 4);
   v9 = *(_DWORD**)(*(_QWORD*)(v7 + 16) + 24LL);
   v10 = v9[105];
-  if (v10 > 2 && v9[103] <= v8) {
+  if (v10 > 2 && (int)(v9[103]) <= v8) {
     v14 = 3;
     result = (_QWORD*)result[136];
     if (result == nullptr) {
       goto LABEL_29;
     }
   }
-  else if (v10 > 1 && v9[102] <= v8) {
+  else if (v10 > 1 && (int)(v9[102]) <= v8) {
     v14 = 2;
     result = (_QWORD*)result[136];
     if (result == nullptr) {
       goto LABEL_29;
     }
   }
-  else if (v10 >= 1 && v9[101] <= v8) {
+  else if (v10 >= 1 && (int)(v9[101]) <= v8) {
     v14 = 1;
     result = (_QWORD*)result[136];
     if (result == nullptr) {
@@ -548,7 +548,7 @@ LABEL_29:
     v28 = v18[v25 + 100];
     goto LABEL_58;
   }
-  if (v19 > 1 && v18[102] <= v17) {
+  if (v19 > 1 && (int)(v18[102]) <= v17) {
     v20 = v18[102];
     if ((unsigned int)v19 <= 2) {
       goto LABEL_57;
@@ -556,14 +556,14 @@ LABEL_29:
     v25 = 3;
     goto LABEL_56;
   }
-  if (v19 >= 1 && v18[101] <= v17) {
+  if (v19 >= 1 && (int)(v18[101]) <= v17) {
     v24 = 1;
   }
   else {
     v24 = (int)v18[104];
   }
   v20 = v18[v24 + 100];
-  if (v19 >= 1 && v18[101] <= v17) {
+  if (v19 >= 1 && (int)(v18[101]) <= v17) {
     if ((unsigned int)v19 > 1) {
       v25 = 2;
       goto LABEL_56;

@@ -2256,7 +2256,7 @@ void TelopLevelUp_1749970(__int64 a1, long double a2)
               goto LABEL_222;
             }
             v51 = *(_DWORD*)(v155 + 4 * v50);
-            if (*(_DWORD*)(v141 + 4 * v50) <= v51) {
+            if (*(int*)(v141 + 4 * v50) <= v51) {
               v52 = *(_DWORD*)(v155 + 4 * v50);
             }
             else {

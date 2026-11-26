@@ -219,7 +219,7 @@ __int64 ProcRunEvent_Unknown20(__int64 a1)
           *(_DWORD*)(v11 + 24) = -1;
           v12 = *(_DWORD*)(v6 + 24);
           if (v12 != -1) {
-            v13 = GameData_1fd3278[v12];
+            v13 = GameData_1fd3278[(unsigned int)v12];
             v22 = v11;
             ((void (*)(__int64*, __int64))v13)(&v22, v6);
             *(_DWORD*)(v11 + 24) = v12;

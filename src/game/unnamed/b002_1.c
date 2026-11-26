@@ -1967,7 +1967,7 @@ __int64 GameHr_2b71e0(__int64 a1, unsigned int a2)
           ++v7;
         } while (v7 != v5);
         ++v6;
-      } while ((signed int)v6 < *(_DWORD*)(a1 + 168));
+      } while ((signed int)v6 < *(int*)(a1 + 168));
     }
   }
   return result;

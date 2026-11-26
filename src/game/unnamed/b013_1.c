@@ -2663,7 +2663,7 @@ __int64 GameHr_ebb360(__int64 result, _QWORD* a2, __int64 a3, __int64 a4)
         do {
           v26 = v19;
           v27 = *(_DWORD*)(v21 + 80);
-          if (*((_DWORD*)v5 + 42) <= v27) {
+          if ((int)(*((_DWORD*)v5 + 42)) <= v27) {
             v23 = *v26;
             *(_QWORD*)(v21 + 104) = 0;
             *(_QWORD*)(v21 + 112) = 0;

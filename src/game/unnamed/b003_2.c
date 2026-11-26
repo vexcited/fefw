@@ -4544,7 +4544,7 @@ __int64 GameHr_5ca180(__int64 a1)
     v3 = *(_QWORD*)(*(_QWORD*)(a1 + 16) + 1048LL);
     *(_DWORD*)(result + 116) = *(_DWORD*)(v3 + 44) % *(_DWORD*)(v3 + 40);
     v4 = *(_DWORD*)(v3 + 44);
-    if (v4 + 1 < *(_DWORD*)(v3 + 40)) {
+    if (v4 + 1 < *(int*)(v3 + 40)) {
       v5 = v4 + 1;
     }
     else {
@@ -5417,7 +5417,7 @@ __int64 GameHr_5cd860(__int64 a1)
     v4 = *(_QWORD*)(v3 + 1048);
     *(_DWORD*)(result + 124) = *(_DWORD*)(v4 + 44) % *(_DWORD*)(v4 + 40);
     v5 = *(_DWORD*)(v4 + 44);
-    if (v5 + 1 < *(_DWORD*)(v4 + 40)) {
+    if (v5 + 1 < *(int*)(v4 + 40)) {
       v6 = v5 + 1;
     }
     else {

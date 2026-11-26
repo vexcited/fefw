@@ -84,7 +84,7 @@ __int64 PageTab_16e6880(__int64 a1, int a2, unsigned int a3, unsigned int a4)
     }
     if (v13 != 0 && v14 != 0) {
       v15 = *(_DWORD*)a1;
-      LayoutAccessor_155e830(v14, i <= *(_DWORD*)a1);
+      LayoutAccessor_155e830(v14, i <= *(int*)a1);
       if (i <= v15) {
         LayoutAccessor_1562680(
             v14, game_menu_kTabAnimations[3 * *(unsigned __int8*)(a1 + 112)],

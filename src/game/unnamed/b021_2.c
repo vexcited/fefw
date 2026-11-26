@@ -2051,7 +2051,7 @@ void GameHr_16253e0()
                 v6 = v15;
               }
             }
-            if ((signed int)++v7 >= *(_DWORD*)(v0 + 1904)) {
+            if ((signed int)++v7 >= *(int*)(v0 + 1904)) {
               break;
             }
           }
@@ -2218,7 +2218,7 @@ void GameHr_16253e0()
                     (GameRoutine_1560fb0(v68, "T_Txt") & 1) != 0 &&
                     *(int*)(v0 + 1904) >= 1) {
                   v75 = fabsf(v74);
-                  for (m = 0; m < *(_DWORD*)(v0 + 1904); ++m) {
+                  for (m = 0; m < *(int*)(v0 + 1904); ++m) {
                     if (v65 != m) {
                       v77 = GameRoutine_7a7dc0("L_Destination%02d", m);
                       GameRoutine_1560070((void*)&v86, v3, v77);
@@ -2279,7 +2279,7 @@ void GameHr_16253e0()
                 GameRoutine_1a09c50(v67);
               }
             }
-            if (++v65 >= *(_DWORD*)(v0 + 1904)) {
+            if (++v65 >= *(int*)(v0 + 1904)) {
               goto LABEL_115;
             }
           }
@@ -6119,7 +6119,7 @@ __int64 GameHr_165e040(__int64 result, _QWORD* a2, unsigned __int64 a3,
               while (1) {
                 v17 = (char*)a4 + v18;
                 v19 = *(_DWORD*)((char*)a4 + v18 - 8);
-                if (*(_DWORD*)(result + 24) >= v19) {
+                if (*(int*)(result + 24) >= v19) {
                   break;
                 }
                 v20 = *((_QWORD*)v17 - 2);

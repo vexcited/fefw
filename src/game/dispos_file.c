@@ -398,7 +398,7 @@ void DisposFile_Unknown4()
                   v79 = *(_QWORD*)(v16 + 24);
                   if (*(_BYTE*)v79 == 1 &&
                       (GameData_21ca25c < 1 ||
-                       GameData_21ca25c >= *(_DWORD*)(v79 + 4))) {
+                       GameData_21ca25c >= *(int*)(v79 + 4))) {
                     DisposFile_6bbce0((__int64)&GameData_21ca240, v16);
                   }
                   goto LABEL_25;

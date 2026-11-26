@@ -15,7 +15,7 @@ bool SpecialDitlihCondition_Unknown2(__int64 a1, int* a2)
   if (v2 < 1) {
     return false;
   }
-  return *(_DWORD*)(a1 + 12) > a2[2];
+  return *(int*)(a1 + 12) > a2[2];
 }
 
 #pragma GCC visibility pop

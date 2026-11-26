@@ -741,7 +741,7 @@ __int64 GameHr_1194a00(__int64 a1, char* a2, __int64* a3)
       *(_DWORD*)(v15 + 24) = -1;
       v16 = *(_DWORD*)(v9 + 24);
       if (v16 != -1) {
-        v17 = (void (*)(__int64, __int64))GameData_2014fb0[v16];
+        v17 = (void (*)(__int64, __int64))GameData_2014fb0[(unsigned int)v16];
         v36_.v36 = v15;
         v17((__int64)&v36_.v36, v9);
         *(_DWORD*)(v15 + 24) = v16;

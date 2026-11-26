@@ -5007,7 +5007,8 @@ void game_hub_Character_BuildSubquestCommand_lambda0_Invoke(__int64 a1,
     v41_.v41 = 0;
     v35_.v36 = (unsigned __int64)(v13 + 4);
   }
-  ((void (*)(char*, __int64*))GameData_1fd3de0[v14])(&v45, &v41_.v41);
+  ((void (*)(char*, __int64*))GameData_1fd3de0[(unsigned int)v14])(&v45,
+                                                                   &v41_.v41);
 LABEL_30:
   if (*(_QWORD*)(*(_QWORD*)(v4 + 264) + 56LL) != 0) {
     v17 = *(const char**)(*(_QWORD*)(v4 + 264) + 56LL);
@@ -5060,7 +5061,8 @@ LABEL_42:
     v41_.v41 = 0;
     v35_.v36 = (unsigned __int64)(v22 + 4);
   LABEL_45:
-    ((void (*)(char*, __int64*))GameData_1fd3de0[v23])(&v45, &v41_.v41);
+    ((void (*)(char*, __int64*))GameData_1fd3de0[(unsigned int)v23])(&v45,
+                                                                     &v41_.v41);
     goto LABEL_46;
   }
   v25 = GameHr_918ce0(&v35_.v35, (__int64)&v41_.v41);

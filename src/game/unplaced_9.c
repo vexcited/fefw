@@ -7736,7 +7736,7 @@ float game_5c0990(__int64 a1, float* a2, float* a3, __int64 a4, float a5,
           v21 = 0;
           v22 = (__typeof__(v22)){0};
           v23 = (__typeof__(v23)){0};
-          if (*(_DWORD*)(a4 + 40) >= a7) {
+          if (*(int*)(a4 + 40) >= a7) {
             v24 = 16LL * a7;
             v25 = (unsigned int*)(v14 + v24);
             v26 = (unsigned int*)(*(_QWORD*)(a4 + 536) + v24);
@@ -8351,7 +8351,7 @@ LABEL_3:
       v20 = 0;
       v21 = (__typeof__(v21)){0};
       v22 = (__typeof__(v22)){0};
-      if (*(_DWORD*)(a3 + 40) >= a5) {
+      if (*(int*)(a3 + 40) >= a5) {
         v23 = (unsigned int*)(v13 + 16LL * a5);
         v24 = (unsigned int*)(*(_QWORD*)(a3 + 536) + 16LL * a5);
         v25 = (unsigned int*)(*(_QWORD*)(a3 + 544) + 16LL * a5);
@@ -13319,7 +13319,7 @@ int* game_64c980(int* result, int* a2, unsigned __int64 a3, __int64 a4)
         do {
           v22 = v17;
           v23 = result[18];
-          if (v23 >= *(_DWORD*)v18) {
+          if (v23 >= *(int*)v18) {
             *(_DWORD*)(v18 + 72) = v23;
             *(_QWORD*)(v18 + 80) = *((_QWORD*)result + 10);
             *(_QWORD*)(v18 + 88) = *((_QWORD*)result + 11);

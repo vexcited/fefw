@@ -2179,7 +2179,7 @@ LABEL_37:
         *(_QWORD*)v24 = game_menu_anonymous_GuideMenuItem_vtable;
         *(_QWORD*)(v24 + 8) = 0;
         result = GameRoutine_16e0c00((_QWORD*)a1, v24);
-        if (*(_DWORD*)(a1 + 1088) <= v19 + 1) {
+        if (*(int*)(a1 + 1088) <= v19 + 1) {
           v33 = v19 + 1;
         }
         else {
@@ -2266,7 +2266,7 @@ LABEL_37:
           *(_QWORD*)v41 = game_menu_anonymous_GuideMenuItem_vtable;
           *(_QWORD*)(v41 + 8) = 0;
           result = GameRoutine_16e0c00((_QWORD*)a1, v41);
-          if (*(_DWORD*)(a1 + 1088) <= *v35 + 1) {
+          if (*(int*)(a1 + 1088) <= *v35 + 1) {
             v47 = *v35 + 1;
           }
           else {
@@ -2298,7 +2298,7 @@ LABEL_37:
           *(_QWORD*)v41 = game_menu_anonymous_GuideMenuItem_vtable;
           *(_QWORD*)(v41 + 8) = 0;
           result = GameRoutine_16e0c00((_QWORD*)a1, v41);
-          if (*(_DWORD*)(a1 + 1088) <= *v35 + 1) {
+          if (*(int*)(a1 + 1088) <= *v35 + 1) {
             v43 = *v35 + 1;
           }
           else {

@@ -58,7 +58,8 @@ __int64 HandlePtr_Unknown14(__int64 result, _DWORD* a2, _DWORD* a3)
       return result;
     }
     v5 = a3;
-    result = ((__int64 (*)(char*, _DWORD*))GameData_1fd3de0[v4])(&v7, v3);
+    result = ((__int64 (*)(char*, _DWORD*))GameData_1fd3de0[(unsigned int)v4])(
+        &v7, v3);
     a3 = v5;
   }
   v3[6] = -1;
@@ -83,7 +84,8 @@ __int64 HandlePtr_Unknown15(__int64 result, _QWORD* a2, _QWORD* a3)
       return result;
     }
     v5 = a3;
-    result = ((__int64 (*)(char*, __int64))GameData_1fd3de0[v4])(&v6, v3);
+    result = ((__int64 (*)(char*, __int64))GameData_1fd3de0[(unsigned int)v4])(
+        &v6, v3);
     a3 = v5;
   }
   *(_DWORD*)(v3 + 24) = -1;
@@ -107,7 +109,8 @@ __int64 HandlePtr_Unknown16(__int64 result, _DWORD* a2, _DWORD* a3)
       return result;
     }
     v5 = a3;
-    result = ((__int64 (*)(char*, _DWORD*))GameData_1fd3de0[v4])(&v6, v3);
+    result = ((__int64 (*)(char*, _DWORD*))GameData_1fd3de0[(unsigned int)v4])(
+        &v6, v3);
     a3 = v5;
   }
   v3[6] = -1;
@@ -133,7 +136,7 @@ float HandlePtr_Unknown17(__int64* a1, _DWORD* a2, float* a3)
       return result;
     }
     v6 = a3;
-    ((void (*)(char*, __int64))GameData_1fd3de0[v4])(&v7, v3);
+    ((void (*)(char*, __int64))GameData_1fd3de0[(unsigned int)v4])(&v7, v3);
     a3 = v6;
   }
   *(_DWORD*)(v3 + 24) = -1;
@@ -158,7 +161,8 @@ __int64 HandlePtr_Unknown20(__int64 result, _BYTE* a2, _BYTE* a3)
       return result;
     }
     v5 = a3;
-    result = ((__int64 (*)(char*, __int64))GameData_1fd3de0[v4])(&v6, v3);
+    result = ((__int64 (*)(char*, __int64))GameData_1fd3de0[(unsigned int)v4])(
+        &v6, v3);
     a3 = v5;
   }
   *(_DWORD*)(v3 + 24) = -1;
@@ -215,7 +219,7 @@ _QWORD* HandlePtr_cb34a0(__int64 a1, __int64* a2)
       *(_DWORD*)(v10 + 24) = -1;
       v11 = *(_DWORD*)(v7 + 24);
       if (v11 != -1) {
-        v12 = GameData_1fd3e18[v11];
+        v12 = GameData_1fd3e18[(unsigned int)v11];
         v14 = v10;
         ((void (*)(__int64*, __int64))v12)(&v14, v7);
         *(_DWORD*)(v10 + 24) = v11;
@@ -320,7 +324,7 @@ __int64* HandlePtr_cb3600(__int64* result, __int64 a2, __int64 a3,
           *(_BYTE*)v5 = 0;
           *(_DWORD*)(v5 + 24) = -1;
           if (v28 != -1) {
-            v29 = GameData_1fd3e18[v28];
+            v29 = GameData_1fd3e18[(unsigned int)v28];
             v36 = v5;
             result = (__int64*)((__int64 (*)(__int64*, __int64))v29)(&v36, v8);
             *(_DWORD*)(v5 + 24) = v28;
@@ -423,7 +427,7 @@ LABEL_42:
       *(_DWORD*)(v31 + 24) = -1;
       v32 = *(_DWORD*)(v15 + 24);
       if (v32 != -1) {
-        v33 = GameData_1fd3e18[v32];
+        v33 = GameData_1fd3e18[(unsigned int)v32];
         v36 = v31;
         result = (__int64*)((__int64 (*)(__int64*, __int64))v33)(&v36, v15);
         *(_DWORD*)(v31 + 24) = v32;
@@ -453,7 +457,8 @@ __int64 HandlePtr_Unknown21_cb39c0(__int64 result, _DWORD* a2, _DWORD* a3)
       return result;
     }
     v5 = a3;
-    result = ((__int64 (*)(char*, _DWORD*))GameData_1fd3de0[v4])(&v7, v3);
+    result = ((__int64 (*)(char*, _DWORD*))GameData_1fd3de0[(unsigned int)v4])(
+        &v7, v3);
     a3 = v5;
   }
   v3[6] = -1;
@@ -478,7 +483,8 @@ __int64 HandlePtr_Unknown22(__int64 result, _QWORD* a2, _QWORD* a3)
       return result;
     }
     v5 = a3;
-    result = ((__int64 (*)(char*, __int64))GameData_1fd3de0[v4])(&v6, v3);
+    result = ((__int64 (*)(char*, __int64))GameData_1fd3de0[(unsigned int)v4])(
+        &v6, v3);
     a3 = v5;
   }
   *(_DWORD*)(v3 + 24) = -1;
@@ -502,7 +508,8 @@ __int64 HandlePtr_Unknown23_cb3ac0(__int64 result, _DWORD* a2, _DWORD* a3)
       return result;
     }
     v5 = a3;
-    result = ((__int64 (*)(char*, _DWORD*))GameData_1fd3de0[v4])(&v6, v3);
+    result = ((__int64 (*)(char*, _DWORD*))GameData_1fd3de0[(unsigned int)v4])(
+        &v6, v3);
     a3 = v5;
   }
   v3[6] = -1;
@@ -528,7 +535,7 @@ float HandlePtr_Unknown24_cb3b40(__int64* a1, _DWORD* a2, float* a3)
       return result;
     }
     v6 = a3;
-    ((void (*)(char*, __int64))GameData_1fd3de0[v4])(&v7, v3);
+    ((void (*)(char*, __int64))GameData_1fd3de0[(unsigned int)v4])(&v7, v3);
     a3 = v6;
   }
   *(_DWORD*)(v3 + 24) = -1;
@@ -557,7 +564,7 @@ void HandlePtr_Unknown25(__int64* a1, __int64 a2, _QWORD* a3)
     goto LABEL_10;
   }
   if (v5 != 4) {
-    ((void (*)(char*, __int64))GameData_1fd3de0[v5])(&v13, v3);
+    ((void (*)(char*, __int64))GameData_1fd3de0[(unsigned int)v5])(&v13, v3);
   LABEL_10:
     *(_DWORD*)(v3 + 24) = -1;
     v11 = a3[1];

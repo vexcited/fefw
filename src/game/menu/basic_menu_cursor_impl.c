@@ -861,7 +861,7 @@ __int64 BasicMenuCursor_16e0520(__int64 a1)
       result = (*(__int64 (**)(_QWORD))(**(_QWORD**)(v4 + 8 * v10) + 48LL))(
           *(_QWORD*)(v4 + 8 * v10));
       if ((result & 1) != 0) {
-        if (v6 > v11 || v11 >= *(_DWORD*)(a1 + 584) + v6) {
+        if (v6 > v11 || v11 >= (int)(*(_DWORD*)(a1 + 584) + v6)) {
           result = BasicMenuItem_16e5340(
               *(_QWORD*)(*(_QWORD*)(a1 + 232) + 8 * v10), 0);
         }

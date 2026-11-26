@@ -3182,7 +3182,7 @@ LABEL_15:
         if (v19 == v18) {
           break;
         }
-        if ((signed int)++v14 >= *(_DWORD*)(a4 + 216)) {
+        if ((signed int)++v14 >= *(int*)(a4 + 216)) {
           goto LABEL_29;
         }
       }

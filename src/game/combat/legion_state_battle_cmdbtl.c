@@ -78,7 +78,7 @@ __int64 LegionStateBattleCmdbtl_Unknown3(__int64 a1)
     v13 = *(_DWORD*)(v3 + 12) + v10;
     v12 = (unsigned int*)(v3 + 8);
     if (v11 >= v13) {
-      if (v11 >= *(_DWORD*)(v3 + 20) + v13) {
+      if (v11 >= (int)(*(_DWORD*)(v3 + 20) + v13)) {
         v12 = (unsigned int*)v3;
       }
       else {

@@ -878,7 +878,7 @@ __int64 GameHr_2b7720(__int64 result, int a2, unsigned int a3, float a4)
         } while (v10 != (_DWORD)v9);
       }
       ++v8;
-    } while (v8 < *(_DWORD*)(v7 + 168));
+    } while (v8 < *(int*)(v7 + 168));
   }
   return result;
 }

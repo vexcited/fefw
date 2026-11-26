@@ -566,7 +566,7 @@ LABEL_14:
       *(_DWORD*)(v23 + 24) = -1;
       v24 = *(_DWORD*)(v17 + v22 + 24);
       if (v24 != -1) {
-        v25 = GameData_1fedbe8[v24];
+        v25 = GameData_1fedbe8[(unsigned int)v24];
         v31 = v21 + v22;
         ((void (*)(__int64*))v25)(&v31);
         *(_DWORD*)(v23 + 24) = v24;

@@ -256,7 +256,7 @@ __int64 ExpTableFile_7d67c0(int a1)
   if (v4 >= a1) {
     v4 = a1;
   }
-  if (a1 >= *(_DWORD*)GameData_21d9988) {
+  if (a1 >= *(int*)GameData_21d9988) {
     v5 = v4;
   }
   else {

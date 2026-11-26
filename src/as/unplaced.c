@@ -1697,8 +1697,8 @@ __int64* as_c81b50(__int64* result, __int64* a2, __int64* a3)
         goto LABEL_11;
       }
     }
-    result = (__int64*)((
-        __int64 (*)(__int64, __int64))decltype_c81af0_ptr_1fd3058[v5])(
+    result = (__int64*)((__int64 (*)(
+        __int64, __int64))decltype_c81af0_ptr_1fd3058[(unsigned int)v5])(
         (__int64)&v21, (__int64)v9);
     goto LABEL_11;
   }

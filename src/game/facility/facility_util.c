@@ -873,10 +873,10 @@ __int64 FacilityUtil_948fc0(__int64 result, int a2, int a3)
       if (v7 > 2 && v8 <= a2) {
         v12 = 3;
       }
-      else if (v7 > 1 && v6[102] <= a2) {
+      else if (v7 > 1 && (int)(v6[102]) <= a2) {
         v12 = 2;
       }
-      else if (v7 >= 1 && v6[101] <= a2) {
+      else if (v7 >= 1 && (int)(v6[101]) <= a2) {
         v12 = 1;
       }
       else {
@@ -888,13 +888,13 @@ __int64 FacilityUtil_948fc0(__int64 result, int a2, int a3)
           return result;
         }
       }
-      else if (v7 > 1 && v6[102] <= a3) {
+      else if (v7 > 1 && (int)(v6[102]) <= a3) {
         v16 = 2;
         if (v12 == 2) {
           return result;
         }
       }
-      else if (v7 >= 1 && v6[101] <= a3) {
+      else if (v7 >= 1 && (int)(v6[101]) <= a3) {
         v16 = 1;
         if (v12 == 1) {
           return result;

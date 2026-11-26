@@ -733,12 +733,12 @@ __int64 ProcEquipUnitSelectMenu_17ac080(__int64 a1)
                                                 [0] +
                                         8LL) +
                              72LL) >=
-                    *(_DWORD*)(*(_QWORD*)(*(_QWORD*)
-                                              game_TransporterConst_List_instance__ptr
-                                                  [0] +
-                                          8LL) +
-                               84LL) +
-                        v15) {
+                    (int)(*(_DWORD*)(*(_QWORD*)(*(_QWORD*)
+                                                    game_TransporterConst_List_instance__ptr
+                                                        [0] +
+                                                8LL) +
+                                     84LL) +
+                          v15)) {
               GameRoutine_12f2090_alt1(result);
               v29 = EquipUnitSelectMenu_16cd2a0_alt1(a1, *(_DWORD*)(a1 + 1352));
               v30 = *(_QWORD*)a1;

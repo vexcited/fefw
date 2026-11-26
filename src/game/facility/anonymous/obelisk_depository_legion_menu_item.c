@@ -425,7 +425,7 @@ __int64 ObeliskDepositoryLegionMenuItem_Unknown73(__int64 a1)
         }
       }
       ++v2;
-    } while (v2 < *(_DWORD*)(a1 + 84));
+    } while (v2 < *(int*)(a1 + 84));
   }
   v17 = (*(__int64 (**)(__int64))(*(_QWORD*)(a1 + 88) + 80LL))(a1 + 88);
   if (v17 != 0) {
@@ -562,9 +562,9 @@ _QWORD* game_facility_anonymous_ObeliskDepositoryLegionMenuItem_CreateDialog(
     v7 = *(_DWORD*)(game_GameModeData_instance_ + 80);
   }
   v8 = v7 / v6;
-  if (300 - *(_DWORD*)(*(_QWORD*)(*game_map_history_g_legion_pool_ptr[0] + 16) +
-                       72LL) <
-      v8) {
+  if ((int)(300 -
+            *(_DWORD*)(*(_QWORD*)(*game_map_history_g_legion_pool_ptr[0] + 16) +
+                       72LL)) < v8) {
     v8 = 300 -
          *(_DWORD*)(*(_QWORD*)(*game_map_history_g_legion_pool_ptr[0] + 16) +
                     72LL);

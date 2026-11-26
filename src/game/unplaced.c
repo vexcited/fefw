@@ -5252,7 +5252,7 @@ LABEL_13:
           if (result == nullptr) {
             break;
           }
-          if (*((_DWORD*)result + 8) <= v14) {
+          if ((int)(*((_DWORD*)result + 8)) <= v14) {
             break;
           }
           v19 = *v20;

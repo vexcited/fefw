@@ -323,7 +323,7 @@ void GameHr_1195200(__int64 a1)
       *(_DWORD*)(v11 + 24) = -1;
       v12 = *(_DWORD*)(v6 + 24);
       if (v12 != -1) {
-        v13 = GameData_2014fb0[v12];
+        v13 = GameData_2014fb0[(unsigned int)v12];
         v25 = v11;
         ((void (*)(__int64*, __int64))v13)(&v25, v6);
         *(_DWORD*)(v11 + 24) = v12;
@@ -430,15 +430,15 @@ void GameHr_119cda0(__int64 a1, int a2, __int64* a3)
     v17_.v18 = -1;
     v10 = *(_DWORD*)(v8 + 24);
     if (v10 != -1) {
-      v11 = GameData_2015498[v10];
+      v11 = GameData_2015498[(unsigned int)v10];
       v19 = v17_.v17;
       ((void (*)(_BYTE**, __int64))v11)(&v19, v8);
       v17_.v18 = v10;
     }
     GameRoutine_eaec10_alt1((__int64*)(a1 + 64), (__int64)v17_.v17);
     if (v17_.v18 != -1) {
-      ((void (*)(_BYTE**, _BYTE*))decltype_c81af0_ptr_alt1[v17_.v18])(&v19,
-                                                                      v17_.v17);
+      ((void (*)(_BYTE**, _BYTE*))
+           decltype_c81af0_ptr_alt1[(unsigned int)v17_.v18])(&v19, v17_.v17);
     }
   }
   *(_DWORD*)(a1 + 104) = *((_DWORD*)a3 + 12);

@@ -17023,7 +17023,7 @@ __int64 GameHr_c77930(__int64 a1, __int64 a2)
       *(_DWORD*)a1 = 0;
       goto LABEL_6;
     }
-    ((void (*)(__int64, __int64))decltype_c81af0_ptr_1fd3058[v2])(
+    ((void (*)(__int64, __int64))decltype_c81af0_ptr_1fd3058[(unsigned int)v2])(
         (__int64)&v12_.v12, a1);
   }
   *(_DWORD*)a1 = 0;
@@ -17040,7 +17040,8 @@ LABEL_6:
             *(_DWORD*)a1 = LODWORD(v12_.v12);
             return 1;
           }
-          ((void (*)(__int64, __int64))decltype_c81af0_ptr_1fd3058[v7])(
+          ((void (*)(__int64,
+                     __int64))decltype_c81af0_ptr_1fd3058[(unsigned int)v7])(
               (__int64)&v12_.v13, a1);
         }
         *(_DWORD*)a1 = v6;
@@ -17067,7 +17068,7 @@ LABEL_6:
       *(float*)a1 = v10;
       return 1;
     }
-    ((void (*)(__int64, __int64))decltype_c81af0_ptr_1fd3058[v9])(
+    ((void (*)(__int64, __int64))decltype_c81af0_ptr_1fd3058[(unsigned int)v9])(
         (__int64)&v12_.v13, a1);
   }
   *(float*)a1 = v10;

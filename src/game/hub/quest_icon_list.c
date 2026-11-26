@@ -306,7 +306,7 @@ __int64 QuestIconList_Unknown2(__int64 a1, __int64* a2)
             }
           }
         LABEL_29:
-          if (++v21 >= *(_DWORD*)(a1 + 76)) {
+          if (++v21 >= *(int*)(a1 + 76)) {
             goto LABEL_44;
           }
         }

@@ -8636,7 +8636,7 @@ LABEL_55:
         v63 = (_QWORD*)(*v61 + 32LL);
         do {
           if (*v63 != 0) {
-            if (*((_DWORD*)v63 - 8) > v54) {
+            if ((int)(*((_DWORD*)v63 - 8)) > v54) {
               goto LABEL_106;
             }
             v66 = GameData_21caab0;

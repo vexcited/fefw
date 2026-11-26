@@ -29,7 +29,7 @@ __int64 UnitExpChangeUtil_Unknown2(__int64 result)
   if (v3 >= v2) {
     v3 = v2;
   }
-  if (v2 >= *(_DWORD*)GameData_21d9968) {
+  if (v2 >= *(int*)GameData_21d9968) {
     v4 = v3;
   }
   else {

@@ -270,7 +270,7 @@ LABEL_6:
       (v9 = game_GameVariableTable_Find(
            *(_QWORD**)(game_GameModeData_instance_ + 48),
            (unsigned __int64*)v7)) != 0) {
-    if (*(_DWORD*)(v9 + 32) >= v6) {
+    if (*(int*)(v9 + 32) >= v6) {
       goto LABEL_10;
     }
   }

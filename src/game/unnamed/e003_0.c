@@ -270,7 +270,7 @@ __int64 GameHr_a50100(__int64* a1, __int64 a2, __int64 a3)
     return 0xFFFFFFFFLL;
   }
   v8 = *(_DWORD**)(*(_QWORD*)(v5 + 24) + 24LL * v7);
-  if (*v8 <= v6) {
+  if ((int)(*v8) <= v6) {
     return 0xFFFFFFFFLL;
   }
   v9 = (unsigned int)v8[2 * v6 + 2];

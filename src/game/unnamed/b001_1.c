@@ -4482,7 +4482,7 @@ float GameHr_283ae0(__int64 a1, int a2)
   v3 = a2 - 4;
   if (a2 >= 4) {
     v4 = *(_QWORD*)(a1 + 24);
-    if (v3 < *(_DWORD*)(v4 + 8)) {
+    if (v3 < *(int*)(v4 + 8)) {
       return *(float*)(*(_QWORD*)v4 + 4LL * (unsigned int)v3);
     }
   }
@@ -4497,7 +4497,7 @@ __int64 GameHr_283b20(__int64 result, int a2, float a3)
   v3 = a2 - 4;
   if (a2 >= 4) {
     v4 = *(_QWORD*)(result + 24);
-    if (v3 < *(_DWORD*)(v4 + 8)) {
+    if (v3 < *(int*)(v4 + 8)) {
       *(float*)(*(_QWORD*)v4 + 4LL * (unsigned int)v3) = a3;
     }
   }
@@ -4559,7 +4559,7 @@ __int64 GameHr_283d20(__int64 a1, unsigned int a2)
   result = 0;
   if ((a2 & 0x80000000) == 0) {
     v4 = *(_QWORD*)(a1 + 40);
-    if ((signed int)a2 < *(_DWORD*)(v4 + 8)) {
+    if ((signed int)a2 < *(int*)(v4 + 8)) {
       return *(unsigned __int8*)(*(_QWORD*)v4 + a2);
     }
   }

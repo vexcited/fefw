@@ -2460,7 +2460,7 @@ __int64 game_cmdbtl_CmdBtlDispos_Initialize_lambda0_Invoke(__int64 result,
 
   v2 = *(_QWORD*)(result + 8);
   v3 = *(_DWORD*)(a2 + 68);
-  if (v3 <= *(_DWORD*)(v2 + 16)) {
+  if (v3 <= *(int*)(v2 + 16)) {
     v3 = *(_DWORD*)(v2 + 16);
   }
   *(_DWORD*)(v2 + 16) = v3;

@@ -823,14 +823,15 @@ __n128 GameHr_f47e80(__int64 a1, int a2, __int64* a3)
     v19 = -1;
     v10 = *(_DWORD*)(v8 + 24);
     if (v10 != -1) {
-      v11 = GameData_1ff4fe0[v10];
+      v11 = GameData_1ff4fe0[(unsigned int)v10];
       v20 = v18;
       ((void (*)(_BYTE**, __int64))v11)(&v20, v8);
       v19 = v10;
     }
     GameRoutine_eaec10(a1 + 64, v18);
     if (v19 != -1) {
-      ((void (*)(_BYTE**, _BYTE*))GameData_1ff4fc8[v19])(&v20, v18);
+      ((void (*)(_BYTE**, _BYTE*))GameData_1ff4fc8[(unsigned int)v19])(&v20,
+                                                                       v18);
     }
   }
   *(_DWORD*)(a1 + 96) = *((_DWORD*)a3 + 12);
@@ -1854,7 +1855,7 @@ void GameHr_f4b1e0(__int64 a1, int a2, __int64* a3)
     v17_.v18 = -1;
     v10 = *(_DWORD*)(v8 + 24);
     if (v10 != -1) {
-      v11 = GameData_1ff5508[v10];
+      v11 = GameData_1ff5508[(unsigned int)v10];
       v19 = v17_.v17;
       ((void (*)(_BYTE**, __int64))v11)(&v19, v8);
       v17_.v18 = v10;
