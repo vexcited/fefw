@@ -11922,7 +11922,7 @@ ffee0,324,verified,src/nn/fs/unplaced.c,nn_fs_GetAndClearMemoryReportInfo
 2e2830,104,verified,src/opus/celt/mathops.c,celt_rsqrt_norm
 2e28a0,176,verified,src/opus/celt/mathops.c,celt_sqrt
 2e2950,244,verified,src/opus/celt/mathops.c,celt_cos_norm
-2e2a60,2092,disputed,src/opus/celt/unplaced.c,opus_celt_2e2a60
+2e2a60,2092,verified,src/opus/celt/unplaced.c,opus_celt_2e2a60
 2e32e0,1092,verified,src/opus/celt/mdct.c,clt_mdct_backward_c
 2e3750,96,verified,src/opus/celt/modes.c,opus_custom_mode_create
 2e37c0,1800,verified,src/opus/celt/unplaced_5.c,opus_celt_2e37c0

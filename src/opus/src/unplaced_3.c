@@ -618,22 +618,24 @@ void opus_src_76400(__int64 a1, __int64 a2, __int64 a3, __int64 a4,
     unsigned __int64 v378;
     int v379;
   } v369_;
-  __int64 v380;
-  __int64 v381;
-  __int64 v382;
-  _QWORD v383[2];
+  struct {
+    __int64 v380;
+    __int64 v381;
+    __int64 v382;
+    _QWORD v383[2];
+  } w_;
 
   v312_.v338 = a7;
   v12 = a6;
   v312_.v327 = a5;
   v312_.v328 = a4;
-  v13 = &v382;
+  v13 = &w_.v382;
   v312_.v335 = a3;
   v312_.v326 = a2;
-  v382 = 0;
-  v383[0] = 0;
-  v380 = 0;
-  v381 = 0;
+  w_.v382 = 0;
+  w_.v383[0] = 0;
+  w_.v380 = 0;
+  w_.v381 = 0;
   v369_.v379 = 0;
   v369_.v377 = 0;
   v369_.v378 = 0;
@@ -646,7 +648,7 @@ void opus_src_76400(__int64 a1, __int64 a2, __int64 a3, __int64 a4,
   v369_.v369 = 0;
   v369_.v370 = 0;
   v14 = resampling_factor(a9);
-  v15 = (char*)&v382 + 4;
+  v15 = (char*)&w_.v382 + 4;
   v16 = v14;
   v312_.v329 = v12;
   v312_.v332 = v14 * v12;
@@ -684,26 +686,26 @@ void opus_src_76400(__int64 a1, __int64 a2, __int64 a3, __int64 a4,
       if (a8 == 7) {
         v26 = 2;
         v24 = 0;
-        v380 = 0x200000001LL;
-        v381 = 0x100000003LL;
+        w_.v380 = 0x200000001LL;
+        w_.v381 = 0x100000003LL;
         v27 = 3;
-        v25 = (char*)&v382;
-        v13 = (__int64*)((char*)&v382 + 4);
-        v15 = (char*)v383;
+        v25 = (char*)&w_.v382;
+        v13 = (__int64*)((char*)&w_.v382 + 4);
+        v15 = (char*)w_.v383;
       }
       else {
         if (a8 != 8) {
           goto LABEL_21;
         }
         v24 = 0;
-        v25 = (char*)&v382 + 4;
-        v15 = (char*)v383 + 4;
-        v13 = v383;
-        v380 = 0x200000001LL;
-        v381 = 0x100000003LL;
+        v25 = (char*)&w_.v382 + 4;
+        v15 = (char*)w_.v383 + 4;
+        v13 = w_.v383;
+        w_.v380 = 0x200000001LL;
+        w_.v381 = 0x100000003LL;
         v26 = 3;
         v27 = 1;
-        LODWORD(v382) = 3;
+        LODWORD(w_.v382) = 3;
       }
       goto LABEL_20;
     }
@@ -711,11 +713,11 @@ void opus_src_76400(__int64 a1, __int64 a2, __int64 a3, __int64 a4,
   else if (a8 != 3) {
     if (a8 == 4) {
       v26 = 1;
-      v13 = &v381;
-      v25 = (char*)&v380 + 4;
+      v13 = &w_.v381;
+      v25 = (char*)&w_.v380 + 4;
       v27 = 3;
-      v15 = (char*)&v381 + 4;
-      LODWORD(v380) = 1;
+      v15 = (char*)&w_.v381 + 4;
+      LODWORD(w_.v380) = 1;
       v24 = 3;
     LABEL_20:
       *(_DWORD*)v25 = v27;
@@ -1028,7 +1030,7 @@ void opus_src_76400(__int64 a1, __int64 a2, __int64 a3, __int64 a4,
           LOWORD(v146) = v145;
         }
         *v77 = v146;
-        v147 = *((_DWORD*)&v380 + v73);
+        v147 = *((_DWORD*)&w_.v380 + v73);
         if (v147 == 1) {
           v184 = (__int16*)v312_.v314;
           v148 = v312_.v333;
@@ -1725,7 +1727,7 @@ void opus_src_76400(__int64 a1, __int64 a2, __int64 a3, __int64 a4,
     HIWORD(v363_.v367) += result;
     v363_.v368 += result;
     if (v312_.v330 >= 1) {
-      v258 = &v380;
+      v258 = &w_.v380;
       v259 = 0;
       v260 = 42LL * (unsigned int)v312_.v330;
       do {
@@ -1830,10 +1832,10 @@ void opus_src_76400(__int64 a1, __int64 a2, __int64 a3, __int64 a4,
   }
   v24 = 0;
   v27 = 1;
-  v25 = (char*)&v381 + 4;
-  v380 = 0x200000001LL;
+  v25 = (char*)&w_.v381 + 4;
+  w_.v380 = 0x200000001LL;
   v26 = 3;
-  LODWORD(v381) = 3;
+  LODWORD(w_.v381) = 3;
   goto LABEL_20;
 }
 

@@ -726,8 +726,10 @@ void GameHr_6d5120(__int64 result, int a2, __int64 a3)
   unsigned __int8* v150;
   int v151;
   int* v152;
-  unsigned __int64 v153;
-  __int64 v154;
+  struct {
+    unsigned __int64 v153;
+    __int64 v154;
+  } j_;
   __int64 v155;
   __int64 v156;
   int v157;
@@ -779,8 +781,8 @@ void GameHr_6d5120(__int64 result, int a2, __int64 a3)
   v158_.v161 = 0;
   v6 = *(_QWORD*)(result + 400);
   v158_.v162 = 0;
-  v153 = 0;
-  v154 = 0;
+  j_.v153 = 0;
+  j_.v154 = 0;
   v155 = 0;
   v156 = 0;
   v157 = 0;
@@ -1018,7 +1020,7 @@ void GameHr_6d5120(__int64 result, int a2, __int64 a3)
       v68 = ((int)v67 & ~((int)v67 >> 31)) + *((_DWORD*)&v158_.v158 + v35);
       *((_DWORD*)&v158_.v158 + v35) = v68;
       if ((int)v68 >= 100) {
-        *((_DWORD*)&v153 + v35) += v68 / 0x64;
+        *((_DWORD*)&j_.v153 + v35) += v68 / 0x64;
         *((_DWORD*)&v158_.v158 + v35) = v68 % 0x64;
         v151 += v68 / 0x64;
       }
@@ -1117,38 +1119,38 @@ void GameHr_6d5120(__int64 result, int a2, __int64 a3)
             do {
               v92 = *(v90 - 4);
               v91 -= 8;
-              v93 = *((_DWORD*)&v153 + v92);
+              v93 = *((_DWORD*)&j_.v153 + v92);
               *((_DWORD*)&v158_.v158 + v92) = 0;
-              *((_DWORD*)&v153 + v92) = v93 + 1;
+              *((_DWORD*)&j_.v153 + v92) = v93 + 1;
               v94 = *(v90 - 3);
-              v95 = *((_DWORD*)&v153 + v94);
+              v95 = *((_DWORD*)&j_.v153 + v94);
               *((_DWORD*)&v158_.v158 + v94) = 0;
-              *((_DWORD*)&v153 + v94) = v95 + 1;
+              *((_DWORD*)&j_.v153 + v94) = v95 + 1;
               v96 = *(v90 - 2);
-              v97 = *((_DWORD*)&v153 + v96);
+              v97 = *((_DWORD*)&j_.v153 + v96);
               *((_DWORD*)&v158_.v158 + v96) = 0;
-              *((_DWORD*)&v153 + v96) = v97 + 1;
+              *((_DWORD*)&j_.v153 + v96) = v97 + 1;
               v98 = *(v90 - 1);
-              v99 = *((_DWORD*)&v153 + v98);
+              v99 = *((_DWORD*)&j_.v153 + v98);
               *((_DWORD*)&v158_.v158 + v98) = 0;
-              *((_DWORD*)&v153 + v98) = v99 + 1;
+              *((_DWORD*)&j_.v153 + v98) = v99 + 1;
               v100 = *v90;
-              v101 = *((_DWORD*)&v153 + v100);
+              v101 = *((_DWORD*)&j_.v153 + v100);
               *((_DWORD*)&v158_.v158 + v100) = 0;
-              *((_DWORD*)&v153 + v100) = v101 + 1;
+              *((_DWORD*)&j_.v153 + v100) = v101 + 1;
               v102 = v90[1];
-              v103 = *((_DWORD*)&v153 + v102);
+              v103 = *((_DWORD*)&j_.v153 + v102);
               *((_DWORD*)&v158_.v158 + v102) = 0;
-              *((_DWORD*)&v153 + v102) = v103 + 1;
+              *((_DWORD*)&j_.v153 + v102) = v103 + 1;
               v104 = v90[2];
-              v105 = *((_DWORD*)&v153 + v104);
+              v105 = *((_DWORD*)&j_.v153 + v104);
               *((_DWORD*)&v158_.v158 + v104) = 0;
-              *((_DWORD*)&v153 + v104) = v105 + 1;
+              *((_DWORD*)&j_.v153 + v104) = v105 + 1;
               v106 = v90[3];
               v90 += 8;
-              v107 = *((_DWORD*)&v153 + v106);
+              v107 = *((_DWORD*)&j_.v153 + v106);
               *((_DWORD*)&v158_.v158 + v106) = 0;
-              *((_DWORD*)&v153 + v106) = v107 + 1;
+              *((_DWORD*)&j_.v153 + v106) = v107 + 1;
             } while (-(__int64)(v87 & 0x7FFFFFF8) != v91);
             v88 = -v91;
             v89 = v87 & 7;
@@ -1167,9 +1169,9 @@ void GameHr_6d5120(__int64 result, int a2, __int64 a3)
             do {
               v109 = *v108++;
               --v89;
-              v110 = *((_DWORD*)&v153 + v109);
+              v110 = *((_DWORD*)&j_.v153 + v109);
               *((_DWORD*)&v158_.v158 + v109) = 0;
-              *((_DWORD*)&v153 + v109) = v110 + 1;
+              *((_DWORD*)&j_.v153 + v109) = v110 + 1;
             } while (v89 != 0);
           }
         }
@@ -1183,13 +1185,13 @@ void GameHr_6d5120(__int64 result, int a2, __int64 a3)
     }
     break;
   }
-  v111 = HIDWORD(v153);
-  v113 = v154;
-  v112 = HIDWORD(v154);
+  v111 = HIDWORD(j_.v153);
+  v113 = j_.v154;
+  v112 = HIDWORD(j_.v154);
   v114 = 1374389535LL * SHIDWORD(v158_.v158);
   v116 = v155;
   v115 = HIDWORD(v155);
-  v117 = (int)v158_.v158 / 100 + v153;
+  v117 = (int)v158_.v158 / 100 + j_.v153;
   if ((int)(v117 + *(__int16*)(result + 468)) <= -255) {
     v118 = -255;
   }
@@ -1202,7 +1204,7 @@ void GameHr_6d5120(__int64 result, int a2, __int64 a3)
   *(_WORD*)(result + 468) = v118;
   v119 = (v114 >> 63) + (SHIDWORD(v114) >> 5) + v111;
   v120 = *(__int16*)(result + 470);
-  v153 = __PAIR64__(v119, v117);
+  j_.v153 = __PAIR64__(v119, v117);
   v121 = v119 + v120;
   if (v121 <= -255) {
     v121 = -255;
@@ -1221,9 +1223,9 @@ void GameHr_6d5120(__int64 result, int a2, __int64 a3)
     LOWORD(v124) = 255;
   }
   *(_WORD*)(result + 472) = v124;
-  LODWORD(v154) = v123;
-  HIDWORD(v154) = v122 / 100 + v112;
-  v125 = HIDWORD(v154) + *(__int16*)(result + 474);
+  LODWORD(j_.v154) = v123;
+  HIDWORD(j_.v154) = v122 / 100 + v112;
+  v125 = HIDWORD(j_.v154) + *(__int16*)(result + 474);
   if (v125 <= -255) {
     v125 = -255;
   }

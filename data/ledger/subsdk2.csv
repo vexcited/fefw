@@ -969,11 +969,11 @@ fff0,88,verified,src/movie/detail/movie_video_decoder_event_manager.cpp,_ZN5movi
 7a6c0,548,verified,src/movie/unnamed/p000_0.c,MovieHr_7a6c0
 7a920,804,verified,src/movie/unnamed/p000_0.c,MovieHr_7a920
 7ac60,136,verified,src/movie/unnamed/p000_0.c,MovieHr_7ac60
-7ad00,1172,verified,src/opus/src/unplaced_3.c,opus_src_7ad00
+7ad00,1896,verified,src/opus/src/unplaced_3.c,opus_src_7ad00
 7b4c0,1192,verified,src/movie/unnamed/p000_0.c,MovieHr_7b4c0
 7b9d0,8,verified,src/movie/unnamed/y000_0.c,MovieHr_7b9d0
 7b9e0,728,verified,src/opus/src/unplaced_3.c,opus_src_7b9e0
-7bce0,820,verified,src/opus/src/unplaced_3.c,opus_src_7bce0
+7bce0,1056,verified,src/opus/src/unplaced_3.c,opus_src_7bce0
 7c120,88,verified,src/movie/unnamed/p000_0.c,MovieHr_7c120
 7c180,728,verified,src/movie/unnamed/p000_0.c,MovieHr_7c180
 7c480,1140,verified,src/opus/src/unplaced_9.c,opus_src_7c480
@@ -982,7 +982,7 @@ fff0,88,verified,src/movie/detail/movie_video_decoder_event_manager.cpp,_ZN5movi
 7dee0,716,verified,src/movie/unnamed/p000_0.c,MovieHr_7dee0
 7e1c0,76,verified,src/movie/unnamed/p000_0.c,MovieHr_7e1c0
 7e220,1204,verified,src/opus/src/unplaced_3.c,opus_src_7e220
-7e740,916,verified,src/opus/src/unplaced_3.c,opus_src_7e740
+7e740,1060,verified,src/opus/src/unplaced_3.c,opus_src_7e740
 7f430,64,verified,src/movie/unnamed/p000_0.c,MovieHr_7f430
 7f480,388,verified,src/movie/unnamed/p000_0.c,MovieHr_7f480
 7f620,316,verified,src/movie/unnamed/p000_0.c,MovieHr_7f620

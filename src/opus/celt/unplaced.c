@@ -88,16 +88,18 @@ __int64 opus_celt_2de540(__int64 a1, signed int* a2, int a3,
   int* v72;
   int v73;
   int* v76;
-  __int64 v77;
-  __int64 v78;
-  _QWORD v79[10];
+  struct {
+    __int64 v77;
+    __int64 v78;
+    _QWORD v79[10];
+  } w_;
 
   v4 = *a2;
   v76 = a2;
-  v77 = 0;
-  memset(v79, 0, sizeof(v79));
-  v78 = 0;
-  result = memset_plt((void*)&v77, nullptr, 4 * a3, a4);
+  w_.v77 = 0;
+  memset(w_.v79, 0, sizeof(w_.v79));
+  w_.v78 = 0;
+  result = memset_plt((void*)&w_.v77, nullptr, 4 * a3, a4);
   if (v4 != 0) {
     v6 = v76;
     v7 = (int*)&v76 + 1;
@@ -126,13 +128,13 @@ __int64 opus_celt_2de540(__int64 a1, signed int* a2, int a3,
       v15 = 0;
     LABEL_22:
       result = frac_div32((v76[v9 + 1] + v15) & 0xFFFFFFF8, v4);
-      *((_DWORD*)&v77 + v9) = -(int)result >> 3;
+      *((_DWORD*)&w_.v77 + v9) = -(int)result >> 3;
       v36 = -(int)result >> 16;
       v37 = (unsigned __int16)-(__int16)result;
       v38 = 2 * v36;
       if (v9 != 0) {
         if (v9 >= 7) {
-          v40 = (int*)&v78;
+          v40 = (int*)&w_.v78;
           v39 = 0;
           v41 = v7;
           do {
@@ -147,35 +149,35 @@ __int64 opus_celt_2de540(__int64 a1, signed int* a2, int a3,
             v46 = v9 + (v39 ^ 0x3FFFFFFFFFFFFFFELL);
             *v41 = v45 + ((v44 * v37) >> 15);
             v41 -= 4;
-            v47 = *((_DWORD*)&v77 + v46);
+            v47 = *((_DWORD*)&w_.v77 + v46);
             v48 = *(v40 - 1);
             *(v40 - 1) = v48 + v38 * (v47 >> 16) +
                          (((unsigned __int16)v47 * v36) >> 15) +
                          (((v47 >> 16) * v37) >> 15);
-            *((_DWORD*)&v77 + v46) = v47 + v38 * (v48 >> 16) +
-                                     (((unsigned __int16)v48 * v36) >> 15) +
-                                     (((v48 >> 16) * v37) >> 15);
+            *((_DWORD*)&w_.v77 + v46) = v47 + v38 * (v48 >> 16) +
+                                        (((unsigned __int16)v48 * v36) >> 15) +
+                                        (((v48 >> 16) * v37) >> 15);
             v49 = v9 + (v39 ^ 0xFFFFFFFFFFFFFFFDLL);
             v50 = *v40;
-            v51 = *((_DWORD*)&v77 + v49);
+            v51 = *((_DWORD*)&w_.v77 + v49);
             *v40 += v38 * (v51 >> 16) + (((unsigned __int16)v51 * v36) >> 15) +
                     (((v51 >> 16) * v37) >> 15);
-            *((_DWORD*)&v77 + v49) = v51 + v38 * (v50 >> 16) +
-                                     (((unsigned __int16)v50 * v36) >> 15) +
-                                     (((v50 >> 16) * v37) >> 15);
+            *((_DWORD*)&w_.v77 + v49) = v51 + v38 * (v50 >> 16) +
+                                        (((unsigned __int16)v50 * v36) >> 15) +
+                                        (((v50 >> 16) * v37) >> 15);
             v52 = v39 ^ 0x3FFFFFFFFFFFFFFCLL;
             v39 += 4;
             v53 = v9 + v52;
             v54 = v40[1];
-            v55 = *((_DWORD*)&v77 + v53);
+            v55 = *((_DWORD*)&w_.v77 + v53);
             v40[1] = v54 + v38 * (v55 >> 16) +
                      (((unsigned __int16)v55 * v36) >> 15) +
                      (((v55 >> 16) * v37) >> 15);
             v40 += 4;
             result = (unsigned int)((v54 >> 16) * v37);
-            *((_DWORD*)&v77 + v53) = v55 + v38 * (v54 >> 16) +
-                                     (((unsigned __int16)v54 * v36) >> 15) +
-                                     ((int)result >> 15);
+            *((_DWORD*)&w_.v77 + v53) = v55 + v38 * (v54 >> 16) +
+                                        (((unsigned __int16)v54 * v36) >> 15) +
+                                        ((int)result >> 15);
           } while ((v11 & 0x7FFFFFFFFFFFFFFCLL) != v39);
         }
         else {
@@ -184,7 +186,7 @@ __int64 opus_celt_2de540(__int64 a1, signed int* a2, int a3,
         if ((v12 & 3) != 0) {
           v56 = v11 & 3;
           v57 = -1 * v39;
-          v58 = (int*)&v77 + v39;
+          v58 = (int*)&w_.v77 + v39;
           do {
             v59 = v7[v57];
             v60 = *v58;
@@ -214,7 +216,7 @@ __int64 opus_celt_2de540(__int64 a1, signed int* a2, int a3,
       }
     }
     if (v9 >= 4) {
-      v16 = (int*)&v78;
+      v16 = (int*)&w_.v78;
       v17 = 0;
       v14 = 0;
       v18 = v10;
@@ -258,7 +260,7 @@ __int64 opus_celt_2de540(__int64 a1, signed int* a2, int a3,
     }
     v30 = v9 & 3;
     v31 = &v6[-v13];
-    v32 = (int*)&v77 + v13;
+    v32 = (int*)&w_.v77 + v13;
     do {
       v34 = *v32++;
       v33 = v34;
@@ -281,7 +283,7 @@ LABEL_31:
       goto LABEL_38;
     }
     v63 = 0;
-    v64 = v79;
+    v64 = w_.v79;
     v65 = (_WORD*)(a1 + 8);
     do {
       v63 -= 8;
@@ -305,7 +307,7 @@ LABEL_31:
     if ((a3 & 7) != 0) {
     LABEL_38:
       v71 = (_WORD*)(a1 + 2 * v62);
-      v72 = (int*)&v77 + v62;
+      v72 = (int*)&w_.v77 + v62;
       do {
         v73 = *v72++;
         --v61;
