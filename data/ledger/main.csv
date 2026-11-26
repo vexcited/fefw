@@ -38030,7 +38030,7 @@ cabfc0,200,verified,src/game/script/hub_character_natives_impl.c,HubCharacterNat
 cac090,416,verified,src/game/hub/unplaced_9.c,game_hub_cac090
 cac250,96,verified,src/game/script/hub_character_natives_impl.c,HubCharacterNatives_cac250
 cac2c0,156,verified,src/game/unnamed/b010_2.c,GameHr_cac2c0
-cac400,252,disputed,src/game/script/unplaced_6.c,game_script_cac400
+cac400,1868,verified,src/game/script/unplaced_6.c,game_script_cac400
 cacba0,88,verified,src/game/templates/smart_pointer.cpp,_ZNSt3__110shared_ptrIN4game11UnrecoveredILj6EEEED2B8nn210108Ev
 cacc00,2600,verified,src/game/unnamed/b010_2.c,GameHr_cacc00
 cad680,864,verified,src/game/hub/unplaced.c,game_hub_cad680

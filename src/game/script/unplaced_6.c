@@ -132,8 +132,11 @@ __attribute__((swiftcall)) void game_script_cac400(PSEUDO_X8 x8_, __int64 a1,
     _QWORD v79[6];
     char v80;
   } v79_;
-  __int64 v81;
   struct {
+    __int64 v88;
+    char gap8_[48];
+    __int64 v81;
+    char gap64_[48];
     _QWORD v82[57];
     char v83;
     char gap1857_[7];
@@ -144,8 +147,7 @@ __attribute__((swiftcall)) void game_script_cac400(PSEUDO_X8 x8_, __int64 a1,
     char v86;
     char gap1937_[63];
     char v87;
-  } v82_;
-  __int64 v88;
+  } w_;
   struct {
     __int128 v89;
     char* v90;
@@ -185,13 +187,13 @@ __attribute__((swiftcall)) void game_script_cac400(PSEUDO_X8 x8_, __int64 a1,
   LOBYTE(v89_.v89) = v11;
   v79_.v80 = 0;
   __builtin_memset(v79_.v79, 0, sizeof(v79_.v79));
-  v82_.v83 = 0;
-  v82_.v84 = 0;
-  v82_.v85 = 0;
-  v82_.v86 = 0;
-  v82_.v87 = 0;
-  memset((__int64)&v88, 0, 0x128u);
-  memset((__int64)&v81, 0, 0x1C1u);
+  w_.v83 = 0;
+  w_.v84 = 0;
+  w_.v85 = 0;
+  w_.v86 = 0;
+  w_.v87 = 0;
+  memset((__int64)&w_.v88, 0, 0x128u);
+  memset((__int64)&w_.v81, 0, 0x1C1u);
   v13 = *(_QWORD*)(a1 + 40);
   if ((*(_BYTE*)(a1 + 32) & 1) == 0) {
     v13 = *(_BYTE*)(a1 + 32) >> 1;
@@ -240,10 +242,10 @@ __attribute__((swiftcall)) void game_script_cac400(PSEUDO_X8 x8_, __int64 a1,
     }
   }
 LABEL_26:
-  GameRoutine_60a020((__int64)v82_.v82, v20);
-  LODWORD(v82_.v82[3]) = v9;
-  *((float*)&v82_.v82[5] + 1) = v12;
-  v82_.v82[6] = 0x40000000;
+  GameRoutine_60a020((__int64)w_.v82, v20);
+  LODWORD(w_.v82[3]) = v9;
+  *((float*)&w_.v82[5] + 1) = v12;
+  w_.v82[6] = 0x40000000;
   if ((v89_.v89 & 1) != 0) {
     v6 = v89_.v90;
   }
