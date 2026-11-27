@@ -6136,7 +6136,7 @@ fff90,116,verified,src/snd/api.cpp,_ZN3snd10startPitchERKNS_3fnd10WeakHandleERKN
 18b960,404,verified,src/snd/wave_stream_reader.c,WaveStreamReader_Unknown9
 18bb00,116,verified,src/snd/wave_stream_reader.c,WaveStreamReader_Unknown10
 18bb80,828,verified,src/snd/wave_stream_reader.c,WaveStreamReader_Unknown11
-18bec0,436,verified,src/angelscript/angelscript/source/as_compiler_impl.c,asCArray_SetLength
+18bec0,436,disputed,src/angelscript/angelscript/source/as_compiler_impl.c,asCArray_SetLength
 18c080,204,verified,src/snd/wave_stream_reader.c,WaveStreamReader_Unknown13
 18c160,312,verified,src/snd/wave_stream_reader.c,WaveStreamReader_Unknown14
 18c2a0,872,verified,src/snd/wave_stream_reader.c,WaveStreamReader_GetSubTypeCount
@@ -7402,7 +7402,7 @@ fff90,116,verified,src/snd/api.cpp,_ZN3snd10startPitchERKNS_3fnd10WeakHandleERKN
 2227e0,1640,verified,src/angelscript/angelscript/source/as_compiler.cpp,_ZN11asCCompiler15CompileInitListEP12asCExprValueP13asCScriptNodeP11asCByteCodei
 2231a0,68,verified,src/angelscript/angelscript/source/as_compiler.cpp,_ZN12asCExprValue15GetConstantDataEv
 2231f0,1424,verified,src/angelscript/angelscript/source/as_compiler.cpp,_ZN11asCCompiler12DoAssignmentEP14asCExprContextS1_S1_P13asCScriptNodeS3_10eTokenTypeS3_
-223d20,1844,verified,src/angelscript/angelscript/source/as_compiler_impl.c,asCCompiler_CompileOverloadedDualOperator
+223d20,1684,verified,src/angelscript/angelscript/source/as_compiler_impl.c,asCCompiler_CompileOverloadedDualOperator
 2244e0,264,verified,src/angelscript/angelscript/source/as_compiler.cpp,_ZN11asCCompiler17MergeExprBytecodeEP14asCExprContextS1_
 224600,1664,verified,src/angelscript/angelscript/source/as_compiler.cpp,_ZN11asCCompiler22CompileInitListElementERP18asSListPatternNodeRP13asCScriptNodeisRjR11asCByteCodeRi
 225360,100,verified,src/angelscript/angelscript/source/as_compiler.cpp,_ZN12asCExprValue8SetDummyEv
@@ -30223,7 +30223,7 @@ a19a80,12,verified,src/llvm-libcxx-21/libcxx/include/__functional/function.h,"st
 a19aa0,632,verified,src/game/templates/hash_table.cpp,_ZNSt3__112__hash_tableINS_17__hash_value_typeImPN4game11UnrecoveredILj22EEEEENS_22__unordered_map_hasherImNS_4pairIKmS5_EENS_4hashImEENS_8equal_toImEELb1EEENS_21__unordered_map_equalImSA_SE_SC_Lb1EEENS_9allocatorISA_EEE11__do_rehashILb1EEEvm
 a19d40,344,verified,src/game/game_global_skill.c,GameGlobalSkill_Destructor
 a19ea0,80,verified,src/memory/new_delete.cpp,deleting destructor at 0xa19ea0
-a19f00,2544,verified,src/memory/unplaced_5.c,memory_a19f00
+a19f00,2500,verified,src/memory/unplaced_5.c,memory_a19f00
 a1b100,228,verified,src/snd/voice_root_registry_impl.c,VoiceRootRegistry_a1b100
 a1b200,332,verified,src/game/unnamed/b008_1.c,GameHr_a1b200
 a1b360,216,verified,src/snd/unplaced_2.c,snd_a1b360
@@ -36573,7 +36573,7 @@ c032b0,300,verified,src/game/templates/vector.cpp,_ZNSt3__16vectorINS_10shared_p
 c03400,1436,verified,src/wld/unplaced_4.c,wld_c03400
 c04760,1120,verified,src/wld/grass_module.c,GrassModule_Destructor
 c04bf0,80,verified,src/memory/new_delete.cpp,deleting destructor at 0xc04bf0
-c04c40,2344,disputed,src/memory/unplaced_5.c,memory_c04c40
+c04c40,2348,disputed,src/memory/unplaced_5.c,memory_c04c40
 c05600,44,verified,src/wld/grass_module.c,GrassModule_Unknown9
 c05630,8,verified,src/game/game_trivial.cpp,_Z15GameStub_c05630v
 c05640,12,verified,src/game/game_trivial.cpp,_Z15GameStub_c05640v
@@ -39995,7 +39995,7 @@ d3ade0,1872,disputed,src/llvm-libcxx-21/libcxx/include/__vector/unplaced_5.c,llv
 d3b6a0,1832,verified,src/game/character/character_trail_module.c,CharacterTrailModule_d3b6a0
 d3bee0,544,verified,src/game/character/character_trail_module.c,CharacterTrailModule_Destructor
 d3c110,80,verified,src/memory/new_delete.cpp,deleting destructor at 0xd3c110
-d3c160,424,verified,src/memory/unplaced_5.c,memory_d3c160
+d3c160,424,disputed,src/memory/unplaced_5.c,memory_d3c160
 d3c310,544,verified,src/game/character/character_trail_module.c,CharacterTrailModule_d3c310
 d3c540,2888,verified,src/game/character/unplaced_9.c,game_character_d3c540
 d3d110,160,verified,src/game/character/character_trail_module.c,CharacterTrailModule_Unknown9
@@ -43967,7 +43967,7 @@ e82b40,236,verified,src/game/cmdbtl/cmd_btl_camera_cut_base.c,CmdBtlCameraCutBas
 e82c30,8,verified,src/game/cmdbtl/camera_cut.cpp,_ZNK4game6cmdbtl19CmdBtlCameraCutBase10IsFinishedEv
 e82c40,460,verified,src/game/cmdbtl/cmd_btl_camera_cut_look_to.c,CmdBtlCameraCutLookTo_Destructor
 e82e40,80,verified,src/memory/new_delete.cpp,deleting destructor at 0xe82e40
-e82ea0,3872,verified,src/memory/unplaced_5.c,memory_e82ea0
+e82ea0,3832,disputed,src/memory/unplaced_5.c,memory_e82ea0
 e83e40,508,verified,src/game/cmdbtl/unplaced.c,game_cmdbtl_e83e40
 e84050,488,verified,src/game/unnamed/b012_3.c,GameHr_e84050
 e84250,104,verified,src/game/cmdbtl/camera_cut.cpp,_ZN4game6cmdbtl25CmdBtlCameraCutExitCombatD2Ev
@@ -44690,7 +44690,7 @@ eaea00,432,disputed,src/game/unnamed/r005_0.c,GameHr_eaea00
 eaebb0,12,verified,src/game/game_trivial_forwarders.cpp,_Z15GameStub_eaebb0m
 eaebc0,80,verified,src/memory/new_delete.cpp,deleting destructor at 0xeaebc0
 eaec10,396,verified,src/game/unnamed/b013_0.c,GameHr_eaec10
-eaeda0,448,disputed,src/memory/unplaced_5.c,memory_eaeda0
+eaeda0,448,verified,src/memory/unplaced_5.c,memory_eaeda0
 eaef60,52,verified,src/game/unnamed/b013_0.c,GameHr_eaef60
 eaefa0,80,verified,src/memory/new_delete.cpp,deleting destructor at 0xeaefa0
 eaeff0,192,verified,src/game/script/cmdbtl_party_natives.cpp,_ZL5GetHpi

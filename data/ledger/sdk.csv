@@ -25230,7 +25230,7 @@ ffee0,324,verified,src/nn/fs/unplaced.c,nn_fs_GetAndClearMemoryReportInfo
 64eef0,28,verified,src/nvidia/unplaced_10.c,nvidia_64eef0
 64ef10,52,verified,src/nvidia/unplaced_10.c,nvidia_64ef10
 64ef60,1608,verified,src/nvidia/unplaced_10.c,nvidia_64ef60
-64f5d0,1032,disputed,src/nvidia/unplaced_10.c,nvidia_64f5d0
+64f5d0,1032,verified,src/nvidia/unplaced_10.c,nvidia_64f5d0
 64f9e0,396,verified,src/nvidia/unplaced_10.c,nvidia_64f9e0
 64fb90,16,verified,src/nn/sdk_trivial_thunks2.cpp,_Z14SdkStub_64fb90mmm
 64fba0,4,verified,src/nn/sdk_trivial.cpp,_Z14SdkStub_64fba0v
