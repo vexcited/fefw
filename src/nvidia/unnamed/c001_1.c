@@ -354,6 +354,17 @@ __int64 cuda_driver_unplaced_3_7daa0(__int64, char, int, __int64);
 __int64 nvidia_7fe80(__int64 result, __int64, char, int);
 bool cuda_debugger_api_7cff0();
 void CudaDriverHr_818e0(__int64 result, int a2, int a3, __int64 a4);
+__int64 CudaDriverRoutine_123ec0(__int64);
+__int64 CudaDriverRoutine_5ef60_alt1(_QWORD*, int);
+__int64 CudaDriverRoutine_97700(__int64);
+__int64 CudaDriverRoutine_df060(__int64);
+__int64 nvidia_1236a0(__int64);
+__int64 nvidia_ed630(__int64, __int64, const char*, ...);
+__int64 strncpy_plt(__int64, const char*, unsigned __int64);
+bool cuda_debugger_api_7d1d0();
+bool cuda_driver_misc_helpers_78750(__int64);
+bool cuda_driver_misc_helpers_787e0(__int64);
+__int64 CudaDriverHr_977a0(int a1, char* a2, __int64 a3, __int64* a4);
 
 __int64 CudaDriverHr_73110(unsigned int a1, unsigned int a2, unsigned int a3,
                            unsigned int a4, unsigned int a5, __int64 a6,
@@ -1000,7 +1011,7 @@ void CudaDriverHr_818e0(__int64 result, int a2, int a3, __int64 a4)
       result = cuda_debugger_api_7cff0();
       if ((_BYTE)result != 0) {
         cuda_driver_unplaced_3_7daa0(*(_QWORD*)(a4 + 8), 1, v39, 0);
-  return;
+        return;
       }
     }
     else if (a3 == 2) {
@@ -1010,7 +1021,7 @@ void CudaDriverHr_818e0(__int64 result, int a2, int a3, __int64 a4)
       result = cuda_debugger_api_7cff0();
       if ((_BYTE)result != 0) {
         CudaDriverRoutine_7ec70(*(_QWORD*)(a4 + 8), 1, v35);
-  return;
+        return;
       }
     }
     break;
@@ -1021,7 +1032,7 @@ void CudaDriverHr_818e0(__int64 result, int a2, int a3, __int64 a4)
     result = CudaDriverStub_12dd00((unsigned int)CudaDriverData_1432c38);
     if (v4 == 0) {
       CudaDriverRoutine_12dd10_alt1();
-  return;
+      return;
     }
     v7 = result - 1;
     if ((int)result < 1) {
@@ -4574,6 +4585,228 @@ __int64 CudaDriverHr_97700(__int64 a1, __int64 a2)
         "CUDA", 0, "Per-ctx coredump not supported before Pascal (CC 6.0)");
   }
   return 801;
+}
+
+__int64 CudaDriverHr_977a0(int a1, char* a2, __int64 a3, __int64* a4)
+{
+
+#pragma clang fp contract(on)
+
+  __int64 result;
+  __int64 v8;
+  int v9;
+  unsigned int v10;
+  int v11;
+  unsigned __int64 v12;
+  unsigned __int64 v13;
+  __int64 v14;
+  char* v15;
+  int v17;
+  __int64 v18;
+  char* v19;
+  int v20;
+  int v21;
+  __int64 v22;
+  __int64 v23;
+  __int64 v24;
+  __int64 v25;
+  __int64 v26;
+  __int64 v27;
+  _DWORD v28[16];
+  struct {
+    __int64 v29;
+    char gap96_[28];
+    char v30[4];
+  } v29_;
+
+  v27 = 1;
+  v26 = 64;
+  if (a3 != 0) {
+    v29_.v29 = a3;
+  }
+  else {
+    result = CudaDriverRoutine_df060((__int64)&v29_.v29);
+    if ((_DWORD)result != 0) {
+      return result;
+    }
+  }
+  if (cuda_debugger_api_7cff0() || cuda_debugger_api_7d1d0()) {
+    return 801;
+  }
+  if (a1 > 2) {
+    if (a1 != 3) {
+      if (a1 == 5) {
+        if ((unsigned int)CudaDriverRoutine_77ce0(5, v28, v29_.v30, &v26) !=
+            0) {
+          return 1;
+        }
+        if (a2 != nullptr) {
+          v12 = *a4;
+          if ((unsigned __int64)*a4 <= 0x40) {
+            v13 = v26 - 1;
+            if (v29_.v30[0] != 0) {
+              v14 = v29_.v29;
+              v15 = (const char*)v28;
+            }
+            else {
+              v14 = v29_.v29;
+              v15 = a2;
+              if (v12 < v13) {
+                v13 = v12;
+              }
+            }
+            strncpy_plt(v14 + 16488, v15, v13);
+            *(_BYTE*)(v14 + v13 + 16488) = 0;
+            return 0;
+          }
+          return 1;
+        }
+        v22 = v26;
+      LABEL_53:
+        *a4 = v22;
+        return 0;
+      }
+      if (a1 == 7) {
+        if (a2 != nullptr) {
+          if (*a4 == 4) {
+            *(_DWORD*)(v29_.v29 + 16484) = *(_DWORD*)a2;
+            return 0;
+          }
+          nvidia_ed630((__int64)"CUDA", 0,
+                       "Invalid value provided for parameter '*size' on "
+                       "attribute %d. Expected value: %lu Given Value: %lu\n",
+                       7, 4);
+          return 1;
+        }
+        v22 = 4;
+        goto LABEL_53;
+      }
+    LABEL_48:
+      nvidia_ed630((__int64)"CUDA", 0,
+                   "Coredump settings attribute %d is unknown\n", a1);
+      return 1;
+    }
+    if ((unsigned int)CudaDriverRoutine_77ce0(3, v28, v29_.v30, &v27) != 0) {
+      return 1;
+    }
+    if (a2 != nullptr) {
+      if (*a4 != v27) {
+        nvidia_ed630((__int64)"CUDA", 0,
+                     "Invalid value provided for parameter '*size' on "
+                     "attribute %d. Expected value: %lu Given Value: %lu\n",
+                     3, v27);
+        return 1;
+      }
+      v8 = v29_.v29;
+      v11 = *(_DWORD*)(v29_.v29 + 16484);
+      if (v29_.v30[0] != 0) {
+        if (LOBYTE(v28[0]) != 0) {
+        LABEL_28:
+          v10 = v11 | 0x2F;
+          goto LABEL_64;
+        }
+      }
+      else if (*a2 != 0) {
+        goto LABEL_28;
+      }
+      v10 = v11 & 0xFFFFFFD0;
+      goto LABEL_64;
+    }
+  LABEL_49:
+    v22 = v27;
+    goto LABEL_53;
+  }
+  if (a1 != 1) {
+    if (a1 != 2) {
+      goto LABEL_48;
+    }
+    if ((unsigned int)CudaDriverRoutine_77ce0(2, v28, v29_.v30, &v27) != 0) {
+      return 1;
+    }
+    if (a2 == nullptr) {
+      goto LABEL_49;
+    }
+    if (*a4 != v27) {
+      nvidia_ed630((__int64)"CUDA", 0,
+                   "Invalid value provided for parameter '*size' on coredump "
+                   "attribute %d. Expected value: %lu Given Value: %lu\n",
+                   2, v27);
+      return 1;
+    }
+    v8 = v29_.v29;
+    v9 = *(_DWORD*)(v29_.v29 + 16484);
+    if (v29_.v30[0] != 0) {
+      if (LOBYTE(v28[0]) != 0) {
+      LABEL_22:
+        v10 = v9 & 0xFFFFFFEF;
+      LABEL_64:
+        *(_DWORD*)(v8 + 16484) = v10;
+        return 0;
+      }
+    }
+    else if (*a2 != 0) {
+      goto LABEL_22;
+    }
+    v10 = v9 | 0x10;
+    goto LABEL_64;
+  }
+  v17 = CudaDriverRoutine_77ce0(1, v28, v29_.v30, &v27);
+  result = 1;
+  if (v17 == 0) {
+    if (a2 == nullptr) {
+      goto LABEL_49;
+    }
+    if (*a4 == v27) {
+      v18 = v29_.v29;
+      v19 = (const char*)v28;
+      v20 = *(unsigned __int8*)(v29_.v29 + 16480);
+      if (v29_.v30[0] == 0) {
+        v19 = a2;
+      }
+      v21 = *(unsigned __int8*)v19;
+      *(_BYTE*)(v29_.v29 + 16480) = v21;
+      if (LOBYTE(v28[0]) != 0 || v21 == 0 ||
+          (_DWORD)(result = CudaDriverRoutine_97700(v18)) == 0) {
+        if (v20 != 0 || v21 == 0) {
+          if (v20 == 0 || v21 != 0) {
+            return 0;
+          }
+          result = CudaDriverRoutine_123ec0(v29_.v29);
+          if ((_DWORD)result == 0) {
+            v23 = v29_.v29;
+            if (*(_BYTE*)(v29_.v29 + 16374) == 0) {
+              v25 = CudaDriverRoutine_5ef60_alt1(*(_QWORD**)(v29_.v29 + 72), 0);
+              result = (*(__int64 (**)(void))(v25 + 34008))();
+              if ((_DWORD)result != 0) {
+                return result;
+              }
+              v23 = v29_.v29;
+            }
+            cuda_driver_misc_helpers_787e0(v23);
+            return 0;
+          }
+        }
+        else {
+          if (*(_QWORD*)(v29_.v29 + 232) != 0) {
+            return 0;
+          }
+          cuda_driver_misc_helpers_78750(v29_.v29);
+          if (*(_BYTE*)(v29_.v29 + 16374) != 0 ||
+              (v24 =
+                   CudaDriverRoutine_5ef60_alt1(*(_QWORD**)(v29_.v29 + 72), 0),
+               (_DWORD)(result = (*(__int64 (**)(void))(v24 + 34000))()) ==
+                   201) ||
+              (_DWORD)result == 0) {
+            result = nvidia_1236a0(v29_.v29);
+            if ((_DWORD)result == 0) {
+              return 0;
+            }
+          }
+        }
+      }
+    }
+  }
+  return result;
 }
 
 __int64 CudaDriverHr_98030(__int64 a1, char a2)
