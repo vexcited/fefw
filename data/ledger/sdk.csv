@@ -1686,7 +1686,7 @@ a5210,32,verified,src/nn/util/utf8_string.cpp,_ZN2nn4util17IsValidUtf8StringEPKc
 a5240,308,verified,src/nn/util/utf8_string.cpp,_ZN2nn4util29GetCodePointCountOfUtf8StringEPKcm
 a5380,360,verified,src/nn/util/utf8_string.cpp,_ZN2nn4util14CopyUtf8StringEPcmPKcmi
 a54f0,88,verified,src/nn/util/util_format_string.cpp,_ZN2nn4util13VFormatStringEPFvmPKciEmS2_St9__va_list
-a5560,952,verified,src/nn/util/util_format_string_impl.c,util_format_string_a5560
+a5560,1396,verified,src/nn/util/util_format_string_impl.c,util_format_string_a5560
 a63d0,168,verified,src/nn/util/util_format_string.cpp,_ZN2nn4util12FormatStringEPFvmPKciEmS2_z
 a6480,120,verified,src/nn/util/util_format_string.cpp,_ZN2nn4util9VSNPrintfEPcmPKcSt9__va_list
 a6500,108,verified,src/nn/util/util_format_string_impl.c,util_format_string_a6500
@@ -1715,7 +1715,7 @@ a7f40,76,verified,src/nn/util/utf.cpp,_ZN2nn4util43GetLengthOfConvertedStringUtf
 a8000,84,verified,src/nn/util/utf.cpp,_ZN2nn4util43GetLengthOfConvertedStringUtf16NativeToUtf8EPiPKt
 a8120,84,verified,src/nn/util/utf.cpp,_ZN2nn4util43GetLengthOfConvertedStringUtf16NativeToUtf8EPiPKDs
 a8240,56,verified,src/nn/util/utf.cpp,_ZN2nn4util24ConvertStringUtf8ToUtf32EPjiPKci
-a8280,440,verified,src/nn/util/utf.cpp,_ZN2nn4util12_GLOBAL__N_118ConvertUtf8ToUtf32EPmS2_PjiPKci
+a8280,400,disputed,src/nn/util/utf.cpp,_ZN2nn4util12_GLOBAL__N_118ConvertUtf8ToUtf32EPmS2_PjiPKci
 a84a0,56,verified,src/nn/util/utf.cpp,_ZN2nn4util24ConvertStringUtf8ToUtf32EPDiiPKci
 a84e0,128,verified,src/nn/util/utf.cpp,_ZN2nn4util24ConvertStringUtf8ToUtf32EPjiPKc
 a8560,128,verified,src/nn/util/utf.cpp,_ZN2nn4util24ConvertStringUtf8ToUtf32EPDiiPKc
@@ -8337,7 +8337,7 @@ ffee0,324,verified,src/nn/fs/unplaced.c,nn_fs_GetAndClearMemoryReportInfo
 1d90b4,488,verified,src/nn/sf/cmif/client/cmif_client_in_object_message.cpp,_ZN2nn2sf4cmif6client19CmifDomainProxyKindINS0_4hipc6client38Hipc2ClientSessionManagedProxyKindBaseINS5_18Hipc2ProxyKindBaseILNS4_6detail11MessageTypeE6EEEEEE7ProcessILb0EJNS2_6detail5InRawImEENSE_8InObjectENSE_6BufferILj21EEEEEENS_6ResultEPKNSC_14ProxyKindStateEDpNT0_9ParameterEi
 1d929c,392,verified,src/nn/sf/cmif/client/cmif_client_extra_message.cpp,_ZN2nn2sf4cmif6client19CmifDomainProxyKindINS0_4hipc6client38Hipc2ClientSessionManagedProxyKindBaseINS5_18Hipc2ProxyKindBaseILNS4_6detail11MessageTypeE6EEEEEE7ProcessILb0EJNS2_6detail6OutRawImEENSE_5InRawIhEENSE_14InRawReferenceINSE_7RawDataILm16ELm8EEEEENSH_ImEESN_EEENS_6ResultEPKNSC_14ProxyKindStateEDpNT0_9ParameterEi
 1d9424,380,verified,src/nn/sf/cmif/client/cmif_client_message.cpp,_ZN2nn2sf4cmif6client19CmifDomainProxyKindINS0_4hipc6client38Hipc2ClientSessionManagedProxyKindBaseINS5_18Hipc2ProxyKindBaseILNS4_6detail11MessageTypeE6EEEEEE7ProcessILb0EJNS2_6detail6OutRawImEESG_NSE_5InRawIhEENSE_14InRawReferenceINSE_7RawDataILm16ELm8EEEEEEEENS_6ResultEPKNSC_14ProxyKindStateEDpNT0_9ParameterEi
-1d95a0,380,verified,src/nn/sf/cmif/client/cmif_client_extra_message.cpp,_ZN2nn2sf4cmif6client19CmifDomainProxyKindINS0_4hipc6client38Hipc2ClientSessionManagedProxyKindBaseINS5_18Hipc2ProxyKindBaseILNS4_6detail11MessageTypeE6EEEEEE7ProcessILb0EJNS2_6detail6OutRawImEENSF_IjEENSE_5InRawIjEENSI_ImEESK_EEENS_6ResultEPKNSC_14ProxyKindStateEDpNT0_9ParameterEi
+1d95a0,380,disputed,src/nn/sf/cmif/client/cmif_client_extra_message.cpp,_ZN2nn2sf4cmif6client19CmifDomainProxyKindINS0_4hipc6client38Hipc2ClientSessionManagedProxyKindBaseINS5_18Hipc2ProxyKindBaseILNS4_6detail11MessageTypeE6EEEEEE7ProcessILb0EJNS2_6detail6OutRawImEENSF_IjEENSE_5InRawIjEENSI_ImEESK_EEENS_6ResultEPKNSC_14ProxyKindStateEDpNT0_9ParameterEi
 1d971c,472,verified,src/nn/sf/cmif/client/cmif_client_writer_handle_message.cpp,_ZN2nn2sf4cmif6client19CmifDomainProxyKindINS0_4hipc6client38Hipc2ClientSessionManagedProxyKindBaseINS5_18Hipc2ProxyKindBaseILNS4_6detail11MessageTypeE6EEEEEE7ProcessILb0EJNS2_6detail14InWriterHandleILb0EEENSE_5InRawImEEEEENS_6ResultEPKNSC_14ProxyKindStateEDpNT0_9ParameterEi
 1d98f4,496,verified,src/nn/sf/cmif/client/cmif_client_writer_handle_message.cpp,_ZN2nn2sf4cmif6client19CmifDomainProxyKindINS0_4hipc6client38Hipc2ClientSessionManagedProxyKindBaseINS5_18Hipc2ProxyKindBaseILNS4_6detail11MessageTypeE6EEEEEE7ProcessILb0EJNS2_6detail14InWriterHandleILb0EEENSE_5InRawImEENSH_IjEESJ_EEENS_6ResultEPKNSC_14ProxyKindStateEDpNT0_9ParameterEi
 1d9ae4,488,verified,src/nn/sf/cmif/client/cmif_client_extra_message.cpp,_ZN2nn2sf4cmif6client19CmifDomainProxyKindINS0_4hipc6client38Hipc2ClientSessionManagedProxyKindBaseINS5_18Hipc2ProxyKindBaseILNS4_6detail11MessageTypeE6EEEEEE7ProcessILb0EJNS2_6detail6BufferILj69EEENSE_5InRawIjEESI_SI_SI_SI_EEENS_6ResultEPKNSC_14ProxyKindStateEDpNT0_9ParameterEi
@@ -11323,10 +11323,10 @@ ffee0,324,verified,src/nn/fs/unplaced.c,nn_fs_GetAndClearMemoryReportInfo
 2b2fa0,412,verified,src/nn/sf/cmif/client/unplaced.c,nn_sf_cmif_client_2b2fa0
 2b3140,568,verified,src/nn/sf/cmif/client/unplaced.c,nn_sf_cmif_client_2b3140
 2b3390,316,verified,src/nn/sf/cmif/client/unplaced.c,nn_sf_cmif_client_2b3390
-2b34e0,444,verified,src/nn/sf/cmif/client/unplaced.c,nn_sf_cmif_client_2b34e0
+2b34e0,236,disputed,src/nn/sf/cmif/client/unplaced.c,nn_sf_cmif_client_2b34e0
 2b36d0,196,verified,src/nn/sf/cmif/client/unplaced.c,nn_sf_cmif_client_2b36d0
 2b37a0,852,verified,src/nn/sf/cmif/client/unplaced.c,nn_sf_cmif_client_2b37a0
-2b3cc0,440,verified,src/nn/sf/cmif/client/unplaced.c,nn_sf_cmif_client_2b3cc0
+2b3cc0,388,disputed,src/nn/sf/cmif/client/unplaced.c,nn_sf_cmif_client_2b3cc0
 2b3f00,360,verified,src/nn/sf/cmif/client/unplaced_8.c,nn_sf_cmif_client_2b3f00
 2b4120,760,verified,src/nn/sf/cmif/client/unplaced.c,nn_sf_cmif_client_2b4120
 2b4450,400,verified,src/nn/sf/cmif/client/unplaced.c,nn_sf_cmif_client_2b4450
@@ -11959,7 +11959,7 @@ ffee0,324,verified,src/nn/fs/unplaced.c,nn_fs_GetAndClearMemoryReportInfo
 2ef640,1668,verified,src/opus/silk/unplaced.c,opus_silk_2ef640
 2efd20,160,verified,src/opus/silk/NLSF_unpack.c,silk_NLSF_unpack
 2efdc0,804,disputed,src/opus/silk/unplaced_8.c,opus_silk_2efdc0
-2f0ec0,3588,verified,src/opus/silk/unplaced_4.c,opus_silk_2f0ec0
+2f0ec0,2224,disputed,src/opus/silk/unplaced_4.c,opus_silk_2f0ec0
 2f2920,2056,disputed,src/opus/silk/NSQ_del_dec.c,silk_noise_shape_quantizer_del_dec
 2f4190,40,verified,src/opus/silk/PLC.c,silk_PLC_Reset
 2f41c0,596,verified,src/opus/silk/PLC.c,silk_PLC
@@ -12653,7 +12653,7 @@ ffee0,324,verified,src/nn/fs/unplaced.c,nn_fs_GetAndClearMemoryReportInfo
 33c3e0,36,verified,src/fdk-aac/libAACdec/src/aacdec_drc.cpp,_ZN2nn5codec29aacDecoder_drcInitChannelDataEPNS0_15CDrcChannelDataE
 33c410,404,verified,src/fdk-aac/libAACdec/src/aacdec_drc.cpp,_ZN2nn5codec22aacDecoder_drcSetParamEPNS0_8CDrcInfoENS0_16AACDEC_DRC_PARAMEi
 33c5c0,2080,verified,src/fdk-aac/libAACdec/src/aacdec_drc_impl.c,nn_codec_aacDecoder_drcMarkPayload
-33d340,2072,verified,src/fdk-aac/libAACdec/src/aacdec_drc_impl.c,nn_codec_aacDecoder_drcApply
+33d340,1472,disputed,src/fdk-aac/libAACdec/src/aacdec_drc_impl.c,nn_codec_aacDecoder_drcApply
 33fe40,32,verified,src/fdk-aac/libAACdec/src/aacdec_drc.cpp,_ZN2nn5codec20aacDecoder_drcEpilogEPNS0_8CDrcInfoEPNS0_13FDK_BITSTREAMEPPNS0_28CAacDecoderStaticChannelInfoEhPhi
 33fe60,48,verified,src/fdk-aac/libAACdec/src/aacdec_drc.cpp,_ZN2nn5codec21aacDecoder_drcGetInfoEPNS0_8CDrcInfoEPaS3_
 33fe90,152,verified,src/fdk-aac/libAACdec/src/aacdec_drc.cpp,_ZN2nn5codec10FDKpushForEPNS0_13FDK_BITSTREAMEj
@@ -13618,12 +13618,12 @@ ffee0,324,verified,src/nn/fs/unplaced.c,nn_fs_GetAndClearMemoryReportInfo
 3f5280,552,verified,src/nn/ec/unplaced.c,nn_ec_EndConsumeRightData_3f5280
 3f54e0,632,verified,src/nn/ec/unplaced.c,nn_ec_EndConsumeRightData_3f54e0
 3f5790,8,verified,src/nn/sdk_trivial_forwarders.cpp,_Z14SdkStub_3f5790m
-3f57a0,3736,verified,src/nn/ec/unplaced.c,nn_ec_3f57a0
-3f6d60,996,verified,src/nn/ec/unplaced.c,nn_ec_3f6d60
+3f57a0,4020,verified,src/nn/ec/unplaced.c,nn_ec_3f57a0
+3f6d60,1044,verified,src/nn/ec/unplaced.c,nn_ec_3f6d60
 3f71a0,464,verified,src/nn/ec/unplaced.c,nn_ec_3f71a0
 3f7370,460,verified,src/nn/ec/unplaced.c,nn_ec_3f7370
-3f7540,228,verified,src/nn/ec/unplaced.c,nn_ec_3f7540
-3f7640,1004,verified,src/nn/ec/unplaced.c,nn_ec_3f7640
+3f7540,244,verified,src/nn/ec/unplaced.c,nn_ec_3f7540
+3f7640,1352,verified,src/nn/ec/unplaced.c,nn_ec_3f7640
 3f7b90,360,verified,src/nn/ec/unplaced.c,nn_ec_3f7b90
 3f7d00,468,verified,src/nn/ec/unplaced.c,nn_ec_3f7d00
 3f7f00,492,verified,src/nn/ec/unplaced.c,nn_ec_3f7f00
@@ -14189,10 +14189,10 @@ ffee0,324,verified,src/nn/fs/unplaced.c,nn_fs_GetAndClearMemoryReportInfo
 40f060,168,verified,src/nn/fontll/fontll_otf_kerning_table.cpp,_ZN2nn6fontll6detail11SkipXValuesEPPKht
 40f110,64,verified,src/nn/fontll/fontll_otf_kerning_table.cpp,_ZN2nn6fontll6detail27AddXValuesToOtfKerningTableEPiPNS0_15OtfKerningTableEtttt
 40f160,1172,verified,src/nn/fontll/fontll_otf_kerning_table.cpp,_ZN2nn6fontll6detail10ReadClass2EPiPNS0_15OtfKerningTableEPKvttttt
-40f6e0,2104,verified,src/nn/fontll/fontll_otf_kerning_table.cpp,_ZN2nn6fontll6detail10ReadClass1EPiPNS0_15OtfKerningTableEPKvtttttt
+40f6e0,2276,verified,src/nn/fontll/fontll_otf_kerning_table.cpp,_ZN2nn6fontll6detail10ReadClass1EPiPNS0_15OtfKerningTableEPKvtttttt
 410180,1416,verified,src/nn/fontll/fontll_otf_kerning_table.cpp,_ZN2nn6fontll6detail38PickKernXValuesFromGlyphPairAdjustmentEPiPNS0_15OtfKerningTableEPKvtPPKh
 410820,384,verified,src/nn/fontll/fontll_otf_kerning_table.cpp,_ZN2nn6fontll6detail38PickKernXValuesFromClassPairAdjustmentEPiPNS0_15OtfKerningTableEPKvtPPKh
-410ac0,1052,verified,src/nn/fontll/fontll_otf_kerning_table.cpp,_ZN2nn6fontll6detail15PickKernXValuesEPiPNS0_15OtfKerningTableEPKvttt
+410ac0,1076,verified,src/nn/fontll/fontll_otf_kerning_table.cpp,_ZN2nn6fontll6detail15PickKernXValuesEPiPNS0_15OtfKerningTableEPKvttt
 411680,956,verified,src/nn/fontll/fontll_otf_kerning_table.cpp,_ZN2nn6fontll6detail41PickPaltXValuesFromSinglePositioningValueEPiPNS0_15OtfKerningTableEPKvtPPKh
 411ac0,580,verified,src/nn/fontll/fontll_otf_kerning_table.cpp,_ZN2nn6fontll6detail43PickPaltXValuesFromArrayOfPositioningValuesEPiPNS0_15OtfKerningTableEPKvtPPKh
 411d60,836,verified,src/nn/fontll/fontll_otf_kerning_table.cpp,_ZN2nn6fontll6detail15PickPaltXValuesEPiPNS0_15OtfKerningTableEPKvttt
@@ -14647,7 +14647,7 @@ ffee0,324,verified,src/nn/fs/unplaced.c,nn_fs_GetAndClearMemoryReportInfo
 451c10,660,verified,src/nn/fontll/itype/fs_ttf_impl.c,get_os2
 451eb0,868,verified,src/nn/fontll/itype/fs_ttf_impl.c,load_ttf
 4529a0,444,verified,src/nn/fontll/itype/fs_ttf_impl.c,unload_ttf
-452b60,424,verified,src/nn/fontll/itype/fs_ttf_impl.c,fs_ttf_452b60
+452b60,496,verified,src/nn/fontll/itype/fs_ttf_impl.c,fs_ttf_452b60
 452da0,188,verified,src/nn/fontll/itype/fs_ttf.c,swap_ttc_header
 452e60,400,verified,src/nn/fontll/itype/fs_ttf.c,swap_ttf_header
 453000,124,verified,src/nn/fontll/itype/fs_ttf_impl.c,fs_ttf_453000
@@ -18060,7 +18060,7 @@ ffee0,324,verified,src/nn/fs/unplaced.c,nn_fs_GetAndClearMemoryReportInfo
 50b800,8,verified,src/nandroid/libstagefright/MPEG4Writer.cpp,_ZNK8nandroid11MPEG4Writer19isRealTimeRecordingEv
 50b810,152,verified,src/nandroid/libstagefright/MPEG4Writer.cpp,_ZN8nandroid11MPEG4Writer5Track13ThreadWrapperEPv
 50b8b0,16,verified,src/nandroid/libstagefright/MPEG4Writer.cpp,_ZN8nandroid11MPEG4Writer5Track5pauseEv
-50b8c0,3920,verified,src/nandroid/libstagefright/MPEG4Writer_impl.c,nandroid_MPEG4Writer_Track_threadEntry
+50b8c0,4144,verified,src/nandroid/libstagefright/MPEG4Writer_impl.c,nandroid_MPEG4Writer_Track_threadEntry
 50cd20,396,verified,src/nandroid/libstagefright/MPEG4Writer.cpp,_ZN8nandroid11MPEG4Writer5Track13parseParamSetEPKhmiPm
 50ceb0,120,verified,src/nandroid/libstagefright/MPEG4Writer.cpp,_ZN8nandroid11MPEG4Writer5Track24copyAVCCodecSpecificDataEPKhm
 50cf40,424,verified,src/nandroid/libstagefright/MPEG4Writer.cpp,_ZN8nandroid11MPEG4Writer5Track25parseAVCCodecSpecificDataEPKhm
@@ -18069,7 +18069,7 @@ ffee0,324,verified,src/nn/fs/unplaced.c,nn_fs_GetAndClearMemoryReportInfo
 50d340,128,verified,src/nandroid/libstagefright/MPEG4Writer.cpp,_ZN8nandroid11MPEG4Writer5Track15updateDriftTimeERKNS_2spINS_8MetaDataEEE
 50d3c0,56,verified,src/nandroid/libstagefright/MPEG4Writer.cpp,_ZN8nandroid11MPEG4Writer14getDriftTimeUsEv
 50d400,56,verified,src/nandroid/libstagefright/MPEG4Writer.cpp,_ZN8nandroid11MPEG4Writer14setDriftTimeUsEl
-50d440,1336,verified,src/nandroid/libstagefright/MPEG4Writer_impl.c,nandroid_MPEG4Writer_Track_dumpTimeStamps
+50d440,1340,verified,src/nandroid/libstagefright/MPEG4Writer_impl.c,nandroid_MPEG4Writer_Track_dumpTimeStamps
 50d980,96,verified,src/nandroid/libstagefright/MPEG4Writer_impl.c,MPEG4Writer_50d980
 50d9e0,140,verified,src/nandroid/libstagefright/MPEG4Writer_impl.c,MPEG4Writer_50d9e0
 50da70,100,verified,src/nandroid/libstagefright/MPEG4Writer.cpp,_ZN8nandroid11MPEG4Writer5Track19trackProgressStatusEli
@@ -18408,7 +18408,7 @@ ffee0,324,verified,src/nn/fs/unplaced.c,nn_fs_GetAndClearMemoryReportInfo
 528890,112,verified,src/nandroid/libstagefright/httplive/M3UParser.cpp,_ZNK8nandroid9M3UParser10MediaGroup12getTrackNameEmPNS_7AStringE
 528900,204,verified,src/nandroid/libstagefright/httplive/M3UParser.cpp,_ZNK8nandroid9M3UParser10MediaGroup12getActiveURIEPNS_7AStringEPKc
 5289d0,88,verified,src/nandroid/libstagefright/httplive/M3UParser.cpp,_ZNK8nandroid9M3UParser4Item7makeURLEPKc
-528a40,272,verified,src/nandroid/libstagefright/httplive/M3UParser_impl.c,M3UParser_528a40
+528a40,344,verified,src/nandroid/libstagefright/httplive/M3UParser_impl.c,M3UParser_528a40
 528d50,236,verified,src/nandroid/libstagefright/httplive/M3UParser.cpp,_ZN8nandroid9M3UParserC2EPKcPKvmm
 528e40,2412,verified,src/nandroid/libstagefright/httplive/M3UParser_impl.c,nandroid_M3UParser_parse
 529820,180,verified,src/nandroid/libstagefright/httplive/M3UParser.cpp,_ZN8nandroid9M3UParserD2Ev
@@ -18446,7 +18446,7 @@ ffee0,324,verified,src/nn/fs/unplaced.c,nn_fs_GetAndClearMemoryReportInfo
 52b4c0,1124,verified,src/nandroid/libstagefright/httplive/M3UParser.cpp,_ZN8nandroid9M3UParser15parseCipherInfoERKNS_7AStringEPNS_2spINS_8AMessageEEES3_
 52b940,164,verified,src/nandroid/libstagefright/httplive/M3UParser_impl.c,nandroid_M3UParser_parseMetaDataDuration
 52baf0,192,verified,src/nandroid/libstagefright/httplive/M3UParser.cpp,_ZN8nandroid9M3UParser26parseDiscontinuitySequenceERKNS_7AStringEPm
-52bbc0,1312,verified,src/nandroid/libstagefright/httplive/M3UParser_impl.c,nandroid_M3UParser_parseStreamInf
+52bbc0,1316,verified,src/nandroid/libstagefright/httplive/M3UParser_impl.c,nandroid_M3UParser_parseStreamInf
 52c2e0,444,verified,src/nandroid/libstagefright/httplive/M3UParser.cpp,_ZN8nandroid9M3UParser14parseByteRangeERKNS_7AStringEmPmS4_
 52c4a0,1692,verified,src/nandroid/libstagefright/httplive/M3UParser.cpp,_ZN8nandroid9M3UParser10parseMediaERKNS_7AStringE
 52cde0,696,verified,src/nandroid/libstagefright/httplive/M3UParser_impl.c,nandroid_M3UParser_parseMap
@@ -19183,7 +19183,7 @@ ffee0,324,verified,src/nn/fs/unplaced.c,nn_fs_GetAndClearMemoryReportInfo
 564900,4,verified,src/nandroid/extractors/mp4/ItemTable.cpp,_ZNK8nandroid6VectorINS_4heif11ExtentEntryEE12do_constructEPvm
 564910,4,verified,src/nandroid/extractors/mp4/ItemTable.cpp,_ZNK8nandroid6VectorINS_4heif11ExtentEntryEE10do_destroyEPvm
 564920,212,verified,src/nandroid/extractors/mp4/ItemTable.cpp,_ZNK8nandroid6VectorINS_4heif11ExtentEntryEE7do_copyEPvPKvm
-564a20,192,verified,src/nandroid/extractors/mp4/ItemTable.cpp,_ZNK8nandroid6VectorINS_4heif11ExtentEntryEE8do_splatEPvPKvm
+564a20,204,verified,src/nandroid/extractors/mp4/ItemTable.cpp,_ZNK8nandroid6VectorINS_4heif11ExtentEntryEE8do_splatEPvPKvm
 564b00,232,verified,src/nandroid/extractors/mp4/ItemTable.cpp,_ZNK8nandroid6VectorINS_4heif11ExtentEntryEE15do_move_forwardEPvPKvm
 564c00,200,verified,src/nandroid/extractors/mp4/ItemTable.cpp,_ZNK8nandroid6VectorINS_4heif11ExtentEntryEE16do_move_backwardEPvPKvm
 564cf0,100,verified,src/nandroid/extractors/mp4/ItemTable_impl.c,ItemTable_564cf0
@@ -22643,7 +22643,7 @@ ffee0,324,verified,src/nn/fs/unplaced.c,nn_fs_GetAndClearMemoryReportInfo
 5d3ac0,212,verified,src/nn/syncpt/unplaced_5.c,nn_syncpt_5d3ac0
 5d3be0,8,verified,src/nn/sdk_trivial.cpp,_Z14SdkStub_5d3be0m
 5d3c00,284,verified,src/nn/syncpt/syncpt_api_impl.c,syncpt_api_5d3c00
-5d3d50,444,verified,src/nn/syncpt/unplaced_5.c,nn_syncpt_5d3d50
+5d3d50,520,verified,src/nn/syncpt/unplaced_5.c,nn_syncpt_5d3d50
 5d4060,340,verified,src/nn/syncpt/unplaced_5.c,nn_syncpt_5d4060
 5d4210,12,verified,src/nn/sdk_trivial_wrappers.cpp,_Z14SdkStub_5d4210mmm
 5d4220,24,verified,src/nn/syncpt/syncpt_api_impl.c,syncpt_api_5d4220
@@ -26965,7 +26965,7 @@ ffee0,324,verified,src/nn/fs/unplaced.c,nn_fs_GetAndClearMemoryReportInfo
 67bb20,116,verified,src/nn/unnamed/s004_0.c,SdkHr_67bb20
 67bba0,652,verified,src/nn/unplaced_4.c,nn_67bba0
 67be50,360,verified,src/nn/unnamed/s004_0.c,SdkHr_67be50
-67bfc0,860,verified,src/nn/unplaced_4.c,nn_67bfc0
+67bfc0,1052,verified,src/nn/unplaced_4.c,nn_67bfc0
 67c480,116,verified,src/nn/unnamed/s004_0.c,SdkHr_67c480
 67c500,816,verified,src/nn/unplaced_4.c,nn_67c500
 67c9a0,368,verified,src/nn/unnamed/s004_0.c,SdkHr_67c9a0
@@ -27102,7 +27102,7 @@ ffee0,324,verified,src/nn/fs/unplaced.c,nn_fs_GetAndClearMemoryReportInfo
 687900,288,verified,src/nn/unnamed/s004_1.c,SdkHr_687900
 687a20,1296,verified,src/nn/unnamed/s004_1.c,SdkHr_687a20
 687fa0,232,verified,src/nn/unnamed/s004_1.c,SdkHr_687fa0
-688090,732,verified,src/nn/unnamed/t002_0.c,SdkHr_688090
+688090,712,disputed,src/nn/unnamed/t002_0.c,SdkHr_688090
 688370,16,verified,src/nn/unnamed/u000_2.c,SdkHr_688370
 688380,164,verified,src/nn/unnamed/s004_1.c,SdkHr_688380
 6884a0,540,verified,src/nn/unnamed/s004_2.c,SdkHr_6884a0
@@ -27484,7 +27484,7 @@ ffee0,324,verified,src/nn/fs/unplaced.c,nn_fs_GetAndClearMemoryReportInfo
 6a9480,220,verified,src/nn/unnamed/t002_0.c,SdkHr_6a9480
 6a95c0,236,verified,src/nn/unnamed/t002_0.c,SdkHr_6a95c0
 6a97c0,308,verified,src/nn/unplaced_5.c,nn_6a97c0
-6a9920,328,verified,src/nn/unnamed/t002_0.c,SdkHr_6a9920
+6a9920,336,verified,src/nn/unnamed/t002_0.c,SdkHr_6a9920
 6a9a90,8,verified,src/nn/sdk_trivial.cpp,_Z14SdkStub_6a9a90v
 6a9aa0,8,verified,src/nn/sdk_trivial.cpp,_Z14SdkStub_6a9aa0v
 6a9ab0,8,verified,src/nn/sdk_trivial.cpp,_Z14SdkStub_6a9ab0v
@@ -27515,7 +27515,7 @@ ffee0,324,verified,src/nn/fs/unplaced.c,nn_fs_GetAndClearMemoryReportInfo
 6ab9e0,200,verified,src/nn/unnamed/t002_0.c,SdkHr_6ab9e0
 6abac0,228,verified,src/nn/unnamed/t002_0.c,SdkHr_6abac0
 6abbc0,376,verified,src/nn/unnamed/t002_0.c,SdkHr_6abbc0
-6abd60,248,verified,src/nn/unnamed/t002_0.c,SdkHr_6abd60
+6abd60,248,disputed,src/nn/unnamed/t002_0.c,SdkHr_6abd60
 6ac200,572,verified,src/nn/unplaced_5.c,nn_6ac200
 6ac450,8,verified,src/nn/sdk_trivial.cpp,_Z14SdkStub_6ac450v
 6ac460,276,verified,src/nn/unnamed/t002_0.c,SdkHr_6ac460
@@ -27771,7 +27771,7 @@ ffee0,324,verified,src/nn/fs/unplaced.c,nn_fs_GetAndClearMemoryReportInfo
 6b6810,132,verified,src/nn/chat/unplaced_6.c,nn_chat_6b6810
 6b68f0,132,verified,src/nn/chat/unplaced_6.c,nn_chat_6b68f0
 6b6a30,108,verified,src/nn/chat/unplaced_6.c,nn_chat_6b6a30
-6b6b00,248,verified,src/nn/chat/unplaced_6.c,nn_chat_6b6b00
+6b6b00,284,verified,src/nn/chat/unplaced_6.c,nn_chat_6b6b00
 6b6c50,180,verified,src/nn/chat/unplaced_6.c,nn_chat_6b6c50
 6b6e90,120,verified,src/nn/chat/unplaced_6.c,nn_chat_6b6e90
 6b7030,112,verified,src/nn/chat/unplaced_6.c,nn_chat_6b7030
@@ -31162,13 +31162,13 @@ ffee0,324,verified,src/nn/fs/unplaced.c,nn_fs_GetAndClearMemoryReportInfo
 769de0,8,verified,src/nn/streamplay/detail/streamplay_hid_shared_memory_accessor.cpp,_ZN2nn10streamplay6detail23HidSharedMemoryAccessorC2EPKNS1_21HidSharedMemoryFormatE
 769df0,92,verified,src/nn/streamplay/detail/streamplay_hid_shared_memory_accessor.cpp,_ZNK2nn10streamplay6detail23HidSharedMemoryAccessor19GetGuestPadStyleSetERKNS0_10GuestPadIdE
 769e60,320,disputed,src/nn/streamplay/detail/streamplay_hid_shared_memory_accessor.cpp,_ZNK2nn10streamplay6detail23HidSharedMemoryAccessor26GetGuestPadControllerColorEPNS_3hid19NpadControllerColorERKNS0_10GuestPadIdE
-76a000,308,verified,src/nn/streamplay/detail/streamplay_hid_shared_memory_accessor.cpp,_ZNK2nn10streamplay6detail23HidSharedMemoryAccessor26GetGuestPadControllerColorEPNS_3hid19NpadControllerColorES5_RKNS0_10GuestPadIdE
+76a000,308,disputed,src/nn/streamplay/detail/streamplay_hid_shared_memory_accessor.cpp,_ZNK2nn10streamplay6detail23HidSharedMemoryAccessor26GetGuestPadControllerColorEPNS_3hid19NpadControllerColorES5_RKNS0_10GuestPadIdE
 76a1a0,344,verified,src/nn/streamplay/detail/streamplay_hid_shared_memory_accessor.cpp,_ZNK2nn10streamplay6detail23HidSharedMemoryAccessor17GetGuestPadStatesEPNS0_13GuestPadStateINS_3hid16NpadFullKeyStateEEEiRKNS0_10GuestPadIdE
 76a340,344,verified,src/nn/streamplay/detail/streamplay_hid_shared_memory_accessor.cpp,_ZNK2nn10streamplay6detail23HidSharedMemoryAccessor17GetGuestPadStatesEPNS0_13GuestPadStateINS_3hid17NpadHandheldStateEEEiRKNS0_10GuestPadIdE
 76a4e0,344,verified,src/nn/streamplay/detail/streamplay_hid_shared_memory_accessor.cpp,_ZNK2nn10streamplay6detail23HidSharedMemoryAccessor17GetGuestPadStatesEPNS0_13GuestPadStateINS_3hid16NpadJoyDualStateEEEiRKNS0_10GuestPadIdE
 76a680,352,verified,src/nn/streamplay/detail/streamplay_hid_shared_memory_accessor.cpp,_ZNK2nn10streamplay6detail23HidSharedMemoryAccessor17GetGuestPadStatesEPNS0_13GuestPadStateINS_3hid16NpadJoyLeftStateEEEiRKNS0_10GuestPadIdE
 76a840,352,verified,src/nn/streamplay/detail/streamplay_hid_shared_memory_accessor.cpp,_ZNK2nn10streamplay6detail23HidSharedMemoryAccessor17GetGuestPadStatesEPNS0_13GuestPadStateINS_3hid17NpadJoyRightStateEEEiRKNS0_10GuestPadIdE
-76aa00,636,verified,src/nn/streamplay/detail/streamplay_hid_shared_memory_accessor.cpp,_ZNK2nn10streamplay6detail23HidSharedMemoryAccessor27GetGuestSixAxisSensorStatesEPNS0_23GuestSixAxisSensorStateEiRKNS0_24GuestSixAxisSensorHandleE
+76aa00,668,verified,src/nn/streamplay/detail/streamplay_hid_shared_memory_accessor.cpp,_ZNK2nn10streamplay6detail23HidSharedMemoryAccessor27GetGuestSixAxisSensorStatesEPNS0_23GuestSixAxisSensorStateEiRKNS0_24GuestSixAxisSensorHandleE
 76ad00,508,verified,src/nn/streamplay/detail/streamplay_hid_shared_memory_accessor.cpp,_ZNK2nn10streamplay6detail23HidSharedMemoryAccessor18GetGuestJcmsStatesEPNS0_14GuestJcmsStateEiRKNS0_15GuestJcmsHandleE
 76af40,100,verified,src/nn/streamplay/detail/streamplay_hid_shared_memory_accessor.cpp,_ZNK2nn10streamplay6detail23HidSharedMemoryAccessor26GetGuestMergedNmouseHandleEPNS0_17GuestNmouseHandleENS0_7GuestIdE
 76afb0,360,verified,src/nn/streamplay/detail/streamplay_hid_shared_memory_accessor.cpp,_ZNK2nn10streamplay6detail23HidSharedMemoryAccessor21GetGuestNmouseHandlesEPNS0_17GuestNmouseHandleEiRKNS0_10GuestPadIdE
