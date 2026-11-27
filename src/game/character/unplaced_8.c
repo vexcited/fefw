@@ -249,7 +249,7 @@ float32x4_t game_character_fc6740(_QWORD* a1, int a2, int8x16_t* a3)
   int8x16x2_t v92;
 
   PSEUDO_LOW_LANE128(result, n128_f32, fabsf(LANES128(*(a3)).n128_f32[3]));
-  if (LANES128(result).n128_f32[0] <= 0x1.fff2e40000000p-1f) {
+  if (!(LANES128(result).n128_f32[0] > 0x1.fff2e40000000p-1f)) {
     {
       v14 = (__int128*)(a1[4] + ((__int64)a2 << 6));
       __asm__ volatile("" ::"r"(v14));
@@ -4756,7 +4756,7 @@ void game_character_10fbc10(float32x4_t* a1)
                     .n128_u64[0]),
       *(float32x2_t*)&v68);
   *(float32x2_t*)&v68 = vpadd_f32(*(float32x2_t*)&v68, *(float32x2_t*)&v68);
-  if (*(float*)&v68 > 1.0) {
+  if (!(*(float*)&v68 <= 1.0)) {
     v69 = 1.0;
   }
   else {

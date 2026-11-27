@@ -850,7 +850,7 @@ LABEL_190:
   v127 = (float)(*(float*)(game_script_hub_g_frame_counter + 160) *
                  0x1.0aef000000000p+4f) /
          0x1.f400000000000p+9f;
-  if (*(float*)(a1 + 8) <= 0x0.0p+0f) {
+  if (!(*(float*)(a1 + 8) > 0x0.0p+0f)) {
     DungeonEnemyTrajectory_fa03f0(a1, 0);
     goto LABEL_276;
   }

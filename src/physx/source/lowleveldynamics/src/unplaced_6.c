@@ -446,7 +446,7 @@ __attribute__((swiftcall)) void physx_source_lowleveldynamics_src_323800(
       }
       v77 = v76 * a10;
       v164 = v25;
-      if (v77 <= 0x1.0c6f7a0000000p-20f) {
+      if (!(v77 > 0x1.0c6f7a0000000p-20f)) {
         v88 = v151;
         v86 = v152;
         v87 = v150;

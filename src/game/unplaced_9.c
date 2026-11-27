@@ -8164,7 +8164,7 @@ LABEL_11:
     *(_OWORD*)LANES64(*(a2)).n64_u64 = v28;
     if (v25 != 0x0.0p+0f) {
       v37 = (float)(PSEUDO_UNFUSED(v36 * v36)) + (float)(v35 * v35);
-      if (v37 > 0x0.0p+0f) {
+      if (!(v37 <= 0x0.0p+0f)) {
         v38 = v7 * (float)(v13 * (float)(v25 * (float)(0x1.0000000000000p+0f /
                                                        sqrtf(v37))));
         *(float*)&v28 = v35 + (float)(v35 * v38);
@@ -8186,7 +8186,7 @@ LABEL_11:
     *(_OWORD*)LANES64(*(a2)).n64_u64 = v28;
     if (v25 != 0x0.0p+0f) {
       v33 = (float)(PSEUDO_UNFUSED(v32 * v32)) + (float)(v31 * v31);
-      if (v33 > 0x0.0p+0f) {
+      if (!(v33 <= 0x0.0p+0f)) {
         v34 = v7 * (float)(v13 * (float)(v25 * (float)(0x1.0000000000000p+0f /
                                                        sqrtf(v33))));
         *(float*)&v28 = v32 + (float)(v32 * v34);
@@ -8207,7 +8207,7 @@ LABEL_11:
     *(_OWORD*)LANES64(*(a2)).n64_u64 = v28;
     if (v25 != 0x0.0p+0f) {
       v29 = (float)(PSEUDO_UNFUSED(v27 * v27)) + (float)(v26 * v26);
-      if (v29 > 0x0.0p+0f) {
+      if (!(v29 <= 0x0.0p+0f)) {
         v30 = v7 * (float)(v13 * (float)(v25 * (float)(0x1.0000000000000p+0f /
                                                        sqrtf(v29))));
         *((float*)&v28 + 1) = v26 + (float)(v26 * v30);

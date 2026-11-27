@@ -724,7 +724,7 @@ void game_zview_d0eb60(unsigned __int64 a1)
     v21 = z_;
   }
   v27 = fabsf(*(float*)(*(_QWORD*)(v26 + 8) + 228LL));
-  if (*(float*)&v21 > 0x0.0p+0f) {
+  if (!(*(float*)&v21 <= 0x0.0p+0f)) {
     *(float*)&v21 = *(float*)&v21 - v27;
     if (!(*(float*)&v21 < 0x0.0p+0f)) {
       goto LABEL_24;
@@ -733,7 +733,7 @@ void game_zview_d0eb60(unsigned __int64 a1)
   }
   if (*(float*)&v21 < 0x0.0p+0f) {
     *(float*)&v21 = *(float*)&v21 + v27;
-    if (*(float*)&v21 > 0x0.0p+0f) {
+    if (!(*(float*)&v21 <= 0x0.0p+0f)) {
     LABEL_23:
       *(_QWORD*)&v21 = 0;
     }
@@ -772,7 +772,7 @@ LABEL_24:
                        *(float*)&v28 / (float)(unsigned int)v33);
     }
   }
-  if (*(float*)(a1 + 664) > 0x0.0p+0f ||
+  if (!(*(float*)(a1 + 664) <= 0x0.0p+0f)||
       (*(_BYTE*)(a1 + 194) & 1) == 0 &&
           (*(_BYTE*)(*(_QWORD*)(a1 + 8) + 387LL) & 0x80) == 0) {
     goto LABEL_59;
@@ -797,7 +797,7 @@ LABEL_24:
         else {
           v44 = v42[1];
           *(float*)&v21 = v42[2] / v43;
-          if (v44 > 0x0.0p+0f) {
+          if (!(v44 <= 0x0.0p+0f)) {
             *(float*)&v21 = GameRoutine_1a0a550(*(float*)&v21, v44),
             v321 =
                 COERCE_AS(__typeof__(v321), PSEUDO_REGISTER(float, "s1", "=w"));
@@ -2774,7 +2774,7 @@ LABEL_440:
                                PSEUDO_REGISTER(float, "s1", "=w"));
           v325 = *(_QWORD*)(v322 + 328);
           v326 = *(float*)(v325 + 192);
-          if (v326 < 0x1.3333340000000p-3f) {
+          if (!(v326 >= 0x1.3333340000000p-3f)) {
             v326 = 0x1.3333340000000p-3f;
           }
           *(float*)(v325 + 192) = v326;

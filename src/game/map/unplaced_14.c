@@ -684,12 +684,12 @@ __int64 game_map_100d7e0(__int64 a1, float a2)
   if (*(_BYTE*)(a1 + 128) == 1) {
     v78 = *(float*)(a1 + 208);
     v79 = fabsf(a2 * 0x1.0000000000000p+2f);
-    if (v78 <= 0x0.0p+0f) {
+    if (!(v78 > 0x0.0p+0f)) {
       if (v78 >= 0x0.0p+0f) {
         goto LABEL_45;
       }
       v78 = v79 + v78;
-      if (v78 <= 0x0.0p+0f) {
+      if (!(v78 > 0x0.0p+0f)) {
         goto LABEL_45;
       }
     }

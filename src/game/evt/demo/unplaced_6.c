@@ -2900,7 +2900,7 @@ void game_evt_demo_11c5ae0(__int64 a1)
   v32 = *(float*)(a1 + 204);
   v33 =
       0x1.e000000000000p+5f / (float)*(int*)(*game_g_frame_clock_ptr[0] + 476);
-  if (v33 <= 0x0.0p+0f) {
+  if (!(v33 > 0x0.0p+0f)) {
     v34 = 0x1.119ce00000000p-6f;
   }
   else {

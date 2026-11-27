@@ -4741,12 +4741,12 @@ LABEL_43:
   if (!v1) {
   LABEL_47:
     v41 = fabsf(v30 / 0x1.8000000000000p+2f);
-    if (v40 <= 0x1.0000000000000p+0f) {
+    if (!(v40 > 0x1.0000000000000p+0f)) {
       if (v40 >= 0x1.0000000000000p+0f) {
         goto LABEL_53;
       }
       v40 = v41 + v40;
-      if (v40 <= 0x1.0000000000000p+0f) {
+      if (!(v40 > 0x1.0000000000000p+0f)) {
         goto LABEL_53;
       }
     }
@@ -4868,7 +4868,7 @@ LABEL_43:
       goto LABEL_75;
     }
     v72 = LANES128(v59).n128_f32[0] + v70;
-    if (v72 <= LANES128(v54).n128_f32[0]) {
+    if (!(v72 > LANES128(v54).n128_f32[0])) {
       goto LABEL_75;
     }
   LABEL_73:
@@ -4937,7 +4937,7 @@ LABEL_87:
       goto LABEL_94;
     }
     v82 = LANES128(v58).n128_f32[0] + v81;
-    if (v82 <= LANES128(v53).n128_f32[0]) {
+    if (!(v82 > LANES128(v53).n128_f32[0])) {
       goto LABEL_94;
     }
   LABEL_92:
@@ -4968,12 +4968,12 @@ LABEL_94:
   }
 LABEL_100:
   v84 = fabsf(v78 * fabsf(LANES128(v80).n128_f32[2]));
-  if (LANES128(v58).n128_f32[2] <= LANES128(v53).n128_f32[2]) {
+  if (!(LANES128(v58).n128_f32[2] > LANES128(v53).n128_f32[2])) {
     if (LANES128(v58).n128_f32[2] >= LANES128(v53).n128_f32[2]) {
       goto LABEL_106;
     }
     LANES128(v58).n128_f32[0] = LANES128(v58).n128_f32[2] + v84;
-    if ((float)(LANES128(v58).n128_f32[2] + v84) <= LANES128(v53).n128_f32[2]) {
+    if (!((float)(LANES128(v58).n128_f32[2] + v84) > LANES128(v53).n128_f32[2])) {
       goto LABEL_106;
     }
   }
@@ -5106,7 +5106,7 @@ LABEL_129:
           v104 = 0x1.0000000000000p+0f;
         }
         v105 = v104 * -0x1.3333340000000p-2f;
-        if (v103 <= 0x0.0p+0f) {
+        if (!(v103 > 0x0.0p+0f)) {
           v106 = v105;
         }
         else {

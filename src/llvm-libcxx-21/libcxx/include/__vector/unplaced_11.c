@@ -2393,7 +2393,7 @@ void llvm_libcxx_21_libcxx_include___vector_bd5170(__int64 a1)
                                 LANES128(v25).n128_f32[1]));
           if ((float)(v31 - v30) < -0x1.0000000000000p-23f) {
             v32 = a1;
-            if ((float)(v31 + v30) > 0x1.0000000000000p-23f) {
+            if (!((float)(v31 + v30) <= 0x1.0000000000000p-23f)) {
               LANES128(v25).n128_f32[0] =
                   LANES128(v25).n128_f32[0] + LANES128(v25).n128_f32[0];
               v33 = (float)(LANES128(v25).n128_f32[0] *
@@ -2463,7 +2463,7 @@ void llvm_libcxx_21_libcxx_include___vector_bd5170(__int64 a1)
                       if (v37 >= 0x0.0p+0f) {
                         if (v36 >= 0x0.0p+0f) {
                           v167 = v37 / v36;
-                          v117 = v37 < v36;
+                          v117 = !(v37 >= v36);
                           v168 = v36 / v37;
                           v169 = *(float*)((char*)((_UNKNOWN**)0x8LL) +
                                            (_QWORD)GameData_212c2f0);
