@@ -574,7 +574,7 @@ void ShapeAnimObj_Unknown3(__int64 a1, long double a2)
     v3 = *(_DWORD*)(a1 + 60);
     v4 = *(unsigned __int16*)(a1 + 100);
     v6 = *(_QWORD*)(a1 + 72);
-    if (v3 >= 1 && v3 <= *(_DWORD*)(a1 + 56)) {
+    if (v3 >= 1 && v3 <= *(int*)(a1 + 56)) {
       if (*(_WORD*)(a1 + 100) != 0) {
         v12 = 4 * v4;
         v13 = 36;

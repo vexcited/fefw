@@ -396,7 +396,7 @@ __int64 nvidia_dlss_rel_source_2f460(__int64 a1)
   v14 = *(_DWORD*)(a1 + 184);
   v15 = *(_DWORD*)(a1 + 188);
   if (!v13 || v14 != *(_DWORD*)(a1 + 280) || v3 != *(_DWORD*)(a1 + 284) ||
-      v2 != *(_DWORD*)(a1 + 288) || v11 < *(_DWORD*)(a1 + 292) ||
+      v2 != *(_DWORD*)(a1 + 288) || v11 < (int)(*(_DWORD*)(a1 + 292)) ||
       v14 != *(_DWORD*)(a1 + 136) || v15 != v3 / 2 || v10 != v2 / 2 ||
       *(_DWORD*)(a1 + 2116) != *(_DWORD*)(a1 + 428) ||
       *(_DWORD*)(a1 + 2120) != *(_DWORD*)(a1 + 432) ||
@@ -413,7 +413,7 @@ __int64 nvidia_dlss_rel_source_2f460(__int64 a1)
           *(_DWORD*)(a1 + 484) == v33 && v32 == *(_DWORD*)(a1 + 328) &&
           v15 == *(_DWORD*)(a1 + 332) && v10 == *(_DWORD*)(a1 + 336);
     v39 = v10 + (v10 >> 31);
-    v41 = v38 && v33 >= *(_DWORD*)(a1 + 340) && v32 == v14;
+    v41 = v38 && v33 >= (int)(*(_DWORD*)(a1 + 340)) && v32 == v14;
     v42 = v39 >> 1;
     v53 = v41 && *(_DWORD*)(a1 + 236) == v15 / 2 &&
           *(_DWORD*)(a1 + 240) == v42 &&

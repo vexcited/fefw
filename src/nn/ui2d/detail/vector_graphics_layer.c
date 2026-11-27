@@ -46,7 +46,7 @@ __int64 VectorGraphicsLayer_Unknown8(__int64 a1, __int64 a2)
     v6 = GameRoutine_59f870(a2, 0x10u, 64) + v5;
     v5 = v6 + GameRoutine_59f870(a2, 0x10u, 16);
     ++v4;
-  } while (v4 < *(_DWORD*)(a1 + 80));
+  } while (v4 < *(int*)(a1 + 80));
   return v5;
 }
 

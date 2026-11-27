@@ -1541,7 +1541,7 @@ __int64 SdkHr_673180(__int64* a1, int* a2, _QWORD* a3, __int64** a4)
           goto LABEL_6;
         }
         v11 = *(_DWORD*)(v4 + 28);
-        if (v6 >= v11 && (v6 > v11 || v7 >= *(_DWORD*)(v4 + 32))) {
+        if (v6 >= v11 && (v6 > v11 || v7 >= *(int*)(v4 + 32))) {
           break;
         }
       }
@@ -1552,7 +1552,7 @@ __int64 SdkHr_673180(__int64* a1, int* a2, _QWORD* a3, __int64** a4)
       }
     }
     v12 = *(_DWORD*)(v4 + 28);
-    if (v12 >= v6 && (v12 > v6 || *(_DWORD*)(v4 + 32) >= v7)) {
+    if (v12 >= v6 && (v12 > v6 || (int)(*(_DWORD*)(v4 + 32)) >= v7)) {
       return 0;
     }
   LABEL_6:

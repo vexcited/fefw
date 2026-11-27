@@ -672,7 +672,7 @@ float MaterialAnimObj_Unknown3(__int64 a1)
     v2 = *(unsigned __int16*)(a1 + 100);
     if (*(_WORD*)(a1 + 100) != 0) {
       v4 = *(_DWORD*)(a1 + 60);
-      if (v4 >= 1 && v4 <= *(_DWORD*)(a1 + 56)) {
+      if (v4 >= 1 && v4 <= *(int*)(a1 + 56)) {
         v15 = v2 << 6;
         v16 = 0;
         v17 = 0;

@@ -486,7 +486,7 @@ __int64 nvidia_dlss_rel_source_features_dlaa_604e0(__int64 a1, __int64 a2,
   }
   v19 = *(_DWORD*)(a3 + 516);
   if ((v9 & 1) == 0 && (*(_DWORD*)(a3 + 512) <= *(_DWORD*)(a3 + 104)
-                            ? (v20 = v19 <= *(_DWORD*)(a3 + 108))
+                            ? (v20 = v19 <= *(int*)(a3 + 108))
                             : (v20 = false),
                         v20)) {
     *a5 = a4;

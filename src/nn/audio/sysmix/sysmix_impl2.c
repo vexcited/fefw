@@ -275,7 +275,7 @@ __int64 sysmix_2b18e0(__int64 a1, __int64 a2, unsigned int a3)
     if (v17 == 0) {
       v17 = *(_DWORD*)(v18 + 24);
     }
-    if ((*v19 & 0x80000000) == 0 && *v19 <= v17) {
+    if ((*v19 & 0x80000000) == 0 && (int)(*v19) <= v17) {
       return 0;
     }
   LABEL_32:

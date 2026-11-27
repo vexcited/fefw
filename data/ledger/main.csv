@@ -9565,7 +9565,7 @@ fff90,116,verified,src/snd/api.cpp,_ZN3snd10startPitchERKNS_3fnd10WeakHandleERKN
 2b7980,12,verified,src/physx/source/physxextensions/src/serialization/Binary/SnBinarySerialization.cpp,_ZN5physx22PxSerializationContextD2Ev
 2b7990,12,verified,src/nn/atk/sub_mix.c,SubMix_Unknown8
 2b79a0,12,verified,src/nn/atk/sub_mix.c,SubMix_Unknown9
-2b79b0,16,verified,src/nn/atk/sub_mix.c,SubMix_2b79b0
+2b79b0,16,disputed,src/nn/atk/sub_mix.c,SubMix_2b79b0
 2b79c0,8,verified,src/game/game_trivial.cpp,_Z15GameStub_2b79c0mh
 2b79e0,1512,verified,src/nn/atk/sub_mix.c,SubMix_2b79e0
 2b80a0,160,verified,src/nn/atk/sub_mix.c,SubMix_Unknown13
@@ -15667,7 +15667,7 @@ fff90,116,verified,src/snd/api.cpp,_ZN3snd10startPitchERKNS_3fnd10WeakHandleERKN
 57be90,16,verified,src/nn/ui2d/layout_ex.c,LayoutEx_Unknown5
 57bea0,88,verified,src/nn/ui2d/layout_ex.c,LayoutEx_Unknown6
 57bf00,72,verified,src/nn/ui2d/layout_ex.c,LayoutEx_Unknown7
-57bf60,780,verified,src/nn/ui2d/layout_ex.c,LayoutEx_Unknown8
+57bf60,700,verified,src/nn/ui2d/layout_ex.c,LayoutEx_Unknown8
 57c460,156,verified,src/nn/ui2d/layout_ex.c,LayoutEx_Unknown12
 57c500,136,verified,src/nn/ui2d/layout_ex.c,LayoutEx_Unknown13
 57c5a0,148,verified,src/game/unnamed/b003_0.c,GameHr_57c5a0
@@ -15827,7 +15827,7 @@ fff90,116,verified,src/snd/api.cpp,_ZN3snd10startPitchERKNS_3fnd10WeakHandleERKN
 5841c0,60,verified,src/nn/ui2d/layout_ex.c,LayoutEx_Unknown18
 584200,180,verified,src/nn/ui2d/layout_ex.c,LayoutEx_Unknown28
 5842c0,112,verified,src/nn/ui2d/layout_ex.c,LayoutEx_5842c0
-584330,232,verified,src/nn/ui2d/layout_ex.c,LayoutEx_Unknown27
+584330,136,verified,src/nn/ui2d/layout_ex.c,LayoutEx_Unknown27
 584420,216,verified,src/nn/ui2d/layout_ex.c,LayoutEx_584420
 584500,108,verified,src/nn/ui2d/runtime_type_info.cpp,_ZNK2nn4ui2d8LayoutEx18GetRuntimeTypeInfoEv
 584570,48,verified,src/memory/new_delete.cpp,deleting destructor at 0x584570
@@ -16840,15 +16840,15 @@ fff90,116,verified,src/snd/api.cpp,_ZN3snd10startPitchERKNS_3fnd10WeakHandleERKN
 5e4190,220,verified,src/nn/g3d/model_anim_obj.c,ModelAnimObj_Unknown12
 5e4270,232,verified,src/nn/g3d/camera_anim_obj.c,CameraAnimObj_5e4270
 5e4360,232,verified,src/nn/g3d/model_anim_obj.c,ModelAnimObj_Unknown16
-5e4450,60,verified,src/nn/g3d/model_anim_obj.c,ModelAnimObj_Unknown18
+5e4450,60,disputed,src/nn/g3d/model_anim_obj.c,ModelAnimObj_Unknown18
 5e4490,72,verified,src/nn/g3d/camera_anim_obj.c,CameraAnimObj_5e4490
-5e44e0,72,verified,src/nn/g3d/camera_anim_obj.c,CameraAnimObj_5e44e0
+5e44e0,72,disputed,src/nn/g3d/camera_anim_obj.c,CameraAnimObj_5e44e0
 5e4530,172,verified,src/nn/g3d/model_anim_obj.c,ModelAnimObj_Unknown24
 5e45e0,172,verified,src/game/unnamed/b003_2.c,GameHr_5e45e0
 5e4690,172,verified,src/game/unnamed/b003_2.c,GameHr_5e4690
 5e4740,28,verified,src/nn/g3d/model_anim_obj.c,ModelAnimObj_Unknown30
 5e4760,28,verified,src/nn/g3d/model_anim_obj.c,ModelAnimObj_Unknown32
-5e4780,28,verified,src/nn/g3d/model_anim_obj.c,ModelAnimObj_Unknown34
+5e4780,28,disputed,src/nn/g3d/model_anim_obj.c,ModelAnimObj_Unknown34
 5e47a0,184,verified,src/nn/g3d/model_anim_obj.c,ModelAnimObj_Unknown36
 5e4860,40,verified,src/nn/g3d/model_anim_obj.c,ModelAnimObj_Unknown42
 5e4890,268,verified,src/nn/g3d/camera_anim_obj.c,CameraAnimObj_5e4890
@@ -16867,7 +16867,7 @@ fff90,116,verified,src/snd/api.cpp,_ZN3snd10startPitchERKNS_3fnd10WeakHandleERKN
 5e6300,220,verified,src/game/unnamed/b003_3.c,GameHr_5e6300
 5e63e0,76,verified,src/game/unnamed/b003_3.c,GameHr_5e63e0
 5e6430,136,verified,src/nn/g3d/camera_anim_obj.c,CameraAnimObj_5e6430
-5e64c0,528,verified,src/nn/g3d/camera_anim_obj.c,CameraAnimObj_5e64c0
+5e64c0,528,disputed,src/nn/g3d/camera_anim_obj.c,CameraAnimObj_5e64c0
 5e6720,280,verified,src/game/unnamed/b003_3.c,GameHr_5e6720
 5e6840,524,verified,src/game/unnamed/b003_3.c,GameHr_5e6840
 5e6a60,128,verified,src/game/unnamed/b003_3.c,GameHr_5e6a60
@@ -16939,7 +16939,7 @@ fff90,116,verified,src/snd/api.cpp,_ZN3snd10startPitchERKNS_3fnd10WeakHandleERKN
 5ea620,372,verified,src/nn/g3d/shape_anim_obj.c,ShapeAnimObj_5ea620
 5ea7a0,104,verified,src/nn/g3d/shape_anim_obj.c,ShapeAnimObj_Unknown2
 5ea810,16,verified,src/nn/g3d/shape_anim_obj.c,ShapeAnimObj_Unknown5
-5ea820,640,verified,src/nn/g3d/shape_anim_obj.c,ShapeAnimObj_Unknown6
+5ea820,640,disputed,src/nn/g3d/shape_anim_obj.c,ShapeAnimObj_Unknown6
 5eab00,312,verified,src/nn/g3d/shape_anim_obj.c,ShapeAnimObj_Unknown3
 5eac40,628,verified,src/nn/g3d/shape_anim_obj.c,ShapeAnimObj_Unknown7
 5eaee0,8,verified,src/game/game_trivial_forwarders.cpp,_Z15GameStub_5eaee0m
@@ -16962,7 +16962,7 @@ fff90,116,verified,src/snd/api.cpp,_ZN3snd10startPitchERKNS_3fnd10WeakHandleERKN
 5eefa0,248,verified,src/nn/g3d/model_anim_obj.c,ModelAnimObj_Unknown9
 5ef0a0,436,verified,src/nn/g3d/unplaced_2.c,nn_g3d_5ef0a0
 5ef260,488,verified,src/nn/g3d/model_anim_obj.c,ModelAnimObj_Unknown13
-5ef450,644,verified,src/nn/g3d/unplaced_2.c,nn_g3d_5ef450
+5ef450,644,disputed,src/nn/g3d/unplaced_2.c,nn_g3d_5ef450
 5ef6e0,268,verified,src/nn/g3d/model_anim_obj.c,ModelAnimObj_Unknown17
 5ef800,736,verified,src/nn/g3d/unplaced_2.c,nn_g3d_5ef800
 5efae0,1340,verified,src/nn/g3d/model_anim_obj.c,ModelAnimObj_Unknown21
@@ -16999,11 +16999,11 @@ fff90,116,verified,src/snd/api.cpp,_ZN3snd10startPitchERKNS_3fnd10WeakHandleERKN
 5f3ac0,356,verified,src/nn/g3d/unplaced_3.c,nn_g3d_5f3ac0
 5f3c30,348,verified,src/nn/g3d/unplaced_3.c,nn_g3d_5f3c30
 5f3f20,892,disputed,src/nn/g3d/unplaced_2.c,nn_g3d_5f3f20
-5f42a0,156,verified,src/nn/g3d/unplaced_2.c,nn_g3d_5f42a0
+5f42a0,156,disputed,src/nn/g3d/unplaced_2.c,nn_g3d_5f42a0
 5f4340,532,verified,src/nn/g3d/unplaced_6.c,nn_g3d_5f4340
 5f4620,492,disputed,src/nn/g3d/unplaced_2.c,nn_g3d_5f4620
 5f48c0,480,verified,src/nn/g3d/unplaced.c,nn_g3d_5f48c0
-5f4aa0,428,verified,src/nn/g3d/unplaced_2.c,nn_g3d_5f4aa0
+5f4aa0,428,disputed,src/nn/g3d/unplaced_2.c,nn_g3d_5f4aa0
 5f4c60,956,verified,src/nn/g3d/unplaced_12.c,nn_g3d_5f4c60
 5f5020,220,verified,src/nn/g3d/unplaced.c,nn_g3d_5f5020
 5f5100,340,verified,src/nn/g3d/unplaced_2.c,nn_g3d_5f5100

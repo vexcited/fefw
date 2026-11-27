@@ -99,7 +99,7 @@ __int64 FinalMix_Unknown6(__int64 a1, int a2)
   unsigned int v3;
 
   v2 = *(_DWORD*)(a1 + 88);
-  if (a2 - v2 >= *(_DWORD*)(a1 + 92)) {
+  if (a2 - v2 >= *(int*)(a1 + 92)) {
     v3 = 0;
   }
   else {

@@ -354,7 +354,8 @@ unsigned int opus_silk_528e0(_DWORD* a1, _DWORD* a2, __int64 a3, int a4,
   if (a7 == 0) {
     v31 = result;
     result = 4294967195LL;
-    if (a4 < 0 || v21 * v20 != 100 * a4 || 1000 * v230_.v255 > v12[6] * v20) {
+    if (a4 < 0 || v21 * v20 != 100 * a4 ||
+        1000 * v230_.v255 > (int)(v12[6] * v20)) {
       return result;
     }
     LODWORD(result) = v31;

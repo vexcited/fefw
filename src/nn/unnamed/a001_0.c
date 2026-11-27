@@ -108,7 +108,8 @@ __int64 SdkHr_6587a0(__int64 a1, _DWORD* a2, unsigned __int64* a3)
     v8 = 0;
   }
   v12 = *(int*)(a1 + 80);
-  if ((int)v12 < *(_DWORD*)(a1 + 64) && (v13 = *(_QWORD*)(a1 + 72)) != 0) {
+  if ((int)v12 < (int)(*(_DWORD*)(a1 + 64)) &&
+      (v13 = *(_QWORD*)(a1 + 72)) != 0) {
     v14 = (unsigned int*)(v13 + 16 * v12);
     v15 = *v14;
     v16 = *((_QWORD*)v14 + 1);

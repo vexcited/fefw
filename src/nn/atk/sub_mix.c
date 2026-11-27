@@ -123,7 +123,7 @@ void SubMix_2b6e40(__int64 a1, int a2)
               ++v15;
             } while (v15 != v13);
             ++v14;
-          } while (v14 < *(_DWORD*)(a1 + 168));
+          } while (v14 < *(int*)(a1 + 168));
         }
         goto LABEL_3;
       }
@@ -177,7 +177,7 @@ LABEL_24:
               ++v30;
             } while (v30 != v28);
             ++v29;
-          } while (v29 < *(_DWORD*)(a1 + 172));
+          } while (v29 < *(int*)(a1 + 172));
         }
         goto LABEL_26;
       }

@@ -451,7 +451,7 @@ void nn_g3d_5ef800(__int64 a1, long double a2)
   v4 = **(_DWORD**)(a1 + 8);
   v5 = *(_QWORD*)(a1 + 72);
   v6 = *(unsigned __int16*)(a1 + 100);
-  if (v2 >= 1 && v2 <= *(_DWORD*)(a1 + 56)) {
+  if (v2 >= 1 && v2 <= *(int*)(a1 + 56)) {
     if (*(_WORD*)(a1 + 100) != 0) {
       v29 = 0;
       v30 = 0;

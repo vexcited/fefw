@@ -23618,7 +23618,7 @@ ffee0,324,verified,src/nn/fs/unplaced.c,nn_fs_GetAndClearMemoryReportInfo
 5f11f0,64,verified,src/nvidia/nvos_misc.cpp,NvUAlloc0
 5f1230,556,verified,src/nvidia/unplaced.c,nvidia_5f1230
 5f1460,280,verified,src/nvidia/unplaced.c,nvidia_5f1460
-5f1580,4628,verified,src/nn/unnamed/t001_0.c,SdkHr_5f1580
+5f1580,4716,verified,src/nn/unnamed/t001_0.c,SdkHr_5f1580
 5f29a0,1988,verified,src/nvidia/nvos/hos/dlmalloc.c,dlmalloc_5f29a0
 5f3220,564,verified,src/nvidia/nvos/hos/dlmalloc.c,dlmalloc_5f3220
 5f34a0,1028,verified,src/nvidia/nvos/hos/dlmalloc.c,dlmalloc_5f34a0
@@ -26140,7 +26140,7 @@ ffee0,324,verified,src/nn/fs/unplaced.c,nn_fs_GetAndClearMemoryReportInfo
 658390,276,verified,src/nn/unplaced_3.c,nn_658390
 6584b0,108,verified,src/nn/unplaced_3.c,nn_6584b0
 658520,632,verified,src/nn/unplaced_3.c,nn_658520
-6587a0,428,disputed,src/nn/unnamed/a001_0.c,SdkHr_6587a0
+6587a0,428,verified,src/nn/unnamed/a001_0.c,SdkHr_6587a0
 658950,76,verified,src/nn/unplaced_3.c,nn_658950
 6589a0,4,verified,src/nn/sdk_trivial.cpp,_Z14SdkStub_6589a0v
 6589b0,264,verified,src/nn/unplaced_3.c,nn_6589b0

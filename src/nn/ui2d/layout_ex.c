@@ -258,7 +258,7 @@ __int64 LayoutEx_579620(__int64 result, __int64 a2)
           }
           ++v10;
           ++v9;
-        } while (v10 < *(_DWORD*)(v3 + 72));
+        } while (v10 < *(int*)(v3 + 72));
         v2 = *(_QWORD*)(v5 + 16);
       }
       v3 = v6;

@@ -573,7 +573,7 @@ __int64 ModelAnimObj_Unknown21(__int64 result)
   v3 = (_QWORD*)result;
   v4 = **(float**)(result + 8);
   v5 = *(_DWORD*)(result + 60);
-  if (v5 >= 1 && v5 <= *(_DWORD*)(result + 56)) {
+  if (v5 >= 1 && v5 <= *(int*)(result + 56)) {
     if (*(_WORD*)(result + 100) == 0) {
       return result;
     }

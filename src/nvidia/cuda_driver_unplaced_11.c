@@ -6185,9 +6185,9 @@ __int64 cuda_driver_214aa0(int a1, unsigned int a2, int a3, _QWORD* a4)
   v5 = *(_DWORD*)((char*)((_UNKNOWN*)0x318LL) + (_QWORD)CudaDriverData_1422118);
   v6 = __OFSUB__(a1, v5);
   v7 = a1 - v5;
-  if (v7 < 0 != v6 || a1 >= *(_DWORD*)((char*)((_UNKNOWN*)0x520LL) +
-                                       (_QWORD)CudaDriverData_1422118) +
-                                v5) {
+  if (v7 < 0 != v6 || a1 >= (int)(*(_DWORD*)((char*)((_UNKNOWN*)0x520LL) +
+                                             (_QWORD)CudaDriverData_1422118) +
+                                  v5)) {
     return 101;
   }
   if (*((_QWORD*)CudaDriverData_1422118 + (unsigned int)v7 + 100) != 0) {

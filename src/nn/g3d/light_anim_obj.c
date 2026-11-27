@@ -103,7 +103,7 @@ float LightAnimObj_Unknown3(__int64 a1, long double a2)
   LODWORD(a2) = **(_DWORD**)(a1 + 8);
   if (*(float*)(a1 + 64) != *(float*)&a2) {
     v2 = *(_DWORD*)(a1 + 60);
-    if (v2 >= 1 && v2 <= *(_DWORD*)(a1 + 56)) {
+    if (v2 >= 1 && v2 <= *(int*)(a1 + 56)) {
       GameRoutine_5e82a0(*(_QWORD*)(a1 + 96), *(_DWORD**)(a1 + 72),
                          *(_QWORD*)(a1 + 48), a2);
     }
