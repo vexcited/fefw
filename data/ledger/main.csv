@@ -50276,7 +50276,7 @@ fffcb0,1244,verified,src/game/unnamed/b014_1.c,GameHr_fffcb0
 106a7e0,12,verified,src/llvm-libcxx-21/libcxx/include/__functional/function.h,"std::__1::__function::__func<game::combat::CombatCharacter::CombatCharacter(util::PtrHolder<wld::Object>, int)::$_1, void (game::combat::CombatPhase const&)>::target_type()"
 106a7f0,96,verified,src/llvm-libcxx-21/libcxx/include/__functional/unplaced_12.c,llvm_libcxx_21_libcxx_include___functional_106a7f0
 106a860,632,verified,src/game/unnamed/e006_2.c,GameHr_106a860
-106aaf0,944,disputed,src/game/combat/unplaced_3.c,game_combat_106aaf0
+106aaf0,944,verified,src/game/combat/unplaced_3.c,game_combat_106aaf0
 106aeb0,320,verified,src/game/templates/function.cpp,_ZNSt3__110__function12__value_funcIFvPN4game11UnrecoveredILj31EEEEE4swapB8nn210108ERS7_
 106aff0,304,verified,src/game/combat/unplaced.c,game_combat_106aff0
 106b140,320,verified,src/game/unnamed/e006_2.c,GameHr_106b140

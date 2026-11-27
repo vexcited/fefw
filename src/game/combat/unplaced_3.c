@@ -1524,7 +1524,7 @@ float game_combat_106aaf0(__int64 a1, float result)
     if ((unsigned int)(*(_DWORD*)(a1 + 44) - 1) <= 1) {
       v34 = *(float*)(a1 + 64);
       v35 = *(float*)(a1 + 132);
-      if (v34 <= v35) {
+      if (!(v34 > v35)) {
         v36 = *(float*)(a1 + 64);
       }
       else {
