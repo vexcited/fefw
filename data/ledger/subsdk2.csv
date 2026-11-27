@@ -797,7 +797,7 @@ fff0,88,verified,src/movie/detail/movie_video_decoder_event_manager.cpp,_ZN5movi
 4f690,380,verified,src/opus/silk/unplaced_2.c,opus_silk_4f690
 4f810,16,verified,src/opus/silk/dec_API.c,silk_Get_Decoder_Size
 4f820,60,verified,src/opus/silk/dec_API_impl.c,silk_InitDecoder
-4f860,592,verified,src/opus/silk/dec_API_impl.c,silk_Decode
+4f860,628,verified,src/opus/silk/dec_API_impl.c,silk_Decode
 50640,2532,verified,src/opus/silk/unplaced_2.c,opus_silk_50640
 51580,500,verified,src/opus/silk/unplaced_7.c,opus_silk_51580
 51780,672,verified,src/opus/silk/decode_indices.c,silk_decode_indices

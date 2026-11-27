@@ -501,7 +501,7 @@ ffe0,36,verified,src/nn/crypto/detail/sha3_impl.cpp,_ZNK2nn6crypto6detail8Sha3Im
 335a0,480,verified,src/libjpeg-turbo-nx/jcphuff_impl.c,jcphuff_335a0
 337a0,952,verified,src/libjpeg-turbo-nx/jcphuff_impl.c,jcphuff_337a0
 33be0,240,verified,src/libjpeg-turbo-nx/jcphuff_impl.c,jcphuff_33be0
-33ce0,1008,verified,src/libjpeg-turbo-nx/jcphuff_impl.c,jcphuff_33ce0
+33ce0,1008,disputed,src/libjpeg-turbo-nx/jcphuff_impl.c,jcphuff_33ce0
 34ae0,332,verified,src/libjpeg-turbo-nx/jcphuff.c,_ZL24finish_pass_gather_phuffP20jpeg_compress_struct
 34c40,116,verified,src/libjpeg-turbo-nx/jcphuff.c,_ZL17finish_pass_phuffP20jpeg_compress_struct
 34cc0,376,verified,src/libjpeg-turbo-nx/jcphuff.c,_ZL12emit_restartP21phuff_entropy_encoderi
@@ -3645,7 +3645,7 @@ ffee0,324,verified,src/nn/fs/unplaced.c,nn_fs_GetAndClearMemoryReportInfo
 10c600,372,verified,src/nn/fs/fs_save_data_query.cpp,_ZN2nn2fs18DeleteCacheStorageEi
 10c780,380,verified,src/nn/fs/fs_save_data_query.cpp,_ZN2nn2fs19GetCacheStorageSizeEPlS1_i
 10c900,268,verified,src/nn/fs/unplaced_2.c,nn_fs_OpenCacheStorageList
-10ca40,620,verified,src/nn/fs/unplaced_2.c,nn_fs_ReadCacheStorageList
+10ca40,624,verified,src/nn/fs/unplaced_2.c,nn_fs_ReadCacheStorageList
 10ccc0,156,verified,src/nn/fs/unplaced_2.c,nn_fs_CloseCacheStorageList
 10cd60,164,verified,src/nn/fs/fs_save_data_management_api.cpp,_ZN2nn2fs25UpdateSaveDataMacForDebugEhm
 10ce10,348,verified,src/nn/fs/fs_save_data_query.cpp,_ZN2nn2fs40ListApplicationAccessibleSaveDataOwnerIdEPiPNS_3ncm13ApplicationIdES3_iii
@@ -4096,7 +4096,7 @@ ffee0,324,verified,src/nn/fs/unplaced.c,nn_fs_GetAndClearMemoryReportInfo
 125420,72,verified,src/nn/fs/fs_save_data_types.cpp,_ZN2nn2fs17SaveDataAttribute4MakeEPS1_NS0_19SaveDataReferenceIdENS0_12SaveDataTypeENS0_6UserIdEmt
 125470,64,verified,src/nn/fs/fs_save_data_types.cpp,_ZN2nn2fs17SaveDataAttribute4MakeEPS1_NS0_19SaveDataReferenceIdENS0_12SaveDataTypeENS0_6UserIdEm
 1254b0,88,verified,src/nn/fs/fs_save_data_types.cpp,_ZN2nn2fs20SaveDataCreationInfo4MakeEPS1_llmjNS0_15SaveDataSpaceIdE
-125640,208,verified,src/nn/fs/unplaced_2.c,nn_fs_125640
+125640,528,verified,src/nn/fs/unplaced_2.c,nn_fs_125640
 125860,424,verified,src/nn/fs/fs_save_data_types.cpp,_ZN2nn2fs14SaveDataFilter4MakeEPS1_NS_4util8optionalImEENS4_INS0_12SaveDataTypeEEENS4_INS0_6UserIdEEES5_NS4_ItEEh
 125a10,460,verified,src/nn/fs/fs_save_data_types.cpp,_ZN2nn2fs14SaveDataFilter4MakeEPS1_NS_4util8optionalImEENS4_INS0_12SaveDataTypeEEENS4_INS0_6UserIdEEES5_NS4_ItEE
 125be0,44,verified,src/nn/fs/fs_windows_path.cpp,_ZN2nn2fs14IsWindowsDriveEPKc
@@ -4254,7 +4254,7 @@ ffee0,324,verified,src/nn/fs/unplaced.c,nn_fs_GetAndClearMemoryReportInfo
 12f000,8,verified,src/nn/sdk_trivial.cpp,_Z14SdkStub_12f000mm
 12f010,404,verified,src/nn/fs/unplaced_2.c,nn_fs_12f010
 12f1b0,64,verified,src/nn/fs/unplaced_2.c,nn_fs_12f1b0
-12f1f0,372,verified,src/nn/fs/unplaced_2.c,nn_fs_12f1f0
+12f1f0,412,verified,src/nn/fs/unplaced_2.c,nn_fs_12f1f0
 12f390,12,verified,src/nn/fs/unplaced_2.c,nn_fs_12f390
 12f3a0,20,verified,src/nn/fs/unplaced_2.c,nn_fs_12f3a0
 12f3c0,64,verified,src/nn/sdk_trivial_thunks.cpp,_Z14SdkStub_12f3c0m
@@ -6386,7 +6386,7 @@ ffee0,324,verified,src/nn/fs/unplaced.c,nn_fs_GetAndClearMemoryReportInfo
 18d880,696,verified,src/nn/socket/detail/socket_api_client.cpp,_ZN2nn6socket6detail5IoctlEijPvm
 18db60,1400,verified,src/nn/socket/detail/socket_api_client.cpp,_ZN2nn6socket6detail6SelectEiPNS0_5FdSetES3_S3_PNS0_7TimeValE
 18e4a0,256,verified,src/nn/socket/detail/socket_api_client.cpp,_ZN2nn6socket6detail20ConvertToNativeFdSetEPNS1_15NativeSocketMapEPKNS0_5FdSetEPS4_
-18e5a0,1384,verified,src/nn/socket/detail/socket_api_client.cpp,_ZN2nn6socket6detail6SelectEiP6fd_setS3_S3_P7timeval
+18e5a0,1400,verified,src/nn/socket/detail/socket_api_client.cpp,_ZN2nn6socket6detail6SelectEiP6fd_setS3_S3_P7timeval
 18eed0,696,verified,src/nn/socket/detail/socket_api_client_impl.c,nn_socket_detail_Ioctl
 18f1a0,456,verified,src/nn/socket/detail/socket_api_client.cpp,_ZN2nn6socket6detail12_GLOBAL__N_115GetIoctlBuffersEjPvmPS3_Pm
 18f3e0,480,verified,src/nn/socket/detail/socket_api_client.cpp,_ZN2nn6socket6detail12_GLOBAL__N_119RestoreIoctlBuffersEjPPvPmi
@@ -12661,7 +12661,7 @@ ffee0,324,verified,src/nn/fs/unplaced.c,nn_fs_GetAndClearMemoryReportInfo
 340120,8,verified,src/fdk-aac/libAACdec/src/aacdec_hcr.cpp,_ZN2nn5codec10getHcrTypeEPNS0_10CErHcrInfoE
 340130,84,verified,src/fdk-aac/libAACdec/src/aacdec_hcr.cpp,_ZN2nn5codec10HcrInitRomEPNS0_10CErHcrInfoE
 3401a0,1196,verified,src/fdk-aac/libAACdec/src/aacdec_hcr.cpp,_ZN2nn5codec7HcrInitEPNS0_10CErHcrInfoEPNS0_22CAacDecoderChannelInfoEPKNS0_16SamplingRateInfoEPNS0_13FDK_BITSTREAME
-3407e0,3640,verified,src/fdk-aac/libAACdec/src/aacdec_hcr_impl.c,nn_codec_HcrDecoder
+3407e0,6164,disputed,src/fdk-aac/libAACdec/src/aacdec_hcr_impl.c,nn_codec_HcrDecoder
 3425a0,32,verified,src/fdk-aac/libAACdec/src/aacdec_hcr.cpp,_ZN2nn5codec21CarryBitToBranchValueEhjPjS1_
 3425c0,252,verified,src/fdk-aac/libAACdec/src/aacdec_hcr.cpp,_ZN2nn5codec21HcrMuteErroneousLinesEPNS0_10CErHcrInfoE
 3426e0,16,verified,src/fdk-aac/libAACdec/src/aacdec_hcr.cpp,_ZN2nn5codec10setHcrTypeEPNS0_10CErHcrInfoE14MP4_ELEMENT_ID
@@ -15030,7 +15030,7 @@ ffee0,324,verified,src/nn/fs/unplaced.c,nn_fs_GetAndClearMemoryReportInfo
 463250,792,verified,src/nn/fs/unplaced_2.c,nn_fs_ExtendApplicationSaveData
 4635e0,256,verified,src/nn/fs/unplaced_2.c,nn_fs_4635e0
 463770,760,verified,src/nn/fs/unplaced_2.c,nn_fs_GetApplicationSaveDataSize
-463a70,656,verified,src/nn/fs/unplaced_2.c,TryCreateCacheStorage
+463a70,656,disputed,src/nn/fs/unplaced_2.c,TryCreateCacheStorage
 463e10,124,verified,src/nn/fs/unplaced_2.c,nn_fs_463e10
 463ee0,152,verified,src/nn/fs/unplaced_2.c,nn_fs_463ee0
 463fc0,180,verified,src/nn/fs/unplaced_2.c,nn_fs_463fc0
@@ -17111,7 +17111,7 @@ ffee0,324,verified,src/nn/fs/unplaced.c,nn_fs_GetAndClearMemoryReportInfo
 4d0e10,8,verified,src/nn/sdk_trivial.cpp,_Z14SdkStub_4d0e10m
 4d0e20,828,verified,src/nn/movie/detail/base_media_extractor.c,nn_movie_detail_BaseMediaExtractor_GetTrackConfigurationSize
 4d1170,8,verified,src/nn/sdk_trivial.cpp,_Z14SdkStub_4d1170m
-4d1180,1668,verified,src/nn/movie/detail/base_media_extractor.c,nn_movie_detail_BaseMediaExtractor_GetTrackConfiguration
+4d1180,1768,verified,src/nn/movie/detail/base_media_extractor.c,nn_movie_detail_BaseMediaExtractor_GetTrackConfiguration
 4d18e0,8,verified,src/nn/sdk_trivial.cpp,_Z14SdkStub_4d18e0m
 4d1900,196,verified,src/nn/movie/detail/base_media_extractor.c,nn_movie_detail_BaseMediaExtractor_Start_4d1900
 4d19e0,88,verified,src/nn/movie/detail/base_media_extractor.c,nn_movie_detail_BaseMediaExtractor_SignalAllTracks
@@ -17123,14 +17123,14 @@ ffee0,324,verified,src/nn/fs/unplaced.c,nn_fs_GetAndClearMemoryReportInfo
 4d1d60,196,verified,src/nn/movie/detail/base_media_extractor.c,nn_movie_detail_BaseMediaExtractor_GetSampleAvailableEvent_4d1d60
 4d1e40,556,verified,src/nn/movie/detail/base_media_extractor.c,nn_movie_detail_BaseMediaExtractor_SeekTo
 4d2090,8,verified,src/nn/sdk_trivial.cpp,_Z14SdkStub_4d2090m
-4d20a0,300,verified,src/nn/movie/detail/base_media_extractor.c,nn_movie_detail_BaseMediaExtractor_GetSampleBufferSize
+4d20a0,324,verified,src/nn/movie/detail/base_media_extractor.c,nn_movie_detail_BaseMediaExtractor_GetSampleBufferSize
 4d2200,240,verified,src/nn/movie/detail/base_media_extractor.c,nn_movie_detail_BaseMediaExtractor_AdvanceTrack
 4d2300,8,verified,src/nn/sdk_trivial.cpp,_Z14SdkStub_4d2300m
-4d2320,228,verified,src/nn/movie/detail/base_media_extractor.c,nn_movie_detail_BaseMediaExtractor_ReadSamples
+4d2320,348,verified,src/nn/movie/detail/base_media_extractor.c,nn_movie_detail_BaseMediaExtractor_ReadSamples
 4d2600,8,verified,src/nn/sdk_trivial.cpp,_Z14SdkStub_4d2600m
 4d2620,336,verified,src/nn/movie/detail/base_media_extractor.c,nn_movie_detail_BaseMediaExtractor_GetSampleTime
 4d27c0,8,verified,src/nn/sdk_trivial.cpp,_Z14SdkStub_4d27c0m
-4d27e0,128,verified,src/nn/movie/detail/base_media_extractor.c,nn_movie_detail_BaseMediaExtractor_GetSampleProperties
+4d27e0,280,verified,src/nn/movie/detail/base_media_extractor.c,nn_movie_detail_BaseMediaExtractor_GetSampleProperties
 4d2a40,8,verified,src/nn/sdk_trivial.cpp,_Z14SdkStub_4d2a40m
 4d2a50,132,verified,src/nn/movie/detail/base_media_extractor.c,nn_movie_detail_BaseMediaExtractor_GetCacheRangeCount_4d2a50
 4d2ae0,132,verified,src/nn/movie/detail/base_media_extractor.c,nn_movie_detail_BaseMediaExtractor_GetCacheRangeCount_4d2ae0
@@ -17193,7 +17193,7 @@ ffee0,324,verified,src/nn/fs/unplaced.c,nn_fs_GetAndClearMemoryReportInfo
 4d4880,1032,verified,src/nn/movie/detail/hls_media_extractor.c,nn_movie_detail_HlsMediaExtractor_Finalize
 4d4e60,1188,verified,src/nn/movie/detail/hls_media_extractor.c,nn_movie_detail_HlsMediaExtractor_SetUriMedia
 4d5330,192,verified,src/nn/movie/detail/hls_media_extractor.c,nn_movie_detail_HlsMediaExtractor_GetCacheThreshold
-4d53f0,588,verified,src/nn/movie/detail/hls_media_extractor.c,nn_movie_detail_HlsMediaExtractor_DoSetMedia
+4d53f0,616,verified,src/nn/movie/detail/hls_media_extractor.c,nn_movie_detail_HlsMediaExtractor_DoSetMedia
 4d5690,60,verified,src/nn/movie/detail/hls_media_extractor.c,nn_movie_detail_HlsMediaExtractor_SetInMemoryMedia
 4d56d0,60,verified,src/nn/movie/detail/hls_media_extractor.c,nn_movie_detail_HlsMediaExtractor_SetUpMediaSourceMode
 4d5710,60,verified,src/nn/movie/detail/hls_media_extractor.c,nn_movie_detail_HlsMediaExtractor_AppendMediaSourceData
@@ -17215,7 +17215,7 @@ ffee0,324,verified,src/nn/fs/unplaced.c,nn_fs_GetAndClearMemoryReportInfo
 4d78c0,412,verified,src/nn/movie/detail/hls_media_extractor.c,nn_movie_detail_HlsMediaExtractor_GetSampleBufferSize
 4d7a60,716,verified,src/nn/movie/detail/hls_media_extractor.c,nn_movie_detail_HlsMediaExtractor_AdvanceTrack
 4d7dc0,552,verified,src/nn/movie/detail/hls_media_extractor.c,nn_movie_detail_HlsMediaExtractor_ReadSamples
-4d8080,288,verified,src/nn/movie/detail/hls_media_extractor.c,nn_movie_detail_HlsMediaExtractor_GetSampleTime
+4d8080,408,verified,src/nn/movie/detail/hls_media_extractor.c,nn_movie_detail_HlsMediaExtractor_GetSampleTime
 4d8220,444,verified,src/nn/movie/detail/hls_media_extractor.c,nn_movie_detail_HlsMediaExtractor_GetSampleProperties
 4d8430,88,verified,src/nn/movie/detail/hls_media_extractor.c,nn_movie_detail_HlsMediaExtractor_GetCacheRangeCount
 4d8490,136,verified,src/nn/movie/detail/hls_media_extractor.c,nn_movie_detail_HlsMediaExtractor_GetCacheRange
@@ -17228,7 +17228,7 @@ ffee0,324,verified,src/nn/fs/unplaced.c,nn_fs_GetAndClearMemoryReportInfo
 4d86e0,104,verified,src/nn/movie/detail/hls_media_extractor.c,nn_movie_detail_HlsMediaExtractor_SignalAllTracks
 4d8750,20,verified,src/nn/movie/detail/hls_media_extractor.c,nn_movie_detail_HlsMediaExtractor_IsVideoTrack
 4d8770,376,verified,src/nn/movie/detail/hls_media_extractor.c,nn_movie_detail_HlsMediaExtractor_GetCacheConfig
-4d8900,1076,verified,src/nn/movie/detail/hls_media_extractor.c,nn_movie_detail_HlsMediaExtractor_QueueSamplesLoop
+4d8900,1092,verified,src/nn/movie/detail/hls_media_extractor.c,nn_movie_detail_HlsMediaExtractor_QueueSamplesLoop
 4d8ee0,1260,verified,src/nn/movie/detail/hls_media_extractor.c,hls_media_extractor_4d8ee0
 4d9640,152,verified,src/nn/movie/detail/hls_media_extractor.c,nn_movie_detail_HlsMediaExtractor_SetTrackSampleAvailableEventType
 4d96e0,124,verified,src/nn/movie/detail/hls_media_extractor_handler.c,nn_movie_detail_HlsMediaExtractorHandler_HlsMediaExtractorHandler
@@ -17432,7 +17432,7 @@ ffee0,324,verified,src/nn/fs/unplaced.c,nn_fs_GetAndClearMemoryReportInfo
 4e4da0,488,verified,src/nandroid/extractors/mkv/MatroskaExtractor.cpp,_ZN8nandroid18addVorbisCodecInfoEP12AMediaFormatPKvm
 4e4f90,556,verified,src/nandroid/extractors/mkv/MatroskaExtractor.cpp,_ZN8nandroid17MatroskaExtractor14synthesizeAVCCEPNS0_9TrackInfoEm
 4e5200,572,verified,src/nandroid/extractors/mkv/MatroskaExtractor.cpp,_ZN8nandroid17MatroskaExtractor15synthesizeMPEG2EPNS0_9TrackInfoEm
-4e54e0,720,verified,src/nandroid/extractors/mkv/MatroskaExtractor_impl.c,MatroskaExtractor_4e54e0
+4e54e0,744,verified,src/nandroid/extractors/mkv/MatroskaExtractor_impl.c,MatroskaExtractor_4e54e0
 4e57e0,592,verified,src/nandroid/extractors/mkv/MatroskaExtractor.cpp,_ZN8nandroid17MatroskaExtractor15synthesizeMPEG4EPNS0_9TrackInfoEm
 4e5a60,920,verified,src/nandroid/extractors/mkv/MatroskaExtractor.cpp,_ZN8nandroid17MatroskaExtractor19getColorInformationEPKN9mkvparser10VideoTrackEP12AMediaFormat
 4e5e00,316,verified,src/nandroid/extractors/mkv/MatroskaExtractor.cpp,_ZN8nandroid17MatroskaExtractor13initTrackInfoEPKN9mkvparser5TrackEP12AMediaFormatPNS0_9TrackInfoE
@@ -26296,7 +26296,7 @@ ffee0,324,verified,src/nn/fs/unplaced.c,nn_fs_GetAndClearMemoryReportInfo
 65e0a0,556,verified,src/nn/unnamed/s003_2.c,SdkHr_65e0a0
 65e300,776,verified,src/nn/unnamed/s003_2.c,SdkHr_65e300
 65e620,452,verified,src/nn/unplaced_3.c,nn_65e620
-65e800,612,verified,src/nn/unnamed/s003_2.c,SdkHr_65e800
+65e800,664,verified,src/nn/unnamed/s003_2.c,SdkHr_65e800
 65eaa0,92,verified,src/nn/unnamed/s003_2.c,SdkHr_65eaa0
 65eb00,36,verified,src/nn/unnamed/s003_2.c,SdkHr_65eb00
 65eb30,116,verified,src/nn/unnamed/s003_2.c,SdkHr_65eb30
@@ -26328,7 +26328,7 @@ ffee0,324,verified,src/nn/fs/unplaced.c,nn_fs_GetAndClearMemoryReportInfo
 65fae0,488,verified,src/nn/unnamed/s003_2.c,SdkHr_65fae0
 65fcd0,8,verified,src/nn/sdk_trivial_thunks.cpp,_Z14SdkStub_65fcd0mmm
 65fce0,1280,disputed,src/nn/unplaced_3.c,nn_65fce0
-660780,268,verified,src/nn/unplaced_3.c,nn_660780
+660780,268,disputed,src/nn/unplaced_3.c,nn_660780
 6608a0,144,verified,src/nn/unnamed/s003_2.c,SdkHr_6608a0
 660940,968,verified,src/nn/unnamed/s003_2.c,SdkHr_660940
 660d10,24,verified,src/nn/unnamed/s003_2.c,SdkHr_660d10
@@ -26351,7 +26351,7 @@ ffee0,324,verified,src/nn/fs/unplaced.c,nn_fs_GetAndClearMemoryReportInfo
 660e70,8,verified,src/nn/sdk_trivial.cpp,_Z14SdkStub_660e70m
 660e80,8,verified,src/nn/sdk_trivial.cpp,_Z14SdkStub_660e80m
 660e90,140,verified,src/nn/unnamed/s003_2.c,SdkHr_660e90
-660f20,2980,disputed,src/nn/unplaced_3.c,nn_660f20
+660f20,3140,disputed,src/nn/unplaced_3.c,nn_660f20
 661d40,164,verified,src/nn/unnamed/s003_2.c,SdkHr_661d40
 661df0,44,verified,src/nn/unnamed/s003_2.c,SdkHr_661df0
 661e20,48,verified,src/nn/unnamed/s003_2.c,SdkHr_661e20
@@ -26738,7 +26738,7 @@ ffee0,324,verified,src/nn/fs/unplaced.c,nn_fs_GetAndClearMemoryReportInfo
 66a170,900,verified,src/nn/unplaced_3.c,nn_66a170
 66a500,460,verified,src/nn/unnamed/s004_0.c,SdkHr_66a500
 66a6d0,976,verified,src/nn/unplaced_7.c,nn_66a6d0
-66aaa0,1184,verified,src/nn/unplaced_3.c,nn_66aaa0
+66aaa0,1212,verified,src/nn/unplaced_3.c,nn_66aaa0
 66afc0,348,verified,src/nn/unplaced_8.c,nn_66afc0
 66b130,100,verified,src/nn/unnamed/s004_0.c,SdkHr_66b130
 66b1a0,72,verified,src/nn/unnamed/s004_0.c,SdkHr_66b1a0
@@ -28730,7 +28730,7 @@ ffee0,324,verified,src/nn/fs/unplaced.c,nn_fs_GetAndClearMemoryReportInfo
 6e1420,700,verified,src/nn/hid/system/detail/hid_touch_screen_state.cpp,_ZN2nn3hid6system6detail36GetTouchScreenStatesForSystemProcessILm7EEENS_6ResultEPiPNS0_16TouchScreenStateIXT_EEEi
 6e1740,1004,verified,src/nn/hid/system/detail/hid_touch_screen_state.cpp,_ZN2nn3hid6system6detail36GetTouchScreenStatesForSystemProcessILm8EEENS_6ResultEPiPNS0_16TouchScreenStateIXT_EEEi
 6e1b80,1036,verified,src/nn/hid/system/detail/hid_touch_screen_state.cpp,_ZN2nn3hid6system6detail36GetTouchScreenStatesForSystemProcessILm9EEENS_6ResultEPiPNS0_16TouchScreenStateIXT_EEEi
-6e1fe0,260,verified,src/nn/hid/system/detail/hid_touch_screen_state.cpp,_ZN2nn3hid6system6detail36GetTouchScreenStatesForSystemProcessILm10EEENS_6ResultEPiPNS0_16TouchScreenStateIXT_EEEi
+6e1fe0,1032,verified,src/nn/hid/system/detail/hid_touch_screen_state.cpp,_ZN2nn3hid6system6detail36GetTouchScreenStatesForSystemProcessILm10EEENS_6ResultEPiPNS0_16TouchScreenStateIXT_EEEi
 6e2460,1064,verified,src/nn/hid/system/detail/hid_touch_screen_state.cpp,_ZN2nn3hid6system6detail36GetTouchScreenStatesForSystemProcessILm11EEENS_6ResultEPiPNS0_16TouchScreenStateIXT_EEEi
 6e2900,1080,verified,src/nn/hid/system/detail/hid_touch_screen_state.cpp,_ZN2nn3hid6system6detail36GetTouchScreenStatesForSystemProcessILm12EEENS_6ResultEPiPNS0_16TouchScreenStateIXT_EEEi
 6e2da0,564,verified,src/nn/hid/system/detail/hid_touch_screen_state.cpp,_ZN2nn3hid6system6detail36GetTouchScreenStatesForSystemProcessILm13EEENS_6ResultEPiPNS0_16TouchScreenStateIXT_EEEi
@@ -31819,7 +31819,7 @@ ffee0,324,verified,src/nn/fs/unplaced.c,nn_fs_GetAndClearMemoryReportInfo
 7990b0,60,verified,src/musl/src/locale/freelocale.c,freelocale
 7990f0,200,verified,src/musl/src/locale/iconv.c,iconv_open
 7991c0,292,verified,src/musl/src/locale/iconv.c,find_charmap
-799320,2652,verified,src/musl/src/locale/unplaced_3.c,musl_src_locale_799320
+799320,3724,verified,src/musl/src/locale/unplaced_3.c,musl_src_locale_799320
 79a820,128,verified,src/musl/src/locale/iconv.c,uni_to_jis
 79a8b0,36,verified,src/musl/src/locale/iconv_close.c,iconv_close
 79a8e0,204,verified,src/musl/src/locale/langinfo_impl.c,__nl_langinfo_l
