@@ -42733,7 +42733,7 @@ e37c20,80,verified,src/memory/new_delete.cpp,deleting destructor at 0xe37c20
 e37c80,584,verified,src/game/unnamed/b012_1.c,GameHr_e37c80
 e37f80,580,verified,src/game/unnamed/b012_1.c,GameHr_e37f80
 e38280,24,verified,src/llvm-libcxx-21/libcxx/include/__vector/vector.h,std::vector<T>::__throw_length_error()
-e382a0,2580,verified,src/game/combat/unplaced_4.c,game_combat_e382a0
+e382a0,3900,verified,src/game/combat/unplaced_4.c,game_combat_e382a0
 e39fe0,280,verified,src/game/unnamed/b012_2.c,GameHr_e39fe0
 e3a100,2264,verified,src/game/combat/legion_state_battle_fighter.c,LegionStateBattleFighter_e3a100
 e3ae20,652,verified,src/game/combat/legion_state_battle_fighter.c,LegionStateBattleFighter_e3ae20
@@ -42868,7 +42868,7 @@ e447d0,472,disputed,src/game/combat/unplaced.c,game_combat_e447d0
 e449b0,788,verified,src/game/combat/unplaced.c,game_combat_e449b0
 e44cd0,1332,verified,src/game/combat/unplaced.c,game_combat_e44cd0
 e45210,800,verified,src/game/combat/unplaced.c,game_combat_e45210
-e45540,316,verified,src/game/combat/unplaced_4.c,game_combat_e45540
+e45540,328,verified,src/game/combat/unplaced_4.c,game_combat_e45540
 e4b940,656,verified,src/game/unnamed/b012_1.c,GameHr_e4b940
 e4bbd0,336,verified,src/game/unnamed/b012_1.c,GameHr_e4bbd0
 e4bd20,460,verified,src/game/combat/legion_gambit.c,LegionGambit_e4bd20
