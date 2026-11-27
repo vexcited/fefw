@@ -6,7 +6,7 @@ No game files are included, and none ever will be. You need your own copy of Fir
 
 Progress counts behavior-verified bytes, not byte-matching ones: nothing is byte matched yet. Each rebuilt function runs side by side with the original in an emulator, and only the instructions of the original those runs exercised, with identical results, earn credit.
 
-Verification needs the game files, so it only runs locally. The committed ledger under `data/` lists each function by module, address, credited size, status, source and name, next to the text size and function count of each module.
+Verification needs the game files, so it only runs locally. The committed ledger under `data/` lists each function by module, address, credited size, status, source and name, next to the text size and function count of each module. `data/padding/` lists the nop words no credited function holds and the zero words outside every function, which count as padding since there is nothing there to rebuild.
 
 ## 3rd party libraries
 

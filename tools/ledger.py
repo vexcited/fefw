@@ -50,7 +50,33 @@ def write_rows(rows, data=DATA):
           r['source'], r['name']])
 
 
-def validate(baseline, rows):
+def load_padding(data=DATA):
+  # Padding is nop and zero words no function claims, so it needs no source.
+  padding = {}
+  for path in sorted((data / 'padding').glob('*.csv')):
+    with path.open(newline='') as f:
+      reader = csv.DictReader(f)
+      if reader.fieldnames != ['address', 'size']:
+        raise ValueError(f'{path.name}: unexpected padding columns.')
+      padding[path.stem] = sum(int(row['size']) for row in reader)
+  return padding
+
+
+def write_padding(ranges, data=DATA):
+  directory = data / 'padding'
+  directory.mkdir(parents=True, exist_ok=True)
+  for path in directory.glob('*.csv'):
+    if path.stem not in ranges:
+      path.unlink()
+  for module, items in ranges.items():
+    with (directory / f'{module}.csv').open('w', newline='') as f:
+      writer = csv.writer(f, lineterminator='\n')
+      writer.writerow(['address', 'size'])
+      for start, end in sorted(items):
+        writer.writerow([f'{start:x}', end - start])
+
+
+def validate(baseline, rows, padding=None):
   seen = set()
   for r in rows:
     where = f"{r['module']} {r['address']:#x}"
@@ -65,21 +91,22 @@ def validate(baseline, rows):
       raise ValueError(f'{where}: unaligned entry.')
     if not r['name'] or not r['source']:
       raise ValueError(f'{where}: needs a name and a source.')
-  result = measure(baseline, rows)
+  result = measure(baseline, rows, padding)
   for name, module in result['modules'].items():
-    if module['verified_bytes'] + module['disputed_bytes'] > \
-        module['text_bytes']:
+    if module['verified_bytes'] + module['disputed_bytes'] + \
+        module['padding_bytes'] > module['text_bytes']:
       raise ValueError(f'{name}: more credit than text.')
     if module['verified_functions'] + module['disputed_functions'] > \
         module['functions']:
       raise ValueError(f'{name}: more entries than functions.')
 
 
-def measure(baseline, rows):
+def measure(baseline, rows, padding=None):
   modules = {
     name: {
       'text_bytes': module['text'], 'functions': module['functions'],
       'verified_bytes': 0, 'disputed_bytes': 0,
+      'padding_bytes': (padding or {}).get(name, 0),
       'verified_functions': 0, 'disputed_functions': 0,
     }
     for name, module in baseline['modules'].items()

@@ -2,7 +2,8 @@ import argparse
 import json
 from pathlib import Path
 
-from ledger import ROOT, load_baseline, load_rows, measure, percent, validate
+from ledger import ROOT, load_baseline, load_padding, load_rows, measure, \
+  percent, validate
 
 VERSION = '04007EF01F8AE000'
 LIBRARIES = {
@@ -41,7 +42,7 @@ def measures(total, matched, functions, matched_functions):
   }
 
 
-def build(baseline, rows):
+def build(baseline, rows, padding=None):
   # Matched code means behavior-verified bytes, nothing is byte matched yet.
   units = {}
   for r in rows:
@@ -73,11 +74,24 @@ def build(baseline, rows):
         'progress_categories': [category(module, source)],
       },
     })
-  result = measure(baseline, rows)
+  result = measure(baseline, rows, padding)
   # Text no ledger entry claims yet, so todo lists point at each module.
   for name, module in result['modules'].items():
+    kind = 'game' if name == 'main' else 'sdk'
+    if module['padding_bytes']:
+      # Nop and zero words outside every function hold nothing to rebuild.
+      report_units.append({
+        'name': f'{name}/padding',
+        'measures': measures(module['padding_bytes'],
+          module['padding_bytes'], 0, 0),
+        'metadata': {
+          'complete': True,
+          'module_name': name,
+          'progress_categories': [kind],
+        },
+      })
     left = module['text_bytes'] - module['verified_bytes'] - \
-      module['disputed_bytes']
+      module['disputed_bytes'] - module['padding_bytes']
     functions = module['functions'] - module['verified_functions'] - \
       module['disputed_functions']
     if left > 0:
@@ -87,7 +101,7 @@ def build(baseline, rows):
         'metadata': {
           'complete': False,
           'module_name': name,
-          'progress_categories': ['game' if name == 'main' else 'sdk'],
+          'progress_categories': [kind],
         },
       })
   categories = []
@@ -131,8 +145,9 @@ def main():
   args = parser.parse_args()
   baseline = load_baseline()
   rows = load_rows()
-  validate(baseline, rows)
-  report = build(baseline, rows)
+  padding = load_padding()
+  validate(baseline, rows, padding)
+  report = build(baseline, rows, padding)
   args.output.parent.mkdir(parents=True, exist_ok=True)
   args.output.write_text(json.dumps(report, indent=1) + '\n')
   m = report['measures']
