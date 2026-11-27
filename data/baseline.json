@@ -2,7 +2,7 @@
  "modules": {
   "main": {
    "text": 27316080,
-   "functions": 89433
+   "functions": 89437
   },
   "rtld": {
    "text": 10048,

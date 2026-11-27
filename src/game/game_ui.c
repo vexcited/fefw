@@ -125,6 +125,61 @@ const char* LayoutArchive_13669e0_alt1(const char* result);
 void GameRoutine_15e1350_alt1(__int64);
 void ProcLoadingSeq_9b84e0_alt1();
 void game_gameui_1569ce0_alt1(__int64);
+__int64 game_gameui_control_AsyncLoadThumbImage_CreateControl();
+extern __int64 (*BattleInfoSkillList_18b66c0_ptr[24])();
+extern __int64 (*BattleInfoStatus_19ad260_ptr[21])();
+extern __int64 (*BattlePopupBlaze_18c10b0_ptr[9])();
+extern __int64 (*BattlePopupDamage_18bf160_ptr[10])();
+extern __int64 (*BlnPopup_19f1c50_ptr)();
+extern __int64 (*FloatingHelp_18a4c80_ptr[12])();
+extern __int64 (*HPStock_18a1c50_ptr[8])();
+extern __int64 (*HelpGroup_18b3f00_ptr[11])();
+extern __int64 (*IconLegion_19abb70_ptr[26])();
+extern __int64 (*InfoTitle_18b7500_ptr[18])();
+extern __int64 (*KeySort_1797030_ptr[2])();
+extern __int64 (*MenuItemItem_189eef0_ptr[35])();
+extern __int64 (*MenuItemLegion_18977d0_ptr[33])();
+extern __int64 (*MenuItemSkill_1898db0_ptr[34])();
+extern __int64 (*StatusHP_1891e10_ptr[40])();
+extern __int64 (*StatusItem_188dba0_ptr[43])();
+extern __int64 (*StatusLV_18a2ab0_ptr[39])();
+extern __int64 (*StatusNum_188fab0_ptr[44])();
+extern __int64 (*StatusTotal_19ac7b0_ptr[42])();
+extern __int64 (*UnitName_19ab100_ptr[41])();
+extern __int64 (*game_1796700_ptr[3])();
+extern __int64 (*game_18c9a10_ptr[37])();
+extern __int64 (*game_19a87a0_ptr[7])();
+extern __int64 (*game_gameui_control_189ca20_ptr[38])();
+extern __int64 (*game_gameui_control_18b4660_ptr[28])();
+extern __int64 (*game_gameui_control_BattleInfoEquip_CreateControl_ptr[23])();
+extern __int64 (
+    *game_gameui_control_BattleInfoReliance_CreateControl_ptr[22])();
+extern __int64 (*game_gameui_control_GmapTroopInfo_CreateControl_ptr[6])();
+extern __int64 (*game_gameui_control_HelpableElement_CreateControl_ptr[29])();
+extern __int64 (*game_gameui_control_IconGimmick_CreateControl_ptr[27])();
+extern __int64 (*game_gameui_control_InfoDetailsAnimal_CreateControl_ptr[14])();
+extern __int64 (*game_gameui_control_InfoDetailsItem_CreateControl_ptr[15])();
+extern __int64 (*game_gameui_control_InfoDetailsLegion_CreateControl_ptr[13])();
+extern __int64 (*game_gameui_control_InfoDetailsText_CreateControl_ptr[16])();
+extern __int64 (*game_gameui_control_InfoDetails_CreateControl_ptr[17])();
+extern __int64 (*game_gameui_control_KeyIcon_CreateControl_ptr[4])();
+extern __int64 (*game_gameui_control_MasteryInfo_CreateControl_ptr[19])();
+extern __int64 (*game_gameui_control_MenuItemAnimal_CreateControl_ptr[32])();
+extern __int64 (*game_gameui_control_MenuItemInfo_CreateControl_ptr[36])();
+extern __int64 (*game_gameui_control_MenuItemMorph_CreateControl_ptr[31])();
+extern __int64 (*game_gameui_control_MenuItemRage_CreateControl_ptr[30])();
+extern __int64 (*game_gameui_control_TlpResult_CreateControl_ptr[5])();
+extern __int64 (*game_gameui_control_UnitInfoClan_CreateControl_ptr[20])();
+extern __int64 (*ui_game_188f010_ptr[45])();
+extern __int64 (*ui_game_18b35a0_ptr[25])();
+extern char* GameData_1fa9738[6];
+extern char* GameData_1fa9748[4];
+extern char* GameData_1fa9758[2];
+int GameRoutine_1a0a6b0(__int64, unsigned __int64, const char*, ...);
+unsigned __int64 GameRoutine_1a09c70(const char*);
+void game_1366fa0(__int64, __int64, __int64);
+void nn_mem_StandardAllocator_Free_alt2(__int64, __int64);
+void GameUI_8b5650();
 
 _QWORD* game_GameUI_Setup()
 {
@@ -639,6 +694,299 @@ LABEL_48:
   GameData_21f1dd0 = 0;
   GameData_21f1dc8 = 0;
   return result;
+}
+
+void GameUI_8b5650()
+{
+
+#pragma clang fp contract(on)
+
+  __int64 v0;
+  __int64* v1;
+  __int64 v2;
+  char* v3;
+  __int64 (*v4)();
+  __int64 v5;
+  __int64 v6;
+  char* v7;
+  __int64 (*v8)();
+  __int64 v9;
+  __int64 v10;
+  char* v11;
+  __int64 (*v12)();
+  __int64 v13;
+  struct {
+    _QWORD* v14;
+    unsigned __int64 v15;
+  } v14_;
+  _QWORD v16[33];
+
+  v0 = ui_Manager_instance_;
+  if (ui_Manager_instance_ != 0) {
+    v16[0] = "StatusName";
+    v16[1] = 10;
+    game_1366fa0(ui_Manager_instance_, (__int64)v16,
+                 (__int64)ui_game_188f010_ptr[0]);
+    v16[0] = "StatusNum";
+    v16[1] = 9;
+    game_1366fa0(v0, (__int64)v16, (__int64)StatusNum_188fab0_ptr[0]);
+    v16[0] = "StatusItem";
+    v16[1] = 10;
+    game_1366fa0(v0, (__int64)v16, (__int64)StatusItem_188dba0_ptr[0]);
+    v16[0] = "StatusTotal";
+    v16[1] = 11;
+    game_1366fa0(v0, (__int64)v16, (__int64)StatusTotal_19ac7b0_ptr[0]);
+    v16[0] = "UnitName";
+    v16[1] = 8;
+    game_1366fa0(v0, (__int64)v16, (__int64)UnitName_19ab100_ptr[0]);
+    v16[0] = "StatusHP";
+    v16[1] = 8;
+    game_1366fa0(v0, (__int64)v16, (__int64)StatusHP_1891e10_ptr[0]);
+    v16[0] = "StatusLV";
+    v16[1] = 8;
+    game_1366fa0(v0, (__int64)v16, (__int64)StatusLV_18a2ab0_ptr[0]);
+    v16[0] = "StatusClass";
+    v16[1] = 11;
+    game_1366fa0(v0, (__int64)v16, (__int64)game_gameui_control_189ca20_ptr[0]);
+    v16[0] = "BlazeGauge";
+    v16[1] = 10;
+    game_1366fa0(v0, (__int64)v16, (__int64)game_18c9a10_ptr[0]);
+    GameRoutine_1a0a6b0((__int64)v16, 0x100u, "%s/%s", "MenuItem",
+                        "Common_Equip_MenuItem_Info");
+    v14_.v14 = v16;
+    v14_.v15 = GameRoutine_1a09c70((const char*)v16);
+    game_1366fa0(
+        v0, (__int64)&v14_.v14,
+        (__int64)game_gameui_control_MenuItemInfo_CreateControl_ptr[0]);
+    v16[0] = "MenuItem_Item";
+    v16[1] = 13;
+    game_1366fa0(v0, (__int64)v16, (__int64)MenuItemItem_189eef0_ptr[0]);
+    v16[0] = "MenuItem_Skill";
+    v16[1] = 14;
+    game_1366fa0(v0, (__int64)v16, (__int64)MenuItemSkill_1898db0_ptr[0]);
+    v16[0] = "MenuItem_Legion";
+    v16[1] = 15;
+    game_1366fa0(v0, (__int64)v16, (__int64)MenuItemLegion_18977d0_ptr[0]);
+    v16[0] = "MenuItem_Animal";
+    v16[1] = 15;
+    game_1366fa0(
+        v0, (__int64)v16,
+        (__int64)game_gameui_control_MenuItemAnimal_CreateControl_ptr[0]);
+    GameRoutine_1a0a6b0((__int64)v16, 0x100u, "%s/%s", "MenuItem",
+                        "Common_DragonInfo");
+    v14_.v14 = v16;
+    v14_.v15 = GameRoutine_1a09c70((const char*)v16);
+    game_1366fa0(
+        v0, (__int64)&v14_.v14,
+        (__int64)game_gameui_control_MenuItemMorph_CreateControl_ptr[0]);
+    GameRoutine_1a0a6b0((__int64)v16, 0x100u, "%s/%s", "MenuItem",
+                        "Common_MorphInfo");
+    v14_.v14 = v16;
+    v14_.v15 = GameRoutine_1a09c70((const char*)v16);
+    game_1366fa0(
+        v0, (__int64)&v14_.v14,
+        (__int64)game_gameui_control_MenuItemRage_CreateControl_ptr[0]);
+    v16[0] = "HelpableElement";
+    v16[1] = 15;
+    game_1366fa0(
+        v0, (__int64)v16,
+        (__int64)game_gameui_control_HelpableElement_CreateControl_ptr[0]);
+    v1 = (__int64*)fw_memory_g_heap_manager_ptr;
+    v2 = fw_memory_HeapManager_Allocate_alt1(
+        *(_QWORD*)fw_memory_g_heap_manager_ptr, 16, 16, 0);
+    v3 = GameData_1fa9738[1];
+    *(char**)v2 = GameData_1fa9738[0];
+    *(_QWORD*)(v2 + 8) = v3;
+    GameRoutine_1a0a6b0((__int64)v16, 0x100u, "%s/%s", "HelpableElement",
+                        "Common_IconSkill");
+    v14_.v14 = v16;
+    v14_.v15 = GameRoutine_1a09c70((const char*)v16);
+    v4 = game_gameui_control_18b4660_ptr[0];
+    game_1366fa0(v0, (__int64)&v14_.v14,
+                 (__int64)game_gameui_control_18b4660_ptr[0]);
+    GameRoutine_1a0a6b0((__int64)v16, 0x100u, "%s/%s", "HelpableElement",
+                        *(const char**)(v2 + 8));
+    v14_.v14 = v16;
+    v14_.v15 = GameRoutine_1a09c70((const char*)v16);
+    game_1366fa0(v0, (__int64)&v14_.v14, (__int64)v4);
+    if (*(_QWORD*)(*v1 + 200) != 0) {
+      v5 = 128;
+    }
+    else {
+      v5 = 56;
+    }
+    nn_mem_StandardAllocator_Free_alt2(*v1 + v5, v2);
+    GameRoutine_1a0a6b0((__int64)v16, 0x100u, "%s/%s", "HelpableElement",
+                        "Battle_IconGimmick");
+    v14_.v14 = v16;
+    v14_.v15 = GameRoutine_1a09c70((const char*)v16);
+    game_1366fa0(v0, (__int64)&v14_.v14,
+                 (__int64)game_gameui_control_IconGimmick_CreateControl_ptr[0]);
+    v16[0] = "IconLegion";
+    v16[1] = 10;
+    game_1366fa0(v0, (__int64)v16, (__int64)IconLegion_19abb70_ptr[0]);
+    GameRoutine_1a0a6b0((__int64)v16, 0x100u, "%s/%s", "HelpableElement",
+                        "Common_SkillinfoItem");
+    v14_.v14 = v16;
+    v14_.v15 = GameRoutine_1a09c70((const char*)v16);
+    game_1366fa0(v0, (__int64)&v14_.v14, (__int64)ui_game_18b35a0_ptr[0]);
+    GameRoutine_1a0a6b0((__int64)v16, 0x100u, "%s/%s", "HelpGroup",
+                        "Battle_BattleInfoSkillList");
+    v14_.v14 = v16;
+    v14_.v15 = GameRoutine_1a09c70((const char*)v16);
+    game_1366fa0(v0, (__int64)&v14_.v14,
+                 (__int64)BattleInfoSkillList_18b66c0_ptr[0]);
+    v6 = fw_memory_HeapManager_Allocate_alt1(*v1, 16, 16, 0);
+    v7 = GameData_1fa9748[1];
+    *(char**)v6 = GameData_1fa9748[0];
+    *(_QWORD*)(v6 + 8) = v7;
+    GameRoutine_1a0a6b0((__int64)v16, 0x100u, "%s/%s", "HelpableElement",
+                        "Battle_BattleInfoEquip");
+    v14_.v14 = v16;
+    v14_.v15 = GameRoutine_1a09c70((const char*)v16);
+    v8 = game_gameui_control_BattleInfoEquip_CreateControl_ptr[0];
+    game_1366fa0(
+        v0, (__int64)&v14_.v14,
+        (__int64)game_gameui_control_BattleInfoEquip_CreateControl_ptr[0]);
+    GameRoutine_1a0a6b0((__int64)v16, 0x100u, "%s/%s", "HelpableElement",
+                        *(const char**)(v6 + 8));
+    v14_.v14 = v16;
+    v14_.v15 = GameRoutine_1a09c70((const char*)v16);
+    game_1366fa0(v0, (__int64)&v14_.v14, (__int64)v8);
+    if (*(_QWORD*)(*v1 + 200) != 0) {
+      v9 = 128;
+    }
+    else {
+      v9 = 56;
+    }
+    nn_mem_StandardAllocator_Free_alt2(*v1 + v9, v6);
+    GameRoutine_1a0a6b0((__int64)v16, 0x100u, "%s/%s", "HelpableElement",
+                        "Battle_BattleInfoReliance");
+    v14_.v14 = v16;
+    v14_.v15 = GameRoutine_1a09c70((const char*)v16);
+    game_1366fa0(
+        v0, (__int64)&v14_.v14,
+        (__int64)game_gameui_control_BattleInfoReliance_CreateControl_ptr[0]);
+    v16[0] = "BattleInfoStatus";
+    v16[1] = 16;
+    game_1366fa0(v0, (__int64)v16, (__int64)BattleInfoStatus_19ad260_ptr[0]);
+    GameRoutine_1a0a6b0((__int64)v16, 0x100u, "%s/%s", "HelpableElement",
+                        "Common_UnitInfoClan");
+    v14_.v14 = v16;
+    v14_.v15 = GameRoutine_1a09c70((const char*)v16);
+    game_1366fa0(
+        v0, (__int64)&v14_.v14,
+        (__int64)game_gameui_control_UnitInfoClan_CreateControl_ptr[0]);
+    GameRoutine_1a0a6b0((__int64)v16, 0x100u, "%s/%s", "HelpableElement",
+                        "Common_MasteryInfoItem");
+    v14_.v14 = v16;
+    v14_.v15 = GameRoutine_1a09c70((const char*)v16);
+    game_1366fa0(v0, (__int64)&v14_.v14,
+                 (__int64)game_gameui_control_MasteryInfo_CreateControl_ptr[0]);
+    v16[0] = "InfoTitle";
+    v16[1] = 9;
+    game_1366fa0(v0, (__int64)v16, (__int64)InfoTitle_18b7500_ptr[0]);
+    v16[0] = "InfoDetails";
+    v16[1] = 11;
+    game_1366fa0(v0, (__int64)v16,
+                 (__int64)game_gameui_control_InfoDetails_CreateControl_ptr[0]);
+    GameRoutine_1a0a6b0((__int64)v16, 0x100u, "%s/%s", "InfoDetails",
+                        "Common_Help32x02InfoDetail");
+    v14_.v14 = v16;
+    v14_.v15 = GameRoutine_1a09c70((const char*)v16);
+    game_1366fa0(
+        v0, (__int64)&v14_.v14,
+        (__int64)game_gameui_control_InfoDetailsText_CreateControl_ptr[0]);
+    v10 = fw_memory_HeapManager_Allocate_alt1(*v1, 16, 16, 0);
+    v11 = GameData_1fa9758[1];
+    *(char**)v10 = GameData_1fa9758[0];
+    *(_QWORD*)(v10 + 8) = v11;
+    GameRoutine_1a0a6b0((__int64)v16, 0x100u, "%s/%s", "InfoDetails",
+                        "Common_ItemInfoDetail");
+    v14_.v14 = v16;
+    v14_.v15 = GameRoutine_1a09c70((const char*)v16);
+    v12 = game_gameui_control_InfoDetailsItem_CreateControl_ptr[0];
+    game_1366fa0(
+        v0, (__int64)&v14_.v14,
+        (__int64)game_gameui_control_InfoDetailsItem_CreateControl_ptr[0]);
+    GameRoutine_1a0a6b0((__int64)v16, 0x100u, "%s/%s", "InfoDetails",
+                        *(const char**)(v10 + 8));
+    v14_.v14 = v16;
+    v14_.v15 = GameRoutine_1a09c70((const char*)v16);
+    game_1366fa0(v0, (__int64)&v14_.v14, (__int64)v12);
+    if (*(_QWORD*)(*v1 + 200) != 0) {
+      v13 = 128;
+    }
+    else {
+      v13 = 56;
+    }
+    nn_mem_StandardAllocator_Free_alt2(*v1 + v13, v10);
+    GameRoutine_1a0a6b0((__int64)v16, 0x100u, "%s/%s", "InfoDetails",
+                        "Common_AnimalInfoDetail");
+    v14_.v14 = v16;
+    v14_.v15 = GameRoutine_1a09c70((const char*)v16);
+    game_1366fa0(
+        v0, (__int64)&v14_.v14,
+        (__int64)game_gameui_control_InfoDetailsAnimal_CreateControl_ptr[0]);
+    GameRoutine_1a0a6b0((__int64)v16, 0x100u, "%s/%s", "InfoDetails",
+                        "Common_LegionInfoDetail");
+    v14_.v14 = v16;
+    v14_.v15 = GameRoutine_1a09c70((const char*)v16);
+    game_1366fa0(
+        v0, (__int64)&v14_.v14,
+        (__int64)game_gameui_control_InfoDetailsLegion_CreateControl_ptr[0]);
+    v16[0] = "FloatingHelp";
+    v16[1] = 12;
+    game_1366fa0(v0, (__int64)v16, (__int64)FloatingHelp_18a4c80_ptr[0]);
+    v16[0] = "HelpGroup";
+    v16[1] = 9;
+    game_1366fa0(v0, (__int64)v16, (__int64)HelpGroup_18b3f00_ptr[0]);
+    GameRoutine_1a0a6b0((__int64)v16, 0x100u, "%s/%s", "InfoItem",
+                        "Battle_HitInfo");
+    v14_.v14 = v16;
+    v14_.v15 = GameRoutine_1a09c70((const char*)v16);
+    game_1366fa0(v0, (__int64)&v14_.v14,
+                 (__int64)BattlePopupDamage_18bf160_ptr[0]);
+    GameRoutine_1a0a6b0((__int64)v16, 0x100u, "%s/%s", "InfoItem",
+                        "Battle_BlazeGaugeInfo");
+    v14_.v14 = v16;
+    v14_.v15 = GameRoutine_1a09c70((const char*)v16);
+    game_1366fa0(v0, (__int64)&v14_.v14,
+                 (__int64)BattlePopupBlaze_18c10b0_ptr[0]);
+    v16[0] = "HPStock";
+    v16[1] = 7;
+    game_1366fa0(v0, (__int64)v16, (__int64)HPStock_18a1c50_ptr[0]);
+    v16[0] = "JobIcon";
+    v16[1] = 7;
+    game_1366fa0(v0, (__int64)v16, (__int64)game_19a87a0_ptr[0]);
+    v16[0] = "GmapTroopInfo";
+    v16[1] = 13;
+    game_1366fa0(
+        v0, (__int64)v16,
+        (__int64)game_gameui_control_GmapTroopInfo_CreateControl_ptr[0]);
+    v16[0] = "TlpResult";
+    v16[1] = 9;
+    game_1366fa0(v0, (__int64)v16,
+                 (__int64)game_gameui_control_TlpResult_CreateControl_ptr[0]);
+    v16[0] = "AsyncLoadThumbImage";
+    v16[1] = 19;
+    game_1366fa0(
+        v0, (__int64)v16,
+        (__int64)game_gameui_control_AsyncLoadThumbImage_CreateControl);
+    v16[0] = "KeyIcon";
+    v16[1] = 7;
+    game_1366fa0(v0, (__int64)v16,
+                 (__int64)game_gameui_control_KeyIcon_CreateControl_ptr[0]);
+    v16[0] = "KeyArrow";
+    v16[1] = 8;
+    game_1366fa0(v0, (__int64)v16, (__int64)game_1796700_ptr[0]);
+    v16[0] = "KeySort";
+    v16[1] = 7;
+    game_1366fa0(v0, (__int64)v16, (__int64)KeySort_1797030_ptr[0]);
+    v16[0] = "PopupBln";
+    v16[1] = 8;
+    game_1366fa0(v0, (__int64)v16, (__int64)BlnPopup_19f1c50_ptr);
+  }
 }
 
 __attribute__((swiftcall)) void

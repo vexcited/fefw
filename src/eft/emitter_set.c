@@ -32,6 +32,10 @@ __int64 EmitterSet_5b6440(__int64 result, __int64);
 __int64 GameRoutine_5d2530(__int64, __int64);
 __int64 EmitterSet_5b58c0(__int64 result, unsigned int a2, char a3,
                           __int64 (*a4)(__int64*), long double a5);
+__int64 GameRoutine_5c02c0(_QWORD);
+__int64 nn_os_LockMutex(__int64);
+__int64 nn_os_UnlockMutex(__int64);
+__int64 EmitterSet_5d27c0(__int64 a1, __int64 a2);
 
 __int64 EmitterSet_5b58c0(__int64 result, unsigned int a2, char a3,
                           __int64 (*a4)(__int64*), long double a5)
@@ -524,6 +528,39 @@ LABEL_5:
   result = vmulq_f32(v12, *(float32x4_t*)(a1 + 288));
   *(float32x4_t*)(a1 + 320) = result;
   return result;
+}
+
+__int64 EmitterSet_5d27c0(__int64 a1, __int64 a2)
+{
+  int v4;
+  __int64 v5;
+  __int64* v6;
+  __int64 v7;
+
+  if (*(_BYTE*)(a2 + 12) == 0) {
+    return GameRoutine_5c02c0("EmitterSet has been already deleted.\n");
+  }
+  nn_os_LockMutex(a1 + 5824);
+  v4 = *(_DWORD*)(a1 + 2232);
+  if (v4 < 1) {
+  LABEL_6:
+    *(_QWORD*)(*(_QWORD*)(a1 + 2224) + 8LL * v4) = a2;
+    ++*(_DWORD*)(a1 + 2232);
+  }
+  else {
+    v5 = *(unsigned int*)(a1 + 2232);
+    v6 = *(__int64**)(a1 + 2224);
+    while (1) {
+      v7 = *v6++;
+      if (v7 == a2) {
+        break;
+      }
+      if (--v5 == 0) {
+        goto LABEL_6;
+      }
+    }
+  }
+  return nn_os_UnlockMutex(a1 + 5824);
 }
 
 #pragma GCC visibility pop
