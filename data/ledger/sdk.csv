@@ -14360,7 +14360,7 @@ ffee0,324,verified,src/nn/fs/unplaced.c,nn_fs_GetAndClearMemoryReportInfo
 423c00,1396,disputed,src/nn/fontll/itype/unplaced_12.c,nn_fontll_itype_423c00
 4241c0,112,verified,src/nn/fontll/itype/unplaced.c,engrave_graymap
 424820,200,verified,src/nn/fontll/itype/unplaced.c,emboss_graymap
-424e80,6780,verified,src/nn/fontll/itype/unplaced.c,outline_graymap
+424e80,7624,verified,src/nn/fontll/itype/unplaced.c,outline_graymap
 427000,1120,verified,src/nn/fontll/itype/unplaced.c,soft_outline_graymap
 427480,5880,verified,src/nn/fontll/itype/unplaced.c,Soften
 429280,3652,verified,src/nn/fontll/itype/unplaced.c,pixelbold_graymap2
@@ -33330,7 +33330,7 @@ ffee0,324,verified,src/nn/fs/unplaced.c,nn_fs_GetAndClearMemoryReportInfo
 7f5934,24,verified,src/llvm-libcxx/libcxx/src/unplaced_14.c,llvmlibcxx_libcxx_7f5934
 7f5950,48,verified,src/nn/sdk_trivial_thunks.cpp,_Z14SdkStub_7f5950m
 7f5980,792,verified,src/llvm-libcxx/libcxx/src/locale_impl.c,std___1_basic_filebuf_swap
-7f5ca0,224,verified,src/llvm-libcxx/libcxx/src/locale_impl.c,locale_7f5ca0
+7f5ca0,236,verified,src/llvm-libcxx/libcxx/src/locale_impl.c,locale_7f5ca0
 7f5d90,632,disputed,src/llvm-libcxx/libcxx/src/unplaced_17.c,llvm_libcxx_libcxx_src_7f5d90
 7f6030,84,verified,src/llvm-libcxx/libcxx/src/locale_impl.c,std___1_basic_filebuf___read_mode
 7f6090,56,verified,src/llvm-libcxx/libcxx/src/locale_impl.c,locale_7f6090
@@ -34068,7 +34068,7 @@ ffee0,324,verified,src/nn/fs/unplaced.c,nn_fs_GetAndClearMemoryReportInfo
 824fb0,64,verified,src/llvm-libcxx/libcxx/src/locale.cpp,_ZNSt3__110__time_getC2EPKc
 825090,80,verified,src/llvm-libcxx/libcxx/src/locale.cpp,_ZNSt3__110__time_getC2ERKNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEE
 825130,28,verified,src/llvm-libcxx/libcxx/src/locale.cpp,_ZNSt3__110__time_getD2Ev
-825160,3384,verified,src/llvm-libcxx/libcxx/src/locale_impl.c,std___1___time_get_storage___analyze
+825160,3432,verified,src/llvm-libcxx/libcxx/src/locale_impl.c,std___1___time_get_storage___analyze
 827538,28,verified,src/llvm-libcxx/libcxx/src/locale_impl.c,locale_827538
 827580,360,verified,src/llvm-libcxx/libcxx/src/locale.cpp,_ZNSt3__114__scan_keywordB8ne180100IPcPNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEENS_5ctypeIcEEEET0_RT_SC_SB_SB_RKT1_Rjb
 8278a0,2280,verified,src/llvm-libcxx/libcxx/src/locale.cpp,_ZNSt3__118__time_get_storageIwE9__analyzeEcRKNS_5ctypeIwEE
