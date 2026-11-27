@@ -540,8 +540,8 @@ dltss_fkinterface_nhwc_conv_3x3_pool_128_096_032_e5m3_fp16_GetGridDim(int a1,
                                                                       int a3);
 __int64
 dltss_fkinterface_nhwc_conv_3x3_pool_128_096_032_e5m3_fp16_GetBlockDim();
-__int64
-dltss_fkinterface_nhwc_conv_3x3_pool_128_096_032_e5m3_fp16_Launch(__int64 a1);
+__int64 dltss_fkinterface_nhwc_conv_3x3_pool_128_096_032_e5m3_fp16_Launch_alt1(
+    __int64 a1);
 unsigned __int64
 dltss_fkinterface_nhwc_conv_3x3_pool_128_096_032_fp16_fp16_GetGridDim(int a1,
                                                                       int a2,
@@ -1031,6 +1031,8 @@ _DWORD* dltss_fast_kernels_5680(__int64 a1);
 _DWORD* dltss_fast_kernels_5980(__int64 a1);
 _DWORD* dltss_fast_kernels_62e0(__int64 a1);
 _DWORD* dltss_fast_kernels_6520(__int64 a1, int a2);
+_DWORD*
+dltss_fkinterface_nhwc_conv_3x3_pool_128_096_032_e5m3_fp16_Launch(__int64 a1);
 // Inserts one name and callback pair into a callback map, as the
 // unordered_map emplace of a temporary pair does.
 static inline __attribute__((always_inline)) void
@@ -5912,6 +5914,9 @@ _DWORD*
 
 dltss_fkinterface_nhwc_conv_1x1_pool_256_064_032_e5m3_e5m3_Launch(__int64 a1)
 {
+
+#pragma clang fp contract(on)
+
   int v1;
   int v2;
   bool v4;
@@ -5954,9 +5959,9 @@ dltss_fkinterface_nhwc_conv_1x1_pool_256_064_032_e5m3_e5m3_Launch(__int64 a1)
   v10 = v9 * (v6 >> 3);
   *(_DWORD*)(a1 + 308) = v9;
   *(_DWORD*)(a1 + 304) = v10;
-  NgxRoutine_36f0_mv((_DWORD*)(a1 + 312), (unsigned int*)(a1 + 316), v10);
-  result = NgxRoutine_36f0_mv((_DWORD*)(a1 + 320), (unsigned int*)(a1 + 324),
-                              *(_DWORD*)(a1 + 308));
+  NgxRoutine_36f0_alt1((_DWORD*)(a1 + 312), (unsigned int*)(a1 + 316), v10);
+  result = NgxRoutine_36f0_alt1((_DWORD*)(a1 + 320), (unsigned int*)(a1 + 324),
+                                *(_DWORD*)(a1 + 308));
   *(_QWORD*)(a1 + 160) = 32;
   v12 = *(int*)(a1 + 120) * *(int*)(a1 + 116);
   v13 = *(int*)(a1 + 92);
@@ -6276,10 +6281,13 @@ __int64 dltss_fkinterface_nhwc_conv_3x3_pool_128_096_032_e5m3_fp16_GetBlockDim()
   return 0x100000080LL;
 }
 
-__int64
+_DWORD*
 
 dltss_fkinterface_nhwc_conv_3x3_pool_128_096_032_e5m3_fp16_Launch(__int64 a1)
 {
+
+#pragma clang fp contract(on)
+
   int v1;
   int v2;
   bool v4;
@@ -6288,20 +6296,21 @@ dltss_fkinterface_nhwc_conv_3x3_pool_128_096_032_e5m3_fp16_Launch(__int64 a1)
   int v7;
   int v8;
   int v9;
-  __int64 result;
-  int v11;
-  __int64 v12;
-  int v13;
-  unsigned int v14;
-  __int64 v15;
+  unsigned int v10;
+  _DWORD* result;
+  int v12;
+  __int64 v13;
+  int v14;
+  unsigned int v15;
   __int64 v16;
   __int64 v17;
-  __int64* v18;
-  __int64 v19;
-  __int64* v20;
-  int v21;
+  __int64 v18;
+  __int64* v19;
+  __int64 v20;
+  __int64* v21;
   int v22;
   int v23;
+  int v24;
 
   v1 = *(_DWORD*)(a1 + 100);
   v2 = *(_DWORD*)(a1 + 104);
@@ -6318,60 +6327,62 @@ dltss_fkinterface_nhwc_conv_3x3_pool_128_096_032_e5m3_fp16_Launch(__int64 a1)
     v8 = v7;
   }
   v9 = v8 >> 3;
+  v10 = v9 * (v6 >> 2);
   *(_DWORD*)(a1 + 308) = v9;
-  *(_DWORD*)(a1 + 304) = v9 * (v6 >> 2);
-  NgxRoutine_36f0(a1 + 312, a1 + 316);
-  result = NgxRoutine_36f0(a1 + 320, a1 + 324);
+  *(_DWORD*)(a1 + 304) = v10;
+  NgxRoutine_36f0_alt1((_DWORD*)(a1 + 312), (unsigned int*)(a1 + 316), v10);
+  result = NgxRoutine_36f0_alt1((_DWORD*)(a1 + 320), (unsigned int*)(a1 + 324),
+                                *(_DWORD*)(a1 + 308));
   *(_QWORD*)(a1 + 160) = 32;
-  v11 = *(_DWORD*)(a1 + 120) * *(_DWORD*)(a1 + 116);
-  v12 = *(int*)(a1 + 92);
-  v13 = v11 - 1;
-  v14 = v11 - 2;
-  if (v11 >= 2) {
-    v15 = 2 * v12;
-    v16 = v13 & 7;
-    if (v14 < 7) {
-      v17 = 0;
-      if ((v13 & 7) == 0) {
+  v12 = *(int*)(a1 + 120) * *(int*)(a1 + 116);
+  v13 = *(int*)(a1 + 92);
+  v14 = v12 - 1;
+  v15 = v12 - 2;
+  if (v12 >= 2) {
+    v16 = 2 * v13;
+    v17 = v14 & 7;
+    if (v15 < 7) {
+      v18 = 0;
+      if ((v14 & 7) == 0) {
         goto LABEL_14;
       }
       goto LABEL_12;
     }
-    v18 = (__int64*)(a1 + 224);
-    v19 = 0;
+    v19 = (__int64*)(a1 + 224);
+    v20 = 0;
     do {
-      *(v18 - 7) = v15;
-      *(v18 - 6) = v15;
-      *(v18 - 5) = v15;
-      *(v18 - 4) = v15;
-      v19 -= 8;
-      *(v18 - 3) = v15;
-      *(v18 - 2) = v15;
-      *(v18 - 1) = v15;
-      *v18 = v15;
-      v18 += 8;
-    } while (-(__int64)(v13 & 0x7FFFFFF8) != v19);
-    v17 = -v19;
-    if ((v13 & 7) != 0) {
+      *(v19 - 7) = v16;
+      *(v19 - 6) = v16;
+      *(v19 - 5) = v16;
+      *(v19 - 4) = v16;
+      v20 -= 8;
+      *(v19 - 3) = v16;
+      *(v19 - 2) = v16;
+      *(v19 - 1) = v16;
+      *v19 = v16;
+      v19 += 8;
+    } while (-(__int64)(v14 & 0x7FFFFFF8) != v20);
+    v18 = -v20;
+    if ((v14 & 7) != 0) {
     LABEL_12:
-      v20 = (__int64*)(a1 + 8 * v17 + 168);
+      v21 = (__int64*)(a1 + 8 * v18 + 168);
       do {
-        *v20++ = v15;
-        --v16;
-      } while (v16 != 0);
+        *v21++ = v16;
+        --v17;
+      } while (v17 != 0);
     }
   }
 LABEL_14:
-  *(_QWORD*)(a1 + 8LL * v13 + 168) = 64 - 2LL * (int)(v12 * v13);
-  v21 = v12 + 31;
-  v4 = (int)v12 < -31;
-  v22 = v12 + 62;
+  *(_QWORD*)(a1 + 8LL * v14 + 168) = 64 - 2LL * (int)v13 * v14;
+  v22 = v13 + 31;
+  v4 = (int)v13 < -31;
+  v23 = v13 + 62;
   if (!v4) {
-    v22 = v21;
+    v23 = v22;
   }
-  v23 = (v22 >> 5) - 1;
-  *(_DWORD*)(a1 + 352) = v23;
-  *(_DWORD*)(a1 + 356) = 32 * v23;
+  v24 = (v23 >> 5) - 1;
+  *(_DWORD*)(a1 + 352) = v24;
+  *(_DWORD*)(a1 + 356) = 32 * v24;
   return result;
 }
 
@@ -7332,6 +7343,9 @@ _DWORD*
 
 dltss_fkinterface_nhwc_conv_3x3_pool_064_064_032_fp16_fp16_Launch(__int64 a1)
 {
+
+#pragma clang fp contract(on)
+
   int v1;
   int v2;
   bool v4;
@@ -7374,9 +7388,9 @@ dltss_fkinterface_nhwc_conv_3x3_pool_064_064_032_fp16_fp16_Launch(__int64 a1)
   v10 = v9 * (v6 >> 2);
   *(_DWORD*)(a1 + 308) = v9;
   *(_DWORD*)(a1 + 304) = v10;
-  NgxRoutine_36f0_mv((_DWORD*)(a1 + 312), (unsigned int*)(a1 + 316), v10);
-  result = NgxRoutine_36f0_mv((_DWORD*)(a1 + 320), (unsigned int*)(a1 + 324),
-                              *(_DWORD*)(a1 + 308));
+  NgxRoutine_36f0_alt1((_DWORD*)(a1 + 312), (unsigned int*)(a1 + 316), v10);
+  result = NgxRoutine_36f0_alt1((_DWORD*)(a1 + 320), (unsigned int*)(a1 + 324),
+                                *(_DWORD*)(a1 + 308));
   *(_QWORD*)(a1 + 160) = 64;
   v12 = *(int*)(a1 + 120) * *(int*)(a1 + 116);
   v13 = *(int*)(a1 + 92);
@@ -8189,6 +8203,9 @@ _DWORD*
 
 dltss_fkinterface_nhwc_conv_3x3_pool_128_032_032_fp16_fp16_Launch(__int64 a1)
 {
+
+#pragma clang fp contract(on)
+
   int v1;
   int v2;
   bool v4;
@@ -8231,9 +8248,9 @@ dltss_fkinterface_nhwc_conv_3x3_pool_128_032_032_fp16_fp16_Launch(__int64 a1)
   v10 = v9 * (v6 >> 2);
   *(_DWORD*)(a1 + 308) = v9;
   *(_DWORD*)(a1 + 304) = v10;
-  NgxRoutine_36f0_mv((_DWORD*)(a1 + 312), (unsigned int*)(a1 + 316), v10);
-  result = NgxRoutine_36f0_mv((_DWORD*)(a1 + 320), (unsigned int*)(a1 + 324),
-                              *(_DWORD*)(a1 + 308));
+  NgxRoutine_36f0_alt1((_DWORD*)(a1 + 312), (unsigned int*)(a1 + 316), v10);
+  result = NgxRoutine_36f0_alt1((_DWORD*)(a1 + 320), (unsigned int*)(a1 + 324),
+                                *(_DWORD*)(a1 + 308));
   *(_QWORD*)(a1 + 160) = 64;
   v12 = *(int*)(a1 + 120) * *(int*)(a1 + 116);
   v13 = *(int*)(a1 + 92);
@@ -8550,6 +8567,9 @@ _DWORD*
 
 dltss_fkinterface_nhwc_conv_3x3_pool_128_032_040_fp16_fp16_Launch(__int64 a1)
 {
+
+#pragma clang fp contract(on)
+
   int v1;
   int v2;
   bool v4;
@@ -8590,9 +8610,9 @@ dltss_fkinterface_nhwc_conv_3x3_pool_128_032_040_fp16_fp16_Launch(__int64 a1)
   v10 = v9 * (v6 >> 2);
   *(_DWORD*)(a1 + 308) = v9;
   *(_DWORD*)(a1 + 304) = v10;
-  NgxRoutine_36f0_mv((_DWORD*)(a1 + 312), (unsigned int*)(a1 + 316), v10);
-  result = NgxRoutine_36f0_mv((_DWORD*)(a1 + 320), (unsigned int*)(a1 + 324),
-                              *(_DWORD*)(a1 + 308));
+  NgxRoutine_36f0_alt1((_DWORD*)(a1 + 312), (unsigned int*)(a1 + 316), v10);
+  result = NgxRoutine_36f0_alt1((_DWORD*)(a1 + 320), (unsigned int*)(a1 + 324),
+                                *(_DWORD*)(a1 + 308));
   *(_QWORD*)(a1 + 160) = 80;
   v12 = *(int*)(a1 + 120) * *(int*)(a1 + 116);
   v13 = *(int*)(a1 + 92);
@@ -13495,7 +13515,7 @@ void dltss_fkinterface_FastKernels_RegisterLaunchCallbacks(__int64 a1)
       dltss_fkinterface_nhwc_conv_1x1_pool_256_064_032_fp16_fp16_Launch);
   dltss_fkinterface_AddCallback(
       *(__int64*)(a1 + 40), "nhwc_conv_3x3_pool_128_096_032_e5m3_fp16",
-      dltss_fkinterface_nhwc_conv_3x3_pool_128_096_032_e5m3_fp16_Launch);
+      dltss_fkinterface_nhwc_conv_3x3_pool_128_096_032_e5m3_fp16_Launch_alt1);
   dltss_fkinterface_AddCallback(
       *(__int64*)(a1 + 40), "nhwc_conv_3x3_pool_128_096_032_fp16_fp16",
       dltss_fkinterface_nhwc_conv_3x3_pool_128_096_032_fp16_fp16_Launch);
