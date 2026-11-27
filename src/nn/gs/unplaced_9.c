@@ -14,6 +14,21 @@ __int64 SdkRoutine_487b30();
 __int64 nn_gs_47f8a0(__int64 result, char*, __int64, __int64, char);
 void nn_diag_detail_AbortImpl_plt_856170();
 __attribute__((swiftcall)) void nn_gs_484fc0(PSEUDO_X8 x8_, __int64 a1);
+_QWORD* nn_gs_481a60(_QWORD*, __int64,
+                     __int64 (*)(unsigned __int64, __int64, __int64), __int64,
+                     __int64, unsigned __int64, unsigned __int64, __int64);
+__int64 nn_os_SdkMutexType_Lock_plt(__int64);
+__int64 nn_os_SdkMutexType_TryLock_plt(__int64);
+__int64 nn_os_SdkMutexType_Unlock_plt(__int64);
+void SdkRoutine_47c4e0();
+__int64 nn_gs_4860f0(atomic_uint* volatile*** a1, unsigned __int64* a2,
+                     _QWORD* a3, __int64 a4);
+__int64 nn_gs_486e10(atomic_uint* volatile*** a1, unsigned __int64* a2,
+                     _QWORD* a3, __int64 a4);
+__int64 nn_gs_487270(atomic_uint* volatile*** a1, unsigned __int64* a2,
+                     _QWORD* a3, __int64 a4);
+__int64 nn_gs_4876d0(atomic_uint* volatile*** a1, unsigned __int64* a2,
+                     _QWORD* a3, __int64 a4);
 
 __attribute__((swiftcall)) void nn_gs_484fc0(PSEUDO_X8 x8_, __int64 a1)
 {
@@ -463,6 +478,1258 @@ LABEL_181:
     a1 + 8;
     return;
   }
+}
+
+__int64 nn_gs_4860f0(atomic_uint* volatile*** a1, unsigned __int64* a2,
+                     _QWORD* a3, __int64 a4)
+{
+  __int64 v5;
+  __int64 v6;
+  __int64 v7;
+  __int64 v8;
+  atomic_uint* volatile* v9;
+  unsigned __int64 explicit;
+  unsigned __int64 v13;
+  unsigned __int64 v14;
+  unsigned __int64 v15;
+  unsigned __int64 v16;
+  _QWORD* v17;
+  __int64 v18;
+  _QWORD* v19;
+  __int64 v20;
+  __int64 v21;
+  __int64 v22;
+  bool v23;
+  _QWORD* v24;
+  __int64 v25;
+  __int64 v26;
+  _QWORD* v27;
+  _QWORD* v28;
+  _QWORD* v29;
+  _QWORD* v30;
+  unsigned __int64 v31;
+  unsigned __int64 v32;
+  unsigned __int64 v33;
+  unsigned __int64 v34;
+  _QWORD* v35;
+  __int64 v36;
+  _QWORD* v37;
+  __int64 v38;
+  __int64 v39;
+  __int64 v40;
+  atomic_uint* volatile v42;
+  unsigned __int64 v43;
+  __int64 (*v44)(unsigned __int64, __int64, __int64);
+  __int64 v45;
+  __int64 v46;
+  __int64 v47;
+  __int64 v48;
+  __int64 v49;
+  __int64 v50;
+  unsigned __int64 v51;
+  unsigned __int64 v52;
+  unsigned __int64 v53;
+  unsigned __int64 v54;
+  __int64 v55;
+
+  v5 = (__int64)(*a1 + 9);
+  v6 = *(_QWORD*)(a4 + 16);
+  v7 = a4;
+  v8 = v5;
+  v9 = **a1;
+  *(_QWORD*)(a4 + 16) = 0;
+  if (v6 == 0) {
+    goto LABEL_17;
+  }
+  explicit = atomic_load_explicit((atomic_ullong* volatile)(v6 + 24),
+                                  memory_order_acquire);
+  v13 = explicit & 0xFFFFFFFFFFFFFFFELL;
+  if ((explicit & 0xFFFFFFFFFFFFFFFELL) == 0) {
+  LABEL_6:
+    v16 = 0;
+  LABEL_7:
+    v17 = *(_QWORD**)(a4 + 16);
+    *(_QWORD*)(a4 + 16) = v6;
+    if (v17 != nullptr) {
+      if ((nn_os_SdkMutexType_TryLock_plt(v5) & 1) != 0) {
+        v18 = *(_QWORD*)(v8 + 8);
+        v19 = *(_QWORD**)(v18 + 8);
+        *v19 = v17;
+        *(_QWORD*)(v18 + 8) = v17;
+        v17[1] = v19;
+        *v17 = v18;
+        nn_os_SdkMutexType_Unlock_plt(v8);
+      }
+      else {
+        v20 = *(_QWORD*)(v8 + 24);
+        *v17 = v20;
+        v21 = v20;
+        atomic_compare_exchange_strong_explicit(
+            (atomic_ullong* volatile)(v8 + 24), (unsigned __int64*)&v21,
+            (unsigned __int64)v17, memory_order_release, memory_order_relaxed);
+        if (v21 != v20) {
+          v22 = v21;
+          do {
+            *v17 = v21;
+            atomic_compare_exchange_strong_explicit(
+                (atomic_ullong* volatile)(v8 + 24), (unsigned __int64*)&v22,
+                (unsigned __int64)v17, memory_order_release,
+                memory_order_relaxed);
+            v23 = v22 == v21;
+            v21 = v22;
+          } while (!v23);
+        }
+      }
+    }
+    goto LABEL_16;
+  }
+  v14 = explicit;
+  while (1) {
+    v15 = explicit & -(__int64)v13;
+    atomic_compare_exchange_strong((atomic_ullong* volatile)(v6 + 24), &v14,
+                                   v15 ^ explicit);
+    if (v14 == explicit) {
+      break;
+    }
+    v13 = v14 & 0xFFFFFFFFFFFFFFFELL;
+    explicit = v14;
+    if ((v14 & 0xFFFFFFFFFFFFFFFELL) == 0) {
+      goto LABEL_6;
+    }
+  }
+  v16 = (v6 & 0xFFFFFFFFFFFFF000LL) +
+        448LL * (unsigned int)__clz((unsigned long long)(__rbit64(v15)));
+  if (v15 != explicit) {
+    goto LABEL_7;
+  }
+LABEL_16:
+  if (v16 != 0) {
+    goto LABEL_41;
+  }
+LABEL_17:
+  nn_os_SdkMutexType_Lock_plt(v8);
+  v25 = *(_QWORD*)(v8 + 8);
+  v26 = v8 + 8;
+  do {
+    if (v25 != v26) {
+      while (1) {
+        v27 = (_QWORD*)(v25 + 8);
+        __atomic_exchange_n((unsigned int*)(v25 + 8), (unsigned int)v24, 5);
+        __atomic_exchange_n((unsigned int*)v25, v25 + 8, 5);
+        *v24 = v25 + 8;
+        *(_QWORD*)(v25 + 16) = v24;
+        v31 = atomic_load_explicit((atomic_ullong* volatile)(v25 + 24),
+                                   memory_order_acquire);
+        v32 = v31 & 0xFFFFFFFFFFFFFFFELL;
+        if ((v31 & 0xFFFFFFFFFFFFFFFELL) != 0) {
+          break;
+        }
+      LABEL_26:
+        v24 = *(_QWORD**)(v25 + 16);
+        *v24 = v25;
+        *(_QWORD*)(v25 + 16) = v25;
+        *(_QWORD*)(v25 + 8) = v24;
+        *(_QWORD*)v25 = v27;
+        v25 += 8;
+        if ((_QWORD*)v26 == v27) {
+          goto LABEL_20;
+        }
+      }
+      v33 = v31;
+      while (1) {
+        v34 = v31 & -(__int64)v32;
+        atomic_compare_exchange_strong((atomic_ullong* volatile)(v25 + 24),
+                                       &v33, v34 ^ v31);
+        if (v33 == v31) {
+          break;
+        }
+        v32 = v33 & 0xFFFFFFFFFFFFFFFELL;
+        v31 = v33;
+        if ((v33 & 0xFFFFFFFFFFFFFFFELL) == 0) {
+          goto LABEL_26;
+        }
+      }
+      v16 = (v25 & 0xFFFFFFFFFFFFF000LL) +
+            448LL * (unsigned int)__clz((unsigned long long)(__rbit64(v34)));
+      nn_os_SdkMutexType_Unlock_plt(v8);
+      if (v34 == v31) {
+        goto LABEL_41;
+      }
+      goto LABEL_33;
+    }
+    v27 = (_QWORD*)v25;
+  LABEL_20:
+    v24 = (_QWORD*)atomic_exchange_explicit((atomic_ullong* volatile)(v8 + 24),
+                                            0, memory_order_acquire);
+    if (v24 != nullptr) {
+      v28 = (_QWORD*)v27[1];
+      v29 = v24;
+      *v28 = v24;
+      do {
+        v29[1] = v28;
+        v30 = v29;
+        v28 = v29;
+        v29 = (_QWORD*)*v29;
+      } while (v29 != nullptr);
+      *v30 = v27;
+      v27[1] = v30;
+      v27 = v24;
+    }
+    v25 = (__int64)v27;
+  } while (v27 != (_QWORD*)v26);
+  nn_os_SdkMutexType_Unlock_plt(v8);
+  v42 = *v9;
+  if (atomic_load_explicit(*v9, memory_order_acquire) != 1) {
+    return 0;
+  }
+  v43 = atomic_load_explicit((atomic_uint* volatile)((char*)v42 + 40),
+                             memory_order_acquire);
+  v44 = *((__int64 (**)(unsigned __int64, __int64, __int64))v42 + 1);
+  v45 = *((_QWORD*)v42 + 4);
+  v55 = 0;
+  if (((unsigned __int8)nn_gs_481a60(&v55, (__int64)v42 + 48, v44, v45, 2,
+                                     0x1000u, v43, 4096) &
+       1) == 0) {
+    return 0;
+  }
+  v46 = v55;
+  v47 = 40;
+  if ((v55 & 0xFFF) != 0) {
+    v47 = 0;
+  }
+  v25 = v47 + v55;
+  *(_QWORD*)(v25 + 16) = 0;
+  *(_QWORD*)(v25 + 24) = 0;
+  *(_QWORD*)v25 = 0;
+  *(_QWORD*)(v25 + 8) = 0;
+  atomic_store(2u, (unsigned __int64*)(v47 + v46 + 16));
+  v48 = *(_QWORD*)(v47 + v46 + 24);
+  v49 = v48;
+  atomic_compare_exchange_strong_explicit(
+      (atomic_ullong* volatile)(v25 + 24), (unsigned __int64*)&v49, 0x1FEu,
+      memory_order_relaxed, memory_order_relaxed);
+  if (v49 != v48) {
+    v50 = v49;
+    do {
+      atomic_compare_exchange_strong_explicit(
+          (atomic_ullong* volatile)(v25 + 24), (unsigned __int64*)&v50, 0x1FEu,
+          memory_order_relaxed, memory_order_relaxed);
+      v23 = v50 == v49;
+      v49 = v50;
+    } while (!v23);
+  }
+  v51 = atomic_load_explicit((atomic_ullong* volatile)(v25 + 24),
+                             memory_order_acquire);
+  v52 = v51 & 0xFFFFFFFFFFFFFFFELL;
+  if ((v51 & 0xFFFFFFFFFFFFFFFELL) == 0) {
+  LABEL_54:
+    if (*(_QWORD*)(v25 + 24) != 510) {
+      nn_diag_detail_AbortImpl_plt_856170();
+    }
+    ((void (*)(char*, _QWORD, _QWORD, unsigned __int64, __int64,
+               __int64))SdkRoutine_47c4e0)((char*)*v9 + 48, *((_QWORD*)*v9 + 2),
+                                           *((_QWORD*)*v9 + 4),
+                                           v25 & 0xFFFFFFFFFFFFF000LL, 2, 4096);
+    return 0;
+  }
+  v53 = v51;
+  while (1) {
+    v54 = v51 & -(__int64)v52;
+    atomic_compare_exchange_strong((atomic_ullong* volatile)(v25 + 24), &v53,
+                                   v54 ^ v51);
+    if (v53 == v51) {
+      break;
+    }
+    v52 = v53 & 0xFFFFFFFFFFFFFFFELL;
+    v51 = v53;
+    if ((v53 & 0xFFFFFFFFFFFFFFFELL) == 0) {
+      goto LABEL_54;
+    }
+  }
+  v16 = (v25 & 0xFFFFFFFFFFFFF000LL) +
+        448LL * (unsigned int)__clz((unsigned long long)(__rbit64(v54)));
+  if (v54 == v51) {
+    goto LABEL_41;
+  }
+LABEL_33:
+  if (v25 != 0) {
+    v35 = *(_QWORD**)(v7 + 16);
+    *(_QWORD*)(v7 + 16) = v25;
+    if (v35 != nullptr) {
+      if ((nn_os_SdkMutexType_TryLock_plt(v8) & 1) != 0) {
+        v36 = *(_QWORD*)(v8 + 8);
+        v37 = *(_QWORD**)(v36 + 8);
+        *v37 = v35;
+        *(_QWORD*)(v36 + 8) = v35;
+        v35[1] = v37;
+        *v35 = v36;
+        nn_os_SdkMutexType_Unlock_plt(v8);
+      }
+      else {
+        v38 = *(_QWORD*)(v8 + 24);
+        *v35 = v38;
+        v39 = v38;
+        atomic_compare_exchange_strong_explicit(
+            (atomic_ullong* volatile)(v8 + 24), (unsigned __int64*)&v39,
+            (unsigned __int64)v35, memory_order_release, memory_order_relaxed);
+        if (v39 != v38) {
+          v40 = v39;
+          do {
+            *v35 = v39;
+            atomic_compare_exchange_strong_explicit(
+                (atomic_ullong* volatile)(v8 + 24), (unsigned __int64*)&v40,
+                (unsigned __int64)v35, memory_order_release,
+                memory_order_relaxed);
+            v23 = v40 == v39;
+            v39 = v40;
+          } while (!v23);
+        }
+      }
+    }
+  }
+LABEL_41:
+  *a2 = v16;
+  *a3 = 448;
+  return 1;
+}
+
+__int64 nn_gs_486e10(atomic_uint* volatile*** a1, unsigned __int64* a2,
+                     _QWORD* a3, __int64 a4)
+{
+  __int64 v5;
+  __int64 v6;
+  __int64 v7;
+  __int64 v8;
+  atomic_uint* volatile* v9;
+  unsigned __int64 explicit;
+  unsigned __int64 v13;
+  unsigned __int64 v14;
+  unsigned __int64 v15;
+  unsigned __int64 v16;
+  _QWORD* v17;
+  __int64 v18;
+  _QWORD* v19;
+  __int64 v20;
+  __int64 v21;
+  __int64 v22;
+  bool v23;
+  _QWORD* v24;
+  __int64 v25;
+  __int64 v26;
+  _QWORD* v27;
+  _QWORD* v28;
+  _QWORD* v29;
+  _QWORD* v30;
+  unsigned __int64 v31;
+  unsigned __int64 v32;
+  unsigned __int64 v33;
+  unsigned __int64 v34;
+  _QWORD* v35;
+  __int64 v36;
+  _QWORD* v37;
+  __int64 v38;
+  __int64 v39;
+  __int64 v40;
+  atomic_uint* volatile v42;
+  unsigned __int64 v43;
+  __int64 (*v44)(unsigned __int64, __int64, __int64);
+  __int64 v45;
+  __int64 v46;
+  __int64 v47;
+  __int64 v48;
+  __int64 v49;
+  __int64 v50;
+  unsigned __int64 v51;
+  unsigned __int64 v52;
+  unsigned __int64 v53;
+  unsigned __int64 v54;
+  __int64 v55;
+
+  v5 = (__int64)(*a1 + 21);
+  v6 = *(_QWORD*)(a4 + 40);
+  v7 = a4;
+  v8 = v5;
+  v9 = **a1;
+  *(_QWORD*)(a4 + 40) = 0;
+  if (v6 == 0) {
+    goto LABEL_17;
+  }
+  explicit = atomic_load_explicit((atomic_ullong* volatile)(v6 + 24),
+                                  memory_order_acquire);
+  v13 = explicit & 0xFFFFFFFFFFFFFFFELL;
+  if ((explicit & 0xFFFFFFFFFFFFFFFELL) == 0) {
+  LABEL_6:
+    v16 = 0;
+  LABEL_7:
+    v17 = *(_QWORD**)(a4 + 40);
+    *(_QWORD*)(a4 + 40) = v6;
+    if (v17 != nullptr) {
+      if ((nn_os_SdkMutexType_TryLock_plt(v5) & 1) != 0) {
+        v18 = *(_QWORD*)(v8 + 8);
+        v19 = *(_QWORD**)(v18 + 8);
+        *v19 = v17;
+        *(_QWORD*)(v18 + 8) = v17;
+        v17[1] = v19;
+        *v17 = v18;
+        nn_os_SdkMutexType_Unlock_plt(v8);
+      }
+      else {
+        v20 = *(_QWORD*)(v8 + 24);
+        *v17 = v20;
+        v21 = v20;
+        atomic_compare_exchange_strong_explicit(
+            (atomic_ullong* volatile)(v8 + 24), (unsigned __int64*)&v21,
+            (unsigned __int64)v17, memory_order_release, memory_order_relaxed);
+        if (v21 != v20) {
+          v22 = v21;
+          do {
+            *v17 = v21;
+            atomic_compare_exchange_strong_explicit(
+                (atomic_ullong* volatile)(v8 + 24), (unsigned __int64*)&v22,
+                (unsigned __int64)v17, memory_order_release,
+                memory_order_relaxed);
+            v23 = v22 == v21;
+            v21 = v22;
+          } while (!v23);
+        }
+      }
+    }
+    goto LABEL_16;
+  }
+  v14 = explicit;
+  while (1) {
+    v15 = explicit & -(__int64)v13;
+    atomic_compare_exchange_strong((atomic_ullong* volatile)(v6 + 24), &v14,
+                                   v15 ^ explicit);
+    if (v14 == explicit) {
+      break;
+    }
+    v13 = v14 & 0xFFFFFFFFFFFFFFFELL;
+    explicit = v14;
+    if ((v14 & 0xFFFFFFFFFFFFFFFELL) == 0) {
+      goto LABEL_6;
+    }
+  }
+  v16 = (v6 & 0xFFFFFFFFFFFFF000LL) +
+        672LL * (unsigned int)__clz((unsigned long long)(__rbit64(v15)));
+  if (v15 != explicit) {
+    goto LABEL_7;
+  }
+LABEL_16:
+  if (v16 != 0) {
+    goto LABEL_41;
+  }
+LABEL_17:
+  nn_os_SdkMutexType_Lock_plt(v8);
+  v25 = *(_QWORD*)(v8 + 8);
+  v26 = v8 + 8;
+  do {
+    if (v25 != v26) {
+      while (1) {
+        v27 = (_QWORD*)(v25 + 8);
+        __atomic_exchange_n((unsigned int*)(v25 + 8), (unsigned int)v24, 5);
+        __atomic_exchange_n((unsigned int*)v25, v25 + 8, 5);
+        *v24 = v25 + 8;
+        *(_QWORD*)(v25 + 16) = v24;
+        v31 = atomic_load_explicit((atomic_ullong* volatile)(v25 + 24),
+                                   memory_order_acquire);
+        v32 = v31 & 0xFFFFFFFFFFFFFFFELL;
+        if ((v31 & 0xFFFFFFFFFFFFFFFELL) != 0) {
+          break;
+        }
+      LABEL_26:
+        v24 = *(_QWORD**)(v25 + 16);
+        *v24 = v25;
+        *(_QWORD*)(v25 + 16) = v25;
+        *(_QWORD*)(v25 + 8) = v24;
+        *(_QWORD*)v25 = v27;
+        v25 += 8;
+        if ((_QWORD*)v26 == v27) {
+          goto LABEL_20;
+        }
+      }
+      v33 = v31;
+      while (1) {
+        v34 = v31 & -(__int64)v32;
+        atomic_compare_exchange_strong((atomic_ullong* volatile)(v25 + 24),
+                                       &v33, v34 ^ v31);
+        if (v33 == v31) {
+          break;
+        }
+        v32 = v33 & 0xFFFFFFFFFFFFFFFELL;
+        v31 = v33;
+        if ((v33 & 0xFFFFFFFFFFFFFFFELL) == 0) {
+          goto LABEL_26;
+        }
+      }
+      v16 = (v25 & 0xFFFFFFFFFFFFF000LL) +
+            672LL * (unsigned int)__clz((unsigned long long)(__rbit64(v34)));
+      nn_os_SdkMutexType_Unlock_plt(v8);
+      if (v34 == v31) {
+        goto LABEL_41;
+      }
+      goto LABEL_33;
+    }
+    v27 = (_QWORD*)v25;
+  LABEL_20:
+    v24 = (_QWORD*)atomic_exchange_explicit((atomic_ullong* volatile)(v8 + 24),
+                                            0, memory_order_acquire);
+    if (v24 != nullptr) {
+      v28 = (_QWORD*)v27[1];
+      v29 = v24;
+      *v28 = v24;
+      do {
+        v29[1] = v28;
+        v30 = v29;
+        v28 = v29;
+        v29 = (_QWORD*)*v29;
+      } while (v29 != nullptr);
+      *v30 = v27;
+      v27[1] = v30;
+      v27 = v24;
+    }
+    v25 = (__int64)v27;
+  } while (v27 != (_QWORD*)v26);
+  nn_os_SdkMutexType_Unlock_plt(v8);
+  v42 = *v9;
+  if (atomic_load_explicit(*v9, memory_order_acquire) != 1) {
+    return 0;
+  }
+  v43 = atomic_load_explicit((atomic_uint* volatile)((char*)v42 + 40),
+                             memory_order_acquire);
+  v44 = *((__int64 (**)(unsigned __int64, __int64, __int64))v42 + 1);
+  v45 = *((_QWORD*)v42 + 4);
+  v55 = 0;
+  if (((unsigned __int8)nn_gs_481a60(&v55, (__int64)v42 + 48, v44, v45, 2,
+                                     0x1000u, v43, 4096) &
+       1) == 0) {
+    return 0;
+  }
+  v46 = v55;
+  v47 = 40;
+  if ((v55 & 0xFFF) != 0) {
+    v47 = 0;
+  }
+  v25 = v47 + v55;
+  *(_QWORD*)(v25 + 16) = 0;
+  *(_QWORD*)(v25 + 24) = 0;
+  *(_QWORD*)v25 = 0;
+  *(_QWORD*)(v25 + 8) = 0;
+  atomic_store(5u, (unsigned __int64*)(v47 + v46 + 16));
+  v48 = *(_QWORD*)(v47 + v46 + 24);
+  v49 = v48;
+  atomic_compare_exchange_strong_explicit(
+      (atomic_ullong* volatile)(v25 + 24), (unsigned __int64*)&v49, 0x3Eu,
+      memory_order_relaxed, memory_order_relaxed);
+  if (v49 != v48) {
+    v50 = v49;
+    do {
+      atomic_compare_exchange_strong_explicit(
+          (atomic_ullong* volatile)(v25 + 24), (unsigned __int64*)&v50, 0x3Eu,
+          memory_order_relaxed, memory_order_relaxed);
+      v23 = v50 == v49;
+      v49 = v50;
+    } while (!v23);
+  }
+  v51 = atomic_load_explicit((atomic_ullong* volatile)(v25 + 24),
+                             memory_order_acquire);
+  v52 = v51 & 0xFFFFFFFFFFFFFFFELL;
+  if ((v51 & 0xFFFFFFFFFFFFFFFELL) == 0) {
+  LABEL_54:
+    if (*(_QWORD*)(v25 + 24) != 62) {
+      nn_diag_detail_AbortImpl_plt_856170();
+    }
+    ((void (*)(char*, _QWORD, _QWORD, unsigned __int64, __int64,
+               __int64))SdkRoutine_47c4e0)((char*)*v9 + 48, *((_QWORD*)*v9 + 2),
+                                           *((_QWORD*)*v9 + 4),
+                                           v25 & 0xFFFFFFFFFFFFF000LL, 2, 4096);
+    return 0;
+  }
+  v53 = v51;
+  while (1) {
+    v54 = v51 & -(__int64)v52;
+    atomic_compare_exchange_strong((atomic_ullong* volatile)(v25 + 24), &v53,
+                                   v54 ^ v51);
+    if (v53 == v51) {
+      break;
+    }
+    v52 = v53 & 0xFFFFFFFFFFFFFFFELL;
+    v51 = v53;
+    if ((v53 & 0xFFFFFFFFFFFFFFFELL) == 0) {
+      goto LABEL_54;
+    }
+  }
+  v16 = (v25 & 0xFFFFFFFFFFFFF000LL) +
+        672LL * (unsigned int)__clz((unsigned long long)(__rbit64(v54)));
+  if (v54 == v51) {
+    goto LABEL_41;
+  }
+LABEL_33:
+  if (v25 != 0) {
+    v35 = *(_QWORD**)(v7 + 40);
+    *(_QWORD*)(v7 + 40) = v25;
+    if (v35 != nullptr) {
+      if ((nn_os_SdkMutexType_TryLock_plt(v8) & 1) != 0) {
+        v36 = *(_QWORD*)(v8 + 8);
+        v37 = *(_QWORD**)(v36 + 8);
+        *v37 = v35;
+        *(_QWORD*)(v36 + 8) = v35;
+        v35[1] = v37;
+        *v35 = v36;
+        nn_os_SdkMutexType_Unlock_plt(v8);
+      }
+      else {
+        v38 = *(_QWORD*)(v8 + 24);
+        *v35 = v38;
+        v39 = v38;
+        atomic_compare_exchange_strong_explicit(
+            (atomic_ullong* volatile)(v8 + 24), (unsigned __int64*)&v39,
+            (unsigned __int64)v35, memory_order_release, memory_order_relaxed);
+        if (v39 != v38) {
+          v40 = v39;
+          do {
+            *v35 = v39;
+            atomic_compare_exchange_strong_explicit(
+                (atomic_ullong* volatile)(v8 + 24), (unsigned __int64*)&v40,
+                (unsigned __int64)v35, memory_order_release,
+                memory_order_relaxed);
+            v23 = v40 == v39;
+            v39 = v40;
+          } while (!v23);
+        }
+      }
+    }
+  }
+LABEL_41:
+  *a2 = v16;
+  *a3 = 672;
+  return 1;
+}
+
+__int64 nn_gs_487270(atomic_uint* volatile*** a1, unsigned __int64* a2,
+                     _QWORD* a3, __int64 a4)
+{
+  __int64 v5;
+  __int64 v6;
+  __int64 v7;
+  __int64 v8;
+  atomic_uint* volatile* v9;
+  unsigned __int64 explicit;
+  unsigned __int64 v13;
+  unsigned __int64 v14;
+  unsigned __int64 v15;
+  unsigned __int64 v16;
+  _QWORD* v17;
+  __int64 v18;
+  _QWORD* v19;
+  __int64 v20;
+  __int64 v21;
+  __int64 v22;
+  bool v23;
+  _QWORD* v24;
+  __int64 v25;
+  __int64 v26;
+  _QWORD* v27;
+  _QWORD* v28;
+  _QWORD* v29;
+  _QWORD* v30;
+  unsigned __int64 v31;
+  unsigned __int64 v32;
+  unsigned __int64 v33;
+  unsigned __int64 v34;
+  _QWORD* v35;
+  __int64 v36;
+  _QWORD* v37;
+  __int64 v38;
+  __int64 v39;
+  __int64 v40;
+  atomic_uint* volatile v42;
+  unsigned __int64 v43;
+  __int64 (*v44)(unsigned __int64, __int64, __int64);
+  __int64 v45;
+  __int64 v46;
+  __int64 v47;
+  __int64 v48;
+  __int64 v49;
+  __int64 v50;
+  unsigned __int64 v51;
+  unsigned __int64 v52;
+  unsigned __int64 v53;
+  unsigned __int64 v54;
+  __int64 v55;
+
+  v5 = (__int64)(*a1 + 25);
+  v6 = *(_QWORD*)(a4 + 48);
+  v7 = a4;
+  v8 = v5;
+  v9 = **a1;
+  *(_QWORD*)(a4 + 48) = 0;
+  if (v6 == 0) {
+    goto LABEL_17;
+  }
+  explicit = atomic_load_explicit((atomic_ullong* volatile)(v6 + 24),
+                                  memory_order_acquire);
+  v13 = explicit & 0xFFFFFFFFFFFFFFFELL;
+  if ((explicit & 0xFFFFFFFFFFFFFFFELL) == 0) {
+  LABEL_6:
+    v16 = 0;
+  LABEL_7:
+    v17 = *(_QWORD**)(a4 + 48);
+    *(_QWORD*)(a4 + 48) = v6;
+    if (v17 != nullptr) {
+      if ((nn_os_SdkMutexType_TryLock_plt(v5) & 1) != 0) {
+        v18 = *(_QWORD*)(v8 + 8);
+        v19 = *(_QWORD**)(v18 + 8);
+        *v19 = v17;
+        *(_QWORD*)(v18 + 8) = v17;
+        v17[1] = v19;
+        *v17 = v18;
+        nn_os_SdkMutexType_Unlock_plt(v8);
+      }
+      else {
+        v20 = *(_QWORD*)(v8 + 24);
+        *v17 = v20;
+        v21 = v20;
+        atomic_compare_exchange_strong_explicit(
+            (atomic_ullong* volatile)(v8 + 24), (unsigned __int64*)&v21,
+            (unsigned __int64)v17, memory_order_release, memory_order_relaxed);
+        if (v21 != v20) {
+          v22 = v21;
+          do {
+            *v17 = v21;
+            atomic_compare_exchange_strong_explicit(
+                (atomic_ullong* volatile)(v8 + 24), (unsigned __int64*)&v22,
+                (unsigned __int64)v17, memory_order_release,
+                memory_order_relaxed);
+            v23 = v22 == v21;
+            v21 = v22;
+          } while (!v23);
+        }
+      }
+    }
+    goto LABEL_16;
+  }
+  v14 = explicit;
+  while (1) {
+    v15 = explicit & -(__int64)v13;
+    atomic_compare_exchange_strong((atomic_ullong* volatile)(v6 + 24), &v14,
+                                   v15 ^ explicit);
+    if (v14 == explicit) {
+      break;
+    }
+    v13 = v14 & 0xFFFFFFFFFFFFFFFELL;
+    explicit = v14;
+    if ((v14 & 0xFFFFFFFFFFFFFFFELL) == 0) {
+      goto LABEL_6;
+    }
+  }
+  v16 = (v6 & 0xFFFFFFFFFFFFF000LL) +
+        816LL * (unsigned int)__clz((unsigned long long)(__rbit64(v15)));
+  if (v15 != explicit) {
+    goto LABEL_7;
+  }
+LABEL_16:
+  if (v16 != 0) {
+    goto LABEL_41;
+  }
+LABEL_17:
+  nn_os_SdkMutexType_Lock_plt(v8);
+  v25 = *(_QWORD*)(v8 + 8);
+  v26 = v8 + 8;
+  do {
+    if (v25 != v26) {
+      while (1) {
+        v27 = (_QWORD*)(v25 + 8);
+        __atomic_exchange_n((unsigned int*)(v25 + 8), (unsigned int)v24, 5);
+        __atomic_exchange_n((unsigned int*)v25, v25 + 8, 5);
+        *v24 = v25 + 8;
+        *(_QWORD*)(v25 + 16) = v24;
+        v31 = atomic_load_explicit((atomic_ullong* volatile)(v25 + 24),
+                                   memory_order_acquire);
+        v32 = v31 & 0xFFFFFFFFFFFFFFFELL;
+        if ((v31 & 0xFFFFFFFFFFFFFFFELL) != 0) {
+          break;
+        }
+      LABEL_26:
+        v24 = *(_QWORD**)(v25 + 16);
+        *v24 = v25;
+        *(_QWORD*)(v25 + 16) = v25;
+        *(_QWORD*)(v25 + 8) = v24;
+        *(_QWORD*)v25 = v27;
+        v25 += 8;
+        if ((_QWORD*)v26 == v27) {
+          goto LABEL_20;
+        }
+      }
+      v33 = v31;
+      while (1) {
+        v34 = v31 & -(__int64)v32;
+        atomic_compare_exchange_strong((atomic_ullong* volatile)(v25 + 24),
+                                       &v33, v34 ^ v31);
+        if (v33 == v31) {
+          break;
+        }
+        v32 = v33 & 0xFFFFFFFFFFFFFFFELL;
+        v31 = v33;
+        if ((v33 & 0xFFFFFFFFFFFFFFFELL) == 0) {
+          goto LABEL_26;
+        }
+      }
+      v16 = (v25 & 0xFFFFFFFFFFFFF000LL) +
+            816LL * (unsigned int)__clz((unsigned long long)(__rbit64(v34)));
+      nn_os_SdkMutexType_Unlock_plt(v8);
+      if (v34 == v31) {
+        goto LABEL_41;
+      }
+      goto LABEL_33;
+    }
+    v27 = (_QWORD*)v25;
+  LABEL_20:
+    v24 = (_QWORD*)atomic_exchange_explicit((atomic_ullong* volatile)(v8 + 24),
+                                            0, memory_order_acquire);
+    if (v24 != nullptr) {
+      v28 = (_QWORD*)v27[1];
+      v29 = v24;
+      *v28 = v24;
+      do {
+        v29[1] = v28;
+        v30 = v29;
+        v28 = v29;
+        v29 = (_QWORD*)*v29;
+      } while (v29 != nullptr);
+      *v30 = v27;
+      v27[1] = v30;
+      v27 = v24;
+    }
+    v25 = (__int64)v27;
+  } while (v27 != (_QWORD*)v26);
+  nn_os_SdkMutexType_Unlock_plt(v8);
+  v42 = *v9;
+  if (atomic_load_explicit(*v9, memory_order_acquire) != 1) {
+    return 0;
+  }
+  v43 = atomic_load_explicit((atomic_uint* volatile)((char*)v42 + 40),
+                             memory_order_acquire);
+  v44 = *((__int64 (**)(unsigned __int64, __int64, __int64))v42 + 1);
+  v45 = *((_QWORD*)v42 + 4);
+  v55 = 0;
+  if (((unsigned __int8)nn_gs_481a60(&v55, (__int64)v42 + 48, v44, v45, 2,
+                                     0x1000u, v43, 4096) &
+       1) == 0) {
+    return 0;
+  }
+  v46 = v55;
+  v47 = 40;
+  if ((v55 & 0xFFF) != 0) {
+    v47 = 0;
+  }
+  v25 = v47 + v55;
+  *(_QWORD*)(v25 + 16) = 0;
+  *(_QWORD*)(v25 + 24) = 0;
+  *(_QWORD*)v25 = 0;
+  *(_QWORD*)(v25 + 8) = 0;
+  atomic_store(6u, (unsigned __int64*)(v47 + v46 + 16));
+  v48 = *(_QWORD*)(v47 + v46 + 24);
+  v49 = v48;
+  atomic_compare_exchange_strong_explicit(
+      (atomic_ullong* volatile)(v25 + 24), (unsigned __int64*)&v49, 0x1Eu,
+      memory_order_relaxed, memory_order_relaxed);
+  if (v49 != v48) {
+    v50 = v49;
+    do {
+      atomic_compare_exchange_strong_explicit(
+          (atomic_ullong* volatile)(v25 + 24), (unsigned __int64*)&v50, 0x1Eu,
+          memory_order_relaxed, memory_order_relaxed);
+      v23 = v50 == v49;
+      v49 = v50;
+    } while (!v23);
+  }
+  v51 = atomic_load_explicit((atomic_ullong* volatile)(v25 + 24),
+                             memory_order_acquire);
+  v52 = v51 & 0xFFFFFFFFFFFFFFFELL;
+  if ((v51 & 0xFFFFFFFFFFFFFFFELL) == 0) {
+  LABEL_54:
+    if (*(_QWORD*)(v25 + 24) != 30) {
+      nn_diag_detail_AbortImpl_plt_856170();
+    }
+    ((void (*)(char*, _QWORD, _QWORD, unsigned __int64, __int64,
+               __int64))SdkRoutine_47c4e0)((char*)*v9 + 48, *((_QWORD*)*v9 + 2),
+                                           *((_QWORD*)*v9 + 4),
+                                           v25 & 0xFFFFFFFFFFFFF000LL, 2, 4096);
+    return 0;
+  }
+  v53 = v51;
+  while (1) {
+    v54 = v51 & -(__int64)v52;
+    atomic_compare_exchange_strong((atomic_ullong* volatile)(v25 + 24), &v53,
+                                   v54 ^ v51);
+    if (v53 == v51) {
+      break;
+    }
+    v52 = v53 & 0xFFFFFFFFFFFFFFFELL;
+    v51 = v53;
+    if ((v53 & 0xFFFFFFFFFFFFFFFELL) == 0) {
+      goto LABEL_54;
+    }
+  }
+  v16 = (v25 & 0xFFFFFFFFFFFFF000LL) +
+        816LL * (unsigned int)__clz((unsigned long long)(__rbit64(v54)));
+  if (v54 == v51) {
+    goto LABEL_41;
+  }
+LABEL_33:
+  if (v25 != 0) {
+    v35 = *(_QWORD**)(v7 + 48);
+    *(_QWORD*)(v7 + 48) = v25;
+    if (v35 != nullptr) {
+      if ((nn_os_SdkMutexType_TryLock_plt(v8) & 1) != 0) {
+        v36 = *(_QWORD*)(v8 + 8);
+        v37 = *(_QWORD**)(v36 + 8);
+        *v37 = v35;
+        *(_QWORD*)(v36 + 8) = v35;
+        v35[1] = v37;
+        *v35 = v36;
+        nn_os_SdkMutexType_Unlock_plt(v8);
+      }
+      else {
+        v38 = *(_QWORD*)(v8 + 24);
+        *v35 = v38;
+        v39 = v38;
+        atomic_compare_exchange_strong_explicit(
+            (atomic_ullong* volatile)(v8 + 24), (unsigned __int64*)&v39,
+            (unsigned __int64)v35, memory_order_release, memory_order_relaxed);
+        if (v39 != v38) {
+          v40 = v39;
+          do {
+            *v35 = v39;
+            atomic_compare_exchange_strong_explicit(
+                (atomic_ullong* volatile)(v8 + 24), (unsigned __int64*)&v40,
+                (unsigned __int64)v35, memory_order_release,
+                memory_order_relaxed);
+            v23 = v40 == v39;
+            v39 = v40;
+          } while (!v23);
+        }
+      }
+    }
+  }
+LABEL_41:
+  *a2 = v16;
+  *a3 = 816;
+  return 1;
+}
+
+__int64 nn_gs_4876d0(atomic_uint* volatile*** a1, unsigned __int64* a2,
+                     _QWORD* a3, __int64 a4)
+{
+  __int64 v5;
+  __int64 v6;
+  __int64 v7;
+  __int64 v8;
+  atomic_uint* volatile* v9;
+  unsigned __int64 explicit;
+  unsigned __int64 v13;
+  unsigned __int64 v14;
+  unsigned __int64 v15;
+  unsigned __int64 v16;
+  _QWORD* v17;
+  __int64 v18;
+  _QWORD* v19;
+  __int64 v20;
+  __int64 v21;
+  __int64 v22;
+  bool v23;
+  _QWORD* v24;
+  __int64 v25;
+  __int64 v26;
+  _QWORD* v27;
+  _QWORD* v28;
+  _QWORD* v29;
+  _QWORD* v30;
+  unsigned __int64 v31;
+  unsigned __int64 v32;
+  unsigned __int64 v33;
+  unsigned __int64 v34;
+  _QWORD* v35;
+  __int64 v36;
+  _QWORD* v37;
+  __int64 v38;
+  __int64 v39;
+  __int64 v40;
+  atomic_uint* volatile v42;
+  unsigned __int64 v43;
+  __int64 (*v44)(unsigned __int64, __int64, __int64);
+  __int64 v45;
+  __int64 v46;
+  __int64 v47;
+  __int64 v48;
+  __int64 v49;
+  __int64 v50;
+  unsigned __int64 v51;
+  unsigned __int64 v52;
+  unsigned __int64 v53;
+  unsigned __int64 v54;
+  __int64 v55;
+
+  v5 = (__int64)(*a1 + 29);
+  v6 = *(_QWORD*)(a4 + 56);
+  v7 = a4;
+  v8 = v5;
+  v9 = **a1;
+  *(_QWORD*)(a4 + 56) = 0;
+  if (v6 == 0) {
+    goto LABEL_17;
+  }
+  explicit = atomic_load_explicit((atomic_ullong* volatile)(v6 + 24),
+                                  memory_order_acquire);
+  v13 = explicit & 0xFFFFFFFFFFFFFFFELL;
+  if ((explicit & 0xFFFFFFFFFFFFFFFELL) == 0) {
+  LABEL_6:
+    v16 = 0;
+  LABEL_7:
+    v17 = *(_QWORD**)(a4 + 56);
+    *(_QWORD*)(a4 + 56) = v6;
+    if (v17 != nullptr) {
+      if ((nn_os_SdkMutexType_TryLock_plt(v5) & 1) != 0) {
+        v18 = *(_QWORD*)(v8 + 8);
+        v19 = *(_QWORD**)(v18 + 8);
+        *v19 = v17;
+        *(_QWORD*)(v18 + 8) = v17;
+        v17[1] = v19;
+        *v17 = v18;
+        nn_os_SdkMutexType_Unlock_plt(v8);
+      }
+      else {
+        v20 = *(_QWORD*)(v8 + 24);
+        *v17 = v20;
+        v21 = v20;
+        atomic_compare_exchange_strong_explicit(
+            (atomic_ullong* volatile)(v8 + 24), (unsigned __int64*)&v21,
+            (unsigned __int64)v17, memory_order_release, memory_order_relaxed);
+        if (v21 != v20) {
+          v22 = v21;
+          do {
+            *v17 = v21;
+            atomic_compare_exchange_strong_explicit(
+                (atomic_ullong* volatile)(v8 + 24), (unsigned __int64*)&v22,
+                (unsigned __int64)v17, memory_order_release,
+                memory_order_relaxed);
+            v23 = v22 == v21;
+            v21 = v22;
+          } while (!v23);
+        }
+      }
+    }
+    goto LABEL_16;
+  }
+  v14 = explicit;
+  while (1) {
+    v15 = explicit & -(__int64)v13;
+    atomic_compare_exchange_strong((atomic_ullong* volatile)(v6 + 24), &v14,
+                                   v15 ^ explicit);
+    if (v14 == explicit) {
+      break;
+    }
+    v13 = v14 & 0xFFFFFFFFFFFFFFFELL;
+    explicit = v14;
+    if ((v14 & 0xFFFFFFFFFFFFFFFELL) == 0) {
+      goto LABEL_6;
+    }
+  }
+  v16 = (v6 & 0xFFFFFFFFFFFFF000LL) +
+        (__clz((unsigned long long)(__rbit64(v15))) << 10);
+  if (v15 != explicit) {
+    goto LABEL_7;
+  }
+LABEL_16:
+  if (v16 != 0) {
+    goto LABEL_41;
+  }
+LABEL_17:
+  nn_os_SdkMutexType_Lock_plt(v8);
+  v25 = *(_QWORD*)(v8 + 8);
+  v26 = v8 + 8;
+  do {
+    if (v25 != v26) {
+      while (1) {
+        v27 = (_QWORD*)(v25 + 8);
+        __atomic_exchange_n((unsigned int*)(v25 + 8), (unsigned int)v24, 5);
+        __atomic_exchange_n((unsigned int*)v25, v25 + 8, 5);
+        *v24 = v25 + 8;
+        *(_QWORD*)(v25 + 16) = v24;
+        v31 = atomic_load_explicit((atomic_ullong* volatile)(v25 + 24),
+                                   memory_order_acquire);
+        v32 = v31 & 0xFFFFFFFFFFFFFFFELL;
+        if ((v31 & 0xFFFFFFFFFFFFFFFELL) != 0) {
+          break;
+        }
+      LABEL_26:
+        v24 = *(_QWORD**)(v25 + 16);
+        *v24 = v25;
+        *(_QWORD*)(v25 + 16) = v25;
+        *(_QWORD*)(v25 + 8) = v24;
+        *(_QWORD*)v25 = v27;
+        v25 += 8;
+        if ((_QWORD*)v26 == v27) {
+          goto LABEL_20;
+        }
+      }
+      v33 = v31;
+      while (1) {
+        v34 = v31 & -(__int64)v32;
+        atomic_compare_exchange_strong((atomic_ullong* volatile)(v25 + 24),
+                                       &v33, v34 ^ v31);
+        if (v33 == v31) {
+          break;
+        }
+        v32 = v33 & 0xFFFFFFFFFFFFFFFELL;
+        v31 = v33;
+        if ((v33 & 0xFFFFFFFFFFFFFFFELL) == 0) {
+          goto LABEL_26;
+        }
+      }
+      v16 = (v25 & 0xFFFFFFFFFFFFF000LL) +
+            (__clz((unsigned long long)(__rbit64(v34))) << 10);
+      nn_os_SdkMutexType_Unlock_plt(v8);
+      if (v34 == v31) {
+        goto LABEL_41;
+      }
+      goto LABEL_33;
+    }
+    v27 = (_QWORD*)v25;
+  LABEL_20:
+    v24 = (_QWORD*)atomic_exchange_explicit((atomic_ullong* volatile)(v8 + 24),
+                                            0, memory_order_acquire);
+    if (v24 != nullptr) {
+      v28 = (_QWORD*)v27[1];
+      v29 = v24;
+      *v28 = v24;
+      do {
+        v29[1] = v28;
+        v30 = v29;
+        v28 = v29;
+        v29 = (_QWORD*)*v29;
+      } while (v29 != nullptr);
+      *v30 = v27;
+      v27[1] = v30;
+      v27 = v24;
+    }
+    v25 = (__int64)v27;
+  } while (v27 != (_QWORD*)v26);
+  nn_os_SdkMutexType_Unlock_plt(v8);
+  v42 = *v9;
+  if (atomic_load_explicit(*v9, memory_order_acquire) != 1) {
+    return 0;
+  }
+  v43 = atomic_load_explicit((atomic_uint* volatile)((char*)v42 + 40),
+                             memory_order_acquire);
+  v44 = *((__int64 (**)(unsigned __int64, __int64, __int64))v42 + 1);
+  v45 = *((_QWORD*)v42 + 4);
+  v55 = 0;
+  if (((unsigned __int8)nn_gs_481a60(&v55, (__int64)v42 + 48, v44, v45, 2,
+                                     0x1000u, v43, 4096) &
+       1) == 0) {
+    return 0;
+  }
+  v46 = v55;
+  v47 = 40;
+  if ((v55 & 0xFFF) != 0) {
+    v47 = 0;
+  }
+  v25 = v47 + v55;
+  *(_QWORD*)(v25 + 16) = 0;
+  *(_QWORD*)(v25 + 24) = 0;
+  *(_QWORD*)v25 = 0;
+  *(_QWORD*)(v25 + 8) = 0;
+  atomic_store(7u, (unsigned __int64*)(v47 + v46 + 16));
+  v48 = *(_QWORD*)(v47 + v46 + 24);
+  v49 = v48;
+  atomic_compare_exchange_strong_explicit(
+      (atomic_ullong* volatile)(v25 + 24), (unsigned __int64*)&v49, 0xEu,
+      memory_order_relaxed, memory_order_relaxed);
+  if (v49 != v48) {
+    v50 = v49;
+    do {
+      atomic_compare_exchange_strong_explicit(
+          (atomic_ullong* volatile)(v25 + 24), (unsigned __int64*)&v50, 0xEu,
+          memory_order_relaxed, memory_order_relaxed);
+      v23 = v50 == v49;
+      v49 = v50;
+    } while (!v23);
+  }
+  v51 = atomic_load_explicit((atomic_ullong* volatile)(v25 + 24),
+                             memory_order_acquire);
+  v52 = v51 & 0xFFFFFFFFFFFFFFFELL;
+  if ((v51 & 0xFFFFFFFFFFFFFFFELL) == 0) {
+  LABEL_54:
+    if (*(_QWORD*)(v25 + 24) != 14) {
+      nn_diag_detail_AbortImpl_plt_856170();
+    }
+    ((void (*)(char*, _QWORD, _QWORD, unsigned __int64, __int64,
+               __int64))SdkRoutine_47c4e0)((char*)*v9 + 48, *((_QWORD*)*v9 + 2),
+                                           *((_QWORD*)*v9 + 4),
+                                           v25 & 0xFFFFFFFFFFFFF000LL, 2, 4096);
+    return 0;
+  }
+  v53 = v51;
+  while (1) {
+    v54 = v51 & -(__int64)v52;
+    atomic_compare_exchange_strong((atomic_ullong* volatile)(v25 + 24), &v53,
+                                   v54 ^ v51);
+    if (v53 == v51) {
+      break;
+    }
+    v52 = v53 & 0xFFFFFFFFFFFFFFFELL;
+    v51 = v53;
+    if ((v53 & 0xFFFFFFFFFFFFFFFELL) == 0) {
+      goto LABEL_54;
+    }
+  }
+  v16 = (v25 & 0xFFFFFFFFFFFFF000LL) +
+        (__clz((unsigned long long)(__rbit64(v54))) << 10);
+  if (v54 == v51) {
+    goto LABEL_41;
+  }
+LABEL_33:
+  if (v25 != 0) {
+    v35 = *(_QWORD**)(v7 + 56);
+    *(_QWORD*)(v7 + 56) = v25;
+    if (v35 != nullptr) {
+      if ((nn_os_SdkMutexType_TryLock_plt(v8) & 1) != 0) {
+        v36 = *(_QWORD*)(v8 + 8);
+        v37 = *(_QWORD**)(v36 + 8);
+        *v37 = v35;
+        *(_QWORD*)(v36 + 8) = v35;
+        v35[1] = v37;
+        *v35 = v36;
+        nn_os_SdkMutexType_Unlock_plt(v8);
+      }
+      else {
+        v38 = *(_QWORD*)(v8 + 24);
+        *v35 = v38;
+        v39 = v38;
+        atomic_compare_exchange_strong_explicit(
+            (atomic_ullong* volatile)(v8 + 24), (unsigned __int64*)&v39,
+            (unsigned __int64)v35, memory_order_release, memory_order_relaxed);
+        if (v39 != v38) {
+          v40 = v39;
+          do {
+            *v35 = v39;
+            atomic_compare_exchange_strong_explicit(
+                (atomic_ullong* volatile)(v8 + 24), (unsigned __int64*)&v40,
+                (unsigned __int64)v35, memory_order_release,
+                memory_order_relaxed);
+            v23 = v40 == v39;
+            v39 = v40;
+          } while (!v23);
+        }
+      }
+    }
+  }
+LABEL_41:
+  *a2 = v16;
+  *a3 = 1024;
+  return 1;
 }
 
 #pragma GCC visibility pop

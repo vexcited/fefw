@@ -139,6 +139,69 @@ __int64 unplaced_47ad70(__int64 a1);
 __int64 unplaced_47ad80(__int64 a1, unsigned __int64 a2);
 __int64 unplaced_48cb20(__int64 result, unsigned __int64 a2);
 __int64 unplaced_48cf10(__int64 a1, __int64 a2, unsigned __int64 a3);
+__int64 SdkRoutine_47c4e0_alt1(__int64 result, void (*)(void), __int64, _QWORD*,
+                               __int64, unsigned __int64);
+__int64 SdkRoutine_4883e0(__int64 result, __int64, unsigned __int64);
+__int64 nn_os_SdkMutexType_Lock_plt_alt1(__int64);
+void SdkRoutine_47c4e0();
+__int64 nn_gs_47c140(__int64 result, __int64 a2, unsigned __int64 a3,
+                     unsigned __int64* a4);
+__int64 nn_gs_47c6a0(__int64 result, __int64 a2, unsigned __int64 a3,
+                     unsigned __int64* a4);
+__int64 nn_gs_47ca40(__int64 result, __int64 a2, unsigned __int64 a3,
+                     unsigned __int64* a4);
+__int64 nn_gs_47cde0(__int64 result, __int64 a2, __int64 a3,
+                     unsigned __int64* a4);
+__int64 nn_gs_47d1a0(__int64 result, __int64 a2, unsigned __int64 a3,
+                     unsigned __int64* a4);
+__int64 nn_gs_47d540(__int64 result, __int64 a2, __int64 a3,
+                     unsigned __int64* a4);
+__int64 nn_gs_47d900(__int64 result, __int64 a2, __int64 a3,
+                     unsigned __int64* a4);
+__int64 nn_gs_47dcc0(__int64 result, __int64 a2, __int64 a3,
+                     unsigned __int64* a4);
+__int64 nn_gs_47e3a0(__int64 result, __int64 a2, __int64 a3,
+                     unsigned __int64* a4);
+__int64 nn_gs_47e720(__int64 result, __int64 a2, __int64 a3,
+                     unsigned __int64* a4);
+__int64 nn_gs_47eaa0(__int64 result, __int64 a2, __int64 a3,
+                     unsigned __int64* a4);
+__int64 nn_gs_4811f0(__int64*** a1, unsigned __int64* a2, _QWORD* a3,
+                     unsigned __int64* a4);
+__int64 nn_gs_481ce0(__int64*** a1, unsigned __int64* a2, _QWORD* a3,
+                     unsigned __int64* a4);
+__int64 nn_gs_482120(__int64*** a1, unsigned __int64* a2, _QWORD* a3,
+                     unsigned __int64* a4);
+__int64 nn_gs_482de0(__int64*** a1, unsigned __int64* a2, _QWORD* a3,
+                     unsigned __int64* a4);
+__int64 nn_gs_483ed0(__int64*** a1, unsigned __int64* a2, _QWORD* a3,
+                     unsigned __int64* a4);
+__int64 nn_gs_484750(__int64*** a1, unsigned __int64* a2, _QWORD* a3,
+                     unsigned __int64* a4);
+__int64 nn_gs_488780(__int64 a1, unsigned __int64 a2, __int64 a3,
+                     __int64*** a4);
+__int64 nn_gs_488880(__int64 a1, unsigned __int64 a2, __int64 a3,
+                     __int64*** a4);
+__int64 nn_gs_488980(__int64 a1, unsigned __int64 a2, __int64 a3,
+                     __int64*** a4);
+__int64 nn_gs_488a80(__int64 a1, unsigned __int64 a2, __int64 a3,
+                     __int64*** a4);
+__int64 nn_gs_488b80(__int64 a1, atomic_ullong* a2, __int64 a3, __int64*** a4);
+__int64 nn_gs_488ca0(__int64 a1, atomic_ullong* a2, __int64 a3, __int64*** a4);
+__int64 nn_gs_489580(__int64 a1, unsigned __int64 a2, __int64 a3, __int64 a4);
+__int64 nn_gs_489680(__int64 a1, unsigned __int64 a2, __int64 a3, __int64 a4);
+__int64 nn_gs_489780(__int64 a1, unsigned __int64 a2, __int64 a3, __int64 a4);
+__int64 nn_gs_489880(__int64 a1, unsigned __int64 a2, __int64 a3, __int64 a4);
+__int64 nn_gs_489980(__int64 a1, unsigned __int64 a2, __int64 a3, __int64 a4);
+__int64 nn_gs_489a80(__int64 a1, unsigned __int64 a2, __int64 a3, __int64 a4);
+__int64 nn_gs_489d80(__int64 a1, unsigned __int64 a2, __int64 a3, __int64 a4);
+__int64 nn_gs_48a9c0(__int64 result, __int64 a2, unsigned __int64 a3,
+                     unsigned __int64* a4);
+__int64 nn_gs_48ad60(__int64 result, __int64 a2, __int64 a3, __int64 a4);
+__int64 nn_gs_48b4e0(__int64 result, __int64 a2, unsigned __int64 a3,
+                     __int64 a4);
+__int64 nn_gs_48b880(__int64 result, __int64 a2, __int64 a3, __int64 a4);
+__int64 nn_gs_48c000(__int64 result, __int64 a2, __int64 a3, __int64 a4);
 
 __int64 nn_gs_sdk_BootGraphicsSystem(__int64 this_, __int64 a2)
 {
@@ -1406,6 +1469,3062 @@ __int64 nn_gs_47bda0(__int64* a1, unsigned __int64 a2, __int64 a3)
     return result;
   }
   return result;
+}
+
+__int64 nn_gs_47c140(__int64 result, __int64 a2, unsigned __int64 a3,
+                     unsigned __int64* a4)
+{
+  _QWORD* v4;
+  unsigned __int64 v5;
+  __int64 v8;
+  unsigned __int64 v9;
+  bool v10;
+  unsigned __int64 v11;
+  unsigned __int64 v12;
+  _QWORD* v13;
+  __int64 v14;
+  _QWORD* v15;
+  _QWORD* v16;
+  __int64 v17;
+  int v18;
+  _QWORD* v19;
+  unsigned __int64 v20;
+  __int64 v21;
+  __int64 v22;
+  __int64 v23;
+  unsigned __int64 explicit;
+  unsigned __int64 v25;
+  unsigned __int64 v26;
+  char v27;
+  __int64 v28;
+  unsigned __int64* v29;
+  __int64 v30;
+  __int64 v31;
+  __int64 v32;
+  _QWORD* v33;
+  void (*v34)(__int64, __int64);
+  __int64 v35;
+  _QWORD* v36;
+  __int64 v37;
+  _QWORD* v38;
+  __int64 v39;
+  __int64 v40;
+  __int64 v41;
+  __int64 v42;
+  unsigned __int64 v43;
+  __int64 v44;
+  __int64 v45;
+  __int64 v46;
+  __int64 v47;
+  void (*v48)(__int64, __int64);
+  __int64 v49;
+  __int64 v50;
+  __int64 v51;
+  __int64 v52;
+  __int64 v53;
+  __int64 v54;
+  unsigned __int64* v55;
+  unsigned __int64 v56;
+  unsigned __int64 v57;
+  unsigned __int64 v58;
+  unsigned __int64 v59;
+  __int64 v60;
+  __int64 v61;
+  __int64 v62;
+  __int64 v63;
+  __int64 vars0;
+  __int64 _28;
+
+  v4 = (_QWORD*)*a4;
+  v5 = a3 & 0xFFFFFFFFFFFFF000LL;
+  v8 = result;
+  *a4 = 0;
+  v9 = a3 & 0xFFFFFFFFFFFFF000LL | 0x28;
+  v10 = v4 != nullptr & v4 == (_QWORD*)v9;
+  if (v10) {
+    v18 = 1;
+    v20 = (unsigned __int64)v4;
+    goto LABEL_26;
+  }
+  v11 = *(unsigned __int64*)((char*)(*(void*(*)[1])0x18LL) +
+                             (a3 & 0xFFFFFFFFFFFFF000LL | 0x28)) ^
+        0xF;
+  if ((v11 ^ (v11 - 1)) <= v11 - 1) {
+    v18 = 0;
+    v20 = (unsigned __int64)v4;
+    goto LABEL_26;
+  }
+  v12 = a3;
+  result = nn_os_SdkMutexType_TryLock_plt_alt1(a2);
+  if ((result & 1) == 0) {
+    v18 = 0;
+  LABEL_24:
+    v20 = (unsigned __int64)v4;
+    goto LABEL_25;
+  }
+  if (*(_QWORD*)(v9 + 8) == 0) {
+    v14 = *(_QWORD*)(a2 + 8);
+    v13 = (_QWORD*)atomic_exchange_explicit((atomic_ullong* volatile)(a2 + 24),
+                                            0, memory_order_acquire);
+    if (v13 != nullptr) {
+      v15 = *(_QWORD**)(v14 + 8);
+      *v15 = v13;
+      do {
+        v13[1] = v15;
+        v16 = v13;
+        v15 = v13;
+        v13 = (_QWORD*)*v13;
+      } while (v13 != nullptr);
+      *v16 = v14;
+      *(_QWORD*)(v14 + 8) = v16;
+    }
+    if (*(_QWORD*)(v9 + 8) == 0) {
+      v18 = 0;
+      goto LABEL_23;
+    }
+  }
+  __atomic_exchange_n((unsigned int*)(v9 + 8), v9 + 8, 5);
+  __atomic_exchange_n((unsigned int*)v9, (unsigned int)v13, 5);
+  *(_QWORD*)(v9 + 8) = v13;
+  v13[1] = v9 + 8;
+  result = nn_os_SdkMutexType_Unlock_plt_alt1(a2);
+  if (v4 == nullptr) {
+    v18 = 1;
+    v20 = v9;
+  LABEL_25:
+    a3 = v12;
+    goto LABEL_26;
+  }
+  result = nn_os_SdkMutexType_TryLock_plt_alt1(a2);
+  if ((result & 1) != 0) {
+    v17 = *(_QWORD*)(a2 + 8);
+    v18 = 1;
+    v19 = *(_QWORD**)(v17 + 8);
+    *v19 = v4;
+    *(_QWORD*)(v17 + 8) = v4;
+    v4[1] = v19;
+    *v4 = v17;
+    v4 = (_QWORD*)v9;
+  LABEL_23:
+    result = nn_os_SdkMutexType_Unlock_plt_alt1(a2);
+    goto LABEL_24;
+  }
+  v21 = *(_QWORD*)(a2 + 24);
+  a3 = v12;
+  *v4 = v21;
+  v22 = v21;
+  atomic_compare_exchange_strong_explicit(
+      (atomic_ullong* volatile)(a2 + 24), (unsigned __int64*)&v22,
+      (unsigned __int64)v4, memory_order_release, memory_order_relaxed);
+  if (v22 == v21) {
+    v18 = 1;
+    v20 = v9;
+  }
+  else {
+    v18 = 1;
+    v42 = v22;
+    do {
+      *v4 = v22;
+      v20 = v9;
+      atomic_compare_exchange_strong_explicit(
+          (atomic_ullong* volatile)(a2 + 24), (unsigned __int64*)&v42,
+          (unsigned __int64)v4, memory_order_release, memory_order_relaxed);
+      v10 = v42 == v22;
+      v22 = v42;
+    } while (!v10);
+  }
+LABEL_26:
+  v23 = 1LL << ((a3 >> 10) & 3);
+  explicit = atomic_load_explicit((atomic_ullong* volatile)(v9 + 24),
+                                  memory_order_acquire);
+  if ((explicit & v23) != 0) {
+  LABEL_30:
+    nn_diag_detail_AbortImpl_plt_856170_alt1();
+  }
+  v25 = explicit;
+  while (1) {
+    v26 = explicit | v23;
+    atomic_compare_exchange_strong((atomic_ullong* volatile)(v9 + 24), &v25,
+                                   explicit | v23);
+    if (v25 == explicit) {
+      break;
+    }
+    explicit = v25;
+    if ((v25 & v23) != 0) {
+      goto LABEL_30;
+    }
+  }
+  if (explicit != 0) {
+    v27 = 1;
+  }
+  else {
+    v27 = v18;
+  }
+  if ((v27 & 1) == 0) {
+    if (v20 != 0) {
+      result = nn_os_SdkMutexType_TryLock_plt_alt1(a2);
+      if ((result & 1) != 0) {
+        v28 = *(_QWORD*)(a2 + 8);
+        v29 = *(unsigned __int64**)(v28 + 8);
+        *v29 = v20;
+        *(_QWORD*)(v28 + 8) = v20;
+        *(_QWORD*)(v20 + 8) = v29;
+        *(_QWORD*)v20 = v28;
+        result = nn_os_SdkMutexType_Unlock_plt_alt1(a2);
+      }
+      else {
+        v30 = *(_QWORD*)(a2 + 24);
+        *(_QWORD*)v20 = v30;
+        v31 = v30;
+        atomic_compare_exchange_strong_explicit(
+            (atomic_ullong* volatile)(a2 + 24), (unsigned __int64*)&v31, v20,
+            memory_order_release, memory_order_relaxed);
+        if (v31 != v30) {
+          v32 = v31;
+          do {
+            *(_QWORD*)v20 = v31;
+            atomic_compare_exchange_strong_explicit(
+                (atomic_ullong* volatile)(a2 + 24), (unsigned __int64*)&v32,
+                v20, memory_order_release, memory_order_relaxed);
+            v10 = v32 == v31;
+            v31 = v32;
+          } while (!v10);
+        }
+      }
+    }
+    v18 = 1;
+    v20 = v9;
+  }
+  if (v5 != 0 && v26 == 15 && v18 != 0) {
+    if (*(_QWORD*)(v20 + 24) != 15) {
+      nn_diag_detail_AbortImpl_plt_856170_alt1();
+    }
+    v33 = (_QWORD*)(v20 & 0xFFFFFFFFFFFFF000LL);
+    result = *(_QWORD*)v8 + 48LL;
+    v34 = *(void (**)(__int64, __int64))(*(_QWORD*)v8 + 16LL);
+    v35 = *(_QWORD*)(*(_QWORD*)v8 + 32LL);
+    vars0 = v62;
+    _28 = v63;
+    v43 = *(__int64*)((char*)((__int64*)0x4LL) + (v20 & 0xFFFFFFFFFFFFF000LL) +
+                      4);
+    *v33 = 0;
+    v44 = *(_QWORD*)(v43 + 16);
+    v45 = 1LL << (((unsigned __int64)v33 - v43) / 0x1000);
+    v46 = *(_QWORD*)(v43 + 24);
+    if ((v46 & v45) != 0) {
+    LABEL_66:
+      nn_diag_detail_AbortImpl_plt_856170_alt1();
+    }
+    v47 = v35;
+    v48 = v34;
+    v49 = result;
+    v50 = *(_QWORD*)(v43 + 24);
+    while (1) {
+      v51 = v46 | v45;
+      atomic_compare_exchange_strong((atomic_ullong* volatile)(v43 + 24),
+                                     (unsigned __int64*)&v50, v46 | v45);
+      if (v50 == v46) {
+        break;
+      }
+      v46 = v50;
+      if ((v50 & v45) != 0) {
+        goto LABEL_66;
+      }
+    }
+    if (v43 != 0 && v46 == 0) {
+      result = nn_os_SdkMutexType_TryLock_plt_alt1(result);
+      if ((result & 1) != 0) {
+        *(_QWORD*)(v43 + 32) = *(_QWORD*)(v49 + 8);
+        *(_QWORD*)(v49 + 8) = v43;
+        result = nn_os_SdkMutexType_Unlock_plt_alt1(v49);
+      }
+      else {
+        v52 = *(_QWORD*)(v49 + 16);
+        *(_QWORD*)(v43 + 32) = v52;
+        v53 = v52;
+        atomic_compare_exchange_strong_explicit(
+            (atomic_ullong* volatile)(v49 + 16), (unsigned __int64*)&v53, v43,
+            memory_order_release, memory_order_relaxed);
+        if (v53 != v52) {
+          v54 = v53;
+          do {
+            *(_QWORD*)(v43 + 32) = v53;
+            atomic_compare_exchange_strong_explicit(
+                (atomic_ullong* volatile)(v49 + 16), (unsigned __int64*)&v54,
+                v43, memory_order_release, memory_order_relaxed);
+            v10 = v54 == v53;
+            v53 = v54;
+          } while (!v10);
+        }
+      }
+    }
+    if (v51 == v44) {
+      nn_os_SdkMutexType_Lock_plt_alt1(v49);
+      v55 = (unsigned __int64*)(v49 + 8);
+      v56 = *(_QWORD*)(v49 + 8);
+      v57 = 0;
+      if (v56 != 0) {
+        goto LABEL_79;
+      }
+    LABEL_81:
+      while (1) {
+        v56 = atomic_exchange_explicit((atomic_ullong* volatile)(v49 + 16), 0,
+                                       memory_order_acquire);
+        if (v56 == 0) {
+          break;
+        }
+        *v55 = v56;
+        do {
+        LABEL_79:
+          while (1) {
+            v58 = atomic_load_explicit((atomic_ullong* volatile)(v56 + 24),
+                                       memory_order_acquire);
+            v59 = *(_QWORD*)(v56 + 32);
+            if (v58 != *(_QWORD*)(v56 + 16)) {
+              break;
+            }
+            *v55 = v59;
+            *(_QWORD*)(v56 + 32) = v57;
+            v57 = v56;
+            v56 = v59;
+            if (v59 == 0) {
+              goto LABEL_81;
+            }
+          }
+          v55 = (unsigned __int64*)(v56 + 32);
+          v56 = *(_QWORD*)(v56 + 32);
+        } while (v59 != 0);
+      }
+      v60 = v57;
+      result = nn_os_SdkMutexType_Unlock_plt_alt1(v49);
+      if (v60 != 0) {
+        result = v60;
+        do {
+          v61 = *(_QWORD*)(result + 32);
+          *(_QWORD*)(result + 32) = 0;
+          v48(result, v47);
+          result = v61;
+        } while (v61 != 0);
+      }
+    }
+  }
+  else if (v20 != 0) {
+    v36 = (_QWORD*)*a4;
+    *a4 = v20;
+    if (v36 != nullptr) {
+      result = nn_os_SdkMutexType_TryLock_plt_alt1(a2);
+      if ((result & 1) != 0) {
+        v37 = *(_QWORD*)(a2 + 8);
+        v38 = *(_QWORD**)(v37 + 8);
+        *v38 = v36;
+        *(_QWORD*)(v37 + 8) = v36;
+        v36[1] = v38;
+        *v36 = v37;
+        return nn_os_SdkMutexType_Unlock_plt_alt1(a2);
+      }
+      else {
+        v39 = *(_QWORD*)(a2 + 24);
+        *v36 = v39;
+        v40 = v39;
+        atomic_compare_exchange_strong_explicit(
+            (atomic_ullong* volatile)(a2 + 24), (unsigned __int64*)&v40,
+            (unsigned __int64)v36, memory_order_release, memory_order_relaxed);
+        if (v40 != v39) {
+          v41 = v40;
+          do {
+            *v36 = v40;
+            atomic_compare_exchange_strong_explicit(
+                (atomic_ullong* volatile)(a2 + 24), (unsigned __int64*)&v41,
+                (unsigned __int64)v36, memory_order_release,
+                memory_order_relaxed);
+            v10 = v41 == v40;
+            v40 = v41;
+          } while (!v10);
+        }
+      }
+    }
+  }
+  return result;
+}
+
+__int64 nn_gs_47c6a0(__int64 result, __int64 a2, unsigned __int64 a3,
+                     unsigned __int64* a4)
+{
+  _QWORD* v4;
+  unsigned __int64 v5;
+  __int64 v6;
+  __int64* v10;
+  __int64 v11;
+  unsigned __int64 v12;
+  __int64 v13;
+  __int64 v14;
+  _QWORD* v15;
+  __int64 v16;
+  _QWORD* v17;
+  _QWORD* v18;
+  __int64 v19;
+  int v20;
+  _QWORD* v21;
+  __int64 v22;
+  __int64 v23;
+  __int64 v24;
+  __int64 v25;
+  unsigned __int64 explicit;
+  unsigned __int64 v27;
+  unsigned __int64 v28;
+  __int64 v29;
+  bool v30;
+  char v31;
+  __int64 v32;
+  _QWORD* v33;
+  __int64 v34;
+  __int64 v35;
+  __int64 v36;
+  __int64 v37;
+  _QWORD* v38;
+  __int64 v39;
+  _QWORD* v40;
+  __int64 v41;
+  __int64 v42;
+  __int64 v43;
+
+  v4 = (_QWORD*)a4[1];
+  v5 = a3 & 0xFFFFFFFFFFFFFC00LL;
+  v6 = a3 & 0xC00;
+  v10 = (__int64*)result;
+  a4[1] = 0;
+  if (v4 != nullptr) {
+    v11 = 72;
+    if ((a3 & 0xC00) != 0) {
+      v11 = 0;
+    }
+    v12 = v11 | v5;
+    if (v4 == (_QWORD*)(v11 | v5)) {
+      v20 = 1;
+      goto LABEL_29;
+    }
+  }
+  v13 = 72;
+  v14 = -4;
+  if ((a3 & 0xC00) != 0) {
+    v13 = 0;
+  }
+  else {
+    v14 = -128;
+  }
+  v12 = v13 | v5;
+  if ((*(unsigned __int64*)((char*)(*(void*(*)[1])0x18LL) + (v13 | v5)) ^ v14 ^
+       ((*(unsigned __int64*)((char*)(*(void*(*)[1])0x18LL) + (v13 | v5)) ^
+         v14) -
+        1)) <=
+          (*(unsigned __int64*)((char*)(*(void*(*)[1])0x18LL) + (v13 | v5)) ^
+           v14) -
+              1 ||
+      ((result = nn_os_SdkMutexType_TryLock_plt_alt1(a2)) & 1) == 0) {
+    v20 = 0;
+    goto LABEL_29;
+  }
+  if (*(_QWORD*)(v12 + 8) == 0) {
+    v16 = *(_QWORD*)(a2 + 8);
+    v15 = (_QWORD*)atomic_exchange_explicit((atomic_ullong* volatile)(a2 + 24),
+                                            0, memory_order_acquire);
+    if (v15 != nullptr) {
+      v17 = *(_QWORD**)(v16 + 8);
+      *v17 = v15;
+      do {
+        v15[1] = v17;
+        v18 = v15;
+        v17 = v15;
+        v15 = (_QWORD*)*v15;
+      } while (v15 != nullptr);
+      *v18 = v16;
+      *(_QWORD*)(v16 + 8) = v18;
+    }
+    if (*(_QWORD*)(v12 + 8) == 0) {
+      v20 = 0;
+      goto LABEL_24;
+    }
+  }
+  __atomic_exchange_n((unsigned int*)(v12 + 8), v12 + 8, 5);
+  __atomic_exchange_n((unsigned int*)v12, (unsigned int)v15, 5);
+  *(_QWORD*)(v12 + 8) = v15;
+  v15[1] = v12 + 8;
+  result = nn_os_SdkMutexType_Unlock_plt_alt1(a2);
+  if (v4 == nullptr) {
+    goto LABEL_22;
+  }
+  result = nn_os_SdkMutexType_TryLock_plt_alt1(a2);
+  if ((result & 1) != 0) {
+    v19 = *(_QWORD*)(a2 + 8);
+    v20 = 1;
+    v21 = *(_QWORD**)(v19 + 8);
+    *v21 = v4;
+    *(_QWORD*)(v19 + 8) = v4;
+    v4[1] = v21;
+    *v4 = v19;
+    v4 = (_QWORD*)v12;
+  LABEL_24:
+    result = nn_os_SdkMutexType_Unlock_plt_alt1(a2);
+    goto LABEL_29;
+  }
+  v22 = *(_QWORD*)(a2 + 24);
+  *v4 = v22;
+  v23 = v22;
+  atomic_compare_exchange_strong_explicit(
+      (atomic_ullong* volatile)(a2 + 24), (unsigned __int64*)&v23,
+      (unsigned __int64)v4, memory_order_release, memory_order_relaxed);
+  if (v23 != v22) {
+    v20 = 1;
+    v24 = v23;
+    do {
+      *v4 = v23;
+      atomic_compare_exchange_strong_explicit(
+          (atomic_ullong* volatile)(a2 + 24), (unsigned __int64*)&v24,
+          (unsigned __int64)v4, memory_order_release, memory_order_relaxed);
+      v30 = v24 == v23;
+      v23 = v24;
+    } while (!v30);
+  }
+  else {
+  LABEL_22:
+    v20 = 1;
+  }
+  v4 = (_QWORD*)v12;
+LABEL_29:
+  v25 = 1LL << (a3 >> 4);
+  explicit = atomic_load_explicit((atomic_ullong* volatile)(v12 + 24),
+                                  memory_order_acquire);
+  if ((explicit & v25) != 0) {
+  LABEL_33:
+    nn_diag_detail_AbortImpl_plt_856170_alt1();
+  }
+  v27 = explicit;
+  while (1) {
+    v28 = explicit | v25;
+    atomic_compare_exchange_strong((atomic_ullong* volatile)(v12 + 24), &v27,
+                                   explicit | v25);
+    if (v27 == explicit) {
+      break;
+    }
+    explicit = v27;
+    if ((v27 & v25) != 0) {
+      goto LABEL_33;
+    }
+  }
+  if (v6 != 0) {
+    v29 = -4;
+  }
+  else {
+    v29 = -128;
+  }
+  v30 = v12 != 0 & explicit == 0;
+  if (v30) {
+    v31 = v20;
+  }
+  else {
+    v31 = 1;
+  }
+  if ((v31 & 1) != 0) {
+    v12 = (unsigned __int64)v4;
+    if (v5 == 0) {
+      goto LABEL_60;
+    }
+  }
+  else {
+    if (v4 != nullptr) {
+      result = nn_os_SdkMutexType_TryLock_plt_alt1(a2);
+      if ((result & 1) != 0) {
+        v32 = *(_QWORD*)(a2 + 8);
+        v33 = *(_QWORD**)(v32 + 8);
+        *v33 = v4;
+        *(_QWORD*)(v32 + 8) = v4;
+        v4[1] = v33;
+        *v4 = v32;
+        result = nn_os_SdkMutexType_Unlock_plt_alt1(a2);
+      }
+      else {
+        v34 = *(_QWORD*)(a2 + 24);
+        *v4 = v34;
+        v35 = v34;
+        atomic_compare_exchange_strong_explicit(
+            (atomic_ullong* volatile)(a2 + 24), (unsigned __int64*)&v35,
+            (unsigned __int64)v4, memory_order_release, memory_order_relaxed);
+        if (v35 != v34) {
+          v36 = v35;
+          do {
+            *v4 = v35;
+            atomic_compare_exchange_strong_explicit(
+                (atomic_ullong* volatile)(a2 + 24), (unsigned __int64*)&v36,
+                (unsigned __int64)v4, memory_order_release,
+                memory_order_relaxed);
+            v30 = v36 == v35;
+            v35 = v36;
+          } while (!v30);
+        }
+      }
+    }
+    v20 = 1;
+    if (v5 == 0) {
+      goto LABEL_60;
+    }
+  }
+  if (v28 != v29 || v20 == 0) {
+  LABEL_60:
+    if (v12 != 0) {
+      v38 = (_QWORD*)a4[1];
+      a4[1] = v12;
+      if (v38 != nullptr) {
+        result = nn_os_SdkMutexType_TryLock_plt_alt1(a2);
+        if ((result & 1) != 0) {
+          v39 = *(_QWORD*)(a2 + 8);
+          v40 = *(_QWORD**)(v39 + 8);
+          *v40 = v38;
+          *(_QWORD*)(v39 + 8) = v38;
+          v38[1] = v40;
+          *v38 = v39;
+          return nn_os_SdkMutexType_Unlock_plt_alt1(a2);
+        }
+        else {
+          v41 = *(_QWORD*)(a2 + 24);
+          *v38 = v41;
+          v42 = v41;
+          atomic_compare_exchange_strong_explicit(
+              (atomic_ullong* volatile)(a2 + 24), (unsigned __int64*)&v42,
+              (unsigned __int64)v38, memory_order_release,
+              memory_order_relaxed);
+          if (v42 != v41) {
+            v43 = v42;
+            do {
+              *v38 = v42;
+              atomic_compare_exchange_strong_explicit(
+                  (atomic_ullong* volatile)(a2 + 24), (unsigned __int64*)&v43,
+                  (unsigned __int64)v38, memory_order_release,
+                  memory_order_relaxed);
+              v30 = v43 == v42;
+              v42 = v43;
+            } while (!v30);
+          }
+        }
+      }
+    }
+    return result;
+  }
+  v37 = -4;
+  if ((v12 & 0xC00) == 0) {
+    v37 = -128;
+  }
+  if (*(_QWORD*)(v12 + 24) != v37) {
+    nn_diag_detail_AbortImpl_plt_856170_alt1();
+  }
+  return nn_gs_47c140(*v10, (__int64)(v10 + 1), v12 & 0xFFFFFFFFFFFFFC00LL, a4);
+}
+
+__int64 nn_gs_47ca40(__int64 result, __int64 a2, unsigned __int64 a3,
+                     unsigned __int64* a4)
+{
+  _QWORD* v4;
+  unsigned __int64 v5;
+  __int64 v6;
+  __int64* v10;
+  __int64 v11;
+  unsigned __int64 v12;
+  __int64 v13;
+  __int64 v14;
+  _QWORD* v15;
+  __int64 v16;
+  _QWORD* v17;
+  _QWORD* v18;
+  __int64 v19;
+  int v20;
+  _QWORD* v21;
+  __int64 v22;
+  __int64 v23;
+  __int64 v24;
+  __int64 v25;
+  unsigned __int64 explicit;
+  unsigned __int64 v27;
+  unsigned __int64 v28;
+  __int64 v29;
+  bool v30;
+  char v31;
+  __int64 v32;
+  _QWORD* v33;
+  __int64 v34;
+  __int64 v35;
+  __int64 v36;
+  __int64 v37;
+  _QWORD* v38;
+  __int64 v39;
+  _QWORD* v40;
+  __int64 v41;
+  __int64 v42;
+  __int64 v43;
+
+  v4 = (_QWORD*)a4[2];
+  v5 = a3 & 0xFFFFFFFFFFFFFC00LL;
+  v6 = a3 & 0xC00;
+  v10 = (__int64*)result;
+  a4[2] = 0;
+  if (v4 != nullptr) {
+    v11 = 72;
+    if ((a3 & 0xC00) != 0) {
+      v11 = 0;
+    }
+    v12 = v11 | v5;
+    if (v4 == (_QWORD*)(v11 | v5)) {
+      v20 = 1;
+      goto LABEL_29;
+    }
+  }
+  v13 = 72;
+  v14 = 4294967294LL;
+  if ((a3 & 0xC00) != 0) {
+    v13 = 0;
+  }
+  else {
+    v14 = 4294967280LL;
+  }
+  v12 = v13 | v5;
+  if ((*(unsigned __int64*)((char*)(*(void*(*)[1])0x18LL) + (v13 | v5)) ^ v14 ^
+       ((*(unsigned __int64*)((char*)(*(void*(*)[1])0x18LL) + (v13 | v5)) ^
+         v14) -
+        1)) <=
+          (*(unsigned __int64*)((char*)(*(void*(*)[1])0x18LL) + (v13 | v5)) ^
+           v14) -
+              1 ||
+      ((result = nn_os_SdkMutexType_TryLock_plt_alt1(a2)) & 1) == 0) {
+    v20 = 0;
+    goto LABEL_29;
+  }
+  if (*(_QWORD*)(v12 + 8) == 0) {
+    v16 = *(_QWORD*)(a2 + 8);
+    v15 = (_QWORD*)atomic_exchange_explicit((atomic_ullong* volatile)(a2 + 24),
+                                            0, memory_order_acquire);
+    if (v15 != nullptr) {
+      v17 = *(_QWORD**)(v16 + 8);
+      *v17 = v15;
+      do {
+        v15[1] = v17;
+        v18 = v15;
+        v17 = v15;
+        v15 = (_QWORD*)*v15;
+      } while (v15 != nullptr);
+      *v18 = v16;
+      *(_QWORD*)(v16 + 8) = v18;
+    }
+    if (*(_QWORD*)(v12 + 8) == 0) {
+      v20 = 0;
+      goto LABEL_24;
+    }
+  }
+  __atomic_exchange_n((unsigned int*)(v12 + 8), v12 + 8, 5);
+  __atomic_exchange_n((unsigned int*)v12, (unsigned int)v15, 5);
+  *(_QWORD*)(v12 + 8) = v15;
+  v15[1] = v12 + 8;
+  result = nn_os_SdkMutexType_Unlock_plt_alt1(a2);
+  if (v4 == nullptr) {
+    goto LABEL_22;
+  }
+  result = nn_os_SdkMutexType_TryLock_plt_alt1(a2);
+  if ((result & 1) != 0) {
+    v19 = *(_QWORD*)(a2 + 8);
+    v20 = 1;
+    v21 = *(_QWORD**)(v19 + 8);
+    *v21 = v4;
+    *(_QWORD*)(v19 + 8) = v4;
+    v4[1] = v21;
+    *v4 = v19;
+    v4 = (_QWORD*)v12;
+  LABEL_24:
+    result = nn_os_SdkMutexType_Unlock_plt_alt1(a2);
+    goto LABEL_29;
+  }
+  v22 = *(_QWORD*)(a2 + 24);
+  *v4 = v22;
+  v23 = v22;
+  atomic_compare_exchange_strong_explicit(
+      (atomic_ullong* volatile)(a2 + 24), (unsigned __int64*)&v23,
+      (unsigned __int64)v4, memory_order_release, memory_order_relaxed);
+  if (v23 != v22) {
+    v20 = 1;
+    v24 = v23;
+    do {
+      *v4 = v23;
+      atomic_compare_exchange_strong_explicit(
+          (atomic_ullong* volatile)(a2 + 24), (unsigned __int64*)&v24,
+          (unsigned __int64)v4, memory_order_release, memory_order_relaxed);
+      v30 = v24 == v23;
+      v23 = v24;
+    } while (!v30);
+  }
+  else {
+  LABEL_22:
+    v20 = 1;
+  }
+  v4 = (_QWORD*)v12;
+LABEL_29:
+  v25 = 1LL << ((a3 >> 5) & 0x1F);
+  explicit = atomic_load_explicit((atomic_ullong* volatile)(v12 + 24),
+                                  memory_order_acquire);
+  if ((explicit & v25) != 0) {
+  LABEL_33:
+    nn_diag_detail_AbortImpl_plt_856170_alt1();
+  }
+  v27 = explicit;
+  while (1) {
+    v28 = explicit | v25;
+    atomic_compare_exchange_strong((atomic_ullong* volatile)(v12 + 24), &v27,
+                                   explicit | v25);
+    if (v27 == explicit) {
+      break;
+    }
+    explicit = v27;
+    if ((v27 & v25) != 0) {
+      goto LABEL_33;
+    }
+  }
+  if (v6 != 0) {
+    v29 = 4294967294LL;
+  }
+  else {
+    v29 = 4294967280LL;
+  }
+  v30 = v12 != 0 & explicit == 0;
+  if (v30) {
+    v31 = v20;
+  }
+  else {
+    v31 = 1;
+  }
+  if ((v31 & 1) != 0) {
+    v12 = (unsigned __int64)v4;
+    if (v5 == 0) {
+      goto LABEL_60;
+    }
+  }
+  else {
+    if (v4 != nullptr) {
+      result = nn_os_SdkMutexType_TryLock_plt_alt1(a2);
+      if ((result & 1) != 0) {
+        v32 = *(_QWORD*)(a2 + 8);
+        v33 = *(_QWORD**)(v32 + 8);
+        *v33 = v4;
+        *(_QWORD*)(v32 + 8) = v4;
+        v4[1] = v33;
+        *v4 = v32;
+        result = nn_os_SdkMutexType_Unlock_plt_alt1(a2);
+      }
+      else {
+        v34 = *(_QWORD*)(a2 + 24);
+        *v4 = v34;
+        v35 = v34;
+        atomic_compare_exchange_strong_explicit(
+            (atomic_ullong* volatile)(a2 + 24), (unsigned __int64*)&v35,
+            (unsigned __int64)v4, memory_order_release, memory_order_relaxed);
+        if (v35 != v34) {
+          v36 = v35;
+          do {
+            *v4 = v35;
+            atomic_compare_exchange_strong_explicit(
+                (atomic_ullong* volatile)(a2 + 24), (unsigned __int64*)&v36,
+                (unsigned __int64)v4, memory_order_release,
+                memory_order_relaxed);
+            v30 = v36 == v35;
+            v35 = v36;
+          } while (!v30);
+        }
+      }
+    }
+    v20 = 1;
+    if (v5 == 0) {
+      goto LABEL_60;
+    }
+  }
+  if (v28 != v29 || v20 == 0) {
+  LABEL_60:
+    if (v12 != 0) {
+      v38 = (_QWORD*)a4[2];
+      a4[2] = v12;
+      if (v38 != nullptr) {
+        result = nn_os_SdkMutexType_TryLock_plt_alt1(a2);
+        if ((result & 1) != 0) {
+          v39 = *(_QWORD*)(a2 + 8);
+          v40 = *(_QWORD**)(v39 + 8);
+          *v40 = v38;
+          *(_QWORD*)(v39 + 8) = v38;
+          v38[1] = v40;
+          *v38 = v39;
+          return nn_os_SdkMutexType_Unlock_plt_alt1(a2);
+        }
+        else {
+          v41 = *(_QWORD*)(a2 + 24);
+          *v38 = v41;
+          v42 = v41;
+          atomic_compare_exchange_strong_explicit(
+              (atomic_ullong* volatile)(a2 + 24), (unsigned __int64*)&v42,
+              (unsigned __int64)v38, memory_order_release,
+              memory_order_relaxed);
+          if (v42 != v41) {
+            v43 = v42;
+            do {
+              *v38 = v42;
+              atomic_compare_exchange_strong_explicit(
+                  (atomic_ullong* volatile)(a2 + 24), (unsigned __int64*)&v43,
+                  (unsigned __int64)v38, memory_order_release,
+                  memory_order_relaxed);
+              v30 = v43 == v42;
+              v42 = v43;
+            } while (!v30);
+          }
+        }
+      }
+    }
+    return result;
+  }
+  v37 = 4294967294LL;
+  if ((v12 & 0xC00) == 0) {
+    v37 = 4294967280LL;
+  }
+  if (*(_QWORD*)(v12 + 24) != v37) {
+    nn_diag_detail_AbortImpl_plt_856170_alt1();
+  }
+  return nn_gs_47c140(*v10, (__int64)(v10 + 1), v12 & 0xFFFFFFFFFFFFFC00LL, a4);
+}
+
+__int64 nn_gs_47cde0(__int64 result, __int64 a2, __int64 a3,
+                     unsigned __int64* a4)
+{
+  _QWORD* v4;
+  unsigned __int64 v5;
+  __int64 v6;
+  __int16 v8;
+  __int64* v10;
+  __int64 v11;
+  unsigned __int64 v12;
+  __int64 v13;
+  __int64 v14;
+  _QWORD* v15;
+  __int64 v16;
+  _QWORD* v17;
+  _QWORD* v18;
+  __int64 v19;
+  int v20;
+  _QWORD* v21;
+  __int64 v22;
+  __int64 v23;
+  __int64 v24;
+  __int64 v25;
+  unsigned __int64 explicit;
+  unsigned __int64 v27;
+  unsigned __int64 v28;
+  __int64 v29;
+  bool v30;
+  char v31;
+  __int64 v32;
+  _QWORD* v33;
+  __int64 v34;
+  __int64 v35;
+  __int64 v36;
+  __int64 v37;
+  _QWORD* v38;
+  __int64 v39;
+  _QWORD* v40;
+  __int64 v41;
+  __int64 v42;
+  __int64 v43;
+
+  v4 = (_QWORD*)a4[3];
+  v5 = a3 & 0xFFFFFFFFFFFFFC00LL;
+  v6 = a3 & 0xC00;
+  v8 = a3;
+  v10 = (__int64*)result;
+  a4[3] = 0;
+  if (v4 != nullptr) {
+    v11 = 72;
+    if ((a3 & 0xC00) != 0) {
+      v11 = 0;
+    }
+    v12 = v11 | v5;
+    if (v4 == (_QWORD*)(v11 | v5)) {
+      v20 = 1;
+      goto LABEL_29;
+    }
+  }
+  v13 = 72;
+  v14 = 2097150;
+  if ((a3 & 0xC00) != 0) {
+    v13 = 0;
+  }
+  else {
+    v14 = 2097144;
+  }
+  v12 = v13 | v5;
+  if ((*(unsigned __int64*)((char*)(*(void*(*)[1])0x18LL) + (v13 | v5)) ^ v14 ^
+       ((*(unsigned __int64*)((char*)(*(void*(*)[1])0x18LL) + (v13 | v5)) ^
+         v14) -
+        1)) <=
+          (*(unsigned __int64*)((char*)(*(void*(*)[1])0x18LL) + (v13 | v5)) ^
+           v14) -
+              1 ||
+      ((result = nn_os_SdkMutexType_TryLock_plt_alt1(a2)) & 1) == 0) {
+    v20 = 0;
+    goto LABEL_29;
+  }
+  if (*(_QWORD*)(v12 + 8) == 0) {
+    v16 = *(_QWORD*)(a2 + 8);
+    v15 = (_QWORD*)atomic_exchange_explicit((atomic_ullong* volatile)(a2 + 24),
+                                            0, memory_order_acquire);
+    if (v15 != nullptr) {
+      v17 = *(_QWORD**)(v16 + 8);
+      *v17 = v15;
+      do {
+        v15[1] = v17;
+        v18 = v15;
+        v17 = v15;
+        v15 = (_QWORD*)*v15;
+      } while (v15 != nullptr);
+      *v18 = v16;
+      *(_QWORD*)(v16 + 8) = v18;
+    }
+    if (*(_QWORD*)(v12 + 8) == 0) {
+      v20 = 0;
+      goto LABEL_24;
+    }
+  }
+  __atomic_exchange_n((unsigned int*)(v12 + 8), v12 + 8, 5);
+  __atomic_exchange_n((unsigned int*)v12, (unsigned int)v15, 5);
+  *(_QWORD*)(v12 + 8) = v15;
+  v15[1] = v12 + 8;
+  result = nn_os_SdkMutexType_Unlock_plt_alt1(a2);
+  if (v4 == nullptr) {
+    goto LABEL_22;
+  }
+  result = nn_os_SdkMutexType_TryLock_plt_alt1(a2);
+  if ((result & 1) != 0) {
+    v19 = *(_QWORD*)(a2 + 8);
+    v20 = 1;
+    v21 = *(_QWORD**)(v19 + 8);
+    *v21 = v4;
+    *(_QWORD*)(v19 + 8) = v4;
+    v4[1] = v21;
+    *v4 = v19;
+    v4 = (_QWORD*)v12;
+  LABEL_24:
+    result = nn_os_SdkMutexType_Unlock_plt_alt1(a2);
+    goto LABEL_29;
+  }
+  v22 = *(_QWORD*)(a2 + 24);
+  *v4 = v22;
+  v23 = v22;
+  atomic_compare_exchange_strong_explicit(
+      (atomic_ullong* volatile)(a2 + 24), (unsigned __int64*)&v23,
+      (unsigned __int64)v4, memory_order_release, memory_order_relaxed);
+  if (v23 != v22) {
+    v20 = 1;
+    v24 = v23;
+    do {
+      *v4 = v23;
+      atomic_compare_exchange_strong_explicit(
+          (atomic_ullong* volatile)(a2 + 24), (unsigned __int64*)&v24,
+          (unsigned __int64)v4, memory_order_release, memory_order_relaxed);
+      v30 = v24 == v23;
+      v23 = v24;
+    } while (!v30);
+  }
+  else {
+  LABEL_22:
+    v20 = 1;
+  }
+  v4 = (_QWORD*)v12;
+LABEL_29:
+  if ((v8 & 0x3FFu) >= 0x3F0uLL) {
+    nn_diag_detail_AbortImpl_plt_856170_alt1();
+  }
+  v25 = 1LL << ((1366 * (v8 & 0x3FFu)) >> 16);
+  explicit = atomic_load_explicit((atomic_ullong* volatile)(v12 + 24),
+                                  memory_order_acquire);
+  if ((explicit & v25) != 0) {
+  LABEL_34:
+    nn_diag_detail_AbortImpl_plt_856170_alt1();
+  }
+  v27 = explicit;
+  while (1) {
+    v28 = explicit | v25;
+    atomic_compare_exchange_strong((atomic_ullong* volatile)(v12 + 24), &v27,
+                                   explicit | v25);
+    if (v27 == explicit) {
+      break;
+    }
+    explicit = v27;
+    if ((v27 & v25) != 0) {
+      goto LABEL_34;
+    }
+  }
+  if (v6 != 0) {
+    v29 = 2097150;
+  }
+  else {
+    v29 = 2097144;
+  }
+  v30 = explicit != 0 | v12 == 0;
+  if (v30) {
+    v31 = 1;
+  }
+  else {
+    v31 = v20;
+  }
+  if ((v31 & 1) != 0) {
+    v12 = (unsigned __int64)v4;
+    if (v5 == 0) {
+      goto LABEL_61;
+    }
+  }
+  else {
+    if (v4 != nullptr) {
+      result = nn_os_SdkMutexType_TryLock_plt_alt1(a2);
+      if ((result & 1) != 0) {
+        v32 = *(_QWORD*)(a2 + 8);
+        v33 = *(_QWORD**)(v32 + 8);
+        *v33 = v4;
+        *(_QWORD*)(v32 + 8) = v4;
+        v4[1] = v33;
+        *v4 = v32;
+        result = nn_os_SdkMutexType_Unlock_plt_alt1(a2);
+      }
+      else {
+        v34 = *(_QWORD*)(a2 + 24);
+        *v4 = v34;
+        v35 = v34;
+        atomic_compare_exchange_strong_explicit(
+            (atomic_ullong* volatile)(a2 + 24), (unsigned __int64*)&v35,
+            (unsigned __int64)v4, memory_order_release, memory_order_relaxed);
+        if (v35 != v34) {
+          v36 = v35;
+          do {
+            *v4 = v35;
+            atomic_compare_exchange_strong_explicit(
+                (atomic_ullong* volatile)(a2 + 24), (unsigned __int64*)&v36,
+                (unsigned __int64)v4, memory_order_release,
+                memory_order_relaxed);
+            v30 = v36 == v35;
+            v35 = v36;
+          } while (!v30);
+        }
+      }
+    }
+    v20 = 1;
+    if (v5 == 0) {
+      goto LABEL_61;
+    }
+  }
+  if (v28 != v29 || v20 == 0) {
+  LABEL_61:
+    if (v12 != 0) {
+      v38 = (_QWORD*)a4[3];
+      a4[3] = v12;
+      if (v38 != nullptr) {
+        result = nn_os_SdkMutexType_TryLock_plt_alt1(a2);
+        if ((result & 1) != 0) {
+          v39 = *(_QWORD*)(a2 + 8);
+          v40 = *(_QWORD**)(v39 + 8);
+          *v40 = v38;
+          *(_QWORD*)(v39 + 8) = v38;
+          v38[1] = v40;
+          *v38 = v39;
+          return nn_os_SdkMutexType_Unlock_plt_alt1(a2);
+        }
+        else {
+          v41 = *(_QWORD*)(a2 + 24);
+          *v38 = v41;
+          v42 = v41;
+          atomic_compare_exchange_strong_explicit(
+              (atomic_ullong* volatile)(a2 + 24), (unsigned __int64*)&v42,
+              (unsigned __int64)v38, memory_order_release,
+              memory_order_relaxed);
+          if (v42 != v41) {
+            v43 = v42;
+            do {
+              *v38 = v42;
+              atomic_compare_exchange_strong_explicit(
+                  (atomic_ullong* volatile)(a2 + 24), (unsigned __int64*)&v43,
+                  (unsigned __int64)v38, memory_order_release,
+                  memory_order_relaxed);
+              v30 = v43 == v42;
+              v42 = v43;
+            } while (!v30);
+          }
+        }
+      }
+    }
+    return result;
+  }
+  v37 = 2097150;
+  if ((v12 & 0xC00) == 0) {
+    v37 = 2097144;
+  }
+  if (*(_QWORD*)(v12 + 24) != v37) {
+    nn_diag_detail_AbortImpl_plt_856170_alt1();
+  }
+  return nn_gs_47c140(*v10, (__int64)(v10 + 1), v12 & 0xFFFFFFFFFFFFFC00LL, a4);
+}
+
+__int64 nn_gs_47d1a0(__int64 result, __int64 a2, unsigned __int64 a3,
+                     unsigned __int64* a4)
+{
+  _QWORD* v4;
+  unsigned __int64 v5;
+  __int64 v6;
+  __int64* v10;
+  __int64 v11;
+  unsigned __int64 v12;
+  __int64 v13;
+  __int64 v14;
+  _QWORD* v15;
+  __int64 v16;
+  _QWORD* v17;
+  _QWORD* v18;
+  __int64 v19;
+  int v20;
+  _QWORD* v21;
+  __int64 v22;
+  __int64 v23;
+  __int64 v24;
+  __int64 v25;
+  unsigned __int64 explicit;
+  unsigned __int64 v27;
+  unsigned __int64 v28;
+  __int64 v29;
+  bool v30;
+  char v31;
+  __int64 v32;
+  _QWORD* v33;
+  __int64 v34;
+  __int64 v35;
+  __int64 v36;
+  __int64 v37;
+  _QWORD* v38;
+  __int64 v39;
+  _QWORD* v40;
+  __int64 v41;
+  __int64 v42;
+  __int64 v43;
+
+  v4 = (_QWORD*)a4[4];
+  v5 = a3 & 0xFFFFFFFFFFFFFC00LL;
+  v6 = a3 & 0xC00;
+  v10 = (__int64*)result;
+  a4[4] = 0;
+  if (v4 != nullptr) {
+    v11 = 72;
+    if ((a3 & 0xC00) != 0) {
+      v11 = 0;
+    }
+    v12 = v11 | v5;
+    if (v4 == (_QWORD*)(v11 | v5)) {
+      v20 = 1;
+      goto LABEL_29;
+    }
+  }
+  v13 = 72;
+  v14 = 65534;
+  if ((a3 & 0xC00) != 0) {
+    v13 = 0;
+  }
+  else {
+    v14 = 65532;
+  }
+  v12 = v13 | v5;
+  if ((*(unsigned __int64*)((char*)(*(void*(*)[1])0x18LL) + (v13 | v5)) ^ v14 ^
+       ((*(unsigned __int64*)((char*)(*(void*(*)[1])0x18LL) + (v13 | v5)) ^
+         v14) -
+        1)) <=
+          (*(unsigned __int64*)((char*)(*(void*(*)[1])0x18LL) + (v13 | v5)) ^
+           v14) -
+              1 ||
+      ((result = nn_os_SdkMutexType_TryLock_plt_alt1(a2)) & 1) == 0) {
+    v20 = 0;
+    goto LABEL_29;
+  }
+  if (*(_QWORD*)(v12 + 8) == 0) {
+    v16 = *(_QWORD*)(a2 + 8);
+    v15 = (_QWORD*)atomic_exchange_explicit((atomic_ullong* volatile)(a2 + 24),
+                                            0, memory_order_acquire);
+    if (v15 != nullptr) {
+      v17 = *(_QWORD**)(v16 + 8);
+      *v17 = v15;
+      do {
+        v15[1] = v17;
+        v18 = v15;
+        v17 = v15;
+        v15 = (_QWORD*)*v15;
+      } while (v15 != nullptr);
+      *v18 = v16;
+      *(_QWORD*)(v16 + 8) = v18;
+    }
+    if (*(_QWORD*)(v12 + 8) == 0) {
+      v20 = 0;
+      goto LABEL_24;
+    }
+  }
+  __atomic_exchange_n((unsigned int*)(v12 + 8), v12 + 8, 5);
+  __atomic_exchange_n((unsigned int*)v12, (unsigned int)v15, 5);
+  *(_QWORD*)(v12 + 8) = v15;
+  v15[1] = v12 + 8;
+  result = nn_os_SdkMutexType_Unlock_plt_alt1(a2);
+  if (v4 == nullptr) {
+    goto LABEL_22;
+  }
+  result = nn_os_SdkMutexType_TryLock_plt_alt1(a2);
+  if ((result & 1) != 0) {
+    v19 = *(_QWORD*)(a2 + 8);
+    v20 = 1;
+    v21 = *(_QWORD**)(v19 + 8);
+    *v21 = v4;
+    *(_QWORD*)(v19 + 8) = v4;
+    v4[1] = v21;
+    *v4 = v19;
+    v4 = (_QWORD*)v12;
+  LABEL_24:
+    result = nn_os_SdkMutexType_Unlock_plt_alt1(a2);
+    goto LABEL_29;
+  }
+  v22 = *(_QWORD*)(a2 + 24);
+  *v4 = v22;
+  v23 = v22;
+  atomic_compare_exchange_strong_explicit(
+      (atomic_ullong* volatile)(a2 + 24), (unsigned __int64*)&v23,
+      (unsigned __int64)v4, memory_order_release, memory_order_relaxed);
+  if (v23 != v22) {
+    v20 = 1;
+    v24 = v23;
+    do {
+      *v4 = v23;
+      atomic_compare_exchange_strong_explicit(
+          (atomic_ullong* volatile)(a2 + 24), (unsigned __int64*)&v24,
+          (unsigned __int64)v4, memory_order_release, memory_order_relaxed);
+      v30 = v24 == v23;
+      v23 = v24;
+    } while (!v30);
+  }
+  else {
+  LABEL_22:
+    v20 = 1;
+  }
+  v4 = (_QWORD*)v12;
+LABEL_29:
+  v25 = 1LL << ((a3 >> 6) & 0xF);
+  explicit = atomic_load_explicit((atomic_ullong* volatile)(v12 + 24),
+                                  memory_order_acquire);
+  if ((explicit & v25) != 0) {
+  LABEL_33:
+    nn_diag_detail_AbortImpl_plt_856170_alt1();
+  }
+  v27 = explicit;
+  while (1) {
+    v28 = explicit | v25;
+    atomic_compare_exchange_strong((atomic_ullong* volatile)(v12 + 24), &v27,
+                                   explicit | v25);
+    if (v27 == explicit) {
+      break;
+    }
+    explicit = v27;
+    if ((v27 & v25) != 0) {
+      goto LABEL_33;
+    }
+  }
+  if (v6 != 0) {
+    v29 = 65534;
+  }
+  else {
+    v29 = 65532;
+  }
+  v30 = v12 != 0 & explicit == 0;
+  if (v30) {
+    v31 = v20;
+  }
+  else {
+    v31 = 1;
+  }
+  if ((v31 & 1) != 0) {
+    v12 = (unsigned __int64)v4;
+    if (v5 == 0) {
+      goto LABEL_60;
+    }
+  }
+  else {
+    if (v4 != nullptr) {
+      result = nn_os_SdkMutexType_TryLock_plt_alt1(a2);
+      if ((result & 1) != 0) {
+        v32 = *(_QWORD*)(a2 + 8);
+        v33 = *(_QWORD**)(v32 + 8);
+        *v33 = v4;
+        *(_QWORD*)(v32 + 8) = v4;
+        v4[1] = v33;
+        *v4 = v32;
+        result = nn_os_SdkMutexType_Unlock_plt_alt1(a2);
+      }
+      else {
+        v34 = *(_QWORD*)(a2 + 24);
+        *v4 = v34;
+        v35 = v34;
+        atomic_compare_exchange_strong_explicit(
+            (atomic_ullong* volatile)(a2 + 24), (unsigned __int64*)&v35,
+            (unsigned __int64)v4, memory_order_release, memory_order_relaxed);
+        if (v35 != v34) {
+          v36 = v35;
+          do {
+            *v4 = v35;
+            atomic_compare_exchange_strong_explicit(
+                (atomic_ullong* volatile)(a2 + 24), (unsigned __int64*)&v36,
+                (unsigned __int64)v4, memory_order_release,
+                memory_order_relaxed);
+            v30 = v36 == v35;
+            v35 = v36;
+          } while (!v30);
+        }
+      }
+    }
+    v20 = 1;
+    if (v5 == 0) {
+      goto LABEL_60;
+    }
+  }
+  if (v28 != v29 || v20 == 0) {
+  LABEL_60:
+    if (v12 != 0) {
+      v38 = (_QWORD*)a4[4];
+      a4[4] = v12;
+      if (v38 != nullptr) {
+        result = nn_os_SdkMutexType_TryLock_plt_alt1(a2);
+        if ((result & 1) != 0) {
+          v39 = *(_QWORD*)(a2 + 8);
+          v40 = *(_QWORD**)(v39 + 8);
+          *v40 = v38;
+          *(_QWORD*)(v39 + 8) = v38;
+          v38[1] = v40;
+          *v38 = v39;
+          return nn_os_SdkMutexType_Unlock_plt_alt1(a2);
+        }
+        else {
+          v41 = *(_QWORD*)(a2 + 24);
+          *v38 = v41;
+          v42 = v41;
+          atomic_compare_exchange_strong_explicit(
+              (atomic_ullong* volatile)(a2 + 24), (unsigned __int64*)&v42,
+              (unsigned __int64)v38, memory_order_release,
+              memory_order_relaxed);
+          if (v42 != v41) {
+            v43 = v42;
+            do {
+              *v38 = v42;
+              atomic_compare_exchange_strong_explicit(
+                  (atomic_ullong* volatile)(a2 + 24), (unsigned __int64*)&v43,
+                  (unsigned __int64)v38, memory_order_release,
+                  memory_order_relaxed);
+              v30 = v43 == v42;
+              v42 = v43;
+            } while (!v30);
+          }
+        }
+      }
+    }
+    return result;
+  }
+  v37 = 65534;
+  if ((v12 & 0xC00) == 0) {
+    v37 = 65532;
+  }
+  if (*(_QWORD*)(v12 + 24) != v37) {
+    nn_diag_detail_AbortImpl_plt_856170_alt1();
+  }
+  return nn_gs_47c140(*v10, (__int64)(v10 + 1), v12 & 0xFFFFFFFFFFFFFC00LL, a4);
+}
+
+__int64 nn_gs_47d540(__int64 result, __int64 a2, __int64 a3,
+                     unsigned __int64* a4)
+{
+  _QWORD* v4;
+  unsigned __int64 v5;
+  __int64 v6;
+  __int16 v8;
+  __int64* v10;
+  __int64 v11;
+  unsigned __int64 v12;
+  __int64 v13;
+  __int64 v14;
+  _QWORD* v15;
+  __int64 v16;
+  _QWORD* v17;
+  _QWORD* v18;
+  __int64 v19;
+  int v20;
+  _QWORD* v21;
+  __int64 v22;
+  __int64 v23;
+  __int64 v24;
+  __int64 v25;
+  unsigned __int64 explicit;
+  unsigned __int64 v27;
+  unsigned __int64 v28;
+  __int64 v29;
+  bool v30;
+  char v31;
+  __int64 v32;
+  _QWORD* v33;
+  __int64 v34;
+  __int64 v35;
+  __int64 v36;
+  __int64 v37;
+  _QWORD* v38;
+  __int64 v39;
+  _QWORD* v40;
+  __int64 v41;
+  __int64 v42;
+  __int64 v43;
+
+  v4 = (_QWORD*)a4[5];
+  v5 = a3 & 0xFFFFFFFFFFFFFC00LL;
+  v6 = a3 & 0xC00;
+  v8 = a3;
+  v10 = (__int64*)result;
+  a4[5] = 0;
+  if (v4 != nullptr) {
+    v11 = 72;
+    if ((a3 & 0xC00) != 0) {
+      v11 = 0;
+    }
+    v12 = v11 | v5;
+    if (v4 == (_QWORD*)(v11 | v5)) {
+      v20 = 1;
+      goto LABEL_29;
+    }
+  }
+  v13 = 72;
+  v14 = 4094;
+  if ((a3 & 0xC00) != 0) {
+    v13 = 0;
+  }
+  else {
+    v14 = 4092;
+  }
+  v12 = v13 | v5;
+  if ((*(unsigned __int64*)((char*)(*(void*(*)[1])0x18LL) + (v13 | v5)) ^ v14 ^
+       ((*(unsigned __int64*)((char*)(*(void*(*)[1])0x18LL) + (v13 | v5)) ^
+         v14) -
+        1)) <=
+          (*(unsigned __int64*)((char*)(*(void*(*)[1])0x18LL) + (v13 | v5)) ^
+           v14) -
+              1 ||
+      ((result = nn_os_SdkMutexType_TryLock_plt_alt1(a2)) & 1) == 0) {
+    v20 = 0;
+    goto LABEL_29;
+  }
+  if (*(_QWORD*)(v12 + 8) == 0) {
+    v16 = *(_QWORD*)(a2 + 8);
+    v15 = (_QWORD*)atomic_exchange_explicit((atomic_ullong* volatile)(a2 + 24),
+                                            0, memory_order_acquire);
+    if (v15 != nullptr) {
+      v17 = *(_QWORD**)(v16 + 8);
+      *v17 = v15;
+      do {
+        v15[1] = v17;
+        v18 = v15;
+        v17 = v15;
+        v15 = (_QWORD*)*v15;
+      } while (v15 != nullptr);
+      *v18 = v16;
+      *(_QWORD*)(v16 + 8) = v18;
+    }
+    if (*(_QWORD*)(v12 + 8) == 0) {
+      v20 = 0;
+      goto LABEL_24;
+    }
+  }
+  __atomic_exchange_n((unsigned int*)(v12 + 8), v12 + 8, 5);
+  __atomic_exchange_n((unsigned int*)v12, (unsigned int)v15, 5);
+  *(_QWORD*)(v12 + 8) = v15;
+  v15[1] = v12 + 8;
+  result = nn_os_SdkMutexType_Unlock_plt_alt1(a2);
+  if (v4 == nullptr) {
+    goto LABEL_22;
+  }
+  result = nn_os_SdkMutexType_TryLock_plt_alt1(a2);
+  if ((result & 1) != 0) {
+    v19 = *(_QWORD*)(a2 + 8);
+    v20 = 1;
+    v21 = *(_QWORD**)(v19 + 8);
+    *v21 = v4;
+    *(_QWORD*)(v19 + 8) = v4;
+    v4[1] = v21;
+    *v4 = v19;
+    v4 = (_QWORD*)v12;
+  LABEL_24:
+    result = nn_os_SdkMutexType_Unlock_plt_alt1(a2);
+    goto LABEL_29;
+  }
+  v22 = *(_QWORD*)(a2 + 24);
+  *v4 = v22;
+  v23 = v22;
+  atomic_compare_exchange_strong_explicit(
+      (atomic_ullong* volatile)(a2 + 24), (unsigned __int64*)&v23,
+      (unsigned __int64)v4, memory_order_release, memory_order_relaxed);
+  if (v23 != v22) {
+    v20 = 1;
+    v24 = v23;
+    do {
+      *v4 = v23;
+      atomic_compare_exchange_strong_explicit(
+          (atomic_ullong* volatile)(a2 + 24), (unsigned __int64*)&v24,
+          (unsigned __int64)v4, memory_order_release, memory_order_relaxed);
+      v30 = v24 == v23;
+      v23 = v24;
+    } while (!v30);
+  }
+  else {
+  LABEL_22:
+    v20 = 1;
+  }
+  v4 = (_QWORD*)v12;
+LABEL_29:
+  if ((v8 & 0x3FFu) >= 0x3C0uLL) {
+    nn_diag_detail_AbortImpl_plt_856170_alt1();
+  }
+  v25 = 1LL << ((820 * (v8 & 0x3FFu)) >> 16);
+  explicit = atomic_load_explicit((atomic_ullong* volatile)(v12 + 24),
+                                  memory_order_acquire);
+  if ((explicit & v25) != 0) {
+  LABEL_34:
+    nn_diag_detail_AbortImpl_plt_856170_alt1();
+  }
+  v27 = explicit;
+  while (1) {
+    v28 = explicit | v25;
+    atomic_compare_exchange_strong((atomic_ullong* volatile)(v12 + 24), &v27,
+                                   explicit | v25);
+    if (v27 == explicit) {
+      break;
+    }
+    explicit = v27;
+    if ((v27 & v25) != 0) {
+      goto LABEL_34;
+    }
+  }
+  if (v6 != 0) {
+    v29 = 4094;
+  }
+  else {
+    v29 = 4092;
+  }
+  v30 = explicit != 0 | v12 == 0;
+  if (v30) {
+    v31 = 1;
+  }
+  else {
+    v31 = v20;
+  }
+  if ((v31 & 1) != 0) {
+    v12 = (unsigned __int64)v4;
+    if (v5 == 0) {
+      goto LABEL_61;
+    }
+  }
+  else {
+    if (v4 != nullptr) {
+      result = nn_os_SdkMutexType_TryLock_plt_alt1(a2);
+      if ((result & 1) != 0) {
+        v32 = *(_QWORD*)(a2 + 8);
+        v33 = *(_QWORD**)(v32 + 8);
+        *v33 = v4;
+        *(_QWORD*)(v32 + 8) = v4;
+        v4[1] = v33;
+        *v4 = v32;
+        result = nn_os_SdkMutexType_Unlock_plt_alt1(a2);
+      }
+      else {
+        v34 = *(_QWORD*)(a2 + 24);
+        *v4 = v34;
+        v35 = v34;
+        atomic_compare_exchange_strong_explicit(
+            (atomic_ullong* volatile)(a2 + 24), (unsigned __int64*)&v35,
+            (unsigned __int64)v4, memory_order_release, memory_order_relaxed);
+        if (v35 != v34) {
+          v36 = v35;
+          do {
+            *v4 = v35;
+            atomic_compare_exchange_strong_explicit(
+                (atomic_ullong* volatile)(a2 + 24), (unsigned __int64*)&v36,
+                (unsigned __int64)v4, memory_order_release,
+                memory_order_relaxed);
+            v30 = v36 == v35;
+            v35 = v36;
+          } while (!v30);
+        }
+      }
+    }
+    v20 = 1;
+    if (v5 == 0) {
+      goto LABEL_61;
+    }
+  }
+  if (v28 != v29 || v20 == 0) {
+  LABEL_61:
+    if (v12 != 0) {
+      v38 = (_QWORD*)a4[5];
+      a4[5] = v12;
+      if (v38 != nullptr) {
+        result = nn_os_SdkMutexType_TryLock_plt_alt1(a2);
+        if ((result & 1) != 0) {
+          v39 = *(_QWORD*)(a2 + 8);
+          v40 = *(_QWORD**)(v39 + 8);
+          *v40 = v38;
+          *(_QWORD*)(v39 + 8) = v38;
+          v38[1] = v40;
+          *v38 = v39;
+          return nn_os_SdkMutexType_Unlock_plt_alt1(a2);
+        }
+        else {
+          v41 = *(_QWORD*)(a2 + 24);
+          *v38 = v41;
+          v42 = v41;
+          atomic_compare_exchange_strong_explicit(
+              (atomic_ullong* volatile)(a2 + 24), (unsigned __int64*)&v42,
+              (unsigned __int64)v38, memory_order_release,
+              memory_order_relaxed);
+          if (v42 != v41) {
+            v43 = v42;
+            do {
+              *v38 = v42;
+              atomic_compare_exchange_strong_explicit(
+                  (atomic_ullong* volatile)(a2 + 24), (unsigned __int64*)&v43,
+                  (unsigned __int64)v38, memory_order_release,
+                  memory_order_relaxed);
+              v30 = v43 == v42;
+              v42 = v43;
+            } while (!v30);
+          }
+        }
+      }
+    }
+    return result;
+  }
+  v37 = 4094;
+  if ((v12 & 0xC00) == 0) {
+    v37 = 4092;
+  }
+  if (*(_QWORD*)(v12 + 24) != v37) {
+    nn_diag_detail_AbortImpl_plt_856170_alt1();
+  }
+  return nn_gs_47c140(*v10, (__int64)(v10 + 1), v12 & 0xFFFFFFFFFFFFFC00LL, a4);
+}
+
+__int64 nn_gs_47d900(__int64 result, __int64 a2, __int64 a3,
+                     unsigned __int64* a4)
+{
+  _QWORD* v4;
+  unsigned __int64 v5;
+  __int64 v6;
+  __int16 v8;
+  __int64* v10;
+  __int64 v11;
+  unsigned __int64 v12;
+  __int64 v13;
+  __int64 v14;
+  _QWORD* v15;
+  __int64 v16;
+  _QWORD* v17;
+  _QWORD* v18;
+  __int64 v19;
+  int v20;
+  _QWORD* v21;
+  __int64 v22;
+  __int64 v23;
+  __int64 v24;
+  __int64 v25;
+  unsigned __int64 explicit;
+  unsigned __int64 v27;
+  unsigned __int64 v28;
+  __int64 v29;
+  bool v30;
+  char v31;
+  __int64 v32;
+  _QWORD* v33;
+  __int64 v34;
+  __int64 v35;
+  __int64 v36;
+  __int64 v37;
+  _QWORD* v38;
+  __int64 v39;
+  _QWORD* v40;
+  __int64 v41;
+  __int64 v42;
+  __int64 v43;
+
+  v4 = (_QWORD*)a4[6];
+  v5 = a3 & 0xFFFFFFFFFFFFFC00LL;
+  v6 = a3 & 0xC00;
+  v8 = a3;
+  v10 = (__int64*)result;
+  a4[6] = 0;
+  if (v4 != nullptr) {
+    v11 = 72;
+    if ((a3 & 0xC00) != 0) {
+      v11 = 0;
+    }
+    v12 = v11 | v5;
+    if (v4 == (_QWORD*)(v11 | v5)) {
+      v20 = 1;
+      goto LABEL_29;
+    }
+  }
+  v13 = 72;
+  v14 = 1022;
+  if ((a3 & 0xC00) != 0) {
+    v13 = 0;
+  }
+  else {
+    v14 = 1020;
+  }
+  v12 = v13 | v5;
+  if ((*(unsigned __int64*)((char*)(*(void*(*)[1])0x18LL) + (v13 | v5)) ^ v14 ^
+       ((*(unsigned __int64*)((char*)(*(void*(*)[1])0x18LL) + (v13 | v5)) ^
+         v14) -
+        1)) <=
+          (*(unsigned __int64*)((char*)(*(void*(*)[1])0x18LL) + (v13 | v5)) ^
+           v14) -
+              1 ||
+      ((result = nn_os_SdkMutexType_TryLock_plt_alt1(a2)) & 1) == 0) {
+    v20 = 0;
+    goto LABEL_29;
+  }
+  if (*(_QWORD*)(v12 + 8) == 0) {
+    v16 = *(_QWORD*)(a2 + 8);
+    v15 = (_QWORD*)atomic_exchange_explicit((atomic_ullong* volatile)(a2 + 24),
+                                            0, memory_order_acquire);
+    if (v15 != nullptr) {
+      v17 = *(_QWORD**)(v16 + 8);
+      *v17 = v15;
+      do {
+        v15[1] = v17;
+        v18 = v15;
+        v17 = v15;
+        v15 = (_QWORD*)*v15;
+      } while (v15 != nullptr);
+      *v18 = v16;
+      *(_QWORD*)(v16 + 8) = v18;
+    }
+    if (*(_QWORD*)(v12 + 8) == 0) {
+      v20 = 0;
+      goto LABEL_24;
+    }
+  }
+  __atomic_exchange_n((unsigned int*)(v12 + 8), v12 + 8, 5);
+  __atomic_exchange_n((unsigned int*)v12, (unsigned int)v15, 5);
+  *(_QWORD*)(v12 + 8) = v15;
+  v15[1] = v12 + 8;
+  result = nn_os_SdkMutexType_Unlock_plt_alt1(a2);
+  if (v4 == nullptr) {
+    goto LABEL_22;
+  }
+  result = nn_os_SdkMutexType_TryLock_plt_alt1(a2);
+  if ((result & 1) != 0) {
+    v19 = *(_QWORD*)(a2 + 8);
+    v20 = 1;
+    v21 = *(_QWORD**)(v19 + 8);
+    *v21 = v4;
+    *(_QWORD*)(v19 + 8) = v4;
+    v4[1] = v21;
+    *v4 = v19;
+    v4 = (_QWORD*)v12;
+  LABEL_24:
+    result = nn_os_SdkMutexType_Unlock_plt_alt1(a2);
+    goto LABEL_29;
+  }
+  v22 = *(_QWORD*)(a2 + 24);
+  *v4 = v22;
+  v23 = v22;
+  atomic_compare_exchange_strong_explicit(
+      (atomic_ullong* volatile)(a2 + 24), (unsigned __int64*)&v23,
+      (unsigned __int64)v4, memory_order_release, memory_order_relaxed);
+  if (v23 != v22) {
+    v20 = 1;
+    v24 = v23;
+    do {
+      *v4 = v23;
+      atomic_compare_exchange_strong_explicit(
+          (atomic_ullong* volatile)(a2 + 24), (unsigned __int64*)&v24,
+          (unsigned __int64)v4, memory_order_release, memory_order_relaxed);
+      v30 = v24 == v23;
+      v23 = v24;
+    } while (!v30);
+  }
+  else {
+  LABEL_22:
+    v20 = 1;
+  }
+  v4 = (_QWORD*)v12;
+LABEL_29:
+  if ((v8 & 0x3FFu) >= 0x3C0uLL) {
+    nn_diag_detail_AbortImpl_plt_856170_alt1();
+  }
+  v25 = 1LL << ((683 * (v8 & 0x3FFu)) >> 16);
+  explicit = atomic_load_explicit((atomic_ullong* volatile)(v12 + 24),
+                                  memory_order_acquire);
+  if ((explicit & v25) != 0) {
+  LABEL_34:
+    nn_diag_detail_AbortImpl_plt_856170_alt1();
+  }
+  v27 = explicit;
+  while (1) {
+    v28 = explicit | v25;
+    atomic_compare_exchange_strong((atomic_ullong* volatile)(v12 + 24), &v27,
+                                   explicit | v25);
+    if (v27 == explicit) {
+      break;
+    }
+    explicit = v27;
+    if ((v27 & v25) != 0) {
+      goto LABEL_34;
+    }
+  }
+  if (v6 != 0) {
+    v29 = 1022;
+  }
+  else {
+    v29 = 1020;
+  }
+  v30 = explicit != 0 | v12 == 0;
+  if (v30) {
+    v31 = 1;
+  }
+  else {
+    v31 = v20;
+  }
+  if ((v31 & 1) != 0) {
+    v12 = (unsigned __int64)v4;
+    if (v5 == 0) {
+      goto LABEL_61;
+    }
+  }
+  else {
+    if (v4 != nullptr) {
+      result = nn_os_SdkMutexType_TryLock_plt_alt1(a2);
+      if ((result & 1) != 0) {
+        v32 = *(_QWORD*)(a2 + 8);
+        v33 = *(_QWORD**)(v32 + 8);
+        *v33 = v4;
+        *(_QWORD*)(v32 + 8) = v4;
+        v4[1] = v33;
+        *v4 = v32;
+        result = nn_os_SdkMutexType_Unlock_plt_alt1(a2);
+      }
+      else {
+        v34 = *(_QWORD*)(a2 + 24);
+        *v4 = v34;
+        v35 = v34;
+        atomic_compare_exchange_strong_explicit(
+            (atomic_ullong* volatile)(a2 + 24), (unsigned __int64*)&v35,
+            (unsigned __int64)v4, memory_order_release, memory_order_relaxed);
+        if (v35 != v34) {
+          v36 = v35;
+          do {
+            *v4 = v35;
+            atomic_compare_exchange_strong_explicit(
+                (atomic_ullong* volatile)(a2 + 24), (unsigned __int64*)&v36,
+                (unsigned __int64)v4, memory_order_release,
+                memory_order_relaxed);
+            v30 = v36 == v35;
+            v35 = v36;
+          } while (!v30);
+        }
+      }
+    }
+    v20 = 1;
+    if (v5 == 0) {
+      goto LABEL_61;
+    }
+  }
+  if (v28 != v29 || v20 == 0) {
+  LABEL_61:
+    if (v12 != 0) {
+      v38 = (_QWORD*)a4[6];
+      a4[6] = v12;
+      if (v38 != nullptr) {
+        result = nn_os_SdkMutexType_TryLock_plt_alt1(a2);
+        if ((result & 1) != 0) {
+          v39 = *(_QWORD*)(a2 + 8);
+          v40 = *(_QWORD**)(v39 + 8);
+          *v40 = v38;
+          *(_QWORD*)(v39 + 8) = v38;
+          v38[1] = v40;
+          *v38 = v39;
+          return nn_os_SdkMutexType_Unlock_plt_alt1(a2);
+        }
+        else {
+          v41 = *(_QWORD*)(a2 + 24);
+          *v38 = v41;
+          v42 = v41;
+          atomic_compare_exchange_strong_explicit(
+              (atomic_ullong* volatile)(a2 + 24), (unsigned __int64*)&v42,
+              (unsigned __int64)v38, memory_order_release,
+              memory_order_relaxed);
+          if (v42 != v41) {
+            v43 = v42;
+            do {
+              *v38 = v42;
+              atomic_compare_exchange_strong_explicit(
+                  (atomic_ullong* volatile)(a2 + 24), (unsigned __int64*)&v43,
+                  (unsigned __int64)v38, memory_order_release,
+                  memory_order_relaxed);
+              v30 = v43 == v42;
+              v42 = v43;
+            } while (!v30);
+          }
+        }
+      }
+    }
+    return result;
+  }
+  v37 = 1022;
+  if ((v12 & 0xC00) == 0) {
+    v37 = 1020;
+  }
+  if (*(_QWORD*)(v12 + 24) != v37) {
+    nn_diag_detail_AbortImpl_plt_856170_alt1();
+  }
+  return nn_gs_47c140(*v10, (__int64)(v10 + 1), v12 & 0xFFFFFFFFFFFFFC00LL, a4);
+}
+
+__int64 nn_gs_47dcc0(__int64 result, __int64 a2, __int64 a3,
+                     unsigned __int64* a4)
+{
+  _QWORD* v4;
+  unsigned __int64 v5;
+  __int16 v7;
+  __int64* v9;
+  __int64 v10;
+  unsigned __int64 v11;
+  __int64 v12;
+  _QWORD* v13;
+  __int64 v14;
+  _QWORD* v15;
+  _QWORD* v16;
+  __int64 v17;
+  int v18;
+  _QWORD* v19;
+  __int64 v20;
+  __int64 v21;
+  __int64 v22;
+  __int64 v23;
+  unsigned __int64 explicit;
+  unsigned __int64 v25;
+  unsigned __int64 v26;
+  bool v27;
+  char v28;
+  __int64 v29;
+  _QWORD* v30;
+  __int64 v31;
+  __int64 v32;
+  __int64 v33;
+  _QWORD* v34;
+  __int64 v35;
+  _QWORD* v36;
+  __int64 v37;
+  __int64 v38;
+  __int64 v39;
+
+  v4 = (_QWORD*)a4[7];
+  v5 = a3 & 0xFFFFFFFFFFFFFC00LL;
+  v7 = a3;
+  v9 = (__int64*)result;
+  a4[7] = 0;
+  if (v4 != nullptr) {
+    v10 = 72;
+    if ((a3 & 0xC00) != 0) {
+      v10 = 0;
+    }
+    v11 = v10 | v5;
+    if (v4 == (_QWORD*)(v10 | v5)) {
+      v18 = 1;
+      goto LABEL_28;
+    }
+  }
+  v12 = 72;
+  if ((a3 & 0xC00) != 0) {
+    v12 = 0;
+  }
+  v11 = v12 | v5;
+  if ((*(unsigned __int64*)((char*)(*(void*(*)[1])0x18LL) + (v12 | v5)) ^
+       0x1FE ^
+       ((*(unsigned __int64*)((char*)(*(void*(*)[1])0x18LL) + (v12 | v5)) ^
+         0x1FE) -
+        1)) <=
+          (*(unsigned __int64*)((char*)(*(void*(*)[1])0x18LL) + (v12 | v5)) ^
+           0x1FE) -
+              1 ||
+      ((result = nn_os_SdkMutexType_TryLock_plt_alt1(a2)) & 1) == 0) {
+    v18 = 0;
+    goto LABEL_28;
+  }
+  if (*(_QWORD*)(v11 + 8) == 0) {
+    v14 = *(_QWORD*)(a2 + 8);
+    v13 = (_QWORD*)atomic_exchange_explicit((atomic_ullong* volatile)(a2 + 24),
+                                            0, memory_order_acquire);
+    if (v13 != nullptr) {
+      v15 = *(_QWORD**)(v14 + 8);
+      *v15 = v13;
+      do {
+        v13[1] = v15;
+        v16 = v13;
+        v15 = v13;
+        v13 = (_QWORD*)*v13;
+      } while (v13 != nullptr);
+      *v16 = v14;
+      *(_QWORD*)(v14 + 8) = v16;
+    }
+    if (*(_QWORD*)(v11 + 8) == 0) {
+      v18 = 0;
+      goto LABEL_23;
+    }
+  }
+  __atomic_exchange_n((unsigned int*)(v11 + 8), v11 + 8, 5);
+  __atomic_exchange_n((unsigned int*)v11, (unsigned int)v13, 5);
+  *(_QWORD*)(v11 + 8) = v13;
+  v13[1] = v11 + 8;
+  result = nn_os_SdkMutexType_Unlock_plt_alt1(a2);
+  if (v4 == nullptr) {
+    goto LABEL_21;
+  }
+  result = nn_os_SdkMutexType_TryLock_plt_alt1(a2);
+  if ((result & 1) != 0) {
+    v17 = *(_QWORD*)(a2 + 8);
+    v18 = 1;
+    v19 = *(_QWORD**)(v17 + 8);
+    *v19 = v4;
+    *(_QWORD*)(v17 + 8) = v4;
+    v4[1] = v19;
+    *v4 = v17;
+    v4 = (_QWORD*)v11;
+  LABEL_23:
+    result = nn_os_SdkMutexType_Unlock_plt_alt1(a2);
+    goto LABEL_28;
+  }
+  v20 = *(_QWORD*)(a2 + 24);
+  *v4 = v20;
+  v21 = v20;
+  atomic_compare_exchange_strong_explicit(
+      (atomic_ullong* volatile)(a2 + 24), (unsigned __int64*)&v21,
+      (unsigned __int64)v4, memory_order_release, memory_order_relaxed);
+  if (v21 != v20) {
+    v18 = 1;
+    v22 = v21;
+    do {
+      *v4 = v21;
+      atomic_compare_exchange_strong_explicit(
+          (atomic_ullong* volatile)(a2 + 24), (unsigned __int64*)&v22,
+          (unsigned __int64)v4, memory_order_release, memory_order_relaxed);
+      v27 = v22 == v21;
+      v21 = v22;
+    } while (!v27);
+  }
+  else {
+  LABEL_21:
+    v18 = 1;
+  }
+  v4 = (_QWORD*)v11;
+LABEL_28:
+  if ((v7 & 0x3FFu) >= 0x3F0uLL) {
+    nn_diag_detail_AbortImpl_plt_856170_alt1();
+  }
+  v23 = 1LL << ((1171 * (v7 & 0x3FFu)) >> 17);
+  explicit = atomic_load_explicit((atomic_ullong* volatile)(v11 + 24),
+                                  memory_order_acquire);
+  if ((explicit & v23) != 0) {
+  LABEL_33:
+    nn_diag_detail_AbortImpl_plt_856170_alt1();
+  }
+  v25 = explicit;
+  while (1) {
+    v26 = explicit | v23;
+    atomic_compare_exchange_strong((atomic_ullong* volatile)(v11 + 24), &v25,
+                                   explicit | v23);
+    if (v25 == explicit) {
+      break;
+    }
+    explicit = v25;
+    if ((v25 & v23) != 0) {
+      goto LABEL_33;
+    }
+  }
+  v27 = explicit != 0 | v11 == 0;
+  if (v27) {
+    v28 = 1;
+  }
+  else {
+    v28 = v18;
+  }
+  if ((v28 & 1) != 0) {
+    v11 = (unsigned __int64)v4;
+    if (v5 == 0) {
+      goto LABEL_55;
+    }
+  }
+  else {
+    if (v4 != nullptr) {
+      result = nn_os_SdkMutexType_TryLock_plt_alt1(a2);
+      if ((result & 1) != 0) {
+        v29 = *(_QWORD*)(a2 + 8);
+        v30 = *(_QWORD**)(v29 + 8);
+        *v30 = v4;
+        *(_QWORD*)(v29 + 8) = v4;
+        v4[1] = v30;
+        *v4 = v29;
+        result = nn_os_SdkMutexType_Unlock_plt_alt1(a2);
+      }
+      else {
+        v31 = *(_QWORD*)(a2 + 24);
+        *v4 = v31;
+        v32 = v31;
+        atomic_compare_exchange_strong_explicit(
+            (atomic_ullong* volatile)(a2 + 24), (unsigned __int64*)&v32,
+            (unsigned __int64)v4, memory_order_release, memory_order_relaxed);
+        if (v32 != v31) {
+          v33 = v32;
+          do {
+            *v4 = v32;
+            atomic_compare_exchange_strong_explicit(
+                (atomic_ullong* volatile)(a2 + 24), (unsigned __int64*)&v33,
+                (unsigned __int64)v4, memory_order_release,
+                memory_order_relaxed);
+            v27 = v33 == v32;
+            v32 = v33;
+          } while (!v27);
+        }
+      }
+    }
+    v18 = 1;
+    if (v5 == 0) {
+      goto LABEL_55;
+    }
+  }
+  if (v26 != 510 || v18 == 0) {
+  LABEL_55:
+    if (v11 != 0) {
+      v34 = (_QWORD*)a4[7];
+      a4[7] = v11;
+      if (v34 != nullptr) {
+        result = nn_os_SdkMutexType_TryLock_plt_alt1(a2);
+        if ((result & 1) != 0) {
+          v35 = *(_QWORD*)(a2 + 8);
+          v36 = *(_QWORD**)(v35 + 8);
+          *v36 = v34;
+          *(_QWORD*)(v35 + 8) = v34;
+          v34[1] = v36;
+          *v34 = v35;
+          return nn_os_SdkMutexType_Unlock_plt_alt1(a2);
+        }
+        else {
+          v37 = *(_QWORD*)(a2 + 24);
+          *v34 = v37;
+          v38 = v37;
+          atomic_compare_exchange_strong_explicit(
+              (atomic_ullong* volatile)(a2 + 24), (unsigned __int64*)&v38,
+              (unsigned __int64)v34, memory_order_release,
+              memory_order_relaxed);
+          if (v38 != v37) {
+            v39 = v38;
+            do {
+              *v34 = v38;
+              atomic_compare_exchange_strong_explicit(
+                  (atomic_ullong* volatile)(a2 + 24), (unsigned __int64*)&v39,
+                  (unsigned __int64)v34, memory_order_release,
+                  memory_order_relaxed);
+              v27 = v39 == v38;
+              v38 = v39;
+            } while (!v27);
+          }
+        }
+      }
+    }
+    return result;
+  }
+  if (*(_QWORD*)(v11 + 24) != 510) {
+    nn_diag_detail_AbortImpl_plt_856170_alt1();
+  }
+  return nn_gs_47c140(*v9, (__int64)(v9 + 1), v11 & 0xFFFFFFFFFFFFFC00LL, a4);
+}
+
+__int64 nn_gs_47e3a0(__int64 result, __int64 a2, __int64 a3,
+                     unsigned __int64* a4)
+{
+  _QWORD* v4;
+  unsigned __int64 v5;
+  __int16 v7;
+  __int64* v9;
+  __int64 v10;
+  unsigned __int64 v11;
+  __int64 v12;
+  _QWORD* v13;
+  __int64 v14;
+  _QWORD* v15;
+  _QWORD* v16;
+  __int64 v17;
+  int v18;
+  _QWORD* v19;
+  __int64 v20;
+  __int64 v21;
+  __int64 v22;
+  __int64 v23;
+  unsigned __int64 explicit;
+  unsigned __int64 v25;
+  unsigned __int64 v26;
+  bool v27;
+  char v28;
+  __int64 v29;
+  _QWORD* v30;
+  __int64 v31;
+  __int64 v32;
+  __int64 v33;
+  _QWORD* v34;
+  __int64 v35;
+  _QWORD* v36;
+  __int64 v37;
+  __int64 v38;
+  __int64 v39;
+
+  v4 = (_QWORD*)a4[9];
+  v5 = a3 & 0xFFFFFFFFFFFFFC00LL;
+  v7 = a3;
+  v9 = (__int64*)result;
+  a4[9] = 0;
+  if (v4 != nullptr) {
+    v10 = 72;
+    if ((a3 & 0xC00) != 0) {
+      v10 = 0;
+    }
+    v11 = v10 | v5;
+    if (v4 == (_QWORD*)(v10 | v5)) {
+      v18 = 1;
+      goto LABEL_28;
+    }
+  }
+  v12 = 72;
+  if ((a3 & 0xC00) != 0) {
+    v12 = 0;
+  }
+  v11 = v12 | v5;
+  if ((*(unsigned __int64*)((char*)(*(void*(*)[1])0x18LL) + (v12 | v5)) ^ 0x7E ^
+       ((*(unsigned __int64*)((char*)(*(void*(*)[1])0x18LL) + (v12 | v5)) ^
+         0x7E) -
+        1)) <=
+          (*(unsigned __int64*)((char*)(*(void*(*)[1])0x18LL) + (v12 | v5)) ^
+           0x7E) -
+              1 ||
+      ((result = nn_os_SdkMutexType_TryLock_plt_alt1(a2)) & 1) == 0) {
+    v18 = 0;
+    goto LABEL_28;
+  }
+  if (*(_QWORD*)(v11 + 8) == 0) {
+    v14 = *(_QWORD*)(a2 + 8);
+    v13 = (_QWORD*)atomic_exchange_explicit((atomic_ullong* volatile)(a2 + 24),
+                                            0, memory_order_acquire);
+    if (v13 != nullptr) {
+      v15 = *(_QWORD**)(v14 + 8);
+      *v15 = v13;
+      do {
+        v13[1] = v15;
+        v16 = v13;
+        v15 = v13;
+        v13 = (_QWORD*)*v13;
+      } while (v13 != nullptr);
+      *v16 = v14;
+      *(_QWORD*)(v14 + 8) = v16;
+    }
+    if (*(_QWORD*)(v11 + 8) == 0) {
+      v18 = 0;
+      goto LABEL_23;
+    }
+  }
+  __atomic_exchange_n((unsigned int*)(v11 + 8), v11 + 8, 5);
+  __atomic_exchange_n((unsigned int*)v11, (unsigned int)v13, 5);
+  *(_QWORD*)(v11 + 8) = v13;
+  v13[1] = v11 + 8;
+  result = nn_os_SdkMutexType_Unlock_plt_alt1(a2);
+  if (v4 == nullptr) {
+    goto LABEL_21;
+  }
+  result = nn_os_SdkMutexType_TryLock_plt_alt1(a2);
+  if ((result & 1) != 0) {
+    v17 = *(_QWORD*)(a2 + 8);
+    v18 = 1;
+    v19 = *(_QWORD**)(v17 + 8);
+    *v19 = v4;
+    *(_QWORD*)(v17 + 8) = v4;
+    v4[1] = v19;
+    *v4 = v17;
+    v4 = (_QWORD*)v11;
+  LABEL_23:
+    result = nn_os_SdkMutexType_Unlock_plt_alt1(a2);
+    goto LABEL_28;
+  }
+  v20 = *(_QWORD*)(a2 + 24);
+  *v4 = v20;
+  v21 = v20;
+  atomic_compare_exchange_strong_explicit(
+      (atomic_ullong* volatile)(a2 + 24), (unsigned __int64*)&v21,
+      (unsigned __int64)v4, memory_order_release, memory_order_relaxed);
+  if (v21 != v20) {
+    v18 = 1;
+    v22 = v21;
+    do {
+      *v4 = v21;
+      atomic_compare_exchange_strong_explicit(
+          (atomic_ullong* volatile)(a2 + 24), (unsigned __int64*)&v22,
+          (unsigned __int64)v4, memory_order_release, memory_order_relaxed);
+      v27 = v22 == v21;
+      v21 = v22;
+    } while (!v27);
+  }
+  else {
+  LABEL_21:
+    v18 = 1;
+  }
+  v4 = (_QWORD*)v11;
+LABEL_28:
+  if ((v7 & 0x3FFu) >= 0x3F0uLL) {
+    nn_diag_detail_AbortImpl_plt_856170_alt1();
+  }
+  v23 = 1LL << ((911 * (v7 & 0x3FFu)) >> 17);
+  explicit = atomic_load_explicit((atomic_ullong* volatile)(v11 + 24),
+                                  memory_order_acquire);
+  if ((explicit & v23) != 0) {
+  LABEL_33:
+    nn_diag_detail_AbortImpl_plt_856170_alt1();
+  }
+  v25 = explicit;
+  while (1) {
+    v26 = explicit | v23;
+    atomic_compare_exchange_strong((atomic_ullong* volatile)(v11 + 24), &v25,
+                                   explicit | v23);
+    if (v25 == explicit) {
+      break;
+    }
+    explicit = v25;
+    if ((v25 & v23) != 0) {
+      goto LABEL_33;
+    }
+  }
+  v27 = explicit != 0 | v11 == 0;
+  if (v27) {
+    v28 = 1;
+  }
+  else {
+    v28 = v18;
+  }
+  if ((v28 & 1) != 0) {
+    v11 = (unsigned __int64)v4;
+    if (v5 == 0) {
+      goto LABEL_55;
+    }
+  }
+  else {
+    if (v4 != nullptr) {
+      result = nn_os_SdkMutexType_TryLock_plt_alt1(a2);
+      if ((result & 1) != 0) {
+        v29 = *(_QWORD*)(a2 + 8);
+        v30 = *(_QWORD**)(v29 + 8);
+        *v30 = v4;
+        *(_QWORD*)(v29 + 8) = v4;
+        v4[1] = v30;
+        *v4 = v29;
+        result = nn_os_SdkMutexType_Unlock_plt_alt1(a2);
+      }
+      else {
+        v31 = *(_QWORD*)(a2 + 24);
+        *v4 = v31;
+        v32 = v31;
+        atomic_compare_exchange_strong_explicit(
+            (atomic_ullong* volatile)(a2 + 24), (unsigned __int64*)&v32,
+            (unsigned __int64)v4, memory_order_release, memory_order_relaxed);
+        if (v32 != v31) {
+          v33 = v32;
+          do {
+            *v4 = v32;
+            atomic_compare_exchange_strong_explicit(
+                (atomic_ullong* volatile)(a2 + 24), (unsigned __int64*)&v33,
+                (unsigned __int64)v4, memory_order_release,
+                memory_order_relaxed);
+            v27 = v33 == v32;
+            v32 = v33;
+          } while (!v27);
+        }
+      }
+    }
+    v18 = 1;
+    if (v5 == 0) {
+      goto LABEL_55;
+    }
+  }
+  if (v26 != 126 || v18 == 0) {
+  LABEL_55:
+    if (v11 != 0) {
+      v34 = (_QWORD*)a4[9];
+      a4[9] = v11;
+      if (v34 != nullptr) {
+        result = nn_os_SdkMutexType_TryLock_plt_alt1(a2);
+        if ((result & 1) != 0) {
+          v35 = *(_QWORD*)(a2 + 8);
+          v36 = *(_QWORD**)(v35 + 8);
+          *v36 = v34;
+          *(_QWORD*)(v35 + 8) = v34;
+          v34[1] = v36;
+          *v34 = v35;
+          return nn_os_SdkMutexType_Unlock_plt_alt1(a2);
+        }
+        else {
+          v37 = *(_QWORD*)(a2 + 24);
+          *v34 = v37;
+          v38 = v37;
+          atomic_compare_exchange_strong_explicit(
+              (atomic_ullong* volatile)(a2 + 24), (unsigned __int64*)&v38,
+              (unsigned __int64)v34, memory_order_release,
+              memory_order_relaxed);
+          if (v38 != v37) {
+            v39 = v38;
+            do {
+              *v34 = v38;
+              atomic_compare_exchange_strong_explicit(
+                  (atomic_ullong* volatile)(a2 + 24), (unsigned __int64*)&v39,
+                  (unsigned __int64)v34, memory_order_release,
+                  memory_order_relaxed);
+              v27 = v39 == v38;
+              v38 = v39;
+            } while (!v27);
+          }
+        }
+      }
+    }
+    return result;
+  }
+  if (*(_QWORD*)(v11 + 24) != 126) {
+    nn_diag_detail_AbortImpl_plt_856170_alt1();
+  }
+  return nn_gs_47c140(*v9, (__int64)(v9 + 1), v11 & 0xFFFFFFFFFFFFFC00LL, a4);
+}
+
+__int64 nn_gs_47e720(__int64 result, __int64 a2, __int64 a3,
+                     unsigned __int64* a4)
+{
+  _QWORD* v4;
+  unsigned __int64 v5;
+  __int16 v7;
+  __int64* v9;
+  __int64 v10;
+  unsigned __int64 v11;
+  __int64 v12;
+  _QWORD* v13;
+  __int64 v14;
+  _QWORD* v15;
+  _QWORD* v16;
+  __int64 v17;
+  int v18;
+  _QWORD* v19;
+  __int64 v20;
+  __int64 v21;
+  __int64 v22;
+  __int64 v23;
+  unsigned __int64 explicit;
+  unsigned __int64 v25;
+  unsigned __int64 v26;
+  bool v27;
+  char v28;
+  __int64 v29;
+  _QWORD* v30;
+  __int64 v31;
+  __int64 v32;
+  __int64 v33;
+  _QWORD* v34;
+  __int64 v35;
+  _QWORD* v36;
+  __int64 v37;
+  __int64 v38;
+  __int64 v39;
+
+  v4 = (_QWORD*)a4[10];
+  v5 = a3 & 0xFFFFFFFFFFFFFC00LL;
+  v7 = a3;
+  v9 = (__int64*)result;
+  a4[10] = 0;
+  if (v4 != nullptr) {
+    v10 = 72;
+    if ((a3 & 0xC00) != 0) {
+      v10 = 0;
+    }
+    v11 = v10 | v5;
+    if (v4 == (_QWORD*)(v10 | v5)) {
+      v18 = 1;
+      goto LABEL_28;
+    }
+  }
+  v12 = 72;
+  if ((a3 & 0xC00) != 0) {
+    v12 = 0;
+  }
+  v11 = v12 | v5;
+  if ((*(unsigned __int64*)((char*)(*(void*(*)[1])0x18LL) + (v12 | v5)) ^ 0x3E ^
+       ((*(unsigned __int64*)((char*)(*(void*(*)[1])0x18LL) + (v12 | v5)) ^
+         0x3E) -
+        1)) <=
+          (*(unsigned __int64*)((char*)(*(void*(*)[1])0x18LL) + (v12 | v5)) ^
+           0x3E) -
+              1 ||
+      ((result = nn_os_SdkMutexType_TryLock_plt_alt1(a2)) & 1) == 0) {
+    v18 = 0;
+    goto LABEL_28;
+  }
+  if (*(_QWORD*)(v11 + 8) == 0) {
+    v14 = *(_QWORD*)(a2 + 8);
+    v13 = (_QWORD*)atomic_exchange_explicit((atomic_ullong* volatile)(a2 + 24),
+                                            0, memory_order_acquire);
+    if (v13 != nullptr) {
+      v15 = *(_QWORD**)(v14 + 8);
+      *v15 = v13;
+      do {
+        v13[1] = v15;
+        v16 = v13;
+        v15 = v13;
+        v13 = (_QWORD*)*v13;
+      } while (v13 != nullptr);
+      *v16 = v14;
+      *(_QWORD*)(v14 + 8) = v16;
+    }
+    if (*(_QWORD*)(v11 + 8) == 0) {
+      v18 = 0;
+      goto LABEL_23;
+    }
+  }
+  __atomic_exchange_n((unsigned int*)(v11 + 8), v11 + 8, 5);
+  __atomic_exchange_n((unsigned int*)v11, (unsigned int)v13, 5);
+  *(_QWORD*)(v11 + 8) = v13;
+  v13[1] = v11 + 8;
+  result = nn_os_SdkMutexType_Unlock_plt_alt1(a2);
+  if (v4 == nullptr) {
+    goto LABEL_21;
+  }
+  result = nn_os_SdkMutexType_TryLock_plt_alt1(a2);
+  if ((result & 1) != 0) {
+    v17 = *(_QWORD*)(a2 + 8);
+    v18 = 1;
+    v19 = *(_QWORD**)(v17 + 8);
+    *v19 = v4;
+    *(_QWORD*)(v17 + 8) = v4;
+    v4[1] = v19;
+    *v4 = v17;
+    v4 = (_QWORD*)v11;
+  LABEL_23:
+    result = nn_os_SdkMutexType_Unlock_plt_alt1(a2);
+    goto LABEL_28;
+  }
+  v20 = *(_QWORD*)(a2 + 24);
+  *v4 = v20;
+  v21 = v20;
+  atomic_compare_exchange_strong_explicit(
+      (atomic_ullong* volatile)(a2 + 24), (unsigned __int64*)&v21,
+      (unsigned __int64)v4, memory_order_release, memory_order_relaxed);
+  if (v21 != v20) {
+    v18 = 1;
+    v22 = v21;
+    do {
+      *v4 = v21;
+      atomic_compare_exchange_strong_explicit(
+          (atomic_ullong* volatile)(a2 + 24), (unsigned __int64*)&v22,
+          (unsigned __int64)v4, memory_order_release, memory_order_relaxed);
+      v27 = v22 == v21;
+      v21 = v22;
+    } while (!v27);
+  }
+  else {
+  LABEL_21:
+    v18 = 1;
+  }
+  v4 = (_QWORD*)v11;
+LABEL_28:
+  if ((v7 & 0x3FFu) >= 0x3C0uLL) {
+    nn_diag_detail_AbortImpl_plt_856170_alt1();
+  }
+  v23 = 1LL << ((410 * (v7 & 0x3FFu)) >> 16);
+  explicit = atomic_load_explicit((atomic_ullong* volatile)(v11 + 24),
+                                  memory_order_acquire);
+  if ((explicit & v23) != 0) {
+  LABEL_33:
+    nn_diag_detail_AbortImpl_plt_856170_alt1();
+  }
+  v25 = explicit;
+  while (1) {
+    v26 = explicit | v23;
+    atomic_compare_exchange_strong((atomic_ullong* volatile)(v11 + 24), &v25,
+                                   explicit | v23);
+    if (v25 == explicit) {
+      break;
+    }
+    explicit = v25;
+    if ((v25 & v23) != 0) {
+      goto LABEL_33;
+    }
+  }
+  v27 = explicit != 0 | v11 == 0;
+  if (v27) {
+    v28 = 1;
+  }
+  else {
+    v28 = v18;
+  }
+  if ((v28 & 1) != 0) {
+    v11 = (unsigned __int64)v4;
+    if (v5 == 0) {
+      goto LABEL_55;
+    }
+  }
+  else {
+    if (v4 != nullptr) {
+      result = nn_os_SdkMutexType_TryLock_plt_alt1(a2);
+      if ((result & 1) != 0) {
+        v29 = *(_QWORD*)(a2 + 8);
+        v30 = *(_QWORD**)(v29 + 8);
+        *v30 = v4;
+        *(_QWORD*)(v29 + 8) = v4;
+        v4[1] = v30;
+        *v4 = v29;
+        result = nn_os_SdkMutexType_Unlock_plt_alt1(a2);
+      }
+      else {
+        v31 = *(_QWORD*)(a2 + 24);
+        *v4 = v31;
+        v32 = v31;
+        atomic_compare_exchange_strong_explicit(
+            (atomic_ullong* volatile)(a2 + 24), (unsigned __int64*)&v32,
+            (unsigned __int64)v4, memory_order_release, memory_order_relaxed);
+        if (v32 != v31) {
+          v33 = v32;
+          do {
+            *v4 = v32;
+            atomic_compare_exchange_strong_explicit(
+                (atomic_ullong* volatile)(a2 + 24), (unsigned __int64*)&v33,
+                (unsigned __int64)v4, memory_order_release,
+                memory_order_relaxed);
+            v27 = v33 == v32;
+            v32 = v33;
+          } while (!v27);
+        }
+      }
+    }
+    v18 = 1;
+    if (v5 == 0) {
+      goto LABEL_55;
+    }
+  }
+  if (v26 != 62 || v18 == 0) {
+  LABEL_55:
+    if (v11 != 0) {
+      v34 = (_QWORD*)a4[10];
+      a4[10] = v11;
+      if (v34 != nullptr) {
+        result = nn_os_SdkMutexType_TryLock_plt_alt1(a2);
+        if ((result & 1) != 0) {
+          v35 = *(_QWORD*)(a2 + 8);
+          v36 = *(_QWORD**)(v35 + 8);
+          *v36 = v34;
+          *(_QWORD*)(v35 + 8) = v34;
+          v34[1] = v36;
+          *v34 = v35;
+          return nn_os_SdkMutexType_Unlock_plt_alt1(a2);
+        }
+        else {
+          v37 = *(_QWORD*)(a2 + 24);
+          *v34 = v37;
+          v38 = v37;
+          atomic_compare_exchange_strong_explicit(
+              (atomic_ullong* volatile)(a2 + 24), (unsigned __int64*)&v38,
+              (unsigned __int64)v34, memory_order_release,
+              memory_order_relaxed);
+          if (v38 != v37) {
+            v39 = v38;
+            do {
+              *v34 = v38;
+              atomic_compare_exchange_strong_explicit(
+                  (atomic_ullong* volatile)(a2 + 24), (unsigned __int64*)&v39,
+                  (unsigned __int64)v34, memory_order_release,
+                  memory_order_relaxed);
+              v27 = v39 == v38;
+              v38 = v39;
+            } while (!v27);
+          }
+        }
+      }
+    }
+    return result;
+  }
+  if (*(_QWORD*)(v11 + 24) != 62) {
+    nn_diag_detail_AbortImpl_plt_856170_alt1();
+  }
+  return nn_gs_47c140(*v9, (__int64)(v9 + 1), v11 & 0xFFFFFFFFFFFFFC00LL, a4);
+}
+
+__int64 nn_gs_47eaa0(__int64 result, __int64 a2, __int64 a3,
+                     unsigned __int64* a4)
+{
+  _QWORD* v4;
+  unsigned __int64 v5;
+  __int16 v7;
+  __int64* v9;
+  __int64 v10;
+  unsigned __int64 v11;
+  __int64 v12;
+  _QWORD* v13;
+  __int64 v14;
+  _QWORD* v15;
+  _QWORD* v16;
+  __int64 v17;
+  int v18;
+  _QWORD* v19;
+  __int64 v20;
+  __int64 v21;
+  __int64 v22;
+  __int64 v23;
+  unsigned __int64 explicit;
+  unsigned __int64 v25;
+  unsigned __int64 v26;
+  bool v27;
+  char v28;
+  __int64 v29;
+  _QWORD* v30;
+  __int64 v31;
+  __int64 v32;
+  __int64 v33;
+  _QWORD* v34;
+  __int64 v35;
+  _QWORD* v36;
+  __int64 v37;
+  __int64 v38;
+  __int64 v39;
+
+  v4 = (_QWORD*)a4[11];
+  v5 = a3 & 0xFFFFFFFFFFFFFC00LL;
+  v7 = a3;
+  v9 = (__int64*)result;
+  a4[11] = 0;
+  if (v4 != nullptr) {
+    v10 = 72;
+    if ((a3 & 0xC00) != 0) {
+      v10 = 0;
+    }
+    v11 = v10 | v5;
+    if (v4 == (_QWORD*)(v10 | v5)) {
+      v18 = 1;
+      goto LABEL_28;
+    }
+  }
+  v12 = 72;
+  if ((a3 & 0xC00) != 0) {
+    v12 = 0;
+  }
+  v11 = v12 | v5;
+  if ((*(unsigned __int64*)((char*)(*(void*(*)[1])0x18LL) + (v12 | v5)) ^ 0x1E ^
+       ((*(unsigned __int64*)((char*)(*(void*(*)[1])0x18LL) + (v12 | v5)) ^
+         0x1E) -
+        1)) <=
+          (*(unsigned __int64*)((char*)(*(void*(*)[1])0x18LL) + (v12 | v5)) ^
+           0x1E) -
+              1 ||
+      ((result = nn_os_SdkMutexType_TryLock_plt_alt1(a2)) & 1) == 0) {
+    v18 = 0;
+    goto LABEL_28;
+  }
+  if (*(_QWORD*)(v11 + 8) == 0) {
+    v14 = *(_QWORD*)(a2 + 8);
+    v13 = (_QWORD*)atomic_exchange_explicit((atomic_ullong* volatile)(a2 + 24),
+                                            0, memory_order_acquire);
+    if (v13 != nullptr) {
+      v15 = *(_QWORD**)(v14 + 8);
+      *v15 = v13;
+      do {
+        v13[1] = v15;
+        v16 = v13;
+        v15 = v13;
+        v13 = (_QWORD*)*v13;
+      } while (v13 != nullptr);
+      *v16 = v14;
+      *(_QWORD*)(v14 + 8) = v16;
+    }
+    if (*(_QWORD*)(v11 + 8) == 0) {
+      v18 = 0;
+      goto LABEL_23;
+    }
+  }
+  __atomic_exchange_n((unsigned int*)(v11 + 8), v11 + 8, 5);
+  __atomic_exchange_n((unsigned int*)v11, (unsigned int)v13, 5);
+  *(_QWORD*)(v11 + 8) = v13;
+  v13[1] = v11 + 8;
+  result = nn_os_SdkMutexType_Unlock_plt_alt1(a2);
+  if (v4 == nullptr) {
+    goto LABEL_21;
+  }
+  result = nn_os_SdkMutexType_TryLock_plt_alt1(a2);
+  if ((result & 1) != 0) {
+    v17 = *(_QWORD*)(a2 + 8);
+    v18 = 1;
+    v19 = *(_QWORD**)(v17 + 8);
+    *v19 = v4;
+    *(_QWORD*)(v17 + 8) = v4;
+    v4[1] = v19;
+    *v4 = v17;
+    v4 = (_QWORD*)v11;
+  LABEL_23:
+    result = nn_os_SdkMutexType_Unlock_plt_alt1(a2);
+    goto LABEL_28;
+  }
+  v20 = *(_QWORD*)(a2 + 24);
+  *v4 = v20;
+  v21 = v20;
+  atomic_compare_exchange_strong_explicit(
+      (atomic_ullong* volatile)(a2 + 24), (unsigned __int64*)&v21,
+      (unsigned __int64)v4, memory_order_release, memory_order_relaxed);
+  if (v21 != v20) {
+    v18 = 1;
+    v22 = v21;
+    do {
+      *v4 = v21;
+      atomic_compare_exchange_strong_explicit(
+          (atomic_ullong* volatile)(a2 + 24), (unsigned __int64*)&v22,
+          (unsigned __int64)v4, memory_order_release, memory_order_relaxed);
+      v27 = v22 == v21;
+      v21 = v22;
+    } while (!v27);
+  }
+  else {
+  LABEL_21:
+    v18 = 1;
+  }
+  v4 = (_QWORD*)v11;
+LABEL_28:
+  if ((v7 & 0x3FFu) >= 0x3C0uLL) {
+    nn_diag_detail_AbortImpl_plt_856170_alt1();
+  }
+  v23 = 1LL << ((683 * (v7 & 0x3FFu)) >> 17);
+  explicit = atomic_load_explicit((atomic_ullong* volatile)(v11 + 24),
+                                  memory_order_acquire);
+  if ((explicit & v23) != 0) {
+  LABEL_33:
+    nn_diag_detail_AbortImpl_plt_856170_alt1();
+  }
+  v25 = explicit;
+  while (1) {
+    v26 = explicit | v23;
+    atomic_compare_exchange_strong((atomic_ullong* volatile)(v11 + 24), &v25,
+                                   explicit | v23);
+    if (v25 == explicit) {
+      break;
+    }
+    explicit = v25;
+    if ((v25 & v23) != 0) {
+      goto LABEL_33;
+    }
+  }
+  v27 = explicit != 0 | v11 == 0;
+  if (v27) {
+    v28 = 1;
+  }
+  else {
+    v28 = v18;
+  }
+  if ((v28 & 1) != 0) {
+    v11 = (unsigned __int64)v4;
+    if (v5 == 0) {
+      goto LABEL_55;
+    }
+  }
+  else {
+    if (v4 != nullptr) {
+      result = nn_os_SdkMutexType_TryLock_plt_alt1(a2);
+      if ((result & 1) != 0) {
+        v29 = *(_QWORD*)(a2 + 8);
+        v30 = *(_QWORD**)(v29 + 8);
+        *v30 = v4;
+        *(_QWORD*)(v29 + 8) = v4;
+        v4[1] = v30;
+        *v4 = v29;
+        result = nn_os_SdkMutexType_Unlock_plt_alt1(a2);
+      }
+      else {
+        v31 = *(_QWORD*)(a2 + 24);
+        *v4 = v31;
+        v32 = v31;
+        atomic_compare_exchange_strong_explicit(
+            (atomic_ullong* volatile)(a2 + 24), (unsigned __int64*)&v32,
+            (unsigned __int64)v4, memory_order_release, memory_order_relaxed);
+        if (v32 != v31) {
+          v33 = v32;
+          do {
+            *v4 = v32;
+            atomic_compare_exchange_strong_explicit(
+                (atomic_ullong* volatile)(a2 + 24), (unsigned __int64*)&v33,
+                (unsigned __int64)v4, memory_order_release,
+                memory_order_relaxed);
+            v27 = v33 == v32;
+            v32 = v33;
+          } while (!v27);
+        }
+      }
+    }
+    v18 = 1;
+    if (v5 == 0) {
+      goto LABEL_55;
+    }
+  }
+  if (v26 != 30 || v18 == 0) {
+  LABEL_55:
+    if (v11 != 0) {
+      v34 = (_QWORD*)a4[11];
+      a4[11] = v11;
+      if (v34 != nullptr) {
+        result = nn_os_SdkMutexType_TryLock_plt_alt1(a2);
+        if ((result & 1) != 0) {
+          v35 = *(_QWORD*)(a2 + 8);
+          v36 = *(_QWORD**)(v35 + 8);
+          *v36 = v34;
+          *(_QWORD*)(v35 + 8) = v34;
+          v34[1] = v36;
+          *v34 = v35;
+          return nn_os_SdkMutexType_Unlock_plt_alt1(a2);
+        }
+        else {
+          v37 = *(_QWORD*)(a2 + 24);
+          *v34 = v37;
+          v38 = v37;
+          atomic_compare_exchange_strong_explicit(
+              (atomic_ullong* volatile)(a2 + 24), (unsigned __int64*)&v38,
+              (unsigned __int64)v34, memory_order_release,
+              memory_order_relaxed);
+          if (v38 != v37) {
+            v39 = v38;
+            do {
+              *v34 = v38;
+              atomic_compare_exchange_strong_explicit(
+                  (atomic_ullong* volatile)(a2 + 24), (unsigned __int64*)&v39,
+                  (unsigned __int64)v34, memory_order_release,
+                  memory_order_relaxed);
+              v27 = v39 == v38;
+              v38 = v39;
+            } while (!v27);
+          }
+        }
+      }
+    }
+    return result;
+  }
+  if (*(_QWORD*)(v11 + 24) != 30) {
+    nn_diag_detail_AbortImpl_plt_856170_alt1();
+  }
+  return nn_gs_47c140(*v9, (__int64)(v9 + 1), v11 & 0xFFFFFFFFFFFFFC00LL, a4);
 }
 
 __int64 nn_gs_47f8a0(__int64 result, char* a2, __int64 a3, __int64 a4, char a5)
@@ -3379,6 +6498,316 @@ LABEL_34:
   return v71 + 3 == a2;
 }
 
+__int64 nn_gs_4811f0(__int64*** a1, unsigned __int64* a2, _QWORD* a3,
+                     unsigned __int64* a4)
+{
+  __int64 v5;
+  unsigned __int64 v6;
+  unsigned __int64* v7;
+  __int64 v8;
+  __int64* v9;
+  unsigned __int64 explicit;
+  unsigned __int64 v13;
+  unsigned __int64 v14;
+  unsigned __int64 v15;
+  unsigned __int64 v16;
+  _QWORD* v17;
+  __int64 v18;
+  _QWORD* v19;
+  __int64 v20;
+  __int64 v21;
+  __int64 v22;
+  bool v23;
+  unsigned __int64* v24;
+  unsigned __int64 v25;
+  __int64 v26;
+  _QWORD* v27;
+  unsigned __int64** v28;
+  unsigned __int64* v29;
+  unsigned __int64* v30;
+  unsigned __int64 v31;
+  unsigned __int64 v32;
+  unsigned __int64 v33;
+  unsigned __int64 v34;
+  _QWORD* v35;
+  __int64 v36;
+  _QWORD* v37;
+  __int64 v38;
+  __int64 v39;
+  __int64 v40;
+  atomic_uint* volatile* v42;
+  char v43;
+  unsigned __int64 v44;
+  unsigned __int64 v45;
+  __int64 v46;
+  __int64 v47;
+  __int64 v48;
+  __int64 v49;
+  unsigned __int64 v50;
+  unsigned __int64 v51;
+  unsigned __int64 v52;
+  unsigned __int64 v53;
+  __int64 v54;
+  unsigned __int64 v55;
+
+  v5 = (__int64)(*a1 + 1);
+  v6 = a4[1];
+  v7 = a4;
+  v8 = v5;
+  v9 = **a1;
+  a4[1] = 0;
+  if (v6 == 0) {
+    goto LABEL_17;
+  }
+  explicit = atomic_load_explicit((atomic_ullong* volatile)(v6 + 24),
+                                  memory_order_acquire);
+  v13 = explicit & 0xFFFFFFFFFFFFFFFELL;
+  if ((explicit & 0xFFFFFFFFFFFFFFFELL) == 0) {
+  LABEL_6:
+    v16 = 0;
+  LABEL_7:
+    v17 = (_QWORD*)a4[1];
+    a4[1] = v6;
+    if (v17 != nullptr) {
+      if ((nn_os_SdkMutexType_TryLock_plt_alt1(v5) & 1) != 0) {
+        v18 = *(_QWORD*)(v8 + 8);
+        v19 = *(_QWORD**)(v18 + 8);
+        *v19 = v17;
+        *(_QWORD*)(v18 + 8) = v17;
+        v17[1] = v19;
+        *v17 = v18;
+        nn_os_SdkMutexType_Unlock_plt_alt1(v8);
+      }
+      else {
+        v20 = *(_QWORD*)(v8 + 24);
+        *v17 = v20;
+        v21 = v20;
+        atomic_compare_exchange_strong_explicit(
+            (atomic_ullong* volatile)(v8 + 24), (unsigned __int64*)&v21,
+            (unsigned __int64)v17, memory_order_release, memory_order_relaxed);
+        if (v21 != v20) {
+          v22 = v21;
+          do {
+            *v17 = v21;
+            atomic_compare_exchange_strong_explicit(
+                (atomic_ullong* volatile)(v8 + 24), (unsigned __int64*)&v22,
+                (unsigned __int64)v17, memory_order_release,
+                memory_order_relaxed);
+            v23 = v22 == v21;
+            v21 = v22;
+          } while (!v23);
+        }
+      }
+    }
+    goto LABEL_16;
+  }
+  v14 = explicit;
+  while (1) {
+    v15 = explicit & -(__int64)v13;
+    atomic_compare_exchange_strong((atomic_ullong* volatile)(v6 + 24), &v14,
+                                   v15 ^ explicit);
+    if (v14 == explicit) {
+      break;
+    }
+    v13 = v14 & 0xFFFFFFFFFFFFFFFELL;
+    explicit = v14;
+    if ((v14 & 0xFFFFFFFFFFFFFFFELL) == 0) {
+      goto LABEL_6;
+    }
+  }
+  v16 = (v6 & 0xFFFFFFFFFFFFFC00LL) +
+        16 * __clz((unsigned long long)(__rbit64(v15)));
+  if (v15 != explicit) {
+    goto LABEL_7;
+  }
+LABEL_16:
+  if (v16 != 0) {
+    goto LABEL_41;
+  }
+LABEL_17:
+  nn_os_SdkMutexType_Lock_plt_alt1(v8);
+  v25 = *(_QWORD*)(v8 + 8);
+  v26 = v8 + 8;
+  do {
+    if (v25 != v26) {
+      while (1) {
+        v27 = (_QWORD*)(v25 + 8);
+        __atomic_exchange_n((unsigned int*)(v25 + 8), (unsigned int)v24, 5);
+        __atomic_exchange_n((unsigned int*)v25, v25 + 8, 5);
+        *v24 = v25 + 8;
+        *(_QWORD*)(v25 + 16) = v24;
+        v31 = atomic_load_explicit((atomic_ullong* volatile)(v25 + 24),
+                                   memory_order_acquire);
+        v32 = v31 & 0xFFFFFFFFFFFFFFFELL;
+        if ((v31 & 0xFFFFFFFFFFFFFFFELL) != 0) {
+          break;
+        }
+      LABEL_26:
+        v24 = *(unsigned __int64**)(v25 + 16);
+        *v24 = v25;
+        *(_QWORD*)(v25 + 16) = v25;
+        *(_QWORD*)(v25 + 8) = v24;
+        *(_QWORD*)v25 = v27;
+        v25 += 8LL;
+        if ((_QWORD*)v26 == v27) {
+          goto LABEL_20;
+        }
+      }
+      v33 = v31;
+      while (1) {
+        v34 = v31 & -(__int64)v32;
+        atomic_compare_exchange_strong((atomic_ullong* volatile)(v25 + 24),
+                                       &v33, v34 ^ v31);
+        if (v33 == v31) {
+          break;
+        }
+        v32 = v33 & 0xFFFFFFFFFFFFFFFELL;
+        v31 = v33;
+        if ((v33 & 0xFFFFFFFFFFFFFFFELL) == 0) {
+          goto LABEL_26;
+        }
+      }
+      v16 = (v25 & 0xFFFFFFFFFFFFFC00LL) +
+            16 * __clz((unsigned long long)(__rbit64(v34)));
+      nn_os_SdkMutexType_Unlock_plt_alt1(v8);
+      if (v34 == v31) {
+        goto LABEL_41;
+      }
+      goto LABEL_33;
+    }
+    v27 = (_QWORD*)v25;
+  LABEL_20:
+    v24 = (unsigned __int64*)atomic_exchange_explicit(
+        (atomic_ullong* volatile)(v8 + 24), 0, memory_order_acquire);
+    if (v24 != nullptr) {
+      v28 = (unsigned __int64**)v27[1];
+      v29 = v24;
+      *v28 = v24;
+      do {
+        v29[1] = (unsigned __int64)v28;
+        v30 = v29;
+        v28 = (unsigned __int64**)v29;
+        v29 = (unsigned __int64*)*v29;
+      } while (v29 != nullptr);
+      *v30 = (unsigned __int64)v27;
+      v27[1] = v30;
+      v27 = v24;
+    }
+    v25 = (unsigned __int64)v27;
+  } while (v27 != (_QWORD*)v26);
+  nn_os_SdkMutexType_Unlock_plt_alt1(v8);
+  v42 = (atomic_uint* volatile*)*v9;
+  v55 = 0;
+  v43 = nn_gs_481640(&v55, v42, (__int64)(v9 + 1), v7);
+  if ((v43 & 1) == 0) {
+    return 0;
+  }
+  v44 = v55;
+  v45 = -4;
+  if ((v55 & 0xFFF) == 0) {
+    v45 = -128;
+  }
+  v46 = 72;
+  if ((v55 & 0xFFF) != 0) {
+    v46 = 0;
+  }
+  v25 = v46 + v55;
+  *(_QWORD*)(v25 + 16) = 0;
+  *(_QWORD*)(v25 + 24) = 0;
+  *(_QWORD*)v25 = 0;
+  *(_QWORD*)(v25 + 8) = 0;
+  atomic_store(0, (unsigned __int64*)(v46 + v44 + 16));
+  v47 = *(_QWORD*)(v46 + v44 + 24);
+  v48 = v47;
+  atomic_compare_exchange_strong_explicit(
+      (atomic_ullong* volatile)(v25 + 24), (unsigned __int64*)&v48, v45,
+      memory_order_relaxed, memory_order_relaxed);
+  if (v48 != v47) {
+    v49 = v48;
+    do {
+      atomic_compare_exchange_strong_explicit(
+          (atomic_ullong* volatile)(v25 + 24), (unsigned __int64*)&v49, v45,
+          memory_order_relaxed, memory_order_relaxed);
+      v23 = v49 == v48;
+      v48 = v49;
+    } while (!v23);
+  }
+  v50 = atomic_load_explicit((atomic_ullong* volatile)(v25 + 24),
+                             memory_order_acquire);
+  v51 = v50 & 0xFFFFFFFFFFFFFFFELL;
+  if ((v50 & 0xFFFFFFFFFFFFFFFELL) == 0) {
+  LABEL_55:
+    v54 = -4;
+    if ((v25 & 0xC00) == 0) {
+      v54 = -128;
+    }
+    if (*(_QWORD*)(v25 + 24) != v54) {
+      nn_diag_detail_AbortImpl_plt_856170_alt1();
+    }
+    nn_gs_47c140(*v9, (__int64)(v9 + 1), v25 & 0xFFFFFFFFFFFFFC00LL, v7);
+    return 0;
+  }
+  v52 = v50;
+  while (1) {
+    v53 = v50 & -(__int64)v51;
+    atomic_compare_exchange_strong((atomic_ullong* volatile)(v25 + 24), &v52,
+                                   v53 ^ v50);
+    if (v52 == v50) {
+      break;
+    }
+    v51 = v52 & 0xFFFFFFFFFFFFFFFELL;
+    v50 = v52;
+    if ((v52 & 0xFFFFFFFFFFFFFFFELL) == 0) {
+      goto LABEL_55;
+    }
+  }
+  v16 = (v25 & 0xFFFFFFFFFFFFFC00LL) +
+        16 * __clz((unsigned long long)(__rbit64(v53)));
+  if (v53 == v50) {
+    goto LABEL_41;
+  }
+LABEL_33:
+  if (v25 != 0) {
+    v35 = (_QWORD*)v7[1];
+    v7[1] = v25;
+    if (v35 != nullptr) {
+      if ((nn_os_SdkMutexType_TryLock_plt_alt1(v8) & 1) != 0) {
+        v36 = *(_QWORD*)(v8 + 8);
+        v37 = *(_QWORD**)(v36 + 8);
+        *v37 = v35;
+        *(_QWORD*)(v36 + 8) = v35;
+        v35[1] = v37;
+        *v35 = v36;
+        nn_os_SdkMutexType_Unlock_plt_alt1(v8);
+      }
+      else {
+        v38 = *(_QWORD*)(v8 + 24);
+        *v35 = v38;
+        v39 = v38;
+        atomic_compare_exchange_strong_explicit(
+            (atomic_ullong* volatile)(v8 + 24), (unsigned __int64*)&v39,
+            (unsigned __int64)v35, memory_order_release, memory_order_relaxed);
+        if (v39 != v38) {
+          v40 = v39;
+          do {
+            *v35 = v39;
+            atomic_compare_exchange_strong_explicit(
+                (atomic_ullong* volatile)(v8 + 24), (unsigned __int64*)&v40,
+                (unsigned __int64)v35, memory_order_release,
+                memory_order_relaxed);
+            v23 = v40 == v39;
+            v39 = v40;
+          } while (!v23);
+        }
+      }
+    }
+  }
+LABEL_41:
+  *a2 = v16;
+  *a3 = 16;
+  return 1;
+}
+
 __int64 nn_gs_481640(unsigned __int64* a1, atomic_uint* volatile* a2,
                      __int64 a3, unsigned __int64* a4)
 {
@@ -3786,6 +7215,1536 @@ LABEL_4:
   return result;
 }
 
+__int64 nn_gs_481ce0(__int64*** a1, unsigned __int64* a2, _QWORD* a3,
+                     unsigned __int64* a4)
+{
+  __int64 v5;
+  unsigned __int64 v6;
+  unsigned __int64* v7;
+  __int64 v8;
+  __int64* v9;
+  unsigned __int64 explicit;
+  unsigned __int64 v13;
+  unsigned __int64 v14;
+  unsigned __int64 v15;
+  unsigned __int64 v16;
+  _QWORD* v17;
+  __int64 v18;
+  _QWORD* v19;
+  __int64 v20;
+  __int64 v21;
+  __int64 v22;
+  bool v23;
+  unsigned __int64* v24;
+  unsigned __int64 v25;
+  __int64 v26;
+  _QWORD* v27;
+  unsigned __int64** v28;
+  unsigned __int64* v29;
+  unsigned __int64* v30;
+  unsigned __int64 v31;
+  unsigned __int64 v32;
+  unsigned __int64 v33;
+  unsigned __int64 v34;
+  _QWORD* v35;
+  __int64 v36;
+  _QWORD* v37;
+  __int64 v38;
+  __int64 v39;
+  __int64 v40;
+  atomic_uint* volatile* v42;
+  char v43;
+  __int64 v44;
+  unsigned __int64 v45;
+  __int64 v46;
+  __int64 v47;
+  __int64 v48;
+  unsigned __int64 v49;
+  unsigned __int64 v50;
+  unsigned __int64 v51;
+  unsigned __int64 v52;
+  __int64 v53;
+  unsigned __int64 v54;
+
+  v5 = (__int64)(*a1 + 5);
+  v6 = a4[2];
+  v7 = a4;
+  v8 = v5;
+  v9 = **a1;
+  a4[2] = 0;
+  if (v6 == 0) {
+    goto LABEL_17;
+  }
+  explicit = atomic_load_explicit((atomic_ullong* volatile)(v6 + 24),
+                                  memory_order_acquire);
+  v13 = explicit & 0xFFFFFFFFFFFFFFFELL;
+  if ((explicit & 0xFFFFFFFFFFFFFFFELL) == 0) {
+  LABEL_6:
+    v16 = 0;
+  LABEL_7:
+    v17 = (_QWORD*)a4[2];
+    a4[2] = v6;
+    if (v17 != nullptr) {
+      if ((nn_os_SdkMutexType_TryLock_plt_alt1(v5) & 1) != 0) {
+        v18 = *(_QWORD*)(v8 + 8);
+        v19 = *(_QWORD**)(v18 + 8);
+        *v19 = v17;
+        *(_QWORD*)(v18 + 8) = v17;
+        v17[1] = v19;
+        *v17 = v18;
+        nn_os_SdkMutexType_Unlock_plt_alt1(v8);
+      }
+      else {
+        v20 = *(_QWORD*)(v8 + 24);
+        *v17 = v20;
+        v21 = v20;
+        atomic_compare_exchange_strong_explicit(
+            (atomic_ullong* volatile)(v8 + 24), (unsigned __int64*)&v21,
+            (unsigned __int64)v17, memory_order_release, memory_order_relaxed);
+        if (v21 != v20) {
+          v22 = v21;
+          do {
+            *v17 = v21;
+            atomic_compare_exchange_strong_explicit(
+                (atomic_ullong* volatile)(v8 + 24), (unsigned __int64*)&v22,
+                (unsigned __int64)v17, memory_order_release,
+                memory_order_relaxed);
+            v23 = v22 == v21;
+            v21 = v22;
+          } while (!v23);
+        }
+      }
+    }
+    goto LABEL_16;
+  }
+  v14 = explicit;
+  while (1) {
+    v15 = explicit & -(__int64)v13;
+    atomic_compare_exchange_strong((atomic_ullong* volatile)(v6 + 24), &v14,
+                                   v15 ^ explicit);
+    if (v14 == explicit) {
+      break;
+    }
+    v13 = v14 & 0xFFFFFFFFFFFFFFFELL;
+    explicit = v14;
+    if ((v14 & 0xFFFFFFFFFFFFFFFELL) == 0) {
+      goto LABEL_6;
+    }
+  }
+  v16 = (v6 & 0xFFFFFFFFFFFFFC00LL) +
+        32 * __clz((unsigned long long)(__rbit64(v15)));
+  if (v15 != explicit) {
+    goto LABEL_7;
+  }
+LABEL_16:
+  if (v16 != 0) {
+    goto LABEL_41;
+  }
+LABEL_17:
+  nn_os_SdkMutexType_Lock_plt_alt1(v8);
+  v25 = *(_QWORD*)(v8 + 8);
+  v26 = v8 + 8;
+  do {
+    if (v25 != v26) {
+      while (1) {
+        v27 = (_QWORD*)(v25 + 8);
+        __atomic_exchange_n((unsigned int*)(v25 + 8), (unsigned int)v24, 5);
+        __atomic_exchange_n((unsigned int*)v25, v25 + 8, 5);
+        *v24 = v25 + 8;
+        *(_QWORD*)(v25 + 16) = v24;
+        v31 = atomic_load_explicit((atomic_ullong* volatile)(v25 + 24),
+                                   memory_order_acquire);
+        v32 = v31 & 0xFFFFFFFFFFFFFFFELL;
+        if ((v31 & 0xFFFFFFFFFFFFFFFELL) != 0) {
+          break;
+        }
+      LABEL_26:
+        v24 = *(unsigned __int64**)(v25 + 16);
+        *v24 = v25;
+        *(_QWORD*)(v25 + 16) = v25;
+        *(_QWORD*)(v25 + 8) = v24;
+        *(_QWORD*)v25 = v27;
+        v25 += 8LL;
+        if ((_QWORD*)v26 == v27) {
+          goto LABEL_20;
+        }
+      }
+      v33 = v31;
+      while (1) {
+        v34 = v31 & -(__int64)v32;
+        atomic_compare_exchange_strong((atomic_ullong* volatile)(v25 + 24),
+                                       &v33, v34 ^ v31);
+        if (v33 == v31) {
+          break;
+        }
+        v32 = v33 & 0xFFFFFFFFFFFFFFFELL;
+        v31 = v33;
+        if ((v33 & 0xFFFFFFFFFFFFFFFELL) == 0) {
+          goto LABEL_26;
+        }
+      }
+      v16 = (v25 & 0xFFFFFFFFFFFFFC00LL) +
+            32 * __clz((unsigned long long)(__rbit64(v34)));
+      nn_os_SdkMutexType_Unlock_plt_alt1(v8);
+      if (v34 == v31) {
+        goto LABEL_41;
+      }
+      goto LABEL_33;
+    }
+    v27 = (_QWORD*)v25;
+  LABEL_20:
+    v24 = (unsigned __int64*)atomic_exchange_explicit(
+        (atomic_ullong* volatile)(v8 + 24), 0, memory_order_acquire);
+    if (v24 != nullptr) {
+      v28 = (unsigned __int64**)v27[1];
+      v29 = v24;
+      *v28 = v24;
+      do {
+        v29[1] = (unsigned __int64)v28;
+        v30 = v29;
+        v28 = (unsigned __int64**)v29;
+        v29 = (unsigned __int64*)*v29;
+      } while (v29 != nullptr);
+      *v30 = (unsigned __int64)v27;
+      v27[1] = v30;
+      v27 = v24;
+    }
+    v25 = (unsigned __int64)v27;
+  } while (v27 != (_QWORD*)v26);
+  nn_os_SdkMutexType_Unlock_plt_alt1(v8);
+  v42 = (atomic_uint* volatile*)*v9;
+  v54 = 0;
+  v43 = nn_gs_481640(&v54, v42, (__int64)(v9 + 1), v7);
+  if ((v43 & 1) == 0) {
+    return 0;
+  }
+  v44 = 72;
+  if ((v54 & 0xFFF) != 0) {
+    v44 = 0;
+  }
+  v25 = v44 + v54;
+  if ((v54 & 0xFFF) != 0) {
+    v45 = 4294967294LL;
+  }
+  else {
+    v45 = 4294967280LL;
+  }
+  *(_QWORD*)(v25 + 16) = 0;
+  *(_QWORD*)(v25 + 24) = 0;
+  *(_QWORD*)v25 = 0;
+  *(_QWORD*)(v25 + 8) = 0;
+  atomic_store(1u, (unsigned __int64*)(v25 + 16));
+  v46 = *(_QWORD*)(v25 + 24);
+  v47 = v46;
+  atomic_compare_exchange_strong_explicit(
+      (atomic_ullong* volatile)(v25 + 24), (unsigned __int64*)&v47, v45,
+      memory_order_relaxed, memory_order_relaxed);
+  if (v47 != v46) {
+    v48 = v47;
+    do {
+      atomic_compare_exchange_strong_explicit(
+          (atomic_ullong* volatile)(v25 + 24), (unsigned __int64*)&v48, v45,
+          memory_order_relaxed, memory_order_relaxed);
+      v23 = v48 == v47;
+      v47 = v48;
+    } while (!v23);
+  }
+  v49 = atomic_load_explicit((atomic_ullong* volatile)(v25 + 24),
+                             memory_order_acquire);
+  v50 = v49 & 0xFFFFFFFFFFFFFFFELL;
+  if ((v49 & 0xFFFFFFFFFFFFFFFELL) == 0) {
+  LABEL_56:
+    v53 = 4294967294LL;
+    if ((v25 & 0xC00) == 0) {
+      v53 = 4294967280LL;
+    }
+    if (*(_QWORD*)(v25 + 24) != v53) {
+      nn_diag_detail_AbortImpl_plt_856170_alt1();
+    }
+    nn_gs_47c140(*v9, (__int64)(v9 + 1), v25 & 0xFFFFFFFFFFFFFC00LL, v7);
+    return 0;
+  }
+  v51 = v49;
+  while (1) {
+    v52 = v49 & -(__int64)v50;
+    atomic_compare_exchange_strong((atomic_ullong* volatile)(v25 + 24), &v51,
+                                   v52 ^ v49);
+    if (v51 == v49) {
+      break;
+    }
+    v50 = v51 & 0xFFFFFFFFFFFFFFFELL;
+    v49 = v51;
+    if ((v51 & 0xFFFFFFFFFFFFFFFELL) == 0) {
+      goto LABEL_56;
+    }
+  }
+  v16 = (v25 & 0xFFFFFFFFFFFFFC00LL) +
+        32 * __clz((unsigned long long)(__rbit64(v52)));
+  if (v52 == v49) {
+    goto LABEL_41;
+  }
+LABEL_33:
+  if (v25 != 0) {
+    v35 = (_QWORD*)v7[2];
+    v7[2] = v25;
+    if (v35 != nullptr) {
+      if ((nn_os_SdkMutexType_TryLock_plt_alt1(v8) & 1) != 0) {
+        v36 = *(_QWORD*)(v8 + 8);
+        v37 = *(_QWORD**)(v36 + 8);
+        *v37 = v35;
+        *(_QWORD*)(v36 + 8) = v35;
+        v35[1] = v37;
+        *v35 = v36;
+        nn_os_SdkMutexType_Unlock_plt_alt1(v8);
+      }
+      else {
+        v38 = *(_QWORD*)(v8 + 24);
+        *v35 = v38;
+        v39 = v38;
+        atomic_compare_exchange_strong_explicit(
+            (atomic_ullong* volatile)(v8 + 24), (unsigned __int64*)&v39,
+            (unsigned __int64)v35, memory_order_release, memory_order_relaxed);
+        if (v39 != v38) {
+          v40 = v39;
+          do {
+            *v35 = v39;
+            atomic_compare_exchange_strong_explicit(
+                (atomic_ullong* volatile)(v8 + 24), (unsigned __int64*)&v40,
+                (unsigned __int64)v35, memory_order_release,
+                memory_order_relaxed);
+            v23 = v40 == v39;
+            v39 = v40;
+          } while (!v23);
+        }
+      }
+    }
+  }
+LABEL_41:
+  *a2 = v16;
+  *a3 = 32;
+  return 1;
+}
+
+__int64 nn_gs_482120(__int64*** a1, unsigned __int64* a2, _QWORD* a3,
+                     unsigned __int64* a4)
+{
+  __int64 v5;
+  unsigned __int64 v6;
+  unsigned __int64* v7;
+  __int64 v8;
+  __int64* v9;
+  unsigned __int64 explicit;
+  unsigned __int64 v13;
+  unsigned __int64 v14;
+  unsigned __int64 v15;
+  unsigned __int64 v16;
+  _QWORD* v17;
+  __int64 v18;
+  _QWORD* v19;
+  __int64 v20;
+  __int64 v21;
+  __int64 v22;
+  bool v23;
+  unsigned __int64* v24;
+  unsigned __int64 v25;
+  __int64 v26;
+  _QWORD* v27;
+  unsigned __int64** v28;
+  unsigned __int64* v29;
+  unsigned __int64* v30;
+  unsigned __int64 v31;
+  unsigned __int64 v32;
+  unsigned __int64 v33;
+  unsigned __int64 v34;
+  _QWORD* v35;
+  __int64 v36;
+  _QWORD* v37;
+  __int64 v38;
+  __int64 v39;
+  __int64 v40;
+  atomic_uint* volatile* v42;
+  char v43;
+  __int64 v44;
+  unsigned __int64 v45;
+  __int64 v46;
+  __int64 v47;
+  __int64 v48;
+  unsigned __int64 v49;
+  unsigned __int64 v50;
+  unsigned __int64 v51;
+  unsigned __int64 v52;
+  __int64 v53;
+  unsigned __int64 v54;
+
+  v5 = (__int64)(*a1 + 9);
+  v6 = a4[3];
+  v7 = a4;
+  v8 = v5;
+  v9 = **a1;
+  a4[3] = 0;
+  if (v6 == 0) {
+    goto LABEL_17;
+  }
+  explicit = atomic_load_explicit((atomic_ullong* volatile)(v6 + 24),
+                                  memory_order_acquire);
+  v13 = explicit & 0xFFFFFFFFFFFFFFFELL;
+  if ((explicit & 0xFFFFFFFFFFFFFFFELL) == 0) {
+  LABEL_6:
+    v16 = 0;
+  LABEL_7:
+    v17 = (_QWORD*)a4[3];
+    a4[3] = v6;
+    if (v17 != nullptr) {
+      if ((nn_os_SdkMutexType_TryLock_plt_alt1(v5) & 1) != 0) {
+        v18 = *(_QWORD*)(v8 + 8);
+        v19 = *(_QWORD**)(v18 + 8);
+        *v19 = v17;
+        *(_QWORD*)(v18 + 8) = v17;
+        v17[1] = v19;
+        *v17 = v18;
+        nn_os_SdkMutexType_Unlock_plt_alt1(v8);
+      }
+      else {
+        v20 = *(_QWORD*)(v8 + 24);
+        *v17 = v20;
+        v21 = v20;
+        atomic_compare_exchange_strong_explicit(
+            (atomic_ullong* volatile)(v8 + 24), (unsigned __int64*)&v21,
+            (unsigned __int64)v17, memory_order_release, memory_order_relaxed);
+        if (v21 != v20) {
+          v22 = v21;
+          do {
+            *v17 = v21;
+            atomic_compare_exchange_strong_explicit(
+                (atomic_ullong* volatile)(v8 + 24), (unsigned __int64*)&v22,
+                (unsigned __int64)v17, memory_order_release,
+                memory_order_relaxed);
+            v23 = v22 == v21;
+            v21 = v22;
+          } while (!v23);
+        }
+      }
+    }
+    goto LABEL_16;
+  }
+  v14 = explicit;
+  while (1) {
+    v15 = explicit & -(__int64)v13;
+    atomic_compare_exchange_strong((atomic_ullong* volatile)(v6 + 24), &v14,
+                                   v15 ^ explicit);
+    if (v14 == explicit) {
+      break;
+    }
+    v13 = v14 & 0xFFFFFFFFFFFFFFFELL;
+    explicit = v14;
+    if ((v14 & 0xFFFFFFFFFFFFFFFELL) == 0) {
+      goto LABEL_6;
+    }
+  }
+  v16 = (v6 & 0xFFFFFFFFFFFFFC00LL) +
+        48LL * (unsigned int)__clz((unsigned long long)(__rbit64(v15)));
+  if (v15 != explicit) {
+    goto LABEL_7;
+  }
+LABEL_16:
+  if (v16 != 0) {
+    goto LABEL_41;
+  }
+LABEL_17:
+  nn_os_SdkMutexType_Lock_plt_alt1(v8);
+  v25 = *(_QWORD*)(v8 + 8);
+  v26 = v8 + 8;
+  do {
+    if (v25 != v26) {
+      while (1) {
+        v27 = (_QWORD*)(v25 + 8);
+        __atomic_exchange_n((unsigned int*)(v25 + 8), (unsigned int)v24, 5);
+        __atomic_exchange_n((unsigned int*)v25, v25 + 8, 5);
+        *v24 = v25 + 8;
+        *(_QWORD*)(v25 + 16) = v24;
+        v31 = atomic_load_explicit((atomic_ullong* volatile)(v25 + 24),
+                                   memory_order_acquire);
+        v32 = v31 & 0xFFFFFFFFFFFFFFFELL;
+        if ((v31 & 0xFFFFFFFFFFFFFFFELL) != 0) {
+          break;
+        }
+      LABEL_26:
+        v24 = *(unsigned __int64**)(v25 + 16);
+        *v24 = v25;
+        *(_QWORD*)(v25 + 16) = v25;
+        *(_QWORD*)(v25 + 8) = v24;
+        *(_QWORD*)v25 = v27;
+        v25 += 8LL;
+        if ((_QWORD*)v26 == v27) {
+          goto LABEL_20;
+        }
+      }
+      v33 = v31;
+      while (1) {
+        v34 = v31 & -(__int64)v32;
+        atomic_compare_exchange_strong((atomic_ullong* volatile)(v25 + 24),
+                                       &v33, v34 ^ v31);
+        if (v33 == v31) {
+          break;
+        }
+        v32 = v33 & 0xFFFFFFFFFFFFFFFELL;
+        v31 = v33;
+        if ((v33 & 0xFFFFFFFFFFFFFFFELL) == 0) {
+          goto LABEL_26;
+        }
+      }
+      v16 = (v25 & 0xFFFFFFFFFFFFFC00LL) +
+            48LL * (unsigned int)__clz((unsigned long long)(__rbit64(v34)));
+      nn_os_SdkMutexType_Unlock_plt_alt1(v8);
+      if (v34 == v31) {
+        goto LABEL_41;
+      }
+      goto LABEL_33;
+    }
+    v27 = (_QWORD*)v25;
+  LABEL_20:
+    v24 = (unsigned __int64*)atomic_exchange_explicit(
+        (atomic_ullong* volatile)(v8 + 24), 0, memory_order_acquire);
+    if (v24 != nullptr) {
+      v28 = (unsigned __int64**)v27[1];
+      v29 = v24;
+      *v28 = v24;
+      do {
+        v29[1] = (unsigned __int64)v28;
+        v30 = v29;
+        v28 = (unsigned __int64**)v29;
+        v29 = (unsigned __int64*)*v29;
+      } while (v29 != nullptr);
+      *v30 = (unsigned __int64)v27;
+      v27[1] = v30;
+      v27 = v24;
+    }
+    v25 = (unsigned __int64)v27;
+  } while (v27 != (_QWORD*)v26);
+  nn_os_SdkMutexType_Unlock_plt_alt1(v8);
+  v42 = (atomic_uint* volatile*)*v9;
+  v54 = 0;
+  v43 = nn_gs_481640(&v54, v42, (__int64)(v9 + 1), v7);
+  if ((v43 & 1) == 0) {
+    return 0;
+  }
+  v44 = 72;
+  if ((v54 & 0xFFF) != 0) {
+    v44 = 0;
+  }
+  v25 = v44 + v54;
+  if ((v54 & 0xFFF) != 0) {
+    v45 = 2097150;
+  }
+  else {
+    v45 = 2097144;
+  }
+  *(_QWORD*)(v25 + 16) = 0;
+  *(_QWORD*)(v25 + 24) = 0;
+  *(_QWORD*)v25 = 0;
+  *(_QWORD*)(v25 + 8) = 0;
+  atomic_store(2u, (unsigned __int64*)(v25 + 16));
+  v46 = *(_QWORD*)(v25 + 24);
+  v47 = v46;
+  atomic_compare_exchange_strong_explicit(
+      (atomic_ullong* volatile)(v25 + 24), (unsigned __int64*)&v47, v45,
+      memory_order_relaxed, memory_order_relaxed);
+  if (v47 != v46) {
+    v48 = v47;
+    do {
+      atomic_compare_exchange_strong_explicit(
+          (atomic_ullong* volatile)(v25 + 24), (unsigned __int64*)&v48, v45,
+          memory_order_relaxed, memory_order_relaxed);
+      v23 = v48 == v47;
+      v47 = v48;
+    } while (!v23);
+  }
+  v49 = atomic_load_explicit((atomic_ullong* volatile)(v25 + 24),
+                             memory_order_acquire);
+  v50 = v49 & 0xFFFFFFFFFFFFFFFELL;
+  if ((v49 & 0xFFFFFFFFFFFFFFFELL) == 0) {
+  LABEL_56:
+    v53 = 2097150;
+    if ((v25 & 0xC00) == 0) {
+      v53 = 2097144;
+    }
+    if (*(_QWORD*)(v25 + 24) != v53) {
+      nn_diag_detail_AbortImpl_plt_856170_alt1();
+    }
+    nn_gs_47c140(*v9, (__int64)(v9 + 1), v25 & 0xFFFFFFFFFFFFFC00LL, v7);
+    return 0;
+  }
+  v51 = v49;
+  while (1) {
+    v52 = v49 & -(__int64)v50;
+    atomic_compare_exchange_strong((atomic_ullong* volatile)(v25 + 24), &v51,
+                                   v52 ^ v49);
+    if (v51 == v49) {
+      break;
+    }
+    v50 = v51 & 0xFFFFFFFFFFFFFFFELL;
+    v49 = v51;
+    if ((v51 & 0xFFFFFFFFFFFFFFFELL) == 0) {
+      goto LABEL_56;
+    }
+  }
+  v16 = (v25 & 0xFFFFFFFFFFFFFC00LL) +
+        48LL * (unsigned int)__clz((unsigned long long)(__rbit64(v52)));
+  if (v52 == v49) {
+    goto LABEL_41;
+  }
+LABEL_33:
+  if (v25 != 0) {
+    v35 = (_QWORD*)v7[3];
+    v7[3] = v25;
+    if (v35 != nullptr) {
+      if ((nn_os_SdkMutexType_TryLock_plt_alt1(v8) & 1) != 0) {
+        v36 = *(_QWORD*)(v8 + 8);
+        v37 = *(_QWORD**)(v36 + 8);
+        *v37 = v35;
+        *(_QWORD*)(v36 + 8) = v35;
+        v35[1] = v37;
+        *v35 = v36;
+        nn_os_SdkMutexType_Unlock_plt_alt1(v8);
+      }
+      else {
+        v38 = *(_QWORD*)(v8 + 24);
+        *v35 = v38;
+        v39 = v38;
+        atomic_compare_exchange_strong_explicit(
+            (atomic_ullong* volatile)(v8 + 24), (unsigned __int64*)&v39,
+            (unsigned __int64)v35, memory_order_release, memory_order_relaxed);
+        if (v39 != v38) {
+          v40 = v39;
+          do {
+            *v35 = v39;
+            atomic_compare_exchange_strong_explicit(
+                (atomic_ullong* volatile)(v8 + 24), (unsigned __int64*)&v40,
+                (unsigned __int64)v35, memory_order_release,
+                memory_order_relaxed);
+            v23 = v40 == v39;
+            v39 = v40;
+          } while (!v23);
+        }
+      }
+    }
+  }
+LABEL_41:
+  *a2 = v16;
+  *a3 = 48;
+  return 1;
+}
+
+__int64 nn_gs_482de0(__int64*** a1, unsigned __int64* a2, _QWORD* a3,
+                     unsigned __int64* a4)
+{
+  __int64 v5;
+  unsigned __int64 v6;
+  unsigned __int64* v7;
+  __int64 v8;
+  __int64* v9;
+  unsigned __int64 explicit;
+  unsigned __int64 v13;
+  unsigned __int64 v14;
+  unsigned __int64 v15;
+  unsigned __int64 v16;
+  _QWORD* v17;
+  __int64 v18;
+  _QWORD* v19;
+  __int64 v20;
+  __int64 v21;
+  __int64 v22;
+  bool v23;
+  unsigned __int64* v24;
+  unsigned __int64 v25;
+  __int64 v26;
+  _QWORD* v27;
+  unsigned __int64** v28;
+  unsigned __int64* v29;
+  unsigned __int64* v30;
+  unsigned __int64 v31;
+  unsigned __int64 v32;
+  unsigned __int64 v33;
+  unsigned __int64 v34;
+  _QWORD* v35;
+  __int64 v36;
+  _QWORD* v37;
+  __int64 v38;
+  __int64 v39;
+  __int64 v40;
+  atomic_uint* volatile* v42;
+  char v43;
+  __int64 v44;
+  unsigned __int64 v45;
+  __int64 v46;
+  __int64 v47;
+  __int64 v48;
+  unsigned __int64 v49;
+  unsigned __int64 v50;
+  unsigned __int64 v51;
+  unsigned __int64 v52;
+  __int64 v53;
+  unsigned __int64 v54;
+
+  v5 = (__int64)(*a1 + 21);
+  v6 = a4[6];
+  v7 = a4;
+  v8 = v5;
+  v9 = **a1;
+  a4[6] = 0;
+  if (v6 == 0) {
+    goto LABEL_17;
+  }
+  explicit = atomic_load_explicit((atomic_ullong* volatile)(v6 + 24),
+                                  memory_order_acquire);
+  v13 = explicit & 0xFFFFFFFFFFFFFFFELL;
+  if ((explicit & 0xFFFFFFFFFFFFFFFELL) == 0) {
+  LABEL_6:
+    v16 = 0;
+  LABEL_7:
+    v17 = (_QWORD*)a4[6];
+    a4[6] = v6;
+    if (v17 != nullptr) {
+      if ((nn_os_SdkMutexType_TryLock_plt_alt1(v5) & 1) != 0) {
+        v18 = *(_QWORD*)(v8 + 8);
+        v19 = *(_QWORD**)(v18 + 8);
+        *v19 = v17;
+        *(_QWORD*)(v18 + 8) = v17;
+        v17[1] = v19;
+        *v17 = v18;
+        nn_os_SdkMutexType_Unlock_plt_alt1(v8);
+      }
+      else {
+        v20 = *(_QWORD*)(v8 + 24);
+        *v17 = v20;
+        v21 = v20;
+        atomic_compare_exchange_strong_explicit(
+            (atomic_ullong* volatile)(v8 + 24), (unsigned __int64*)&v21,
+            (unsigned __int64)v17, memory_order_release, memory_order_relaxed);
+        if (v21 != v20) {
+          v22 = v21;
+          do {
+            *v17 = v21;
+            atomic_compare_exchange_strong_explicit(
+                (atomic_ullong* volatile)(v8 + 24), (unsigned __int64*)&v22,
+                (unsigned __int64)v17, memory_order_release,
+                memory_order_relaxed);
+            v23 = v22 == v21;
+            v21 = v22;
+          } while (!v23);
+        }
+      }
+    }
+    goto LABEL_16;
+  }
+  v14 = explicit;
+  while (1) {
+    v15 = explicit & -(__int64)v13;
+    atomic_compare_exchange_strong((atomic_ullong* volatile)(v6 + 24), &v14,
+                                   v15 ^ explicit);
+    if (v14 == explicit) {
+      break;
+    }
+    v13 = v14 & 0xFFFFFFFFFFFFFFFELL;
+    explicit = v14;
+    if ((v14 & 0xFFFFFFFFFFFFFFFELL) == 0) {
+      goto LABEL_6;
+    }
+  }
+  v16 = (v6 & 0xFFFFFFFFFFFFFC00LL) +
+        96LL * (unsigned int)__clz((unsigned long long)(__rbit64(v15)));
+  if (v15 != explicit) {
+    goto LABEL_7;
+  }
+LABEL_16:
+  if (v16 != 0) {
+    goto LABEL_41;
+  }
+LABEL_17:
+  nn_os_SdkMutexType_Lock_plt_alt1(v8);
+  v25 = *(_QWORD*)(v8 + 8);
+  v26 = v8 + 8;
+  do {
+    if (v25 != v26) {
+      while (1) {
+        v27 = (_QWORD*)(v25 + 8);
+        __atomic_exchange_n((unsigned int*)(v25 + 8), (unsigned int)v24, 5);
+        __atomic_exchange_n((unsigned int*)v25, v25 + 8, 5);
+        *v24 = v25 + 8;
+        *(_QWORD*)(v25 + 16) = v24;
+        v31 = atomic_load_explicit((atomic_ullong* volatile)(v25 + 24),
+                                   memory_order_acquire);
+        v32 = v31 & 0xFFFFFFFFFFFFFFFELL;
+        if ((v31 & 0xFFFFFFFFFFFFFFFELL) != 0) {
+          break;
+        }
+      LABEL_26:
+        v24 = *(unsigned __int64**)(v25 + 16);
+        *v24 = v25;
+        *(_QWORD*)(v25 + 16) = v25;
+        *(_QWORD*)(v25 + 8) = v24;
+        *(_QWORD*)v25 = v27;
+        v25 += 8LL;
+        if ((_QWORD*)v26 == v27) {
+          goto LABEL_20;
+        }
+      }
+      v33 = v31;
+      while (1) {
+        v34 = v31 & -(__int64)v32;
+        atomic_compare_exchange_strong((atomic_ullong* volatile)(v25 + 24),
+                                       &v33, v34 ^ v31);
+        if (v33 == v31) {
+          break;
+        }
+        v32 = v33 & 0xFFFFFFFFFFFFFFFELL;
+        v31 = v33;
+        if ((v33 & 0xFFFFFFFFFFFFFFFELL) == 0) {
+          goto LABEL_26;
+        }
+      }
+      v16 = (v25 & 0xFFFFFFFFFFFFFC00LL) +
+            96LL * (unsigned int)__clz((unsigned long long)(__rbit64(v34)));
+      nn_os_SdkMutexType_Unlock_plt_alt1(v8);
+      if (v34 == v31) {
+        goto LABEL_41;
+      }
+      goto LABEL_33;
+    }
+    v27 = (_QWORD*)v25;
+  LABEL_20:
+    v24 = (unsigned __int64*)atomic_exchange_explicit(
+        (atomic_ullong* volatile)(v8 + 24), 0, memory_order_acquire);
+    if (v24 != nullptr) {
+      v28 = (unsigned __int64**)v27[1];
+      v29 = v24;
+      *v28 = v24;
+      do {
+        v29[1] = (unsigned __int64)v28;
+        v30 = v29;
+        v28 = (unsigned __int64**)v29;
+        v29 = (unsigned __int64*)*v29;
+      } while (v29 != nullptr);
+      *v30 = (unsigned __int64)v27;
+      v27[1] = v30;
+      v27 = v24;
+    }
+    v25 = (unsigned __int64)v27;
+  } while (v27 != (_QWORD*)v26);
+  nn_os_SdkMutexType_Unlock_plt_alt1(v8);
+  v42 = (atomic_uint* volatile*)*v9;
+  v54 = 0;
+  v43 = nn_gs_481640(&v54, v42, (__int64)(v9 + 1), v7);
+  if ((v43 & 1) == 0) {
+    return 0;
+  }
+  v44 = 72;
+  if ((v54 & 0xFFF) != 0) {
+    v44 = 0;
+  }
+  v25 = v44 + v54;
+  if ((v54 & 0xFFF) != 0) {
+    v45 = 1022;
+  }
+  else {
+    v45 = 1020;
+  }
+  *(_QWORD*)(v25 + 16) = 0;
+  *(_QWORD*)(v25 + 24) = 0;
+  *(_QWORD*)v25 = 0;
+  *(_QWORD*)(v25 + 8) = 0;
+  atomic_store(5u, (unsigned __int64*)(v25 + 16));
+  v46 = *(_QWORD*)(v25 + 24);
+  v47 = v46;
+  atomic_compare_exchange_strong_explicit(
+      (atomic_ullong* volatile)(v25 + 24), (unsigned __int64*)&v47, v45,
+      memory_order_relaxed, memory_order_relaxed);
+  if (v47 != v46) {
+    v48 = v47;
+    do {
+      atomic_compare_exchange_strong_explicit(
+          (atomic_ullong* volatile)(v25 + 24), (unsigned __int64*)&v48, v45,
+          memory_order_relaxed, memory_order_relaxed);
+      v23 = v48 == v47;
+      v47 = v48;
+    } while (!v23);
+  }
+  v49 = atomic_load_explicit((atomic_ullong* volatile)(v25 + 24),
+                             memory_order_acquire);
+  v50 = v49 & 0xFFFFFFFFFFFFFFFELL;
+  if ((v49 & 0xFFFFFFFFFFFFFFFELL) == 0) {
+  LABEL_56:
+    v53 = 1022;
+    if ((v25 & 0xC00) == 0) {
+      v53 = 1020;
+    }
+    if (*(_QWORD*)(v25 + 24) != v53) {
+      nn_diag_detail_AbortImpl_plt_856170_alt1();
+    }
+    nn_gs_47c140(*v9, (__int64)(v9 + 1), v25 & 0xFFFFFFFFFFFFFC00LL, v7);
+    return 0;
+  }
+  v51 = v49;
+  while (1) {
+    v52 = v49 & -(__int64)v50;
+    atomic_compare_exchange_strong((atomic_ullong* volatile)(v25 + 24), &v51,
+                                   v52 ^ v49);
+    if (v51 == v49) {
+      break;
+    }
+    v50 = v51 & 0xFFFFFFFFFFFFFFFELL;
+    v49 = v51;
+    if ((v51 & 0xFFFFFFFFFFFFFFFELL) == 0) {
+      goto LABEL_56;
+    }
+  }
+  v16 = (v25 & 0xFFFFFFFFFFFFFC00LL) +
+        96LL * (unsigned int)__clz((unsigned long long)(__rbit64(v52)));
+  if (v52 == v49) {
+    goto LABEL_41;
+  }
+LABEL_33:
+  if (v25 != 0) {
+    v35 = (_QWORD*)v7[6];
+    v7[6] = v25;
+    if (v35 != nullptr) {
+      if ((nn_os_SdkMutexType_TryLock_plt_alt1(v8) & 1) != 0) {
+        v36 = *(_QWORD*)(v8 + 8);
+        v37 = *(_QWORD**)(v36 + 8);
+        *v37 = v35;
+        *(_QWORD*)(v36 + 8) = v35;
+        v35[1] = v37;
+        *v35 = v36;
+        nn_os_SdkMutexType_Unlock_plt_alt1(v8);
+      }
+      else {
+        v38 = *(_QWORD*)(v8 + 24);
+        *v35 = v38;
+        v39 = v38;
+        atomic_compare_exchange_strong_explicit(
+            (atomic_ullong* volatile)(v8 + 24), (unsigned __int64*)&v39,
+            (unsigned __int64)v35, memory_order_release, memory_order_relaxed);
+        if (v39 != v38) {
+          v40 = v39;
+          do {
+            *v35 = v39;
+            atomic_compare_exchange_strong_explicit(
+                (atomic_ullong* volatile)(v8 + 24), (unsigned __int64*)&v40,
+                (unsigned __int64)v35, memory_order_release,
+                memory_order_relaxed);
+            v23 = v40 == v39;
+            v39 = v40;
+          } while (!v23);
+        }
+      }
+    }
+  }
+LABEL_41:
+  *a2 = v16;
+  *a3 = 96;
+  return 1;
+}
+
+__int64 nn_gs_483ed0(__int64*** a1, unsigned __int64* a2, _QWORD* a3,
+                     unsigned __int64* a4)
+{
+  __int64 v5;
+  unsigned __int64 v6;
+  unsigned __int64* v7;
+  __int64 v8;
+  __int64* v9;
+  unsigned __int64 explicit;
+  unsigned __int64 v13;
+  unsigned __int64 v14;
+  unsigned __int64 v15;
+  unsigned __int64 v16;
+  _QWORD* v17;
+  __int64 v18;
+  _QWORD* v19;
+  __int64 v20;
+  __int64 v21;
+  __int64 v22;
+  bool v23;
+  unsigned __int64* v24;
+  unsigned __int64 v25;
+  __int64 v26;
+  _QWORD* v27;
+  unsigned __int64** v28;
+  unsigned __int64* v29;
+  unsigned __int64* v30;
+  unsigned __int64 v31;
+  unsigned __int64 v32;
+  unsigned __int64 v33;
+  unsigned __int64 v34;
+  _QWORD* v35;
+  __int64 v36;
+  _QWORD* v37;
+  __int64 v38;
+  __int64 v39;
+  __int64 v40;
+  atomic_uint* volatile* v42;
+  char v43;
+  unsigned __int64 v44;
+  __int64 v45;
+  __int64 v46;
+  __int64 v47;
+  __int64 v48;
+  unsigned __int64 v49;
+  unsigned __int64 v50;
+  unsigned __int64 v51;
+  unsigned __int64 v52;
+  unsigned __int64 v53;
+
+  v5 = (__int64)(*a1 + 37);
+  v6 = a4[10];
+  v7 = a4;
+  v8 = v5;
+  v9 = **a1;
+  a4[10] = 0;
+  if (v6 == 0) {
+    goto LABEL_17;
+  }
+  explicit = atomic_load_explicit((atomic_ullong* volatile)(v6 + 24),
+                                  memory_order_acquire);
+  v13 = explicit & 0xFFFFFFFFFFFFFFFELL;
+  if ((explicit & 0xFFFFFFFFFFFFFFFELL) == 0) {
+  LABEL_6:
+    v16 = 0;
+  LABEL_7:
+    v17 = (_QWORD*)a4[10];
+    a4[10] = v6;
+    if (v17 != nullptr) {
+      if ((nn_os_SdkMutexType_TryLock_plt_alt1(v5) & 1) != 0) {
+        v18 = *(_QWORD*)(v8 + 8);
+        v19 = *(_QWORD**)(v18 + 8);
+        *v19 = v17;
+        *(_QWORD*)(v18 + 8) = v17;
+        v17[1] = v19;
+        *v17 = v18;
+        nn_os_SdkMutexType_Unlock_plt_alt1(v8);
+      }
+      else {
+        v20 = *(_QWORD*)(v8 + 24);
+        *v17 = v20;
+        v21 = v20;
+        atomic_compare_exchange_strong_explicit(
+            (atomic_ullong* volatile)(v8 + 24), (unsigned __int64*)&v21,
+            (unsigned __int64)v17, memory_order_release, memory_order_relaxed);
+        if (v21 != v20) {
+          v22 = v21;
+          do {
+            *v17 = v21;
+            atomic_compare_exchange_strong_explicit(
+                (atomic_ullong* volatile)(v8 + 24), (unsigned __int64*)&v22,
+                (unsigned __int64)v17, memory_order_release,
+                memory_order_relaxed);
+            v23 = v22 == v21;
+            v21 = v22;
+          } while (!v23);
+        }
+      }
+    }
+    goto LABEL_16;
+  }
+  v14 = explicit;
+  while (1) {
+    v15 = explicit & -(__int64)v13;
+    atomic_compare_exchange_strong((atomic_ullong* volatile)(v6 + 24), &v14,
+                                   v15 ^ explicit);
+    if (v14 == explicit) {
+      break;
+    }
+    v13 = v14 & 0xFFFFFFFFFFFFFFFELL;
+    explicit = v14;
+    if ((v14 & 0xFFFFFFFFFFFFFFFELL) == 0) {
+      goto LABEL_6;
+    }
+  }
+  v16 = (v6 & 0xFFFFFFFFFFFFFC00LL) +
+        160LL * (unsigned int)__clz((unsigned long long)(__rbit64(v15)));
+  if (v15 != explicit) {
+    goto LABEL_7;
+  }
+LABEL_16:
+  if (v16 != 0) {
+    goto LABEL_41;
+  }
+LABEL_17:
+  nn_os_SdkMutexType_Lock_plt_alt1(v8);
+  v25 = *(_QWORD*)(v8 + 8);
+  v26 = v8 + 8;
+  do {
+    if (v25 != v26) {
+      while (1) {
+        v27 = (_QWORD*)(v25 + 8);
+        __atomic_exchange_n((unsigned int*)(v25 + 8), (unsigned int)v24, 5);
+        __atomic_exchange_n((unsigned int*)v25, v25 + 8, 5);
+        *v24 = v25 + 8;
+        *(_QWORD*)(v25 + 16) = v24;
+        v31 = atomic_load_explicit((atomic_ullong* volatile)(v25 + 24),
+                                   memory_order_acquire);
+        v32 = v31 & 0xFFFFFFFFFFFFFFFELL;
+        if ((v31 & 0xFFFFFFFFFFFFFFFELL) != 0) {
+          break;
+        }
+      LABEL_26:
+        v24 = *(unsigned __int64**)(v25 + 16);
+        *v24 = v25;
+        *(_QWORD*)(v25 + 16) = v25;
+        *(_QWORD*)(v25 + 8) = v24;
+        *(_QWORD*)v25 = v27;
+        v25 += 8LL;
+        if ((_QWORD*)v26 == v27) {
+          goto LABEL_20;
+        }
+      }
+      v33 = v31;
+      while (1) {
+        v34 = v31 & -(__int64)v32;
+        atomic_compare_exchange_strong((atomic_ullong* volatile)(v25 + 24),
+                                       &v33, v34 ^ v31);
+        if (v33 == v31) {
+          break;
+        }
+        v32 = v33 & 0xFFFFFFFFFFFFFFFELL;
+        v31 = v33;
+        if ((v33 & 0xFFFFFFFFFFFFFFFELL) == 0) {
+          goto LABEL_26;
+        }
+      }
+      v16 = (v25 & 0xFFFFFFFFFFFFFC00LL) +
+            160LL * (unsigned int)__clz((unsigned long long)(__rbit64(v34)));
+      nn_os_SdkMutexType_Unlock_plt_alt1(v8);
+      if (v34 == v31) {
+        goto LABEL_41;
+      }
+      goto LABEL_33;
+    }
+    v27 = (_QWORD*)v25;
+  LABEL_20:
+    v24 = (unsigned __int64*)atomic_exchange_explicit(
+        (atomic_ullong* volatile)(v8 + 24), 0, memory_order_acquire);
+    if (v24 != nullptr) {
+      v28 = (unsigned __int64**)v27[1];
+      v29 = v24;
+      *v28 = v24;
+      do {
+        v29[1] = (unsigned __int64)v28;
+        v30 = v29;
+        v28 = (unsigned __int64**)v29;
+        v29 = (unsigned __int64*)*v29;
+      } while (v29 != nullptr);
+      *v30 = (unsigned __int64)v27;
+      v27[1] = v30;
+      v27 = v24;
+    }
+    v25 = (unsigned __int64)v27;
+  } while (v27 != (_QWORD*)v26);
+  nn_os_SdkMutexType_Unlock_plt_alt1(v8);
+  v42 = (atomic_uint* volatile*)*v9;
+  v53 = 0;
+  v43 = nn_gs_481640(&v53, v42, (__int64)(v9 + 1), v7);
+  if ((v43 & 1) == 0) {
+    return 0;
+  }
+  v44 = v53;
+  v45 = 72;
+  if ((v53 & 0xFFF) != 0) {
+    v45 = 0;
+  }
+  v25 = v45 + v53;
+  *(_QWORD*)(v25 + 16) = 0;
+  *(_QWORD*)(v25 + 24) = 0;
+  *(_QWORD*)v25 = 0;
+  *(_QWORD*)(v25 + 8) = 0;
+  atomic_store(9u, (unsigned __int64*)(v45 + v44 + 16));
+  v46 = *(_QWORD*)(v45 + v44 + 24);
+  v47 = v46;
+  atomic_compare_exchange_strong_explicit(
+      (atomic_ullong* volatile)(v25 + 24), (unsigned __int64*)&v47, 0x3Eu,
+      memory_order_relaxed, memory_order_relaxed);
+  if (v47 != v46) {
+    v48 = v47;
+    do {
+      atomic_compare_exchange_strong_explicit(
+          (atomic_ullong* volatile)(v25 + 24), (unsigned __int64*)&v48, 0x3Eu,
+          memory_order_relaxed, memory_order_relaxed);
+      v23 = v48 == v47;
+      v47 = v48;
+    } while (!v23);
+  }
+  v49 = atomic_load_explicit((atomic_ullong* volatile)(v25 + 24),
+                             memory_order_acquire);
+  v50 = v49 & 0xFFFFFFFFFFFFFFFELL;
+  if ((v49 & 0xFFFFFFFFFFFFFFFELL) == 0) {
+  LABEL_53:
+    if (*(_QWORD*)(v25 + 24) != 62) {
+      nn_diag_detail_AbortImpl_plt_856170_alt1();
+    }
+    nn_gs_47c140(*v9, (__int64)(v9 + 1), v25 & 0xFFFFFFFFFFFFFC00LL, v7);
+    return 0;
+  }
+  v51 = v49;
+  while (1) {
+    v52 = v49 & -(__int64)v50;
+    atomic_compare_exchange_strong((atomic_ullong* volatile)(v25 + 24), &v51,
+                                   v52 ^ v49);
+    if (v51 == v49) {
+      break;
+    }
+    v50 = v51 & 0xFFFFFFFFFFFFFFFELL;
+    v49 = v51;
+    if ((v51 & 0xFFFFFFFFFFFFFFFELL) == 0) {
+      goto LABEL_53;
+    }
+  }
+  v16 = (v25 & 0xFFFFFFFFFFFFFC00LL) +
+        160LL * (unsigned int)__clz((unsigned long long)(__rbit64(v52)));
+  if (v52 == v49) {
+    goto LABEL_41;
+  }
+LABEL_33:
+  if (v25 != 0) {
+    v35 = (_QWORD*)v7[10];
+    v7[10] = v25;
+    if (v35 != nullptr) {
+      if ((nn_os_SdkMutexType_TryLock_plt_alt1(v8) & 1) != 0) {
+        v36 = *(_QWORD*)(v8 + 8);
+        v37 = *(_QWORD**)(v36 + 8);
+        *v37 = v35;
+        *(_QWORD*)(v36 + 8) = v35;
+        v35[1] = v37;
+        *v35 = v36;
+        nn_os_SdkMutexType_Unlock_plt_alt1(v8);
+      }
+      else {
+        v38 = *(_QWORD*)(v8 + 24);
+        *v35 = v38;
+        v39 = v38;
+        atomic_compare_exchange_strong_explicit(
+            (atomic_ullong* volatile)(v8 + 24), (unsigned __int64*)&v39,
+            (unsigned __int64)v35, memory_order_release, memory_order_relaxed);
+        if (v39 != v38) {
+          v40 = v39;
+          do {
+            *v35 = v39;
+            atomic_compare_exchange_strong_explicit(
+                (atomic_ullong* volatile)(v8 + 24), (unsigned __int64*)&v40,
+                (unsigned __int64)v35, memory_order_release,
+                memory_order_relaxed);
+            v23 = v40 == v39;
+            v39 = v40;
+          } while (!v23);
+        }
+      }
+    }
+  }
+LABEL_41:
+  *a2 = v16;
+  *a3 = 160;
+  return 1;
+}
+
+__int64 nn_gs_484750(__int64*** a1, unsigned __int64* a2, _QWORD* a3,
+                     unsigned __int64* a4)
+{
+  __int64 v5;
+  unsigned __int64 v6;
+  unsigned __int64* v7;
+  __int64 v8;
+  __int64* v9;
+  unsigned __int64 explicit;
+  unsigned __int64 v13;
+  unsigned __int64 v14;
+  unsigned __int64 v15;
+  unsigned __int64 v16;
+  _QWORD* v17;
+  __int64 v18;
+  _QWORD* v19;
+  __int64 v20;
+  __int64 v21;
+  __int64 v22;
+  bool v23;
+  unsigned __int64* v24;
+  unsigned __int64 v25;
+  __int64 v26;
+  _QWORD* v27;
+  unsigned __int64** v28;
+  unsigned __int64* v29;
+  unsigned __int64* v30;
+  unsigned __int64 v31;
+  unsigned __int64 v32;
+  unsigned __int64 v33;
+  unsigned __int64 v34;
+  _QWORD* v35;
+  __int64 v36;
+  _QWORD* v37;
+  __int64 v38;
+  __int64 v39;
+  __int64 v40;
+  atomic_uint* volatile* v42;
+  char v43;
+  unsigned __int64 v44;
+  __int64 v45;
+  __int64 v46;
+  __int64 v47;
+  __int64 v48;
+  unsigned __int64 v49;
+  unsigned __int64 v50;
+  unsigned __int64 v51;
+  unsigned __int64 v52;
+  unsigned __int64 v53;
+
+  v5 = (__int64)(*a1 + 45);
+  v6 = a4[12];
+  v7 = a4;
+  v8 = v5;
+  v9 = **a1;
+  a4[12] = 0;
+  if (v6 == 0) {
+    goto LABEL_17;
+  }
+  explicit = atomic_load_explicit((atomic_ullong* volatile)(v6 + 24),
+                                  memory_order_acquire);
+  v13 = explicit & 0xFFFFFFFFFFFFFFFELL;
+  if ((explicit & 0xFFFFFFFFFFFFFFFELL) == 0) {
+  LABEL_6:
+    v16 = 0;
+  LABEL_7:
+    v17 = (_QWORD*)a4[12];
+    a4[12] = v6;
+    if (v17 != nullptr) {
+      if ((nn_os_SdkMutexType_TryLock_plt_alt1(v5) & 1) != 0) {
+        v18 = *(_QWORD*)(v8 + 8);
+        v19 = *(_QWORD**)(v18 + 8);
+        *v19 = v17;
+        *(_QWORD*)(v18 + 8) = v17;
+        v17[1] = v19;
+        *v17 = v18;
+        nn_os_SdkMutexType_Unlock_plt_alt1(v8);
+      }
+      else {
+        v20 = *(_QWORD*)(v8 + 24);
+        *v17 = v20;
+        v21 = v20;
+        atomic_compare_exchange_strong_explicit(
+            (atomic_ullong* volatile)(v8 + 24), (unsigned __int64*)&v21,
+            (unsigned __int64)v17, memory_order_release, memory_order_relaxed);
+        if (v21 != v20) {
+          v22 = v21;
+          do {
+            *v17 = v21;
+            atomic_compare_exchange_strong_explicit(
+                (atomic_ullong* volatile)(v8 + 24), (unsigned __int64*)&v22,
+                (unsigned __int64)v17, memory_order_release,
+                memory_order_relaxed);
+            v23 = v22 == v21;
+            v21 = v22;
+          } while (!v23);
+        }
+      }
+    }
+    goto LABEL_16;
+  }
+  v14 = explicit;
+  while (1) {
+    v15 = explicit & -(__int64)v13;
+    atomic_compare_exchange_strong((atomic_ullong* volatile)(v6 + 24), &v14,
+                                   v15 ^ explicit);
+    if (v14 == explicit) {
+      break;
+    }
+    v13 = v14 & 0xFFFFFFFFFFFFFFFELL;
+    explicit = v14;
+    if ((v14 & 0xFFFFFFFFFFFFFFFELL) == 0) {
+      goto LABEL_6;
+    }
+  }
+  v16 = (v6 & 0xFFFFFFFFFFFFFC00LL) +
+        (__clz((unsigned long long)(__rbit64(v15))) << 8);
+  if (v15 != explicit) {
+    goto LABEL_7;
+  }
+LABEL_16:
+  if (v16 != 0) {
+    goto LABEL_41;
+  }
+LABEL_17:
+  nn_os_SdkMutexType_Lock_plt_alt1(v8);
+  v25 = *(_QWORD*)(v8 + 8);
+  v26 = v8 + 8;
+  do {
+    if (v25 != v26) {
+      while (1) {
+        v27 = (_QWORD*)(v25 + 8);
+        __atomic_exchange_n((unsigned int*)(v25 + 8), (unsigned int)v24, 5);
+        __atomic_exchange_n((unsigned int*)v25, v25 + 8, 5);
+        *v24 = v25 + 8;
+        *(_QWORD*)(v25 + 16) = v24;
+        v31 = atomic_load_explicit((atomic_ullong* volatile)(v25 + 24),
+                                   memory_order_acquire);
+        v32 = v31 & 0xFFFFFFFFFFFFFFFELL;
+        if ((v31 & 0xFFFFFFFFFFFFFFFELL) != 0) {
+          break;
+        }
+      LABEL_26:
+        v24 = *(unsigned __int64**)(v25 + 16);
+        *v24 = v25;
+        *(_QWORD*)(v25 + 16) = v25;
+        *(_QWORD*)(v25 + 8) = v24;
+        *(_QWORD*)v25 = v27;
+        v25 += 8LL;
+        if ((_QWORD*)v26 == v27) {
+          goto LABEL_20;
+        }
+      }
+      v33 = v31;
+      while (1) {
+        v34 = v31 & -(__int64)v32;
+        atomic_compare_exchange_strong((atomic_ullong* volatile)(v25 + 24),
+                                       &v33, v34 ^ v31);
+        if (v33 == v31) {
+          break;
+        }
+        v32 = v33 & 0xFFFFFFFFFFFFFFFELL;
+        v31 = v33;
+        if ((v33 & 0xFFFFFFFFFFFFFFFELL) == 0) {
+          goto LABEL_26;
+        }
+      }
+      v16 = (v25 & 0xFFFFFFFFFFFFFC00LL) +
+            (__clz((unsigned long long)(__rbit64(v34))) << 8);
+      nn_os_SdkMutexType_Unlock_plt_alt1(v8);
+      if (v34 == v31) {
+        goto LABEL_41;
+      }
+      goto LABEL_33;
+    }
+    v27 = (_QWORD*)v25;
+  LABEL_20:
+    v24 = (unsigned __int64*)atomic_exchange_explicit(
+        (atomic_ullong* volatile)(v8 + 24), 0, memory_order_acquire);
+    if (v24 != nullptr) {
+      v28 = (unsigned __int64**)v27[1];
+      v29 = v24;
+      *v28 = v24;
+      do {
+        v29[1] = (unsigned __int64)v28;
+        v30 = v29;
+        v28 = (unsigned __int64**)v29;
+        v29 = (unsigned __int64*)*v29;
+      } while (v29 != nullptr);
+      *v30 = (unsigned __int64)v27;
+      v27[1] = v30;
+      v27 = v24;
+    }
+    v25 = (unsigned __int64)v27;
+  } while (v27 != (_QWORD*)v26);
+  nn_os_SdkMutexType_Unlock_plt_alt1(v8);
+  v42 = (atomic_uint* volatile*)*v9;
+  v53 = 0;
+  v43 = nn_gs_481640(&v53, v42, (__int64)(v9 + 1), v7);
+  if ((v43 & 1) == 0) {
+    return 0;
+  }
+  v44 = v53;
+  v45 = 72;
+  if ((v53 & 0xFFF) != 0) {
+    v45 = 0;
+  }
+  v25 = v45 + v53;
+  *(_QWORD*)(v25 + 16) = 0;
+  *(_QWORD*)(v25 + 24) = 0;
+  *(_QWORD*)v25 = 0;
+  *(_QWORD*)(v25 + 8) = 0;
+  atomic_store(0xBu, (unsigned __int64*)(v45 + v44 + 16));
+  v46 = *(_QWORD*)(v45 + v44 + 24);
+  v47 = v46;
+  atomic_compare_exchange_strong_explicit(
+      (atomic_ullong* volatile)(v25 + 24), (unsigned __int64*)&v47, 0xEu,
+      memory_order_relaxed, memory_order_relaxed);
+  if (v47 != v46) {
+    v48 = v47;
+    do {
+      atomic_compare_exchange_strong_explicit(
+          (atomic_ullong* volatile)(v25 + 24), (unsigned __int64*)&v48, 0xEu,
+          memory_order_relaxed, memory_order_relaxed);
+      v23 = v48 == v47;
+      v47 = v48;
+    } while (!v23);
+  }
+  v49 = atomic_load_explicit((atomic_ullong* volatile)(v25 + 24),
+                             memory_order_acquire);
+  v50 = v49 & 0xFFFFFFFFFFFFFFFELL;
+  if ((v49 & 0xFFFFFFFFFFFFFFFELL) == 0) {
+  LABEL_53:
+    if (*(_QWORD*)(v25 + 24) != 14) {
+      nn_diag_detail_AbortImpl_plt_856170_alt1();
+    }
+    nn_gs_47c140(*v9, (__int64)(v9 + 1), v25 & 0xFFFFFFFFFFFFFC00LL, v7);
+    return 0;
+  }
+  v51 = v49;
+  while (1) {
+    v52 = v49 & -(__int64)v50;
+    atomic_compare_exchange_strong((atomic_ullong* volatile)(v25 + 24), &v51,
+                                   v52 ^ v49);
+    if (v51 == v49) {
+      break;
+    }
+    v50 = v51 & 0xFFFFFFFFFFFFFFFELL;
+    v49 = v51;
+    if ((v51 & 0xFFFFFFFFFFFFFFFELL) == 0) {
+      goto LABEL_53;
+    }
+  }
+  v16 = (v25 & 0xFFFFFFFFFFFFFC00LL) +
+        (__clz((unsigned long long)(__rbit64(v52))) << 8);
+  if (v52 == v49) {
+    goto LABEL_41;
+  }
+LABEL_33:
+  if (v25 != 0) {
+    v35 = (_QWORD*)v7[12];
+    v7[12] = v25;
+    if (v35 != nullptr) {
+      if ((nn_os_SdkMutexType_TryLock_plt_alt1(v8) & 1) != 0) {
+        v36 = *(_QWORD*)(v8 + 8);
+        v37 = *(_QWORD**)(v36 + 8);
+        *v37 = v35;
+        *(_QWORD*)(v36 + 8) = v35;
+        v35[1] = v37;
+        *v35 = v36;
+        nn_os_SdkMutexType_Unlock_plt_alt1(v8);
+      }
+      else {
+        v38 = *(_QWORD*)(v8 + 24);
+        *v35 = v38;
+        v39 = v38;
+        atomic_compare_exchange_strong_explicit(
+            (atomic_ullong* volatile)(v8 + 24), (unsigned __int64*)&v39,
+            (unsigned __int64)v35, memory_order_release, memory_order_relaxed);
+        if (v39 != v38) {
+          v40 = v39;
+          do {
+            *v35 = v39;
+            atomic_compare_exchange_strong_explicit(
+                (atomic_ullong* volatile)(v8 + 24), (unsigned __int64*)&v40,
+                (unsigned __int64)v35, memory_order_release,
+                memory_order_relaxed);
+            v23 = v40 == v39;
+            v39 = v40;
+          } while (!v23);
+        }
+      }
+    }
+  }
+LABEL_41:
+  *a2 = v16;
+  *a3 = 256;
+  return 1;
+}
+
 __int64 nn_gs_4881d0(_QWORD* a1)
 {
   __int64 v1;
@@ -3841,6 +8800,326 @@ __int64 nn_gs_4881d0(_QWORD* a1)
   v8 = (char*)(a1 + 50);
   v9 = a1 + 33;
   return SdkRoutine_488880();
+}
+
+__int64 nn_gs_488780(__int64 a1, unsigned __int64 a2, __int64 a3, __int64*** a4)
+{
+  unsigned __int64 v7;
+  unsigned __int64 v8;
+  __int64 v9;
+  unsigned __int64* v10;
+  unsigned __int64* v11;
+  unsigned __int64* v12;
+
+  nn_os_SdkMutexType_Lock_plt_alt1(a1);
+  v7 = *(_QWORD*)(a1 + 8);
+  v8 = atomic_exchange_explicit((atomic_ullong* volatile)a2, 0,
+                                memory_order_acquire);
+  v9 = a1 + 8;
+  if (v8 == 0) {
+    goto LABEL_7;
+  }
+  v10 = *(unsigned __int64**)(v7 + 8);
+  v11 = (unsigned __int64*)v8;
+  *v10 = v8;
+  do {
+    v11[1] = (unsigned __int64)v10;
+    v12 = v11;
+    v10 = v11;
+    v11 = (unsigned __int64*)*v11;
+  } while (v11 != nullptr);
+  *v12 = v7;
+  *(_QWORD*)(v7 + 8) = v12;
+  v7 = v8;
+  while (v7 != v9) {
+    while (atomic_load_explicit((atomic_ullong* volatile)(v7 + 24),
+                                memory_order_acquire) == 62) {
+      __atomic_exchange_n((unsigned int*)(v7 + 8), v7 + 8, 5);
+      __atomic_exchange_n((unsigned int*)v7, a2, 5);
+      *(_QWORD*)(v7 + 8) = a2;
+      *(_QWORD*)(a2 + 8) = v7 + 8;
+      if (*(_QWORD*)(v7 + 24) != 62) {
+        nn_diag_detail_AbortImpl_plt_856170_alt1();
+      }
+      SdkRoutine_4883e0(***a4, (__int64)(**a4 + 1), v7 & 0xFFFFFFFFFFFFFC00LL);
+      v7 = a2;
+      if (a2 == v9) {
+        return nn_os_SdkMutexType_Unlock_plt_alt1(a1);
+      }
+    }
+    v7 = *(_QWORD*)v7;
+  LABEL_7:;
+  }
+  return nn_os_SdkMutexType_Unlock_plt_alt1(a1);
+}
+
+__int64 nn_gs_488880(__int64 a1, unsigned __int64 a2, __int64 a3, __int64*** a4)
+{
+  unsigned __int64 v7;
+  unsigned __int64 v8;
+  __int64 v9;
+  unsigned __int64* v10;
+  unsigned __int64* v11;
+  unsigned __int64* v12;
+
+  nn_os_SdkMutexType_Lock_plt_alt1(a1);
+  v7 = *(_QWORD*)(a1 + 8);
+  v8 = atomic_exchange_explicit((atomic_ullong* volatile)a2, 0,
+                                memory_order_acquire);
+  v9 = a1 + 8;
+  if (v8 == 0) {
+    goto LABEL_7;
+  }
+  v10 = *(unsigned __int64**)(v7 + 8);
+  v11 = (unsigned __int64*)v8;
+  *v10 = v8;
+  do {
+    v11[1] = (unsigned __int64)v10;
+    v12 = v11;
+    v10 = v11;
+    v11 = (unsigned __int64*)*v11;
+  } while (v11 != nullptr);
+  *v12 = v7;
+  *(_QWORD*)(v7 + 8) = v12;
+  v7 = v8;
+  while (v7 != v9) {
+    while (atomic_load_explicit((atomic_ullong* volatile)(v7 + 24),
+                                memory_order_acquire) == 126) {
+      __atomic_exchange_n((unsigned int*)(v7 + 8), v7 + 8, 5);
+      __atomic_exchange_n((unsigned int*)v7, a2, 5);
+      *(_QWORD*)(v7 + 8) = a2;
+      *(_QWORD*)(a2 + 8) = v7 + 8;
+      if (*(_QWORD*)(v7 + 24) != 126) {
+        nn_diag_detail_AbortImpl_plt_856170_alt1();
+      }
+      SdkRoutine_4883e0(***a4, (__int64)(**a4 + 1), v7 & 0xFFFFFFFFFFFFFC00LL);
+      v7 = a2;
+      if (a2 == v9) {
+        return nn_os_SdkMutexType_Unlock_plt_alt1(a1);
+      }
+    }
+    v7 = *(_QWORD*)v7;
+  LABEL_7:;
+  }
+  return nn_os_SdkMutexType_Unlock_plt_alt1(a1);
+}
+
+__int64 nn_gs_488980(__int64 a1, unsigned __int64 a2, __int64 a3, __int64*** a4)
+{
+  unsigned __int64 v7;
+  unsigned __int64 v8;
+  __int64 v9;
+  unsigned __int64* v10;
+  unsigned __int64* v11;
+  unsigned __int64* v12;
+
+  nn_os_SdkMutexType_Lock_plt_alt1(a1);
+  v7 = *(_QWORD*)(a1 + 8);
+  v8 = atomic_exchange_explicit((atomic_ullong* volatile)a2, 0,
+                                memory_order_acquire);
+  v9 = a1 + 8;
+  if (v8 == 0) {
+    goto LABEL_7;
+  }
+  v10 = *(unsigned __int64**)(v7 + 8);
+  v11 = (unsigned __int64*)v8;
+  *v10 = v8;
+  do {
+    v11[1] = (unsigned __int64)v10;
+    v12 = v11;
+    v10 = v11;
+    v11 = (unsigned __int64*)*v11;
+  } while (v11 != nullptr);
+  *v12 = v7;
+  *(_QWORD*)(v7 + 8) = v12;
+  v7 = v8;
+  while (v7 != v9) {
+    while (atomic_load_explicit((atomic_ullong* volatile)(v7 + 24),
+                                memory_order_acquire) == 254) {
+      __atomic_exchange_n((unsigned int*)(v7 + 8), v7 + 8, 5);
+      __atomic_exchange_n((unsigned int*)v7, a2, 5);
+      *(_QWORD*)(v7 + 8) = a2;
+      *(_QWORD*)(a2 + 8) = v7 + 8;
+      if (*(_QWORD*)(v7 + 24) != 254) {
+        nn_diag_detail_AbortImpl_plt_856170_alt1();
+      }
+      SdkRoutine_4883e0(***a4, (__int64)(**a4 + 1), v7 & 0xFFFFFFFFFFFFFC00LL);
+      v7 = a2;
+      if (a2 == v9) {
+        return nn_os_SdkMutexType_Unlock_plt_alt1(a1);
+      }
+    }
+    v7 = *(_QWORD*)v7;
+  LABEL_7:;
+  }
+  return nn_os_SdkMutexType_Unlock_plt_alt1(a1);
+}
+
+__int64 nn_gs_488a80(__int64 a1, unsigned __int64 a2, __int64 a3, __int64*** a4)
+{
+  unsigned __int64 v7;
+  unsigned __int64 v8;
+  __int64 v9;
+  unsigned __int64* v10;
+  unsigned __int64* v11;
+  unsigned __int64* v12;
+
+  nn_os_SdkMutexType_Lock_plt_alt1(a1);
+  v7 = *(_QWORD*)(a1 + 8);
+  v8 = atomic_exchange_explicit((atomic_ullong* volatile)a2, 0,
+                                memory_order_acquire);
+  v9 = a1 + 8;
+  if (v8 == 0) {
+    goto LABEL_7;
+  }
+  v10 = *(unsigned __int64**)(v7 + 8);
+  v11 = (unsigned __int64*)v8;
+  *v10 = v8;
+  do {
+    v11[1] = (unsigned __int64)v10;
+    v12 = v11;
+    v10 = v11;
+    v11 = (unsigned __int64*)*v11;
+  } while (v11 != nullptr);
+  *v12 = v7;
+  *(_QWORD*)(v7 + 8) = v12;
+  v7 = v8;
+  while (v7 != v9) {
+    while (atomic_load_explicit((atomic_ullong* volatile)(v7 + 24),
+                                memory_order_acquire) == 510) {
+      __atomic_exchange_n((unsigned int*)(v7 + 8), v7 + 8, 5);
+      __atomic_exchange_n((unsigned int*)v7, a2, 5);
+      *(_QWORD*)(v7 + 8) = a2;
+      *(_QWORD*)(a2 + 8) = v7 + 8;
+      if (*(_QWORD*)(v7 + 24) != 510) {
+        nn_diag_detail_AbortImpl_plt_856170_alt1();
+      }
+      SdkRoutine_4883e0(***a4, (__int64)(**a4 + 1), v7 & 0xFFFFFFFFFFFFFC00LL);
+      v7 = a2;
+      if (a2 == v9) {
+        return nn_os_SdkMutexType_Unlock_plt_alt1(a1);
+      }
+    }
+    v7 = *(_QWORD*)v7;
+  LABEL_7:;
+  }
+  return nn_os_SdkMutexType_Unlock_plt_alt1(a1);
+}
+
+__int64 nn_gs_488b80(__int64 a1, atomic_ullong* a2, __int64 a3, __int64*** a4)
+{
+  unsigned __int64 v4;
+  unsigned __int64 v8;
+  unsigned __int64 v9;
+  __int64 v10;
+  unsigned __int64* v11;
+  unsigned __int64* v12;
+  unsigned __int64* v13;
+  unsigned __int64 explicit;
+  __int64 v15;
+
+  nn_os_SdkMutexType_Lock_plt_alt1(a1);
+  v8 = *(_QWORD*)(a1 + 8);
+  v9 = atomic_exchange_explicit(a2, 0, memory_order_acquire);
+  v10 = a1 + 8;
+  if (v9 != 0) {
+    v11 = *(unsigned __int64**)(v8 + 8);
+    v12 = (unsigned __int64*)v9;
+    *v11 = v9;
+    do {
+      v12[1] = (unsigned __int64)v11;
+      v13 = v12;
+      v11 = v12;
+      v12 = (unsigned __int64*)*v12;
+    } while (v12 != nullptr);
+    *v13 = v8;
+    *(_QWORD*)(v8 + 8) = v13;
+    v8 = v9;
+  }
+  if (v8 != v10) {
+    do {
+      while (1) {
+        explicit = atomic_load_explicit((atomic_ullong* volatile)(v8 + 24),
+                                        memory_order_acquire);
+        v15 = (v8 & 0xC00) != 0 ? 1022LL : 1020LL;
+        if (explicit == v15) {
+          break;
+        }
+        v8 = *(_QWORD*)v8;
+        if (v8 == v10) {
+          return nn_os_SdkMutexType_Unlock_plt_alt1(a1);
+        }
+      }
+      __atomic_exchange_n((unsigned int*)(v8 + 8), v8 + 8, 5);
+      __atomic_exchange_n((unsigned int*)v8, v4, 5);
+      *(_QWORD*)(v8 + 8) = v4;
+      *(_QWORD*)(v4 + 8) = v8 + 8;
+      if (*(_QWORD*)(v8 + 24) != explicit) {
+        nn_diag_detail_AbortImpl_plt_856170_alt1();
+      }
+      SdkRoutine_4883e0(***a4, (__int64)(**a4 + 1), v8 & 0xFFFFFFFFFFFFFC00LL);
+      v8 = v4;
+    } while (v4 != v10);
+  }
+  return nn_os_SdkMutexType_Unlock_plt_alt1(a1);
+}
+
+__int64 nn_gs_488ca0(__int64 a1, atomic_ullong* a2, __int64 a3, __int64*** a4)
+{
+  unsigned __int64 v4;
+  unsigned __int64 v8;
+  unsigned __int64 v9;
+  __int64 v10;
+  unsigned __int64* v11;
+  unsigned __int64* v12;
+  unsigned __int64* v13;
+  unsigned __int64 explicit;
+  __int64 v15;
+
+  nn_os_SdkMutexType_Lock_plt_alt1(a1);
+  v8 = *(_QWORD*)(a1 + 8);
+  v9 = atomic_exchange_explicit(a2, 0, memory_order_acquire);
+  v10 = a1 + 8;
+  if (v9 != 0) {
+    v11 = *(unsigned __int64**)(v8 + 8);
+    v12 = (unsigned __int64*)v9;
+    *v11 = v9;
+    do {
+      v12[1] = (unsigned __int64)v11;
+      v13 = v12;
+      v11 = v12;
+      v12 = (unsigned __int64*)*v12;
+    } while (v12 != nullptr);
+    *v13 = v8;
+    *(_QWORD*)(v8 + 8) = v13;
+    v8 = v9;
+  }
+  if (v8 != v10) {
+    do {
+      while (1) {
+        explicit = atomic_load_explicit((atomic_ullong* volatile)(v8 + 24),
+                                        memory_order_acquire);
+        v15 = (v8 & 0xC00) != 0 ? 4094LL : 4092LL;
+        if (explicit == v15) {
+          break;
+        }
+        v8 = *(_QWORD*)v8;
+        if (v8 == v10) {
+          return nn_os_SdkMutexType_Unlock_plt_alt1(a1);
+        }
+      }
+      __atomic_exchange_n((unsigned int*)(v8 + 8), v8 + 8, 5);
+      __atomic_exchange_n((unsigned int*)v8, v4, 5);
+      *(_QWORD*)(v8 + 8) = v4;
+      *(_QWORD*)(v4 + 8) = v8 + 8;
+      if (*(_QWORD*)(v8 + 24) != explicit) {
+        nn_diag_detail_AbortImpl_plt_856170_alt1();
+      }
+      SdkRoutine_4883e0(***a4, (__int64)(**a4 + 1), v8 & 0xFFFFFFFFFFFFFC00LL);
+      v8 = v4;
+    } while (v4 != v10);
+  }
+  return nn_os_SdkMutexType_Unlock_plt_alt1(a1);
 }
 
 __int64 nn_gs_489460(_QWORD* a1)
@@ -3899,6 +9178,384 @@ __int64 nn_gs_489460(_QWORD* a1)
   v10 = a1 + 21;
   v11 = v6;
   return SdkRoutine_489880(a1 + 21, a1 + 24, 0, v12);
+}
+
+__int64 nn_gs_489580(__int64 a1, unsigned __int64 a2, __int64 a3, __int64 a4)
+{
+  unsigned __int64 v7;
+  unsigned __int64 v8;
+  __int64 v9;
+  unsigned __int64* v10;
+  unsigned __int64* v11;
+  unsigned __int64* v12;
+
+  nn_os_SdkMutexType_Lock_plt_alt1(a1);
+  v7 = *(_QWORD*)(a1 + 8);
+  v8 = atomic_exchange_explicit((atomic_ullong* volatile)a2, 0,
+                                memory_order_acquire);
+  v9 = a1 + 8;
+  if (v8 == 0) {
+    goto LABEL_7;
+  }
+  v10 = *(unsigned __int64**)(v7 + 8);
+  v11 = (unsigned __int64*)v8;
+  *v10 = v8;
+  do {
+    v11[1] = (unsigned __int64)v10;
+    v12 = v11;
+    v10 = v11;
+    v11 = (unsigned __int64*)*v11;
+  } while (v11 != nullptr);
+  *v12 = v7;
+  *(_QWORD*)(v7 + 8) = v12;
+  v7 = v8;
+  while (v7 != v9) {
+    while (atomic_load_explicit((atomic_ullong* volatile)(v7 + 24),
+                                memory_order_acquire) == 6) {
+      __atomic_exchange_n((unsigned int*)(v7 + 8), v7 + 8, 5);
+      __atomic_exchange_n((unsigned int*)v7, a2, 5);
+      *(_QWORD*)(v7 + 8) = a2;
+      *(_QWORD*)(a2 + 8) = v7 + 8;
+      if (*(_QWORD*)(v7 + 24) != 6) {
+        nn_diag_detail_AbortImpl_plt_856170_alt1();
+      }
+      SdkRoutine_47c4e0(***(_QWORD***)a4 + 48LL,
+                        *(void (**)(void))(***(_QWORD***)a4 + 16LL),
+                        *(_QWORD*)(***(_QWORD***)a4 + 32LL),
+                        (_QWORD*)(v7 & 0xFFFFFFFFFFFFF000LL), 2, 0x1000u);
+      v7 = a2;
+      if (a2 == v9) {
+        return nn_os_SdkMutexType_Unlock_plt_alt1(a1);
+      }
+    }
+    v7 = *(_QWORD*)v7;
+  LABEL_7:;
+  }
+  return nn_os_SdkMutexType_Unlock_plt_alt1(a1);
+}
+
+__int64 nn_gs_489680(__int64 a1, unsigned __int64 a2, __int64 a3, __int64 a4)
+{
+  unsigned __int64 v7;
+  unsigned __int64 v8;
+  __int64 v9;
+  unsigned __int64* v10;
+  unsigned __int64* v11;
+  unsigned __int64* v12;
+
+  nn_os_SdkMutexType_Lock_plt_alt1(a1);
+  v7 = *(_QWORD*)(a1 + 8);
+  v8 = atomic_exchange_explicit((atomic_ullong* volatile)a2, 0,
+                                memory_order_acquire);
+  v9 = a1 + 8;
+  if (v8 == 0) {
+    goto LABEL_7;
+  }
+  v10 = *(unsigned __int64**)(v7 + 8);
+  v11 = (unsigned __int64*)v8;
+  *v10 = v8;
+  do {
+    v11[1] = (unsigned __int64)v10;
+    v12 = v11;
+    v10 = v11;
+    v11 = (unsigned __int64*)*v11;
+  } while (v11 != nullptr);
+  *v12 = v7;
+  *(_QWORD*)(v7 + 8) = v12;
+  v7 = v8;
+  while (v7 != v9) {
+    while (atomic_load_explicit((atomic_ullong* volatile)(v7 + 24),
+                                memory_order_acquire) == 14) {
+      __atomic_exchange_n((unsigned int*)(v7 + 8), v7 + 8, 5);
+      __atomic_exchange_n((unsigned int*)v7, a2, 5);
+      *(_QWORD*)(v7 + 8) = a2;
+      *(_QWORD*)(a2 + 8) = v7 + 8;
+      if (*(_QWORD*)(v7 + 24) != 14) {
+        nn_diag_detail_AbortImpl_plt_856170_alt1();
+      }
+      SdkRoutine_47c4e0(***(_QWORD***)a4 + 48LL,
+                        *(void (**)(void))(***(_QWORD***)a4 + 16LL),
+                        *(_QWORD*)(***(_QWORD***)a4 + 32LL),
+                        (_QWORD*)(v7 & 0xFFFFFFFFFFFFF000LL), 2, 0x1000u);
+      v7 = a2;
+      if (a2 == v9) {
+        return nn_os_SdkMutexType_Unlock_plt_alt1(a1);
+      }
+    }
+    v7 = *(_QWORD*)v7;
+  LABEL_7:;
+  }
+  return nn_os_SdkMutexType_Unlock_plt_alt1(a1);
+}
+
+__int64 nn_gs_489780(__int64 a1, unsigned __int64 a2, __int64 a3, __int64 a4)
+{
+  unsigned __int64 v7;
+  unsigned __int64 v8;
+  __int64 v9;
+  unsigned __int64* v10;
+  unsigned __int64* v11;
+  unsigned __int64* v12;
+
+  nn_os_SdkMutexType_Lock_plt_alt1(a1);
+  v7 = *(_QWORD*)(a1 + 8);
+  v8 = atomic_exchange_explicit((atomic_ullong* volatile)a2, 0,
+                                memory_order_acquire);
+  v9 = a1 + 8;
+  if (v8 == 0) {
+    goto LABEL_7;
+  }
+  v10 = *(unsigned __int64**)(v7 + 8);
+  v11 = (unsigned __int64*)v8;
+  *v10 = v8;
+  do {
+    v11[1] = (unsigned __int64)v10;
+    v12 = v11;
+    v10 = v11;
+    v11 = (unsigned __int64*)*v11;
+  } while (v11 != nullptr);
+  *v12 = v7;
+  *(_QWORD*)(v7 + 8) = v12;
+  v7 = v8;
+  while (v7 != v9) {
+    while (atomic_load_explicit((atomic_ullong* volatile)(v7 + 24),
+                                memory_order_acquire) == 30) {
+      __atomic_exchange_n((unsigned int*)(v7 + 8), v7 + 8, 5);
+      __atomic_exchange_n((unsigned int*)v7, a2, 5);
+      *(_QWORD*)(v7 + 8) = a2;
+      *(_QWORD*)(a2 + 8) = v7 + 8;
+      if (*(_QWORD*)(v7 + 24) != 30) {
+        nn_diag_detail_AbortImpl_plt_856170_alt1();
+      }
+      SdkRoutine_47c4e0(***(_QWORD***)a4 + 48LL,
+                        *(void (**)(void))(***(_QWORD***)a4 + 16LL),
+                        *(_QWORD*)(***(_QWORD***)a4 + 32LL),
+                        (_QWORD*)(v7 & 0xFFFFFFFFFFFFF000LL), 2, 0x1000u);
+      v7 = a2;
+      if (a2 == v9) {
+        return nn_os_SdkMutexType_Unlock_plt_alt1(a1);
+      }
+    }
+    v7 = *(_QWORD*)v7;
+  LABEL_7:;
+  }
+  return nn_os_SdkMutexType_Unlock_plt_alt1(a1);
+}
+
+__int64 nn_gs_489880(__int64 a1, unsigned __int64 a2, __int64 a3, __int64 a4)
+{
+  unsigned __int64 v7;
+  unsigned __int64 v8;
+  __int64 v9;
+  unsigned __int64* v10;
+  unsigned __int64* v11;
+  unsigned __int64* v12;
+
+  nn_os_SdkMutexType_Lock_plt_alt1(a1);
+  v7 = *(_QWORD*)(a1 + 8);
+  v8 = atomic_exchange_explicit((atomic_ullong* volatile)a2, 0,
+                                memory_order_acquire);
+  v9 = a1 + 8;
+  if (v8 == 0) {
+    goto LABEL_7;
+  }
+  v10 = *(unsigned __int64**)(v7 + 8);
+  v11 = (unsigned __int64*)v8;
+  *v10 = v8;
+  do {
+    v11[1] = (unsigned __int64)v10;
+    v12 = v11;
+    v10 = v11;
+    v11 = (unsigned __int64*)*v11;
+  } while (v11 != nullptr);
+  *v12 = v7;
+  *(_QWORD*)(v7 + 8) = v12;
+  v7 = v8;
+  while (v7 != v9) {
+    while (atomic_load_explicit((atomic_ullong* volatile)(v7 + 24),
+                                memory_order_acquire) == 62) {
+      __atomic_exchange_n((unsigned int*)(v7 + 8), v7 + 8, 5);
+      __atomic_exchange_n((unsigned int*)v7, a2, 5);
+      *(_QWORD*)(v7 + 8) = a2;
+      *(_QWORD*)(a2 + 8) = v7 + 8;
+      if (*(_QWORD*)(v7 + 24) != 62) {
+        nn_diag_detail_AbortImpl_plt_856170_alt1();
+      }
+      SdkRoutine_47c4e0(***(_QWORD***)a4 + 48LL,
+                        *(void (**)(void))(***(_QWORD***)a4 + 16LL),
+                        *(_QWORD*)(***(_QWORD***)a4 + 32LL),
+                        (_QWORD*)(v7 & 0xFFFFFFFFFFFFF000LL), 2, 0x1000u);
+      v7 = a2;
+      if (a2 == v9) {
+        return nn_os_SdkMutexType_Unlock_plt_alt1(a1);
+      }
+    }
+    v7 = *(_QWORD*)v7;
+  LABEL_7:;
+  }
+  return nn_os_SdkMutexType_Unlock_plt_alt1(a1);
+}
+
+__int64 nn_gs_489980(__int64 a1, unsigned __int64 a2, __int64 a3, __int64 a4)
+{
+  unsigned __int64 v7;
+  unsigned __int64 v8;
+  __int64 v9;
+  unsigned __int64* v10;
+  unsigned __int64* v11;
+  unsigned __int64* v12;
+
+  nn_os_SdkMutexType_Lock_plt_alt1(a1);
+  v7 = *(_QWORD*)(a1 + 8);
+  v8 = atomic_exchange_explicit((atomic_ullong* volatile)a2, 0,
+                                memory_order_acquire);
+  v9 = a1 + 8;
+  if (v8 == 0) {
+    goto LABEL_7;
+  }
+  v10 = *(unsigned __int64**)(v7 + 8);
+  v11 = (unsigned __int64*)v8;
+  *v10 = v8;
+  do {
+    v11[1] = (unsigned __int64)v10;
+    v12 = v11;
+    v10 = v11;
+    v11 = (unsigned __int64*)*v11;
+  } while (v11 != nullptr);
+  *v12 = v7;
+  *(_QWORD*)(v7 + 8) = v12;
+  v7 = v8;
+  while (v7 != v9) {
+    while (atomic_load_explicit((atomic_ullong* volatile)(v7 + 24),
+                                memory_order_acquire) == 126) {
+      __atomic_exchange_n((unsigned int*)(v7 + 8), v7 + 8, 5);
+      __atomic_exchange_n((unsigned int*)v7, a2, 5);
+      *(_QWORD*)(v7 + 8) = a2;
+      *(_QWORD*)(a2 + 8) = v7 + 8;
+      if (*(_QWORD*)(v7 + 24) != 126) {
+        nn_diag_detail_AbortImpl_plt_856170_alt1();
+      }
+      SdkRoutine_47c4e0(***(_QWORD***)a4 + 48LL,
+                        *(void (**)(void))(***(_QWORD***)a4 + 16LL),
+                        *(_QWORD*)(***(_QWORD***)a4 + 32LL),
+                        (_QWORD*)(v7 & 0xFFFFFFFFFFFFF000LL), 2, 0x1000u);
+      v7 = a2;
+      if (a2 == v9) {
+        return nn_os_SdkMutexType_Unlock_plt_alt1(a1);
+      }
+    }
+    v7 = *(_QWORD*)v7;
+  LABEL_7:;
+  }
+  return nn_os_SdkMutexType_Unlock_plt_alt1(a1);
+}
+
+__int64 nn_gs_489a80(__int64 a1, unsigned __int64 a2, __int64 a3, __int64 a4)
+{
+  unsigned __int64 v7;
+  unsigned __int64 v8;
+  __int64 v9;
+  unsigned __int64* v10;
+  unsigned __int64* v11;
+  unsigned __int64* v12;
+
+  nn_os_SdkMutexType_Lock_plt_alt1(a1);
+  v7 = *(_QWORD*)(a1 + 8);
+  v8 = atomic_exchange_explicit((atomic_ullong* volatile)a2, 0,
+                                memory_order_acquire);
+  v9 = a1 + 8;
+  if (v8 == 0) {
+    goto LABEL_7;
+  }
+  v10 = *(unsigned __int64**)(v7 + 8);
+  v11 = (unsigned __int64*)v8;
+  *v10 = v8;
+  do {
+    v11[1] = (unsigned __int64)v10;
+    v12 = v11;
+    v10 = v11;
+    v11 = (unsigned __int64*)*v11;
+  } while (v11 != nullptr);
+  *v12 = v7;
+  *(_QWORD*)(v7 + 8) = v12;
+  v7 = v8;
+  while (v7 != v9) {
+    while (atomic_load_explicit((atomic_ullong* volatile)(v7 + 24),
+                                memory_order_acquire) == 254) {
+      __atomic_exchange_n((unsigned int*)(v7 + 8), v7 + 8, 5);
+      __atomic_exchange_n((unsigned int*)v7, a2, 5);
+      *(_QWORD*)(v7 + 8) = a2;
+      *(_QWORD*)(a2 + 8) = v7 + 8;
+      if (*(_QWORD*)(v7 + 24) != 254) {
+        nn_diag_detail_AbortImpl_plt_856170_alt1();
+      }
+      SdkRoutine_47c4e0(***(_QWORD***)a4 + 48LL,
+                        *(void (**)(void))(***(_QWORD***)a4 + 16LL),
+                        *(_QWORD*)(***(_QWORD***)a4 + 32LL),
+                        (_QWORD*)(v7 & 0xFFFFFFFFFFFFF000LL), 2, 0x1000u);
+      v7 = a2;
+      if (a2 == v9) {
+        return nn_os_SdkMutexType_Unlock_plt_alt1(a1);
+      }
+    }
+    v7 = *(_QWORD*)v7;
+  LABEL_7:;
+  }
+  return nn_os_SdkMutexType_Unlock_plt_alt1(a1);
+}
+
+__int64 nn_gs_489d80(__int64 a1, unsigned __int64 a2, __int64 a3, __int64 a4)
+{
+  unsigned __int64 v7;
+  unsigned __int64 v8;
+  __int64 v9;
+  unsigned __int64* v10;
+  unsigned __int64* v11;
+  unsigned __int64* v12;
+
+  nn_os_SdkMutexType_Lock_plt_alt1(a1);
+  v7 = *(_QWORD*)(a1 + 8);
+  v8 = atomic_exchange_explicit((atomic_ullong* volatile)a2, 0,
+                                memory_order_acquire);
+  v9 = a1 + 8;
+  if (v8 == 0) {
+    goto LABEL_7;
+  }
+  v10 = *(unsigned __int64**)(v7 + 8);
+  v11 = (unsigned __int64*)v8;
+  *v10 = v8;
+  do {
+    v11[1] = (unsigned __int64)v10;
+    v12 = v11;
+    v10 = v11;
+    v11 = (unsigned __int64*)*v11;
+  } while (v11 != nullptr);
+  *v12 = v7;
+  *(_QWORD*)(v7 + 8) = v12;
+  v7 = v8;
+  while (v7 != v9) {
+    while (atomic_load_explicit((atomic_ullong* volatile)(v7 + 24),
+                                memory_order_acquire) == -4) {
+      __atomic_exchange_n((unsigned int*)(v7 + 8), v7 + 8, 5);
+      __atomic_exchange_n((unsigned int*)v7, a2, 5);
+      *(_QWORD*)(v7 + 8) = a2;
+      *(_QWORD*)(a2 + 8) = v7 + 8;
+      if (*(_QWORD*)(v7 + 24) != -4) {
+        nn_diag_detail_AbortImpl_plt_856170_alt1();
+      }
+      SdkRoutine_47c4e0(***(_QWORD***)a4 + 48LL,
+                        *(void (**)(void))(***(_QWORD***)a4 + 16LL),
+                        *(_QWORD*)(***(_QWORD***)a4 + 32LL),
+                        (_QWORD*)(v7 & 0xFFFFFFFFFFFFF000LL), 2, 0x1000u);
+      v7 = a2;
+      if (a2 == v9) {
+        return nn_os_SdkMutexType_Unlock_plt_alt1(a1);
+      }
+    }
+    v7 = *(_QWORD*)v7;
+  LABEL_7:;
+  }
+  return nn_os_SdkMutexType_Unlock_plt_alt1(a1);
 }
 
 __int64 nn_gs_489e80(__int64 a1, __int64 a2, __int64 a3, unsigned __int64 a4,
@@ -4425,6 +10082,1242 @@ __int64 nn_gs_48a6b0(__int64* a1, unsigned __int64 a2, _QWORD** a3)
       goto LABEL_29;
     }
   }
+}
+
+__int64 nn_gs_48a9c0(__int64 result, __int64 a2, unsigned __int64 a3,
+                     unsigned __int64* a4)
+{
+  _QWORD* v4;
+  unsigned __int64 v5;
+  __int64 v8;
+  unsigned __int64 v9;
+  bool v10;
+  unsigned __int64 v11;
+  unsigned __int64 v12;
+  _QWORD* v13;
+  __int64 v14;
+  _QWORD* v15;
+  _QWORD* v16;
+  __int64 v17;
+  int v18;
+  _QWORD* v19;
+  unsigned __int64 v20;
+  __int64 v21;
+  __int64 v22;
+  __int64 v23;
+  unsigned __int64 explicit;
+  unsigned __int64 v25;
+  unsigned __int64 v26;
+  char v27;
+  __int64 v28;
+  unsigned __int64* v29;
+  __int64 v30;
+  __int64 v31;
+  __int64 v32;
+  _QWORD* v33;
+  __int64 v34;
+  _QWORD* v35;
+  __int64 v36;
+  __int64 v37;
+  __int64 v38;
+  __int64 v39;
+
+  v4 = (_QWORD*)*a4;
+  v5 = a3 & 0xFFFFFFFFFFFFF000LL;
+  v8 = result;
+  *a4 = 0;
+  v9 = a3 & 0xFFFFFFFFFFFFF000LL | 0x28;
+  v10 = v4 != nullptr & v4 == (_QWORD*)v9;
+  if (v10) {
+    v18 = 1;
+    v20 = (unsigned __int64)v4;
+    goto LABEL_26;
+  }
+  v11 = *(unsigned __int64*)((char*)(*(void*(*)[1])0x18LL) +
+                             (a3 & 0xFFFFFFFFFFFFF000LL | 0x28)) ^
+        0xFFFFFFFFFFFFFFFCLL;
+  if ((v11 ^ (v11 - 1)) <= v11 - 1) {
+    v18 = 0;
+    v20 = (unsigned __int64)v4;
+    goto LABEL_26;
+  }
+  v12 = a3;
+  result = nn_os_SdkMutexType_TryLock_plt_alt1(a2);
+  if ((result & 1) == 0) {
+    v18 = 0;
+  LABEL_24:
+    v20 = (unsigned __int64)v4;
+    goto LABEL_25;
+  }
+  if (*(_QWORD*)(v9 + 8) == 0) {
+    v14 = *(_QWORD*)(a2 + 8);
+    v13 = (_QWORD*)atomic_exchange_explicit((atomic_ullong* volatile)(a2 + 24),
+                                            0, memory_order_acquire);
+    if (v13 != nullptr) {
+      v15 = *(_QWORD**)(v14 + 8);
+      *v15 = v13;
+      do {
+        v13[1] = v15;
+        v16 = v13;
+        v15 = v13;
+        v13 = (_QWORD*)*v13;
+      } while (v13 != nullptr);
+      *v16 = v14;
+      *(_QWORD*)(v14 + 8) = v16;
+    }
+    if (*(_QWORD*)(v9 + 8) == 0) {
+      v18 = 0;
+      goto LABEL_23;
+    }
+  }
+  __atomic_exchange_n((unsigned int*)(v9 + 8), v9 + 8, 5);
+  __atomic_exchange_n((unsigned int*)v9, (unsigned int)v13, 5);
+  *(_QWORD*)(v9 + 8) = v13;
+  v13[1] = v9 + 8;
+  result = nn_os_SdkMutexType_Unlock_plt_alt1(a2);
+  if (v4 == nullptr) {
+    v18 = 1;
+    v20 = v9;
+  LABEL_25:
+    a3 = v12;
+    goto LABEL_26;
+  }
+  result = nn_os_SdkMutexType_TryLock_plt_alt1(a2);
+  if ((result & 1) != 0) {
+    v17 = *(_QWORD*)(a2 + 8);
+    v18 = 1;
+    v19 = *(_QWORD**)(v17 + 8);
+    *v19 = v4;
+    *(_QWORD*)(v17 + 8) = v4;
+    v4[1] = v19;
+    *v4 = v17;
+    v4 = (_QWORD*)v9;
+  LABEL_23:
+    result = nn_os_SdkMutexType_Unlock_plt_alt1(a2);
+    goto LABEL_24;
+  }
+  v21 = *(_QWORD*)(a2 + 24);
+  a3 = v12;
+  *v4 = v21;
+  v22 = v21;
+  atomic_compare_exchange_strong_explicit(
+      (atomic_ullong* volatile)(a2 + 24), (unsigned __int64*)&v22,
+      (unsigned __int64)v4, memory_order_release, memory_order_relaxed);
+  if (v22 == v21) {
+    v18 = 1;
+    v20 = v9;
+  }
+  else {
+    v18 = 1;
+    v39 = v22;
+    do {
+      *v4 = v22;
+      v20 = v9;
+      atomic_compare_exchange_strong_explicit(
+          (atomic_ullong* volatile)(a2 + 24), (unsigned __int64*)&v39,
+          (unsigned __int64)v4, memory_order_release, memory_order_relaxed);
+      v10 = v39 == v22;
+      v22 = v39;
+    } while (!v10);
+  }
+LABEL_26:
+  v23 = 1LL << (a3 >> 6);
+  explicit = atomic_load_explicit((atomic_ullong* volatile)(v9 + 24),
+                                  memory_order_acquire);
+  if ((explicit & v23) != 0) {
+  LABEL_30:
+    nn_diag_detail_AbortImpl_plt_856170_alt1();
+  }
+  v25 = explicit;
+  while (1) {
+    v26 = explicit | v23;
+    atomic_compare_exchange_strong((atomic_ullong* volatile)(v9 + 24), &v25,
+                                   explicit | v23);
+    if (v25 == explicit) {
+      break;
+    }
+    explicit = v25;
+    if ((v25 & v23) != 0) {
+      goto LABEL_30;
+    }
+  }
+  if (explicit != 0) {
+    v27 = 1;
+  }
+  else {
+    v27 = v18;
+  }
+  if ((v27 & 1) == 0) {
+    if (v20 != 0) {
+      result = nn_os_SdkMutexType_TryLock_plt_alt1(a2);
+      if ((result & 1) != 0) {
+        v28 = *(_QWORD*)(a2 + 8);
+        v29 = *(unsigned __int64**)(v28 + 8);
+        *v29 = v20;
+        *(_QWORD*)(v28 + 8) = v20;
+        *(_QWORD*)(v20 + 8) = v29;
+        *(_QWORD*)v20 = v28;
+        result = nn_os_SdkMutexType_Unlock_plt_alt1(a2);
+      }
+      else {
+        v30 = *(_QWORD*)(a2 + 24);
+        *(_QWORD*)v20 = v30;
+        v31 = v30;
+        atomic_compare_exchange_strong_explicit(
+            (atomic_ullong* volatile)(a2 + 24), (unsigned __int64*)&v31, v20,
+            memory_order_release, memory_order_relaxed);
+        if (v31 != v30) {
+          v32 = v31;
+          do {
+            *(_QWORD*)v20 = v31;
+            atomic_compare_exchange_strong_explicit(
+                (atomic_ullong* volatile)(a2 + 24), (unsigned __int64*)&v32,
+                v20, memory_order_release, memory_order_relaxed);
+            v10 = v32 == v31;
+            v31 = v32;
+          } while (!v10);
+        }
+      }
+    }
+    v18 = 1;
+    v20 = v9;
+  }
+  if (v5 != 0 && v26 == -4 && v18 != 0) {
+    if (*(_QWORD*)(v20 + 24) != -4) {
+      nn_diag_detail_AbortImpl_plt_856170_alt1();
+    }
+    return SdkRoutine_47c4e0_alt1(
+        *(_QWORD*)v8 + 48LL, *(void (**)(void))(*(_QWORD*)v8 + 16LL),
+        *(_QWORD*)(*(_QWORD*)v8 + 32LL), (_QWORD*)(v20 & 0xFFFFFFFFFFFFF000LL),
+        2, 0x1000u);
+  }
+  else if (v20 != 0) {
+    v33 = (_QWORD*)*a4;
+    *a4 = v20;
+    if (v33 != nullptr) {
+      result = nn_os_SdkMutexType_TryLock_plt_alt1(a2);
+      if ((result & 1) != 0) {
+        v34 = *(_QWORD*)(a2 + 8);
+        v35 = *(_QWORD**)(v34 + 8);
+        *v35 = v33;
+        *(_QWORD*)(v34 + 8) = v33;
+        v33[1] = v35;
+        *v33 = v34;
+        return nn_os_SdkMutexType_Unlock_plt_alt1(a2);
+      }
+      else {
+        v36 = *(_QWORD*)(a2 + 24);
+        *v33 = v36;
+        v37 = v36;
+        atomic_compare_exchange_strong_explicit(
+            (atomic_ullong* volatile)(a2 + 24), (unsigned __int64*)&v37,
+            (unsigned __int64)v33, memory_order_release, memory_order_relaxed);
+        if (v37 != v36) {
+          v38 = v37;
+          do {
+            *v33 = v37;
+            atomic_compare_exchange_strong_explicit(
+                (atomic_ullong* volatile)(a2 + 24), (unsigned __int64*)&v38,
+                (unsigned __int64)v33, memory_order_release,
+                memory_order_relaxed);
+            v10 = v38 == v37;
+            v37 = v38;
+          } while (!v10);
+        }
+      }
+    }
+  }
+  return result;
+}
+
+__int64 nn_gs_48ad60(__int64 result, __int64 a2, __int64 a3, __int64 a4)
+{
+  _QWORD* v4;
+  unsigned __int64 v5;
+  __int64 v8;
+  unsigned __int64 v9;
+  bool v10;
+  unsigned __int64 v11;
+  __int16 v12;
+  _QWORD* v13;
+  __int64 v14;
+  _QWORD* v15;
+  _QWORD* v16;
+  __int64 v17;
+  int v18;
+  _QWORD* v19;
+  unsigned __int64 v20;
+  __int64 v21;
+  __int64 v22;
+  __int64 v23;
+  unsigned __int64 explicit;
+  unsigned __int64 v25;
+  unsigned __int64 v26;
+  char v27;
+  __int64 v28;
+  unsigned __int64* v29;
+  __int64 v30;
+  __int64 v31;
+  __int64 v32;
+  _QWORD* v33;
+  __int64 v34;
+  _QWORD* v35;
+  __int64 v36;
+  __int64 v37;
+  __int64 v38;
+  __int64 v39;
+
+  v4 = *(_QWORD**)(a4 + 8);
+  v5 = a3 & 0xFFFFFFFFFFFFF000LL;
+  v8 = result;
+  *(_QWORD*)(a4 + 8) = 0;
+  v9 = a3 & 0xFFFFFFFFFFFFF000LL | 0x28;
+  v10 = v4 != nullptr & v4 == (_QWORD*)v9;
+  if (v10) {
+    v18 = 1;
+    v20 = (unsigned __int64)v4;
+    goto LABEL_26;
+  }
+  v11 = *(unsigned __int64*)((char*)(*(void*(*)[1])0x18LL) +
+                             (a3 & 0xFFFFFFFFFFFFF000LL | 0x28)) ^
+        0x3FE;
+  if ((v11 ^ (v11 - 1)) <= v11 - 1) {
+    v18 = 0;
+    v20 = (unsigned __int64)v4;
+    goto LABEL_26;
+  }
+  v12 = a3;
+  result = nn_os_SdkMutexType_TryLock_plt_alt1(a2);
+  if ((result & 1) == 0) {
+    v18 = 0;
+  LABEL_24:
+    v20 = (unsigned __int64)v4;
+    goto LABEL_25;
+  }
+  if (*(_QWORD*)(v9 + 8) == 0) {
+    v14 = *(_QWORD*)(a2 + 8);
+    v13 = (_QWORD*)atomic_exchange_explicit((atomic_ullong* volatile)(a2 + 24),
+                                            0, memory_order_acquire);
+    if (v13 != nullptr) {
+      v15 = *(_QWORD**)(v14 + 8);
+      *v15 = v13;
+      do {
+        v13[1] = v15;
+        v16 = v13;
+        v15 = v13;
+        v13 = (_QWORD*)*v13;
+      } while (v13 != nullptr);
+      *v16 = v14;
+      *(_QWORD*)(v14 + 8) = v16;
+    }
+    if (*(_QWORD*)(v9 + 8) == 0) {
+      v18 = 0;
+      goto LABEL_23;
+    }
+  }
+  __atomic_exchange_n((unsigned int*)(v9 + 8), v9 + 8, 5);
+  __atomic_exchange_n((unsigned int*)v9, (unsigned int)v13, 5);
+  *(_QWORD*)(v9 + 8) = v13;
+  v13[1] = v9 + 8;
+  result = nn_os_SdkMutexType_Unlock_plt_alt1(a2);
+  if (v4 == nullptr) {
+    v18 = 1;
+    v20 = v9;
+  LABEL_25:
+    LOWORD(a3) = v12;
+    goto LABEL_26;
+  }
+  result = nn_os_SdkMutexType_TryLock_plt_alt1(a2);
+  if ((result & 1) != 0) {
+    v17 = *(_QWORD*)(a2 + 8);
+    v18 = 1;
+    v19 = *(_QWORD**)(v17 + 8);
+    *v19 = v4;
+    *(_QWORD*)(v17 + 8) = v4;
+    v4[1] = v19;
+    *v4 = v17;
+    v4 = (_QWORD*)v9;
+  LABEL_23:
+    result = nn_os_SdkMutexType_Unlock_plt_alt1(a2);
+    goto LABEL_24;
+  }
+  v21 = *(_QWORD*)(a2 + 24);
+  LOWORD(a3) = v12;
+  *v4 = v21;
+  v22 = v21;
+  atomic_compare_exchange_strong_explicit(
+      (atomic_ullong* volatile)(a2 + 24), (unsigned __int64*)&v22,
+      (unsigned __int64)v4, memory_order_release, memory_order_relaxed);
+  if (v22 == v21) {
+    v18 = 1;
+    v20 = v9;
+  }
+  else {
+    v18 = 1;
+    v39 = v22;
+    do {
+      *v4 = v22;
+      v20 = v9;
+      atomic_compare_exchange_strong_explicit(
+          (atomic_ullong* volatile)(a2 + 24), (unsigned __int64*)&v39,
+          (unsigned __int64)v4, memory_order_release, memory_order_relaxed);
+      v10 = v39 == v22;
+      v22 = v39;
+    } while (!v10);
+  }
+LABEL_26:
+  if (((unsigned __int16)a3 & 0xFFFu) >= 0xFA0uLL) {
+    nn_diag_detail_AbortImpl_plt_856170_alt1();
+  }
+  v23 = 1LL << ((1311 * (unsigned int)(a3 & 0xFFF)) >> 19);
+  explicit = atomic_load_explicit((atomic_ullong* volatile)(v9 + 24),
+                                  memory_order_acquire);
+  if ((explicit & v23) != 0) {
+  LABEL_31:
+    nn_diag_detail_AbortImpl_plt_856170_alt1();
+  }
+  v25 = explicit;
+  while (1) {
+    v26 = explicit | v23;
+    atomic_compare_exchange_strong((atomic_ullong* volatile)(v9 + 24), &v25,
+                                   explicit | v23);
+    if (v25 == explicit) {
+      break;
+    }
+    explicit = v25;
+    if ((v25 & v23) != 0) {
+      goto LABEL_31;
+    }
+  }
+  if (explicit != 0) {
+    v27 = 1;
+  }
+  else {
+    v27 = v18;
+  }
+  if ((v27 & 1) == 0) {
+    if (v20 != 0) {
+      result = nn_os_SdkMutexType_TryLock_plt_alt1(a2);
+      if ((result & 1) != 0) {
+        v28 = *(_QWORD*)(a2 + 8);
+        v29 = *(unsigned __int64**)(v28 + 8);
+        *v29 = v20;
+        *(_QWORD*)(v28 + 8) = v20;
+        *(_QWORD*)(v20 + 8) = v29;
+        *(_QWORD*)v20 = v28;
+        result = nn_os_SdkMutexType_Unlock_plt_alt1(a2);
+      }
+      else {
+        v30 = *(_QWORD*)(a2 + 24);
+        *(_QWORD*)v20 = v30;
+        v31 = v30;
+        atomic_compare_exchange_strong_explicit(
+            (atomic_ullong* volatile)(a2 + 24), (unsigned __int64*)&v31, v20,
+            memory_order_release, memory_order_relaxed);
+        if (v31 != v30) {
+          v32 = v31;
+          do {
+            *(_QWORD*)v20 = v31;
+            atomic_compare_exchange_strong_explicit(
+                (atomic_ullong* volatile)(a2 + 24), (unsigned __int64*)&v32,
+                v20, memory_order_release, memory_order_relaxed);
+            v10 = v32 == v31;
+            v31 = v32;
+          } while (!v10);
+        }
+      }
+    }
+    v18 = 1;
+    v20 = v9;
+  }
+  if (v5 != 0 && v26 == 1022 && v18 != 0) {
+    if (*(_QWORD*)(v20 + 24) != 1022) {
+      nn_diag_detail_AbortImpl_plt_856170_alt1();
+    }
+    return SdkRoutine_47c4e0_alt1(
+        *(_QWORD*)v8 + 48LL, *(void (**)(void))(*(_QWORD*)v8 + 16LL),
+        *(_QWORD*)(*(_QWORD*)v8 + 32LL), (_QWORD*)(v20 & 0xFFFFFFFFFFFFF000LL),
+        2, 0x1000u);
+  }
+  else if (v20 != 0) {
+    v33 = *(_QWORD**)(a4 + 8);
+    *(_QWORD*)(a4 + 8) = v20;
+    if (v33 != nullptr) {
+      result = nn_os_SdkMutexType_TryLock_plt_alt1(a2);
+      if ((result & 1) != 0) {
+        v34 = *(_QWORD*)(a2 + 8);
+        v35 = *(_QWORD**)(v34 + 8);
+        *v35 = v33;
+        *(_QWORD*)(v34 + 8) = v33;
+        v33[1] = v35;
+        *v33 = v34;
+        return nn_os_SdkMutexType_Unlock_plt_alt1(a2);
+      }
+      else {
+        v36 = *(_QWORD*)(a2 + 24);
+        *v33 = v36;
+        v37 = v36;
+        atomic_compare_exchange_strong_explicit(
+            (atomic_ullong* volatile)(a2 + 24), (unsigned __int64*)&v37,
+            (unsigned __int64)v33, memory_order_release, memory_order_relaxed);
+        if (v37 != v36) {
+          v38 = v37;
+          do {
+            *v33 = v37;
+            atomic_compare_exchange_strong_explicit(
+                (atomic_ullong* volatile)(a2 + 24), (unsigned __int64*)&v38,
+                (unsigned __int64)v33, memory_order_release,
+                memory_order_relaxed);
+            v10 = v38 == v37;
+            v37 = v38;
+          } while (!v10);
+        }
+      }
+    }
+  }
+  return result;
+}
+
+__int64 nn_gs_48b4e0(__int64 result, __int64 a2, unsigned __int64 a3,
+                     __int64 a4)
+{
+  _QWORD* v4;
+  unsigned __int64 v5;
+  __int64 v8;
+  unsigned __int64 v9;
+  bool v10;
+  unsigned __int64 v11;
+  unsigned __int64 v12;
+  _QWORD* v13;
+  __int64 v14;
+  _QWORD* v15;
+  _QWORD* v16;
+  __int64 v17;
+  int v18;
+  _QWORD* v19;
+  unsigned __int64 v20;
+  __int64 v21;
+  __int64 v22;
+  __int64 v23;
+  unsigned __int64 explicit;
+  unsigned __int64 v25;
+  unsigned __int64 v26;
+  char v27;
+  __int64 v28;
+  unsigned __int64* v29;
+  __int64 v30;
+  __int64 v31;
+  __int64 v32;
+  _QWORD* v33;
+  __int64 v34;
+  _QWORD* v35;
+  __int64 v36;
+  __int64 v37;
+  __int64 v38;
+  __int64 v39;
+
+  v4 = *(_QWORD**)(a4 + 24);
+  v5 = a3 & 0xFFFFFFFFFFFFF000LL;
+  v8 = result;
+  *(_QWORD*)(a4 + 24) = 0;
+  v9 = a3 & 0xFFFFFFFFFFFFF000LL | 0x28;
+  v10 = v4 != nullptr & v4 == (_QWORD*)v9;
+  if (v10) {
+    v18 = 1;
+    v20 = (unsigned __int64)v4;
+    goto LABEL_26;
+  }
+  v11 = *(unsigned __int64*)((char*)(*(void*(*)[1])0x18LL) +
+                             (a3 & 0xFFFFFFFFFFFFF000LL | 0x28)) ^
+        0xFE;
+  if ((v11 ^ (v11 - 1)) <= v11 - 1) {
+    v18 = 0;
+    v20 = (unsigned __int64)v4;
+    goto LABEL_26;
+  }
+  v12 = a3;
+  result = nn_os_SdkMutexType_TryLock_plt_alt1(a2);
+  if ((result & 1) == 0) {
+    v18 = 0;
+  LABEL_24:
+    v20 = (unsigned __int64)v4;
+    goto LABEL_25;
+  }
+  if (*(_QWORD*)(v9 + 8) == 0) {
+    v14 = *(_QWORD*)(a2 + 8);
+    v13 = (_QWORD*)atomic_exchange_explicit((atomic_ullong* volatile)(a2 + 24),
+                                            0, memory_order_acquire);
+    if (v13 != nullptr) {
+      v15 = *(_QWORD**)(v14 + 8);
+      *v15 = v13;
+      do {
+        v13[1] = v15;
+        v16 = v13;
+        v15 = v13;
+        v13 = (_QWORD*)*v13;
+      } while (v13 != nullptr);
+      *v16 = v14;
+      *(_QWORD*)(v14 + 8) = v16;
+    }
+    if (*(_QWORD*)(v9 + 8) == 0) {
+      v18 = 0;
+      goto LABEL_23;
+    }
+  }
+  __atomic_exchange_n((unsigned int*)(v9 + 8), v9 + 8, 5);
+  __atomic_exchange_n((unsigned int*)v9, (unsigned int)v13, 5);
+  *(_QWORD*)(v9 + 8) = v13;
+  v13[1] = v9 + 8;
+  result = nn_os_SdkMutexType_Unlock_plt_alt1(a2);
+  if (v4 == nullptr) {
+    v18 = 1;
+    v20 = v9;
+  LABEL_25:
+    a3 = v12;
+    goto LABEL_26;
+  }
+  result = nn_os_SdkMutexType_TryLock_plt_alt1(a2);
+  if ((result & 1) != 0) {
+    v17 = *(_QWORD*)(a2 + 8);
+    v18 = 1;
+    v19 = *(_QWORD**)(v17 + 8);
+    *v19 = v4;
+    *(_QWORD*)(v17 + 8) = v4;
+    v4[1] = v19;
+    *v4 = v17;
+    v4 = (_QWORD*)v9;
+  LABEL_23:
+    result = nn_os_SdkMutexType_Unlock_plt_alt1(a2);
+    goto LABEL_24;
+  }
+  v21 = *(_QWORD*)(a2 + 24);
+  a3 = v12;
+  *v4 = v21;
+  v22 = v21;
+  atomic_compare_exchange_strong_explicit(
+      (atomic_ullong* volatile)(a2 + 24), (unsigned __int64*)&v22,
+      (unsigned __int64)v4, memory_order_release, memory_order_relaxed);
+  if (v22 == v21) {
+    v18 = 1;
+    v20 = v9;
+  }
+  else {
+    v18 = 1;
+    v39 = v22;
+    do {
+      *v4 = v22;
+      v20 = v9;
+      atomic_compare_exchange_strong_explicit(
+          (atomic_ullong* volatile)(a2 + 24), (unsigned __int64*)&v39,
+          (unsigned __int64)v4, memory_order_release, memory_order_relaxed);
+      v10 = v39 == v22;
+      v22 = v39;
+    } while (!v10);
+  }
+LABEL_26:
+  v23 = 1LL << ((a3 >> 9) & 7);
+  explicit = atomic_load_explicit((atomic_ullong* volatile)(v9 + 24),
+                                  memory_order_acquire);
+  if ((explicit & v23) != 0) {
+  LABEL_30:
+    nn_diag_detail_AbortImpl_plt_856170_alt1();
+  }
+  v25 = explicit;
+  while (1) {
+    v26 = explicit | v23;
+    atomic_compare_exchange_strong((atomic_ullong* volatile)(v9 + 24), &v25,
+                                   explicit | v23);
+    if (v25 == explicit) {
+      break;
+    }
+    explicit = v25;
+    if ((v25 & v23) != 0) {
+      goto LABEL_30;
+    }
+  }
+  if (explicit != 0) {
+    v27 = 1;
+  }
+  else {
+    v27 = v18;
+  }
+  if ((v27 & 1) == 0) {
+    if (v20 != 0) {
+      result = nn_os_SdkMutexType_TryLock_plt_alt1(a2);
+      if ((result & 1) != 0) {
+        v28 = *(_QWORD*)(a2 + 8);
+        v29 = *(unsigned __int64**)(v28 + 8);
+        *v29 = v20;
+        *(_QWORD*)(v28 + 8) = v20;
+        *(_QWORD*)(v20 + 8) = v29;
+        *(_QWORD*)v20 = v28;
+        result = nn_os_SdkMutexType_Unlock_plt_alt1(a2);
+      }
+      else {
+        v30 = *(_QWORD*)(a2 + 24);
+        *(_QWORD*)v20 = v30;
+        v31 = v30;
+        atomic_compare_exchange_strong_explicit(
+            (atomic_ullong* volatile)(a2 + 24), (unsigned __int64*)&v31, v20,
+            memory_order_release, memory_order_relaxed);
+        if (v31 != v30) {
+          v32 = v31;
+          do {
+            *(_QWORD*)v20 = v31;
+            atomic_compare_exchange_strong_explicit(
+                (atomic_ullong* volatile)(a2 + 24), (unsigned __int64*)&v32,
+                v20, memory_order_release, memory_order_relaxed);
+            v10 = v32 == v31;
+            v31 = v32;
+          } while (!v10);
+        }
+      }
+    }
+    v18 = 1;
+    v20 = v9;
+  }
+  if (v5 != 0 && v26 == 254 && v18 != 0) {
+    if (*(_QWORD*)(v20 + 24) != 254) {
+      nn_diag_detail_AbortImpl_plt_856170_alt1();
+    }
+    return SdkRoutine_47c4e0_alt1(
+        *(_QWORD*)v8 + 48LL, *(void (**)(void))(*(_QWORD*)v8 + 16LL),
+        *(_QWORD*)(*(_QWORD*)v8 + 32LL), (_QWORD*)(v20 & 0xFFFFFFFFFFFFF000LL),
+        2, 0x1000u);
+  }
+  else if (v20 != 0) {
+    v33 = *(_QWORD**)(a4 + 24);
+    *(_QWORD*)(a4 + 24) = v20;
+    if (v33 != nullptr) {
+      result = nn_os_SdkMutexType_TryLock_plt_alt1(a2);
+      if ((result & 1) != 0) {
+        v34 = *(_QWORD*)(a2 + 8);
+        v35 = *(_QWORD**)(v34 + 8);
+        *v35 = v33;
+        *(_QWORD*)(v34 + 8) = v33;
+        v33[1] = v35;
+        *v33 = v34;
+        return nn_os_SdkMutexType_Unlock_plt_alt1(a2);
+      }
+      else {
+        v36 = *(_QWORD*)(a2 + 24);
+        *v33 = v36;
+        v37 = v36;
+        atomic_compare_exchange_strong_explicit(
+            (atomic_ullong* volatile)(a2 + 24), (unsigned __int64*)&v37,
+            (unsigned __int64)v33, memory_order_release, memory_order_relaxed);
+        if (v37 != v36) {
+          v38 = v37;
+          do {
+            *v33 = v37;
+            atomic_compare_exchange_strong_explicit(
+                (atomic_ullong* volatile)(a2 + 24), (unsigned __int64*)&v38,
+                (unsigned __int64)v33, memory_order_release,
+                memory_order_relaxed);
+            v10 = v38 == v37;
+            v37 = v38;
+          } while (!v10);
+        }
+      }
+    }
+  }
+  return result;
+}
+
+__int64 nn_gs_48b880(__int64 result, __int64 a2, __int64 a3, __int64 a4)
+{
+  _QWORD* v4;
+  unsigned __int64 v5;
+  __int64 v8;
+  unsigned __int64 v9;
+  bool v10;
+  unsigned __int64 v11;
+  __int16 v12;
+  _QWORD* v13;
+  __int64 v14;
+  _QWORD* v15;
+  _QWORD* v16;
+  __int64 v17;
+  int v18;
+  _QWORD* v19;
+  unsigned __int64 v20;
+  __int64 v21;
+  __int64 v22;
+  __int64 v23;
+  unsigned __int64 explicit;
+  unsigned __int64 v25;
+  unsigned __int64 v26;
+  char v27;
+  __int64 v28;
+  unsigned __int64* v29;
+  __int64 v30;
+  __int64 v31;
+  __int64 v32;
+  _QWORD* v33;
+  __int64 v34;
+  _QWORD* v35;
+  __int64 v36;
+  __int64 v37;
+  __int64 v38;
+  __int64 v39;
+
+  v4 = *(_QWORD**)(a4 + 32);
+  v5 = a3 & 0xFFFFFFFFFFFFF000LL;
+  v8 = result;
+  *(_QWORD*)(a4 + 32) = 0;
+  v9 = a3 & 0xFFFFFFFFFFFFF000LL | 0x28;
+  v10 = v4 != nullptr & v4 == (_QWORD*)v9;
+  if (v10) {
+    v18 = 1;
+    v20 = (unsigned __int64)v4;
+    goto LABEL_26;
+  }
+  v11 = *(unsigned __int64*)((char*)(*(void*(*)[1])0x18LL) +
+                             (a3 & 0xFFFFFFFFFFFFF000LL | 0x28)) ^
+        0x7E;
+  if ((v11 ^ (v11 - 1)) <= v11 - 1) {
+    v18 = 0;
+    v20 = (unsigned __int64)v4;
+    goto LABEL_26;
+  }
+  v12 = a3;
+  result = nn_os_SdkMutexType_TryLock_plt_alt1(a2);
+  if ((result & 1) == 0) {
+    v18 = 0;
+  LABEL_24:
+    v20 = (unsigned __int64)v4;
+    goto LABEL_25;
+  }
+  if (*(_QWORD*)(v9 + 8) == 0) {
+    v14 = *(_QWORD*)(a2 + 8);
+    v13 = (_QWORD*)atomic_exchange_explicit((atomic_ullong* volatile)(a2 + 24),
+                                            0, memory_order_acquire);
+    if (v13 != nullptr) {
+      v15 = *(_QWORD**)(v14 + 8);
+      *v15 = v13;
+      do {
+        v13[1] = v15;
+        v16 = v13;
+        v15 = v13;
+        v13 = (_QWORD*)*v13;
+      } while (v13 != nullptr);
+      *v16 = v14;
+      *(_QWORD*)(v14 + 8) = v16;
+    }
+    if (*(_QWORD*)(v9 + 8) == 0) {
+      v18 = 0;
+      goto LABEL_23;
+    }
+  }
+  __atomic_exchange_n((unsigned int*)(v9 + 8), v9 + 8, 5);
+  __atomic_exchange_n((unsigned int*)v9, (unsigned int)v13, 5);
+  *(_QWORD*)(v9 + 8) = v13;
+  v13[1] = v9 + 8;
+  result = nn_os_SdkMutexType_Unlock_plt_alt1(a2);
+  if (v4 == nullptr) {
+    v18 = 1;
+    v20 = v9;
+  LABEL_25:
+    LOWORD(a3) = v12;
+    goto LABEL_26;
+  }
+  result = nn_os_SdkMutexType_TryLock_plt_alt1(a2);
+  if ((result & 1) != 0) {
+    v17 = *(_QWORD*)(a2 + 8);
+    v18 = 1;
+    v19 = *(_QWORD**)(v17 + 8);
+    *v19 = v4;
+    *(_QWORD*)(v17 + 8) = v4;
+    v4[1] = v19;
+    *v4 = v17;
+    v4 = (_QWORD*)v9;
+  LABEL_23:
+    result = nn_os_SdkMutexType_Unlock_plt_alt1(a2);
+    goto LABEL_24;
+  }
+  v21 = *(_QWORD*)(a2 + 24);
+  LOWORD(a3) = v12;
+  *v4 = v21;
+  v22 = v21;
+  atomic_compare_exchange_strong_explicit(
+      (atomic_ullong* volatile)(a2 + 24), (unsigned __int64*)&v22,
+      (unsigned __int64)v4, memory_order_release, memory_order_relaxed);
+  if (v22 == v21) {
+    v18 = 1;
+    v20 = v9;
+  }
+  else {
+    v18 = 1;
+    v39 = v22;
+    do {
+      *v4 = v22;
+      v20 = v9;
+      atomic_compare_exchange_strong_explicit(
+          (atomic_ullong* volatile)(a2 + 24), (unsigned __int64*)&v39,
+          (unsigned __int64)v4, memory_order_release, memory_order_relaxed);
+      v10 = v39 == v22;
+      v22 = v39;
+    } while (!v10);
+  }
+LABEL_26:
+  if (((unsigned __int16)a3 & 0xFFFu) >= 0xFC0uLL) {
+    nn_diag_detail_AbortImpl_plt_856170_alt1();
+  }
+  v23 = 1LL << ((3641 * (unsigned int)(a3 & 0xFFF)) >> 21);
+  explicit = atomic_load_explicit((atomic_ullong* volatile)(v9 + 24),
+                                  memory_order_acquire);
+  if ((explicit & v23) != 0) {
+  LABEL_31:
+    nn_diag_detail_AbortImpl_plt_856170_alt1();
+  }
+  v25 = explicit;
+  while (1) {
+    v26 = explicit | v23;
+    atomic_compare_exchange_strong((atomic_ullong* volatile)(v9 + 24), &v25,
+                                   explicit | v23);
+    if (v25 == explicit) {
+      break;
+    }
+    explicit = v25;
+    if ((v25 & v23) != 0) {
+      goto LABEL_31;
+    }
+  }
+  if (explicit != 0) {
+    v27 = 1;
+  }
+  else {
+    v27 = v18;
+  }
+  if ((v27 & 1) == 0) {
+    if (v20 != 0) {
+      result = nn_os_SdkMutexType_TryLock_plt_alt1(a2);
+      if ((result & 1) != 0) {
+        v28 = *(_QWORD*)(a2 + 8);
+        v29 = *(unsigned __int64**)(v28 + 8);
+        *v29 = v20;
+        *(_QWORD*)(v28 + 8) = v20;
+        *(_QWORD*)(v20 + 8) = v29;
+        *(_QWORD*)v20 = v28;
+        result = nn_os_SdkMutexType_Unlock_plt_alt1(a2);
+      }
+      else {
+        v30 = *(_QWORD*)(a2 + 24);
+        *(_QWORD*)v20 = v30;
+        v31 = v30;
+        atomic_compare_exchange_strong_explicit(
+            (atomic_ullong* volatile)(a2 + 24), (unsigned __int64*)&v31, v20,
+            memory_order_release, memory_order_relaxed);
+        if (v31 != v30) {
+          v32 = v31;
+          do {
+            *(_QWORD*)v20 = v31;
+            atomic_compare_exchange_strong_explicit(
+                (atomic_ullong* volatile)(a2 + 24), (unsigned __int64*)&v32,
+                v20, memory_order_release, memory_order_relaxed);
+            v10 = v32 == v31;
+            v31 = v32;
+          } while (!v10);
+        }
+      }
+    }
+    v18 = 1;
+    v20 = v9;
+  }
+  if (v5 != 0 && v26 == 126 && v18 != 0) {
+    if (*(_QWORD*)(v20 + 24) != 126) {
+      nn_diag_detail_AbortImpl_plt_856170_alt1();
+    }
+    return SdkRoutine_47c4e0_alt1(
+        *(_QWORD*)v8 + 48LL, *(void (**)(void))(*(_QWORD*)v8 + 16LL),
+        *(_QWORD*)(*(_QWORD*)v8 + 32LL), (_QWORD*)(v20 & 0xFFFFFFFFFFFFF000LL),
+        2, 0x1000u);
+  }
+  else if (v20 != 0) {
+    v33 = *(_QWORD**)(a4 + 32);
+    *(_QWORD*)(a4 + 32) = v20;
+    if (v33 != nullptr) {
+      result = nn_os_SdkMutexType_TryLock_plt_alt1(a2);
+      if ((result & 1) != 0) {
+        v34 = *(_QWORD*)(a2 + 8);
+        v35 = *(_QWORD**)(v34 + 8);
+        *v35 = v33;
+        *(_QWORD*)(v34 + 8) = v33;
+        v33[1] = v35;
+        *v33 = v34;
+        return nn_os_SdkMutexType_Unlock_plt_alt1(a2);
+      }
+      else {
+        v36 = *(_QWORD*)(a2 + 24);
+        *v33 = v36;
+        v37 = v36;
+        atomic_compare_exchange_strong_explicit(
+            (atomic_ullong* volatile)(a2 + 24), (unsigned __int64*)&v37,
+            (unsigned __int64)v33, memory_order_release, memory_order_relaxed);
+        if (v37 != v36) {
+          v38 = v37;
+          do {
+            *v33 = v37;
+            atomic_compare_exchange_strong_explicit(
+                (atomic_ullong* volatile)(a2 + 24), (unsigned __int64*)&v38,
+                (unsigned __int64)v33, memory_order_release,
+                memory_order_relaxed);
+            v10 = v38 == v37;
+            v37 = v38;
+          } while (!v10);
+        }
+      }
+    }
+  }
+  return result;
+}
+
+__int64 nn_gs_48c000(__int64 result, __int64 a2, __int64 a3, __int64 a4)
+{
+  _QWORD* v4;
+  unsigned __int64 v5;
+  __int64 v8;
+  unsigned __int64 v9;
+  bool v10;
+  unsigned __int64 v11;
+  __int16 v12;
+  _QWORD* v13;
+  __int64 v14;
+  _QWORD* v15;
+  _QWORD* v16;
+  __int64 v17;
+  int v18;
+  _QWORD* v19;
+  unsigned __int64 v20;
+  __int64 v21;
+  __int64 v22;
+  __int64 v23;
+  unsigned __int64 explicit;
+  unsigned __int64 v25;
+  unsigned __int64 v26;
+  char v27;
+  __int64 v28;
+  unsigned __int64* v29;
+  __int64 v30;
+  __int64 v31;
+  __int64 v32;
+  _QWORD* v33;
+  __int64 v34;
+  _QWORD* v35;
+  __int64 v36;
+  __int64 v37;
+  __int64 v38;
+  __int64 v39;
+
+  v4 = *(_QWORD**)(a4 + 48);
+  v5 = a3 & 0xFFFFFFFFFFFFF000LL;
+  v8 = result;
+  *(_QWORD*)(a4 + 48) = 0;
+  v9 = a3 & 0xFFFFFFFFFFFFF000LL | 0x28;
+  v10 = v4 != nullptr & v4 == (_QWORD*)v9;
+  if (v10) {
+    v18 = 1;
+    v20 = (unsigned __int64)v4;
+    goto LABEL_26;
+  }
+  v11 = *(unsigned __int64*)((char*)(*(void*(*)[1])0x18LL) +
+                             (a3 & 0xFFFFFFFFFFFFF000LL | 0x28)) ^
+        0x1E;
+  if ((v11 ^ (v11 - 1)) <= v11 - 1) {
+    v18 = 0;
+    v20 = (unsigned __int64)v4;
+    goto LABEL_26;
+  }
+  v12 = a3;
+  result = nn_os_SdkMutexType_TryLock_plt_alt1(a2);
+  if ((result & 1) == 0) {
+    v18 = 0;
+  LABEL_24:
+    v20 = (unsigned __int64)v4;
+    goto LABEL_25;
+  }
+  if (*(_QWORD*)(v9 + 8) == 0) {
+    v14 = *(_QWORD*)(a2 + 8);
+    v13 = (_QWORD*)atomic_exchange_explicit((atomic_ullong* volatile)(a2 + 24),
+                                            0, memory_order_acquire);
+    if (v13 != nullptr) {
+      v15 = *(_QWORD**)(v14 + 8);
+      *v15 = v13;
+      do {
+        v13[1] = v15;
+        v16 = v13;
+        v15 = v13;
+        v13 = (_QWORD*)*v13;
+      } while (v13 != nullptr);
+      *v16 = v14;
+      *(_QWORD*)(v14 + 8) = v16;
+    }
+    if (*(_QWORD*)(v9 + 8) == 0) {
+      v18 = 0;
+      goto LABEL_23;
+    }
+  }
+  __atomic_exchange_n((unsigned int*)(v9 + 8), v9 + 8, 5);
+  __atomic_exchange_n((unsigned int*)v9, (unsigned int)v13, 5);
+  *(_QWORD*)(v9 + 8) = v13;
+  v13[1] = v9 + 8;
+  result = nn_os_SdkMutexType_Unlock_plt_alt1(a2);
+  if (v4 == nullptr) {
+    v18 = 1;
+    v20 = v9;
+  LABEL_25:
+    LOWORD(a3) = v12;
+    goto LABEL_26;
+  }
+  result = nn_os_SdkMutexType_TryLock_plt_alt1(a2);
+  if ((result & 1) != 0) {
+    v17 = *(_QWORD*)(a2 + 8);
+    v18 = 1;
+    v19 = *(_QWORD**)(v17 + 8);
+    *v19 = v4;
+    *(_QWORD*)(v17 + 8) = v4;
+    v4[1] = v19;
+    *v4 = v17;
+    v4 = (_QWORD*)v9;
+  LABEL_23:
+    result = nn_os_SdkMutexType_Unlock_plt_alt1(a2);
+    goto LABEL_24;
+  }
+  v21 = *(_QWORD*)(a2 + 24);
+  LOWORD(a3) = v12;
+  *v4 = v21;
+  v22 = v21;
+  atomic_compare_exchange_strong_explicit(
+      (atomic_ullong* volatile)(a2 + 24), (unsigned __int64*)&v22,
+      (unsigned __int64)v4, memory_order_release, memory_order_relaxed);
+  if (v22 == v21) {
+    v18 = 1;
+    v20 = v9;
+  }
+  else {
+    v18 = 1;
+    v39 = v22;
+    do {
+      *v4 = v22;
+      v20 = v9;
+      atomic_compare_exchange_strong_explicit(
+          (atomic_ullong* volatile)(a2 + 24), (unsigned __int64*)&v39,
+          (unsigned __int64)v4, memory_order_release, memory_order_relaxed);
+      v10 = v39 == v22;
+      v22 = v39;
+    } while (!v10);
+  }
+LABEL_26:
+  if (((unsigned __int16)a3 & 0xFFFu) >= 0xFF0uLL) {
+    nn_diag_detail_AbortImpl_plt_856170_alt1();
+  }
+  v23 = 1LL << ((5141 * (unsigned int)(a3 & 0xFFF)) >> 22);
+  explicit = atomic_load_explicit((atomic_ullong* volatile)(v9 + 24),
+                                  memory_order_acquire);
+  if ((explicit & v23) != 0) {
+  LABEL_31:
+    nn_diag_detail_AbortImpl_plt_856170_alt1();
+  }
+  v25 = explicit;
+  while (1) {
+    v26 = explicit | v23;
+    atomic_compare_exchange_strong((atomic_ullong* volatile)(v9 + 24), &v25,
+                                   explicit | v23);
+    if (v25 == explicit) {
+      break;
+    }
+    explicit = v25;
+    if ((v25 & v23) != 0) {
+      goto LABEL_31;
+    }
+  }
+  if (explicit != 0) {
+    v27 = 1;
+  }
+  else {
+    v27 = v18;
+  }
+  if ((v27 & 1) == 0) {
+    if (v20 != 0) {
+      result = nn_os_SdkMutexType_TryLock_plt_alt1(a2);
+      if ((result & 1) != 0) {
+        v28 = *(_QWORD*)(a2 + 8);
+        v29 = *(unsigned __int64**)(v28 + 8);
+        *v29 = v20;
+        *(_QWORD*)(v28 + 8) = v20;
+        *(_QWORD*)(v20 + 8) = v29;
+        *(_QWORD*)v20 = v28;
+        result = nn_os_SdkMutexType_Unlock_plt_alt1(a2);
+      }
+      else {
+        v30 = *(_QWORD*)(a2 + 24);
+        *(_QWORD*)v20 = v30;
+        v31 = v30;
+        atomic_compare_exchange_strong_explicit(
+            (atomic_ullong* volatile)(a2 + 24), (unsigned __int64*)&v31, v20,
+            memory_order_release, memory_order_relaxed);
+        if (v31 != v30) {
+          v32 = v31;
+          do {
+            *(_QWORD*)v20 = v31;
+            atomic_compare_exchange_strong_explicit(
+                (atomic_ullong* volatile)(a2 + 24), (unsigned __int64*)&v32,
+                v20, memory_order_release, memory_order_relaxed);
+            v10 = v32 == v31;
+            v31 = v32;
+          } while (!v10);
+        }
+      }
+    }
+    v18 = 1;
+    v20 = v9;
+  }
+  if (v5 != 0 && v26 == 30 && v18 != 0) {
+    if (*(_QWORD*)(v20 + 24) != 30) {
+      nn_diag_detail_AbortImpl_plt_856170_alt1();
+    }
+    return SdkRoutine_47c4e0_alt1(
+        *(_QWORD*)v8 + 48LL, *(void (**)(void))(*(_QWORD*)v8 + 16LL),
+        *(_QWORD*)(*(_QWORD*)v8 + 32LL), (_QWORD*)(v20 & 0xFFFFFFFFFFFFF000LL),
+        2, 0x1000u);
+  }
+  else if (v20 != 0) {
+    v33 = *(_QWORD**)(a4 + 48);
+    *(_QWORD*)(a4 + 48) = v20;
+    if (v33 != nullptr) {
+      result = nn_os_SdkMutexType_TryLock_plt_alt1(a2);
+      if ((result & 1) != 0) {
+        v34 = *(_QWORD*)(a2 + 8);
+        v35 = *(_QWORD**)(v34 + 8);
+        *v35 = v33;
+        *(_QWORD*)(v34 + 8) = v33;
+        v33[1] = v35;
+        *v33 = v34;
+        return nn_os_SdkMutexType_Unlock_plt_alt1(a2);
+      }
+      else {
+        v36 = *(_QWORD*)(a2 + 24);
+        *v33 = v36;
+        v37 = v36;
+        atomic_compare_exchange_strong_explicit(
+            (atomic_ullong* volatile)(a2 + 24), (unsigned __int64*)&v37,
+            (unsigned __int64)v33, memory_order_release, memory_order_relaxed);
+        if (v37 != v36) {
+          v38 = v37;
+          do {
+            *v33 = v37;
+            atomic_compare_exchange_strong_explicit(
+                (atomic_ullong* volatile)(a2 + 24), (unsigned __int64*)&v38,
+                (unsigned __int64)v33, memory_order_release,
+                memory_order_relaxed);
+            v10 = v38 == v37;
+            v37 = v38;
+          } while (!v10);
+        }
+      }
+    }
+  }
+  return result;
 }
 
 __int64 unplaced_48cb20(__int64 result, unsigned __int64 a2)
