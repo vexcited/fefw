@@ -5443,15 +5443,15 @@ void memory_eaeda0(__int64 a1, int a2, __int64* a3)
     f_.v18 = -1;
     v10 = *(_DWORD*)(v8 + 24);
     if (v10 != -1) {
-      v11 = GameData_1fedea0[v10];
+      v11 = GameData_1fedea0[(unsigned int)v10];
       v19 = f_.v17;
       ((void (*)(_BYTE**, __int64))v11)(&v19, v8);
       f_.v18 = v10;
     }
     GameRoutine_eaec10((__int64*)(a1 + 64), (__int64)f_.v17);
     if (f_.v18 != -1) {
-      ((void (*)(_BYTE**, _BYTE*))decltype_c81af0_ptr_1fede88[f_.v18])(&v19,
-                                                                       f_.v17);
+      ((void (*)(_BYTE**, _BYTE*))
+           decltype_c81af0_ptr_1fede88[(unsigned int)f_.v18])(&v19, f_.v17);
     }
   }
   *(_DWORD*)(a1 + 96) = *((_DWORD*)a3 + 12);

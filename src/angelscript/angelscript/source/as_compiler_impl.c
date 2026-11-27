@@ -666,7 +666,7 @@ __int64 asCCompiler_CompileOverloadedDualOperator(__int64 a1,
         if ((unsigned int)(v21 - 21) > 0x10 || ((0x10FFFu >> v37) & 1) == 0) {
           return v22;
         }
-        v36 = GameData_1f7a368[v37];
+        v36 = GameData_1f7a368[(unsigned int)v37];
       }
       if (*(_BYTE*)(*(_QWORD*)(*(_QWORD*)(a1 + 128) + 16LL) + 13916LL) == 1) {
         v38 = *(_QWORD*)(a3 + 112);

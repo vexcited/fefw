@@ -680,7 +680,7 @@ __int64 nvidia_64f5d0(__int64 a1, __int64 a2, int a3, __int64 a4, int a5,
     *v40 = 537026708;
     v40[1] = *(_DWORD*)(a2 + 4);
     v40[2] = *(_QWORD*)a2;
-    v41 = &v25[48 * a5];
+    v41 = &v25[48LL * a5];
     if (*(_DWORD*)(a4 + 24) == 2) {
       v42 = 3;
       v43 = 10;
@@ -740,7 +740,7 @@ __int64 nvidia_64f5d0(__int64 a1, __int64 a2, int a3, __int64 a4, int a5,
     v38 = *(_DWORD**)a1;
     result = 536961157;
   }
-  v54 = &v25[48 * a5];
+  v54 = &v25[48LL * a5];
   v55 = v54[14] != 0 || v54[15] != 0;
   v56 = *(_DWORD*)(a4 + 24) != 1 && v55;
   if (v56 == 1) {

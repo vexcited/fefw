@@ -887,7 +887,7 @@ LABEL_23:
       }
       v24 = v23 - 46;
       if ((unsigned int)(v23 - 46) <= 6 && ((0x7Bu >> v24) & 1) != 0) {
-        v22 = GameData_1b0ba00[v24];
+        v22 = GameData_1b0ba00[(unsigned int)v24];
         goto LABEL_53;
       }
       if ((unsigned int)(v23 - 55) < 4) {
@@ -954,7 +954,7 @@ LABEL_23:
         }
         v31 = v30 - 46;
         if ((unsigned int)(v30 - 46) <= 6 && ((0x7Bu >> v31) & 1) != 0) {
-          v29 = GameData_1b0ba00[v31];
+          v29 = GameData_1b0ba00[(unsigned int)v31];
           goto LABEL_68;
         }
         if ((unsigned int)(v30 - 55) < 4) {
