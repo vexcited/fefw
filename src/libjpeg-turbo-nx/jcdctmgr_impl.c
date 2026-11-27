@@ -13,6 +13,7 @@ extern __int64 SdkData_e86928;
 extern __int64 SdkData_e86930;
 extern __int64 SdkData_e86938;
 __int64 nndetailImageJpeg_jinit_forward_dct(__int64 a1);
+__int64 SdkHr_20700(__int64 result, unsigned __int16* a2, __int64 a3);
 
 __int64 nndetailImageJpeg_jinit_forward_dct(__int64 a1)
 {
@@ -108,6 +109,61 @@ LABEL_13:
   v3[16] = 0;
   v3[13] = 0;
   v3[14] = 0;
+  return result;
+}
+
+__int64 SdkHr_20700(__int64 result, unsigned __int16* a2, __int64 a3)
+{
+  __int16* v3;
+  _WORD* v4;
+  __int64 i;
+  int v6;
+  int v7;
+  int v8;
+  unsigned int v9;
+  unsigned int v10;
+  int v11;
+  int v12;
+  int v13;
+  int v14;
+  unsigned __int16 v15;
+  unsigned int v16;
+  unsigned int v17;
+  int v18;
+
+  v3 = (__int16*)(a3 + 2);
+  v4 = (_WORD*)(result + 2);
+  for (i = 64; i != 0; i -= 2) {
+    v6 = *(v3 - 1);
+    v7 = a2[64];
+    v8 = *a2;
+    v9 = (unsigned int)((v7 + v6) * v8) >> (a2[192] + 16);
+    v10 = (unsigned int)((v7 + (__int16)-*(v3 - 1)) * v8) >> (a2[192] + 16);
+    if (v6 < 0) {
+      v11 = -v10;
+    }
+    else {
+      LOWORD(v11) = v9;
+    }
+    *(v4 - 1) = v11;
+    v12 = *v3;
+    v13 = a2[65];
+    v14 = a2[1];
+    v15 = a2[193];
+    v3 += 2;
+    a2 += 2;
+    LOBYTE(v15) = v15 + 16;
+    v16 = (unsigned int)((v13 + (__int16)-(__int16)v12) * v14) >> v15;
+    v17 = (unsigned int)((v13 + v12) * v14) >> v15;
+    if (v12 < 0) {
+      v18 = -v16;
+    }
+    else {
+      LOWORD(v18) = v17;
+    }
+    *v4 = v18;
+    v4 += 2;
+  }
   return result;
 }
 

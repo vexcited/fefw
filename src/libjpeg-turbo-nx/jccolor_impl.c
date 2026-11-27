@@ -4,6 +4,107 @@
 
 __int64 jccolor_1c380(__int64 result, unsigned __int8** a2, _QWORD* a3,
                       unsigned int a4, int a5);
+__int64 SdkHr_1c120(__int64 result, char** a2, _QWORD* a3, unsigned int a4,
+                    int a5);
+
+__int64 SdkHr_1c120(__int64 result, char** a2, _QWORD* a3, unsigned int a4,
+                    int a5)
+{
+  unsigned int v5;
+  __int64 v6;
+  char* v8;
+  __int64 v9;
+  __int64 v10;
+  _BYTE* v11;
+  __int64 v12;
+  char v13;
+  char* v14;
+  char v15;
+  char* v16;
+  char v17;
+  char* v18;
+  char v19;
+  char* v20;
+  char v21;
+  char* v22;
+  char v23;
+  char* v24;
+  char v25;
+  char* v26;
+  char v27;
+  _BYTE* v28;
+  __int64 v29;
+  char v30;
+
+  if (a5 >= 1) {
+    v5 = *(_DWORD*)(result + 56);
+    if (v5 != 0) {
+      v6 = *(int*)(result + 64);
+      while (1) {
+        v8 = *a2;
+        v9 = *(_QWORD*)(*a3 + 8LL * a4);
+        if (v5 >= 8) {
+          break;
+        }
+        v10 = 0;
+        if ((v5 & 7) != 0) {
+          goto LABEL_12;
+        }
+      LABEL_4:
+        ++a2;
+        ++a4;
+        if ((unsigned int)a5-- <= 1) {
+          return result;
+        }
+      }
+      v11 = (_BYTE*)(v9 + 3);
+      v12 = 0;
+      do {
+        v13 = *v8;
+        v14 = &v8[v6];
+        v12 -= 8;
+        *(v11 - 3) = v13;
+        v15 = *v14;
+        v16 = &v14[v6];
+        *(v11 - 2) = v15;
+        v17 = *v16;
+        v18 = &v16[v6];
+        *(v11 - 1) = v17;
+        v19 = *v18;
+        v20 = &v18[v6];
+        *v11 = v19;
+        v21 = *v20;
+        v22 = &v20[v6];
+        v11[1] = v21;
+        v23 = *v22;
+        v24 = &v22[v6];
+        v11[2] = v23;
+        v25 = *v24;
+        v26 = &v24[v6];
+        v11[3] = v25;
+        v27 = *v26;
+        v8 = &v26[v6];
+        v11[4] = v27;
+        v11 += 8;
+      } while (-(__int64)(v5 & 0xFFFFFFF8) != v12);
+      v10 = -v12;
+      if ((v5 & 7) == 0) {
+        goto LABEL_4;
+      }
+    LABEL_12:
+      v28 = (_BYTE*)(v9 + v10);
+      v29 = v5 & 7;
+      do {
+        v30 = *v8;
+        v8 += v6;
+        --v29;
+        *v28++ = v30;
+      } while (v29 != 0);
+      goto LABEL_4;
+    }
+  }
+  return result;
+}
 
 __int64 jccolor_1c380(__int64 result, unsigned __int8** a2, _QWORD* a3,
                       unsigned int a4, int a5)

@@ -442,8 +442,9 @@ ffe0,36,verified,src/nn/crypto/detail/sha3_impl.cpp,_ZNK2nn6crypto6detail8Sha3Im
 1bac0,540,verified,src/libjpeg-turbo-nx/jccoefct.c,_ZL15compress_outputP20jpeg_compress_structPPPh
 1bcf0,852,verified,src/libjpeg-turbo-nx/jccolor.c,jinit_color_converter
 1c100,4,verified,src/libjpeg-turbo/jccolor.c,null_method
+1c120,248,verified,src/libjpeg-turbo-nx/jccolor_impl.c,SdkHr_1c120
 1c240,308,verified,src/libjpeg-turbo-nx/jccolor.c,_ZL13rgb_ycc_startP20jpeg_compress_struct
-1c380,3608,verified,src/libjpeg-turbo-nx/jccolor_impl.c,jccolor_1c380
+1c380,3668,verified,src/libjpeg-turbo-nx/jccolor_impl.c,jccolor_1c380
 1d2a0,272,verified,src/libjpeg-turbo-nx/jccolor.c,rgb_gray_convert
 1d9c0,1808,verified,src/libjpeg-turbo-nx/jccolor.c,_ZL15rgb_rgb_convertP20jpeg_compress_structPPhPS2_ji
 1e560,4820,verified,src/libjpeg-turbo-nx/unplaced_2.c,libjpeg_turbo_nx_1e560
@@ -452,6 +453,7 @@ ffe0,36,verified,src/nn/crypto/detail/sha3_impl.cpp,_ZNK2nn6crypto6detail8Sha3Im
 1ff00,1232,disputed,src/libjpeg-turbo-nx/unplaced_4.c,libjpegturbonx_1ff00
 20580,168,verified,src/libjpeg-turbo-nx/jcdctmgr.c,_ZL11forward_DCTP20jpeg_compress_structP19jpeg_component_infoPPhPA64_sjjj
 20640,168,verified,src/libjpeg-turbo-nx/jcdctmgr.c,_ZL17forward_DCT_floatP20jpeg_compress_structP19jpeg_component_infoPPhPA64_sjjj
+20700,152,verified,src/libjpeg-turbo-nx/jcdctmgr_impl.c,SdkHr_20700
 207a0,1848,verified,src/image/jpeg_encoder_control.cpp,jpeg_encoder_control::derive
 20f20,1316,verified,src/image/jpeg_encoder_control.cpp,jpeg_encoder_control::optimal
 214c0,96,verified,src/image/jpeg_encoder_control.cpp,jpeg_encoder_control::init
@@ -581,6 +583,7 @@ ffe0,36,verified,src/nn/crypto/detail/sha3_impl.cpp,_ZNK2nn6crypto6detail8Sha3Im
 40680,764,verified,src/image/jpeg_color.cpp,jpeg_color::rgb_rgb565D_convert
 409a0,664,verified,src/image/jpeg_color.cpp,jpeg_color::ycck_cmyk_convert
 40c60,224,verified,src/libjpeg-turbo-nx/jddctmgr.c,jinit_inverse_dct
+40d60,2896,verified,src/libjpeg-turbo-nx/jddctmgr_impl.c,SdkHr_40d60
 418e0,4296,verified,src/image/jpeg_entropy.cpp,jpeg_entropy::derive
 42a40,380,verified,src/image/jpeg_entropy.cpp,jpeg_entropy::fill
 42be0,356,verified,src/image/jpeg_entropy.cpp,jpeg_entropy::huff
@@ -690,6 +693,7 @@ ffe0,36,verified,src/nn/crypto/detail/sha3_impl.cpp,_ZNK2nn6crypto6detail8Sha3Im
 558b0,692,verified,src/libjpeg-turbo-nx/jquant2.c,_ZL18start_pass_2_quantP22jpeg_decompress_structi
 55bd0,16,verified,src/libjpeg-turbo-nx/jquant2.c,_ZL21new_color_map_2_quantP22jpeg_decompress_struct
 55be0,808,verified,src/libjpeg-turbo-nx/jquant2.c,_ZL16init_error_limitP22jpeg_decompress_struct
+55f20,672,verified,src/libjpeg-turbo-nx/jquant2_impl.c,SdkHr_55f20
 561e0,80,verified,src/libjpeg-turbo/jquant2.c,finish_pass1
 56a60,936,verified,src/libjpeg-turbo-nx/jquant2_impl.c,pass2_fs_dither
 56e40,228,verified,src/libjpeg-turbo-nx/jquant2.c,_ZL15pass2_no_ditherP22jpeg_decompress_structPPhS2_i
@@ -26082,7 +26086,7 @@ ffee0,324,verified,src/nn/fs/unplaced.c,nn_fs_GetAndClearMemoryReportInfo
 6570f0,8,verified,src/nn/sdk_trivial.cpp,_Z14SdkStub_6570f0mm
 657100,12,verified,src/nn/unnamed/u000_1.c,SdkHr_657100
 657110,60,verified,src/nn/unnamed/s003_2.c,SdkHr_657110
-657150,84,disputed,src/nn/unplaced_3.c,nn_657150
+657150,84,verified,src/nn/unplaced_3.c,nn_657150
 6571b0,8,verified,src/nn/unnamed/u000_1.c,SdkHr_6571b0
 6571c0,1748,verified,src/nn/unnamed/s003_2.c,SdkHr_6571c0
 657b60,376,verified,src/nn/unnamed/s900_0.c,SdkHr_657b60
@@ -26328,7 +26332,7 @@ ffee0,324,verified,src/nn/fs/unplaced.c,nn_fs_GetAndClearMemoryReportInfo
 65fae0,488,verified,src/nn/unnamed/s003_2.c,SdkHr_65fae0
 65fcd0,8,verified,src/nn/sdk_trivial_thunks.cpp,_Z14SdkStub_65fcd0mmm
 65fce0,1280,disputed,src/nn/unplaced_3.c,nn_65fce0
-660780,268,disputed,src/nn/unplaced_3.c,nn_660780
+660780,268,verified,src/nn/unplaced_3.c,nn_660780
 6608a0,144,verified,src/nn/unnamed/s003_2.c,SdkHr_6608a0
 660940,968,verified,src/nn/unnamed/s003_2.c,SdkHr_660940
 660d10,24,verified,src/nn/unnamed/s003_2.c,SdkHr_660d10
@@ -26351,7 +26355,7 @@ ffee0,324,verified,src/nn/fs/unplaced.c,nn_fs_GetAndClearMemoryReportInfo
 660e70,8,verified,src/nn/sdk_trivial.cpp,_Z14SdkStub_660e70m
 660e80,8,verified,src/nn/sdk_trivial.cpp,_Z14SdkStub_660e80m
 660e90,140,verified,src/nn/unnamed/s003_2.c,SdkHr_660e90
-660f20,3140,disputed,src/nn/unplaced_3.c,nn_660f20
+660f20,3416,disputed,src/nn/unplaced_3.c,nn_660f20
 661d40,164,verified,src/nn/unnamed/s003_2.c,SdkHr_661d40
 661df0,44,verified,src/nn/unnamed/s003_2.c,SdkHr_661df0
 661e20,48,verified,src/nn/unnamed/s003_2.c,SdkHr_661e20
@@ -26738,7 +26742,7 @@ ffee0,324,verified,src/nn/fs/unplaced.c,nn_fs_GetAndClearMemoryReportInfo
 66a170,900,verified,src/nn/unplaced_3.c,nn_66a170
 66a500,460,verified,src/nn/unnamed/s004_0.c,SdkHr_66a500
 66a6d0,976,verified,src/nn/unplaced_7.c,nn_66a6d0
-66aaa0,1212,verified,src/nn/unplaced_3.c,nn_66aaa0
+66aaa0,1196,verified,src/nn/unplaced_3.c,nn_66aaa0
 66afc0,348,verified,src/nn/unplaced_8.c,nn_66afc0
 66b130,100,verified,src/nn/unnamed/s004_0.c,SdkHr_66b130
 66b1a0,72,verified,src/nn/unnamed/s004_0.c,SdkHr_66b1a0
@@ -26831,6 +26835,7 @@ ffee0,324,verified,src/nn/fs/unplaced.c,nn_fs_GetAndClearMemoryReportInfo
 66dbf0,324,verified,src/nn/unnamed/s004_2.c,SdkHr_66dbf0
 66dd40,140,verified,src/nn/unnamed/s004_0.c,SdkHr_66dd40
 66dde0,460,verified,src/nn/unplaced_3.c,nn_66dde0
+66dfe0,204,verified,src/nn/unplaced_3.c,nn_66dfe0
 66e0c0,220,verified,src/nn/unnamed/s004_0.c,SdkHr_66e0c0
 66e1c0,220,verified,src/nn/unnamed/s004_0.c,SdkHr_66e1c0
 66e2c0,328,verified,src/nn/unnamed/s004_0.c,SdkHr_66e2c0

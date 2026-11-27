@@ -4,6 +4,168 @@
 
 __int64 fill_inverse_cmap(void);
 __int64 pass2_fs_dither(__int64 result, __int64 a2, __int64 a3, int a4);
+__int64 SdkHr_55f20(__int64 result, __int64 a2, __int64 a3, int a4);
+
+__int64 SdkHr_55f20(__int64 result, __int64 a2, __int64 a3, int a4)
+{
+  unsigned int v4;
+  unsigned int v5;
+  __int64 v6;
+  __int64 v7;
+  unsigned __int8* v8;
+  int v9;
+  unsigned __int64 v10;
+  __int16 v11;
+  unsigned __int64 v12;
+  __int64 v13;
+  __int64 v14;
+  int v15;
+  unsigned int v16;
+  __int64 v17;
+  unsigned __int64 v18;
+  int v19;
+  __int64 v20;
+  unsigned __int64 v21;
+  int v22;
+  __int64 v23;
+  unsigned __int64 v24;
+  int v25;
+  __int64 v26;
+  unsigned __int64 v27;
+  int v28;
+  __int64 v29;
+  unsigned __int64 v30;
+  int v31;
+  __int64 v32;
+  unsigned __int64 v33;
+  int v34;
+  __int64 v35;
+  unsigned __int64 v36;
+  int v37;
+  unsigned __int64 v38;
+  __int16 v39;
+  unsigned __int64 v40;
+  __int64 v41;
+  __int64 v42;
+  int v43;
+
+  if (a4 >= 1) {
+    v4 = *(_DWORD*)(result + 144);
+    if (v4 != 0) {
+      v5 = v4 - 1;
+      v6 = 0;
+      v7 = *(_QWORD*)(*(_QWORD*)(result + 656) + 48LL);
+      do {
+        v8 = *(unsigned __int8**)(a2 + 8 * v6);
+        if ((v4 & 7) != 0) {
+          v9 = v4 & 7;
+          do {
+            v10 = *v8;
+            v11 = v8[1];
+            v12 = v8[2];
+            v8 += 3;
+            v13 = *(_QWORD*)(v7 + 8 * (v10 >> 3)) + ((16 * v11) & 0xFC0);
+            v14 = (v12 >> 2) & 0x3E;
+            v15 = *(unsigned __int16*)(v13 + v14);
+            if (((v15 + 1) & 0x10000) != 0) {
+              result = *(unsigned __int16*)(v13 + v14);
+            }
+            else {
+              result = (unsigned int)(v15 + 1);
+            }
+            --v9;
+            *(_WORD*)(v13 + v14) = result;
+          } while (v9 != 0);
+          v16 = v4 & 0xFFFFFFF8;
+          if (v5 >= 7) {
+            do {
+            LABEL_14:
+              v17 = *(_QWORD*)(v7 + 8 * ((unsigned __int64)*v8 >> 3)) +
+                    ((16 * v8[1]) & 0xFC0);
+              v18 = ((unsigned __int64)v8[2] >> 2) & 0x3E;
+              v19 = *(unsigned __int16*)(v17 + v18);
+              if (((v19 + 1) & 0x10000) == 0) {
+                LOWORD(v19) = v19 + 1;
+              }
+              *(_WORD*)(v17 + v18) = v19;
+              v20 = *(_QWORD*)(v7 + 8 * ((unsigned __int64)v8[3] >> 3)) +
+                    ((16 * v8[4]) & 0xFC0);
+              v21 = ((unsigned __int64)v8[5] >> 2) & 0x3E;
+              v22 = *(unsigned __int16*)(v20 + v21);
+              if (((v22 + 1) & 0x10000) == 0) {
+                LOWORD(v22) = v22 + 1;
+              }
+              *(_WORD*)(v20 + v21) = v22;
+              v23 = *(_QWORD*)(v7 + 8 * ((unsigned __int64)v8[6] >> 3)) +
+                    ((16 * v8[7]) & 0xFC0);
+              v24 = ((unsigned __int64)v8[8] >> 2) & 0x3E;
+              v25 = *(unsigned __int16*)(v23 + v24);
+              if (((v25 + 1) & 0x10000) == 0) {
+                LOWORD(v25) = v25 + 1;
+              }
+              *(_WORD*)(v23 + v24) = v25;
+              v26 = *(_QWORD*)(v7 + 8 * ((unsigned __int64)v8[9] >> 3)) +
+                    ((16 * v8[10]) & 0xFC0);
+              v27 = ((unsigned __int64)v8[11] >> 2) & 0x3E;
+              v28 = *(unsigned __int16*)(v26 + v27);
+              if (((v28 + 1) & 0x10000) == 0) {
+                LOWORD(v28) = v28 + 1;
+              }
+              *(_WORD*)(v26 + v27) = v28;
+              v29 = *(_QWORD*)(v7 + 8 * ((unsigned __int64)v8[12] >> 3)) +
+                    ((16 * v8[13]) & 0xFC0);
+              v30 = ((unsigned __int64)v8[14] >> 2) & 0x3E;
+              v31 = *(unsigned __int16*)(v29 + v30);
+              if (((v31 + 1) & 0x10000) == 0) {
+                LOWORD(v31) = v31 + 1;
+              }
+              *(_WORD*)(v29 + v30) = v31;
+              v32 = *(_QWORD*)(v7 + 8 * ((unsigned __int64)v8[15] >> 3)) +
+                    ((16 * v8[16]) & 0xFC0);
+              v33 = ((unsigned __int64)v8[17] >> 2) & 0x3E;
+              v34 = *(unsigned __int16*)(v32 + v33);
+              if (((v34 + 1) & 0x10000) == 0) {
+                LOWORD(v34) = v34 + 1;
+              }
+              *(_WORD*)(v32 + v33) = v34;
+              v35 = *(_QWORD*)(v7 + 8 * ((unsigned __int64)v8[18] >> 3)) +
+                    ((16 * v8[19]) & 0xFC0);
+              v36 = ((unsigned __int64)v8[20] >> 2) & 0x3E;
+              v37 = *(unsigned __int16*)(v35 + v36);
+              if (((v37 + 1) & 0x10000) == 0) {
+                LOWORD(v37) = v37 + 1;
+              }
+              *(_WORD*)(v35 + v36) = v37;
+              v38 = v8[21];
+              v39 = v8[22];
+              v40 = v8[23];
+              v8 += 24;
+              v41 = *(_QWORD*)(v7 + 8 * (v38 >> 3)) + ((16 * v39) & 0xFC0);
+              v42 = (v40 >> 2) & 0x3E;
+              v43 = *(unsigned __int16*)(v41 + v42);
+              if (((v43 + 1) & 0x10000) != 0) {
+                result = *(unsigned __int16*)(v41 + v42);
+              }
+              else {
+                result = (unsigned int)(v43 + 1);
+              }
+              v16 -= 8;
+              *(_WORD*)(v41 + v42) = result;
+            } while (v16 != 0);
+          }
+        }
+        else {
+          v16 = v4;
+          if (v5 >= 7) {
+            goto LABEL_14;
+          }
+        }
+        ++v6;
+      } while (v6 != a4);
+    }
+  }
+  return result;
+}
 
 __int64 pass2_fs_dither(__int64 result, __int64 a2, __int64 a3, int a4)
 {

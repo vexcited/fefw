@@ -405,6 +405,8 @@ typedef __int128 SdkAlign_1042088 __attribute__((aligned(8)));
 extern SdkAlign_1042088 SdkData_1042088;
 __int64 unplaced_3_655c80(__int64 a1, __int64 a2, __int64 a3, _QWORD* a4);
 __int64 unplaced_3_65cdf0(__int64 result, unsigned int* a2);
+__int64 nn_65d9a0(__int64, __int64);
+__int64 nn_66dfe0(_QWORD* a1, __int64 a2);
 
 __int64 nn_aee50(unsigned __int8* a1, __int64 a2, __int64 a3,
                  unsigned __int64 a4)
@@ -7714,6 +7716,51 @@ bool nn_66dde0(__int64 a1, int a2, __int64 a3)
     v6 += v29;
   } while (v9 == 0);
   return v11;
+}
+
+__int64 nn_66dfe0(_QWORD* a1, __int64 a2)
+{
+  __int64 v3;
+  _QWORD* i;
+  __int64 v5;
+  __int64 v6;
+  char v7;
+  __int64 v8;
+  __int64 v9;
+  __int64 v10;
+
+  v3 = a1[7];
+  for (i = a1 + 3; (_QWORD*)v3 != i; v3 = *(_QWORD*)(v3 + 32)) {
+    if (*(_QWORD*)v3 == a2) {
+      break;
+    }
+  }
+  if ((_QWORD*)v3 == i) {
+    v5 = 0;
+    v8 = 0;
+  LABEL_11:
+    NvRmGpuAddressSpaceAllocationClose_plt(v5);
+    return v8;
+  }
+  v5 = *(_QWORD*)(v3 + 24);
+  v6 = *(_QWORD*)(v3 + 40);
+  v7 = *(_BYTE*)(v3 + 16);
+  v9 = *(_QWORD*)v3;
+  v8 = *(_QWORD*)(v3 + 8);
+  *(_QWORD*)(*(_QWORD*)(v3 + 32) + 40LL) = v6;
+  *(_QWORD*)(v6 + 32) = *(_QWORD*)(v3 + 32);
+  if ((_QWORD*)v3 != a1 + 9) {
+    SdkRoutine_6a0870(v3);
+  }
+  --a1[2];
+  if ((v7 & 1) == 0) {
+    goto LABEL_11;
+  }
+  v10 = *(_QWORD*)(a1[1] + 7552LL);
+  if (v10 != 0) {
+    nn_65d9a0(v10, v9 - *(_QWORD*)(v10 + 24));
+  }
+  return v8;
 }
 
 __int64 nn_66eba0(__int64 result, unsigned int a2, __int64 a3, __int64 a4,
